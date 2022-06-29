@@ -1,0 +1,16 @@
+<script>
+
+</script>
+<style>
+    .mithileshkumar {
+        width: 2em;
+        aspect-ratio: 1 / 1;
+        transition: ease-in-out 0.5s;
+    }
+    .mithileshkumar:hover {
+        transform: scale(1.5);
+    }
+</style>
+<div class="mithileshkumar">
+    <img class="mithileshkumar" src="/mithileshkumarlogo.png" alt='MithileshKumar'>
+</div>
