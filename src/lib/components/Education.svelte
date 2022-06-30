@@ -29,13 +29,13 @@
     <!-- Most of my schooling happened in Bokaro, a small city in Jharkhand, India. After my 12th, I went to Indian Institute of Technology, Kanpur to get masters in theoretical physics. During my masters, I grew interest in foundations of quantum mechanics and quantum computation. This led me to do masters in theoretical computer science from Chennai Mathematical Intitute. I started working in graph algorithms during my masters and joined parameterized algorithms group in University of Bergen, Norway. -->
 
     <h2 style="margin-bottom: 0;">Work and Education</h2>
-    <p>Work and education have gone together in my case. One can not be seen independent of the other. I describe them briefly below.</p>
+    <p>In my case, work and education have gone hand-in-hand. One can not be seen independent of the other. I describe them briefly below.</p>
     <section class="{sectionClass}">
         
         <div class="detail">
             <h3>Web development</h3>
             <p>
-                Pandemic gave enough time to learn a new skill, web development. I taught myself nodejs, mongodb, svelte and sveltekit. I have development my own qr-code based authentication mechanism that helps users to set very long and secure passwords and still free them from the burden of memoring them.
+                Pandemic gave me enough time to gain a new skill, web development. I taught myself nodejs, mongodb, svelte and sveltekit. I have developed my own qr-code based authentication scheme that helps users to set long and secure passwords without having to memorize them.
             </p>
         </div>
         
@@ -69,8 +69,7 @@
         <div class="detail">
             <h3>Post Doctoral Research</h3>
             <p>
-                Between June, 2017 and June 2020, I did Post-doctoral research in quantum-safe cryptography in a research-based company <a href="https://simula-uib.com/">Simula-UiB</a>, Bergen, Norway. In the meantime, pandemic happened.
-            </p>
+                Between June 2017 and June 2020, I did Post-doctoral research in quantum-safe cryptography in a research-based company <a href="https://simula-uib.com/">Simula-UiB</a>, Bergen, Norway. 
         </div>
         <div class="fillerImage" style="width: min(90vw, 300px;">
             <img width="100%" src="/LCPath.svg" alt="LCPath" >
@@ -93,7 +92,7 @@
         <div class="detail">
             <h3>Masters in Theoretical Computer Science</h3>
             <p>
-                To improve my understanding of quantum computing, I taught myself basics of computer science. Between July 2011, and July 2013, I did masters in theoretical computer science from <a href="https://www.cmi.ac.in/people/alumni-profile.php?id=mithilesh">Chennai Mathematical Institute, Chennai</a>. I'm the <strong>gold medalist</strong> of my batch. My master's thesis can be accessed <a download="DrMithileshKumarCMImsc.pdf" href="/mscthesis.pdf">here</a>.
+                To improve my understanding of quantum computing, I taught myself basics of computer science. Between July 2011 and July 2013, I did masters in theoretical computer science from <a href="https://www.cmi.ac.in/people/alumni-profile.php?id=mithilesh">Chennai Mathematical Institute, Chennai</a>. I'm the <strong>gold medalist</strong> of my batch. My master's thesis can be accessed <a download="DrMithileshKumarCMImsc.pdf" href="/mscthesis.pdf">here</a>.
             </p>
         </div>
         <div class="fillerImage">
@@ -105,7 +104,7 @@
         <div class="detail">
             <h3>Masters in Theotical Physics</h3>
             <p>
-                In 2004, I cleared IIT-JEE entrance exam with <strong>AIR 971</strong>. Between July 2004, and Dec 2010, I did msc integrated in physics from <a href="https://www.iitk.ac.in/phy/">IIT Kanpur</a>. In my theory project, I developed an algorithm that would generalize Deutsch-Jozsa quantum algorithm for operations modulo 2N. The experimental project involved Z-Scan measurement in Quantum Computing.
+                In 2004, I cleared IIT-JEE entrance exam with <strong>AIR 971</strong>. Between July 2004 and Dec 2010, I did msc integrated in physics from <a href="https://www.iitk.ac.in/phy/">IIT Kanpur</a>. In my theory project, I developed an algorithm that would generalize Deutsch-Jozsa quantum algorithm for operations modulo 2N. The experimental project involved Z-Scan measurement in Quantum Computing.
             </p>
         </div>
         <div class="fillerImage">
@@ -115,7 +114,7 @@
 
     <section>
         <h3>School</h3>
-        <p>I passed Class X from BISSC, 8B, Bokaro with 94% marks. I was 2nd rank in all Bokaro Steel City schools in the city.I completed Class XII from DPS, Bokaro with 80.2% marks.</p>
+        <p>I have been academically inclined from the start. I was class topper (sometimes school topper) in my school. I passed Class X from BISSC 8B, Bokaro with 94% marks. I was 2nd rank in all Bokaro Steel City schools in the city. I completed Class XII from DPS, Bokaro with 80.2% marks.</p>
         <p></p>
     </section>
 </article>
