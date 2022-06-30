@@ -294,7 +294,7 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `${$$result.head += `${$$result.title = `<title>Dr Mithilesh Kumar</title>`, ""}`, ""}
 <div class="${"welcome svelte-48zjgz"}">
-    <p>Hello, my passion is teaching, but I&#39;m a full-time learner. I&#39;m a self-taught full-stack web developer. In addition, I&#39;ve master degrees in theoretical physics (<strong>IIT Kanpur</strong>) and theoretical computer science (<strong>Gold Medalist, CMI, Chennai</strong>). I&#39;ve done PhD in parameterized algorithms (<strong>UiB, Norway</strong>) and Post Doctoral research (<strong>Simula-UiB, Norway</strong>) in quantum-safe cryptography. I taught quantum algorithm to my research group at Simula-UiB. My goal is to contribute to the society by teaching young ones what I have learnt so far and learn from them in return. 
+    <p>Hello, my passion is teaching, but I&#39;m a full-time learner. I&#39;m a self-taught full-stack web developer. In addition, I&#39;ve master degrees in theoretical physics (<strong>AIR 971, IIT Kanpur</strong>) and theoretical computer science (<strong>Gold Medalist, CMI, Chennai</strong>). I&#39;ve done PhD in parameterized algorithms (<strong>UiB, Norway</strong>) and Post Doctoral research (<strong>Simula-UiB, Norway</strong>) in quantum-safe cryptography. I taught quantum algorithm to my research group at Simula-UiB. My goal is to contribute to the society by teaching young ones what I have learnt so far and learn from them in return. 
     </p></div>
 <br>
 ${validate_component(Introduction, "Introduction").$$render($$result, {}, {}, {})}
