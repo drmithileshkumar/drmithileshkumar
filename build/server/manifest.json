@@ -29,19 +29,49 @@
       "_index-84a939f5.js"
     ]
   },
+  "src/routes/__layout-cv.svelte": {
+    "file": "entries/pages/__layout-cv.svelte.js",
+    "src": "src/routes/__layout-cv.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-84a939f5.js"
+    ]
+  },
+  "src/routes/cv/index@cv.svelte": {
+    "file": "entries/pages/cv/index@cv.svelte.js",
+    "src": "src/routes/cv/index@cv.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-84a939f5.js",
+      "_Papers-d4b15491.js"
+    ],
+    "css": [
+      "assets/entries/pages/cv/index@cv.svelte-12da94c2.css"
+    ]
+  },
   "src/routes/index.svelte": {
     "file": "entries/pages/index.svelte.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "imports": [
-      "_index-84a939f5.js"
+      "_index-84a939f5.js",
+      "_Papers-d4b15491.js"
     ],
     "css": [
-      "assets/entries/pages/index.svelte-46c8eaff.css"
+      "assets/entries/pages/index.svelte-ad24b971.css"
     ]
   },
   "_index-84a939f5.js": {
     "file": "chunks/index-84a939f5.js"
+  },
+  "_Papers-d4b15491.js": {
+    "file": "chunks/Papers-d4b15491.js",
+    "imports": [
+      "_index-84a939f5.js"
+    ],
+    "css": [
+      "assets/Papers-7a041896.css"
+    ]
   },
   "src/hooks.js": {
     "file": "chunks/hooks-55c46d5b.js",

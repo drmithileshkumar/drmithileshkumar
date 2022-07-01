@@ -1,13 +1,22 @@
 <script>
     import Paper from './Paper.svelte';
+    let W;
+    $: classType = W <= 700 ? 'flex': 'grid'
 </script>
 <style>
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
     p {
         margin: 0.2em;
     }
 </style>
-<div class="papers">
-    <h2>Research Papers</h2>
+<div class="papers {classType}" bind:clientWidth="{W}">
     <Paper>
         <p slot="authors">
             Akash Kumar, Mithilesh Kumar

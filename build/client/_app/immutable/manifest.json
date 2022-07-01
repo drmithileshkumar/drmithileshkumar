@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-31da30bf.js",
+    "file": "start-cba70cb7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -10,6 +10,8 @@
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/__layout-cv.svelte",
+      "src/routes/cv/index@cv.svelte",
       "src/routes/index.svelte"
     ]
   },
@@ -35,16 +37,39 @@
       "_index-07c72c70.js"
     ]
   },
-  "src/routes/index.svelte": {
-    "file": "pages/index.svelte-ecaae21d.js",
-    "src": "src/routes/index.svelte",
+  "src/routes/__layout-cv.svelte": {
+    "file": "pages/__layout-cv.svelte-854884e5.js",
+    "src": "src/routes/__layout-cv.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-07c72c70.js"
+    ]
+  },
+  "src/routes/cv/index@cv.svelte": {
+    "file": "pages/cv/index@cv.svelte-88ee5d51.js",
+    "src": "src/routes/cv/index@cv.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-07c72c70.js",
+      "_Papers-1571cd85.js"
     ],
     "css": [
-      "assets/pages/index.svelte-683d139c.css"
+      "assets/pages/cv/index@cv.svelte-e4190718.css"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-4ee42289.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-07c72c70.js",
+      "_Papers-1571cd85.js"
+    ],
+    "css": [
+      "assets/pages/index.svelte-a6557df8.css"
     ]
   },
   "_index-07c72c70.js": {
@@ -54,6 +79,15 @@
     "file": "chunks/index-8caecc38.js",
     "imports": [
       "_index-07c72c70.js"
+    ]
+  },
+  "_Papers-1571cd85.js": {
+    "file": "chunks/Papers-1571cd85.js",
+    "imports": [
+      "_index-07c72c70.js"
+    ],
+    "css": [
+      "assets/Papers-c2e91bda.css"
     ]
   }
 }
