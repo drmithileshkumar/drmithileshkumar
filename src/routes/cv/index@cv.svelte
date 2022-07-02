@@ -11,7 +11,7 @@ import Papers from "../../lib/components/Papers.svelte";
         "aside main"
         "papers papers";
         padding: 1em;
-        max-width: 1200px;
+        width: 1200px;
         margin: auto;
     }
     header {
