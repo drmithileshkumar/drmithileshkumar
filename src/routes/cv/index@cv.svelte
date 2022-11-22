@@ -125,7 +125,7 @@ import Papers from "../../lib/components/Papers.svelte";
             <table class="contactable" style="font-size: 0.9em">
                 <tr>
                     <td><span class="material-icons">home</span></td>
-                    <td>Bokaro</td>
+                    <td>Chandigarh</td>
                 </tr>
                 <tr>
                     <td style="padding-right:0"><span class="material-icons">phone</span></td>
@@ -137,7 +137,7 @@ import Papers from "../../lib/components/Papers.svelte";
                 </tr>
                 <tr>
                     <td style="padding-right:0"><span class="material-icons">link</span></td>
-                    <td>drmithileshkumar.com</td>
+                    <td>www.drmithileshkumar.com</td>
                 </tr>
             </table>
         </div>
