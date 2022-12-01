@@ -7,7 +7,7 @@ const css = {
 };
 const Index_cv = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<article class="${"svelte-1jtxlyv"}"><header class="${"svelte-1jtxlyv"}"><div class="${"profile svelte-1jtxlyv"}"><img width="${"100%"}" src="${"/photo_cv.jpg"}" alt="${"mithileshkumar"}"></div>
+  return `<article class="${"svelte-1jtxlyv"}"><header class="${"svelte-1jtxlyv"}"><div class="${"profile svelte-1jtxlyv"}"><img width="${"100%"}" src="${"/profilephoto.jpeg"}" alt="${"mithileshkumar"}"></div>
         <div class="${"details svelte-1jtxlyv"}"><div class="${"name svelte-1jtxlyv"}">Dr Mithilesh Kumar</div>
             <div class="${"intro svelte-1jtxlyv"}">Ex-IITian, Gold Medalist, Scientist, Teacher, Web developer</div></div></header>
     <aside class="${"svelte-1jtxlyv"}"><section class="${"about svelte-1jtxlyv"}"><h2 class="${"svelte-1jtxlyv"}">Profile</h2>

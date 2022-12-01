@@ -108,7 +108,7 @@ import Papers from "../../lib/components/Papers.svelte";
 <article>
     <header>
         <div class="profile">
-            <img width="100%" src="/photo_cv.jpg" alt="mithileshkumar">
+            <img width="100%" src="/profilephoto.jpeg" alt="mithileshkumar">
         </div>
         <div class="details">
             <div class="name">Dr Mithilesh Kumar</div>
