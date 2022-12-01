@@ -13925,7 +13925,7 @@ function polka (opts) {
 
 const path = env('SOCKET_PATH', false);
 const host = env('HOST', '0.0.0.0');
-const port = env('PORT', !path && '3000');
+const port = env('PORT', !path && '3001');
 
 const server = polka().use(
 	// https://github.com/lukeed/polka/issues/173
