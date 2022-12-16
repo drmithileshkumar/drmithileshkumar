@@ -1,0 +1,39 @@
+:root {
+    font-family: Georgia, serif;
+    font-size: 100%;
+}
+html, body, button, input, textarea {
+    margin: 0;
+    padding: 0;
+    color: rgb(30, 30, 30);
+    /* background-color: rgb(230, 230, 230); */
+}
+button, input, textarea {
+    border:rgb(30, 30, 30) solid 1px;
+    padding: 0.7em 1em;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:hover, .segment:hover {
+    background-color: rgb(30, 30, 30);
+    color: rgb(230, 230, 230);
+}
+.menucontrol {
+    grid-area: menucontrol;
+    height: 100vh;
+    width: 10px;
+    background: rgb(128, 128, 128);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.menucontrol:hover {
+    
+    background-color: rgb(30, 30, 30);
+    color: rgb(230, 230, 230);
+}
+
+a {
+    text-decoration: none;
+    color:rgb(0, 115, 170)
+}

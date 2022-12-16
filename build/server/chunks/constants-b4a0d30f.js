@@ -1,0 +1,89 @@
+const TeX = {
+  mpiby2: `\\dfrac{-\\pi}{2}`,
+  piby2: `\\dfrac{\\pi}{2}`,
+  mpiby3: `\\dfrac{-\\pi}{3}`,
+  piby3: `\\dfrac{\\pi}{3}`,
+  mpiby4: `\\dfrac{-\\pi}{4}`,
+  piby4: `\\dfrac{\\pi}{4}`,
+  mpiby6: `\\dfrac{-\\pi}{6}`,
+  piby6: `\\dfrac{\\pi}{6}`,
+  bbC: `\\mathbb{C}`,
+  bbR: `\\mathbb{R}`,
+  C: `\\(\\mathbb{C}\\)`,
+  N: `\\(\\mathbb{N}\\)`,
+  Z: `\\(\\mathbb{Z}\\)`,
+  Q: `\\(\\mathbb{Q}\\)`,
+  R: `\\(\\mathbb{R}\\)`,
+  T: `\\(\\mathbb{T}\\)`,
+  inC: `\\in\\mathbb{C}`,
+  inR: `\\in\\mathbb{R}`,
+  inT: `\\in\\mathbb{T}`,
+  inZ: `\\in\\mathbb{Z}`,
+  inN: `\\in\\mathbb{C}`,
+  less: `<`,
+  more: `>`,
+  cosec: `\\text{cosec~}`,
+  asin: `\\text{sin}^{-1}`,
+  acos: `\\text{cos}^{-1}`,
+  atan: `\\text{tan}^{-1}`,
+  asec: `\\text{sec}^{-1}`,
+  acot: `\\text{cot}^{-1}`,
+  acosec: `\\text{cosec}^{-1}`,
+  set: (variable, property) => {
+    return `\\{${variable}:${property}\\}`;
+  },
+  Set: (elem = "") => {
+    return `\\{${elem}\\}`;
+  },
+  frac: (num = 1, den = 1) => {
+    return `\\frac{${num}}{${den}}`;
+  },
+  dfrac: (num = 1, den = 1) => {
+    return `\\dfrac{${num}}{${den}}`;
+  },
+  text: (text = "") => {
+    return `\\text{${text}}`;
+  },
+  pow: (base = "a", exp = "-1") => {
+    return `${base}^{${exp}}`;
+  },
+  bar: (base) => {
+    return `\\bar{${base}}`;
+  },
+  sqrt: (base) => {
+    return `\\sqrt{${base}}`;
+  },
+  length: (x, y) => {
+    return `\\sqrt{${x}^2 + ${y}^2}`;
+  },
+  npr: (n = "n", r = "r") => {
+    return `{}^{${n}}\\text{P}_{${r}}`;
+  },
+  ncr: (n = "n", r = "r") => {
+    return `{}^{${n}}\\text{C}_{${r}}`;
+  },
+  sub: (n, e) => {
+    return `${n}_{${e}}`;
+  },
+  lim: (x, a) => {
+    return `\\lim_{${x}\\to ${a}}`;
+  },
+  sum: (sub = "", sup = "") => {
+    return `\\sum_{${sub}}^{${sup}}`;
+  },
+  mat: (a = "a", i = "i", j = "j", m = "m", n = "n") => {
+    return `[${a}_{${i}${j}}]_{${m}\\times ${n}}`;
+  },
+  vec: (a = "a") => {
+    return `\\vec{${a}}`;
+  },
+  hat: (a = "a") => {
+    return `\\hat{${a}}`;
+  },
+  inv: (a = "a") => {
+    return `${a}^{-1}`;
+  }
+};
+
+export { TeX as T };
+//# sourceMappingURL=constants-b4a0d30f.js.map

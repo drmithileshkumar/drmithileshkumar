@@ -1,0 +1,212 @@
+{
+  ".svelte-kit/build/index.js": {
+    "file": "index.js",
+    "src": ".svelte-kit/build/index.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_index2.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/build/hooks.js"
+    ]
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_index2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-210d3ac7.css"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores.js"
+    ]
+  },
+  "src/routes/cv/+layout.svelte": {
+    "file": "entries/pages/cv/_layout.svelte.js",
+    "src": "src/routes/cv/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/questions/maths/+layout.svelte": {
+    "file": "entries/pages/questions/maths/_layout.svelte.js",
+    "src": "src/routes/questions/maths/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-c39f161b.css"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_Papers.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-ecd6b076.css"
+    ]
+  },
+  "src/routes/cv/+page.svelte": {
+    "file": "entries/pages/cv/_page.svelte.js",
+    "src": "src/routes/cv/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_Papers.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-52d5bb98.css"
+    ]
+  },
+  "src/routes/questions/+page.svelte": {
+    "file": "entries/pages/questions/_page.svelte.js",
+    "src": "src/routes/questions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-082757be.css"
+    ]
+  },
+  "src/routes/questions/maths/+page.svelte": {
+    "file": "entries/pages/questions/maths/_page.svelte.js",
+    "src": "src/routes/questions/maths/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_constants.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-6937e10c.css",
+      "_app/immutable/assets/Link-082757be.css"
+    ]
+  },
+  "src/routes/questions/maths/question1/+page.svelte": {
+    "file": "entries/pages/questions/maths/question1/_page.svelte.js",
+    "src": "src/routes/questions/maths/question1/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores.js",
+      "_constants.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-b74dc0b5.css"
+    ]
+  },
+  "src/routes/questions/maths/question2/+page.svelte": {
+    "file": "entries/pages/questions/maths/question2/_page.svelte.js",
+    "src": "src/routes/questions/maths/question2/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores.js",
+      "_constants.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-4f491ae3.css"
+    ]
+  },
+  "src/routes/questions/maths/question3/+page.svelte": {
+    "file": "entries/pages/questions/maths/question3/_page.svelte.js",
+    "src": "src/routes/questions/maths/question3/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores.js",
+      "_constants.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-b74dc0b5.css"
+    ]
+  },
+  "src/routes/questions/maths/question4/+page.svelte": {
+    "file": "entries/pages/questions/maths/question4/_page.svelte.js",
+    "src": "src/routes/questions/maths/question4/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores.js",
+      "_constants.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-dd2a6d7d.css"
+    ]
+  },
+  "src/routes/questions/maths/question5/+page.svelte": {
+    "file": "entries/pages/questions/maths/question5/_page.svelte.js",
+    "src": "src/routes/questions/maths/question5/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores.js",
+      "_constants.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-63801d3f.css"
+    ]
+  },
+  "src/routes/questions/maths/question6/+page.svelte": {
+    "file": "entries/pages/questions/maths/question6/_page.svelte.js",
+    "src": "src/routes/questions/maths/question6/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores.js",
+      "_constants.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-dd2a6d7d.css"
+    ]
+  },
+  ".svelte-kit/build/hooks.js": {
+    "file": "chunks/hooks.js",
+    "src": ".svelte-kit/build/hooks.js",
+    "isDynamicEntry": true
+  },
+  "_index.js": {
+    "file": "chunks/index.js"
+  },
+  "_index2.js": {
+    "file": "chunks/index2.js",
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "_stores.js": {
+    "file": "chunks/stores.js",
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "_Papers.js": {
+    "file": "chunks/Papers.js",
+    "imports": [
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Papers-e2c1dcda.css"
+    ]
+  },
+  "_constants.js": {
+    "file": "chunks/constants.js"
+  }
+}

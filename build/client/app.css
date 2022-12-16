@@ -1,0 +1,55 @@
+
+/* @import '@fontsource/fira-mono'; */
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+html, body, button, input {
+    box-sizing: border-box;
+    font-display: swap;
+}
+/* body {
+    background: radial-gradient(circle at left, transparent 0, rgba(0, 0, 255, 0.1), rgba(255, 0, 0, 0.1), rgba(255, 255, 0, 0.1), rgba(0, 128, 0, 0.1) 100%);
+} */
+.iconButton {
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: solid 1px;
+    border-radius: 3px;
+}
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2px;
+}
+.segmented {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 2em;
+    font-size: 0.8em;
+    gap: 0.5em;
+    width: 170px;
+}
+.segment {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+}
