@@ -23,8 +23,12 @@
         align-items: center;
         justify-content: space-between;
         padding: 0.5em;
+        max-width: 1200px;
+        margin: auto;
+        border-top: 2px solid;
+        padding-top: 2em;
     }
-    .branding {
+    /* .branding {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -37,7 +41,7 @@
     .label {
         font-size: 0.3em;
         color: white;
-    }
+    } */
     .copyright {
         font-variant: small-caps;
         font-size: 0.8em;
@@ -53,8 +57,8 @@
         <span class="copyright">All rights reserved. &#169; drmithileshkumar.com</span>
     </div>
     
-    <a class="branding" href="https://webdut.com/web">
+    <!-- <a class="branding" href="https://webdut.com/web">
         <img class="logo" src="webdutIcon.png" alt='' />
         <span class="label">webdut.com</span>
-    </a>
+    </a> -->
 </nav>

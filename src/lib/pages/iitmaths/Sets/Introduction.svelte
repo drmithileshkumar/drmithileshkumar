@@ -85,7 +85,7 @@
 </style>
 <svelte:head>
     <title>{$selectedSection}</title>
-    <link rel="canonical" href="https://webdut.com{$page.url.pathname}" />
+    <link rel="canonical" href="https://drmithileshkumar.com{$page.url.pathname}" />
     <meta name="description" content="Introduction to sets" />
     
 </svelte:head>

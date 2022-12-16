@@ -1,11 +1,11 @@
 <script>
     import Introduction from '$lib/components/Introduction.svelte';
     import Interests from '$lib/components/Interests.svelte';
-    import Education from "../lib/components/Education.svelte";
-    import Experience from "../lib/components/Experience.svelte";
-    import Skills from "../lib/components/Skills.svelte";
-    import Research from "../lib/components/Research.svelte";
-    import Contact from "../lib/components/Contact.svelte";
+    import Education from "$lib/components/Education.svelte";
+    import Experience from "$lib/components/Experience.svelte";
+    import Skills from "$lib/components/Skills.svelte";
+    import Research from "$lib/components/Research.svelte";
+    import Contact from "$lib/components/Contact.svelte";
     import Papers from "$lib/components/Papers.svelte";
 </script>
 <style>

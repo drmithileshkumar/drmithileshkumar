@@ -1,6 +1,6 @@
 <script>
     import LogoSvg from '$lib/components/LogoSvg.svelte';
-    import {goto} from '$app/env'
+    // import {goto} from '$app/environment'
     let lightTheme = true;
 	function switchTheme() {
 		lightTheme = !lightTheme;
@@ -31,6 +31,8 @@
         z-index: 100;
         gap: 1em;
         padding: 0 0.5em;
+        max-width: 1200px;
+        margin: auto;
     }
     .logo {
         display: flex;
@@ -77,8 +79,8 @@
         <!-- <a class="link" style="font-size:{fs}px;" href="/features">Features</a> -->
         <!-- <a class="link" href="/projects">Projects</a> -->
     </div>
-    <!-- <button on:click={() => goto('/questions')}>
+    <a href='/questions'>
         IIT Questions
-    </button> -->
+    </a>
     <!-- <button class="iconButton" on:click={switchTheme}><span class='material-icons'>{lightTheme ? 'light_mode' : 'dark_mode'}</span></button> -->
 </nav>

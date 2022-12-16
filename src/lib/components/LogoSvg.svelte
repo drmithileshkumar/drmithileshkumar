@@ -12,5 +12,5 @@
     }
 </style>
 <div class="mithileshkumar">
-    <img class="mithileshkumar" src="/mithileshkumarlogo.png" alt='MithileshKumar'>
+    <img class="mithileshkumar" src="/favicon.png" alt='MithileshKumar'>
 </div>
