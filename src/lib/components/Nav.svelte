@@ -1,5 +1,6 @@
 <script>
     import LogoSvg from '$lib/components/LogoSvg.svelte';
+    import {goto} from '$app/env'
     let lightTheme = true;
 	function switchTheme() {
 		lightTheme = !lightTheme;
@@ -76,6 +77,8 @@
         <!-- <a class="link" style="font-size:{fs}px;" href="/features">Features</a> -->
         <!-- <a class="link" href="/projects">Projects</a> -->
     </div>
-    
-    <button class="iconButton" on:click={switchTheme}><span class='material-icons'>{lightTheme ? 'light_mode' : 'dark_mode'}</span></button>
+    <!-- <button on:click={() => goto('/questions')}>
+        IIT Questions
+    </button> -->
+    <!-- <button class="iconButton" on:click={switchTheme}><span class='material-icons'>{lightTheme ? 'light_mode' : 'dark_mode'}</span></button> -->
 </nav>

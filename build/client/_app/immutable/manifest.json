@@ -1,93 +1,300 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-c65e1f5b.js",
+    "file": "start-287d08c8.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-07c72c70.js",
-      "_index-8caecc38.js"
+      "_index-4ca20c8c.js",
+      "_index-5801176b.js",
+      "_singletons-d1fb5791.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
       "src/routes/__layout-cv.svelte",
-      "src/routes/cv/index@cv.svelte",
-      "src/routes/index.svelte"
+      "src/routes/questions/maths/__layout.svelte",
+      "src/routes/questions/physics/__layout.svelte",
+      "src/routes/+page.svelte",
+      "src/routes/cv/+page@cv.svelte",
+      "src/routes/questions/index.svelte",
+      "src/routes/questions/maths/index.svelte",
+      "src/routes/questions/maths/question1.svelte",
+      "src/routes/questions/maths/question2.svelte",
+      "src/routes/questions/maths/question3.svelte",
+      "src/routes/questions/maths/question4.svelte",
+      "src/routes/questions/maths/question5.svelte",
+      "src/routes/questions/maths/question6.svelte",
+      "src/routes/questions/physics/index.svelte",
+      "src/routes/questions/physics/question1.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-92a544b1.js",
+    "file": "pages/__layout.svelte-a16ffff0.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-07c72c70.js",
-      "_index-8caecc38.js"
+      "_index-4ca20c8c.js",
+      "_index-5801176b.js"
     ],
     "css": [
       "assets/pages/__layout.svelte-f4ee3c05.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-ffe28930.js",
+    "file": "error.svelte-b236f80c.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-07c72c70.js"
+      "_index-4ca20c8c.js"
     ]
   },
   "src/routes/__layout-cv.svelte": {
-    "file": "pages/__layout-cv.svelte-854884e5.js",
+    "file": "pages/__layout-cv.svelte-c5d3659c.js",
     "src": "src/routes/__layout-cv.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-07c72c70.js"
+      "_index-4ca20c8c.js"
     ]
   },
-  "src/routes/cv/index@cv.svelte": {
-    "file": "pages/cv/index@cv.svelte-29c39599.js",
-    "src": "src/routes/cv/index@cv.svelte",
+  "src/routes/questions/maths/__layout.svelte": {
+    "file": "pages/questions/maths/__layout.svelte-4eef1018.js",
+    "src": "src/routes/questions/maths/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-07c72c70.js",
-      "_Papers-1571cd85.js"
+      "_index-4ca20c8c.js",
+      "_navigation-d566aa24.js",
+      "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/cv/index@cv.svelte-6a71a760.css"
+      "assets/pages/questions/maths/__layout.svelte-6a7ae467.css"
     ]
   },
-  "src/routes/index.svelte": {
-    "file": "pages/index.svelte-4ee42289.js",
-    "src": "src/routes/index.svelte",
+  "src/routes/questions/physics/__layout.svelte": {
+    "file": "pages/questions/physics/__layout.svelte-8af767c8.js",
+    "src": "src/routes/questions/physics/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-07c72c70.js",
-      "_Papers-1571cd85.js"
+      "_index-4ca20c8c.js",
+      "_navigation-d566aa24.js",
+      "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/index.svelte-a6557df8.css"
+      "assets/pages/questions/physics/__layout.svelte-9a810b24.css"
     ]
   },
-  "_index-07c72c70.js": {
-    "file": "chunks/index-07c72c70.js"
-  },
-  "_index-8caecc38.js": {
-    "file": "chunks/index-8caecc38.js",
+  "src/routes/+page.svelte": {
+    "file": "pages/_page.svelte-7fb7abb7.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
     "imports": [
-      "_index-07c72c70.js"
+      "_index-4ca20c8c.js",
+      "_Papers-3986c9d1.js"
+    ],
+    "css": [
+      "assets/pages/_page.svelte-a7a63fbb.css"
     ]
   },
-  "_Papers-1571cd85.js": {
-    "file": "chunks/Papers-1571cd85.js",
+  "src/routes/cv/+page@cv.svelte": {
+    "file": "pages/cv/_page@cv.svelte-ca281c89.js",
+    "src": "src/routes/cv/+page@cv.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
     "imports": [
-      "_index-07c72c70.js"
+      "_index-4ca20c8c.js",
+      "_Papers-3986c9d1.js"
+    ],
+    "css": [
+      "assets/pages/cv/_page@cv.svelte-3ca1c7a3.css"
+    ]
+  },
+  "src/routes/questions/index.svelte": {
+    "file": "pages/questions/index.svelte-48d018dc.js",
+    "src": "src/routes/questions/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-4ca20c8c.js"
+    ],
+    "css": [
+      "assets/Link.svelte_svelte_type_style_lang-1a5ee773.css"
+    ]
+  },
+  "src/routes/questions/maths/index.svelte": {
+    "file": "pages/questions/maths/index.svelte-deeccf68.js",
+    "src": "src/routes/questions/maths/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-4ca20c8c.js",
+      "_constants-6101ff3a.js"
+    ],
+    "css": [
+      "assets/pages/questions/physics/index.svelte-ca33541d.css",
+      "assets/Link.svelte_svelte_type_style_lang-1a5ee773.css"
+    ]
+  },
+  "src/routes/questions/maths/question1.svelte": {
+    "file": "pages/questions/maths/question1.svelte-0be519bf.js",
+    "src": "src/routes/questions/maths/question1.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-4ca20c8c.js",
+      "_stores-b7e806a4.js",
+      "_ripple-562cb1fb.js",
+      "_constants-6101ff3a.js"
+    ],
+    "css": [
+      "assets/pages/questions/maths/question3.svelte-7af97d91.css"
+    ]
+  },
+  "src/routes/questions/maths/question2.svelte": {
+    "file": "pages/questions/maths/question2.svelte-29a3617d.js",
+    "src": "src/routes/questions/maths/question2.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-4ca20c8c.js",
+      "_stores-b7e806a4.js",
+      "_ripple-562cb1fb.js",
+      "_constants-6101ff3a.js"
+    ],
+    "css": [
+      "assets/pages/questions/maths/question2.svelte-3bac8888.css"
+    ]
+  },
+  "src/routes/questions/maths/question3.svelte": {
+    "file": "pages/questions/maths/question3.svelte-b4d97281.js",
+    "src": "src/routes/questions/maths/question3.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-4ca20c8c.js",
+      "_stores-b7e806a4.js",
+      "_ripple-562cb1fb.js",
+      "_constants-6101ff3a.js"
+    ],
+    "css": [
+      "assets/pages/questions/maths/question3.svelte-7af97d91.css"
+    ]
+  },
+  "src/routes/questions/maths/question4.svelte": {
+    "file": "pages/questions/maths/question4.svelte-b13da0e2.js",
+    "src": "src/routes/questions/maths/question4.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-4ca20c8c.js",
+      "_stores-b7e806a4.js",
+      "_ripple-562cb1fb.js",
+      "_constants-6101ff3a.js"
+    ],
+    "css": [
+      "assets/pages/questions/maths/question4.svelte-94ee9d13.css"
+    ]
+  },
+  "src/routes/questions/maths/question5.svelte": {
+    "file": "pages/questions/maths/question5.svelte-5a54501a.js",
+    "src": "src/routes/questions/maths/question5.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-4ca20c8c.js",
+      "_stores-b7e806a4.js",
+      "_ripple-562cb1fb.js",
+      "_constants-6101ff3a.js"
+    ],
+    "css": [
+      "assets/pages/questions/maths/question5.svelte-976231e6.css"
+    ]
+  },
+  "src/routes/questions/maths/question6.svelte": {
+    "file": "pages/questions/maths/question6.svelte-6b8919a3.js",
+    "src": "src/routes/questions/maths/question6.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-4ca20c8c.js",
+      "_stores-b7e806a4.js",
+      "_ripple-562cb1fb.js",
+      "_constants-6101ff3a.js"
+    ],
+    "css": [
+      "assets/pages/questions/maths/question4.svelte-94ee9d13.css"
+    ]
+  },
+  "src/routes/questions/physics/index.svelte": {
+    "file": "pages/questions/physics/index.svelte-a2977639.js",
+    "src": "src/routes/questions/physics/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-4ca20c8c.js"
+    ],
+    "css": [
+      "assets/pages/questions/physics/index.svelte-ca33541d.css",
+      "assets/Link.svelte_svelte_type_style_lang-1a5ee773.css"
+    ]
+  },
+  "src/routes/questions/physics/question1.svelte": {
+    "file": "pages/questions/physics/question1.svelte-4b995575.js",
+    "src": "src/routes/questions/physics/question1.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-4ca20c8c.js",
+      "_stores-b7e806a4.js"
+    ],
+    "css": [
+      "assets/pages/questions/physics/question1.svelte-7b5847ed.css"
+    ]
+  },
+  "_index-4ca20c8c.js": {
+    "file": "chunks/index-4ca20c8c.js"
+  },
+  "_index-5801176b.js": {
+    "file": "chunks/index-5801176b.js",
+    "imports": [
+      "_index-4ca20c8c.js"
+    ]
+  },
+  "_singletons-d1fb5791.js": {
+    "file": "chunks/singletons-d1fb5791.js"
+  },
+  "_navigation-d566aa24.js": {
+    "file": "chunks/navigation-d566aa24.js",
+    "imports": [
+      "_singletons-d1fb5791.js"
+    ]
+  },
+  "_Papers-3986c9d1.js": {
+    "file": "chunks/Papers-3986c9d1.js",
+    "imports": [
+      "_index-4ca20c8c.js"
     ],
     "css": [
       "assets/Papers-c2e91bda.css"
+    ]
+  },
+  "_constants-6101ff3a.js": {
+    "file": "chunks/constants-6101ff3a.js"
+  },
+  "_stores-b7e806a4.js": {
+    "file": "chunks/stores-b7e806a4.js",
+    "imports": [
+      "_index-4ca20c8c.js"
+    ]
+  },
+  "_ripple-562cb1fb.js": {
+    "file": "chunks/ripple-562cb1fb.js",
+    "imports": [
+      "_index-4ca20c8c.js"
     ]
   }
 }

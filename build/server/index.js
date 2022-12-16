@@ -1,4 +1,4 @@
-import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from "./chunks/index-84a939f5.js";
+import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from "./chunks/index-5c9f81d1.js";
 function afterUpdate() {
 }
 const Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -8,6 +8,7 @@ const Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { props_0 = null } = $$props;
   let { props_1 = null } = $$props;
   let { props_2 = null } = $$props;
+  let { props_3 = null } = $$props;
   setContext("__svelte__", stores);
   afterUpdate(stores.page.notify);
   if ($$props.stores === void 0 && $$bindings.stores && stores !== void 0)
@@ -22,6 +23,8 @@ const Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.props_1(props_1);
   if ($$props.props_2 === void 0 && $$bindings.props_2 && props_2 !== void 0)
     $$bindings.props_2(props_2);
+  if ($$props.props_3 === void 0 && $$bindings.props_3 && props_3 !== void 0)
+    $$bindings.props_3(props_3);
   {
     stores.page.set(page);
   }
@@ -32,7 +35,11 @@ ${components[1] ? `${validate_component(components[0] || missing_component, "sve
     default: () => {
       return `${components[2] ? `${validate_component(components[1] || missing_component, "svelte:component").$$render($$result, Object.assign(props_1 || {}), {}, {
         default: () => {
-          return `${validate_component(components[2] || missing_component, "svelte:component").$$render($$result, Object.assign(props_2 || {}), {}, {})}`;
+          return `${components[3] ? `${validate_component(components[2] || missing_component, "svelte:component").$$render($$result, Object.assign(props_2 || {}), {}, {
+            default: () => {
+              return `${validate_component(components[3] || missing_component, "svelte:component").$$render($$result, Object.assign(props_3 || {}), {}, {})}`;
+            }
+          })}` : `${validate_component(components[2] || missing_component, "svelte:component").$$render($$result, Object.assign(props_2 || {}), {}, {})}`}`;
         }
       })}` : `${validate_component(components[1] || missing_component, "svelte:component").$$render($$result, Object.assign(props_1 || {}), {}, {})}`}`;
     }
@@ -2223,7 +2230,20 @@ function set_paths(paths) {
 }
 function set_prerendering(value) {
 }
-const template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="/mithileshkumarlogo.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		<meta name="description" content="Home page of Dr Mithilesh Kumar" />\n		<meta name="keywords" content="Home Page" />\n		<meta name="author" content="Dr Mithilesh Kumar" />\n		<script defer src="https://checkout.razorpay.com/v1/checkout.js"><\/script>\n		<!-- Material Icons -->\n		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>\n		<!-- Roboto -->\n		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap"\n		/>\n		<!-- Roboto Mono -->\n		<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">\n		<link\n				rel="stylesheet"\n				href="https://fonts.googleapis.com/css?family=Roboto+Mono"\n		/>\n		<link rel="stylesheet" href="/light.css" media="(prefers-color-scheme: light)" />\n		<link rel="stylesheet" href="/dark.css" media="screen and (prefers-color-scheme: dark)"/>\n		<link rel="stylesheet" href="/light.css" id="theme" />\n		<link rel="stylesheet" href="/app.css" id="theme" />\n		' + head + "\n	</head>\n	<body>\n		<div>" + body + "</div>\n	</body>\n</html>\n";
+const template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="/mithileshkumarlogo.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		<meta name="apple-mobile-web-app-capable" content="yes" />\n		<meta name="mobile-web-app-capable" content="yes" />\n		<meta name="description" content="Home page of Dr Mithilesh Kumar" />\n		<meta name="keywords" content="Home Page" />\n		<meta name="author" content="Dr Mithilesh Kumar" />\n		<link rel="stylesheet" href="/common.css" />\n		<!-- <script defer src="https://checkout.razorpay.com/v1/checkout.js"><\/script> -->\n		<!-----------------------------------MATHJAX----------------------------->\n		<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"><\/script>\n		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js"><\/script>\n		<!-- Material Icons -->\n		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />\n		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>\n		<!-- Roboto -->\n		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap"\n		/>\n		<!-- Roboto Mono -->\n		<link rel="preconnect" href="https://fonts.googleapis.com">\n		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">\n		<link\n				rel="stylesheet"\n				href="https://fonts.googleapis.com/css?family=Roboto+Mono"\n		/>\n		<!-- <link rel="stylesheet" href="/light.css" media="(prefers-color-scheme: light)" />\n		<link rel="stylesheet" href="/dark.css" media="screen and (prefers-color-scheme: dark)"/> -->\n		<link rel="stylesheet" href="/light.css" id="theme" />\n		<link rel="stylesheet" href="/app.css" id="theme" />\n		' + head + "\n	</head>\n	<body>\n		<div>" + body + `</div>
+		<script>
+			// MathJax = {
+			// 	loader: {load: ['[tex]/ams']},
+			// 	tex: {
+			// 		inlineMath: [['$', '$'], ['\\\\(', '\\\\)']],
+			// 		packages: {'[+]': ['ams']}
+			// 	}
+			// };
+		<\/script>
+		<!-- <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js"><\/script> -->
+	</body>
+</html>
+`;
 let read = null;
 set_paths({ "base": "", "assets": "" });
 let default_protocol = "https";

@@ -1,4 +1,4 @@
-import { n as noop, a as safe_not_equal, b as now, l as loop, c as create_ssr_component, v as validate_component, e as escape } from "../../chunks/index-84a939f5.js";
+import { n as noop, a as safe_not_equal, b as now, l as loop, c as create_ssr_component, v as validate_component } from "../../chunks/index-5c9f81d1.js";
 const subscriber_queue = [];
 function writable(value, start = noop) {
   let stop;
@@ -162,7 +162,7 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         
         </div>
     
-    <button class="${"iconButton"}"><span class="${"material-icons"}">${escape("light_mode")}</span></button></nav>`;
+    </nav>`;
 });
 var Footer_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => "nav.svelte-19ha8ye{height:2.5em;backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:space-between;padding:0.5em}.branding.svelte-19ha8ye{display:flex;justify-content:center;align-items:center;flex-direction:column}.logo.svelte-19ha8ye{width:20px;height:20px}.label.svelte-19ha8ye{font-size:0.3em;color:white}.copyright.svelte-19ha8ye{font-variant:small-caps;font-size:0.8em}.contactrights.svelte-19ha8ye{display:flex;flex-direction:column}")();
 const css$1 = {
