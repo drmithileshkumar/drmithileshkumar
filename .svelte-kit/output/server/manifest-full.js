@@ -4,7 +4,7 @@ export const manifest = {
 	assets: new Set(["app.css","CMIMedal.jpg","cmithesis.pdf","common.css","dark.css","favicon.png","IITMSc.jpg","LCPath.svg","light.css","mithileshkumar.png","photo_cv.jpg","profilephoto.jpeg","robots copy.txt","robots.txt","santa.svg","svelte-welcome.png","svelte-welcome.webp","thesis.pdf","webdutIcon.png"]),
 	mimeTypes: {".css":"text/css",".jpg":"image/jpeg",".pdf":"application/pdf",".png":"image/png",".svg":"image/svg+xml",".jpeg":"image/jpeg",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		entry: {"file":"_app/immutable/start-2303ccf4.js","imports":["_app/immutable/start-2303ccf4.js","_app/immutable/chunks/index-d9b8f795.js","_app/immutable/chunks/singletons-e5063168.js","_app/immutable/chunks/index-2fd052dc.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-4ddbddd5.js","imports":["_app/immutable/start-4ddbddd5.js","_app/immutable/chunks/index-d9b8f795.js","_app/immutable/chunks/singletons-e5063168.js","_app/immutable/chunks/index-2fd052dc.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
