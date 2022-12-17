@@ -20,7 +20,7 @@
       "_index2.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-210d3ac7.css"
+      "_app/immutable/assets/_layout-9a8073cc.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
@@ -40,15 +40,27 @@
       "_index.js"
     ]
   },
-  "src/routes/questions/maths/+layout.svelte": {
-    "file": "entries/pages/questions/maths/_layout.svelte.js",
-    "src": "src/routes/questions/maths/+layout.svelte",
+  "src/routes/iit/maths/+layout.svelte": {
+    "file": "entries/pages/iit/maths/_layout.svelte.js",
+    "src": "src/routes/iit/maths/+layout.svelte",
     "isEntry": true,
     "imports": [
       "_index.js"
     ],
     "css": [
       "_app/immutable/assets/_layout-c39f161b.css"
+    ]
+  },
+  "src/routes/practice/+layout.svelte": {
+    "file": "entries/pages/practice/_layout.svelte.js",
+    "src": "src/routes/practice/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-346592cf.css"
     ]
   },
   "src/routes/+page.svelte": {
@@ -75,9 +87,9 @@
       "_app/immutable/assets/_page-52d5bb98.css"
     ]
   },
-  "src/routes/questions/+page.svelte": {
-    "file": "entries/pages/questions/_page.svelte.js",
-    "src": "src/routes/questions/+page.svelte",
+  "src/routes/iit/+page.svelte": {
+    "file": "entries/pages/iit/_page.svelte.js",
+    "src": "src/routes/iit/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index.js"
@@ -86,9 +98,14 @@
       "_app/immutable/assets/Link-082757be.css"
     ]
   },
-  "src/routes/questions/maths/+page.svelte": {
-    "file": "entries/pages/questions/maths/_page.svelte.js",
-    "src": "src/routes/questions/maths/+page.svelte",
+  "src/routes/iit/+page.js": {
+    "file": "entries/pages/iit/_page.js",
+    "src": "src/routes/iit/+page.js",
+    "isEntry": true
+  },
+  "src/routes/iit/maths/+page.svelte": {
+    "file": "entries/pages/iit/maths/_page.svelte.js",
+    "src": "src/routes/iit/maths/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index.js",
@@ -99,9 +116,9 @@
       "_app/immutable/assets/Link-082757be.css"
     ]
   },
-  "src/routes/questions/maths/question1/+page.svelte": {
-    "file": "entries/pages/questions/maths/question1/_page.svelte.js",
-    "src": "src/routes/questions/maths/question1/+page.svelte",
+  "src/routes/iit/maths/question1/+page.svelte": {
+    "file": "entries/pages/iit/maths/question1/_page.svelte.js",
+    "src": "src/routes/iit/maths/question1/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index.js",
@@ -112,9 +129,9 @@
       "_app/immutable/assets/_page-6fd30bad.css"
     ]
   },
-  "src/routes/questions/maths/question2/+page.svelte": {
-    "file": "entries/pages/questions/maths/question2/_page.svelte.js",
-    "src": "src/routes/questions/maths/question2/+page.svelte",
+  "src/routes/iit/maths/question2/+page.svelte": {
+    "file": "entries/pages/iit/maths/question2/_page.svelte.js",
+    "src": "src/routes/iit/maths/question2/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index.js",
@@ -125,9 +142,9 @@
       "_app/immutable/assets/_page-4f491ae3.css"
     ]
   },
-  "src/routes/questions/maths/question3/+page.svelte": {
-    "file": "entries/pages/questions/maths/question3/_page.svelte.js",
-    "src": "src/routes/questions/maths/question3/+page.svelte",
+  "src/routes/iit/maths/question3/+page.svelte": {
+    "file": "entries/pages/iit/maths/question3/_page.svelte.js",
+    "src": "src/routes/iit/maths/question3/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index.js",
@@ -138,9 +155,9 @@
       "_app/immutable/assets/_page-b74dc0b5.css"
     ]
   },
-  "src/routes/questions/maths/question4/+page.svelte": {
-    "file": "entries/pages/questions/maths/question4/_page.svelte.js",
-    "src": "src/routes/questions/maths/question4/+page.svelte",
+  "src/routes/iit/maths/question4/+page.svelte": {
+    "file": "entries/pages/iit/maths/question4/_page.svelte.js",
+    "src": "src/routes/iit/maths/question4/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index.js",
@@ -151,9 +168,9 @@
       "_app/immutable/assets/_page-dd2a6d7d.css"
     ]
   },
-  "src/routes/questions/maths/question5/+page.svelte": {
-    "file": "entries/pages/questions/maths/question5/_page.svelte.js",
-    "src": "src/routes/questions/maths/question5/+page.svelte",
+  "src/routes/iit/maths/question5/+page.svelte": {
+    "file": "entries/pages/iit/maths/question5/_page.svelte.js",
+    "src": "src/routes/iit/maths/question5/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index.js",
@@ -164,9 +181,9 @@
       "_app/immutable/assets/_page-63801d3f.css"
     ]
   },
-  "src/routes/questions/maths/question6/+page.svelte": {
-    "file": "entries/pages/questions/maths/question6/_page.svelte.js",
-    "src": "src/routes/questions/maths/question6/+page.svelte",
+  "src/routes/iit/maths/question6/+page.svelte": {
+    "file": "entries/pages/iit/maths/question6/_page.svelte.js",
+    "src": "src/routes/iit/maths/question6/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index.js",
@@ -176,6 +193,25 @@
     "css": [
       "_app/immutable/assets/_page-dd2a6d7d.css"
     ]
+  },
+  "src/routes/practice/+page.svelte": {
+    "file": "entries/pages/practice/_page.svelte.js",
+    "src": "src/routes/practice/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_index2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-c3268e97.css",
+      "_app/immutable/assets/Link-082757be.css"
+    ]
+  },
+  "src/routes/practice/+page.js": {
+    "file": "entries/pages/practice/_page.js",
+    "src": "src/routes/practice/+page.js",
+    "isEntry": true
   },
   ".svelte-kit/build/hooks.js": {
     "file": "chunks/hooks.js",
@@ -195,6 +231,12 @@
     "file": "chunks/stores.js",
     "imports": [
       "_index.js"
+    ]
+  },
+  "_stores2.js": {
+    "file": "chunks/stores2.js",
+    "imports": [
+      "_index2.js"
     ]
   },
   "_Papers.js": {

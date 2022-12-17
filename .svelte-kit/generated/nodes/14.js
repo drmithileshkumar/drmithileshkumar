@@ -1,0 +1,1 @@
+export { default as component } from "../../../src/routes/iit/maths/question6/+page.svelte";

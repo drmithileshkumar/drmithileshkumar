@@ -1,1 +1,1 @@
-export { default as component } from "../../../src/routes/questions/maths/+layout.svelte";
+export { default as component } from "../../../src/routes/iit/maths/+layout.svelte";

@@ -99,29 +99,31 @@ function spring(value, opts = {}) {
 }
 const LogoSvg_svelte_svelte_type_style_lang = "";
 const css$3 = {
-  code: ".mithileshkumar.svelte-17kscv1{width:2em;aspect-ratio:1 / 1;transition:ease-in-out 0.5s}.mithileshkumar.svelte-17kscv1:hover{transform:scale(1.5)}",
+  code: ".mithileshkumar.svelte-16pt66h{width:2em;aspect-ratio:1 / 1;transition:ease-in-out 0.5s;display:flex;align-items:center;justify-content:center}.mithileshkumar.svelte-16pt66h:hover{transform:scale(1.5)}",
   map: null
 };
 const LogoSvg = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$3);
-  return `<div class="${"mithileshkumar svelte-17kscv1"}"><img class="${"mithileshkumar svelte-17kscv1"}" src="${"/favicon.png"}" alt="${"MithileshKumar"}"></div>`;
+  return `<div class="${"mithileshkumar svelte-16pt66h"}"><img class="${"mithileshkumar svelte-16pt66h"}" src="${"/favicon.png"}" alt="${"MithileshKumar"}"></div>`;
 });
 const Nav_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: "nav.svelte-12dtuow.svelte-12dtuow{position:sticky;top:0;height:4.5em;backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:space-between;z-index:100;gap:1em;padding:0 0.5em;max-width:1200px;margin:auto}.logo.svelte-12dtuow.svelte-12dtuow{display:flex;justify-content:center;align-items:center;gap:0.5em;text-align:center}.logo.svelte-12dtuow span.svelte-12dtuow{color:white;font-variant:all-petite-caps;font-size:1.5em;letter-spacing:0.1em;font-weight:500;text-shadow:2px 2px 3px black}.pages.svelte-12dtuow.svelte-12dtuow{display:flex;gap:1em}.logoimage.svelte-12dtuow.svelte-12dtuow{border-radius:50%;overflow:hidden}",
+  code: "nav.svelte-1twd5ym.svelte-1twd5ym{position:sticky;top:0;height:4.5em;backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:space-between;z-index:100;gap:1em;padding:0 0.5em;max-width:1200px;margin:auto;background-color:white}.logo.svelte-1twd5ym.svelte-1twd5ym{display:flex;justify-content:center;align-items:center;gap:0.5em;text-align:center}.name.svelte-1twd5ym.svelte-1twd5ym{color:black;font-variant:all-petite-caps;font-size:1.1em;letter-spacing:0.1em;font-weight:500;text-shadow:1px 1px 3px rgb(128, 128, 128)}.pages.svelte-1twd5ym.svelte-1twd5ym{display:flex;gap:1em}.logoimage.svelte-1twd5ym.svelte-1twd5ym{border-radius:50%;overflow:hidden}.links.svelte-1twd5ym a.svelte-1twd5ym{border:0.5px solid;padding:0.3em 0.5em}.links.svelte-1twd5ym.svelte-1twd5ym{display:flex}",
   map: null
 };
 const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$2);
-  return `<nav class="${"svelte-12dtuow"}"><a class="${"logo svelte-12dtuow"}" href="${"/"}">
-        <span class="${"logoimage svelte-12dtuow"}">${validate_component(LogoSvg, "LogoSvg").$$render($$result, {}, {}, {})}</span>
+  return `<nav class="${"svelte-1twd5ym"}"><a class="${"logo svelte-1twd5ym"}" href="${"/"}">
+        <span class="${"logoimage svelte-1twd5ym"}">${validate_component(LogoSvg, "LogoSvg").$$render($$result, {}, {}, {})}</span>
         
-        <span class="${"svelte-12dtuow"}">Dr Mithilesh Kumar</span></a>
-    <div class="${"pages svelte-12dtuow"}">
+        <span class="${"name svelte-1twd5ym"}">Dr Mithilesh Kumar</span></a>
+    <div class="${"pages svelte-1twd5ym"}">
         
         </div>
-    <a href="${"/questions"}">IIT Questions
-    </a>
+    <div class="${"links svelte-1twd5ym"}"><a href="${"/practice"}" class="${"svelte-1twd5ym"}">Practice
+        </a>
+        <a href="${"/iit"}" class="${"svelte-1twd5ym"}">IIT
+        </a></div>
     </nav>`;
 });
 const Footer_svelte_svelte_type_style_lang = "";
@@ -138,7 +140,7 @@ const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const _layout_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".container.svelte-2uof5t{position:relative;max-width:1200px;margin:auto}.svelte-2uof5t::-webkit-scrollbar{width:10px}",
+  code: ".container.svelte-1u6lw92{position:relative;max-width:1200px;margin:auto;padding:1em}.svelte-1u6lw92::-webkit-scrollbar{width:10px}",
   map: null
 };
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -148,7 +150,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     menuwidth.set(200);
   }
   return `${validate_component(Nav, "Nav").$$render($$result, {}, {}, {})}
-<div class="${"container svelte-2uof5t"}">
+<div class="${"container svelte-1u6lw92"}">
     ${slots.default ? slots.default({}) : ``}</div>
 ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
 });

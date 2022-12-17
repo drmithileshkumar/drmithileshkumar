@@ -30,6 +30,10 @@ function compute_rest_props(props, keys) {
 function null_to_empty(value) {
   return value == null ? "" : value;
 }
+function set_store_value(store, ret, value) {
+  store.set(value);
+  return ret;
+}
 const is_client = typeof window !== "undefined";
 let now = is_client ? () => window.performance.now() : () => Date.now();
 let raf = is_client ? (cb) => requestAnimationFrame(cb) : noop;
@@ -57,6 +61,11 @@ function loop(callback) {
     }
   };
 }
+function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
+  const e = document.createEvent("CustomEvent");
+  e.initCustomEvent(type, bubbles, cancelable, detail);
+  return e;
+}
 let current_component;
 function set_current_component(component) {
   current_component = component;
@@ -65,6 +74,20 @@ function get_current_component() {
   if (!current_component)
     throw new Error("Function called outside component initialization");
   return current_component;
+}
+function createEventDispatcher() {
+  const component = get_current_component();
+  return (type, detail, { cancelable = false } = {}) => {
+    const callbacks = component.$$.callbacks[type];
+    if (callbacks) {
+      const event = custom_event(type, detail, { cancelable });
+      callbacks.slice().forEach((fn) => {
+        fn.call(component, event);
+      });
+      return !event.defaultPrevented;
+    }
+    return true;
+  };
 }
 function setContext(key, context) {
   get_current_component().$$.context.set(key, context);
@@ -247,15 +270,17 @@ export {
   create_ssr_component as c,
   subscribe as d,
   escape as e,
-  null_to_empty as f,
+  createEventDispatcher as f,
   getContext as g,
-  add_attribute as h,
-  compute_rest_props as i,
-  spread as j,
-  escape_object as k,
+  null_to_empty as h,
+  add_attribute as i,
+  compute_rest_props as j,
+  spread as k,
   loop as l,
   missing_component as m,
   noop as n,
+  escape_object as o,
+  set_store_value as p,
   setContext as s,
   validate_component as v
 };

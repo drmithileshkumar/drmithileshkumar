@@ -37,6 +37,7 @@
         position: relative;
         max-width: 1200px;
         margin: auto;
+        padding: 1em;
     }
     /* .leftpanel {
         grid-area: leftpanel;

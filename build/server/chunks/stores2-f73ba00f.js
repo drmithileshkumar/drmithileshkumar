@@ -1,0 +1,37 @@
+import { w as writable } from './index2-faa1f4ac.js';
+
+const chapters = [
+  "Sets",
+  "Relations and functions 11",
+  "Trigonometric functions",
+  "Principle of mathematical induction",
+  "Complex numbers and quadratic equations",
+  "Linear inequalities",
+  "Permutations and combinations",
+  "Binomial theorem",
+  "Sequences and series",
+  "Straight lines",
+  "Conic sections",
+  "Indroduction to 3D geometry",
+  "Limits and derivatives",
+  "Mathematical reasoning",
+  "Statistics",
+  "Probability",
+  "Relations and functions 12",
+  "Inverse trigonometric functions",
+  "Matrices",
+  "Determinants",
+  "Continuity and differentiability",
+  "Application of derivatives",
+  "Integrals",
+  "Application of integrals",
+  "Differential equations",
+  "Vector algebra",
+  "Three dimensional geometry",
+  "Linear programming"
+];
+const selectedChapter = writable("");
+let selectedGenerator = writable(null);
+
+export { selectedChapter as a, chapters as c, selectedGenerator as s };
+//# sourceMappingURL=stores2-f73ba00f.js.map

@@ -1,6 +1,6 @@
 <script>
     import LogoSvg from '$lib/components/LogoSvg.svelte';
-    // import {goto} from '$app/environment'
+    
     let lightTheme = true;
 	function switchTheme() {
 		lightTheme = !lightTheme;
@@ -33,6 +33,7 @@
         padding: 0 0.5em;
         max-width: 1200px;
         margin: auto;
+        background-color: white;
     }
     .logo {
         display: flex;
@@ -44,13 +45,13 @@
     /* .logo img {
         width: 2em;
     } */
-    .logo span {
-        color: white;
+    .name {
+        color: black;
         font-variant: all-petite-caps;
-        font-size: 1.5em;
+        font-size: 1.1em;
         letter-spacing: 0.1em;
         font-weight: 500;
-        text-shadow: 2px 2px 3px black;
+        text-shadow: 1px 1px 3px rgb(128, 128, 128);
     }
     .pages {
         display: flex;
@@ -64,6 +65,14 @@
         font-variant: all-petite-caps;
         font-size: 1.5em;
     } */
+    .links a {
+        border: 0.5px solid;
+        padding: 0.3em 0.5em;
+    }
+    .links {
+        display: flex;
+
+    }
 </style>
 <nav bind:clientWidth={W}>
     <a class="logo" href="/">
@@ -72,15 +81,20 @@
             <LogoSvg />
         </span>
         
-        <span>Dr Mithilesh Kumar</span>
+        <span class="name">Dr Mithilesh Kumar</span>
     </a>
     <div class="pages">
         <!-- <a class="link" style="font-size:{fs}px;" href="/elements">Elements</a> -->
         <!-- <a class="link" style="font-size:{fs}px;" href="/features">Features</a> -->
         <!-- <a class="link" href="/projects">Projects</a> -->
     </div>
-    <a href='/questions'>
-        IIT Questions
-    </a>
+    <div class="links">
+        <a href='/practice'>
+            Practice
+        </a>
+        <a href='/iit'>
+            IIT
+        </a>
+    </div>
     <!-- <button class="iconButton" on:click={switchTheme}><span class='material-icons'>{lightTheme ? 'light_mode' : 'dark_mode'}</span></button> -->
 </nav>
