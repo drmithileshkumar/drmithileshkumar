@@ -1,18 +1,3 @@
-<script context="module">
-    export async function load({session, fetch, params, url}) {
-        if(!(url.host === 'drmithileshkumar.com' || url.host === 'localhost:5173' || url.host === 'localhost:3000')) {
-            return {
-                status: 301,
-                redirect: `https://drmithileshkumar.com${url.pathname}`
-            }
-        }
-        return {
-            props: {
-
-            }
-        }
-    }
-</script>
 <script id="MathJax-script">
 // @ts-nocheck
     
@@ -28,9 +13,10 @@
     });
     let presentation;
     let presentationMode = false;
-    let counter = 8;
+    let counter = 9;
     let current = -1;
     let isActive = -1; 
+    let nextStep = 0;
     let autoscroll = false;
     beforeUpdate(() => {
         if(presentation) {
@@ -135,7 +121,7 @@
                 class="question {presentationMode && isActive === 0 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000}}"
                 on:introstart={() => {isActive = -1}}
-                on:introend={() => {isActive = 0}}
+                on:introend={() => {isActive = current}}
                 on:outroend={() => {isActive = -1}}
                 >
                 Let \({TeX.vec('u')}, {TeX.vec('v')}\) and \({TeX.vec('w')}\) be vectors in three-dimensional space, where \({TeX.vec('u')}\) and \({TeX.vec('v')}\) are unit vectors which are not perpendicular to each other and \[{TeX.vec('u')}\cdot {TeX.vec('w')} = 1,\quad {TeX.vec('v')}\cdot {TeX.vec('w')} = 1\quad {TeX.vec('w')}\cdot {TeX.vec('w')} = 4\]
@@ -154,19 +140,25 @@
                     class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = 1}}
+                    on:introend={() => {isActive = current}}
                     on:outroend={() => {isActive = -1}}
                     >Concepts</h2>
                 <p 
                     class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = 1}}
+                    on:introend={() => {isActive = current}}
                     on:outroend={() => {isActive = -1}}
                     style="display:flex; align-items: center; flex-wrap:wrap;"
                     >
                     <span>
-                        The volume of the parallelopiped is given by the scalar triple product of the side vectors. The scalar triple product of three vectors \({TeX.vec('a')}, {TeX.vec('b')}\) and \({TeX.vec('c')}\) is equal to \({TeX.vec('c')}\cdot ({TeX.vec('a')}\times{TeX.vec('b')})\)
+                        The volume of the parallelopiped is given by the scalar triple product of the side vectors. The scalar triple product of three vectors \({TeX.vec('a')}, {TeX.vec('b')}\) and \({TeX.vec('c')}\) is equal to {`\\[
+                            \\vec{c}\\cdot(\\vec{a}\\times\\vec{b}) = \\left |\\begin{matrix}
+                            c_1 & a_1 & b_1\\\\
+                            c_2 & a_2 & b_2\\\\
+                            c_3 & a_3 & b_3
+                            \\end{matrix}\\right | = \\Big|[${TeX.vec('c')}~~${TeX.vec('a')}~~${TeX.vec('b')}]\\Big| = 2
+                            \\]`}
                     </span>
                     
                     <figure
@@ -444,66 +436,62 @@
                     class="{presentationMode && isActive === 2 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = 2}}
+                    on:introend={() => {isActive = current}}
                     on:outroend={() => {isActive = -1}}>Solution</h2>
                 <p 
                     class="{presentationMode && isActive === 2 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = 2}}
+                    on:introend={() => {isActive = current}}
                     on:outroend={() => {isActive = -1}}
-                    >\({TeX.vec('u')}\) and \({TeX.vec('v')}\) are unit vectors, to solve the problem we need the value of \({TeX.vec('u')}\cdot{TeX.vec('v')}\).</p>
+                    > Working backwards, we need to evaluate \[(|3{TeX.vec('u')} + 5{TeX.vec('v')}|)^2 = (3{TeX.vec('u')} + 5{TeX.vec('v')})\cdot (3{TeX.vec('u')} + 5{TeX.vec('v')})\] \({TeX.vec('u')}\) and \({TeX.vec('v')}\) are unit vectors, to solve the problem we need the value of \({TeX.vec('u')}\cdot{TeX.vec('v')}\).</p>
             {/if}
             {#if !presentationMode || current >= 3}
                 <h4 
                     class="{presentationMode && isActive === 3 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = 3}}
+                    on:introend={() => {isActive = current}}
                     on:outroend={() => {isActive = -1}}>Step 1</h4>
                 <p 
                     class="{presentationMode && isActive === 3 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 3}}
-                    on:outroend={() => {isActive = -1}}>Use triple product of the vectors which is equal to the given volume. {`\\[\\vec{u}\\cdot(\\vec{v}\\times\\vec{w}) = \\sqrt{2}\\]`} </p>
+                    on:outroend={() => {isActive = -1}}>Use the triple product of the vectors which is equal to the given volume. \[\] {`\\[\\vec{u}\\cdot(\\vec{v}\\times\\vec{w}) = \\sqrt{2}\\]`} {`\\[\\Big|[${TeX.vec('u')}~~${TeX.vec('v')}~~${TeX.vec('w')}]\\Big| = \\sqrt{2}\\]`} </p>
             {/if}
             {#if !presentationMode || current >= 4}
-                <h4 
-                    class="{presentationMode && isActive === 4 ? 'currentActive': ''}" 
-                    transition:fly="{{ x: 200, duration: 1000 }}"
-                    on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = 4}}
-                    on:outroend={() => {isActive = -1}}>Step 2</h4>
                 <p 
                     class="{presentationMode && isActive === 4 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = 4}}
+                    on:introend={() => {isActive = current}}
                     on:outroend={() => {isActive = -1}}>
-                    Squaring the above equation gives
-                    {`\\[
-                        (\\vec{u}\\cdot(\\vec{v}\\times\\vec{w}))^2 = \\left |\\begin{matrix}
-                        \\vec{u}\\cdot\\vec{u} & \\vec{u}\\cdot\\vec{v} & \\vec{u}\\cdot\\vec{w}\\\\
-                        \\vec{v}\\cdot\\vec{u} & \\vec{v}\\cdot\\vec{v} & \\vec{v}\\cdot\\vec{w}\\\\
-                        \\vec{w}\\cdot\\vec{u} & \\vec{w}\\cdot\\vec{v} & \\vec{w}\\cdot\\vec{w}
-                        \\end{matrix}\\right | = 2
-                        \\]`}
+                    
+                    If you think for a while, we can write
+                    {`\\[\\Big|[${TeX.vec('u')}~~${TeX.vec('v')}~~${TeX.vec('w')}]\\Big|^2 = \\Big|[${TeX.vec('u')}~~${TeX.vec('v')}~~${TeX.vec('w')}]^T[${TeX.vec('u')}~~${TeX.vec('v')}~~${TeX.vec('w')}]\\Big|\\]`}
                 </p>
             {/if}
             {#if !presentationMode || current >= 5}
+                <h4 
+                    class="{presentationMode && isActive === 5 ? 'currentActive': ''}" 
+                    transition:fly="{{ x: 200, duration: 1000 }}"
+                    on:introstart={() => {isActive = -1}}
+                    on:introend={() => {isActive = current}}
+                    on:outroend={() => {isActive = -1}}>Step 2</h4>
                 <p 
                     class="{presentationMode && isActive === 5 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive =5}}
+                    on:introend={() => {isActive = current}}
                     on:outroend={() => {isActive = -1}}>
-                    This implies
+                    
+                    The above square gives
                     {`\\[
                         \\left |\\begin{matrix}
-                        1 & \\vec{u}\\cdot\\vec{v} & 1\\\\
-                        \\vec{v}\\cdot\\vec{u} & 1 & 1\\\\
-                        1 & 1 & 4
+                        \\vec{u}\\cdot\\vec{u} & \\vec{u}\\cdot\\vec{v} & \\vec{u}\\cdot\\vec{w}\\\\
+                        \\vec{v}\\cdot\\vec{u} & \\vec{v}\\cdot\\vec{v} & \\vec{v}\\cdot\\vec{w}\\\\
+                        \\vec{w}\\cdot\\vec{u} & \\vec{w}\\cdot\\vec{v} & \\vec{w}\\cdot\\vec{w}
                         \\end{matrix}\\right | = 2
                         \\]`}
                 </p>
@@ -513,9 +501,27 @@
                     class="{presentationMode && isActive === 6 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = 6}}
+                    on:introend={() => {isActive = current}}
                     on:outroend={() => {isActive = -1}}>
-                    Hence,
+                    Substituting the given dot products
+                    {`\\[
+                        \\left |\\begin{matrix}
+                        1 & \\vec{u}\\cdot\\vec{v} & 1\\\\
+                        \\vec{v}\\cdot\\vec{u} & 1 & 1\\\\
+                        1 & 1 & 4
+                        \\end{matrix}\\right | = 2
+                        \\]`}
+                    leaves with only unknown \({TeX.vec('u')}\cdot{TeX.vec('v')}\)
+                </p>
+            {/if}
+            {#if !presentationMode || current >= 7}
+                <p 
+                    class="{presentationMode && isActive === 7 ? 'currentActive': ''}" 
+                    transition:fly="{{ x: 200, duration: 1000 }}"
+                    on:introstart={() => {isActive = -1}}
+                    on:introend={() => {isActive = current}}
+                    on:outroend={() => {isActive = -1}}>
+                    Expanding the determinant,
                         {`\\[
                             \\begin{eqnarray}
                             4(\\vec{u}\\cdot\\vec{v})^2 - 2(\\vec{u}\\cdot\\vec{v}) = 0\\\\
@@ -525,21 +531,21 @@
                     As \({TeX.vec('u')}\cdot{TeX.vec('v')}\neq 0\), the only solution is \({TeX.vec('u')}\cdot{TeX.vec('v')} = {TeX.dfrac('1','2')}\)
                 </p>
             {/if}
-            {#if !presentationMode || current >= 7}
+            {#if !presentationMode || current >= 8}
                 <h4 
-                    class="{presentationMode && isActive === 7 ? 'currentActive': ''}" 
+                    class="{presentationMode && isActive === 8 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = 7}}
+                    on:introend={() => {isActive = current}}
                     on:outroend={() => {isActive = -1}}>Step 3</h4>
                 <p 
-                    class="{presentationMode && isActive === 7 ? 'currentActive': ''}" 
+                    class="{presentationMode && isActive === 8 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = 7}}
+                    on:introend={() => {isActive = current}}
                     on:outroend={() => {isActive = -1}}>
                     \((|3{TeX.vec('u')} + 5{TeX.vec('v')}|)^2 = 9 + 25 + 30\times{TeX.dfrac('1','2')} = 49\)
-                    This implies \(|3{TeX.vec('u')} + 5{TeX.vec('v')}| = 7\)
+                    which implies \(|3{TeX.vec('u')} + 5{TeX.vec('v')}| = 7\)
                 </p>
             {/if}
             {#if presentationMode && current > 0}

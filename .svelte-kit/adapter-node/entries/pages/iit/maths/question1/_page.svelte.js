@@ -6,15 +6,6 @@ const css = {
   code: ".container.svelte-miwm3o{display:flex}article.svelte-miwm3o{padding:0.5em}aside.svelte-miwm3o{background-color:rgb(230, 228, 228);cursor:pointer;width:1em}.absolute.svelte-miwm3o{margin:auto;width:90vw;height:min(80vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-miwm3o::-webkit-scrollbar{width:0;height:0}.currentActive.svelte-miwm3o{background:gray;color:white;padding:1em;border-radius:10px;transition:all 1s}.pad.svelte-miwm3o{min-height:100px}figure.svelte-miwm3o{width:300px}",
   map: null
 };
-async function load({ session, fetch, params, url }) {
-  if (!(url.host === "drmithileshkumar.com" || url.host === "localhost:5173" || url.host === "localhost:3000")) {
-    return {
-      status: 301,
-      redirect: `https://drmithileshkumar.com${url.pathname}`
-    };
-  }
-  return { props: {} };
-}
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $page, $$unsubscribe_page;
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
@@ -41,8 +32,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 <p class="${escape(
     null_to_empty(""),
     true
-  ) + " svelte-miwm3o"}" style="${"display:flex; align-items: center; flex-wrap:wrap;"}"><span>The volume of the parallelopiped is given by the scalar triple product of the side vectors. The scalar triple product of three vectors \\(${escape(TeX.vec("a"))}, ${escape(TeX.vec("b"))}\\) and \\(${escape(TeX.vec("c"))}\\) is equal to \\(${escape(TeX.vec("c"))}\\cdot (${escape(TeX.vec("a"))}\\times${escape(TeX.vec("b"))})\\)
-                    </span>
+  ) + " svelte-miwm3o"}" style="${"display:flex; align-items: center; flex-wrap:wrap;"}"><span>The volume of the parallelopiped is given by the scalar triple product of the side vectors. The scalar triple product of three vectors \\(${escape(TeX.vec("a"))}, ${escape(TeX.vec("b"))}\\) and \\(${escape(TeX.vec("c"))}\\) is equal to ${escape(`\\[
+                            \\vec{c}\\cdot(\\vec{a}\\times\\vec{b}) = \\left |\\begin{matrix}
+                            c_1 & a_1 & b_1\\\\
+                            c_2 & a_2 & b_2\\\\
+                            c_3 & a_3 & b_3
+                            \\end{matrix}\\right | = \\Big|[${TeX.vec("c")}~~${TeX.vec("a")}~~${TeX.vec("b")}]\\Big| = 2
+                            \\]`)}</span>
                     
                     <figure class="${escape(
     null_to_empty(""),
@@ -55,7 +51,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 <p class="${escape(
     null_to_empty(""),
     true
-  ) + " svelte-miwm3o"}">\\(${escape(TeX.vec("u"))}\\) and \\(${escape(TeX.vec("v"))}\\) are unit vectors, to solve the problem we need the value of \\(${escape(TeX.vec("u"))}\\cdot${escape(TeX.vec("v"))}\\).</p>`}
+  ) + " svelte-miwm3o"}">Working backwards, we need to evaluate \\[(|3${escape(TeX.vec("u"))} + 5${escape(TeX.vec("v"))}|)^2 = (3${escape(TeX.vec("u"))} + 5${escape(TeX.vec("v"))})\\cdot (3${escape(TeX.vec("u"))} + 5${escape(TeX.vec("v"))})\\] \\(${escape(TeX.vec("u"))}\\) and \\(${escape(TeX.vec("v"))}\\) are unit vectors, to solve the problem we need the value of \\(${escape(TeX.vec("u"))}\\cdot${escape(TeX.vec("v"))}\\).</p>`}
             ${`<h4 class="${escape(
     null_to_empty(""),
     true
@@ -63,7 +59,12 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 <p class="${escape(
     null_to_empty(""),
     true
-  ) + " svelte-miwm3o"}">Use triple product of the vectors which is equal to the given volume. ${escape(`\\[\\vec{u}\\cdot(\\vec{v}\\times\\vec{w}) = \\sqrt{2}\\]`)}</p>`}
+  ) + " svelte-miwm3o"}">Use the triple product of the vectors which is equal to the given volume. \\[\\] ${escape(`\\[\\vec{u}\\cdot(\\vec{v}\\times\\vec{w}) = \\sqrt{2}\\]`)} ${escape(`\\[\\Big|[${TeX.vec("u")}~~${TeX.vec("v")}~~${TeX.vec("w")}]\\Big| = \\sqrt{2}\\]`)}</p>`}
+            ${`<p class="${escape(
+    null_to_empty(""),
+    true
+  ) + " svelte-miwm3o"}">If you think for a while, we can write
+                    ${escape(`\\[\\Big|[${TeX.vec("u")}~~${TeX.vec("v")}~~${TeX.vec("w")}]\\Big|^2 = \\Big|[${TeX.vec("u")}~~${TeX.vec("v")}~~${TeX.vec("w")}]^T[${TeX.vec("u")}~~${TeX.vec("v")}~~${TeX.vec("w")}]\\Big|\\]`)}</p>`}
             ${`<h4 class="${escape(
     null_to_empty(""),
     true
@@ -71,9 +72,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 <p class="${escape(
     null_to_empty(""),
     true
-  ) + " svelte-miwm3o"}">Squaring the above equation gives
+  ) + " svelte-miwm3o"}">The above square gives
                     ${escape(`\\[
-                        (\\vec{u}\\cdot(\\vec{v}\\times\\vec{w}))^2 = \\left |\\begin{matrix}
+                        \\left |\\begin{matrix}
                         \\vec{u}\\cdot\\vec{u} & \\vec{u}\\cdot\\vec{v} & \\vec{u}\\cdot\\vec{w}\\\\
                         \\vec{v}\\cdot\\vec{u} & \\vec{v}\\cdot\\vec{v} & \\vec{v}\\cdot\\vec{w}\\\\
                         \\vec{w}\\cdot\\vec{u} & \\vec{w}\\cdot\\vec{v} & \\vec{w}\\cdot\\vec{w}
@@ -82,18 +83,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             ${`<p class="${escape(
     null_to_empty(""),
     true
-  ) + " svelte-miwm3o"}">This implies
+  ) + " svelte-miwm3o"}">Substituting the given dot products
                     ${escape(`\\[
                         \\left |\\begin{matrix}
                         1 & \\vec{u}\\cdot\\vec{v} & 1\\\\
                         \\vec{v}\\cdot\\vec{u} & 1 & 1\\\\
                         1 & 1 & 4
                         \\end{matrix}\\right | = 2
-                        \\]`)}</p>`}
+                        \\]`)}
+                    leaves with only unknown \\(${escape(TeX.vec("u"))}\\cdot${escape(TeX.vec("v"))}\\)
+                </p>`}
             ${`<p class="${escape(
     null_to_empty(""),
     true
-  ) + " svelte-miwm3o"}">Hence,
+  ) + " svelte-miwm3o"}">Expanding the determinant,
                         ${escape(`\\[
                             \\begin{eqnarray}
                             4(\\vec{u}\\cdot\\vec{v})^2 - 2(\\vec{u}\\cdot\\vec{v}) = 0\\\\
@@ -110,12 +113,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     null_to_empty(""),
     true
   ) + " svelte-miwm3o"}">\\((|3${escape(TeX.vec("u"))} + 5${escape(TeX.vec("v"))}|)^2 = 9 + 25 + 30\\times${escape(TeX.dfrac("1", "2"))} = 49\\)
-                    This implies \\(|3${escape(TeX.vec("u"))} + 5${escape(TeX.vec("v"))}| = 7\\)
+                    which implies \\(|3${escape(TeX.vec("u"))} + 5${escape(TeX.vec("v"))}| = 7\\)
                 </p>`}
             ${``}</section></article>
     ${``}</div>`;
 });
 export {
-  Page as default,
-  load
+  Page as default
 };
