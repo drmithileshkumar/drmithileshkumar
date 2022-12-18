@@ -166,7 +166,7 @@
                 prevY = currY;
                 let pos = getMousePosition(e);
                 e.preventDefault();
-                if(Math.abs(prevX - pos.x) + Math.abs(prevY - pos.y) > 5) {
+                if(Math.abs(prevX - pos.x) + Math.abs(prevY - pos.y) > 2) {
                     points.push({x: pos.x, y: pos.y});
                 
                     currX = pos.x;

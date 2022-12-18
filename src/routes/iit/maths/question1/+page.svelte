@@ -7,6 +7,7 @@
     import {ripple} from '$lib/ui/ripple';
     import {TeX} from '$lib/utils/common/constants';
 	import Canves from '$lib/canvas/Canves.svelte';
+	import { svg_element } from 'svelte/internal';
     let W, H;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black', 'eraser'];
     let strokeColor = 'black', lineWidth = 2;
@@ -162,6 +163,7 @@
     .colors {
         display: flex;
         gap: 0.5em;
+        align-items: center;
     }
     .presentationMode {
         display: flex;
@@ -187,7 +189,16 @@
     {#if presentationMode}
         <div class="colors">
             {#each colors as color}
-                <button style="background: {color};" on:click={() => setColor(color)}></button>
+                <button style="background: {color}; border: {strokeColor === color ? '5px double' : 'solid'}; padding: {color === 'eraser' ? 0 : ''};" on:click={() => setColor(color)}>
+                {#if color === 'eraser'}
+                    <svg width="20" height="20" viewBox="0 0 20 40">
+                        <g transform="rotate(-45 10 20) translate(0 5)">
+                            <rect x='0' y='0' width='20' height='10' stroke='black' stroke-width='1' />
+                            <rect x='0' y='10' width='20' height='20' fill='none' stroke='black' stroke-width='1' />
+                        </g>
+                    </svg>
+                {/if}
+                </button>
             {/each}
         </div>
         <div class="lineWidth">
