@@ -7,6 +7,7 @@
     let canvas, ctx;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black'];
     let isDrawing, points = [], snapshot;
+    let curveIndex = 0;
     onMount(() => {
         ctx = canvas.getContext('2d');
         init();
@@ -151,7 +152,8 @@
             if (dot_flag) {
                 ctx.beginPath();
                 ctx.fillStyle = strokeColor;
-                ctx.fillRect(currX, currY, 2, 2);
+                ctx.ellipse(currX, currY, lineWidth/2, lineWidth/2, 0, 0, 2 * Math.PI);
+                ctx.fill();
                 ctx.closePath();
                 dot_flag = false;
             }
