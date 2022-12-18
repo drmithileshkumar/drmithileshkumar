@@ -4,7 +4,7 @@ const manifest = {
 	assets: new Set(["app.css","CMIMedal.jpg","cmithesis.pdf","common.css","dark.css","favicon.png","IITMSc.jpg","LCPath.svg","light.css","mithileshkumar.png","photo_cv.jpg","profilephoto.jpeg","robots copy.txt","robots.txt","santa.svg","svelte-welcome.png","svelte-welcome.webp","thesis.pdf","webdutIcon.png"]),
 	mimeTypes: {".css":"text/css",".jpg":"image/jpeg",".pdf":"application/pdf",".png":"image/png",".svg":"image/svg+xml",".jpeg":"image/jpeg",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		entry: {"file":"_app/immutable/start-200c1757.js","imports":["_app/immutable/start-200c1757.js","_app/immutable/chunks/index-6e1b3778.js","_app/immutable/chunks/singletons-d07c0307.js","_app/immutable/chunks/index-8b10ec67.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-403f0e2c.js","imports":["_app/immutable/start-403f0e2c.js","_app/immutable/chunks/index-6e1b3778.js","_app/immutable/chunks/singletons-d07c0307.js","_app/immutable/chunks/index-8b10ec67.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./chunks/0-3c434a32.js'),
 			() => import('./chunks/1-0c0bd0e5.js'),
@@ -15,7 +15,7 @@ const manifest = {
 			() => import('./chunks/6-863de959.js'),
 			() => import('./chunks/7-65a9494f.js'),
 			() => import('./chunks/8-a0802cb0.js'),
-			() => import('./chunks/9-059b0633.js'),
+			() => import('./chunks/9-112464df.js'),
 			() => import('./chunks/10-5a990eab.js'),
 			() => import('./chunks/11-16fb93fc.js'),
 			() => import('./chunks/12-5667a811.js'),

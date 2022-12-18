@@ -6,18 +6,58 @@
     import {afterUpdate, beforeUpdate, onMount, tick} from 'svelte';
     import {ripple} from '$lib/ui/ripple';
     import {TeX} from '$lib/utils/common/constants';
-    
-    
+	import Canves from '$lib/canvas/Canves.svelte';
+    let W, H;
+    let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black', 'eraser'];
+    let strokeColor = 'black', strokeWidth = 2;
     onMount(() => {
         MathJax.typeset();
     });
-    let presentation;
+    let presentation, overlay;
     let presentationMode = false;
     let counter = 9;
     let current = -1;
     let isActive = -1; 
     let nextStep = 0;
     let autoscroll = false;
+    let globalCompositeOperation = 'source-over';
+    function setColor(chosenColor) {
+        globalCompositeOperation = 'source-over';
+        strokeWidth = 2;
+        switch (chosenColor) {
+            case "green":
+                strokeColor = "green";
+                break;
+            case "blue":
+                strokeColor = "blue";
+                break;
+            case "red":
+                strokeColor = "red";
+                break;
+            case "yellow":
+                strokeColor = "yellow";
+                break;
+            case "orange":
+                strokeColor = "orange";
+                break;
+            case "black":
+                strokeColor = "black";
+                break;
+            case "white":
+                strokeColor = "white";
+                break;
+            case 'eraser': {
+                globalCompositeOperation = 'destination-out';
+                strokeColor = 'rgba(0, 0, 0, 1)';
+                strokeWidth = 14;
+                break
+            }
+
+        }
+        // if (strokeColor == "white") strokeWidth = 14;
+        // else strokeWidth = 2;
+    
+    }
     beforeUpdate(() => {
         if(presentation) {
             // autoscroll = presentation && (presentation.offsetHeight + presentation.scrollTop) > (presentation.scrollHeight - 40);
@@ -29,6 +69,11 @@
         if(autoscroll) setTimeout(async () => {
             MathJax.typeset();
             presentation.scrollTo({
+                top: presentation.scrollHeight,
+                left: 0,
+                behaviour: 'smooth'
+            });
+            overlay.scrollTo({
                 top: presentation.scrollHeight,
                 left: 0,
                 behaviour: 'smooth'
@@ -60,8 +105,10 @@
     } */
     .container {
         display: flex;
+        position: relative;
     }
     article {
+        position: relative;
         padding: 0.5em;
         /* in: all 1s; */
     }
@@ -85,9 +132,9 @@
         height: 0;
     }
     .currentActive {
-        background: gray;
-        color: white;
-        padding: 1em;
+        /* background: gray; */
+        color: tomato;
+        /* padding: 1em; */
         border-radius: 10px;
         transition: all 1s;
     }
@@ -98,23 +145,56 @@
         /* float: right; */
         width: 300px;
     }
+    .overlay {
+        position: absolute;
+        z-index: 2;
+        left: 1em;
+        top: 0;
+    }
+    .colors {
+        display: flex;
+        gap: 0.5em;
+    }
+    .presentationMode {
+        display: flex;
+        gap: 1em;
+    }
 </style>
 <svelte:head>
     <title>Mathematics Question 1</title>
     <link rel="canonical" href="https://drmithileshkumar.com{$page.url.pathname}" />
     <meta name="description" content="IIT JEE Advanced Mathematics 2021" />
 </svelte:head>
-<label>
-    <input type="checkbox" bind:checked={presentationMode}> Presentation Mode
-</label>
+<div class="presentationMode">
+    <label>
+        <input type="checkbox" bind:checked={presentationMode}> Presentation Mode
+    </label>
+    {#if presentationMode}
+        <div class="colors">
+            {#each colors as color}
+                <button style="background: {color};" on:click={() => setColor(color)}></button>
+            {/each}
+        </div>
+    {/if}
+</div>
+
 <div class="container">
     {#if presentationMode}
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <aside use:ripple class="back" on:click={back}></aside>
     {/if}
-    <article class:absolute={presentationMode} bind:this={presentation}>
+    {#if !presentationMode}
+        <span bind:this={overlay}></span>
+    {/if}
+    {#if presentationMode}
+        <div class="absolute overlay" bind:this={overlay}>
+            <Canves width={W - 20} height={10000} {strokeColor} {strokeWidth} {globalCompositeOperation}/>
+        </div>
+        
+    {/if}
+    <article class:absolute={presentationMode} bind:this={presentation} bind:clientWidth={W} bind:clientHeight={H}>
             
-       
+        
         <h1>Question 1 [JEE adv, 2021]</h1>
         {#if !presentationMode || current >= 0}
             <p 
@@ -157,7 +237,7 @@
                             c_1 & a_1 & b_1\\\\
                             c_2 & a_2 & b_2\\\\
                             c_3 & a_3 & b_3
-                            \\end{matrix}\\right | = \\Big|[${TeX.vec('c')}~~${TeX.vec('a')}~~${TeX.vec('b')}]\\Big| = 2
+                            \\end{matrix}\\right | = \\Big|[${TeX.vec('c')}~~${TeX.vec('a')}~~${TeX.vec('b')}]\\Big|
                             \\]`}
                     </span>
                     
@@ -558,3 +638,4 @@
         <aside use:ripple class="next" on:click={next}></aside>
     {/if}
 </div>
+

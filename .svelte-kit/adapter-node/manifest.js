@@ -4,7 +4,7 @@ export const manifest = {
 	assets: new Set(["app.css","CMIMedal.jpg","cmithesis.pdf","common.css","dark.css","favicon.png","IITMSc.jpg","LCPath.svg","light.css","mithileshkumar.png","photo_cv.jpg","profilephoto.jpeg","robots copy.txt","robots.txt","santa.svg","svelte-welcome.png","svelte-welcome.webp","thesis.pdf","webdutIcon.png"]),
 	mimeTypes: {".css":"text/css",".jpg":"image/jpeg",".pdf":"application/pdf",".png":"image/png",".svg":"image/svg+xml",".jpeg":"image/jpeg",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		entry: {"file":"_app/immutable/start-200c1757.js","imports":["_app/immutable/start-200c1757.js","_app/immutable/chunks/index-6e1b3778.js","_app/immutable/chunks/singletons-d07c0307.js","_app/immutable/chunks/index-8b10ec67.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-403f0e2c.js","imports":["_app/immutable/start-403f0e2c.js","_app/immutable/chunks/index-6e1b3778.js","_app/immutable/chunks/singletons-d07c0307.js","_app/immutable/chunks/index-8b10ec67.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
