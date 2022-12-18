@@ -9,7 +9,7 @@
 	import Canves from '$lib/canvas/Canves.svelte';
     let W, H;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black', 'eraser'];
-    let strokeColor = 'black', strokeWidth = 2;
+    let strokeColor = 'black', lineWidth = 2;
     onMount(() => {
         MathJax.typeset();
     });
@@ -23,7 +23,7 @@
     let globalCompositeOperation = 'source-over';
     function setColor(chosenColor) {
         globalCompositeOperation = 'source-over';
-        strokeWidth = 2;
+        lineWidth = 2;
         switch (chosenColor) {
             case "green":
                 strokeColor = "green";
@@ -49,13 +49,13 @@
             case 'eraser': {
                 globalCompositeOperation = 'destination-out';
                 strokeColor = 'rgba(0, 0, 0, 1)';
-                strokeWidth = 14;
+                lineWidth = 20;
                 break
             }
 
         }
-        // if (strokeColor == "white") strokeWidth = 14;
-        // else strokeWidth = 2;
+        // if (strokeColor == "white") lineWidth = 14;
+        // else lineWidth = 2;
     
     }
     beforeUpdate(() => {
@@ -150,6 +150,14 @@
         z-index: 2;
         left: 1em;
         top: 0;
+        margin: auto;
+        width: calc(90vw - 20px);
+        height: min(80vh, 60vw);
+        /* height: min(70vh,600px); */
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding: 0 1em 0 1em;
     }
     .colors {
         display: flex;
@@ -157,6 +165,13 @@
     }
     .presentationMode {
         display: flex;
+        gap: 1em;
+        height: 1em;
+        margin-bottom: 0.5em;
+    }
+    .lineWidth {
+        display: flex;
+        align-items: center;
         gap: 1em;
     }
 </style>
@@ -175,6 +190,10 @@
                 <button style="background: {color};" on:click={() => setColor(color)}></button>
             {/each}
         </div>
+        <div class="lineWidth">
+            <label>Stroke <input style="width: 4em; height: 1em; padding-left: 0.5em; padding-right: 0.5em;" type="number" step="0.1" bind:value={lineWidth}></label>
+            
+        </div>
     {/if}
 </div>
 
@@ -188,7 +207,7 @@
     {/if}
     {#if presentationMode}
         <div class="absolute overlay" bind:this={overlay}>
-            <Canves width={W - 20} height={10000} {strokeColor} {strokeWidth} {globalCompositeOperation}/>
+            <Canves width={W} height={10000} {strokeColor} {lineWidth} {globalCompositeOperation}/>
         </div>
         
     {/if}

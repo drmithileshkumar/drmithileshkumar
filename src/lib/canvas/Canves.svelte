@@ -3,9 +3,10 @@
     export let width = 100;
     export let height = 100;
     export let strokeColor = "black";
-    export let strokeWidth = 2;
+    export let lineWidth = 2;
     let canvas, ctx;
-    let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black']
+    let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black'];
+    let isDrawing, points = [], snapshot;
     onMount(() => {
         ctx = canvas.getContext('2d');
         init();
@@ -57,12 +58,30 @@
     
     
     function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.putImageData(snapshot, 0, 0);
+        let p1 = points[0];
+        let p2 = points[1];
+
         ctx.beginPath();
         ctx.globalCompositeOperation = globalCompositeOperation;
-        ctx.moveTo(prevX, prevY);
-        ctx.lineTo(currX, currY);
+        // ctx.moveTo(prevX, prevY);
+        // ctx.lineTo(currX, currY);
+        ctx.moveTo(p1.x, p1.y)
         ctx.strokeStyle = strokeColor;
-        ctx.lineWidth = strokeWidth;
+        ctx.lineWidth = lineWidth;
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+        for(let i = 1; i < points.length; i++) {
+            let midPoint = {
+                x: p1.x + (p2.x - p1.x) / 2,
+                y: p1.y + (p2.y - p1.y) / 2
+            }
+            ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y);
+            p1 = points[i];
+            p2 = points[i + 1];
+        }
+        ctx.lineTo(p1.x, p1.y);
         ctx.stroke();
         ctx.closePath();
     }
@@ -125,7 +144,8 @@
             let pos = getMousePosition(e);
             currX = pos.x;
             currY = pos.y;
-    
+            snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            points.push({x: pos.x, y: pos.y});
             flag = true;
             dot_flag = true;
             if (dot_flag) {
@@ -138,6 +158,7 @@
         }
         if (res == 'up' || res == "out") {
             flag = false;
+            points.length = 0;
         }
         if (res == 'move') {
             if (flag) {
@@ -145,9 +166,13 @@
                 prevY = currY;
                 let pos = getMousePosition(e);
                 e.preventDefault();
-                currX = pos.x;
-                currY = pos.y;
-                draw();
+                if(Math.abs(prevX - pos.x) + Math.abs(prevY - pos.y) > 5) {
+                    points.push({x: pos.x, y: pos.y});
+                
+                    currX = pos.x;
+                    currY = pos.y;
+                    draw();
+                }
             }
         }
     }

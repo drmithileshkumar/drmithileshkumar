@@ -1,0 +1,9 @@
+const index = 12;
+const component = async () => (await import('./_page.svelte-9eae4f41.js')).default;
+const file = '_app/immutable/components/pages/iit/maths/question4/_page.svelte-47474415.js';
+const imports = ["_app/immutable/components/pages/iit/maths/question4/_page.svelte-47474415.js","_app/immutable/chunks/index-7de01425.js","_app/immutable/chunks/stores-96e71e18.js","_app/immutable/chunks/singletons-475264f0.js","_app/immutable/chunks/index-c32cc651.js","_app/immutable/chunks/ripple-9e3ee767.js","_app/immutable/chunks/constants-79d6a0a7.js"];
+const stylesheets = ["_app/immutable/assets/_page-c1110dee.css"];
+const fonts = [];
+
+export { component, file, fonts, imports, index, stylesheets };
+//# sourceMappingURL=12-cd3307a1.js.map
