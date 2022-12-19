@@ -22,7 +22,7 @@
     export let globalCompositeOperation = "source-over";
     
     function init() {
-        ctx = canvas.getContext("2d");
+        ctx = canvas.getContext("2d", {willReadFrequently: true});
         width = canvas.width;
         height = canvas.height;
     
@@ -124,31 +124,27 @@
     }
     
     function draw(givenPoints) {
-        controlPoints.length = 0;
+        // controlPoints.length = 0;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.putImageData(snapshot, 0, 0);
-        let p1 = givenPoints[0];
-        let p2 = givenPoints[1];
-
+        
         ctx.beginPath();
         ctx.globalCompositeOperation = globalCompositeOperation;
         // ctx.moveTo(prevX, prevY);
         // ctx.lineTo(currX, currY);
-        ctx.moveTo(p1.x, p1.y)
+        ctx.moveTo(givenPoints[0].x, givenPoints[0].y)
         ctx.strokeStyle = strokeColor;
         ctx.lineWidth = lineWidth;
         ctx.lineJoin = 'round';
         ctx.lineCap = 'round';
-        controlPoints.push({
-            x: p1.x + (p2.x - p1.x) / 2,
-            y: p1.y + (p2.y - p1.y) / 2
-        })
-        for(let i = 1; i < givenPoints.length - 1; i++) {
-            ctx.quadraticCurveTo(controlPoints[i - 1].x, controlPoints[i - 1].y, givenPoints[i].x, givenPoints[i].y);
-            controlPoints.push({
-                x: givenPoints[i].x + (-givenPoints[i].x + givenPoints[i + 1].x)/2,
-                y: givenPoints[i].y + (-givenPoints[i].y + givenPoints[i + 1].y)/2
-            })
+        let i = 1;
+        for(i = 1; i < givenPoints.length - 2; i++) {
+            let midPoint = {
+                x: (givenPoints[i].x + givenPoints[i + 1].x)/2,
+                y: (givenPoints[i].y + givenPoints[i + 1].y)/2
+            }
+            ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, midPoint.x, midPoint.y);
+            
             // controlPoints.push({
             //     x: 2 * givenPoints[i].x - controlPoints[i - 1].x,
             //     y: 2 * givenPoints[i].y - controlPoints[i - 1].y
@@ -158,7 +154,9 @@
             // p2 = givenPoints[i + 1];
             
         }
-        ctx.lineTo(givenPoints[givenPoints.length - 1].x, givenPoints[givenPoints.length - 1].y);
+        if(givenPoints.length > 2) 
+            ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, givenPoints[i + 1].x, givenPoints[i + 1].y);
+        else ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, givenPoints[i].x, givenPoints[i].y);
         ctx.stroke();
         ctx.closePath();
     }
@@ -265,14 +263,18 @@
             //     out: tangent(points[points.length - 2], points[points.length - 1])
             // })
             areas.push(1000000);
-            for(let i = 1; i < points.length - 1; i++) {
-                areas.push(area(points[i - 1], points[i], points[i + 1]));
+            if(points.length > 1) {
+                    for(let i = 1; i < points.length - 1; i++) {
+                    areas.push(area(points[i - 1], points[i], points[i + 1]));
+                }
+                areas.push(1000000);
+                reduceAreaPoints();
+                
+                // reduceTangentPoints();
+                draw(reducedPoints);
             }
-            areas.push(1000000);
-            reduceAreaPoints();
             
-            // reduceTangentPoints();
-            draw(reducedPoints);
+            
             // console.log(points.length, reducedPoints.length)
             points.length = 0;
             reducedPoints.length = 0;

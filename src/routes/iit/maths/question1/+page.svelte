@@ -152,7 +152,7 @@
         left: 1em;
         top: 0;
         margin: auto;
-        width: 94vw;
+        width: 89vw;
         height: min(80vh, 60vw);
         /* height: min(70vh,600px); */
         overflow-y: auto;
