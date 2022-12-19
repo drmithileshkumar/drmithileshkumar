@@ -241,13 +241,13 @@
         if (res == 'up') {
             flag = false;
             // console.log(points.length);
-            for(let i = 0; i < points.length; i++) {
-                reducedPoints.push({
-                    x: points[i].x,
-                    y: points[i].y
-                });
+            // for(let i = 0; i < points.length; i++) {
+            //     reducedPoints.push({
+            //         x: points[i].x,
+            //         y: points[i].y
+            //     });
                 
-            } 
+            // } 
             // tangents.push({
             //     in: tangent(points[0], points[1]),
             //     out: tangent(points[0], points[1])
@@ -262,17 +262,17 @@
             //     in: tangent(points[points.length - 2], points[points.length - 1]),
             //     out: tangent(points[points.length - 2], points[points.length - 1])
             // })
-            areas.push(1000000);
-            if(points.length > 1) {
-                    for(let i = 1; i < points.length - 1; i++) {
-                    areas.push(area(points[i - 1], points[i], points[i + 1]));
-                }
-                areas.push(1000000);
-                reduceAreaPoints();
+            // areas.push(1000000);
+            // if(points.length > 1) {
+            //         for(let i = 1; i < points.length - 1; i++) {
+            //         areas.push(area(points[i - 1], points[i], points[i + 1]));
+            //     }
+            //     areas.push(1000000);
+            //     reduceAreaPoints();
                 
-                // reduceTangentPoints();
-                draw(reducedPoints);
-            }
+                
+            //     draw(reducedPoints);
+            // }
             
             
             // console.log(points.length, reducedPoints.length)
