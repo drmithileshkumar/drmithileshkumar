@@ -6,7 +6,7 @@
     export let lineWidth = 2;
     let canvas, ctx;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black'];
-    let isDrawing, points = [], snapshot;
+    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = lineWidth, tangentThreshold = 0.01;
     let curveIndex = 0;
     onMount(() => {
         ctx = canvas.getContext('2d');
@@ -55,14 +55,80 @@
             findxy('out', e)
         }, false);
     }
+    const tangent = (p1, p2) => {
+        return (p2.y - p1.y)/(p2.x - p1.x);
+    }
+    const isSharp = (index) => {
+        if(index < 1 || index > reducedPoints.length - 2) return false;
+        let intangent = tangent(reducedPoints[index - 1], reducedPoints[index]);
+        let outtangent = tangent(reducedPoints[index], reducedPoints[index + 1]);
+        // console.log(index, Math.atan(outtangent), Math.atan(intangent), Math.abs(Math.atan(outtangent) - Math.atan(intangent)) > Math.PI - 0.01)
+        return Math.abs(Math.atan(outtangent) - Math.atan(intangent)) > Math.PI - 0.01
+    }
+    const area = (p1, p2, p3) => {
+        return 0.5*Math.abs(p1.x * (p2.y - p3.y) - p2.x * (p1.y - p3.y) + p3.x * (p1.y - p2.y))
+    }
+    const reduceAreaPoints = () => {
+        let minArea = Math.min(...areas);
+        if(minArea > areaThreshold) {
+            // console.log('initial length', points.length);
+            // console.log('reduced length', reducedPoints.length);
+            return;
+        }
+        let minIndex = areas.indexOf(minArea);
+        // console.log('minIndex-->', minIndex)
+        if(minIndex > 0) {
+            //check if it is a very sharp point 
+            if(isSharp(minIndex)) {
+                areas[minIndex] += 1000;
+            } else {
+                reducedPoints.splice(minIndex, 1);
+                areas.splice(minIndex, 1);
+                if(minIndex > 1) {
+                    areas[minIndex - 1] = area(reducedPoints[minIndex - 2], reducedPoints[minIndex - 1], reducedPoints[minIndex]);
+                }
+                if(minIndex < reducedPoints.length - 1) {
+                    areas[minIndex] = area(reducedPoints[minIndex - 1], reducedPoints[minIndex], reducedPoints[minIndex + 1]);
+                }
+                
+                
+            }
+            reduceAreaPoints();
+        }
+    }
+    const flatIndex = () => {
+        for(let i = 1; i < reducedPoints.length - 1; i++) {
+            if(tangents[i].in === 'inf' && tangents[i].out === 'inf') {
+                return i;
+            }
+            if(tangents[i].in === 'inf') {
+                if(1/Math.abs(tangents[i].out) > tangentThreshold) return i;
+            }
+            if(tangents[i].out === 'inf') {
+                if(1/Math.abs(tangents[i].in) > tangentThreshold) return i;
+            }
+            if(Math.abs(tangents[i].in - tangents[i].out) < tangentThreshold) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    const reduceTangentPoints = () => {
+        let fIndex = flatIndex();
+        if(fIndex !== -1) {
+            tangents.splice(fIndex, 1);
+            reducedPoints.splice(fIndex, 1);
+            tangents[fIndex - 1].out = tangent(reducedPoints[fIndex -1], reducedPoints[fIndex]);
+            tangents[fIndex].in = tangents[fIndex - 1].out
+        }
+    }
     
-    
-    
-    function draw() {
+    function draw(givenPoints) {
+        controlPoints.length = 0;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.putImageData(snapshot, 0, 0);
-        let p1 = points[0];
-        let p2 = points[1];
+        let p1 = givenPoints[0];
+        let p2 = givenPoints[1];
 
         ctx.beginPath();
         ctx.globalCompositeOperation = globalCompositeOperation;
@@ -73,16 +139,26 @@
         ctx.lineWidth = lineWidth;
         ctx.lineJoin = 'round';
         ctx.lineCap = 'round';
-        for(let i = 1; i < points.length; i++) {
-            let midPoint = {
-                x: p1.x + (p2.x - p1.x) / 2,
-                y: p1.y + (p2.y - p1.y) / 2
-            }
-            ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y);
-            p1 = points[i];
-            p2 = points[i + 1];
+        controlPoints.push({
+            x: p1.x + (p2.x - p1.x) / 2,
+            y: p1.y + (p2.y - p1.y) / 2
+        })
+        for(let i = 1; i < givenPoints.length - 1; i++) {
+            ctx.quadraticCurveTo(controlPoints[i - 1].x, controlPoints[i - 1].y, givenPoints[i].x, givenPoints[i].y);
+            controlPoints.push({
+                x: givenPoints[i].x + (-givenPoints[i].x + givenPoints[i + 1].x)/2,
+                y: givenPoints[i].y + (-givenPoints[i].y + givenPoints[i + 1].y)/2
+            })
+            // controlPoints.push({
+            //     x: 2 * givenPoints[i].x - controlPoints[i - 1].x,
+            //     y: 2 * givenPoints[i].y - controlPoints[i - 1].y
+            // })
+            
+            // p1 = givenPoints[i];
+            // p2 = givenPoints[i + 1];
+            
         }
-        ctx.lineTo(p1.x, p1.y);
+        ctx.lineTo(givenPoints[givenPoints.length - 1].x, givenPoints[givenPoints.length - 1].y);
         ctx.stroke();
         ctx.closePath();
     }
@@ -158,9 +234,50 @@
                 dot_flag = false;
             }
         }
-        if (res == 'up' || res == "out") {
+        if(res == 'out') {
             flag = false;
             points.length = 0;
+            reducedPoints.length = 0;
+            areas.length = 0;
+        }
+        if (res == 'up') {
+            flag = false;
+            // console.log(points.length);
+            for(let i = 0; i < points.length; i++) {
+                reducedPoints.push({
+                    x: points[i].x,
+                    y: points[i].y
+                });
+                
+            } 
+            // tangents.push({
+            //     in: tangent(points[0], points[1]),
+            //     out: tangent(points[0], points[1])
+            // })
+            // for(let i = 1; i < points.length - 1; i++) {
+            //     tangents.push({
+            //         in: tangent(points[i - 1], points[i]),
+            //         out: tangent(points[i], points[i + 1])
+            //     })
+            // }
+            // tangents.push({
+            //     in: tangent(points[points.length - 2], points[points.length - 1]),
+            //     out: tangent(points[points.length - 2], points[points.length - 1])
+            // })
+            areas.push(1000000);
+            for(let i = 1; i < points.length - 1; i++) {
+                areas.push(area(points[i - 1], points[i], points[i + 1]));
+            }
+            areas.push(1000000);
+            reduceAreaPoints();
+            
+            // reduceTangentPoints();
+            draw(reducedPoints);
+            // console.log(points.length, reducedPoints.length)
+            points.length = 0;
+            reducedPoints.length = 0;
+            areas.length = 0;
+            controlPoints.length = 0;
         }
         if (res == 'move') {
             if (flag) {
@@ -168,13 +285,13 @@
                 prevY = currY;
                 let pos = getMousePosition(e);
                 e.preventDefault();
-                if(Math.abs(prevX - pos.x) + Math.abs(prevY - pos.y) > 2) {
+                // if(Math.abs(prevX - pos.x) + Math.abs(prevY - pos.y) > 2) {
                     points.push({x: pos.x, y: pos.y});
                 
                     currX = pos.x;
                     currY = pos.y;
-                    draw();
-                }
+                    draw(points);
+                // }
             }
         }
     }
