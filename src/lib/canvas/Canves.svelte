@@ -55,6 +55,16 @@
             findxy('out', e)
         }, false);
     }
+    const sqrDist = (p1, p2) => {
+        return (p1.x - p2.x)*(p1.x - p2.x) + (p1.y - p2.y)*(p1.y - p2.y)
+    }
+    const needCubic = (p1, p2, p3, p4) => {
+        let d12 = sqrDist(p1, p2);
+        let d23 = sqrDist(p2, p3);
+        let d34 = sqrDist(p3, p4);
+        if(d23 > 2 * (d12 + d34)) return true;
+        return false;
+    }
     const tangent = (p1, p2) => {
         return (p2.y - p1.y)/(p2.x - p1.x);
     }
@@ -122,7 +132,26 @@
             tangents[fIndex].in = tangents[fIndex - 1].out
         }
     }
-    
+    const pointLength = (p1, p2) => {
+        return Math.sqrt(sqrDist(p1, p2));
+    }
+    const cubicControls = (p1, p2, p3) => {
+        let alpha = 0.1;
+        let beta = 0.1;
+        let v = {
+            x: p3.x - p1.x,
+            y: p3.y - p1.y
+        }
+        let controls = {
+            tin: {x: p2.x - alpha * v.x,
+                  y: p2.y - alpha * v.y 
+                },
+            tout: {x: p2.x + beta * v.x,
+                  y: p2.y + beta * v.y 
+                }
+        }
+        return controls;
+    }
     function draw(givenPoints) {
         // controlPoints.length = 0;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -139,19 +168,22 @@
         ctx.lineCap = 'round';
         let i = 1;
         for(i = 1; i < givenPoints.length - 2; i++) {
-            let midPoint = {
-                x: (givenPoints[i].x + givenPoints[i + 1].x)/2,
-                y: (givenPoints[i].y + givenPoints[i + 1].y)/2
-            }
-            ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, midPoint.x, midPoint.y);
             
-            // controlPoints.push({
-            //     x: 2 * givenPoints[i].x - controlPoints[i - 1].x,
-            //     y: 2 * givenPoints[i].y - controlPoints[i - 1].y
-            // })
+                let midPoint = {
+                    x: (givenPoints[i].x + givenPoints[i + 1].x)/2,
+                    y: (givenPoints[i].y + givenPoints[i + 1].y)/2
+                }
+                ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, midPoint.x, midPoint.y);
+                
+                // controlPoints.push({
+                //     x: 2 * givenPoints[i].x - controlPoints[i - 1].x,
+                //     y: 2 * givenPoints[i].y - controlPoints[i - 1].y
+                // })
+                
+                // p1 = givenPoints[i];
+                // p2 = givenPoints[i + 1];
             
-            // p1 = givenPoints[i];
-            // p2 = givenPoints[i + 1];
+            
             
         }
         if(givenPoints.length > 2) 
@@ -160,7 +192,91 @@
         ctx.stroke();
         ctx.closePath();
     }
-    
+    function drawSmooth(givenPoints) {
+        // controlPoints.length = 0;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.putImageData(snapshot, 0, 0);
+        
+        ctx.beginPath();
+        ctx.globalCompositeOperation = globalCompositeOperation;
+        // ctx.moveTo(prevX, prevY);
+        // ctx.lineTo(currX, currY);
+        ctx.moveTo(givenPoints[0].x, givenPoints[0].y)
+        ctx.strokeStyle = strokeColor;
+        ctx.lineWidth = lineWidth;
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+        let m = 0;
+        let dx1 = 0;
+        let dy1 = 0;
+        let dx2 = 0;
+        let dy2 = 0;
+        let preP = givenPoints[0];
+        let nexP;
+        let i = 1;
+        for(i = 1; i < givenPoints.length; i++) {
+            let curP = givenPoints[i];
+            nexP = givenPoints[i + 1]
+            if(nexP) {
+                m = tangent(preP, nexP);
+                dx2 = (nexP.x - curP.x) * (-0.3)
+                dy2 = (dx2 * m * 1);
+            } else {
+                dx2 = 0;
+                dy2 = 0;
+            }
+            // ctx.bezierCurveTo(controlPoints[i - 1].tout.x, controlPoints[i - 1].tout.y,  controlPoints[i].tin.x, controlPoints[i].tin.y, givenPoints[i].x, givenPoints[i].y);
+            ctx.bezierCurveTo(preP.x - dx1, preP.y - dy1, curP.x + dx2, curP.y + dy2, curP.x, curP.y);
+            dx1 = dx2;
+            dy1 = dy2;
+            preP = curP;
+                
+                // controlPoints.push({
+                //     x: 2 * givenPoints[i].x - controlPoints[i - 1].x,
+                //     y: 2 * givenPoints[i].y - controlPoints[i - 1].y
+                // })
+                
+                // p1 = givenPoints[i];
+                // p2 = givenPoints[i + 1];
+            
+            
+            
+        }
+        // console.log(controlPoints)
+        ctx.stroke();
+        ctx.closePath();
+    }
+    function drawCurve(points, tension) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.putImageData(snapshot, 0, 0);
+        
+        ctx.beginPath();
+        ctx.globalCompositeOperation = globalCompositeOperation;
+        ctx.moveTo(points[0].x, points[0].y);
+
+        var t = (tension != null) ? tension : 1;
+        for (var i = 0; i < points.length - 1; i++) {
+            var p1 = (i > 0) ? points[i - 1] : points[0];
+            var p2 = points[i];
+            var p3 = points[i + 1];
+            // var p3 = (i != points.length - 2) ? points[i + 2] : p2;
+            let d12 = pointLength(p1, p2);
+            let d23 = pointLength(p2, p3);
+            let d123 = d12 + d23;
+            let alpha = d12 / d123;
+            let beta = d23 / d123;
+
+            var cp1x = p2.x - (p3.x - p1.x) * alpha * t;
+            var cp1y = p2.y - (p3.y - p1.y) * alpha * t;
+
+            var cp2x = p2.x + (p3.x - p1.x) * beta * t;
+            var cp2y = p2.y + (p3.y - p1.y) * beta * t;
+
+            ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, p2.x, p2.y);
+        }
+        ctx.quadraticCurveTo(cp2x, cp2y, points[i].x, points[i].y);
+        ctx.stroke();
+    }
     function erase() {
         var m = confirm("Want to clear");
         if (m) {
@@ -273,9 +389,29 @@
                 
             //     draw(reducedPoints);
             // }
-            
-            
             // console.log(points.length, reducedPoints.length)
+            // compute bezier control points {tin, tout}
+            if(points.length > 1) {
+                // let cp0 = cubicControls(points[0], points[0], points[1])
+                // controlPoints.push({
+                //     tout: {
+                //         x: cp0.tout.x,
+                //         y: cp0.tout.y
+                //     },
+                //     tin: {
+                //         x: cp0.tin.x,
+                //         y: cp0.tin.y
+                //     }
+                // })
+                // let i = 1;
+                // controlPoints.push(cubicControls(points[0], points[0], points[1]));
+                // for(i = 1; i < points.length - 1; i++) {
+                //     controlPoints.push(cubicControls(points[i - 1], points[i], points[i + 1]));
+                // }
+                // controlPoints.push(cubicControls(points[i - 1], points[i - 1], points[i]));
+                // drawSmooth(points);
+                drawCurve(points, 0.3);
+            }   
             points.length = 0;
             reducedPoints.length = 0;
             areas.length = 0;
