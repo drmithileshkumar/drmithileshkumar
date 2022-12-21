@@ -6,7 +6,7 @@
     export let lineWidth = 2;
     let canvas, ctx;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black'];
-    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 1, tangentThreshold = 0.01;
+    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 5, tangentThreshold = 0.01;
     let curveIndex = 0;
     onMount(() => {
         ctx = canvas.getContext('2d');
@@ -169,52 +169,47 @@
     }
     function draw(givenPoints) {
         // controlPoints.length = 0;
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.putImageData(snapshot, 0, 0);
         
         ctx.beginPath();
-        ctx.globalCompositeOperation = globalCompositeOperation;
+        // ctx.globalCompositeOperation = globalCompositeOperation;
         // ctx.moveTo(prevX, prevY);
         // ctx.lineTo(currX, currY);
         ctx.moveTo(givenPoints[0].x, givenPoints[0].y)
+        // let l = 0;
+        // while(l < givenPoints.length) {
+        //     if(l + 1 > 2) {
+        //         let prevMidPoint = {
+        //                 x: (givenPoints[l - 2].x + givenPoints[l - 1].x)/2,
+        //                 y: (givenPoints[l - 2].y + givenPoints[l - 1].y)/2
+        //             }
+        //         let newMidPoint = {
+        //             x: (givenPoints[l - 1].x + givenPoints[l].x)/2,
+        //             y: (givenPoints[l - 1].y + givenPoints[l].y)/2
+        //         }
+        //         ctx.moveTo(prevMidPoint.x, prevMidPoint.y);
+        //         ctx.quadraticCurveTo(givenPoints[l - 1].x, givenPoints[l -1].y, newMidPoint.x, newMidPoint.y);
+        //     } else {
+        //         ctx.quadraticCurveTo(givenPoints[l].x, givenPoints[l].y, givenPoints[l].x, givenPoints[l].y);
+        //     }
+        //     l++;
+        // }
+        
         
         let i = 1;
         for(i = 1; i < givenPoints.length - 2; i++) {
-                // let d12 = pointLength(givenPoints[i -1], givenPoints[i]);
-                // let d23 = pointLength(givenPoints[i], givenPoints[i + 1]);
-                // let d34 = pointLength(givenPoints[i + 1], givenPoints[i + 2])
                 let midPoint;
-                
                 midPoint = {
                     x: (givenPoints[i].x + givenPoints[i + 1].x)/2,
                     y: (givenPoints[i].y + givenPoints[i + 1].y)/2
                 }
-                // let shift = {
-                //     x: midPoint.x, y: midPoint.y
-                // };
-                // if(d23 > 5) {
-                //     shift = intersectLines(givenPoints[i -1], givenPoints[i], givenPoints[i + 1], givenPoints[i + 2]);
-                // }
-                // midPoint = {
-                //     x: midPoint.x + 0.01 * (shift.x - midPoint.x),
-                //     y: midPoint.y + 0.01 + (shift.y - midPoint.y)
-                // }
                 ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, midPoint.x, midPoint.y);
-                
-                // controlPoints.push({
-                //     x: 2 * givenPoints[i].x - controlPoints[i - 1].x,
-                //     y: 2 * givenPoints[i].y - controlPoints[i - 1].y
-                // })
-                
-                // p1 = givenPoints[i];
-                // p2 = givenPoints[i + 1];
-            
-            
-            
         }
         if(givenPoints.length > 2) 
             ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, givenPoints[i + 1].x, givenPoints[i + 1].y);
         else ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, givenPoints[i].x, givenPoints[i].y);
+
         ctx.stroke();
         ctx.closePath();
     }
@@ -387,7 +382,7 @@
                         }
                     }
                     points.push({x: pos.x, y: pos.y});
-                
+                    // snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
                     currX = pos.x;
                     currY = pos.y;
                     draw(points);
