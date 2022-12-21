@@ -6,7 +6,7 @@
     export let lineWidth = 2;
     let canvas, ctx;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black'];
-    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = lineWidth, tangentThreshold = 0.01;
+    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 1, tangentThreshold = 0.01;
     let curveIndex = 0;
     onMount(() => {
         ctx = canvas.getContext('2d');
@@ -81,12 +81,17 @@
     const reduceAreaPoints = () => {
         // console.log('reduced length', reducedPoints.length);
         let minArea = Math.min(...areas);
+        console.log(minArea)
         if(minArea > areaThreshold) {
             // console.log('initial length', points.length);
             // console.log('reduced length', reducedPoints.length);
             return;
         }
         let minIndex = areas.indexOf(minArea);
+        if(minArea === 0) {
+            areas[minIndex] = 10000;
+            reduceAreaPoints();
+        } else
         // console.log('minIndex-->', minIndex)
         if(minIndex > 0) {
             //check if it is a very sharp point 
@@ -351,18 +356,18 @@
         }
         if (res == 'up') {
             flag = false;
-            for(let i = 0; i < points.length; i++) {
-                reducedPoints.push(points[i]);
-            }
-            areas.push(1000000);
-            if(points.length > 1) {
-                for(let i = 1; i < points.length - 1; i++) {
-                    areas.push(area(points[i - 1], points[i], points[i + 1]));
-                }
-                areas.push(1000000);
-                reduceAreaPoints();
-                draw(reducedPoints);
-            }  
+            // for(let i = 0; i < points.length; i++) {
+            //     reducedPoints.push(points[i]);
+            // }
+            // areas.push(1000000);
+            // if(points.length > 1) {
+            //     for(let i = 1; i < points.length - 1; i++) {
+            //         areas.push(area(points[i - 1], points[i], points[i + 1]));
+            //     }
+            //     areas.push(1000000);
+            //     reduceAreaPoints();
+            //     draw(reducedPoints);
+            // }  
             points.length = 0;
             reducedPoints.length = 0;
             areas.length = 0;
@@ -375,6 +380,12 @@
                 let pos = getMousePosition(e);
                 e.preventDefault();
                 // if(Math.abs(prevX - pos.x) + Math.abs(prevY - pos.y) > 2) {
+                    if(points.length > 3) {
+                        let currArea = area(points[points.length -2], points[points.length - 1], pos);
+                        if( currArea !== 0 && currArea < areaThreshold) {
+                            points.pop();
+                        }
+                    }
                     points.push({x: pos.x, y: pos.y});
                 
                     currX = pos.x;
