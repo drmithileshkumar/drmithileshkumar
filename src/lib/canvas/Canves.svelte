@@ -377,7 +377,7 @@
                 // if(Math.abs(prevX - pos.x) + Math.abs(prevY - pos.y) > 2) {
                     if(points.length > 3) {
                         let currArea = area(points[points.length -2], points[points.length - 1], pos);
-                        if( currArea !== 0 && currArea < areaThreshold) {
+                        if( currArea > 0.5 && currArea < areaThreshold) {
                             points.pop();
                         }
                     }
