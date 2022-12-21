@@ -6,7 +6,7 @@
     export let lineWidth = 2;
     let canvas, ctx;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black'];
-    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 2, tangentThreshold = 0.01;
+    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 1, tangentThreshold = 0.01;
     let curveIndex = 0;
     onMount(() => {
         ctx = canvas.getContext('2d');
