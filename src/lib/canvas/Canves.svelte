@@ -6,7 +6,7 @@
     export let lineWidth = 2;
     let canvas, ctx;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black'];
-    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 1, tangentThreshold = 0.01;
+    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 2, tangentThreshold = 0.01;
     let curveIndex = 0;
     onMount(() => {
         ctx = canvas.getContext('2d');
@@ -81,7 +81,7 @@
     const reduceAreaPoints = () => {
         // console.log('reduced length', reducedPoints.length);
         let minArea = Math.min(...areas);
-        console.log(minArea)
+        // console.log(minArea)
         if(minArea > areaThreshold) {
             // console.log('initial length', points.length);
             // console.log('reduced length', reducedPoints.length);
@@ -169,11 +169,11 @@
     }
     function draw(givenPoints) {
         // controlPoints.length = 0;
-        // ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.putImageData(snapshot, 0, 0);
         
         ctx.beginPath();
-        // ctx.globalCompositeOperation = globalCompositeOperation;
+        ctx.globalCompositeOperation = globalCompositeOperation;
         // ctx.moveTo(prevX, prevY);
         // ctx.lineTo(currX, currY);
         ctx.moveTo(givenPoints[0].x, givenPoints[0].y)
