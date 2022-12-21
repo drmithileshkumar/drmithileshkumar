@@ -235,7 +235,7 @@
                 on:outroend={() => {isActive = -1}}
                 >
                 Let \({TeX.vec('u')}, {TeX.vec('v')}\) and \({TeX.vec('w')}\) be vectors in three-dimensional space, where \({TeX.vec('u')}\) and \({TeX.vec('v')}\) are unit vectors which are not perpendicular to each other and \[{TeX.vec('u')}\cdot {TeX.vec('w')} = 1,\quad {TeX.vec('v')}\cdot {TeX.vec('w')} = 1\quad {TeX.vec('w')}\cdot {TeX.vec('w')} = 4\]
-                If the volume of the parallelopiped, whose adjacent sides are represented by the vectors \({TeX.vec('u')}, {TeX.vec('v')}\) and \({TeX.vec('w')}\), is \({TeX.sqrt('2')}\), then the value of \(|3{TeX.vec('u')} + 5{TeX.vec('v')}|\) is ______.
+                If the volume of the parallelepiped, whose adjacent sides are represented by the vectors \({TeX.vec('u')}, {TeX.vec('v')}\) and \({TeX.vec('w')}\), is \({TeX.sqrt('2')}\), then the value of \(|3{TeX.vec('u')} + 5{TeX.vec('v')}|\) is ______.
             </p>
         {/if}
         <!-- <ol class="options">
@@ -262,7 +262,7 @@
                     style="display:flex; align-items: center; flex-wrap:wrap;"
                     >
                     <span>
-                        The volume of the parallelopiped is given by the scalar triple product of the side vectors. The scalar triple product of three vectors \({TeX.vec('a')}, {TeX.vec('b')}\) and \({TeX.vec('c')}\) is equal to {`\\[
+                        The volume of the parallelepiped is given by the scalar triple product of the side vectors. The scalar triple product of three vectors \({TeX.vec('a')}, {TeX.vec('b')}\) and \({TeX.vec('c')}\) is equal to {`\\[
                             \\vec{c}\\cdot(\\vec{a}\\times\\vec{b}) = \\left |\\begin{matrix}
                             c_1 & a_1 & b_1\\\\
                             c_2 & a_2 & b_2\\\\

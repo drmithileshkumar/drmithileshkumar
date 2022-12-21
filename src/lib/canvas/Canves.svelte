@@ -79,6 +79,7 @@
         return 0.5*Math.abs(p1.x * (p2.y - p3.y) - p2.x * (p1.y - p3.y) + p3.x * (p1.y - p2.y))
     }
     const reduceAreaPoints = () => {
+        // console.log('reduced length', reducedPoints.length);
         let minArea = Math.min(...areas);
         if(minArea > areaThreshold) {
             // console.log('initial length', points.length);
@@ -89,12 +90,10 @@
         // console.log('minIndex-->', minIndex)
         if(minIndex > 0) {
             //check if it is a very sharp point 
-            if(isSharp(minIndex)) {
-                areas[minIndex] += 1000;
-            } else {
+            
                 reducedPoints.splice(minIndex, 1);
                 areas.splice(minIndex, 1);
-                if(minIndex > 1) {
+                if(minIndex > 2) {
                     areas[minIndex - 1] = area(reducedPoints[minIndex - 2], reducedPoints[minIndex - 1], reducedPoints[minIndex]);
                 }
                 if(minIndex < reducedPoints.length - 1) {
@@ -102,7 +101,7 @@
                 }
                 
                 
-            }
+            
             reduceAreaPoints();
         }
     }
@@ -152,6 +151,17 @@
         }
         return controls;
     }
+    const intersectLines = (p1, p2, p3, p4) => {
+        let m1 = tangent(p1, p2);
+        let m2 = tangent(p3, p4);
+        let c1 =  p1.y - m1* p1.x;
+        let c2 = p3.y - m2 * p3.x;
+        let x = (c2 - c1) / (m1 - m2);
+        let y = m1*x + c1;
+        return {
+            x, y
+        }
+    }
     function draw(givenPoints) {
         // controlPoints.length = 0;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -162,17 +172,28 @@
         // ctx.moveTo(prevX, prevY);
         // ctx.lineTo(currX, currY);
         ctx.moveTo(givenPoints[0].x, givenPoints[0].y)
-        ctx.strokeStyle = strokeColor;
-        ctx.lineWidth = lineWidth;
-        ctx.lineJoin = 'round';
-        ctx.lineCap = 'round';
+        
         let i = 1;
         for(i = 1; i < givenPoints.length - 2; i++) {
-            
-                let midPoint = {
+                // let d12 = pointLength(givenPoints[i -1], givenPoints[i]);
+                // let d23 = pointLength(givenPoints[i], givenPoints[i + 1]);
+                // let d34 = pointLength(givenPoints[i + 1], givenPoints[i + 2])
+                let midPoint;
+                
+                midPoint = {
                     x: (givenPoints[i].x + givenPoints[i + 1].x)/2,
                     y: (givenPoints[i].y + givenPoints[i + 1].y)/2
                 }
+                // let shift = {
+                //     x: midPoint.x, y: midPoint.y
+                // };
+                // if(d23 > 5) {
+                //     shift = intersectLines(givenPoints[i -1], givenPoints[i], givenPoints[i + 1], givenPoints[i + 2]);
+                // }
+                // midPoint = {
+                //     x: midPoint.x + 0.01 * (shift.x - midPoint.x),
+                //     y: midPoint.y + 0.01 + (shift.y - midPoint.y)
+                // }
                 ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, midPoint.x, midPoint.y);
                 
                 // controlPoints.push({
@@ -246,37 +267,7 @@
         ctx.stroke();
         ctx.closePath();
     }
-    function drawCurve(points, tension) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.putImageData(snapshot, 0, 0);
-        
-        ctx.beginPath();
-        ctx.globalCompositeOperation = globalCompositeOperation;
-        ctx.moveTo(points[0].x, points[0].y);
-
-        var t = (tension != null) ? tension : 1;
-        for (var i = 0; i < points.length - 1; i++) {
-            var p1 = (i > 0) ? points[i - 1] : points[0];
-            var p2 = points[i];
-            var p3 = points[i + 1];
-            // var p3 = (i != points.length - 2) ? points[i + 2] : p2;
-            let d12 = pointLength(p1, p2);
-            let d23 = pointLength(p2, p3);
-            let d123 = d12 + d23;
-            let alpha = d12 / d123;
-            let beta = d23 / d123;
-
-            var cp1x = p2.x - (p3.x - p1.x) * alpha * t;
-            var cp1y = p2.y - (p3.y - p1.y) * alpha * t;
-
-            var cp2x = p2.x + (p3.x - p1.x) * beta * t;
-            var cp2y = p2.y + (p3.y - p1.y) * beta * t;
-
-            ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, p2.x, p2.y);
-        }
-        ctx.quadraticCurveTo(cp2x, cp2y, points[i].x, points[i].y);
-        ctx.stroke();
-    }
+    
     function erase() {
         var m = confirm("Want to clear");
         if (m) {
@@ -347,6 +338,10 @@
                 ctx.closePath();
                 dot_flag = false;
             }
+            ctx.strokeStyle = strokeColor;
+            ctx.lineWidth = lineWidth;
+            ctx.lineJoin = 'round';
+            ctx.lineCap = 'round';
         }
         if(res == 'out') {
             flag = false;
@@ -356,66 +351,22 @@
         }
         if (res == 'up') {
             flag = false;
-            // console.log(points.length);
-            // for(let i = 0; i < points.length; i++) {
-            //     reducedPoints.push({
-            //         x: points[i].x,
-            //         y: points[i].y
-            //     });
-                
-            // } 
-            // tangents.push({
-            //     in: tangent(points[0], points[1]),
-            //     out: tangent(points[0], points[1])
-            // })
-            // for(let i = 1; i < points.length - 1; i++) {
-            //     tangents.push({
-            //         in: tangent(points[i - 1], points[i]),
-            //         out: tangent(points[i], points[i + 1])
-            //     })
-            // }
-            // tangents.push({
-            //     in: tangent(points[points.length - 2], points[points.length - 1]),
-            //     out: tangent(points[points.length - 2], points[points.length - 1])
-            // })
-            // areas.push(1000000);
-            // if(points.length > 1) {
-            //         for(let i = 1; i < points.length - 1; i++) {
-            //         areas.push(area(points[i - 1], points[i], points[i + 1]));
-            //     }
-            //     areas.push(1000000);
-            //     reduceAreaPoints();
-                
-                
-            //     draw(reducedPoints);
-            // }
-            // console.log(points.length, reducedPoints.length)
-            // compute bezier control points {tin, tout}
+            for(let i = 0; i < points.length; i++) {
+                reducedPoints.push(points[i]);
+            }
+            areas.push(1000000);
             if(points.length > 1) {
-                // let cp0 = cubicControls(points[0], points[0], points[1])
-                // controlPoints.push({
-                //     tout: {
-                //         x: cp0.tout.x,
-                //         y: cp0.tout.y
-                //     },
-                //     tin: {
-                //         x: cp0.tin.x,
-                //         y: cp0.tin.y
-                //     }
-                // })
-                // let i = 1;
-                // controlPoints.push(cubicControls(points[0], points[0], points[1]));
-                // for(i = 1; i < points.length - 1; i++) {
-                //     controlPoints.push(cubicControls(points[i - 1], points[i], points[i + 1]));
-                // }
-                // controlPoints.push(cubicControls(points[i - 1], points[i - 1], points[i]));
-                // drawSmooth(points);
-                drawCurve(points, 0.3);
-            }   
+                for(let i = 1; i < points.length - 1; i++) {
+                    areas.push(area(points[i - 1], points[i], points[i + 1]));
+                }
+                areas.push(1000000);
+                reduceAreaPoints();
+                draw(reducedPoints);
+            }  
             points.length = 0;
             reducedPoints.length = 0;
             areas.length = 0;
-            controlPoints.length = 0;
+
         }
         if (res == 'move') {
             if (flag) {

@@ -26,7 +26,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     "",
     true
   ) + " svelte-12wnmib"}">Let \\(${escape(TeX.vec("u"))}, ${escape(TeX.vec("v"))}\\) and \\(${escape(TeX.vec("w"))}\\) be vectors in three-dimensional space, where \\(${escape(TeX.vec("u"))}\\) and \\(${escape(TeX.vec("v"))}\\) are unit vectors which are not perpendicular to each other and \\[${escape(TeX.vec("u"))}\\cdot ${escape(TeX.vec("w"))} = 1,\\quad ${escape(TeX.vec("v"))}\\cdot ${escape(TeX.vec("w"))} = 1\\quad ${escape(TeX.vec("w"))}\\cdot ${escape(TeX.vec("w"))} = 4\\]
-                If the volume of the parallelopiped, whose adjacent sides are represented by the vectors \\(${escape(TeX.vec("u"))}, ${escape(TeX.vec("v"))}\\) and \\(${escape(TeX.vec("w"))}\\), is \\(${escape(TeX.sqrt("2"))}\\), then the value of \\(|3${escape(TeX.vec("u"))} + 5${escape(TeX.vec("v"))}|\\) is ______.
+                If the volume of the parallelepiped, whose adjacent sides are represented by the vectors \\(${escape(TeX.vec("u"))}, ${escape(TeX.vec("v"))}\\) and \\(${escape(TeX.vec("w"))}\\), is \\(${escape(TeX.sqrt("2"))}\\), then the value of \\(|3${escape(TeX.vec("u"))} + 5${escape(TeX.vec("v"))}|\\) is ______.
             </p>`}
         
         <section>${`<h2 class="${escape(
@@ -36,7 +36,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 <p class="${escape(
     null_to_empty(""),
     true
-  ) + " svelte-12wnmib"}" style="${"display:flex; align-items: center; flex-wrap:wrap;"}"><span>The volume of the parallelopiped is given by the scalar triple product of the side vectors. The scalar triple product of three vectors \\(${escape(TeX.vec("a"))}, ${escape(TeX.vec("b"))}\\) and \\(${escape(TeX.vec("c"))}\\) is equal to ${escape(`\\[
+  ) + " svelte-12wnmib"}" style="${"display:flex; align-items: center; flex-wrap:wrap;"}"><span>The volume of the parallelepiped is given by the scalar triple product of the side vectors. The scalar triple product of three vectors \\(${escape(TeX.vec("a"))}, ${escape(TeX.vec("b"))}\\) and \\(${escape(TeX.vec("c"))}\\) is equal to ${escape(`\\[
                             \\vec{c}\\cdot(\\vec{a}\\times\\vec{b}) = \\left |\\begin{matrix}
                             c_1 & a_1 & b_1\\\\
                             c_2 & a_2 & b_2\\\\
@@ -124,4 +124,4 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-0a9aca12.js.map
+//# sourceMappingURL=_page.svelte-c2d7dce2.js.map
