@@ -17,7 +17,7 @@
     let presentation, overlay;
     let presentationMode = false;
     let counter = 9;
-    let current = -1;
+    let current = -2;
     let isActive = -1; 
     let nextStep = 0;
     let autoscroll = false;
@@ -120,8 +120,8 @@
     }
     .absolute {
         margin: auto;
-        width: 90vw;
-        height: min(80vh, 60vw);
+        /* width: 90vw; */
+        height: min(78vh, 60vw);
         /* height: min(70vh,600px); */
         overflow-y: auto;
         scrollbar-width: none;
@@ -149,16 +149,16 @@
     .overlay {
         position: absolute;
         z-index: 2;
-        left: 1em;
+        left: 0.5em;
         top: 0;
         margin: auto;
-        width: 89vw;
-        height: min(80vh, 60vw);
+        width: calc(100% - 2em);
+        height: min(78vh, 60vw);
         /* height: min(70vh,600px); */
         overflow-y: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
-        padding: 0 1em 0 1em;
+        /* padding: 0 1em 0 1em; */
     }
     .colors {
         display: flex;
@@ -175,6 +175,25 @@
         display: flex;
         align-items: center;
         gap: 1em;
+    }
+    /* .displayStyle {
+        font-size: 2em;
+        transition: all 1s;
+    } */
+    .thumbnail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        height: 100%;
+        
+    }
+    .statement {
+        background: radial-gradient(#3300ff91, rgb(0, 252, 164));
+        color: rgb(246, 246, 246);
+        text-shadow: 1px 1px 3px rgb(4, 4, 4);
+        box-shadow: 1px 1px 3px rgb(129, 128, 128);
+        padding: 1em;
     }
 </style>
 <svelte:head>
@@ -223,9 +242,24 @@
         
     {/if}
     <article class:absolute={presentationMode} bind:this={presentation} bind:clientWidth={W} bind:clientHeight={H}>
+        {#if presentationMode && current === -2}
+        <div class="thumbnail">
+            <p 
+                class="question statement" 
+                transition:fly="{{ x: 200, duration: 1000}}"
+                on:introstart={() => {isActive = -1}}
+                on:introend={() => {isActive = current}}
+                on:outroend={() => {isActive = -1}}
+                >
+                Let \({TeX.vec('u')}, {TeX.vec('v')}\) and \({TeX.vec('w')}\) be vectors in three-dimensional space, where \({TeX.vec('u')}\) and \({TeX.vec('v')}\) are unit vectors which are not perpendicular to each other and \[{TeX.vec('u')}\cdot {TeX.vec('w')} = 1,\quad {TeX.vec('v')}\cdot {TeX.vec('w')} = 1\quad {TeX.vec('w')}\cdot {TeX.vec('w')} = 4\]
+                If the volume of the parallelepiped, whose adjacent sides are represented by the vectors \({TeX.vec('u')}, {TeX.vec('v')}\) and \({TeX.vec('w')}\), is \({TeX.sqrt('2')}\), then the value of \(|3{TeX.vec('u')} + 5{TeX.vec('v')}|\) is ______.
+            </p>
+        </div>
             
-        
+        {/if}    
+        {#if !presentationMode || current >= -1}
         <h1>Question 1 [JEE adv, 2021]</h1>
+        {/if}
         {#if !presentationMode || current >= 0}
             <p 
                 class="question {presentationMode && isActive === 0 ? 'currentActive': ''}" 
