@@ -144,8 +144,13 @@
       "_constants.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-4f491ae3.css"
+      "_app/immutable/assets/_page-1edf6b63.css"
     ]
+  },
+  "src/routes/iit/maths/question2/+page.js": {
+    "file": "entries/pages/iit/maths/question2/_page.js",
+    "src": "src/routes/iit/maths/question2/+page.js",
+    "isEntry": true
   },
   "src/routes/iit/maths/question3/+page.svelte": {
     "file": "entries/pages/iit/maths/question3/_page.svelte.js",

@@ -7,7 +7,7 @@
     import {ripple} from '$lib/ui/ripple';
     import {TeX} from '$lib/utils/common/constants';
 	import Canves from '$lib/canvas/Canves.svelte';
-	import { svg_element } from 'svelte/internal';
+	
     let W, H;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black', 'eraser'];
     let strokeColor = 'black', lineWidth = 2;
@@ -243,19 +243,18 @@
     {/if}
     <article class:absolute={presentationMode} bind:this={presentation} bind:clientWidth={W} bind:clientHeight={H}>
         {#if presentationMode && current === -2}
-        <div class="thumbnail">
-            <p 
-                class="question statement" 
-                transition:fly="{{ x: 200, duration: 1000}}"
-                on:introstart={() => {isActive = -1}}
-                on:introend={() => {isActive = current}}
-                on:outroend={() => {isActive = -1}}
-                >
-                Let \({TeX.vec('u')}, {TeX.vec('v')}\) and \({TeX.vec('w')}\) be vectors in three-dimensional space, where \({TeX.vec('u')}\) and \({TeX.vec('v')}\) are unit vectors which are not perpendicular to each other and \[{TeX.vec('u')}\cdot {TeX.vec('w')} = 1,\quad {TeX.vec('v')}\cdot {TeX.vec('w')} = 1\quad {TeX.vec('w')}\cdot {TeX.vec('w')} = 4\]
-                If the volume of the parallelepiped, whose adjacent sides are represented by the vectors \({TeX.vec('u')}, {TeX.vec('v')}\) and \({TeX.vec('w')}\), is \({TeX.sqrt('2')}\), then the value of \(|3{TeX.vec('u')} + 5{TeX.vec('v')}|\) is ______.
-            </p>
-        </div>
-            
+            <div class="thumbnail">
+                <p 
+                    class="question statement" 
+                    transition:fly="{{ x: 200, duration: 1000}}"
+                    on:introstart={() => {isActive = -1}}
+                    on:introend={() => {isActive = current}}
+                    on:outroend={() => {isActive = -1}}
+                    >
+                    Let \({TeX.vec('u')}, {TeX.vec('v')}\) and \({TeX.vec('w')}\) be vectors in three-dimensional space, where \({TeX.vec('u')}\) and \({TeX.vec('v')}\) are unit vectors which are not perpendicular to each other and \[{TeX.vec('u')}\cdot {TeX.vec('w')} = 1,\quad {TeX.vec('v')}\cdot {TeX.vec('w')} = 1\quad {TeX.vec('w')}\cdot {TeX.vec('w')} = 4\]
+                    If the volume of the parallelepiped, whose adjacent sides are represented by the vectors \({TeX.vec('u')}, {TeX.vec('v')}\) and \({TeX.vec('w')}\), is \({TeX.sqrt('2')}\), then the value of \(|3{TeX.vec('u')} + 5{TeX.vec('v')}|\) is ______.
+                </p>
+            </div>
         {/if}    
         {#if !presentationMode || current >= -1}
         <h1>Question 1 [JEE adv, 2021]</h1>
