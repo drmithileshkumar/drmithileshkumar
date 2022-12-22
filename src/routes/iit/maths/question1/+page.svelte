@@ -184,12 +184,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 2em;
+        font-size: 2.5em;
         height: 100%;
         
     }
     .statement {
-        background: radial-gradient(#3300ff91, rgb(0, 252, 164));
+        background: radial-gradient(#6000c091, rgb(0, 93, 180));
         color: rgb(246, 246, 246);
         text-shadow: 1px 1px 3px rgb(4, 4, 4);
         box-shadow: 1px 1px 3px rgb(129, 128, 128);
