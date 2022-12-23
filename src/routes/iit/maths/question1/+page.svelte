@@ -247,10 +247,6 @@
             <div class="thumbnail">
                 <p 
                     class="question statement" 
-                    transition:fly="{{ x: 200, duration: 1000}}"
-                    on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
-                    on:outroend={() => {isActive = -1}}
                     >
                     Let \({TeX.vec('u')}, {TeX.vec('v')}\) and \({TeX.vec('w')}\) be vectors in three-dimensional space, where \({TeX.vec('u')}\) and \({TeX.vec('v')}\) are unit vectors which are not perpendicular to each other and \[{TeX.vec('u')}\cdot {TeX.vec('w')} = 1,\quad {TeX.vec('v')}\cdot {TeX.vec('w')} = 1\quad {TeX.vec('w')}\cdot {TeX.vec('w')} = 4\]
                     If the volume of the parallelepiped, whose adjacent sides are represented by the vectors \({TeX.vec('u')}, {TeX.vec('v')}\) and \({TeX.vec('w')}\), is \({TeX.sqrt('2')}\), then the value of \(|3{TeX.vec('u')} + 5{TeX.vec('v')}|\) is ______.
