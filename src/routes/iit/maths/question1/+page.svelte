@@ -121,6 +121,7 @@
     .absolute {
         margin: auto;
         /* width: 90vw; */
+        width: 100%;
         height: min(78vh, 60vw);
         /* height: min(70vh,600px); */
         overflow-y: auto;
@@ -695,6 +696,13 @@
                 <div class="pad"></div>
             {/if}
         </section>
+        <!-- {#if !presentationMode}
+        <section>
+            <h1>Alternate Solution</h1>
+
+        </section>
+            
+        {/if} -->
     </article>
     {#if presentationMode}
         <!-- svelte-ignore a11y-click-events-have-key-events -->
