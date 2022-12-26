@@ -1,0 +1,1 @@
+async function e({session:o,fetch:s,params:a,url:t}){return t.host==="drmithileshkumar.com"||t.host==="localhost:5173"||t.host==="localhost:3000"?{props:{}}:{status:301,redirect:`https://drmithileshkumar.com${t.pathname}`}}const r=Object.freeze(Object.defineProperty({__proto__:null,load:e},Symbol.toStringTag,{value:"Module"}));export{r as _,e as l};

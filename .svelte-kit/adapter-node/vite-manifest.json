@@ -103,6 +103,23 @@
     "src": "src/routes/iit/+page.js",
     "isEntry": true
   },
+  "src/routes/iit/conic/+page.svelte": {
+    "file": "entries/pages/iit/conic/_page.svelte.js",
+    "src": "src/routes/iit/conic/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-a9b1ea67.css"
+    ]
+  },
+  "src/routes/iit/conic/+page.js": {
+    "file": "entries/pages/iit/conic/_page.js",
+    "src": "src/routes/iit/conic/+page.js",
+    "isEntry": true
+  },
   "src/routes/iit/maths/+page.svelte": {
     "file": "entries/pages/iit/maths/_page.svelte.js",
     "src": "src/routes/iit/maths/+page.svelte",

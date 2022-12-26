@@ -36,5 +36,6 @@
         </p>
     </Message> -->
     <Link href={`/iit/maths`}>Mathematics</Link>
+    <Link href='/iit/conic'>Conic Section</Link>
     <br>
 </article>

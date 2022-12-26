@@ -27,6 +27,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `Mathematics`;
     }
   })}
+    ${validate_component(Link, "Link").$$render($$result, { href: "/iit/conic" }, {}, {
+    default: () => {
+      return `Conic Section`;
+    }
+  })}
     <br></article>`;
 });
 export {
