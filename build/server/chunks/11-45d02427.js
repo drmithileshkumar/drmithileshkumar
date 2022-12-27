@@ -18,9 +18,9 @@ var _page = /*#__PURE__*/Object.freeze({
 const index = 11;
 const component = async () => (await import('./_page.svelte-f2a37058.js')).default;
 const file = '_app/immutable/components/pages/iit/maths/question2/_page.svelte-8078df60.js';
-const imports = ["_app/immutable/components/pages/iit/maths/question2/_page.svelte-8078df60.js","_app/immutable/chunks/index-7de01425.js","_app/immutable/chunks/stores-96e71e18.js","_app/immutable/chunks/singletons-475264f0.js","_app/immutable/chunks/index-c32cc651.js","_app/immutable/chunks/ripple-9e3ee767.js","_app/immutable/chunks/constants-79d6a0a7.js","_app/immutable/chunks/Canves-3ae18ed9.js","_app/immutable/modules/pages/iit/maths/question2/_page.js-a3f2a831.js","_app/immutable/chunks/_page-6e69c3b7.js"];
+const imports = ["_app/immutable/components/pages/iit/maths/question2/_page.svelte-8078df60.js","_app/immutable/chunks/index-7de01425.js","_app/immutable/chunks/stores-96e71e18.js","_app/immutable/chunks/singletons-475264f0.js","_app/immutable/chunks/index-c32cc651.js","_app/immutable/chunks/ripple-9e3ee767.js","_app/immutable/chunks/constants-79d6a0a7.js","_app/immutable/chunks/Canves-3ae18ed9.js","_app/immutable/modules/pages/iit/maths/question2/_page.js-a3f2a831.js","_app/immutable/chunks/_page-67494e69.js"];
 const stylesheets = ["_app/immutable/assets/_page-80bf8356.css"];
 const fonts = [];
 
 export { component, file, fonts, imports, index, stylesheets, _page as universal };
-//# sourceMappingURL=11-4b0c03f9.js.map
+//# sourceMappingURL=11-45d02427.js.map
