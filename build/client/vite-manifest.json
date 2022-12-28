@@ -3,37 +3,49 @@
     "file": "_app/immutable/assets/_layout-9585c0ea.css",
     "src": "src/routes/+layout.css"
   },
-  "src/routes/iit/conic/+page.css": {
-    "file": "_app/immutable/assets/_page-31554461.css",
-    "src": "src/routes/iit/conic/+page.css"
+  "src/routes/iit/maths/question2/+page.css": {
+    "file": "_app/immutable/assets/_page-80bf8356.css",
+    "src": "src/routes/iit/maths/question2/+page.css"
   },
-  "Link.css": {
-    "file": "_app/immutable/assets/Link-e8543c1a.css",
-    "src": "Link.css"
-  },
-  "src/routes/iit/maths/question5/+page.css": {
-    "file": "_app/immutable/assets/_page-90a427e0.css",
-    "src": "src/routes/iit/maths/question5/+page.css"
+  "src/routes/iit/maths/question1/+page.css": {
+    "file": "_app/immutable/assets/_page-d4a1b0bd.css",
+    "src": "src/routes/iit/maths/question1/+page.css"
   },
   "Papers.css": {
     "file": "_app/immutable/assets/Papers-f64e7629.css",
     "src": "Papers.css"
   },
-  "src/routes/cv/+page.css": {
-    "file": "_app/immutable/assets/_page-8eab1ee2.css",
-    "src": "src/routes/cv/+page.css"
+  "src/routes/iit/conic/+page.css": {
+    "file": "_app/immutable/assets/_page-31554461.css",
+    "src": "src/routes/iit/conic/+page.css"
   },
   "src/routes/practice/+page.css": {
     "file": "_app/immutable/assets/_page-7f2b6be5.css",
     "src": "src/routes/practice/+page.css"
   },
+  "src/routes/iit/maths/+layout.css": {
+    "file": "_app/immutable/assets/_layout-96e1b1b9.css",
+    "src": "src/routes/iit/maths/+layout.css"
+  },
+  "src/routes/iit/maths/question5/+page.css": {
+    "file": "_app/immutable/assets/_page-90a427e0.css",
+    "src": "src/routes/iit/maths/question5/+page.css"
+  },
+  "Link.css": {
+    "file": "_app/immutable/assets/Link-e8543c1a.css",
+    "src": "Link.css"
+  },
   "src/routes/iit/maths/question4/+page.css": {
     "file": "_app/immutable/assets/_page-c1110dee.css",
     "src": "src/routes/iit/maths/question4/+page.css"
   },
-  "src/routes/iit/maths/+layout.css": {
-    "file": "_app/immutable/assets/_layout-96e1b1b9.css",
-    "src": "src/routes/iit/maths/+layout.css"
+  "src/routes/cv/+page.css": {
+    "file": "_app/immutable/assets/_page-8eab1ee2.css",
+    "src": "src/routes/cv/+page.css"
+  },
+  "src/routes/practice/+layout.css": {
+    "file": "_app/immutable/assets/_layout-5f77238b.css",
+    "src": "src/routes/practice/+layout.css"
   },
   "src/routes/+page.css": {
     "file": "_app/immutable/assets/_page-d90079f6.css",
@@ -43,87 +55,24 @@
     "file": "_app/immutable/assets/_page-75b15002.css",
     "src": "src/routes/iit/maths/+page.css"
   },
-  "src/routes/practice/+layout.css": {
-    "file": "_app/immutable/assets/_layout-5f77238b.css",
-    "src": "src/routes/practice/+layout.css"
-  },
   "src/routes/iit/maths/question3/+page.css": {
     "file": "_app/immutable/assets/_page-0a47cc31.css",
     "src": "src/routes/iit/maths/question3/+page.css"
   },
-  "src/routes/iit/maths/question1/+page.css": {
-    "file": "_app/immutable/assets/_page-d4a1b0bd.css",
-    "src": "src/routes/iit/maths/question1/+page.css"
-  },
-  "src/routes/iit/maths/question2/+page.css": {
-    "file": "_app/immutable/assets/_page-80bf8356.css",
-    "src": "src/routes/iit/maths/question2/+page.css"
-  },
-  ".svelte-kit/generated/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-94546845.js",
-    "src": ".svelte-kit/generated/nodes/6.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/cv/+page.svelte"
-    ]
-  },
-  "src/routes/iit/conic/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/conic/_page.js-867b53d4.js",
-    "src": "src/routes/iit/conic/+page.js",
+  "src/routes/iit/maths/question2/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/maths/question2/_page.js-a3f2a831.js",
+    "src": "src/routes/iit/maths/question2/+page.js",
     "isEntry": true,
     "imports": [
-      "__page-962e2290.js"
+      "__page-67494e69.js"
     ]
   },
-  ".svelte-kit/generated/nodes/7.js": {
-    "file": "_app/immutable/chunks/7-638f9195.js",
-    "src": ".svelte-kit/generated/nodes/7.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-d60006af.js",
-      "src/routes/iit/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/8.js": {
-    "file": "_app/immutable/chunks/8-83ec29b0.js",
-    "src": ".svelte-kit/generated/nodes/8.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-962e2290.js",
-      "src/routes/iit/conic/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/13.js": {
-    "file": "_app/immutable/chunks/13-4fbf025d.js",
-    "src": ".svelte-kit/generated/nodes/13.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/iit/maths/question4/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/11.js": {
-    "file": "_app/immutable/chunks/11-1b9931e6.js",
-    "src": ".svelte-kit/generated/nodes/11.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-67494e69.js",
-      "src/routes/iit/maths/question2/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-3c6a3bb5.js",
-    "src": ".svelte-kit/generated/nodes/5.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/+page.svelte"
-    ]
-  },
-  "src/routes/iit/maths/question1/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/maths/question1/_page.js-a3f2a831.js",
-    "src": "src/routes/iit/maths/question1/+page.js",
+  "src/routes/practice/+page.js": {
+    "file": "_app/immutable/modules/pages/practice/_page.js-3e937eca.js",
+    "src": "src/routes/practice/+page.js",
     "isEntry": true,
     "imports": [
-      "__page-6e69c3b7.js"
+      "__page-1e2ef877.js"
     ]
   },
   "src/routes/iit/+page.js": {
@@ -134,20 +83,43 @@
       "__page-d60006af.js"
     ]
   },
-  ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-c634df77.js",
-    "src": ".svelte-kit/generated/nodes/0.js",
+  "__page-962e2290.js": {
+    "file": "_app/immutable/chunks/_page-962e2290.js"
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-8897b6a7.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/+layout.svelte"
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
     ]
   },
-  ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-5d15690d.js",
-    "src": ".svelte-kit/generated/nodes/2.js",
+  "__page-67494e69.js": {
+    "file": "_app/immutable/chunks/_page-67494e69.js"
+  },
+  ".svelte-kit/generated/nodes/5.js": {
+    "file": "_app/immutable/chunks/5-3c6a3bb5.js",
+    "src": ".svelte-kit/generated/nodes/5.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/cv/+layout.svelte"
+      "src/routes/+page.svelte"
+    ]
+  },
+  "src/routes/iit/conic/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/conic/_page.js-867b53d4.js",
+    "src": "src/routes/iit/conic/+page.js",
+    "isEntry": true,
+    "imports": [
+      "__page-962e2290.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/8.js": {
+    "file": "_app/immutable/chunks/8-c1d378a8.js",
+    "src": ".svelte-kit/generated/nodes/8.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-962e2290.js",
+      "src/routes/iit/conic/+page.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/15.js": {
@@ -158,12 +130,30 @@
       "src/routes/iit/maths/question6/+page.svelte"
     ]
   },
-  ".svelte-kit/generated/nodes/12.js": {
-    "file": "_app/immutable/chunks/12-ba03e862.js",
-    "src": ".svelte-kit/generated/nodes/12.js",
+  "__page-1e2ef877.js": {
+    "file": "_app/immutable/chunks/_page-1e2ef877.js"
+  },
+  "_index-c32cc651.js": {
+    "file": "_app/immutable/chunks/index-c32cc651.js",
+    "imports": [
+      "_index-7de01425.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-c634df77.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/iit/maths/question3/+page.svelte"
+      "src/routes/+layout.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/10.js": {
+    "file": "_app/immutable/chunks/10-77cd4d4e.js",
+    "src": ".svelte-kit/generated/nodes/10.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-6e69c3b7.js",
+      "src/routes/iit/maths/question1/+page.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/14.js": {
@@ -174,64 +164,10 @@
       "src/routes/iit/maths/question5/+page.svelte"
     ]
   },
-  "__page-962e2290.js": {
-    "file": "_app/immutable/chunks/_page-962e2290.js"
-  },
   "_stores-a5d0773a.js": {
     "file": "_app/immutable/chunks/stores-a5d0773a.js",
     "imports": [
       "_index-c32cc651.js"
-    ]
-  },
-  "_ripple-9e3ee767.js": {
-    "file": "_app/immutable/chunks/ripple-9e3ee767.js",
-    "imports": [
-      "_index-7de01425.js"
-    ]
-  },
-  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-47f68fd9.js",
-    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-7de01425.js",
-      "_stores-96e71e18.js"
-    ]
-  },
-  "__page-67494e69.js": {
-    "file": "_app/immutable/chunks/_page-67494e69.js"
-  },
-  ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-c27d0d3f.js",
-    "src": ".svelte-kit/generated/nodes/4.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/practice/+layout.svelte"
-    ]
-  },
-  "src/routes/iit/maths/question2/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/maths/question2/_page.js-a3f2a831.js",
-    "src": "src/routes/iit/maths/question2/+page.js",
-    "isEntry": true,
-    "imports": [
-      "__page-67494e69.js"
-    ]
-  },
-  "_index-c32cc651.js": {
-    "file": "_app/immutable/chunks/index-c32cc651.js",
-    "imports": [
-      "_index-7de01425.js"
-    ]
-  },
-  "__page-d60006af.js": {
-    "file": "_app/immutable/chunks/_page-d60006af.js"
-  },
-  ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-8897b6a7.js",
-    "src": ".svelte-kit/generated/nodes/1.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/16.js": {
@@ -243,11 +179,27 @@
       "src/routes/practice/+page.svelte"
     ]
   },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-5d15690d.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/cv/+layout.svelte"
+    ]
+  },
+  "_constants-79d6a0a7.js": {
+    "file": "_app/immutable/chunks/constants-79d6a0a7.js"
+  },
   "__page-6e69c3b7.js": {
     "file": "_app/immutable/chunks/_page-6e69c3b7.js"
   },
-  "__page-1e2ef877.js": {
-    "file": "_app/immutable/chunks/_page-1e2ef877.js"
+  ".svelte-kit/generated/nodes/12.js": {
+    "file": "_app/immutable/chunks/12-ba03e862.js",
+    "src": ".svelte-kit/generated/nodes/12.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/iit/maths/question3/+page.svelte"
+    ]
   },
   ".svelte-kit/generated/nodes/9.js": {
     "file": "_app/immutable/chunks/9-a7bce70b.js",
@@ -257,16 +209,12 @@
       "src/routes/iit/maths/+page.svelte"
     ]
   },
-  "_constants-79d6a0a7.js": {
-    "file": "_app/immutable/chunks/constants-79d6a0a7.js"
-  },
-  ".svelte-kit/generated/nodes/10.js": {
-    "file": "_app/immutable/chunks/10-77cd4d4e.js",
-    "src": ".svelte-kit/generated/nodes/10.js",
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-d9007398.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-6e69c3b7.js",
-      "src/routes/iit/maths/question1/+page.svelte"
+      "src/routes/iit/maths/+layout.svelte"
     ]
   },
   "src/routes/cv/+layout.svelte": {
@@ -277,13 +225,89 @@
       "_index-7de01425.js"
     ]
   },
-  "src/routes/practice/+page.js": {
-    "file": "_app/immutable/modules/pages/practice/_page.js-3e937eca.js",
-    "src": "src/routes/practice/+page.js",
+  "__page-d60006af.js": {
+    "file": "_app/immutable/chunks/_page-d60006af.js"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "_app/immutable/components/error.svelte-47f68fd9.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
-      "__page-1e2ef877.js"
+      "_index-7de01425.js",
+      "_stores-96e71e18.js"
     ]
+  },
+  ".svelte-kit/generated/nodes/13.js": {
+    "file": "_app/immutable/chunks/13-4fbf025d.js",
+    "src": ".svelte-kit/generated/nodes/13.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/iit/maths/question4/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/6.js": {
+    "file": "_app/immutable/chunks/6-94546845.js",
+    "src": ".svelte-kit/generated/nodes/6.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/cv/+page.svelte"
+    ]
+  },
+  "src/routes/iit/maths/question1/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/maths/question1/_page.js-a3f2a831.js",
+    "src": "src/routes/iit/maths/question1/+page.js",
+    "isEntry": true,
+    "imports": [
+      "__page-6e69c3b7.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/11.js": {
+    "file": "_app/immutable/chunks/11-1b9931e6.js",
+    "src": ".svelte-kit/generated/nodes/11.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-67494e69.js",
+      "src/routes/iit/maths/question2/+page.svelte"
+    ]
+  },
+  "_singletons-475264f0.js": {
+    "file": "_app/immutable/chunks/singletons-475264f0.js",
+    "imports": [
+      "_index-c32cc651.js"
+    ]
+  },
+  "_ripple-9e3ee767.js": {
+    "file": "_app/immutable/chunks/ripple-9e3ee767.js",
+    "imports": [
+      "_index-7de01425.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/7.js": {
+    "file": "_app/immutable/chunks/7-638f9195.js",
+    "src": ".svelte-kit/generated/nodes/7.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-d60006af.js",
+      "src/routes/iit/+page.svelte"
+    ]
+  },
+  "_stores-96e71e18.js": {
+    "file": "_app/immutable/chunks/stores-96e71e18.js",
+    "imports": [
+      "_index-7de01425.js",
+      "_singletons-475264f0.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/4.js": {
+    "file": "_app/immutable/chunks/4-c27d0d3f.js",
+    "src": ".svelte-kit/generated/nodes/4.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/practice/+layout.svelte"
+    ]
+  },
+  "_preload-helper-41c905a7.js": {
+    "file": "_app/immutable/chunks/preload-helper-41c905a7.js"
   },
   "src/routes/iit/+page.svelte": {
     "file": "_app/immutable/components/pages/iit/_page.svelte-8be83755.js",
@@ -296,63 +320,10 @@
       "_app/immutable/assets/Link-e8543c1a.css"
     ]
   },
-  "_stores-96e71e18.js": {
-    "file": "_app/immutable/chunks/stores-96e71e18.js",
-    "imports": [
-      "_index-7de01425.js",
-      "_singletons-475264f0.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-d9007398.js",
-    "src": ".svelte-kit/generated/nodes/3.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/iit/maths/+layout.svelte"
-    ]
-  },
-  "_preload-helper-41c905a7.js": {
-    "file": "_app/immutable/chunks/preload-helper-41c905a7.js"
-  },
   "_Canves-3ae18ed9.js": {
     "file": "_app/immutable/chunks/Canves-3ae18ed9.js",
     "imports": [
       "_index-7de01425.js"
-    ]
-  },
-  "_singletons-475264f0.js": {
-    "file": "_app/immutable/chunks/singletons-475264f0.js",
-    "imports": [
-      "_index-c32cc651.js"
-    ]
-  },
-  "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-ed7acb9c.js",
-    "src": "src/routes/+layout.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-7de01425.js",
-      "_index-c32cc651.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_layout-9585c0ea.css"
-    ]
-  },
-  "_index-7de01425.js": {
-    "file": "_app/immutable/chunks/index-7de01425.js"
-  },
-  "src/lib/pages/practice/sets.js": {
-    "file": "_app/immutable/chunks/sets-454b3bdb.js",
-    "src": "src/lib/pages/practice/sets.js",
-    "isDynamicEntry": true
-  },
-  "_Papers-03444fe0.js": {
-    "file": "_app/immutable/chunks/Papers-03444fe0.js",
-    "imports": [
-      "_index-7de01425.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Papers-f64e7629.css"
     ]
   },
   "src/routes/iit/maths/+layout.svelte": {
@@ -367,48 +338,52 @@
       "_app/immutable/assets/_layout-96e1b1b9.css"
     ]
   },
-  "src/routes/practice/+page.svelte": {
-    "file": "_app/immutable/components/pages/practice/_page.svelte-ba21108c.js",
-    "src": "src/routes/practice/+page.svelte",
+  "src/routes/+layout.svelte": {
+    "file": "_app/immutable/components/pages/_layout.svelte-ed7acb9c.js",
+    "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
       "_index-7de01425.js",
-      "_stores-a5d0773a.js",
       "_index-c32cc651.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-7f2b6be5.css",
-      "_app/immutable/assets/Link-e8543c1a.css"
+      "_app/immutable/assets/_layout-9585c0ea.css"
     ]
   },
-  "src/routes/iit/maths/question6/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/question6/_page.svelte-20620802.js",
-    "src": "src/routes/iit/maths/question6/+page.svelte",
+  "src/lib/pages/practice/sets.js": {
+    "file": "_app/immutable/chunks/sets-454b3bdb.js",
+    "src": "src/lib/pages/practice/sets.js",
+    "isDynamicEntry": true
+  },
+  "_index-7de01425.js": {
+    "file": "_app/immutable/chunks/index-7de01425.js"
+  },
+  "src/routes/iit/maths/question2/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/question2/_page.svelte-8078df60.js",
+    "src": "src/routes/iit/maths/question2/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-7de01425.js",
       "_stores-96e71e18.js",
       "_ripple-9e3ee767.js",
-      "_constants-79d6a0a7.js"
+      "_constants-79d6a0a7.js",
+      "_Canves-3ae18ed9.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-c1110dee.css"
+      "_app/immutable/assets/_page-80bf8356.css"
     ]
   },
-  "src/routes/cv/+page.svelte": {
-    "file": "_app/immutable/components/pages/cv/_page.svelte-1da117fb.js",
-    "src": "src/routes/cv/+page.svelte",
-    "isEntry": true,
+  "_Papers-03444fe0.js": {
+    "file": "_app/immutable/chunks/Papers-03444fe0.js",
     "imports": [
-      "_index-7de01425.js",
-      "_Papers-03444fe0.js"
+      "_index-7de01425.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-8eab1ee2.css"
+      "_app/immutable/assets/Papers-f64e7629.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-fcdd4125.js",
+    "file": "_app/immutable/start-d926485c.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -436,20 +411,6 @@
       ".svelte-kit/generated/nodes/16.js"
     ]
   },
-  "src/routes/iit/maths/question4/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/question4/_page.svelte-47474415.js",
-    "src": "src/routes/iit/maths/question4/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-7de01425.js",
-      "_stores-96e71e18.js",
-      "_ripple-9e3ee767.js",
-      "_constants-79d6a0a7.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-c1110dee.css"
-    ]
-  },
   "src/routes/iit/maths/question5/+page.svelte": {
     "file": "_app/immutable/components/pages/iit/maths/question5/_page.svelte-699235d4.js",
     "src": "src/routes/iit/maths/question5/+page.svelte",
@@ -462,6 +423,20 @@
     ],
     "css": [
       "_app/immutable/assets/_page-90a427e0.css"
+    ]
+  },
+  "src/routes/practice/+page.svelte": {
+    "file": "_app/immutable/components/pages/practice/_page.svelte-ba21108c.js",
+    "src": "src/routes/practice/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-7de01425.js",
+      "_stores-a5d0773a.js",
+      "_index-c32cc651.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-7f2b6be5.css",
+      "_app/immutable/assets/Link-e8543c1a.css"
     ]
   },
   "src/routes/practice/+layout.svelte": {
@@ -478,19 +453,6 @@
     ],
     "css": [
       "_app/immutable/assets/_layout-5f77238b.css"
-    ]
-  },
-  "src/routes/iit/maths/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/_page.svelte-f782d105.js",
-    "src": "src/routes/iit/maths/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-7de01425.js",
-      "_constants-79d6a0a7.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-75b15002.css",
-      "_app/immutable/assets/Link-e8543c1a.css"
     ]
   },
   "src/routes/+page.svelte": {
@@ -519,19 +481,57 @@
       "_app/immutable/assets/_page-0a47cc31.css"
     ]
   },
-  "src/routes/iit/maths/question2/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/question2/_page.svelte-8078df60.js",
-    "src": "src/routes/iit/maths/question2/+page.svelte",
+  "src/routes/iit/maths/question6/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/question6/_page.svelte-20620802.js",
+    "src": "src/routes/iit/maths/question6/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-7de01425.js",
       "_stores-96e71e18.js",
       "_ripple-9e3ee767.js",
-      "_constants-79d6a0a7.js",
-      "_Canves-3ae18ed9.js"
+      "_constants-79d6a0a7.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-80bf8356.css"
+      "_app/immutable/assets/_page-c1110dee.css"
+    ]
+  },
+  "src/routes/iit/maths/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/_page.svelte-f782d105.js",
+    "src": "src/routes/iit/maths/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-7de01425.js",
+      "_constants-79d6a0a7.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-75b15002.css",
+      "_app/immutable/assets/Link-e8543c1a.css"
+    ]
+  },
+  "src/routes/cv/+page.svelte": {
+    "file": "_app/immutable/components/pages/cv/_page.svelte-1da117fb.js",
+    "src": "src/routes/cv/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-7de01425.js",
+      "_Papers-03444fe0.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-8eab1ee2.css"
+    ]
+  },
+  "src/routes/iit/maths/question4/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/question4/_page.svelte-47474415.js",
+    "src": "src/routes/iit/maths/question4/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-7de01425.js",
+      "_stores-96e71e18.js",
+      "_ripple-9e3ee767.js",
+      "_constants-79d6a0a7.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-c1110dee.css"
     ]
   },
   "src/routes/iit/maths/question1/+page.svelte": {
@@ -550,7 +550,7 @@
     ]
   },
   "src/routes/iit/conic/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/conic/_page.svelte-42e4b0b4.js",
+    "file": "_app/immutable/components/pages/iit/conic/_page.svelte-dfefe89a.js",
     "src": "src/routes/iit/conic/+page.svelte",
     "isEntry": true,
     "imports": [
