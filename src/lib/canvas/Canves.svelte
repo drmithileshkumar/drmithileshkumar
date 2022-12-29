@@ -6,7 +6,7 @@
     export let lineWidth = 2;
     let canvas, ctx;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black'];
-    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 1, tangentThreshold = 0.01;
+    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 2, tangentThreshold = 0.01;
     let curveIndex = 0;
     onMount(() => {
         ctx = canvas.getContext('2d');
@@ -167,36 +167,57 @@
             x, y
         }
     }
+    function gradient(a, b) {
+        return (b.y-a.y)/(b.x-a.x);
+    }
+    
+    function bzCurve(points, f, t) {
+        if (typeof(f) == 'undefined') f = 0.3;
+        if (typeof(t) == 'undefined') t = 0.6;
+        
+        ctx.beginPath();
+        ctx.moveTo(points[0].x, points[0].y);
+        
+        var m = 0;
+        var dx1 = 0;
+        var dy1 = 0;
+        let dx2 = 0;
+        let dy2 = 0;
+        var preP = points[0];
+    
+        for (var i = 1; i < points.length; i++) {
+            var curP = points[i];
+            var nexP = points[i + 1];
+            if (nexP) {
+                m = gradient(preP, nexP);
+                dx2 = (nexP.x - curP.x) * -f;
+                dy2 = dx2 * m * t;
+            } else {
+                dx2 = 0;
+                dy2 = 0;
+            }
+                
+            ctx.bezierCurveTo(
+                preP.x - dx1, preP.y - dy1,
+                curP.x + dx2, curP.y + dy2,
+                curP.x, curP.y
+            );
+            
+            dx1 = dx2;
+            dy1 = dy2;
+            preP = curP;
+        }
+        ctx.stroke();
+    }
     function draw(givenPoints) {
         // controlPoints.length = 0;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.putImageData(snapshot, 0, 0);
-        
+        ctx.setLineDash([0]);
+        // bzCurve(givenPoints, 0.01, 10)
         ctx.beginPath();
         ctx.globalCompositeOperation = globalCompositeOperation;
-        // ctx.moveTo(prevX, prevY);
-        // ctx.lineTo(currX, currY);
         ctx.moveTo(givenPoints[0].x, givenPoints[0].y)
-        // let l = 0;
-        // while(l < givenPoints.length) {
-        //     if(l + 1 > 2) {
-        //         let prevMidPoint = {
-        //                 x: (givenPoints[l - 2].x + givenPoints[l - 1].x)/2,
-        //                 y: (givenPoints[l - 2].y + givenPoints[l - 1].y)/2
-        //             }
-        //         let newMidPoint = {
-        //             x: (givenPoints[l - 1].x + givenPoints[l].x)/2,
-        //             y: (givenPoints[l - 1].y + givenPoints[l].y)/2
-        //         }
-        //         ctx.moveTo(prevMidPoint.x, prevMidPoint.y);
-        //         ctx.quadraticCurveTo(givenPoints[l - 1].x, givenPoints[l -1].y, newMidPoint.x, newMidPoint.y);
-        //     } else {
-        //         ctx.quadraticCurveTo(givenPoints[l].x, givenPoints[l].y, givenPoints[l].x, givenPoints[l].y);
-        //     }
-        //     l++;
-        // }
-        
-        
         let i = 1;
         for(i = 1; i < givenPoints.length - 2; i++) {
                 let midPoint;
@@ -377,7 +398,7 @@
                 // if(Math.abs(prevX - pos.x) + Math.abs(prevY - pos.y) > 2) {
                     if(points.length > 3) {
                         let currArea = area(points[points.length -2], points[points.length - 1], pos);
-                        if( currArea !== 0 && currArea < areaThreshold) {
+                        if( currArea > 0 && currArea < areaThreshold) {
                             points.pop();
                         }
                     }
