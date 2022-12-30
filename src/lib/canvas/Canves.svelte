@@ -7,9 +7,18 @@
     let canvas, ctx;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black'];
     let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 2, tangentThreshold = 0.01;
+    let boundingRect = {
+        left: 0,
+        top: 0
+    }
+    let scaleX = 1, scaleY = 1;
     let curveIndex = 0;
     onMount(() => {
-        ctx = canvas.getContext('2d');
+        ctx = canvas.getContext('2d', { willReadFrequently: true });
+        // boundingRect = canvas.getBoundingClientRect();
+        // console.log(boundingRect)
+        // scaleX = canvas.width/boundingRect.width;
+        // scaleY = canvas.height/boundingRect.height;
         init();
     })
     var flag = false,
@@ -171,61 +180,69 @@
         return (b.y-a.y)/(b.x-a.x);
     }
     
-    function bzCurve(points, f, t) {
-        if (typeof(f) == 'undefined') f = 0.3;
-        if (typeof(t) == 'undefined') t = 0.6;
-        
-        ctx.beginPath();
-        ctx.moveTo(points[0].x, points[0].y);
-        
-        var m = 0;
-        var dx1 = 0;
-        var dy1 = 0;
-        let dx2 = 0;
-        let dy2 = 0;
-        var preP = points[0];
-    
-        for (var i = 1; i < points.length; i++) {
-            var curP = points[i];
-            var nexP = points[i + 1];
-            if (nexP) {
-                m = gradient(preP, nexP);
-                dx2 = (nexP.x - curP.x) * -f;
-                dy2 = dx2 * m * t;
-            } else {
-                dx2 = 0;
-                dy2 = 0;
-            }
-                
-            ctx.bezierCurveTo(
-                preP.x - dx1, preP.y - dy1,
-                curP.x + dx2, curP.y + dy2,
-                curP.x, curP.y
-            );
-            
-            dx1 = dx2;
-            dy1 = dy2;
-            preP = curP;
+    let control = (P0, P, P1, t) => {
+        if(t == 0) return P0;
+        if(t == 1) return P1;
+        return {
+            x: (P.x - (1 - t)*(1 - t)*P0.x - t*t*P1.x)/(2*t*(1 - t)),
+            y: (P.y - (1 - t)*(1 - t)*P0.y - t*t*P1.y)/(2*t*(1 - t))
         }
-        ctx.stroke();
+    }
+    let stLine = (P1, P2) => {
+        let m = tangent(P1, P2);
+        let k = P1.y - m * P1.x;
+        return {
+            m, k
+        }
+    }
+    let computeTime = (C0, P0, P, P1) => {
+        let line = stLine(C0, P0);
+        return Math.sqrt((P.y - line.m * P.x - line.k)/(P1.y - line.m * P1.x - line.k))
+    }
+    let extendedControl = (C0, P0, P1) => {
+        let l1 = pointLength(C0, P0);
+        let l2 = pointLength(P0, P1);
+        return {
+            x: (P0.x - l2/(2*l1)*(C0.x - P0.x)),
+            y: (P0.y - l2/(2*l1)*(C0.y - P0.y))
+        }
+    }
+    let drawThrough = (points) => {
+        let l = points.length;
+        let i = 0;
+        if(l > 3) {
+            for(i = 3; i < l; i++) {
+                if(i == 3) {
+                    let t = pointLength(points[1], points[0])/pointLength(points[2], points[0])
+                    let c = control()
+                }
+            }
+        }
     }
     function draw(givenPoints) {
         // controlPoints.length = 0;
+        // console.log(controlPoints)
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.putImageData(snapshot, 0, 0);
-        ctx.setLineDash([0]);
+        // ctx.setLineDash([0]);
         // bzCurve(givenPoints, 0.01, 10)
         ctx.beginPath();
         ctx.globalCompositeOperation = globalCompositeOperation;
         ctx.moveTo(givenPoints[0].x, givenPoints[0].y)
         let i = 1;
         for(i = 1; i < givenPoints.length - 2; i++) {
-                let midPoint;
-                midPoint = {
-                    x: (givenPoints[i].x + givenPoints[i + 1].x)/2,
-                    y: (givenPoints[i].y + givenPoints[i + 1].y)/2
-                }
-                ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, midPoint.x, midPoint.y);
+                // let midPoint;
+                // midPoint = {
+                //     x: (givenPoints[i].x + givenPoints[i + 1].x)/2,
+                //     y: (givenPoints[i].y + givenPoints[i + 1].y)/2
+                // }
+                // ctx.quadraticCurveTo(controlPoints[i - 1].x, controlPoints[i - 1].y, givenPoints[i].x, givenPoints[i].y);
+                // if(i % 3 === 2) {
+                //     let j = Math.floor(i/3)
+                //     ctx.quadraticCurveTo(controlPoints[j].x, controlPoints[j].y, givenPoints[i].x, givenPoints[i].y);
+                // }
+                ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, controlPoints[i - 1].x, controlPoints[i - 1].y);    
+                // ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, midPoint.x, midPoint.y);
         }
         if(givenPoints.length > 2) 
             ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, givenPoints[i + 1].x, givenPoints[i + 1].y);
@@ -307,6 +324,8 @@
         let rect = canvas.getBoundingClientRect();
         let scaleX = canvas.width/rect.width;
         let scaleY = canvas.height/rect.height;
+        // console.log(canvas.width/boundingRect.width, canvas.height/boundingRect.height)
+        // console.log(scaleX, scaleY)
         let clientx;
         let clienty;
         switch(evt.type) {
@@ -327,6 +346,11 @@
                 break;
             }
         }
+        // console.log(clientx, clienty)
+        // return {
+        //     x: clientx,
+        //     y: clienty
+        // }
         return {
             x: (clientx - rect.left) * scaleX,
             y: (clienty - rect.top) * scaleY
@@ -369,6 +393,7 @@
             points.length = 0;
             reducedPoints.length = 0;
             areas.length = 0;
+            controlPoints.length = 0;
         }
         if (res == 'up') {
             flag = false;
@@ -387,25 +412,40 @@
             points.length = 0;
             reducedPoints.length = 0;
             areas.length = 0;
-
+            controlPoints.length = 0;
         }
         if (res == 'move') {
             if (flag) {
-                prevX = currX;
-                prevY = currY;
+                // prevX = currX;
+                // prevY = currY;
                 let pos = getMousePosition(e);
                 e.preventDefault();
                 // if(Math.abs(prevX - pos.x) + Math.abs(prevY - pos.y) > 2) {
-                    if(points.length > 3) {
-                        let currArea = area(points[points.length -2], points[points.length - 1], pos);
-                        if( currArea > 0 && currArea < areaThreshold) {
-                            points.pop();
-                        }
-                    }
+                   
                     points.push({x: pos.x, y: pos.y});
+                    let n = points.length;
+                    if(n > 2) {
+                        controlPoints.push( {
+                            x: (points[n - 2].x + points[n - 1].x)/2,
+                            y: (points[n - 2].y + points[n - 1].y)/2
+                        })
+                    }
+                    // if(points.length > 3) {
+                    //     let currArea = area(points[points.length -2], points[points.length - 1], pos);
+                    //     if( currArea > 0 && currArea < areaThreshold) {
+                    //         points.pop();
+                    //     }
+                    // }
                     // snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
-                    currX = pos.x;
-                    currY = pos.y;
+                    // push control points here only one for each 3 points
+                    // let n = points.length;
+                    // if(n > 2) {
+                    //     controlPoints.push(extendedControl(controlPoints[controlPoints.length - 1], points[n - 2], points[n - 1]))
+                    // } else if(n == 2) {
+                    //     controlPoints.push(points[0])
+                    // }
+                    // currX = pos.x;
+                    // currY = pos.y;
                     draw(points);
                 // }
             }
