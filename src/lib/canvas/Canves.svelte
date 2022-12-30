@@ -6,7 +6,7 @@
     export let lineWidth = 2;
     let canvas, ctx;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black'];
-    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 2, tangentThreshold = 0.01;
+    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 2, tangentThreshold = 0.01, animeFrame;
     let boundingRect = {
         left: 0,
         top: 0
@@ -219,37 +219,40 @@
             }
         }
     }
-    function draw(givenPoints) {
-        // controlPoints.length = 0;
-        // console.log(controlPoints)
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.putImageData(snapshot, 0, 0);
-        // ctx.setLineDash([0]);
-        // bzCurve(givenPoints, 0.01, 10)
-        ctx.beginPath();
-        ctx.globalCompositeOperation = globalCompositeOperation;
-        ctx.moveTo(givenPoints[0].x, givenPoints[0].y)
-        let i = 1;
-        for(i = 1; i < givenPoints.length - 2; i++) {
-                // let midPoint;
-                // midPoint = {
-                //     x: (givenPoints[i].x + givenPoints[i + 1].x)/2,
-                //     y: (givenPoints[i].y + givenPoints[i + 1].y)/2
-                // }
-                // ctx.quadraticCurveTo(controlPoints[i - 1].x, controlPoints[i - 1].y, givenPoints[i].x, givenPoints[i].y);
-                // if(i % 3 === 2) {
-                //     let j = Math.floor(i/3)
-                //     ctx.quadraticCurveTo(controlPoints[j].x, controlPoints[j].y, givenPoints[i].x, givenPoints[i].y);
-                // }
-                ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, controlPoints[i - 1].x, controlPoints[i - 1].y);    
-                // ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, midPoint.x, midPoint.y);
-        }
-        if(givenPoints.length > 2) 
-            ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, givenPoints[i + 1].x, givenPoints[i + 1].y);
-        else ctx.quadraticCurveTo(givenPoints[i].x, givenPoints[i].y, givenPoints[i].x, givenPoints[i].y);
+    function draw() {
+        if(points.length > 0) {
+            // controlPoints.length = 0;
+            // console.log(controlPoints)
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.putImageData(snapshot, 0, 0);
+            // ctx.setLineDash([0]);
+            // bzCurve(points, 0.01, 10)
+            ctx.beginPath();
+            ctx.globalCompositeOperation = globalCompositeOperation;
+            ctx.moveTo(points[0].x, points[0].y)
+            let i = 1;
+            for(i = 1; i < points.length - 2; i++) {
+                    // let midPoint;
+                    // midPoint = {
+                    //     x: (points[i].x + points[i + 1].x)/2,
+                    //     y: (points[i].y + points[i + 1].y)/2
+                    // }
+                    // ctx.quadraticCurveTo(controlPoints[i - 1].x, controlPoints[i - 1].y, points[i].x, points[i].y);
+                    // if(i % 3 === 2) {
+                    //     let j = Math.floor(i/3)
+                    //     ctx.quadraticCurveTo(controlPoints[j].x, controlPoints[j].y, points[i].x, points[i].y);
+                    // }
+                    ctx.quadraticCurveTo(points[i].x, points[i].y, controlPoints[i - 1].x, controlPoints[i - 1].y);    
+                    // ctx.quadraticCurveTo(points[i].x, points[i].y, midPoint.x, midPoint.y);
+            }
+            if(points.length > 2) 
+                ctx.quadraticCurveTo(points[i].x, points[i].y, points[i + 1].x, points[i + 1].y);
+            else ctx.quadraticCurveTo(points[i].x, points[i].y, points[i].x, points[i].y);
 
-        ctx.stroke();
-        ctx.closePath();
+            ctx.stroke();
+            ctx.closePath();
+        }
+        
     }
     function drawSmooth(givenPoints) {
         // controlPoints.length = 0;
@@ -387,6 +390,7 @@
             ctx.lineWidth = lineWidth;
             ctx.lineJoin = 'round';
             ctx.lineCap = 'round';
+            animeFrame = requestAnimationFrame(draw);
         }
         if(res == 'out') {
             flag = false;
@@ -394,6 +398,7 @@
             reducedPoints.length = 0;
             areas.length = 0;
             controlPoints.length = 0;
+            cancelAnimationFrame(animeFrame)
         }
         if (res == 'up') {
             flag = false;
@@ -413,6 +418,7 @@
             reducedPoints.length = 0;
             areas.length = 0;
             controlPoints.length = 0;
+            cancelAnimationFrame(animeFrame)
         }
         if (res == 'move') {
             if (flag) {
@@ -446,7 +452,7 @@
                     // }
                     // currX = pos.x;
                     // currY = pos.y;
-                    draw(points);
+                    requestAnimationFrame(draw);
                 // }
             }
         }
