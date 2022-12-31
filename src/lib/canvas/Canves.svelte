@@ -34,6 +34,7 @@
         ctx = canvas.getContext("2d", {willReadFrequently: true});
         width = canvas.width;
         height = canvas.height;
+        // ctx.globalCompositeOperation = globalCompositeOperation;
     
         canvas.addEventListener("mousemove", function (e) {
             findxy('move', e)
@@ -222,7 +223,7 @@
     function draw() {
         if(points.length > 0) {
             // controlPoints.length = 0;
-            // console.log(controlPoints)
+            // console.log(points.length)
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.putImageData(snapshot, 0, 0);
             // ctx.setLineDash([0]);
@@ -231,7 +232,8 @@
             ctx.globalCompositeOperation = globalCompositeOperation;
             ctx.moveTo(points[0].x, points[0].y)
             let i = 1;
-            for(i = 1; i < points.length - 2; i++) {
+            let n = points.length;
+            for(i = 1; i < n - 2; i++) {
                     // let midPoint;
                     // midPoint = {
                     //     x: (points[i].x + points[i + 1].x)/2,
@@ -245,7 +247,7 @@
                     ctx.quadraticCurveTo(points[i].x, points[i].y, controlPoints[i - 1].x, controlPoints[i - 1].y);    
                     // ctx.quadraticCurveTo(points[i].x, points[i].y, midPoint.x, midPoint.y);
             }
-            if(points.length > 2) 
+            if(n > 2) 
                 ctx.quadraticCurveTo(points[i].x, points[i].y, points[i + 1].x, points[i + 1].y);
             else ctx.quadraticCurveTo(points[i].x, points[i].y, points[i].x, points[i].y);
 
@@ -324,9 +326,9 @@
         document.getElementById("canvasimg").style.display = "inline";
     }
     const getMousePosition = (evt) => {
-        let rect = canvas.getBoundingClientRect();
-        let scaleX = canvas.width/rect.width;
-        let scaleY = canvas.height/rect.height;
+        // let rect = canvas.getBoundingClientRect();
+        // let scaleX = canvas.width/rect.width;
+        // let scaleY = canvas.height/rect.height;
         // console.log(canvas.width/boundingRect.width, canvas.height/boundingRect.height)
         // console.log(scaleX, scaleY)
         let clientx;
@@ -355,8 +357,8 @@
         //     y: clienty
         // }
         return {
-            x: (clientx - rect.left) * scaleX,
-            y: (clienty - rect.top) * scaleY
+            x: (clientx - boundingRect.left) * scaleX,
+            y: (clienty - boundingRect.top) * scaleY
         }
     }
     const getCanvasCoords = (screenX, screenY) => {
@@ -369,11 +371,11 @@
     }
     function findxy(res, e) {
         if (res == 'down') {
-            prevX = currX;
-            prevY = currY;
+            boundingRect = canvas.getBoundingClientRect();
+            scaleX = canvas.width/boundingRect.width;
+            scaleY = canvas.height/boundingRect.height;
+            // console.log(scaleX, scaleY)
             let pos = getMousePosition(e);
-            currX = pos.x;
-            currY = pos.y;
             snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
             points.push({x: pos.x, y: pos.y});
             flag = true;
@@ -381,7 +383,7 @@
             if (dot_flag) {
                 ctx.beginPath();
                 ctx.fillStyle = strokeColor;
-                ctx.ellipse(currX, currY, lineWidth/2, lineWidth/2, 0, 0, 2 * Math.PI);
+                ctx.ellipse(pos.x, pos.y, lineWidth/2, lineWidth/2, 0, 0, 2 * Math.PI);
                 ctx.fill();
                 ctx.closePath();
                 dot_flag = false;
@@ -390,7 +392,7 @@
             ctx.lineWidth = lineWidth;
             ctx.lineJoin = 'round';
             ctx.lineCap = 'round';
-            animeFrame = requestAnimationFrame(draw);
+            // animeFrame = requestAnimationFrame(draw);
         }
         if(res == 'out') {
             flag = false;
@@ -402,18 +404,7 @@
         }
         if (res == 'up') {
             flag = false;
-            // for(let i = 0; i < points.length; i++) {
-            //     reducedPoints.push(points[i]);
-            // }
-            // areas.push(1000000);
-            // if(points.length > 1) {
-            //     for(let i = 1; i < points.length - 1; i++) {
-            //         areas.push(area(points[i - 1], points[i], points[i + 1]));
-            //     }
-            //     areas.push(1000000);
-            //     reduceAreaPoints();
-            //     draw(reducedPoints);
-            // }  
+            
             points.length = 0;
             reducedPoints.length = 0;
             areas.length = 0;
@@ -422,79 +413,24 @@
         }
         if (res == 'move') {
             if (flag) {
-                // prevX = currX;
-                // prevY = currY;
+                
                 let pos = getMousePosition(e);
                 e.preventDefault();
-                // if(Math.abs(prevX - pos.x) + Math.abs(prevY - pos.y) > 2) {
-                   
-                    points.push({x: pos.x, y: pos.y});
-                    let n = points.length;
-                    if(n > 2) {
-                        controlPoints.push( {
-                            x: (points[n - 2].x + points[n - 1].x)/2,
-                            y: (points[n - 2].y + points[n - 1].y)/2
-                        })
-                    }
-                    // if(points.length > 3) {
-                    //     let currArea = area(points[points.length -2], points[points.length - 1], pos);
-                    //     if( currArea > 0 && currArea < areaThreshold) {
-                    //         points.pop();
-                    //     }
-                    // }
-                    // snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
-                    // push control points here only one for each 3 points
-                    // let n = points.length;
-                    // if(n > 2) {
-                    //     controlPoints.push(extendedControl(controlPoints[controlPoints.length - 1], points[n - 2], points[n - 1]))
-                    // } else if(n == 2) {
-                    //     controlPoints.push(points[0])
-                    // }
-                    // currX = pos.x;
-                    // currY = pos.y;
-                    requestAnimationFrame(draw);
-                // }
+
+                points.push({x: pos.x, y: pos.y});
+                let n = points.length;
+                if(n > 2) {
+                    controlPoints.push( {
+                        x: (points[n - 2].x + points[n - 1].x)/2,
+                        y: (points[n - 2].y + points[n - 1].y)/2
+                    })
+                }
+                requestAnimationFrame(draw);
+                
             }
         }
     }
-    // let mouseX = 0;
-    // let mouseY = 0;
-    // const getMousePosition = (evt) => {
-    //     let rect = canvas.getBoundingClientRect();
-    //     let scaleX = canvas.width/rect.width;
-    //     let scaleY = canvas.height/rect.height;
-    //     return {
-    //         x: (evt.clientX - rect.left) * scaleX,
-    //         y: (evt.clientY - rect.top) * scaleY
-    //     }
-    // }
-    // const getCanvasCoords = (screenX, screenY) => {
-    //     let matrix = ctx.getTransform();
-    //     let inv = matrix.inverseSelf();
-    //     return {
-    //         x: screenX * inv.a + screenY * inv.c + inv.e,
-    //         y: screenY * inv.b + screenY * inv.d + inv.f
-    //     }
-    // }
-    // const handleMouse = (evt) => {
-    //     let {x, y} = getMousePosition(evt);
-    //     mouseX = x;
-    //     mouseY = y;
-    // }
-    // const start = () => {
-    //     canvas.addEventListener('mousemove', (evt) => findxy('move', evt));
-    //     canvas.addEventListener('mousedown', (evt) => findxy('down', evt));
-    //     canvas.addEventListener('mouseup', (evt) => findxy('up', evt));
-    //     canvas.addEventListener('mouseleave', (evt) => findxy('out', evt));
-    //     let rect = canvas.getBoundingClientRect();
-    //     canvas.width = rect.width;
-    //     canvas.height = rect.height;
-    //     draw();
-    // }
-
-    // const draw = () => {
-
-    // }
+    
 </script>
 <!-- <div class="colors">
     {#each colors as color}

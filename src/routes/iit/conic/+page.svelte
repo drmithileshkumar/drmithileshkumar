@@ -235,7 +235,24 @@
             </div>
             <div class="lineWidth">
                 <label>Stroke <input style="width: 4em; height: 1em; padding-left: 0.5em; padding-right: 0.5em;" type="number" step="0.1" bind:value={lineWidth}></label>
-                
+                <svg width="20" height="20" viewBox="0 0 20 20" on:click={() => lineWidth = 2} style="cursor:pointer">
+                    {#if lineWidth === 2}
+                        <circle cx="10" cy="10" r="4" fill="none" stroke="black" stroke-width=1 />
+                    {/if}
+                    <circle cx="10" cy="10" r="2" fill="black" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" on:click={() => lineWidth = 4} style="cursor:pointer">
+                    {#if lineWidth === 4}
+                        <circle cx="10" cy="10" r="6" fill="none" stroke="black" stroke-width=1 />
+                    {/if}
+                    <circle cx="10" cy="10" r="4" fill="black" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" on:click={() => lineWidth = 20} style="cursor:pointer">
+                    {#if lineWidth === 20}
+                        <circle cx="10" cy="10" r="9" fill="none" stroke="black" stroke-width=1 />
+                    {/if}
+                    <circle cx="10" cy="10" r="7" fill="black" />
+                </svg>
             </div>
         {/if}
     </div>

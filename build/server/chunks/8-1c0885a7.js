@@ -17,10 +17,10 @@ var _page = /*#__PURE__*/Object.freeze({
 
 const index = 8;
 const component = async () => (await import('./_page.svelte-179114b8.js')).default;
-const file = '_app/immutable/components/pages/iit/conic/_page.svelte-449ebb71.js';
-const imports = ["_app/immutable/components/pages/iit/conic/_page.svelte-449ebb71.js","_app/immutable/chunks/index-7de01425.js","_app/immutable/chunks/stores-96e71e18.js","_app/immutable/chunks/singletons-475264f0.js","_app/immutable/chunks/index-c32cc651.js","_app/immutable/chunks/ripple-9e3ee767.js","_app/immutable/chunks/Canves-56cbf034.js","_app/immutable/modules/pages/iit/conic/_page.js-867b53d4.js","_app/immutable/chunks/_page-962e2290.js"];
+const file = '_app/immutable/components/pages/iit/conic/_page.svelte-d1f4c45a.js';
+const imports = ["_app/immutable/components/pages/iit/conic/_page.svelte-d1f4c45a.js","_app/immutable/chunks/index-7de01425.js","_app/immutable/chunks/stores-96e71e18.js","_app/immutable/chunks/singletons-475264f0.js","_app/immutable/chunks/index-c32cc651.js","_app/immutable/chunks/ripple-9e3ee767.js","_app/immutable/chunks/Canves-394ee85a.js","_app/immutable/modules/pages/iit/conic/_page.js-867b53d4.js","_app/immutable/chunks/_page-6e69c3b7.js"];
 const stylesheets = ["_app/immutable/assets/_page-31554461.css"];
 const fonts = [];
 
 export { component, file, fonts, imports, index, stylesheets, _page as universal };
-//# sourceMappingURL=8-bd9fe07b.js.map
+//# sourceMappingURL=8-1c0885a7.js.map

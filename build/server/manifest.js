@@ -4,7 +4,7 @@ const manifest = {
 	assets: new Set(["app.css","circle_demo/circle.png","circle_demo/circle_anime.mp4","circle_demo/Cone-equation.png","circle_demo/Cone.png","circle_demo/conics.png","circle_demo/Conic_anime.mp4","circle_demo/Conic_deg.mp4","circle_demo/ellipse_anime.mp4","circle_demo/hyperbola_anime.mp4","circle_demo/IIT21Q1.png","circle_demo/orthocenter.png","circle_demo/parabola_anime.mp4","circle_demo/Plane.png","circle_demo/Tangents.png","circle_demo/threepointcircle.png","CMIMedal.jpg","cmithesis.pdf","common.css","dark.css","favicon.png","IITMSc.jpg","LCPath.svg","light.css","mithileshkumar.png","photo_cv.jpg","profilephoto.jpeg","robots copy.txt","robots.txt","santa.svg","svelte-welcome.png","svelte-welcome.webp","thesis.pdf","webdutIcon.png"]),
 	mimeTypes: {".css":"text/css",".png":"image/png",".mp4":"video/mp4",".jpg":"image/jpeg",".pdf":"application/pdf",".svg":"image/svg+xml",".jpeg":"image/jpeg",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		entry: {"file":"_app/immutable/start-74334dba.js","imports":["_app/immutable/start-74334dba.js","_app/immutable/chunks/index-7de01425.js","_app/immutable/chunks/singletons-475264f0.js","_app/immutable/chunks/index-c32cc651.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-8531ca32.js","imports":["_app/immutable/start-8531ca32.js","_app/immutable/chunks/index-7de01425.js","_app/immutable/chunks/singletons-475264f0.js","_app/immutable/chunks/index-c32cc651.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./chunks/0-0f9d4494.js'),
 			() => import('./chunks/1-ca215fe1.js'),
@@ -14,10 +14,10 @@ const manifest = {
 			() => import('./chunks/5-7eb2f769.js'),
 			() => import('./chunks/6-c3e22439.js'),
 			() => import('./chunks/7-fc712e94.js'),
-			() => import('./chunks/8-bd9fe07b.js'),
+			() => import('./chunks/8-1c0885a7.js'),
 			() => import('./chunks/9-cca7f043.js'),
-			() => import('./chunks/10-71bc32ad.js'),
-			() => import('./chunks/11-00eee7f3.js'),
+			() => import('./chunks/10-2d0e5cb9.js'),
+			() => import('./chunks/11-47ba40e7.js'),
 			() => import('./chunks/12-32fcc6fb.js'),
 			() => import('./chunks/13-f4ddcbb5.js'),
 			() => import('./chunks/14-bfbff474.js'),
