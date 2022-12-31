@@ -107,8 +107,7 @@ export const posLIneqN = (a, b) => {
             for(let i = 1; i < b/a; i++)
             sols.push(i);
         }
-        sols.shift('\\{');
-        sols.push('\\}');
+        sols = ['\\{', ...sols, '\\}']
         return sols;
     }
 }
@@ -125,8 +124,7 @@ export const posLEIneqN = (a, b) => {
             for(let i = 1; i <= b/a; i++)
             sols.push(i);
         }
-        sols.shift('\\{');
-        sols.push('\\}');
+        sols = ['\\{', ...sols, '\\}']
         return sols;
     }
 }
@@ -143,8 +141,7 @@ export const posLIneqZp = (a, b) => {
             for(let i = 0; i < b/a; i++)
             sols.push(i);
         }
-        sols.shift('\\{');
-        sols.push('\\}');
+        sols = ['\\{', ...sols, '\\}']
         return sols;
     }
 }
@@ -161,8 +158,7 @@ export const posLEIneqZp = (a, b) => {
             for(let i = 0; i <= b/a; i++)
             sols.push(i);
         }
-        sols.shift('\\{');
-        sols.push('\\}');
+        sols = ['\\{', ...sols, '\\}']
         return sols;
     }
 }
@@ -176,9 +172,7 @@ export const posLIneqQp = (a, b) => {
     else {
         let f = new Q(b, a);
         f.reduced();
-        sols = [0, f];
-        sols.shift('[');
-        sols.push(')');
+        sols = ['[', 0, f, ')']
         return sols;
     }
 }
@@ -191,9 +185,7 @@ export const posLEIneqQp = (a, b) => {
     else {
         let f = new Q(b, a);
         f.reduced();
-        sols = [0, f];
-        sols.shift('[');
-        sols.push(']');
+        sols = ['[', 0, f, ']']
         return sols;
     }
 }
@@ -204,9 +196,7 @@ export const posLIneqRp = (a, b) => {
         return sols;
     }
     else {
-        sols = [0, b/a];
-        sols.shift('[');
-        sols.push(')');
+        sols = ['[', 0, (b/a).toFixed(2), ')']
         return sols;
     }
 }
@@ -217,14 +207,12 @@ export const posLEIneqRp = (a, b) => {
         return sols;
     }
     else {
-        sols = [0, b/a];
-        sols.shift('[');
-        sols.push(']');
+        sols = ['[', 0, (b/a).toFixed(2), ']']
         return sols;
     }
 }
 export const posLIneqZ = (a, b) => {
-    return b % a != 0 ? ['(', '-\\infty', Math.floor(b/a), ']'] : ['(', '-\\infty', Math.floor(b/a) - 1, ')'];
+    return ['(', '-\\infty', Math.floor(b/a) - 1, ')'];
 }
 export const posLEIneqZ = (a, b) => {
     return ['(', '-\\infty', Math.floor(b/a), ']'];
@@ -240,10 +228,10 @@ export const posLEIneqQ = (a, b) => {
     return ['(', '-\\infty', f, ']'];
 }
 export const posLIneqR = (a, b) => {
-    return ['(', '-\\infty', b/a, ')'];
+    return ['(', '-\\infty', (b/a).toFixed(2), ')'];
 }
 export const posLEIneqR = (a, b) => {
-    return ['(', '-\\infty', b/a, ']'];
+    return ['(', '-\\infty', (b/a).toFixed(2), ']'];
 }
 export const posGIneq = (a, b, set) => {
     let sols = [];
@@ -320,19 +308,23 @@ export const posGEIneqZp = (a, b) => {
     return sols;
 }
 export const posGIneqQp = (a, b) => {
-    let sols = b < 0 ? [ '[',0, '\\infty', ')'] : ['(', (new Q(b, a)).reduced(), '\\infty', ')'];
+    let f = new Q(b, a);
+    f.reduced();
+    let sols = b < 0 ? [ '[',0, '\\infty', ')'] : ['(', f, '\\infty', ')'];
     return sols;
 }
 export const posGEIneqQp = (a, b) => {
-    let sols = b < 0 ? [ '[',0, '\\infty', ')'] : ['[', (new Q(b, a)).reduced(), '\\infty', ')'];
+    let f = new Q(b, a);
+    f.reduced();
+    let sols = b < 0 ? [ '[',0, '\\infty', ')'] : ['[', f, '\\infty', ')'];
     return sols;
 }
 export const posGIneqRp = (a, b) => {
-    let sols = b < 0 ? [ '[',0, '\\infty', ')'] : ['(', b/a, '\\infty', ')'];
+    let sols = b < 0 ? [ '[',0, '\\infty', ')'] : ['(', (b/a).toFixed(2), '\\infty', ')'];
     return sols;
 }
 export const posGEIneqRp = (a, b) => {
-    let sols = b < 0 ? [ '[',0, '\\infty', ')'] : ['[', b/a, '\\infty', ')'];
+    let sols = b < 0 ? [ '[',0, '\\infty', ')'] : ['[', (b/a).toFixed(2), '\\infty', ')'];
     return sols;
 }
 export const posGIneqZ = (a, b) => {
@@ -356,23 +348,30 @@ export const posGEIneqQ = (a, b) => {
     return ['[', f, '\\infty', ')'];
 }
 export const posGIneqR = (a, b) => {
-    return ['(', b/a, '\\infty', ')'];
+    return ['(', (b/a).toFixed(2), '\\infty', ')'];
 }
 export const posGEIneqR = (a, b) => {
-    return ['[', b/a, '\\infty', ')'];
+    return ['[', (b/a).toFixed(2), '\\infty', ')'];
 }
 export const solString = (sols, set) => {
     let str = '';
     if(sols.length > 2) {
-        if(set == 'Q' || set == 'Qp') {
-            str = sols[1] == '\\infty' || sols[1] == '-\\infty' ? sols[0] + sols[1] +', '+ sols[2].str() + sols[3] : sols[0] + sols[1].str() +', '+ sols[2] + sols[3];
-        } else {
+        // console.log(typeof sols[1], typeof sols[2]);
+        if(typeof sols[1] === 'object') {
+            sols[1] = sols[1].str();
+        }
+        if(typeof sols[2] === 'object') {
+            sols[2] = sols[2].str();
+        }
+        // if(set == 'Q' || set == 'Qp') {
+        //     str = sols[1] == '\\infty' || sols[1] == '-\\infty' ? sols[0] + sols[1] +', '+ sols[2].str() + sols[3] : sols[0] + sols[1].str() +', '+ sols[2] + sols[3];
+        // } else {
             str = sols[0];
             for(let i = 1; i < sols.length - 2; i++) {
                 str += sols[i] + ', ';
             }
             str += sols[sols.length - 2] + sols[sols.length - 1];
-        }
+        // }
     } else {
         str = '\\{\\}';
     }

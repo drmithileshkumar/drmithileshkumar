@@ -11,24 +11,16 @@ const chapters = [
   "Binomial theorem",
   "Sequences and series",
   "Straight lines",
-  "Conic sections",
+  "Circle",
+  "Ellipse",
+  "Parabola",
+  "Hyperbola",
   "Indroduction to 3D geometry",
-  "Limits and derivatives",
+  "Limits",
+  "Derivatives",
   "Mathematical reasoning",
   "Statistics",
-  "Probability",
-  "Relations and functions 12",
-  "Inverse trigonometric functions",
-  "Matrices",
-  "Determinants",
-  "Continuity and differentiability",
-  "Application of derivatives",
-  "Integrals",
-  "Application of integrals",
-  "Differential equations",
-  "Vector algebra",
-  "Three dimensional geometry",
-  "Linear programming"
+  "Probability"
 ];
 const selectedChapter = writable("");
 const selectedGenerator = writable(null);

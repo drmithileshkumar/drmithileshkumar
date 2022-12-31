@@ -116,6 +116,7 @@ export class Q {
             this.den = 1;
         } else if(this.num % 1 == 0 && this.den % 1 == 0) {
             let g = this.gcd();
+            // console.log('gcd..', this.num, this.den, g);
             this.num = this.num/g;
             this.den = this.den/g;
         } else {
