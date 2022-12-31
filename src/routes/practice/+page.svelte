@@ -11,15 +11,6 @@
     onMount(() => {
         MathJax.typeset();
     });
-    let generateProblem = sets;
-    const getGenerator = async () => {
-        switch($selectedChapter) {
-            case 'Sets': {
-                generateProblem = await import('$lib/pages/practice/sets');
-                break;
-            }
-        }
-    }
     
 </script>
 <style>

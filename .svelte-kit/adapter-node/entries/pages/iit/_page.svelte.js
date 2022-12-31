@@ -1,4 +1,4 @@
-import { c as create_ssr_component, j as compute_rest_props, i as add_attribute, k as spread, o as escape_object, v as validate_component } from "../../../chunks/index.js";
+import { c as create_ssr_component, o as compute_rest_props, k as add_attribute, h as spread, i as escape_object, v as validate_component } from "../../../chunks/index.js";
 /* empty css                                                  */const css = {
   code: "a.svelte-h06gar{text-decoration:none;display:flex;justify-content:start;align-items:center;gap:0.3em}.text.svelte-h06gar{display:flex;align-items:center}",
   map: null

@@ -64,21 +64,21 @@
 </style>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<fieldset  on:click={select}>
+<fieldset {...$$props} >
     <legend>
         {label}
     </legend>
-    <span class="value">{value}</span>
+    <span class="value" on:click={select}>{value}</span>
     {#if showmenu}
-    <ul on:change use:clickOutside on:outclick={() => showmenu = false}>
-        {#each options as option}
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <li on:click={() => setvalue(option)}>
-                {option}
-            </li>
-        {:else}
-            <option value=null>No option</option>
-        {/each}
-    </ul>
+        <ul on:change use:clickOutside on:outclick={() => showmenu = false}>
+            {#each options as option}
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <li on:click={() => setvalue(option)}>
+                    {option}
+                </li>
+            {:else}
+                <option value=null>No option</option>
+            {/each}
+        </ul>
     {/if}
 </fieldset>

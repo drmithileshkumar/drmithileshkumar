@@ -4,7 +4,8 @@ const chapters = [
   "Relations and functions 11",
   "Trigonometric functions",
   "Principle of mathematical induction",
-  "Complex numbers and quadratic equations",
+  "Complex numbers",
+  "Quadratic equations",
   "Linear inequalities",
   "Permutations and combinations",
   "Binomial theorem",
@@ -30,9 +31,11 @@ const chapters = [
   "Linear programming"
 ];
 const selectedChapter = writable("");
-let selectedGenerator = writable(null);
+const selectedGenerator = writable(null);
+const generators = writable({});
 export {
   selectedChapter as a,
   chapters as c,
+  generators as g,
   selectedGenerator as s
 };

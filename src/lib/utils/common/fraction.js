@@ -51,7 +51,25 @@ export class Q {
     isUndefined() {
         return this.den == 0;
     }
-
+    sqrt() {
+        let sq = new Q();
+        if(this.num instanceof Surd && this.den instanceof Surd) {
+            if(this.num.isNum()) {
+                sq.num = new Surd([{a: 1, r: this.num.terms[0].a}]);
+            } else {
+                sq.num = new Surd([{a: 1, r: this.num.value()}]);
+            }
+            if(this.den.isNum()) {
+                sq.den = new Surd([{a: 1, r: this.den.terms[0].a}]);
+            } else {
+                sq.den = new Surd([{a: 1, r: this.den.value()}]);
+            }
+        } else {
+            sq.num = new Surd([{a: 1, r: this.num}]);
+            sq.den = new Surd([{a: 1, r: this.den}]);
+        }
+        return sq;
+    }
     str() {
             if(this.num == 0) {
                 return 0;

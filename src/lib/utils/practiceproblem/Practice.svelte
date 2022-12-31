@@ -75,6 +75,8 @@
         border: 1px solid rgb(0, 163, 240);
         border-radius: 10px;
         width: auto;
+        font-size: 0.8em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
     .dayscore {
         grid-area: dayscore;
@@ -84,31 +86,36 @@
         font-size: small;
         width: 55px;
     }
-    .problemNext, .dayscore {
+    .dayscore {
         margin-left: auto;
         margin-right: auto;
         display: flex;
         align-items: center;
     }
-    .problemNext {
-        grid-area: problemNext;
+    .next, .refresh {
         cursor: pointer;
         background: transparent;
         border: none;
         outline: none;
         color: gray;
     }
-    
+    .next {
+        grid-area: next;
+    }
+    .refresh {
+        grid-area: refresh;
+    }
     .problemLegend {
         display: grid;
         grid-template-columns: auto auto auto;
         /* grid-template-rows: auto 27.5px 27.5px; */
         grid-template-areas: 
-        "dayscore problemNext problemNext";
+        "dayscore refresh next";
         border-top: rgb(0, 163, 240) 1px solid;
         border-bottom: rgb(0, 163, 240) 1px solid;
         border-radius: 10px;
         margin-left: 20px;
+        align-items: center;
         /* box-shadow: rgb(0 0 0 / 31%) 1px 1px 0px 0px inset, rgb(0 0 0 / 35%) 2px 2px 3px 1px inset, rgb(255 255 255 / 50%) -3px -3px 6px 1px inset; */
     }
 
@@ -161,25 +168,21 @@
                     </abbr>
 
                 </div>
-                    
-                <div class="problemNext">
-                    <abbr title="Next problem">
-                        <button class="noborder" class:green={$attempted} on:click={ () => loadnext(false) }>
-                            <span></span>
-                            <span class="icon is-small material-icons">
-                                refresh
-                            </span>
-                        </button>
-                        <button class="noborder" class:green={$attempted} on:click={ () => loadnext(true) }>
-                            <span></span>
-                            <span class="icon is-small material-icons">
-                                arrow_forward
-                            </span>
-                        </button>
-
-
-                    </abbr>
-                    
+                <div class="refresh">
+                    <button class="noborder" class:green={$attempted} on:click={ () => loadnext(false) }>
+                        <span></span>
+                        <span class="icon is-small material-icons">
+                            refresh
+                        </span>
+                    </button>
+                </div>
+                <div class="next">
+                    <button class="noborder" class:green={$attempted} on:click={ () => loadnext(true) }>
+                        <span></span>
+                        <span class="icon is-small material-icons">
+                            arrow_forward
+                        </span>
+                    </button>
                 </div>
             
             </legend>

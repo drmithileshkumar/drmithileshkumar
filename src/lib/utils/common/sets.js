@@ -201,6 +201,21 @@ export class Sets {
         }
         return R;
     }
+    dot(B) {
+        if(this.e.length != B.e.length) return new Sets();
+        let pairEq = (a, b) => {
+            if(a.length !== b.length) return false;
+            return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
+        }
+        let stringElem = (a) => {
+            return "(" + this.texElem(a[0]) + ',' + B.texElem(a[1]) + ")";
+        }
+        let R = new Sets([], pairEq, stringElem);
+        for(let i = 0; i < this.e.length; i++) {
+            R.e.push([this.e[i], B.e[i]]);
+        }
+        return R;
+    }
     str() { // Todo allow multiple type of elements
         let tex;
         if(this.e.length == 0) return '\\varphi'

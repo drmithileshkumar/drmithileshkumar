@@ -1,4 +1,4 @@
-import { c as create_ssr_component, i as add_attribute, e as escape, d as subscribe, f as createEventDispatcher, v as validate_component, p as set_store_value } from "../../../chunks/index.js";
+import { c as create_ssr_component, k as add_attribute, e as escape, d as subscribe, f as createEventDispatcher, v as validate_component, p as set_store_value } from "../../../chunks/index.js";
 /* empty css                                                  */import { a as selectedChapter, s as selectedGenerator } from "../../../chunks/stores2.js";
 import { w as writable } from "../../../chunks/index2.js";
 let attempted = writable(false);
@@ -79,7 +79,7 @@ const Practiceradiobutton = create_ssr_component(($$result, $$props, $$bindings,
 });
 const Practice_svelte_svelte_type_style_lang = "";
 const css = {
-  code: '.problemPanel.svelte-1d4qyxm{margin-top:1rem;width:auto}.problemField.svelte-1d4qyxm{padding:0.5em;padding-bottom:1em;border:1px solid rgb(0, 163, 240);border-radius:10px;width:auto}.dayscore.svelte-1d4qyxm{grid-area:dayscore;border-radius:50%;border:rgba(0, 143, 253, 0) 1px solid;padding:0px;font-size:small;width:55px}.problemNext.svelte-1d4qyxm,.dayscore.svelte-1d4qyxm{margin-left:auto;margin-right:auto;display:flex;align-items:center}.problemNext.svelte-1d4qyxm{grid-area:problemNext;cursor:pointer;background:transparent;border:none;outline:none;color:gray}.problemLegend.svelte-1d4qyxm{display:grid;grid-template-columns:auto auto auto;grid-template-areas:"dayscore problemNext problemNext";border-top:rgb(0, 163, 240) 1px solid;border-bottom:rgb(0, 163, 240) 1px solid;border-radius:10px;margin-left:20px}.problemStatement.svelte-1d4qyxm{padding-left:0.3rem;margin-top:0.5rem;word-spacing:0.4rem;line-height:1.5rem;overflow:auto;scrollbar-width:thin}.svelte-1d4qyxm::-webkit-scrollbar{width:10px}.problemArea.svelte-1d4qyxm{display:flex;flex-direction:column}.noborder.svelte-1d4qyxm{border:none;outline:none;background:transparent;color:gray;cursor:pointer}.noborder.svelte-1d4qyxm:hover{box-shadow:1px 1px 1px green}.green.svelte-1d4qyxm{color:green}abbr.svelte-1d4qyxm{text-decoration:none}',
+  code: `.problemPanel.svelte-1pqivcg{margin-top:1rem;width:auto}.problemField.svelte-1pqivcg{padding:0.5em;padding-bottom:1em;border:1px solid rgb(0, 163, 240);border-radius:10px;width:auto;font-size:0.8em;font-family:Georgia, 'Times New Roman', Times, serif}.dayscore.svelte-1pqivcg{grid-area:dayscore;border-radius:50%;border:rgba(0, 143, 253, 0) 1px solid;padding:0px;font-size:small;width:55px}.dayscore.svelte-1pqivcg{margin-left:auto;margin-right:auto;display:flex;align-items:center}.next.svelte-1pqivcg,.refresh.svelte-1pqivcg{cursor:pointer;background:transparent;border:none;outline:none;color:gray}.next.svelte-1pqivcg{grid-area:next}.refresh.svelte-1pqivcg{grid-area:refresh}.problemLegend.svelte-1pqivcg{display:grid;grid-template-columns:auto auto auto;grid-template-areas:"dayscore refresh next";border-top:rgb(0, 163, 240) 1px solid;border-bottom:rgb(0, 163, 240) 1px solid;border-radius:10px;margin-left:20px;align-items:center}.problemStatement.svelte-1pqivcg{padding-left:0.3rem;margin-top:0.5rem;word-spacing:0.4rem;line-height:1.5rem;overflow:auto;scrollbar-width:thin}.svelte-1pqivcg::-webkit-scrollbar{width:10px}.problemArea.svelte-1pqivcg{display:flex;flex-direction:column}.noborder.svelte-1pqivcg{border:none;outline:none;background:transparent;color:gray;cursor:pointer}.noborder.svelte-1pqivcg:hover{box-shadow:1px 1px 1px green}.green.svelte-1pqivcg{color:green}abbr.svelte-1pqivcg{text-decoration:none}`,
   map: null
 };
 const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -122,17 +122,16 @@ const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     $$rendered = `
 
 
-<div class="${"problemPanel svelte-1d4qyxm"}"><div class="${"problemset svelte-1d4qyxm"}" style="${"display: block;"}"><fieldset class="${"problemField svelte-1d4qyxm"}"><legend class="${"problemLegend svelte-1d4qyxm"}"><div class="${"dayscore svelte-1d4qyxm"}"><abbr title="${"Today's accuracy"}" class="${"svelte-1d4qyxm"}">${validate_component(Performance, "Performance").$$render($$result, { strokedasharray }, {}, {})}</abbr></div>
-                    
-                <div class="${"problemNext svelte-1d4qyxm"}"><abbr title="${"Next problem"}" class="${"svelte-1d4qyxm"}"><button class="${["noborder svelte-1d4qyxm", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1d4qyxm"}"></span>
-                            <span class="${"icon is-small material-icons svelte-1d4qyxm"}">refresh
-                            </span></button>
-                        <button class="${["noborder svelte-1d4qyxm", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1d4qyxm"}"></span>
-                            <span class="${"icon is-small material-icons svelte-1d4qyxm"}">arrow_forward
-                            </span></button></abbr></div></legend>
+<div class="${"problemPanel svelte-1pqivcg"}"><div class="${"problemset svelte-1pqivcg"}" style="${"display: block;"}"><fieldset class="${"problemField svelte-1pqivcg"}"><legend class="${"problemLegend svelte-1pqivcg"}"><div class="${"dayscore svelte-1pqivcg"}"><abbr title="${"Today's accuracy"}" class="${"svelte-1pqivcg"}">${validate_component(Performance, "Performance").$$render($$result, { strokedasharray }, {}, {})}</abbr></div>
+                <div class="${"refresh svelte-1pqivcg"}"><button class="${["noborder svelte-1pqivcg", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1pqivcg"}"></span>
+                        <span class="${"icon is-small material-icons svelte-1pqivcg"}">refresh
+                        </span></button></div>
+                <div class="${"next svelte-1pqivcg"}"><button class="${["noborder svelte-1pqivcg", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1pqivcg"}"></span>
+                        <span class="${"icon is-small material-icons svelte-1pqivcg"}">arrow_forward
+                        </span></button></div></legend>
 
-            <div class="${"problemArea svelte-1d4qyxm"}"><div class="${"problemStatement svelte-1d4qyxm"}"><!-- HTML_TAG_START -->${newproblem}<!-- HTML_TAG_END --></div>
-                <div class="${"options svelte-1d4qyxm"}">${validate_component(Practiceradiobutton, "Practiceradiobutton").$$render(
+            <div class="${"problemArea svelte-1pqivcg"}"><div class="${"problemStatement svelte-1pqivcg"}"><!-- HTML_TAG_START -->${newproblem}<!-- HTML_TAG_END --></div>
+                <div class="${"options svelte-1pqivcg"}">${validate_component(Practiceradiobutton, "Practiceradiobutton").$$render(
       $$result,
       { optionValues, correct, answer },
       {
