@@ -45,15 +45,17 @@
     .copyright {
         font-variant: small-caps;
         font-size: 0.8em;
+        padding: 0.5em 0;
     }
     .contactrights {
         display: flex;
         flex-direction: column;
+        padding: 1em 0;
     }
 </style>
 <nav>
     <div class="contactrights">
-        <span class="contact">Email at drmithileshkumar@outlook.com</span>
+        <span class="contact">Email at <strong>drmithileshkumar@outlook.com</strong> </span>
         <span class="copyright">All rights reserved. &#169; drmithileshkumar.com</span>
     </div>
     

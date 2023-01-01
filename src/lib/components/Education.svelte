@@ -6,15 +6,23 @@
     .education {
         line-height: 1.45;
         word-spacing: 0.1em;
+        max-width: 1200px;
     }
     .fillerImage {
-        width: min(90vw,200px);
+        /* width: min(90vw,200px); */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .grid {
-        display: grid;
-        grid-template-columns: 0.8fr auto;
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        /* justify-content: space-between; */
+        width: 100%;
+        gap: 1em;
+        /* height: 200px; */
     }
     
     .flex {
@@ -40,16 +48,16 @@
         </div>
         
         <div class="fillerImage">
-            <svg width="100%" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
+            <svg width="50%" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
                 
                 <defs>
                     <linearGradient id="linearGradient" gradientTransform="">
-                        <stop offset="0%" stop-color={"black"} />
+                        <stop offset="0%" stop-color={"green"} />
                         <stop offset="100%" stop-color={"gray"} />
                     </linearGradient>
                     <radialGradient id="radialGradient" gradientTransform="">
-                        <stop offset="0%" stop-color={"black"} />
-                        <stop offset="100%" stop-color={"gray"} />
+                        <stop offset="0%" stop-color={"magenta"} />
+                        <stop offset="100%" stop-color={"skyblue"} />
                     </radialGradient>
                 </defs>
                 
@@ -71,8 +79,8 @@
             <p>
                 Between June 2017 and June 2020, I did Post-doctoral research in quantum-safe cryptography in a research-based company <a href="https://simula-uib.com/">Simula-UiB</a>, Bergen, Norway. 
         </div>
-        <div class="fillerImage" style="width: min(90vw, 300px;">
-            <img width="100%" src="/LCPath.svg" alt="LCPath" >
+        <div class="fillerImage">
+            <img width="50%" src="/LCPath.svg" alt="LCPath" >
         </div>
     </section>
 
@@ -83,8 +91,8 @@
                 During my masters in CMI, I grew interest in graph algorithms. Between March, 2014 and May, 2017, I did PhD in <a download="DrMithileshKumarPhDthesis" href="/thesis.pdf">parameterized algorithms</a> from <a href="https://www.uib.no/en/rg/algo/55502/group-members">University of Bergen, Norway</a> under <a href="https://sites.cs.ucsb.edu/~daniello/">Prof. Daniel Lokshtanov</a>. My research papers are listed below.
             </p>
         </div>
-        <div class="fillerImage" style="width: min(90vw, 300px;">
-            <img width="100%" src="/santa.svg" alt="santa" >
+        <div class="fillerImage">
+            <img width="50%" src="/santa.svg" alt="santa" >
         </div>
     </section>
     
@@ -96,11 +104,11 @@
             </p>
         </div>
         <div class="fillerImage">
-            <img width="100%" src="/CMIMedal.jpg" alt="Medal" style="z-index: -1; transform: rotate(-90deg); border-radius: 50%;">
+            <img width="50%" src="/CMIMedal.jpg" alt="Medal" style="z-index: -1; transform: rotate(-90deg); border-radius: 50%;">
         </div>
     </section>
 
-    <section class="{sectionClass}" style="gap: 1em;">
+    <section class="{sectionClass}">
         <div class="detail">
             <h3>Masters in Theotical Physics</h3>
             <p>
@@ -108,7 +116,7 @@
             </p>
         </div>
         <div class="fillerImage">
-            <img width="100%" src="/IITMSc.jpg" alt="Medal" style="transform: rotate(-90deg); border-radius: 50%;">
+            <img width="50%" src="/IITMSc.jpg" alt="Medal" style="transform: rotate(-90deg); border-radius: 50%;">
         </div>
     </section>
 
