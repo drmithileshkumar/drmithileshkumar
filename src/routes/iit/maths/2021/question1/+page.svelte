@@ -6,7 +6,7 @@
     import {afterUpdate, beforeUpdate, onMount, tick} from 'svelte';
     import {ripple} from '$lib/ui/ripple';
     import {TeX} from '$lib/utils/common/constants';
-	import Canves from '$lib/canvas/Canves.svelte';
+	import Canvas from '$lib/canvas/Canvas.svelte';
 	
     let W, H;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black', 'eraser'];
@@ -238,7 +238,7 @@
     {/if}
     {#if presentationMode}
         <div class="absolute overlay" bind:this={overlay}>
-            <Canves width={W} height={10000} {strokeColor} {lineWidth} {globalCompositeOperation}/>
+            <Canvas width={W} height={10000} {strokeColor} {lineWidth} {globalCompositeOperation}/>
         </div>
         
     {/if}

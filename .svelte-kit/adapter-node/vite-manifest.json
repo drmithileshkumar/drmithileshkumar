@@ -144,7 +144,8 @@
       "_constants.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-3e3275b8.css"
+      "_app/immutable/assets/_page-3e3275b8.css",
+      "_app/immutable/assets/Canvas-96fded0a.css"
     ]
   },
   "src/routes/iit/maths/2021/question1/+page.js": {
@@ -162,7 +163,8 @@
       "_constants.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-1edf6b63.css"
+      "_app/immutable/assets/_page-1edf6b63.css",
+      "_app/immutable/assets/Canvas-96fded0a.css"
     ]
   },
   "src/routes/iit/maths/2021/question2/+page.js": {
@@ -248,7 +250,8 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-a9b1ea67.css"
+      "_app/immutable/assets/_page-53000ff7.css",
+      "_app/immutable/assets/Canvas-96fded0a.css"
     ]
   },
   "src/routes/notes/conic/+page.js": {

@@ -6,10 +6,11 @@
         import {afterUpdate, beforeUpdate, onMount, tick} from 'svelte';
         import {ripple} from '$lib/ui/ripple';
         import {TeX} from '$lib/utils/common/constants';
-        import Canves from '$lib/canvas/Canves.svelte';
+        import CanvasBar from '$lib/canvas/CanvasBar.svelte';
+        import Canvas from '$lib/canvas/Canvas.svelte';
         
         let W, H;
-        let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black', 'eraser'];
+        let stMode = false, arcMode = false;
         let strokeColor = 'black', lineWidth = 2;
         onMount(() => {
             MathJax.typeset();
@@ -22,43 +23,6 @@
         let nextStep = 0;
         let autoscroll = false;
         let globalCompositeOperation = 'source-over';
-        function setColor(chosenColor) {
-            globalCompositeOperation = 'source-over';
-            lineWidth = 2;
-            switch (chosenColor) {
-                case "green":
-                    strokeColor = "green";
-                    break;
-                case "blue":
-                    strokeColor = "blue";
-                    break;
-                case "red":
-                    strokeColor = "red";
-                    break;
-                case "yellow":
-                    strokeColor = "yellow";
-                    break;
-                case "orange":
-                    strokeColor = "orange";
-                    break;
-                case "black":
-                    strokeColor = "black";
-                    break;
-                case "white":
-                    strokeColor = "white";
-                    break;
-                case 'eraser': {
-                    globalCompositeOperation = 'destination-out';
-                    strokeColor = 'rgba(0, 0, 0, 1)';
-                    lineWidth = 20;
-                    break
-                }
-    
-            }
-            // if (strokeColor == "white") lineWidth = 14;
-            // else lineWidth = 2;
-        
-        }
         beforeUpdate(() => {
             if(presentation) {
                 // autoscroll = presentation && (presentation.offsetHeight + presentation.scrollTop) > (presentation.scrollHeight - 40);
@@ -161,21 +125,11 @@
             -ms-overflow-style: none;
             /* padding: 0 1em 0 1em; */
         }
-        .colors {
-            display: flex;
-            gap: 0.5em;
-            align-items: center;
-        }
         .presentationMode {
             display: flex;
             gap: 1em;
             height: 1em;
             margin-bottom: 0.5em;
-        }
-        .lineWidth {
-            display: flex;
-            align-items: center;
-            gap: 1em;
         }
         /* .displayStyle {
             font-size: 2em;
@@ -219,41 +173,7 @@
             <input type="checkbox" bind:checked={presentationMode}> Presentation Mode
         </label>
         {#if presentationMode}
-            <div class="colors">
-                {#each colors as color}
-                    <button style="background: {color}; border: {strokeColor === color ? '5px double' : 'solid'}; padding: {color === 'eraser' ? 0 : ''};" on:click={() => setColor(color)}>
-                    {#if color === 'eraser'}
-                        <svg width="20" height="20" viewBox="0 0 20 40">
-                            <g transform="rotate(-45 10 20) translate(0 5)">
-                                <rect x='0' y='0' width='20' height='10' stroke='black' stroke-width='1' />
-                                <rect x='0' y='10' width='20' height='20' fill='none' stroke='black' stroke-width='1' />
-                            </g>
-                        </svg>
-                    {/if}
-                    </button>
-                {/each}
-            </div>
-            <div class="lineWidth">
-                <label>Stroke <input style="width: 4em; height: 1em; padding-left: 0.5em; padding-right: 0.5em;" type="number" step="0.1" bind:value={lineWidth}></label>
-                <svg width="20" height="20" viewBox="0 0 20 20" on:click={() => lineWidth = 2} style="cursor:pointer">
-                    {#if lineWidth === 2}
-                        <circle cx="10" cy="10" r="4" fill="none" stroke="black" stroke-width=1 />
-                    {/if}
-                    <circle cx="10" cy="10" r="2" fill="black" />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 20 20" on:click={() => lineWidth = 4} style="cursor:pointer">
-                    {#if lineWidth === 4}
-                        <circle cx="10" cy="10" r="6" fill="none" stroke="black" stroke-width=1 />
-                    {/if}
-                    <circle cx="10" cy="10" r="4" fill="black" />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 20 20" on:click={() => lineWidth = 20} style="cursor:pointer">
-                    {#if lineWidth === 20}
-                        <circle cx="10" cy="10" r="9" fill="none" stroke="black" stroke-width=1 />
-                    {/if}
-                    <circle cx="10" cy="10" r="7" fill="black" />
-                </svg>
-            </div>
+            <CanvasBar bind:lineWidth bind:strokeColor bind:globalCompositeOperation bind:stMode bind:arcMode/>
         {/if}
     </div>
     
@@ -267,7 +187,7 @@
         {/if}
         {#if presentationMode}
             <div class="absolute overlay" bind:this={overlay}>
-                <Canves width={W} height={10000} {strokeColor} {lineWidth} {globalCompositeOperation}/>
+                <Canvas width={W} height={10000} {strokeColor} {lineWidth} {globalCompositeOperation} {stMode} {arcMode}/>
             </div>
             
         {/if}

@@ -4,6 +4,8 @@
     export let height = 100;
     export let strokeColor = "black";
     export let lineWidth = 2;
+    export let stMode = false;
+    export let arcMode = false;
     let canvas, ctx;
     let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black'];
     let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 2, tangentThreshold = 0.01, animeFrame;
@@ -230,26 +232,33 @@
             // bzCurve(points, 0.01, 10)
             ctx.beginPath();
             ctx.globalCompositeOperation = globalCompositeOperation;
-            ctx.moveTo(points[0].x, points[0].y)
-            let i = 1;
-            let n = points.length;
-            for(i = 1; i < n - 2; i++) {
-                    // let midPoint;
-                    // midPoint = {
-                    //     x: (points[i].x + points[i + 1].x)/2,
-                    //     y: (points[i].y + points[i + 1].y)/2
-                    // }
-                    // ctx.quadraticCurveTo(controlPoints[i - 1].x, controlPoints[i - 1].y, points[i].x, points[i].y);
-                    // if(i % 3 === 2) {
-                    //     let j = Math.floor(i/3)
-                    //     ctx.quadraticCurveTo(controlPoints[j].x, controlPoints[j].y, points[i].x, points[i].y);
-                    // }
-                    ctx.quadraticCurveTo(points[i].x, points[i].y, controlPoints[i - 1].x, controlPoints[i - 1].y);    
-                    // ctx.quadraticCurveTo(points[i].x, points[i].y, midPoint.x, midPoint.y);
+            
+            if(arcMode) {
+                let r = pointLength(points[0], points[1]);
+                ctx.arc(points[0].x, points[0].y, r, 0, 2 * Math.PI);
+            } else {
+                ctx.moveTo(points[0].x, points[0].y)
+                let i = 1;
+                let n = points.length;
+                for(i = 1; i < n - 2; i++) {
+                        // let midPoint;
+                        // midPoint = {
+                        //     x: (points[i].x + points[i + 1].x)/2,
+                        //     y: (points[i].y + points[i + 1].y)/2
+                        // }
+                        // ctx.quadraticCurveTo(controlPoints[i - 1].x, controlPoints[i - 1].y, points[i].x, points[i].y);
+                        // if(i % 3 === 2) {
+                        //     let j = Math.floor(i/3)
+                        //     ctx.quadraticCurveTo(controlPoints[j].x, controlPoints[j].y, points[i].x, points[i].y);
+                        // }
+                        ctx.quadraticCurveTo(points[i].x, points[i].y, controlPoints[i - 1].x, controlPoints[i - 1].y);    
+                        // ctx.quadraticCurveTo(points[i].x, points[i].y, midPoint.x, midPoint.y);
+                }
+                if(n > 2) 
+                    ctx.quadraticCurveTo(points[i].x, points[i].y, points[i + 1].x, points[i + 1].y);
+                else ctx.quadraticCurveTo(points[i].x, points[i].y, points[i].x, points[i].y);
             }
-            if(n > 2) 
-                ctx.quadraticCurveTo(points[i].x, points[i].y, points[i + 1].x, points[i + 1].y);
-            else ctx.quadraticCurveTo(points[i].x, points[i].y, points[i].x, points[i].y);
+            
 
             ctx.stroke();
             ctx.closePath();
@@ -378,6 +387,7 @@
             let pos = getMousePosition(e);
             snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
             points.push({x: pos.x, y: pos.y});
+            if(stMode || arcMode) points.push({x: pos.x, y: pos.y})
             flag = true;
             dot_flag = true;
             if (dot_flag) {
@@ -416,15 +426,21 @@
                 
                 let pos = getMousePosition(e);
                 e.preventDefault();
-
-                points.push({x: pos.x, y: pos.y});
-                let n = points.length;
-                if(n > 2) {
-                    controlPoints.push( {
-                        x: (points[n - 2].x + points[n - 1].x)/2,
-                        y: (points[n - 2].y + points[n - 1].y)/2
-                    })
+                if(stMode || arcMode) {
+                    points[1] = {
+                        x: pos.x, y: pos.y
+                    };
+                } else {
+                    points.push({x: pos.x, y: pos.y});
+                    let n = points.length;
+                    if(n > 2) {
+                        controlPoints.push( {
+                            x: (points[n - 2].x + points[n - 1].x)/2,
+                            y: (points[n - 2].y + points[n - 1].y)/2
+                        })
+                    }
                 }
+                
                 requestAnimationFrame(draw);
                 
             }
@@ -432,6 +448,11 @@
     }
     
 </script>
+<style>
+    canvas {
+        cursor: crosshair;
+    }
+</style>
 <!-- <div class="colors">
     {#each colors as color}
         <button style="background: {color};" on:click={() => strokeColor = color}></button>

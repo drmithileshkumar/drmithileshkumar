@@ -1,7 +1,7 @@
 import { c as create_ssr_component, d as subscribe, e as escape, k as add_attribute, j as null_to_empty } from "../../../../../../chunks/index.js";
 import { p as page } from "../../../../../../chunks/stores.js";
 import { T as TeX } from "../../../../../../chunks/constants.js";
-const _page_svelte_svelte_type_style_lang = "";
+/* empty css                                                             */const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: ".container.svelte-mz2qc9{display:flex;position:relative}article.svelte-mz2qc9{position:relative;padding:0.5em}aside.svelte-mz2qc9{background-color:rgb(230, 228, 228);cursor:pointer;width:1em}.absolute.svelte-mz2qc9{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-mz2qc9::-webkit-scrollbar{width:0;height:0}.currentActive.svelte-mz2qc9{color:tomato;border-radius:10px;transition:all 1s}.pad.svelte-mz2qc9{min-height:100px}figure.svelte-mz2qc9{width:300px}.overlay.svelte-mz2qc9{position:absolute;z-index:2;left:0.5em;top:0;margin:auto;width:calc(100% - 2em);height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none}.colors.svelte-mz2qc9{display:flex;gap:0.5em;align-items:center}.presentationMode.svelte-mz2qc9{display:flex;gap:1em;height:1em;margin-bottom:0.5em}.lineWidth.svelte-mz2qc9{display:flex;align-items:center;gap:1em}.thumbnail.svelte-mz2qc9{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-mz2qc9{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
   map: null
