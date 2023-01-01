@@ -77,7 +77,7 @@ export class cos {
         //console.log('cos to sin..', newtheta.str());
         return si.value();
     }
-    astr() {
+    astr() {//angle string
         //console.log('astr..', this.a.str());
         if(this.a.isZero()) return '0';
         if(this.a.equal(new Q(1))) return '\\pi';

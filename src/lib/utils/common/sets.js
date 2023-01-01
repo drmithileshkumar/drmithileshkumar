@@ -160,6 +160,13 @@ export class Sets {
         let k = Math.floor(Math.random()*this.e.length);
         return this.e[k];
     }
+    ksubArray(arr, k) {
+        if(arr.length == 0) return [];
+        let n = arr.length;
+        let subsetIndices = randSubset(n, k);
+        let subset = subsetIndices.map(index => arr[index]);
+        return subset;
+        }
     powerSet() {
         let set = powerset(this.e.length);
         let seteq = (A , B) => {
@@ -292,7 +299,7 @@ export class Sets {
         let R = new Sets([], pairEq, stringElem);
         let self = new Sets(this.e, this.eq, this.strElem);
         let power = this.cartesian(self);
-        let half = ksubArray(power.e, Math.floor(k/2));
+        let half = this.ksubArray(power.e, Math.floor(k/2));
         for(let r of half) {
             R.add(r);
             R.add([r[1], r[0]]);
@@ -310,7 +317,7 @@ export class Sets {
         let R = new Sets([], pairEq, stringElem);
         let self = new Sets(this.e, this.eq, this.strElem);
         let power = this.cartesian(self);
-        let half = ksubArray(power.e, Math.floor(k/2));
+        let half = this.ksubArray(power.e, Math.floor(k/2));
         let temp;
         for(let r of half) {
             R.add(r);

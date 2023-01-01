@@ -20,7 +20,21 @@ const chapters = [
   "Derivatives",
   "Mathematical reasoning",
   "Statistics",
-  "Probability"
+  "Probability",
+  "Relations and functions 12",
+  "Inverse trigonometric functions",
+  "Matrices",
+  "Determinants",
+  "Continuity",
+  "Differentiability",
+  "Application of derivatives",
+  "Indefinite Integrals",
+  "Definite Integrals",
+  "Application of integrals",
+  "Differential equations",
+  "Vector algebra",
+  "Three dimensional geometry",
+  "Linear programming"
 ];
 const selectedChapter = writable("");
 const selectedGenerator = writable(null);

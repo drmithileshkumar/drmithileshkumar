@@ -6,50 +6,14 @@ export class Q {
         this.num = num;
         this.den = den;
     }
-    randF(n, d) {
+    randF(n, d) {//Todo include surds
         this.num = randInt(n, -n);
         this.den = randInt(d, 1);
         this.reduced();
         
     }
-    randUnit(max = 10) {
-        let n = randInt(max, 2);
-        let m = randInt(max, 2);
-        this.num = n > m ? m : n;
-        this.den = n + m - this.num;
-        this.reduced();
-    }
-    randFbetween(m, n, max = 10) { // m < n
-        let uf = new Q();
-        uf.randUnit(max);
-        if(!(m instanceof Q))
-            m = new Q(m);
-        if(!(n instanceof Q))
-            n = new Q(n)
-        let f = m.add(uf.mul(n.sub(m)));
-        f.reduced();
-        this.num = f.num;
-        this.den = f.den;
-    }
-    isZero() {
-        return this.num == 0;
-    }
-    isOne() {
-        return this.num == 1 && this.den == 1;
-    }
-    isMinusOne() {
-        return this.num == -1 && this.den == 1;
-    }
-    isGZero() {
-        return this.num > 0;
-    }
-
-    isLZero() {
-        return this.num < 0;
-    }
-
-    isUndefined() {
-        return this.den == 0;
+    isSurd() {
+        return this.num instanceof Surd && this.den instanceof Surd;
     }
     sqrt() {
         let sq = new Q();
@@ -70,7 +34,50 @@ export class Q {
         }
         return sq;
     }
+    isZero() {
+        return this.num instanceof Surd && this.den instanceof Surd ? this.num.value() == 0 : this.num == 0;
+    }
+    isOne() {
+        return this.num instanceof Surd && this.den instanceof Surd ? this.num.isOne() && this.den.isOne() : this.num == 1 && this.den == 1;
+    }
+    isMinusOne() {
+        return this.num instanceof Surd && this.den instanceof Surd ? this.num.isMinusOne() && this.den.isOne() : this.num == -1 && this.den == 1;
+    }
+    isGZero() {
+        if(this.num instanceof Surd && this.den instanceof Surd) {
+            return (this.num.value() > 0 && this.den.value() > 0) || (this.num.value() < 0 && this.den.value() < 0);
+        } else {
+            return this.num > 0;
+        }
+    }
+
+    isLZero() {
+        if(this.num instanceof Surd && this.den instanceof Surd) {
+            return (this.num.value() < 0 && this.den.value() > 0) || (this.num.value() > 0 && this.den.value() < 0);
+        } else {
+            return this.num < 0;
+        }
+    }
+
+    isUndefined() {
+        if(this.num instanceof Surd && this.den instanceof Surd) {
+            return this.den.terms.length == 1 && this.den.terms[0].a == 0;
+        } else {
+            return this.den == 0;
+        }
+    }
+
     str() {
+        if(this.num instanceof Surd && this.den instanceof Surd) {
+            if(this.den.equal(new Surd([{a: 1, r: 1}]))) {
+                return `${this.num.str()}`;
+            } else {
+                let numstr = this.num.str();
+                let denstr = this.den.str();
+                return `\\frac{${numstr}}{${denstr}}`;
+            }
+            
+        } else {
             if(this.num == 0) {
                 return 0;
             }
@@ -84,6 +91,8 @@ export class Q {
                 return `\\frac{${-this.num}}{${-this.den}}`;
             }
             return `\\frac{${this.num}}{${this.den}}`;
+        }
+        
     }
 
     gcd() {
@@ -104,79 +113,138 @@ export class Q {
     }
 
     reduced() {
-        if(this.den < 0) {
-            this.den = -this.den;
-            this.num = -this.num;
-        }
-        if(this.num == this.den) {
-            this.num = 1;
-            this.den = 1;
-        } else if(this.num % this.den == 0) {
-            this.num = this.num/this.den;
-            this.den = 1;
-        } else if(this.num % 1 == 0 && this.den % 1 == 0) {
-            let g = this.gcd();
-            // console.log('gcd..', this.num, this.den, g);
-            this.num = this.num/g;
-            this.den = this.den/g;
+        if(this.num instanceof Surd && this.den instanceof Surd) {
+            let newQ = this.num.div(this.den);
+            this.num = newQ.num;
+            this.den = newQ.den;
+            
         } else {
-            this.num = this.num / this.den;
-            this.den = 1;
-        }   
+            if(this.den < 0) {
+                this.den = -this.den;
+                this.num = -this.num;
+            }
+            if(this.num == this.den) {
+                this.num = 1;
+                this.den = 1;
+            } else if(this.num % this.den == 0) {
+                this.num = this.num/this.den;
+                this.den = 1;
+            } else if(this.num % 1 == 0 && this.den % 1 == 0) {
+                let g = this.gcd();
+                this.num = this.num/g;
+                this.den = this.den/g;
+            } else {
+                this.num = this.num / this.den;
+                this.den = 1;
+            }
+        }
+        
     }
 
     equal(f) {
         this.reduced();
         f.reduced();
-        return this.num/this.den == f.num/f.den;
+        if(this.num instanceof Surd && this.den instanceof Surd) {
+            if(this.isUndefined()) return false;
+            if(f.isSurd()) {
+                if(f.den.value() == 0) return false;
+                return this.num.value()/this.den.value() == f.num.value()/f.den.value();
+            } else {
+                return this.num.value()/this.den.value() == f.num/f.den;
+            }
+        } else {
+            if(f.isSurd()) {
+                if(f.den.value() == 0) return false;
+                return this.num/this.den == f.num.value()/f.den.value();
+            } else {
+                return this.num/this.den == f.num/f.den;
+            }
+        }
     }
 
     scale(k) {
-        return new Q(this.num*k, this.den);
+        return this.num instanceof Surd && this.den instanceof Surd ? new Q(this.num.scale(k), this.den) : new Q(this.num*k, this.den);
     }
     abs() {
         return this.isLZero() ? this.scale(-1) : this;
     }
     add(f) {
         let newNum, newDen;
-        if(!(f instanceof Q)) {
-            f = new Q(f, 1);
+        if(this.num instanceof Surd && this.den instanceof Surd) {
+            if(f.isSurd()) {
+                newNum = this.num.mul(f.den).add(this.den.mul(f.num));
+                newDen = this.den.mul(f.den);    
+            } else {
+                newNum = this.num.scale(f.den).add(this.den.scale(f.num));
+                newDen = this.den.scale(f.den);    
+            }
+        } else {
+            if(f.isSurd()) {
+                newNum = f.den.scale(this.num).add(f.num.scale(this.den));
+                newDen = f.den.scale(this.den);    
+            } else {
+                newNum = this.num*f.den + this.den*f.num;
+                newDen = this.den*f.den;    
+            }    
         }
-        newNum = this.num*f.den + this.den*f.num;
-        newDen = this.den*f.den;    
         return new Q(newNum, newDen);
     }
 
     sub(f) {
-        if(!(f instanceof Q)) {
-            f = new Q(f, 1);
-        }
         let nf = f.scale(-1);
         //console.log('frac sub..', f.str(), nf.str());
         return this.add(nf);
     }
 
     mul(f) {
-        if(!(f instanceof Q)) {
-            f = new Q(f, 1);
-        }
         let newNum, newDen;
-        newNum = this.num*f.num;
-        newDen = this.den*f.den;    
+        if(this.num instanceof Surd && this.den instanceof Surd) {
+            if(f.isSurd()) {
+                newNum = this.num.mul(f.num);
+                newDen = this.den.mul(f.den);    
+            } else {
+                newNum = this.num.scale(f.num);
+                newDen = this.den.scale(f.den);    
+            }
+        } else {
+            if(f.isSurd()) {
+                newNum = f.num.scale(this.num);
+                newDen = f.den.scale(this.den);    
+            } else {
+                newNum = this.num*f.num;
+                newDen = this.den*f.den;    
+            }    
+        }
         return new Q(newNum, newDen);
     }
 
     div(f) {
-        if(!(f instanceof Q)) {
-            f = new Q(f, 1);
-        }
         let newNum, newDen;
-        newNum = this.num*f.den;
-        newDen = this.den*f.num;    
+        if(this.num instanceof Surd && this.den instanceof Surd) {
+            if(f.isSurd()) {
+                newNum = this.num.mul(f.den);
+                newDen = this.den.mul(f.num);    
+            } else {
+                newNum = this.num.scale(f.den);
+                newDen = this.den.scale(f.num);    
+            }
+        } else {
+            if(f.isSurd()) {
+                newNum = f.den.scale(this.num);
+                newDen = f.num.scale(this.den);    
+            } else {
+                newNum = this.num*f.den;
+                newDen = this.den*f.num;    
+            }    
+        }
         return new Q(newNum, newDen);
     }
     value() {
-        return this.num/this.den;
+        if(this.num instanceof Surd && this.den instanceof Surd) {
+            return this.num.value() / this.num.value();
+        } else {
+            return this.num/this.den;
+        }
     }
 }
 
