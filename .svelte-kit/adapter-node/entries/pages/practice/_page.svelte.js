@@ -91,7 +91,7 @@ const Practiceradiobutton = create_ssr_component(($$result, $$props, $$bindings,
 });
 const Practice_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".problemPanel.svelte-1lkx03w{margin-top:1rem;width:auto}.problemField.svelte-1lkx03w{padding:0.5em;padding-bottom:1em;border:1px solid rgb(0, 163, 240);border-radius:10px;width:auto;font-size:0.8em;font-family:Georgia, 'Times New Roman', Times, serif}.dayscore.svelte-1lkx03w{grid-area:dayscore;border-radius:50%;border:rgba(0, 143, 253, 0) 1px solid;padding:0px;font-size:small;width:55px}.dayscore.svelte-1lkx03w{margin-left:auto;margin-right:auto;display:flex;align-items:center}.next.svelte-1lkx03w,.refresh.svelte-1lkx03w{cursor:pointer;background:transparent;border:none;outline:none;color:gray}.next.svelte-1lkx03w{grid-area:next}.refresh.svelte-1lkx03w{grid-area:refresh}.problemLegend.svelte-1lkx03w{display:flex;border-top:rgb(0, 163, 240) 1px solid;border-bottom:rgb(0, 163, 240) 1px solid;border-radius:10px;margin-left:20px;align-items:center}.problemStatement.svelte-1lkx03w{padding-left:0.3rem;margin-top:0.5rem;word-spacing:0.4rem;line-height:1.5rem;overflow:auto;scrollbar-width:thin}.svelte-1lkx03w::-webkit-scrollbar{width:10px}.problemArea.svelte-1lkx03w{display:flex;flex-direction:column}.noborder.svelte-1lkx03w{border:none;outline:none;background:transparent;color:gray;cursor:pointer}.green.svelte-1lkx03w{color:green}abbr.svelte-1lkx03w{text-decoration:none}",
+  code: ".problemPanel.svelte-1hqorv6{margin-top:1rem;width:auto}.problemField.svelte-1hqorv6{padding:0.5em;padding-bottom:1em;border:1px solid rgb(0, 163, 240);border-radius:10px;width:auto;font-size:0.8em;font-family:Georgia, 'Times New Roman', Times, serif}.dayscore.svelte-1hqorv6{grid-area:dayscore;border-radius:50%;border:rgba(0, 143, 253, 0) 1px solid;padding:0px;font-size:small;width:55px}.dayscore.svelte-1hqorv6{margin-left:auto;margin-right:auto;display:flex;align-items:center}.next.svelte-1hqorv6,.refresh.svelte-1hqorv6{cursor:pointer;background:transparent;border:none;outline:none;color:gray}.next.svelte-1hqorv6{grid-area:next}.refresh.svelte-1hqorv6{grid-area:refresh}.problemLegend.svelte-1hqorv6{display:flex;flex-direction:row;border-top:rgb(0, 163, 240) 1px solid;border-bottom:rgb(0, 163, 240) 1px solid;border-radius:10px;margin-left:20px;align-items:center}.problemStatement.svelte-1hqorv6{padding-left:0.3rem;margin-top:0.5rem;word-spacing:0.4rem;line-height:1.5rem;overflow:auto;scrollbar-width:thin}.svelte-1hqorv6::-webkit-scrollbar{width:10px}.problemArea.svelte-1hqorv6{display:flex;flex-direction:column}.noborder.svelte-1hqorv6{border:none;outline:none;background:transparent;color:gray;cursor:pointer}.green.svelte-1hqorv6{color:green}abbr.svelte-1hqorv6{text-decoration:none}",
   map: null
 };
 const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -134,16 +134,16 @@ const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     $$rendered = `
 
 
-<div class="${"problemPanel svelte-1lkx03w"}"><div class="${"problemset svelte-1lkx03w"}" style="${"display: block;"}"><fieldset class="${"problemField svelte-1lkx03w"}"><legend class="${"problemLegend svelte-1lkx03w"}"><div class="${"dayscore svelte-1lkx03w"}"><abbr title="${"Today's accuracy"}" class="${"svelte-1lkx03w"}">${validate_component(Performance, "Performance").$$render($$result, { strokedasharray }, {}, {})}</abbr></div>
-                <div class="${"refresh svelte-1lkx03w"}"><button class="${["noborder svelte-1lkx03w", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1lkx03w"}"></span>
-                        <span class="${"icon is-small material-icons svelte-1lkx03w"}">refresh
+<div class="${"problemPanel svelte-1hqorv6"}"><div class="${"problemset svelte-1hqorv6"}" style="${"display: block;"}"><fieldset class="${"problemField svelte-1hqorv6"}"><legend class="${"problemLegend svelte-1hqorv6"}"><div class="${"dayscore svelte-1hqorv6"}"><abbr title="${"Today's accuracy"}" class="${"svelte-1hqorv6"}">${validate_component(Performance, "Performance").$$render($$result, { strokedasharray }, {}, {})}</abbr></div>
+                <div class="${"refresh svelte-1hqorv6"}"><button class="${["noborder svelte-1hqorv6", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1hqorv6"}"></span>
+                        <span class="${"icon is-small material-icons svelte-1hqorv6"}">refresh
                         </span></button></div>
-                <div class="${"next svelte-1lkx03w"}"><button class="${["noborder svelte-1lkx03w", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1lkx03w"}"></span>
-                        <span class="${"icon is-small material-icons svelte-1lkx03w"}">arrow_forward
+                <div class="${"next svelte-1hqorv6"}"><button class="${["noborder svelte-1hqorv6", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1hqorv6"}"></span>
+                        <span class="${"icon is-small material-icons svelte-1hqorv6"}">arrow_forward
                         </span></button></div></legend>
 
-            <div class="${"problemArea svelte-1lkx03w"}"><div class="${"problemStatement svelte-1lkx03w"}"><!-- HTML_TAG_START -->${newproblem}<!-- HTML_TAG_END --></div>
-                <div class="${"options svelte-1lkx03w"}">${validate_component(Practiceradiobutton, "Practiceradiobutton").$$render(
+            <div class="${"problemArea svelte-1hqorv6"}"><div class="${"problemStatement svelte-1hqorv6"}"><!-- HTML_TAG_START -->${newproblem}<!-- HTML_TAG_END --></div>
+                <div class="${"options svelte-1hqorv6"}">${validate_component(Practiceradiobutton, "Practiceradiobutton").$$render(
       $$result,
       { optionValues, correct, answer },
       {

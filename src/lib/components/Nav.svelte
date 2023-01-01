@@ -89,6 +89,9 @@
         <!-- <a class="link" href="/projects">Projects</a> -->
     </div>
     <div class="links">
+        <a href='/notes'>
+            Notes
+        </a>
         <a href='/practice'>
             Practice
         </a>

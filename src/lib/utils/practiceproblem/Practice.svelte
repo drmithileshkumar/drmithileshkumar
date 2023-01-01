@@ -107,6 +107,7 @@
     }
     .problemLegend {
         display: flex;
+        flex-direction: row;
         border-top: rgb(0, 163, 240) 1px solid;
         border-bottom: rgb(0, 163, 240) 1px solid;
         border-radius: 10px;

@@ -120,7 +120,9 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     <div class="${"pages svelte-1twd5ym"}">
         
         </div>
-    <div class="${"links svelte-1twd5ym"}"><a href="${"/practice"}" class="${"svelte-1twd5ym"}">Practice
+    <div class="${"links svelte-1twd5ym"}"><a href="${"/notes"}" class="${"svelte-1twd5ym"}">Notes
+        </a>
+        <a href="${"/practice"}" class="${"svelte-1twd5ym"}">Practice
         </a>
         <a href="${"/iit"}" class="${"svelte-1twd5ym"}">IIT
         </a></div>
