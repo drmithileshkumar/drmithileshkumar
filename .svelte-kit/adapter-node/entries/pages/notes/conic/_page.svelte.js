@@ -1,7 +1,6 @@
 import { c as create_ssr_component, d as subscribe, e as escape, k as add_attribute, j as null_to_empty } from "../../../../chunks/index.js";
 import { p as page } from "../../../../chunks/stores.js";
-/* empty css                                                       */const CanvasBar_svelte_svelte_type_style_lang = "";
-const _page_svelte_svelte_type_style_lang = "";
+/* empty css                                                       */const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: ".container.svelte-shvkym{display:flex;position:relative}article.svelte-shvkym{position:relative;padding:0.5em}aside.svelte-shvkym{background-color:rgb(230, 228, 228);cursor:pointer;width:1em}.absolute.svelte-shvkym{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-shvkym::-webkit-scrollbar{width:0;height:0}.currentActive.svelte-shvkym{color:tomato;border-radius:10px;transition:all 1s}.pad.svelte-shvkym{min-height:100px}figure.svelte-shvkym{width:300px}.overlay.svelte-shvkym{position:absolute;z-index:2;left:0.5em;top:0;margin:auto;width:calc(100% - 2em);height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none}.presentationMode.svelte-shvkym{display:flex;gap:1em;height:1em;margin-bottom:0.5em}.thumbnail.svelte-shvkym{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.title.svelte-shvkym{position:absolute;margin:auto;font-weight:bold;font-size:2em;text-shadow:1px 1px 3px gray;color:red}.heading.svelte-shvkym{font-size:1.5em;font-weight:bold}",
   map: null

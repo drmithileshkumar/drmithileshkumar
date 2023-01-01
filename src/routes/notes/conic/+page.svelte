@@ -20,7 +20,6 @@
         let counter = 45;
         let current = -2;
         let isActive = -1; 
-        let nextStep = 0;
         let autoscroll = false;
         let globalCompositeOperation = 'source-over';
         beforeUpdate(() => {

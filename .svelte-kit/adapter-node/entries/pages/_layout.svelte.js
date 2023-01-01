@@ -1,5 +1,5 @@
 import { b as now, l as loop, c as create_ssr_component, v as validate_component } from "../../chunks/index.js";
-import { w as writable } from "../../chunks/index2.js";
+import { w as writable } from "../../chunks/index3.js";
 function is_date(obj) {
   return Object.prototype.toString.call(obj) === "[object Date]";
 }

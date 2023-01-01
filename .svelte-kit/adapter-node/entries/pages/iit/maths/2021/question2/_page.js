@@ -1,13 +1,8 @@
-async function load({ session, fetch, params, url }) {
+import { r as redirect } from "../../../../../../chunks/index2.js";
+async function load({ fetch, params, url }) {
   if (!(url.host === "drmithileshkumar.com" || url.host === "localhost:5173" || url.host === "localhost:3000")) {
-    return {
-      status: 301,
-      redirect: `https://drmithileshkumar.com${url.pathname}`
-    };
+    throw redirect(301, `https://drmithileshkumar.com${url.pathname}`);
   }
-  return {
-    props: {}
-  };
 }
 export {
   load

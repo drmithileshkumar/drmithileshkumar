@@ -1,5 +1,6 @@
 import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from './chunks/index-2bbd6063.js';
-import { w as writable, r as readable } from './chunks/index2-dd48deaa.js';
+import { e as error, j as json, R as Redirect, H as HttpError, A as ActionFailure } from './chunks/index2-fac81b88.js';
+import { w as writable, r as readable } from './chunks/index3-dd48deaa.js';
 
 /** @type {Record<string, string>} */
 const escaped = {
@@ -1138,33 +1139,6 @@ function is_content_type(request, ...types) {
 function is_form_content_type(request) {
   return is_content_type(request, "application/x-www-form-urlencoded", "multipart/form-data");
 }
-class HttpError {
-  constructor(status, body) {
-    this.status = status;
-    if (typeof body === "string") {
-      this.body = { message: body };
-    } else if (body) {
-      this.body = body;
-    } else {
-      this.body = { message: `Error: ${status}` };
-    }
-  }
-  toString() {
-    return JSON.stringify(this.body);
-  }
-}
-class Redirect {
-  constructor(status, location) {
-    this.status = status;
-    this.location = location;
-  }
-}
-class ActionFailure {
-  constructor(status, data) {
-    this.status = status;
-    this.data = data;
-  }
-}
 function coalesce_to_error(err) {
   return err instanceof Error || err && err.name && err.message ? err : new Error(JSON.stringify(err));
 }
@@ -1388,22 +1362,6 @@ function is_endpoint_request(event) {
 }
 function compact(arr) {
   return arr.filter((val) => val != null);
-}
-function error(status, message) {
-  if (isNaN(status) || status < 400 || status > 599) {
-    throw new Error(`HTTP error status codes must be between 400 and 599 — ${status} is invalid`);
-  }
-  return new HttpError(status, message);
-}
-function json(data, init2) {
-  const headers = new Headers(init2?.headers);
-  if (!headers.has("content-type")) {
-    headers.set("content-type", "application/json");
-  }
-  return new Response(JSON.stringify(data), {
-    ...init2,
-    headers
-  });
 }
 function is_action_json_request(event) {
   const accept = negotiate(event.request.headers.get("accept") ?? "*/*", [
@@ -3423,7 +3381,7 @@ class Server {
       app_template,
       app_template_contains_nonce: false,
       error_template,
-      version: "1672589851140"
+      version: "1672594369689"
     };
   }
   async init({ env }) {
