@@ -3,25 +3,25 @@
     "file": "_app/immutable/assets/_layout-9585c0ea.css",
     "src": "src/routes/+layout.css"
   },
-  "src/routes/practice/+layout.css": {
-    "file": "_app/immutable/assets/_layout-5f77238b.css",
-    "src": "src/routes/practice/+layout.css"
+  "src/routes/iit/maths/+page.css": {
+    "file": "_app/immutable/assets/_page-75b15002.css",
+    "src": "src/routes/iit/maths/+page.css"
+  },
+  "src/routes/iit/maths/+layout.css": {
+    "file": "_app/immutable/assets/_layout-96e1b1b9.css",
+    "src": "src/routes/iit/maths/+layout.css"
   },
   "Papers.css": {
     "file": "_app/immutable/assets/Papers-f64e7629.css",
     "src": "Papers.css"
   },
-  "src/routes/iit/maths/question3/+page.css": {
-    "file": "_app/immutable/assets/_page-0a47cc31.css",
-    "src": "src/routes/iit/maths/question3/+page.css"
+  "Link.css": {
+    "file": "_app/immutable/assets/Link-e8543c1a.css",
+    "src": "Link.css"
   },
   "src/routes/iit/maths/question1/+page.css": {
     "file": "_app/immutable/assets/_page-d4a1b0bd.css",
     "src": "src/routes/iit/maths/question1/+page.css"
-  },
-  "Link.css": {
-    "file": "_app/immutable/assets/Link-e8543c1a.css",
-    "src": "Link.css"
   },
   "src/routes/+page.css": {
     "file": "_app/immutable/assets/_page-d90079f6.css",
@@ -31,17 +31,17 @@
     "file": "_app/immutable/assets/_page-31554461.css",
     "src": "src/routes/iit/conic/+page.css"
   },
+  "src/routes/practice/+layout.css": {
+    "file": "_app/immutable/assets/_layout-5f77238b.css",
+    "src": "src/routes/practice/+layout.css"
+  },
+  "src/routes/iit/maths/question5/+page.css": {
+    "file": "_app/immutable/assets/_page-90a427e0.css",
+    "src": "src/routes/iit/maths/question5/+page.css"
+  },
   "src/routes/cv/+page.css": {
     "file": "_app/immutable/assets/_page-8eab1ee2.css",
     "src": "src/routes/cv/+page.css"
-  },
-  "src/routes/iit/maths/+layout.css": {
-    "file": "_app/immutable/assets/_layout-96e1b1b9.css",
-    "src": "src/routes/iit/maths/+layout.css"
-  },
-  "src/routes/iit/maths/+page.css": {
-    "file": "_app/immutable/assets/_page-75b15002.css",
-    "src": "src/routes/iit/maths/+page.css"
   },
   "src/routes/iit/maths/question6/+page.css": {
     "file": "_app/immutable/assets/_page-c1110dee.css",
@@ -51,106 +51,52 @@
     "file": "_app/immutable/assets/_page-80bf8356.css",
     "src": "src/routes/iit/maths/question2/+page.css"
   },
-  "src/routes/iit/maths/question5/+page.css": {
-    "file": "_app/immutable/assets/_page-90a427e0.css",
-    "src": "src/routes/iit/maths/question5/+page.css"
-  },
   "src/routes/practice/+page.css": {
-    "file": "_app/immutable/assets/_page-4a23ea5a.css",
+    "file": "_app/immutable/assets/_page-dc66810e.css",
     "src": "src/routes/practice/+page.css"
   },
-  "src/routes/iit/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/_page.js-7e464937.js",
-    "src": "src/routes/iit/+page.js",
+  "src/routes/iit/maths/question3/+page.css": {
+    "file": "_app/immutable/assets/_page-0a47cc31.css",
+    "src": "src/routes/iit/maths/question3/+page.css"
+  },
+  "src/routes/practice/+page.js": {
+    "file": "_app/immutable/modules/pages/practice/_page.js-3e937eca.js",
+    "src": "src/routes/practice/+page.js",
     "isEntry": true,
     "imports": [
-      "__page-d60006af.js"
+      "__page-1e2ef877.js"
     ]
   },
-  ".svelte-kit/generated/nodes/14.js": {
-    "file": "_app/immutable/chunks/14-e3ffe041.js",
-    "src": ".svelte-kit/generated/nodes/14.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/iit/maths/question5/+page.svelte"
-    ]
-  },
-  "src/lib/pages/practice/probability.js": {
-    "file": "_app/immutable/chunks/probability-172ddfda.js",
-    "src": "src/lib/pages/practice/probability.js",
+  "src/lib/pages/practice/hyperbola.js": {
+    "file": "_app/immutable/chunks/hyperbola-3f4bb569.js",
+    "src": "src/lib/pages/practice/hyperbola.js",
     "isDynamicEntry": true,
     "imports": [
       "_common-f3b98355.js",
       "_complex-8b2c2181.js"
     ]
   },
-  "src/lib/pages/practice/trigonometry.js": {
-    "file": "_app/immutable/chunks/trigonometry-ee8dabd5.js",
-    "src": "src/lib/pages/practice/trigonometry.js",
+  "__page-1e2ef877.js": {
+    "file": "_app/immutable/chunks/_page-1e2ef877.js"
+  },
+  "__page-d60006af.js": {
+    "file": "_app/immutable/chunks/_page-d60006af.js"
+  },
+  ".svelte-kit/generated/nodes/12.js": {
+    "file": "_app/immutable/chunks/12-c9b77afb.js",
+    "src": ".svelte-kit/generated/nodes/12.js",
     "isDynamicEntry": true,
     "imports": [
-      "_common-f3b98355.js"
+      "src/routes/iit/maths/question3/+page.svelte"
     ]
   },
-  "src/lib/pages/practice/reasoning.js": {
-    "file": "_app/immutable/chunks/reasoning-e13b88a8.js",
-    "src": "src/lib/pages/practice/reasoning.js",
+  "src/lib/pages/practice/parabola.js": {
+    "file": "_app/immutable/chunks/parabola-7d3b23a4.js",
+    "src": "src/lib/pages/practice/parabola.js",
     "isDynamicEntry": true,
     "imports": [
       "_common-f3b98355.js",
       "_complex-8b2c2181.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-fe9811db.js",
-    "src": ".svelte-kit/generated/nodes/0.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/+layout.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-b6e667d4.js",
-    "src": ".svelte-kit/generated/nodes/4.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/practice/+layout.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/7.js": {
-    "file": "_app/immutable/chunks/7-2e3f21e7.js",
-    "src": ".svelte-kit/generated/nodes/7.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-d60006af.js",
-      "src/routes/iit/+page.svelte"
-    ]
-  },
-  "src/lib/pages/practice/definite.js": {
-    "file": "_app/immutable/chunks/definite-72fff3d7.js",
-    "src": "src/lib/pages/practice/definite.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_fraction-dc1be116.js",
-      "_common-f3b98355.js",
-      "_polynomial-a7c44167.js"
-    ]
-  },
-  "src/lib/pages/practice/indefinite.js": {
-    "file": "_app/immutable/chunks/indefinite-05a08dd7.js",
-    "src": "src/lib/pages/practice/indefinite.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_polynomial-a7c44167.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/13.js": {
-    "file": "_app/immutable/chunks/13-5905cbfd.js",
-    "src": ".svelte-kit/generated/nodes/13.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/iit/maths/question4/+page.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/9.js": {
@@ -170,138 +116,21 @@
       "_polynomial-a7c44167.js"
     ]
   },
-  "src/lib/pages/practice/binomial.js": {
-    "file": "_app/immutable/chunks/binomial-f0ed978e.js",
-    "src": "src/lib/pages/practice/binomial.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js",
-      "_combinatorics-02bb53eb.js"
-    ]
-  },
-  "src/lib/pages/practice/limits.js": {
-    "file": "_app/immutable/chunks/limits-f2808dad.js",
-    "src": "src/lib/pages/practice/limits.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_sets-c5f87a63.js",
-      "_complex-8b2c2181.js",
-      "_polynomial-a7c44167.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/8.js": {
-    "file": "_app/immutable/chunks/8-fcffde6e.js",
-    "src": ".svelte-kit/generated/nodes/8.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-962e2290.js",
-      "src/routes/iit/conic/+page.svelte"
-    ]
-  },
-  "src/lib/pages/practice/hyperbola.js": {
-    "file": "_app/immutable/chunks/hyperbola-3f4bb569.js",
-    "src": "src/lib/pages/practice/hyperbola.js",
+  "src/lib/pages/practice/reasoning.js": {
+    "file": "_app/immutable/chunks/reasoning-e13b88a8.js",
+    "src": "src/lib/pages/practice/reasoning.js",
     "isDynamicEntry": true,
     "imports": [
       "_common-f3b98355.js",
       "_complex-8b2c2181.js"
     ]
   },
-  "src/routes/iit/maths/question2/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/maths/question2/_page.js-a3f2a831.js",
-    "src": "src/routes/iit/maths/question2/+page.js",
-    "isEntry": true,
-    "imports": [
-      "__page-67494e69.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-8425558a.js",
-    "src": ".svelte-kit/generated/nodes/1.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
-    ]
-  },
-  "_complex-8b2c2181.js": {
-    "file": "_app/immutable/chunks/complex-8b2c2181.js",
-    "imports": [
-      "_fraction-dc1be116.js"
-    ]
-  },
-  "src/lib/pages/practice/differential.js": {
-    "file": "_app/immutable/chunks/differential-37f5101f.js",
-    "src": "src/lib/pages/practice/differential.js",
+  "src/lib/pages/practice/inverse.js": {
+    "file": "_app/immutable/chunks/inverse-bf1d6777.js",
+    "src": "src/lib/pages/practice/inverse.js",
     "isDynamicEntry": true,
     "imports": [
       "_common-f3b98355.js"
-    ]
-  },
-  "_common-f3b98355.js": {
-    "file": "_app/immutable/chunks/common-f3b98355.js"
-  },
-  "__page-962e2290.js": {
-    "file": "_app/immutable/chunks/_page-962e2290.js"
-  },
-  "__page-67494e69.js": {
-    "file": "_app/immutable/chunks/_page-67494e69.js"
-  },
-  ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-a26a2454.js",
-    "src": ".svelte-kit/generated/nodes/2.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/cv/+layout.svelte"
-    ]
-  },
-  "src/lib/pages/practice/appIntegrals.js": {
-    "file": "_app/immutable/chunks/appIntegrals-10af451b.js",
-    "src": "src/lib/pages/practice/appIntegrals.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_fraction-dc1be116.js",
-      "_common-f3b98355.js",
-      "_polynomial-a7c44167.js"
-    ]
-  },
-  "__page-1e2ef877.js": {
-    "file": "_app/immutable/chunks/_page-1e2ef877.js"
-  },
-  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-c4159bb4.js",
-    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9fb15683.js",
-      "_stores-ec976e60.js"
-    ]
-  },
-  "src/lib/pages/practice/sets.js": {
-    "file": "_app/immutable/chunks/sets-a147c548.js",
-    "src": "src/lib/pages/practice/sets.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_sets-c5f87a63.js"
-    ]
-  },
-  "src/lib/pages/practice/threed.js": {
-    "file": "_app/immutable/chunks/threed-bce3397d.js",
-    "src": "src/lib/pages/practice/threed.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/12.js": {
-    "file": "_app/immutable/chunks/12-4ec17397.js",
-    "src": ".svelte-kit/generated/nodes/12.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/iit/maths/question3/+page.svelte"
     ]
   },
   "src/routes/iit/conic/+page.js": {
@@ -312,21 +141,12 @@
       "__page-962e2290.js"
     ]
   },
-  ".svelte-kit/generated/nodes/11.js": {
-    "file": "_app/immutable/chunks/11-e312a7b3.js",
-    "src": ".svelte-kit/generated/nodes/11.js",
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-8425558a.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-67494e69.js",
-      "src/routes/iit/maths/question2/+page.svelte"
-    ]
-  },
-  "src/routes/practice/+page.js": {
-    "file": "_app/immutable/modules/pages/practice/_page.js-3e937eca.js",
-    "src": "src/routes/practice/+page.js",
-    "isEntry": true,
-    "imports": [
-      "__page-1e2ef877.js"
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
     ]
   },
   "src/lib/pages/practice/combinatorics.js": {
@@ -340,36 +160,184 @@
       "_combinatorics-02bb53eb.js"
     ]
   },
-  "_ripple-1a7c2c49.js": {
-    "file": "_app/immutable/chunks/ripple-1a7c2c49.js",
+  "src/lib/pages/practice/relations.js": {
+    "file": "_app/immutable/chunks/relations-e98db378.js",
+    "src": "src/lib/pages/practice/relations.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_sets-c5f87a63.js",
+      "_polynomial-a7c44167.js"
+    ]
+  },
+  "src/lib/pages/practice/appIntegrals.js": {
+    "file": "_app/immutable/chunks/appIntegrals-10af451b.js",
+    "src": "src/lib/pages/practice/appIntegrals.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_fraction-dc1be116.js",
+      "_common-f3b98355.js",
+      "_polynomial-a7c44167.js"
+    ]
+  },
+  "_ripple-d6af89fa.js": {
+    "file": "_app/immutable/chunks/ripple-d6af89fa.js"
+  },
+  ".svelte-kit/generated/nodes/14.js": {
+    "file": "_app/immutable/chunks/14-2b3f7a71.js",
+    "src": ".svelte-kit/generated/nodes/14.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/iit/maths/question5/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/4.js": {
+    "file": "_app/immutable/chunks/4-b6e667d4.js",
+    "src": ".svelte-kit/generated/nodes/4.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/practice/+layout.svelte"
+    ]
+  },
+  "_index-ea2f90c7.js": {
+    "file": "_app/immutable/chunks/index-ea2f90c7.js",
     "imports": [
       "_index-9fb15683.js"
     ]
   },
-  ".svelte-kit/generated/nodes/15.js": {
-    "file": "_app/immutable/chunks/15-6cf7744e.js",
-    "src": ".svelte-kit/generated/nodes/15.js",
+  "src/lib/pages/practice/matrices.js": {
+    "file": "_app/immutable/chunks/matrices-d4712fa1.js",
+    "src": "src/lib/pages/practice/matrices.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/iit/maths/question6/+page.svelte"
+      "_common-f3b98355.js"
     ]
   },
-  "src/routes/iit/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/_page.svelte-7f80ee55.js",
-    "src": "src/routes/iit/+page.svelte",
+  ".svelte-kit/generated/nodes/5.js": {
+    "file": "_app/immutable/chunks/5-c6a66fca.js",
+    "src": ".svelte-kit/generated/nodes/5.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+page.svelte"
+    ]
+  },
+  "src/lib/pages/practice/sequences.js": {
+    "file": "_app/immutable/chunks/sequences-9378f930.js",
+    "src": "src/lib/pages/practice/sequences.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_fraction-dc1be116.js",
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js"
+    ]
+  },
+  "src/lib/pages/practice/induction.js": {
+    "file": "_app/immutable/chunks/induction-df691c12.js",
+    "src": "src/lib/pages/practice/induction.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_sets-c5f87a63.js"
+    ]
+  },
+  "src/lib/pages/practice/continuity.js": {
+    "file": "_app/immutable/chunks/continuity-3a486b34.js",
+    "src": "src/lib/pages/practice/continuity.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_polynomial-a7c44167.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/13.js": {
+    "file": "_app/immutable/chunks/13-c3c3eed2.js",
+    "src": ".svelte-kit/generated/nodes/13.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/iit/maths/question4/+page.svelte"
+    ]
+  },
+  "src/lib/pages/practice/geometry3d.js": {
+    "file": "_app/immutable/chunks/geometry3d-dd9b8cde.js",
+    "src": "src/lib/pages/practice/geometry3d.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_fraction-dc1be116.js",
+      "_common-f3b98355.js"
+    ]
+  },
+  "src/lib/pages/practice/differential.js": {
+    "file": "_app/immutable/chunks/differential-37f5101f.js",
+    "src": "src/lib/pages/practice/differential.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js"
+    ]
+  },
+  "src/routes/cv/+layout.svelte": {
+    "file": "_app/immutable/components/pages/cv/_layout.svelte-e1728231.js",
+    "src": "src/routes/cv/+layout.svelte",
     "isEntry": true,
     "imports": [
       "_index-9fb15683.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Link-e8543c1a.css"
     ]
   },
-  "_stores-ec976e60.js": {
-    "file": "_app/immutable/chunks/stores-ec976e60.js",
+  ".svelte-kit/generated/nodes/16.js": {
+    "file": "_app/immutable/chunks/16-c960dbaa.js",
+    "src": ".svelte-kit/generated/nodes/16.js",
+    "isDynamicEntry": true,
     "imports": [
-      "_index-9fb15683.js",
-      "_singletons-4d016993.js"
+      "__page-1e2ef877.js",
+      "src/routes/practice/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/10.js": {
+    "file": "_app/immutable/chunks/10-0a5e8b2d.js",
+    "src": ".svelte-kit/generated/nodes/10.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-6e69c3b7.js",
+      "src/routes/iit/maths/question1/+page.svelte"
+    ]
+  },
+  "src/lib/pages/practice/linear.js": {
+    "file": "_app/immutable/chunks/linear-2b6f3237.js",
+    "src": "src/lib/pages/practice/linear.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_fraction-dc1be116.js",
+      "_common-f3b98355.js"
+    ]
+  },
+  "src/routes/iit/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/_page.js-7e464937.js",
+    "src": "src/routes/iit/+page.js",
+    "isEntry": true,
+    "imports": [
+      "__page-d60006af.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/7.js": {
+    "file": "_app/immutable/chunks/7-2e3f21e7.js",
+    "src": ".svelte-kit/generated/nodes/7.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-d60006af.js",
+      "src/routes/iit/+page.svelte"
+    ]
+  },
+  "src/routes/iit/maths/question1/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/maths/question1/_page.js-a3f2a831.js",
+    "src": "src/routes/iit/maths/question1/+page.js",
+    "isEntry": true,
+    "imports": [
+      "__page-6e69c3b7.js"
+    ]
+  },
+  "_complex-8b2c2181.js": {
+    "file": "_app/immutable/chunks/complex-8b2c2181.js",
+    "imports": [
+      "_fraction-dc1be116.js"
     ]
   },
   "src/lib/pages/practice/line.js": {
@@ -382,29 +350,41 @@
       "_complex-8b2c2181.js"
     ]
   },
-  "_preload-helper-41c905a7.js": {
-    "file": "_app/immutable/chunks/preload-helper-41c905a7.js"
-  },
-  "src/lib/pages/practice/statistics.js": {
-    "file": "_app/immutable/chunks/statistics-ae06b845.js",
-    "src": "src/lib/pages/practice/statistics.js",
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-a26a2454.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
+      "src/routes/cv/+layout.svelte"
+    ]
+  },
+  "src/lib/pages/practice/complex.js": {
+    "file": "_app/immutable/chunks/complex-f44cc0bb.js",
+    "src": "src/lib/pages/practice/complex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_fraction-dc1be116.js",
       "_common-f3b98355.js",
-      "_sets-c5f87a63.js",
       "_complex-8b2c2181.js"
     ]
   },
-  "_polynomial-a7c44167.js": {
-    "file": "_app/immutable/chunks/polynomial-a7c44167.js",
+  "src/routes/iit/maths/question2/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/maths/question2/_page.js-a3f2a831.js",
+    "src": "src/routes/iit/maths/question2/+page.js",
+    "isEntry": true,
     "imports": [
-      "_fraction-dc1be116.js",
-      "_common-f3b98355.js"
+      "__page-67494e69.js"
     ]
   },
-  "src/lib/pages/practice/relations12.js": {
-    "file": "_app/immutable/chunks/relations12-7bdcb657.js",
-    "src": "src/lib/pages/practice/relations12.js",
+  "__page-962e2290.js": {
+    "file": "_app/immutable/chunks/_page-962e2290.js"
+  },
+  "__page-67494e69.js": {
+    "file": "_app/immutable/chunks/_page-67494e69.js"
+  },
+  "src/lib/pages/practice/sets.js": {
+    "file": "_app/immutable/chunks/sets-a147c548.js",
+    "src": "src/lib/pages/practice/sets.js",
     "isDynamicEntry": true,
     "imports": [
       "_common-f3b98355.js",
@@ -420,58 +400,13 @@
       "_fraction-dc1be116.js"
     ]
   },
-  "_sets-c5f87a63.js": {
-    "file": "_app/immutable/chunks/sets-c5f87a63.js",
-    "imports": [
-      "_common-f3b98355.js"
-    ]
-  },
-  "_stores-8b221992.js": {
-    "file": "_app/immutable/chunks/stores-8b221992.js",
-    "imports": [
-      "_index-ea2f90c7.js"
-    ]
-  },
-  "src/routes/cv/+layout.svelte": {
-    "file": "_app/immutable/components/pages/cv/_layout.svelte-e1728231.js",
-    "src": "src/routes/cv/+layout.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9fb15683.js"
-    ]
-  },
-  "src/routes/iit/maths/question1/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/maths/question1/_page.js-a3f2a831.js",
-    "src": "src/routes/iit/maths/question1/+page.js",
-    "isEntry": true,
-    "imports": [
-      "__page-6e69c3b7.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/16.js": {
-    "file": "_app/immutable/chunks/16-a55d2506.js",
-    "src": ".svelte-kit/generated/nodes/16.js",
+  ".svelte-kit/generated/nodes/11.js": {
+    "file": "_app/immutable/chunks/11-448e84d4.js",
+    "src": ".svelte-kit/generated/nodes/11.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-1e2ef877.js",
-      "src/routes/practice/+page.svelte"
-    ]
-  },
-  "src/lib/pages/practice/continuity.js": {
-    "file": "_app/immutable/chunks/continuity-3a486b34.js",
-    "src": "src/lib/pages/practice/continuity.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_polynomial-a7c44167.js"
-    ]
-  },
-  "src/lib/pages/practice/matrices.js": {
-    "file": "_app/immutable/chunks/matrices-d4712fa1.js",
-    "src": "src/lib/pages/practice/matrices.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js"
+      "__page-67494e69.js",
+      "src/routes/iit/maths/question2/+page.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/6.js": {
@@ -482,59 +417,24 @@
       "src/routes/cv/+page.svelte"
     ]
   },
-  "__page-6e69c3b7.js": {
-    "file": "_app/immutable/chunks/_page-6e69c3b7.js"
-  },
-  "src/lib/pages/practice/sequences.js": {
-    "file": "_app/immutable/chunks/sequences-9378f930.js",
-    "src": "src/lib/pages/practice/sequences.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_fraction-dc1be116.js",
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js"
-    ]
-  },
-  "src/lib/pages/practice/relations.js": {
-    "file": "_app/immutable/chunks/relations-e98db378.js",
-    "src": "src/lib/pages/practice/relations.js",
+  "src/lib/pages/practice/limits.js": {
+    "file": "_app/immutable/chunks/limits-f2808dad.js",
+    "src": "src/lib/pages/practice/limits.js",
     "isDynamicEntry": true,
     "imports": [
       "_common-f3b98355.js",
       "_sets-c5f87a63.js",
+      "_complex-8b2c2181.js",
       "_polynomial-a7c44167.js"
     ]
   },
-  "src/lib/pages/practice/induction.js": {
-    "file": "_app/immutable/chunks/induction-df691c12.js",
-    "src": "src/lib/pages/practice/induction.js",
+  "src/lib/pages/practice/indefinite.js": {
+    "file": "_app/immutable/chunks/indefinite-05a08dd7.js",
+    "src": "src/lib/pages/practice/indefinite.js",
     "isDynamicEntry": true,
     "imports": [
       "_common-f3b98355.js",
-      "_sets-c5f87a63.js"
-    ]
-  },
-  "src/lib/pages/practice/determinants.js": {
-    "file": "_app/immutable/chunks/determinants-e0dd0871.js",
-    "src": "src/lib/pages/practice/determinants.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js"
-    ]
-  },
-  "src/lib/pages/practice/geometry3d.js": {
-    "file": "_app/immutable/chunks/geometry3d-dd9b8cde.js",
-    "src": "src/lib/pages/practice/geometry3d.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_fraction-dc1be116.js",
-      "_common-f3b98355.js"
-    ]
-  },
-  "_index-ea2f90c7.js": {
-    "file": "_app/immutable/chunks/index-ea2f90c7.js",
-    "imports": [
-      "_index-9fb15683.js"
+      "_polynomial-a7c44167.js"
     ]
   },
   "_Canves-8ff7c84d.js": {
@@ -543,19 +443,22 @@
       "_index-9fb15683.js"
     ]
   },
-  "_constants-79d6a0a7.js": {
-    "file": "_app/immutable/chunks/constants-79d6a0a7.js"
-  },
-  ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-c6a66fca.js",
-    "src": ".svelte-kit/generated/nodes/5.js",
+  "src/lib/pages/practice/relations12.js": {
+    "file": "_app/immutable/chunks/relations12-7bdcb657.js",
+    "src": "src/lib/pages/practice/relations12.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/+page.svelte"
+      "_common-f3b98355.js",
+      "_sets-c5f87a63.js"
     ]
   },
-  "_combinatorics-02bb53eb.js": {
-    "file": "_app/immutable/chunks/combinatorics-02bb53eb.js"
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-fe9811db.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+layout.svelte"
+    ]
   },
   ".svelte-kit/generated/nodes/3.js": {
     "file": "_app/immutable/chunks/3-f90510cb.js",
@@ -563,6 +466,50 @@
     "isDynamicEntry": true,
     "imports": [
       "src/routes/iit/maths/+layout.svelte"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "_app/immutable/components/error.svelte-c4159bb4.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9fb15683.js",
+      "_stores-ec976e60.js"
+    ]
+  },
+  "_singletons-4d016993.js": {
+    "file": "_app/immutable/chunks/singletons-4d016993.js",
+    "imports": [
+      "_index-ea2f90c7.js"
+    ]
+  },
+  "src/lib/pages/practice/binomial.js": {
+    "file": "_app/immutable/chunks/binomial-f0ed978e.js",
+    "src": "src/lib/pages/practice/binomial.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js",
+      "_combinatorics-02bb53eb.js"
+    ]
+  },
+  "src/lib/pages/practice/quadratic.js": {
+    "file": "_app/immutable/chunks/quadratic-c6655355.js",
+    "src": "src/lib/pages/practice/quadratic.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js"
+    ]
+  },
+  "src/lib/pages/practice/definite.js": {
+    "file": "_app/immutable/chunks/definite-72fff3d7.js",
+    "src": "src/lib/pages/practice/definite.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_fraction-dc1be116.js",
+      "_common-f3b98355.js",
+      "_polynomial-a7c44167.js"
     ]
   },
   "src/lib/pages/practice/appDerivatives.js": {
@@ -574,15 +521,6 @@
       "_polynomial-a7c44167.js"
     ]
   },
-  "src/lib/pages/practice/parabola.js": {
-    "file": "_app/immutable/chunks/parabola-7d3b23a4.js",
-    "src": "src/lib/pages/practice/parabola.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js"
-    ]
-  },
   "src/lib/pages/practice/ellipse.js": {
     "file": "_app/immutable/chunks/ellipse-9b13ed0f.js",
     "src": "src/lib/pages/practice/ellipse.js",
@@ -592,22 +530,31 @@
       "_complex-8b2c2181.js"
     ]
   },
-  "__page-d60006af.js": {
-    "file": "_app/immutable/chunks/_page-d60006af.js"
-  },
-  "_fraction-dc1be116.js": {
-    "file": "_app/immutable/chunks/fraction-dc1be116.js",
-    "imports": [
-      "_common-f3b98355.js",
-      "_sets-c5f87a63.js"
-    ]
-  },
-  "src/lib/pages/practice/complex.js": {
-    "file": "_app/immutable/chunks/complex-f44cc0bb.js",
-    "src": "src/lib/pages/practice/complex.js",
+  "src/lib/pages/practice/determinants.js": {
+    "file": "_app/immutable/chunks/determinants-e0dd0871.js",
+    "src": "src/lib/pages/practice/determinants.js",
     "isDynamicEntry": true,
     "imports": [
-      "_fraction-dc1be116.js",
+      "_common-f3b98355.js"
+    ]
+  },
+  "src/routes/iit/maths/+layout.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/_layout.svelte-de5c8ff9.js",
+    "src": "src/routes/iit/maths/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9fb15683.js",
+      "_singletons-4d016993.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-96e1b1b9.css"
+    ]
+  },
+  "src/lib/pages/practice/probability.js": {
+    "file": "_app/immutable/chunks/probability-172ddfda.js",
+    "src": "src/lib/pages/practice/probability.js",
+    "isDynamicEntry": true,
+    "imports": [
       "_common-f3b98355.js",
       "_complex-8b2c2181.js"
     ]
@@ -621,13 +568,212 @@
       "_complex-8b2c2181.js"
     ]
   },
-  ".svelte-kit/generated/nodes/10.js": {
-    "file": "_app/immutable/chunks/10-f04ce3f0.js",
-    "src": ".svelte-kit/generated/nodes/10.js",
+  "__page-6e69c3b7.js": {
+    "file": "_app/immutable/chunks/_page-6e69c3b7.js"
+  },
+  "_constants-79d6a0a7.js": {
+    "file": "_app/immutable/chunks/constants-79d6a0a7.js"
+  },
+  "src/lib/pages/practice/threed.js": {
+    "file": "_app/immutable/chunks/threed-bce3397d.js",
+    "src": "src/lib/pages/practice/threed.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-6e69c3b7.js",
-      "src/routes/iit/maths/question1/+page.svelte"
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js"
+    ]
+  },
+  "_preload-helper-41c905a7.js": {
+    "file": "_app/immutable/chunks/preload-helper-41c905a7.js"
+  },
+  "_combinatorics-02bb53eb.js": {
+    "file": "_app/immutable/chunks/combinatorics-02bb53eb.js"
+  },
+  "_index-9fb15683.js": {
+    "file": "_app/immutable/chunks/index-9fb15683.js"
+  },
+  ".svelte-kit/generated/nodes/8.js": {
+    "file": "_app/immutable/chunks/8-ad24cea2.js",
+    "src": ".svelte-kit/generated/nodes/8.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-962e2290.js",
+      "src/routes/iit/conic/+page.svelte"
+    ]
+  },
+  "_stores-ec976e60.js": {
+    "file": "_app/immutable/chunks/stores-ec976e60.js",
+    "imports": [
+      "_index-9fb15683.js",
+      "_singletons-4d016993.js"
+    ]
+  },
+  "_common-f3b98355.js": {
+    "file": "_app/immutable/chunks/common-f3b98355.js"
+  },
+  "src/lib/pages/practice/derivatives.js": {
+    "file": "_app/immutable/chunks/derivatives-f13732cc.js",
+    "src": "src/lib/pages/practice/derivatives.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_sets-c5f87a63.js",
+      "_complex-8b2c2181.js",
+      "_polynomial-a7c44167.js"
+    ]
+  },
+  "src/routes/+layout.svelte": {
+    "file": "_app/immutable/components/pages/_layout.svelte-3179d339.js",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9fb15683.js",
+      "_index-ea2f90c7.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-9585c0ea.css"
+    ]
+  },
+  "src/routes/iit/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/_page.svelte-7f80ee55.js",
+    "src": "src/routes/iit/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9fb15683.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-e8543c1a.css"
+    ]
+  },
+  "_polynomial-a7c44167.js": {
+    "file": "_app/immutable/chunks/polynomial-a7c44167.js",
+    "imports": [
+      "_fraction-dc1be116.js",
+      "_common-f3b98355.js"
+    ]
+  },
+  "_index-28f56b41.js": {
+    "file": "_app/immutable/chunks/index-28f56b41.js",
+    "imports": [
+      "_index-9fb15683.js"
+    ]
+  },
+  "_stores-8b221992.js": {
+    "file": "_app/immutable/chunks/stores-8b221992.js",
+    "imports": [
+      "_index-ea2f90c7.js"
+    ]
+  },
+  "src/lib/pages/practice/statistics.js": {
+    "file": "_app/immutable/chunks/statistics-ae06b845.js",
+    "src": "src/lib/pages/practice/statistics.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_sets-c5f87a63.js",
+      "_complex-8b2c2181.js"
+    ]
+  },
+  "src/lib/pages/practice/inequalities.js": {
+    "file": "_app/immutable/chunks/inequalities-b713a6f5.js",
+    "src": "src/lib/pages/practice/inequalities.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js",
+      "_fraction-dc1be116.js"
+    ]
+  },
+  "src/lib/pages/practice/trigonometry.js": {
+    "file": "_app/immutable/chunks/trigonometry-ee8dabd5.js",
+    "src": "src/lib/pages/practice/trigonometry.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/15.js": {
+    "file": "_app/immutable/chunks/15-70d60a28.js",
+    "src": ".svelte-kit/generated/nodes/15.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/iit/maths/question6/+page.svelte"
+    ]
+  },
+  "_fraction-dc1be116.js": {
+    "file": "_app/immutable/chunks/fraction-dc1be116.js",
+    "imports": [
+      "_common-f3b98355.js",
+      "_sets-c5f87a63.js"
+    ]
+  },
+  "src/routes/iit/maths/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/_page.svelte-b7b70588.js",
+    "src": "src/routes/iit/maths/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9fb15683.js",
+      "_constants-79d6a0a7.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-75b15002.css",
+      "_app/immutable/assets/Link-e8543c1a.css"
+    ]
+  },
+  "_sets-c5f87a63.js": {
+    "file": "_app/immutable/chunks/sets-c5f87a63.js",
+    "imports": [
+      "_common-f3b98355.js"
+    ]
+  },
+  "_Papers-f595e476.js": {
+    "file": "_app/immutable/chunks/Papers-f595e476.js",
+    "imports": [
+      "_index-9fb15683.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Papers-f64e7629.css"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/start-2ffbbe55.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-9fb15683.js",
+      "_singletons-4d016993.js",
+      "_preload-helper-41c905a7.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/nodes/0.js",
+      ".svelte-kit/generated/nodes/1.js",
+      ".svelte-kit/generated/nodes/2.js",
+      ".svelte-kit/generated/nodes/3.js",
+      ".svelte-kit/generated/nodes/4.js",
+      ".svelte-kit/generated/nodes/5.js",
+      ".svelte-kit/generated/nodes/6.js",
+      ".svelte-kit/generated/nodes/7.js",
+      ".svelte-kit/generated/nodes/8.js",
+      ".svelte-kit/generated/nodes/9.js",
+      ".svelte-kit/generated/nodes/10.js",
+      ".svelte-kit/generated/nodes/11.js",
+      ".svelte-kit/generated/nodes/12.js",
+      ".svelte-kit/generated/nodes/13.js",
+      ".svelte-kit/generated/nodes/14.js",
+      ".svelte-kit/generated/nodes/15.js",
+      ".svelte-kit/generated/nodes/16.js"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-24c711f4.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9fb15683.js",
+      "_Papers-f595e476.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-d90079f6.css"
     ]
   },
   "src/routes/practice/+layout.svelte": {
@@ -680,163 +826,6 @@
       "_app/immutable/assets/_layout-5f77238b.css"
     ]
   },
-  "src/lib/pages/practice/linear.js": {
-    "file": "_app/immutable/chunks/linear-2b6f3237.js",
-    "src": "src/lib/pages/practice/linear.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_fraction-dc1be116.js",
-      "_common-f3b98355.js"
-    ]
-  },
-  "src/lib/pages/practice/inverse.js": {
-    "file": "_app/immutable/chunks/inverse-bf1d6777.js",
-    "src": "src/lib/pages/practice/inverse.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js"
-    ]
-  },
-  "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-3179d339.js",
-    "src": "src/routes/+layout.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9fb15683.js",
-      "_index-ea2f90c7.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_layout-9585c0ea.css"
-    ]
-  },
-  "_singletons-4d016993.js": {
-    "file": "_app/immutable/chunks/singletons-4d016993.js",
-    "imports": [
-      "_index-ea2f90c7.js"
-    ]
-  },
-  "src/lib/pages/practice/quadratic.js": {
-    "file": "_app/immutable/chunks/quadratic-c6655355.js",
-    "src": "src/lib/pages/practice/quadratic.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js"
-    ]
-  },
-  "src/lib/pages/practice/derivatives.js": {
-    "file": "_app/immutable/chunks/derivatives-f13732cc.js",
-    "src": "src/lib/pages/practice/derivatives.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_sets-c5f87a63.js",
-      "_complex-8b2c2181.js",
-      "_polynomial-a7c44167.js"
-    ]
-  },
-  "src/lib/pages/practice/inequalities.js": {
-    "file": "_app/immutable/chunks/inequalities-b713a6f5.js",
-    "src": "src/lib/pages/practice/inequalities.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js",
-      "_fraction-dc1be116.js"
-    ]
-  },
-  "_index-9fb15683.js": {
-    "file": "_app/immutable/chunks/index-9fb15683.js"
-  },
-  "src/routes/iit/maths/+layout.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/_layout.svelte-de5c8ff9.js",
-    "src": "src/routes/iit/maths/+layout.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9fb15683.js",
-      "_singletons-4d016993.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_layout-96e1b1b9.css"
-    ]
-  },
-  "src/routes/iit/maths/question3/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/question3/_page.svelte-df6ff030.js",
-    "src": "src/routes/iit/maths/question3/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9fb15683.js",
-      "_stores-ec976e60.js",
-      "_ripple-1a7c2c49.js",
-      "_constants-79d6a0a7.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-0a47cc31.css"
-    ]
-  },
-  "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-24c711f4.js",
-    "src": "src/routes/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9fb15683.js",
-      "_Papers-f595e476.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-d90079f6.css"
-    ]
-  },
-  "_Papers-f595e476.js": {
-    "file": "_app/immutable/chunks/Papers-f595e476.js",
-    "imports": [
-      "_index-9fb15683.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Papers-f64e7629.css"
-    ]
-  },
-  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-84968396.js",
-    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
-    "isEntry": true,
-    "imports": [
-      "_index-9fb15683.js",
-      "_singletons-4d016993.js",
-      "_preload-helper-41c905a7.js"
-    ],
-    "dynamicImports": [
-      ".svelte-kit/generated/nodes/0.js",
-      ".svelte-kit/generated/nodes/1.js",
-      ".svelte-kit/generated/nodes/2.js",
-      ".svelte-kit/generated/nodes/3.js",
-      ".svelte-kit/generated/nodes/4.js",
-      ".svelte-kit/generated/nodes/5.js",
-      ".svelte-kit/generated/nodes/6.js",
-      ".svelte-kit/generated/nodes/7.js",
-      ".svelte-kit/generated/nodes/8.js",
-      ".svelte-kit/generated/nodes/9.js",
-      ".svelte-kit/generated/nodes/10.js",
-      ".svelte-kit/generated/nodes/11.js",
-      ".svelte-kit/generated/nodes/12.js",
-      ".svelte-kit/generated/nodes/13.js",
-      ".svelte-kit/generated/nodes/14.js",
-      ".svelte-kit/generated/nodes/15.js",
-      ".svelte-kit/generated/nodes/16.js"
-    ]
-  },
-  "src/routes/iit/maths/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/_page.svelte-b7b70588.js",
-    "src": "src/routes/iit/maths/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9fb15683.js",
-      "_constants-79d6a0a7.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-75b15002.css",
-      "_app/immutable/assets/Link-e8543c1a.css"
-    ]
-  },
   "src/routes/cv/+page.svelte": {
     "file": "_app/immutable/components/pages/cv/_page.svelte-8eb7030c.js",
     "src": "src/routes/cv/+page.svelte",
@@ -849,71 +838,75 @@
       "_app/immutable/assets/_page-8eab1ee2.css"
     ]
   },
-  "src/routes/iit/maths/question6/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/question6/_page.svelte-a7deddcc.js",
-    "src": "src/routes/iit/maths/question6/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9fb15683.js",
-      "_stores-ec976e60.js",
-      "_ripple-1a7c2c49.js",
-      "_constants-79d6a0a7.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-c1110dee.css"
-    ]
-  },
-  "src/routes/iit/maths/question4/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/question4/_page.svelte-bd808600.js",
-    "src": "src/routes/iit/maths/question4/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9fb15683.js",
-      "_stores-ec976e60.js",
-      "_ripple-1a7c2c49.js",
-      "_constants-79d6a0a7.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-c1110dee.css"
-    ]
-  },
   "src/routes/iit/maths/question5/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/question5/_page.svelte-dc0a513f.js",
+    "file": "_app/immutable/components/pages/iit/maths/question5/_page.svelte-88ce0061.js",
     "src": "src/routes/iit/maths/question5/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-9fb15683.js",
       "_stores-ec976e60.js",
-      "_ripple-1a7c2c49.js",
+      "_index-28f56b41.js",
+      "_ripple-d6af89fa.js",
       "_constants-79d6a0a7.js"
     ],
     "css": [
       "_app/immutable/assets/_page-90a427e0.css"
     ]
   },
-  "src/routes/iit/maths/question1/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/question1/_page.svelte-9abc2f21.js",
-    "src": "src/routes/iit/maths/question1/+page.svelte",
+  "src/routes/practice/+page.svelte": {
+    "file": "_app/immutable/components/pages/practice/_page.svelte-a7c1ee35.js",
+    "src": "src/routes/practice/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9fb15683.js",
+      "_stores-8b221992.js",
+      "_index-ea2f90c7.js",
+      "_ripple-d6af89fa.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-dc66810e.css",
+      "_app/immutable/assets/Link-e8543c1a.css"
+    ]
+  },
+  "src/routes/iit/maths/question3/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/question3/_page.svelte-09d1687c.js",
+    "src": "src/routes/iit/maths/question3/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-9fb15683.js",
       "_stores-ec976e60.js",
-      "_ripple-1a7c2c49.js",
-      "_constants-79d6a0a7.js",
-      "_Canves-8ff7c84d.js"
+      "_index-28f56b41.js",
+      "_ripple-d6af89fa.js",
+      "_constants-79d6a0a7.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-d4a1b0bd.css"
+      "_app/immutable/assets/_page-0a47cc31.css"
+    ]
+  },
+  "src/routes/iit/maths/question4/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/question4/_page.svelte-f1df8246.js",
+    "src": "src/routes/iit/maths/question4/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9fb15683.js",
+      "_stores-ec976e60.js",
+      "_index-28f56b41.js",
+      "_ripple-d6af89fa.js",
+      "_constants-79d6a0a7.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-c1110dee.css"
     ]
   },
   "src/routes/iit/maths/question2/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/question2/_page.svelte-0349763c.js",
+    "file": "_app/immutable/components/pages/iit/maths/question2/_page.svelte-1d7d6578.js",
     "src": "src/routes/iit/maths/question2/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-9fb15683.js",
       "_stores-ec976e60.js",
-      "_ripple-1a7c2c49.js",
+      "_index-28f56b41.js",
+      "_ripple-d6af89fa.js",
       "_constants-79d6a0a7.js",
       "_Canves-8ff7c84d.js"
     ],
@@ -921,28 +914,46 @@
       "_app/immutable/assets/_page-80bf8356.css"
     ]
   },
-  "src/routes/practice/+page.svelte": {
-    "file": "_app/immutable/components/pages/practice/_page.svelte-b11a59e0.js",
-    "src": "src/routes/practice/+page.svelte",
+  "src/routes/iit/maths/question6/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/question6/_page.svelte-40718f83.js",
+    "src": "src/routes/iit/maths/question6/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-9fb15683.js",
-      "_stores-8b221992.js",
-      "_index-ea2f90c7.js"
+      "_stores-ec976e60.js",
+      "_index-28f56b41.js",
+      "_ripple-d6af89fa.js",
+      "_constants-79d6a0a7.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-4a23ea5a.css",
-      "_app/immutable/assets/Link-e8543c1a.css"
+      "_app/immutable/assets/_page-c1110dee.css"
+    ]
+  },
+  "src/routes/iit/maths/question1/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/question1/_page.svelte-07efadf7.js",
+    "src": "src/routes/iit/maths/question1/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9fb15683.js",
+      "_stores-ec976e60.js",
+      "_index-28f56b41.js",
+      "_ripple-d6af89fa.js",
+      "_constants-79d6a0a7.js",
+      "_Canves-8ff7c84d.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-d4a1b0bd.css"
     ]
   },
   "src/routes/iit/conic/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/conic/_page.svelte-156c4293.js",
+    "file": "_app/immutable/components/pages/iit/conic/_page.svelte-6bc26616.js",
     "src": "src/routes/iit/conic/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-9fb15683.js",
       "_stores-ec976e60.js",
-      "_ripple-1a7c2c49.js",
+      "_index-28f56b41.js",
+      "_ripple-d6af89fa.js",
       "_Canves-8ff7c84d.js"
     ],
     "css": [

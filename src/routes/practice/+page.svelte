@@ -32,9 +32,23 @@
 </svelte:head>
 <article>
     <h2>Practice Mathematics</h2>
+    <Message>
+        <ul style="color:green;">
+            <li>
+                Select a chapter to start solving problems.
+            </li>
+            <li>
+                To generate similar problem type, click refresh button <span class="material-icons" style="vertical-align:middle;">refresh</span>
+            </li>
+            <li>
+                To generate next problem type, click next button <span class="material-icons" style="vertical-align:middle;">arrow_forward</span>
+            </li>
+        </ul>
+        
+    </Message>
     <h3>{$selectedChapter}</h3>
     {#if $selectedGenerator}
-    <Practice generateProblem={$selectedGenerator}/>
-    <br>
+        <Practice generateProblem={$selectedGenerator}/>
+        <br>
     {/if}
 </article>

@@ -7,7 +7,7 @@
     import Performance from './Performance.svelte';
     import Practiceradiobutton from './Practiceradiobutton.svelte';
     import {browser} from '$app/environment';
-    
+    import { ripple } from '$lib/ui/ripple';
     let answer = '';
     let correct = "-1";
     let problemset = {
@@ -106,11 +106,7 @@
         grid-area: refresh;
     }
     .problemLegend {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        /* grid-template-rows: auto 27.5px 27.5px; */
-        grid-template-areas: 
-        "dayscore refresh next";
+        display: flex;
         border-top: rgb(0, 163, 240) 1px solid;
         border-bottom: rgb(0, 163, 240) 1px solid;
         border-radius: 10px;
@@ -144,9 +140,9 @@
         color: gray;
         cursor: pointer;
     }
-    .noborder:hover {
+    /* .noborder:hover {
         box-shadow: 1px 1px 1px green;
-    }
+    } */
     .green {
         color: green;
     }
@@ -169,7 +165,7 @@
 
                 </div>
                 <div class="refresh">
-                    <button class="noborder" class:green={$attempted} on:click={ () => loadnext(false) }>
+                    <button class="noborder" class:green={$attempted} on:click={ () => loadnext(false) } use:ripple>
                         <span></span>
                         <span class="icon is-small material-icons">
                             refresh
@@ -177,7 +173,7 @@
                     </button>
                 </div>
                 <div class="next">
-                    <button class="noborder" class:green={$attempted} on:click={ () => loadnext(true) }>
+                    <button class="noborder" class:green={$attempted} on:click={ () => loadnext(true) } use:ripple>
                         <span></span>
                         <span class="icon is-small material-icons">
                             arrow_forward

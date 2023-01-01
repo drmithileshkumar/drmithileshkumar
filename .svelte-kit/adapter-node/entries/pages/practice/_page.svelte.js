@@ -1,6 +1,18 @@
 import { c as create_ssr_component, k as add_attribute, e as escape, d as subscribe, f as createEventDispatcher, v as validate_component, p as set_store_value } from "../../../chunks/index.js";
 /* empty css                                                  */import { a as selectedChapter, s as selectedGenerator } from "../../../chunks/stores2.js";
 import { w as writable } from "../../../chunks/index2.js";
+const css$3 = {
+  code: ".message.svelte-5cmsvs{display:flex;padding:0.5em 1em;align-items:center;flex-direction:row;gap:0.5em;justify-content:space-between;background:rgb(255, 255, 225);font-weight:400;font-size:0.9em;bottom:2em;margin-top:1em;margin-bottom:1em}span.svelte-5cmsvs{cursor:pointer}span.svelte-5cmsvs:hover{font-weight:600}",
+  map: null
+};
+const Message = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { open = true } = $$props;
+  if ($$props.open === void 0 && $$bindings.open && open !== void 0)
+    $$bindings.open(open);
+  $$result.css.add(css$3);
+  return `${open ? `<div class="${"message svelte-5cmsvs"}"><div class="${"body"}">${slots.default ? slots.default({}) : ``}</div>
+    <span class="${"material-icons svelte-5cmsvs"}">close</span></div>` : ``}`;
+});
 let attempted = writable(false);
 let saved = writable(true);
 let newChapter = writable(false);
@@ -79,7 +91,7 @@ const Practiceradiobutton = create_ssr_component(($$result, $$props, $$bindings,
 });
 const Practice_svelte_svelte_type_style_lang = "";
 const css = {
-  code: `.problemPanel.svelte-1pqivcg{margin-top:1rem;width:auto}.problemField.svelte-1pqivcg{padding:0.5em;padding-bottom:1em;border:1px solid rgb(0, 163, 240);border-radius:10px;width:auto;font-size:0.8em;font-family:Georgia, 'Times New Roman', Times, serif}.dayscore.svelte-1pqivcg{grid-area:dayscore;border-radius:50%;border:rgba(0, 143, 253, 0) 1px solid;padding:0px;font-size:small;width:55px}.dayscore.svelte-1pqivcg{margin-left:auto;margin-right:auto;display:flex;align-items:center}.next.svelte-1pqivcg,.refresh.svelte-1pqivcg{cursor:pointer;background:transparent;border:none;outline:none;color:gray}.next.svelte-1pqivcg{grid-area:next}.refresh.svelte-1pqivcg{grid-area:refresh}.problemLegend.svelte-1pqivcg{display:grid;grid-template-columns:auto auto auto;grid-template-areas:"dayscore refresh next";border-top:rgb(0, 163, 240) 1px solid;border-bottom:rgb(0, 163, 240) 1px solid;border-radius:10px;margin-left:20px;align-items:center}.problemStatement.svelte-1pqivcg{padding-left:0.3rem;margin-top:0.5rem;word-spacing:0.4rem;line-height:1.5rem;overflow:auto;scrollbar-width:thin}.svelte-1pqivcg::-webkit-scrollbar{width:10px}.problemArea.svelte-1pqivcg{display:flex;flex-direction:column}.noborder.svelte-1pqivcg{border:none;outline:none;background:transparent;color:gray;cursor:pointer}.noborder.svelte-1pqivcg:hover{box-shadow:1px 1px 1px green}.green.svelte-1pqivcg{color:green}abbr.svelte-1pqivcg{text-decoration:none}`,
+  code: ".problemPanel.svelte-1lkx03w{margin-top:1rem;width:auto}.problemField.svelte-1lkx03w{padding:0.5em;padding-bottom:1em;border:1px solid rgb(0, 163, 240);border-radius:10px;width:auto;font-size:0.8em;font-family:Georgia, 'Times New Roman', Times, serif}.dayscore.svelte-1lkx03w{grid-area:dayscore;border-radius:50%;border:rgba(0, 143, 253, 0) 1px solid;padding:0px;font-size:small;width:55px}.dayscore.svelte-1lkx03w{margin-left:auto;margin-right:auto;display:flex;align-items:center}.next.svelte-1lkx03w,.refresh.svelte-1lkx03w{cursor:pointer;background:transparent;border:none;outline:none;color:gray}.next.svelte-1lkx03w{grid-area:next}.refresh.svelte-1lkx03w{grid-area:refresh}.problemLegend.svelte-1lkx03w{display:flex;border-top:rgb(0, 163, 240) 1px solid;border-bottom:rgb(0, 163, 240) 1px solid;border-radius:10px;margin-left:20px;align-items:center}.problemStatement.svelte-1lkx03w{padding-left:0.3rem;margin-top:0.5rem;word-spacing:0.4rem;line-height:1.5rem;overflow:auto;scrollbar-width:thin}.svelte-1lkx03w::-webkit-scrollbar{width:10px}.problemArea.svelte-1lkx03w{display:flex;flex-direction:column}.noborder.svelte-1lkx03w{border:none;outline:none;background:transparent;color:gray;cursor:pointer}.green.svelte-1lkx03w{color:green}abbr.svelte-1lkx03w{text-decoration:none}",
   map: null
 };
 const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -122,16 +134,16 @@ const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     $$rendered = `
 
 
-<div class="${"problemPanel svelte-1pqivcg"}"><div class="${"problemset svelte-1pqivcg"}" style="${"display: block;"}"><fieldset class="${"problemField svelte-1pqivcg"}"><legend class="${"problemLegend svelte-1pqivcg"}"><div class="${"dayscore svelte-1pqivcg"}"><abbr title="${"Today's accuracy"}" class="${"svelte-1pqivcg"}">${validate_component(Performance, "Performance").$$render($$result, { strokedasharray }, {}, {})}</abbr></div>
-                <div class="${"refresh svelte-1pqivcg"}"><button class="${["noborder svelte-1pqivcg", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1pqivcg"}"></span>
-                        <span class="${"icon is-small material-icons svelte-1pqivcg"}">refresh
+<div class="${"problemPanel svelte-1lkx03w"}"><div class="${"problemset svelte-1lkx03w"}" style="${"display: block;"}"><fieldset class="${"problemField svelte-1lkx03w"}"><legend class="${"problemLegend svelte-1lkx03w"}"><div class="${"dayscore svelte-1lkx03w"}"><abbr title="${"Today's accuracy"}" class="${"svelte-1lkx03w"}">${validate_component(Performance, "Performance").$$render($$result, { strokedasharray }, {}, {})}</abbr></div>
+                <div class="${"refresh svelte-1lkx03w"}"><button class="${["noborder svelte-1lkx03w", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1lkx03w"}"></span>
+                        <span class="${"icon is-small material-icons svelte-1lkx03w"}">refresh
                         </span></button></div>
-                <div class="${"next svelte-1pqivcg"}"><button class="${["noborder svelte-1pqivcg", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1pqivcg"}"></span>
-                        <span class="${"icon is-small material-icons svelte-1pqivcg"}">arrow_forward
+                <div class="${"next svelte-1lkx03w"}"><button class="${["noborder svelte-1lkx03w", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1lkx03w"}"></span>
+                        <span class="${"icon is-small material-icons svelte-1lkx03w"}">arrow_forward
                         </span></button></div></legend>
 
-            <div class="${"problemArea svelte-1pqivcg"}"><div class="${"problemStatement svelte-1pqivcg"}"><!-- HTML_TAG_START -->${newproblem}<!-- HTML_TAG_END --></div>
-                <div class="${"options svelte-1pqivcg"}">${validate_component(Practiceradiobutton, "Practiceradiobutton").$$render(
+            <div class="${"problemArea svelte-1lkx03w"}"><div class="${"problemStatement svelte-1lkx03w"}"><!-- HTML_TAG_START -->${newproblem}<!-- HTML_TAG_END --></div>
+                <div class="${"options svelte-1lkx03w"}">${validate_component(Practiceradiobutton, "Practiceradiobutton").$$render(
       $$result,
       { optionValues, correct, answer },
       {
@@ -156,9 +168,17 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedGenerator();
   return `${$$result.head += `<!-- HEAD_svelte-1jd0cmq_START -->${$$result.title = `<title>Practice Mathematics</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com/practice"}"><meta name="${"description"}" content="${"Learn and practice Physics and Mathematics for school, IIT JEE, Olympiad"}"><!-- HEAD_svelte-1jd0cmq_END -->`, ""}
 <article><h2>Practice Mathematics</h2>
+    ${validate_component(Message, "Message").$$render($$result, {}, {}, {
+    default: () => {
+      return `<ul style="${"color:green;"}"><li>Select a chapter to start solving problems.
+            </li>
+            <li>To generate similar problem type, click refresh button <span class="${"material-icons"}" style="${"vertical-align:middle;"}">refresh</span></li>
+            <li>To generate next problem type, click next button <span class="${"material-icons"}" style="${"vertical-align:middle;"}">arrow_forward</span></li></ul>`;
+    }
+  })}
     <h3>${escape($selectedChapter)}</h3>
     ${$selectedGenerator ? `${validate_component(Practice, "Practice").$$render($$result, { generateProblem: $selectedGenerator }, {}, {})}
-    <br>` : ``}</article>`;
+        <br>` : ``}</article>`;
 });
 export {
   Page as default
