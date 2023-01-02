@@ -1,1 +1,0 @@
-import{r as t}from"./index-35a671a5.js";async function e({fetch:s,params:a,url:o}){if(!(o.host==="drmithileshkumar.com"||o.host==="localhost:5173"||o.host==="localhost:4173"||o.host==="localhost:3000"))throw t(301,"https://drmithileshkumar.com/notes")}const r=Object.freeze(Object.defineProperty({__proto__:null,load:e},Symbol.toStringTag,{value:"Module"}));export{r as _,e as l};
