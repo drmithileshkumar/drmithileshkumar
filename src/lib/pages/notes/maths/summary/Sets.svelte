@@ -4,7 +4,7 @@
         import {onMount} from 'svelte';
         import {TeX} from '$lib/utils/common/constants';
         onMount(() => {
-            MathJax.typeset();
+            MathJax.typeset(); 
         });
     
         

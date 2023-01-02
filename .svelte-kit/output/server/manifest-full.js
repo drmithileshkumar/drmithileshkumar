@@ -4,7 +4,7 @@ export const manifest = {
 	assets: new Set(["app.css","circle_demo/circle.png","circle_demo/circle_anime.mp4","circle_demo/Cone-equation.png","circle_demo/Cone.png","circle_demo/conics.png","circle_demo/Conic_anime.mp4","circle_demo/Conic_deg.mp4","circle_demo/ellipse_anime.mp4","circle_demo/hyperbola_anime.mp4","circle_demo/IIT21Q1.png","circle_demo/orthocenter.png","circle_demo/parabola_anime.mp4","circle_demo/Plane.png","circle_demo/Tangents.png","circle_demo/threepointcircle.png","CMIMedal.jpg","cmithesis.pdf","common.css","dark.css","favicon.png","IITMSc.jpg","LCPath.svg","light.css","mithileshkumar.png","photo_cv.jpg","profilephoto.jpeg","robots copy.txt","robots.txt","santa.svg","svelte-welcome.png","svelte-welcome.webp","thesis.pdf","webdutIcon.png"]),
 	mimeTypes: {".css":"text/css",".png":"image/png",".mp4":"video/mp4",".jpg":"image/jpeg",".pdf":"application/pdf",".svg":"image/svg+xml",".jpeg":"image/jpeg",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		entry: {"file":"_app/immutable/start-795507b8.js","imports":["_app/immutable/start-795507b8.js","_app/immutable/chunks/index-d6181b86.js","_app/immutable/chunks/singletons-7f452f10.js","_app/immutable/chunks/index-2f18dd9f.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/control-f5b05b5f.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-fc9a7e4c.js","imports":["_app/immutable/start-fc9a7e4c.js","_app/immutable/chunks/index-d6181b86.js","_app/immutable/chunks/singletons-7f452f10.js","_app/immutable/chunks/index-2f18dd9f.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/control-f5b05b5f.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
@@ -32,7 +32,22 @@ export const manifest = {
 			() => import('./nodes/23.js'),
 			() => import('./nodes/24.js'),
 			() => import('./nodes/25.js'),
-			() => import('./nodes/26.js')
+			() => import('./nodes/26.js'),
+			() => import('./nodes/27.js'),
+			() => import('./nodes/28.js'),
+			() => import('./nodes/29.js'),
+			() => import('./nodes/30.js'),
+			() => import('./nodes/31.js'),
+			() => import('./nodes/32.js'),
+			() => import('./nodes/33.js'),
+			() => import('./nodes/34.js'),
+			() => import('./nodes/35.js'),
+			() => import('./nodes/36.js'),
+			() => import('./nodes/37.js'),
+			() => import('./nodes/38.js'),
+			() => import('./nodes/39.js'),
+			() => import('./nodes/40.js'),
+			() => import('./nodes/41.js')
 		],
 		routes: [
 			{
@@ -127,45 +142,150 @@ export const manifest = {
 				endpoint: null
 			},
 			{
+				id: "/notes/maths/Principle of mathematical induction/Motivation",
+				pattern: /^\/notes\/maths\/Principle of mathematical induction\/Motivation\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 20 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Principle of mathematical induction/The principle of mathematical induction",
+				pattern: /^\/notes\/maths\/Principle of mathematical induction\/The principle of mathematical induction\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 21 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Relations and functions 11/Cartesian product of sets",
+				pattern: /^\/notes\/maths\/Relations and functions 11\/Cartesian product of sets\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 22 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Relations and functions 11/Functions",
+				pattern: /^\/notes\/maths\/Relations and functions 11\/Functions\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 23 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Relations and functions 11/Relations",
+				pattern: /^\/notes\/maths\/Relations and functions 11\/Relations\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 24 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Sets/Complement of a set",
+				pattern: /^\/notes\/maths\/Sets\/Complement of a set\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 25 },
+				endpoint: null
+			},
+			{
 				id: "/notes/maths/Sets/Equal sets",
 				pattern: /^\/notes\/maths\/Sets\/Equal sets\/?$/,
 				params: [],
-				page: { layouts: [0,4], errors: [1,,], leaf: 20 },
+				page: { layouts: [0,4], errors: [1,,], leaf: 26 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Finite and infinite sets",
 				pattern: /^\/notes\/maths\/Sets\/Finite and infinite sets\/?$/,
 				params: [],
-				page: { layouts: [0,4], errors: [1,,], leaf: 21 },
+				page: { layouts: [0,4], errors: [1,,], leaf: 27 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Introduction",
 				pattern: /^\/notes\/maths\/Sets\/Introduction\/?$/,
 				params: [],
-				page: { layouts: [0,4], errors: [1,,], leaf: 22 },
+				page: { layouts: [0,4], errors: [1,,], leaf: 28 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Sets/Operations on sets",
+				pattern: /^\/notes\/maths\/Sets\/Operations on sets\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 29 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Sets/Power set",
+				pattern: /^\/notes\/maths\/Sets\/Power set\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 30 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Sets/Practical problems",
+				pattern: /^\/notes\/maths\/Sets\/Practical problems\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 31 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Sets and their representations",
 				pattern: /^\/notes\/maths\/Sets\/Sets and their representations\/?$/,
 				params: [],
-				page: { layouts: [0,4], errors: [1,,], leaf: 23 },
+				page: { layouts: [0,4], errors: [1,,], leaf: 32 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Subsets",
 				pattern: /^\/notes\/maths\/Sets\/Subsets\/?$/,
 				params: [],
-				page: { layouts: [0,4], errors: [1,,], leaf: 24 },
+				page: { layouts: [0,4], errors: [1,,], leaf: 33 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/The empty set",
 				pattern: /^\/notes\/maths\/Sets\/The empty set\/?$/,
 				params: [],
-				page: { layouts: [0,4], errors: [1,,], leaf: 25 },
+				page: { layouts: [0,4], errors: [1,,], leaf: 34 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Sets/Universal set",
+				pattern: /^\/notes\/maths\/Sets\/Universal set\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 35 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Sets/Venn diagrams",
+				pattern: /^\/notes\/maths\/Sets\/Venn diagrams\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 36 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Trigonometric functions/Angles",
+				pattern: /^\/notes\/maths\/Trigonometric functions\/Angles\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 37 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Trigonometric functions/Trigonometric equations",
+				pattern: /^\/notes\/maths\/Trigonometric functions\/Trigonometric equations\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 38 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles",
+				pattern: /^\/notes\/maths\/Trigonometric functions\/Trigonometric functions of sum and difference of two angles\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 40 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Trigonometric functions/Trigonometric functions",
+				pattern: /^\/notes\/maths\/Trigonometric functions\/Trigonometric functions\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 39 },
 				endpoint: null
 			},
 			{
@@ -179,7 +299,7 @@ export const manifest = {
 				id: "/practice",
 				pattern: /^\/practice\/?$/,
 				params: [],
-				page: { layouts: [0,5], errors: [1,,], leaf: 26 },
+				page: { layouts: [0,5], errors: [1,,], leaf: 41 },
 				endpoint: null
 			}
 		],

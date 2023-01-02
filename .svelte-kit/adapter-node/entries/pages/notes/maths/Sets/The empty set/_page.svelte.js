@@ -29,7 +29,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-y8ddav_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Introduction to sets"}"><!-- HEAD_svelte-y8ddav_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-1cd2i6b_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"The empty set"}"><!-- HEAD_svelte-1cd2i6b_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
         <section><p class="${"svelte-1m6zy9y"}">The simplest possible set is one that does not contain any element at all.</p>
            <div class="${"definition"}"><p class="${"svelte-1m6zy9y"}">A set which does not contain any element is called the <strong>empty</strong> set.

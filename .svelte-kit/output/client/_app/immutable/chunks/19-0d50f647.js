@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-8a597883.js";import{default as t}from"../components/pages/notes/maths/conic/_page.svelte-2f3ab054.js";export{t as component,r as universal};
+import{_ as r}from"./_page-3e4ff2f8.js";import{default as t}from"../components/pages/notes/maths/conic/_page.svelte-2f3ab054.js";export{t as component,r as universal};

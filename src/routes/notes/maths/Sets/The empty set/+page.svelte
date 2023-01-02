@@ -75,7 +75,7 @@
     <svelte:head>
         <title>{$selectedSection}</title>
         <link rel="canonical" href="https://drmithileshkumar.com{$page.url.pathname}" />
-        <meta name="description" content="Introduction to sets" />
+        <meta name="description" content="The empty set" />
         
     </svelte:head>
     <article class:absolute={$presentationMode} bind:this={$presentation}>
