@@ -4,125 +4,126 @@ const manifest = {
 	assets: new Set(["app.css","circle_demo/circle.png","circle_demo/circle_anime.mp4","circle_demo/Cone-equation.png","circle_demo/Cone.png","circle_demo/conics.png","circle_demo/Conic_anime.mp4","circle_demo/Conic_deg.mp4","circle_demo/ellipse_anime.mp4","circle_demo/hyperbola_anime.mp4","circle_demo/IIT21Q1.png","circle_demo/orthocenter.png","circle_demo/parabola_anime.mp4","circle_demo/Plane.png","circle_demo/Tangents.png","circle_demo/threepointcircle.png","CMIMedal.jpg","cmithesis.pdf","common.css","dark.css","favicon.png","IITMSc.jpg","LCPath.svg","light.css","mithileshkumar.png","photo_cv.jpg","profilephoto.jpeg","robots copy.txt","robots.txt","santa.svg","svelte-welcome.png","svelte-welcome.webp","thesis.pdf","webdutIcon.png"]),
 	mimeTypes: {".css":"text/css",".png":"image/png",".mp4":"video/mp4",".jpg":"image/jpeg",".pdf":"application/pdf",".svg":"image/svg+xml",".jpeg":"image/jpeg",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		entry: {"file":"_app/immutable/start-7f299d72.js","imports":["_app/immutable/start-7f299d72.js","_app/immutable/chunks/index-3b22549b.js","_app/immutable/chunks/singletons-60001e27.js","_app/immutable/chunks/index-dbcace51.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/control-f5b05b5f.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-4d52d3a4.js","imports":["_app/immutable/start-4d52d3a4.js","_app/immutable/chunks/index-3b22549b.js","_app/immutable/chunks/singletons-60001e27.js","_app/immutable/chunks/index-dbcace51.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/control-f5b05b5f.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./chunks/0-4b25b5dc.js'),
 			() => import('./chunks/1-7a9bdca8.js'),
 			() => import('./chunks/2-ea479990.js'),
 			() => import('./chunks/3-262c6655.js'),
-			() => import('./chunks/4-cdba5c41.js'),
-			() => import('./chunks/5-e34e2122.js'),
-			() => import('./chunks/6-61e84d81.js'),
-			() => import('./chunks/7-e28d18fc.js'),
-			() => import('./chunks/8-72b37dae.js'),
-			() => import('./chunks/9-3823d375.js'),
-			() => import('./chunks/10-42296508.js'),
-			() => import('./chunks/11-b6708ecb.js'),
-			() => import('./chunks/12-93c1d30f.js'),
-			() => import('./chunks/13-2248c11c.js'),
-			() => import('./chunks/14-f83b68ab.js'),
-			() => import('./chunks/15-d9c52d89.js'),
-			() => import('./chunks/16-7b6ee02e.js'),
-			() => import('./chunks/17-33c91357.js'),
-			() => import('./chunks/18-6f7050ff.js')
+			() => import('./chunks/4-c09119b0.js'),
+			() => import('./chunks/5-9389fb98.js'),
+			() => import('./chunks/6-8c5a7cb0.js'),
+			() => import('./chunks/7-14eed68c.js'),
+			() => import('./chunks/8-a222c10e.js'),
+			() => import('./chunks/9-cf9bbbb1.js'),
+			() => import('./chunks/10-644af1a3.js'),
+			() => import('./chunks/11-4818b79f.js'),
+			() => import('./chunks/12-020c49ca.js'),
+			() => import('./chunks/13-cb5a2064.js'),
+			() => import('./chunks/14-474bfabc.js'),
+			() => import('./chunks/15-ee5f896d.js'),
+			() => import('./chunks/16-47d6ae51.js'),
+			() => import('./chunks/17-905b2fb5.js'),
+			() => import('./chunks/18-0df4602c.js'),
+			() => import('./chunks/19-c0d88261.js')
 		],
 		routes: [
 			{
 				id: "/",
 				pattern: /^\/$/,
 				params: [],
-				page: { layouts: [0], errors: [1], leaf: 5 },
+				page: { layouts: [0], errors: [1], leaf: 6 },
 				endpoint: null
 			},
 			{
 				id: "/cv",
 				pattern: /^\/cv\/?$/,
 				params: [],
-				page: { layouts: [0,2], errors: [1,,], leaf: 6 },
+				page: { layouts: [0,2], errors: [1,,], leaf: 7 },
 				endpoint: null
 			},
 			{
 				id: "/iit",
 				pattern: /^\/iit\/?$/,
 				params: [],
-				page: { layouts: [0], errors: [1], leaf: 7 },
+				page: { layouts: [0], errors: [1], leaf: 8 },
 				endpoint: null
 			},
 			{
 				id: "/iit/maths",
 				pattern: /^\/iit\/maths\/?$/,
 				params: [],
-				page: { layouts: [0], errors: [1], leaf: 8 },
+				page: { layouts: [0], errors: [1], leaf: 9 },
 				endpoint: null
 			},
 			{
 				id: "/iit/maths/2021",
 				pattern: /^\/iit\/maths\/2021\/?$/,
 				params: [],
-				page: { layouts: [0,3], errors: [1,,], leaf: 9 },
+				page: { layouts: [0,3], errors: [1,,], leaf: 10 },
 				endpoint: null
 			},
 			{
 				id: "/iit/maths/2021/question1",
 				pattern: /^\/iit\/maths\/2021\/question1\/?$/,
 				params: [],
-				page: { layouts: [0,3], errors: [1,,], leaf: 10 },
+				page: { layouts: [0,3], errors: [1,,], leaf: 11 },
 				endpoint: null
 			},
 			{
 				id: "/iit/maths/2021/question2",
 				pattern: /^\/iit\/maths\/2021\/question2\/?$/,
 				params: [],
-				page: { layouts: [0,3], errors: [1,,], leaf: 11 },
+				page: { layouts: [0,3], errors: [1,,], leaf: 12 },
 				endpoint: null
 			},
 			{
 				id: "/iit/maths/2021/question3",
 				pattern: /^\/iit\/maths\/2021\/question3\/?$/,
 				params: [],
-				page: { layouts: [0,3], errors: [1,,], leaf: 12 },
+				page: { layouts: [0,3], errors: [1,,], leaf: 13 },
 				endpoint: null
 			},
 			{
 				id: "/iit/maths/2021/question4",
 				pattern: /^\/iit\/maths\/2021\/question4\/?$/,
 				params: [],
-				page: { layouts: [0,3], errors: [1,,], leaf: 13 },
+				page: { layouts: [0,3], errors: [1,,], leaf: 14 },
 				endpoint: null
 			},
 			{
 				id: "/iit/maths/2021/question5",
 				pattern: /^\/iit\/maths\/2021\/question5\/?$/,
 				params: [],
-				page: { layouts: [0,3], errors: [1,,], leaf: 14 },
+				page: { layouts: [0,3], errors: [1,,], leaf: 15 },
 				endpoint: null
 			},
 			{
 				id: "/iit/maths/2021/question6",
 				pattern: /^\/iit\/maths\/2021\/question6\/?$/,
 				params: [],
-				page: { layouts: [0,3], errors: [1,,], leaf: 15 },
+				page: { layouts: [0,3], errors: [1,,], leaf: 16 },
 				endpoint: null
 			},
 			{
 				id: "/notes",
 				pattern: /^\/notes\/?$/,
 				params: [],
-				page: { layouts: [0], errors: [1], leaf: 16 },
+				page: { layouts: [0,4], errors: [1,,], leaf: 17 },
 				endpoint: null
 			},
 			{
 				id: "/notes/conic",
 				pattern: /^\/notes\/conic\/?$/,
 				params: [],
-				page: { layouts: [0], errors: [1], leaf: 17 },
+				page: { layouts: [0,4], errors: [1,,], leaf: 18 },
 				endpoint: null
 			},
 			{
 				id: "/practice",
 				pattern: /^\/practice\/?$/,
 				params: [],
-				page: { layouts: [0,4], errors: [1,,], leaf: 18 },
+				page: { layouts: [0,5], errors: [1,,], leaf: 19 },
 				endpoint: null
 			}
 		],

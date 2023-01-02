@@ -52,6 +52,17 @@
       "_app/immutable/assets/_layout-c39f161b.css"
     ]
   },
+  "src/routes/notes/+layout.svelte": {
+    "file": "entries/pages/notes/_layout.svelte.js",
+    "src": "src/routes/notes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-41d4bc43.css"
+    ]
+  },
   "src/routes/practice/+layout.svelte": {
     "file": "entries/pages/practice/_layout.svelte.js",
     "src": "src/routes/practice/+layout.svelte",
@@ -255,7 +266,8 @@
     "isEntry": true,
     "imports": [
       "_index.js",
-      "_Link.js"
+      "_Link.js",
+      "_constants.js"
     ],
     "css": [
       "_app/immutable/assets/Link-082757be.css"

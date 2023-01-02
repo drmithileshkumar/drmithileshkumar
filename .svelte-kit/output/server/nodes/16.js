@@ -1,9 +1,8 @@
-import * as universal from '../entries/pages/notes/_page.js';
+
 
 export const index = 16;
-export const component = async () => (await import('../entries/pages/notes/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/notes/_page.svelte-e06bc71f.js';
-export { universal };
-export const imports = ["_app/immutable/components/pages/notes/_page.svelte-e06bc71f.js","_app/immutable/chunks/index-3b22549b.js","_app/immutable/chunks/Link-b8d141bf.js","_app/immutable/modules/pages/notes/_page.js-4ed993c7.js"];
-export const stylesheets = ["_app/immutable/assets/Link-e8543c1a.css"];
+export const component = async () => (await import('../entries/pages/iit/maths/2021/question6/_page.svelte.js')).default;
+export const file = '_app/immutable/components/pages/iit/maths/2021/question6/_page.svelte-0276e73d.js';
+export const imports = ["_app/immutable/components/pages/iit/maths/2021/question6/_page.svelte-0276e73d.js","_app/immutable/chunks/index-3b22549b.js","_app/immutable/chunks/stores-2e81153e.js","_app/immutable/chunks/singletons-60001e27.js","_app/immutable/chunks/index-dbcace51.js","_app/immutable/chunks/index-34255218.js","_app/immutable/chunks/ripple-d6af89fa.js","_app/immutable/chunks/constants-79d6a0a7.js"];
+export const stylesheets = ["_app/immutable/assets/_page-c1110dee.css"];
 export const fonts = [];

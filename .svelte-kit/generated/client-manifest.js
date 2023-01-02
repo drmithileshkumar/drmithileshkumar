@@ -18,25 +18,26 @@ export const nodes = [() => import('./nodes/0'),
 	() => import('./nodes/15'),
 	() => import('./nodes/16'),
 	() => import('./nodes/17'),
-	() => import('./nodes/18')];
+	() => import('./nodes/18'),
+	() => import('./nodes/19')];
 
 export const server_loads = [];
 
 export const dictionary = {
-	"/": [5],
-	"/cv": [6,[2]],
-	"/iit": [7],
-	"/iit/maths": [8],
-	"/iit/maths/2021": [9,[3]],
-	"/iit/maths/2021/question1": [10,[3]],
-	"/iit/maths/2021/question2": [11,[3]],
-	"/iit/maths/2021/question3": [12,[3]],
-	"/iit/maths/2021/question4": [13,[3]],
-	"/iit/maths/2021/question5": [14,[3]],
-	"/iit/maths/2021/question6": [15,[3]],
-	"/notes": [16],
-	"/notes/conic": [17],
-	"/practice": [18,[4]]
+	"/": [6],
+	"/cv": [7,[2]],
+	"/iit": [8],
+	"/iit/maths": [9],
+	"/iit/maths/2021": [10,[3]],
+	"/iit/maths/2021/question1": [11,[3]],
+	"/iit/maths/2021/question2": [12,[3]],
+	"/iit/maths/2021/question3": [13,[3]],
+	"/iit/maths/2021/question4": [14,[3]],
+	"/iit/maths/2021/question5": [15,[3]],
+	"/iit/maths/2021/question6": [16,[3]],
+	"/notes": [17,[4]],
+	"/notes/conic": [18,[4]],
+	"/practice": [19,[5]]
 };
 
 export const hooks = {

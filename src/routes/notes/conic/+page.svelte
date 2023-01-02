@@ -202,7 +202,7 @@
                 </div>
             {/if}    
             {#if !presentationMode || current >= -1}
-            <h1>Conic Section and Circle</h1>
+                <h1>Conic Section and Circle</h1>
             {/if}
             {#if !presentationMode || current >= 0}
                 <h2 class="heading {presentationMode && isActive === 0 ? 'currentActive': ''}" 
@@ -362,7 +362,7 @@
                                     cy='0'
                                     r='100'
                                     fill='rgba(255, 255, 255, 0.3)'
-                                    stroke='rgba(0, 0, 0, 1)'
+                                    stroke='rgba(255, 0, 0, 1)'
                                     stroke-width='5'
                                     stroke-dasharray='none'
                                     opacity='1'
@@ -558,13 +558,31 @@
                                     marker-end='none'
                                     transform='matrix(0.8009270936059828 0.5987618814920281 -0.5987618814920281 0.8009270936059828 382.438215234024 -259.38780327602353)'
                                 />
-                                
                                 <path  
                                     id='Path-WebdutTeam23R88-19'
+                                    d='M -293.5,74.5 L -276,21'
+                                    fill='rgba(0, 0, 0, 0)'
+                                    fill-rule='evenodd'
+                                    stroke='rgba(255, 0, 0, 1)'
+                                    stroke-width='0.5'
+                                    stroke-dasharray='4 4'
+                                    stroke-linecap='round'
+                                    stroke-linejoin='round'
+                                    stroke-miterlimit='4'
+                                    opacity='1'
+                                    filter='none'
+                                    mask='none'
+                                    marker-start='none'
+                                    marker-mid='none'
+                                    marker-end='none'
+                                    transform='matrix(1 0 0 1 560 -321)'
+                                />
+                                <path  
+                                    id='Path-WebdutTeam23R88-20'
                                     d='M -293.5,74.5 Q -197.5,106.8 -276,21'
                                     fill='rgba(0, 0, 0, 0)'
                                     fill-rule='evenodd'
-                                    stroke='rgba(0, 0, 0, 1)'
+                                    stroke='rgba(255, 0, 0, 1)'
                                     stroke-width='2'
                                     stroke-dasharray='none'
                                     stroke-linecap='round'
