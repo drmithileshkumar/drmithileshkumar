@@ -1,63 +1,21 @@
-<script context="module">
-    export async function load({session, fetch, params, url}) {
-        if(!(url.host === 'drmithileshkumar.com' || url.host === 'localhost:5173' || url.host === 'localhost:3000')) {
-            return {
-                status: 301,
-                redirect: `https://drmithileshkumar.com${url.pathname}`
-            }
-        }
-        return {
-            props: {
 
-            }
-        }
-    }
-</script>
 <script id="MathJax-script">
 // @ts-nocheck
+import {presentationMode, presentation, overlay, slideCounter, autoScroll, currentSlide} from '$lib/pages/notes/maths/stores';
     import {page} from '$app/stores';
     import {fade, fly} from 'svelte/transition';
-    import {afterUpdate, beforeUpdate, onMount} from 'svelte';
-    import {ripple} from '$lib/ui/ripple';
+    import {onMount} from 'svelte';
+    
     import {TeX} from '$lib/utils/common/constants';
-    let W;
+    
+    
     onMount(() => {
+        $slideCounter = 8;
+        $currentSlide = -2;
         MathJax.typeset();
     });
-    let presentation;
-    let presentationMode = false;
-    let counter = 8;
-    let current = -1;
+    
     let isActive = -1; 
-    let autoscroll = false;
-    beforeUpdate(() => {
-        if(presentation) {
-            // autoscroll = presentation && (presentation.offsetHeight + presentation.scrollTop) > (presentation.scrollHeight - 40);
-            autoscroll = true;
-        }
-        
-    })
-    afterUpdate( async () => {
-        if(autoscroll) setTimeout(async () => {
-            MathJax.typeset();
-            presentation.scrollTo({
-                top: presentation.scrollHeight,
-                left: 0,
-                behaviour: 'smooth'
-            });
-        }, 0)
-        
-    })
-    const back = () => {
-        if(current >= 0) current--;
-        setTimeout(() => { MathJax.typeset();}, 0)
-    }
-    const next = () => {
-        if(current < counter - 1) {
-            current++;
-            setTimeout(() => { MathJax.typeset();}, 0)
-        }
-    }
     $: optionStyle = W < 450 ? 'flex' : 'grid'; 
 </script>
 <style>
@@ -77,11 +35,6 @@
     article {
         padding: 0.5em;
         /* in: all 1s; */
-    }
-    aside {
-        background-color: rgb(230, 228, 228);
-        cursor: pointer;
-        width: 1em;
     }
     .absolute {
         margin: auto;
@@ -122,18 +75,10 @@
     <link rel="canonical" href="https://drmithileshkumar.com{$page.url.pathname}" />
     <meta name="description" content="IIT JEE Advanced 2021 Mathematics" />
 </svelte:head>
-<label>
-    <input type="checkbox" bind:checked={presentationMode}> Presentation Mode
-</label>
-<div class="container">
-    {#if presentationMode}
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <aside use:ripple class="back" on:click={back}></aside>
-    {/if}
-    <article class:absolute={presentationMode} bind:this={presentation} bind:clientWidth={W}>
+    <article class:absolute={$presentationMode} bind:this={$presentation}>
         <h1>Question 6 [JEE adv, 2021]</h1>
-        {#if !presentationMode || current >= 0}
-        <p class="question {presentationMode && isActive === 0 ? 'currentActive': ''}" 
+        {#if !$presentationMode || $currentSlide >= 0}
+        <p class="question {$presentationMode && isActive === 0 ? 'currentActive': ''}" 
             transition:fly="{{ x: 200, duration: 1000}}"
             on:introstart={() => {isActive = -1}}
             on:introend={() => {isActive = 0}}
@@ -141,24 +86,24 @@
             For any \(3\times 3\) matrix \(M\), let \(|M|\) denote the determinant of \(M\). Let \(I\) be the \(3\times 3\) identity matrix. Let \(E\) and \(F\) be two \(3\times 3\) matrices such that \(I-EF\) is invertible. If \(G = {TeX.pow('(I - EF)', '-1')}\), then which of the following statements is (are) <strong>True</strong>?
         </p>
         {/if}
-        {#if !presentationMode || current >= 1}
+        {#if !$presentationMode || $currentSlide >= 1}
         <ol class={optionStyle}>
-            <li class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
+            <li class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000}}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 1}}
                 on:outroend={() => {isActive = -1}}> {`\\(|FE| = |I-FE||FGE|\\)`}</li>
-            <li class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
+            <li class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000}}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 1}}
                 on:outroend={() => {isActive = -1}}> {`\\((I-FE)(I + FGE) = I\\)`}</li>
-            <li class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
+            <li class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000}}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 1}}
                 on:outroend={() => {isActive = -1}}> \(EFG = GEF\)</li>
-            <li class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
+            <li class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000}}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 1}}
@@ -166,13 +111,13 @@
         </ol>
         {/if}
         <section>
-            {#if !presentationMode || current >= 2}
-            <h2 class="{presentationMode && isActive === 2 ? 'currentActive': ''}" 
+            {#if !$presentationMode || $currentSlide >= 2}
+            <h2 class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 2}}
                 on:outroend={() => {isActive = -1}}>Concepts</h2>
-            <p class="{presentationMode && isActive === 2 ? 'currentActive': ''}" 
+            <p class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 2}}
@@ -182,20 +127,20 @@
             {/if}
         </section>
         <section>
-            {#if !presentationMode || current >= 3}
-            <h2 class="{presentationMode && isActive === 3 ? 'currentActive': ''}" 
+            {#if !$presentationMode || $currentSlide >= 3}
+            <h2 class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 3}}
                 on:outroend={() => {isActive = -1}}>Solution</h2>
-            <h4 class="{presentationMode && isActive === 3 ? 'currentActive': ''}" 
+            <h4 class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 3}}
                 on:outroend={() => {isActive = -1}}>
                 Step 1
             </h4>
-            <p class="{presentationMode && isActive === 3 ? 'currentActive': ''}" 
+            <p class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 3}}
@@ -209,13 +154,13 @@
                 Option 3 is correct.
             </p>
             {/if}
-            {#if !presentationMode || current >= 4}
-            <h4 class="{presentationMode && isActive === 4 ? 'currentActive': ''}" 
+            {#if !$presentationMode || $currentSlide >= 4}
+            <h4 class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 4}}
                 on:outroend={() => {isActive = -1}}>Step 2</h4>
-            <p class="{presentationMode && isActive === 4 ? 'currentActive': ''}" 
+            <p class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 4}}
@@ -237,13 +182,13 @@
                 Option 2 is correct.
             </p>
             {/if}
-            {#if !presentationMode || current >= 5}
-            <h4 class="{presentationMode && isActive === 5 ? 'currentActive': ''}" 
+            {#if !$presentationMode || $currentSlide >= 5}
+            <h4 class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive =5}}
                 on:outroend={() => {isActive = -1}}>Step 3</h4>
-            <p class="{presentationMode && isActive === 5 ? 'currentActive': ''}" 
+            <p class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive =5}}
@@ -259,13 +204,13 @@
                 Option 4 is incorrect.
             </p>
             {/if}
-            {#if !presentationMode || current >= 6}
-            <h4 class="{presentationMode && isActive === 6 ? 'currentActive': ''}" 
+            {#if !$presentationMode || $currentSlide >= 6}
+            <h4 class="{$presentationMode && isActive === 6 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 6}}
                 on:outroend={() => {isActive = -1}}>Step 4</h4>
-            <p class="{presentationMode && isActive === 6 ? 'currentActive': ''}" 
+            <p class="{$presentationMode && isActive === 6 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 6}}
@@ -281,13 +226,9 @@
                 Option 1 is correct.
             </p>
             {/if}
-            {#if presentationMode && current > 0}
+            {#if $presentationMode && $currentSlide > 0}
                 <div class="pad"></div>
             {/if}
         </section>
     </article>
-    {#if presentationMode}
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <aside use:ripple class="next" on:click={next}></aside>
-    {/if}
-</div>
+    

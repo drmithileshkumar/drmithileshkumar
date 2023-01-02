@@ -1,6 +1,6 @@
 <script id="MathJax-script">
     // @ts-nocheck
-        
+    import {presentationMode, presentation, overlay, slideCounter, autoScroll, currentSlide} from '$lib/pages/notes/maths/stores';
         import {page} from '$app/stores';
         import {fade, fly} from 'svelte/transition';
         import {afterUpdate, beforeUpdate, onMount, tick} from 'svelte';
@@ -9,52 +9,14 @@
         import CanvasBar from '$lib/canvas/CanvasBar.svelte';
         import Canvas from '$lib/canvas/Canvas.svelte';
         
-        let W, H;
-        let stMode = false, arcMode = false;
-        let strokeColor = 'black', lineWidth = 2;
         onMount(() => {
+            $slideCounter = 11;
+            $currentSlide = -2;
             MathJax.typeset();
         });
-        let presentation, overlay;
-        let presentationMode = false;
-        let counter = 45;
-        let current = -2;
+        
         let isActive = -1; 
-        let autoscroll = false;
-        let globalCompositeOperation = 'source-over';
-        beforeUpdate(() => {
-            if(presentation) {
-                // autoscroll = presentation && (presentation.offsetHeight + presentation.scrollTop) > (presentation.scrollHeight - 40);
-                autoscroll = true;
-            }
-            
-        })
-        afterUpdate( async () => {
-            if(autoscroll) setTimeout(async () => {
-                MathJax.typeset();
-                presentation.scrollTo({
-                    top: presentation.scrollHeight,
-                    left: 0,
-                    behaviour: 'smooth'
-                });
-                overlay.scrollTo({
-                    top: presentation.scrollHeight,
-                    left: 0,
-                    behaviour: 'smooth'
-                });
-            }, 0)
-            
-        })
-        const back = () => {
-            if(current >= 0) current--;
-            setTimeout(() => { MathJax.typeset();}, 0)
-        }
-        const next = () => {
-            if(current < counter - 1) {
-                current++;
-                setTimeout(() => { MathJax.typeset();}, 0)
-            }
-        }
+        
     </script>
     <style>
         /* p {
@@ -67,19 +29,11 @@
             width: 100%;
             flex-wrap: wrap;
         } */
-        .container {
-            display: flex;
-            position: relative;
-        }
+
         article {
             position: relative;
             padding: 0.5em;
             /* in: all 1s; */
-        }
-        aside {
-            background-color: rgb(230, 228, 228);
-            cursor: pointer;
-            width: 1em;
         }
         .absolute {
             margin: auto;
@@ -110,30 +64,6 @@
             /* float: right; */
             width: 300px;
         }
-        .overlay {
-            position: absolute;
-            z-index: 2;
-            left: 0.5em;
-            top: 0;
-            margin: auto;
-            width: calc(100% - 2em);
-            height: min(78vh, 60vw);
-            /* height: min(70vh,600px); */
-            overflow-y: auto;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            /* padding: 0 1em 0 1em; */
-        }
-        .presentationMode {
-            display: flex;
-            /* gap: 1em; */
-            height: 1em;
-            margin-bottom: 0.5em;
-        }
-        /* .displayStyle {
-            font-size: 2em;
-            transition: all 1s;
-        } */
         .thumbnail {
             display: flex;
             align-items: center;
@@ -166,54 +96,32 @@
         <title>Conic Section and Circle</title>
         <link rel="canonical" href="https://drmithileshkumar.com{$page.url.pathname}" />
         <meta name="description" content="Conic Section and Circle" />
-    </svelte:head>
-    <div class="presentationMode">
-        <label style="display:flex;align-items:center;">
-            <input type="checkbox" bind:checked={presentationMode}> <span class="material-icons">slideshow</span>
-        </label>
-        {#if presentationMode}
-            <CanvasBar bind:lineWidth bind:strokeColor bind:globalCompositeOperation bind:stMode bind:arcMode/>
-        {/if}
-    </div>
+    </svelte:head> 
     
-    <div class="container">
-        {#if presentationMode}
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <aside use:ripple class="back" on:click={back}></aside>
-        {/if}
-        {#if !presentationMode}
-            <span bind:this={overlay}></span>
-        {/if}
-        {#if presentationMode}
-            <div class="absolute overlay" bind:this={overlay}>
-                <Canvas width={W} height={10000} {strokeColor} {lineWidth} {globalCompositeOperation} {stMode} {arcMode}/>
-            </div>
-            
-        {/if}
-        <article class:absolute={presentationMode} bind:this={presentation} bind:clientWidth={W} bind:clientHeight={H}>
+        <article class:absolute={$presentationMode} bind:this={$presentation}>
             <!-- <video width="100%" height="auto" controls>
                 <source src="/circle_demo/Conic_deg.mp4" type="video/mp4">
                     Your browser does not support the video tag.
             </video> -->
-            {#if presentationMode && current === -2}
+            {#if $presentationMode && $currentSlide === -2}
                 <div class="thumbnail">
                     <img width="100%" src="/circle_demo/conics.png">
                     <span class="title">Circle</span>
                 </div>
             {/if}    
-            {#if !presentationMode || current >= -1}
+            {#if !$presentationMode || $currentSlide >= -1}
                 <h1>Conic Section and Circle</h1>
             {/if}
-            {#if !presentationMode || current >= 0}
-                <h2 class="heading {presentationMode && isActive === 0 ? 'currentActive': ''}" 
+            {#if !$presentationMode || $currentSlide >= 0}
+                <h2 class="heading {$presentationMode && isActive === 0 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000}}"
                 on:introstart={() => {isActive = -1}}
-                on:introend={() => {isActive = current}}
+                on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>Cone and a plane</h2>
                 <figure 
                     transition:fly="{{ x: 200, duration: 1000}}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
+                    on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}
                     style="display:flex;align-items:center;justify-content:center;flex-direction:column;width: 90%; height: auto;"
                     >
@@ -606,143 +514,143 @@
                 <li> {`\\(h^\\frac{-2}{3}G^{\\frac{4}{3}}c^{\\frac{-1}{3}}A^{-1}\\)`} </li>
             </ol> -->
             <section>
-                {#if !presentationMode || current >= 1}
+                {#if !$presentationMode || $currentSlide >= 1}
                     <h2 
-                        class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         >Slice cone with a plane</h2>
                     <p 
-                        class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         style="display:flex; align-items: center; justify-content:center;"
                         >
-                        <video width="90%" height="auto" src="/circle_demo/Conic_anime.mp4" type="video/mp4" autoplay={current >= 1} muted loop={current >= 1 && current < 2}></video>
+                        <video width="90%" height="auto" src="/circle_demo/Conic_anime.mp4" type="video/mp4" autoplay={$currentSlide >= 1} muted loop={$currentSlide >= 1 && $currentSlide < 2}></video>
                     </p>
                     
                 {/if}
-                {#if !presentationMode || current >= 2}
+                {#if !$presentationMode || $currentSlide >= 2}
                     <h2 
-                        class="{presentationMode && isActive === 2 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         >The plane passes through the vertex</h2>
                     <p 
-                        class="{presentationMode && isActive === 2 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         style="display:flex; align-items: center; justify-content:center;"
                         >
-                        <video width="90%" height="auto" src="/circle_demo/Conic_deg.mp4" type="video/mp4" autoplay={current >= 2} muted loop={current >= 2 && current < 3}></video>
+                        <video width="90%" height="auto" src="/circle_demo/Conic_deg.mp4" type="video/mp4" autoplay={$currentSlide >= 2} muted loop={$currentSlide >= 2 && $currentSlide < 3}></video>
                     </p>
                     
                 {/if}
             </section>
             <section>
-                {#if !presentationMode || current >= 3}
+                {#if !$presentationMode || $currentSlide >= 3}
                     <h2 
-                        class="{presentationMode && isActive === 3 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         >How is a circle created?</h2>
                     <p 
-                        class="{presentationMode && isActive === 3 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         style="display:flex; align-items: center; justify-content:center;"
                         >
-                        <video width="90%" height="auto" src="/circle_demo/circle_anime.mp4" type="video/mp4" autoplay={current >= 3} muted loop={current >= 3 && current < 4}></video>
+                        <video width="90%" height="auto" src="/circle_demo/circle_anime.mp4" type="video/mp4" autoplay={$currentSlide >= 3} muted loop={$currentSlide >= 3 && $currentSlide < 4}></video>
                     </p>
                     
                 {/if}
-                {#if !presentationMode || current >= 4}
+                {#if !$presentationMode || $currentSlide >= 4}
                     <h2 
-                        class="{presentationMode && isActive === 4 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         >How is a parabola created?</h2>
                     <p 
-                        class="{presentationMode && isActive === 4 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         style="display:flex; align-items: center; justify-content:center;"
                         >
-                        <video width="90%" height="auto" src="/circle_demo/parabola_anime.mp4" type="video/mp4" autoplay={current >= 4} muted loop={current >= 4 && current < 5}></video>
+                        <video width="90%" height="auto" src="/circle_demo/parabola_anime.mp4" type="video/mp4" autoplay={$currentSlide >= 4} muted loop={$currentSlide >= 4 && $currentSlide < 5}></video>
                     </p>
                     
                 {/if}
-                {#if !presentationMode || current >= 5}
+                {#if !$presentationMode || $currentSlide >= 5}
                     <h2 
-                        class="{presentationMode && isActive === 5 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         >How is an ellipse created?</h2>
                     <p 
-                        class="{presentationMode && isActive === 5 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         style="display:flex; align-items: center; justify-content:center;"
                         >
-                        <video width="90%" height="auto" src="/circle_demo/ellipse_anime.mp4" type="video/mp4" autoplay={current >= 5} muted loop={current >= 5 && current < 6}></video>
+                        <video width="90%" height="auto" src="/circle_demo/ellipse_anime.mp4" type="video/mp4" autoplay={$currentSlide >= 5} muted loop={$currentSlide >= 5 && $currentSlide < 6}></video>
                     </p>
                     
                 {/if}
-                {#if !presentationMode || current >= 6}
+                {#if !$presentationMode || $currentSlide >= 6}
                     <h2 
-                        class="{presentationMode && isActive === 6 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 6 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         >How is a hyperbola created?</h2>
                     <p 
-                        class="{presentationMode && isActive === 6 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 6 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         style="display:flex; align-items: center; justify-content:center;"
                         >
-                        <video width="90%" height="auto" src="/circle_demo/hyperbola_anime.mp4" type="video/mp4" autoplay={current >= 6} muted loop={current >= 6 && current < 7}></video>
+                        <video width="90%" height="auto" src="/circle_demo/hyperbola_anime.mp4" type="video/mp4" autoplay={$currentSlide >= 6} muted loop={$currentSlide >= 6 && $currentSlide < 7}></video>
                     </p>
                     
                 {/if}
-                {#if !presentationMode || current >= 7}
+                {#if !$presentationMode || $currentSlide >= 7}
                     <h2 
-                        class="{presentationMode && isActive === 7 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 7 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         >General Equation</h2>
                 {/if}
-                {#if !presentationMode || current >= 8}
+                {#if !$presentationMode || $currentSlide >= 8}
                     <p 
-                        class="{presentationMode && isActive === 8 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 8 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         style="display:flex; align-items:center;">
                         <span>
@@ -753,12 +661,12 @@
                         </figure>
                     </p>
                 {/if}
-                {#if !presentationMode || current >= 9}
+                {#if !$presentationMode || $currentSlide >= 9}
                     <p 
-                        class="{presentationMode && isActive === 9 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 9 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         style="display:flex; align-items:center;">
                         <span>
@@ -769,12 +677,12 @@
                         </figure>
                     </p>
                 {/if}
-                {#if !presentationMode || current >= 10}
+                {#if !$presentationMode || $currentSlide >= 10}
                     <p 
-                        class="{presentationMode && isActive === 10 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 10 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
                         Substitute
                             {`\\(
@@ -783,322 +691,322 @@
                         
                     </p>
                 {/if}
-                {#if !presentationMode || current >= 11}
+                {#if !$presentationMode || $currentSlide >= 11}
                     <p 
-                        class="{presentationMode && isActive === 11 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 11 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
                         General equation of conic can be written as 
                         \(Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0\)
                     </p>
                 {/if}
-                {#if !presentationMode || current >= 12}
+                {#if !$presentationMode || $currentSlide >= 12}
                     <p 
-                        class="{presentationMode && isActive === 12 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 12 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
                         Discriminant: \(G = B^2 - 4AC\) 
                     </p>
                 {/if}
-                {#if !presentationMode || current >= 13}
+                {#if !$presentationMode || $currentSlide >= 13}
                     <p 
-                        class="{presentationMode && isActive === 13 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 13 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
                         {`\\(\\bullet ~~G<0\\)`} implies that the equation is an ellipse. 
                     </p>
                 {/if}
-                {#if !presentationMode || current >= 14}
+                {#if !$presentationMode || $currentSlide >= 14}
                     <p 
-                        class="{presentationMode && isActive === 14 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 14 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
                         {`\\(~~\\bullet ~~B = 0, A = C\\)`} implies that the equation is a circle. 
                     </p>
                 {/if}
-                {#if !presentationMode || current >= 15}
+                {#if !$presentationMode || $currentSlide >= 15}
                     <p 
-                        class="{presentationMode && isActive === 15 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 15 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
                         {`\\(\\bullet ~~G=0\\)`} implies that the equation is a parabola. 
                     </p>
                 {/if}
-                {#if !presentationMode || current >= 16}
+                {#if !$presentationMode || $currentSlide >= 16}
                     <p 
-                        class="{presentationMode && isActive === 16 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 16 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
                         {`\\(\\bullet ~~G>0\\)`} implies that the equation is a hyberbola. 
                     </p>
                 {/if}
-                {#if !presentationMode || current >= 17}
+                {#if !$presentationMode || $currentSlide >= 17}
                     <p 
-                        class="{presentationMode && isActive === 17 ? 'currentActive': ''}" 
+                        class="{$presentationMode && isActive === 17 ? 'currentActive': ''}" 
                         transition:fly="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
-                        on:introend={() => {isActive = current}}
+                        on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
                         {`\\(~~\\bullet ~~A = -C\\)`} implies that the equation is a rectangular hyperbola. 
                     </p>
                 {/if}
                 <section>
-                    {#if !presentationMode || current >= 18}
+                    {#if !$presentationMode || $currentSlide >= 18}
                         <h2 
-                            class="{presentationMode && isActive === 18 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 18 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
                             >Circle at origin</h2>
                     {/if}
-                    {#if !presentationMode || current >= 19}
+                    {#if !$presentationMode || $currentSlide >= 19}
                         <img width="300px" style="float: right;" 
-                            class="{presentationMode && isActive === 10 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 10 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
                             src="/circle_demo/circle.png"
                             >
                     {/if}
-                    {#if !presentationMode || current >= 20}
+                    {#if !$presentationMode || $currentSlide >= 20}
                         <p 
-                            class="{presentationMode && isActive === 20 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 20 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Equation of a circle with center at the origin and radius \(r\) is \(x^2 + y^2 = r^2\). 
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 21}
+                    {#if !$presentationMode || $currentSlide >= 21}
                         <p 
-                            class="{presentationMode && isActive === 21 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 21 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Any point on this circle can be given by \((r\cos\theta, r\sin\theta)\). 
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 22}
+                    {#if !$presentationMode || $currentSlide >= 22}
                         <p 
-                            class="{presentationMode && isActive === 22 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 22 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             General equation of a circle is \(x^2 + y^2 + 2gx + 2hy + c = 0\).
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 23}
+                    {#if !$presentationMode || $currentSlide >= 23}
                         <p 
-                            class="{presentationMode && isActive === 23 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 23 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Which can be written as \((x+g)^2 + (y + h)^2 = g^2 + h^2 - c\).
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 24}
+                    {#if !$presentationMode || $currentSlide >= 24}
                         <p 
-                            class="{presentationMode && isActive === 24 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 24 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Its center is at \((-g, -h)\) and radius is {`\\(r = \\sqrt{g^2 + h^2 -c}\\)`}.
                         </p>
                     {/if}
                 </section>
                 <section>
-                    {#if !presentationMode || current >= 25}
+                    {#if !$presentationMode || $currentSlide >= 25}
                         <br><br><br>
                         <h2 
-                            class="{presentationMode && isActive === 25 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 25 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
                             >Circle through 3 points</h2>
                     {/if}
-                    {#if !presentationMode || current >= 26}
+                    {#if !$presentationMode || $currentSlide >= 26}
                         <img width="350px" style="float: right;" 
-                            class="{presentationMode && isActive === 26 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 26 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
                             src="/circle_demo/threepointcircle.png"
                             >
                     {/if}
-                    {#if !presentationMode || current >= 27}
+                    {#if !$presentationMode || $currentSlide >= 27}
                         <p 
-                            class="{presentationMode && isActive === 27 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 27 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Find the center and radius. 
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 28}
+                    {#if !$presentationMode || $currentSlide >= 28}
                         <p 
-                            class="{presentationMode && isActive === 28 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 28 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Center is at the intersection of perpendicular bisectors 
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 29}
+                    {#if !$presentationMode || $currentSlide >= 29}
                         <p 
-                            class="{presentationMode && isActive === 29 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 29 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Bisector of AB {`
                             \\[\\frac{y - (y_1 + y_2)/2}{x - (x_1 + x_2)/2} = - \\frac{x_2 - x_1}{y_2-y_1}\\]`}
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 30}
+                    {#if !$presentationMode || $currentSlide >= 30}
                         <p 
-                            class="{presentationMode && isActive === 30 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 30 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Bisector of AC {`
                             \\[\\frac{y - (y_1 + y_3)/2}{x - (x_1 + x_3)/2} = - \\frac{x_3 - x_1}{y_3-y_1}\\]`}
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 31}
+                    {#if !$presentationMode || $currentSlide >= 31}
                         <p 
-                            class="{presentationMode && isActive === 31 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 31 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Solve the above equation to get the center.
                         </p>
                     {/if}
                 </section>
                 <section>
-                    {#if !presentationMode || current >= 32}
+                    {#if !$presentationMode || $currentSlide >= 32}
                         <br><br><br>
                         <h2 
-                            class="{presentationMode && isActive === 32 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 32 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
                             >Tangent to a circle</h2>
                     {/if}
-                    {#if !presentationMode || current >= 33}
+                    {#if !$presentationMode || $currentSlide >= 33}
                         <img width="350px" style="float: right;" 
-                            class="{presentationMode && isActive === 33 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 33 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
                             src="/circle_demo/Tangents.png"
                             >
                     {/if}
-                    {#if !presentationMode || current >= 34}
+                    {#if !$presentationMode || $currentSlide >= 34}
                         <p 
-                            class="{presentationMode && isActive === 34 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 34 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Let a tangent can be written as \(y = mx + c\)
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 35}
+                    {#if !$presentationMode || $currentSlide >= 35}
                         <p 
-                            class="{presentationMode && isActive === 35 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 35 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Substitute \(y\) into \(x^2 + y^2 = r^2\) \[x^2 + (mx + c)^2 = r^2\]
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 36}
+                    {#if !$presentationMode || $currentSlide >= 36}
                         <p 
-                            class="{presentationMode && isActive === 36 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 36 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Require that the discriminant be \(D = 0\)
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 37}
+                    {#if !$presentationMode || $currentSlide >= 37}
                         <p 
-                            class="{presentationMode && isActive === 37 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 37 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Solve to get two values of \(m\)
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 38}
+                    {#if !$presentationMode || $currentSlide >= 38}
                         <p 
-                            class="{presentationMode && isActive === 38 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 38 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             For each \(m\): \(c = y_1 - mx_1 \)
                         </p>
                     {/if}
                 </section>
                 <section>
-                    {#if !presentationMode || current >= 39}
+                    {#if !$presentationMode || $currentSlide >= 39}
                         <br><br><br>
                         <div class="pad"></div>
                         <h2 
-                            class="{presentationMode && isActive === 39 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 39 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
                             >Example</h2>
                     {/if}
-                    {#if !presentationMode || current >= 40}
+                    {#if !$presentationMode || $currentSlide >= 40}
                         <p 
-                            class="question {presentationMode && isActive === 40 ? 'currentActive': ''}" 
+                            class="question {$presentationMode && isActive === 40 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Consider a triangle \(\Delta\) whose two sides lie on the \(x\)-axis and the line \(x + y + 1 = 0\). If the orthocenter of \(\Delta\) is \((1, 1)\), then find the equation of the circle passing through the vertices of the triangle \(\Delta\).
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 41}
+                    {#if !$presentationMode || $currentSlide >= 41}
                         <figure width="450px" style="float: right;" 
-                            class="{presentationMode && isActive === 41 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 41 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
                             >
                             <svg width="100%" height="100%" viewBox="-262.5 -240 450 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1460,44 +1368,44 @@
                                         </g></g></svg>
                         </figure>
                     {/if}
-                    {#if !presentationMode || current >= 42}
+                    {#if !$presentationMode || $currentSlide >= 42}
                         <h4 
-                            class="{presentationMode && isActive === 42 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 42 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Claim:
                         </h4>
                         <p 
-                            class="{presentationMode && isActive === 42 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 42 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             Image of orthocenter about any side of the triangle lies on its circumcircle.
                         </p>
                     {/if}
-                    {#if !presentationMode || current >= 43}
+                    {#if !$presentationMode || $currentSlide >= 43}
                         <h4 
-                            class="{presentationMode && isActive === 43 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 43 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
                             proof:
                         </h4>
                         
                     {/if}
-                    {#if !presentationMode || current >= 44}
+                    {#if !$presentationMode || $currentSlide >= 44}
                         <div class="pad"></div>
                         <div class="pad"></div>
                         <div class="pad"></div>
                         <figure width="70%" style="float: right;" 
-                            class="{presentationMode && isActive === 45 ? 'currentActive': ''}" 
+                            class="{$presentationMode && isActive === 45 ? 'currentActive': ''}" 
                             transition:fly="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
-                            on:introend={() => {isActive = current}}
+                            on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
                             >
                             <svg width="100%" height="100%" viewBox="-330.18499755859375 -264.5 500 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1771,12 +1679,12 @@
                         </figure>
                     {/if}
                 </section>
-                {#if presentationMode && current > 6}
+                {#if $presentationMode && $currentSlide > 6}
                     <div class="pad"></div>
                 {/if}
             </section>
             
-            <!-- {#if !presentationMode}
+            <!-- {#if !$presentationMode}
             <section>
                 <h1>Alternate Solution</h1>
     
@@ -1784,10 +1692,5 @@
                 
             {/if} -->
         </article>
-        {#if presentationMode}
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <aside use:ripple class="next" on:click={next}></aside>
-        {/if}
-    </div>
     
     

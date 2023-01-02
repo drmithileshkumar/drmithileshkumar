@@ -46,10 +46,12 @@
     "src": "src/routes/iit/maths/2021/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index.js",
+      "_stores2.js",
+      "_Canvas.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-c39f161b.css"
+      "_app/immutable/assets/_layout-d8f7c75a.css"
     ]
   },
   "src/routes/notes/maths/+layout.svelte": {
@@ -59,10 +61,11 @@
     "imports": [
       "_index.js",
       "_Select.js",
-      "_stores2.js"
+      "_stores2.js",
+      "_Canvas.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-38067ee9.css"
+      "_app/immutable/assets/_layout-78c3b925.css"
     ]
   },
   "src/routes/practice/+layout.svelte": {
@@ -175,12 +178,12 @@
     "isEntry": true,
     "imports": [
       "_index.js",
+      "_stores2.js",
       "_stores.js",
       "_constants.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-fba609d7.css",
-      "_app/immutable/assets/Canvas-5503c499.css"
+      "_app/immutable/assets/_page-223c983e.css"
     ]
   },
   "src/routes/iit/maths/2021/question1/+page.js": {
@@ -197,12 +200,12 @@
     "isEntry": true,
     "imports": [
       "_index.js",
+      "_stores2.js",
       "_stores.js",
       "_constants.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-15b731be.css",
-      "_app/immutable/assets/Canvas-5503c499.css"
+      "_app/immutable/assets/_page-1a844cba.css"
     ]
   },
   "src/routes/iit/maths/2021/question2/+page.js": {
@@ -219,12 +222,12 @@
     "isEntry": true,
     "imports": [
       "_index.js",
+      "_stores2.js",
       "_stores.js",
       "_constants.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-fa5403d1.css",
-      "_app/immutable/assets/Canvas-5503c499.css"
+      "_app/immutable/assets/_page-3545ec4f.css"
     ]
   },
   "src/routes/iit/maths/2021/question3/+page.js": {
@@ -241,12 +244,12 @@
     "isEntry": true,
     "imports": [
       "_index.js",
+      "_stores2.js",
       "_stores.js",
       "_constants.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-2ec39be4.css",
-      "_app/immutable/assets/Canvas-5503c499.css"
+      "_app/immutable/assets/_page-3b6ecc55.css"
     ]
   },
   "src/routes/iit/maths/2021/question4/+page.js": {
@@ -263,11 +266,20 @@
     "isEntry": true,
     "imports": [
       "_index.js",
+      "_stores2.js",
       "_stores.js",
       "_constants.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-63801d3f.css"
+      "_app/immutable/assets/_page-349d5f4c.css"
+    ]
+  },
+  "src/routes/iit/maths/2021/question5/+page.js": {
+    "file": "entries/pages/iit/maths/2021/question5/_page.js",
+    "src": "src/routes/iit/maths/2021/question5/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
     ]
   },
   "src/routes/iit/maths/2021/question6/+page.svelte": {
@@ -276,11 +288,20 @@
     "isEntry": true,
     "imports": [
       "_index.js",
+      "_stores2.js",
       "_stores.js",
       "_constants.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-dd2a6d7d.css"
+      "_app/immutable/assets/_page-e2da001c.css"
+    ]
+  },
+  "src/routes/iit/maths/2021/question6/+page.js": {
+    "file": "entries/pages/iit/maths/2021/question6/_page.js",
+    "src": "src/routes/iit/maths/2021/question6/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
     ]
   },
   "src/routes/notes/+page.svelte": {
@@ -330,11 +351,12 @@
     "isEntry": true,
     "imports": [
       "_index.js",
+      "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-db011063.css",
-      "_app/immutable/assets/Canvas-5503c499.css"
+      "_app/immutable/assets/_page-03d834cb.css",
+      "_app/immutable/assets/Canvas-130ef6bf.css"
     ]
   },
   "src/routes/notes/maths/conic/+page.js": {
@@ -530,6 +552,22 @@
       "_index.js"
     ]
   },
+  "_stores2.js": {
+    "file": "chunks/stores2.js",
+    "imports": [
+      "_index3.js"
+    ]
+  },
+  "_Canvas.js": {
+    "file": "chunks/Canvas.js",
+    "imports": [
+      "_index.js",
+      "_index3.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Canvas-130ef6bf.css"
+    ]
+  },
   "_Select.js": {
     "file": "chunks/Select.js",
     "imports": [
@@ -537,12 +575,6 @@
     ],
     "css": [
       "_app/immutable/assets/Select-346592cf.css"
-    ]
-  },
-  "_stores2.js": {
-    "file": "chunks/stores2.js",
-    "imports": [
-      "_index3.js"
     ]
   },
   "_stores3.js": {

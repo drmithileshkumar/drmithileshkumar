@@ -1,63 +1,21 @@
-<script context="module">
-    export async function load({session, fetch, params, url}) {
-        if(!(url.host === 'drmithileshkumar.com' || url.host === 'localhost:5173' || url.host === 'localhost:3000')) {
-            return {
-                status: 301,
-                redirect: `https://drmithileshkumar.com${url.pathname}`
-            }
-        }
-        return {
-            props: {
 
-            }
-        }
-    }
-</script>
 <script id="MathJax-script">
 // @ts-nocheck
+import {presentationMode, presentation, overlay, slideCounter, autoScroll, currentSlide} from '$lib/pages/notes/maths/stores';
     import {page} from '$app/stores';
     import {fade, fly} from 'svelte/transition';
-    import {afterUpdate, beforeUpdate, onMount} from 'svelte';
-    import {ripple} from '$lib/ui/ripple';
+    import {onMount} from 'svelte';
+    
     import {TeX} from '$lib/utils/common/constants';
-    let W;
+    
+    
     onMount(() => {
+        $slideCounter = 8;
+        $currentSlide = -2;
         MathJax.typeset();
     });
-    let presentation;
-    let presentationMode = false;
-    let counter = 8;
-    let current = -1;
+    
     let isActive = -1; 
-    let autoscroll = false;
-    beforeUpdate(() => {
-        if(presentation) {
-            // autoscroll = presentation && (presentation.offsetHeight + presentation.scrollTop) > (presentation.scrollHeight - 40);
-            autoscroll = true;
-        }
-        
-    })
-    afterUpdate( async () => {
-        if(autoscroll) setTimeout(async () => {
-            MathJax.typeset();
-            presentation.scrollTo({
-                top: presentation.scrollHeight,
-                left: 0,
-                behaviour: 'smooth'
-            });
-        }, 0)
-        
-    })
-    const back = () => {
-        if(current >= 0) current--;
-        setTimeout(() => { MathJax.typeset();}, 0)
-    }
-    const next = () => {
-        if(current < counter - 1) {
-            current++;
-            setTimeout(() => { MathJax.typeset();}, 0)
-        }
-    }
     $: optionStyle = W < 450 ? 'flex' : 'grid'; 
 </script>
 <style>
@@ -71,18 +29,12 @@
         width: 100%;
         flex-wrap: wrap;
     }
-    .container {
-        display: flex;
-    }
+    
     article {
         padding: 0.5em;
         /* in: all 1s; */
     }
-    aside {
-        background-color: rgb(230, 228, 228);
-        cursor: pointer;
-        width: 1em;
-    }
+    
     .absolute {
         margin: auto;
         width: 90vw;
@@ -122,20 +74,12 @@
     <link rel="canonical" href="https://drmithileshkumar.com{$page.url.pathname}" />
     <meta name="description" content="How do we define base or fundamental units? How long really is one meter?" />
 </svelte:head>
-<label>
-    <input type="checkbox" bind:checked={presentationMode}> Presentation Mode
-</label>
-<div class="container">
-    {#if presentationMode}
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <aside use:ripple class="back" on:click={back}></aside>
-    {/if}
-    <article class:absolute={presentationMode} bind:this={presentation} bind:clientWidth={W}>
+    <article class:absolute={$presentationMode} bind:this={$presentation}>
 
         <h1>Question 5 [JEE adv, 2021]</h1>
-        {#if !presentationMode || current >= 0}
+        {#if !$presentationMode || $currentSlide >= 0}
         <p 
-            class="question {presentationMode && isActive === 0 ? 'currentActive': ''}" 
+            class="question {$presentationMode && isActive === 0 ? 'currentActive': ''}" 
             transition:fly="{{ x: 200, duration: 1000}}"
             on:introstart={() => {isActive = -1}}
             on:introend={() => {isActive = 0}}
@@ -143,24 +87,24 @@
             For any positive integer \(n\), let \(S_n : (0,\infty)\to {TeX.bbR}\) be defined by \[S_n(x) = {TeX.sum('k=1','n')}{TeX.acot}\Big({TeX.frac('1 + k(k + 1)x^2', 'x')}\Big)\] where for any \(x{TeX.inR}, {TeX.acot}(x)\in (0, \pi)\) and \({TeX.atan}(x)\in \Big(-{TeX.piby2}, {TeX.piby2}\Big)\). Then which of the following statements is (are) <strong>True</strong>?
         </p>
         {/if}
-        {#if !presentationMode || current >= 1}
+        {#if !$presentationMode || $currentSlide >= 1}
             <ol class={optionStyle}>
-                <li class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
+                <li class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000}}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 1}}
                     on:outroend={() => {isActive = -1}}> {`\\(S_{10}(x) = \\dfrac{\\pi}{2}-\\tan^{-1}\\Big(\\dfrac{1 + 11x^2}{10x}\\Big)\\)`}, for all \(x>0\) </li>
-                <li class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
+                <li class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000}}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 1}}
                     on:outroend={() => {isActive = -1}}> {`\\(\\lim_{n\\to \\infty}\\cot(S_n(x)) = x\\)`}, for all \(x>0\) </li>
-                <li class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
+                <li class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000}}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 1}}
                     on:outroend={() => {isActive = -1}}> The equation {`\\(S_3(x)=\\dfrac{\\pi}{4}\\)`} has a root in \((0,\infty)\)</li>
-                <li class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
+                <li class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000}}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 1}}
@@ -168,13 +112,13 @@
             </ol>
         {/if}
         <section>
-            {#if !presentationMode || current >= 2}
-                <h2 class="{presentationMode && isActive === 2 ? 'currentActive': ''}" 
+            {#if !$presentationMode || $currentSlide >= 2}
+                <h2 class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 2}}
                     on:outroend={() => {isActive = -1}}>Concepts</h2>
-                <p class="{presentationMode && isActive === 2 ? 'currentActive': ''}" 
+                <p class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 2}}
@@ -184,20 +128,20 @@
             {/if}
         </section>
         <section>
-            {#if !presentationMode || current >= 3}
-            <h2 class="{presentationMode && isActive === 3 ? 'currentActive': ''}" 
+            {#if !$presentationMode || $currentSlide >= 3}
+            <h2 class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 3}}
                 on:outroend={() => {isActive = -1}}>Solution</h2>
-            <h4 class="{presentationMode && isActive === 3 ? 'currentActive': ''}" 
+            <h4 class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 3}}
                 on:outroend={() => {isActive = -1}}>
                 Step 1
             </h4>
-            <p class="{presentationMode && isActive === 3 ? 'currentActive': ''}" 
+            <p class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 3}}
@@ -221,13 +165,13 @@
                     \\]`}
             </p>
             {/if}
-            {#if !presentationMode || current >= 4}
-            <h4 class="{presentationMode && isActive === 4 ? 'currentActive': ''}" 
+            {#if !$presentationMode || $currentSlide >= 4}
+            <h4 class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 4}}
                 on:outroend={() => {isActive = -1}}>Step 3: 1.</h4>
-            <p class="{presentationMode && isActive === 4 ? 'currentActive': ''}" 
+            <p class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 4}}
@@ -241,13 +185,13 @@
                 \\]`}
             </p>
             {/if}
-            {#if !presentationMode || current >= 5}
-            <h4 class="{presentationMode && isActive === 5 ? 'currentActive': ''}" 
+            {#if !$presentationMode || $currentSlide >= 5}
+            <h4 class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive =5}}
                 on:outroend={() => {isActive = -1}}>Step 3: 2.</h4>
-            <p class="{presentationMode && isActive === 5 ? 'currentActive': ''}" 
+            <p class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive =5}}
@@ -261,13 +205,13 @@
                 \\]`}
             </p>
             {/if}
-            {#if !presentationMode || current >= 6}
-            <h4 class="{presentationMode && isActive === 6 ? 'currentActive': ''}" 
+            {#if !$presentationMode || $currentSlide >= 6}
+            <h4 class="{$presentationMode && isActive === 6 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 6}}
                 on:outroend={() => {isActive = -1}}>Step 3: 3.</h4>
-            <p class="{presentationMode && isActive === 6 ? 'currentActive': ''}" 
+            <p class="{$presentationMode && isActive === 6 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive =6}}
@@ -283,13 +227,13 @@
                 has no real roots.
             </p>
             {/if}
-            {#if !presentationMode || current >= 7}
-            <h4 class="{presentationMode && isActive === 7 ? 'currentActive': ''}" 
+            {#if !$presentationMode || $currentSlide >= 7}
+            <h4 class="{$presentationMode && isActive === 7 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 7}}
                 on:outroend={() => {isActive = -1}}>Step 3: 4</h4>
-            <p class="{presentationMode && isActive === 7 ? 'currentActive': ''}" 
+            <p class="{$presentationMode && isActive === 7 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 7}}
@@ -309,8 +253,4 @@
             {/if}
         </section>
     </article>
-    {#if presentationMode}
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <aside use:ripple class="next" on:click={next}></aside>
-    {/if}
-</div>
+    

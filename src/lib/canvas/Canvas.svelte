@@ -1,42 +1,28 @@
 <script>
+    import {clearAll, stMode, arcMode, strokeColor, lineWidth, globalCompositeOperation} from '$lib/canvas/stores';
     import {onMount} from 'svelte';
     export let width = 100;
     export let height = 100;
-    export let strokeColor = "black";
-    export let lineWidth = 2;
-    export let stMode = false;
-    export let arcMode = false;
     let canvas, ctx;
-    let colors = ['green', 'blue', 'red', 'yellow', 'orange', 'black'];
-    let isDrawing, points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 2, tangentThreshold = 0.01, animeFrame;
+    let points = [], reducedPoints = [], areas = [], tangents = [], controlPoints = [], snapshot, areaThreshold = 2, tangentThreshold = 0.01, animeFrame;
     let boundingRect = {
         left: 0,
         top: 0
     }
     let scaleX = 1, scaleY = 1;
-    let curveIndex = 0;
     onMount(() => {
         ctx = canvas.getContext('2d', { willReadFrequently: true });
-        // boundingRect = canvas.getBoundingClientRect();
-        // console.log(boundingRect)
-        // scaleX = canvas.width/boundingRect.width;
-        // scaleY = canvas.height/boundingRect.height;
         init();
     })
-    var flag = false,
-        prevX = 0,
-        currX = 0,
-        prevY = 0,
-        currY = 0,
-        dot_flag = false;
+    var flag = false, dot_flag = false;
 
-    export let globalCompositeOperation = "source-over";
+    
     
     function init() {
         ctx = canvas.getContext("2d", {willReadFrequently: true});
         width = canvas.width;
         height = canvas.height;
-        // ctx.globalCompositeOperation = globalCompositeOperation;
+        
     
         canvas.addEventListener("mousemove", function (e) {
             findxy('move', e)
@@ -50,10 +36,7 @@
         canvas.addEventListener("mouseout", function (e) {
             findxy('out', e)
         }, false);
-        // node.addEventListener("touchstart", startDrag);
-        // node.addEventListener("touchmove", drag);
-        // node.addEventListener("touchend", endDrag);
-        // node.addEventListener("touchcancel", endDrag);
+        
         canvas.addEventListener("touchmove", function (e) {
             findxy('move', e)
         }, false);
@@ -231,9 +214,9 @@
             // ctx.setLineDash([0]);
             // bzCurve(points, 0.01, 10)
             ctx.beginPath();
-            ctx.globalCompositeOperation = globalCompositeOperation;
+            ctx.globalCompositeOperation = $globalCompositeOperation;
             
-            if(arcMode) {
+            if($arcMode) {
                 let r = pointLength(points[0], points[1]);
                 ctx.arc(points[0].x, points[0].y, r, 0, 2 * Math.PI);
             } else {
@@ -271,12 +254,12 @@
         ctx.putImageData(snapshot, 0, 0);
         
         ctx.beginPath();
-        ctx.globalCompositeOperation = globalCompositeOperation;
+        ctx.globalCompositeOperation = $globalCompositeOperation;
         // ctx.moveTo(prevX, prevY);
         // ctx.lineTo(currX, currY);
         ctx.moveTo(givenPoints[0].x, givenPoints[0].y)
         ctx.strokeStyle = strokeColor;
-        ctx.lineWidth = lineWidth;
+        ctx.lineWidth = $lineWidth;
         ctx.lineJoin = 'round';
         ctx.lineCap = 'round';
         let m = 0;
@@ -387,19 +370,19 @@
             let pos = getMousePosition(e);
             snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
             points.push({x: pos.x, y: pos.y});
-            if(stMode || arcMode) points.push({x: pos.x, y: pos.y})
+            if($stMode || $arcMode) points.push({x: pos.x, y: pos.y})
             flag = true;
             dot_flag = true;
             if (dot_flag) {
                 ctx.beginPath();
-                ctx.fillStyle = strokeColor;
-                ctx.ellipse(pos.x, pos.y, lineWidth/2, lineWidth/2, 0, 0, 2 * Math.PI);
+                ctx.fillStyle = $strokeColor;
+                ctx.ellipse(pos.x, pos.y, $lineWidth/2, $lineWidth/2, 0, 0, 2 * Math.PI);
                 ctx.fill();
                 ctx.closePath();
                 dot_flag = false;
             }
-            ctx.strokeStyle = strokeColor;
-            ctx.lineWidth = lineWidth;
+            ctx.strokeStyle = $strokeColor;
+            ctx.lineWidth = $lineWidth;
             ctx.lineJoin = 'round';
             ctx.lineCap = 'round';
             // animeFrame = requestAnimationFrame(draw);
@@ -426,7 +409,7 @@
                 
                 let pos = getMousePosition(e);
                 e.preventDefault();
-                if(stMode || arcMode) {
+                if($stMode || $arcMode) {
                     points[1] = {
                         x: pos.x, y: pos.y
                     };
@@ -446,7 +429,11 @@
             }
         }
     }
-    
+    $: if($clearAll) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        snapshot = null;
+        $clearAll = false;
+    }
 </script>
 <style>
     canvas {

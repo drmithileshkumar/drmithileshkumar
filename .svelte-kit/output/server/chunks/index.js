@@ -209,6 +209,13 @@ function escape_object(obj) {
   }
   return result;
 }
+function each(items, fn) {
+  let str = "";
+  for (let i = 0; i < items.length; i += 1) {
+    str += fn(items[i], i);
+  }
+  return str;
+}
 const missing_component = {
   $$render: () => ""
 };
@@ -261,6 +268,9 @@ function add_attribute(name, value, boolean) {
   const assignment = boolean && value === true ? "" : `="${escape(value, true)}"`;
   return ` ${name}${assignment}`;
 }
+function add_classes(classes) {
+  return classes ? ` class="${classes}"` : "";
+}
 function style_object_to_string(style_object) {
   return Object.keys(style_object).filter((key) => style_object[key]).map((key) => `${key}: ${escape_attribute_value(style_object[key])};`).join(" ");
 }
@@ -270,17 +280,19 @@ export {
   create_ssr_component as c,
   subscribe as d,
   escape as e,
-  createEventDispatcher as f,
+  add_attribute as f,
   getContext as g,
-  spread as h,
-  escape_object as i,
-  null_to_empty as j,
-  add_attribute as k,
+  each as h,
+  set_store_value as i,
+  createEventDispatcher as j,
+  spread as k,
   loop as l,
   missing_component as m,
   noop as n,
-  compute_rest_props as o,
-  set_store_value as p,
+  escape_object as o,
+  null_to_empty as p,
+  compute_rest_props as q,
+  add_classes as r,
   setContext as s,
   validate_component as v
 };

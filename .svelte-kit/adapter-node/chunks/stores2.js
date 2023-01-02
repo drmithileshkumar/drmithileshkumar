@@ -222,9 +222,21 @@ const sections = {
 };
 const selectedChapter = writable(chapters[0]);
 const selectedSection = writable("");
+const presentationMode = writable(false);
+const presentation = writable(null);
+const currentSlide = writable(-2);
+const autoScroll = writable(false);
+const slideCounter = writable(0);
+const overlay = writable(null);
 export {
-  selectedSection as a,
-  selectedChapter as b,
-  chapters as c,
-  sections as s
+  autoScroll as a,
+  presentationMode as b,
+  currentSlide as c,
+  chapters as d,
+  sections as e,
+  selectedSection as f,
+  selectedChapter as g,
+  overlay as o,
+  presentation as p,
+  slideCounter as s
 };

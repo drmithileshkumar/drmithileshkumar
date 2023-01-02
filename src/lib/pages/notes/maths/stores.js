@@ -199,3 +199,17 @@ export const sections = {
 
 export const selectedChapter = writable(chapters[0]);
 export const selectedSection = writable('');
+
+//bind:lineWidth bind:strokeColor bind:globalCompositeOperation bind:stMode bind:arcMode
+export const lineWidth = writable(2);
+export const strokeColor = writable('red');
+export const globalCompositeOperation = writable('source-over');
+export const stMode = writable(false);
+export const arcMode = writable(false);
+export const presentationMode = writable(false);
+
+export const presentation = writable(null);
+export const currentSlide = writable(-2);
+export const autoScroll = writable(false);
+export const slideCounter = writable(0);
+export const overlay = writable(null);

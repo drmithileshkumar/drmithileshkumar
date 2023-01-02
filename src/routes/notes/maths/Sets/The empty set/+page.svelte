@@ -1,6 +1,7 @@
 <script id="MathJax-script">
     // @ts-nocheck
         import {chapters, sections, selectedChapter, selectedSection} from '$lib/pages/notes/maths/stores';
+        import {presentationMode, presentation, overlay, slideCounter, autoScroll, currentSlide} from '$lib/pages/notes/maths/stores';
         import Practice from '$lib/utils/practiceproblem/Practice.svelte';
         import Message from '$lib/ui/Message.svelte';
         import {Point2D} from '$lib/utils/common/point2d';
@@ -10,6 +11,8 @@
         onMount(() => {
             $selectedChapter = 'Sets';
             $selectedSection = 'The empty set';
+            $slideCounter = 11;
+            $currentSlide = -2;
             MathJax.typeset();
         });
         let problemset = {
@@ -75,7 +78,7 @@
         <meta name="description" content="Introduction to sets" />
         
     </svelte:head>
-    <article>
+    <article class:absolute={$presentationMode} bind:this={$presentation}>
         <h1>{$selectedSection}</h1>
         <section>
             <p>The simplest possible set is one that does not contain any element at all.</p>

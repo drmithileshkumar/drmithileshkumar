@@ -1,5 +1,5 @@
-import { c as create_ssr_component, d as subscribe, e as escape } from "../../../../../../chunks/index.js";
-import { a as selectedSection, b as selectedChapter } from "../../../../../../chunks/stores2.js";
+import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, r as add_classes } from "../../../../../../chunks/index.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
 /* empty css                                                               *//* empty css                                                              */import { p as page } from "../../../../../../chunks/stores.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
@@ -7,18 +7,30 @@ const css = {
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$unsubscribe_currentSlide;
+  let $$unsubscribe_slideCounter;
   let $selectedSection, $$unsubscribe_selectedSection;
   let $$unsubscribe_selectedChapter;
   let $page, $$unsubscribe_page;
+  let $presentationMode, $$unsubscribe_presentationMode;
+  let $presentation, $$unsubscribe_presentation;
+  $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => value);
+  $$unsubscribe_slideCounter = subscribe(slideCounter, (value) => value);
   $$unsubscribe_selectedSection = subscribe(selectedSection, (value) => $selectedSection = value);
   $$unsubscribe_selectedChapter = subscribe(selectedChapter, (value) => value);
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
+  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
+  $$unsubscribe_presentation = subscribe(presentation, (value) => $presentation = value);
   $$result.css.add(css);
+  $$unsubscribe_currentSlide();
+  $$unsubscribe_slideCounter();
   $$unsubscribe_selectedSection();
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
-  return `${$$result.head += `<!-- HEAD_svelte-y8ddav_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Introduction to sets"}"><!-- HEAD_svelte-y8ddav_END -->`, ""}
-    <article><h1>${escape($selectedSection)}</h1>
+  $$unsubscribe_presentationMode();
+  $$unsubscribe_presentation();
+  return `${$$result.head += `<!-- HEAD_svelte-iu5uph_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedSection, 0)}><!-- HEAD_svelte-iu5uph_END -->`, ""}
+    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
         <h2>Definition</h2>
         <section><p class="${"svelte-1m6zy9y"}">We are used to a practical idea of what is a <em>collection</em>. A <em>set</em> is the mathematical refinement of this idea of collection. It turns out that not every collection can be a set. One basic requirement of a mathematical concept is that its definition must be unique. Not every collection has a unique definition. Consider, for example, <span class="${"specialtext"}">the collection of favourite songs</span>. Pretty much every person would have their own unique collection of favourite songs. 
             </p>

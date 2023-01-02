@@ -1,59 +1,21 @@
 
 <script id="MathJax-script">
 // @ts-nocheck
+import {presentationMode, presentation, overlay, slideCounter, autoScroll, currentSlide} from '$lib/pages/notes/maths/stores';
     import {page} from '$app/stores';
     import {fade, fly} from 'svelte/transition';
-    import {afterUpdate, beforeUpdate, onMount} from 'svelte';
-    import {ripple} from '$lib/ui/ripple';
+    import {onMount} from 'svelte';
+    
     import {TeX} from '$lib/utils/common/constants';
-    import CanvasBar from '$lib/canvas/CanvasBar.svelte';
-	import Canvas from '$lib/canvas/Canvas.svelte';
-    let W, H;
-    let stMode = false, arcMode = false;
-    let strokeColor = 'black', lineWidth = 2;
+    
+    
     onMount(() => {
+        $slideCounter = 8;
+        $currentSlide = -2;
         MathJax.typeset();
     });
-    let presentation, overlay;
-    let presentationMode = false;
-    let counter = 8;
-    let current = -2;
+    
     let isActive = -1; 
-    let autoscroll = false;
-    let globalCompositeOperation = 'source-over';
-    beforeUpdate(() => {
-        if(presentation) {
-            // autoscroll = presentation && (presentation.offsetHeight + presentation.scrollTop) > (presentation.scrollHeight - 40);
-            autoscroll = true;
-        }
-        
-    })
-    afterUpdate( async () => {
-        if(autoscroll) setTimeout(async () => {
-            MathJax.typeset();
-            presentation.scrollTo({
-                top: presentation.scrollHeight,
-                left: 0,
-                behaviour: 'smooth'
-            });
-            overlay.scrollTo({
-                top: presentation.scrollHeight,
-                left: 0,
-                behaviour: 'smooth'
-            });
-        }, 0)
-        
-    })
-    const back = () => {
-        if(current >= 0) current--;
-        setTimeout(() => { MathJax.typeset();}, 0)
-    }
-    const next = () => {
-        if(current < counter - 1) {
-            current++;
-            setTimeout(() => { MathJax.typeset();}, 0)
-        }
-    }
 </script>
 <style>
     /* p {
@@ -66,20 +28,13 @@
         width: 100%;
         flex-wrap: wrap;
     } */
-    .container {
-        display: flex;
-        position: relative;
-    }
+    
     article {
         position: relative;
         padding: 0.5em;
         /* in: all 1s; */
     }
-    aside {
-        background-color: rgb(230, 228, 228);
-        cursor: pointer;
-        width: 1em;
-    }
+    
     .absolute {
         margin: auto;
         /* width: 90vw; */
@@ -109,27 +64,6 @@
         
         width: 300px;
     } */
-    .overlay {
-        position: absolute;
-        z-index: 2;
-        left: 0.5em;
-        top: 0;
-        margin: auto;
-        width: calc(100% - 2em);
-        height: min(78vh, 60vw);
-        /* height: min(70vh,600px); */
-        overflow-y: auto;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-        /* padding: 0 1em 0 1em; */
-    }
-    
-    .presentationMode {
-        display: flex;
-        gap: 1em;
-        height: 1em;
-        margin-bottom: 0.5em;
-    }
     
     /* .displayStyle {
         font-size: 2em;
@@ -156,30 +90,9 @@
     <link rel="canonical" href="https://drmithileshkumar.com{$page.url.pathname}" />
     <meta name="description" content="IIT JEE Advanced Mathematics 2021" />
 </svelte:head>
-<div class="presentationMode">
-    <label>
-        <input type="checkbox" bind:checked={presentationMode}> Presentation Mode
-    </label>
-    {#if presentationMode}
-        <CanvasBar bind:lineWidth bind:strokeColor bind:globalCompositeOperation bind:stMode bind:arcMode/>
-    {/if}
-</div>
-<div class="container">
-    {#if presentationMode}
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <aside use:ripple class="back" on:click={back}></aside>
-    {/if}
-    {#if !presentationMode}
-        <span bind:this={overlay}></span>
-    {/if}
-    {#if presentationMode}
-        <div class="absolute overlay" bind:this={overlay}>
-            <Canvas width={W} height={10000} {strokeColor} {lineWidth} {globalCompositeOperation} {stMode} {arcMode}/>
-        </div>
-        
-    {/if}
-    <article class:absolute={presentationMode} bind:this={presentation} bind:clientWidth={W} bind:clientHeight={H}>
-        {#if presentationMode && current === -2}
+
+    <article class:absolute={$presentationMode} bind:this={$presentation}>
+        {#if $presentationMode && $currentSlide === -2}
             <div class="thumbnail">
                 <p 
                     class="question statement" 
@@ -188,58 +101,58 @@
                 </p>
             </div>
         {/if}   
-        {#if !presentationMode || current >= -1}
+        {#if !$presentationMode || $currentSlide >= -1}
             <h1>Question 3 [JEE adv, 2021]</h1>
         {/if}
-        {#if !presentationMode || current >= 0}
+        {#if !$presentationMode || $currentSlide >= 0}
             <p 
-                class="question {presentationMode && isActive === 0 ? 'currentActive': ''}" 
+                class="question {$presentationMode && isActive === 0 ? 'currentActive': ''}" 
                 transition:fly="{{ x: 200, duration: 1000}}"
                 on:introstart={() => {isActive = -1}}
-                on:introend={() => {isActive = current}}
+                on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>
                 For \(x{TeX.inR}\), thi number of real roots of the equation \(3x^2-4|x^2 - 1| + x - 1 = 0\) is ______.
             </p>
         {/if}
         <section>
-            {#if !presentationMode || current >= 1}
+            {#if !$presentationMode || $currentSlide >= 1}
                 <h2 
-                    class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
+                    class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
+                    on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}>Concepts</h2>
                 <p 
-                    class="{presentationMode && isActive === 1 ? 'currentActive': ''}" 
+                    class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
+                    on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}>
                     Consider the sign of  \(x^2 - 1\) to get two quadratic equations.
                 </p>
             {/if}
         </section>
         <section>
-            {#if !presentationMode || current >= 2}
+            {#if !$presentationMode || $currentSlide >= 2}
                 <h2 
-                    class="{presentationMode && isActive === 2 ? 'currentActive': ''}" 
+                    class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
+                    on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}>Solution</h2>
                 <h4 
-                    class="{presentationMode && isActive === 2 ? 'currentActive': ''}" 
+                    class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
+                    on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}>
                     Step 1
                 </h4>
                 <p 
-                    class="{presentationMode && isActive === 2 ? 'currentActive': ''}" 
+                    class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
+                    on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}>
                     {`\\[
                         \\begin{eqnarray}
@@ -249,24 +162,24 @@
                     \\]`}
                 </p>
             {/if}
-            {#if !presentationMode || current >= 3}
+            {#if !$presentationMode || $currentSlide >= 3}
                 <h4 
-                    class="{presentationMode && isActive === 3 ? 'currentActive': ''}" 
+                    class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
+                    on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}>Step 2</h4>
                 <h5 
-                    class="{presentationMode && isActive === 3 ? 'currentActive': ''}" 
+                    class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
+                    on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}>Case 1: \(x^2 - 1>0\)</h5>
                 <p 
-                    class="{presentationMode && isActive === 3 ? 'currentActive': ''}" 
+                    class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
+                    on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}>
                     This gives the quadratic equation
                     {`\\[
@@ -279,18 +192,18 @@
                     Both the roots are in the allowed interval \(x\in (-\infty, -1)\cup(1,\infty)\).
                 </p>
             {/if}
-            {#if !presentationMode || current >= 4}
+            {#if !$presentationMode || $currentSlide >= 4}
                 <h5 
-                    class="{presentationMode && isActive === 4 ? 'currentActive': ''}" 
+                    class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
+                    on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}>Case 2: \(x^2 - 1{TeX.less}0\)</h5>
                 <p 
-                    class="{presentationMode && isActive === 4 ? 'currentActive': ''}" 
+                    class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
+                    on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}>
                     This gives the quadratic equation
                     {`\\[
@@ -303,29 +216,25 @@
                     Both the roots are in the allowed interval \(x\in (-1,1)\).
                 </p>
             {/if}
-            {#if !presentationMode || current >= 5}
+            {#if !$presentationMode || $currentSlide >= 5}
                 <h4 
-                    class="{presentationMode && isActive === 5 ? 'currentActive': ''}" 
+                    class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
+                    on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}>Step 3</h4>
                 <p 
-                    class="{presentationMode && isActive === 5 ? 'currentActive': ''}" 
+                    class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
                     transition:fly="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
-                    on:introend={() => {isActive = current}}
+                    on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}>
                     There are two roots each of the two quadratic equations. Hence, the total number of roots is 4.
                 </p>
             {/if}
-            {#if presentationMode && current > 0}
+            {#if $presentationMode && $currentSlide > 0}
                 <div class="pad"></div>
             {/if}
         </section>
     </article>
-    {#if presentationMode}
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <aside use:ripple class="next" on:click={next}></aside>
-    {/if}
-</div>
+    
