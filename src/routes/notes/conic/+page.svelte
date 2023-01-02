@@ -126,7 +126,7 @@
         }
         .presentationMode {
             display: flex;
-            gap: 1em;
+            /* gap: 1em; */
             height: 1em;
             margin-bottom: 0.5em;
         }
@@ -168,8 +168,8 @@
         <meta name="description" content="Conic Section and Circle" />
     </svelte:head>
     <div class="presentationMode">
-        <label>
-            <input type="checkbox" bind:checked={presentationMode}> Presentation Mode
+        <label style="display:flex;align-items:center;">
+            <input type="checkbox" bind:checked={presentationMode}> <span class="material-icons">slideshow</span>
         </label>
         {#if presentationMode}
             <CanvasBar bind:lineWidth bind:strokeColor bind:globalCompositeOperation bind:stMode bind:arcMode/>

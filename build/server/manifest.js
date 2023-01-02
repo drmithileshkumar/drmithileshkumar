@@ -4,7 +4,7 @@ const manifest = {
 	assets: new Set(["app.css","circle_demo/circle.png","circle_demo/circle_anime.mp4","circle_demo/Cone-equation.png","circle_demo/Cone.png","circle_demo/conics.png","circle_demo/Conic_anime.mp4","circle_demo/Conic_deg.mp4","circle_demo/ellipse_anime.mp4","circle_demo/hyperbola_anime.mp4","circle_demo/IIT21Q1.png","circle_demo/orthocenter.png","circle_demo/parabola_anime.mp4","circle_demo/Plane.png","circle_demo/Tangents.png","circle_demo/threepointcircle.png","CMIMedal.jpg","cmithesis.pdf","common.css","dark.css","favicon.png","IITMSc.jpg","LCPath.svg","light.css","mithileshkumar.png","photo_cv.jpg","profilephoto.jpeg","robots copy.txt","robots.txt","santa.svg","svelte-welcome.png","svelte-welcome.webp","thesis.pdf","webdutIcon.png"]),
 	mimeTypes: {".css":"text/css",".png":"image/png",".mp4":"video/mp4",".jpg":"image/jpeg",".pdf":"application/pdf",".svg":"image/svg+xml",".jpeg":"image/jpeg",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		entry: {"file":"_app/immutable/start-2d109863.js","imports":["_app/immutable/start-2d109863.js","_app/immutable/chunks/index-3b22549b.js","_app/immutable/chunks/singletons-60001e27.js","_app/immutable/chunks/index-dbcace51.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/control-f5b05b5f.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-7f299d72.js","imports":["_app/immutable/start-7f299d72.js","_app/immutable/chunks/index-3b22549b.js","_app/immutable/chunks/singletons-60001e27.js","_app/immutable/chunks/index-dbcace51.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/control-f5b05b5f.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./chunks/0-4b25b5dc.js'),
 			() => import('./chunks/1-7a9bdca8.js'),
@@ -16,14 +16,14 @@ const manifest = {
 			() => import('./chunks/7-e28d18fc.js'),
 			() => import('./chunks/8-72b37dae.js'),
 			() => import('./chunks/9-3823d375.js'),
-			() => import('./chunks/10-ebee5716.js'),
-			() => import('./chunks/11-b30f97be.js'),
-			() => import('./chunks/12-0076e220.js'),
-			() => import('./chunks/13-d7901e0b.js'),
+			() => import('./chunks/10-42296508.js'),
+			() => import('./chunks/11-b6708ecb.js'),
+			() => import('./chunks/12-93c1d30f.js'),
+			() => import('./chunks/13-2248c11c.js'),
 			() => import('./chunks/14-f83b68ab.js'),
 			() => import('./chunks/15-d9c52d89.js'),
 			() => import('./chunks/16-7b6ee02e.js'),
-			() => import('./chunks/17-282b8a48.js'),
+			() => import('./chunks/17-33c91357.js'),
 			() => import('./chunks/18-6f7050ff.js')
 		],
 		routes: [

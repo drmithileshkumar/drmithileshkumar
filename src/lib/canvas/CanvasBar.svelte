@@ -46,6 +46,8 @@
         gap: 0.2em;
         align-items: center;
         flex-direction: row;
+        /* max-width: 100px;
+        overflow: scroll; */
     }
     .lineWidth {
         display: flex;
@@ -59,7 +61,12 @@
     .shapes span {
         display: flex;
         align-items: center;
-        padding: 0.5em;
+        padding: 0.2em;
+    }
+    .colors button {
+        width: 1em;
+        height: 1em;
+        padding: 0.6em;
     }
 </style>
 <div class="shapes">
@@ -85,7 +92,7 @@
     {#each colors as color}
         <button style="background: {color}; border: white {strokeColor === color ? '5px double' : 'solid'}; border-radius: 50%; padding: {color === 'eraser' ? 0 : ''};" on:click={() => setColor(color)}>
             {#if color === 'eraser'}
-                <svg width="20" height="20" viewBox="0 0 20 40">
+                <svg width="100%" height="100%" viewBox="0 0 20 40">
                     <g transform="rotate(-45 10 20) translate(0 5)">
                         <rect x='0' y='0' width='20' height='10' stroke='black' stroke-width='1' />
                         <rect x='0' y='10' width='20' height='20' fill='none' stroke='black' stroke-width='1' />
@@ -96,7 +103,7 @@
     {/each}
 </div>
 <div class="lineWidth">
-    <label>Stroke <input style="width: 4em; height: 1em; padding-left: 0.5em; padding-right: 0.5em;" type="number" step="0.1" bind:value={lineWidth}></label>
+    
     <svg width="20" height="20" viewBox="0 0 20 20" on:click={() => lineWidth = 2} style="cursor:pointer">
         {#if lineWidth === 2}
             <circle cx="10" cy="10" r="4" fill="none" stroke="black" stroke-width=1 />
@@ -115,4 +122,5 @@
         {/if}
         <circle cx="10" cy="10" r="7" fill="black" />
     </svg>
+    <label><input style="width: 4em; height: 1em; padding-left: 0.5em; padding-right: 0.5em;" type="number" step="0.1" bind:value={lineWidth}></label>
 </div>
