@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/notes/conic/_page.js';
+import * as universal from '../entries/pages/notes/maths/_page.js';
 
 export const index = 18;
-export const component = async () => (await import('../entries/pages/notes/conic/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/notes/conic/_page.svelte-71b13089.js';
+export const component = async () => (await import('../entries/pages/notes/maths/_page.svelte.js')).default;
+export const file = '_app/immutable/components/pages/notes/maths/_page.svelte-0618f95f.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/notes/conic/_page.svelte-71b13089.js","_app/immutable/chunks/index-3b22549b.js","_app/immutable/chunks/stores-2e81153e.js","_app/immutable/chunks/singletons-60001e27.js","_app/immutable/chunks/index-dbcace51.js","_app/immutable/chunks/index-34255218.js","_app/immutable/chunks/ripple-d6af89fa.js","_app/immutable/chunks/Canvas-fe6407be.js","_app/immutable/modules/pages/notes/conic/_page.js-867b53d4.js","_app/immutable/chunks/_page-962e2290.js"];
-export const stylesheets = ["_app/immutable/assets/_page-ed228737.css","_app/immutable/assets/Canvas-994b9e25.css"];
+export const imports = ["_app/immutable/components/pages/notes/maths/_page.svelte-0618f95f.js","_app/immutable/chunks/index-5057bb28.js","_app/immutable/chunks/Link-67f29c98.js","_app/immutable/chunks/constants-79d6a0a7.js","_app/immutable/modules/pages/notes/maths/_page.js-adb9f24e.js","_app/immutable/chunks/index-35a671a5.js","_app/immutable/chunks/control-f5b05b5f.js","_app/immutable/chunks/_page-6cfd9cf8.js"];
+export const stylesheets = ["_app/immutable/assets/Message-1e964222.css","_app/immutable/assets/Link-867ad8ee.css"];
 export const fonts = [];

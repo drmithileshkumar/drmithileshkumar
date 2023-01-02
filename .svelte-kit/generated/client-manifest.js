@@ -19,7 +19,14 @@ export const nodes = [() => import('./nodes/0'),
 	() => import('./nodes/16'),
 	() => import('./nodes/17'),
 	() => import('./nodes/18'),
-	() => import('./nodes/19')];
+	() => import('./nodes/19'),
+	() => import('./nodes/20'),
+	() => import('./nodes/21'),
+	() => import('./nodes/22'),
+	() => import('./nodes/23'),
+	() => import('./nodes/24'),
+	() => import('./nodes/25'),
+	() => import('./nodes/26')];
 
 export const server_loads = [];
 
@@ -35,9 +42,16 @@ export const dictionary = {
 	"/iit/maths/2021/question4": [14,[3]],
 	"/iit/maths/2021/question5": [15,[3]],
 	"/iit/maths/2021/question6": [16,[3]],
-	"/notes": [17,[4]],
-	"/notes/conic": [18,[4]],
-	"/practice": [19,[5]]
+	"/notes": [17],
+	"/notes/maths": [18,[4]],
+	"/notes/maths/Sets/Equal sets": [20,[4]],
+	"/notes/maths/Sets/Finite and infinite sets": [21,[4]],
+	"/notes/maths/Sets/Introduction": [22,[4]],
+	"/notes/maths/Sets/Sets and their representations": [23,[4]],
+	"/notes/maths/Sets/Subsets": [24,[4]],
+	"/notes/maths/Sets/The empty set": [25,[4]],
+	"/notes/maths/conic": [19,[4]],
+	"/practice": [26,[5]]
 };
 
 export const hooks = {

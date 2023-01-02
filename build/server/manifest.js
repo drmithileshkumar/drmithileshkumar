@@ -4,28 +4,35 @@ const manifest = {
 	assets: new Set(["app.css","circle_demo/circle.png","circle_demo/circle_anime.mp4","circle_demo/Cone-equation.png","circle_demo/Cone.png","circle_demo/conics.png","circle_demo/Conic_anime.mp4","circle_demo/Conic_deg.mp4","circle_demo/ellipse_anime.mp4","circle_demo/hyperbola_anime.mp4","circle_demo/IIT21Q1.png","circle_demo/orthocenter.png","circle_demo/parabola_anime.mp4","circle_demo/Plane.png","circle_demo/Tangents.png","circle_demo/threepointcircle.png","CMIMedal.jpg","cmithesis.pdf","common.css","dark.css","favicon.png","IITMSc.jpg","LCPath.svg","light.css","mithileshkumar.png","photo_cv.jpg","profilephoto.jpeg","robots copy.txt","robots.txt","santa.svg","svelte-welcome.png","svelte-welcome.webp","thesis.pdf","webdutIcon.png"]),
 	mimeTypes: {".css":"text/css",".png":"image/png",".mp4":"video/mp4",".jpg":"image/jpeg",".pdf":"application/pdf",".svg":"image/svg+xml",".jpeg":"image/jpeg",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		entry: {"file":"_app/immutable/start-4d52d3a4.js","imports":["_app/immutable/start-4d52d3a4.js","_app/immutable/chunks/index-3b22549b.js","_app/immutable/chunks/singletons-60001e27.js","_app/immutable/chunks/index-dbcace51.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/control-f5b05b5f.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-359c6796.js","imports":["_app/immutable/start-359c6796.js","_app/immutable/chunks/index-5057bb28.js","_app/immutable/chunks/singletons-54bd56f3.js","_app/immutable/chunks/index-b887c82b.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/control-f5b05b5f.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
-			() => import('./chunks/0-4b25b5dc.js'),
-			() => import('./chunks/1-7a9bdca8.js'),
-			() => import('./chunks/2-ea479990.js'),
-			() => import('./chunks/3-262c6655.js'),
-			() => import('./chunks/4-c09119b0.js'),
-			() => import('./chunks/5-9389fb98.js'),
-			() => import('./chunks/6-8c5a7cb0.js'),
-			() => import('./chunks/7-14eed68c.js'),
-			() => import('./chunks/8-a222c10e.js'),
-			() => import('./chunks/9-cf9bbbb1.js'),
-			() => import('./chunks/10-644af1a3.js'),
-			() => import('./chunks/11-4818b79f.js'),
-			() => import('./chunks/12-020c49ca.js'),
-			() => import('./chunks/13-cb5a2064.js'),
-			() => import('./chunks/14-474bfabc.js'),
-			() => import('./chunks/15-ee5f896d.js'),
-			() => import('./chunks/16-47d6ae51.js'),
-			() => import('./chunks/17-905b2fb5.js'),
-			() => import('./chunks/18-0df4602c.js'),
-			() => import('./chunks/19-c0d88261.js')
+			() => import('./chunks/0-0caa021d.js'),
+			() => import('./chunks/1-f2342346.js'),
+			() => import('./chunks/2-9e29101a.js'),
+			() => import('./chunks/3-af9a909f.js'),
+			() => import('./chunks/4-9dc60dc0.js'),
+			() => import('./chunks/5-58e1c569.js'),
+			() => import('./chunks/6-8eaf948c.js'),
+			() => import('./chunks/7-66b44e52.js'),
+			() => import('./chunks/8-e6980b9d.js'),
+			() => import('./chunks/9-8de1b52a.js'),
+			() => import('./chunks/10-a27e2926.js'),
+			() => import('./chunks/11-db8b5140.js'),
+			() => import('./chunks/12-3f99e465.js'),
+			() => import('./chunks/13-b7dc8c33.js'),
+			() => import('./chunks/14-78cf81d1.js'),
+			() => import('./chunks/15-5b1b351f.js'),
+			() => import('./chunks/16-7fb443e2.js'),
+			() => import('./chunks/17-3369494d.js'),
+			() => import('./chunks/18-a846dd06.js'),
+			() => import('./chunks/19-d45b7509.js'),
+			() => import('./chunks/20-4905d361.js'),
+			() => import('./chunks/21-7aff1309.js'),
+			() => import('./chunks/22-e9aaf2cb.js'),
+			() => import('./chunks/23-44db8e21.js'),
+			() => import('./chunks/24-347c0b92.js'),
+			() => import('./chunks/25-d454d04c.js'),
+			() => import('./chunks/26-1cd42ffb.js')
 		],
 		routes: [
 			{
@@ -109,21 +116,70 @@ const manifest = {
 				id: "/notes",
 				pattern: /^\/notes\/?$/,
 				params: [],
-				page: { layouts: [0,4], errors: [1,,], leaf: 17 },
+				page: { layouts: [0], errors: [1], leaf: 17 },
 				endpoint: null
 			},
 			{
-				id: "/notes/conic",
-				pattern: /^\/notes\/conic\/?$/,
+				id: "/notes/maths",
+				pattern: /^\/notes\/maths\/?$/,
 				params: [],
 				page: { layouts: [0,4], errors: [1,,], leaf: 18 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Sets/Equal sets",
+				pattern: /^\/notes\/maths\/Sets\/Equal sets\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 20 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Sets/Finite and infinite sets",
+				pattern: /^\/notes\/maths\/Sets\/Finite and infinite sets\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 21 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Sets/Introduction",
+				pattern: /^\/notes\/maths\/Sets\/Introduction\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 22 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Sets/Sets and their representations",
+				pattern: /^\/notes\/maths\/Sets\/Sets and their representations\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 23 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Sets/Subsets",
+				pattern: /^\/notes\/maths\/Sets\/Subsets\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 24 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Sets/The empty set",
+				pattern: /^\/notes\/maths\/Sets\/The empty set\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 25 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/conic",
+				pattern: /^\/notes\/maths\/conic\/?$/,
+				params: [],
+				page: { layouts: [0,4], errors: [1,,], leaf: 19 },
 				endpoint: null
 			},
 			{
 				id: "/practice",
 				pattern: /^\/practice\/?$/,
 				params: [],
-				page: { layouts: [0,5], errors: [1,,], leaf: 19 },
+				page: { layouts: [0,5], errors: [1,,], leaf: 26 },
 				endpoint: null
 			}
 		],

@@ -1,0 +1,22 @@
+import { r as redirect } from './index2-fac81b88.js';
+
+async function load({ fetch, params, url }) {
+  if (!(url.host === "drmithileshkumar.com" || url.host === "localhost:5173" || url.host === "localhost:4173" || url.host === "localhost:3000")) {
+    throw redirect(301, `https://drmithileshkumar.com/practice`);
+  }
+}
+
+var _page = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  load: load
+});
+
+const index = 26;
+const component = async () => (await import('./_page.svelte-b1b5a645.js')).default;
+const file = '_app/immutable/components/pages/practice/_page.svelte-b987f512.js';
+const imports = ["_app/immutable/components/pages/practice/_page.svelte-b987f512.js","_app/immutable/chunks/index-5057bb28.js","_app/immutable/chunks/stores-1bd828ca.js","_app/immutable/chunks/index-b887c82b.js","_app/immutable/chunks/ripple-d6af89fa.js","_app/immutable/modules/pages/practice/_page.js-7346c8d6.js","_app/immutable/chunks/index-35a671a5.js","_app/immutable/chunks/control-f5b05b5f.js","_app/immutable/chunks/_page-f4e1b8a9.js"];
+const stylesheets = ["_app/immutable/assets/Message-1e964222.css","_app/immutable/assets/Link-867ad8ee.css","_app/immutable/assets/Practice-ceaad90d.css"];
+const fonts = [];
+
+export { component, file, fonts, imports, index, stylesheets, _page as universal };
+//# sourceMappingURL=26-1cd42ffb.js.map

@@ -1,1 +1,0 @@
-async function o({session:e,fetch:s,params:a,url:t}){return console.log("Loading..."),t.host==="drmithileshkumar.com"||t.host==="localhost:5173"||t.host==="localhost:3000"?{props:{}}:{status:301,redirect:"https://drmithileshkumar.com/iit/maths"}}const r=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{r as _,o as l};
