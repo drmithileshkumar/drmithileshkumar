@@ -9,6 +9,7 @@
         left: 0,
         top: 0
     }
+    // let startTime, endTime;
     let scaleX = 1, scaleY = 1;
     onMount(() => {
         ctx = canvas.getContext('2d', { willReadFrequently: true });
@@ -207,12 +208,10 @@
     }
     function draw() {
         if(points.length > 0) {
-            // controlPoints.length = 0;
-            // console.log(points.length)
+            
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.putImageData(snapshot, 0, 0);
-            // ctx.setLineDash([0]);
-            // bzCurve(points, 0.01, 10)
+            
             ctx.beginPath();
             ctx.globalCompositeOperation = $globalCompositeOperation;
             
@@ -224,18 +223,9 @@
                 let i = 1;
                 let n = points.length;
                 for(i = 1; i < n - 2; i++) {
-                        // let midPoint;
-                        // midPoint = {
-                        //     x: (points[i].x + points[i + 1].x)/2,
-                        //     y: (points[i].y + points[i + 1].y)/2
-                        // }
-                        // ctx.quadraticCurveTo(controlPoints[i - 1].x, controlPoints[i - 1].y, points[i].x, points[i].y);
-                        // if(i % 3 === 2) {
-                        //     let j = Math.floor(i/3)
-                        //     ctx.quadraticCurveTo(controlPoints[j].x, controlPoints[j].y, points[i].x, points[i].y);
-                        // }
-                        ctx.quadraticCurveTo(points[i].x, points[i].y, controlPoints[i - 1].x, controlPoints[i - 1].y);    
-                        // ctx.quadraticCurveTo(points[i].x, points[i].y, midPoint.x, midPoint.y);
+        
+                    ctx.quadraticCurveTo(points[i].x, points[i].y, controlPoints[i - 1].x, controlPoints[i - 1].y);    
+                        
                 }
                 if(n > 2) 
                     ctx.quadraticCurveTo(points[i].x, points[i].y, points[i + 1].x, points[i + 1].y);
@@ -363,6 +353,7 @@
     }
     function findxy(res, e) {
         if (res == 'down') {
+            // startTime = Date.now();
             boundingRect = canvas.getBoundingClientRect();
             scaleX = canvas.width/boundingRect.width;
             scaleY = canvas.height/boundingRect.height;
@@ -396,6 +387,10 @@
             cancelAnimationFrame(animeFrame)
         }
         if (res == 'up') {
+            // requestAnimationFrame(draw);
+            // draw();
+            // endTime = Date.now();
+            // console.log(points.length/(endTime - startTime)*1000)
             flag = false;
             
             points.length = 0;
@@ -423,7 +418,7 @@
                         })
                     }
                 }
-                
+                if(points.length % 4 === 0)
                 requestAnimationFrame(draw);
                 
             }
