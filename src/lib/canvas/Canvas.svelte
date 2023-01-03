@@ -391,6 +391,7 @@
             // draw();
             // endTime = Date.now();
             // console.log(points.length/(endTime - startTime)*1000)
+            requestAnimationFrame(draw);
             flag = false;
             
             points.length = 0;
@@ -418,7 +419,7 @@
                         })
                     }
                 }
-                if(points.length % 4 === 0)
+                if(points.length % 4 === 0 || points.length === 2)
                 requestAnimationFrame(draw);
                 
             }

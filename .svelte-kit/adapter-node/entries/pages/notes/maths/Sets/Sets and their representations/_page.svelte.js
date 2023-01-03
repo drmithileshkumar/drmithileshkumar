@@ -93,7 +93,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 </p></div></section>
          
          <section><h3 class="${"examples"}">Examples</h3>
-             <ul><li>The set-builder form of the set ${escape(`\\(\\{2, 4, 6, 8\\}\\)`)} is ${escape(`\\(\\{x: x \\text{ is a natural numbers less than } 10 \\text{ and divisible by } 2\\}\\)`)}.
+             <ul><li>The set-builder form of the set ${escape(`\\(\\{2, 4, 6, 8\\}\\)`)} is ${escape(`\\(\\{x: x\\)`)} is a natural numbers less than 10 and divisible by  2${escape(`\\(\\}\\)`)}.
                  </li>
                  <li>The set-builder form of the set ${escape(`\\(\\{a, e, i, o, u\\}\\)`)} is ${escape(`\\(\\{x : x \\text{ is an English vowel}\\}\\)`)}.
                  </li></ul></section>

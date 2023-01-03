@@ -4,7 +4,7 @@ import { d as chapters, e as sections, c as currentSlide, s as slideCounter, p a
 import { C as CanvasBar, a as Canvas } from "../../../../chunks/Canvas.js";
 const _layout_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "nav.svelte-16ngv0q{display:grid;grid-template-columns:1fr 1fr;max-width:600px}.maths.svelte-16ngv0q{margin:auto;font-family:'Georgia', serif;line-height:1.5;word-spacing:0.5ex}.presentationMode.svelte-16ngv0q{display:flex;height:1em;margin:0.5em;align-items:center;flex-direction:row}.container.svelte-16ngv0q{display:grid;grid-template-columns:1em 1fr 1em;position:relative}aside.svelte-16ngv0q{background-color:rgb(230, 228, 228);cursor:pointer;width:1em}.overlay.svelte-16ngv0q{position:absolute;z-index:2;left:0.5em;top:0;margin:auto;width:calc(100% - 2em);height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none}.overlay.svelte-16ngv0q::-webkit-scrollbar{width:0;height:0}",
+  code: "nav.svelte-raaofn{display:grid;grid-template-columns:auto 1fr;max-width:600px}.maths.svelte-raaofn{margin:auto;font-family:'Georgia', serif;line-height:1.5;word-spacing:0.5ex}.presentationMode.svelte-raaofn{display:flex;height:1em;margin:0.5em 0;align-items:center;flex-direction:row}.container.svelte-raaofn{display:grid;grid-template-columns:1em 1fr 1em;position:relative}aside.svelte-raaofn{background-color:rgb(230, 228, 228);cursor:pointer;width:1em}.overlay.svelte-raaofn{position:absolute;z-index:2;left:0.5em;top:0;margin:auto;width:calc(100% - 2em);height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none}.overlay.svelte-raaofn::-webkit-scrollbar{width:0;height:0}",
   map: null
 };
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -32,10 +32,11 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$settled = true;
     $$rendered = `${$$result.head += `<!-- HEAD_svelte-jatvq7_START --><!-- HEAD_svelte-jatvq7_END -->`, ""}
         
-    <div class="${"maths svelte-16ngv0q"}"><div class="${"presentationMode svelte-16ngv0q"}"><label style="${"display:flex;align-items:center;"}"><input type="${"checkbox"}"${add_attribute("checked", $presentationMode, 1)}> <span class="${"material-icons"}">slideshow</span></label>
-            ${!$presentationMode ? `<nav class="${"svelte-16ngv0q"}">${validate_component(Select, "Select").$$render(
+    <div class="${"maths svelte-raaofn"}"><div class="${"presentationMode svelte-raaofn"}"><label style="${"display:flex;align-items:center;"}"><input type="${"checkbox"}"${add_attribute("checked", $presentationMode, 1)}> <span class="${"material-icons"}">slideshow</span></label>
+            ${!$presentationMode ? `<nav class="${"svelte-raaofn"}">${validate_component(Select, "Select").$$render(
       $$result,
       {
+        style: "width: 35vw;",
         options: chapters,
         label: "Chapter",
         value: $selectedChapter
@@ -51,6 +52,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                     ${validate_component(Select, "Select").$$render(
       $$result,
       {
+        style: "width: 35vw;",
         options: sections[$selectedChapter],
         label: "Section",
         value: $selectedSection
@@ -64,11 +66,11 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       {}
     )}</nav>` : ``}
             ${$presentationMode ? `${validate_component(CanvasBar, "CanvasBar").$$render($$result, {}, {}, {})}` : ``}</div>
-        <div class="${"container svelte-16ngv0q"}">${$presentationMode ? `<aside class="${"back svelte-16ngv0q"}"></aside>` : ``}
+        <div class="${"container svelte-raaofn"}">${$presentationMode ? `<aside class="${"back svelte-raaofn"}"></aside>` : ``}
             ${!$presentationMode ? `<span${add_attribute("this", $overlay, 0)}></span>` : ``}
-            ${$presentationMode ? `<div class="${"absolute overlay svelte-16ngv0q"}"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>` : ``}
+            ${$presentationMode ? `<div class="${"absolute overlay svelte-raaofn"}"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>` : ``}
             ${slots.default ? slots.default({}) : ``}
-            ${$presentationMode ? `<aside class="${"next svelte-16ngv0q"}"></aside>` : ``}</div></div>`;
+            ${$presentationMode ? `<aside class="${"next svelte-raaofn"}"></aside>` : ``}</div></div>`;
   } while (!$$settled);
   $$unsubscribe_currentSlide();
   $$unsubscribe_slideCounter();

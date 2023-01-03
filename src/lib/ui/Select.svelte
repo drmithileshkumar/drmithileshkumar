@@ -64,11 +64,11 @@
 </style>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<fieldset {...$$props} >
+<fieldset>
     <legend>
         {label}
     </legend>
-    <span class="value" on:click={select}>{value}</span>
+    <span class="value" on:click={select} {...$$props}>{value}</span>
     {#if showmenu}
         <ul on:change use:clickOutside on:outclick={() => showmenu = false}>
             {#each options as option}

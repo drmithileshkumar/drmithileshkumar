@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-f7d7e525.js";import{default as t}from"../components/pages/notes/maths/Relations and functions 11/Cartesian product of sets/_page.svelte-89ffec92.js";export{t as component,r as universal};
+import{_ as r}from"./_page-7b68ef28.js";import{default as t}from"../components/pages/notes/maths/Relations and functions 11/Cartesian product of sets/_page.svelte-89ffec92.js";export{t as component,r as universal};

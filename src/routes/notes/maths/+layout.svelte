@@ -32,12 +32,12 @@
         afterUpdate( async () => {
             if($autoScroll) setTimeout(async () => {
                 MathJax.typeset();
-                $presentation.scrollTo({
+                if($presentation) $presentation.scrollTo({
                     top: $presentation.scrollHeight,
                     left: 0,
                     behaviour: 'smooth'
                 });
-                $overlay.scrollTo({
+                if($overlay) $overlay.scrollTo({
                     top: $presentation.scrollHeight,
                     left: 0,
                     behaviour: 'smooth'
@@ -59,10 +59,11 @@
     <style>
         nav {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: auto 1fr;
             /* margin:auto; */
             /* margin-top: 0.5em; */
             max-width: 600px;
+            /* min-width: 300px; */
         }
         .maths {
             /* max-width: 600px; */
@@ -75,7 +76,7 @@
             display: flex;
             /* gap: 1em; */
             height: 1em;
-            margin: 0.5em;
+            margin: 0.5em 0;
             align-items: center;
             flex-direction: row;
         }
@@ -122,8 +123,8 @@
             </label>
             {#if !$presentationMode}
                 <nav>
-                    <Select options={chapters} bind:value={$selectedChapter} label="Chapter" on:selected={chapterSelected}/>
-                    <Select options={sections[$selectedChapter]} bind:value={$selectedSection} label="Section" on:selected={sectionSelected}/>
+                    <Select style="width: 35vw;" options={chapters} bind:value={$selectedChapter} label="Chapter" on:selected={chapterSelected}/>
+                    <Select style="width: 35vw;" options={sections[$selectedChapter]} bind:value={$selectedSection} label="Section" on:selected={sectionSelected}/>
                 </nav>
             {/if}
             {#if $presentationMode}

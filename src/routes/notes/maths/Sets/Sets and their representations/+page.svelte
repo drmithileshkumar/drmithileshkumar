@@ -262,7 +262,7 @@
              <h3 class="examples">Examples</h3>
              <ul>
                  <li>
-                     The set-builder form of the set {`\\(\\{2, 4, 6, 8\\}\\)`} is {`\\(\\{x: x \\text{ is a natural numbers less than } 10 \\text{ and divisible by } 2\\}\\)`}.
+                     The set-builder form of the set {`\\(\\{2, 4, 6, 8\\}\\)`} is {`\\(\\{x: x\\)`} is a natural numbers less than 10 and divisible by  2{`\\(\\}\\)`}.
                  </li>
                  <li>
                      The set-builder form of the set {`\\(\\{a, e, i, o, u\\}\\)`} is {`\\(\\{x : x \\text{ is an English vowel}\\}\\)`}.
