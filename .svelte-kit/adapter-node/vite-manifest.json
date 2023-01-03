@@ -452,7 +452,14 @@
     "src": "src/routes/notes/maths/Sets/Complement of a set/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-9029cfef.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
     ]
   },
   "src/routes/notes/maths/Sets/Complement of a set/+page.js": {
@@ -583,7 +590,14 @@
     "src": "src/routes/notes/maths/Sets/Practical problems/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-9029cfef.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
     ]
   },
   "src/routes/notes/maths/Sets/Practical problems/+page.js": {

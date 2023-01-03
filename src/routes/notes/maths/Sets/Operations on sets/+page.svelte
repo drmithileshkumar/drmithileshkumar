@@ -94,10 +94,11 @@
             </div>
             <div class="image">
                 <svg width="100%" height="100%" viewBox="-250 -97 310 210" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!--made using https://vectorial.app-->
                     <defs></defs><g>
                             <g  
                                 class='draggable'
-                                id='Layer-MithileshKumar3R51-0'
+                                id='Layer-VectorialApp3R51-0'
                                 fill='none'
                                 stroke='none'
                                 stroke-width='0'
@@ -109,7 +110,7 @@
                             >
                             
                             <rect  
-                                id='Rect-MithileshKumar3R51-2'
+                                id='Rect-VectorialApp3R51-2'
                                 x='0'
                                 y='0'
                                 width='300'
@@ -127,7 +128,7 @@
                             />
                             
                             <circle  
-                                id='Circle-MithileshKumar3R51-3'
+                                id='Circle-VectorialApp3R51-3'
                                 cx='0'
                                 cy='0'
                                 r='50'
@@ -142,7 +143,7 @@
                             />
                             
                             <circle  
-                                id='Circle-MithileshKumar3R51-4'
+                                id='Circle-VectorialApp3R51-4'
                                 cx='0'
                                 cy='0'
                                 r='60'
@@ -157,7 +158,7 @@
                             />
                             
                             <g  
-                                id='Latex-MithileshKumar3R51-5'
+                                id='Latex-VectorialApp3R51-5'
                                 fill='rgba(0, 0, 0, 1)'
                                 stroke='undefined'
                                 stroke-width='undefined'
@@ -170,7 +171,7 @@
                             </g>
                             
                             <g  
-                                id='Latex-MithileshKumar3R51-6'
+                                id='Latex-VectorialApp3R51-6'
                                 fill='rgba(0, 0, 0, 1)'
                                 stroke='undefined'
                                 stroke-width='undefined'
@@ -183,7 +184,7 @@
                             </g>
                             
                             <g  
-                                id='Latex-MithileshKumar3R51-7'
+                                id='Latex-VectorialApp3R51-7'
                                 fill='rgba(0, 0, 0, 1)'
                                 stroke='undefined'
                                 stroke-width='undefined'
@@ -196,7 +197,7 @@
                             </g>
                             
                             <g  
-                                id='Latex-MithileshKumar3R51-8'
+                                id='Latex-VectorialApp3R51-8'
                                 fill='rgba(0, 175, 255, 1)'
                                 stroke='undefined'
                                 stroke-width='undefined'
@@ -234,9 +235,10 @@
             </div>
             <div class="image">
                 <svg width="100%" height="100%" viewBox="-249 -96.5 310 210" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!--made using https://vectorial.app-->
                     <defs>
                 <marker 
-                    id='Arrow-MithileshKumar3R51-11'
+                    id='Arrow-VectorialApp3R51-11'
                     refX='0'
                     refY='5'
                     markerWidth='6'
@@ -260,7 +262,7 @@
                 </defs><g>
                             <g  
                                 class='draggable'
-                                id='Layer-MithileshKumar3R51-0'
+                                id='Layer-VectorialApp3R51-0'
                                 fill='none'
                                 stroke='none'
                                 stroke-width='0'
@@ -272,7 +274,7 @@
                             >
                             
                             <rect  
-                                id='Rect-MithileshKumar3R51-2'
+                                id='Rect-VectorialApp3R51-2'
                                 x='0'
                                 y='0'
                                 width='300'
@@ -290,7 +292,7 @@
                             />
                             
                             <circle  
-                                id='Circle-MithileshKumar3R51-3'
+                                id='Circle-VectorialApp3R51-3'
                                 cx='0'
                                 cy='0'
                                 r='50'
@@ -305,7 +307,7 @@
                             />
                             
                             <circle  
-                                id='Circle-MithileshKumar3R51-4'
+                                id='Circle-VectorialApp3R51-4'
                                 cx='0'
                                 cy='0'
                                 r='60'
@@ -320,7 +322,7 @@
                             />
                             
                             <g  
-                                id='Latex-MithileshKumar3R51-5'
+                                id='Latex-VectorialApp3R51-5'
                                 fill='rgba(0, 0, 0, 1)'
                                 stroke='undefined'
                                 stroke-width='undefined'
@@ -333,7 +335,7 @@
                             </g>
                             
                             <g  
-                                id='Latex-MithileshKumar3R51-6'
+                                id='Latex-VectorialApp3R51-6'
                                 fill='rgba(0, 0, 0, 1)'
                                 stroke='undefined'
                                 stroke-width='undefined'
@@ -346,7 +348,7 @@
                             </g>
                             
                             <g  
-                                id='Latex-MithileshKumar3R51-7'
+                                id='Latex-VectorialApp3R51-7'
                                 fill='rgba(0, 0, 0, 1)'
                                 stroke='undefined'
                                 stroke-width='undefined'
@@ -359,7 +361,7 @@
                             </g>
                             
                             <g  
-                                id='Latex-MithileshKumar3R51-8'
+                                id='Latex-VectorialApp3R51-8'
                                 fill='rgba(0, 175, 255, 1)'
                                 stroke='undefined'
                                 stroke-width='undefined'
@@ -372,7 +374,7 @@
                             </g>
                             
                             <path  
-                                id='Path-MithileshKumar3R51-9'
+                                id='Path-VectorialApp3R51-9'
                                 d='M -103.66666666666669,-24.049479166666657 A 49.56058498083824 49.56058498083824 0 0 1 -100.66666666666666,38.95052083333333 A 62.006020176337294 62.006020176337294 0 0 1 -103.66666666666669,-24.049479166666657 Z'
                                 fill='rgba(0, 175, 255, 1)'
                                 fill-rule='evenodd'
@@ -392,7 +394,7 @@
                             />
                             
                             <path  
-                                id='Path-MithileshKumar3R51-10'
+                                id='Path-VectorialApp3R51-10'
                                 d='M -113.00000000000003,65.61718750000001 Q -123.93333333333334,41.01718750000003 -102,19.617187499999986'
                                 fill='rgba(0, 0, 0, 0)'
                                 fill-rule='evenodd'
@@ -407,7 +409,7 @@
                                 mask='none'
                                 marker-start='none'
                                 marker-mid='none'
-                                marker-end='url(#Arrow-MithileshKumar3R51-11)'
+                                marker-end='url(#Arrow-VectorialApp3R51-11)'
                                 transform='matrix(1 0 0 1 0 0)'
                             />
                             </g></g></svg>
@@ -438,9 +440,10 @@
             </div>
             <div class="image">
                 <svg width="100%" height="100%" viewBox="-249 -96.5 310 210" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!--made using https://vectorial.app-->
                     <defs>
                 <marker 
-                    id='Arrow-MithileshKumar3R51-11'
+                    id='Arrow-VectorialApp3R51-11'
                     refX='0'
                     refY='5'
                     markerWidth='6'
@@ -464,7 +467,7 @@
                 </defs><g>
                             <g  
                                 class='draggable'
-                                id='Layer-MithileshKumar3R51-0'
+                                id='Layer-VectorialApp3R51-0'
                                 fill='none'
                                 stroke='none'
                                 stroke-width='0'
@@ -476,7 +479,7 @@
                             >
                             
                             <rect  
-                                id='Rect-MithileshKumar3R51-2'
+                                id='Rect-VectorialApp3R51-2'
                                 x='0'
                                 y='0'
                                 width='300'
@@ -494,7 +497,7 @@
                             />
                             
                             <circle  
-                                id='Circle-MithileshKumar3R51-3'
+                                id='Circle-VectorialApp3R51-3'
                                 cx='0'
                                 cy='0'
                                 r='50'
@@ -509,7 +512,7 @@
                             />
                             
                             <circle  
-                                id='Circle-MithileshKumar3R51-4'
+                                id='Circle-VectorialApp3R51-4'
                                 cx='0'
                                 cy='0'
                                 r='60'
@@ -524,7 +527,7 @@
                             />
                             
                             <g  
-                                id='Latex-MithileshKumar3R51-5'
+                                id='Latex-VectorialApp3R51-5'
                                 fill='rgba(0, 0, 0, 1)'
                                 stroke='undefined'
                                 stroke-width='undefined'
@@ -537,7 +540,7 @@
                             </g>
                             
                             <g  
-                                id='Latex-MithileshKumar3R51-6'
+                                id='Latex-VectorialApp3R51-6'
                                 fill='rgba(0, 0, 0, 1)'
                                 stroke='undefined'
                                 stroke-width='undefined'
@@ -550,7 +553,7 @@
                             </g>
                             
                             <g  
-                                id='Latex-MithileshKumar3R51-7'
+                                id='Latex-VectorialApp3R51-7'
                                 fill='rgba(0, 0, 0, 1)'
                                 stroke='undefined'
                                 stroke-width='undefined'
@@ -563,7 +566,7 @@
                             </g>
                             
                             <g  
-                                id='Latex-MithileshKumar3R51-8'
+                                id='Latex-VectorialApp3R51-8'
                                 fill='rgba(0, 175, 255, 1)'
                                 stroke='undefined'
                                 stroke-width='undefined'
@@ -576,7 +579,7 @@
                             </g>
                             
                             <path  
-                                id='Path-MithileshKumar3R51-9'
+                                id='Path-VectorialApp3R51-9'
                                 d='M -103.66666666666669,-24.049479166666657 A 50.120937365803684 50.120937365803684 0 1 0 -100.66666666666666,38.95052083333333 A 62.006020176337294 62.006020176337294 0 0 1 -103.66666666666669,-24.049479166666657 Z'
                                 fill='rgba(0, 175, 255, 1)'
                                 fill-rule='evenodd'
@@ -596,7 +599,7 @@
                             />
                             
                             <path  
-                                id='Path-MithileshKumar3R51-10'
+                                id='Path-VectorialApp3R51-10'
                                 d='M -113.00000000000003,65.61718750000001 Q -113.26666666666668,41.01718750000003 -127.66666666666669,29.617187499999986'
                                 fill='rgba(0, 0, 0, 0)'
                                 fill-rule='evenodd'
@@ -611,7 +614,7 @@
                                 mask='none'
                                 marker-start='none'
                                 marker-mid='none'
-                                marker-end='url(#Arrow-MithileshKumar3R51-11)'
+                                marker-end='url(#Arrow-VectorialApp3R51-11)'
                                 transform='matrix(1 0 0 1 0 0)'
                             />
                             </g></g></svg>
