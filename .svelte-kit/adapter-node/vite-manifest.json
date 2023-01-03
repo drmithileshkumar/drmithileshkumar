@@ -65,7 +65,7 @@
       "_Canvas.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-78c3b925.css"
+      "_app/immutable/assets/_layout-e8aafe10.css"
     ]
   },
   "src/routes/practice/+layout.svelte": {
@@ -537,7 +537,14 @@
     "src": "src/routes/notes/maths/Sets/Operations on sets/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-774c9b12.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
     ]
   },
   "src/routes/notes/maths/Sets/Operations on sets/+page.js": {
@@ -662,7 +669,15 @@
     "src": "src/routes/notes/maths/Sets/Universal set/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-58267112.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
     ]
   },
   "src/routes/notes/maths/Sets/Universal set/+page.js": {
@@ -678,7 +693,14 @@
     "src": "src/routes/notes/maths/Sets/Venn diagrams/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-04124470.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
     ]
   },
   "src/routes/notes/maths/Sets/Venn diagrams/+page.js": {

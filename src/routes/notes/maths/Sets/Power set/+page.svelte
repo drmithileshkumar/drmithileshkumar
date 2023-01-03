@@ -86,28 +86,25 @@
                <p>
                 A power set of a set \(A\) is collection of all subsets of \(A\). It is denoted by \(P(A)\).
                </p>
-               <!-- <ul>
+               <ul>
                    <li>
-                    An empty set is also called the <em>null set</em> or the <em>void set</em>.
+                    If \(A\) is a set with \(n(A) = m\), then \(n(P(A)) = 2^m\).
                    </li>
-                   <li>
-                       An empty set is denoted either as {'{ }'} or \(\varphi\) (read as "phi").
-                   </li>
-               </ul> -->
+               </ul>
            </div>
         </section>
         
-        <!-- <section>
+        <section>
             <h3 class="examples">Examples</h3>
             <ul>
                 <li>
-                    The set of positive numbers less than 0 contains no element. Hence, it is an empty set.
+                    Let {`\\(A = \\{1, 2\\}\\)`}. The power set of \(A\) is {`\\[P(A) = \\{\\phi, \\{1\\}, \\{2\\}, \\{1, 2\\}\\}\\]`}
                 </li>
                 <li>
-                    The set of apples in an empty basket is an empty set.
+                    The power set of empty set is a set containing empty set. {`\\[P(\\phi) = \\{\\phi\\}\\]`}
                 </li>
             </ul>
-        </section> -->
+        </section>
         
         <!-- <section>
             <h2>Practice</h2>

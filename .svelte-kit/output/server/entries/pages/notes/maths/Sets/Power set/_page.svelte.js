@@ -34,9 +34,12 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         <section>
            <div class="${"definition"}"><p class="${"svelte-1m6zy9y"}">A power set of a set \\(A\\) is collection of all subsets of \\(A\\). It is denoted by \\(P(A)\\).
                </p>
-               </div></section>
+               <ul><li>If \\(A\\) is a set with \\(n(A) = m\\), then \\(n(P(A)) = 2^m\\).
+                   </li></ul></div></section>
         
-        
+        <section><h3 class="${"examples"}">Examples</h3>
+            <ul><li>Let ${escape(`\\(A = \\{1, 2\\}\\)`)}. The power set of \\(A\\) is ${escape(`\\[P(A) = \\{\\phi, \\{1\\}, \\{2\\}, \\{1, 2\\}\\}\\]`)}</li>
+                <li>The power set of empty set is a set containing empty set. ${escape(`\\[P(\\phi) = \\{\\phi\\}\\]`)}</li></ul></section>
         
         </article>`;
 });

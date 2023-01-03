@@ -60,11 +60,8 @@
         nav {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            margin:auto;
-            margin-top: 0.5em;
+            /* margin:auto; */
+            /* margin-top: 0.5em; */
             max-width: 600px;
         }
         .maths {
@@ -78,7 +75,9 @@
             display: flex;
             /* gap: 1em; */
             height: 1em;
-            margin-bottom: 0.5em;
+            margin: 0.5em;
+            align-items: center;
+            flex-direction: row;
         }
         .container {
             /* display: flex; */
@@ -115,18 +114,18 @@
         <!-- <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js"></script> -->
     </svelte:head>
-    {#if !$presentationMode}
-        <nav>
-            <Select options={chapters} bind:value={$selectedChapter} label="Chapter" on:selected={chapterSelected}/>
-            <Select options={sections[$selectedChapter]} bind:value={$selectedSection} label="Section" on:selected={sectionSelected}/>
-        </nav>
-    {/if}
         
     <div class="maths"> 
         <div class="presentationMode">
             <label style="display:flex;align-items:center;">
                 <input type="checkbox" bind:checked={$presentationMode}> <span class="material-icons">slideshow</span>
             </label>
+            {#if !$presentationMode}
+                <nav>
+                    <Select options={chapters} bind:value={$selectedChapter} label="Chapter" on:selected={chapterSelected}/>
+                    <Select options={sections[$selectedChapter]} bind:value={$selectedSection} label="Section" on:selected={sectionSelected}/>
+                </nav>
+            {/if}
             {#if $presentationMode}
                 <CanvasBar/>
             {/if}

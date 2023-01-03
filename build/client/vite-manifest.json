@@ -3,77 +3,53 @@
     "file": "_app/immutable/assets/_layout-f177570d.css",
     "src": "src/routes/+layout.css"
   },
-  "Select.css": {
-    "file": "_app/immutable/assets/Select-5f77238b.css",
-    "src": "Select.css"
-  },
-  "Canvas.css": {
-    "file": "_app/immutable/assets/Canvas-e230c243.css",
-    "src": "Canvas.css"
-  },
-  "src/routes/notes/maths/Sets/The empty set/+page.css": {
+  "src/routes/notes/maths/Sets/Subsets/+page.css": {
     "file": "_app/immutable/assets/_page-366f0795.css",
-    "src": "src/routes/notes/maths/Sets/The empty set/+page.css"
-  },
-  "src/routes/iit/maths/2021/+layout.css": {
-    "file": "_app/immutable/assets/_layout-cecf19a8.css",
-    "src": "src/routes/iit/maths/2021/+layout.css"
-  },
-  "src/routes/cv/+page.css": {
-    "file": "_app/immutable/assets/_page-8eab1ee2.css",
-    "src": "src/routes/cv/+page.css"
-  },
-  "src/routes/iit/maths/2021/question6/+page.css": {
-    "file": "_app/immutable/assets/_page-db06e63f.css",
-    "src": "src/routes/iit/maths/2021/question6/+page.css"
-  },
-  "Papers.css": {
-    "file": "_app/immutable/assets/Papers-f64e7629.css",
-    "src": "Papers.css"
-  },
-  "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page-a811fd03.css",
-    "src": "src/routes/+page.css"
-  },
-  "src/routes/notes/maths/+layout.css": {
-    "file": "_app/immutable/assets/_layout-a9da39f7.css",
-    "src": "src/routes/notes/maths/+layout.css"
-  },
-  "src/routes/iit/maths/2021/question1/+page.css": {
-    "file": "_app/immutable/assets/_page-dc187d06.css",
-    "src": "src/routes/iit/maths/2021/question1/+page.css"
-  },
-  "src/routes/iit/maths/2021/question4/+page.css": {
-    "file": "_app/immutable/assets/_page-0b8b161e.css",
-    "src": "src/routes/iit/maths/2021/question4/+page.css"
+    "src": "src/routes/notes/maths/Sets/Subsets/+page.css"
   },
   "src/routes/iit/maths/2021/question2/+page.css": {
     "file": "_app/immutable/assets/_page-eaf5daec.css",
     "src": "src/routes/iit/maths/2021/question2/+page.css"
   },
+  "Papers.css": {
+    "file": "_app/immutable/assets/Papers-f64e7629.css",
+    "src": "Papers.css"
+  },
+  "src/routes/notes/maths/Sets/Operations on sets/+page.css": {
+    "file": "_app/immutable/assets/_page-1f620735.css",
+    "src": "src/routes/notes/maths/Sets/Operations on sets/+page.css"
+  },
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page-a811fd03.css",
+    "src": "src/routes/+page.css"
+  },
   "src/routes/notes/maths/Sets/Introduction/+page.css": {
     "file": "_app/immutable/assets/_page-3f84fa76.css",
     "src": "src/routes/notes/maths/Sets/Introduction/+page.css"
   },
-  "Message.css": {
-    "file": "_app/immutable/assets/Message-1e964222.css",
-    "src": "Message.css"
+  "Canvas.css": {
+    "file": "_app/immutable/assets/Canvas-e230c243.css",
+    "src": "Canvas.css"
   },
   "src/routes/iit/maths/2021/question3/+page.css": {
     "file": "_app/immutable/assets/_page-166b7437.css",
     "src": "src/routes/iit/maths/2021/question3/+page.css"
   },
-  "src/routes/iit/maths/2021/+page.css": {
-    "file": "_app/immutable/assets/_page-75b15002.css",
-    "src": "src/routes/iit/maths/2021/+page.css"
+  "src/routes/iit/maths/2021/+layout.css": {
+    "file": "_app/immutable/assets/_layout-cecf19a8.css",
+    "src": "src/routes/iit/maths/2021/+layout.css"
   },
-  "Practice.css": {
-    "file": "_app/immutable/assets/Practice-ceaad90d.css",
-    "src": "Practice.css"
+  "Message.css": {
+    "file": "_app/immutable/assets/Message-1e964222.css",
+    "src": "Message.css"
   },
-  "Link.css": {
-    "file": "_app/immutable/assets/Link-867ad8ee.css",
-    "src": "Link.css"
+  "src/routes/notes/maths/+layout.css": {
+    "file": "_app/immutable/assets/_layout-2a7920d9.css",
+    "src": "src/routes/notes/maths/+layout.css"
+  },
+  "src/routes/iit/maths/2021/question4/+page.css": {
+    "file": "_app/immutable/assets/_page-0b8b161e.css",
+    "src": "src/routes/iit/maths/2021/question4/+page.css"
   },
   "src/routes/iit/maths/2021/question5/+page.css": {
     "file": "_app/immutable/assets/_page-3b8ab675.css",
@@ -83,20 +59,43 @@
     "file": "_app/immutable/assets/_page-abb59c5c.css",
     "src": "src/routes/notes/maths/conic/+page.css"
   },
-  "__page-9d15be8f.js": {
-    "file": "_app/immutable/chunks/_page-9d15be8f.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
+  "Practice.css": {
+    "file": "_app/immutable/assets/Practice-ceaad90d.css",
+    "src": "Practice.css"
   },
-  "_stores-6fba1e47.js": {
-    "file": "_app/immutable/chunks/stores-6fba1e47.js",
-    "imports": [
-      "_index-2f18dd9f.js"
-    ]
+  "src/routes/iit/maths/2021/+page.css": {
+    "file": "_app/immutable/assets/_page-75b15002.css",
+    "src": "src/routes/iit/maths/2021/+page.css"
   },
-  "_ripple-d6af89fa.js": {
-    "file": "_app/immutable/chunks/ripple-d6af89fa.js"
+  "src/routes/iit/maths/2021/question6/+page.css": {
+    "file": "_app/immutable/assets/_page-db06e63f.css",
+    "src": "src/routes/iit/maths/2021/question6/+page.css"
+  },
+  "src/routes/cv/+page.css": {
+    "file": "_app/immutable/assets/_page-8eab1ee2.css",
+    "src": "src/routes/cv/+page.css"
+  },
+  "src/routes/iit/maths/2021/question1/+page.css": {
+    "file": "_app/immutable/assets/_page-dc187d06.css",
+    "src": "src/routes/iit/maths/2021/question1/+page.css"
+  },
+  "src/routes/notes/maths/Sets/Venn diagrams/+page.css": {
+    "file": "_app/immutable/assets/_page-bd923973.css",
+    "src": "src/routes/notes/maths/Sets/Venn diagrams/+page.css"
+  },
+  "Link.css": {
+    "file": "_app/immutable/assets/Link-867ad8ee.css",
+    "src": "Link.css"
+  },
+  "Select.css": {
+    "file": "_app/immutable/assets/Select-5f77238b.css",
+    "src": "Select.css"
+  },
+  "_index-35a671a5.js": {
+    "file": "_app/immutable/chunks/index-35a671a5.js",
+    "imports": [
+      "_control-f5b05b5f.js"
+    ]
   },
   "__page-bbc5979e.js": {
     "file": "_app/immutable/chunks/_page-bbc5979e.js",
@@ -104,16 +103,31 @@
       "_index-35a671a5.js"
     ]
   },
-  "__page-d414547c.js": {
-    "file": "_app/immutable/chunks/_page-d414547c.js",
+  "_index-dc9a5c6c.js": {
+    "file": "_app/immutable/chunks/index-dc9a5c6c.js",
     "imports": [
-      "_index-35a671a5.js"
+      "_index-d6181b86.js"
     ]
   },
-  "__page-3d93f98e.js": {
-    "file": "_app/immutable/chunks/_page-3d93f98e.js",
+  "_stores-932992cc.js": {
+    "file": "_app/immutable/chunks/stores-932992cc.js",
     "imports": [
-      "_index-35a671a5.js"
+      "_index-2f18dd9f.js"
+    ]
+  },
+  "_stores-ec708fd5.js": {
+    "file": "_app/immutable/chunks/stores-ec708fd5.js",
+    "imports": [
+      "_index-d6181b86.js",
+      "_singletons-7f452f10.js"
+    ]
+  },
+  "src/routes/notes/maths/Relations and functions 11/Functions/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Relations and functions 11/Functions/_page.svelte-89ffec92.js",
+    "src": "src/routes/notes/maths/Relations and functions 11/Functions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js"
     ]
   },
   "__page-37cf18ab.js": {
@@ -122,63 +136,69 @@
       "_index-35a671a5.js"
     ]
   },
-  ".svelte-kit/generated/nodes/9.js": {
-    "file": "_app/immutable/chunks/9-d857083e.js",
-    "src": ".svelte-kit/generated/nodes/9.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-aeb84810.js",
-      "src/routes/iit/maths/+page.svelte"
-    ]
-  },
-  "__page-14349c03.js": {
-    "file": "_app/immutable/chunks/_page-14349c03.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "src/routes/notes/maths/Sets/Finite and infinite sets/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Sets/Finite and infinite sets/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Sets/Finite and infinite sets/+page.js",
+  "src/routes/iit/maths/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/_page.svelte-3eb6f052.js",
+    "src": "src/routes/iit/maths/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-35a671a5.js",
-      "__page-98c85862.js"
+      "_index-d6181b86.js",
+      "_Link-3490972f.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Message-1e964222.css"
     ]
   },
-  ".svelte-kit/generated/nodes/26.js": {
-    "file": "_app/immutable/chunks/26-c36d3dc3.js",
-    "src": ".svelte-kit/generated/nodes/26.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-6b6c40ec.js",
-      "src/routes/notes/maths/Sets/Equal sets/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/35.js": {
-    "file": "_app/immutable/chunks/35-0bb06bd0.js",
-    "src": ".svelte-kit/generated/nodes/35.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-41270b2c.js",
-      "src/routes/notes/maths/Sets/Universal set/+page.svelte"
-    ]
-  },
-  "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Principle of mathematical induction/Motivation/_page.svelte-89ffec92.js",
-    "src": "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.svelte",
+  "src/routes/cv/+layout.svelte": {
+    "file": "_app/immutable/components/pages/cv/_layout.svelte-f32fb933.js",
+    "src": "src/routes/cv/+layout.svelte",
     "isEntry": true,
     "imports": [
       "_index-d6181b86.js"
     ]
   },
-  "src/routes/notes/maths/Sets/Subsets/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Sets/Subsets/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Sets/Subsets/+page.js",
-    "isEntry": true,
+  "__page-7af39617.js": {
+    "file": "_app/immutable/chunks/_page-7af39617.js",
     "imports": [
-      "_index-35a671a5.js",
-      "__page-f4a0b093.js"
+      "_index-35a671a5.js"
+    ]
+  },
+  "__page-dffe4514.js": {
+    "file": "_app/immutable/chunks/_page-dffe4514.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "_preload-helper-41c905a7.js": {
+    "file": "_app/immutable/chunks/preload-helper-41c905a7.js"
+  },
+  "_Link-3490972f.js": {
+    "file": "_app/immutable/chunks/Link-3490972f.js",
+    "imports": [
+      "_index-d6181b86.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-867ad8ee.css"
+    ]
+  },
+  "__page-9d15be8f.js": {
+    "file": "_app/immutable/chunks/_page-9d15be8f.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "_control-f5b05b5f.js": {
+    "file": "_app/immutable/chunks/control-f5b05b5f.js"
+  },
+  "__page-d414547c.js": {
+    "file": "_app/immutable/chunks/_page-d414547c.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "_index-2f18dd9f.js": {
+    "file": "_app/immutable/chunks/index-2f18dd9f.js",
+    "imports": [
+      "_index-d6181b86.js"
     ]
   },
   "__page-f85b9798.js": {
@@ -187,158 +207,37 @@
       "_index-35a671a5.js"
     ]
   },
-  ".svelte-kit/generated/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-357a2a62.js",
-    "src": ".svelte-kit/generated/nodes/6.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-7af39617.js",
-      "src/routes/+page.svelte"
-    ]
-  },
-  "src/routes/notes/maths/Trigonometric functions/Trigonometric functions/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Trigonometric functions/Trigonometric functions/_page.svelte-89ffec92.js",
-    "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric functions/+page.svelte",
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "_app/immutable/components/error.svelte-2902fbd0.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
-      "_index-d6181b86.js"
+      "_index-d6181b86.js",
+      "_stores-ec708fd5.js"
     ]
   },
-  ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-6218a8b8.js",
-    "src": ".svelte-kit/generated/nodes/0.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/+layout.svelte"
-    ]
+  "_ripple-d6af89fa.js": {
+    "file": "_app/immutable/chunks/ripple-d6af89fa.js"
   },
-  "src/routes/notes/maths/Sets/Practical problems/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Sets/Practical problems/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Sets/Practical problems/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-f7d7e525.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-8c43248f.js",
-    "src": ".svelte-kit/generated/nodes/1.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/14.js": {
-    "file": "_app/immutable/chunks/14-a01d5518.js",
-    "src": ".svelte-kit/generated/nodes/14.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-ecb1ddf4.js",
-      "src/routes/iit/maths/2021/question4/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-12ba43fe.js",
-    "src": ".svelte-kit/generated/nodes/4.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/notes/maths/+layout.svelte"
-    ]
-  },
-  "src/routes/notes/maths/Trigonometric functions/Angles/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Trigonometric functions/Angles/_page.svelte-89ffec92.js",
-    "src": "src/routes/notes/maths/Trigonometric functions/Angles/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js"
-    ]
-  },
-  "__page-e930d4a0.js": {
-    "file": "_app/immutable/chunks/_page-e930d4a0.js",
+  "__page-0963fa01.js": {
+    "file": "_app/immutable/chunks/_page-0963fa01.js",
     "imports": [
       "_index-35a671a5.js"
     ]
   },
-  "_common-f3b98355.js": {
-    "file": "_app/immutable/chunks/common-f3b98355.js"
+  "_constants-79d6a0a7.js": {
+    "file": "_app/immutable/chunks/constants-79d6a0a7.js"
   },
-  "__page-554e1f1a.js": {
-    "file": "_app/immutable/chunks/_page-554e1f1a.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "src/routes/notes/maths/Trigonometric functions/Trigonometric equations/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Trigonometric functions/Trigonometric equations/_page.svelte-89ffec92.js",
-    "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric equations/+page.svelte",
+  "src/routes/notes/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/_page.svelte-3b71beb9.js",
+    "src": "src/routes/notes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-d6181b86.js"
-    ]
-  },
-  "src/routes/notes/maths/Sets/Operations on sets/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Sets/Operations on sets/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Sets/Operations on sets/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-d2ece28f.js"
-    ]
-  },
-  "_preload-helper-41c905a7.js": {
-    "file": "_app/immutable/chunks/preload-helper-41c905a7.js"
-  },
-  "src/lib/pages/practice/appIntegrals.js": {
-    "file": "_app/immutable/chunks/appIntegrals-10af451b.js",
-    "src": "src/lib/pages/practice/appIntegrals.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_fraction-dc1be116.js",
-      "_common-f3b98355.js",
-      "_polynomial-a7c44167.js"
-    ]
-  },
-  "__page-3e4ff2f8.js": {
-    "file": "_app/immutable/chunks/_page-3e4ff2f8.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "src/lib/pages/practice/threed.js": {
-    "file": "_app/immutable/chunks/threed-bce3397d.js",
-    "src": "src/lib/pages/practice/threed.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/7.js": {
-    "file": "_app/immutable/chunks/7-aca969c9.js",
-    "src": ".svelte-kit/generated/nodes/7.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-3d93f98e.js",
-      "src/routes/cv/+page.svelte"
-    ]
-  },
-  "src/lib/pages/practice/parabola.js": {
-    "file": "_app/immutable/chunks/parabola-7d3b23a4.js",
-    "src": "src/lib/pages/practice/parabola.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/13.js": {
-    "file": "_app/immutable/chunks/13-fa6a0b80.js",
-    "src": ".svelte-kit/generated/nodes/13.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-f85b9798.js",
-      "src/routes/iit/maths/2021/question3/+page.svelte"
+      "_index-d6181b86.js",
+      "_Link-3490972f.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Message-1e964222.css"
     ]
   },
   ".svelte-kit/generated/nodes/16.js": {
@@ -350,68 +249,133 @@
       "src/routes/iit/maths/2021/question6/+page.svelte"
     ]
   },
+  "src/lib/pages/practice/line.js": {
+    "file": "_app/immutable/chunks/line-92d514f3.js",
+    "src": "src/lib/pages/practice/line.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_fraction-dc1be116.js",
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/15.js": {
+    "file": "_app/immutable/chunks/15-095c7373.js",
+    "src": ".svelte-kit/generated/nodes/15.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-0963fa01.js",
+      "src/routes/iit/maths/2021/question5/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/17.js": {
+    "file": "_app/immutable/chunks/17-caabcf17.js",
+    "src": ".svelte-kit/generated/nodes/17.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-554e1f1a.js",
+      "src/routes/notes/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/18.js": {
+    "file": "_app/immutable/chunks/18-932653fa.js",
+    "src": ".svelte-kit/generated/nodes/18.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-dffe4514.js",
+      "src/routes/notes/maths/+page.svelte"
+    ]
+  },
+  "src/routes/notes/maths/Trigonometric functions/Angles/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Trigonometric functions/Angles/_page.svelte-89ffec92.js",
+    "src": "src/routes/notes/maths/Trigonometric functions/Angles/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js"
+    ]
+  },
+  "src/routes/iit/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/_page.svelte-7e59b7fe.js",
+    "src": "src/routes/iit/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_Link-3490972f.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Message-1e964222.css"
+    ]
+  },
+  "src/routes/iit/maths/2021/question5/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/maths/2021/question5/_page.js-36199001.js",
+    "src": "src/routes/iit/maths/2021/question5/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-0963fa01.js"
+    ]
+  },
+  "__page-e930d4a0.js": {
+    "file": "_app/immutable/chunks/_page-e930d4a0.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "__page-3e4ff2f8.js": {
+    "file": "_app/immutable/chunks/_page-3e4ff2f8.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
   "__page-8a597883.js": {
     "file": "_app/immutable/chunks/_page-8a597883.js",
     "imports": [
       "_index-35a671a5.js"
     ]
   },
-  "src/routes/+page.js": {
-    "file": "_app/immutable/modules/pages/_page.js-88426a2e.js",
-    "src": "src/routes/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-7af39617.js"
-    ]
-  },
-  "src/routes/cv/+page.js": {
-    "file": "_app/immutable/modules/pages/cv/_page.js-75051b18.js",
-    "src": "src/routes/cv/+page.js",
+  "src/routes/notes/maths/Sets/Sets and their representations/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Sets/Sets and their representations/_page.js-d375623e.js",
+    "src": "src/routes/notes/maths/Sets/Sets and their representations/+page.js",
     "isEntry": true,
     "imports": [
       "_index-35a671a5.js",
       "__page-3d93f98e.js"
     ]
   },
-  "src/lib/pages/practice/limits.js": {
-    "file": "_app/immutable/chunks/limits-f2808dad.js",
-    "src": "src/lib/pages/practice/limits.js",
+  "src/lib/pages/practice/indefinite.js": {
+    "file": "_app/immutable/chunks/indefinite-05a08dd7.js",
+    "src": "src/lib/pages/practice/indefinite.js",
     "isDynamicEntry": true,
     "imports": [
       "_common-f3b98355.js",
-      "_sets-c5f87a63.js",
-      "_complex-8b2c2181.js",
       "_polynomial-a7c44167.js"
     ]
   },
-  "src/lib/pages/practice/matrices.js": {
-    "file": "_app/immutable/chunks/matrices-d4712fa1.js",
-    "src": "src/lib/pages/practice/matrices.js",
+  "src/lib/pages/practice/continuity.js": {
+    "file": "_app/immutable/chunks/continuity-3a486b34.js",
+    "src": "src/lib/pages/practice/continuity.js",
     "isDynamicEntry": true,
     "imports": [
-      "_common-f3b98355.js"
+      "_common-f3b98355.js",
+      "_polynomial-a7c44167.js"
     ]
   },
-  "__page-0963fa01.js": {
-    "file": "_app/immutable/chunks/_page-0963fa01.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "src/lib/pages/practice/differential.js": {
-    "file": "_app/immutable/chunks/differential-37f5101f.js",
-    "src": "src/lib/pages/practice/differential.js",
+  "src/lib/pages/practice/differentiability.js": {
+    "file": "_app/immutable/chunks/differentiability-238ad595.js",
+    "src": "src/lib/pages/practice/differentiability.js",
     "isDynamicEntry": true,
     "imports": [
-      "_common-f3b98355.js"
+      "_common-f3b98355.js",
+      "_polynomial-a7c44167.js"
     ]
   },
-  "_stores-ec708fd5.js": {
-    "file": "_app/immutable/chunks/stores-ec708fd5.js",
+  "src/routes/notes/maths/Sets/Operations on sets/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Sets/Operations on sets/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Sets/Operations on sets/+page.js",
+    "isEntry": true,
     "imports": [
-      "_index-d6181b86.js",
-      "_singletons-7f452f10.js"
+      "_index-35a671a5.js",
+      "__page-41270b2c.js"
     ]
   },
   "__page-ecb1ddf4.js": {
@@ -420,28 +384,36 @@
       "_index-35a671a5.js"
     ]
   },
-  ".svelte-kit/generated/nodes/32.js": {
-    "file": "_app/immutable/chunks/32-569f56c8.js",
-    "src": ".svelte-kit/generated/nodes/32.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-14349c03.js",
-      "src/routes/notes/maths/Sets/Sets and their representations/+page.svelte"
-    ]
-  },
-  "_constants-79d6a0a7.js": {
-    "file": "_app/immutable/chunks/constants-79d6a0a7.js"
-  },
-  "_singletons-7f452f10.js": {
-    "file": "_app/immutable/chunks/singletons-7f452f10.js",
-    "imports": [
-      "_index-2f18dd9f.js"
-    ]
-  },
   "__page-7b68ef28.js": {
     "file": "_app/immutable/chunks/_page-7b68ef28.js",
     "imports": [
       "_index-35a671a5.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/30.js": {
+    "file": "_app/immutable/chunks/30-732e8206.js",
+    "src": ".svelte-kit/generated/nodes/30.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-38afba1d.js",
+      "src/routes/notes/maths/Sets/Power set/+page.svelte"
+    ]
+  },
+  "src/lib/pages/practice/geometry3d.js": {
+    "file": "_app/immutable/chunks/geometry3d-dd9b8cde.js",
+    "src": "src/lib/pages/practice/geometry3d.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_fraction-dc1be116.js",
+      "_common-f3b98355.js"
+    ]
+  },
+  "src/routes/notes/maths/Relations and functions 11/Relations/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Relations and functions 11/Relations/_page.svelte-89ffec92.js",
+    "src": "src/routes/notes/maths/Relations and functions 11/Relations/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js"
     ]
   },
   "src/routes/notes/maths/Sets/Complement of a set/+page.svelte": {
@@ -458,13 +430,154 @@
       "_index-35a671a5.js"
     ]
   },
-  ".svelte-kit/generated/nodes/27.js": {
-    "file": "_app/immutable/chunks/27-0a58e2f7.js",
-    "src": ".svelte-kit/generated/nodes/27.js",
+  "__page-42816555.js": {
+    "file": "_app/immutable/chunks/_page-42816555.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "__page-98fa8a7b.js": {
+    "file": "_app/immutable/chunks/_page-98fa8a7b.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "__page-a2c2aa44.js": {
+    "file": "_app/immutable/chunks/_page-a2c2aa44.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "__page-aeb84810.js": {
+    "file": "_app/immutable/chunks/_page-aeb84810.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "__page-41270b2c.js": {
+    "file": "_app/immutable/chunks/_page-41270b2c.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "__page-300ad90c.js": {
+    "file": "_app/immutable/chunks/_page-300ad90c.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "src/lib/pages/practice/vectors.js": {
+    "file": "_app/immutable/chunks/vectors-df0a4091.js",
+    "src": "src/lib/pages/practice/vectors.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-98c85862.js",
-      "src/routes/notes/maths/Sets/Finite and infinite sets/+page.svelte"
+      "_common-f3b98355.js",
+      "_fraction-dc1be116.js"
+    ]
+  },
+  "src/lib/pages/practice/appDerivatives.js": {
+    "file": "_app/immutable/chunks/appDerivatives-4979bf5e.js",
+    "src": "src/lib/pages/practice/appDerivatives.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_polynomial-a7c44167.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/36.js": {
+    "file": "_app/immutable/chunks/36-ab729633.js",
+    "src": ".svelte-kit/generated/nodes/36.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-7b68ef28.js",
+      "src/routes/notes/maths/Sets/Venn diagrams/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/33.js": {
+    "file": "_app/immutable/chunks/33-70490809.js",
+    "src": ".svelte-kit/generated/nodes/33.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-6b6c40ec.js",
+      "src/routes/notes/maths/Sets/Subsets/+page.svelte"
+    ]
+  },
+  "__page-468d1d3d.js": {
+    "file": "_app/immutable/chunks/_page-468d1d3d.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/37.js": {
+    "file": "_app/immutable/chunks/37-cea819b1.js",
+    "src": ".svelte-kit/generated/nodes/37.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-a9ed8af3.js",
+      "src/routes/notes/maths/Trigonometric functions/Angles/+page.svelte"
+    ]
+  },
+  "src/lib/pages/practice/trigonometry.js": {
+    "file": "_app/immutable/chunks/trigonometry-ee8dabd5.js",
+    "src": "src/lib/pages/practice/trigonometry.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js"
+    ]
+  },
+  "src/lib/pages/practice/relations.js": {
+    "file": "_app/immutable/chunks/relations-e98db378.js",
+    "src": "src/lib/pages/practice/relations.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_sets-c5f87a63.js",
+      "_polynomial-a7c44167.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/34.js": {
+    "file": "_app/immutable/chunks/34-6fa7efb7.js",
+    "src": ".svelte-kit/generated/nodes/34.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-300ad90c.js",
+      "src/routes/notes/maths/Sets/The empty set/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/31.js": {
+    "file": "_app/immutable/chunks/31-94cd3771.js",
+    "src": ".svelte-kit/generated/nodes/31.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-98fa8a7b.js",
+      "src/routes/notes/maths/Sets/Practical problems/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/39.js": {
+    "file": "_app/immutable/chunks/39-97c4ec4f.js",
+    "src": ".svelte-kit/generated/nodes/39.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-3e4ff2f8.js",
+      "src/routes/notes/maths/Trigonometric functions/Trigonometric functions/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/32.js": {
+    "file": "_app/immutable/chunks/32-569f56c8.js",
+    "src": ".svelte-kit/generated/nodes/32.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-3d93f98e.js",
+      "src/routes/notes/maths/Sets/Sets and their representations/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/35.js": {
+    "file": "_app/immutable/chunks/35-53d9f78d.js",
+    "src": ".svelte-kit/generated/nodes/35.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-468d1d3d.js",
+      "src/routes/notes/maths/Sets/Universal set/+page.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/41.js": {
@@ -476,256 +589,10 @@
       "src/routes/practice/+page.svelte"
     ]
   },
-  "_polynomial-a7c44167.js": {
-    "file": "_app/immutable/chunks/polynomial-a7c44167.js",
+  "_complex-8b2c2181.js": {
+    "file": "_app/immutable/chunks/complex-8b2c2181.js",
     "imports": [
-      "_fraction-dc1be116.js",
-      "_common-f3b98355.js"
-    ]
-  },
-  "src/routes/notes/maths/Relations and functions 11/Functions/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Relations and functions 11/Functions/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Relations and functions 11/Functions/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-a9ed8af3.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/29.js": {
-    "file": "_app/immutable/chunks/29-5cef0eaf.js",
-    "src": ".svelte-kit/generated/nodes/29.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-d2ece28f.js",
-      "src/routes/notes/maths/Sets/Operations on sets/+page.svelte"
-    ]
-  },
-  "src/routes/notes/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/_page.svelte-3b71beb9.js",
-    "src": "src/routes/notes/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_Link-3490972f.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Message-1e964222.css"
-    ]
-  },
-  ".svelte-kit/generated/nodes/34.js": {
-    "file": "_app/immutable/chunks/34-6fa7efb7.js",
-    "src": ".svelte-kit/generated/nodes/34.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-98fa8a7b.js",
-      "src/routes/notes/maths/Sets/The empty set/+page.svelte"
-    ]
-  },
-  "src/routes/iit/maths/2021/question5/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/maths/2021/question5/_page.js-36199001.js",
-    "src": "src/routes/iit/maths/2021/question5/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-d414547c.js"
-    ]
-  },
-  "_Select-460893ec.js": {
-    "file": "_app/immutable/chunks/Select-460893ec.js",
-    "imports": [
-      "_index-d6181b86.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Select-5f77238b.css"
-    ]
-  },
-  "_control-f5b05b5f.js": {
-    "file": "_app/immutable/chunks/control-f5b05b5f.js"
-  },
-  "src/lib/pages/practice/line.js": {
-    "file": "_app/immutable/chunks/line-92d514f3.js",
-    "src": "src/lib/pages/practice/line.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_fraction-dc1be116.js",
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js"
-    ]
-  },
-  "src/routes/iit/maths/2021/question4/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/maths/2021/question4/_page.js-36199001.js",
-    "src": "src/routes/iit/maths/2021/question4/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-ecb1ddf4.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/18.js": {
-    "file": "_app/immutable/chunks/18-932653fa.js",
-    "src": ".svelte-kit/generated/nodes/18.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-dffe4514.js",
-      "src/routes/notes/maths/+page.svelte"
-    ]
-  },
-  "_index-2f18dd9f.js": {
-    "file": "_app/immutable/chunks/index-2f18dd9f.js",
-    "imports": [
-      "_index-d6181b86.js"
-    ]
-  },
-  "src/routes/notes/maths/Relations and functions 11/Relations/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Relations and functions 11/Relations/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Relations and functions 11/Relations/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-468d1d3d.js"
-    ]
-  },
-  "src/routes/iit/maths/2021/question3/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/maths/2021/question3/_page.js-36199001.js",
-    "src": "src/routes/iit/maths/2021/question3/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-f85b9798.js"
-    ]
-  },
-  "__page-42816555.js": {
-    "file": "_app/immutable/chunks/_page-42816555.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "src/routes/notes/maths/Relations and functions 11/Cartesian product of sets/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Relations and functions 11/Cartesian product of sets/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Relations and functions 11/Cartesian product of sets/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-555533aa.js"
-    ]
-  },
-  "src/routes/notes/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/_page.js-944d88e4.js",
-    "src": "src/routes/notes/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-554e1f1a.js"
-    ]
-  },
-  "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-8a597883.js"
-    ]
-  },
-  "__page-98fa8a7b.js": {
-    "file": "_app/immutable/chunks/_page-98fa8a7b.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/10.js": {
-    "file": "_app/immutable/chunks/10-7c160b2f.js",
-    "src": ".svelte-kit/generated/nodes/10.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/iit/maths/2021/+page.svelte"
-    ]
-  },
-  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-2902fbd0.js",
-    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_stores-ec708fd5.js"
-    ]
-  },
-  "__page-a2c2aa44.js": {
-    "file": "_app/immutable/chunks/_page-a2c2aa44.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "_index-35a671a5.js": {
-    "file": "_app/immutable/chunks/index-35a671a5.js",
-    "imports": [
-      "_control-f5b05b5f.js"
-    ]
-  },
-  "src/routes/notes/maths/Sets/Universal set/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Sets/Universal set/_page.svelte-89ffec92.js",
-    "src": "src/routes/notes/maths/Sets/Universal set/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js"
-    ]
-  },
-  "src/routes/notes/maths/Trigonometric functions/Trigonometric functions/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Trigonometric functions/Trigonometric functions/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric functions/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-37cf18ab.js"
-    ]
-  },
-  "_Canvas-aefbd765.js": {
-    "file": "_app/immutable/chunks/Canvas-aefbd765.js",
-    "imports": [
-      "_singletons-7f452f10.js",
-      "_index-d6181b86.js",
-      "_ripple-d6af89fa.js",
-      "_index-2f18dd9f.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Canvas-e230c243.css"
-    ]
-  },
-  "src/routes/notes/maths/Sets/Complement of a set/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Sets/Complement of a set/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Sets/Complement of a set/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-38afba1d.js"
-    ]
-  },
-  "src/lib/pages/practice/binomial.js": {
-    "file": "_app/immutable/chunks/binomial-f0ed978e.js",
-    "src": "src/lib/pages/practice/binomial.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js",
-      "_combinatorics-02bb53eb.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/15.js": {
-    "file": "_app/immutable/chunks/15-095c7373.js",
-    "src": ".svelte-kit/generated/nodes/15.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-d414547c.js",
-      "src/routes/iit/maths/2021/question5/+page.svelte"
-    ]
-  },
-  "src/routes/cv/+layout.svelte": {
-    "file": "_app/immutable/components/pages/cv/_layout.svelte-f32fb933.js",
-    "src": "src/routes/cv/+layout.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js"
+      "_fraction-dc1be116.js"
     ]
   },
   "src/routes/notes/maths/Trigonometric functions/Trigonometric equations/+page.js": {
@@ -734,60 +601,83 @@
     "isEntry": true,
     "imports": [
       "_index-35a671a5.js",
-      "__page-406820bb.js"
+      "__page-e930d4a0.js"
     ]
   },
-  "src/routes/iit/maths/2021/+layout.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/2021/_layout.svelte-894cee77.js",
-    "src": "src/routes/iit/maths/2021/+layout.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_Canvas-aefbd765.js",
-      "_stores-932992cc.js",
-      "_ripple-d6af89fa.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_layout-cecf19a8.css"
-    ]
-  },
-  ".svelte-kit/generated/nodes/23.js": {
-    "file": "_app/immutable/chunks/23-c6e096c8.js",
-    "src": ".svelte-kit/generated/nodes/23.js",
+  "src/lib/pages/practice/complex.js": {
+    "file": "_app/immutable/chunks/complex-f44cc0bb.js",
+    "src": "src/lib/pages/practice/complex.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-a9ed8af3.js",
-      "src/routes/notes/maths/Relations and functions 11/Functions/+page.svelte"
+      "_fraction-dc1be116.js",
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js"
     ]
   },
-  "_index-d6181b86.js": {
-    "file": "_app/immutable/chunks/index-d6181b86.js"
+  "_common-f3b98355.js": {
+    "file": "_app/immutable/chunks/common-f3b98355.js"
   },
-  "src/routes/notes/maths/Relations and functions 11/Functions/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Relations and functions 11/Functions/_page.svelte-89ffec92.js",
-    "src": "src/routes/notes/maths/Relations and functions 11/Functions/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/25.js": {
-    "file": "_app/immutable/chunks/25-01711cca.js",
-    "src": ".svelte-kit/generated/nodes/25.js",
+  ".svelte-kit/generated/nodes/29.js": {
+    "file": "_app/immutable/chunks/29-b3b62995.js",
+    "src": ".svelte-kit/generated/nodes/29.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-38afba1d.js",
-      "src/routes/notes/maths/Sets/Complement of a set/+page.svelte"
+      "__page-41270b2c.js",
+      "src/routes/notes/maths/Sets/Operations on sets/+page.svelte"
     ]
   },
-  "src/lib/pages/practice/inequalities.js": {
-    "file": "_app/immutable/chunks/inequalities-b713a6f5.js",
-    "src": "src/lib/pages/practice/inequalities.js",
+  ".svelte-kit/generated/nodes/40.js": {
+    "file": "_app/immutable/chunks/40-a07d1a6b.js",
+    "src": ".svelte-kit/generated/nodes/40.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-f4a0b093.js",
+      "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/38.js": {
+    "file": "_app/immutable/chunks/38-bc718145.js",
+    "src": ".svelte-kit/generated/nodes/38.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-e930d4a0.js",
+      "src/routes/notes/maths/Trigonometric functions/Trigonometric equations/+page.svelte"
+    ]
+  },
+  "src/lib/pages/practice/induction.js": {
+    "file": "_app/immutable/chunks/induction-df691c12.js",
+    "src": "src/lib/pages/practice/induction.js",
     "isDynamicEntry": true,
     "imports": [
       "_common-f3b98355.js",
-      "_complex-8b2c2181.js",
-      "_fraction-dc1be116.js"
+      "_sets-c5f87a63.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/19.js": {
+    "file": "_app/immutable/chunks/19-0d50f647.js",
+    "src": ".svelte-kit/generated/nodes/19.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-d2ece28f.js",
+      "src/routes/notes/maths/conic/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/20.js": {
+    "file": "_app/immutable/chunks/20-8c6b4968.js",
+    "src": ".svelte-kit/generated/nodes/20.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-555533aa.js",
+      "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.svelte"
+    ]
+  },
+  "src/lib/pages/practice/sets.js": {
+    "file": "_app/immutable/chunks/sets-a147c548.js",
+    "src": "src/lib/pages/practice/sets.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_sets-c5f87a63.js"
     ]
   },
   "src/lib/pages/practice/definite.js": {
@@ -800,210 +690,13 @@
       "_polynomial-a7c44167.js"
     ]
   },
-  "__page-aeb84810.js": {
-    "file": "_app/immutable/chunks/_page-aeb84810.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "src/lib/pages/practice/continuity.js": {
-    "file": "_app/immutable/chunks/continuity-3a486b34.js",
-    "src": "src/lib/pages/practice/continuity.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_polynomial-a7c44167.js"
-    ]
-  },
-  "src/lib/pages/practice/determinants.js": {
-    "file": "_app/immutable/chunks/determinants-e0dd0871.js",
-    "src": "src/lib/pages/practice/determinants.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js"
-    ]
-  },
-  "src/routes/notes/maths/Sets/Power set/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Sets/Power set/_page.svelte-87068eea.js",
-    "src": "src/routes/notes/maths/Sets/Power set/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_stores-932992cc.js",
-      "_stores-ec708fd5.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-366f0795.css",
-      "_app/immutable/assets/Practice-ceaad90d.css",
-      "_app/immutable/assets/Message-1e964222.css"
-    ]
-  },
-  "src/lib/pages/practice/inverse.js": {
-    "file": "_app/immutable/chunks/inverse-bf1d6777.js",
-    "src": "src/lib/pages/practice/inverse.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js"
-    ]
-  },
-  "src/routes/iit/maths/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/_page.svelte-3eb6f052.js",
-    "src": "src/routes/iit/maths/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_Link-3490972f.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Message-1e964222.css"
-    ]
-  },
-  "_fraction-dc1be116.js": {
-    "file": "_app/immutable/chunks/fraction-dc1be116.js",
-    "imports": [
-      "_common-f3b98355.js",
-      "_sets-c5f87a63.js"
-    ]
-  },
-  "_stores-932992cc.js": {
-    "file": "_app/immutable/chunks/stores-932992cc.js",
-    "imports": [
-      "_index-2f18dd9f.js"
-    ]
-  },
-  "src/routes/notes/maths/Sets/Equal sets/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Sets/Equal sets/_page.svelte-439c603f.js",
-    "src": "src/routes/notes/maths/Sets/Equal sets/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_stores-932992cc.js",
-      "_stores-ec708fd5.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-366f0795.css",
-      "_app/immutable/assets/Practice-ceaad90d.css",
-      "_app/immutable/assets/Message-1e964222.css"
-    ]
-  },
-  "__page-41270b2c.js": {
-    "file": "_app/immutable/chunks/_page-41270b2c.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/40.js": {
-    "file": "_app/immutable/chunks/40-a07d1a6b.js",
-    "src": ".svelte-kit/generated/nodes/40.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-8a597883.js",
-      "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.svelte"
-    ]
-  },
-  "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Principle of mathematical induction/The principle of mathematical induction/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.js",
+  "src/routes/notes/maths/conic/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/conic/_page.js-ac2b952d.js",
+    "src": "src/routes/notes/maths/conic/+page.js",
     "isEntry": true,
     "imports": [
       "_index-35a671a5.js",
-      "__page-3e4ff2f8.js"
-    ]
-  },
-  "src/lib/pages/practice/sequences.js": {
-    "file": "_app/immutable/chunks/sequences-9378f930.js",
-    "src": "src/lib/pages/practice/sequences.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_fraction-dc1be116.js",
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js"
-    ]
-  },
-  "src/lib/pages/practice/linear.js": {
-    "file": "_app/immutable/chunks/linear-2b6f3237.js",
-    "src": "src/lib/pages/practice/linear.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_fraction-dc1be116.js",
-      "_common-f3b98355.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/36.js": {
-    "file": "_app/immutable/chunks/36-d04ad514.js",
-    "src": ".svelte-kit/generated/nodes/36.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-42816555.js",
-      "src/routes/notes/maths/Sets/Venn diagrams/+page.svelte"
-    ]
-  },
-  "src/routes/notes/maths/Sets/Power set/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Sets/Power set/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Sets/Power set/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-e930d4a0.js"
-    ]
-  },
-  "src/lib/pages/practice/hyperbola.js": {
-    "file": "_app/immutable/chunks/hyperbola-3f4bb569.js",
-    "src": "src/lib/pages/practice/hyperbola.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js"
-    ]
-  },
-  "src/lib/pages/practice/circle.js": {
-    "file": "_app/immutable/chunks/circle-f018cad4.js",
-    "src": "src/lib/pages/practice/circle.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/21.js": {
-    "file": "_app/immutable/chunks/21-aa520f38.js",
-    "src": ".svelte-kit/generated/nodes/21.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-3e4ff2f8.js",
-      "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.svelte"
-    ]
-  },
-  "src/routes/notes/maths/Trigonometric functions/Angles/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Trigonometric functions/Angles/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Trigonometric functions/Angles/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-4b9ec2e1.js"
-    ]
-  },
-  "__page-300ad90c.js": {
-    "file": "_app/immutable/chunks/_page-300ad90c.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "__page-468d1d3d.js": {
-    "file": "_app/immutable/chunks/_page-468d1d3d.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "src/lib/pages/practice/combinatorics.js": {
-    "file": "_app/immutable/chunks/combinatorics-642cdae4.js",
-    "src": "src/lib/pages/practice/combinatorics.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_sets-c5f87a63.js",
-      "_complex-8b2c2181.js",
-      "_combinatorics-02bb53eb.js"
+      "__page-d2ece28f.js"
     ]
   },
   ".svelte-kit/generated/nodes/22.js": {
@@ -1011,121 +704,83 @@
     "src": ".svelte-kit/generated/nodes/22.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-555533aa.js",
+      "__page-f7d7e525.js",
       "src/routes/notes/maths/Relations and functions 11/Cartesian product of sets/+page.svelte"
     ]
   },
-  ".svelte-kit/generated/nodes/30.js": {
-    "file": "_app/immutable/chunks/30-bb9ab5c4.js",
-    "src": ".svelte-kit/generated/nodes/30.js",
+  "src/lib/pages/practice/binomial.js": {
+    "file": "_app/immutable/chunks/binomial-f0ed978e.js",
+    "src": "src/lib/pages/practice/binomial.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-e930d4a0.js",
-      "src/routes/notes/maths/Sets/Power set/+page.svelte"
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js",
+      "_combinatorics-02bb53eb.js"
     ]
   },
-  "src/routes/notes/maths/Sets/Introduction/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Sets/Introduction/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Sets/Introduction/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-a2c2aa44.js"
-    ]
-  },
-  "src/routes/iit/maths/2021/question1/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/maths/2021/question1/_page.js-36199001.js",
-    "src": "src/routes/iit/maths/2021/question1/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-1c124818.js"
-    ]
-  },
-  "src/lib/pages/practice/differentiability.js": {
-    "file": "_app/immutable/chunks/differentiability-238ad595.js",
-    "src": "src/lib/pages/practice/differentiability.js",
+  "src/lib/pages/practice/appIntegrals.js": {
+    "file": "_app/immutable/chunks/appIntegrals-10af451b.js",
+    "src": "src/lib/pages/practice/appIntegrals.js",
     "isDynamicEntry": true,
     "imports": [
+      "_fraction-dc1be116.js",
       "_common-f3b98355.js",
       "_polynomial-a7c44167.js"
     ]
   },
-  "__page-3db2dce1.js": {
-    "file": "_app/immutable/chunks/_page-3db2dce1.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/31.js": {
-    "file": "_app/immutable/chunks/31-94cd3771.js",
-    "src": ".svelte-kit/generated/nodes/31.js",
+  ".svelte-kit/generated/nodes/23.js": {
+    "file": "_app/immutable/chunks/23-c6e096c8.js",
+    "src": ".svelte-kit/generated/nodes/23.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-f7d7e525.js",
-      "src/routes/notes/maths/Sets/Practical problems/+page.svelte"
+      "__page-4b9ec2e1.js",
+      "src/routes/notes/maths/Relations and functions 11/Functions/+page.svelte"
     ]
   },
-  "src/lib/pages/practice/relations12.js": {
-    "file": "_app/immutable/chunks/relations12-7bdcb657.js",
-    "src": "src/lib/pages/practice/relations12.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_sets-c5f87a63.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/33.js": {
-    "file": "_app/immutable/chunks/33-70490809.js",
-    "src": ".svelte-kit/generated/nodes/33.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-f4a0b093.js",
-      "src/routes/notes/maths/Sets/Subsets/+page.svelte"
-    ]
-  },
-  "_Link-3490972f.js": {
-    "file": "_app/immutable/chunks/Link-3490972f.js",
-    "imports": [
-      "_index-d6181b86.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Link-867ad8ee.css"
-    ]
-  },
-  "src/lib/pages/practice/sets.js": {
-    "file": "_app/immutable/chunks/sets-a147c548.js",
-    "src": "src/lib/pages/practice/sets.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_sets-c5f87a63.js"
-    ]
-  },
-  "src/lib/pages/practice/trigonometry.js": {
-    "file": "_app/immutable/chunks/trigonometry-ee8dabd5.js",
-    "src": "src/lib/pages/practice/trigonometry.js",
-    "isDynamicEntry": true,
+  "_sets-c5f87a63.js": {
+    "file": "_app/immutable/chunks/sets-c5f87a63.js",
     "imports": [
       "_common-f3b98355.js"
     ]
   },
-  "src/routes/notes/maths/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/_page.js-df72b702.js",
-    "src": "src/routes/notes/maths/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-dffe4514.js"
-    ]
-  },
-  "src/lib/pages/practice/appDerivatives.js": {
-    "file": "_app/immutable/chunks/appDerivatives-4979bf5e.js",
-    "src": "src/lib/pages/practice/appDerivatives.js",
+  "src/lib/pages/practice/quadratic.js": {
+    "file": "_app/immutable/chunks/quadratic-c6655355.js",
+    "src": "src/lib/pages/practice/quadratic.js",
     "isDynamicEntry": true,
     "imports": [
       "_common-f3b98355.js",
-      "_polynomial-a7c44167.js"
+      "_complex-8b2c2181.js"
+    ]
+  },
+  "src/routes/notes/maths/Trigonometric functions/Trigonometric functions/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Trigonometric functions/Trigonometric functions/_page.svelte-89ffec92.js",
+    "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric functions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js"
+    ]
+  },
+  "__page-38afba1d.js": {
+    "file": "_app/immutable/chunks/_page-38afba1d.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "_polynomial-a7c44167.js": {
+    "file": "_app/immutable/chunks/polynomial-a7c44167.js",
+    "imports": [
+      "_fraction-dc1be116.js",
+      "_common-f3b98355.js"
+    ]
+  },
+  "src/lib/pages/practice/inequalities.js": {
+    "file": "_app/immutable/chunks/inequalities-b713a6f5.js",
+    "src": "src/lib/pages/practice/inequalities.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js",
+      "_fraction-dc1be116.js"
     ]
   },
   "src/lib/pages/practice/probability.js": {
@@ -1137,142 +792,67 @@
       "_complex-8b2c2181.js"
     ]
   },
-  ".svelte-kit/generated/nodes/37.js": {
-    "file": "_app/immutable/chunks/37-cea819b1.js",
-    "src": ".svelte-kit/generated/nodes/37.js",
+  "src/lib/pages/practice/matrices.js": {
+    "file": "_app/immutable/chunks/matrices-d4712fa1.js",
+    "src": "src/lib/pages/practice/matrices.js",
     "isDynamicEntry": true,
-    "imports": [
-      "__page-4b9ec2e1.js",
-      "src/routes/notes/maths/Trigonometric functions/Angles/+page.svelte"
-    ]
-  },
-  "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-b3fc14db.js",
-    "src": "src/routes/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_Papers-19e67524.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-a811fd03.css"
-    ]
-  },
-  "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Principle of mathematical induction/The principle of mathematical induction/_page.svelte-89ffec92.js",
-    "src": "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js"
-    ]
-  },
-  "src/routes/notes/maths/Sets/Universal set/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Sets/Universal set/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Sets/Universal set/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-41270b2c.js"
-    ]
-  },
-  "__page-dffe4514.js": {
-    "file": "_app/immutable/chunks/_page-dffe4514.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "src/routes/notes/maths/Sets/Introduction/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Sets/Introduction/_page.svelte-2a6459fd.js",
-    "src": "src/routes/notes/maths/Sets/Introduction/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_stores-932992cc.js",
-      "_stores-ec708fd5.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-3f84fa76.css",
-      "_app/immutable/assets/Practice-ceaad90d.css",
-      "_app/immutable/assets/Message-1e964222.css"
-    ]
-  },
-  "src/routes/iit/maths/2021/question2/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/maths/2021/question2/_page.js-36199001.js",
-    "src": "src/routes/iit/maths/2021/question2/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-0963fa01.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-677779d4.js",
-    "src": ".svelte-kit/generated/nodes/5.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/practice/+layout.svelte"
-    ]
-  },
-  "src/routes/cv/+page.svelte": {
-    "file": "_app/immutable/components/pages/cv/_page.svelte-f3547478.js",
-    "src": "src/routes/cv/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_Papers-19e67524.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-8eab1ee2.css"
-    ]
-  },
-  "src/routes/notes/maths/Sets/The empty set/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Sets/The empty set/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Sets/The empty set/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-98fa8a7b.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/12.js": {
-    "file": "_app/immutable/chunks/12-cd60baec.js",
-    "src": ".svelte-kit/generated/nodes/12.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-0963fa01.js",
-      "src/routes/iit/maths/2021/question2/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/39.js": {
-    "file": "_app/immutable/chunks/39-97c4ec4f.js",
-    "src": ".svelte-kit/generated/nodes/39.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-37cf18ab.js",
-      "src/routes/notes/maths/Trigonometric functions/Trigonometric functions/+page.svelte"
-    ]
-  },
-  "src/routes/iit/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/_page.js-75051b18.js",
-    "src": "src/routes/iit/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-bbc5979e.js"
-    ]
-  },
-  "_sets-c5f87a63.js": {
-    "file": "_app/immutable/chunks/sets-c5f87a63.js",
     "imports": [
       "_common-f3b98355.js"
     ]
   },
-  ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-9ed6fc2c.js",
-    "src": ".svelte-kit/generated/nodes/3.js",
+  "src/lib/pages/practice/determinants.js": {
+    "file": "_app/immutable/chunks/determinants-e0dd0871.js",
+    "src": "src/lib/pages/practice/determinants.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/iit/maths/2021/+layout.svelte"
+      "_common-f3b98355.js"
+    ]
+  },
+  "src/routes/iit/maths/2021/question4/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/maths/2021/question4/_page.js-36199001.js",
+    "src": "src/routes/iit/maths/2021/question4/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-d414547c.js"
+    ]
+  },
+  "src/lib/pages/practice/inverse.js": {
+    "file": "_app/immutable/chunks/inverse-bf1d6777.js",
+    "src": "src/lib/pages/practice/inverse.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js"
+    ]
+  },
+  "_index-d6181b86.js": {
+    "file": "_app/immutable/chunks/index-d6181b86.js"
+  },
+  "__page-1c124818.js": {
+    "file": "_app/immutable/chunks/_page-1c124818.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/27.js": {
+    "file": "_app/immutable/chunks/27-0a58e2f7.js",
+    "src": ".svelte-kit/generated/nodes/27.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-a2c2aa44.js",
+      "src/routes/notes/maths/Sets/Finite and infinite sets/+page.svelte"
+    ]
+  },
+  "__page-3d93f98e.js": {
+    "file": "_app/immutable/chunks/_page-3d93f98e.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "_stores-6fba1e47.js": {
+    "file": "_app/immutable/chunks/stores-6fba1e47.js",
+    "imports": [
+      "_index-2f18dd9f.js"
     ]
   },
   "src/routes/notes/maths/Sets/Equal sets/+page.js": {
@@ -1281,36 +861,151 @@
     "isEntry": true,
     "imports": [
       "_index-35a671a5.js",
-      "__page-6b6c40ec.js"
+      "__page-8a597883.js"
     ]
   },
-  "_index-dc9a5c6c.js": {
-    "file": "_app/immutable/chunks/index-dc9a5c6c.js",
+  ".svelte-kit/generated/nodes/24.js": {
+    "file": "_app/immutable/chunks/24-e4df42f5.js",
+    "src": ".svelte-kit/generated/nodes/24.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-98c85862.js",
+      "src/routes/notes/maths/Relations and functions 11/Relations/+page.svelte"
+    ]
+  },
+  "src/lib/pages/practice/differential.js": {
+    "file": "_app/immutable/chunks/differential-37f5101f.js",
+    "src": "src/lib/pages/practice/differential.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js"
+    ]
+  },
+  "src/lib/pages/practice/relations12.js": {
+    "file": "_app/immutable/chunks/relations12-7bdcb657.js",
+    "src": "src/lib/pages/practice/relations12.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_sets-c5f87a63.js"
+    ]
+  },
+  "src/routes/+page.js": {
+    "file": "_app/immutable/modules/pages/_page.js-88426a2e.js",
+    "src": "src/routes/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-7af39617.js"
+    ]
+  },
+  "__page-14349c03.js": {
+    "file": "_app/immutable/chunks/_page-14349c03.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Finite and infinite sets/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Sets/Finite and infinite sets/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Sets/Finite and infinite sets/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-a2c2aa44.js"
+    ]
+  },
+  "_fraction-dc1be116.js": {
+    "file": "_app/immutable/chunks/fraction-dc1be116.js",
+    "imports": [
+      "_common-f3b98355.js",
+      "_sets-c5f87a63.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/25.js": {
+    "file": "_app/immutable/chunks/25-01711cca.js",
+    "src": ".svelte-kit/generated/nodes/25.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-42816555.js",
+      "src/routes/notes/maths/Sets/Complement of a set/+page.svelte"
+    ]
+  },
+  "src/routes/notes/maths/Trigonometric functions/Angles/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Trigonometric functions/Angles/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Trigonometric functions/Angles/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-a9ed8af3.js"
+    ]
+  },
+  "src/routes/iit/maths/2021/question1/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/maths/2021/question1/_page.js-36199001.js",
+    "src": "src/routes/iit/maths/2021/question1/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-ecb1ddf4.js"
+    ]
+  },
+  "src/routes/notes/maths/Relations and functions 11/Cartesian product of sets/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Relations and functions 11/Cartesian product of sets/_page.svelte-89ffec92.js",
+    "src": "src/routes/notes/maths/Relations and functions 11/Cartesian product of sets/+page.svelte",
+    "isEntry": true,
     "imports": [
       "_index-d6181b86.js"
     ]
   },
-  ".svelte-kit/generated/nodes/11.js": {
-    "file": "_app/immutable/chunks/11-f52b1ec9.js",
-    "src": ".svelte-kit/generated/nodes/11.js",
-    "isDynamicEntry": true,
+  "src/routes/iit/maths/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/maths/_page.js-a8cf67b9.js",
+    "src": "src/routes/iit/maths/+page.js",
+    "isEntry": true,
     "imports": [
-      "__page-1c124818.js",
-      "src/routes/iit/maths/2021/question1/+page.svelte"
+      "_index-35a671a5.js",
+      "__page-37cf18ab.js"
     ]
   },
-  ".svelte-kit/generated/nodes/8.js": {
-    "file": "_app/immutable/chunks/8-4248c4fc.js",
-    "src": ".svelte-kit/generated/nodes/8.js",
+  "src/lib/pages/practice/threed.js": {
+    "file": "_app/immutable/chunks/threed-bce3397d.js",
+    "src": "src/lib/pages/practice/threed.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-bbc5979e.js",
-      "src/routes/iit/+page.svelte"
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js"
     ]
   },
-  "src/routes/notes/maths/Sets/Venn diagrams/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Sets/Venn diagrams/_page.svelte-89ffec92.js",
-    "src": "src/routes/notes/maths/Sets/Venn diagrams/+page.svelte",
+  "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Principle of mathematical induction/The principle of mathematical induction/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-406820bb.js"
+    ]
+  },
+  "src/lib/pages/practice/limits.js": {
+    "file": "_app/immutable/chunks/limits-f2808dad.js",
+    "src": "src/lib/pages/practice/limits.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_sets-c5f87a63.js",
+      "_complex-8b2c2181.js",
+      "_polynomial-a7c44167.js"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Introduction/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Sets/Introduction/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Sets/Introduction/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-aeb84810.js"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Practical problems/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Sets/Practical problems/_page.svelte-89ffec92.js",
+    "src": "src/routes/notes/maths/Sets/Practical problems/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-d6181b86.js"
@@ -1336,18 +1031,417 @@
       "_polynomial-a7c44167.js"
     ]
   },
-  "__page-38afba1d.js": {
-    "file": "_app/immutable/chunks/_page-38afba1d.js",
+  ".svelte-kit/generated/nodes/26.js": {
+    "file": "_app/immutable/chunks/26-c36d3dc3.js",
+    "src": ".svelte-kit/generated/nodes/26.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-8a597883.js",
+      "src/routes/notes/maths/Sets/Equal sets/+page.svelte"
+    ]
+  },
+  "src/lib/pages/practice/linear.js": {
+    "file": "_app/immutable/chunks/linear-2b6f3237.js",
+    "src": "src/lib/pages/practice/linear.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_fraction-dc1be116.js",
+      "_common-f3b98355.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/21.js": {
+    "file": "_app/immutable/chunks/21-aa520f38.js",
+    "src": ".svelte-kit/generated/nodes/21.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-406820bb.js",
+      "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.svelte"
+    ]
+  },
+  "_singletons-7f452f10.js": {
+    "file": "_app/immutable/chunks/singletons-7f452f10.js",
+    "imports": [
+      "_index-2f18dd9f.js"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Complement of a set/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Sets/Complement of a set/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Sets/Complement of a set/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-42816555.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/28.js": {
+    "file": "_app/immutable/chunks/28-3defc627.js",
+    "src": ".svelte-kit/generated/nodes/28.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-aeb84810.js",
+      "src/routes/notes/maths/Sets/Introduction/+page.svelte"
+    ]
+  },
+  "src/routes/iit/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/_page.js-75051b18.js",
+    "src": "src/routes/iit/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-14349c03.js"
+    ]
+  },
+  "src/lib/pages/practice/circle.js": {
+    "file": "_app/immutable/chunks/circle-f018cad4.js",
+    "src": "src/lib/pages/practice/circle.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js"
+    ]
+  },
+  "src/routes/practice/+layout.svelte": {
+    "file": "_app/immutable/components/pages/practice/_layout.svelte-021aa9a6.js",
+    "src": "src/routes/practice/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_preload-helper-41c905a7.js",
+      "_index-d6181b86.js",
+      "_Select-460893ec.js",
+      "_stores-6fba1e47.js"
+    ],
+    "dynamicImports": [
+      "src/lib/pages/practice/sets.js",
+      "src/lib/pages/practice/relations.js",
+      "src/lib/pages/practice/trigonometry.js",
+      "src/lib/pages/practice/induction.js",
+      "src/lib/pages/practice/complex.js",
+      "src/lib/pages/practice/quadratic.js",
+      "src/lib/pages/practice/inequalities.js",
+      "src/lib/pages/practice/combinatorics.js",
+      "src/lib/pages/practice/binomial.js",
+      "src/lib/pages/practice/sequences.js",
+      "src/lib/pages/practice/line.js",
+      "src/lib/pages/practice/circle.js",
+      "src/lib/pages/practice/parabola.js",
+      "src/lib/pages/practice/ellipse.js",
+      "src/lib/pages/practice/hyperbola.js",
+      "src/lib/pages/practice/threed.js",
+      "src/lib/pages/practice/limits.js",
+      "src/lib/pages/practice/derivatives.js",
+      "src/lib/pages/practice/reasoning.js",
+      "src/lib/pages/practice/statistics.js",
+      "src/lib/pages/practice/probability.js",
+      "src/lib/pages/practice/relations12.js",
+      "src/lib/pages/practice/inverse.js",
+      "src/lib/pages/practice/matrices.js",
+      "src/lib/pages/practice/determinants.js",
+      "src/lib/pages/practice/continuity.js",
+      "src/lib/pages/practice/differentiability.js",
+      "src/lib/pages/practice/appDerivatives.js",
+      "src/lib/pages/practice/indefinite.js",
+      "src/lib/pages/practice/definite.js",
+      "src/lib/pages/practice/appIntegrals.js",
+      "src/lib/pages/practice/differential.js",
+      "src/lib/pages/practice/vectors.js",
+      "src/lib/pages/practice/geometry3d.js",
+      "src/lib/pages/practice/linear.js"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Practical problems/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Sets/Practical problems/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Sets/Practical problems/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-98fa8a7b.js"
+    ]
+  },
+  "__page-f7d7e525.js": {
+    "file": "_app/immutable/chunks/_page-f7d7e525.js",
     "imports": [
       "_index-35a671a5.js"
     ]
   },
-  "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/_page.svelte-89ffec92.js",
-    "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.svelte",
+  "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Principle of mathematical induction/The principle of mathematical induction/_page.svelte-89ffec92.js",
+    "src": "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-d6181b86.js"
+    ]
+  },
+  "src/lib/pages/practice/hyperbola.js": {
+    "file": "_app/immutable/chunks/hyperbola-3f4bb569.js",
+    "src": "src/lib/pages/practice/hyperbola.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-8c43248f.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
+  "src/lib/pages/practice/statistics.js": {
+    "file": "_app/immutable/chunks/statistics-ae06b845.js",
+    "src": "src/lib/pages/practice/statistics.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_sets-c5f87a63.js",
+      "_complex-8b2c2181.js"
+    ]
+  },
+  "_Canvas-aefbd765.js": {
+    "file": "_app/immutable/chunks/Canvas-aefbd765.js",
+    "imports": [
+      "_singletons-7f452f10.js",
+      "_index-d6181b86.js",
+      "_ripple-d6af89fa.js",
+      "_index-2f18dd9f.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Canvas-e230c243.css"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Venn diagrams/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Sets/Venn diagrams/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Sets/Venn diagrams/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-7b68ef28.js"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Universal set/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Sets/Universal set/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Sets/Universal set/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-468d1d3d.js"
+    ]
+  },
+  "src/lib/pages/practice/parabola.js": {
+    "file": "_app/immutable/chunks/parabola-7d3b23a4.js",
+    "src": "src/lib/pages/practice/parabola.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js"
+    ]
+  },
+  "src/routes/notes/maths/Sets/The empty set/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Sets/The empty set/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Sets/The empty set/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-300ad90c.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-9c8a5e4f.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/cv/+layout.svelte"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Power set/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Sets/Power set/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Sets/Power set/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-38afba1d.js"
+    ]
+  },
+  "src/routes/notes/maths/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/_page.js-df72b702.js",
+    "src": "src/routes/notes/maths/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-dffe4514.js"
+    ]
+  },
+  "src/routes/notes/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/_page.js-944d88e4.js",
+    "src": "src/routes/notes/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-554e1f1a.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-6218a8b8.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+layout.svelte"
+    ]
+  },
+  "src/routes/notes/maths/Relations and functions 11/Functions/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Relations and functions 11/Functions/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Relations and functions 11/Functions/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-4b9ec2e1.js"
+    ]
+  },
+  "src/routes/practice/+page.js": {
+    "file": "_app/immutable/modules/pages/practice/_page.js-c95d7a53.js",
+    "src": "src/routes/practice/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-3db2dce1.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/7.js": {
+    "file": "_app/immutable/chunks/7-aca969c9.js",
+    "src": ".svelte-kit/generated/nodes/7.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-bbc5979e.js",
+      "src/routes/cv/+page.svelte"
+    ]
+  },
+  "__page-3db2dce1.js": {
+    "file": "_app/immutable/chunks/_page-3db2dce1.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "src/lib/pages/practice/sequences.js": {
+    "file": "_app/immutable/chunks/sequences-9378f930.js",
+    "src": "src/lib/pages/practice/sequences.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_fraction-dc1be116.js",
+      "_common-f3b98355.js",
+      "_complex-8b2c2181.js"
+    ]
+  },
+  "__page-6b6c40ec.js": {
+    "file": "_app/immutable/chunks/_page-6b6c40ec.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/5.js": {
+    "file": "_app/immutable/chunks/5-677779d4.js",
+    "src": ".svelte-kit/generated/nodes/5.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/practice/+layout.svelte"
+    ]
+  },
+  "src/routes/notes/maths/Trigonometric functions/Trigonometric equations/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Trigonometric functions/Trigonometric equations/_page.svelte-89ffec92.js",
+    "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric equations/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/10.js": {
+    "file": "_app/immutable/chunks/10-7c160b2f.js",
+    "src": ".svelte-kit/generated/nodes/10.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/iit/maths/2021/+page.svelte"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Power set/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Sets/Power set/_page.svelte-8cd9df15.js",
+    "src": "src/routes/notes/maths/Sets/Power set/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_stores-932992cc.js",
+      "_stores-ec708fd5.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-366f0795.css",
+      "_app/immutable/assets/Practice-ceaad90d.css",
+      "_app/immutable/assets/Message-1e964222.css"
+    ]
+  },
+  "src/routes/iit/maths/2021/question6/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/maths/2021/question6/_page.js-36199001.js",
+    "src": "src/routes/iit/maths/2021/question6/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-9d15be8f.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/9.js": {
+    "file": "_app/immutable/chunks/9-d857083e.js",
+    "src": ".svelte-kit/generated/nodes/9.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-37cf18ab.js",
+      "src/routes/iit/maths/+page.svelte"
+    ]
+  },
+  "src/routes/iit/maths/2021/+layout.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/2021/_layout.svelte-894cee77.js",
+    "src": "src/routes/iit/maths/2021/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_Canvas-aefbd765.js",
+      "_stores-932992cc.js",
+      "_ripple-d6af89fa.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-cecf19a8.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/13.js": {
+    "file": "_app/immutable/chunks/13-fa6a0b80.js",
+    "src": ".svelte-kit/generated/nodes/13.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-1c124818.js",
+      "src/routes/iit/maths/2021/question3/+page.svelte"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Subsets/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Sets/Subsets/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Sets/Subsets/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-6b6c40ec.js"
+    ]
+  },
+  "__page-4b9ec2e1.js": {
+    "file": "_app/immutable/chunks/_page-4b9ec2e1.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "_combinatorics-02bb53eb.js": {
+    "file": "_app/immutable/chunks/combinatorics-02bb53eb.js"
+  },
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-9ed6fc2c.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/iit/maths/2021/+layout.svelte"
     ]
   },
   "src/lib/pages/practice/reasoning.js": {
@@ -1359,111 +1453,158 @@
       "_complex-8b2c2181.js"
     ]
   },
-  "src/lib/pages/practice/relations.js": {
-    "file": "_app/immutable/chunks/relations-e98db378.js",
-    "src": "src/lib/pages/practice/relations.js",
+  ".svelte-kit/generated/nodes/12.js": {
+    "file": "_app/immutable/chunks/12-cd60baec.js",
+    "src": ".svelte-kit/generated/nodes/12.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-f85b9798.js",
+      "src/routes/iit/maths/2021/question2/+page.svelte"
+    ]
+  },
+  "src/routes/cv/+page.js": {
+    "file": "_app/immutable/modules/pages/cv/_page.js-75051b18.js",
+    "src": "src/routes/cv/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-bbc5979e.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/14.js": {
+    "file": "_app/immutable/chunks/14-a01d5518.js",
+    "src": ".svelte-kit/generated/nodes/14.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-d414547c.js",
+      "src/routes/iit/maths/2021/question4/+page.svelte"
+    ]
+  },
+  "src/lib/pages/practice/combinatorics.js": {
+    "file": "_app/immutable/chunks/combinatorics-642cdae4.js",
+    "src": "src/lib/pages/practice/combinatorics.js",
     "isDynamicEntry": true,
     "imports": [
       "_common-f3b98355.js",
       "_sets-c5f87a63.js",
-      "_polynomial-a7c44167.js"
+      "_complex-8b2c2181.js",
+      "_combinatorics-02bb53eb.js"
     ]
   },
-  ".svelte-kit/generated/nodes/17.js": {
-    "file": "_app/immutable/chunks/17-caabcf17.js",
-    "src": ".svelte-kit/generated/nodes/17.js",
+  ".svelte-kit/generated/nodes/11.js": {
+    "file": "_app/immutable/chunks/11-f52b1ec9.js",
+    "src": ".svelte-kit/generated/nodes/11.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-554e1f1a.js",
-      "src/routes/notes/+page.svelte"
+      "__page-ecb1ddf4.js",
+      "src/routes/iit/maths/2021/question1/+page.svelte"
     ]
   },
-  "src/routes/notes/maths/Sets/Venn diagrams/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Sets/Venn diagrams/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Sets/Venn diagrams/+page.js",
+  "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.js",
     "isEntry": true,
     "imports": [
       "_index-35a671a5.js",
-      "__page-42816555.js"
+      "__page-f4a0b093.js"
     ]
   },
-  ".svelte-kit/generated/nodes/38.js": {
-    "file": "_app/immutable/chunks/38-bc718145.js",
-    "src": ".svelte-kit/generated/nodes/38.js",
-    "isDynamicEntry": true,
+  "src/routes/notes/maths/Relations and functions 11/Relations/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Relations and functions 11/Relations/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Relations and functions 11/Relations/+page.js",
+    "isEntry": true,
     "imports": [
-      "__page-406820bb.js",
-      "src/routes/notes/maths/Trigonometric functions/Trigonometric equations/+page.svelte"
+      "_index-35a671a5.js",
+      "__page-98c85862.js"
     ]
   },
-  ".svelte-kit/generated/nodes/28.js": {
-    "file": "_app/immutable/chunks/28-3defc627.js",
-    "src": ".svelte-kit/generated/nodes/28.js",
-    "isDynamicEntry": true,
+  "src/routes/notes/maths/Relations and functions 11/Cartesian product of sets/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Relations and functions 11/Cartesian product of sets/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Relations and functions 11/Cartesian product of sets/+page.js",
+    "isEntry": true,
     "imports": [
-      "__page-a2c2aa44.js",
-      "src/routes/notes/maths/Sets/Introduction/+page.svelte"
+      "_index-35a671a5.js",
+      "__page-f7d7e525.js"
     ]
   },
-  "__page-f7d7e525.js": {
-    "file": "_app/immutable/chunks/_page-f7d7e525.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-9c8a5e4f.js",
-    "src": ".svelte-kit/generated/nodes/2.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/cv/+layout.svelte"
-    ]
-  },
-  "src/routes/notes/maths/Sets/Practical problems/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Sets/Practical problems/_page.svelte-89ffec92.js",
-    "src": "src/routes/notes/maths/Sets/Practical problems/+page.svelte",
+  "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/_page.svelte-89ffec92.js",
+    "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-d6181b86.js"
     ]
   },
-  "src/routes/notes/maths/Relations and functions 11/Cartesian product of sets/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Relations and functions 11/Cartesian product of sets/_page.svelte-89ffec92.js",
-    "src": "src/routes/notes/maths/Relations and functions 11/Cartesian product of sets/+page.svelte",
+  "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Principle of mathematical induction/Motivation/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.js",
     "isEntry": true,
     "imports": [
-      "_index-d6181b86.js"
+      "_index-35a671a5.js",
+      "__page-555533aa.js"
     ]
   },
-  "src/lib/pages/practice/vectors.js": {
-    "file": "_app/immutable/chunks/vectors-df0a4091.js",
-    "src": "src/lib/pages/practice/vectors.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_fraction-dc1be116.js"
-    ]
-  },
-  "__page-6b6c40ec.js": {
-    "file": "_app/immutable/chunks/_page-6b6c40ec.js",
+  "__page-555533aa.js": {
+    "file": "_app/immutable/chunks/_page-555533aa.js",
     "imports": [
       "_index-35a671a5.js"
     ]
   },
-  "__page-1c124818.js": {
-    "file": "_app/immutable/chunks/_page-1c124818.js",
+  "__page-d2ece28f.js": {
+    "file": "_app/immutable/chunks/_page-d2ece28f.js",
     "imports": [
       "_index-35a671a5.js"
     ]
   },
-  "src/lib/pages/practice/complex.js": {
-    "file": "_app/immutable/chunks/complex-f44cc0bb.js",
-    "src": "src/lib/pages/practice/complex.js",
+  "__page-f4a0b093.js": {
+    "file": "_app/immutable/chunks/_page-f4a0b093.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "__page-a9ed8af3.js": {
+    "file": "_app/immutable/chunks/_page-a9ed8af3.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "__page-554e1f1a.js": {
+    "file": "_app/immutable/chunks/_page-554e1f1a.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  "src/routes/iit/maths/2021/question3/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/maths/2021/question3/_page.js-36199001.js",
+    "src": "src/routes/iit/maths/2021/question3/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-1c124818.js"
+    ]
+  },
+  "__page-406820bb.js": {
+    "file": "_app/immutable/chunks/_page-406820bb.js",
+    "imports": [
+      "_index-35a671a5.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/6.js": {
+    "file": "_app/immutable/chunks/6-357a2a62.js",
+    "src": ".svelte-kit/generated/nodes/6.js",
     "isDynamicEntry": true,
     "imports": [
-      "_fraction-dc1be116.js",
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js"
+      "__page-7af39617.js",
+      "src/routes/+page.svelte"
+    ]
+  },
+  "src/routes/iit/maths/2021/question2/+page.js": {
+    "file": "_app/immutable/modules/pages/iit/maths/2021/question2/_page.js-36199001.js",
+    "src": "src/routes/iit/maths/2021/question2/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index-35a671a5.js",
+      "__page-f85b9798.js"
     ]
   },
   "src/routes/+layout.svelte": {
@@ -1478,27 +1619,79 @@
       "_app/immutable/assets/_layout-f177570d.css"
     ]
   },
-  "src/routes/iit/maths/2021/question6/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/maths/2021/question6/_page.js-36199001.js",
-    "src": "src/routes/iit/maths/2021/question6/+page.js",
+  "src/routes/notes/maths/Sets/Operations on sets/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Sets/Operations on sets/_page.svelte-1ab8fb9b.js",
+    "src": "src/routes/notes/maths/Sets/Operations on sets/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_stores-932992cc.js",
+      "_stores-ec708fd5.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-1f620735.css",
+      "_app/immutable/assets/Practice-ceaad90d.css",
+      "_app/immutable/assets/Message-1e964222.css"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Introduction/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Sets/Introduction/_page.svelte-2a6459fd.js",
+    "src": "src/routes/notes/maths/Sets/Introduction/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_stores-932992cc.js",
+      "_stores-ec708fd5.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-3f84fa76.css",
+      "_app/immutable/assets/Practice-ceaad90d.css",
+      "_app/immutable/assets/Message-1e964222.css"
+    ]
+  },
+  "src/routes/notes/maths/Sets/The empty set/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Sets/The empty set/_page.svelte-d9a0793a.js",
+    "src": "src/routes/notes/maths/Sets/The empty set/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_stores-932992cc.js",
+      "_stores-ec708fd5.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-366f0795.css",
+      "_app/immutable/assets/Practice-ceaad90d.css",
+      "_app/immutable/assets/Message-1e964222.css"
+    ]
+  },
+  "src/routes/practice/+page.svelte": {
+    "file": "_app/immutable/components/pages/practice/_page.svelte-4cfc1500.js",
+    "src": "src/routes/practice/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_stores-6fba1e47.js",
+      "_index-2f18dd9f.js",
+      "_ripple-d6af89fa.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Message-1e964222.css",
+      "_app/immutable/assets/Link-867ad8ee.css",
+      "_app/immutable/assets/Practice-ceaad90d.css"
+    ]
+  },
+  "src/routes/notes/maths/Trigonometric functions/Trigonometric functions/+page.js": {
+    "file": "_app/immutable/modules/pages/notes/maths/Trigonometric functions/Trigonometric functions/_page.js-4bd45e04.js",
+    "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric functions/+page.js",
     "isEntry": true,
     "imports": [
       "_index-35a671a5.js",
-      "__page-9d15be8f.js"
+      "__page-3e4ff2f8.js"
     ]
   },
-  "src/lib/pages/practice/quadratic.js": {
-    "file": "_app/immutable/chunks/quadratic-c6655355.js",
-    "src": "src/lib/pages/practice/quadratic.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_complex-8b2c2181.js"
-    ]
-  },
-  "src/routes/iit/maths/2021/question4/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/2021/question4/_page.svelte-0a9901cc.js",
-    "src": "src/routes/iit/maths/2021/question4/+page.svelte",
+  "src/routes/iit/maths/2021/question3/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/2021/question3/_page.svelte-bfe76625.js",
+    "src": "src/routes/iit/maths/2021/question3/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-d6181b86.js",
@@ -1508,56 +1701,67 @@
       "_constants-79d6a0a7.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-0b8b161e.css"
+      "_app/immutable/assets/_page-166b7437.css"
     ]
   },
-  "src/lib/pages/practice/geometry3d.js": {
-    "file": "_app/immutable/chunks/geometry3d-dd9b8cde.js",
-    "src": "src/lib/pages/practice/geometry3d.js",
+  "src/routes/notes/maths/+layout.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/_layout.svelte-975b77ff.js",
+    "src": "src/routes/notes/maths/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_Select-460893ec.js",
+      "_stores-932992cc.js",
+      "_Canvas-aefbd765.js",
+      "_ripple-d6af89fa.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-2a7920d9.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/8.js": {
+    "file": "_app/immutable/chunks/8-4248c4fc.js",
+    "src": ".svelte-kit/generated/nodes/8.js",
     "isDynamicEntry": true,
     "imports": [
-      "_fraction-dc1be116.js",
-      "_common-f3b98355.js"
+      "__page-14349c03.js",
+      "src/routes/iit/+page.svelte"
     ]
   },
-  "src/routes/practice/+page.js": {
-    "file": "_app/immutable/modules/pages/practice/_page.js-c95d7a53.js",
-    "src": "src/routes/practice/+page.js",
+  "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Principle of mathematical induction/Motivation/_page.svelte-89ffec92.js",
+    "src": "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-35a671a5.js",
-      "__page-3db2dce1.js"
+      "_index-d6181b86.js"
     ]
   },
-  "src/routes/notes/maths/Sets/Sets and their representations/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Sets/Sets and their representations/_page.js-d375623e.js",
-    "src": "src/routes/notes/maths/Sets/Sets and their representations/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-14349c03.js"
-    ]
-  },
-  "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/Principle of mathematical induction/Motivation/_page.js-4bd45e04.js",
-    "src": "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-300ad90c.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/24.js": {
-    "file": "_app/immutable/chunks/24-e4df42f5.js",
-    "src": ".svelte-kit/generated/nodes/24.js",
+  ".svelte-kit/generated/nodes/4.js": {
+    "file": "_app/immutable/chunks/4-c8a1f22d.js",
+    "src": ".svelte-kit/generated/nodes/4.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-468d1d3d.js",
-      "src/routes/notes/maths/Relations and functions 11/Relations/+page.svelte"
+      "src/routes/notes/maths/+layout.svelte"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Universal set/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Sets/Universal set/_page.svelte-1699a4bf.js",
+    "src": "src/routes/notes/maths/Sets/Universal set/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_stores-932992cc.js",
+      "_constants-79d6a0a7.js",
+      "_stores-ec708fd5.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-366f0795.css",
+      "_app/immutable/assets/Practice-ceaad90d.css",
+      "_app/immutable/assets/Message-1e964222.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-4c2d65b2.js",
+    "file": "_app/immutable/start-1c83ef12.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -1611,204 +1815,6 @@
       ".svelte-kit/generated/nodes/41.js"
     ]
   },
-  "src/lib/pages/practice/statistics.js": {
-    "file": "_app/immutable/chunks/statistics-ae06b845.js",
-    "src": "src/lib/pages/practice/statistics.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_sets-c5f87a63.js",
-      "_complex-8b2c2181.js"
-    ]
-  },
-  "src/routes/notes/maths/conic/+page.js": {
-    "file": "_app/immutable/modules/pages/notes/maths/conic/_page.js-ac2b952d.js",
-    "src": "src/routes/notes/maths/conic/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-7b68ef28.js"
-    ]
-  },
-  "src/routes/notes/maths/+layout.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/_layout.svelte-dcf74582.js",
-    "src": "src/routes/notes/maths/+layout.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_Select-460893ec.js",
-      "_stores-932992cc.js",
-      "_Canvas-aefbd765.js",
-      "_ripple-d6af89fa.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_layout-a9da39f7.css"
-    ]
-  },
-  "src/routes/practice/+page.svelte": {
-    "file": "_app/immutable/components/pages/practice/_page.svelte-4cfc1500.js",
-    "src": "src/routes/practice/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_stores-6fba1e47.js",
-      "_index-2f18dd9f.js",
-      "_ripple-d6af89fa.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Message-1e964222.css",
-      "_app/immutable/assets/Link-867ad8ee.css",
-      "_app/immutable/assets/Practice-ceaad90d.css"
-    ]
-  },
-  ".svelte-kit/generated/nodes/19.js": {
-    "file": "_app/immutable/chunks/19-0d50f647.js",
-    "src": ".svelte-kit/generated/nodes/19.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-7b68ef28.js",
-      "src/routes/notes/maths/conic/+page.svelte"
-    ]
-  },
-  "src/lib/pages/practice/induction.js": {
-    "file": "_app/immutable/chunks/induction-df691c12.js",
-    "src": "src/lib/pages/practice/induction.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_sets-c5f87a63.js"
-    ]
-  },
-  "__page-4b9ec2e1.js": {
-    "file": "_app/immutable/chunks/_page-4b9ec2e1.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "__page-555533aa.js": {
-    "file": "_app/immutable/chunks/_page-555533aa.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "src/routes/iit/maths/+page.js": {
-    "file": "_app/immutable/modules/pages/iit/maths/_page.js-a8cf67b9.js",
-    "src": "src/routes/iit/maths/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index-35a671a5.js",
-      "__page-aeb84810.js"
-    ]
-  },
-  "__page-d2ece28f.js": {
-    "file": "_app/immutable/chunks/_page-d2ece28f.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "_combinatorics-02bb53eb.js": {
-    "file": "_app/immutable/chunks/combinatorics-02bb53eb.js"
-  },
-  "__page-7af39617.js": {
-    "file": "_app/immutable/chunks/_page-7af39617.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "src/routes/notes/maths/Sets/Sets and their representations/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Sets/Sets and their representations/_page.svelte-dadaed7a.js",
-    "src": "src/routes/notes/maths/Sets/Sets and their representations/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_stores-932992cc.js",
-      "_stores-ec708fd5.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-366f0795.css",
-      "_app/immutable/assets/Practice-ceaad90d.css",
-      "_app/immutable/assets/Message-1e964222.css"
-    ]
-  },
-  "src/lib/pages/practice/indefinite.js": {
-    "file": "_app/immutable/chunks/indefinite-05a08dd7.js",
-    "src": "src/lib/pages/practice/indefinite.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_common-f3b98355.js",
-      "_polynomial-a7c44167.js"
-    ]
-  },
-  "__page-f4a0b093.js": {
-    "file": "_app/immutable/chunks/_page-f4a0b093.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/20.js": {
-    "file": "_app/immutable/chunks/20-8c6b4968.js",
-    "src": ".svelte-kit/generated/nodes/20.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-300ad90c.js",
-      "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.svelte"
-    ]
-  },
-  "src/routes/iit/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/_page.svelte-7e59b7fe.js",
-    "src": "src/routes/iit/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_Link-3490972f.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Message-1e964222.css"
-    ]
-  },
-  "src/routes/notes/maths/Sets/Operations on sets/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Sets/Operations on sets/_page.svelte-89ffec92.js",
-    "src": "src/routes/notes/maths/Sets/Operations on sets/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js"
-    ]
-  },
-  "_complex-8b2c2181.js": {
-    "file": "_app/immutable/chunks/complex-8b2c2181.js",
-    "imports": [
-      "_fraction-dc1be116.js"
-    ]
-  },
-  "__page-a9ed8af3.js": {
-    "file": "_app/immutable/chunks/_page-a9ed8af3.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "src/routes/iit/maths/2021/question6/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/2021/question6/_page.svelte-351ea61f.js",
-    "src": "src/routes/iit/maths/2021/question6/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_stores-932992cc.js",
-      "_stores-ec708fd5.js",
-      "_index-dc9a5c6c.js",
-      "_constants-79d6a0a7.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-db06e63f.css"
-    ]
-  },
-  "src/routes/notes/maths/Relations and functions 11/Relations/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Relations and functions 11/Relations/_page.svelte-89ffec92.js",
-    "src": "src/routes/notes/maths/Relations and functions 11/Relations/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js"
-    ]
-  },
   "src/routes/iit/maths/2021/question2/+page.svelte": {
     "file": "_app/immutable/components/pages/iit/maths/2021/question2/_page.svelte-d876738d.js",
     "src": "src/routes/iit/maths/2021/question2/+page.svelte",
@@ -1822,6 +1828,30 @@
     ],
     "css": [
       "_app/immutable/assets/_page-eaf5daec.css"
+    ]
+  },
+  "_Papers-19e67524.js": {
+    "file": "_app/immutable/chunks/Papers-19e67524.js",
+    "imports": [
+      "_index-d6181b86.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Papers-f64e7629.css"
+    ]
+  },
+  "src/routes/iit/maths/2021/question4/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/2021/question4/_page.svelte-0a9901cc.js",
+    "src": "src/routes/iit/maths/2021/question4/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_stores-932992cc.js",
+      "_stores-ec708fd5.js",
+      "_index-dc9a5c6c.js",
+      "_constants-79d6a0a7.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-0b8b161e.css"
     ]
   },
   "src/routes/notes/maths/Sets/Finite and infinite sets/+page.svelte": {
@@ -1839,67 +1869,46 @@
       "_app/immutable/assets/Message-1e964222.css"
     ]
   },
-  "src/routes/practice/+layout.svelte": {
-    "file": "_app/immutable/components/pages/practice/_layout.svelte-021aa9a6.js",
-    "src": "src/routes/practice/+layout.svelte",
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-b3fc14db.js",
+    "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_preload-helper-41c905a7.js",
       "_index-d6181b86.js",
-      "_Select-460893ec.js",
-      "_stores-6fba1e47.js"
-    ],
-    "dynamicImports": [
-      "src/lib/pages/practice/sets.js",
-      "src/lib/pages/practice/relations.js",
-      "src/lib/pages/practice/trigonometry.js",
-      "src/lib/pages/practice/induction.js",
-      "src/lib/pages/practice/complex.js",
-      "src/lib/pages/practice/quadratic.js",
-      "src/lib/pages/practice/inequalities.js",
-      "src/lib/pages/practice/combinatorics.js",
-      "src/lib/pages/practice/binomial.js",
-      "src/lib/pages/practice/sequences.js",
-      "src/lib/pages/practice/line.js",
-      "src/lib/pages/practice/circle.js",
-      "src/lib/pages/practice/parabola.js",
-      "src/lib/pages/practice/ellipse.js",
-      "src/lib/pages/practice/hyperbola.js",
-      "src/lib/pages/practice/threed.js",
-      "src/lib/pages/practice/limits.js",
-      "src/lib/pages/practice/derivatives.js",
-      "src/lib/pages/practice/reasoning.js",
-      "src/lib/pages/practice/statistics.js",
-      "src/lib/pages/practice/probability.js",
-      "src/lib/pages/practice/relations12.js",
-      "src/lib/pages/practice/inverse.js",
-      "src/lib/pages/practice/matrices.js",
-      "src/lib/pages/practice/determinants.js",
-      "src/lib/pages/practice/continuity.js",
-      "src/lib/pages/practice/differentiability.js",
-      "src/lib/pages/practice/appDerivatives.js",
-      "src/lib/pages/practice/indefinite.js",
-      "src/lib/pages/practice/definite.js",
-      "src/lib/pages/practice/appIntegrals.js",
-      "src/lib/pages/practice/differential.js",
-      "src/lib/pages/practice/vectors.js",
-      "src/lib/pages/practice/geometry3d.js",
-      "src/lib/pages/practice/linear.js"
-    ]
-  },
-  "__page-406820bb.js": {
-    "file": "_app/immutable/chunks/_page-406820bb.js",
-    "imports": [
-      "_index-35a671a5.js"
-    ]
-  },
-  "_Papers-19e67524.js": {
-    "file": "_app/immutable/chunks/Papers-19e67524.js",
-    "imports": [
-      "_index-d6181b86.js"
+      "_Papers-19e67524.js"
     ],
     "css": [
-      "_app/immutable/assets/Papers-f64e7629.css"
+      "_app/immutable/assets/_page-a811fd03.css"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Venn diagrams/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Sets/Venn diagrams/_page.svelte-b05ec725.js",
+    "src": "src/routes/notes/maths/Sets/Venn diagrams/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_stores-932992cc.js",
+      "_stores-ec708fd5.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-bd923973.css",
+      "_app/immutable/assets/Practice-ceaad90d.css",
+      "_app/immutable/assets/Message-1e964222.css"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Equal sets/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Sets/Equal sets/_page.svelte-439c603f.js",
+    "src": "src/routes/notes/maths/Sets/Equal sets/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_stores-932992cc.js",
+      "_stores-ec708fd5.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-366f0795.css",
+      "_app/immutable/assets/Practice-ceaad90d.css",
+      "_app/immutable/assets/Message-1e964222.css"
     ]
   },
   "src/routes/iit/maths/2021/+page.svelte": {
@@ -1916,9 +1925,9 @@
       "_app/immutable/assets/Link-867ad8ee.css"
     ]
   },
-  "src/routes/iit/maths/2021/question3/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/2021/question3/_page.svelte-bfe76625.js",
-    "src": "src/routes/iit/maths/2021/question3/+page.svelte",
+  "src/routes/iit/maths/2021/question5/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/2021/question5/_page.svelte-1852e434.js",
+    "src": "src/routes/iit/maths/2021/question5/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-d6181b86.js",
@@ -1928,18 +1937,44 @@
       "_constants-79d6a0a7.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-166b7437.css"
+      "_app/immutable/assets/_page-3b8ab675.css"
     ]
   },
-  "src/routes/notes/maths/Sets/Subsets/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Sets/Subsets/_page.svelte-18d16439.js",
-    "src": "src/routes/notes/maths/Sets/Subsets/+page.svelte",
+  "src/routes/cv/+page.svelte": {
+    "file": "_app/immutable/components/pages/cv/_page.svelte-f3547478.js",
+    "src": "src/routes/cv/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_Papers-19e67524.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-8eab1ee2.css"
+    ]
+  },
+  "src/routes/iit/maths/2021/question6/+page.svelte": {
+    "file": "_app/immutable/components/pages/iit/maths/2021/question6/_page.svelte-351ea61f.js",
+    "src": "src/routes/iit/maths/2021/question6/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-d6181b86.js",
       "_stores-932992cc.js",
       "_stores-ec708fd5.js",
+      "_index-dc9a5c6c.js",
       "_constants-79d6a0a7.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-db06e63f.css"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Sets and their representations/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Sets/Sets and their representations/_page.svelte-dadaed7a.js",
+    "src": "src/routes/notes/maths/Sets/Sets and their representations/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d6181b86.js",
+      "_stores-932992cc.js",
+      "_stores-ec708fd5.js"
     ],
     "css": [
       "_app/immutable/assets/_page-366f0795.css",
@@ -1962,19 +1997,29 @@
       "_app/immutable/assets/_page-dc187d06.css"
     ]
   },
-  "src/routes/notes/maths/Sets/The empty set/+page.svelte": {
-    "file": "_app/immutable/components/pages/notes/maths/Sets/The empty set/_page.svelte-d9a0793a.js",
-    "src": "src/routes/notes/maths/Sets/The empty set/+page.svelte",
+  "src/routes/notes/maths/Sets/Subsets/+page.svelte": {
+    "file": "_app/immutable/components/pages/notes/maths/Sets/Subsets/_page.svelte-18d16439.js",
+    "src": "src/routes/notes/maths/Sets/Subsets/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-d6181b86.js",
       "_stores-932992cc.js",
-      "_stores-ec708fd5.js"
+      "_stores-ec708fd5.js",
+      "_constants-79d6a0a7.js"
     ],
     "css": [
       "_app/immutable/assets/_page-366f0795.css",
       "_app/immutable/assets/Practice-ceaad90d.css",
       "_app/immutable/assets/Message-1e964222.css"
+    ]
+  },
+  "_Select-460893ec.js": {
+    "file": "_app/immutable/chunks/Select-460893ec.js",
+    "imports": [
+      "_index-d6181b86.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Select-5f77238b.css"
     ]
   },
   "src/routes/notes/maths/+page.svelte": {
@@ -1988,21 +2033,6 @@
     ],
     "css": [
       "_app/immutable/assets/Message-1e964222.css"
-    ]
-  },
-  "src/routes/iit/maths/2021/question5/+page.svelte": {
-    "file": "_app/immutable/components/pages/iit/maths/2021/question5/_page.svelte-1852e434.js",
-    "src": "src/routes/iit/maths/2021/question5/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-d6181b86.js",
-      "_stores-932992cc.js",
-      "_stores-ec708fd5.js",
-      "_index-dc9a5c6c.js",
-      "_constants-79d6a0a7.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-3b8ab675.css"
     ]
   },
   "src/routes/notes/maths/conic/+page.svelte": {
@@ -2022,22 +2052,26 @@
   },
   "src/routes/notes/maths/Sets/Power set/+page.css": {
     "file": "_app/immutable/assets/_page-366f0795.css",
-    "src": "src/routes/notes/maths/Sets/The empty set/+page.css"
+    "src": "src/routes/notes/maths/Sets/Subsets/+page.css"
   },
   "src/routes/notes/maths/Sets/Sets and their representations/+page.css": {
     "file": "_app/immutable/assets/_page-366f0795.css",
-    "src": "src/routes/notes/maths/Sets/The empty set/+page.css"
-  },
-  "src/routes/notes/maths/Sets/Subsets/+page.css": {
-    "file": "_app/immutable/assets/_page-366f0795.css",
-    "src": "src/routes/notes/maths/Sets/The empty set/+page.css"
-  },
-  "src/routes/notes/maths/Sets/Finite and infinite sets/+page.css": {
-    "file": "_app/immutable/assets/_page-366f0795.css",
-    "src": "src/routes/notes/maths/Sets/The empty set/+page.css"
+    "src": "src/routes/notes/maths/Sets/Subsets/+page.css"
   },
   "src/routes/notes/maths/Sets/Equal sets/+page.css": {
     "file": "_app/immutable/assets/_page-366f0795.css",
-    "src": "src/routes/notes/maths/Sets/The empty set/+page.css"
+    "src": "src/routes/notes/maths/Sets/Subsets/+page.css"
+  },
+  "src/routes/notes/maths/Sets/The empty set/+page.css": {
+    "file": "_app/immutable/assets/_page-366f0795.css",
+    "src": "src/routes/notes/maths/Sets/Subsets/+page.css"
+  },
+  "src/routes/notes/maths/Sets/Finite and infinite sets/+page.css": {
+    "file": "_app/immutable/assets/_page-366f0795.css",
+    "src": "src/routes/notes/maths/Sets/Subsets/+page.css"
+  },
+  "src/routes/notes/maths/Sets/Universal set/+page.css": {
+    "file": "_app/immutable/assets/_page-366f0795.css",
+    "src": "src/routes/notes/maths/Sets/Subsets/+page.css"
   }
 }
