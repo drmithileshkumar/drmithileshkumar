@@ -527,6 +527,209 @@
       "_index2.js"
     ]
   },
+  "src/routes/notes/maths/Conic sections/Circle/+page.svelte": {
+    "file": "entries/pages/notes/maths/Conic sections/Circle/_page.svelte.js",
+    "src": "src/routes/notes/maths/Conic sections/Circle/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Conic sections/Circle/+page.js": {
+    "file": "entries/pages/notes/maths/Conic sections/Circle/_page.js",
+    "src": "src/routes/notes/maths/Conic sections/Circle/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Conic sections/Ellipse/+page.svelte": {
+    "file": "entries/pages/notes/maths/Conic sections/Ellipse/_page.svelte.js",
+    "src": "src/routes/notes/maths/Conic sections/Ellipse/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Conic sections/Ellipse/+page.js": {
+    "file": "entries/pages/notes/maths/Conic sections/Ellipse/_page.js",
+    "src": "src/routes/notes/maths/Conic sections/Ellipse/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Conic sections/Hyperbola/+page.svelte": {
+    "file": "entries/pages/notes/maths/Conic sections/Hyperbola/_page.svelte.js",
+    "src": "src/routes/notes/maths/Conic sections/Hyperbola/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Conic sections/Hyperbola/+page.js": {
+    "file": "entries/pages/notes/maths/Conic sections/Hyperbola/_page.js",
+    "src": "src/routes/notes/maths/Conic sections/Hyperbola/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Conic sections/Parabola/+page.svelte": {
+    "file": "entries/pages/notes/maths/Conic sections/Parabola/_page.svelte.js",
+    "src": "src/routes/notes/maths/Conic sections/Parabola/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Conic sections/Parabola/+page.js": {
+    "file": "entries/pages/notes/maths/Conic sections/Parabola/_page.js",
+    "src": "src/routes/notes/maths/Conic sections/Parabola/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Conic sections/Sections of a cone/+page.svelte": {
+    "file": "entries/pages/notes/maths/Conic sections/Sections of a cone/_page.svelte.js",
+    "src": "src/routes/notes/maths/Conic sections/Sections of a cone/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Conic sections/Sections of a cone/+page.js": {
+    "file": "entries/pages/notes/maths/Conic sections/Sections of a cone/_page.js",
+    "src": "src/routes/notes/maths/Conic sections/Sections of a cone/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/+page.svelte": {
+    "file": "entries/pages/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/_page.svelte.js",
+    "src": "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/+page.js": {
+    "file": "entries/pages/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/_page.js",
+    "src": "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/+page.svelte": {
+    "file": "entries/pages/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/_page.svelte.js",
+    "src": "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/+page.js": {
+    "file": "entries/pages/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/_page.js",
+    "src": "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Indroduction to 3D geometry/Distance between two points/+page.svelte": {
+    "file": "entries/pages/notes/maths/Indroduction to 3D geometry/Distance between two points/_page.svelte.js",
+    "src": "src/routes/notes/maths/Indroduction to 3D geometry/Distance between two points/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Indroduction to 3D geometry/Distance between two points/+page.js": {
+    "file": "entries/pages/notes/maths/Indroduction to 3D geometry/Distance between two points/_page.js",
+    "src": "src/routes/notes/maths/Indroduction to 3D geometry/Distance between two points/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Indroduction to 3D geometry/Section formula/+page.svelte": {
+    "file": "entries/pages/notes/maths/Indroduction to 3D geometry/Section formula/_page.svelte.js",
+    "src": "src/routes/notes/maths/Indroduction to 3D geometry/Section formula/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Indroduction to 3D geometry/Section formula/+page.js": {
+    "file": "entries/pages/notes/maths/Indroduction to 3D geometry/Section formula/_page.js",
+    "src": "src/routes/notes/maths/Indroduction to 3D geometry/Section formula/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "src/routes/notes/maths/Linear inequalities/Graphical solution in two variables/+page.svelte": {
     "file": "entries/pages/notes/maths/Linear inequalities/Graphical solution in two variables/_page.svelte.js",
     "src": "src/routes/notes/maths/Linear inequalities/Graphical solution in two variables/+page.svelte",
@@ -1255,28 +1458,6 @@
       "_index2.js"
     ]
   },
-  "src/routes/notes/maths/Straight lines/Series/+page.svelte": {
-    "file": "entries/pages/notes/maths/Straight lines/Series/_page.svelte.js",
-    "src": "src/routes/notes/maths/Straight lines/Series/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index.js",
-      "_stores2.js",
-      "_stores.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Practice-a30674f0.css",
-      "_app/immutable/assets/Message-9326233f.css"
-    ]
-  },
-  "src/routes/notes/maths/Straight lines/Series/+page.js": {
-    "file": "entries/pages/notes/maths/Straight lines/Series/_page.js",
-    "src": "src/routes/notes/maths/Straight lines/Series/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index2.js"
-    ]
-  },
   "src/routes/notes/maths/Straight lines/Slope of a line/+page.svelte": {
     "file": "entries/pages/notes/maths/Straight lines/Slope of a line/_page.svelte.js",
     "src": "src/routes/notes/maths/Straight lines/Slope of a line/+page.svelte",
@@ -1295,29 +1476,6 @@
   "src/routes/notes/maths/Straight lines/Slope of a line/+page.js": {
     "file": "entries/pages/notes/maths/Straight lines/Slope of a line/_page.js",
     "src": "src/routes/notes/maths/Straight lines/Slope of a line/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index2.js"
-    ]
-  },
-  "src/routes/notes/maths/Straight lines/Sum to n terms of Special series/+page.svelte": {
-    "file": "entries/pages/notes/maths/Straight lines/Sum to n terms of Special series/_page.svelte.js",
-    "src": "src/routes/notes/maths/Straight lines/Sum to n terms of Special series/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index.js",
-      "_stores2.js",
-      "_constants.js",
-      "_stores.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Practice-a30674f0.css",
-      "_app/immutable/assets/Message-9326233f.css"
-    ]
-  },
-  "src/routes/notes/maths/Straight lines/Sum to n terms of Special series/+page.js": {
-    "file": "entries/pages/notes/maths/Straight lines/Sum to n terms of Special series/_page.js",
-    "src": "src/routes/notes/maths/Straight lines/Sum to n terms of Special series/+page.js",
     "isEntry": true,
     "imports": [
       "_index2.js"

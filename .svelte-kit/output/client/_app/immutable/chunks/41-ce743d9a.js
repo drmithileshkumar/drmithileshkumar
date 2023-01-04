@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-8a597883.js";import{default as t}from"../components/pages/notes/maths/Permutations and combinations/Fundamental principle of counting/_page.svelte-13c3d78d.js";export{t as component,r as universal};

@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Indroduction to 3D geometry/Distance between two points/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Indroduction to 3D geometry/Distance between two points/+page.svelte";
