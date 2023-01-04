@@ -86,7 +86,7 @@ const sections = {
     "Series",
     "Arithmetic progression",
     "Geometric progression",
-    "Relationship between A.M. and G.M.",
+    "Relationship between AM and GM",
     "Sum to n terms of Special series"
   ],
   "Straight lines": [

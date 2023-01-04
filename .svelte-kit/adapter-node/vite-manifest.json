@@ -345,6 +345,52 @@
       "_index2.js"
     ]
   },
+  "src/routes/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.svelte": {
+    "file": "entries/pages/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.svelte.js",
+    "src": "src/routes/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.js": {
+    "file": "entries/pages/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.js",
+    "src": "src/routes/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Binomial theorem/General and middle terms/+page.svelte": {
+    "file": "entries/pages/notes/maths/Binomial theorem/General and middle terms/_page.svelte.js",
+    "src": "src/routes/notes/maths/Binomial theorem/General and middle terms/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Binomial theorem/General and middle terms/+page.js": {
+    "file": "entries/pages/notes/maths/Binomial theorem/General and middle terms/_page.js",
+    "src": "src/routes/notes/maths/Binomial theorem/General and middle terms/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "src/routes/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/+page.svelte": {
     "file": "entries/pages/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/_page.svelte.js",
     "src": "src/routes/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/+page.svelte",
@@ -571,6 +617,74 @@
       "_index2.js"
     ]
   },
+  "src/routes/notes/maths/Permutations and combinations/Combinations/+page.svelte": {
+    "file": "entries/pages/notes/maths/Permutations and combinations/Combinations/_page.svelte.js",
+    "src": "src/routes/notes/maths/Permutations and combinations/Combinations/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Permutations and combinations/Combinations/+page.js": {
+    "file": "entries/pages/notes/maths/Permutations and combinations/Combinations/_page.js",
+    "src": "src/routes/notes/maths/Permutations and combinations/Combinations/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Permutations and combinations/Fundamental principle of counting/+page.svelte": {
+    "file": "entries/pages/notes/maths/Permutations and combinations/Fundamental principle of counting/_page.svelte.js",
+    "src": "src/routes/notes/maths/Permutations and combinations/Fundamental principle of counting/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Permutations and combinations/Fundamental principle of counting/+page.js": {
+    "file": "entries/pages/notes/maths/Permutations and combinations/Fundamental principle of counting/_page.js",
+    "src": "src/routes/notes/maths/Permutations and combinations/Fundamental principle of counting/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Permutations and combinations/Permutations/+page.svelte": {
+    "file": "entries/pages/notes/maths/Permutations and combinations/Permutations/_page.svelte.js",
+    "src": "src/routes/notes/maths/Permutations and combinations/Permutations/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Permutations and combinations/Permutations/+page.js": {
+    "file": "entries/pages/notes/maths/Permutations and combinations/Permutations/_page.js",
+    "src": "src/routes/notes/maths/Permutations and combinations/Permutations/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.svelte": {
     "file": "entries/pages/notes/maths/Principle of mathematical induction/Motivation/_page.svelte.js",
     "src": "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.svelte",
@@ -678,6 +792,141 @@
   "src/routes/notes/maths/Relations and functions 11/Relations/+page.js": {
     "file": "entries/pages/notes/maths/Relations and functions 11/Relations/_page.js",
     "src": "src/routes/notes/maths/Relations and functions 11/Relations/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Sequences and series/Arithmetic progression/+page.svelte": {
+    "file": "entries/pages/notes/maths/Sequences and series/Arithmetic progression/_page.svelte.js",
+    "src": "src/routes/notes/maths/Sequences and series/Arithmetic progression/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Sequences and series/Arithmetic progression/+page.js": {
+    "file": "entries/pages/notes/maths/Sequences and series/Arithmetic progression/_page.js",
+    "src": "src/routes/notes/maths/Sequences and series/Arithmetic progression/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Sequences and series/Geometric progression/+page.svelte": {
+    "file": "entries/pages/notes/maths/Sequences and series/Geometric progression/_page.svelte.js",
+    "src": "src/routes/notes/maths/Sequences and series/Geometric progression/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Sequences and series/Geometric progression/+page.js": {
+    "file": "entries/pages/notes/maths/Sequences and series/Geometric progression/_page.js",
+    "src": "src/routes/notes/maths/Sequences and series/Geometric progression/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Sequences and series/Relationship between AM and GM/+page.svelte": {
+    "file": "entries/pages/notes/maths/Sequences and series/Relationship between AM and GM/_page.svelte.js",
+    "src": "src/routes/notes/maths/Sequences and series/Relationship between AM and GM/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Sequences and series/Relationship between AM and GM/+page.js": {
+    "file": "entries/pages/notes/maths/Sequences and series/Relationship between AM and GM/_page.js",
+    "src": "src/routes/notes/maths/Sequences and series/Relationship between AM and GM/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Sequences and series/Sequences/+page.svelte": {
+    "file": "entries/pages/notes/maths/Sequences and series/Sequences/_page.svelte.js",
+    "src": "src/routes/notes/maths/Sequences and series/Sequences/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Sequences and series/Sequences/+page.js": {
+    "file": "entries/pages/notes/maths/Sequences and series/Sequences/_page.js",
+    "src": "src/routes/notes/maths/Sequences and series/Sequences/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Sequences and series/Series/+page.svelte": {
+    "file": "entries/pages/notes/maths/Sequences and series/Series/_page.svelte.js",
+    "src": "src/routes/notes/maths/Sequences and series/Series/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Sequences and series/Series/+page.js": {
+    "file": "entries/pages/notes/maths/Sequences and series/Series/_page.js",
+    "src": "src/routes/notes/maths/Sequences and series/Series/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Sequences and series/Sum to n terms of Special series/+page.svelte": {
+    "file": "entries/pages/notes/maths/Sequences and series/Sum to n terms of Special series/_page.svelte.js",
+    "src": "src/routes/notes/maths/Sequences and series/Sum to n terms of Special series/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Sequences and series/Sum to n terms of Special series/+page.js": {
+    "file": "entries/pages/notes/maths/Sequences and series/Sum to n terms of Special series/_page.js",
+    "src": "src/routes/notes/maths/Sequences and series/Sum to n terms of Special series/+page.js",
     "isEntry": true,
     "imports": [
       "_index2.js"
@@ -956,6 +1205,142 @@
   "src/routes/notes/maths/Sets/Venn diagrams/+page.js": {
     "file": "entries/pages/notes/maths/Sets/Venn diagrams/_page.js",
     "src": "src/routes/notes/maths/Sets/Venn diagrams/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Straight lines/Distance of a point from a line/+page.svelte": {
+    "file": "entries/pages/notes/maths/Straight lines/Distance of a point from a line/_page.svelte.js",
+    "src": "src/routes/notes/maths/Straight lines/Distance of a point from a line/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Straight lines/Distance of a point from a line/+page.js": {
+    "file": "entries/pages/notes/maths/Straight lines/Distance of a point from a line/_page.js",
+    "src": "src/routes/notes/maths/Straight lines/Distance of a point from a line/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Straight lines/General equation of a line/+page.svelte": {
+    "file": "entries/pages/notes/maths/Straight lines/General equation of a line/_page.svelte.js",
+    "src": "src/routes/notes/maths/Straight lines/General equation of a line/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Straight lines/General equation of a line/+page.js": {
+    "file": "entries/pages/notes/maths/Straight lines/General equation of a line/_page.js",
+    "src": "src/routes/notes/maths/Straight lines/General equation of a line/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Straight lines/Series/+page.svelte": {
+    "file": "entries/pages/notes/maths/Straight lines/Series/_page.svelte.js",
+    "src": "src/routes/notes/maths/Straight lines/Series/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Straight lines/Series/+page.js": {
+    "file": "entries/pages/notes/maths/Straight lines/Series/_page.js",
+    "src": "src/routes/notes/maths/Straight lines/Series/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Straight lines/Slope of a line/+page.svelte": {
+    "file": "entries/pages/notes/maths/Straight lines/Slope of a line/_page.svelte.js",
+    "src": "src/routes/notes/maths/Straight lines/Slope of a line/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Straight lines/Slope of a line/+page.js": {
+    "file": "entries/pages/notes/maths/Straight lines/Slope of a line/_page.js",
+    "src": "src/routes/notes/maths/Straight lines/Slope of a line/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Straight lines/Sum to n terms of Special series/+page.svelte": {
+    "file": "entries/pages/notes/maths/Straight lines/Sum to n terms of Special series/_page.svelte.js",
+    "src": "src/routes/notes/maths/Straight lines/Sum to n terms of Special series/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Straight lines/Sum to n terms of Special series/+page.js": {
+    "file": "entries/pages/notes/maths/Straight lines/Sum to n terms of Special series/_page.js",
+    "src": "src/routes/notes/maths/Straight lines/Sum to n terms of Special series/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Straight lines/Various forms of the equation of a line/+page.svelte": {
+    "file": "entries/pages/notes/maths/Straight lines/Various forms of the equation of a line/_page.svelte.js",
+    "src": "src/routes/notes/maths/Straight lines/Various forms of the equation of a line/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Straight lines/Various forms of the equation of a line/+page.js": {
+    "file": "entries/pages/notes/maths/Straight lines/Various forms of the equation of a line/_page.js",
+    "src": "src/routes/notes/maths/Straight lines/Various forms of the equation of a line/+page.js",
     "isEntry": true,
     "imports": [
       "_index2.js"
