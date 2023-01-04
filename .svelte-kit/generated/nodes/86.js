@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Statistics/Analysis of frequency distributions/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Sets/Operations on sets/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Statistics/Analysis of frequency distributions/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Sets/Operations on sets/+page.svelte";

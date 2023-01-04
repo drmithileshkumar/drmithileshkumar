@@ -54,6 +54,14 @@
       "_app/immutable/assets/_layout-d8f7c75a.css"
     ]
   },
+  "src/routes/notes/+error.svelte": {
+    "file": "entries/pages/notes/_error.svelte.js",
+    "src": "src/routes/notes/+error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
   "src/routes/notes/maths/+layout.svelte": {
     "file": "entries/pages/notes/maths/_layout.svelte.js",
     "src": "src/routes/notes/maths/+layout.svelte",
@@ -66,6 +74,14 @@
     ],
     "css": [
       "_app/immutable/assets/_layout-2bec716d.css"
+    ]
+  },
+  "src/routes/notes/maths/+error.svelte": {
+    "file": "entries/pages/notes/maths/_error.svelte.js",
+    "src": "src/routes/notes/maths/+error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
     ]
   },
   "src/routes/practice/+layout.svelte": {
@@ -636,6 +652,139 @@
   "src/routes/notes/maths/Conic sections/Sections of a cone/+page.js": {
     "file": "entries/pages/notes/maths/Conic sections/Sections of a cone/_page.js",
     "src": "src/routes/notes/maths/Conic sections/Sections of a cone/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Determinants/Adjoint and inverse of a matrix/+page.svelte": {
+    "file": "entries/pages/notes/maths/Determinants/Adjoint and inverse of a matrix/_page.svelte.js",
+    "src": "src/routes/notes/maths/Determinants/Adjoint and inverse of a matrix/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Determinants/Adjoint and inverse of a matrix/+page.js": {
+    "file": "entries/pages/notes/maths/Determinants/Adjoint and inverse of a matrix/_page.js",
+    "src": "src/routes/notes/maths/Determinants/Adjoint and inverse of a matrix/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Determinants/Applications of determinants and matrices/+page.svelte": {
+    "file": "entries/pages/notes/maths/Determinants/Applications of determinants and matrices/_page.svelte.js",
+    "src": "src/routes/notes/maths/Determinants/Applications of determinants and matrices/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Determinants/Applications of determinants and matrices/+page.js": {
+    "file": "entries/pages/notes/maths/Determinants/Applications of determinants and matrices/_page.js",
+    "src": "src/routes/notes/maths/Determinants/Applications of determinants and matrices/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Determinants/Area of a triangle/+page.svelte": {
+    "file": "entries/pages/notes/maths/Determinants/Area of a triangle/_page.svelte.js",
+    "src": "src/routes/notes/maths/Determinants/Area of a triangle/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Determinants/Area of a triangle/+page.js": {
+    "file": "entries/pages/notes/maths/Determinants/Area of a triangle/_page.js",
+    "src": "src/routes/notes/maths/Determinants/Area of a triangle/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Determinants/Determinant/+page.svelte": {
+    "file": "entries/pages/notes/maths/Determinants/Determinant/_page.svelte.js",
+    "src": "src/routes/notes/maths/Determinants/Determinant/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-9029cfef.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Determinants/Determinant/+page.js": {
+    "file": "entries/pages/notes/maths/Determinants/Determinant/_page.js",
+    "src": "src/routes/notes/maths/Determinants/Determinant/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Determinants/Minors and cofactors/+page.svelte": {
+    "file": "entries/pages/notes/maths/Determinants/Minors and cofactors/_page.svelte.js",
+    "src": "src/routes/notes/maths/Determinants/Minors and cofactors/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Determinants/Minors and cofactors/+page.js": {
+    "file": "entries/pages/notes/maths/Determinants/Minors and cofactors/_page.js",
+    "src": "src/routes/notes/maths/Determinants/Minors and cofactors/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Determinants/Properties of determinants/+page.svelte": {
+    "file": "entries/pages/notes/maths/Determinants/Properties of determinants/_page.svelte.js",
+    "src": "src/routes/notes/maths/Determinants/Properties of determinants/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Determinants/Properties of determinants/+page.js": {
+    "file": "entries/pages/notes/maths/Determinants/Properties of determinants/_page.js",
+    "src": "src/routes/notes/maths/Determinants/Properties of determinants/+page.js",
     "isEntry": true,
     "imports": [
       "_index2.js"
