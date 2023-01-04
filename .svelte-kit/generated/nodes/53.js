@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Relations and functions 11/Functions/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Permutations and combinations/Combinations/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Relations and functions 11/Functions/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Permutations and combinations/Combinations/+page.svelte";

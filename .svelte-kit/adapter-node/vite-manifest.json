@@ -730,6 +730,52 @@
       "_index2.js"
     ]
   },
+  "src/routes/notes/maths/Inverse trigonometric functions/Basic concepts/+page.svelte": {
+    "file": "entries/pages/notes/maths/Inverse trigonometric functions/Basic concepts/_page.svelte.js",
+    "src": "src/routes/notes/maths/Inverse trigonometric functions/Basic concepts/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Inverse trigonometric functions/Basic concepts/+page.js": {
+    "file": "entries/pages/notes/maths/Inverse trigonometric functions/Basic concepts/_page.js",
+    "src": "src/routes/notes/maths/Inverse trigonometric functions/Basic concepts/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions/+page.svelte": {
+    "file": "entries/pages/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions/_page.svelte.js",
+    "src": "src/routes/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions/+page.js": {
+    "file": "entries/pages/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions/_page.js",
+    "src": "src/routes/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "src/routes/notes/maths/Limits and derivatives/Derivatives/+page.svelte": {
     "file": "entries/pages/notes/maths/Limits and derivatives/Derivatives/_page.svelte.js",
     "src": "src/routes/notes/maths/Limits and derivatives/Derivatives/+page.svelte",
@@ -906,6 +952,165 @@
   "src/routes/notes/maths/Linear inequalities/Solution of system in two variables/+page.js": {
     "file": "entries/pages/notes/maths/Linear inequalities/Solution of system in two variables/_page.js",
     "src": "src/routes/notes/maths/Linear inequalities/Solution of system in two variables/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Invertible matrices/+page.svelte": {
+    "file": "entries/pages/notes/maths/Matrices/Invertible matrices/_page.svelte.js",
+    "src": "src/routes/notes/maths/Matrices/Invertible matrices/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Invertible matrices/+page.js": {
+    "file": "entries/pages/notes/maths/Matrices/Invertible matrices/_page.js",
+    "src": "src/routes/notes/maths/Matrices/Invertible matrices/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Matrix/+page.svelte": {
+    "file": "entries/pages/notes/maths/Matrices/Matrix/_page.svelte.js",
+    "src": "src/routes/notes/maths/Matrices/Matrix/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Matrix/+page.js": {
+    "file": "entries/pages/notes/maths/Matrices/Matrix/_page.js",
+    "src": "src/routes/notes/maths/Matrices/Matrix/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Operations on matrices/+page.svelte": {
+    "file": "entries/pages/notes/maths/Matrices/Operations on matrices/_page.svelte.js",
+    "src": "src/routes/notes/maths/Matrices/Operations on matrices/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Operations on matrices/+page.js": {
+    "file": "entries/pages/notes/maths/Matrices/Operations on matrices/_page.js",
+    "src": "src/routes/notes/maths/Matrices/Operations on matrices/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Symmetric and skew symmetric matrices/+page.svelte": {
+    "file": "entries/pages/notes/maths/Matrices/Symmetric and skew symmetric matrices/_page.svelte.js",
+    "src": "src/routes/notes/maths/Matrices/Symmetric and skew symmetric matrices/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Symmetric and skew symmetric matrices/+page.js": {
+    "file": "entries/pages/notes/maths/Matrices/Symmetric and skew symmetric matrices/_page.js",
+    "src": "src/routes/notes/maths/Matrices/Symmetric and skew symmetric matrices/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Transformation of a matrix/+page.svelte": {
+    "file": "entries/pages/notes/maths/Matrices/Transformation of a matrix/_page.svelte.js",
+    "src": "src/routes/notes/maths/Matrices/Transformation of a matrix/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Transformation of a matrix/+page.js": {
+    "file": "entries/pages/notes/maths/Matrices/Transformation of a matrix/_page.js",
+    "src": "src/routes/notes/maths/Matrices/Transformation of a matrix/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Transpose of a matrix/+page.svelte": {
+    "file": "entries/pages/notes/maths/Matrices/Transpose of a matrix/_page.svelte.js",
+    "src": "src/routes/notes/maths/Matrices/Transpose of a matrix/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Transpose of a matrix/+page.js": {
+    "file": "entries/pages/notes/maths/Matrices/Transpose of a matrix/_page.js",
+    "src": "src/routes/notes/maths/Matrices/Transpose of a matrix/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Typse of matrices/+page.svelte": {
+    "file": "entries/pages/notes/maths/Matrices/Typse of matrices/_page.svelte.js",
+    "src": "src/routes/notes/maths/Matrices/Typse of matrices/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Matrices/Typse of matrices/+page.js": {
+    "file": "entries/pages/notes/maths/Matrices/Typse of matrices/_page.js",
+    "src": "src/routes/notes/maths/Matrices/Typse of matrices/+page.js",
     "isEntry": true,
     "imports": [
       "_index2.js"
@@ -1153,6 +1358,95 @@
   "src/routes/notes/maths/Relations and functions 11/Relations/+page.js": {
     "file": "entries/pages/notes/maths/Relations and functions 11/Relations/_page.js",
     "src": "src/routes/notes/maths/Relations and functions 11/Relations/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Relations and functions 12/Binary operations/+page.svelte": {
+    "file": "entries/pages/notes/maths/Relations and functions 12/Binary operations/_page.svelte.js",
+    "src": "src/routes/notes/maths/Relations and functions 12/Binary operations/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Relations and functions 12/Binary operations/+page.js": {
+    "file": "entries/pages/notes/maths/Relations and functions 12/Binary operations/_page.js",
+    "src": "src/routes/notes/maths/Relations and functions 12/Binary operations/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Relations and functions 12/Composition of functions and invertible function/+page.svelte": {
+    "file": "entries/pages/notes/maths/Relations and functions 12/Composition of functions and invertible function/_page.svelte.js",
+    "src": "src/routes/notes/maths/Relations and functions 12/Composition of functions and invertible function/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Relations and functions 12/Composition of functions and invertible function/+page.js": {
+    "file": "entries/pages/notes/maths/Relations and functions 12/Composition of functions and invertible function/_page.js",
+    "src": "src/routes/notes/maths/Relations and functions 12/Composition of functions and invertible function/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Relations and functions 12/Types of functions/+page.svelte": {
+    "file": "entries/pages/notes/maths/Relations and functions 12/Types of functions/_page.svelte.js",
+    "src": "src/routes/notes/maths/Relations and functions 12/Types of functions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Relations and functions 12/Types of functions/+page.js": {
+    "file": "entries/pages/notes/maths/Relations and functions 12/Types of functions/_page.js",
+    "src": "src/routes/notes/maths/Relations and functions 12/Types of functions/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Relations and functions 12/Types of relations/+page.svelte": {
+    "file": "entries/pages/notes/maths/Relations and functions 12/Types of relations/_page.svelte.js",
+    "src": "src/routes/notes/maths/Relations and functions 12/Types of relations/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Relations and functions 12/Types of relations/+page.js": {
+    "file": "entries/pages/notes/maths/Relations and functions 12/Types of relations/_page.js",
+    "src": "src/routes/notes/maths/Relations and functions 12/Types of relations/+page.js",
     "isEntry": true,
     "imports": [
       "_index2.js"

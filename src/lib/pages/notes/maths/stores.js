@@ -120,7 +120,7 @@ export const sections = {
     'Matrices': [
         'Matrix',
         'Typse of matrices',
-        'Operations of matrices',
+        'Operations on matrices',
         'Transpose of a matrix',
         'Symmetric and skew symmetric matrices',
         'Transformation of a matrix',
