@@ -13,7 +13,6 @@ const chapters = [
   "Conic sections",
   "Indroduction to 3D geometry",
   "Limits and derivatives",
-  "Mathematical reasoning",
   "Statistics",
   "Probability",
   "Relations and functions 12",
@@ -114,15 +113,7 @@ const sections = {
     "Limits of Trigonometric functions",
     "Derivatives"
   ],
-  "Mathematical reasoning": [
-    "Statements",
-    "New statements from old",
-    "Special words/phrases",
-    "Implications",
-    "Validating statements"
-  ],
   "Statistics": [
-    "Measures of dispersion",
     "Range",
     "Mean deviation",
     "Variance and standard deviation",

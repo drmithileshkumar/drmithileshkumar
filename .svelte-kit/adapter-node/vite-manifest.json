@@ -730,6 +730,97 @@
       "_index2.js"
     ]
   },
+  "src/routes/notes/maths/Limits and derivatives/Derivatives/+page.svelte": {
+    "file": "entries/pages/notes/maths/Limits and derivatives/Derivatives/_page.svelte.js",
+    "src": "src/routes/notes/maths/Limits and derivatives/Derivatives/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Limits and derivatives/Derivatives/+page.js": {
+    "file": "entries/pages/notes/maths/Limits and derivatives/Derivatives/_page.js",
+    "src": "src/routes/notes/maths/Limits and derivatives/Derivatives/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Limits and derivatives/Intuitive idea of derivatives/+page.svelte": {
+    "file": "entries/pages/notes/maths/Limits and derivatives/Intuitive idea of derivatives/_page.svelte.js",
+    "src": "src/routes/notes/maths/Limits and derivatives/Intuitive idea of derivatives/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Limits and derivatives/Intuitive idea of derivatives/+page.js": {
+    "file": "entries/pages/notes/maths/Limits and derivatives/Intuitive idea of derivatives/_page.js",
+    "src": "src/routes/notes/maths/Limits and derivatives/Intuitive idea of derivatives/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Limits and derivatives/Limits/+page.svelte": {
+    "file": "entries/pages/notes/maths/Limits and derivatives/Limits/_page.svelte.js",
+    "src": "src/routes/notes/maths/Limits and derivatives/Limits/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Limits and derivatives/Limits/+page.js": {
+    "file": "entries/pages/notes/maths/Limits and derivatives/Limits/_page.js",
+    "src": "src/routes/notes/maths/Limits and derivatives/Limits/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Limits and derivatives/Limits of Trigonometric functions/+page.svelte": {
+    "file": "entries/pages/notes/maths/Limits and derivatives/Limits of Trigonometric functions/_page.svelte.js",
+    "src": "src/routes/notes/maths/Limits and derivatives/Limits of Trigonometric functions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Limits and derivatives/Limits of Trigonometric functions/+page.js": {
+    "file": "entries/pages/notes/maths/Limits and derivatives/Limits of Trigonometric functions/_page.js",
+    "src": "src/routes/notes/maths/Limits and derivatives/Limits of Trigonometric functions/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "src/routes/notes/maths/Linear inequalities/Graphical solution in two variables/+page.svelte": {
     "file": "entries/pages/notes/maths/Linear inequalities/Graphical solution in two variables/_page.svelte.js",
     "src": "src/routes/notes/maths/Linear inequalities/Graphical solution in two variables/+page.svelte",
@@ -927,6 +1018,73 @@
   "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.js": {
     "file": "entries/pages/notes/maths/Principle of mathematical induction/The principle of mathematical induction/_page.js",
     "src": "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Probability/Axiomatic approach to probability/+page.svelte": {
+    "file": "entries/pages/notes/maths/Probability/Axiomatic approach to probability/_page.svelte.js",
+    "src": "src/routes/notes/maths/Probability/Axiomatic approach to probability/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Probability/Axiomatic approach to probability/+page.js": {
+    "file": "entries/pages/notes/maths/Probability/Axiomatic approach to probability/_page.js",
+    "src": "src/routes/notes/maths/Probability/Axiomatic approach to probability/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Probability/Event/+page.svelte": {
+    "file": "entries/pages/notes/maths/Probability/Event/_page.svelte.js",
+    "src": "src/routes/notes/maths/Probability/Event/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Probability/Event/+page.js": {
+    "file": "entries/pages/notes/maths/Probability/Event/_page.js",
+    "src": "src/routes/notes/maths/Probability/Event/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Probability/Random experiments/+page.svelte": {
+    "file": "entries/pages/notes/maths/Probability/Random experiments/_page.svelte.js",
+    "src": "src/routes/notes/maths/Probability/Random experiments/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Probability/Random experiments/+page.js": {
+    "file": "entries/pages/notes/maths/Probability/Random experiments/_page.js",
+    "src": "src/routes/notes/maths/Probability/Random experiments/+page.js",
     "isEntry": true,
     "imports": [
       "_index2.js"
@@ -1408,6 +1566,97 @@
   "src/routes/notes/maths/Sets/Venn diagrams/+page.js": {
     "file": "entries/pages/notes/maths/Sets/Venn diagrams/_page.js",
     "src": "src/routes/notes/maths/Sets/Venn diagrams/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Statistics/Analysis of frequency distributions/+page.svelte": {
+    "file": "entries/pages/notes/maths/Statistics/Analysis of frequency distributions/_page.svelte.js",
+    "src": "src/routes/notes/maths/Statistics/Analysis of frequency distributions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Statistics/Analysis of frequency distributions/+page.js": {
+    "file": "entries/pages/notes/maths/Statistics/Analysis of frequency distributions/_page.js",
+    "src": "src/routes/notes/maths/Statistics/Analysis of frequency distributions/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Statistics/Mean deviation/+page.svelte": {
+    "file": "entries/pages/notes/maths/Statistics/Mean deviation/_page.svelte.js",
+    "src": "src/routes/notes/maths/Statistics/Mean deviation/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Statistics/Mean deviation/+page.js": {
+    "file": "entries/pages/notes/maths/Statistics/Mean deviation/_page.js",
+    "src": "src/routes/notes/maths/Statistics/Mean deviation/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Statistics/Range/+page.svelte": {
+    "file": "entries/pages/notes/maths/Statistics/Range/_page.svelte.js",
+    "src": "src/routes/notes/maths/Statistics/Range/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Statistics/Range/+page.js": {
+    "file": "entries/pages/notes/maths/Statistics/Range/_page.js",
+    "src": "src/routes/notes/maths/Statistics/Range/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Statistics/Variance and standard deviation/+page.svelte": {
+    "file": "entries/pages/notes/maths/Statistics/Variance and standard deviation/_page.svelte.js",
+    "src": "src/routes/notes/maths/Statistics/Variance and standard deviation/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Statistics/Variance and standard deviation/+page.js": {
+    "file": "entries/pages/notes/maths/Statistics/Variance and standard deviation/_page.js",
+    "src": "src/routes/notes/maths/Statistics/Variance and standard deviation/+page.js",
     "isEntry": true,
     "imports": [
       "_index2.js"
