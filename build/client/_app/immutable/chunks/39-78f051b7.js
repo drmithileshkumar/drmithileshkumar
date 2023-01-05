@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-a2c2aa44.js";import{default as t}from"../components/pages/notes/maths/Continuity and differentiability/Mean value theorem/_page.svelte-ffd4a46d.js";export{t as component,r as universal};
