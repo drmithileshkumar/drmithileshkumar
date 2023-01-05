@@ -82,6 +82,9 @@ const TeX = {
   },
   inv: (a = "a") => {
     return `${a}^{-1}`;
+  },
+  dydx: () => {
+    return `\\dfrac{dy}{dx}`;
   }
 };
 export {

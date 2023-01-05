@@ -46,5 +46,6 @@ export const TeX = {
     mat: (a = 'a', i = 'i', j = 'j', m = 'm', n = 'n') => {return `[${a}_{${i}${j}}]_{${m}\\times ${n}}`},
     vec: (a = 'a') => {return `\\vec{${a}}`} ,
     hat: (a = 'a') => {return `\\hat{${a}}`},
-    inv: (a = 'a') => {return `${a}^{-1}`}
+    inv: (a = 'a') => {return `${a}^{-1}`},
+    dydx: () => {return `\\dfrac{dy}{dx}`}
 }

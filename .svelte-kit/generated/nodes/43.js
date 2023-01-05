@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Determinants/Area of a triangle/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Continuity and differentiability/Mean value theorem/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Determinants/Area of a triangle/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Continuity and differentiability/Mean value theorem/+page.svelte";

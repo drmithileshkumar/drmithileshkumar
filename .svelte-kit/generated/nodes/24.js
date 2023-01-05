@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Complex numbers and quadratic equations/Argand plane and polar representation/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Application of derivatives/Rate of change of quantities/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Complex numbers and quadratic equations/Argand plane and polar representation/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Application of derivatives/Rate of change of quantities/+page.svelte";

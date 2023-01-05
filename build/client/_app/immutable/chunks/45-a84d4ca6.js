@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-2ebf1333.js";import{default as t}from"../components/pages/notes/maths/Determinants/Adjoint and inverse of a matrix/_page.svelte-9af880f5.js";export{t as component,r as universal};
