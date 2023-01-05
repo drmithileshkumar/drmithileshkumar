@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-74460330.js";import{default as t}from"../components/pages/notes/maths/Relations and functions 12/Binary operations/_page.svelte-e4f309c0.js";export{t as component,r as universal};

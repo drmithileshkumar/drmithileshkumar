@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-d46f0cac.js";import{default as t}from"../components/pages/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/_page.svelte-56b0ac05.js";export{t as component,r as universal};

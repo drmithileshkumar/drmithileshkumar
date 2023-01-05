@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Straight lines/Distance of a point from a line/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Statistics/Variance and standard deviation/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Straight lines/Distance of a point from a line/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Statistics/Variance and standard deviation/+page.svelte";
