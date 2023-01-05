@@ -82,9 +82,28 @@
     <article class:absolute={$presentationMode} bind:this={$presentation}>
         <h1>{$selectedSection}</h1>
         <section>
-            <div class="definition">
-                <p>Coming soon...</p>
-            </div>
+            <ul>
+                <li>
+                    Unique solution of equation \(AX = B\) is given by \(X = {TeX.pow('A')}B\), where \(|A| \neq 0\)
+                </li>
+                <li>
+                    A system of equation is consistent or inconsistent according as its solution exists or not.
+                </li>
+                <li>
+                    For a square matrix \(A\) in matrix equation \(AX = B\)
+                    <ol>
+                        <li>
+                            \(|A|\neq 0\), there exists unique solution
+                        </li>
+                        <li>
+                            \(|A| = 0\) and \(adj(A) B\neq 0\), then there exists no solution. 
+                        </li>
+                        <li>
+                            \(|A| = 0\) and \(adj(A) B = 0\), then system may or may not be consistent.
+                        </li>
+                    </ol>
+                </li>
+            </ul>
         </section>
         
         <!-- <section>

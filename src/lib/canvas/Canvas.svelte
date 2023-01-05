@@ -24,32 +24,32 @@
         width = canvas.width;
         height = canvas.height;
         
-    
-        canvas.addEventListener("mousemove", function (e) {
+        
+        canvas.addEventListener("pointermove", function (e) {
             findxy('move', e)
         }, false);
-        canvas.addEventListener("mousedown", function (e) {
+        canvas.addEventListener("pointerdown", function (e) {
             findxy('down', e)
         }, false);
-        canvas.addEventListener("mouseup", function (e) {
+        canvas.addEventListener("pointerup", function (e) {
             findxy('up', e)
         }, false);
-        canvas.addEventListener("mouseout", function (e) {
+        canvas.addEventListener("pointercancel", function (e) {
             findxy('out', e)
         }, false);
         
-        canvas.addEventListener("touchmove", function (e) {
-            findxy('move', e)
-        }, false);
-        canvas.addEventListener("touchstart", function (e) {
-            findxy('down', e)
-        }, false);
-        canvas.addEventListener("touchend", function (e) {
-            findxy('up', e)
-        }, false);
-        canvas.addEventListener("touchcancel", function (e) {
-            findxy('out', e)
-        }, false);
+        // canvas.addEventListener("touchmove", function (e) {
+        //     findxy('move', e)
+        // }, false);
+        // canvas.addEventListener("touchstart", function (e) {
+        //     findxy('down', e)
+        // }, false);
+        // canvas.addEventListener("touchend", function (e) {
+        //     findxy('up', e)
+        // }, false);
+        // canvas.addEventListener("touchcancel", function (e) {
+        //     findxy('out', e)
+        // }, false);
     }
     const sqrDist = (p1, p2) => {
         return (p1.x - p2.x)*(p1.x - p2.x) + (p1.y - p2.y)*(p1.y - p2.y)
@@ -313,31 +313,29 @@
         // let scaleY = canvas.height/rect.height;
         // console.log(canvas.width/boundingRect.width, canvas.height/boundingRect.height)
         // console.log(scaleX, scaleY)
-        let clientx;
-        let clienty;
-        switch(evt.type) {
-            case 'touchstart':
-            case 'touchmove':
-            case 'touchend':
-            case 'touchcancel': {
-                clientx = evt.touches[0].clientX;
-                clienty = evt.touches[0].clientY;
-                break;
-            }
-            case 'mousedown':
-            case 'mousemove':
-            case 'mouseup':
-            case 'mouseleave': {
-                clientx = evt.clientX;
-                clienty = evt.clientY;
-                break;
-            }
-        }
-        // console.log(clientx, clienty)
-        // return {
-        //     x: clientx,
-        //     y: clienty
+        // let clientx;
+        // let clienty;
+        // switch(evt.type) {
+        //     case 'touchstart':
+        //     case 'touchmove':
+        //     case 'touchend':
+        //     case 'touchcancel': {
+        //         clientx = evt.touches[0].clientX;
+        //         clienty = evt.touches[0].clientY;
+        //         break;
+        //     }
+        //     case 'mousedown':
+        //     case 'mousemove':
+        //     case 'mouseup':
+        //     case 'mouseleave': {
+        //         clientx = evt.clientX;
+        //         clienty = evt.clientY;
+        //         break;
+        //     }
         // }
+
+        let clientx = evt.clientX;
+        let clienty = evt.clientY;
         return {
             x: (clientx - boundingRect.left) * scaleX,
             y: (clienty - boundingRect.top) * scaleY
@@ -434,6 +432,7 @@
 <style>
     canvas {
         cursor: crosshair;
+        touch-action: none;
     }
 </style>
 <!-- <div class="colors">

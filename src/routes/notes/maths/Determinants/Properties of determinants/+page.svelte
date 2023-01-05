@@ -82,7 +82,32 @@
     <article class:absolute={$presentationMode} bind:this={$presentation}>
         <h1>{$selectedSection}</h1>
         <section>
-            <p>Coming soon...</p>
+            <ul>
+                <li>
+                    \(|A^T| = |A|\)
+                </li>
+                <li>
+                    If we interchange any two rows (or columns), then sign of determinant changes. \[|A(R_i\leftrightarrow R_j)| = - |A|\]
+                </li>
+                <li>
+                    If any two rows or any two columns are identical or propertional, then value of determinant is zero. \[|A(R_i = kR_j)| = 0\]
+                </li>
+                <li>
+                    If we multiply each element of a row or a column of a determinant by constant \(k\), then value of determinant is multiplied by \(k\). \[|A(R_i \to kR_i)| = k|A|\]
+                </li>
+                <li>
+                    Multiplying a determinant by \(k\) means multiplying elements of only one row or one column by \(k\).
+                </li>
+                <li>
+                    If \(A = {TeX.mat('a', 'i', 'j', 3, 3)}\), then \(\vert k\cdot A\vert = k^3\vert A\vert\)
+                </li>
+                <li>
+                    If elements of a row or a column in a determinant can be expressed as sum of two or more elements, then the given determinant can be expressed as sum of two or more determinants (other rows remain the same).
+                </li>
+                <li>
+                    If to each element of a row or a column of a determinant the equimultiples of corresponding elements of other rows or columns are added, then value of determinant remains same. \[|A(R_i\to R_i + kR_j)| = |A|\]
+                </li>
+            </ul>
         </section>
         
         <!-- <section>

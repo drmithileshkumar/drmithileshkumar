@@ -37,7 +37,7 @@
                     left: 0,
                     behaviour: 'smooth'
                 });
-                if($overlay) $overlay.scrollTo({
+                if($overlay && $presentation) $overlay.scrollTo({
                     top: $presentation.scrollHeight,
                     left: 0,
                     behaviour: 'smooth'

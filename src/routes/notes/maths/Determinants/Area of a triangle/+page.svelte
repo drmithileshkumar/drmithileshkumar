@@ -83,7 +83,13 @@
         <h1>{$selectedSection}</h1>
         <section>
             <div class="definition">
-                <p>Coming soon...</p>
+                <p>Area of a triangle whose vertices are \((x_1, y_1), (x_2, y_2), (x_3, y_3)\) is equal to \[{TeX.frac(1, 2)}[x_1(y_2-y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)]\] which is equal to {`\\[\\Delta = \\frac{1}{2}
+                    \\left | \\begin{matrix}
+                    x_1 & y_1 & 1\\\\
+                    x_2 & y_2 & 1\\\\
+                    x_3 & y_3 & 1
+                    \\end{matrix}\\right |
+                    \\]`}</p>
             </div>
         </section>
         

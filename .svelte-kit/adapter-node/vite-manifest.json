@@ -532,7 +532,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-03d834cb.css",
-      "_app/immutable/assets/Canvas-130ef6bf.css"
+      "_app/immutable/assets/Canvas-efdd6316.css"
     ]
   },
   "src/routes/notes/maths/conic/+page.js": {
@@ -657,6 +657,165 @@
       "_index2.js"
     ]
   },
+  "src/routes/notes/maths/Continuity and differentiability/Continuity/+page.svelte": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Continuity/_page.svelte.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Continuity/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Continuity and differentiability/Continuity/+page.js": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Continuity/_page.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Continuity/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/+page.svelte": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/_page.svelte.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/+page.js": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/_page.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Continuity and differentiability/Differentiability/+page.svelte": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Differentiability/_page.svelte.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Differentiability/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Continuity and differentiability/Differentiability/+page.js": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Differentiability/_page.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Differentiability/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/+page.svelte": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/_page.svelte.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/+page.js": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/_page.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.svelte": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Logarithmic differentiation/_page.svelte.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.js": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Logarithmic differentiation/_page.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Continuity and differentiability/Mean value theorem/+page.svelte": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Mean value theorem/_page.svelte.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Mean value theorem/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Continuity and differentiability/Mean value theorem/+page.js": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Mean value theorem/_page.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Mean value theorem/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Continuity and differentiability/Second order derivative/+page.svelte": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Second order derivative/_page.svelte.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Second order derivative/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Continuity and differentiability/Second order derivative/+page.js": {
+    "file": "entries/pages/notes/maths/Continuity and differentiability/Second order derivative/_page.js",
+    "src": "src/routes/notes/maths/Continuity and differentiability/Second order derivative/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "src/routes/notes/maths/Determinants/Adjoint and inverse of a matrix/+page.svelte": {
     "file": "entries/pages/notes/maths/Determinants/Adjoint and inverse of a matrix/_page.svelte.js",
     "src": "src/routes/notes/maths/Determinants/Adjoint and inverse of a matrix/+page.svelte",
@@ -664,6 +823,7 @@
     "imports": [
       "_index.js",
       "_stores2.js",
+      "_constants.js",
       "_stores.js"
     ],
     "css": [
@@ -686,6 +846,7 @@
     "imports": [
       "_index.js",
       "_stores2.js",
+      "_constants.js",
       "_stores.js"
     ],
     "css": [
@@ -708,6 +869,7 @@
     "imports": [
       "_index.js",
       "_stores2.js",
+      "_constants.js",
       "_stores.js"
     ],
     "css": [
@@ -753,6 +915,7 @@
     "imports": [
       "_index.js",
       "_stores2.js",
+      "_constants.js",
       "_stores.js"
     ],
     "css": [
@@ -775,6 +938,7 @@
     "imports": [
       "_index.js",
       "_stores2.js",
+      "_constants.js",
       "_stores.js"
     ],
     "css": [
@@ -2347,7 +2511,7 @@
       "_index3.js"
     ],
     "css": [
-      "_app/immutable/assets/Canvas-130ef6bf.css"
+      "_app/immutable/assets/Canvas-efdd6316.css"
     ]
   },
   "_Select.js": {

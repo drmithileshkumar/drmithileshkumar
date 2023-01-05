@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/notes/maths/Straight lines/Slope of a line/_page.js';
+import * as universal from '../entries/pages/notes/maths/Sets/Venn diagrams/_page.js';
 
 export const index = 100;
-export const component = async () => (await import('../entries/pages/notes/maths/Straight lines/Slope of a line/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/notes/maths/Straight lines/Slope of a line/_page.svelte-3eeadb25.js';
+export const component = async () => (await import('../entries/pages/notes/maths/Sets/Venn diagrams/_page.svelte.js')).default;
+export const file = '_app/immutable/components/pages/notes/maths/Sets/Venn diagrams/_page.svelte-3ba76e83.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/notes/maths/Straight lines/Slope of a line/_page.svelte-3eeadb25.js","_app/immutable/chunks/index-d6181b86.js","_app/immutable/chunks/stores-40da1a8b.js","_app/immutable/chunks/index-2f18dd9f.js","_app/immutable/chunks/constants-79d6a0a7.js","_app/immutable/chunks/stores-ec708fd5.js","_app/immutable/chunks/singletons-7f452f10.js","_app/immutable/modules/pages/notes/maths/Straight lines/Slope of a line/_page.js-4bd45e04.js","_app/immutable/chunks/index-35a671a5.js","_app/immutable/chunks/control-f5b05b5f.js","_app/immutable/chunks/_page-f4a0b093.js"];
-export const stylesheets = ["_app/immutable/assets/Practice-ceaad90d.css","_app/immutable/assets/Message-1e964222.css"];
+export const imports = ["_app/immutable/components/pages/notes/maths/Sets/Venn diagrams/_page.svelte-3ba76e83.js","_app/immutable/chunks/index-d6181b86.js","_app/immutable/chunks/stores-40da1a8b.js","_app/immutable/chunks/index-2f18dd9f.js","_app/immutable/chunks/stores-ec708fd5.js","_app/immutable/chunks/singletons-7f452f10.js","_app/immutable/modules/pages/notes/maths/Sets/Venn diagrams/_page.js-4bd45e04.js","_app/immutable/chunks/index-35a671a5.js","_app/immutable/chunks/control-f5b05b5f.js","_app/immutable/chunks/_page-7d69c878.js"];
+export const stylesheets = ["_app/immutable/assets/_page-bd923973.css","_app/immutable/assets/Practice-ceaad90d.css","_app/immutable/assets/Message-1e964222.css"];
 export const fonts = [];

@@ -82,9 +82,20 @@
     <article class:absolute={$presentationMode} bind:this={$presentation}>
         <h1>{$selectedSection}</h1>
         <section>
-            <div class="definition">
-                <p>Coming soon...</p>
-            </div>
+            <ul>
+                <li>
+                    Minor of an element \({TeX.sub('a', 'ij')}\) of the determinant of matrix \(A\) is the determinant obtained by deleting \(i\)the row and \(j\)th column and denoted by \({TeX.sub('M', 'ij')}\).
+                </li>
+                <li>
+                    Cofactor of \({TeX.sub('a', 'ij')}\) is given by \({TeX.sub('A', 'ij')} = {TeX.pow('(-1)', 'i + j')}{TeX.sub('M', 'ij')}\) 
+                </li>
+                <li>
+                    For any row \(i\), \(|A| = {TeX.sum('j')}{TeX.sub('a', 'ij')}{TeX.sub('A', 'ij')}\)
+                </li>
+                <li>
+                    For any row \(i\neq k\), \({TeX.sum('j')}{TeX.sub('a', 'ij')}{TeX.sub('A', 'kj')} = 0\)
+                </li>
+            </ul>
         </section>
         
         <!-- <section>

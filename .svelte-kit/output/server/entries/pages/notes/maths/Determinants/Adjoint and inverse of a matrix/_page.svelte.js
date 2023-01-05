@@ -1,6 +1,7 @@
 import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, r as add_classes } from "../../../../../../chunks/index.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
-/* empty css                                                               *//* empty css                                                              */import { p as page } from "../../../../../../chunks/stores.js";
+/* empty css                                                               *//* empty css                                                              */import { T as TeX } from "../../../../../../chunks/constants.js";
+import { p as page } from "../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
@@ -25,7 +26,12 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="${"definition"}"><p>Coming soon...</p></div></section>
+        <section><ul><li>The adjoint of a matrix \\(A\\) is the matrix of cofactors of \\(A\\), i.e. \\[${escape(TeX.sub("adj(A)", "ij"))} = ${escape(TeX.sub("A", "ij"))}\\]
+                </li>
+                <li>\\(${escape(TeX.pow("A"))} = ${escape(TeX.dfrac(1, "|A|"))}adj(A)\\)
+                </li>
+                <li>A square matrix \\(A\\) is said to be singular or non-singular according as \\(|A| = 0\\) or \\(|A|\\neq 0\\)
+                </li></ul></section>
         
         
         

@@ -82,9 +82,17 @@
     <article class:absolute={$presentationMode} bind:this={$presentation}>
         <h1>{$selectedSection}</h1>
         <section>
-            <div class="definition">
-                <p>Coming soon...</p>
-            </div>
+            <ul>
+                <li>
+                    The adjoint of a matrix \(A\) is the matrix of cofactors of \(A\), i.e. \[{TeX.sub('adj(A)', 'ij')} = {TeX.sub('A', 'ij')}\]
+                </li>
+                <li>
+                    \({TeX.pow('A')} = {TeX.dfrac(1, '|A|')}adj(A)\)
+                </li>
+                <li>
+                    A square matrix \(A\) is said to be singular or non-singular according as \(|A| = 0\) or \(|A|\neq 0\)
+                </li>
+            </ul>
         </section>
         
         <!-- <section>

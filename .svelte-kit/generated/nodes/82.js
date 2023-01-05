@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Sets/Complement of a set/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Relations and functions 12/Types of relations/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Sets/Complement of a set/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Relations and functions 12/Types of relations/+page.svelte";

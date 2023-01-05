@@ -1,6 +1,7 @@
 import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, r as add_classes } from "../../../../../../chunks/index.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
-/* empty css                                                               *//* empty css                                                              */import { p as page } from "../../../../../../chunks/stores.js";
+/* empty css                                                               *//* empty css                                                              */import { T as TeX } from "../../../../../../chunks/constants.js";
+import { p as page } from "../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
@@ -25,7 +26,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="${"definition"}"><p>Coming soon...</p></div></section>
+        <section><ul><li>Minor of an element \\(${escape(TeX.sub("a", "ij"))}\\) of the determinant of matrix \\(A\\) is the determinant obtained by deleting \\(i\\)the row and \\(j\\)th column and denoted by \\(${escape(TeX.sub("M", "ij"))}\\).
+                </li>
+                <li>Cofactor of \\(${escape(TeX.sub("a", "ij"))}\\) is given by \\(${escape(TeX.sub("A", "ij"))} = ${escape(TeX.pow("(-1)", "i + j"))}${escape(TeX.sub("M", "ij"))}\\) 
+                </li>
+                <li>For any row \\(i\\), \\(|A| = ${escape(TeX.sum("j"))}${escape(TeX.sub("a", "ij"))}${escape(TeX.sub("A", "ij"))}\\)
+                </li>
+                <li>For any row \\(i\\neq k\\), \\(${escape(TeX.sum("j"))}${escape(TeX.sub("a", "ij"))}${escape(TeX.sub("A", "kj"))} = 0\\)
+                </li></ul></section>
         
         
         
