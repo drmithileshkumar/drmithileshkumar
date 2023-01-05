@@ -26,14 +26,17 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><ul><li>If \\(A = ${escape(TeX.mat())}\\) and \\(B = ${escape(TeX.mat("b"))}\\), then \\(A + B = C = ${escape(TeX.mat("c"))}\\), where \\[${escape(TeX.sub("c", "ij"))} = ${escape(TeX.sub("a", "ij"))} + ${escape(TeX.sub("b", "ij"))}\\]
-                </li>
-                <li>If \\(A = ${escape(TeX.mat())}\\) and \\(B = ${escape(TeX.mat("b"))}\\), then \\(A - B = C = ${escape(TeX.mat("c"))}\\), where \\[${escape(TeX.sub("c", "ij"))} = ${escape(TeX.sub("a", "ij"))} - ${escape(TeX.sub("b", "ij"))}\\]
-                </li>
-                <li>If \\(A = ${escape(TeX.mat())}\\) and a scalar constant \\(k\\), then \\(kA = C = ${escape(TeX.mat("c"))}\\), where \\[${escape(TeX.sub("c", "ij"))} = k${escape(TeX.sub("a", "ij"))}\\]
-                </li>
-                <li>If \\(A = ${escape(TeX.mat())}\\) and \\(B = ${escape(TeX.mat("b", "j", "k", "n", "p"))}\\), then \\(AB = C = ${escape(TeX.mat("c", "i", "k", "m", "p"))}\\), where \\[${escape(TeX.sub("c", "ik"))} = ${escape(TeX.sum("j = 1", "n"))}${escape(TeX.sub("a", "ij"))}${escape(TeX.sub("b", "jk"))}\\]
-                </li></ul></section>
+        <section><div class="${"definition"}"><p>The exponential function with positive base \\(b${escape(TeX.more)} 1\\) is the function \\[y = f(x) = b^x\\]
+                </p></div>
+            <div class="${"definition"}"><p>Let \\(b${escape(TeX.more)} 1\\) be a real number. Then we say logarithm of \\(a\\) to base \\(b\\) is \\(x\\) if \\(b^x = a\\).
+                </p></div>
+            <ul><li>${escape(`\\(\\log_a p = \\dfrac{\\log_b p}{\\log_b a}\\)`)}</li>
+                <li>${escape(`\\(\\log_b pq = \\log_b p + \\log_b q\\)`)}</li>
+                <li>${escape(`\\(\\log_b \\frac{p}{q} = \\log_b p - \\log_b q\\)`)}</li></ul>
+            <div class="${"theorem"}"><ul><li>The derivative of \\(e^x\\) w.r.t., \\(x\\) is \\(e^x\\).
+                    </li>
+                    <li>The derivative of \\(\\log x\\) w.r.t., \\(x\\) is \\(1/x\\).
+                    </li></ul></div></section>
         
         
         

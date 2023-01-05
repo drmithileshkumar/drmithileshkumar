@@ -1,7 +1,6 @@
 import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, r as add_classes } from "../../../../../../chunks/index.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
-/* empty css                                                               *//* empty css                                                              */import { T as TeX } from "../../../../../../chunks/constants.js";
-import { p as page } from "../../../../../../chunks/stores.js";
+/* empty css                                                               *//* empty css                                                              */import { p as page } from "../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
@@ -26,14 +25,12 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><ul><li>\\(A\\) is a symmetric matrix if \\(A^T = A\\)
-                </li>
-                <li>\\(A\\) is a skew symmetric matrix if \\(A^T = -A\\)
-                </li>
-                <li>For any square matrix \\(A\\) with real number entries, \\(A+A^T\\) is a symmetric matrix and \\(A-A^T\\) is a skew symmetric matrix.
-                </li>
-                <li>Any square matrix can be expressed as the sum of a symmetric and a skew symmetric matrix. \\[A = ${escape(TeX.frac(1, 2))}(A + A^T) + ${escape(TeX.frac(1, 2))}(A - A^T)\\]
-                </li></ul></section>
+        <section><p>Consider functions of the form ${escape(`\\[y = f(x) = [u(x)]^{v(x)}\\]`)} By taking logarithm (to base \\(e\\)) the above may be written as ${escape(`\\[\\log y = v(x) \\log [u(x)]\\]`)} Differentiating this we get ${escape(`\\[
+                    \\begin{eqnarray}
+                    \\frac{1}{y}\\cdot\\frac{dy}{dx} &=& v(x)\\cdot\\frac{1}{u(x)}\\cdot u'(x) + v'(x)\\cdot\\log [u(x)]\\\\
+                    \\implies \\frac{dy}{dx} &=& y\\Big[\\frac{v(x)}{u(x)}\\cdot u'(x) + v'(x)\\cdot\\log[u(x)]\\Big]
+                    \\end{eqnarray}
+                    \\]`)}</p></section>
         
         
         

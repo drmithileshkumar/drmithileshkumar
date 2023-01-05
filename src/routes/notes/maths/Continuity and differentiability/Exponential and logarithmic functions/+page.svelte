@@ -82,20 +82,37 @@
     <article class:absolute={$presentationMode} bind:this={$presentation}>
         <h1>{$selectedSection}</h1>
         <section>
+            <div class="definition">
+                <p>
+                    The exponential function with positive base \(b{TeX.more} 1\) is the function \[y = f(x) = b^x\]
+                </p>
+            </div>
+            <div class="definition">
+                <p>
+                    Let \(b{TeX.more} 1\) be a real number. Then we say logarithm of \(a\) to base \(b\) is \(x\) if \(b^x = a\).
+                </p>
+            </div>
             <ul>
                 <li>
-                    If \(A = {TeX.mat()}\) and \(B = {TeX.mat('b')}\), then \(A + B = C = {TeX.mat('c')}\), where \[{TeX.sub('c', 'ij')} = {TeX.sub('a', 'ij')} + {TeX.sub('b', 'ij')}\]
+                    {`\\(\\log_a p = \\dfrac{\\log_b p}{\\log_b a}\\)`}
                 </li>
                 <li>
-                    If \(A = {TeX.mat()}\) and \(B = {TeX.mat('b')}\), then \(A - B = C = {TeX.mat('c')}\), where \[{TeX.sub('c', 'ij')} = {TeX.sub('a', 'ij')} - {TeX.sub('b', 'ij')}\]
+                    {`\\(\\log_b pq = \\log_b p + \\log_b q\\)`}
                 </li>
                 <li>
-                    If \(A = {TeX.mat()}\) and a scalar constant \(k\), then \(kA = C = {TeX.mat('c')}\), where \[{TeX.sub('c', 'ij')} = k{TeX.sub('a', 'ij')}\]
-                </li>
-                <li>
-                    If \(A = {TeX.mat()}\) and \(B = {TeX.mat('b', 'j', 'k', 'n', 'p')}\), then \(AB = C = {TeX.mat('c', 'i', 'k', 'm', 'p')}\), where \[{TeX.sub('c', 'ik')} = {TeX.sum('j = 1', 'n')}{TeX.sub('a', 'ij')}{TeX.sub('b', 'jk')}\]
+                    {`\\(\\log_b \\frac{p}{q} = \\log_b p - \\log_b q\\)`}
                 </li>
             </ul>
+            <div class="theorem">
+                <ul>
+                    <li>
+                        The derivative of \(e^x\) w.r.t., \(x\) is \(e^x\).
+                    </li>
+                    <li>
+                        The derivative of \(\log x\) w.r.t., \(x\) is \(1/x\).
+                    </li>
+                </ul>
+            </div>
         </section>
         
         <!-- <section>

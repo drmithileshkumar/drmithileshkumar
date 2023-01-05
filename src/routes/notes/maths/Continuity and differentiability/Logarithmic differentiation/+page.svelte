@@ -82,20 +82,14 @@
     <article class:absolute={$presentationMode} bind:this={$presentation}>
         <h1>{$selectedSection}</h1>
         <section>
-            <ul>
-                <li>
-                    \(A\) is a symmetric matrix if \(A^T = A\)
-                </li>
-                <li>
-                    \(A\) is a skew symmetric matrix if \(A^T = -A\)
-                </li>
-                <li>
-                    For any square matrix \(A\) with real number entries, \(A+A^T\) is a symmetric matrix and \(A-A^T\) is a skew symmetric matrix.
-                </li>
-                <li>
-                    Any square matrix can be expressed as the sum of a symmetric and a skew symmetric matrix. \[A = {TeX.frac(1, 2)}(A + A^T) + {TeX.frac(1, 2)}(A - A^T)\]
-                </li>
-            </ul>
+            <p>
+                Consider functions of the form {`\\[y = f(x) = [u(x)]^{v(x)}\\]`} By taking logarithm (to base \(e\)) the above may be written as {`\\[\\log y = v(x) \\log [u(x)]\\]`} Differentiating this we get {`\\[
+                    \\begin{eqnarray}
+                    \\frac{1}{y}\\cdot\\frac{dy}{dx} &=& v(x)\\cdot\\frac{1}{u(x)}\\cdot u'(x) + v'(x)\\cdot\\log [u(x)]\\\\
+                    \\implies \\frac{dy}{dx} &=& y\\Big[\\frac{v(x)}{u(x)}\\cdot u'(x) + v'(x)\\cdot\\log[u(x)]\\Big]
+                    \\end{eqnarray}
+                    \\]`}
+            </p>
         </section>
         
         <!-- <section>

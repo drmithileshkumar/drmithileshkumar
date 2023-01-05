@@ -1,7 +1,6 @@
 import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, r as add_classes } from "../../../../../../chunks/index.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
-/* empty css                                                               *//* empty css                                                              */import { T as TeX } from "../../../../../../chunks/constants.js";
-import { p as page } from "../../../../../../chunks/stores.js";
+/* empty css                                                               *//* empty css                                                              */import { p as page } from "../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
@@ -26,17 +25,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="${"definition"}"><p>If \\(A = ${escape(TeX.mat())}\\), then the matrix obtained by interchanging the rows and columns of \\(A\\) is called the <em>transpose</em> of \\(A\\). Transpose of the matrix \\(A\\) is denoted by \\(A&#39;\\) or \\(A^T\\). If \\(A = ${escape(TeX.mat())}\\), then \\(A&#39; = ${escape(TeX.mat("a", "j", "i", "n", "m"))}\\)
-                </p></div></section>
-        <section><h2>Properties of transpose of the matrices</h2>
-            <ol><li>\\((A&#39;)&#39; = A\\)
-                </li>
-                <li>\\((kA)&#39; = kA&#39;\\) (where \\(k\\) is a constant)
-                </li>
-                <li>\\((A + B)&#39; = A&#39; + B&#39;\\)
-                </li>
-                <li>\\((AB)&#39; = B&#39;A&#39;\\)
-                </li></ol></section>
+        <section><div class="${"definition"}"><p>The second order derivative is the derivative of derivative of the function.
+                    ${escape(`\\[\\frac{d^2y}{dx^2} = \\frac{d}{dx}\\big(\\frac{dy}{dx}\\big) = f''(x)\\]`)}</p></div></section>
+        
         
         
         </article>`;

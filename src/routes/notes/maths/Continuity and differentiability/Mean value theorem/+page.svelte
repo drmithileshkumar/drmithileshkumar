@@ -84,42 +84,14 @@
         <section>
             <ul>
                 <li>
-                    <strong>Column matrix</strong>: A matrix is said to be a <em>column matrix</em> if it has only one column.
+                    <strong>Rolle's Theorem:</strong> If \(f:[a,b]\to R\) is continuous on \([a,b]\) and differentiable on \((a, b)\) such that \(f(a) = f(b)\), then there exists some \(c\in (a,b)\) such that \(f'(c) = 0\)
                 </li>
                 <li>
-                    <strong>Row matrix</strong>: A matrix is said to be a <em>row matrix</em> if it has only one row.
-                </li>
-                <li>
-                    <strong>Square matrix</strong>: A matrix is said to be a <em>square matrix</em> if it has same number of rows and columns.
-                </li>
-                <li>
-                    <strong>Diagonal matrix</strong>: A square matrix is said to be a <em>diagonal matrix</em> if all its non-diagonal elements are zero.
-                </li>
-                <li>
-                    <strong>Scalar matrix</strong>: A diagonal matrix is said to be a <em>scalar matrix</em> if its diagonal elements are equal.
-                </li>
-                <li>
-                    <strong>Identity matrix</strong>: A square matrix is said to be a <em>identity matrix</em> if its diagonal elements are equal to 1.
-                </li>
-                <li>
-                    <strong>Zero matrix</strong>: A matrix is said to be a <em>zero matrix</em> if all its elements are zero.
+                    <strong>Mean Value Theorem:</strong> If \(f:[a,b]\to R\) is continuous on \([a,b]\) and differentiable on \((a,b)\), then there exists some \(c\in (a,b)\) such that \[f'(c) = {TeX.frac('f(b) - f(a)', 'b-a')}\] 
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Equality of matrices</h2>
-            <p>
-                Two matrices \(A\) and \(B\) are said to be equal if
-            </p>
-            <ol>
-                <li>
-                    they are of the same order
-                </li>
-                <li>
-                    each element of \(A\) is equal to the corresponding elements of \(B\), that is \({TeX.sub('a', 'ij')} = {TeX.sub('b', 'ij')}\) for all \(i\) and \(j\).
-                </li>
-            </ol>
-        </section>
+        
         <!-- <section>
             <h3 class="examples">Examples</h3>
             <ul>

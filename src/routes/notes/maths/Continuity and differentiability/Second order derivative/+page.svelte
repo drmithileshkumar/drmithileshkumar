@@ -84,27 +84,12 @@
         <section>
             <div class="definition">
                 <p>
-                    If \(A = {TeX.mat()}\), then the matrix obtained by interchanging the rows and columns of \(A\) is called the <em>transpose</em> of \(A\). Transpose of the matrix \(A\) is denoted by \(A'\) or \(A^T\). If \(A = {TeX.mat()}\), then \(A' = {TeX.mat('a', 'j', 'i', 'n', 'm')}\)
+                    The second order derivative is the derivative of derivative of the function.
+                    {`\\[\\frac{d^2y}{dx^2} = \\frac{d}{dx}\\big(\\frac{dy}{dx}\\big) = f''(x)\\]`}
                 </p>
             </div>
         </section>
-        <section>
-            <h2>Properties of transpose of the matrices</h2>
-            <ol>
-                <li>
-                    \((A')' = A\)
-                </li>
-                <li>
-                    \((kA)' = kA'\) (where \(k\) is a constant)
-                </li>
-                <li>
-                    \((A + B)' = A' + B'\)
-                </li>
-                <li>
-                    \((AB)' = B'A'\)
-                </li>
-            </ol>
-        </section>
+        
         <!-- <section>
             <h3 class="examples">Examples</h3>
             <ul>

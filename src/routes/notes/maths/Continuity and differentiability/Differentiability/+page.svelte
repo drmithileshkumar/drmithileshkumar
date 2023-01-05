@@ -83,11 +83,45 @@
         <h1>{$selectedSection}</h1>
         <section>
             <div class="definition">
-                <p>A <em>matrix</em> is an ordered rectangular array of numbers or functions. The numbers or functions are called the elements or the entries of the matrix.</p>
+                <p>Suppose \(f\) is a real function. Then, the function defined by {`\\[
+                    f'(x) = \\lim_{h\\to 0}\\frac{f(x + h) - f(x)}{h}\\]`} wherever the limit exists is defined to be the derivative of \(f\).</p>
             </div>
-            <div class="definition">
-                A matrix having \(m\) rows and \(n\) columns is called a matrix of <em>order</em> \(m\times n\) or simply \(m\times n\) matrix (read as an \(m\) by \(n\) matrix).
+            <div class="theorem">
+                <p>
+                    If a function \(f\) is differentiable at a point \(c\), then it is also continuous at that point.
+                </p>
             </div>
+            <div class="theorem">
+                <p>
+                    <strong>Chain Rule:</strong> Let \(f\) be a real valued function which is a composite of two functions \(u\) and \(v\); i.e. \(f = v\circ u\). Suppose \(t = u(x)\) and if both \({TeX.dfrac('dt', 'dx')}\) and \({TeX.dfrac('dv', 'dt')}\) exist, we have {`\\[\\frac{df}{dx} = \\frac{dv}{dt}\\cdot \\frac{dt}{dx}\\]`}
+                </p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        \({TeX.dfrac('d', 'dx')}({TeX.asin}x) = {TeX.dfrac(1, TeX.sqrt('1-x^2'))}\)
+                    </td>
+                    <td>
+                        \({TeX.dfrac('d', 'dx')}({TeX.acos}x) = -{TeX.dfrac(1, TeX.sqrt('1-x^2'))}\)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \({TeX.dfrac('d', 'dx')}({TeX.atan}x) = {TeX.dfrac(1, '1+x^2')}\)
+                    </td>
+                    <td>
+                        \({TeX.dfrac('d', 'dx')}({TeX.acot}x) = -{TeX.dfrac(1, '1+x^2')}\)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \({TeX.dfrac('d', 'dx')}({TeX.asec}x) = {TeX.dfrac(1, 'x'+TeX.sqrt('1-x^2'))}\)
+                    </td>
+                    <td>
+                        \({TeX.dfrac('d', 'dx')}({TeX.acosec}x) = -{TeX.dfrac(1, 'x'+TeX.sqrt('1-x^2'))}\)
+                    </td>
+                </tr>
+            </table>
         </section>
         
         <!-- <section>

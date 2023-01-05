@@ -82,22 +82,9 @@
     <article class:absolute={$presentationMode} bind:this={$presentation}>
         <h1>{$selectedSection}</h1>
         <section>
-            <ul>
-                <li>
-                    Elementary operations of a matrix are as follows:
-                    <ol>
-                        <li>
-                            \(R_i\leftrightarrow R_j\) or \(C_i\leftrightarrow C_j\)
-                        </li>
-                        <li>
-                            \(R_i\to kR_i\) or \(C_i\to kC_i\)
-                        </li>
-                        <li>
-                            \(R_i\to R_i + kR_j\) or \(C_i\to C_i + kC_j\)
-                        </li>
-                    </ol>
-                </li>
-            </ul>
+            <p>
+                Let \(x = f(t)\) and \(y = g(t)\), then {`\\[\\frac{dy}{dx} = \\frac{g'(t)}{f'(t)}~(f'(t)\\neq 0)\\]`}
+            </p>
         </section>
         
         <!-- <section>

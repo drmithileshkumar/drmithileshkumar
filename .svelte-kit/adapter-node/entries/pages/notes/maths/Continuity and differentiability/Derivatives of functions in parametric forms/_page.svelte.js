@@ -25,13 +25,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><ul><li>Elementary operations of a matrix are as follows:
-                    <ol><li>\\(R_i\\leftrightarrow R_j\\) or \\(C_i\\leftrightarrow C_j\\)
-                        </li>
-                        <li>\\(R_i\\to kR_i\\) or \\(C_i\\to kC_i\\)
-                        </li>
-                        <li>\\(R_i\\to R_i + kR_j\\) or \\(C_i\\to C_i + kC_j\\)
-                        </li></ol></li></ul></section>
+        <section><p>Let \\(x = f(t)\\) and \\(y = g(t)\\), then ${escape(`\\[\\frac{dy}{dx} = \\frac{g'(t)}{f'(t)}~(f'(t)\\neq 0)\\]`)}</p></section>
         
         
         
