@@ -1135,6 +1135,212 @@
       "_index2.js"
     ]
   },
+  "src/routes/notes/maths/Integrals/Definite integral/+page.svelte": {
+    "file": "entries/pages/notes/maths/Integrals/Definite integral/_page.svelte.js",
+    "src": "src/routes/notes/maths/Integrals/Definite integral/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Definite integral/+page.js": {
+    "file": "entries/pages/notes/maths/Integrals/Definite integral/_page.js",
+    "src": "src/routes/notes/maths/Integrals/Definite integral/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Evaluation of definite integrals by substitution/+page.svelte": {
+    "file": "entries/pages/notes/maths/Integrals/Evaluation of definite integrals by substitution/_page.svelte.js",
+    "src": "src/routes/notes/maths/Integrals/Evaluation of definite integrals by substitution/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Evaluation of definite integrals by substitution/+page.js": {
+    "file": "entries/pages/notes/maths/Integrals/Evaluation of definite integrals by substitution/_page.js",
+    "src": "src/routes/notes/maths/Integrals/Evaluation of definite integrals by substitution/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Fundamental theorem of calculus/+page.svelte": {
+    "file": "entries/pages/notes/maths/Integrals/Fundamental theorem of calculus/_page.svelte.js",
+    "src": "src/routes/notes/maths/Integrals/Fundamental theorem of calculus/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Fundamental theorem of calculus/+page.js": {
+    "file": "entries/pages/notes/maths/Integrals/Fundamental theorem of calculus/_page.js",
+    "src": "src/routes/notes/maths/Integrals/Fundamental theorem of calculus/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Integrals of some particular functions/+page.svelte": {
+    "file": "entries/pages/notes/maths/Integrals/Integrals of some particular functions/_page.svelte.js",
+    "src": "src/routes/notes/maths/Integrals/Integrals of some particular functions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Integrals of some particular functions/+page.js": {
+    "file": "entries/pages/notes/maths/Integrals/Integrals of some particular functions/_page.js",
+    "src": "src/routes/notes/maths/Integrals/Integrals of some particular functions/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Integration as an inverse process of differentiation/+page.svelte": {
+    "file": "entries/pages/notes/maths/Integrals/Integration as an inverse process of differentiation/_page.svelte.js",
+    "src": "src/routes/notes/maths/Integrals/Integration as an inverse process of differentiation/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Integration as an inverse process of differentiation/+page.js": {
+    "file": "entries/pages/notes/maths/Integrals/Integration as an inverse process of differentiation/_page.js",
+    "src": "src/routes/notes/maths/Integrals/Integration as an inverse process of differentiation/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Integration by partial fractions/+page.svelte": {
+    "file": "entries/pages/notes/maths/Integrals/Integration by partial fractions/_page.svelte.js",
+    "src": "src/routes/notes/maths/Integrals/Integration by partial fractions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Integration by partial fractions/+page.js": {
+    "file": "entries/pages/notes/maths/Integrals/Integration by partial fractions/_page.js",
+    "src": "src/routes/notes/maths/Integrals/Integration by partial fractions/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Integration by parts/+page.svelte": {
+    "file": "entries/pages/notes/maths/Integrals/Integration by parts/_page.svelte.js",
+    "src": "src/routes/notes/maths/Integrals/Integration by parts/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Integration by parts/+page.js": {
+    "file": "entries/pages/notes/maths/Integrals/Integration by parts/_page.js",
+    "src": "src/routes/notes/maths/Integrals/Integration by parts/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Methods of integration/+page.svelte": {
+    "file": "entries/pages/notes/maths/Integrals/Methods of integration/_page.svelte.js",
+    "src": "src/routes/notes/maths/Integrals/Methods of integration/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Methods of integration/+page.js": {
+    "file": "entries/pages/notes/maths/Integrals/Methods of integration/_page.js",
+    "src": "src/routes/notes/maths/Integrals/Methods of integration/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Some properties of definite integrals/+page.svelte": {
+    "file": "entries/pages/notes/maths/Integrals/Some properties of definite integrals/_page.svelte.js",
+    "src": "src/routes/notes/maths/Integrals/Some properties of definite integrals/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Integrals/Some properties of definite integrals/+page.js": {
+    "file": "entries/pages/notes/maths/Integrals/Some properties of definite integrals/_page.js",
+    "src": "src/routes/notes/maths/Integrals/Some properties of definite integrals/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "src/routes/notes/maths/Inverse trigonometric functions/Basic concepts/+page.svelte": {
     "file": "entries/pages/notes/maths/Inverse trigonometric functions/Basic concepts/_page.svelte.js",
     "src": "src/routes/notes/maths/Inverse trigonometric functions/Basic concepts/+page.svelte",

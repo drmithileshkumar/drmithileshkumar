@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Relations and functions 12/Binary operations/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Permutations and combinations/Permutations/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Relations and functions 12/Binary operations/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Permutations and combinations/Permutations/+page.svelte";
