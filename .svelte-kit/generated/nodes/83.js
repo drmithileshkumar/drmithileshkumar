@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Permutations and combinations/Combinations/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Matrices/Symmetric and skew symmetric matrices/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Permutations and combinations/Combinations/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Matrices/Symmetric and skew symmetric matrices/+page.svelte";

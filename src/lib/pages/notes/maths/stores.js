@@ -169,7 +169,7 @@ export const sections = {
         'Basic concepts',
         'General and particular solutions of a differential equation',
         'Formation of a differential equation whose general solution is given',
-        'Methods of solving first order, first degree differential equations'
+        'Methods of solving first order first degree differential equations'
     ], 
     'Vector algebra': [
         'Some basic concepts',

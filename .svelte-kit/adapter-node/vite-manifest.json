@@ -1091,6 +1091,95 @@
       "_index2.js"
     ]
   },
+  "src/routes/notes/maths/Differential equations/Basic concepts/+page.svelte": {
+    "file": "entries/pages/notes/maths/Differential equations/Basic concepts/_page.svelte.js",
+    "src": "src/routes/notes/maths/Differential equations/Basic concepts/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Differential equations/Basic concepts/+page.js": {
+    "file": "entries/pages/notes/maths/Differential equations/Basic concepts/_page.js",
+    "src": "src/routes/notes/maths/Differential equations/Basic concepts/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/+page.svelte": {
+    "file": "entries/pages/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/_page.svelte.js",
+    "src": "src/routes/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/+page.js": {
+    "file": "entries/pages/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/_page.js",
+    "src": "src/routes/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.svelte": {
+    "file": "entries/pages/notes/maths/Differential equations/General and particular solutions of a differential equation/_page.svelte.js",
+    "src": "src/routes/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.js": {
+    "file": "entries/pages/notes/maths/Differential equations/General and particular solutions of a differential equation/_page.js",
+    "src": "src/routes/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Differential equations/Methods of solving first order first degree differential equations/+page.svelte": {
+    "file": "entries/pages/notes/maths/Differential equations/Methods of solving first order first degree differential equations/_page.svelte.js",
+    "src": "src/routes/notes/maths/Differential equations/Methods of solving first order first degree differential equations/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Differential equations/Methods of solving first order first degree differential equations/+page.js": {
+    "file": "entries/pages/notes/maths/Differential equations/Methods of solving first order first degree differential equations/_page.js",
+    "src": "src/routes/notes/maths/Differential equations/Methods of solving first order first degree differential equations/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/+page.svelte": {
     "file": "entries/pages/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/_page.svelte.js",
     "src": "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/+page.svelte",

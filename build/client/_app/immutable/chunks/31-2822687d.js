@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-aeb84810.js";import{default as t}from"../components/pages/notes/maths/Complex numbers and quadratic equations/Argand plane and polar representation/_page.svelte-e7d50f99.js";export{t as component,r as universal};

@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Integrals/Evaluation of definite integrals by substitution/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Integrals/Evaluation of definite integrals by substitution/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/+page.svelte";
