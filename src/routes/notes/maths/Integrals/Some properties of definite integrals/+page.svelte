@@ -84,10 +84,31 @@
         <section>
             <ul>
                 <li>
-                    <strong>Rolle's Theorem:</strong> If \(f:[a,b]\to R\) is continuous on \([a,b]\) and differentiable on \((a, b)\) such that \(f(a) = f(b)\), then there exists some \(c\in (a,b)\) such that \(f'(c) = 0\)
+                    \(\int_a^bf(x)dx = \int_a^bf(t)dt\)
                 </li>
                 <li>
-                    <strong>Mean Value Theorem:</strong> If \(f:[a,b]\to R\) is continuous on \([a,b]\) and differentiable on \((a,b)\), then there exists some \(c\in (a,b)\) such that \[f'(c) = {TeX.frac('f(b) - f(a)', 'b-a')}\] 
+                    \(\int_a^bf(x)dx = -\int_b^af(x)dx\). In particular, \(\int_a^af(x)dx = 0\)
+                </li>
+                <li>
+                    \(\int_a^bf(x)dx = \int_a^cf(x)dx +\int_c^bf(x)dx\)
+                </li>
+                <li>
+                    \(\int_a^bf(x)dx = \int_a^bf(a+b-x)dx\)
+                </li>
+                <li>
+                    \(\int_0^af(x)dx = \int_0^af(a-x)dx\)
+                </li>
+                <li>
+                    \({TeX.pow('\\int_0', '2a')}f(x)dx = \int_0^af(x)dx + \int_0^af(2a-x)dx\)
+                </li>
+                <li>
+                    \({TeX.pow('\\int_0', '2a')}f(x)dx = 2\int_0^af(x)dx\), if \(f(2a-x)=f(x)\) and 0 if \(f(2a-x) = -f(x)\)
+                </li>
+                <li>
+                    If \(f\) is an even function, i.e. if \(f(-x) = f(x)\), then \({TeX.pow('\\int_{-a}', 'a')} = 2\int_0^af(x)dx\)
+                </li>
+                <li>
+                    If \(f\) is an odd function, i.e. if \(f(-x) = -f(x)\), then \({TeX.pow('\\int_{-a}', 'a')}f(x)dx = 0\)
                 </li>
             </ul>
         </section>

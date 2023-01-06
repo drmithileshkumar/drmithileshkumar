@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-f1f73fe1.js";import{default as t}from"../components/pages/notes/maths/Straight lines/General equation of a line/_page.svelte-ace657e3.js";export{t as component,r as universal};
+import{_ as r}from"./_page-57c3dc77.js";import{default as t}from"../components/pages/notes/maths/Straight lines/General equation of a line/_page.svelte-ace657e3.js";export{t as component,r as universal};

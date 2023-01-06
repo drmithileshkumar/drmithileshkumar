@@ -82,14 +82,11 @@
     <article class:absolute={$presentationMode} bind:this={$presentation}>
         <h1>{$selectedSection}</h1>
         <section>
-            <ul>
-                <li>
-                    <strong>Rolle's Theorem:</strong> If \(f:[a,b]\to R\) is continuous on \([a,b]\) and differentiable on \((a, b)\) such that \(f(a) = f(b)\), then there exists some \(c\in (a,b)\) such that \(f'(c) = 0\)
-                </li>
-                <li>
-                    <strong>Mean Value Theorem:</strong> If \(f:[a,b]\to R\) is continuous on \([a,b]\) and differentiable on \((a,b)\), then there exists some \(c\in (a,b)\) such that \[f'(c) = {TeX.frac('f(b) - f(a)', 'b-a')}\] 
-                </li>
-            </ul>
+            <div class="definition">
+                <p>
+                    The definite integral \(\int_a^b f(x)dx\) is the area bounded by the curve \(y= f(x)\), the ordinates \(x = a, x = b\) and the \(x\)-axis.
+                </p>
+            </div>
         </section>
         
         <!-- <section>

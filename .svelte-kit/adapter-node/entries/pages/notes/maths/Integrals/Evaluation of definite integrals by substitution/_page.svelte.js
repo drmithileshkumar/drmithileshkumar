@@ -1,7 +1,6 @@
 import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, r as add_classes } from "../../../../../../chunks/index.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
-/* empty css                                                               *//* empty css                                                              */import { T as TeX } from "../../../../../../chunks/constants.js";
-import { p as page } from "../../../../../../chunks/stores.js";
+/* empty css                                                               *//* empty css                                                              */import { p as page } from "../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
@@ -26,10 +25,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><ul><li><strong>Rolle&#39;s Theorem:</strong> If \\(f:[a,b]\\to R\\) is continuous on \\([a,b]\\) and differentiable on \\((a, b)\\) such that \\(f(a) = f(b)\\), then there exists some \\(c\\in (a,b)\\) such that \\(f&#39;(c) = 0\\)
+        <section><p>To evaluate \\(\\int_a^bf(x)dx\\), by substitution, the steps could be as follows:</p>
+            <ol><li>Consider the integral without limits and substitute, \\(y =f(x)\\) or \\(x = g(y)\\) to reduce the given integral to a known form.
                 </li>
-                <li><strong>Mean Value Theorem:</strong> If \\(f:[a,b]\\to R\\) is continuous on \\([a,b]\\) and differentiable on \\((a,b)\\), then there exists some \\(c\\in (a,b)\\) such that \\[f&#39;(c) = ${escape(TeX.frac("f(b) - f(a)", "b-a"))}\\] 
-                </li></ul></section>
+                <li>Integrate the new integral with respect to the new variable without mentioning the constant of integration.
+                </li>
+                <li>Resubstitute for the new variable and write the answer in terms of the original variable. (Optional)
+                </li>
+                <li>Find the values of answers at the given limits of integral and find the difference of the values at the upper and lower limits.
+                </li></ol></section>
         
         
         

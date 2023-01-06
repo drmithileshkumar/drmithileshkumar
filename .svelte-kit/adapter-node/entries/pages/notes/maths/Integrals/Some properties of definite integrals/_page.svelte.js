@@ -26,9 +26,23 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><ul><li><strong>Rolle&#39;s Theorem:</strong> If \\(f:[a,b]\\to R\\) is continuous on \\([a,b]\\) and differentiable on \\((a, b)\\) such that \\(f(a) = f(b)\\), then there exists some \\(c\\in (a,b)\\) such that \\(f&#39;(c) = 0\\)
+        <section><ul><li>\\(\\int_a^bf(x)dx = \\int_a^bf(t)dt\\)
                 </li>
-                <li><strong>Mean Value Theorem:</strong> If \\(f:[a,b]\\to R\\) is continuous on \\([a,b]\\) and differentiable on \\((a,b)\\), then there exists some \\(c\\in (a,b)\\) such that \\[f&#39;(c) = ${escape(TeX.frac("f(b) - f(a)", "b-a"))}\\] 
+                <li>\\(\\int_a^bf(x)dx = -\\int_b^af(x)dx\\). In particular, \\(\\int_a^af(x)dx = 0\\)
+                </li>
+                <li>\\(\\int_a^bf(x)dx = \\int_a^cf(x)dx +\\int_c^bf(x)dx\\)
+                </li>
+                <li>\\(\\int_a^bf(x)dx = \\int_a^bf(a+b-x)dx\\)
+                </li>
+                <li>\\(\\int_0^af(x)dx = \\int_0^af(a-x)dx\\)
+                </li>
+                <li>\\(${escape(TeX.pow("\\int_0", "2a"))}f(x)dx = \\int_0^af(x)dx + \\int_0^af(2a-x)dx\\)
+                </li>
+                <li>\\(${escape(TeX.pow("\\int_0", "2a"))}f(x)dx = 2\\int_0^af(x)dx\\), if \\(f(2a-x)=f(x)\\) and 0 if \\(f(2a-x) = -f(x)\\)
+                </li>
+                <li>If \\(f\\) is an even function, i.e. if \\(f(-x) = f(x)\\), then \\(${escape(TeX.pow("\\int_{-a}", "a"))} = 2\\int_0^af(x)dx\\)
+                </li>
+                <li>If \\(f\\) is an odd function, i.e. if \\(f(-x) = -f(x)\\), then \\(${escape(TeX.pow("\\int_{-a}", "a"))}f(x)dx = 0\\)
                 </li></ul></section>
         
         

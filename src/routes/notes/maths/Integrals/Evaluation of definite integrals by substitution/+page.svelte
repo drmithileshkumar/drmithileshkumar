@@ -82,14 +82,21 @@
     <article class:absolute={$presentationMode} bind:this={$presentation}>
         <h1>{$selectedSection}</h1>
         <section>
-            <ul>
+            <p>To evaluate \(\int_a^bf(x)dx\), by substitution, the steps could be as follows:</p>
+            <ol>
                 <li>
-                    <strong>Rolle's Theorem:</strong> If \(f:[a,b]\to R\) is continuous on \([a,b]\) and differentiable on \((a, b)\) such that \(f(a) = f(b)\), then there exists some \(c\in (a,b)\) such that \(f'(c) = 0\)
+                    Consider the integral without limits and substitute, \(y =f(x)\) or \(x = g(y)\) to reduce the given integral to a known form.
                 </li>
                 <li>
-                    <strong>Mean Value Theorem:</strong> If \(f:[a,b]\to R\) is continuous on \([a,b]\) and differentiable on \((a,b)\), then there exists some \(c\in (a,b)\) such that \[f'(c) = {TeX.frac('f(b) - f(a)', 'b-a')}\] 
+                    Integrate the new integral with respect to the new variable without mentioning the constant of integration.
                 </li>
-            </ul>
+                <li>
+                    Resubstitute for the new variable and write the answer in terms of the original variable. (Optional)
+                </li>
+                <li>
+                    Find the values of answers at the given limits of integral and find the difference of the values at the upper and lower limits.
+                </li>
+            </ol>
         </section>
         
         <!-- <section>

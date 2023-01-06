@@ -84,8 +84,15 @@
         <section>
             <div class="definition">
                 <p>
-                    The second order derivative is the derivative of derivative of the function.
-                    {`\\[\\frac{d^2y}{dx^2} = \\frac{d}{dx}\\big(\\frac{dy}{dx}\\big) = f''(x)\\]`}
+                    The area function is given by \[A(x) = \int_a^x f(x)dx\]
+                </p>
+            </div>
+            <div class="theorem"><p>
+                <strong>First fundamental theorem of integral calculus:</strong> Let \(f\) be a continuous function on the closed interval \([a, b]\) and let \(A(x)\) be the area function. Then \[A'(x) = f(x)\], for all \(x\in [a,b]\)
+            </p></div>
+            <div class="theor">
+                <p>
+                    <strong>Second fundamental theorem of integral calculus:</strong> Let \(f\) be continuous function defined on the closed interval \([a, b]\) and \(F\) be an anti derivative of \(f\). Then \[\int_a^bf(x)dx = [F(x)]_a^b = F(b) - F(a)\]
                 </p>
             </div>
         </section>
