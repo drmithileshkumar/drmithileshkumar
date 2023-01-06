@@ -1700,6 +1700,50 @@
       "_index2.js"
     ]
   },
+  "src/routes/notes/maths/Linear programming/Different types of linear programming problems/+page.svelte": {
+    "file": "entries/pages/notes/maths/Linear programming/Different types of linear programming problems/_page.svelte.js",
+    "src": "src/routes/notes/maths/Linear programming/Different types of linear programming problems/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Linear programming/Different types of linear programming problems/+page.js": {
+    "file": "entries/pages/notes/maths/Linear programming/Different types of linear programming problems/_page.js",
+    "src": "src/routes/notes/maths/Linear programming/Different types of linear programming problems/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/+page.svelte": {
+    "file": "entries/pages/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/_page.svelte.js",
+    "src": "src/routes/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/+page.js": {
+    "file": "entries/pages/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/_page.js",
+    "src": "src/routes/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "src/routes/notes/maths/Matrices/Invertible matrices/+page.svelte": {
     "file": "entries/pages/notes/maths/Matrices/Invertible matrices/_page.svelte.js",
     "src": "src/routes/notes/maths/Matrices/Invertible matrices/+page.svelte",
@@ -2790,6 +2834,210 @@
       "_index2.js"
     ]
   },
+  "src/routes/notes/maths/Three dimensional geometry/Angle between a line and a plane/+page.svelte": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Angle between a line and a plane/_page.svelte.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Angle between a line and a plane/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Angle between a line and a plane/+page.js": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Angle between a line and a plane/_page.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Angle between a line and a plane/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Angle between two lines/+page.svelte": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Angle between two lines/_page.svelte.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Angle between two lines/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Angle between two lines/+page.js": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Angle between two lines/_page.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Angle between two lines/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Angle between two planes/+page.svelte": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Angle between two planes/_page.svelte.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Angle between two planes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Angle between two planes/+page.js": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Angle between two planes/_page.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Angle between two planes/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Coplanarity of two lines/+page.svelte": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Coplanarity of two lines/_page.svelte.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Coplanarity of two lines/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Coplanarity of two lines/+page.js": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Coplanarity of two lines/_page.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Coplanarity of two lines/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/+page.svelte": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/_page.svelte.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/+page.js": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/_page.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Distance of a point from a plane/+page.svelte": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Distance of a point from a plane/_page.svelte.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Distance of a point from a plane/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Distance of a point from a plane/+page.js": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Distance of a point from a plane/_page.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Distance of a point from a plane/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Equation of a line in space/+page.svelte": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Equation of a line in space/_page.svelte.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Equation of a line in space/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Equation of a line in space/+page.js": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Equation of a line in space/_page.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Equation of a line in space/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Plane/+page.svelte": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Plane/_page.svelte.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Plane/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Plane/+page.js": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Plane/_page.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Plane/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Shortest distance between two lines/+page.svelte": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Shortest distance between two lines/_page.svelte.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Shortest distance between two lines/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Three dimensional geometry/Shortest distance between two lines/+page.js": {
+    "file": "entries/pages/notes/maths/Three dimensional geometry/Shortest distance between two lines/_page.js",
+    "src": "src/routes/notes/maths/Three dimensional geometry/Shortest distance between two lines/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "src/routes/notes/maths/Trigonometric functions/Angles/+page.svelte": {
     "file": "entries/pages/notes/maths/Trigonometric functions/Angles/_page.svelte.js",
     "src": "src/routes/notes/maths/Trigonometric functions/Angles/+page.svelte",
@@ -2877,6 +3125,120 @@
   "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.js": {
     "file": "entries/pages/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/_page.js",
     "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Vector algebra/Addition of vectors/+page.svelte": {
+    "file": "entries/pages/notes/maths/Vector algebra/Addition of vectors/_page.svelte.js",
+    "src": "src/routes/notes/maths/Vector algebra/Addition of vectors/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Vector algebra/Addition of vectors/+page.js": {
+    "file": "entries/pages/notes/maths/Vector algebra/Addition of vectors/_page.js",
+    "src": "src/routes/notes/maths/Vector algebra/Addition of vectors/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Vector algebra/Multiplication of a vector by a scalar/+page.svelte": {
+    "file": "entries/pages/notes/maths/Vector algebra/Multiplication of a vector by a scalar/_page.svelte.js",
+    "src": "src/routes/notes/maths/Vector algebra/Multiplication of a vector by a scalar/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Vector algebra/Multiplication of a vector by a scalar/+page.js": {
+    "file": "entries/pages/notes/maths/Vector algebra/Multiplication of a vector by a scalar/_page.js",
+    "src": "src/routes/notes/maths/Vector algebra/Multiplication of a vector by a scalar/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Vector algebra/Product of two vectors/+page.svelte": {
+    "file": "entries/pages/notes/maths/Vector algebra/Product of two vectors/_page.svelte.js",
+    "src": "src/routes/notes/maths/Vector algebra/Product of two vectors/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Vector algebra/Product of two vectors/+page.js": {
+    "file": "entries/pages/notes/maths/Vector algebra/Product of two vectors/_page.js",
+    "src": "src/routes/notes/maths/Vector algebra/Product of two vectors/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Vector algebra/Some basic concepts/+page.svelte": {
+    "file": "entries/pages/notes/maths/Vector algebra/Some basic concepts/_page.svelte.js",
+    "src": "src/routes/notes/maths/Vector algebra/Some basic concepts/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Vector algebra/Some basic concepts/+page.js": {
+    "file": "entries/pages/notes/maths/Vector algebra/Some basic concepts/_page.js",
+    "src": "src/routes/notes/maths/Vector algebra/Some basic concepts/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Vector algebra/Types of vectors/+page.svelte": {
+    "file": "entries/pages/notes/maths/Vector algebra/Types of vectors/_page.svelte.js",
+    "src": "src/routes/notes/maths/Vector algebra/Types of vectors/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Vector algebra/Types of vectors/+page.js": {
+    "file": "entries/pages/notes/maths/Vector algebra/Types of vectors/_page.js",
+    "src": "src/routes/notes/maths/Vector algebra/Types of vectors/+page.js",
     "isEntry": true,
     "imports": [
       "_index2.js"

@@ -4,7 +4,7 @@ export const manifest = {
 	assets: new Set(["CMIMedal.jpg","IITMSc.jpg","LCPath.svg","app.css","circle_demo/Cone-equation.png","circle_demo/Cone.png","circle_demo/Conic_anime.mp4","circle_demo/Conic_deg.mp4","circle_demo/IIT21Q1.png","circle_demo/Plane.png","circle_demo/Tangents.png","circle_demo/circle.png","circle_demo/circle_anime.mp4","circle_demo/conics.png","circle_demo/ellipse_anime.mp4","circle_demo/hyperbola_anime.mp4","circle_demo/orthocenter.png","circle_demo/parabola_anime.mp4","circle_demo/threepointcircle.png","cmithesis.pdf","common.css","dark.css","favicon.png","light.css","mithileshkumar.png","photo_cv.jpg","profilephoto.jpeg","robots copy.txt","robots.txt","santa.svg","svelte-welcome.png","svelte-welcome.webp","thesis.pdf","webdutIcon.png"]),
 	mimeTypes: {".jpg":"image/jpeg",".svg":"image/svg+xml",".css":"text/css",".png":"image/png",".mp4":"video/mp4",".pdf":"application/pdf",".jpeg":"image/jpeg",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		entry: {"file":"_app/immutable/start-4094c54d.js","imports":["_app/immutable/start-4094c54d.js","_app/immutable/chunks/index-d6181b86.js","_app/immutable/chunks/singletons-7f452f10.js","_app/immutable/chunks/index-2f18dd9f.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/control-f5b05b5f.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-589eee59.js","imports":["_app/immutable/start-589eee59.js","_app/immutable/chunks/index-d6181b86.js","_app/immutable/chunks/singletons-7f452f10.js","_app/immutable/chunks/index-2f18dd9f.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/control-f5b05b5f.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
@@ -139,7 +139,23 @@ export const manifest = {
 			() => import('./nodes/130.js'),
 			() => import('./nodes/131.js'),
 			() => import('./nodes/132.js'),
-			() => import('./nodes/133.js')
+			() => import('./nodes/133.js'),
+			() => import('./nodes/134.js'),
+			() => import('./nodes/135.js'),
+			() => import('./nodes/136.js'),
+			() => import('./nodes/137.js'),
+			() => import('./nodes/138.js'),
+			() => import('./nodes/139.js'),
+			() => import('./nodes/140.js'),
+			() => import('./nodes/141.js'),
+			() => import('./nodes/142.js'),
+			() => import('./nodes/143.js'),
+			() => import('./nodes/144.js'),
+			() => import('./nodes/145.js'),
+			() => import('./nodes/146.js'),
+			() => import('./nodes/147.js'),
+			() => import('./nodes/148.js'),
+			() => import('./nodes/149.js')
 		],
 		routes: [
 			{
@@ -647,381 +663,493 @@ export const manifest = {
 				endpoint: null
 			},
 			{
+				id: "/notes/maths/Linear programming/Different types of linear programming problems",
+				pattern: /^\/notes\/maths\/Linear programming\/Different types of linear programming problems\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 80 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Linear programming/Linear programming problem and its mathematical formulation",
+				pattern: /^\/notes\/maths\/Linear programming\/Linear programming problem and its mathematical formulation\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 81 },
+				endpoint: null
+			},
+			{
 				id: "/notes/maths/Matrices/Invertible matrices",
 				pattern: /^\/notes\/maths\/Matrices\/Invertible matrices\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 80 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 82 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Matrices/Matrix",
 				pattern: /^\/notes\/maths\/Matrices\/Matrix\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 81 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 83 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Matrices/Operations on matrices",
 				pattern: /^\/notes\/maths\/Matrices\/Operations on matrices\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 82 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 84 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Matrices/Symmetric and skew symmetric matrices",
 				pattern: /^\/notes\/maths\/Matrices\/Symmetric and skew symmetric matrices\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 83 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 85 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Matrices/Transformation of a matrix",
 				pattern: /^\/notes\/maths\/Matrices\/Transformation of a matrix\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 84 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 86 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Matrices/Transpose of a matrix",
 				pattern: /^\/notes\/maths\/Matrices\/Transpose of a matrix\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 85 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 87 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Matrices/Typse of matrices",
 				pattern: /^\/notes\/maths\/Matrices\/Typse of matrices\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 86 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 88 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Permutations and combinations/Combinations",
 				pattern: /^\/notes\/maths\/Permutations and combinations\/Combinations\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 87 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 89 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Permutations and combinations/Fundamental principle of counting",
 				pattern: /^\/notes\/maths\/Permutations and combinations\/Fundamental principle of counting\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 88 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 90 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Permutations and combinations/Permutations",
 				pattern: /^\/notes\/maths\/Permutations and combinations\/Permutations\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 89 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 91 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Principle of mathematical induction/Motivation",
 				pattern: /^\/notes\/maths\/Principle of mathematical induction\/Motivation\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 90 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 92 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Principle of mathematical induction/The principle of mathematical induction",
 				pattern: /^\/notes\/maths\/Principle of mathematical induction\/The principle of mathematical induction\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 91 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 93 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Probability/Axiomatic approach to probability",
 				pattern: /^\/notes\/maths\/Probability\/Axiomatic approach to probability\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 92 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 94 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Probability/Event",
 				pattern: /^\/notes\/maths\/Probability\/Event\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 93 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 95 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Probability/Random experiments",
 				pattern: /^\/notes\/maths\/Probability\/Random experiments\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 94 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 96 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Relations and functions 11/Cartesian product of sets",
 				pattern: /^\/notes\/maths\/Relations and functions 11\/Cartesian product of sets\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 95 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 97 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Relations and functions 11/Functions",
 				pattern: /^\/notes\/maths\/Relations and functions 11\/Functions\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 96 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 98 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Relations and functions 11/Relations",
 				pattern: /^\/notes\/maths\/Relations and functions 11\/Relations\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 97 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 99 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Relations and functions 12/Binary operations",
 				pattern: /^\/notes\/maths\/Relations and functions 12\/Binary operations\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 98 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 100 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Relations and functions 12/Composition of functions and invertible function",
 				pattern: /^\/notes\/maths\/Relations and functions 12\/Composition of functions and invertible function\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 99 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 101 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Relations and functions 12/Types of functions",
 				pattern: /^\/notes\/maths\/Relations and functions 12\/Types of functions\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 100 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 102 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Relations and functions 12/Types of relations",
 				pattern: /^\/notes\/maths\/Relations and functions 12\/Types of relations\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 101 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 103 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sequences and series/Arithmetic progression",
 				pattern: /^\/notes\/maths\/Sequences and series\/Arithmetic progression\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 102 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 104 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sequences and series/Geometric progression",
 				pattern: /^\/notes\/maths\/Sequences and series\/Geometric progression\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 103 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 105 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sequences and series/Relationship between AM and GM",
 				pattern: /^\/notes\/maths\/Sequences and series\/Relationship between AM and GM\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 104 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 106 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sequences and series/Sequences",
 				pattern: /^\/notes\/maths\/Sequences and series\/Sequences\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 105 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 107 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sequences and series/Series",
 				pattern: /^\/notes\/maths\/Sequences and series\/Series\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 106 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 108 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sequences and series/Sum to n terms of Special series",
 				pattern: /^\/notes\/maths\/Sequences and series\/Sum to n terms of Special series\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 107 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 109 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Complement of a set",
 				pattern: /^\/notes\/maths\/Sets\/Complement of a set\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 108 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 110 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Equal sets",
 				pattern: /^\/notes\/maths\/Sets\/Equal sets\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 109 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 111 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Finite and infinite sets",
 				pattern: /^\/notes\/maths\/Sets\/Finite and infinite sets\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 110 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 112 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Introduction",
 				pattern: /^\/notes\/maths\/Sets\/Introduction\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 111 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 113 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Operations on sets",
 				pattern: /^\/notes\/maths\/Sets\/Operations on sets\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 112 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 114 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Power set",
 				pattern: /^\/notes\/maths\/Sets\/Power set\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 113 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 115 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Practical problems",
 				pattern: /^\/notes\/maths\/Sets\/Practical problems\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 114 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 116 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Sets and their representations",
 				pattern: /^\/notes\/maths\/Sets\/Sets and their representations\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 115 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 117 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Subsets",
 				pattern: /^\/notes\/maths\/Sets\/Subsets\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 116 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 118 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/The empty set",
 				pattern: /^\/notes\/maths\/Sets\/The empty set\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 117 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 119 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Universal set",
 				pattern: /^\/notes\/maths\/Sets\/Universal set\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 118 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 120 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Venn diagrams",
 				pattern: /^\/notes\/maths\/Sets\/Venn diagrams\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 119 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 121 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Statistics/Analysis of frequency distributions",
 				pattern: /^\/notes\/maths\/Statistics\/Analysis of frequency distributions\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 120 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 122 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Statistics/Mean deviation",
 				pattern: /^\/notes\/maths\/Statistics\/Mean deviation\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 121 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 123 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Statistics/Range",
 				pattern: /^\/notes\/maths\/Statistics\/Range\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 122 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 124 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Statistics/Variance and standard deviation",
 				pattern: /^\/notes\/maths\/Statistics\/Variance and standard deviation\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 123 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 125 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Straight lines/Distance of a point from a line",
 				pattern: /^\/notes\/maths\/Straight lines\/Distance of a point from a line\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 124 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 126 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Straight lines/General equation of a line",
 				pattern: /^\/notes\/maths\/Straight lines\/General equation of a line\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 125 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 127 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Straight lines/Slope of a line",
 				pattern: /^\/notes\/maths\/Straight lines\/Slope of a line\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 126 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 128 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Straight lines/Various forms of the equation of a line",
 				pattern: /^\/notes\/maths\/Straight lines\/Various forms of the equation of a line\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 127 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 129 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Three dimensional geometry/Angle between a line and a plane",
+				pattern: /^\/notes\/maths\/Three dimensional geometry\/Angle between a line and a plane\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 130 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Three dimensional geometry/Angle between two lines",
+				pattern: /^\/notes\/maths\/Three dimensional geometry\/Angle between two lines\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 131 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Three dimensional geometry/Angle between two planes",
+				pattern: /^\/notes\/maths\/Three dimensional geometry\/Angle between two planes\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 132 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Three dimensional geometry/Coplanarity of two lines",
+				pattern: /^\/notes\/maths\/Three dimensional geometry\/Coplanarity of two lines\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 133 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line",
+				pattern: /^\/notes\/maths\/Three dimensional geometry\/Direction cosines and direction ratios of a line\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 134 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Three dimensional geometry/Distance of a point from a plane",
+				pattern: /^\/notes\/maths\/Three dimensional geometry\/Distance of a point from a plane\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 135 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Three dimensional geometry/Equation of a line in space",
+				pattern: /^\/notes\/maths\/Three dimensional geometry\/Equation of a line in space\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 136 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Three dimensional geometry/Plane",
+				pattern: /^\/notes\/maths\/Three dimensional geometry\/Plane\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 137 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Three dimensional geometry/Shortest distance between two lines",
+				pattern: /^\/notes\/maths\/Three dimensional geometry\/Shortest distance between two lines\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 138 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Trigonometric functions/Angles",
 				pattern: /^\/notes\/maths\/Trigonometric functions\/Angles\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 128 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 139 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Trigonometric functions/Trigonometric equations",
 				pattern: /^\/notes\/maths\/Trigonometric functions\/Trigonometric equations\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 129 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 140 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles",
 				pattern: /^\/notes\/maths\/Trigonometric functions\/Trigonometric functions of sum and difference of two angles\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 131 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 142 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Trigonometric functions/Trigonometric functions",
 				pattern: /^\/notes\/maths\/Trigonometric functions\/Trigonometric functions\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 130 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 141 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Vector algebra/Addition of vectors",
+				pattern: /^\/notes\/maths\/Vector algebra\/Addition of vectors\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 143 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Vector algebra/Multiplication of a vector by a scalar",
+				pattern: /^\/notes\/maths\/Vector algebra\/Multiplication of a vector by a scalar\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 144 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Vector algebra/Product of two vectors",
+				pattern: /^\/notes\/maths\/Vector algebra\/Product of two vectors\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 145 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Vector algebra/Some basic concepts",
+				pattern: /^\/notes\/maths\/Vector algebra\/Some basic concepts\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 146 },
+				endpoint: null
+			},
+			{
+				id: "/notes/maths/Vector algebra/Types of vectors",
+				pattern: /^\/notes\/maths\/Vector algebra\/Types of vectors\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 147 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/conic",
 				pattern: /^\/notes\/maths\/conic\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 132 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 148 },
 				endpoint: null
 			},
 			{
 				id: "/practice",
 				pattern: /^\/practice\/?$/,
 				params: [],
-				page: { layouts: [0,7], errors: [1,,], leaf: 133 },
+				page: { layouts: [0,7], errors: [1,,], leaf: 149 },
 				endpoint: null
 			}
 		],

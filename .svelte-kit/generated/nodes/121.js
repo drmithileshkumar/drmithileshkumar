@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Statistics/Mean deviation/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Sets/Venn diagrams/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Statistics/Mean deviation/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Sets/Venn diagrams/+page.svelte";

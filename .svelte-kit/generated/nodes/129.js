@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Trigonometric functions/Trigonometric equations/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Straight lines/Various forms of the equation of a line/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Trigonometric functions/Trigonometric equations/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Straight lines/Various forms of the equation of a line/+page.svelte";
