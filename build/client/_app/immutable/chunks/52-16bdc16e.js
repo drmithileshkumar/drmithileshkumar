@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-f009b986.js";import{default as t}from"../components/pages/notes/maths/Determinants/Properties of determinants/_page.svelte-53443a0f.js";export{t as component,r as universal};

@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-406820bb.js";import{default as t}from"../components/pages/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/_page.svelte-a67f8e27.js";export{t as component,r as universal};

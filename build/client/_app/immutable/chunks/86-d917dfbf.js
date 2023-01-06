@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-d5bf9b3d.js";import{default as t}from"../components/pages/notes/maths/Probability/Axiomatic approach to probability/_page.svelte-af3b504c.js";export{t as component,r as universal};

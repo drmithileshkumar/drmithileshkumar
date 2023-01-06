@@ -476,6 +476,51 @@
       "_index2.js"
     ]
   },
+  "src/routes/notes/maths/Application of integrals/Area between two curves/+page.svelte": {
+    "file": "entries/pages/notes/maths/Application of integrals/Area between two curves/_page.svelte.js",
+    "src": "src/routes/notes/maths/Application of integrals/Area between two curves/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_constants.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Application of integrals/Area between two curves/+page.js": {
+    "file": "entries/pages/notes/maths/Application of integrals/Area between two curves/_page.js",
+    "src": "src/routes/notes/maths/Application of integrals/Area between two curves/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/notes/maths/Application of integrals/Area under simple curves/+page.svelte": {
+    "file": "entries/pages/notes/maths/Application of integrals/Area under simple curves/_page.svelte.js",
+    "src": "src/routes/notes/maths/Application of integrals/Area under simple curves/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Application of integrals/Area under simple curves/+page.js": {
+    "file": "entries/pages/notes/maths/Application of integrals/Area under simple curves/_page.js",
+    "src": "src/routes/notes/maths/Application of integrals/Area under simple curves/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "src/routes/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.svelte": {
     "file": "entries/pages/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.svelte.js",
     "src": "src/routes/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.svelte",
