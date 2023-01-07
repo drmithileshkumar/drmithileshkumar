@@ -48,10 +48,10 @@
     "imports": [
       "_index.js",
       "_stores2.js",
-      "_Canvas.js"
+      "_Presenter.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-d8f7c75a.css"
+      "_app/immutable/assets/_layout-be707242.css"
     ]
   },
   "src/routes/notes/+error.svelte": {
@@ -70,10 +70,10 @@
       "_index.js",
       "_Select.js",
       "_stores2.js",
-      "_Canvas.js"
+      "_Presenter.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-2bec716d.css"
+      "_app/immutable/assets/_layout-50e29ed1.css"
     ]
   },
   "src/routes/notes/maths/+error.svelte": {
@@ -3318,13 +3318,14 @@
       "_index3.js"
     ]
   },
-  "_Canvas.js": {
-    "file": "chunks/Canvas.js",
+  "_Presenter.js": {
+    "file": "chunks/Presenter.js",
     "imports": [
       "_index.js",
       "_index3.js"
     ],
     "css": [
+      "_app/immutable/assets/Presenter-e5ac07bf.css",
       "_app/immutable/assets/Canvas-efdd6316.css"
     ]
   },

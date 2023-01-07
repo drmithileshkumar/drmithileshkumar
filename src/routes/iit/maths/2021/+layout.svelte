@@ -8,7 +8,7 @@
         import CanvasBar from '$lib/canvas/CanvasBar.svelte';
         import Canvas from '$lib/canvas/Canvas.svelte';
         import {ripple} from '$lib/ui/ripple';
-        
+        import Presenter from '$lib/canvas/Presenter.svelte';
         
         let W, H;
         beforeUpdate(() => {
@@ -83,9 +83,9 @@
             /* padding: 0 1em 0 1em; */
         }
         .overlay::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-    }
+            width: 0;
+            height: 0;
+        }
         .questions {
             /* max-width: 600px; */
             margin: auto;
@@ -98,6 +98,12 @@
             /* gap: 1em; */
             height: 1em;
             margin-bottom: 0.5em;
+        }
+        .presenter {
+            position: absolute;
+            right: 35px;
+            bottom: 0;
+            z-index: 10;
         }
     </style>
     <svelte:head>
@@ -117,6 +123,7 @@
         <div class="container" bind:clientWidth={W} bind:clientHeight={H}>
             {#if $presentationMode}
         
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
                 <aside use:ripple class="back" on:click={back}></aside>
             {/if}
             {#if !$presentationMode}
@@ -126,11 +133,14 @@
                 <div class="absolute overlay" bind:this={$overlay}>
                     <Canvas width={W} height={10000}/>
                 </div>
-                
+                <div class="presenter">
+                    <Presenter />
+                </div>
             {/if}
             <slot />
             {#if $presentationMode}
         
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
                 <aside use:ripple class="next" on:click={next}></aside>
             {/if}
         </div>
