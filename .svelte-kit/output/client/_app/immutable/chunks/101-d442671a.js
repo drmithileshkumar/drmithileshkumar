@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-5f1e9c8d.js";import{default as t}from"../components/pages/notes/maths/Relations and functions 12/Composition of functions and invertible function/_page.svelte-e8ac1494.js";export{t as component,r as universal};
+import{_ as r}from"./_page-559b163c.js";import{default as t}from"../components/pages/notes/maths/Relations and functions 12/Composition of functions and invertible function/_page.svelte-e8ac1494.js";export{t as component,r as universal};
