@@ -168,7 +168,7 @@
                 <span bind:this={$overlay}></span>
             {/if}
             {#if $presentationMode}
-                <div class="absolute overlay" bind:this={$overlay}>
+                <div class="absolute overlay noMenu" bind:this={$overlay}>
                     <Canvas width={W} height={10000}/>
                     
                 </div>
