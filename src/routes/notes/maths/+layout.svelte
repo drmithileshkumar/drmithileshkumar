@@ -63,8 +63,10 @@
         const noContextMenu = () => {
             if($presentationMode) {
                 document.addEventListener("contextmenu", preventD, false);
+                document.body.classList.add('noMenu');
             } else {
                 document.removeEventListener("contextmenu", preventD);
+                document.body.classList.remove('noMenu');
             }
         }
     </script> 

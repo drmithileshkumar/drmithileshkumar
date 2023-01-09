@@ -82,6 +82,12 @@ body {
 h1 {
 	font-size: 2em;
 }
+.noMenu {
+	touch-action: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
 /* h1 {
 	font-size: var(--h1size);
 	letter-spacing: var(--h1letterspacing);
