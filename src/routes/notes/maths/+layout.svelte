@@ -162,7 +162,7 @@
             {#if $presentationMode}
         
                 <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <aside use:ripple class="back" on:click={back}></aside>
+                <aside use:ripple class="back noMenu" on:click={back}></aside>
             {/if}
             {#if !$presentationMode}
                 <span bind:this={$overlay}></span>
@@ -180,7 +180,7 @@
             {#if $presentationMode}
         
                 <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <aside use:ripple class="next" on:click={next}></aside>
+                <aside use:ripple class="next noMenu" on:click={next}></aside>
             {/if}
         </div>
     </div>

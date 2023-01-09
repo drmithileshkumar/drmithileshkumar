@@ -67,13 +67,13 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     )}</nav>` : ``}
             ${$presentationMode ? `${validate_component(CanvasBar, "CanvasBar").$$render($$result, {}, {}, {})}` : ``}</div>
         <div class="${"container svelte-kg1oag"}">${$presentationMode ? `
-                <aside class="${"back svelte-kg1oag"}"></aside>` : ``}
+                <aside class="${"back noMenu svelte-kg1oag"}"></aside>` : ``}
             ${!$presentationMode ? `<span${add_attribute("this", $overlay, 0)}></span>` : ``}
             ${$presentationMode ? `<div class="${"absolute overlay svelte-kg1oag"}"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>
                 <div class="${"presenter svelte-kg1oag"}">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>` : ``}
             ${slots.default ? slots.default({}) : ``}
             ${$presentationMode ? `
-                <aside class="${"next svelte-kg1oag"}"></aside>` : ``}</div></div>`;
+                <aside class="${"next noMenu svelte-kg1oag"}"></aside>` : ``}</div></div>`;
   } while (!$$settled);
   $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();
