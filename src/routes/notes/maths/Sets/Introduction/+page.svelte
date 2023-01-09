@@ -344,6 +344,8 @@
                 This simple problem is tricky to solve without using the language of <strong>Sets</strong>.
             </P>
         </Item>
-        <div class="pad"></div>
+        {#if $presentationMode && $currentSlide >= 2}
+            <div class="pad"></div>
+        {/if}
     </section>
 </article>

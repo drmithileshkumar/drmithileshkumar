@@ -81,6 +81,7 @@
             font-family: 'Georgia', serif;
             line-height: 1.5;
             word-spacing: 0.5ex;
+
         }
         .presentationMode {
             display: flex;
@@ -126,13 +127,19 @@
             top: 0;
             z-index: 10;
         }
+        .noMenu {
+            touch-action: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
     </style>
     <svelte:head>
         <!-- <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js"></script> -->
     </svelte:head>
         
-    <div class="maths"> 
+    <div class="maths {$presentationMode ? 'noMenu':''}"> 
         <div class="presentationMode">
             <label style="display:flex;align-items:center;">
                 <input type="checkbox" bind:checked={$presentationMode}> <span class="material-icons">slideshow</span>

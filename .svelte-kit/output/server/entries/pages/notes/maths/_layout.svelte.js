@@ -1,10 +1,10 @@
-import { c as create_ssr_component, d as subscribe, f as add_attribute, v as validate_component } from "../../../../chunks/index.js";
+import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../chunks/index.js";
 import { S as Select } from "../../../../chunks/Select.js";
 import { d as chapters, e as sections, b as presentationMode, c as currentSlide, s as slideCounter, p as presentation, o as overlay, a as autoScroll, f as selectedSection, g as selectedChapter } from "../../../../chunks/stores2.js";
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../chunks/Presenter.js";
 const _layout_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "nav.svelte-srf7rw{display:grid;grid-template-columns:auto 1fr;max-width:600px}.maths.svelte-srf7rw{margin:auto;font-family:'Georgia', serif;line-height:1.5;word-spacing:0.5ex}.presentationMode.svelte-srf7rw{display:flex;height:1em;margin:0.5em 0;align-items:center;flex-direction:row}.container.svelte-srf7rw{display:grid;grid-template-columns:1em 1fr 1em;position:relative}aside.svelte-srf7rw{background-color:rgb(230, 228, 228);cursor:pointer;width:1em}.overlay.svelte-srf7rw{position:absolute;z-index:2;left:0.5em;top:0;margin:auto;width:calc(100% - 2em);height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none}.overlay.svelte-srf7rw::-webkit-scrollbar{width:0;height:0}.presenter.svelte-srf7rw{position:absolute;right:35px;top:0;z-index:10}",
+  code: "nav.svelte-2gnmam{display:grid;grid-template-columns:auto 1fr;max-width:600px}.maths.svelte-2gnmam{margin:auto;font-family:'Georgia', serif;line-height:1.5;word-spacing:0.5ex}.presentationMode.svelte-2gnmam{display:flex;height:1em;margin:0.5em 0;align-items:center;flex-direction:row}.container.svelte-2gnmam{display:grid;grid-template-columns:1em 1fr 1em;position:relative}aside.svelte-2gnmam{background-color:rgb(230, 228, 228);cursor:pointer;width:1em}.overlay.svelte-2gnmam{position:absolute;z-index:2;left:0.5em;top:0;margin:auto;width:calc(100% - 2em);height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none}.overlay.svelte-2gnmam::-webkit-scrollbar{width:0;height:0}.presenter.svelte-2gnmam{position:absolute;right:35px;top:0;z-index:10}.noMenu.svelte-2gnmam{touch-action:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}",
   map: null
 };
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -32,8 +32,8 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$settled = true;
     $$rendered = `${$$result.head += `<!-- HEAD_svelte-jatvq7_START --><!-- HEAD_svelte-jatvq7_END -->`, ""}
         
-    <div class="${"maths svelte-srf7rw"}"><div class="${"presentationMode svelte-srf7rw"}"><label style="${"display:flex;align-items:center;"}"><input type="${"checkbox"}"${add_attribute("checked", $presentationMode, 1)}> <span class="${"material-icons"}">slideshow</span></label>
-            ${!$presentationMode ? `<nav class="${"svelte-srf7rw"}">${validate_component(Select, "Select").$$render(
+    <div class="${"maths " + escape($presentationMode ? "noMenu" : "", true) + " svelte-2gnmam"}"><div class="${"presentationMode svelte-2gnmam"}"><label style="${"display:flex;align-items:center;"}"><input type="${"checkbox"}"${add_attribute("checked", $presentationMode, 1)}> <span class="${"material-icons"}">slideshow</span></label>
+            ${!$presentationMode ? `<nav class="${"svelte-2gnmam"}">${validate_component(Select, "Select").$$render(
       $$result,
       {
         style: "width: 35vw;",
@@ -66,14 +66,14 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       {}
     )}</nav>` : ``}
             ${$presentationMode ? `${validate_component(CanvasBar, "CanvasBar").$$render($$result, {}, {}, {})}` : ``}</div>
-        <div class="${"container svelte-srf7rw"}">${$presentationMode ? `
-                <aside class="${"back svelte-srf7rw"}"></aside>` : ``}
+        <div class="${"container svelte-2gnmam"}">${$presentationMode ? `
+                <aside class="${"back svelte-2gnmam"}"></aside>` : ``}
             ${!$presentationMode ? `<span${add_attribute("this", $overlay, 0)}></span>` : ``}
-            ${$presentationMode ? `<div class="${"absolute overlay svelte-srf7rw"}"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>
-                <div class="${"presenter svelte-srf7rw"}">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>` : ``}
+            ${$presentationMode ? `<div class="${"absolute overlay svelte-2gnmam"}"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>
+                <div class="${"presenter svelte-2gnmam"}">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>` : ``}
             ${slots.default ? slots.default({}) : ``}
             ${$presentationMode ? `
-                <aside class="${"next svelte-srf7rw"}"></aside>` : ``}</div></div>`;
+                <aside class="${"next svelte-2gnmam"}"></aside>` : ``}</div></div>`;
   } while (!$$settled);
   $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();

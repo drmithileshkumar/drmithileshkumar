@@ -160,7 +160,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-        <div class="${"pad svelte-1n7sype"}"></div></section></article>`;
+        ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1n7sype"}"></div>` : ``}</section></article>`;
 });
 export {
   Page as default
