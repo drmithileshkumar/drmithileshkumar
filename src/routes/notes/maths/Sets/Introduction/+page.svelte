@@ -55,9 +55,10 @@
         width: 0;
         height: 0;
     }
-    /* .pad {
+    .pad {
         min-height: 100px;
-    }
+    } 
+    /*  
     figure {
         
         width: 300px;
@@ -343,5 +344,6 @@
                 This simple problem is tricky to solve without using the language of <strong>Sets</strong>.
             </P>
         </Item>
+        <div class="pad"></div>
     </section>
 </article>

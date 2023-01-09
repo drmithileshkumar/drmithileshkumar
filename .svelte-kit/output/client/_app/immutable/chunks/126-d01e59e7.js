@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-3fb23f75.js";import{default as t}from"../components/pages/notes/maths/Straight lines/Distance of a point from a line/_page.svelte-413ad9c2.js";export{t as component,r as universal};
+import{_ as r}from"./_page-559b163c.js";import{default as t}from"../components/pages/notes/maths/Straight lines/Distance of a point from a line/_page.svelte-413ad9c2.js";export{t as component,r as universal};

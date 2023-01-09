@@ -6,6 +6,7 @@
         import {presentationMode, presentation, overlay, slideCounter, autoScroll, currentSlide} from '$lib/pages/notes/maths/stores';
         import { page } from '$app/stores'
         import { goto } from "$app/navigation";
+        import { browser } from '$app/environment';
         import {afterUpdate, beforeUpdate, onMount, tick} from 'svelte';
         import CanvasBar from '$lib/canvas/CanvasBar.svelte';
         import Canvas from '$lib/canvas/Canvas.svelte';
@@ -55,6 +56,14 @@
                 $currentSlide++;
                 setTimeout(() => { MathJax.typeset();}, 0)
             }
+        }
+        const noContextMenu = (evt) => {
+            evt.preventDefault();
+        }
+        $: if(browser && $presentationMode) {
+            document.addEventListener("contextmenu", noContextMenu, false);
+        } else if(browser) {
+            document.removeEventListener("contextmenu", noContextMenu);
         }
     </script> 
     <style>

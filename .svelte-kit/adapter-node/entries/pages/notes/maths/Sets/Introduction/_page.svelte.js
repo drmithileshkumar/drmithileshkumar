@@ -58,7 +58,7 @@ const Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "p.svelte-2d7np0{text-indent:2em}article.svelte-2d7np0{position:relative;padding:0.5em}.absolute.svelte-2d7np0{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-2d7np0::-webkit-scrollbar{width:0;height:0}.thumbnail.svelte-2d7np0{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-2d7np0{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
+  code: "p.svelte-1n7sype{text-indent:2em}article.svelte-1n7sype{position:relative;padding:0.5em}.absolute.svelte-1n7sype{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1n7sype::-webkit-scrollbar{width:0;height:0}.pad.svelte-1n7sype{min-height:100px}.thumbnail.svelte-1n7sype{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1n7sype{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -85,7 +85,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-1cm2kk7_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Introduction to sets"}"><!-- HEAD_svelte-1cm2kk7_END -->`, ""}
-<article class="${["svelte-2d7np0", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-2d7np0"}"><p class="${"question statement svelte-2d7np0"}">${escape(`\\(\\{x:x\\)`)} is the foundation of mathematics${escape(`\\(\\}\\)`)}</p></div>` : ``}
+<article class="${["svelte-1n7sype", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1n7sype"}"><p class="${"question statement svelte-1n7sype"}">${escape(`\\(\\{x:x\\)`)} is the foundation of mathematics${escape(`\\(\\}\\)`)}</p></div>` : ``}
     ${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
     <section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
@@ -159,7 +159,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}</section></article>`;
+  })}
+        <div class="${"pad svelte-1n7sype"}"></div></section></article>`;
 });
 export {
   Page as default

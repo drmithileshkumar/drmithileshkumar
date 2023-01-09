@@ -1,6 +1,6 @@
 import { c as create_ssr_component, d as subscribe, f as add_attribute, v as validate_component } from "../../../../chunks/index.js";
 import { S as Select } from "../../../../chunks/Select.js";
-import { d as chapters, e as sections, c as currentSlide, s as slideCounter, p as presentation, o as overlay, a as autoScroll, f as selectedSection, g as selectedChapter, b as presentationMode } from "../../../../chunks/stores2.js";
+import { d as chapters, e as sections, b as presentationMode, c as currentSlide, s as slideCounter, p as presentation, o as overlay, a as autoScroll, f as selectedSection, g as selectedChapter } from "../../../../chunks/stores2.js";
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../chunks/Presenter.js";
 const _layout_svelte_svelte_type_style_lang = "";
 const css = {
@@ -8,6 +8,7 @@ const css = {
   map: null
 };
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $presentationMode, $$unsubscribe_presentationMode;
   let $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
   let $$unsubscribe_presentation;
@@ -15,7 +16,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_autoScroll;
   let $selectedSection, $$unsubscribe_selectedSection;
   let $selectedChapter, $$unsubscribe_selectedChapter;
-  let $presentationMode, $$unsubscribe_presentationMode;
+  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => value);
   $$unsubscribe_slideCounter = subscribe(slideCounter, (value) => value);
   $$unsubscribe_presentation = subscribe(presentation, (value) => value);
@@ -23,7 +24,6 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_autoScroll = subscribe(autoScroll, (value) => value);
   $$unsubscribe_selectedSection = subscribe(selectedSection, (value) => $selectedSection = value);
   $$unsubscribe_selectedChapter = subscribe(selectedChapter, (value) => $selectedChapter = value);
-  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   let W;
   $$result.css.add(css);
   let $$settled;
@@ -75,6 +75,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             ${$presentationMode ? `
                 <aside class="${"next svelte-srf7rw"}"></aside>` : ``}</div></div>`;
   } while (!$$settled);
+  $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();
   $$unsubscribe_slideCounter();
   $$unsubscribe_presentation();
@@ -82,7 +83,6 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_autoScroll();
   $$unsubscribe_selectedSection();
   $$unsubscribe_selectedChapter();
-  $$unsubscribe_presentationMode();
   return $$rendered;
 });
 export {
