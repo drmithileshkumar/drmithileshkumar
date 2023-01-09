@@ -57,13 +57,15 @@
                 setTimeout(() => { MathJax.typeset();}, 0)
             }
         }
-        const noContextMenu = (evt) => {
+        const preventD = (evt) => {
             evt.preventDefault();
         }
-        $: if(browser && $presentationMode) {
-            document.addEventListener("contextmenu", noContextMenu, false);
-        } else if(browser) {
-            document.removeEventListener("contextmenu", noContextMenu);
+        const noContextMenu = () => {
+            if($presentationMode) {
+                document.addEventListener("contextmenu", preventD, false);
+            } else {
+                document.removeEventListener("contextmenu", preventD);
+            }
         }
     </script> 
     <style>
@@ -142,7 +144,7 @@
     <div class="maths {$presentationMode ? 'noMenu':''}"> 
         <div class="presentationMode">
             <label style="display:flex;align-items:center;">
-                <input type="checkbox" bind:checked={$presentationMode}> <span class="material-icons">slideshow</span>
+                <input type="checkbox" bind:checked={$presentationMode} on:change={noContextMenu}> <span class="material-icons">slideshow</span>
             </label>
             {#if !$presentationMode}
                 <nav>
