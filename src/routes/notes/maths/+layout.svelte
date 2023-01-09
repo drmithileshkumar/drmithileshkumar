@@ -158,21 +158,21 @@
                 <CanvasBar/>
             {/if}
         </div>
-        <div class="container" bind:clientWidth={W} bind:clientHeight={H}>
+        <div class="container {$presentationMode ? 'noMenu':''}" bind:clientWidth={W} bind:clientHeight={H}>
             {#if $presentationMode}
         
                 <!-- svelte-ignore a11y-click-events-have-key-events -->
                 <aside use:ripple class="back noMenu" on:click={back}></aside>
             {/if}
             {#if !$presentationMode}
-                <span bind:this={$overlay}></span>
+                <span class="noMenu" bind:this={$overlay}></span>
             {/if}
             {#if $presentationMode}
                 <div class="absolute overlay noMenu" bind:this={$overlay}>
                     <Canvas width={W} height={10000}/>
                     
                 </div>
-                <div class="presenter">
+                <div class="presenter noMenu">
                     <Presenter />
                 </div>
             {/if}
