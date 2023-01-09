@@ -371,6 +371,7 @@
             // endTime = Date.now();
             // console.log(points.length/(endTime - startTime)*1000)
             requestAnimationFrame(draw);
+            //apply smoothing now
             flag = false;
             
             points.length = 0;

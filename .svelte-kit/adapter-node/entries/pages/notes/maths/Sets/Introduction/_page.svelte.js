@@ -106,7 +106,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
-          return `This study is so fundamental that all of mathematics is based on it. In other words, all of mathematics is the study of objects that satisfy some property. 
+          return `Such kind of collections are called <em>sets</em>. 
             `;
         }
       })}`;
@@ -116,7 +116,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 2 }, {}, {
         default: () => {
-          return `In mathematics, such kind of collections are called <em>sets</em>. We&#39;ll start with defining what is a set and see a few examples. After that we&#39;ll learn two ways to write sets. 
+          return `We&#39;ll start with defining what is a set and see a few examples. After that we&#39;ll learn two ways to write sets. 
                 ${escape(`\\[S = \\{1, 3, 5, 7,\\dots\\} = \\{x:x\\text{ is odd}\\}\\]`)}`;
         }
       })}`;
@@ -173,7 +173,16 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-        
+        ${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { isActive: 7 }, {}, {
+        default: () => {
+          return `Concepts learnt in this chapter will be useful in other chapters like relations and functions, trigonometry, sequences and series, combinatorics, calculus and probability.
+            `;
+        }
+      })}`;
+    }
+  })}
         ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1c16nc0"}"></div>` : ``}</section>
 </article>`;
 });

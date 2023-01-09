@@ -52,12 +52,12 @@
         </Item>
         <Item item={1}>
             <P isActive={1}>
-                This study is so fundamental that all of mathematics is based on it. In other words, all of mathematics is the study of objects that satisfy some property. 
+                Such kind of collections are called <em>sets</em>. 
             </P>
         </Item>
         <Item item={2}>
             <P isActive={2}>
-                In mathematics, such kind of collections are called <em>sets</em>. We'll start with defining what is a set and see a few examples. After that we'll learn two ways to write sets. 
+                We'll start with defining what is a set and see a few examples. After that we'll learn two ways to write sets. 
                 {`\\[S = \\{1, 3, 5, 7,\\dots\\} = \\{x:x\\text{ is odd}\\}\\]`}
             </P>
         </Item>
@@ -87,7 +87,11 @@
                 <img src="/notes/maths/sets/introduction/example.svg" alt="">
             </Image>
         </Item>
-        
+        <Item item={7}>
+            <P isActive={7}>
+                Concepts learnt in this chapter will be useful in other chapters like relations and functions, trigonometry, sequences and series, combinatorics, calculus and probability.
+            </P>
+        </Item>
         {#if $presentationMode && $currentSlide >= 2}
             <div class="pad"></div>
         {/if}
