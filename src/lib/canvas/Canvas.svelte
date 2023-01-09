@@ -411,10 +411,14 @@
 <style>
     canvas {
         cursor: crosshair;
-        touch-action: none;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        user-select: none;
+        -webkit-touch-callout: none !important;
+        -webkit-user-select: none !important;
+        -webkit-tap-highlight-color: transparent !important;
+        -moz-user-select: -moz-none;
+        -ms-user-select: none;
+        touch-action: none !important;
+        user-select: none !important;
+        -webkit-user-drag: none;
     }
 </style>
 <!-- <div class="colors">

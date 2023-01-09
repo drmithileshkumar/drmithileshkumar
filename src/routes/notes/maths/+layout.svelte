@@ -176,7 +176,7 @@
                     <Presenter />
                 </div>
             {/if}
-            <slot />
+            <slot class="{$presentationMode ? 'noMenu':''}" />
             {#if $presentationMode}
         
                 <!-- svelte-ignore a11y-click-events-have-key-events -->

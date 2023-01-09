@@ -83,13 +83,14 @@ h1 {
 	font-size: 2em;
 }
 .noMenu {
-	touch-action: none !important;
 	-webkit-touch-callout: none !important;
 	-webkit-user-select: none !important;
+	-webkit-tap-highlight-color: transparent !important;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	-webkit-user-drag: none;
+	touch-action: none !important;
 	user-select: none !important;
-    -webkit-tap-highlight-color: transparent !important;
-    -moz-user-select: -moz-none;
-    -ms-user-select: none;
 }
 /* h1 {
 	font-size: var(--h1size);

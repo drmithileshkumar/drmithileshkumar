@@ -46,7 +46,7 @@ const CanvasBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     <label><input style="${"width: 4em; height: 1em; padding-left: 0.5em; padding-right: 0.5em;"}" type="${"number"}" step="${"0.1"}"${add_attribute("value", $lineWidth, 0)}></label></div>`;
 });
 const css$1 = {
-  code: "canvas.svelte-1vtaya8{cursor:crosshair;touch-action:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}",
+  code: "canvas.svelte-ot4q75{cursor:crosshair;-webkit-touch-callout:none !important;-webkit-user-select:none !important;-webkit-tap-highlight-color:transparent !important;-moz-user-select:-moz-none;-ms-user-select:none;touch-action:none !important;user-select:none !important;-webkit-user-drag:none}",
   map: null
 };
 const Canvas = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -83,7 +83,7 @@ const Canvas = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_strokeColor();
   $$unsubscribe_globalCompositeOperation();
   return `
-<canvas${add_attribute("width", width, 0)}${add_attribute("height", height, 0)} class="${"svelte-1vtaya8"}"${add_attribute("this", canvas, 0)}></canvas>
+<canvas${add_attribute("width", width, 0)}${add_attribute("height", height, 0)} class="${"svelte-ot4q75"}"${add_attribute("this", canvas, 0)}></canvas>
 
 `;
 });

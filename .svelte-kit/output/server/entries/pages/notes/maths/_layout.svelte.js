@@ -71,7 +71,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             ${!$presentationMode ? `<span${add_attribute("this", $overlay, 0)}></span>` : ``}
             ${$presentationMode ? `<div class="${"absolute overlay noMenu svelte-kg1oag"}"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>
                 <div class="${"presenter svelte-kg1oag"}">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>` : ``}
-            ${slots.default ? slots.default({}) : ``}
+            ${slots.default ? slots.default({ class: $presentationMode ? "noMenu" : "" }) : ``}
             ${$presentationMode ? `
                 <aside class="${"next noMenu svelte-kg1oag"}"></aside>` : ``}</div></div>`;
   } while (!$$settled);
