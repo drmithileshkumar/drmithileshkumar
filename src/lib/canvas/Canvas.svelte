@@ -308,32 +308,6 @@
         document.getElementById("canvasimg").style.display = "inline";
     }
     const getMousePosition = (evt) => {
-        // let rect = canvas.getBoundingClientRect();
-        // let scaleX = canvas.width/rect.width;
-        // let scaleY = canvas.height/rect.height;
-        // console.log(canvas.width/boundingRect.width, canvas.height/boundingRect.height)
-        // console.log(scaleX, scaleY)
-        // let clientx;
-        // let clienty;
-        // switch(evt.type) {
-        //     case 'touchstart':
-        //     case 'touchmove':
-        //     case 'touchend':
-        //     case 'touchcancel': {
-        //         clientx = evt.touches[0].clientX;
-        //         clienty = evt.touches[0].clientY;
-        //         break;
-        //     }
-        //     case 'mousedown':
-        //     case 'mousemove':
-        //     case 'mouseup':
-        //     case 'mouseleave': {
-        //         clientx = evt.clientX;
-        //         clienty = evt.clientY;
-        //         break;
-        //     }
-        // }
-
         let clientx = evt.clientX;
         let clienty = evt.clientY;
         return {
@@ -357,6 +331,7 @@
             scaleY = canvas.height/boundingRect.height;
             // console.log(scaleX, scaleY)
             let pos = getMousePosition(e);
+            e.preventDefault();
             snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
             points.push({x: pos.x, y: pos.y});
             if($stMode || $arcMode) points.push({x: pos.x, y: pos.y})
