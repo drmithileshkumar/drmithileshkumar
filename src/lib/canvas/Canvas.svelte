@@ -37,7 +37,9 @@
         canvas.addEventListener("pointercancel", function (e) {
             findxy('out', e)
         }, false);
-        
+        canvas.addEventListener("contextmenu", function (e) {
+            e.preventDefault()
+        }, false)
         // canvas.addEventListener("touchmove", function (e) {
         //     findxy('move', e)
         // }, false);
@@ -408,6 +410,9 @@
     canvas {
         cursor: crosshair;
         touch-action: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
     }
 </style>
 <!-- <div class="colors">

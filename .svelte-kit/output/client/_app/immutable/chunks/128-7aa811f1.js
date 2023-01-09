@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-57c3dc77.js";import{default as t}from"../components/pages/notes/maths/Straight lines/Slope of a line/_page.svelte-4ea5da46.js";export{t as component,r as universal};
+import{_ as r}from"./_page-3b81bc88.js";import{default as t}from"../components/pages/notes/maths/Straight lines/Slope of a line/_page.svelte-4ea5da46.js";export{t as component,r as universal};
