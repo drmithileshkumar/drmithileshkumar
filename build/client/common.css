@@ -83,10 +83,10 @@ h1 {
 	font-size: 2em;
 }
 .noMenu {
-	touch-action: none;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	user-select: none;
+	touch-action: none !important;
+	-webkit-touch-callout: none !important;
+	-webkit-user-select: none !important;
+	user-select: none !important;
 }
 /* h1 {
 	font-size: var(--h1size);
