@@ -23,7 +23,9 @@
         ctx = canvas.getContext("2d", {willReadFrequently: true});
         width = canvas.width;
         height = canvas.height;
-        
+        canvas.addEventListener("touchstart", function (e) {
+            e.preventDefault()
+        }, false);
         
         canvas.addEventListener("pointermove", function (e) {
             findxy('move', e)
