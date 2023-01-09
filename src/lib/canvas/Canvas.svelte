@@ -354,6 +354,7 @@
             // animeFrame = requestAnimationFrame(draw);
         }
         if(res == 'out') {
+            e.preventDefault();
             flag = false;
             points.length = 0;
             reducedPoints.length = 0;
@@ -362,6 +363,7 @@
             cancelAnimationFrame(animeFrame)
         }
         if (res == 'up') {
+            e.preventDefault();
             // requestAnimationFrame(draw);
             // draw();
             // endTime = Date.now();
