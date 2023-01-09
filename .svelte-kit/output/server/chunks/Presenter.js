@@ -31,17 +31,23 @@ const CanvasBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   $$unsubscribe_stMode();
   $$unsubscribe_arcMode();
   $$unsubscribe_clearAll();
-  return `<div class="${"shapes svelte-1t5pp56"}"><span class="${"svelte-1t5pp56"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 -5 20 10"}"><line x1="${"0%"}" y1="${"0%"}" x2="${"100%"}" y2="${"0%"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></line>${$stMode ? `<line x1="${"0%"}" y1="${"0%"}" x2="${"100%"}" y2="${"0%"}" stroke="${"black"}" stroke-width="${"2"}" fill="${"none"}"></line>` : ``}</svg></span>
+  return `<div class="${"shapes svelte-1t5pp56"}">
+    <span class="${"svelte-1t5pp56"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 -5 20 10"}"><line x1="${"0%"}" y1="${"0%"}" x2="${"100%"}" y2="${"0%"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></line>${$stMode ? `<line x1="${"0%"}" y1="${"0%"}" x2="${"100%"}" y2="${"0%"}" stroke="${"black"}" stroke-width="${"2"}" fill="${"none"}"></line>` : ``}</svg></span>
+    
     <span class="${"svelte-1t5pp56"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 0 20 10"}"><circle cx="${"50%"}" cy="${"50%"}" r="${"8"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></circle>${$arcMode ? `<circle cx="${"50%"}" cy="${"50%"}" r="${"6"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></circle>` : ``}</svg></span></div>
 
 <div class="${"colors svelte-1t5pp56"}">${each(colors, (color) => {
     return `<button style="${"background: " + escape(color, true) + "; border: white " + escape($strokeColor === color ? "5px double" : "solid", true) + "; border-radius: 50%; padding: " + escape(color === "eraser" ? 0 : "", true) + ";"}" class="${"svelte-1t5pp56"}">${color === "eraser" ? `<svg width="${"100%"}" height="${"100%"}" viewBox="${"0 0 20 40"}"><g transform="${"rotate(-45 10 20) translate(0 5)"}"><rect x="${"0"}" y="${"0"}" width="${"20"}" height="${"10"}" stroke="${"black"}" stroke-width="${"1"}"></rect><rect x="${"0"}" y="${"10"}" width="${"20"}" height="${"20"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></rect></g></svg>` : ``}
         </button>`;
   })}
+    
     <span class="${"material-icons"}" style="${"cursor:pointer;"}">clear
     </span></div>
-<div class="${"lineWidth svelte-1t5pp56"}"><svg width="${"20"}" height="${"20"}" viewBox="${"0 0 20 20"}" style="${"cursor:pointer"}">${$lineWidth === 2 ? `<circle cx="${"10"}" cy="${"10"}" r="${"4"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></circle>` : ``}<circle cx="${"10"}" cy="${"10"}" r="${"2"}" fill="${"black"}"></circle></svg>
+<div class="${"lineWidth svelte-1t5pp56"}">
+    <svg width="${"20"}" height="${"20"}" viewBox="${"0 0 20 20"}" style="${"cursor:pointer"}">${$lineWidth === 2 ? `<circle cx="${"10"}" cy="${"10"}" r="${"4"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></circle>` : ``}<circle cx="${"10"}" cy="${"10"}" r="${"2"}" fill="${"black"}"></circle></svg>
+    
     <svg width="${"20"}" height="${"20"}" viewBox="${"0 0 20 20"}" style="${"cursor:pointer"}">${$lineWidth === 4 ? `<circle cx="${"10"}" cy="${"10"}" r="${"6"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></circle>` : ``}<circle cx="${"10"}" cy="${"10"}" r="${"4"}" fill="${"black"}"></circle></svg>
+    
     <svg width="${"20"}" height="${"20"}" viewBox="${"0 0 20 20"}" style="${"cursor:pointer"}">${$lineWidth === 20 ? `<circle cx="${"10"}" cy="${"10"}" r="${"9"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></circle>` : ``}<circle cx="${"10"}" cy="${"10"}" r="${"7"}" fill="${"black"}"></circle></svg>
     <label><input style="${"width: 4em; height: 1em; padding-left: 0.5em; padding-right: 0.5em;"}" type="${"number"}" step="${"0.1"}"${add_attribute("value", $lineWidth, 0)}></label></div>`;
 });
@@ -94,7 +100,7 @@ const css = {
 };
 const Presenter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="${"ring ring1 svelte-wvekyu"}"><div class="${"ring ring2 svelte-wvekyu"}"><div class="${"ring ring3 svelte-wvekyu"}"><img src="${"/favicon.png"}" alt="${""}" class="${"svelte-wvekyu"}"></div></div></div>`;
+  return `<div class="${"ring ring1 noMenu svelte-wvekyu"}"><div class="${"ring ring2 noMenu svelte-wvekyu"}"><div class="${"ring ring3 noMenu svelte-wvekyu"}"><img class="${"noMenu svelte-wvekyu"}" src="${"/favicon.png"}" alt="${""}"></div></div></div>`;
 });
 export {
   CanvasBar as C,

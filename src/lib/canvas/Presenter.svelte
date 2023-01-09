@@ -42,10 +42,10 @@
         }
     }
 </style>
-<div class="ring ring1">
-    <div class="ring ring2">
-        <div class="ring ring3">
-            <img src="/favicon.png" alt="">
+<div class="ring ring1 noMenu">
+    <div class="ring ring2 noMenu">
+        <div class="ring ring3 noMenu">
+            <img class="noMenu" src="/favicon.png" alt="">
         </div>
     </div>
 </div>

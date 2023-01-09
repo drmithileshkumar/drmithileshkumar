@@ -69,6 +69,7 @@
     }
 </style>
 <div class="shapes">
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <span on:click={() => {$stMode = !$stMode, $arcMode = false}}>
         <svg width='20px' height="20px" viewBox="0 -5 20 10">
             <line x1="0%" y1="0%" x2="100%" y2="0%" stroke="black" stroke-width="1" fill="none" />
@@ -77,6 +78,7 @@
             {/if}
         </svg>
     </span>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <span on:click={() => {$arcMode = !$arcMode, $stMode = false}}>
         <svg width='20px' height="20px" viewBox="0 0 20 10">
             <circle cx="50%" cy="50%" r="8" stroke="black" stroke-width="1" fill="none" />
@@ -100,24 +102,28 @@
             {/if}
         </button>
     {/each}
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <span on:click={() => {$clearAll = true}} class="material-icons" use:ripple style="cursor:pointer;">
         clear
     </span>
 </div>
 <div class="lineWidth">
     
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <svg width="20" height="20" viewBox="0 0 20 20" on:click={() => $lineWidth = 2} style="cursor:pointer">
         {#if $lineWidth === 2}
             <circle cx="10" cy="10" r="4" fill="none" stroke="black" stroke-width=1 />
         {/if}
         <circle cx="10" cy="10" r="2" fill="black" />
     </svg>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <svg width="20" height="20" viewBox="0 0 20 20" on:click={() => $lineWidth = 4} style="cursor:pointer">
         {#if $lineWidth === 4}
             <circle cx="10" cy="10" r="6" fill="none" stroke="black" stroke-width=1 />
         {/if}
         <circle cx="10" cy="10" r="4" fill="black" />
     </svg>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <svg width="20" height="20" viewBox="0 0 20 20" on:click={() => $lineWidth = 20} style="cursor:pointer">
         {#if $lineWidth === 20}
             <circle cx="10" cy="10" r="9" fill="none" stroke="black" stroke-width=1 />
