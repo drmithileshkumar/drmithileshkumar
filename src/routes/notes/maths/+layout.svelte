@@ -131,12 +131,12 @@
             top: 0;
             z-index: 10;
         }
-        .noMenu {
+        /* .noMenu {
             touch-action: none;
             -webkit-touch-callout: none;
             -webkit-user-select: none;
             user-select: none;
-        }
+        } */
     </style>
     <svelte:head>
         <!-- <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
