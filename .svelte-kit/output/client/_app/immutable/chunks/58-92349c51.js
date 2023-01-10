@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-f1f55c0c.js";import{default as t}from"../components/pages/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/_page.svelte-6a30badc.js";export{t as component,r as universal};
+import{_ as r}from"./_page-b6ea76c3.js";import{default as t}from"../components/pages/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/_page.svelte-6a30badc.js";export{t as component,r as universal};

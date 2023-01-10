@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-42591e5d.js";import{default as t}from"../components/pages/notes/maths/Continuity and differentiability/Logarithmic differentiation/_page.svelte-a2795cd3.js";export{t as component,r as universal};
+import{_ as r}from"./_page-b421402b.js";import{default as t}from"../components/pages/notes/maths/Continuity and differentiability/Logarithmic differentiation/_page.svelte-a2795cd3.js";export{t as component,r as universal};

@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-e151b505.js";import{default as t}from"../components/pages/notes/maths/Permutations and combinations/Combinations/_page.svelte-5dfee5f8.js";export{t as component,r as universal};
+import{_ as r}from"./_page-192af538.js";import{default as t}from"../components/pages/notes/maths/Permutations and combinations/Combinations/_page.svelte-5dfee5f8.js";export{t as component,r as universal};

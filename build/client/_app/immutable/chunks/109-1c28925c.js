@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-5103f51a.js";import{default as t}from"../components/pages/notes/maths/Sequences and series/Series/_page.svelte-4991c774.js";export{t as component,r as universal};
+import{_ as r}from"./_page-cc350a55.js";import{default as t}from"../components/pages/notes/maths/Sequences and series/Series/_page.svelte-4991c774.js";export{t as component,r as universal};

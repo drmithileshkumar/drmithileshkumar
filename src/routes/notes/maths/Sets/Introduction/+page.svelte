@@ -28,6 +28,7 @@
     <meta name="description" content="Introduction to sets" />
     
 </svelte:head>
+
 <article class:absolute={$presentationMode} bind:this={$presentation}>
     {#if $presentationMode && $currentSlide === -2}
         <div class="thumbnail">

@@ -101,6 +101,7 @@
     "imports": [
       "_index.js",
       "_stores2.js",
+      "_Image.svelte_svelte_type_style_lang.js",
       "_Image.js"
     ],
     "css": [
@@ -2474,6 +2475,7 @@
       "_index.js",
       "_stores2.js",
       "_stores.js",
+      "_Image.svelte_svelte_type_style_lang.js",
       "_Image.js"
     ],
     "css": [
@@ -2566,10 +2568,11 @@
     "imports": [
       "_index.js",
       "_stores2.js",
-      "_stores.js"
+      "_stores.js",
+      "_Image.svelte_svelte_type_style_lang.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-58267112.css",
+      "_app/immutable/assets/_page-c3dce3ca.css",
       "_app/immutable/assets/Practice-7b5f67df.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
@@ -3368,14 +3371,22 @@
       "_index3.js"
     ]
   },
-  "_Image.js": {
-    "file": "chunks/Image.js",
+  "_Image.svelte_svelte_type_style_lang.js": {
+    "file": "chunks/Image.svelte_svelte_type_style_lang.js",
     "imports": [
       "_index.js",
       "_stores2.js"
     ],
     "css": [
       "_app/immutable/assets/Image-92c0138a.css"
+    ]
+  },
+  "_Image.js": {
+    "file": "chunks/Image.js",
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_Image.svelte_svelte_type_style_lang.js"
     ]
   },
   "_Papers.js": {

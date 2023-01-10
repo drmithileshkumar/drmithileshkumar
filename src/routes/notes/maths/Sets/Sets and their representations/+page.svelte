@@ -1,13 +1,20 @@
 <script id="MathJax-script">
     // @ts-nocheck
-        import {chapters, sections, selectedChapter, selectedSection} from '$lib/pages/notes/maths/stores';
-        import {presentationMode, presentation, overlay, slideCounter, autoScroll, currentSlide} from '$lib/pages/notes/maths/stores';
-        import Practice from '$lib/utils/practiceproblem/Practice.svelte';
-        import Message from '$lib/ui/Message.svelte';
-        import {Point2D} from '$lib/utils/common/point2d';
-        import {randNum, randInt} from '$lib/utils/common/common';
-        import {page} from '$app/stores';
-        import {onMount} from 'svelte';
+    import {chapters, sections, selectedChapter, selectedSection} from '$lib/pages/notes/maths/stores';
+    import {presentationMode, presentation, overlay, slideCounter, autoScroll, currentSlide} from '$lib/pages/notes/maths/stores';
+    import Practice from '$lib/utils/practiceproblem/Practice.svelte';
+    import Message from '$lib/ui/Message.svelte';
+    import {Point2D} from '$lib/utils/common/point2d';
+    import {randNum, randInt} from '$lib/utils/common/common';
+    import {page} from '$app/stores';
+    import {onMount} from 'svelte';
+    import P from '$lib/presentation/P.svelte';
+    import H1 from '$lib/presentation/H1.svelte';
+    import H2 from '$lib/presentation/H2.svelte';
+    import H3 from '$lib/presentation/H3.svelte';
+    import Li from '$lib/presentation/Li.svelte';
+    import Item from '$lib/presentation/Item.svelte';
+	import Image from '$lib/presentation/Image.svelte';
         onMount(() => {
             $selectedChapter = 'Sets';
             $selectedSection = 'Sets and their representations';
@@ -117,16 +124,7 @@
             return problemset;
         }
     </script>
-    <style>
-        p {
-            text-indent: 2em;
-        }
-        /* .image {
-            display: flex;
-            justify-content: center;
-            width: min(95vw, 600px);
-        } */
-    </style>
+    
     <svelte:head>
         <title>{$selectedSection}</title>
         <link rel="canonical" href="https://drmithileshkumar.com{$page.url.pathname}" />
@@ -134,48 +132,82 @@
         
     </svelte:head>
     <article class:absolute={$presentationMode} bind:this={$presentation}>
-        <h1>{$selectedSection}</h1>
-        <h2>Definition</h2>
-        <section>
-            <p>
-                We are used to a practical idea of what is a <em>collection</em>. A <em>set</em> is the mathematical refinement of this idea of collection. It turns out that not every collection can be a set. One basic requirement of a mathematical concept is that its definition must be unique. Not every collection has a unique definition. Consider, for example, <span class="specialtext">the collection of favourite songs</span>. Pretty much every person would have their own unique collection of favourite songs. 
-            </p>
-            <p>
-                Although the collection of favourite songs is defined for each person, but it is not unique for everyone. We can not consider such collections as mathematical object. Then the question remains <em>"how do we eliminate such bad cases of collections?"</em>
-            </p>
-            <p>
-                This problem of uniquenss can be solved if it is possible to decide, with certainty, whether an object is part of the collection. This is how we define the mathematical notion of a <em>set</em>.
-            </p>
-            <div class="definition">
-                A <strong>set</strong> is a <em>well-defined</em> collection of objects.
+        {#if $presentationMode && $currentSlide === -2}
+            <div class="thumbnail">
+                <p 
+                    class="statement" 
+                    >
+                    Set Representations
+                </p>
             </div>
-            <p>
-                The property <em>well-defined</em> means given a set and an object, we can determine, without ambiguity, whether the object <em>belongs</em> to the set or not.
-            </p>
+        {/if}
+        {#if !$presentationMode || $currentSlide >= -1}
+            <h1>{$selectedSection}</h1>
+        {/if}
+        <Item item={0}>
+            <H2 isActive={0}>
+                Definition
+            </H2>
+        </Item>
+        <section>
+            <Item item={1}>
+                <P isActive={1}>
+                    We are used to a practical idea of what is a <em>collection</em>. A <em>set</em> is the mathematical refinement of this idea of collection. It turns out that not every collection can be a set. One basic requirement of a mathematical concept is that its definition must be unique. Not every collection has a unique definition. Consider, for example, <span class="specialtext">the collection of favourite songs</span>. Pretty much every person would have their own unique collection of favourite songs. 
+                </P>
+            </Item>
+            <Item item={2}>
+                <P isActive={2}>
+                    Although the collection of favourite songs is defined for each person, but it is not unique for everyone. We can not consider such collections as mathematical object. Then the question remains <em>"how do we eliminate such bad cases of collections?"</em>
+                </P>
+            </Item>
+            <Item item={3}>
+                <P isActive={3}>
+                    This problem of uniquenss can be solved if it is possible to decide, with certainty, whether an object is part of the collection. This is how we define the mathematical notion of a <em>set</em>.
+                </P>
+            </Item>
+            <Item item={4}>
+                <P class="definition" isActive={4}>
+                    A <strong>set</strong> is a <em>well-defined</em> collection of objects.
+                </P>
+            </Item>
+            <Item item={5}>
+                <P isActive={5}>
+                    The property <em>well-defined</em> means given a set and an object, we can determine, without ambiguity, whether the object <em>belongs</em> to the set or not.
+                </P>
+            </Item>
         </section>
         
         <section>
-            <h3 class="examples">Examples</h3>
+            <Item item={6}>
+                <H3 class="examples" isActive={6}>
+                    Examples
+                </H3>
+            </Item>
             <ul>
-                <li>
-                    Collection of students in a given class is a set.
-                </li>
-                <li>
-                    Alphabets in English is a set.
-                </li>
-                <li>
-                    Natural numbers divisible by 2 is a set.
-                </li>
-                <li>
-                    Collection of circles of different radii is a set.
-                </li>
-                <li>
-                    Collection of all rivers in the world is a set.
-                </li>
+                <Item item={7}>
+                    <Li isActive={7}>Collection of students in a given class is a set.</Li>
+                </Item>
+                <Item item={8}>
+                    <Li isActive={8}>Alphabets in English is a set.</Li>
+                </Item>
+                <Item item={9}>
+                    <Li isActive={9}>Natural numbers divisible by 2 is a set.</Li>
+                </Item>
+                <Item item={10}>
+                    <Li isActive={10}>Collection of circles of different radii is a set.</Li>
+                </Item>
+                <Item item={11}>
+                    <Li isActive={11}>Collection of all rivers in the world is a set.</Li>
+                </Item>
             </ul>
         </section>
-        <h2>Elements of a set</h2>
+        <Item item={12}>
+            <H2 isActive={12}>
+                Elements of a set
+            </H2>
+        </Item>
         <section>
+        <Item item={13}>
             <ul>
                 <li>
                     A set is usually denoted by capital letters \(A, B, X, Y\) etc.
@@ -197,78 +229,86 @@
                 </li>
             </ul>
             
+        </Item>
+            
         </section>
         <section>
+            <Item item={14}>
+                <h3 class="examples">Examples</h3>
+                <ul>
+                    <li>
+                        If \(A\) is the set of vowels in English, then \(a\in A\) because \(a\) is a vowel, but \(x\notin A\) because \(x\) is not a vowel.
+                    </li>
+                    <li>
+                        If \(E\) is the set of Natural numbers divisible by 2, then \(2\in E\), but \(0\notin E\) and \(3\notin E\).
+                    </li>
+                    <li>
+                        If \(R\) is the set of all rivers in the world, then \(Ganga\in R\), but \(India\notin R\).
+                    </li>
+                </ul>
+            </Item>
+            
+        </section>
+        <Item item={15}>
+            <h2>Roster Form</h2>
+            <section>
+                <div class="definition">
+                    <p>
+                        In roster form, all the elements of a set are listed, comma-separated and enclosed within braces {'\\[\\{a_1, a_2,\\dots, a_n \\}\\]'}
+                    </p>
+                </div>
+            </section>
             <h3 class="examples">Examples</h3>
-            <ul>
-                <li>
-                    If \(A\) is the set of vowels in English, then \(a\in A\) because \(a\) is a vowel, but \(x\notin A\) because \(x\) is not a vowel.
-                </li>
-                <li>
-                    If \(E\) is the set of Natural numbers divisible by 2, then \(2\in E\), but \(0\notin E\) and \(3\notin E\).
-                </li>
-                <li>
-                    If \(R\) is the set of all rivers in the world, then \(Ganga\in R\), but \(India\notin R\).
-                </li>
-            </ul>
-        </section>
-        <h2>Roster Form</h2>
-        <section>
-            <div class="definition">
-                <p>
-                    In roster form, all the elements of a set are listed, comma-separated and enclosed within braces {'\\[\\{a_1, a_2,\\dots, a_n \\}\\]'}
-                </p>
-            </div>
-        </section>
-        <h3 class="examples">Examples</h3>
-        <section>
-            <ul>
-                <li>
-                    Set of natural numbers less than 10 and divisible by 2 is {`\\(\\{2, 4, 6, 8\\}\\)`}.
-                </li>
-                <li>
-                    Set of English vowels is {`\\(\\{a, e, i, o, u\\}\\)`}.
-                </li>
-                <li>
-                    Set of roots of quadratic equation \(x^2 - 3x + 2 = 0\) is {`\\(\\{1, 2\\}\\)`}.
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h3 class="remark">Remarks </h3>
-            <ul>
-                <li>
-                    In roster form, the order in which the elements are listed does not matter. For example, the set {`\\(\\{2, 4\\}\\)`} is the same as {`\\(\\{4, 2\\}\\)`}.
-                </li>
-                <li>
-                    In roster form, repeating an element in the list does not change the set. Hence, an element is usually listed only once in the set. For example, the set of letter in BETTER is {`\\(\\{B, E, T, T, E, R\\}\\)`}, there is no need to repeat E and T. We can just write {`\\(\\{B, E, T, R\\}\\)`}.
-                </li>
-                <li>
-                    The set of roots of quadratic equation \(x^2 - 2x + 1 = 0\) is {`\\(\\{1, 1\\}\\)`} or just {`\\(\\{1\\}\\)`}.
-                </li>
-            </ul>
-           
-        </section>
-        <h2>Set Builder Form</h2>
-        <section>
-            <div class="definition">
-                <p>
-                 In set-builder form, we specify a property that is satisfied <strong>only</strong> by the elements of the set. It is written as {`\\[\\{x : \\text{Property satisfied by } x\\}\\]`} The symbol \(x\) can be replaced with any other symbol like \(a, b, y\) etc. The colon (:) stands for "such that". After colon (:) we write the property satisfied by all elements of the set.
-                </p>
-            </div>
-         </section>
-         
-         <section>
-             <h3 class="examples">Examples</h3>
-             <ul>
-                 <li>
-                     The set-builder form of the set {`\\(\\{2, 4, 6, 8\\}\\)`} is {`\\(\\{x: x\\)`} is a natural numbers less than 10 and divisible by  2{`\\(\\}\\)`}.
-                 </li>
-                 <li>
-                     The set-builder form of the set {`\\(\\{a, e, i, o, u\\}\\)`} is {`\\(\\{x : x \\text{ is an English vowel}\\}\\)`}.
-                 </li>
-             </ul>
-         </section>
+            <section>
+                <ul>
+                    <li>
+                        Set of natural numbers less than 10 and divisible by 2 is {`\\(\\{2, 4, 6, 8\\}\\)`}.
+                    </li>
+                    <li>
+                        Set of English vowels is {`\\(\\{a, e, i, o, u\\}\\)`}.
+                    </li>
+                    <li>
+                        Set of roots of quadratic equation \(x^2 - 3x + 2 = 0\) is {`\\(\\{1, 2\\}\\)`}.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="remark">Remarks </h3>
+                <ul>
+                    <li>
+                        In roster form, the order in which the elements are listed does not matter. For example, the set {`\\(\\{2, 4\\}\\)`} is the same as {`\\(\\{4, 2\\}\\)`}.
+                    </li>
+                    <li>
+                        In roster form, repeating an element in the list does not change the set. Hence, an element is usually listed only once in the set. For example, the set of letter in BETTER is {`\\(\\{B, E, T, T, E, R\\}\\)`}, there is no need to repeat E and T. We can just write {`\\(\\{B, E, T, R\\}\\)`}.
+                    </li>
+                    <li>
+                        The set of roots of quadratic equation \(x^2 - 2x + 1 = 0\) is {`\\(\\{1, 1\\}\\)`} or just {`\\(\\{1\\}\\)`}.
+                    </li>
+                </ul>
+               
+            </section>
+            <h2>Set Builder Form</h2>
+            <section>
+                <div class="definition">
+                    <p>
+                     In set-builder form, we specify a property that is satisfied <strong>only</strong> by the elements of the set. It is written as {`\\[\\{x : \\text{Property satisfied by } x\\}\\]`} The symbol \(x\) can be replaced with any other symbol like \(a, b, y\) etc. The colon (:) stands for "such that". After colon (:) we write the property satisfied by all elements of the set.
+                    </p>
+                </div>
+             </section>
+             
+             <section>
+                 <h3 class="examples">Examples</h3>
+                 <ul>
+                     <li>
+                         The set-builder form of the set {`\\(\\{2, 4, 6, 8\\}\\)`} is {`\\(\\{x: x\\)`} is a natural numbers less than 10 and divisible by  2{`\\(\\}\\)`}.
+                     </li>
+                     <li>
+                         The set-builder form of the set {`\\(\\{a, e, i, o, u\\}\\)`} is {`\\(\\{x : x \\text{ is an English vowel}\\}\\)`}.
+                     </li>
+                 </ul>
+             </section>
+        </Item>
+        
         <!-- <section>
             <h2>Practice</h2>
             {#if $session.user}
@@ -277,4 +317,66 @@
                 <Message>You need to be logged in to practice.</Message>
             {/if}
         </section> -->
+        {#if $presentationMode && $currentSlide >= 2}
+            <div class="pad"></div>
+        {/if}
     </article>
+    <style>
+        /* p {
+            text-indent: 2em;
+        } */
+        /* .image {
+            display: flex;
+            justify-content: center;
+            width: min(95vw, 600px);
+        } */
+        article {
+            position: relative;
+            padding: 0.5em;
+            /* in: all 1s; */
+        }
+        /* aside {
+            background-color: rgb(230, 228, 228);
+            cursor: pointer;
+            width: 1em;
+        } */
+        .absolute {
+            margin: auto;
+            /* width: 90vw; */
+            width: 100%;
+            height: min(78vh, 60vw);
+            /* height: min(70vh,600px); */
+            overflow-y: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding: 0 1em 0 1em;
+        }
+        .absolute::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+        .pad {
+            min-height: 100px;
+        } 
+        /*  
+        figure {
+            
+            width: 300px;
+        } */
+       
+        .thumbnail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            height: 100%;
+            
+        }
+        .statement {
+            background: radial-gradient(#6000c091, rgb(0, 93, 180));
+            color: rgb(246, 246, 246);
+            text-shadow: 1px 1px 3px rgb(4, 4, 4);
+            box-shadow: 1px 1px 3px rgb(129, 128, 128);
+            padding: 1em;
+        }
+    </style>
