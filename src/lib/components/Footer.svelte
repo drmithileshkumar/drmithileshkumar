@@ -20,13 +20,14 @@
         /* background: radial-gradient(circle at left, transparent 0, rgba(0, 0, 255, 0.1), rgba(255, 0, 0, 0.1), rgba(255, 255, 0, 0.1), rgba(0, 128, 0, 0.1) 100%); */
         backdrop-filter: blur(5px);
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        /* align-items: center;
+        justify-content: space-between; */
         padding: 0.5em;
         max-width: 1200px;
         margin: auto;
         border-top: 2px solid;
-        padding-top: 2em;
+        padding-top: 0.5em;
+        margin-top: 2em;
     }
     /* .branding {
         display: flex;
@@ -52,9 +53,13 @@
         flex-direction: column;
         padding: 1em 0;
     }
+    .about {
+        padding: 1em 0;
+    }
 </style>
 <nav>
     <div class="contactrights">
+        <a href="/about" class="about">About me</a>
         <span class="contact">Email at <strong>drmithileshkumar@outlook.com</strong> </span>
         <span class="copyright">All rights reserved. &#169; drmithileshkumar.com</span>
     </div>

@@ -130,13 +130,14 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Footer_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: "nav.svelte-33nj9d{height:2.5em;backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:space-between;padding:0.5em;max-width:1200px;margin:auto;border-top:2px solid;padding-top:2em}.copyright.svelte-33nj9d{font-variant:small-caps;font-size:0.8em;padding:0.5em 0}.contactrights.svelte-33nj9d{display:flex;flex-direction:column;padding:1em 0}",
+  code: "nav.svelte-8jjdhp{height:2.5em;backdrop-filter:blur(5px);display:flex;padding:0.5em;max-width:1200px;margin:auto;border-top:2px solid;padding-top:0.5em;margin-top:2em}.copyright.svelte-8jjdhp{font-variant:small-caps;font-size:0.8em;padding:0.5em 0}.contactrights.svelte-8jjdhp{display:flex;flex-direction:column;padding:1em 0}.about.svelte-8jjdhp{padding:1em 0}",
   map: null
 };
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<nav class="${"svelte-33nj9d"}"><div class="${"contactrights svelte-33nj9d"}"><span class="${"contact"}">Email at <strong>drmithileshkumar@outlook.com</strong></span>
-        <span class="${"copyright svelte-33nj9d"}">All rights reserved. © drmithileshkumar.com</span></div>
+  return `<nav class="${"svelte-8jjdhp"}"><div class="${"contactrights svelte-8jjdhp"}"><a href="${"/about"}" class="${"about svelte-8jjdhp"}">About me</a>
+        <span class="${"contact"}">Email at <strong>drmithileshkumar@outlook.com</strong></span>
+        <span class="${"copyright svelte-8jjdhp"}">All rights reserved. © drmithileshkumar.com</span></div>
     
     </nav>`;
 });

@@ -290,8 +290,8 @@ export {
   missing_component as m,
   noop as n,
   escape_object as o,
-  null_to_empty as p,
-  compute_rest_props as q,
+  compute_rest_props as p,
+  null_to_empty as q,
   add_classes as r,
   setContext as s,
   validate_component as v

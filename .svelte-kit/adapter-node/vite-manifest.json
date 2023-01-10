@@ -21,7 +21,7 @@
       "_index3.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-38517add.css"
+      "_app/immutable/assets/_layout-8c3b1b8a.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
@@ -100,15 +100,38 @@
     "isEntry": true,
     "imports": [
       "_index.js",
+      "_stores2.js",
+      "_Image.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-0dff8642.css",
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/+page.js": {
+    "file": "entries/pages/_page.js",
+    "src": "src/routes/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/about/+page.svelte": {
+    "file": "entries/pages/about/_page.svelte.js",
+    "src": "src/routes/about/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
       "_Papers.js"
     ],
     "css": [
       "_app/immutable/assets/_page-2f6448b5.css"
     ]
   },
-  "src/routes/+page.js": {
-    "file": "entries/pages/_page.js",
-    "src": "src/routes/+page.js",
+  "src/routes/about/+page.js": {
+    "file": "entries/pages/about/_page.js",
+    "src": "src/routes/about/+page.js",
     "isEntry": true,
     "imports": [
       "_index2.js"
@@ -2450,10 +2473,11 @@
     "imports": [
       "_index.js",
       "_stores2.js",
-      "_stores.js"
+      "_stores.js",
+      "_Image.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-9378a4f6.css",
+      "_app/immutable/assets/_page-5642818b.css",
       "_app/immutable/assets/Practice-7b5f67df.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
@@ -3342,6 +3366,16 @@
     "file": "chunks/stores3.js",
     "imports": [
       "_index3.js"
+    ]
+  },
+  "_Image.js": {
+    "file": "chunks/Image.js",
+    "imports": [
+      "_index.js",
+      "_stores2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Image-92c0138a.css"
     ]
   },
   "_Papers.js": {

@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/iit/maths/2021/question3/_page.js';
+import * as universal from '../entries/pages/iit/maths/2021/question2/_page.js';
 
 export const index = 15;
-export const component = async () => (await import('../entries/pages/iit/maths/2021/question3/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/iit/maths/2021/question3/_page.svelte-1df490fe.js';
+export const component = async () => (await import('../entries/pages/iit/maths/2021/question2/_page.svelte.js')).default;
+export const file = '_app/immutable/components/pages/iit/maths/2021/question2/_page.svelte-e468735f.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/iit/maths/2021/question3/_page.svelte-1df490fe.js","_app/immutable/chunks/index-d6181b86.js","_app/immutable/chunks/stores-7a0acd5b.js","_app/immutable/chunks/index-2f18dd9f.js","_app/immutable/chunks/stores-ec708fd5.js","_app/immutable/chunks/singletons-7f452f10.js","_app/immutable/chunks/index-dc9a5c6c.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/modules/pages/iit/maths/2021/question3/_page.js-36199001.js","_app/immutable/chunks/index-35a671a5.js","_app/immutable/chunks/control-f5b05b5f.js","_app/immutable/chunks/_page-ecb1ddf4.js"];
-export const stylesheets = ["_app/immutable/assets/_page-166b7437.css"];
+export const imports = ["_app/immutable/components/pages/iit/maths/2021/question2/_page.svelte-e468735f.js","_app/immutable/chunks/index-4bc03959.js","_app/immutable/chunks/stores-c5dfff84.js","_app/immutable/chunks/index-274f5047.js","_app/immutable/chunks/stores-0ec56a92.js","_app/immutable/chunks/singletons-ea1f1619.js","_app/immutable/chunks/index-d10dbe43.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/modules/pages/iit/maths/2021/question2/_page.js-36199001.js","_app/immutable/chunks/index-35a671a5.js","_app/immutable/chunks/control-f5b05b5f.js","_app/immutable/chunks/_page-1c124818.js"];
+export const stylesheets = ["_app/immutable/assets/_page-eaf5daec.css"];
 export const fonts = [];
