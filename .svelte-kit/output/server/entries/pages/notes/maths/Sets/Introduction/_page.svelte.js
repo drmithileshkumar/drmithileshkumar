@@ -2,7 +2,7 @@ import { c as create_ssr_component, q as compute_rest_props, d as subscribe, e a
 import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../../../chunks/stores2.js";
 /* empty css                                                               *//* empty css                                                              */import { p as page } from "../../../../../../chunks/stores.js";
 const P_svelte_svelte_type_style_lang = "";
-const css$2 = {
+const css$3 = {
   code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
   map: null
 };
@@ -15,13 +15,35 @@ const P = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { isActive = -1 } = $$props;
   if ($$props.isActive === void 0 && $$bindings.isActive && isActive !== void 0)
     $$bindings.isActive(isActive);
-  $$result.css.add(css$2);
+  $$result.css.add(css$3);
   $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();
   return `<p class="${escape($$restProps.class || "", true) + " " + escape(
     $presentationMode && isActive === $currentSlide ? "currentActive" : "",
     true
   ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</p>`;
+});
+const Li_svelte_svelte_type_style_lang = "";
+const css$2 = {
+  code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
+  map: null
+};
+const Li = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["isActive"]);
+  let $presentationMode, $$unsubscribe_presentationMode;
+  let $currentSlide, $$unsubscribe_currentSlide;
+  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
+  $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => $currentSlide = value);
+  let { isActive = -1 } = $$props;
+  if ($$props.isActive === void 0 && $$bindings.isActive && isActive !== void 0)
+    $$bindings.isActive(isActive);
+  $$result.css.add(css$2);
+  $$unsubscribe_presentationMode();
+  $$unsubscribe_currentSlide();
+  return `<li class="${escape($$restProps.class || "", true) + " " + escape(
+    $presentationMode && isActive === $currentSlide ? "currentActive" : "",
+    true
+  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</li>`;
 });
 const Item = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $presentationMode, $$unsubscribe_presentationMode;
@@ -91,42 +113,68 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
-          return `Consider \\(1, 3, 5, 7, \\dots\\) and \\(2, 4, 6, 8, \\dots\\) In the first group, only odd numbers are appearing and in the second group, only even numbers are appearing. We say that \\(1, 3, 5, 7,\\dots\\) is a collection of odd numbers and \\(2, 4, 6, 8, \\dots\\) is a collection of even numbers. This chapter is about the study of collection of objects that satisfy some property.
-            `;
-        }
-      })}
-            ${validate_component(Image, "Image").$$render($$result, { isActive: 0 }, {}, {
-        default: () => {
-          return `<img src="${"/notes/maths/sets/introduction/oddeven.svg"}" alt="${""}">`;
-        }
-      })}`;
-    }
-  })}
-        ${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
-    default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 1 }, {}, {
-        default: () => {
-          return `Such kind of collections are called <em>sets</em>. 
+          return `There are various branches of mathematics:
             `;
         }
       })}`;
     }
   })}
-        ${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
+        <table><tr><td>${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 2 }, {}, {
         default: () => {
-          return `We&#39;ll start with defining what is a set and see a few examples. After that we&#39;ll learn two ways to write sets. 
-                ${escape(`\\[S = \\{1, 3, 5, 7,\\dots\\} = \\{x:x\\text{ is odd}\\}\\]`)}`;
+          return `Set theory connects them all.`;
         }
       })}`;
     }
-  })}
+  })}</td>
+                <td><ul style="${"border-left: 1px solid"}">${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+        default: () => {
+          return `<strong>Algebra:</strong> Numbers, Sequences and Series, Quadratic equations, Linear equations
+                            `;
+        }
+      })}
+                            ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+        default: () => {
+          return `<strong>Geometry:</strong> Lines, Arcs, Quadrilaterals, Circles
+                            `;
+        }
+      })}
+                            ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+        default: () => {
+          return `<strong>Co-ordinate Geometry:</strong> Point, Distance, Lines, Section Formula
+                            `;
+        }
+      })}
+                            ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+        default: () => {
+          return `<strong>Trigonometry</strong>`;
+        }
+      })}
+                            ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+        default: () => {
+          return `<strong>Statistics and Probability</strong>`;
+        }
+      })}
+                            ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+        default: () => {
+          return `<strong>Vector algebra</strong>`;
+        }
+      })}
+                            ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+        default: () => {
+          return `<strong>Calculus</strong>`;
+        }
+      })}`;
+    }
+  })}</ul></td></tr></table>
         ${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 3 }, {}, {
         default: () => {
-          return `Then, we&#39;ll define some special types of sets, like empty sets, finite and infinite sets, power and universal sets.
+          return `Set theory is the starting point in all these branches and many more. In set theory, we study about sets. The concept of sets is even more basic than the concept of numbers. Sets conceptualize the properties of objects.
             `;
         }
       })}`;
@@ -136,8 +184,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 4 }, {}, {
         default: () => {
-          return `After that we&#39;ll learn how to create new sets from a given set using various operations that will feel like addition or subtraction. Finally, we&#39;ll conclude the chapter by using the learnt concept to solve problems like one described below.
+          return `Consider \\(1, 3, 5, 7, \\dots\\) and \\(2, 4, 6, 8, \\dots\\) In the first group, only odd numbers are appearing and in the second group, only even numbers are appearing. We say that \\(1, 3, 5, 7,\\dots\\) is a collection of odd numbers and \\(2, 4, 6, 8, \\dots\\) is a collection of even numbers. This chapter is about the study of collection of objects that satisfy some property.
             `;
+        }
+      })}
+            ${validate_component(Image, "Image").$$render($$result, { isActive: 4 }, {}, {
+        default: () => {
+          return `<img src="${"/notes/maths/sets/introduction/oddeven.svg"}" alt="${""}">`;
         }
       })}`;
     }
@@ -146,13 +199,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 5 }, {}, {
         default: () => {
-          return `Consider the following problem.
-            `;
-        }
-      })}
-            ${validate_component(P, "P").$$render($$result, { isActive: 5, class: "question" }, {}, {
-        default: () => {
-          return `In an IIT sports event, 50 medals were awarded in race, 30 in football and 25 in cricket. If only 60 students got any medal and only 5 students got medals in all events, how many received medals in exactly two of the events?
+          return `Such kind of collections are called <em>sets</em>. 
             `;
         }
       })}`;
@@ -162,13 +209,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 6 }, {}, {
         default: () => {
-          return `This simple problem is tricky to solve without using the language of <strong>Sets</strong>.
-            `;
-        }
-      })}
-            ${validate_component(Image, "Image").$$render($$result, { isActive: 6 }, {}, {
-        default: () => {
-          return `<img src="${"/notes/maths/sets/introduction/example.svg"}" alt="${""}">`;
+          return `We&#39;ll start with defining what is a set and see a few examples. After that we&#39;ll learn two ways to write sets. 
+                ${escape(`\\[S = \\{1, 3, 5, 7,\\dots\\} = \\{x:x\\text{ is odd}\\}\\]`)}`;
         }
       })}`;
     }
@@ -176,6 +218,57 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         ${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 7 }, {}, {
+        default: () => {
+          return `Then, we&#39;ll define some special types of sets, like empty sets, finite and infinite sets, power and universal sets.
+            `;
+        }
+      })}`;
+    }
+  })}
+        ${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { isActive: 8 }, {}, {
+        default: () => {
+          return `After that we&#39;ll learn how to create new sets from a given set using various operations that will feel like addition or subtraction. Finally, we&#39;ll conclude the chapter by using the learnt concepts to solve problems like one described below.
+            `;
+        }
+      })}`;
+    }
+  })}
+        ${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { isActive: 9 }, {}, {
+        default: () => {
+          return `Consider the following problem.
+            `;
+        }
+      })}
+            ${validate_component(P, "P").$$render($$result, { isActive: 9, class: "question" }, {}, {
+        default: () => {
+          return `In an IIT sports event, 50 medals were awarded in race, 30 in football and 25 in cricket. If only 60 students got any medal and only 5 students got medals in all events, how many received medals in exactly two of the events?
+            `;
+        }
+      })}`;
+    }
+  })}
+        ${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { isActive: 10 }, {}, {
+        default: () => {
+          return `This simple problem is tricky to solve without using the language of <strong>Sets</strong>.
+            `;
+        }
+      })}
+            ${validate_component(Image, "Image").$$render($$result, { isActive: 10 }, {}, {
+        default: () => {
+          return `<img src="${"/notes/maths/sets/introduction/example.svg"}" alt="${""}">`;
+        }
+      })}`;
+    }
+  })}
+        ${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { isActive: 11 }, {}, {
         default: () => {
           return `Concepts learnt in this chapter will be useful in other chapters like relations and functions, trigonometry, sequences and series, combinatorics, calculus and probability.
             `;
