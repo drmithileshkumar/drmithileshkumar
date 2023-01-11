@@ -7,6 +7,7 @@
     import {Point2D} from '$lib/utils/common/point2d';
     import {randNum, randInt} from '$lib/utils/common/common';
     import {Sets} from '$lib/utils/common/sets';
+    import {Quadratic} from '$lib/utils/common/quadratic';
     import {page} from '$app/stores';
     import {onMount} from 'svelte';
     import P from '$lib/presentation/P.svelte';
@@ -19,7 +20,7 @@
         onMount(() => {
             $selectedChapter = 'Sets';
             $selectedSection = 'Sets and their representations';
-            $slideCounter = 30;
+            $slideCounter = 40;
             $currentSlide = -2;
             MathJax.typeset();
         });
@@ -34,7 +35,7 @@
             c: ""
         };
         const generateProblem = (problemnumber) => {
-            let N = 4;
+            let N = 5;
             problemnumber = problemnumber % N;
             let choices = ['A', 'B', 'C', 'D'];
             let correctChoiceIndex = Math.floor(Math.random()*4);
@@ -118,6 +119,28 @@
                     } 
                     
                     problemset.s = `Which of the following is correct set-builder form of the set \\[${setA.str()}\\]`;
+                    break;
+                }
+                case 4: {
+                    let q = new Quadratic(0, 0, 0, 'n');
+                    q.rand(-3, 3);
+                    let q1 = new Quadratic(0, 0, 0, 'n');
+                    q1.rand(-3, 3);
+                    let q2 = new Quadratic(0, 0, 0, 'n');
+                    q2.rand(-3, 3);
+                    let q3 = new Quadratic(0, 0, 0, 'n');
+                    q3.rand(-3, 3);
+                    let seq = [q.value(1), q.value(2), q.value(3), q.value(4), q.value(5)];
+                    let set = new Sets(seq);
+                    values[0] = q.str();
+                    values[1] = q1.str();
+                    values[2] = q2.str();
+                    values[3] = q3.str();
+
+                    for(let i = 0; i < 4; i++) {
+                        problemset.o[choices[(correctChoiceIndex + i) % 4]] = '\\(\\{x: x = ' + values[i] + ', n~\\)' + ' is a natural number and ' + '\\(~1\\leq n\\leq 5\\}\\)';
+                    } 
+                    problemset.s = `Which of the following is correct set-builder form of the set \\[${set.str()}\\]`;
                     break;
                 }
             }
@@ -209,108 +232,127 @@
             </H2>
         </Item>
         <section>
-        <Item item={13}>
             <ul>
-                <li>
-                    A set is usually denoted by capital letters \(A, B, X, Y\) etc.
-                </li>
-                <li>
-                    Members of a set are called elements of the set. 
-                </li>
-                <li>
-                    Elements of a set are usually represented by small letters \(a, b, x, y\) etc.
-                </li>
+                <Item item={13}>
+                    <Li isActive={13}>A set is usually denoted by capital letters \(A, B, X, Y\) etc.</Li>
+                </Item>
+                <Item item={14}>
+                    <Li isActive={14}>Members of a set are called elements of the set.</Li>
+                </Item>
+                <Item item={15}>
+                    <Li isActive={15}>Elements of a set are usually represented by small letters \(a, b, x, y\) etc.</Li>
+                </Item>
             </ul>
-            <h3>Epsilon (\(\in\)) notation</h3>
+            <Item item={16}>
+                <H3 isActive{16}>
+                    Epsilon (\(\in\)) notation
+                </H3>
+            </Item>
             <ul>
-                <li>
-                    If \(a\) is an elment of a set \(A\), we say that \(a\) <em>belongs to</em> \(A\) and denote this fact using \(a\in A\).
-                </li>
-                <li>
-                    If \(a\) is <strong>not</strong> an elment of a set \(A\), we say that \(a\) <em>does not belongs to</em> \(A\) and denote this fact using \(a\notin A\).
-                </li>
+                <Item item={17}>
+                    <Li isActive={17}>If \(a\) is an elment of a set \(A\), we say that \(a\) <em>belongs to</em> \(A\) and denote this fact using \(a\in A\).</Li>
+                </Item>
+                <Item item={18}>
+                    <Li isActive={18}>If \(a\) is <strong>not</strong> an elment of a set \(A\), we say that \(a\) <em>does not belongs to</em> \(A\) and denote this fact using \(a\notin A\).</Li>
+                </Item>
             </ul>
-            
-        </Item>
-            
         </section>
         <section>
-            <Item item={14}>
-                <h3 class="examples">Examples</h3>
-                <ul>
-                    <li>
-                        If \(A\) is the set of vowels in English, then \(a\in A\) because \(a\) is a vowel, but \(x\notin A\) because \(x\) is not a vowel.
-                    </li>
-                    <li>
-                        If \(E\) is the set of Natural numbers divisible by 2, then \(2\in E\), but \(0\notin E\) and \(3\notin E\).
-                    </li>
-                    <li>
-                        If \(R\) is the set of all rivers in the world, then \(Ganga\in R\), but \(India\notin R\).
-                    </li>
-                </ul>
+        <Item item={19}>
+            <H3 class="examples" isActive{19}>
+                Examples
+            </H3>
+        </Item>
+        <ul>
+            <Item item={20}>
+                <Li isActive={20}>If \(A\) is the set of vowels in English, then \(a\in A\) because \(a\) is a vowel, but \(x\notin A\) because \(x\) is not a vowel.</Li>
             </Item>
+            <Item item={21}>
+                <Li isActive={21}>If \(E\) is the set of Natural numbers divisible by 2, then \(2\in E\), but \(0\notin E\) and \(3\notin E\).</Li>
+            </Item>
+            <Item item={22}>
+                <Li isActive={22}>If \(R\) is the set of all rivers in the world, then \(Ganga\in R\), but \(India\notin R\).</Li>
+            </Item>
+        </ul>
+        </section>
+        <Item item={23}>
+            <H2 isActive={23}>Roster Form</H2>
+        </Item>
+        <section>
+            <Item item={24}>
+                <P class="definition" isActive={24}>
+                    In roster form, all the elements of a set are listed, comma-separated and enclosed within braces {'\\[\\{a_1, a_2,\\dots, a_n \\}\\]'}
+                </P>
+            </Item>
+        </section>
+        <Item item={25}>
+            <H3 class="examples" isActive{25}>
+                Examples
+            </H3>
+        </Item>
+        <section>
+            <ul>
+                <Item item={26}>
+                    <Li isActive={26}>Set of natural numbers less than 10 and divisible by 2 is {`\\(\\{2, 4, 6, 8\\}\\)`}.</Li>
+                </Item>
+                <Item item={27}>
+                    <Li isActive={27}>Set of English vowels is {`\\(\\{a, e, i, o, u\\}\\)`}.</Li>
+                </Item>
+                <Item item={28}>
+                    <Li isActive={28}>Set of roots of quadratic equation \(x^2 - 3x + 2 = 0\) is {`\\(\\{1, 2\\}\\)`}.</Li>
+                </Item>
+            </ul>
+        </section>
+        <section>
+            <Item item={29}>
+                <H3 class="remark" isActive{29}>
+                    Remarks
+                </H3>
+            </Item>
+            <ul>
+                <Item item={30}>
+                    <Li isActive={30}>In roster form, the order in which the elements are listed does not matter. For example, the set {`\\(\\{2, 4\\}\\)`} is the same as {`\\(\\{4, 2\\}\\)`}.</Li>
+                </Item>
+                <Item item={31}>
+                    <Li isActive={31}>In roster form, repeating an element in the list does not change the set. Hence, an element is usually listed only once in the set. For example, the set of letter in BETTER is {`\\(\\{B, E, T, T, E, R\\}\\)`}, there is no need to repeat E and T. We can just write {`\\(\\{B, E, T, R\\}\\)`}.</Li>
+                </Item>
+                <Item item={32}>
+                    <Li isActive={32}>The set of roots of quadratic equation \(x^2 - 2x + 1 = 0\) is {`\\(\\{1, 1\\}\\)`} or just {`\\(\\{1\\}\\)`}.</Li>
+                </Item>
+            </ul>
             
         </section>
-        <Item item={15}>
-            <h2>Roster Form</h2>
-            <section>
-                <div class="definition">
-                    <p>
-                        In roster form, all the elements of a set are listed, comma-separated and enclosed within braces {'\\[\\{a_1, a_2,\\dots, a_n \\}\\]'}
-                    </p>
-                </div>
-            </section>
-            <h3 class="examples">Examples</h3>
-            <section>
-                <ul>
-                    <li>
-                        Set of natural numbers less than 10 and divisible by 2 is {`\\(\\{2, 4, 6, 8\\}\\)`}.
-                    </li>
-                    <li>
-                        Set of English vowels is {`\\(\\{a, e, i, o, u\\}\\)`}.
-                    </li>
-                    <li>
-                        Set of roots of quadratic equation \(x^2 - 3x + 2 = 0\) is {`\\(\\{1, 2\\}\\)`}.
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h3 class="remark">Remarks </h3>
-                <ul>
-                    <li>
-                        In roster form, the order in which the elements are listed does not matter. For example, the set {`\\(\\{2, 4\\}\\)`} is the same as {`\\(\\{4, 2\\}\\)`}.
-                    </li>
-                    <li>
-                        In roster form, repeating an element in the list does not change the set. Hence, an element is usually listed only once in the set. For example, the set of letter in BETTER is {`\\(\\{B, E, T, T, E, R\\}\\)`}, there is no need to repeat E and T. We can just write {`\\(\\{B, E, T, R\\}\\)`}.
-                    </li>
-                    <li>
-                        The set of roots of quadratic equation \(x^2 - 2x + 1 = 0\) is {`\\(\\{1, 1\\}\\)`} or just {`\\(\\{1\\}\\)`}.
-                    </li>
-                </ul>
-               
-            </section>
-            <h2>Set Builder Form</h2>
-            <section>
-                <div class="definition">
-                    <p>
-                     In set-builder form, we specify a property that is satisfied <strong>only</strong> by the elements of the set. It is written as {`\\[\\{x : \\text{Property satisfied by } x\\}\\]`} The symbol \(x\) can be replaced with any other symbol like \(a, b, y\) etc. The colon (:) stands for "such that". After colon (:) we write the property satisfied by all elements of the set.
-                    </p>
-                </div>
-             </section>
-             
-             <section>
-                 <h3 class="examples">Examples</h3>
-                 <ul>
-                     <li>
-                         The set-builder form of the set {`\\(\\{2, 4, 6, 8\\}\\)`} is {`\\(\\{x: x\\)`} is a natural numbers less than 10 and divisible by  2{`\\(\\}\\)`}.
-                     </li>
-                     <li>
-                         The set-builder form of the set {`\\(\\{a, e, i, o, u\\}\\)`} is {`\\(\\{x : x \\text{ is an English vowel}\\}\\)`}.
-                     </li>
-                 </ul>
-             </section>
+        <Item item={33}>
+            <H2 isActive={33}>Set Builder Form</H2>
         </Item>
-        <Item item={20}>
+        <section>
+            <Item item={34}>
+                <P class="definition" isActive={34}>
+                    In set-builder form, we specify a property that is satisfied <strong>only</strong> by the elements of the set. It is written as {`\\[\\{x : \\text{Property satisfied by } x\\}\\]`} The symbol \(x\) can be replaced with any other symbol like \(a, b, y\) etc. The colon (:) stands for "such that". After colon (:) we write the property satisfied by all elements of the set.
+                </P>
+            </Item>
+        </section>
+        <Item item={35}>
+            <H3 class="examples" isActive{35}>
+                Examples
+            </H3>
+        </Item>
+        <section>
+            <ul>
+                <Item item={36}>
+                    <Li isActive={36}>The set-builder form of the set {`\\(\\{2, 4, 6, 8\\}\\)`} is {`\\(\\{x: x\\)`} is a natural numbers less than 10 and divisible by  2{`\\(\\}\\)`}.</Li>
+                </Item>
+                <Item item={37}>
+                    <Li isActive={37}>The set-builder form of the set {`\\(\\{a, e, i, o, u\\}\\)`} is {`\\(\\{x : x \\text{ is an English vowel}\\}\\)`}.</Li>
+                </Item>
+                <Item item={38}>
+                    <Li isActive={38}>
+                        Let {`\\(A = \\Big\\{\\dfrac{2}{3}, \\dfrac{3}{4}, \\dfrac{4}{5}, \\dfrac{5}{6},\\dfrac{6}{7}\\Big\\}\\)`}, then in set-builder form it will be written as {`\\[\\{x: x = \\frac{n + 1}{n + 2}, \\text{ where } n \\text{ is a natural number and } 1\\leq n\\leq 5\\}\\]`}
+                    </Li>
+                </Item>
+            </ul>
+        </section>
+        <Item item={39}>
             <section>
                 <h2>Practice</h2>
                 <Practice {generateProblem}/>

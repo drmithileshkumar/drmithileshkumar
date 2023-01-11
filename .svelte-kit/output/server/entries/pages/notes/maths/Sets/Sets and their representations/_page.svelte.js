@@ -36,7 +36,7 @@ const randSubset = (n, k) => {
     set = t.newArr;
     temp.push(t.elem);
   }
-  temp.sort((a, b) => a - b);
+  temp.sort((a2, b2) => a2 - b2);
   return temp;
 };
 const shuffle = (array) => {
@@ -65,45 +65,45 @@ class Sets {
     this.eq = eq;
     this.strElem = strElem;
   }
-  elemEq(a, b) {
+  elemEq(a2, b2) {
     if (this.eq == "")
-      return a === b;
-    return this.eq(a, b);
+      return a2 === b2;
+    return this.eq(a2, b2);
   }
-  texElem(a) {
+  texElem(a2) {
     if (this.strElem == "")
-      return `${a}`;
-    return this.strElem(a);
+      return `${a2}`;
+    return this.strElem(a2);
   }
   contains(k) {
     if (this.eq == "") {
-      for (let a of this.e) {
-        if (a === k)
+      for (let a2 of this.e) {
+        if (a2 === k)
           return true;
       }
       return false;
     } else {
-      for (let a of this.e) {
-        if (this.eq(a, k))
+      for (let a2 of this.e) {
+        if (this.eq(a2, k))
           return true;
       }
       return false;
     }
   }
   equal(B) {
-    for (let a of this.e) {
-      if (!B.contains(a))
+    for (let a2 of this.e) {
+      if (!B.contains(a2))
         return false;
     }
-    for (let b of B.e) {
-      if (!this.contains(b))
+    for (let b2 of B.e) {
+      if (!this.contains(b2))
         return false;
     }
     return true;
   }
   subsetOf(B) {
-    for (let a of this.e) {
-      if (!B.contains(a))
+    for (let a2 of this.e) {
+      if (!B.contains(a2))
         return false;
     }
     return true;
@@ -121,36 +121,36 @@ class Sets {
   }
   delete(k) {
     let newSet = new Sets([], this.eq, this.strElem);
-    for (let a of this.e) {
-      if (!this.elemEq(a, k))
-        newSet.e.push(a);
+    for (let a2 of this.e) {
+      if (!this.elemEq(a2, k))
+        newSet.e.push(a2);
     }
     return newSet;
   }
   union(B) {
     let newSet = new Sets([], this.eq, this.strElem);
-    for (let a of this.e) {
-      newSet.e.push(a);
+    for (let a2 of this.e) {
+      newSet.e.push(a2);
     }
-    for (let b of B.e) {
-      if (!this.contains(b))
-        newSet.e.push(b);
+    for (let b2 of B.e) {
+      if (!this.contains(b2))
+        newSet.e.push(b2);
     }
     return newSet;
   }
   intersection(B) {
     let newSet = new Sets([], this.eq, this.strElem);
-    for (let a of this.e) {
-      if (B.contains(a))
-        newSet.e.push(a);
+    for (let a2 of this.e) {
+      if (B.contains(a2))
+        newSet.e.push(a2);
     }
     return newSet;
   }
   diff(B) {
     let newSet = new Sets([], this.eq, this.strElem);
-    for (let a of this.e) {
-      if (!B.contains(a))
-        newSet.e.push(a);
+    for (let a2 of this.e) {
+      if (!B.contains(a2))
+        newSet.e.push(a2);
     }
     return newSet;
   }
@@ -189,7 +189,7 @@ class Sets {
       set = t.newArr;
       temp.push(t.elem);
     }
-    temp.sort((a, b) => a - b);
+    temp.sort((a2, b2) => a2 - b2);
     return temp;
   }
   randomSet(min, max, k) {
@@ -206,9 +206,9 @@ class Sets {
   }
   randomSubset() {
     let newSet = new Sets([], this.eq, this.strElem);
-    for (let a of this.e) {
+    for (let a2 of this.e) {
       if (Math.random() < 0.5) {
-        newSet.e.push(a);
+        newSet.e.push(a2);
       }
     }
     return newSet;
@@ -237,12 +237,12 @@ class Sets {
   powerSet() {
     let set = powerset(this.e.length);
     let seteq = (A, B) => {
-      for (let a of A) {
-        if (!B.contains(a))
+      for (let a2 of A) {
+        if (!B.contains(a2))
           return false;
       }
-      for (let b of B) {
-        if (!A.contains(b))
+      for (let b2 of B) {
+        if (!A.contains(b2))
           return false;
       }
       return true;
@@ -263,18 +263,18 @@ class Sets {
     return newSet;
   }
   cartesian(B) {
-    let pairEq = (a, b) => {
-      if (a.length !== b.length)
+    let pairEq = (a2, b2) => {
+      if (a2.length !== b2.length)
         return false;
-      return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
+      return this.elemEq(a2[0], b2[0]) && B.elemEq(a2[1], b2[1]);
     };
-    let stringElem = (a) => {
-      return "(" + this.texElem(a[0]) + "," + B.texElem(a[1]) + ")";
+    let stringElem = (a2) => {
+      return "(" + this.texElem(a2[0]) + "," + B.texElem(a2[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
-    for (let a of this.e) {
-      for (let b of B.e) {
-        R.e.push([a, b]);
+    for (let a2 of this.e) {
+      for (let b2 of B.e) {
+        R.e.push([a2, b2]);
       }
     }
     return R;
@@ -282,13 +282,13 @@ class Sets {
   dot(B) {
     if (this.e.length != B.e.length)
       return new Sets();
-    let pairEq = (a, b) => {
-      if (a.length !== b.length)
+    let pairEq = (a2, b2) => {
+      if (a2.length !== b2.length)
         return false;
-      return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
+      return this.elemEq(a2[0], b2[0]) && B.elemEq(a2[1], b2[1]);
     };
-    let stringElem = (a) => {
-      return "(" + this.texElem(a[0]) + "," + B.texElem(a[1]) + ")";
+    let stringElem = (a2) => {
+      return "(" + this.texElem(a2[0]) + "," + B.texElem(a2[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
     for (let i = 0; i < this.e.length; i++) {
@@ -326,8 +326,8 @@ class Sets {
     }
   }
   isReflexive(R) {
-    for (let a of this.e) {
-      if (!R.contains([a, a]))
+    for (let a2 of this.e) {
+      if (!R.contains([a2, a2]))
         return false;
     }
     return true;
@@ -342,7 +342,7 @@ class Sets {
   isTransitive(R) {
     let temp;
     for (let r of R) {
-      temp = R.e.filter((a) => this.elemEq(r[1], a[0]));
+      temp = R.e.filter((a2) => this.elemEq(r[1], a2[0]));
       for (let t of temp) {
         if (!R.contains([r[0], t[1]]))
           return false;
@@ -351,28 +351,28 @@ class Sets {
     return true;
   }
   reflexive(k) {
-    let pairEq = (a, b) => {
-      if (a.length !== b.length)
+    let pairEq = (a2, b2) => {
+      if (a2.length !== b2.length)
         return false;
-      return this.elemEq(a[0], b[0]) && this.elemEq(a[1], b[1]);
+      return this.elemEq(a2[0], b2[0]) && this.elemEq(a2[1], b2[1]);
     };
-    let stringElem = (a) => {
-      return "(" + this.texElem(a[0]) + "," + this.texElem(a[1]) + ")";
+    let stringElem = (a2) => {
+      return "(" + this.texElem(a2[0]) + "," + this.texElem(a2[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
-    for (let a of this.e) {
-      R.add([a, a]);
+    for (let a2 of this.e) {
+      R.add([a2, a2]);
     }
     return R;
   }
   symmetric(k) {
-    let pairEq = (a, b) => {
-      if (a.length !== b.length)
+    let pairEq = (a2, b2) => {
+      if (a2.length !== b2.length)
         return false;
-      return this.elemEq(a[0], b[0]) && this.elemEq(a[1], b[1]);
+      return this.elemEq(a2[0], b2[0]) && this.elemEq(a2[1], b2[1]);
     };
-    let stringElem = (a) => {
-      return "(" + this.texElem(a[0]) + "," + this.texElem(a[1]) + ")";
+    let stringElem = (a2) => {
+      return "(" + this.texElem(a2[0]) + "," + this.texElem(a2[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
     let self = new Sets(this.e, this.eq, this.strElem);
@@ -385,13 +385,13 @@ class Sets {
     return R;
   }
   transitive(k) {
-    let pairEq = (a, b) => {
-      if (a.length !== b.length)
+    let pairEq = (a2, b2) => {
+      if (a2.length !== b2.length)
         return false;
-      return this.elemEq(a[0], b[0]) && this.elemEq(a[1], b[1]);
+      return this.elemEq(a2[0], b2[0]) && this.elemEq(a2[1], b2[1]);
     };
-    let stringElem = (a) => {
-      return "(" + this.texElem(a[0]) + "," + this.texElem(a[1]) + ")";
+    let stringElem = (a2) => {
+      return "(" + this.texElem(a2[0]) + "," + this.texElem(a2[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
     let self = new Sets(this.e, this.eq, this.strElem);
@@ -400,7 +400,7 @@ class Sets {
     let temp;
     for (let r of half) {
       R.add(r);
-      temp = half.filter((a) => this.elemEq(r[1], a[0]));
+      temp = half.filter((a2) => this.elemEq(r[1], a2[0]));
       for (let t of temp) {
         R.add([r[0], t[1]]);
       }
@@ -428,18 +428,18 @@ class Sets {
     return subSet;
   }
   randFunction(B = this) {
-    let pairEq = (a, b) => {
-      if (a.length !== b.length)
+    let pairEq = (a2, b2) => {
+      if (a2.length !== b2.length)
         return false;
-      return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
+      return this.elemEq(a2[0], b2[0]) && B.elemEq(a2[1], b2[1]);
     };
-    let stringElem = (a) => {
-      return "(" + this.texElem(a[0]) + "," + B.texElem(a[1]) + ")";
+    let stringElem = (a2) => {
+      return "(" + this.texElem(a2[0]) + "," + B.texElem(a2[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
-    for (let a of this.e) {
-      let b = B.e[Math.floor(Math.random() * B.e.length)];
-      R.e.push([a, b]);
+    for (let a2 of this.e) {
+      let b2 = B.e[Math.floor(Math.random() * B.e.length)];
+      R.e.push([a2, b2]);
     }
     return R;
   }
@@ -447,36 +447,36 @@ class Sets {
     return this.reflexive();
   }
   constant(k, B = this) {
-    let pairEq = (a, b) => {
-      if (a.length !== b.length)
+    let pairEq = (a2, b2) => {
+      if (a2.length !== b2.length)
         return false;
-      return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
+      return this.elemEq(a2[0], b2[0]) && B.elemEq(a2[1], b2[1]);
     };
-    let stringElem = (a) => {
-      return "(" + this.texElem(a[0]) + "," + B.texElem(a[1]) + ")";
+    let stringElem = (a2) => {
+      return "(" + this.texElem(a2[0]) + "," + B.texElem(a2[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
-    for (let a of this.e) {
-      R.e.push([a, k]);
+    for (let a2 of this.e) {
+      R.e.push([a2, k]);
     }
     return R;
   }
   randOneOne(B = this) {
     if (this.e.length > B.e.length)
       return new Sets();
-    let pairEq = (a, b) => {
-      if (a.length !== b.length)
+    let pairEq = (a2, b2) => {
+      if (a2.length !== b2.length)
         return false;
-      return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
+      return this.elemEq(a2[0], b2[0]) && B.elemEq(a2[1], b2[1]);
     };
-    let stringElem = (a) => {
-      return "(" + this.texElem(a[0]) + "," + B.texElem(a[1]) + ")";
+    let stringElem = (a2) => {
+      return "(" + this.texElem(a2[0]) + "," + B.texElem(a2[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
     B.e = shuffle(B.e);
     let i = 0;
-    for (let a of this.e) {
-      R.e.push([a, B.e[i]]);
+    for (let a2 of this.e) {
+      R.e.push([a2, B.e[i]]);
       i++;
     }
     return R;
@@ -484,13 +484,13 @@ class Sets {
   randOnto(B = this) {
     if (this.e.length < B.e.length)
       return new Sets();
-    let pairEq = (a, b) => {
-      if (a.length !== b.length)
+    let pairEq = (a2, b2) => {
+      if (a2.length !== b2.length)
         return false;
-      return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
+      return this.elemEq(a2[0], b2[0]) && B.elemEq(a2[1], b2[1]);
     };
-    let stringElem = (a) => {
-      return "(" + this.texElem(a[0]) + "," + B.texElem(a[1]) + ")";
+    let stringElem = (a2) => {
+      return "(" + this.texElem(a2[0]) + "," + B.texElem(a2[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
     let shuffleThis = shuffle(this.e);
@@ -510,15 +510,15 @@ class Sets {
   isFunction(R, B = this) {
     if (R.e.length !== this.e.length)
       return false;
-    for (let a of this.e) {
-      if (this.image(a, R, B).e.length == 0)
+    for (let a2 of this.e) {
+      if (this.image(a2, R, B).e.length == 0)
         return false;
     }
     return true;
   }
   isIdentity(R) {
-    for (let a of this.e) {
-      if (!R.contains([[a, a]]))
+    for (let a2 of this.e) {
+      if (!R.contains([[a2, a2]]))
         return false;
     }
     for (let r of R.e) {
@@ -542,8 +542,8 @@ class Sets {
   isOneOne(R, B = this) {
     if (!this.isFunction(R, B))
       return false;
-    for (let b of B.e) {
-      if (this.preimage(b, R, B).e.length > 1)
+    for (let b2 of B.e) {
+      if (this.preimage(b2, R, B).e.length > 1)
         return false;
     }
     return true;
@@ -551,14 +551,81 @@ class Sets {
   isOnto(R, B = this) {
     if (!this.isFunction(R, B))
       return false;
-    for (let b of B.e) {
-      if (this.preimage(b, R, B).e.length < 1)
+    for (let b2 of B.e) {
+      if (this.preimage(b2, R, B).e.length < 1)
         return false;
     }
     return true;
   }
   isBijective(R, B = this) {
     return this.isOneOne(R, B) && this.isOnto(R, B);
+  }
+}
+class Quadratic {
+  constructor(a2 = 0, b2 = 0, c = 0, x = "x") {
+    this.a = a2;
+    this.b = b2;
+    this.c = c;
+    this.x = x;
+  }
+  rand(min, max) {
+    while (this.a === 0 && this.b === 0) {
+      this.a = randInt(max, min);
+      this.b = randInt(max, min);
+    }
+    this.c = randInt(max, min);
+  }
+  str() {
+    let eq = "";
+    if (this.a != 0 || this.b != 0 || this.c != 0) {
+      if (this.a != 0) {
+        eq += this.a == 1 ? `${this.x}^2` : this.a == -1 ? `-${this.x}^2` : `${this.a}${this.x}^2`;
+      }
+      if (this.b != 0) {
+        if (eq.length > 0)
+          eq += this.b == 1 ? `+${this.x}` : this.b == -1 ? `-${this.x}` : this.b < 0 ? `${this.b}${this.x}` : `+${this.b}${this.x}`;
+        if (eq.length == 0)
+          eq += this.b == 1 ? `${this.x}` : this.b == -1 ? `-${this.x}` : `${this.b}${this.x}`;
+      }
+      if (this.c != 0) {
+        if (eq.length > 0)
+          eq += this.c > 0 ? `+${this.c}` : `${this.c}`;
+        if (eq.length == 0)
+          eq += this.c;
+      }
+      return eq;
+    } else {
+      return 0;
+    }
+  }
+  d() {
+    return this.b * this.b - 4 * this.a * this.c;
+  }
+  hasRealRoots() {
+    return this.d() >= 0;
+  }
+  hasEqualRoots() {
+    return this.d() === 0;
+  }
+  value(x) {
+    return this.a * x * x + this.b * x + this.c;
+  }
+  realRoots() {
+    if (a === 0) {
+      if (b === 0)
+        return [];
+      return [-this.c / this.b];
+    }
+    if (!this.hasRealRoots())
+      return [];
+    else {
+      if (this.hasEqualRoots()) {
+        return [-this.b / (2 * this.a)];
+      } else {
+        let sd = Math.sqrt(this.d());
+        return [(-this.b + sd) / (2 * this.a), (-this.b - sd) / (2 * this.a)];
+      }
+    }
   }
 }
 const H1_svelte_svelte_type_style_lang = "";
@@ -632,7 +699,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     c: ""
   };
   const generateProblem = (problemnumber) => {
-    let N = 4;
+    let N = 5;
     problemnumber = problemnumber % N;
     let choices = ["A", "B", "C", "D"];
     let correctChoiceIndex = Math.floor(Math.random() * 4);
@@ -705,6 +772,27 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           problemset.o[choices[(correctChoiceIndex + i) % 4]] = values[i];
         }
         problemset.s = `Which of the following is correct set-builder form of the set \\[${setA.str()}\\]`;
+        break;
+      }
+      case 4: {
+        let q = new Quadratic(0, 0, 0, "n");
+        q.rand(-3, 3);
+        let q1 = new Quadratic(0, 0, 0, "n");
+        q1.rand(-3, 3);
+        let q2 = new Quadratic(0, 0, 0, "n");
+        q2.rand(-3, 3);
+        let q3 = new Quadratic(0, 0, 0, "n");
+        q3.rand(-3, 3);
+        let seq = [q.value(1), q.value(2), q.value(3), q.value(4), q.value(5)];
+        let set = new Sets(seq);
+        values[0] = q.str();
+        values[1] = q1.str();
+        values[2] = q2.str();
+        values[3] = q3.str();
+        for (let i = 0; i < 4; i++) {
+          problemset.o[choices[(correctChoiceIndex + i) % 4]] = "\\(\\{x: x = " + values[i] + ", n~\\) is a natural number and \\(~1\\leq n\\leq 5\\}\\)";
+        }
+        problemset.s = `Which of the following is correct set-builder form of the set \\[${set.str()}\\]`;
         break;
       }
     }
@@ -852,62 +940,247 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-        <section>${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
+        <section><ul>${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
     default: () => {
-      return `<ul><li>A set is usually denoted by capital letters \\(A, B, X, Y\\) etc.
-                </li>
-                <li>Members of a set are called elements of the set. 
-                </li>
-                <li>Elements of a set are usually represented by small letters \\(a, b, x, y\\) etc.
-                </li></ul>
-            <h3>Epsilon (\\(\\in\\)) notation</h3>
-            <ul><li>If \\(a\\) is an elment of a set \\(A\\), we say that \\(a\\) <em>belongs to</em> \\(A\\) and denote this fact using \\(a\\in A\\).
-                </li>
-                <li>If \\(a\\) is <strong>not</strong> an elment of a set \\(A\\), we say that \\(a\\) <em>does not belongs to</em> \\(A\\) and denote this fact using \\(a\\notin A\\).
-                </li></ul>`;
-    }
-  })}</section>
-        <section>${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
-    default: () => {
-      return `<h3 class="${"examples"}">Examples</h3>
-                <ul><li>If \\(A\\) is the set of vowels in English, then \\(a\\in A\\) because \\(a\\) is a vowel, but \\(x\\notin A\\) because \\(x\\) is not a vowel.
-                    </li>
-                    <li>If \\(E\\) is the set of Natural numbers divisible by 2, then \\(2\\in E\\), but \\(0\\notin E\\) and \\(3\\notin E\\).
-                    </li>
-                    <li>If \\(R\\) is the set of all rivers in the world, then \\(Ganga\\in R\\), but \\(India\\notin R\\).
-                    </li></ul>`;
-    }
-  })}</section>
-        ${validate_component(Item, "Item").$$render($$result, { item: 15 }, {}, {
-    default: () => {
-      return `<h2>Roster Form</h2>
-            <section><div class="${"definition"}"><p>In roster form, all the elements of a set are listed, comma-separated and enclosed within braces ${escape("\\[\\{a_1, a_2,\\dots, a_n \\}\\]")}</p></div></section>
-            <h3 class="${"examples"}">Examples</h3>
-            <section><ul><li>Set of natural numbers less than 10 and divisible by 2 is ${escape(`\\(\\{2, 4, 6, 8\\}\\)`)}.
-                    </li>
-                    <li>Set of English vowels is ${escape(`\\(\\{a, e, i, o, u\\}\\)`)}.
-                    </li>
-                    <li>Set of roots of quadratic equation \\(x^2 - 3x + 2 = 0\\) is ${escape(`\\(\\{1, 2\\}\\)`)}.
-                    </li></ul></section>
-            <section><h3 class="${"remark"}">Remarks </h3>
-                <ul><li>In roster form, the order in which the elements are listed does not matter. For example, the set ${escape(`\\(\\{2, 4\\}\\)`)} is the same as ${escape(`\\(\\{4, 2\\}\\)`)}.
-                    </li>
-                    <li>In roster form, repeating an element in the list does not change the set. Hence, an element is usually listed only once in the set. For example, the set of letter in BETTER is ${escape(`\\(\\{B, E, T, T, E, R\\}\\)`)}, there is no need to repeat E and T. We can just write ${escape(`\\(\\{B, E, T, R\\}\\)`)}.
-                    </li>
-                    <li>The set of roots of quadratic equation \\(x^2 - 2x + 1 = 0\\) is ${escape(`\\(\\{1, 1\\}\\)`)} or just ${escape(`\\(\\{1\\}\\)`)}.
-                    </li></ul></section>
-            <h2>Set Builder Form</h2>
-            <section><div class="${"definition"}"><p>In set-builder form, we specify a property that is satisfied <strong>only</strong> by the elements of the set. It is written as ${escape(`\\[\\{x : \\text{Property satisfied by } x\\}\\]`)} The symbol \\(x\\) can be replaced with any other symbol like \\(a, b, y\\) etc. The colon (:) stands for &quot;such that&quot;. After colon (:) we write the property satisfied by all elements of the set.
-                    </p></div></section>
-             
-             <section><h3 class="${"examples"}">Examples</h3>
-                 <ul><li>The set-builder form of the set ${escape(`\\(\\{2, 4, 6, 8\\}\\)`)} is ${escape(`\\(\\{x: x\\)`)} is a natural numbers less than 10 and divisible by  2${escape(`\\(\\}\\)`)}.
-                     </li>
-                     <li>The set-builder form of the set ${escape(`\\(\\{a, e, i, o, u\\}\\)`)} is ${escape(`\\(\\{x : x \\text{ is an English vowel}\\}\\)`)}.
-                     </li></ul></section>`;
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 13 }, {}, {
+        default: () => {
+          return `A set is usually denoted by capital letters \\(A, B, X, Y\\) etc.`;
+        }
+      })}`;
     }
   })}
-        ${validate_component(Item, "Item").$$render($$result, { item: 20 }, {}, {
+                ${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 14 }, {}, {
+        default: () => {
+          return `Members of a set are called elements of the set.`;
+        }
+      })}`;
+    }
+  })}
+                ${validate_component(Item, "Item").$$render($$result, { item: 15 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 15 }, {}, {
+        default: () => {
+          return `Elements of a set are usually represented by small letters \\(a, b, x, y\\) etc.`;
+        }
+      })}`;
+    }
+  })}</ul>
+            ${validate_component(Item, "Item").$$render($$result, { item: 16 }, {}, {
+    default: () => {
+      return `${validate_component(H3, "H3").$$render($$result, { "isActive{16}": true }, {}, {
+        default: () => {
+          return `Epsilon (\\(\\in\\)) notation
+                `;
+        }
+      })}`;
+    }
+  })}
+            <ul>${validate_component(Item, "Item").$$render($$result, { item: 17 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 17 }, {}, {
+        default: () => {
+          return `If \\(a\\) is an elment of a set \\(A\\), we say that \\(a\\) <em>belongs to</em> \\(A\\) and denote this fact using \\(a\\in A\\).`;
+        }
+      })}`;
+    }
+  })}
+                ${validate_component(Item, "Item").$$render($$result, { item: 18 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 18 }, {}, {
+        default: () => {
+          return `If \\(a\\) is <strong>not</strong> an elment of a set \\(A\\), we say that \\(a\\) <em>does not belongs to</em> \\(A\\) and denote this fact using \\(a\\notin A\\).`;
+        }
+      })}`;
+    }
+  })}</ul></section>
+        <section>${validate_component(Item, "Item").$$render($$result, { item: 19 }, {}, {
+    default: () => {
+      return `${validate_component(H3, "H3").$$render($$result, { class: "examples", "isActive{19}": true }, {}, {
+        default: () => {
+          return `Examples
+            `;
+        }
+      })}`;
+    }
+  })}
+        <ul>${validate_component(Item, "Item").$$render($$result, { item: 20 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 20 }, {}, {
+        default: () => {
+          return `If \\(A\\) is the set of vowels in English, then \\(a\\in A\\) because \\(a\\) is a vowel, but \\(x\\notin A\\) because \\(x\\) is not a vowel.`;
+        }
+      })}`;
+    }
+  })}
+            ${validate_component(Item, "Item").$$render($$result, { item: 21 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 21 }, {}, {
+        default: () => {
+          return `If \\(E\\) is the set of Natural numbers divisible by 2, then \\(2\\in E\\), but \\(0\\notin E\\) and \\(3\\notin E\\).`;
+        }
+      })}`;
+    }
+  })}
+            ${validate_component(Item, "Item").$$render($$result, { item: 22 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 22 }, {}, {
+        default: () => {
+          return `If \\(R\\) is the set of all rivers in the world, then \\(Ganga\\in R\\), but \\(India\\notin R\\).`;
+        }
+      })}`;
+    }
+  })}</ul></section>
+        ${validate_component(Item, "Item").$$render($$result, { item: 23 }, {}, {
+    default: () => {
+      return `${validate_component(H2, "H2").$$render($$result, { isActive: 23 }, {}, {
+        default: () => {
+          return `Roster Form`;
+        }
+      })}`;
+    }
+  })}
+        <section>${validate_component(Item, "Item").$$render($$result, { item: 24 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 24 }, {}, {
+        default: () => {
+          return `In roster form, all the elements of a set are listed, comma-separated and enclosed within braces ${escape("\\[\\{a_1, a_2,\\dots, a_n \\}\\]")}`;
+        }
+      })}`;
+    }
+  })}</section>
+        ${validate_component(Item, "Item").$$render($$result, { item: 25 }, {}, {
+    default: () => {
+      return `${validate_component(H3, "H3").$$render($$result, { class: "examples", "isActive{25}": true }, {}, {
+        default: () => {
+          return `Examples
+            `;
+        }
+      })}`;
+    }
+  })}
+        <section><ul>${validate_component(Item, "Item").$$render($$result, { item: 26 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 26 }, {}, {
+        default: () => {
+          return `Set of natural numbers less than 10 and divisible by 2 is ${escape(`\\(\\{2, 4, 6, 8\\}\\)`)}.`;
+        }
+      })}`;
+    }
+  })}
+                ${validate_component(Item, "Item").$$render($$result, { item: 27 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 27 }, {}, {
+        default: () => {
+          return `Set of English vowels is ${escape(`\\(\\{a, e, i, o, u\\}\\)`)}.`;
+        }
+      })}`;
+    }
+  })}
+                ${validate_component(Item, "Item").$$render($$result, { item: 28 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 28 }, {}, {
+        default: () => {
+          return `Set of roots of quadratic equation \\(x^2 - 3x + 2 = 0\\) is ${escape(`\\(\\{1, 2\\}\\)`)}.`;
+        }
+      })}`;
+    }
+  })}</ul></section>
+        <section>${validate_component(Item, "Item").$$render($$result, { item: 29 }, {}, {
+    default: () => {
+      return `${validate_component(H3, "H3").$$render($$result, { class: "remark", "isActive{29}": true }, {}, {
+        default: () => {
+          return `Remarks
+                `;
+        }
+      })}`;
+    }
+  })}
+            <ul>${validate_component(Item, "Item").$$render($$result, { item: 30 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 30 }, {}, {
+        default: () => {
+          return `In roster form, the order in which the elements are listed does not matter. For example, the set ${escape(`\\(\\{2, 4\\}\\)`)} is the same as ${escape(`\\(\\{4, 2\\}\\)`)}.`;
+        }
+      })}`;
+    }
+  })}
+                ${validate_component(Item, "Item").$$render($$result, { item: 31 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 31 }, {}, {
+        default: () => {
+          return `In roster form, repeating an element in the list does not change the set. Hence, an element is usually listed only once in the set. For example, the set of letter in BETTER is ${escape(`\\(\\{B, E, T, T, E, R\\}\\)`)}, there is no need to repeat E and T. We can just write ${escape(`\\(\\{B, E, T, R\\}\\)`)}.`;
+        }
+      })}`;
+    }
+  })}
+                ${validate_component(Item, "Item").$$render($$result, { item: 32 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 32 }, {}, {
+        default: () => {
+          return `The set of roots of quadratic equation \\(x^2 - 2x + 1 = 0\\) is ${escape(`\\(\\{1, 1\\}\\)`)} or just ${escape(`\\(\\{1\\}\\)`)}.`;
+        }
+      })}`;
+    }
+  })}</ul></section>
+        ${validate_component(Item, "Item").$$render($$result, { item: 33 }, {}, {
+    default: () => {
+      return `${validate_component(H2, "H2").$$render($$result, { isActive: 33 }, {}, {
+        default: () => {
+          return `Set Builder Form`;
+        }
+      })}`;
+    }
+  })}
+        <section>${validate_component(Item, "Item").$$render($$result, { item: 34 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 34 }, {}, {
+        default: () => {
+          return `In set-builder form, we specify a property that is satisfied <strong>only</strong> by the elements of the set. It is written as ${escape(`\\[\\{x : \\text{Property satisfied by } x\\}\\]`)} The symbol \\(x\\) can be replaced with any other symbol like \\(a, b, y\\) etc. The colon (:) stands for &quot;such that&quot;. After colon (:) we write the property satisfied by all elements of the set.
+                `;
+        }
+      })}`;
+    }
+  })}</section>
+        ${validate_component(Item, "Item").$$render($$result, { item: 35 }, {}, {
+    default: () => {
+      return `${validate_component(H3, "H3").$$render($$result, { class: "examples", "isActive{35}": true }, {}, {
+        default: () => {
+          return `Examples
+            `;
+        }
+      })}`;
+    }
+  })}
+        <section><ul>${validate_component(Item, "Item").$$render($$result, { item: 36 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 36 }, {}, {
+        default: () => {
+          return `The set-builder form of the set ${escape(`\\(\\{2, 4, 6, 8\\}\\)`)} is ${escape(`\\(\\{x: x\\)`)} is a natural numbers less than 10 and divisible by  2${escape(`\\(\\}\\)`)}.`;
+        }
+      })}`;
+    }
+  })}
+                ${validate_component(Item, "Item").$$render($$result, { item: 37 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 37 }, {}, {
+        default: () => {
+          return `The set-builder form of the set ${escape(`\\(\\{a, e, i, o, u\\}\\)`)} is ${escape(`\\(\\{x : x \\text{ is an English vowel}\\}\\)`)}.`;
+        }
+      })}`;
+    }
+  })}
+                ${validate_component(Item, "Item").$$render($$result, { item: 38 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 38 }, {}, {
+        default: () => {
+          return `Let ${escape(`\\(A = \\Big\\{\\dfrac{2}{3}, \\dfrac{3}{4}, \\dfrac{4}{5}, \\dfrac{5}{6},\\dfrac{6}{7}\\Big\\}\\)`)}, then in set-builder form it will be written as ${escape(`\\[\\{x: x = \\frac{n + 1}{n + 2}, \\text{ where } n \\text{ is a natural number and } 1\\leq n\\leq 5\\}\\]`)}`;
+        }
+      })}`;
+    }
+  })}</ul></section>
+        ${validate_component(Item, "Item").$$render($$result, { item: 39 }, {}, {
     default: () => {
       return `<section><h2>Practice</h2>
                 ${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;

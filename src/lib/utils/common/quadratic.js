@@ -1,21 +1,30 @@
 import * as _F from './fraction';
+import {randInt} from './common';
 export class Quadratic {
-    constructor(a = 0, b = 0, c = 0) {
+    constructor(a = 0, b = 0, c = 0, x = 'x') {
         this.a = a;
         this.b = b;
         this.c = c;
+        this.x = x;
+    }
+    rand(min, max) {
+        while(this.a === 0 && this.b === 0) {
+            this.a = randInt(max, min);
+            this.b = randInt(max, min);
+        }
+        this.c = randInt(max, min);
     }
     str() {
         let eq = '';
         if(this.a != 0 || this.b != 0 || this.c != 0) {
              if ( this.a != 0 ) {
-                eq += this.a == 1 ? 'x^2' : this.a == -1 ? '-x^2' : `${this.a}x^2`;
+                eq += this.a == 1 ? `${this.x}^2` : this.a == -1 ? `-${this.x}^2` : `${this.a}${this.x}^2`;
              }
              if ( this.b != 0 ) {
                  if(eq.length > 0)
-                    eq += this.b == 1 ? '+x' : this.b == -1 ? '-x' : this.b < 0 ? `${this.b}x` : `+${this.b}x`;
+                    eq += this.b == 1 ? `+${this.x}` : this.b == -1 ? `-${this.x}` : this.b < 0 ? `${this.b}${this.x}` : `+${this.b}${this.x}`;
                  if(eq.length == 0)
-                    eq += this.b == 1 ? 'x' : this.b == -1 ? '-x' : `${this.b}x`;
+                    eq += this.b == 1 ? `${this.x}` : this.b == -1 ? `-${this.x}` : `${this.b}${this.x}`;
              }
              if ( this.c != 0 ) {
                 if(eq.length > 0)
