@@ -5,7 +5,7 @@ import { I as Item, P, L as Li } from "../../../../../../chunks/Image.svelte_sve
 import { I as Image } from "../../../../../../chunks/Image.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "article.svelte-1c16nc0{position:relative;padding:0.5em}.absolute.svelte-1c16nc0{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1c16nc0::-webkit-scrollbar{width:0;height:0}.pad.svelte-1c16nc0{min-height:100px}.thumbnail.svelte-1c16nc0{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1c16nc0{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
+  code: ".youtube.svelte-1vrv02f{width:fit-content;display:flex;margin:auto;align-items:center;justify-content:center;position:sticky;top:5em;box-shadow:0 0 3px gray;background-color:white;z-index:10}article.svelte-1vrv02f{position:relative;padding:0.5em}.absolute.svelte-1vrv02f{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1vrv02f::-webkit-scrollbar{width:0;height:0}.pad.svelte-1vrv02f{min-height:100px}.thumbnail.svelte-1vrv02f{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1vrv02f{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -33,8 +33,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-1cm2kk7_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Introduction to sets"}"><!-- HEAD_svelte-1cm2kk7_END -->`, ""}
 
-<article class="${["svelte-1c16nc0", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1c16nc0"}"><p class="${"statement svelte-1c16nc0"}">${escape(`\\(\\{x:x\\)`)} is the foundation of mathematics${escape(`\\(\\}\\)`)}</p></div>` : ``}
+<article class="${["svelte-1vrv02f", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1vrv02f"}"><p class="${"statement svelte-1vrv02f"}">${escape(`\\(\\{x:x\\)`)} is the foundation of mathematics${escape(`\\(\\}\\)`)}</p></div>` : ``}
     ${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
+    ${!$presentationMode ? `<div class="${"youtube svelte-1vrv02f"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/Ii1HysDxd5U"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}
     <section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
@@ -202,7 +203,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-        ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1c16nc0"}"></div>` : ``}</section>
+        ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1vrv02f"}"></div>` : ``}</section>
 </article>`;
 });
 export {

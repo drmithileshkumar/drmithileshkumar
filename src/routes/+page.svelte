@@ -17,8 +17,7 @@
 </style>
 <svelte:head><title>Dr Mithilesh Kumar</title></svelte:head>
 <!-- Youtube, Twitter -->
-
+<Youtube />
 <Notes />
 <Practice />
 <Twitter />
-<Youtube />

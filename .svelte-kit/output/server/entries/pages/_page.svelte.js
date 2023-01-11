@@ -1,9 +1,9 @@
-import { c as create_ssr_component, d as subscribe, f as add_attribute, e as escape, v as validate_component } from "../../chunks/index.js";
+import { c as create_ssr_component, d as subscribe, f as add_attribute, e as escape, v as validate_component, h as each } from "../../chunks/index.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../chunks/stores2.js";
 /* empty css                                                   *//* empty css                                                  */import { I as Item, P, L as Li } from "../../chunks/Image.svelte_svelte_type_style_lang.js";
 import { I as Image } from "../../chunks/Image.js";
 const Notes_svelte_svelte_type_style_lang = "";
-const css$1 = {
+const css$2 = {
   code: ".notes.svelte-1v7nhrf{font-size:1.2em;background-color:green;color:white;padding:0.5em 1em;border-radius:10px}article.svelte-1v7nhrf{position:relative;padding:0.5em;max-height:400px;overflow:hidden;padding:1em 1em;background-color:rgba(110, 120, 150, 0.3);border-radius:10px}.absolute.svelte-1v7nhrf{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1v7nhrf::-webkit-scrollbar{width:0;height:0}.pad.svelte-1v7nhrf{min-height:100px}.thumbnail.svelte-1v7nhrf{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1v7nhrf{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
   map: null
 };
@@ -20,7 +20,7 @@ const Notes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter = subscribe(selectedChapter, (value) => value);
   $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   $$unsubscribe_presentation = subscribe(presentation, (value) => $presentation = value);
-  $$result.css.add(css$1);
+  $$result.css.add(css$2);
   $$unsubscribe_currentSlide();
   $$unsubscribe_slideCounter();
   $$unsubscribe_selectedSection();
@@ -204,25 +204,42 @@ const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   return ``;
 });
 const Twitter_svelte_svelte_type_style_lang = "";
-const css = {
+const css$1 = {
   code: ".twitter.svelte-1uu1tax{display:flex;margin:1em 0;padding:1em 0;align-items:center;justify-content:center}",
   map: null
 };
 const Twitter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css);
+  $$result.css.add(css$1);
   return `<div class="${"twitter svelte-1uu1tax"}"><blockquote class="${"twitter-tweet"}"><p lang="${"zxx"}" dir="${"ltr"}"><a href="${"https://t.co/OuJAxIYnuV"}">pic.twitter.com/OuJAxIYnuV</a></p>— Dr Mithilesh Kumar (@DrMithileshKr) <a href="${"https://twitter.com/DrMithileshKr/status/1612815196262928386?ref_src=twsrc%5Etfw"}">January 10, 2023</a></blockquote></div>`;
 });
+const Youtube_svelte_svelte_type_style_lang = "";
+const css = {
+  code: ".videos.svelte-tmnj2f{display:flex;flex-direction:row;gap:1em;flex-wrap:wrap;margin-bottom:2em}",
+  map: null
+};
 const Youtube = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return ``;
+  let videos = [
+    {
+      title: "Set : Introduction",
+      src: "https://www.youtube.com/embed/Ii1HysDxd5U",
+      width: "420",
+      height: "300"
+    }
+  ];
+  $$result.css.add(css);
+  return `<h1><a href="${"https://www.youtube.com/@drmithilesh"}">Youtube Channel</a></h1>
+<div class="${"videos svelte-tmnj2f"}">${each(videos, (video) => {
+    return `<iframe${add_attribute("width", video.width, 0)}${add_attribute("height", video.height, 0)}${add_attribute("src", video.src, 0)}${add_attribute("title", video.title, 0)} frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe>`;
+  })}
+</div>`;
 });
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${$$result.head += `<!-- HEAD_svelte-d6qc0s_START -->${$$result.title = `<title>Dr Mithilesh Kumar</title>`, ""}<!-- HEAD_svelte-d6qc0s_END -->`, ""}
 
-
+${validate_component(Youtube, "Youtube").$$render($$result, {}, {}, {})}
 ${validate_component(Notes, "Notes").$$render($$result, {}, {}, {})}
 ${validate_component(Practice, "Practice").$$render($$result, {}, {}, {})}
-${validate_component(Twitter, "Twitter").$$render($$result, {}, {}, {})}
-${validate_component(Youtube, "Youtube").$$render($$result, {}, {}, {})}`;
+${validate_component(Twitter, "Twitter").$$render($$result, {}, {}, {})}`;
 });
 export {
   Page as default
