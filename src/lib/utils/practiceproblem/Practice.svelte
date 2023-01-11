@@ -155,33 +155,33 @@
 <div class="problemPanel">            
     <div class="problemset" style="display: block;" bind:clientWidth="{W}">
         <fieldset class="problemField">
-            <legend class="problemLegend">
-                
-                <div class="dayscore">
+            <legend>
+                <div class="problemLegend">
+                    <div class="dayscore">
 
-                    <abbr title="Today's accuracy">
-                        <Performance {strokedasharray} />
-
-                    </abbr>
-
+                        <abbr title="Today's accuracy">
+                            <Performance {strokedasharray} />
+    
+                        </abbr>
+    
+                    </div>
+                    <div class="refresh">
+                        <button class="noborder" class:green={$attempted} on:click={ () => loadnext(false) } use:ripple>
+                            <span></span>
+                            <span class="icon is-small material-icons">
+                                refresh
+                            </span>
+                        </button>
+                    </div>
+                    <div class="next">
+                        <button class="noborder" class:green={$attempted} on:click={ () => loadnext(true) } use:ripple>
+                            <span></span>
+                            <span class="icon is-small material-icons">
+                                arrow_forward
+                            </span>
+                        </button>
+                    </div>
                 </div>
-                <div class="refresh">
-                    <button class="noborder" class:green={$attempted} on:click={ () => loadnext(false) } use:ripple>
-                        <span></span>
-                        <span class="icon is-small material-icons">
-                            refresh
-                        </span>
-                    </button>
-                </div>
-                <div class="next">
-                    <button class="noborder" class:green={$attempted} on:click={ () => loadnext(true) } use:ripple>
-                        <span></span>
-                        <span class="icon is-small material-icons">
-                            arrow_forward
-                        </span>
-                    </button>
-                </div>
-            
             </legend>
 
             <div class="problemArea">

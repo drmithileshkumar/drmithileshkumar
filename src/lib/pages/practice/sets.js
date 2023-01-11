@@ -12,7 +12,7 @@ let problemset = {
     c: ""
 };
 export const sets = (problemnumber) => {
-    let N = 11;
+    let N = 12;
     problemnumber = problemnumber % N;
     let choices = ['A', 'B', 'C', 'D'];
     let correctChoiceIndex = Math.floor(Math.random()*4);
@@ -99,6 +99,28 @@ export const sets = (problemnumber) => {
             break;
         }
         case 4: {
+            let q = new Quadratic(0, 0, 0, 'n');
+            q.rand(-3, 3);
+            let q1 = new Quadratic(0, 0, 0, 'n');
+            q1.rand(-3, 3);
+            let q2 = new Quadratic(0, 0, 0, 'n');
+            q2.rand(-3, 3);
+            let q3 = new Quadratic(0, 0, 0, 'n');
+            q3.rand(-3, 3);
+            let seq = [q.value(1), q.value(2), q.value(3), q.value(4), q.value(5)];
+            let set = new Sets(seq);
+            values[0] = q.str();
+            values[1] = q1.str();
+            values[2] = q2.str();
+            values[3] = q3.str();
+
+            for(let i = 0; i < 4; i++) {
+                problemset.o[choices[(correctChoiceIndex + i) % 4]] = '\\(\\{x: x = ' + values[i] + ', n~\\)' + ' is a natural number and ' + '\\(~1\\leq n\\leq 5\\}\\)';
+            } 
+            problemset.s = `Which of the following is correct set-builder form of the set \\[${set.str()}\\]`;
+            break;
+        }
+        case 5: {
             
             let m = randInt(20, 1);
             m = Math.random() > 0.5 ? -m : m;
@@ -121,7 +143,7 @@ export const sets = (problemnumber) => {
             problemset.s = `Which of the following will correspond to an empty set?`;
             break;
         }
-        case 5: {
+        case 6: {
             
             let m = randInt(20, 1);
             m = Math.random() > 0.5 ? -m : m;
@@ -139,7 +161,7 @@ export const sets = (problemnumber) => {
             problemset.s = `What is the size of set containing \\(x\\) that satisfies \\[${m}< x < ${n}\\]`;
             break;
         }
-        case 6: {
+        case 7: {
             
             let m = randInt(20, 1);
             m = Math.random() > 0.5 ? -m : m;
@@ -157,7 +179,7 @@ export const sets = (problemnumber) => {
             problemset.s = `Which of the following corresponds to a finite set?`;
             break;
         }
-        case 7: {
+        case 8: {
             
             let m = randInt(20, 1);
             m = Math.random() > 0.5 ? -m : m;
@@ -175,7 +197,7 @@ export const sets = (problemnumber) => {
             problemset.s = `Which of the following does not correspond to an infinite set?`;
             break;
         }
-        case 8: {
+        case 9: {
             
             let n = randInt(20, 1);
             let m = randInt(n + 1, n + 10) + 10;
@@ -199,7 +221,7 @@ export const sets = (problemnumber) => {
             problemset.s = `Let \\(R\\) be the set of roots of the polynomial \\[${poly} = 0\\] Which of sets is equal to \\(R\\)?`;
             break;
         }
-        case 9: {
+        case 10: {
             
             let n = randInt(20, 1);
             let m = randInt(n + 1, n + 10) + 10;
@@ -223,7 +245,7 @@ export const sets = (problemnumber) => {
             problemset.s = `Which of the following is not a subset of \\(${s.str()}\\)?`;
             break;
         }
-        case 10: {
+        case 11: {
             
             let n = randInt(20, 1);
             let m = randInt(n + 1, n + 10) + 10;

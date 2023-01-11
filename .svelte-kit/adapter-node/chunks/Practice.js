@@ -118,13 +118,13 @@ const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     $$rendered = `
 
 
-<div class="${"problemPanel svelte-1hqorv6"}"><div class="${"problemset svelte-1hqorv6"}" style="${"display: block;"}"><fieldset class="${"problemField svelte-1hqorv6"}"><legend class="${"problemLegend svelte-1hqorv6"}"><div class="${"dayscore svelte-1hqorv6"}"><abbr title="${"Today's accuracy"}" class="${"svelte-1hqorv6"}">${validate_component(Performance, "Performance").$$render($$result, { strokedasharray }, {}, {})}</abbr></div>
-                <div class="${"refresh svelte-1hqorv6"}"><button class="${["noborder svelte-1hqorv6", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1hqorv6"}"></span>
-                        <span class="${"icon is-small material-icons svelte-1hqorv6"}">refresh
-                        </span></button></div>
-                <div class="${"next svelte-1hqorv6"}"><button class="${["noborder svelte-1hqorv6", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1hqorv6"}"></span>
-                        <span class="${"icon is-small material-icons svelte-1hqorv6"}">arrow_forward
-                        </span></button></div></legend>
+<div class="${"problemPanel svelte-1hqorv6"}"><div class="${"problemset svelte-1hqorv6"}" style="${"display: block;"}"><fieldset class="${"problemField svelte-1hqorv6"}"><legend class="${"svelte-1hqorv6"}"><div class="${"problemLegend svelte-1hqorv6"}"><div class="${"dayscore svelte-1hqorv6"}"><abbr title="${"Today's accuracy"}" class="${"svelte-1hqorv6"}">${validate_component(Performance, "Performance").$$render($$result, { strokedasharray }, {}, {})}</abbr></div>
+                    <div class="${"refresh svelte-1hqorv6"}"><button class="${["noborder svelte-1hqorv6", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1hqorv6"}"></span>
+                            <span class="${"icon is-small material-icons svelte-1hqorv6"}">refresh
+                            </span></button></div>
+                    <div class="${"next svelte-1hqorv6"}"><button class="${["noborder svelte-1hqorv6", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1hqorv6"}"></span>
+                            <span class="${"icon is-small material-icons svelte-1hqorv6"}">arrow_forward
+                            </span></button></div></div></legend>
 
             <div class="${"problemArea svelte-1hqorv6"}"><div class="${"problemStatement svelte-1hqorv6"}"><!-- HTML_TAG_START -->${newproblem}<!-- HTML_TAG_END --></div>
                 <div class="${"options svelte-1hqorv6"}">${validate_component(Practiceradiobutton, "Practiceradiobutton").$$render(
