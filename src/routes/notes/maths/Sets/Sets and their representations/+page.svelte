@@ -6,6 +6,7 @@
     import Message from '$lib/ui/Message.svelte';
     import {Point2D} from '$lib/utils/common/point2d';
     import {randNum, randInt} from '$lib/utils/common/common';
+    import {Sets} from '$lib/utils/common/sets';
     import {page} from '$app/stores';
     import {onMount} from 'svelte';
     import P from '$lib/presentation/P.svelte';
@@ -18,7 +19,7 @@
         onMount(() => {
             $selectedChapter = 'Sets';
             $selectedSection = 'Sets and their representations';
-            $slideCounter = 11;
+            $slideCounter = 30;
             $currentSlide = -2;
             MathJax.typeset();
         });
@@ -33,7 +34,7 @@
             c: ""
         };
         const generateProblem = (problemnumber) => {
-            let N = 1;
+            let N = 4;
             problemnumber = problemnumber % N;
             let choices = ['A', 'B', 'C', 'D'];
             let correctChoiceIndex = Math.floor(Math.random()*4);
@@ -134,11 +135,9 @@
     <article class:absolute={$presentationMode} bind:this={$presentation}>
         {#if $presentationMode && $currentSlide === -2}
             <div class="thumbnail">
-                <p 
-                    class="statement" 
-                    >
-                    Set Representations
-                </p>
+               
+                <img class="statement" width="100%" src="/notes/maths/sets/representation/heroparadox.svg" alt="" style="color:white;">
+                
             </div>
         {/if}
         {#if !$presentationMode || $currentSlide >= -1}
@@ -152,17 +151,20 @@
         <section>
             <Item item={1}>
                 <P isActive={1}>
-                    We are used to a practical idea of what is a <em>collection</em>. A <em>set</em> is the mathematical refinement of this idea of collection. It turns out that not every collection can be a set. One basic requirement of a mathematical concept is that its definition must be unique. Not every collection has a unique definition. Consider, for example, <span class="specialtext">the collection of favourite songs</span>. Pretty much every person would have their own unique collection of favourite songs. 
+                    We are used to a practical idea of what is a <em>collection</em>. A <em>set</em> is the mathematical refinement of this idea of collection. It turns out that not every collection can be a set. One basic requirement of a mathematical concept is that its definition must be unique. Not every collection has a unique definition. Consider, for example, <span class="specialtext">the hero paradox</span>. A <em>hero</em> is a person who helps those and only those, who can not help themselves. <em>Does the hero help himself?</em>
                 </P>
+                <Image isActive={1}>
+                    <img src="/notes/maths/sets/representation/heroparadox.svg" alt="">
+                </Image>
             </Item>
             <Item item={2}>
                 <P isActive={2}>
-                    Although the collection of favourite songs is defined for each person, but it is not unique for everyone. We can not consider such collections as mathematical object. Then the question remains <em>"how do we eliminate such bad cases of collections?"</em>
+                    A simple idea of collections can lead to many such paradoxes.
                 </P>
             </Item>
             <Item item={3}>
                 <P isActive={3}>
-                    This problem of uniquenss can be solved if it is possible to decide, with certainty, whether an object is part of the collection. This is how we define the mathematical notion of a <em>set</em>.
+                    Such paradoxes can be avoided if it is possible to decide, with certainty, whether an object is part of the collection. This is how we define the mathematical notion of a <em>set</em>.
                 </P>
             </Item>
             <Item item={4}>
@@ -308,15 +310,13 @@
                  </ul>
              </section>
         </Item>
+        <Item item={20}>
+            <section>
+                <h2>Practice</h2>
+                <Practice {generateProblem}/>
+            </section>
+        </Item>
         
-        <!-- <section>
-            <h2>Practice</h2>
-            {#if $session.user}
-            <Practice {generateProblem}/>
-            {:else}
-                <Message>You need to be logged in to practice.</Message>
-            {/if}
-        </section> -->
         {#if $presentationMode && $currentSlide >= 2}
             <div class="pad"></div>
         {/if}
@@ -373,7 +373,7 @@
             
         }
         .statement {
-            background: radial-gradient(#6000c091, rgb(0, 93, 180));
+            background: radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));
             color: rgb(246, 246, 246);
             text-shadow: 1px 1px 3px rgb(4, 4, 4);
             box-shadow: 1px 1px 3px rgb(129, 128, 128);
