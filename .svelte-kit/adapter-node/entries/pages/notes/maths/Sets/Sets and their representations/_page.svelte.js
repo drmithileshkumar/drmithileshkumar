@@ -1,8 +1,9 @@
-import { c as create_ssr_component, p as compute_rest_props, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../../../chunks/index.js";
-import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../../../chunks/stores2.js";
+import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../../../chunks/index.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
 import { P as Practice } from "../../../../../../chunks/Practice.js";
 /* empty css                                                              */import { p as page } from "../../../../../../chunks/stores.js";
 import { I as Item, P, a as Image, L as Li } from "../../../../../../chunks/Image.js";
+import { H as H2, a as H3 } from "../../../../../../chunks/H3.js";
 const randInt = (max, min) => {
   if (min >= max)
     return Math.floor(max);
@@ -628,51 +629,6 @@ class Quadratic {
     }
   }
 }
-const H1_svelte_svelte_type_style_lang = "";
-const H2_svelte_svelte_type_style_lang = "";
-const css$2 = {
-  code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
-  map: null
-};
-const H2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["isActive"]);
-  let $presentationMode, $$unsubscribe_presentationMode;
-  let $currentSlide, $$unsubscribe_currentSlide;
-  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
-  $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => $currentSlide = value);
-  let { isActive = -1 } = $$props;
-  if ($$props.isActive === void 0 && $$bindings.isActive && isActive !== void 0)
-    $$bindings.isActive(isActive);
-  $$result.css.add(css$2);
-  $$unsubscribe_presentationMode();
-  $$unsubscribe_currentSlide();
-  return `<h2 class="${escape($$restProps.class || "", true) + " " + escape(
-    $presentationMode && isActive === $currentSlide ? "currentActive" : "",
-    true
-  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</h2>`;
-});
-const H3_svelte_svelte_type_style_lang = "";
-const css$1 = {
-  code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
-  map: null
-};
-const H3 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["isActive"]);
-  let $presentationMode, $$unsubscribe_presentationMode;
-  let $currentSlide, $$unsubscribe_currentSlide;
-  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
-  $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => $currentSlide = value);
-  let { isActive = -1 } = $$props;
-  if ($$props.isActive === void 0 && $$bindings.isActive && isActive !== void 0)
-    $$bindings.isActive(isActive);
-  $$result.css.add(css$1);
-  $$unsubscribe_presentationMode();
-  $$unsubscribe_currentSlide();
-  return `<h3 class="${escape($$restProps.class || "", true) + " " + escape(
-    $presentationMode && isActive === $currentSlide ? "currentActive" : "",
-    true
-  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</h3>`;
-});
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: "article.svelte-1u2xeqn{position:relative;padding:0.5em}.absolute.svelte-1u2xeqn{margin:auto;width:100%;height:90vh;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1u2xeqn::-webkit-scrollbar{width:0;height:0}.pad.svelte-1u2xeqn{min-height:150px}.thumbnail.svelte-1u2xeqn{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1u2xeqn{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",

@@ -84,6 +84,20 @@
       "_index.js"
     ]
   },
+  "src/routes/notes/quantum/+layout.svelte": {
+    "file": "entries/pages/notes/quantum/_layout.svelte.js",
+    "src": "src/routes/notes/quantum/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_Presenter.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-13140589.css",
+      "_app/immutable/assets/Select-346592cf.css"
+    ]
+  },
   "src/routes/practice/+layout.svelte": {
     "file": "entries/pages/practice/_layout.svelte.js",
     "src": "src/routes/practice/+layout.svelte",
@@ -2568,10 +2582,11 @@
       "_stores2.js",
       "_Practice.js",
       "_stores.js",
-      "_Image.js"
+      "_Image.js",
+      "_H3.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-6b7898a0.css",
+      "_app/immutable/assets/_page-926fb2b3.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3291,6 +3306,32 @@
       "_index2.js"
     ]
   },
+  "src/routes/notes/quantum/+page.svelte": {
+    "file": "entries/pages/notes/quantum/_page.svelte.js",
+    "src": "src/routes/notes/quantum/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_stores.js",
+      "_constants.js",
+      "_Image.js",
+      "_H3.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-9c59cf67.css",
+      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/quantum/+page.js": {
+    "file": "entries/pages/notes/quantum/_page.js",
+    "src": "src/routes/notes/quantum/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "src/routes/practice/+page.svelte": {
     "file": "entries/pages/practice/_page.svelte.js",
     "src": "src/routes/practice/+page.svelte",
@@ -3407,6 +3448,16 @@
     ],
     "css": [
       "_app/immutable/assets/Practice-7b5f67df.css"
+    ]
+  },
+  "_H3.js": {
+    "file": "chunks/H3.js",
+    "imports": [
+      "_index.js",
+      "_stores2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/H3-27840129.css"
     ]
   }
 }

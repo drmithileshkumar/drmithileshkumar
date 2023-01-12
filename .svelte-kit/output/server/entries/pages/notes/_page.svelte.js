@@ -9,7 +9,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `Mathematics`;
     }
   })}
-        
+        ${validate_component(Link, "Link").$$render($$result, { href: "/notes/quantum" }, {}, {
+    default: () => {
+      return `Quantum Teleportation`;
+    }
+  })}
         <br></article>`;
 });
 export {

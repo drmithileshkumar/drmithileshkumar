@@ -1,8 +1,8 @@
 
 
 export const index = 7;
-export const component = async () => (await import('../entries/pages/practice/_layout.svelte.js')).default;
-export const file = '_app/immutable/components/pages/practice/_layout.svelte-7ebc67ea.js';
-export const imports = ["_app/immutable/components/pages/practice/_layout.svelte-7ebc67ea.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/index-4bc03959.js","_app/immutable/chunks/Select-66882e60.js","_app/immutable/chunks/stores-eaa10a98.js","_app/immutable/chunks/index-274f5047.js"];
-export const stylesheets = ["_app/immutable/assets/Select-5f77238b.css"];
+export const component = async () => (await import('../entries/pages/notes/quantum/_layout.svelte.js')).default;
+export const file = '_app/immutable/components/pages/notes/quantum/_layout.svelte-6dcc9a27.js';
+export const imports = ["_app/immutable/components/pages/notes/quantum/_layout.svelte-6dcc9a27.js","_app/immutable/chunks/index-4bc03959.js","_app/immutable/chunks/stores-c5dfff84.js","_app/immutable/chunks/index-274f5047.js","_app/immutable/chunks/Presenter-d554a991.js","_app/immutable/chunks/singletons-ea1f1619.js","_app/immutable/chunks/ripple-d6af89fa.js"];
+export const stylesheets = ["_app/immutable/assets/_layout-0886631a.css","_app/immutable/assets/Select-5f77238b.css","_app/immutable/assets/Presenter-056c8295.css","_app/immutable/assets/Canvas-c476fbe8.css"];
 export const fonts = [];

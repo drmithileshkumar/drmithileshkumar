@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.js';
+import * as universal from '../entries/pages/notes/maths/Application of integrals/Area under simple curves/_page.js';
 
 export const index = 29;
-export const component = async () => (await import('../entries/pages/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.svelte-11ac946a.js';
+export const component = async () => (await import('../entries/pages/notes/maths/Application of integrals/Area under simple curves/_page.svelte.js')).default;
+export const file = '_app/immutable/components/pages/notes/maths/Application of integrals/Area under simple curves/_page.svelte-4a4e731c.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.svelte-11ac946a.js","_app/immutable/chunks/index-4bc03959.js","_app/immutable/chunks/stores-c5dfff84.js","_app/immutable/chunks/index-274f5047.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/chunks/stores-0ec56a92.js","_app/immutable/chunks/singletons-ea1f1619.js","_app/immutable/modules/pages/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.js-4bd45e04.js","_app/immutable/chunks/index-35a671a5.js","_app/immutable/chunks/control-f5b05b5f.js","_app/immutable/chunks/_page-a2c2aa44.js"];
+export const imports = ["_app/immutable/components/pages/notes/maths/Application of integrals/Area under simple curves/_page.svelte-4a4e731c.js","_app/immutable/chunks/index-4bc03959.js","_app/immutable/chunks/stores-c5dfff84.js","_app/immutable/chunks/index-274f5047.js","_app/immutable/chunks/stores-0ec56a92.js","_app/immutable/chunks/singletons-ea1f1619.js","_app/immutable/modules/pages/notes/maths/Application of integrals/Area under simple curves/_page.js-4bd45e04.js","_app/immutable/chunks/index-35a671a5.js","_app/immutable/chunks/control-f5b05b5f.js","_app/immutable/chunks/_page-98fa8a7b.js"];
 export const stylesheets = ["_app/immutable/assets/Practice-ceaad90d.css","_app/immutable/assets/Message-1e964222.css"];
 export const fonts = [];

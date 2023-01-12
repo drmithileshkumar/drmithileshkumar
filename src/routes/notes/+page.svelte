@@ -49,6 +49,6 @@
             Study notes
         </h1>
         <Link href='/notes/maths'>Mathematics</Link>
-        
+        <Link href='/notes/quantum'>Quantum Teleportation</Link>
         <br>
     </article>
