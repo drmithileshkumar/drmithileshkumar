@@ -177,7 +177,7 @@
                     We are used to a practical idea of what is a <em>collection</em>. A <em>set</em> is the mathematical refinement of this idea of collection. It turns out that not every collection can be a set. One basic requirement of a mathematical concept is that its definition must be unique. Not every collection has a unique definition. Consider, for example, <span class="specialtext">the hero paradox</span>. A <em>hero</em> is a person who helps those and only those, who can not help themselves. <em>Does the hero help himself?</em>
                 </P>
                 <Image isActive={1}>
-                    <img src="/notes/maths/sets/representation/heroparadox.svg" alt="">
+                    <img style="width: max(70vw, 400px);" src="/notes/maths/sets/representation/heroparadox.svg" alt="">
                 </Image>
             </Item>
             <Item item={2}>
@@ -386,7 +386,8 @@
             margin: auto;
             /* width: 90vw; */
             width: 100%;
-            height: min(78vh, 60vw);
+            height: 90vh;
+            /* height: min(78vh, 60vw); */
             /* height: min(70vh,600px); */
             overflow-y: auto;
             scrollbar-width: none;
@@ -398,7 +399,7 @@
             height: 0;
         }
         .pad {
-            min-height: 100px;
+            min-height: 150px;
         } 
         /*  
         figure {

@@ -675,7 +675,7 @@ const H3 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "article.svelte-fr0q3{position:relative;padding:0.5em}.absolute.svelte-fr0q3{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-fr0q3::-webkit-scrollbar{width:0;height:0}.pad.svelte-fr0q3{min-height:100px}.thumbnail.svelte-fr0q3{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-fr0q3{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
+  code: "article.svelte-1u2xeqn{position:relative;padding:0.5em}.absolute.svelte-1u2xeqn{margin:auto;width:100%;height:90vh;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1u2xeqn::-webkit-scrollbar{width:0;height:0}.pad.svelte-1u2xeqn{min-height:150px}.thumbnail.svelte-1u2xeqn{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1u2xeqn{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -808,7 +808,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-iu5uph_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedSection, 0)}><!-- HEAD_svelte-iu5uph_END -->`, ""}
-    <article class="${["svelte-fr0q3", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-fr0q3"}"><img class="${"statement svelte-fr0q3"}" width="${"100%"}" src="${"/notes/maths/sets/representation/heroparadox.svg"}" alt="${""}" style="${"color:white;"}"></div>` : ``}
+    <article class="${["svelte-1u2xeqn", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1u2xeqn"}"><img class="${"statement svelte-1u2xeqn"}" width="${"100%"}" src="${"/notes/maths/sets/representation/heroparadox.svg"}" alt="${""}" style="${"color:white;"}"></div>` : ``}
         ${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
         ${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
@@ -829,7 +829,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}
                 ${validate_component(Image, "Image").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
-          return `<img src="${"/notes/maths/sets/representation/heroparadox.svg"}" alt="${""}">`;
+          return `<img style="${"width: max(70vw, 400px);"}" src="${"/notes/maths/sets/representation/heroparadox.svg"}" alt="${""}">`;
         }
       })}`;
     }
@@ -1187,7 +1187,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   })}
         
-        ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-fr0q3"}"></div>` : ``}
+        ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1u2xeqn"}"></div>` : ``}
     </article>`;
 });
 export {

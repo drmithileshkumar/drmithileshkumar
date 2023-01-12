@@ -114,7 +114,8 @@
             top: 0;
             margin: auto;
             width: calc(100% - 2em);
-            height: min(78vh, 60vw);
+            /* height: min(78vh, 60vw); */
+            height: 90vh;
             /* height: min(70vh,600px); */
             overflow-y: auto;
             scrollbar-width: none;
