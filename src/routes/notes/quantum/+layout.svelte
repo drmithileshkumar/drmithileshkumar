@@ -61,6 +61,7 @@
             evt.preventDefault();
         }
         const noContextMenu = () => {
+            $currentSlide = -2;
             if($presentationMode) {
                 document.addEventListener("contextmenu", preventD, false);
                 document.body.classList.add('noMenu');
