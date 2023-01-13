@@ -86,7 +86,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 2 }, {}, {
         default: () => {
-          return `A quantum bit or qubit is a physical system whose state space is determined by unit vectors in a two dimensional Hilbert Space.
+          return `A quantum bit or qubit is a physical system whose state space is determined by unit vectors in a two dimensional Hilbert Space. We choose to denote the basis vectors by unit vectors \\(|0\\rangle\\) and \\(|1\\rangle\\). The symbols 0 and 1 are deliberately chosen to correspond to 0 and 1 values of a classical bit. In general, the state of a qubit can be expressed as \\[|\\psi\\rangle = \\alpha|0\\rangle + \\beta|1\\rangle\\] where \\(\\alpha, \\beta\\in ${escape(TeX.bbC)}\\) such that \\[|\\alpha|^2 + |\\beta|^2 = 1\\]
                 `;
         }
       })}`;
@@ -94,10 +94,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   })}
             ${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 3 }, {}, {
+      return `${validate_component(Image, "Image").$$render($$result, { isActive: 3 }, {}, {
         default: () => {
-          return `We choose to denote the basis vectors by unit vectors \\(|0\\rangle\\) and \\(|1\\rangle\\). The symbols 0 and 1 are deliberately chosen to correspond to 0 and 1 values of a classical bit.
-                `;
+          return `<img src="${"/notes/quantum/qubit2d.svg"}" alt="${""}">`;
         }
       })}`;
     }
@@ -106,8 +105,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 4 }, {}, {
         default: () => {
-          return `In general, the state of a qubit can be expressed as \\[|\\psi\\rangle = \\alpha|0\\rangle + \\beta|1\\rangle\\] where \\(\\alpha, \\beta\\in ${escape(TeX.bbC)}\\) such that \\[|\\alpha|^2 + |\\beta|^2 = 1\\]
-                `;
+          return `We can represent a qubit state by column vector ${escape(`\\[|0\\rangle \\equiv \\begin{bmatrix}1 \\\\ 0 \\end{bmatrix}\\quad |1\\rangle \\equiv \\begin{bmatrix}0 \\\\ 1 \\end{bmatrix}\\]`)}
+                    Then, a general qubit state becomes ${escape(`\\[|\\psi\\rangle\\equiv\\begin{bmatrix}\\alpha \\\\ \\beta \\end{bmatrix}\\]`)}`;
         }
       })}`;
     }
@@ -235,7 +234,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 16 }, {}, {
         default: () => {
-          return `A NOT gate flips 0 to 1 and 1 to 0. A quantum NOT gate would change \\(\\alpha|0\\rangle + \\beta|1\\rangle\\) to \\(\\alpha|1\\rangle + \\beta|0\\rangle\\). If we represent a qubit state by column vector ${escape(`\\[\\begin{bmatrix}\\alpha \\\\ \\beta \\end{bmatrix}\\]`)} then the NOT gate will be represented by ${escape(`\\[X\\equiv\\begin{bmatrix}
+          return `A NOT gate flips 0 to 1 and 1 to 0. A quantum NOT gate would change \\(\\alpha|0\\rangle + \\beta|1\\rangle\\) to \\(\\alpha|1\\rangle + \\beta|0\\rangle\\). The NOT gate can be represented by ${escape(`\\[X\\equiv\\begin{bmatrix}
                     0 & 1\\\\
                     1 & 0
                     \\end{bmatrix}\\]`)}`;
