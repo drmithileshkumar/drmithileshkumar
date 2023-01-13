@@ -12,6 +12,7 @@
     import {TeX} from '$lib/utils/common/constants';
     import {onMount} from 'svelte';
     import P from '$lib/presentation/P.svelte';
+    import Div from '$lib/presentation/Div.svelte';
     import H1 from '$lib/presentation/H1.svelte';
     import H2 from '$lib/presentation/H2.svelte';
     import H3 from '$lib/presentation/H3.svelte';
@@ -194,7 +195,7 @@
             </Item>
             <Item item={2}>
                 <P isActive={2}>
-                    A quantum bit or qubit is a physical system whose state space is determined by a unit vector in a two dimensional Hilbert Space.
+                    A quantum bit or qubit is a physical system whose state space is determined by unit vectors in a two dimensional Hilbert Space.
                 </P>
             </Item>
             <Item item={3}>
@@ -226,12 +227,12 @@
             </Item>
             <Item item={8}>
                 <P isActive={8}>
-                    Even though the qubit has advantage of having infinitely-many possible states, we can only observe it in two possible states. These observed states depend on the type of measurement we are making on the qubit.
+                    Even though the qubit has advantage of having infinitely-many possible states, we can only observe it in two possible states. These observed states depend on the type of measurement we are performing on the qubit.
                 </P>
             </Item>
             <Item item={9}>
                 <P isActive={9}>
-                    Suppose that a qubit is prepared in the state \(|\psi\rangle = \alpha|0\rangle + \beta|1\rangle\). In the simplest case, when we make a measurement or observe the qubit, the state of the qubit changes to either \(|0\rangle\) or \(|1\rangle\) with probability \(|\alpha|^2\) or \(|\beta|^2\), respectively.
+                    Suppose that a qubit is prepared in the state \(|\psi\rangle = \alpha|0\rangle + \beta|1\rangle\). In the simplest case, when we perform a measurement or observe the qubit, the state of the qubit changes to either \(|0\rangle\) or \(|1\rangle\) with probability \(|\alpha|^2\) or \(|\beta|^2\), respectively.
                 </P>
             </Item>
             <Item item={10}>
@@ -256,6 +257,11 @@
                     Probability conservation implies that quantum systems can only undergo unitary evolution. That is, any operation to change the state (apart from measurement) must correspond to a unitary matrix. A matrix \(U\) is unitary if \[U^\dagger U = I\]
                 </P>
             </Item>
+            <Item item={13}>
+                <P isActive={13}>
+                    In addition, unitary operations must act <em>linearly</em> on the state, i.e. \[U(\alpha|0\rangle + \beta|1\rangle) = \alpha U|0\rangle + \beta U|1\rangle\]
+                </P>
+            </Item>
             <Item item={14}>
                 <P isActive={14}>
                     Borrowing the terminalogy from classical computation, we call these operations unitary gates. These gates are generally represented by matrices. For a qubit, these are \(2\times 2\) unitary matrices. Let us consider a few special cases of unitary gates.
@@ -272,7 +278,6 @@
                     0 & 1\\\\
                     1 & 0
                     \\end{bmatrix}\\]`}
-                    We can easily verify that \(X\) is a unitary matrix.
                 </P>
             </Item>
             <Item item={17}>
@@ -286,7 +291,6 @@
                     1 & 0\\\\
                     0 & -1
                     \\end{bmatrix}\\]`}
-                    We can easily verify that \(Z\) is a unitary matrix.
                 </P>
             </Item>
             <Item item={19}>
@@ -301,7 +305,7 @@
                     1 & 1\\\\
                     1 & -1
                     \\end{bmatrix}\\]`}
-                    We can easily verify that \(H\) is a unitary matrix. When we apply \(H\) gate on a qubit in state \(|0\rangle\), we get {`\\[H|0\\rangle = \\frac{|0\\rangle + |1\\rangle}{\\sqrt{2}}\\]`} which is a state of <em>equal</em> superposition.
+                    When we apply \(H\) gate on a qubit in state \(|0\rangle\), we get {`\\[H|0\\rangle = \\frac{|0\\rangle + |1\\rangle}{\\sqrt{2}}\\]`} which is a state of <em>equal</em> superposition.
                 </P>
             </Item>
             <Item item={21}>
@@ -310,14 +314,24 @@
                 </H3>
             </Item>
             <Item item={22}>
-                <P isActive={22}>
+                <Div isActive={22}>
                     Contolled-NOT gate is a two-qubit gate, i.e. this operation requires two qubits. One of the qubit plays the role of <em>control</em>, while the other qubit is <em>target</em> of the NOT gate. That is, one qubit <em>acts</em> as a switch for NOT gate. CNOT gate is defined as 
-                     {`\\[U_{CN}\\equiv\\begin{bmatrix}
-                    1 & 0 & 0 & 0\\\\
-                    0 & 1 & 0 & 0\\\\
-                    0 & 0 & 0 & 1\\\\
-                    0 & 0 & 1 & 0
-                    \\end{bmatrix}\\]`}
+                    <table>
+                        <tr>
+                            <td>
+                                {`\\[U_{CN}\\equiv\\begin{bmatrix}
+                                1 & 0 & 0 & 0\\\\
+                                0 & 1 & 0 & 0\\\\
+                                0 & 0 & 0 & 1\\\\
+                                0 & 0 & 1 & 0
+                                \\end{bmatrix}\\]`}
+                            </td>
+                            <td>
+                                <img width="200px" src="/notes/quantum/CNOT.svg" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                     
                     The action of CNOT gate on basis states is {`\\[
                             \\begin{eqnarray}
                             CNOT|00\\rangle &=& |00\\rangle\\\\
@@ -326,7 +340,8 @@
                             CNOT|11\\rangle &=& |10\\rangle\\\\
                             \\end{eqnarray}
                         \\]`}
-                </P>
+                </Div>
+
             </Item>
             <Item item={23}>
                 <P isActive={23}>
@@ -347,12 +362,12 @@
             </Item>
             <Item item={26}>
                 <P isActive={26}>
-                    Consider the state of a two qubit system {`\\[|\\psi\\rangle = \\frac{|00\\rangle + |11\\rangle}{\\sqrt{2}} \\]`} If one measures the 1st qubit, and say this collapses the state of the 1st qubit to \(|0\rangle\), then the resulting state of the system will be \(|00\rangle\). Likewise if the 1st qubit's state were \(|1\rangle\), the state of the system would be \(|11\rangle\). <em>What's so special in this, would you say?</em>
+                    Consider the state of a two qubit system {`\\[|\\psi\\rangle = \\frac{|00\\rangle + |11\\rangle}{\\sqrt{2}} \\]`} If one measures the 1st qubit, and say this collapses the state of the 1st qubit to \(|0\rangle\), then the resulting state of the system will be \(|00\rangle\). Likewise if the 1st qubit's state were \(|1\rangle\), the state of the system would be \(|11\rangle\). <em>What's so special in this, you would say?</em>
                 </P>
             </Item>
             <Item item={27}>
                 <P isActive={27}>
-                    The key here is that the measurement on one qubit also collapsed to state of the other qubit to a <em>basis state</em>. If the state of the system were {`\\[|\\psi\\rangle = \\frac{|00\\rangle + |11\\rangle + |01\\rangle + |11\\rangle}{2} \\]`}, the measurement of one qubit will not collapse the state of the other qubit to a basis state.
+                    The key here is that the measurement on one qubit also collapsed the state of the other qubit to a <em>basis state</em>. If the state of the system were {`\\[|\\psi\\rangle = \\frac{|00\\rangle + |11\\rangle + |01\\rangle + |11\\rangle}{2} \\]`}, the measurement of one qubit will not collapse the state of the other qubit to a basis state.
                 </P>
             </Item>
             <Item item={28}>

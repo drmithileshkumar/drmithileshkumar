@@ -1,9 +1,31 @@
-import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../chunks/index.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../chunks/stores2.js";
+import { c as create_ssr_component, p as compute_rest_props, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../chunks/index.js";
+import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../chunks/stores2.js";
 /* empty css                                                         *//* empty css                                                        */import { p as page } from "../../../../chunks/stores.js";
 import { T as TeX } from "../../../../chunks/constants.js";
 import { I as Item, P, a as Image, L as Li } from "../../../../chunks/Image.js";
 import { H as H2, a as H3 } from "../../../../chunks/H3.js";
+const Div_svelte_svelte_type_style_lang = "";
+const css$1 = {
+  code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
+  map: null
+};
+const Div = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["isActive"]);
+  let $presentationMode, $$unsubscribe_presentationMode;
+  let $currentSlide, $$unsubscribe_currentSlide;
+  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
+  $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => $currentSlide = value);
+  let { isActive = -1 } = $$props;
+  if ($$props.isActive === void 0 && $$bindings.isActive && isActive !== void 0)
+    $$bindings.isActive(isActive);
+  $$result.css.add(css$1);
+  $$unsubscribe_presentationMode();
+  $$unsubscribe_currentSlide();
+  return `<div class="${escape($$restProps.class || "", true) + " " + escape(
+    $presentationMode && isActive === $currentSlide ? "currentActive" : "",
+    true
+  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</div>`;
+});
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: "article.svelte-1sxsvd{position:relative;padding:0.5em}.absolute.svelte-1sxsvd{margin:auto;width:100%;height:90vh;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1sxsvd::-webkit-scrollbar{width:0;height:0}.pad.svelte-1sxsvd{min-height:150px}.thumbnail.svelte-1sxsvd{display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1sxsvd{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
@@ -64,7 +86,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 2 }, {}, {
         default: () => {
-          return `A quantum bit or qubit is a physical system whose state space is determined by a unit vector in a two dimensional Hilbert Space.
+          return `A quantum bit or qubit is a physical system whose state space is determined by unit vectors in a two dimensional Hilbert Space.
                 `;
         }
       })}`;
@@ -124,7 +146,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 8 }, {}, {
         default: () => {
-          return `Even though the qubit has advantage of having infinitely-many possible states, we can only observe it in two possible states. These observed states depend on the type of measurement we are making on the qubit.
+          return `Even though the qubit has advantage of having infinitely-many possible states, we can only observe it in two possible states. These observed states depend on the type of measurement we are performing on the qubit.
                 `;
         }
       })}`;
@@ -134,7 +156,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 9 }, {}, {
         default: () => {
-          return `Suppose that a qubit is prepared in the state \\(|\\psi\\rangle = \\alpha|0\\rangle + \\beta|1\\rangle\\). In the simplest case, when we make a measurement or observe the qubit, the state of the qubit changes to either \\(|0\\rangle\\) or \\(|1\\rangle\\) with probability \\(|\\alpha|^2\\) or \\(|\\beta|^2\\), respectively.
+          return `Suppose that a qubit is prepared in the state \\(|\\psi\\rangle = \\alpha|0\\rangle + \\beta|1\\rangle\\). In the simplest case, when we perform a measurement or observe the qubit, the state of the qubit changes to either \\(|0\\rangle\\) or \\(|1\\rangle\\) with probability \\(|\\alpha|^2\\) or \\(|\\beta|^2\\), respectively.
                 `;
         }
       })}`;
@@ -179,6 +201,16 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
+            ${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { isActive: 13 }, {}, {
+        default: () => {
+          return `In addition, unitary operations must act <em>linearly</em> on the state, i.e. \\[U(\\alpha|0\\rangle + \\beta|1\\rangle) = \\alpha U|0\\rangle + \\beta U|1\\rangle\\]
+                `;
+        }
+      })}`;
+    }
+  })}
             ${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 14 }, {}, {
@@ -206,9 +238,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           return `A NOT gate flips 0 to 1 and 1 to 0. A quantum NOT gate would change \\(\\alpha|0\\rangle + \\beta|1\\rangle\\) to \\(\\alpha|1\\rangle + \\beta|0\\rangle\\). If we represent a qubit state by column vector ${escape(`\\[\\begin{bmatrix}\\alpha \\\\ \\beta \\end{bmatrix}\\]`)} then the NOT gate will be represented by ${escape(`\\[X\\equiv\\begin{bmatrix}
                     0 & 1\\\\
                     1 & 0
-                    \\end{bmatrix}\\]`)}
-                    We can easily verify that \\(X\\) is a unitary matrix.
-                `;
+                    \\end{bmatrix}\\]`)}`;
         }
       })}`;
     }
@@ -230,9 +260,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           return `A Z gate leaves \\(|0\\rangle\\) unchanged, but flips the sign of \\(|1\\rangle\\) to \\(-|1\\rangle\\). It is represented by ${escape(`\\[Z\\equiv\\begin{bmatrix}
                     1 & 0\\\\
                     0 & -1
-                    \\end{bmatrix}\\]`)}
-                    We can easily verify that \\(Z\\) is a unitary matrix.
-                `;
+                    \\end{bmatrix}\\]`)}`;
         }
       })}`;
     }
@@ -256,7 +284,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                     1 & 1\\\\
                     1 & -1
                     \\end{bmatrix}\\]`)}
-                    We can easily verify that \\(H\\) is a unitary matrix. When we apply \\(H\\) gate on a qubit in state \\(|0\\rangle\\), we get ${escape(`\\[H|0\\rangle = \\frac{|0\\rangle + |1\\rangle}{\\sqrt{2}}\\]`)} which is a state of <em>equal</em> superposition.
+                    When we apply \\(H\\) gate on a qubit in state \\(|0\\rangle\\), we get ${escape(`\\[H|0\\rangle = \\frac{|0\\rangle + |1\\rangle}{\\sqrt{2}}\\]`)} which is a state of <em>equal</em> superposition.
                 `;
         }
       })}`;
@@ -274,15 +302,17 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   })}
             ${validate_component(Item, "Item").$$render($$result, { item: 22 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 22 }, {}, {
+      return `${validate_component(Div, "Div").$$render($$result, { isActive: 22 }, {}, {
         default: () => {
           return `Contolled-NOT gate is a two-qubit gate, i.e. this operation requires two qubits. One of the qubit plays the role of <em>control</em>, while the other qubit is <em>target</em> of the NOT gate. That is, one qubit <em>acts</em> as a switch for NOT gate. CNOT gate is defined as 
-                     ${escape(`\\[U_{CN}\\equiv\\begin{bmatrix}
-                    1 & 0 & 0 & 0\\\\
-                    0 & 1 & 0 & 0\\\\
-                    0 & 0 & 0 & 1\\\\
-                    0 & 0 & 1 & 0
-                    \\end{bmatrix}\\]`)}
+                    <table><tr><td>${escape(`\\[U_{CN}\\equiv\\begin{bmatrix}
+                                1 & 0 & 0 & 0\\\\
+                                0 & 1 & 0 & 0\\\\
+                                0 & 0 & 0 & 1\\\\
+                                0 & 0 & 1 & 0
+                                \\end{bmatrix}\\]`)}</td>
+                            <td><img width="${"200px"}" src="${"/notes/quantum/CNOT.svg"}" alt="${""}"></td></tr></table>
+                     
                     The action of CNOT gate on basis states is ${escape(`\\[
                             \\begin{eqnarray}
                             CNOT|00\\rangle &=& |00\\rangle\\\\
@@ -328,7 +358,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 26 }, {}, {
         default: () => {
-          return `Consider the state of a two qubit system ${escape(`\\[|\\psi\\rangle = \\frac{|00\\rangle + |11\\rangle}{\\sqrt{2}} \\]`)} If one measures the 1st qubit, and say this collapses the state of the 1st qubit to \\(|0\\rangle\\), then the resulting state of the system will be \\(|00\\rangle\\). Likewise if the 1st qubit&#39;s state were \\(|1\\rangle\\), the state of the system would be \\(|11\\rangle\\). <em>What&#39;s so special in this, would you say?</em>`;
+          return `Consider the state of a two qubit system ${escape(`\\[|\\psi\\rangle = \\frac{|00\\rangle + |11\\rangle}{\\sqrt{2}} \\]`)} If one measures the 1st qubit, and say this collapses the state of the 1st qubit to \\(|0\\rangle\\), then the resulting state of the system will be \\(|00\\rangle\\). Likewise if the 1st qubit&#39;s state were \\(|1\\rangle\\), the state of the system would be \\(|11\\rangle\\). <em>What&#39;s so special in this, you would say?</em>`;
         }
       })}`;
     }
@@ -337,7 +367,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 27 }, {}, {
         default: () => {
-          return `The key here is that the measurement on one qubit also collapsed to state of the other qubit to a <em>basis state</em>. If the state of the system were ${escape(`\\[|\\psi\\rangle = \\frac{|00\\rangle + |11\\rangle + |01\\rangle + |11\\rangle}{2} \\]`)}, the measurement of one qubit will not collapse the state of the other qubit to a basis state.
+          return `The key here is that the measurement on one qubit also collapsed the state of the other qubit to a <em>basis state</em>. If the state of the system were ${escape(`\\[|\\psi\\rangle = \\frac{|00\\rangle + |11\\rangle + |01\\rangle + |11\\rangle}{2} \\]`)}, the measurement of one qubit will not collapse the state of the other qubit to a basis state.
                 `;
         }
       })}`;
