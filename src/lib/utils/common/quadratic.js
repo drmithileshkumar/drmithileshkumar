@@ -1,6 +1,6 @@
 import * as _F from './fraction';
 import {randInt} from './common';
-export class Quadratic {
+export class Quadratic {//ax^2 + bx + c
     constructor(a = 0, b = 0, c = 0, x = 'x') {
         this.a = a;
         this.b = b;
@@ -13,6 +13,20 @@ export class Quadratic {
             this.b = randInt(max, min);
         }
         this.c = randInt(max, min);
+    }
+    real(min, max) {
+        let r1 = randInt(max, min);
+        let r2 = randInt(max, min);
+        this.a = 1;
+        this.b = -(r1 + r2);
+        this.c = r1*r2;
+    }
+    complex(min, max) {
+        let r = randInt(max, min);
+        let i = randInt(max, min);
+        this.a = 1;
+        this.b = -2*r;
+        this.c = r*r + i*i;
     }
     str() {
         let eq = '';

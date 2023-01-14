@@ -2,8 +2,10 @@ import { c as create_ssr_component, p as compute_rest_props, d as subscribe, e a
 import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../chunks/stores2.js";
 /* empty css                                                         *//* empty css                                                        */import { p as page } from "../../../../chunks/stores.js";
 import { T as TeX } from "../../../../chunks/constants.js";
-import { I as Item, P, a as Image, L as Li } from "../../../../chunks/Image.js";
-import { H as H2, a as H3 } from "../../../../chunks/H3.js";
+import { I as Item, P, L as Li } from "../../../../chunks/Image.svelte_svelte_type_style_lang.js";
+import { H as H3 } from "../../../../chunks/H3.js";
+import { H as H2 } from "../../../../chunks/H2.js";
+import { I as Image } from "../../../../chunks/Image.js";
 const Div_svelte_svelte_type_style_lang = "";
 const css$1 = {
   code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",

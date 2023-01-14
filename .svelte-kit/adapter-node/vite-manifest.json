@@ -115,6 +115,7 @@
     "imports": [
       "_index.js",
       "_stores2.js",
+      "_Image.svelte_svelte_type_style_lang.js",
       "_Image.js"
     ],
     "css": [
@@ -2488,6 +2489,7 @@
       "_index.js",
       "_stores2.js",
       "_stores.js",
+      "_Image.svelte_svelte_type_style_lang.js",
       "_Image.js"
     ],
     "css": [
@@ -2581,9 +2583,12 @@
       "_index.js",
       "_stores2.js",
       "_Practice.js",
+      "_quadratic.js",
       "_stores.js",
-      "_Image.js",
-      "_H3.js"
+      "_Image.svelte_svelte_type_style_lang.js",
+      "_H3.js",
+      "_H2.js",
+      "_Image.js"
     ],
     "css": [
       "_app/immutable/assets/_page-926fb2b3.css",
@@ -2629,11 +2634,14 @@
     "imports": [
       "_index.js",
       "_stores2.js",
-      "_stores.js"
+      "_Practice.js",
+      "_quadratic.js",
+      "_stores.js",
+      "_Image.svelte_svelte_type_style_lang.js",
+      "_H3.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-58267112.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/_page-a127c05f.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3315,8 +3323,10 @@
       "_stores2.js",
       "_stores.js",
       "_constants.js",
-      "_Image.js",
-      "_H3.js"
+      "_Image.svelte_svelte_type_style_lang.js",
+      "_H3.js",
+      "_H2.js",
+      "_Image.js"
     ],
     "css": [
       "_app/immutable/assets/_page-937bda07.css",
@@ -3409,14 +3419,22 @@
       "_index3.js"
     ]
   },
-  "_Image.js": {
-    "file": "chunks/Image.js",
+  "_Image.svelte_svelte_type_style_lang.js": {
+    "file": "chunks/Image.svelte_svelte_type_style_lang.js",
     "imports": [
       "_index.js",
       "_stores2.js"
     ],
     "css": [
       "_app/immutable/assets/Image-92c0138a.css"
+    ]
+  },
+  "_Image.js": {
+    "file": "chunks/Image.js",
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_Image.svelte_svelte_type_style_lang.js"
     ]
   },
   "_Papers.js": {
@@ -3450,6 +3468,9 @@
       "_app/immutable/assets/Practice-7b5f67df.css"
     ]
   },
+  "_quadratic.js": {
+    "file": "chunks/quadratic.js"
+  },
   "_H3.js": {
     "file": "chunks/H3.js",
     "imports": [
@@ -3458,6 +3479,14 @@
     ],
     "css": [
       "_app/immutable/assets/H3-27840129.css"
+    ]
+  },
+  "_H2.js": {
+    "file": "chunks/H2.js",
+    "imports": [
+      "_index.js",
+      "_stores2.js",
+      "_H3.js"
     ]
   }
 }

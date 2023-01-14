@@ -1,17 +1,25 @@
 <script id="MathJax-script">
     // @ts-nocheck
-        import {chapters, sections, selectedChapter, selectedSection} from '$lib/pages/notes/maths/stores';
-        import {presentationMode, presentation, overlay, slideCounter, autoScroll, currentSlide} from '$lib/pages/notes/maths/stores';
-        import Practice from '$lib/utils/practiceproblem/Practice.svelte';
-        import Message from '$lib/ui/Message.svelte';
-        import {Point2D} from '$lib/utils/common/point2d';
-        import {randNum, randInt} from '$lib/utils/common/common';
-        import {page} from '$app/stores';
-        import {onMount} from 'svelte';
+    import {chapters, sections, selectedChapter, selectedSection} from '$lib/pages/notes/maths/stores';
+    import {presentationMode, presentation, overlay, slideCounter, autoScroll, currentSlide} from '$lib/pages/notes/maths/stores';
+    import Practice from '$lib/utils/practiceproblem/Practice.svelte';
+    import Message from '$lib/ui/Message.svelte';
+    import {Point2D} from '$lib/utils/common/point2d';
+    import {randNum, randInt} from '$lib/utils/common/common';
+    import {Quadratic} from '$lib/utils/common/quadratic';
+    import {page} from '$app/stores';
+    import {onMount} from 'svelte';
+    import P from '$lib/presentation/P.svelte';
+    import H1 from '$lib/presentation/H1.svelte';
+    import H2 from '$lib/presentation/H2.svelte';
+    import H3 from '$lib/presentation/H3.svelte';
+    import Li from '$lib/presentation/Li.svelte';
+    import Item from '$lib/presentation/Item.svelte';
+	import Image from '$lib/presentation/Image.svelte';
         onMount(() => {
             $selectedChapter = 'Sets';
             $selectedSection = 'The empty set';
-            $slideCounter = 11;
+            $slideCounter = 10;
             $currentSlide = -2;
             MathJax.typeset();
         });
@@ -26,7 +34,7 @@
             c: ""
         };
         const generateProblem = (problemnumber) => {
-            let N = 1;
+            let N = 2;
             problemnumber = problemnumber % N;
             let choices = ['A', 'B', 'C', 'D'];
             let correctChoiceIndex = Math.floor(Math.random()*4);
@@ -57,21 +65,94 @@
                     problemset.s = `Which of the following will correspond to an empty set?`;
                     break;
                 }
+                case 1: {
+                    let min = -10;
+                    let max = 10;
+                    let q1 = new Quadratic();
+                    q1.complex(-10, 10);
+                    let q2 = new Quadratic();
+                    q2.real(-10, 10);
+                    let q3 = new Quadratic();
+                    q3.real(-10, 10);
+                    let q4 = new Quadratic();
+                    q4.real(-10, 10);
+                
+                    values[0] = q1.str();
+                    values[1] = q2.str();
+                    values[2] = q3.str();
+                    values[3] = q4.str();
+                    for(let i = 0; i < 4; i++) {
+                        problemset.o[choices[(correctChoiceIndex + i) % 4]] = `\\(\\{x:` + values[i] + '=0~\\) and ' + `\\(~x~\\) is real.\\(\\}\\)`;
+                    } 
+                    
+                    problemset.s = `Which of the following will correspond to an empty set?`;
+                    break;
+                }
             }
             problemset = problemset;
             return problemset;
         }
-    </script>
-    <style>
-        p {
+</script>
+<style>
+    /* p {
             text-indent: 2em;
-        }
+        } */
         /* .image {
             display: flex;
             justify-content: center;
             width: min(95vw, 600px);
         } */
-    </style>
+        article {
+            position: relative;
+            padding: 0.5em;
+            /* in: all 1s; */
+        }
+        /* aside {
+            background-color: rgb(230, 228, 228);
+            cursor: pointer;
+            width: 1em;
+        } */
+        .absolute {
+            margin: auto;
+            /* width: 90vw; */
+            width: 100%;
+            height: 90vh;
+            /* height: min(78vh, 60vw); */
+            /* height: min(70vh,600px); */
+            overflow-y: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding: 0 1em 0 1em;
+        }
+        .absolute::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+        .pad {
+            min-height: 150px;
+        } 
+        /*  
+        figure {
+            
+            width: 300px;
+        } */
+       
+        .thumbnail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            height: 100%;
+            
+        }
+        .statement {
+            background: radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));
+            color: rgb(246, 246, 246);
+            text-shadow: 1px 1px 3px rgb(4, 4, 4);
+            box-shadow: 1px 1px 3px rgb(129, 128, 128);
+            padding: 1em;
+        }
+</style>
     <svelte:head>
         <title>{$selectedSection}</title>
         <link rel="canonical" href="https://drmithileshkumar.com{$page.url.pathname}" />
@@ -79,42 +160,80 @@
         
     </svelte:head>
     <article class:absolute={$presentationMode} bind:this={$presentation}>
-        <h1>{$selectedSection}</h1>
+        {#if $presentationMode && $currentSlide === -2}
+            <div class="thumbnail">
+               
+                <p class="statement">
+                    The empty set
+                </p>
+                
+            </div>
+        {/if}
+        {#if !$presentationMode || $currentSlide >= -1}
+            <h1>{$selectedSection}</h1>
+        {/if}
         <section>
-            <p>The simplest possible set is one that does not contain any element at all.</p>
-           <div class="definition">
-               <p>
+            <Item item={0}>
+                <P isActive={0}>
+                    The simplest possible set is one that does not contain any element at all.
+                </P>
+            </Item>
+            <Item item={1}>
+                <P class="definition" isActive={1}>
                     A set which does not contain any element is called the <strong>empty</strong> set.
-               </p>
-               <ul>
-                   <li>
-                    An empty set is also called the <em>null set</em> or the <em>void set</em>.
-                   </li>
-                   <li>
-                       An empty set is denoted either as {'{ }'} or \(\varphi\) (read as "phi").
-                   </li>
-               </ul>
-           </div>
-        </section>
-        
-        <section>
-            <h3 class="examples">Examples</h3>
+                </P>
+            </Item>
             <ul>
-                <li>
-                    The set of positive numbers less than 0 contains no element. Hence, it is an empty set.
-                </li>
-                <li>
-                    The set of apples in an empty basket is an empty set.
-                </li>
+            <Item item={2}>
+                <Li isActive={2}>
+                    An empty set is also called the <em>null set</em> or the <em>void set</em>.
+                </Li>
+            </Item>
+            <Item item={3}>
+                <Li isActive={3}>
+                    An empty set is denoted either as {'{ }'} or \(\varphi\) (read as "phi").
+                </Li>
+            </Item>
+        </ul>
+        </section>
+        <section>
+            <Item item={4}>
+                <H3 class="examples" isActive={4}>
+                    Examples
+                </H3>
+            </Item>
+            <ul>
+                <Item item={5}>
+                    <Li isActive={5}>
+                        The set of positive numbers less than 0 contains no element. Hence, it is an empty set
+                    </Li>
+                </Item>
+                <Item item={6}>
+                    <Li isActive={6}>
+                        The set of apples in an empty basket is an empty set.
+                    </Li>
+                </Item>
+                <Item item={7}>
+                    <Li isActive={7}>
+                        Set of prime numbers divisible by 4 is an empty set.
+                    </Li>
+                </Item>
+                <Item item={8}>
+                    <Li isActive={8}>
+                        The set of real roots of the equation \(x^2 + 1 = 0\) is an empty set.
+                    </Li>
+                </Item>
             </ul>
         </section>
-        
-        <!-- <section>
-            <h2>Practice</h2>
-            {#if $session.user}
-            <Practice {generateProblem}/>
-            {:else}
-                <Message>You need to be logged in to practice.</Message>
-            {/if}
-        </section> -->
+        <section>
+            <Item item={9}>
+                <section>
+                    <h2>Practice</h2>
+                    <Practice {generateProblem}/>
+                </section>
+            </Item>
+        </section>
+        {#if $presentationMode && $currentSlide >= 2}
+            <div class="pad"></div>
+        {/if}
     </article>

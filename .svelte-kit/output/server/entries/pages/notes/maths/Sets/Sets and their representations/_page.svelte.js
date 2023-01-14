@@ -1,57 +1,12 @@
 import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../../../chunks/index.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
 import { P as Practice } from "../../../../../../chunks/Practice.js";
-/* empty css                                                              */import { p as page } from "../../../../../../chunks/stores.js";
-import { I as Item, P, a as Image, L as Li } from "../../../../../../chunks/Image.js";
-import { H as H2, a as H3 } from "../../../../../../chunks/H3.js";
-const randInt = (max, min) => {
-  if (min >= max)
-    return Math.floor(max);
-  let r = Math.random() * (max - min + 1);
-  return Math.floor(min + r);
-};
-const pickWithout = (arr) => {
-  let n = arr.length;
-  let k = randInt(n - 1, 0);
-  let elem = arr[k];
-  arr.splice(k, 1);
-  return { newArr: arr, elem };
-};
-const randSubset = (n, k) => {
-  let set = [];
-  if (k == 0)
-    return [];
-  if (k >= n) {
-    for (let i = 0; i < n; i++) {
-      set.push(i);
-    }
-    return set;
-  }
-  for (let i = 0; i < n; i++) {
-    set.push(i);
-  }
-  let temp = [];
-  let t;
-  for (let i = 0; i < k; i++) {
-    t = pickWithout(set);
-    set = t.newArr;
-    temp.push(t.elem);
-  }
-  temp.sort((a2, b2) => a2 - b2);
-  return temp;
-};
-const shuffle = (array) => {
-  let currentIndex = array.length, randomIndex;
-  while (currentIndex != 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex]
-    ];
-  }
-  return array;
-};
+/* empty css                                                              */import { r as randSubset, s as shuffle, a as randInt, Q as Quadratic } from "../../../../../../chunks/quadratic.js";
+import { p as page } from "../../../../../../chunks/stores.js";
+import { I as Item, P, L as Li } from "../../../../../../chunks/Image.svelte_svelte_type_style_lang.js";
+import { H as H3 } from "../../../../../../chunks/H3.js";
+import { H as H2 } from "../../../../../../chunks/H2.js";
+import { I as Image } from "../../../../../../chunks/Image.js";
 const powerset = (n) => {
   let set = [];
   for (let i = 0; i < Math.pow(2, n); i++) {
@@ -66,45 +21,45 @@ class Sets {
     this.eq = eq;
     this.strElem = strElem;
   }
-  elemEq(a2, b2) {
+  elemEq(a, b) {
     if (this.eq == "")
-      return a2 === b2;
-    return this.eq(a2, b2);
+      return a === b;
+    return this.eq(a, b);
   }
-  texElem(a2) {
+  texElem(a) {
     if (this.strElem == "")
-      return `${a2}`;
-    return this.strElem(a2);
+      return `${a}`;
+    return this.strElem(a);
   }
   contains(k) {
     if (this.eq == "") {
-      for (let a2 of this.e) {
-        if (a2 === k)
+      for (let a of this.e) {
+        if (a === k)
           return true;
       }
       return false;
     } else {
-      for (let a2 of this.e) {
-        if (this.eq(a2, k))
+      for (let a of this.e) {
+        if (this.eq(a, k))
           return true;
       }
       return false;
     }
   }
   equal(B) {
-    for (let a2 of this.e) {
-      if (!B.contains(a2))
+    for (let a of this.e) {
+      if (!B.contains(a))
         return false;
     }
-    for (let b2 of B.e) {
-      if (!this.contains(b2))
+    for (let b of B.e) {
+      if (!this.contains(b))
         return false;
     }
     return true;
   }
   subsetOf(B) {
-    for (let a2 of this.e) {
-      if (!B.contains(a2))
+    for (let a of this.e) {
+      if (!B.contains(a))
         return false;
     }
     return true;
@@ -122,36 +77,36 @@ class Sets {
   }
   delete(k) {
     let newSet = new Sets([], this.eq, this.strElem);
-    for (let a2 of this.e) {
-      if (!this.elemEq(a2, k))
-        newSet.e.push(a2);
+    for (let a of this.e) {
+      if (!this.elemEq(a, k))
+        newSet.e.push(a);
     }
     return newSet;
   }
   union(B) {
     let newSet = new Sets([], this.eq, this.strElem);
-    for (let a2 of this.e) {
-      newSet.e.push(a2);
+    for (let a of this.e) {
+      newSet.e.push(a);
     }
-    for (let b2 of B.e) {
-      if (!this.contains(b2))
-        newSet.e.push(b2);
+    for (let b of B.e) {
+      if (!this.contains(b))
+        newSet.e.push(b);
     }
     return newSet;
   }
   intersection(B) {
     let newSet = new Sets([], this.eq, this.strElem);
-    for (let a2 of this.e) {
-      if (B.contains(a2))
-        newSet.e.push(a2);
+    for (let a of this.e) {
+      if (B.contains(a))
+        newSet.e.push(a);
     }
     return newSet;
   }
   diff(B) {
     let newSet = new Sets([], this.eq, this.strElem);
-    for (let a2 of this.e) {
-      if (!B.contains(a2))
-        newSet.e.push(a2);
+    for (let a of this.e) {
+      if (!B.contains(a))
+        newSet.e.push(a);
     }
     return newSet;
   }
@@ -190,7 +145,7 @@ class Sets {
       set = t.newArr;
       temp.push(t.elem);
     }
-    temp.sort((a2, b2) => a2 - b2);
+    temp.sort((a, b) => a - b);
     return temp;
   }
   randomSet(min, max, k) {
@@ -207,9 +162,9 @@ class Sets {
   }
   randomSubset() {
     let newSet = new Sets([], this.eq, this.strElem);
-    for (let a2 of this.e) {
+    for (let a of this.e) {
       if (Math.random() < 0.5) {
-        newSet.e.push(a2);
+        newSet.e.push(a);
       }
     }
     return newSet;
@@ -238,12 +193,12 @@ class Sets {
   powerSet() {
     let set = powerset(this.e.length);
     let seteq = (A, B) => {
-      for (let a2 of A) {
-        if (!B.contains(a2))
+      for (let a of A) {
+        if (!B.contains(a))
           return false;
       }
-      for (let b2 of B) {
-        if (!A.contains(b2))
+      for (let b of B) {
+        if (!A.contains(b))
           return false;
       }
       return true;
@@ -264,18 +219,18 @@ class Sets {
     return newSet;
   }
   cartesian(B) {
-    let pairEq = (a2, b2) => {
-      if (a2.length !== b2.length)
+    let pairEq = (a, b) => {
+      if (a.length !== b.length)
         return false;
-      return this.elemEq(a2[0], b2[0]) && B.elemEq(a2[1], b2[1]);
+      return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
     };
-    let stringElem = (a2) => {
-      return "(" + this.texElem(a2[0]) + "," + B.texElem(a2[1]) + ")";
+    let stringElem = (a) => {
+      return "(" + this.texElem(a[0]) + "," + B.texElem(a[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
-    for (let a2 of this.e) {
-      for (let b2 of B.e) {
-        R.e.push([a2, b2]);
+    for (let a of this.e) {
+      for (let b of B.e) {
+        R.e.push([a, b]);
       }
     }
     return R;
@@ -283,13 +238,13 @@ class Sets {
   dot(B) {
     if (this.e.length != B.e.length)
       return new Sets();
-    let pairEq = (a2, b2) => {
-      if (a2.length !== b2.length)
+    let pairEq = (a, b) => {
+      if (a.length !== b.length)
         return false;
-      return this.elemEq(a2[0], b2[0]) && B.elemEq(a2[1], b2[1]);
+      return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
     };
-    let stringElem = (a2) => {
-      return "(" + this.texElem(a2[0]) + "," + B.texElem(a2[1]) + ")";
+    let stringElem = (a) => {
+      return "(" + this.texElem(a[0]) + "," + B.texElem(a[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
     for (let i = 0; i < this.e.length; i++) {
@@ -327,8 +282,8 @@ class Sets {
     }
   }
   isReflexive(R) {
-    for (let a2 of this.e) {
-      if (!R.contains([a2, a2]))
+    for (let a of this.e) {
+      if (!R.contains([a, a]))
         return false;
     }
     return true;
@@ -343,7 +298,7 @@ class Sets {
   isTransitive(R) {
     let temp;
     for (let r of R) {
-      temp = R.e.filter((a2) => this.elemEq(r[1], a2[0]));
+      temp = R.e.filter((a) => this.elemEq(r[1], a[0]));
       for (let t of temp) {
         if (!R.contains([r[0], t[1]]))
           return false;
@@ -352,28 +307,28 @@ class Sets {
     return true;
   }
   reflexive(k) {
-    let pairEq = (a2, b2) => {
-      if (a2.length !== b2.length)
+    let pairEq = (a, b) => {
+      if (a.length !== b.length)
         return false;
-      return this.elemEq(a2[0], b2[0]) && this.elemEq(a2[1], b2[1]);
+      return this.elemEq(a[0], b[0]) && this.elemEq(a[1], b[1]);
     };
-    let stringElem = (a2) => {
-      return "(" + this.texElem(a2[0]) + "," + this.texElem(a2[1]) + ")";
+    let stringElem = (a) => {
+      return "(" + this.texElem(a[0]) + "," + this.texElem(a[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
-    for (let a2 of this.e) {
-      R.add([a2, a2]);
+    for (let a of this.e) {
+      R.add([a, a]);
     }
     return R;
   }
   symmetric(k) {
-    let pairEq = (a2, b2) => {
-      if (a2.length !== b2.length)
+    let pairEq = (a, b) => {
+      if (a.length !== b.length)
         return false;
-      return this.elemEq(a2[0], b2[0]) && this.elemEq(a2[1], b2[1]);
+      return this.elemEq(a[0], b[0]) && this.elemEq(a[1], b[1]);
     };
-    let stringElem = (a2) => {
-      return "(" + this.texElem(a2[0]) + "," + this.texElem(a2[1]) + ")";
+    let stringElem = (a) => {
+      return "(" + this.texElem(a[0]) + "," + this.texElem(a[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
     let self = new Sets(this.e, this.eq, this.strElem);
@@ -386,13 +341,13 @@ class Sets {
     return R;
   }
   transitive(k) {
-    let pairEq = (a2, b2) => {
-      if (a2.length !== b2.length)
+    let pairEq = (a, b) => {
+      if (a.length !== b.length)
         return false;
-      return this.elemEq(a2[0], b2[0]) && this.elemEq(a2[1], b2[1]);
+      return this.elemEq(a[0], b[0]) && this.elemEq(a[1], b[1]);
     };
-    let stringElem = (a2) => {
-      return "(" + this.texElem(a2[0]) + "," + this.texElem(a2[1]) + ")";
+    let stringElem = (a) => {
+      return "(" + this.texElem(a[0]) + "," + this.texElem(a[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
     let self = new Sets(this.e, this.eq, this.strElem);
@@ -401,7 +356,7 @@ class Sets {
     let temp;
     for (let r of half) {
       R.add(r);
-      temp = half.filter((a2) => this.elemEq(r[1], a2[0]));
+      temp = half.filter((a) => this.elemEq(r[1], a[0]));
       for (let t of temp) {
         R.add([r[0], t[1]]);
       }
@@ -429,18 +384,18 @@ class Sets {
     return subSet;
   }
   randFunction(B = this) {
-    let pairEq = (a2, b2) => {
-      if (a2.length !== b2.length)
+    let pairEq = (a, b) => {
+      if (a.length !== b.length)
         return false;
-      return this.elemEq(a2[0], b2[0]) && B.elemEq(a2[1], b2[1]);
+      return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
     };
-    let stringElem = (a2) => {
-      return "(" + this.texElem(a2[0]) + "," + B.texElem(a2[1]) + ")";
+    let stringElem = (a) => {
+      return "(" + this.texElem(a[0]) + "," + B.texElem(a[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
-    for (let a2 of this.e) {
-      let b2 = B.e[Math.floor(Math.random() * B.e.length)];
-      R.e.push([a2, b2]);
+    for (let a of this.e) {
+      let b = B.e[Math.floor(Math.random() * B.e.length)];
+      R.e.push([a, b]);
     }
     return R;
   }
@@ -448,36 +403,36 @@ class Sets {
     return this.reflexive();
   }
   constant(k, B = this) {
-    let pairEq = (a2, b2) => {
-      if (a2.length !== b2.length)
+    let pairEq = (a, b) => {
+      if (a.length !== b.length)
         return false;
-      return this.elemEq(a2[0], b2[0]) && B.elemEq(a2[1], b2[1]);
+      return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
     };
-    let stringElem = (a2) => {
-      return "(" + this.texElem(a2[0]) + "," + B.texElem(a2[1]) + ")";
+    let stringElem = (a) => {
+      return "(" + this.texElem(a[0]) + "," + B.texElem(a[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
-    for (let a2 of this.e) {
-      R.e.push([a2, k]);
+    for (let a of this.e) {
+      R.e.push([a, k]);
     }
     return R;
   }
   randOneOne(B = this) {
     if (this.e.length > B.e.length)
       return new Sets();
-    let pairEq = (a2, b2) => {
-      if (a2.length !== b2.length)
+    let pairEq = (a, b) => {
+      if (a.length !== b.length)
         return false;
-      return this.elemEq(a2[0], b2[0]) && B.elemEq(a2[1], b2[1]);
+      return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
     };
-    let stringElem = (a2) => {
-      return "(" + this.texElem(a2[0]) + "," + B.texElem(a2[1]) + ")";
+    let stringElem = (a) => {
+      return "(" + this.texElem(a[0]) + "," + B.texElem(a[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
     B.e = shuffle(B.e);
     let i = 0;
-    for (let a2 of this.e) {
-      R.e.push([a2, B.e[i]]);
+    for (let a of this.e) {
+      R.e.push([a, B.e[i]]);
       i++;
     }
     return R;
@@ -485,13 +440,13 @@ class Sets {
   randOnto(B = this) {
     if (this.e.length < B.e.length)
       return new Sets();
-    let pairEq = (a2, b2) => {
-      if (a2.length !== b2.length)
+    let pairEq = (a, b) => {
+      if (a.length !== b.length)
         return false;
-      return this.elemEq(a2[0], b2[0]) && B.elemEq(a2[1], b2[1]);
+      return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
     };
-    let stringElem = (a2) => {
-      return "(" + this.texElem(a2[0]) + "," + B.texElem(a2[1]) + ")";
+    let stringElem = (a) => {
+      return "(" + this.texElem(a[0]) + "," + B.texElem(a[1]) + ")";
     };
     let R = new Sets([], pairEq, stringElem);
     let shuffleThis = shuffle(this.e);
@@ -511,15 +466,15 @@ class Sets {
   isFunction(R, B = this) {
     if (R.e.length !== this.e.length)
       return false;
-    for (let a2 of this.e) {
-      if (this.image(a2, R, B).e.length == 0)
+    for (let a of this.e) {
+      if (this.image(a, R, B).e.length == 0)
         return false;
     }
     return true;
   }
   isIdentity(R) {
-    for (let a2 of this.e) {
-      if (!R.contains([[a2, a2]]))
+    for (let a of this.e) {
+      if (!R.contains([[a, a]]))
         return false;
     }
     for (let r of R.e) {
@@ -543,8 +498,8 @@ class Sets {
   isOneOne(R, B = this) {
     if (!this.isFunction(R, B))
       return false;
-    for (let b2 of B.e) {
-      if (this.preimage(b2, R, B).e.length > 1)
+    for (let b of B.e) {
+      if (this.preimage(b, R, B).e.length > 1)
         return false;
     }
     return true;
@@ -552,81 +507,14 @@ class Sets {
   isOnto(R, B = this) {
     if (!this.isFunction(R, B))
       return false;
-    for (let b2 of B.e) {
-      if (this.preimage(b2, R, B).e.length < 1)
+    for (let b of B.e) {
+      if (this.preimage(b, R, B).e.length < 1)
         return false;
     }
     return true;
   }
   isBijective(R, B = this) {
     return this.isOneOne(R, B) && this.isOnto(R, B);
-  }
-}
-class Quadratic {
-  constructor(a2 = 0, b2 = 0, c = 0, x = "x") {
-    this.a = a2;
-    this.b = b2;
-    this.c = c;
-    this.x = x;
-  }
-  rand(min, max) {
-    while (this.a === 0 && this.b === 0) {
-      this.a = randInt(max, min);
-      this.b = randInt(max, min);
-    }
-    this.c = randInt(max, min);
-  }
-  str() {
-    let eq = "";
-    if (this.a != 0 || this.b != 0 || this.c != 0) {
-      if (this.a != 0) {
-        eq += this.a == 1 ? `${this.x}^2` : this.a == -1 ? `-${this.x}^2` : `${this.a}${this.x}^2`;
-      }
-      if (this.b != 0) {
-        if (eq.length > 0)
-          eq += this.b == 1 ? `+${this.x}` : this.b == -1 ? `-${this.x}` : this.b < 0 ? `${this.b}${this.x}` : `+${this.b}${this.x}`;
-        if (eq.length == 0)
-          eq += this.b == 1 ? `${this.x}` : this.b == -1 ? `-${this.x}` : `${this.b}${this.x}`;
-      }
-      if (this.c != 0) {
-        if (eq.length > 0)
-          eq += this.c > 0 ? `+${this.c}` : `${this.c}`;
-        if (eq.length == 0)
-          eq += this.c;
-      }
-      return eq;
-    } else {
-      return 0;
-    }
-  }
-  d() {
-    return this.b * this.b - 4 * this.a * this.c;
-  }
-  hasRealRoots() {
-    return this.d() >= 0;
-  }
-  hasEqualRoots() {
-    return this.d() === 0;
-  }
-  value(x) {
-    return this.a * x * x + this.b * x + this.c;
-  }
-  realRoots() {
-    if (a === 0) {
-      if (b === 0)
-        return [];
-      return [-this.c / this.b];
-    }
-    if (!this.hasRealRoots())
-      return [];
-    else {
-      if (this.hasEqualRoots()) {
-        return [-this.b / (2 * this.a)];
-      } else {
-        let sd = Math.sqrt(this.d());
-        return [(-this.b + sd) / (2 * this.a), (-this.b - sd) / (2 * this.a)];
-      }
-    }
   }
 }
 const _page_svelte_svelte_type_style_lang = "";
