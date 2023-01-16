@@ -1,11 +1,12 @@
-import { c as create_ssr_component, d as subscribe, e as escape, q as null_to_empty } from "./index.js";
+import { c as create_ssr_component, q as compute_rest_props, d as subscribe, e as escape, j as null_to_empty } from "./index.js";
 import { b as presentationMode, c as currentSlide } from "./stores2.js";
 import "./Image.svelte_svelte_type_style_lang.js";
 const css = {
-  code: ".currentActive.svelte-1xlricf{color:tomato;border-radius:10px;transition:all 1s}figure.svelte-1xlricf{width:300px}",
+  code: ".currentActive.svelte-ppp9to{color:tomato;border-radius:10px;transition:all 1s}figure.svelte-ppp9to{width:100%;display:flex;margin:auto;justify-content:center;align-items:center}",
   map: null
 };
 const Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["isActive"]);
   let $presentationMode, $$unsubscribe_presentationMode;
   let $currentSlide, $$unsubscribe_currentSlide;
   $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
@@ -16,10 +17,10 @@ const Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();
-  return `<figure class="${escape(
+  return `${$presentationMode ? `<figure class="${escape(
     null_to_empty($presentationMode && isActive === $currentSlide ? "currentActive" : ""),
     true
-  ) + " svelte-1xlricf"}">${slots.default ? slots.default({}) : ``}</figure>`;
+  ) + " svelte-ppp9to"}">${slots.default ? slots.default({}) : ``}</figure>` : `<figure class="${escape(null_to_empty($$restProps.class || ""), true) + " svelte-ppp9to"}">${slots.default ? slots.default({}) : ``}</figure>`}`;
 });
 export {
   Image as I

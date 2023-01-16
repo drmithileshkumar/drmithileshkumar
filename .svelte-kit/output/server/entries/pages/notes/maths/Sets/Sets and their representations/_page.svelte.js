@@ -520,7 +520,7 @@ class Sets {
 }
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "article.svelte-1u2xeqn{position:relative;padding:0.5em}.absolute.svelte-1u2xeqn{margin:auto;width:100%;height:90vh;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1u2xeqn::-webkit-scrollbar{width:0;height:0}.pad.svelte-1u2xeqn{min-height:150px}.thumbnail.svelte-1u2xeqn{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1u2xeqn{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
+  code: ".youtube.svelte-1wtdnqc{width:fit-content;display:flex;margin:auto;align-items:center;justify-content:center;position:sticky;top:5em;box-shadow:0 0 3px gray;background-color:white;z-index:10}article.svelte-1wtdnqc{position:relative;padding:0.5em}.absolute.svelte-1wtdnqc{margin:auto;width:100%;height:90vh;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1wtdnqc::-webkit-scrollbar{width:0;height:0}.pad.svelte-1wtdnqc{min-height:150px}.thumbnail.svelte-1wtdnqc{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1wtdnqc{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -653,8 +653,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-iu5uph_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedSection, 0)}><!-- HEAD_svelte-iu5uph_END -->`, ""}
-    <article class="${["svelte-1u2xeqn", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1u2xeqn"}"><img class="${"statement svelte-1u2xeqn"}" width="${"100%"}" src="${"/notes/maths/sets/representation/heroparadox.svg"}" alt="${""}" style="${"color:white;"}"></div>` : ``}
+    <article class="${["svelte-1wtdnqc", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1wtdnqc"}"><img class="${"statement svelte-1wtdnqc"}" width="${"100%"}" src="${"/notes/maths/sets/representation/heroparadox.svg"}" alt="${""}" style="${"color:white;"}"></div>` : ``}
         ${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
+        ${!$presentationMode ? `<div class="${"youtube svelte-1wtdnqc"}"><iframe width="${"100%"}" height="${"auto"}" src="${"https://www.youtube.com/embed/kj1VeKqMlJc"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}
         ${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 0 }, {}, {
@@ -674,7 +675,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}
                 ${validate_component(Image, "Image").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
-          return `<img style="${"width: max(70vw, 400px);"}" src="${"/notes/maths/sets/representation/heroparadox.svg"}" alt="${""}">`;
+          return `<img style="${"width: 100%;"}" src="${"/notes/maths/sets/representation/heroparadox.svg"}" alt="${""}">`;
         }
       })}`;
     }
@@ -1032,7 +1033,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   })}
         
-        ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1u2xeqn"}"></div>` : ``}
+        ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1wtdnqc"}"></div>` : ``}
     </article>`;
 });
 export {

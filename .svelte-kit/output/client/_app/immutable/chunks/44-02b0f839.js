@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-23948c62.js";import{default as t}from"../components/pages/notes/maths/Continuity and differentiability/Differentiability/_page.svelte-7a2649f7.js";export{t as component,r as universal};

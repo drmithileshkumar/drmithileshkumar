@@ -12,11 +12,17 @@
         transition: all 1s;
     }
 </style>
-<div class="{$$restProps.class || ''} {$presentationMode && isActive === $currentSlide ? 'currentActive': ''}" 
-    transition:fly="{{ x: 200, duration: 1000}}"
-    on:introstart={() => {isActive = -1}}
-    on:introend={() => {isActive = $currentSlide}}
-    on:outroend={() => {isActive = -1}}
-    >
-    <slot />
-</div>
+{#if $presentationMode}
+    <div class="{$$restProps.class || ''} {$presentationMode && isActive === $currentSlide ? 'currentActive': ''}" 
+        transition:fly="{{ x: 200, duration: 1000}}"
+        on:introstart={() => {isActive = -1}}
+        on:introend={() => {isActive = $currentSlide}}
+        on:outroend={() => {isActive = -1}}
+        >
+        <slot />
+    </div>
+{:else}
+    <div class="{$$restProps.class || ''}">
+        <slot />
+    </div>
+{/if}

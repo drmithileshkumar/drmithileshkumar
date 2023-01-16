@@ -70,7 +70,7 @@
 </style>
 <div class="shapes">
     
-    <span on:click={() => {$drawMode = $drawMode !== 'line' ? 'line' : 'free'}}>
+    <span on:click={() => {$drawMode = $drawMode !== 'line' ? 'line' : 'pen'}}>
         <svg width='20px' height="20px" viewBox="0 -5 20 10">
             <line x1="0%" y1="0%" x2="100%" y2="0%" stroke="black" stroke-width="1" fill="none" />
             {#if $drawMode === 'line'}
@@ -78,7 +78,7 @@
             {/if}
         </svg>
     </span>
-    <span on:click={() => {$drawMode = $drawMode !== 'rect' ? 'rect' : 'free'}}>
+    <span on:click={() => {$drawMode = $drawMode !== 'rect' ? 'rect' : 'pen'}}>
         <svg width='20px' height="20px" viewBox="0 0 20 20">
             <rect x="2" y="2" width="16" height="16" stroke="black" stroke-width="1" fill="none" />
             {#if $drawMode === 'rect'}
@@ -86,7 +86,7 @@
             {/if}
         </svg>
     </span>
-    <span on:click={() => {$drawMode = $drawMode !== 'circle' ? 'circle' : 'free'}}>
+    <span on:click={() => {$drawMode = $drawMode !== 'circle' ? 'circle' : 'pen'}}>
         <svg width='20px' height="20px" viewBox="0 0 20 10">
             <circle cx="50%" cy="50%" r="8" stroke="black" stroke-width="1" fill="none" />
             {#if $drawMode === 'circle'}

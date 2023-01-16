@@ -1,6 +1,6 @@
-import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from './chunks/index-87a5488c.js';
+import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from './chunks/index-450bbd42.js';
 import { e as error, j as json, R as Redirect, H as HttpError, A as ActionFailure } from './chunks/index2-fac81b88.js';
-import { w as writable, r as readable } from './chunks/index3-41f46450.js';
+import { w as writable, r as readable } from './chunks/index3-18f69db9.js';
 
 /** @type {Record<string, string>} */
 const escaped = {
@@ -3381,7 +3381,7 @@ class Server {
       app_template,
       app_template_contains_nonce: false,
       error_template,
-      version: "1673876623668"
+      version: "1673891553882"
     };
   }
   async init({ env }) {

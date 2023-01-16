@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, q as null_to_empty } from "../../../../../chunks/index.js";
+import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, j as null_to_empty } from "../../../../../chunks/index.js";
 import { c as currentSlide, s as slideCounter, b as presentationMode, p as presentation } from "../../../../../chunks/stores2.js";
 import { p as page } from "../../../../../chunks/stores.js";
 /* empty css                                                          */const _page_svelte_svelte_type_style_lang = "";

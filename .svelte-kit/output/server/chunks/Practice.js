@@ -1,4 +1,4 @@
-import { c as create_ssr_component, f as add_attribute, e as escape, d as subscribe, j as createEventDispatcher, v as validate_component, i as set_store_value } from "./index.js";
+import { c as create_ssr_component, f as add_attribute, e as escape, d as subscribe, k as createEventDispatcher, v as validate_component, i as set_store_value } from "./index.js";
 import { w as writable } from "./index3.js";
 /* empty css                                        */let attempted = writable(false);
 let saved = writable(true);

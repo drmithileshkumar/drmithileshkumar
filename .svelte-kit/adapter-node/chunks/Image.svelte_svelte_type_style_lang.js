@@ -1,4 +1,4 @@
-import { c as create_ssr_component, p as compute_rest_props, d as subscribe, e as escape } from "./index.js";
+import { c as create_ssr_component, q as compute_rest_props, d as subscribe, e as escape, j as null_to_empty } from "./index.js";
 import { b as presentationMode, c as currentSlide } from "./stores2.js";
 const P_svelte_svelte_type_style_lang = "";
 const css$1 = {
@@ -17,10 +17,10 @@ const P = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
   $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();
-  return `<p class="${escape($$restProps.class || "", true) + " " + escape(
+  return `${$presentationMode ? `<p class="${escape($$restProps.class || "", true) + " " + escape(
     $presentationMode && isActive === $currentSlide ? "currentActive" : "",
     true
-  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</p>`;
+  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</p>` : `<p class="${escape(null_to_empty($$restProps.class || ""), true) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</p>`}`;
 });
 const Li_svelte_svelte_type_style_lang = "";
 const css = {
@@ -39,10 +39,10 @@ const Li = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();
-  return `<li class="${escape($$restProps.class || "", true) + " " + escape(
+  return `${$presentationMode ? `<li class="${escape($$restProps.class || "", true) + " " + escape(
     $presentationMode && isActive === $currentSlide ? "currentActive" : "",
     true
-  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</li>`;
+  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</li>` : `<li class="${escape(null_to_empty($$restProps.class || ""), true) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</li>`}`;
 });
 const Item = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $presentationMode, $$unsubscribe_presentationMode;

@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-f38af471.js";import{default as t}from"../components/pages/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/_page.svelte-efab74e3.js";export{t as component,r as universal};

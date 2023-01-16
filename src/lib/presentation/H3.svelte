@@ -12,6 +12,7 @@
         transition: all 1s;
     }
 </style>
+{#if $presentationMode}
 <h3 class="{$$restProps.class || ''} {$presentationMode && isActive === $currentSlide ? 'currentActive': ''}" 
     transition:fly="{{ x: 200, duration: 1000}}"
     on:introstart={() => {isActive = -1}}
@@ -20,3 +21,8 @@
     >
     <slot />
 </h3>
+{:else}
+    <h3 class="{$$restProps.class || ''}">
+        <slot />
+    </h3>
+{/if}

@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-bd5ed3ec.js";import{default as t}from"../components/pages/notes/maths/Sequences and series/Sum to n terms of Special series/_page.svelte-f4ed4803.js";export{t as component,r as universal};

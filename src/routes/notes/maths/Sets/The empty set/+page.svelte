@@ -102,6 +102,21 @@
             justify-content: center;
             width: min(95vw, 600px);
         } */
+        .youtube {
+            width: fit-content;
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 5em;
+            box-shadow: 0 0 3px gray;
+            background-color: white;
+            z-index: 10;
+            resize: both;
+            padding: 0.5em;
+            overflow: auto;
+        }
         article {
             position: relative;
             padding: 0.5em;
@@ -171,6 +186,11 @@
         {/if}
         {#if !$presentationMode || $currentSlide >= -1}
             <h1>{$selectedSection}</h1>
+        {/if}
+        {#if !$presentationMode}
+            <div class="youtube">
+                <iframe width="420" height="300" src="https://www.youtube.com/embed/-VP7utgjA8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         {/if}
         <section>
             <Item item={0}>

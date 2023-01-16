@@ -219,7 +219,7 @@
             ctx.beginPath();
             ctx.globalCompositeOperation = $globalCompositeOperation;
             switch($drawMode) {
-                case 'free': {
+                case 'pen': {
                     ctx.moveTo(points[0].x, points[0].y)
                     let i = 1;
                     let n = points.length;
@@ -350,7 +350,7 @@
             e.preventDefault();
             snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
             points.push({x: pos.x, y: pos.y});
-            if($drawMode !== 'free') points.push({x: pos.x, y: pos.y})
+            if($drawMode !== 'pen') points.push({x: pos.x, y: pos.y})
             flag = true;
             dot_flag = true;
             if (dot_flag) {
@@ -397,7 +397,7 @@
                 
                 let pos = getMousePosition(e);
                 e.preventDefault();
-                if($drawMode !== 'free') {
+                if($drawMode !== 'pen') {
                     points[1] = {
                         x: pos.x, y: pos.y
                     };

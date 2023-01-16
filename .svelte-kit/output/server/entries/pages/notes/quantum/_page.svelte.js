@@ -1,4 +1,4 @@
-import { c as create_ssr_component, p as compute_rest_props, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../chunks/index.js";
+import { c as create_ssr_component, q as compute_rest_props, d as subscribe, e as escape, j as null_to_empty, f as add_attribute, v as validate_component } from "../../../../chunks/index.js";
 import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../chunks/stores2.js";
 /* empty css                                                         *//* empty css                                                        */import { p as page } from "../../../../chunks/stores.js";
 import { T as TeX } from "../../../../chunks/constants.js";
@@ -23,10 +23,10 @@ const Div = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
   $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();
-  return `<div class="${escape($$restProps.class || "", true) + " " + escape(
+  return `${$presentationMode ? `<div class="${escape($$restProps.class || "", true) + " " + escape(
     $presentationMode && isActive === $currentSlide ? "currentActive" : "",
     true
-  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</div>`;
+  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</div>` : `<div class="${escape(null_to_empty($$restProps.class || ""), true) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</div>`}`;
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {

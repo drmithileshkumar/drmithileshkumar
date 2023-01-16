@@ -166,6 +166,11 @@
         {#if !$presentationMode || $currentSlide >= -1}
             <h1>{$selectedSection}</h1>
         {/if}
+        {#if !$presentationMode}
+            <div class="youtube">
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/kj1VeKqMlJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        {/if}
         <Item item={0}>
             <H2 isActive={0}>
                 Definition
@@ -177,7 +182,7 @@
                     We are used to a practical idea of what is a <em>collection</em>. A <em>set</em> is the mathematical refinement of this idea of collection. It turns out that not every collection can be a set. One basic requirement of a mathematical concept is that its definition must be unique. Not every collection has a unique definition. Consider, for example, <span class="specialtext">the hero paradox</span>. A <em>hero</em> is a person who helps those and only those, who can not help themselves. <em>Does the hero help himself?</em>
                 </P>
                 <Image isActive={1}>
-                    <img style="width: max(70vw, 400px);" src="/notes/maths/sets/representation/heroparadox.svg" alt="">
+                    <img style="width: 100%;" src="/notes/maths/sets/representation/heroparadox.svg" alt="">
                 </Image>
             </Item>
             <Item item={2}>
@@ -372,6 +377,18 @@
             justify-content: center;
             width: min(95vw, 600px);
         } */
+        .youtube {
+            width: fit-content;
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 5em;
+            box-shadow: 0 0 3px gray;
+            background-color: white;
+            z-index: 10;
+        }
         article {
             position: relative;
             padding: 0.5em;

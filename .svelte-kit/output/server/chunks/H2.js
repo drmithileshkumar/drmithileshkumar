@@ -1,4 +1,4 @@
-import { c as create_ssr_component, p as compute_rest_props, d as subscribe, e as escape } from "./index.js";
+import { c as create_ssr_component, q as compute_rest_props, d as subscribe, e as escape, j as null_to_empty } from "./index.js";
 import { b as presentationMode, c as currentSlide } from "./stores2.js";
 import "./H3.js";
 const css = {
@@ -17,10 +17,10 @@ const H2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();
-  return `<h2 class="${escape($$restProps.class || "", true) + " " + escape(
+  return `${$presentationMode ? `<h2 class="${escape($$restProps.class || "", true) + " " + escape(
     $presentationMode && isActive === $currentSlide ? "currentActive" : "",
     true
-  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</h2>`;
+  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</h2>` : `<h2 class="${escape(null_to_empty($$restProps.class || ""), true) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</h2>`}`;
 });
 export {
   H2 as H

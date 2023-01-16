@@ -143,7 +143,9 @@
         <!-- <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js"></script> -->
     </svelte:head>
-        
+    {#if !$presentationMode}
+        <span class="noMenu" bind:this={$overlay}></span>
+    {/if}
     <div class="maths {$presentationMode ? 'noMenu':''}"> 
         <div class="presentationMode">
             <label style="display:flex;align-items:center;">
@@ -159,19 +161,14 @@
                 <CanvasBar/>
             {/if}
         </div>
-        <div class="container {$presentationMode ? 'noMenu':''}" bind:clientWidth={W} bind:clientHeight={H}>
+        <div class="{$presentationMode ? 'container noMenu':''}" bind:clientWidth={W} bind:clientHeight={H}>
             {#if $presentationMode}
-        
-                <!-- svelte-ignore a11y-click-events-have-key-events -->
                 <aside use:ripple class="back noMenu" on:click={back}></aside>
             {/if}
-            {#if !$presentationMode}
-                <span class="noMenu" bind:this={$overlay}></span>
-            {/if}
+            
             {#if $presentationMode}
                 <div class="absolute overlay noMenu" bind:this={$overlay}>
                     <Canvas width={W} height={10000}/>
-                    
                 </div>
                 <div class="presenter noMenu">
                     <Presenter />
@@ -179,8 +176,6 @@
             {/if}
             <slot class="{$presentationMode ? 'noMenu':''}" />
             {#if $presentationMode}
-        
-                <!-- svelte-ignore a11y-click-events-have-key-events -->
                 <aside use:ripple class="next noMenu" on:click={next}></aside>
             {/if}
         </div>

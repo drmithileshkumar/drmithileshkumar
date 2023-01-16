@@ -8,7 +8,7 @@ import { I as Item, P, L as Li } from "../../../../../../chunks/Image.svelte_sve
 import { H as H3 } from "../../../../../../chunks/H3.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "article.svelte-rlw4in{position:relative;padding:0.5em}.absolute.svelte-rlw4in{margin:auto;width:100%;height:90vh;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-rlw4in::-webkit-scrollbar{width:0;height:0}.pad.svelte-rlw4in{min-height:150px}.thumbnail.svelte-rlw4in{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-rlw4in{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
+  code: ".youtube.svelte-zt9i2v{width:fit-content;display:flex;margin:auto;align-items:center;justify-content:center;position:sticky;top:5em;box-shadow:0 0 3px gray;background-color:white;z-index:10;resize:both;padding:0.5em;overflow:auto}article.svelte-zt9i2v{position:relative;padding:0.5em}.absolute.svelte-zt9i2v{margin:auto;width:100%;height:90vh;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-zt9i2v::-webkit-scrollbar{width:0;height:0}.pad.svelte-zt9i2v{min-height:150px}.thumbnail.svelte-zt9i2v{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-zt9i2v{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -91,9 +91,10 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-1cd2i6b_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"The empty set"}"><!-- HEAD_svelte-1cd2i6b_END -->`, ""}
-    <article class="${["svelte-rlw4in", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-rlw4in"}"><p class="${"statement svelte-rlw4in"}">The empty set
+    <article class="${["svelte-zt9i2v", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-zt9i2v"}"><p class="${"statement svelte-zt9i2v"}">The empty set
                 </p></div>` : ``}
         ${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
+        ${!$presentationMode ? `<div class="${"youtube svelte-zt9i2v"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/-VP7utgjA8I"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}
         <section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
@@ -190,7 +191,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                     ${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
     }
   })}</section>
-        ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-rlw4in"}"></div>` : ``}</article>`;
+        ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-zt9i2v"}"></div>` : ``}</article>`;
 });
 export {
   Page as default
