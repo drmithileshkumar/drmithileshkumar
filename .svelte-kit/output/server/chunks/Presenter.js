@@ -3,8 +3,7 @@ import { c as create_ssr_component, d as subscribe, h as each, f as add_attribut
 const lineWidth = writable(2);
 const strokeColor = writable("red");
 const globalCompositeOperation = writable("source-over");
-const stMode = writable(false);
-const arcMode = writable(false);
+const drawMode = writable("pen");
 const clearAll = writable(false);
 const css$2 = {
   code: ".colors.svelte-1t5pp56.svelte-1t5pp56{display:flex;gap:0.2em;align-items:center;flex-direction:row}.lineWidth.svelte-1t5pp56.svelte-1t5pp56{display:flex;align-items:center}.shapes.svelte-1t5pp56.svelte-1t5pp56{display:flex;flex-direction:row;align-items:center}.shapes.svelte-1t5pp56 span.svelte-1t5pp56{display:flex;align-items:center;padding:0.2em}.colors.svelte-1t5pp56 button.svelte-1t5pp56{width:2em;height:2em;padding:0em;align-items:center;justify-content:center}",
@@ -14,27 +13,23 @@ const CanvasBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let $lineWidth, $$unsubscribe_lineWidth;
   let $strokeColor, $$unsubscribe_strokeColor;
   let $$unsubscribe_globalCompositeOperation;
-  let $stMode, $$unsubscribe_stMode;
-  let $arcMode, $$unsubscribe_arcMode;
+  let $drawMode, $$unsubscribe_drawMode;
   let $$unsubscribe_clearAll;
   $$unsubscribe_lineWidth = subscribe(lineWidth, (value) => $lineWidth = value);
   $$unsubscribe_strokeColor = subscribe(strokeColor, (value) => $strokeColor = value);
   $$unsubscribe_globalCompositeOperation = subscribe(globalCompositeOperation, (value) => value);
-  $$unsubscribe_stMode = subscribe(stMode, (value) => $stMode = value);
-  $$unsubscribe_arcMode = subscribe(arcMode, (value) => $arcMode = value);
+  $$unsubscribe_drawMode = subscribe(drawMode, (value) => $drawMode = value);
   $$unsubscribe_clearAll = subscribe(clearAll, (value) => value);
   let colors = ["green", "blue", "red", "orange", "black", "eraser"];
   $$result.css.add(css$2);
   $$unsubscribe_lineWidth();
   $$unsubscribe_strokeColor();
   $$unsubscribe_globalCompositeOperation();
-  $$unsubscribe_stMode();
-  $$unsubscribe_arcMode();
+  $$unsubscribe_drawMode();
   $$unsubscribe_clearAll();
-  return `<div class="${"shapes svelte-1t5pp56"}">
-    <span class="${"svelte-1t5pp56"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 -5 20 10"}"><line x1="${"0%"}" y1="${"0%"}" x2="${"100%"}" y2="${"0%"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></line>${$stMode ? `<line x1="${"0%"}" y1="${"0%"}" x2="${"100%"}" y2="${"0%"}" stroke="${"black"}" stroke-width="${"2"}" fill="${"none"}"></line>` : ``}</svg></span>
-    
-    <span class="${"svelte-1t5pp56"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 0 20 10"}"><circle cx="${"50%"}" cy="${"50%"}" r="${"8"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></circle>${$arcMode ? `<circle cx="${"50%"}" cy="${"50%"}" r="${"6"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></circle>` : ``}</svg></span></div>
+  return `<div class="${"shapes svelte-1t5pp56"}"><span class="${"svelte-1t5pp56"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 -5 20 10"}"><line x1="${"0%"}" y1="${"0%"}" x2="${"100%"}" y2="${"0%"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></line>${$drawMode === "line" ? `<line x1="${"0%"}" y1="${"0%"}" x2="${"100%"}" y2="${"0%"}" stroke="${"black"}" stroke-width="${"2"}" fill="${"none"}"></line>` : ``}</svg></span>
+    <span class="${"svelte-1t5pp56"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 0 20 20"}"><rect x="${"2"}" y="${"2"}" width="${"16"}" height="${"16"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></rect>${$drawMode === "rect" ? `<rect x="${"4"}" y="${"4"}" width="${"12"}" height="${"12"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></rect>` : ``}</svg></span>
+    <span class="${"svelte-1t5pp56"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 0 20 10"}"><circle cx="${"50%"}" cy="${"50%"}" r="${"8"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></circle>${$drawMode === "circle" ? `<circle cx="${"50%"}" cy="${"50%"}" r="${"6"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></circle>` : ``}</svg></span></div>
 
 <div class="${"colors svelte-1t5pp56"}">${each(colors, (color) => {
     return `<button style="${"background: " + escape(color, true) + "; border: white " + escape($strokeColor === color ? "5px double" : "solid", true) + "; border-radius: 50%; padding: " + escape(color === "eraser" ? 0 : "", true) + ";"}" class="${"svelte-1t5pp56"}">${color === "eraser" ? `<svg width="${"100%"}" height="${"100%"}" viewBox="${"0 0 20 40"}"><g transform="${"rotate(-45 10 20) translate(0 5)"}"><rect x="${"0"}" y="${"0"}" width="${"20"}" height="${"10"}" stroke="${"black"}" stroke-width="${"1"}"></rect><rect x="${"0"}" y="${"10"}" width="${"20"}" height="${"20"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></rect></g></svg>` : ``}
@@ -57,14 +52,12 @@ const css$1 = {
 };
 const Canvas = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $clearAll, $$unsubscribe_clearAll;
-  let $$unsubscribe_arcMode;
-  let $$unsubscribe_stMode;
+  let $$unsubscribe_drawMode;
   let $$unsubscribe_lineWidth;
   let $$unsubscribe_strokeColor;
   let $$unsubscribe_globalCompositeOperation;
   $$unsubscribe_clearAll = subscribe(clearAll, (value) => $clearAll = value);
-  $$unsubscribe_arcMode = subscribe(arcMode, (value) => value);
-  $$unsubscribe_stMode = subscribe(stMode, (value) => value);
+  $$unsubscribe_drawMode = subscribe(drawMode, (value) => value);
   $$unsubscribe_lineWidth = subscribe(lineWidth, (value) => value);
   $$unsubscribe_strokeColor = subscribe(strokeColor, (value) => value);
   $$unsubscribe_globalCompositeOperation = subscribe(globalCompositeOperation, (value) => value);
@@ -83,8 +76,7 @@ const Canvas = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   }
   $$unsubscribe_clearAll();
-  $$unsubscribe_arcMode();
-  $$unsubscribe_stMode();
+  $$unsubscribe_drawMode();
   $$unsubscribe_lineWidth();
   $$unsubscribe_strokeColor();
   $$unsubscribe_globalCompositeOperation();

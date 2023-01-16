@@ -2465,11 +2465,15 @@
     "imports": [
       "_index.js",
       "_stores2.js",
-      "_stores.js"
+      "_Practice.js",
+      "_common.js",
+      "_stores.js",
+      "_Image.svelte_svelte_type_style_lang.js",
+      "_H3.js",
+      "_H2.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-58267112.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/_page-926fb2b3.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2583,6 +2587,7 @@
       "_index.js",
       "_stores2.js",
       "_Practice.js",
+      "_common.js",
       "_quadratic.js",
       "_stores.js",
       "_Image.svelte_svelte_type_style_lang.js",
@@ -2635,6 +2640,7 @@
       "_index.js",
       "_stores2.js",
       "_Practice.js",
+      "_common.js",
       "_quadratic.js",
       "_stores.js",
       "_Image.svelte_svelte_type_style_lang.js",
@@ -3468,8 +3474,8 @@
       "_app/immutable/assets/Practice-7b5f67df.css"
     ]
   },
-  "_quadratic.js": {
-    "file": "chunks/quadratic.js"
+  "_common.js": {
+    "file": "chunks/common.js"
   },
   "_H3.js": {
     "file": "chunks/H3.js",
@@ -3487,6 +3493,12 @@
       "_index.js",
       "_stores2.js",
       "_H3.js"
+    ]
+  },
+  "_quadratic.js": {
+    "file": "chunks/quadratic.js",
+    "imports": [
+      "_common.js"
     ]
   }
 }

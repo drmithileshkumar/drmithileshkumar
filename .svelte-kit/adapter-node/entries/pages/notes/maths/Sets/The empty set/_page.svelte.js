@@ -1,7 +1,8 @@
 import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../../../chunks/index.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
 import { P as Practice } from "../../../../../../chunks/Practice.js";
-/* empty css                                                              */import { Q as Quadratic, a as randInt } from "../../../../../../chunks/quadratic.js";
+/* empty css                                                              */import { r as randInt } from "../../../../../../chunks/common.js";
+import { Q as Quadratic } from "../../../../../../chunks/quadratic.js";
 import { p as page } from "../../../../../../chunks/stores.js";
 import { I as Item, P, L as Li } from "../../../../../../chunks/Image.svelte_svelte_type_style_lang.js";
 import { H as H3 } from "../../../../../../chunks/H3.js";

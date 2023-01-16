@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-0f009ae9.js";import{default as t}from"../components/pages/notes/maths/Limits and derivatives/Intuitive idea of derivatives/_page.svelte-ebab05c2.js";export{t as component,r as universal};
+import{_ as r}from"./_page-f0dadf31.js";import{default as t}from"../components/pages/notes/maths/Limits and derivatives/Intuitive idea of derivatives/_page.svelte-ebab05c2.js";export{t as component,r as universal};

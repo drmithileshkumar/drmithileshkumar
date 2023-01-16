@@ -1,5 +1,5 @@
 <script>
-    import {clearAll, stMode, arcMode, strokeColor, lineWidth, globalCompositeOperation} from '$lib/canvas/stores';
+    import {clearAll, stMode, arcMode, drawMode, strokeColor, lineWidth, globalCompositeOperation} from '$lib/canvas/stores';
     import { ripple } from '$lib/ui/ripple';
     let colors = ['green', 'blue', 'red', 'orange', 'black', 'eraser'];
     function setColor(chosenColor) {
@@ -69,20 +69,27 @@
     }
 </style>
 <div class="shapes">
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <span on:click={() => {$stMode = !$stMode, $arcMode = false}}>
+    
+    <span on:click={() => {$drawMode = $drawMode !== 'line' ? 'line' : 'free'}}>
         <svg width='20px' height="20px" viewBox="0 -5 20 10">
             <line x1="0%" y1="0%" x2="100%" y2="0%" stroke="black" stroke-width="1" fill="none" />
-            {#if $stMode}
+            {#if $drawMode === 'line'}
                 <line x1="0%" y1="0%" x2="100%" y2="0%" stroke="black" stroke-width="2" fill="none" />
             {/if}
         </svg>
     </span>
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <span on:click={() => {$arcMode = !$arcMode, $stMode = false}}>
+    <span on:click={() => {$drawMode = $drawMode !== 'rect' ? 'rect' : 'free'}}>
+        <svg width='20px' height="20px" viewBox="0 0 20 20">
+            <rect x="2" y="2" width="16" height="16" stroke="black" stroke-width="1" fill="none" />
+            {#if $drawMode === 'rect'}
+            <rect x="4" y="4" width="12" height="12" stroke="black" stroke-width="1" fill="none" />
+            {/if}
+        </svg>
+    </span>
+    <span on:click={() => {$drawMode = $drawMode !== 'circle' ? 'circle' : 'free'}}>
         <svg width='20px' height="20px" viewBox="0 0 20 10">
             <circle cx="50%" cy="50%" r="8" stroke="black" stroke-width="1" fill="none" />
-            {#if $arcMode}
+            {#if $drawMode === 'circle'}
                 <circle cx="50%" cy="50%" r="6" stroke="black" stroke-width="1" fill="none" />
             {/if}
         </svg>

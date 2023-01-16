@@ -1,5 +1,5 @@
 <script>
-    import {clearAll, stMode, arcMode, strokeColor, lineWidth, globalCompositeOperation} from '$lib/canvas/stores';
+    import {clearAll, stMode, arcMode, rectMode, drawMode, strokeColor, lineWidth, globalCompositeOperation} from '$lib/canvas/stores';
     import {onMount} from 'svelte';
     export let width = 100;
     export let height = 100;
@@ -218,25 +218,37 @@
             
             ctx.beginPath();
             ctx.globalCompositeOperation = $globalCompositeOperation;
+            switch($drawMode) {
+                case 'free': {
+                    ctx.moveTo(points[0].x, points[0].y)
+                    let i = 1;
+                    let n = points.length;
+                    for(i = 1; i < n - 2; i++) {
             
-            if($arcMode) {
-                let r = pointLength(points[0], points[1]);
-                ctx.arc(points[0].x, points[0].y, r, 0, 2 * Math.PI);
-            } else {
-                ctx.moveTo(points[0].x, points[0].y)
-                let i = 1;
-                let n = points.length;
-                for(i = 1; i < n - 2; i++) {
-        
-                    ctx.quadraticCurveTo(points[i].x, points[i].y, controlPoints[i - 1].x, controlPoints[i - 1].y);    
-                        
+                        ctx.quadraticCurveTo(points[i].x, points[i].y, controlPoints[i - 1].x, controlPoints[i - 1].y);    
+                            
+                    }
+                    if(n > 2) 
+                        ctx.quadraticCurveTo(points[i].x, points[i].y, points[i + 1].x, points[i + 1].y);
+                    else ctx.quadraticCurveTo(points[i].x, points[i].y, points[i].x, points[i].y);
+                    break;
                 }
-                if(n > 2) 
-                    ctx.quadraticCurveTo(points[i].x, points[i].y, points[i + 1].x, points[i + 1].y);
-                else ctx.quadraticCurveTo(points[i].x, points[i].y, points[i].x, points[i].y);
+                case 'line': {
+                    ctx.moveTo(points[0].x, points[0].y);
+                    ctx.lineTo(points[1].x, points[1].y);
+                    break;
+                }
+                case 'circle': {
+                    let r = pointLength(points[0], points[1]);
+                    ctx.arc(points[0].x, points[0].y, r, 0, 2 * Math.PI);
+                    break;
+                }
+                case 'rect': {
+                    ctx.rect(points[0].x, points[0].y, Math.abs(points[0].x - points[1].x), Math.abs(points[0].y - points[1].y))
+                    break;
+                }
             }
-            
-
+    
             ctx.stroke();
             ctx.closePath();
         }
@@ -338,7 +350,7 @@
             e.preventDefault();
             snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
             points.push({x: pos.x, y: pos.y});
-            if($stMode || $arcMode) points.push({x: pos.x, y: pos.y})
+            if($drawMode !== 'free') points.push({x: pos.x, y: pos.y})
             flag = true;
             dot_flag = true;
             if (dot_flag) {
@@ -385,7 +397,7 @@
                 
                 let pos = getMousePosition(e);
                 e.preventDefault();
-                if($stMode || $arcMode) {
+                if($drawMode !== 'free') {
                     points[1] = {
                         x: pos.x, y: pos.y
                     };
