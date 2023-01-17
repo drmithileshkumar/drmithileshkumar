@@ -54,19 +54,7 @@
 		<h1>{$selectedSection}</h1>
 	{/if}
 	<div class="display { splitMode ? 'grid':'flex'}" bind:clientWidth={DW}>
-		{#if !$presentationMode}
-			<div class="youtube">
-				<iframe
-					width="420"
-					height="300"
-					src="https://www.youtube.com/embed/Ii1HysDxd5U"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowfullscreen
-				/>
-			</div>
-		{/if}
+		
 		<section class="contentpart">
 			<Item item={0}>
 				<P isActive={0}>There are various branches of mathematics:</P>
@@ -187,6 +175,19 @@
 				<div class="pad" />
 			{/if}
 		</section>
+        {#if !$presentationMode}
+			<div class="youtube">
+				<iframe
+					width="420"
+					height="300"
+					src="https://www.youtube.com/embed/Ii1HysDxd5U"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				/>
+			</div>
+		{/if}
 	</div>
 </article>
 
@@ -263,11 +264,11 @@
 	}
     .grid {
         display: grid;
-        grid-template-columns: 420px auto;
+        grid-template-columns: auto 420px;
     }
     .flex {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .contentpart {
         padding: 0.5em;

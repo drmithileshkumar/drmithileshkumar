@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-7d7a3607.js";import{default as t}from"../components/pages/notes/maths/Determinants/Applications of determinants and matrices/_page.svelte-74bd99bf.js";export{t as component,r as universal};
+import{_ as r}from"./_page-5490af44.js";import{default as t}from"../components/pages/notes/maths/Determinants/Applications of determinants and matrices/_page.svelte-74bd99bf.js";export{t as component,r as universal};

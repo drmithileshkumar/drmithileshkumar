@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-9414076e.js";import{default as t}from"../components/pages/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/_page.svelte-b855f839.js";export{t as component,r as universal};
+import{_ as r}from"./_page-9971fbce.js";import{default as t}from"../components/pages/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/_page.svelte-b855f839.js";export{t as component,r as universal};

@@ -5,7 +5,7 @@ import { I as Item, P, L as Li } from "../../../../../../chunks/Image.svelte_sve
 import { I as Image } from "../../../../../../chunks/Image.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".display.svelte-p7511j{position:relative;position:-webkit-sticky}.youtube.svelte-p7511j{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\r\n	}article.svelte-p7511j{position:relative;padding:0.5em}.absolute.svelte-p7511j{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-p7511j::-webkit-scrollbar{width:0;height:0}.pad.svelte-p7511j{min-height:100px}.thumbnail.svelte-p7511j{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-p7511j{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}.grid.svelte-p7511j{display:grid;grid-template-columns:420px auto}.flex.svelte-p7511j{display:flex;flex-direction:column}.contentpart.svelte-p7511j{padding:0.5em}",
+  code: ".display.svelte-uc7y34{position:relative;position:-webkit-sticky}.youtube.svelte-uc7y34{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\r\n	}article.svelte-uc7y34{position:relative;padding:0.5em}.absolute.svelte-uc7y34{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-uc7y34::-webkit-scrollbar{width:0;height:0}.pad.svelte-uc7y34{min-height:100px}.thumbnail.svelte-uc7y34{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-uc7y34{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}.grid.svelte-uc7y34{display:grid;grid-template-columns:auto 420px}.flex.svelte-uc7y34{display:flex;flex-direction:column-reverse}.contentpart.svelte-uc7y34{padding:0.5em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -36,10 +36,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-16awbk2_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Introduction to sets"}"><!-- HEAD_svelte-16awbk2_END -->`, ""}
 
-<article class="${["svelte-p7511j", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-p7511j"}"><p class="${"statement svelte-p7511j"}">${escape(`\\(\\{x:x\\)`)} is the foundation of mathematics${escape(`\\(\\}\\)`)}</p></div>` : ``}
+<article class="${["svelte-uc7y34", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-uc7y34"}"><p class="${"statement svelte-uc7y34"}">${escape(`\\(\\{x:x\\)`)} is the foundation of mathematics${escape(`\\(\\}\\)`)}</p></div>` : ``}
 	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-p7511j"}">${!$presentationMode ? `<div class="${"youtube svelte-p7511j"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/Ii1HysDxd5U"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}
-		<section class="${"contentpart svelte-p7511j"}">${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-uc7y34"}"><section class="${"contentpart svelte-uc7y34"}">${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
@@ -218,7 +217,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-			${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-p7511j"}"></div>` : ``}</section></div>
+			${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-uc7y34"}"></div>` : ``}</section>
+        ${!$presentationMode ? `<div class="${"youtube svelte-uc7y34"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/Ii1HysDxd5U"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}</div>
 </article>`;
 });
 export {

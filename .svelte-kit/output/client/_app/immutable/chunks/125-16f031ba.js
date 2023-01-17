@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-4455ce79.js";import{default as t}from"../components/pages/notes/maths/Statistics/Analysis of frequency distributions/_page.svelte-7b8498d1.js";export{t as component,r as universal};
+import{_ as r}from"./_page-071283f4.js";import{default as t}from"../components/pages/notes/maths/Statistics/Analysis of frequency distributions/_page.svelte-7b8498d1.js";export{t as component,r as universal};
