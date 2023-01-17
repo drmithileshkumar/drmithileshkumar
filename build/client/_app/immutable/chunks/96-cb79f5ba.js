@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-a4e0cf00.js";import{default as t}from"../components/pages/notes/maths/Principle of mathematical induction/The principle of mathematical induction/_page.svelte-0186a1cb.js";export{t as component,r as universal};
+import{_ as r}from"./_page-6261e811.js";import{default as t}from"../components/pages/notes/maths/Principle of mathematical induction/The principle of mathematical induction/_page.svelte-0186a1cb.js";export{t as component,r as universal};

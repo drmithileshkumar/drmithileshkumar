@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-7a0e9b1e.js";import{default as t}from"../components/pages/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/_page.svelte-9d34f15c.js";export{t as component,r as universal};
+import{_ as r}from"./_page-7cd26a2b.js";import{default as t}from"../components/pages/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/_page.svelte-9d34f15c.js";export{t as component,r as universal};

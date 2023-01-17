@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-a8b645b7.js";import{default as t}from"../components/pages/notes/maths/Three dimensional geometry/Angle between two lines/_page.svelte-7fbc7498.js";export{t as component,r as universal};
+import{_ as r}from"./_page-d82a51ae.js";import{default as t}from"../components/pages/notes/maths/Three dimensional geometry/Angle between two lines/_page.svelte-7fbc7498.js";export{t as component,r as universal};

@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-f28b0a44.js";import{default as t}from"../components/pages/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions/_page.svelte-fd9bed67.js";export{t as component,r as universal};
+import{_ as r}from"./_page-6461c28c.js";import{default as t}from"../components/pages/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions/_page.svelte-fd9bed67.js";export{t as component,r as universal};

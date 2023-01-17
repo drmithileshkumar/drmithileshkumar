@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-347ceb71.js";import{default as t}from"../components/pages/notes/maths/Linear inequalities/Graphical solution in two variables/_page.svelte-cc4d7bcf.js";export{t as component,r as universal};
+import{_ as r}from"./_page-3e97b25b.js";import{default as t}from"../components/pages/notes/maths/Linear inequalities/Graphical solution in two variables/_page.svelte-cc4d7bcf.js";export{t as component,r as universal};

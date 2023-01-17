@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-b213665a.js";import{default as t}from"../components/pages/notes/maths/Principle of mathematical induction/Motivation/_page.svelte-50e02fd9.js";export{t as component,r as universal};
+import{_ as r}from"./_page-db716763.js";import{default as t}from"../components/pages/notes/maths/Principle of mathematical induction/Motivation/_page.svelte-50e02fd9.js";export{t as component,r as universal};
