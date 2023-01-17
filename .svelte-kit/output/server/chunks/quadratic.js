@@ -1,5 +1,6 @@
 import { r as randInt } from "./common.js";
 class Quadratic {
+  //ax^2 + bx + c
   constructor(a2 = 0, b2 = 0, c = 0, x = "x") {
     this.a = a2;
     this.b = b2;

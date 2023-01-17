@@ -1,4 +1,4 @@
-import { c as create_ssr_component, q as compute_rest_props, d as subscribe, e as escape, j as null_to_empty, f as add_attribute, v as validate_component } from "../../../../chunks/index.js";
+import { c as create_ssr_component, q as compute_rest_props, d as subscribe, e as escape, j as null_to_empty, f as add_attribute, v as validate_component } from "../../../../chunks/index3.js";
 import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../chunks/stores2.js";
 /* empty css                                                         *//* empty css                                                        */import { p as page } from "../../../../chunks/stores.js";
 import { T as TeX } from "../../../../chunks/constants.js";
@@ -98,7 +98,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Image, "Image").$$render($$result, { isActive: 3 }, {}, {
         default: () => {
-          return `<img src="${"/notes/quantum/qubit2d.svg"}" alt="${""}">`;
+          return `<img style="${"width:min(90vw, 400px)"}" src="${"/notes/quantum/qubit2d.svg"}" alt="${""}">`;
         }
       })}`;
     }

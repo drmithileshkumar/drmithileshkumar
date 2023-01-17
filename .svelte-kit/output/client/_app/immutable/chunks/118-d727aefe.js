@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-167df97b.js";import{default as t}from"../components/pages/notes/maths/Sets/Power set/_page.svelte-cf8fcf5f.js";export{t as component,r as universal};

@@ -11,12 +11,15 @@
         import {page} from '$app/stores';
         import {onMount} from 'svelte';
         import P from '$lib/presentation/P.svelte';
+        import H1 from '$lib/presentation/H1.svelte';
+        import H2 from '$lib/presentation/H2.svelte';
+        import H3 from '$lib/presentation/H3.svelte';
         import Li from '$lib/presentation/Li.svelte';
         import Item from '$lib/presentation/Item.svelte';
         import Image from '$lib/presentation/Image.svelte';
         onMount(() => {
             $selectedChapter = 'Sets';
-            $selectedSection = 'Introduction';
+            $selectedSection = 'The empty set';
             $slideCounter = 12;
             $currentSlide = -2;
             MathJax.typeset();
@@ -26,11 +29,11 @@
     <article class:absolute={$presentationMode} bind:this={$presentation}>
         {#if $presentationMode && $currentSlide === -2}
             <div class="thumbnail">
-                <p 
-                    class="statement" 
-                    >
-                    {`\\(\\{x:x\\)`} is the foundation of mathematics{`\\(\\}\\)`}
+               
+                <p class="statement">
+                    The empty set
                 </p>
+                
             </div>
         {/if}
         {#if !$presentationMode || $currentSlide >= -1}
@@ -39,104 +42,55 @@
         <section>
             <Item item={0}>
                 <P isActive={0}>
-                    There are various branches of mathematics:
+                    The simplest possible set is one that does not contain any element at all.
                 </P>
             </Item>
-            <table>
-                <tr>
-                    <td>
-                        <Item item={2}>
-                            <P isActive={2}>Set theory connects them all.</P>
-                        </Item>
-                    </td>
-                    <td>
-                        <ul style="border-left: 1px solid">
-                            <Item item={1}>
-                                <Li isActive={1}>
-                                    <strong>Algebra:</strong> Numbers, Sequences and Series, Quadratic equations, Linear equations
-                                </Li>
-                                <Li isActive={1}>
-                                    <strong>Geometry:</strong> Lines, Arcs, Quadrilaterals, Circles
-                                </Li>
-                                <Li isActive={1}>
-                                    <strong>Co-ordinate Geometry:</strong> Point, Distance, Lines, Section Formula
-                                </Li>
-                                <Li isActive={1}>
-                                    <strong>Trigonometry</strong>
-                                </Li>
-                                <Li isActive={1}>
-                                    <strong>Statistics and Probability</strong>
-                                </Li>
-                                <Li isActive={1}>
-                                    <strong>Vector algebra</strong>
-                                </Li>
-                                <Li isActive={1}>
-                                    <strong>Calculus</strong>
-                                </Li>
-                            </Item>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+            <Item item={1}>
+                <P class="definition" isActive={1}>
+                    A set which does not contain any element is called the <strong>empty</strong> set.
+                </P>
+            </Item>
+            <ul>
+            <Item item={2}>
+                <Li isActive={2}>
+                    An empty set is also called the <em>null set</em> or the <em>void set</em>.
+                </Li>
+            </Item>
             <Item item={3}>
-                <P isActive={3}>
-                    Set theory is the starting point in all these branches and many more. In set theory, we study about sets. The concept of sets is even more basic than the concept of numbers. Sets conceptualize the properties of objects.
-                </P>
+                <Li isActive={3}>
+                    An empty set is denoted either as {'{ }'} or \(\varphi\) (read as "phi").
+                </Li>
             </Item>
+        </ul>
+        </section>
+        <section>
             <Item item={4}>
-                <P isActive={4}>
-                    Consider \(1, 3, 5, 7, \dots\) and \(2, 4, 6, 8, \dots\) In the first group, only odd numbers are appearing and in the second group, only even numbers are appearing. We say that \(1, 3, 5, 7,\dots\) is a collection of odd numbers and \(2, 4, 6, 8, \dots\) is a collection of even numbers. This chapter is about the study of collection of objects that satisfy some property.
-                </P>
-                <Image isActive={4}>
-                    <img src="/notes/maths/sets/introduction/oddeven.svg" alt="">
-                </Image>
-                
+                <H3 class="examples" isActive={4}>
+                    Examples
+                </H3>
             </Item>
-            <Item item={5}>
-                <P isActive={5}>
-                    Such kind of collections are called <em>sets</em>. 
-                </P>
-            </Item>
-            <Item item={6}>
-                <P isActive={6}>
-                    We'll start with defining what is a set and see a few examples. After that we'll learn two ways to write sets. 
-                    {`\\[S = \\{1, 3, 5, 7,\\dots\\} = \\{x:x\\text{ is odd}\\}\\]`}
-                </P>
-            </Item>
-            <Item item={7}>
-                <P isActive={7}>
-                    Then, we'll define some special types of sets, like empty sets, finite and infinite sets, power and universal sets.
-                </P>
-            </Item>
-            <Item item={8}>
-                <P isActive={8}>
-                    After that we'll learn how to create new sets from a given set using various operations that will feel like addition or subtraction. Finally, we'll conclude the chapter by using the learnt concepts to solve problems like one described below.
-                </P>
-            </Item>
-            <Item item={9}>
-                <P isActive={9}>
-                    Consider the following problem.
-                </P>
-                <P isActive={9} class="question">
-                    In an IIT sports event, 50 medals were awarded in race, 30 in football and 25 in cricket. If only 60 students got any medal and only 5 students got medals in all events, how many received medals in exactly two of the events?
-                </P>
-            </Item>
-            <Item item={10}>
-                <P isActive={10}>
-                    This simple problem is tricky to solve without using the language of <strong>Sets</strong>.
-                </P>
-                <Image isActive={10}>
-                    <img src="/notes/maths/sets/introduction/example.svg" alt="">
-                </Image>
-            </Item>
-            <Item item={11}>
-                <P isActive={11}>
-                    Concepts learnt in this chapter will be useful in other chapters like relations and functions, trigonometry, sequences and series, combinatorics, calculus and probability.
-                </P>
-            </Item>
-            {#if $presentationMode && $currentSlide >= 2}
-                <div class="pad"></div>
-            {/if}
+            <ul>
+                <Item item={5}>
+                    <Li isActive={5}>
+                        The set of positive numbers less than 0 contains no element. Hence, it is an empty set
+                    </Li>
+                </Item>
+                <Item item={6}>
+                    <Li isActive={6}>
+                        The set of apples in an empty basket is an empty set.
+                    </Li>
+                </Item>
+                <Item item={7}>
+                    <Li isActive={7}>
+                        Set of prime numbers divisible by 4 is an empty set.
+                    </Li>
+                </Item>
+                <Item item={8}>
+                    <Li isActive={8}>
+                        The set of real roots of the equation \(x^2 + 1 = 0\) is an empty set.
+                    </Li>
+                </Item>
+            </ul>
         </section>
     </article>
     
@@ -148,14 +102,6 @@
             padding: 0.5em 1em;
             border-radius: 10px;
         }
-        /* p {
-            text-indent: 2em;
-        } */
-        /* .image {
-            display: flex;
-            justify-content: center;
-            width: min(95vw, 600px);
-        } */
         article {
             position: relative;
             padding: 0.5em;
@@ -167,11 +113,6 @@
             border-radius: 10px;
             /* in: all 1s; */
         }
-        /* aside {
-            background-color: rgb(230, 228, 228);
-            cursor: pointer;
-            width: 1em;
-        } */
         .absolute {
             margin: auto;
             /* width: 90vw; */
@@ -187,9 +128,6 @@
             width: 0;
             height: 0;
         }
-        .pad {
-            min-height: 100px;
-        } 
         /*  
         figure {
             

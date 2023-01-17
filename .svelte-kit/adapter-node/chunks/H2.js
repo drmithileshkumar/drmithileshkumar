@@ -1,4 +1,4 @@
-import { c as create_ssr_component, q as compute_rest_props, d as subscribe, e as escape, j as null_to_empty } from "./index.js";
+import { c as create_ssr_component, q as compute_rest_props, d as subscribe, e as escape, j as null_to_empty } from "./index3.js";
 import { b as presentationMode, c as currentSlide } from "./stores2.js";
 import "./H3.js";
 const css = {

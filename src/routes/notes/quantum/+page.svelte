@@ -26,129 +26,6 @@
             $currentSlide = -2;
             MathJax.typeset();
         });
-        let problemset = {
-            s: "",
-            o: {
-                    'A': '',
-                    'B': "",
-                    'C': "",
-                    'D': ''
-                },
-            c: ""
-        };
-        const generateProblem = (problemnumber) => {
-            let N = 5;
-            problemnumber = problemnumber % N;
-            let choices = ['A', 'B', 'C', 'D'];
-            let correctChoiceIndex = Math.floor(Math.random()*4);
-            problemset.c = choices[correctChoiceIndex];
-            let ans;
-            let values = [0, 0, 0, 0];
-            switch(problemnumber) {
-                case 0: {
-                    values[0] = `Collection of purest rivers`;
-                    values[1] = `Collection of states in India`;
-                    values[2] = `Collection of countries`;
-                    values[3] = `Collection of my watches`;
-                    for(let i = 0; i < 4; i++) {
-                        problemset.o[choices[(correctChoiceIndex + i) % 4]] = values[i];
-                    } 
-                    
-                    problemset.s = `Which of the following is a not set?`;
-                    break;
-                }
-                case 1: {
-                    
-                    let m = randInt(20, 10);
-                    let n = randInt(Math.floor(m/2), 1); // n < x < m /l
-                    let l = randInt(Math.floor(2*n/3), 2);
-                    n = Math.random() < 0.5 ? n: -n;
-                
-                    let set = new Sets();
-                    for(let i = n + 1; i < m; i++) {
-                        set.e.push(i);
-                    } 
-                    let subA = new Sets(set.e.filter(item => item % l == 0));
-    
-                    values[0] = `\\(${subA.str()}\\)`;
-                    values[1] = `\\(${set.randomSubset().str()}\\)`;
-                    values[2] = `\\(${set.randomSubset().str()}\\)`;
-                    values[3] = `\\(${set.randomSubset().str()}\\)`;
-                    for(let i = 0; i < 4; i++) {
-                        problemset.o[choices[(correctChoiceIndex + i) % 4]] = values[i];
-                    } 
-                    
-                    problemset.s = `Which of the following is correct Roster form of the set \\[ x \\text{ is an integer such that } ${n} < x < ${m} \\text{ and divisible by } ${l}\\]`;
-                    break;
-                }
-                case 2: {
-                    let A = new Sets();
-                    let U = new Sets();
-                    U.interval(-10, 10);
-                    A.randomSet(-10, 10, randInt(10, 8));
-                    let C = U.diff(A);
-                    let B = A.krandomSubset(3);
-                    
-                    values[0] = `\\(${C.e[Math.floor(Math.random()*C.e.length)]}\\in A\\)`;
-                    values[1] = `\\(${B.e[0]}\\in A\\)`;
-                    values[2] = `\\(${B.e[1]}\\in A\\)`;
-                    values[3] = `\\(${B.e[2]}\\in A\\)`;
-                    for(let i = 0; i < 4; i++) {
-                        problemset.o[choices[(correctChoiceIndex + i) % 4]] = values[i];
-                    } 
-                    
-                    problemset.s = `Given a set \\[A = ${A.str()}\\] which of the following is not correct?`;
-                    break;
-                }
-                case 3: {
-                    
-                    let m = randInt(20, 10);
-                    let n = randInt(Math.floor(m/2), 1);
-                    let l = randInt(Math.floor(2*n/3), 2);
-                    n = Math.random() < 0.5 ? n : -n;
-                    let set = new Sets();
-                    for(let i = n + 1; i < m; i++) {
-                        set.e.push(i);
-                    }
-                    let setA = new Sets(set.e.filter(item => item % l == 0));
-    
-                    values[0] = `\\(\\{x : x \\text{ is an integer such that } ${n} < x < ${m} \\text{ and divisible by } ${l}\\}\\)`;
-                    values[1] = `\\(\\{x : x \\text{ is an integer such that } ${n} < x < ${m}\\}\\)`;
-                    values[2] = `\\(\\{x : x \\text{ is an integer such that } ${m} < x < ${n} \\text{ and divisible by } ${l}\\}\\)`;
-                    values[3] = `\\(\\{x : x \\text{ is an integer such that } x \\text{ is divisible by } ${l}\\}\\)`;
-                    for(let i = 0; i < 4; i++) {
-                        problemset.o[choices[(correctChoiceIndex + i) % 4]] = values[i];
-                    } 
-                    
-                    problemset.s = `Which of the following is correct set-builder form of the set \\[${setA.str()}\\]`;
-                    break;
-                }
-                case 4: {
-                    let q = new Quadratic(0, 0, 0, 'n');
-                    q.rand(-3, 3);
-                    let q1 = new Quadratic(0, 0, 0, 'n');
-                    q1.rand(-3, 3);
-                    let q2 = new Quadratic(0, 0, 0, 'n');
-                    q2.rand(-3, 3);
-                    let q3 = new Quadratic(0, 0, 0, 'n');
-                    q3.rand(-3, 3);
-                    let seq = [q.value(1), q.value(2), q.value(3), q.value(4), q.value(5)];
-                    let set = new Sets(seq);
-                    values[0] = q.str();
-                    values[1] = q1.str();
-                    values[2] = q2.str();
-                    values[3] = q3.str();
-
-                    for(let i = 0; i < 4; i++) {
-                        problemset.o[choices[(correctChoiceIndex + i) % 4]] = '\\(\\{x: x = ' + values[i] + ', n~\\)' + ' is a natural number and ' + '\\(~1\\leq n\\leq 5\\}\\)';
-                    } 
-                    problemset.s = `Which of the following is correct set-builder form of the set \\[${set.str()}\\]`;
-                    break;
-                }
-            }
-            problemset = problemset;
-            return problemset;
-        }
     </script>
     
     <svelte:head>
@@ -200,7 +77,7 @@
             </Item>
             <Item item={3}>
                 <Image isActive={3}>
-                    <img src="/notes/quantum/qubit2d.svg" alt="">
+                    <img style="width:min(90vw, 400px)" src="/notes/quantum/qubit2d.svg" alt="">
                 </Image>
             </Item>
             <Item item={4}>

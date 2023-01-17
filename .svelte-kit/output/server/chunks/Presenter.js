@@ -1,5 +1,5 @@
-import { c as create_ssr_component, d as subscribe, h as each, f as add_attribute, e as escape, i as set_store_value } from "./index.js";
-/* empty css                                      */import { w as writable } from "./index3.js";
+import { c as create_ssr_component, d as subscribe, h as each, f as add_attribute, e as escape, i as set_store_value } from "./index3.js";
+/* empty css                                      */import { w as writable } from "./index2.js";
 const lineWidth = writable(2);
 const strokeColor = writable("red");
 const globalCompositeOperation = writable("source-over");

@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as escape, v as validate_component } from "./index.js";
+import { c as create_ssr_component, e as escape, v as validate_component } from "./index3.js";
 const Paper_svelte_svelte_type_style_lang = "";
 const css$1 = {
   code: ".paper.svelte-1mhki6f{display:grid;grid-template-rows:auto auto auto;margin-bottom:2em}.authors.svelte-1mhki6f{color:#7d848a;text-decoration:none;font-weight:300;font-size:0.9em}.title.svelte-1mhki6f{font-weight:700;font-size:1.1em}.venue.svelte-1mhki6f{color:#7d848a;font-size:0.8em}",

@@ -100,7 +100,7 @@
             display: grid;
             grid-template-columns: 1em 1fr 1em;
             position: relative;
-            
+            height: 600px;
         }
         aside {
             background-color: rgb(230, 228, 228);
@@ -115,8 +115,8 @@
             margin: auto;
             width: calc(100% - 2em);
             /* height: min(78vh, 60vw); */
-            height: 90vh;
-            /* height: min(70vh,600px); */
+            /* height: 90vh; */
+            height: 600px;
             overflow-y: auto;
             scrollbar-width: none;
             -ms-overflow-style: none;

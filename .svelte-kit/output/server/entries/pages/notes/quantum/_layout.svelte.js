@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../chunks/index.js";
+import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../chunks/index3.js";
 /* empty css                                                       */import { b as presentationMode, c as currentSlide, s as slideCounter, p as presentation, o as overlay, a as autoScroll, f as selectedSection, g as selectedChapter } from "../../../../chunks/stores2.js";
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../chunks/Presenter.js";
 const _layout_svelte_svelte_type_style_lang = "";

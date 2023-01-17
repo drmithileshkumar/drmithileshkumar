@@ -1,4 +1,4 @@
-import { w as writable } from "./index3.js";
+import { w as writable } from "./index2.js";
 const chapters = [
   "Sets",
   "Relations and functions 11",
@@ -113,6 +113,13 @@ const sections = {
     "Limits of Trigonometric functions",
     "Derivatives"
   ],
+  // 'Mathematical reasoning': [
+  //     'Statements',
+  //     'New statements from old',
+  //     'Special words/phrases',
+  //     'Implications',
+  //     'Validating statements'
+  // ], 
   "Statistics": [
     "Range",
     "Mean deviation",

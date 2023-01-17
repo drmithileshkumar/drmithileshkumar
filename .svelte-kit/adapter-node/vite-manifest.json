@@ -1,15 +1,12 @@
 {
-  ".svelte-kit/build/index.js": {
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
     "file": "index.js",
-    "src": ".svelte-kit/build/index.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
     "isEntry": true,
     "imports": [
       "_index.js",
       "_index2.js",
-      "_index3.js"
-    ],
-    "dynamicImports": [
-      ".svelte-kit/build/hooks.js"
+      "_server-internal.js"
     ]
   },
   "src/routes/+layout.svelte": {
@@ -17,8 +14,8 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
-      "_index3.js"
+      "_index3.js",
+      "_index2.js"
     ],
     "css": [
       "_app/immutable/assets/_layout-8c3b1b8a.css"
@@ -29,7 +26,7 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores.js"
     ]
   },
@@ -38,7 +35,7 @@
     "src": "src/routes/cv/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index3.js"
     ]
   },
   "src/routes/iit/maths/2021/+layout.svelte": {
@@ -46,7 +43,7 @@
     "src": "src/routes/iit/maths/2021/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_Presenter.js"
     ],
@@ -59,7 +56,7 @@
     "src": "src/routes/notes/+error.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index3.js"
     ]
   },
   "src/routes/notes/maths/+layout.svelte": {
@@ -67,13 +64,13 @@
     "src": "src/routes/notes/maths/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_Select.js",
       "_stores2.js",
       "_Presenter.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-f1081950.css"
+      "_app/immutable/assets/_layout-3d22b536.css"
     ]
   },
   "src/routes/notes/maths/+error.svelte": {
@@ -81,7 +78,7 @@
     "src": "src/routes/notes/maths/+error.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index3.js"
     ]
   },
   "src/routes/notes/quantum/+layout.svelte": {
@@ -89,7 +86,7 @@
     "src": "src/routes/notes/quantum/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_Presenter.js"
     ],
@@ -103,7 +100,7 @@
     "src": "src/routes/practice/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_Select.js",
       "_stores3.js"
     ]
@@ -113,14 +110,14 @@
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_Image.svelte_svelte_type_style_lang.js",
-      "_Image.js"
+      "_H3.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-a3f5b39f.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/_page-ab8d1849.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -129,7 +126,7 @@
     "src": "src/routes/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/about/+page.svelte": {
@@ -137,7 +134,7 @@
     "src": "src/routes/about/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_Papers.js"
     ],
     "css": [
@@ -149,7 +146,7 @@
     "src": "src/routes/about/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/cv/+page.svelte": {
@@ -157,11 +154,11 @@
     "src": "src/routes/cv/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_Papers.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-9d0d9c23.css"
+      "_app/immutable/assets/_page-52d5bb98.css"
     ]
   },
   "src/routes/cv/+page.js": {
@@ -169,7 +166,7 @@
     "src": "src/routes/cv/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/iit/+page.svelte": {
@@ -177,7 +174,7 @@
     "src": "src/routes/iit/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_Link.js"
     ],
     "css": [
@@ -189,7 +186,7 @@
     "src": "src/routes/iit/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/iit/maths/+page.svelte": {
@@ -197,7 +194,7 @@
     "src": "src/routes/iit/maths/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_Link.js"
     ],
     "css": [
@@ -209,7 +206,7 @@
     "src": "src/routes/iit/maths/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/iit/maths/2021/+page.svelte": {
@@ -217,7 +214,7 @@
     "src": "src/routes/iit/maths/2021/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_constants.js"
     ],
     "css": [
@@ -231,7 +228,7 @@
     "src": "src/routes/iit/maths/2021/question1/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js",
       "_constants.js"
@@ -245,7 +242,7 @@
     "src": "src/routes/iit/maths/2021/question1/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/iit/maths/2021/question2/+page.svelte": {
@@ -253,7 +250,7 @@
     "src": "src/routes/iit/maths/2021/question2/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js",
       "_constants.js"
@@ -267,7 +264,7 @@
     "src": "src/routes/iit/maths/2021/question2/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/iit/maths/2021/question3/+page.svelte": {
@@ -275,7 +272,7 @@
     "src": "src/routes/iit/maths/2021/question3/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js",
       "_constants.js"
@@ -289,7 +286,7 @@
     "src": "src/routes/iit/maths/2021/question3/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/iit/maths/2021/question4/+page.svelte": {
@@ -297,7 +294,7 @@
     "src": "src/routes/iit/maths/2021/question4/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js",
       "_constants.js"
@@ -311,7 +308,7 @@
     "src": "src/routes/iit/maths/2021/question4/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/iit/maths/2021/question5/+page.svelte": {
@@ -319,7 +316,7 @@
     "src": "src/routes/iit/maths/2021/question5/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js",
       "_constants.js"
@@ -333,7 +330,7 @@
     "src": "src/routes/iit/maths/2021/question5/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/iit/maths/2021/question6/+page.svelte": {
@@ -341,7 +338,7 @@
     "src": "src/routes/iit/maths/2021/question6/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js",
       "_constants.js"
@@ -355,7 +352,7 @@
     "src": "src/routes/iit/maths/2021/question6/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/+page.svelte": {
@@ -363,7 +360,7 @@
     "src": "src/routes/notes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_Link.js"
     ],
     "css": [
@@ -375,7 +372,7 @@
     "src": "src/routes/notes/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/+page.svelte": {
@@ -383,7 +380,7 @@
     "src": "src/routes/notes/maths/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_Link.js",
       "_constants.js"
     ],
@@ -396,7 +393,7 @@
     "src": "src/routes/notes/maths/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Application of derivatives/Approximations/+page.svelte": {
@@ -404,13 +401,13 @@
     "src": "src/routes/notes/maths/Application of derivatives/Approximations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -419,7 +416,7 @@
     "src": "src/routes/notes/maths/Application of derivatives/Approximations/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Application of derivatives/Increasing and decreasing functions/+page.svelte": {
@@ -427,13 +424,13 @@
     "src": "src/routes/notes/maths/Application of derivatives/Increasing and decreasing functions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -442,7 +439,7 @@
     "src": "src/routes/notes/maths/Application of derivatives/Increasing and decreasing functions/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Application of derivatives/Maxima and minima/+page.svelte": {
@@ -450,13 +447,13 @@
     "src": "src/routes/notes/maths/Application of derivatives/Maxima and minima/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -465,7 +462,7 @@
     "src": "src/routes/notes/maths/Application of derivatives/Maxima and minima/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Application of derivatives/Rate of change of quantities/+page.svelte": {
@@ -473,13 +470,13 @@
     "src": "src/routes/notes/maths/Application of derivatives/Rate of change of quantities/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -488,7 +485,7 @@
     "src": "src/routes/notes/maths/Application of derivatives/Rate of change of quantities/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Application of derivatives/Tangents and normals/+page.svelte": {
@@ -496,13 +493,13 @@
     "src": "src/routes/notes/maths/Application of derivatives/Tangents and normals/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -511,7 +508,7 @@
     "src": "src/routes/notes/maths/Application of derivatives/Tangents and normals/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Application of integrals/Area between two curves/+page.svelte": {
@@ -519,13 +516,13 @@
     "src": "src/routes/notes/maths/Application of integrals/Area between two curves/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -534,7 +531,7 @@
     "src": "src/routes/notes/maths/Application of integrals/Area between two curves/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Application of integrals/Area under simple curves/+page.svelte": {
@@ -542,12 +539,12 @@
     "src": "src/routes/notes/maths/Application of integrals/Area under simple curves/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -556,7 +553,7 @@
     "src": "src/routes/notes/maths/Application of integrals/Area under simple curves/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.svelte": {
@@ -564,13 +561,13 @@
     "src": "src/routes/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -579,7 +576,7 @@
     "src": "src/routes/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Binomial theorem/General and middle terms/+page.svelte": {
@@ -587,13 +584,13 @@
     "src": "src/routes/notes/maths/Binomial theorem/General and middle terms/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -602,7 +599,7 @@
     "src": "src/routes/notes/maths/Binomial theorem/General and middle terms/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/+page.svelte": {
@@ -610,13 +607,13 @@
     "src": "src/routes/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -625,7 +622,7 @@
     "src": "src/routes/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Complex numbers and quadratic equations/Argand plane and polar representation/+page.svelte": {
@@ -633,13 +630,13 @@
     "src": "src/routes/notes/maths/Complex numbers and quadratic equations/Argand plane and polar representation/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -648,7 +645,7 @@
     "src": "src/routes/notes/maths/Complex numbers and quadratic equations/Argand plane and polar representation/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Complex numbers and quadratic equations/Complex numbers/+page.svelte": {
@@ -656,12 +653,12 @@
     "src": "src/routes/notes/maths/Complex numbers and quadratic equations/Complex numbers/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -670,7 +667,7 @@
     "src": "src/routes/notes/maths/Complex numbers and quadratic equations/Complex numbers/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Complex numbers and quadratic equations/Quadratic equations/+page.svelte": {
@@ -678,13 +675,13 @@
     "src": "src/routes/notes/maths/Complex numbers and quadratic equations/Quadratic equations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -693,7 +690,7 @@
     "src": "src/routes/notes/maths/Complex numbers and quadratic equations/Quadratic equations/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/+page.svelte": {
@@ -701,13 +698,13 @@
     "src": "src/routes/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -716,7 +713,29 @@
     "src": "src/routes/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
+    ]
+  },
+  "src/routes/notes/maths/conic/+page.svelte": {
+    "file": "entries/pages/notes/maths/conic/_page.svelte.js",
+    "src": "src/routes/notes/maths/conic/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-03d834cb.css",
+      "_app/immutable/assets/Canvas-8b73df08.css"
+    ]
+  },
+  "src/routes/notes/maths/conic/+page.js": {
+    "file": "entries/pages/notes/maths/conic/_page.js",
+    "src": "src/routes/notes/maths/conic/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Conic sections/Circle/+page.svelte": {
@@ -724,12 +743,12 @@
     "src": "src/routes/notes/maths/Conic sections/Circle/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -738,7 +757,7 @@
     "src": "src/routes/notes/maths/Conic sections/Circle/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Conic sections/Ellipse/+page.svelte": {
@@ -746,13 +765,13 @@
     "src": "src/routes/notes/maths/Conic sections/Ellipse/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -761,7 +780,7 @@
     "src": "src/routes/notes/maths/Conic sections/Ellipse/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Conic sections/Hyperbola/+page.svelte": {
@@ -769,13 +788,13 @@
     "src": "src/routes/notes/maths/Conic sections/Hyperbola/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -784,7 +803,7 @@
     "src": "src/routes/notes/maths/Conic sections/Hyperbola/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Conic sections/Parabola/+page.svelte": {
@@ -792,13 +811,13 @@
     "src": "src/routes/notes/maths/Conic sections/Parabola/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -807,7 +826,7 @@
     "src": "src/routes/notes/maths/Conic sections/Parabola/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Conic sections/Sections of a cone/+page.svelte": {
@@ -815,13 +834,13 @@
     "src": "src/routes/notes/maths/Conic sections/Sections of a cone/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -830,7 +849,7 @@
     "src": "src/routes/notes/maths/Conic sections/Sections of a cone/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Continuity and differentiability/Continuity/+page.svelte": {
@@ -838,13 +857,13 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Continuity/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -853,7 +872,7 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Continuity/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/+page.svelte": {
@@ -861,12 +880,12 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -875,7 +894,7 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Continuity and differentiability/Differentiability/+page.svelte": {
@@ -883,13 +902,13 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Differentiability/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -898,7 +917,7 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Differentiability/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/+page.svelte": {
@@ -906,13 +925,13 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -921,7 +940,7 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.svelte": {
@@ -929,12 +948,12 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -943,7 +962,7 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Continuity and differentiability/Mean value theorem/+page.svelte": {
@@ -951,13 +970,13 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Mean value theorem/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -966,7 +985,7 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Mean value theorem/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Continuity and differentiability/Second order derivative/+page.svelte": {
@@ -974,12 +993,12 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Second order derivative/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -988,7 +1007,7 @@
     "src": "src/routes/notes/maths/Continuity and differentiability/Second order derivative/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Determinants/Adjoint and inverse of a matrix/+page.svelte": {
@@ -996,13 +1015,13 @@
     "src": "src/routes/notes/maths/Determinants/Adjoint and inverse of a matrix/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1011,7 +1030,7 @@
     "src": "src/routes/notes/maths/Determinants/Adjoint and inverse of a matrix/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Determinants/Applications of determinants and matrices/+page.svelte": {
@@ -1019,13 +1038,13 @@
     "src": "src/routes/notes/maths/Determinants/Applications of determinants and matrices/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1034,7 +1053,7 @@
     "src": "src/routes/notes/maths/Determinants/Applications of determinants and matrices/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Determinants/Area of a triangle/+page.svelte": {
@@ -1042,13 +1061,13 @@
     "src": "src/routes/notes/maths/Determinants/Area of a triangle/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1057,7 +1076,7 @@
     "src": "src/routes/notes/maths/Determinants/Area of a triangle/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Determinants/Determinant/+page.svelte": {
@@ -1065,13 +1084,13 @@
     "src": "src/routes/notes/maths/Determinants/Determinant/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
       "_app/immutable/assets/_page-9029cfef.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1080,7 +1099,7 @@
     "src": "src/routes/notes/maths/Determinants/Determinant/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Determinants/Minors and cofactors/+page.svelte": {
@@ -1088,13 +1107,13 @@
     "src": "src/routes/notes/maths/Determinants/Minors and cofactors/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1103,7 +1122,7 @@
     "src": "src/routes/notes/maths/Determinants/Minors and cofactors/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Determinants/Properties of determinants/+page.svelte": {
@@ -1111,13 +1130,13 @@
     "src": "src/routes/notes/maths/Determinants/Properties of determinants/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1126,7 +1145,7 @@
     "src": "src/routes/notes/maths/Determinants/Properties of determinants/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Differential equations/Basic concepts/+page.svelte": {
@@ -1134,12 +1153,12 @@
     "src": "src/routes/notes/maths/Differential equations/Basic concepts/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1148,7 +1167,7 @@
     "src": "src/routes/notes/maths/Differential equations/Basic concepts/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/+page.svelte": {
@@ -1156,12 +1175,12 @@
     "src": "src/routes/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1170,7 +1189,7 @@
     "src": "src/routes/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.svelte": {
@@ -1178,12 +1197,12 @@
     "src": "src/routes/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1192,7 +1211,7 @@
     "src": "src/routes/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Differential equations/Methods of solving first order first degree differential equations/+page.svelte": {
@@ -1200,13 +1219,13 @@
     "src": "src/routes/notes/maths/Differential equations/Methods of solving first order first degree differential equations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1215,7 +1234,7 @@
     "src": "src/routes/notes/maths/Differential equations/Methods of solving first order first degree differential equations/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/+page.svelte": {
@@ -1223,12 +1242,12 @@
     "src": "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1237,7 +1256,7 @@
     "src": "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/+page.svelte": {
@@ -1245,12 +1264,12 @@
     "src": "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1259,7 +1278,7 @@
     "src": "src/routes/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Indroduction to 3D geometry/Distance between two points/+page.svelte": {
@@ -1267,12 +1286,12 @@
     "src": "src/routes/notes/maths/Indroduction to 3D geometry/Distance between two points/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1281,7 +1300,7 @@
     "src": "src/routes/notes/maths/Indroduction to 3D geometry/Distance between two points/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Indroduction to 3D geometry/Section formula/+page.svelte": {
@@ -1289,13 +1308,13 @@
     "src": "src/routes/notes/maths/Indroduction to 3D geometry/Section formula/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1304,7 +1323,7 @@
     "src": "src/routes/notes/maths/Indroduction to 3D geometry/Section formula/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Integrals/Definite integral/+page.svelte": {
@@ -1312,12 +1331,12 @@
     "src": "src/routes/notes/maths/Integrals/Definite integral/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1326,7 +1345,7 @@
     "src": "src/routes/notes/maths/Integrals/Definite integral/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Integrals/Evaluation of definite integrals by substitution/+page.svelte": {
@@ -1334,12 +1353,12 @@
     "src": "src/routes/notes/maths/Integrals/Evaluation of definite integrals by substitution/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1348,7 +1367,7 @@
     "src": "src/routes/notes/maths/Integrals/Evaluation of definite integrals by substitution/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Integrals/Fundamental theorem of calculus/+page.svelte": {
@@ -1356,12 +1375,12 @@
     "src": "src/routes/notes/maths/Integrals/Fundamental theorem of calculus/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1370,7 +1389,7 @@
     "src": "src/routes/notes/maths/Integrals/Fundamental theorem of calculus/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Integrals/Integrals of some particular functions/+page.svelte": {
@@ -1378,13 +1397,13 @@
     "src": "src/routes/notes/maths/Integrals/Integrals of some particular functions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1393,7 +1412,7 @@
     "src": "src/routes/notes/maths/Integrals/Integrals of some particular functions/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Integrals/Integration as an inverse process of differentiation/+page.svelte": {
@@ -1401,13 +1420,13 @@
     "src": "src/routes/notes/maths/Integrals/Integration as an inverse process of differentiation/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1416,7 +1435,7 @@
     "src": "src/routes/notes/maths/Integrals/Integration as an inverse process of differentiation/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Integrals/Integration by partial fractions/+page.svelte": {
@@ -1424,13 +1443,13 @@
     "src": "src/routes/notes/maths/Integrals/Integration by partial fractions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1439,7 +1458,7 @@
     "src": "src/routes/notes/maths/Integrals/Integration by partial fractions/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Integrals/Integration by parts/+page.svelte": {
@@ -1447,13 +1466,13 @@
     "src": "src/routes/notes/maths/Integrals/Integration by parts/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1462,7 +1481,7 @@
     "src": "src/routes/notes/maths/Integrals/Integration by parts/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Integrals/Methods of integration/+page.svelte": {
@@ -1470,13 +1489,13 @@
     "src": "src/routes/notes/maths/Integrals/Methods of integration/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1485,7 +1504,7 @@
     "src": "src/routes/notes/maths/Integrals/Methods of integration/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Integrals/Some properties of definite integrals/+page.svelte": {
@@ -1493,13 +1512,13 @@
     "src": "src/routes/notes/maths/Integrals/Some properties of definite integrals/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1508,7 +1527,7 @@
     "src": "src/routes/notes/maths/Integrals/Some properties of definite integrals/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Inverse trigonometric functions/Basic concepts/+page.svelte": {
@@ -1516,13 +1535,13 @@
     "src": "src/routes/notes/maths/Inverse trigonometric functions/Basic concepts/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1531,7 +1550,7 @@
     "src": "src/routes/notes/maths/Inverse trigonometric functions/Basic concepts/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions/+page.svelte": {
@@ -1539,13 +1558,13 @@
     "src": "src/routes/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1554,7 +1573,7 @@
     "src": "src/routes/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Limits and derivatives/Derivatives/+page.svelte": {
@@ -1562,13 +1581,13 @@
     "src": "src/routes/notes/maths/Limits and derivatives/Derivatives/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1577,7 +1596,7 @@
     "src": "src/routes/notes/maths/Limits and derivatives/Derivatives/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Limits and derivatives/Intuitive idea of derivatives/+page.svelte": {
@@ -1585,12 +1604,12 @@
     "src": "src/routes/notes/maths/Limits and derivatives/Intuitive idea of derivatives/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1599,7 +1618,7 @@
     "src": "src/routes/notes/maths/Limits and derivatives/Intuitive idea of derivatives/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Limits and derivatives/Limits/+page.svelte": {
@@ -1607,13 +1626,13 @@
     "src": "src/routes/notes/maths/Limits and derivatives/Limits/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1622,7 +1641,7 @@
     "src": "src/routes/notes/maths/Limits and derivatives/Limits/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Limits and derivatives/Limits of Trigonometric functions/+page.svelte": {
@@ -1630,13 +1649,13 @@
     "src": "src/routes/notes/maths/Limits and derivatives/Limits of Trigonometric functions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1645,7 +1664,7 @@
     "src": "src/routes/notes/maths/Limits and derivatives/Limits of Trigonometric functions/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Linear inequalities/Graphical solution in two variables/+page.svelte": {
@@ -1653,13 +1672,13 @@
     "src": "src/routes/notes/maths/Linear inequalities/Graphical solution in two variables/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1668,7 +1687,7 @@
     "src": "src/routes/notes/maths/Linear inequalities/Graphical solution in two variables/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Linear inequalities/Inequalities/+page.svelte": {
@@ -1676,13 +1695,13 @@
     "src": "src/routes/notes/maths/Linear inequalities/Inequalities/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1691,7 +1710,7 @@
     "src": "src/routes/notes/maths/Linear inequalities/Inequalities/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Linear inequalities/One variable/+page.svelte": {
@@ -1699,12 +1718,12 @@
     "src": "src/routes/notes/maths/Linear inequalities/One variable/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1713,7 +1732,7 @@
     "src": "src/routes/notes/maths/Linear inequalities/One variable/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Linear inequalities/Solution of system in two variables/+page.svelte": {
@@ -1721,12 +1740,12 @@
     "src": "src/routes/notes/maths/Linear inequalities/Solution of system in two variables/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1735,7 +1754,7 @@
     "src": "src/routes/notes/maths/Linear inequalities/Solution of system in two variables/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Linear programming/Different types of linear programming problems/+page.svelte": {
@@ -1743,12 +1762,12 @@
     "src": "src/routes/notes/maths/Linear programming/Different types of linear programming problems/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1757,7 +1776,7 @@
     "src": "src/routes/notes/maths/Linear programming/Different types of linear programming problems/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/+page.svelte": {
@@ -1765,12 +1784,12 @@
     "src": "src/routes/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1779,7 +1798,7 @@
     "src": "src/routes/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Matrices/Invertible matrices/+page.svelte": {
@@ -1787,13 +1806,13 @@
     "src": "src/routes/notes/maths/Matrices/Invertible matrices/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1802,7 +1821,7 @@
     "src": "src/routes/notes/maths/Matrices/Invertible matrices/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Matrices/Matrix/+page.svelte": {
@@ -1810,12 +1829,12 @@
     "src": "src/routes/notes/maths/Matrices/Matrix/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1824,7 +1843,7 @@
     "src": "src/routes/notes/maths/Matrices/Matrix/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Matrices/Operations on matrices/+page.svelte": {
@@ -1832,13 +1851,13 @@
     "src": "src/routes/notes/maths/Matrices/Operations on matrices/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1847,7 +1866,7 @@
     "src": "src/routes/notes/maths/Matrices/Operations on matrices/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Matrices/Symmetric and skew symmetric matrices/+page.svelte": {
@@ -1855,13 +1874,13 @@
     "src": "src/routes/notes/maths/Matrices/Symmetric and skew symmetric matrices/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1870,7 +1889,7 @@
     "src": "src/routes/notes/maths/Matrices/Symmetric and skew symmetric matrices/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Matrices/Transformation of a matrix/+page.svelte": {
@@ -1878,12 +1897,12 @@
     "src": "src/routes/notes/maths/Matrices/Transformation of a matrix/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1892,7 +1911,7 @@
     "src": "src/routes/notes/maths/Matrices/Transformation of a matrix/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Matrices/Transpose of a matrix/+page.svelte": {
@@ -1900,13 +1919,13 @@
     "src": "src/routes/notes/maths/Matrices/Transpose of a matrix/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1915,7 +1934,7 @@
     "src": "src/routes/notes/maths/Matrices/Transpose of a matrix/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Matrices/Typse of matrices/+page.svelte": {
@@ -1923,13 +1942,13 @@
     "src": "src/routes/notes/maths/Matrices/Typse of matrices/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1938,7 +1957,7 @@
     "src": "src/routes/notes/maths/Matrices/Typse of matrices/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Permutations and combinations/Combinations/+page.svelte": {
@@ -1946,13 +1965,13 @@
     "src": "src/routes/notes/maths/Permutations and combinations/Combinations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1961,7 +1980,7 @@
     "src": "src/routes/notes/maths/Permutations and combinations/Combinations/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Permutations and combinations/Fundamental principle of counting/+page.svelte": {
@@ -1969,12 +1988,12 @@
     "src": "src/routes/notes/maths/Permutations and combinations/Fundamental principle of counting/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1983,7 +2002,7 @@
     "src": "src/routes/notes/maths/Permutations and combinations/Fundamental principle of counting/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Permutations and combinations/Permutations/+page.svelte": {
@@ -1991,13 +2010,13 @@
     "src": "src/routes/notes/maths/Permutations and combinations/Permutations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2006,7 +2025,7 @@
     "src": "src/routes/notes/maths/Permutations and combinations/Permutations/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.svelte": {
@@ -2014,12 +2033,12 @@
     "src": "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2028,7 +2047,7 @@
     "src": "src/routes/notes/maths/Principle of mathematical induction/Motivation/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.svelte": {
@@ -2036,12 +2055,12 @@
     "src": "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2050,7 +2069,7 @@
     "src": "src/routes/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Probability/Axiomatic approach to probability/+page.svelte": {
@@ -2058,13 +2077,13 @@
     "src": "src/routes/notes/maths/Probability/Axiomatic approach to probability/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2073,7 +2092,7 @@
     "src": "src/routes/notes/maths/Probability/Axiomatic approach to probability/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Probability/Event/+page.svelte": {
@@ -2081,12 +2100,12 @@
     "src": "src/routes/notes/maths/Probability/Event/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2095,7 +2114,7 @@
     "src": "src/routes/notes/maths/Probability/Event/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Probability/Random experiments/+page.svelte": {
@@ -2103,12 +2122,12 @@
     "src": "src/routes/notes/maths/Probability/Random experiments/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2117,7 +2136,7 @@
     "src": "src/routes/notes/maths/Probability/Random experiments/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Relations and functions 11/Cartesian product of sets/+page.svelte": {
@@ -2125,13 +2144,13 @@
     "src": "src/routes/notes/maths/Relations and functions 11/Cartesian product of sets/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2140,7 +2159,7 @@
     "src": "src/routes/notes/maths/Relations and functions 11/Cartesian product of sets/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Relations and functions 11/Functions/+page.svelte": {
@@ -2148,13 +2167,13 @@
     "src": "src/routes/notes/maths/Relations and functions 11/Functions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2163,7 +2182,7 @@
     "src": "src/routes/notes/maths/Relations and functions 11/Functions/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Relations and functions 11/Relations/+page.svelte": {
@@ -2171,12 +2190,12 @@
     "src": "src/routes/notes/maths/Relations and functions 11/Relations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2185,7 +2204,7 @@
     "src": "src/routes/notes/maths/Relations and functions 11/Relations/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Relations and functions 12/Binary operations/+page.svelte": {
@@ -2193,13 +2212,13 @@
     "src": "src/routes/notes/maths/Relations and functions 12/Binary operations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2208,7 +2227,7 @@
     "src": "src/routes/notes/maths/Relations and functions 12/Binary operations/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Relations and functions 12/Composition of functions and invertible function/+page.svelte": {
@@ -2216,12 +2235,12 @@
     "src": "src/routes/notes/maths/Relations and functions 12/Composition of functions and invertible function/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2230,7 +2249,7 @@
     "src": "src/routes/notes/maths/Relations and functions 12/Composition of functions and invertible function/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Relations and functions 12/Types of functions/+page.svelte": {
@@ -2238,12 +2257,12 @@
     "src": "src/routes/notes/maths/Relations and functions 12/Types of functions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2252,7 +2271,7 @@
     "src": "src/routes/notes/maths/Relations and functions 12/Types of functions/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Relations and functions 12/Types of relations/+page.svelte": {
@@ -2260,12 +2279,12 @@
     "src": "src/routes/notes/maths/Relations and functions 12/Types of relations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2274,7 +2293,7 @@
     "src": "src/routes/notes/maths/Relations and functions 12/Types of relations/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sequences and series/Arithmetic progression/+page.svelte": {
@@ -2282,13 +2301,13 @@
     "src": "src/routes/notes/maths/Sequences and series/Arithmetic progression/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2297,7 +2316,7 @@
     "src": "src/routes/notes/maths/Sequences and series/Arithmetic progression/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sequences and series/Geometric progression/+page.svelte": {
@@ -2305,13 +2324,13 @@
     "src": "src/routes/notes/maths/Sequences and series/Geometric progression/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2320,7 +2339,7 @@
     "src": "src/routes/notes/maths/Sequences and series/Geometric progression/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sequences and series/Relationship between AM and GM/+page.svelte": {
@@ -2328,12 +2347,12 @@
     "src": "src/routes/notes/maths/Sequences and series/Relationship between AM and GM/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2342,7 +2361,7 @@
     "src": "src/routes/notes/maths/Sequences and series/Relationship between AM and GM/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sequences and series/Sequences/+page.svelte": {
@@ -2350,12 +2369,12 @@
     "src": "src/routes/notes/maths/Sequences and series/Sequences/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2364,7 +2383,7 @@
     "src": "src/routes/notes/maths/Sequences and series/Sequences/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sequences and series/Series/+page.svelte": {
@@ -2372,12 +2391,12 @@
     "src": "src/routes/notes/maths/Sequences and series/Series/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2386,7 +2405,7 @@
     "src": "src/routes/notes/maths/Sequences and series/Series/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sequences and series/Sum to n terms of Special series/+page.svelte": {
@@ -2394,13 +2413,13 @@
     "src": "src/routes/notes/maths/Sequences and series/Sum to n terms of Special series/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2409,7 +2428,7 @@
     "src": "src/routes/notes/maths/Sequences and series/Sum to n terms of Special series/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sets/Complement of a set/+page.svelte": {
@@ -2417,13 +2436,13 @@
     "src": "src/routes/notes/maths/Sets/Complement of a set/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
       "_app/immutable/assets/_page-9029cfef.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2432,7 +2451,7 @@
     "src": "src/routes/notes/maths/Sets/Complement of a set/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sets/Equal sets/+page.svelte": {
@@ -2440,13 +2459,13 @@
     "src": "src/routes/notes/maths/Sets/Equal sets/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
       "_app/immutable/assets/_page-58267112.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2455,7 +2474,7 @@
     "src": "src/routes/notes/maths/Sets/Equal sets/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sets/Finite and infinite sets/+page.svelte": {
@@ -2463,7 +2482,7 @@
     "src": "src/routes/notes/maths/Sets/Finite and infinite sets/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_Practice.js",
       "_common.js",
@@ -2473,7 +2492,7 @@
       "_H2.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-926fb2b3.css",
+      "_app/immutable/assets/_page-91be90f3.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2482,7 +2501,7 @@
     "src": "src/routes/notes/maths/Sets/Finite and infinite sets/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sets/Introduction/+page.svelte": {
@@ -2490,7 +2509,7 @@
     "src": "src/routes/notes/maths/Sets/Introduction/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js",
       "_Image.svelte_svelte_type_style_lang.js",
@@ -2498,7 +2517,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-4a1faf80.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2507,7 +2526,7 @@
     "src": "src/routes/notes/maths/Sets/Introduction/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sets/Operations on sets/+page.svelte": {
@@ -2515,13 +2534,13 @@
     "src": "src/routes/notes/maths/Sets/Operations on sets/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
       "_app/immutable/assets/_page-9029cfef.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2530,7 +2549,7 @@
     "src": "src/routes/notes/maths/Sets/Operations on sets/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sets/Power set/+page.svelte": {
@@ -2538,13 +2557,13 @@
     "src": "src/routes/notes/maths/Sets/Power set/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
       "_app/immutable/assets/_page-58267112.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2553,7 +2572,7 @@
     "src": "src/routes/notes/maths/Sets/Power set/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sets/Practical problems/+page.svelte": {
@@ -2561,13 +2580,13 @@
     "src": "src/routes/notes/maths/Sets/Practical problems/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
       "_app/immutable/assets/_page-9029cfef.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2576,7 +2595,7 @@
     "src": "src/routes/notes/maths/Sets/Practical problems/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sets/Sets and their representations/+page.svelte": {
@@ -2584,7 +2603,7 @@
     "src": "src/routes/notes/maths/Sets/Sets and their representations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_Practice.js",
       "_common.js",
@@ -2605,7 +2624,7 @@
     "src": "src/routes/notes/maths/Sets/Sets and their representations/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sets/Subsets/+page.svelte": {
@@ -2613,14 +2632,14 @@
     "src": "src/routes/notes/maths/Sets/Subsets/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js",
       "_constants.js"
     ],
     "css": [
       "_app/immutable/assets/_page-58267112.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2629,7 +2648,7 @@
     "src": "src/routes/notes/maths/Sets/Subsets/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sets/The empty set/+page.svelte": {
@@ -2637,7 +2656,7 @@
     "src": "src/routes/notes/maths/Sets/The empty set/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_Practice.js",
       "_common.js",
@@ -2656,7 +2675,7 @@
     "src": "src/routes/notes/maths/Sets/The empty set/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sets/Universal set/+page.svelte": {
@@ -2664,14 +2683,14 @@
     "src": "src/routes/notes/maths/Sets/Universal set/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
       "_app/immutable/assets/_page-58267112.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2680,7 +2699,7 @@
     "src": "src/routes/notes/maths/Sets/Universal set/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Sets/Venn diagrams/+page.svelte": {
@@ -2688,13 +2707,13 @@
     "src": "src/routes/notes/maths/Sets/Venn diagrams/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
       "_app/immutable/assets/_page-04124470.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2703,7 +2722,7 @@
     "src": "src/routes/notes/maths/Sets/Venn diagrams/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Statistics/Analysis of frequency distributions/+page.svelte": {
@@ -2711,13 +2730,13 @@
     "src": "src/routes/notes/maths/Statistics/Analysis of frequency distributions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2726,7 +2745,7 @@
     "src": "src/routes/notes/maths/Statistics/Analysis of frequency distributions/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Statistics/Mean deviation/+page.svelte": {
@@ -2734,13 +2753,13 @@
     "src": "src/routes/notes/maths/Statistics/Mean deviation/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2749,7 +2768,7 @@
     "src": "src/routes/notes/maths/Statistics/Mean deviation/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Statistics/Range/+page.svelte": {
@@ -2757,12 +2776,12 @@
     "src": "src/routes/notes/maths/Statistics/Range/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2771,7 +2790,7 @@
     "src": "src/routes/notes/maths/Statistics/Range/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Statistics/Variance and standard deviation/+page.svelte": {
@@ -2779,13 +2798,13 @@
     "src": "src/routes/notes/maths/Statistics/Variance and standard deviation/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2794,7 +2813,7 @@
     "src": "src/routes/notes/maths/Statistics/Variance and standard deviation/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Straight lines/Distance of a point from a line/+page.svelte": {
@@ -2802,13 +2821,13 @@
     "src": "src/routes/notes/maths/Straight lines/Distance of a point from a line/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2817,7 +2836,7 @@
     "src": "src/routes/notes/maths/Straight lines/Distance of a point from a line/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Straight lines/General equation of a line/+page.svelte": {
@@ -2825,12 +2844,12 @@
     "src": "src/routes/notes/maths/Straight lines/General equation of a line/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2839,7 +2858,7 @@
     "src": "src/routes/notes/maths/Straight lines/General equation of a line/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Straight lines/Slope of a line/+page.svelte": {
@@ -2847,13 +2866,13 @@
     "src": "src/routes/notes/maths/Straight lines/Slope of a line/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2862,7 +2881,7 @@
     "src": "src/routes/notes/maths/Straight lines/Slope of a line/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Straight lines/Various forms of the equation of a line/+page.svelte": {
@@ -2870,13 +2889,13 @@
     "src": "src/routes/notes/maths/Straight lines/Various forms of the equation of a line/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2885,7 +2904,7 @@
     "src": "src/routes/notes/maths/Straight lines/Various forms of the equation of a line/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Three dimensional geometry/Angle between a line and a plane/+page.svelte": {
@@ -2893,12 +2912,12 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Angle between a line and a plane/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2907,7 +2926,7 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Angle between a line and a plane/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Three dimensional geometry/Angle between two lines/+page.svelte": {
@@ -2915,12 +2934,12 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Angle between two lines/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2929,7 +2948,7 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Angle between two lines/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Three dimensional geometry/Angle between two planes/+page.svelte": {
@@ -2937,13 +2956,13 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Angle between two planes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2952,7 +2971,7 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Angle between two planes/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Three dimensional geometry/Coplanarity of two lines/+page.svelte": {
@@ -2960,13 +2979,13 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Coplanarity of two lines/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2975,7 +2994,7 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Coplanarity of two lines/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/+page.svelte": {
@@ -2983,12 +3002,12 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2997,7 +3016,7 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Three dimensional geometry/Distance of a point from a plane/+page.svelte": {
@@ -3005,13 +3024,13 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Distance of a point from a plane/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3020,7 +3039,7 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Distance of a point from a plane/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Three dimensional geometry/Equation of a line in space/+page.svelte": {
@@ -3028,13 +3047,13 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Equation of a line in space/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3043,7 +3062,7 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Equation of a line in space/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Three dimensional geometry/Plane/+page.svelte": {
@@ -3051,13 +3070,13 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Plane/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3066,7 +3085,7 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Plane/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Three dimensional geometry/Shortest distance between two lines/+page.svelte": {
@@ -3074,13 +3093,13 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Shortest distance between two lines/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3089,7 +3108,7 @@
     "src": "src/routes/notes/maths/Three dimensional geometry/Shortest distance between two lines/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Trigonometric functions/Angles/+page.svelte": {
@@ -3097,13 +3116,13 @@
     "src": "src/routes/notes/maths/Trigonometric functions/Angles/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3112,7 +3131,7 @@
     "src": "src/routes/notes/maths/Trigonometric functions/Angles/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Trigonometric functions/Trigonometric equations/+page.svelte": {
@@ -3120,13 +3139,13 @@
     "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric equations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3135,7 +3154,7 @@
     "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric equations/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Trigonometric functions/Trigonometric functions/+page.svelte": {
@@ -3143,13 +3162,13 @@
     "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric functions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3158,7 +3177,7 @@
     "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric functions/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.svelte": {
@@ -3166,13 +3185,13 @@
     "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3181,7 +3200,7 @@
     "src": "src/routes/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Vector algebra/Addition of vectors/+page.svelte": {
@@ -3189,12 +3208,12 @@
     "src": "src/routes/notes/maths/Vector algebra/Addition of vectors/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3203,7 +3222,7 @@
     "src": "src/routes/notes/maths/Vector algebra/Addition of vectors/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Vector algebra/Multiplication of a vector by a scalar/+page.svelte": {
@@ -3211,13 +3230,13 @@
     "src": "src/routes/notes/maths/Vector algebra/Multiplication of a vector by a scalar/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3226,7 +3245,7 @@
     "src": "src/routes/notes/maths/Vector algebra/Multiplication of a vector by a scalar/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Vector algebra/Product of two vectors/+page.svelte": {
@@ -3234,13 +3253,13 @@
     "src": "src/routes/notes/maths/Vector algebra/Product of two vectors/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3249,7 +3268,7 @@
     "src": "src/routes/notes/maths/Vector algebra/Product of two vectors/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Vector algebra/Some basic concepts/+page.svelte": {
@@ -3257,13 +3276,13 @@
     "src": "src/routes/notes/maths/Vector algebra/Some basic concepts/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3272,7 +3291,7 @@
     "src": "src/routes/notes/maths/Vector algebra/Some basic concepts/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/maths/Vector algebra/Types of vectors/+page.svelte": {
@@ -3280,13 +3299,13 @@
     "src": "src/routes/notes/maths/Vector algebra/Types of vectors/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_constants.js",
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3295,29 +3314,7 @@
     "src": "src/routes/notes/maths/Vector algebra/Types of vectors/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
-    ]
-  },
-  "src/routes/notes/maths/conic/+page.svelte": {
-    "file": "entries/pages/notes/maths/conic/_page.svelte.js",
-    "src": "src/routes/notes/maths/conic/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index.js",
-      "_stores2.js",
-      "_stores.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-03d834cb.css",
-      "_app/immutable/assets/Canvas-8b73df08.css"
-    ]
-  },
-  "src/routes/notes/maths/conic/+page.js": {
-    "file": "entries/pages/notes/maths/conic/_page.js",
-    "src": "src/routes/notes/maths/conic/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/notes/quantum/+page.svelte": {
@@ -3325,7 +3322,7 @@
     "src": "src/routes/notes/quantum/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_stores.js",
       "_constants.js",
@@ -3336,7 +3333,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-937bda07.css",
-      "_app/immutable/assets/Practice-7b5f67df.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3345,7 +3342,7 @@
     "src": "src/routes/notes/quantum/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/routes/practice/+page.svelte": {
@@ -3353,7 +3350,7 @@
     "src": "src/routes/practice/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores3.js",
       "_Practice.js"
     ],
@@ -3367,43 +3364,52 @@
     "src": "src/routes/practice/+page.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index.js"
     ]
   },
-  ".svelte-kit/build/hooks.js": {
-    "file": "chunks/hooks.js",
-    "src": ".svelte-kit/build/hooks.js",
-    "isDynamicEntry": true
+  ".svelte-kit/generated/server-internal.js": {
+    "file": "internal.js",
+    "src": ".svelte-kit/generated/server-internal.js",
+    "isEntry": true,
+    "imports": [
+      "_server-internal.js"
+    ]
   },
   "_index.js": {
     "file": "chunks/index.js"
   },
   "_index2.js": {
-    "file": "chunks/index2.js"
+    "file": "chunks/index2.js",
+    "imports": [
+      "_index3.js"
+    ]
+  },
+  "_server-internal.js": {
+    "file": "chunks/server-internal.js",
+    "imports": [
+      "_index3.js"
+    ]
   },
   "_index3.js": {
-    "file": "chunks/index3.js",
-    "imports": [
-      "_index.js"
-    ]
+    "file": "chunks/index3.js"
   },
   "_stores.js": {
     "file": "chunks/stores.js",
     "imports": [
-      "_index.js"
+      "_index3.js"
     ]
   },
   "_stores2.js": {
     "file": "chunks/stores2.js",
     "imports": [
-      "_index3.js"
+      "_index2.js"
     ]
   },
   "_Presenter.js": {
     "file": "chunks/Presenter.js",
     "imports": [
-      "_index.js",
-      "_index3.js"
+      "_index3.js",
+      "_index2.js"
     ],
     "css": [
       "_app/immutable/assets/Presenter-e5ac07bf.css",
@@ -3413,7 +3419,7 @@
   "_Select.js": {
     "file": "chunks/Select.js",
     "imports": [
-      "_index.js"
+      "_index3.js"
     ],
     "css": [
       "_app/immutable/assets/Select-346592cf.css"
@@ -3422,31 +3428,33 @@
   "_stores3.js": {
     "file": "chunks/stores3.js",
     "imports": [
-      "_index3.js"
+      "_index2.js"
     ]
   },
   "_Image.svelte_svelte_type_style_lang.js": {
     "file": "chunks/Image.svelte_svelte_type_style_lang.js",
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js"
     ],
     "css": [
       "_app/immutable/assets/Image-e56d17df.css"
     ]
   },
-  "_Image.js": {
-    "file": "chunks/Image.js",
+  "_H3.js": {
+    "file": "chunks/H3.js",
     "imports": [
-      "_index.js",
-      "_stores2.js",
-      "_Image.svelte_svelte_type_style_lang.js"
+      "_index3.js",
+      "_stores2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/H3-27840129.css"
     ]
   },
   "_Papers.js": {
     "file": "chunks/Papers.js",
     "imports": [
-      "_index.js"
+      "_index3.js"
     ],
     "css": [
       "_app/immutable/assets/Papers-e2c1dcda.css"
@@ -3455,7 +3463,7 @@
   "_Link.js": {
     "file": "chunks/Link.js",
     "imports": [
-      "_index.js"
+      "_index3.js"
     ],
     "css": [
       "_app/immutable/assets/Link-15b705f6.css"
@@ -3467,32 +3475,30 @@
   "_Practice.js": {
     "file": "chunks/Practice.js",
     "imports": [
-      "_index.js",
-      "_index3.js"
+      "_index3.js",
+      "_index2.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-7b5f67df.css"
+      "_app/immutable/assets/Practice-a30674f0.css"
     ]
   },
   "_common.js": {
     "file": "chunks/common.js"
   },
-  "_H3.js": {
-    "file": "chunks/H3.js",
-    "imports": [
-      "_index.js",
-      "_stores2.js"
-    ],
-    "css": [
-      "_app/immutable/assets/H3-27840129.css"
-    ]
-  },
   "_H2.js": {
     "file": "chunks/H2.js",
     "imports": [
-      "_index.js",
+      "_index3.js",
       "_stores2.js",
       "_H3.js"
+    ]
+  },
+  "_Image.js": {
+    "file": "chunks/Image.js",
+    "imports": [
+      "_index3.js",
+      "_stores2.js",
+      "_Image.svelte_svelte_type_style_lang.js"
     ]
   },
   "_quadratic.js": {

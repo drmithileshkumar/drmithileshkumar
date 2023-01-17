@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as subscribe, v as validate_component, e as escape } from "../../../chunks/index.js";
+import { c as create_ssr_component, d as subscribe, v as validate_component, e as escape } from "../../../chunks/index3.js";
 /* empty css                                                     *//* empty css                                                  */import { a as selectedChapter, s as selectedGenerator } from "../../../chunks/stores3.js";
 import { P as Practice } from "../../../chunks/Practice.js";
 const css = {

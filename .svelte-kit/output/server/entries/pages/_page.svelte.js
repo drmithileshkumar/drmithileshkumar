@@ -1,10 +1,10 @@
-import { c as create_ssr_component, d as subscribe, f as add_attribute, e as escape, v as validate_component, h as each } from "../../chunks/index.js";
+import { c as create_ssr_component, d as subscribe, f as add_attribute, e as escape, v as validate_component, h as each } from "../../chunks/index3.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../chunks/stores2.js";
 /* empty css                                                   *//* empty css                                                  */import { I as Item, P, L as Li } from "../../chunks/Image.svelte_svelte_type_style_lang.js";
-import { I as Image } from "../../chunks/Image.js";
+import { H as H3 } from "../../chunks/H3.js";
 const Notes_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: ".notes.svelte-1v7nhrf{font-size:1.2em;background-color:green;color:white;padding:0.5em 1em;border-radius:10px}article.svelte-1v7nhrf{position:relative;padding:0.5em;max-height:400px;overflow:hidden;padding:1em 1em;background-color:rgba(110, 120, 150, 0.3);border-radius:10px}.absolute.svelte-1v7nhrf{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1v7nhrf::-webkit-scrollbar{width:0;height:0}.pad.svelte-1v7nhrf{min-height:100px}.thumbnail.svelte-1v7nhrf{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1v7nhrf{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
+  code: ".notes.svelte-1ppn2dj{font-size:1.2em;background-color:green;color:white;padding:0.5em 1em;border-radius:10px}article.svelte-1ppn2dj{position:relative;padding:0.5em;max-height:400px;overflow:hidden;padding:1em 1em;background-color:rgba(110, 120, 150, 0.3);border-radius:10px}.absolute.svelte-1ppn2dj{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1ppn2dj::-webkit-scrollbar{width:0;height:0}.thumbnail.svelte-1ppn2dj{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1ppn2dj{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
   map: null
 };
 const Notes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -27,177 +27,100 @@ const Notes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `<a href="${"/notes/maths/Sets/Introduction"}" class="${"notes svelte-1v7nhrf"}">Lecture of the day</a>
-    <article class="${["svelte-1v7nhrf", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1v7nhrf"}"><p class="${"statement svelte-1v7nhrf"}">${escape(`\\(\\{x:x\\)`)} is the foundation of mathematics${escape(`\\(\\}\\)`)}</p></div>` : ``}
+  return `<a href="${"/notes/maths/Sets/Introduction"}" class="${"notes svelte-1ppn2dj"}">Lecture of the day</a>
+    <article class="${["svelte-1ppn2dj", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1ppn2dj"}"><p class="${"statement svelte-1ppn2dj"}">The empty set
+                </p></div>` : ``}
         ${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
         <section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
-          return `There are various branches of mathematics:
+          return `The simplest possible set is one that does not contain any element at all.
                 `;
         }
       })}`;
     }
   })}
-            <table><tr><td>${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
+            ${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 2 }, {}, {
+      return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 1 }, {}, {
         default: () => {
-          return `Set theory connects them all.`;
+          return `A set which does not contain any element is called the <strong>empty</strong> set.
+                `;
         }
       })}`;
     }
-  })}</td>
-                    <td><ul style="${"border-left: 1px solid"}">${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
+  })}
+            <ul>${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
     default: () => {
-      return `${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 2 }, {}, {
         default: () => {
-          return `<strong>Algebra:</strong> Numbers, Sequences and Series, Quadratic equations, Linear equations
-                                `;
-        }
-      })}
-                                ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
-        default: () => {
-          return `<strong>Geometry:</strong> Lines, Arcs, Quadrilaterals, Circles
-                                `;
-        }
-      })}
-                                ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
-        default: () => {
-          return `<strong>Co-ordinate Geometry:</strong> Point, Distance, Lines, Section Formula
-                                `;
-        }
-      })}
-                                ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
-        default: () => {
-          return `<strong>Trigonometry</strong>`;
-        }
-      })}
-                                ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
-        default: () => {
-          return `<strong>Statistics and Probability</strong>`;
-        }
-      })}
-                                ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
-        default: () => {
-          return `<strong>Vector algebra</strong>`;
-        }
-      })}
-                                ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
-        default: () => {
-          return `<strong>Calculus</strong>`;
+          return `An empty set is also called the <em>null set</em> or the <em>void set</em>.
+                `;
         }
       })}`;
     }
-  })}</ul></td></tr></table>
+  })}
             ${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 3 }, {}, {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 3 }, {}, {
         default: () => {
-          return `Set theory is the starting point in all these branches and many more. In set theory, we study about sets. The concept of sets is even more basic than the concept of numbers. Sets conceptualize the properties of objects.
+          return `An empty set is denoted either as ${escape("{ }")} or \\(\\varphi\\) (read as &quot;phi&quot;).
                 `;
         }
       })}`;
     }
-  })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
+  })}</ul></section>
+        <section>${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 4 }, {}, {
+      return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 4 }, {}, {
         default: () => {
-          return `Consider \\(1, 3, 5, 7, \\dots\\) and \\(2, 4, 6, 8, \\dots\\) In the first group, only odd numbers are appearing and in the second group, only even numbers are appearing. We say that \\(1, 3, 5, 7,\\dots\\) is a collection of odd numbers and \\(2, 4, 6, 8, \\dots\\) is a collection of even numbers. This chapter is about the study of collection of objects that satisfy some property.
+          return `Examples
                 `;
-        }
-      })}
-                ${validate_component(Image, "Image").$$render($$result, { isActive: 4 }, {}, {
-        default: () => {
-          return `<img src="${"/notes/maths/sets/introduction/oddeven.svg"}" alt="${""}">`;
         }
       })}`;
     }
   })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
+            <ul>${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 5 }, {}, {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 5 }, {}, {
         default: () => {
-          return `Such kind of collections are called <em>sets</em>. 
-                `;
+          return `The set of positive numbers less than 0 contains no element. Hence, it is an empty set
+                    `;
         }
       })}`;
     }
   })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+                ${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 6 }, {}, {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 6 }, {}, {
         default: () => {
-          return `We&#39;ll start with defining what is a set and see a few examples. After that we&#39;ll learn two ways to write sets. 
-                    ${escape(`\\[S = \\{1, 3, 5, 7,\\dots\\} = \\{x:x\\text{ is odd}\\}\\]`)}`;
+          return `The set of apples in an empty basket is an empty set.
+                    `;
         }
       })}`;
     }
   })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
+                ${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 7 }, {}, {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 7 }, {}, {
         default: () => {
-          return `Then, we&#39;ll define some special types of sets, like empty sets, finite and infinite sets, power and universal sets.
-                `;
+          return `Set of prime numbers divisible by 4 is an empty set.
+                    `;
         }
       })}`;
     }
   })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
+                ${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 8 }, {}, {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 8 }, {}, {
         default: () => {
-          return `After that we&#39;ll learn how to create new sets from a given set using various operations that will feel like addition or subtraction. Finally, we&#39;ll conclude the chapter by using the learnt concepts to solve problems like one described below.
-                `;
+          return `The set of real roots of the equation \\(x^2 + 1 = 0\\) is an empty set.
+                    `;
         }
       })}`;
     }
-  })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
-    default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 9 }, {}, {
-        default: () => {
-          return `Consider the following problem.
-                `;
-        }
-      })}
-                ${validate_component(P, "P").$$render($$result, { isActive: 9, class: "question" }, {}, {
-        default: () => {
-          return `In an IIT sports event, 50 medals were awarded in race, 30 in football and 25 in cricket. If only 60 students got any medal and only 5 students got medals in all events, how many received medals in exactly two of the events?
-                `;
-        }
-      })}`;
-    }
-  })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
-    default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 10 }, {}, {
-        default: () => {
-          return `This simple problem is tricky to solve without using the language of <strong>Sets</strong>.
-                `;
-        }
-      })}
-                ${validate_component(Image, "Image").$$render($$result, { isActive: 10 }, {}, {
-        default: () => {
-          return `<img src="${"/notes/maths/sets/introduction/example.svg"}" alt="${""}">`;
-        }
-      })}`;
-    }
-  })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
-    default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 11 }, {}, {
-        default: () => {
-          return `Concepts learnt in this chapter will be useful in other chapters like relations and functions, trigonometry, sequences and series, combinatorics, calculus and probability.
-                `;
-        }
-      })}`;
-    }
-  })}
-            ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1v7nhrf"}"></div>` : ``}</section>
+  })}</ul></section>
     </article>`;
 });
 const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -214,7 +137,7 @@ const Twitter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Youtube_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".videos.svelte-tmnj2f{display:flex;flex-direction:row;gap:1em;flex-wrap:wrap;margin-bottom:2em}",
+  code: ".videos.svelte-7b8gbt{display:flex;flex-direction:row;gap:1em;flex-wrap:nowrap;margin-bottom:2em;background-color:rgba(110, 120, 150, 0.3);padding:1em;border-radius:10px;overflow-x:auto}",
   map: null
 };
 const Youtube = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -222,13 +145,25 @@ const Youtube = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     {
       title: "Set : Introduction",
       src: "https://www.youtube.com/embed/Ii1HysDxd5U",
-      width: "420",
-      height: "300"
+      width: "210",
+      height: "150"
+    },
+    {
+      title: "Set : Sets and their representation",
+      src: "https://www.youtube.com/embed/kj1VeKqMlJc",
+      width: "210",
+      height: "150"
+    },
+    {
+      title: "Set : The empty set",
+      src: "https://www.youtube.com/embed/-VP7utgjA8I",
+      width: "210",
+      height: "150"
     }
   ];
   $$result.css.add(css);
   return `<h1><a href="${"https://www.youtube.com/@drmithilesh"}">Youtube Channel</a></h1>
-<div class="${"videos svelte-tmnj2f"}">${each(videos, (video) => {
+<div class="${"videos svelte-7b8gbt"}">${each(videos, (video) => {
     return `<iframe${add_attribute("width", video.width, 0)}${add_attribute("height", video.height, 0)}${add_attribute("src", video.src, 0)}${add_attribute("title", video.title, 0)} frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe>`;
   })}
 </div>`;
