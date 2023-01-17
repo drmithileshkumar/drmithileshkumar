@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as subscribe, h as each, f as add_attribute, e as escape, i as set_store_value } from "./index3.js";
+import { c as create_ssr_component, d as subscribe, h as each, e as escape, i as set_store_value, f as add_attribute } from "./index3.js";
 /* empty css                                      */import { w as writable } from "./index2.js";
 const lineWidth = writable(2);
 const strokeColor = writable("red");
@@ -6,7 +6,7 @@ const globalCompositeOperation = writable("source-over");
 const drawMode = writable("pen");
 const clearAll = writable(false);
 const css$2 = {
-  code: ".colors.svelte-1t5pp56.svelte-1t5pp56{display:flex;gap:0.2em;align-items:center;flex-direction:row}.lineWidth.svelte-1t5pp56.svelte-1t5pp56{display:flex;align-items:center}.shapes.svelte-1t5pp56.svelte-1t5pp56{display:flex;flex-direction:row;align-items:center}.shapes.svelte-1t5pp56 span.svelte-1t5pp56{display:flex;align-items:center;padding:0.2em}.colors.svelte-1t5pp56 button.svelte-1t5pp56{width:2em;height:2em;padding:0em;align-items:center;justify-content:center}",
+  code: ".canvasbar.svelte-twg6ow.svelte-twg6ow{display:flex;align-items:center;background:rgba(0, 0, 0, 0.1);padding:0.2em;border-radius:10px;box-shadow:0 0 1px gray}.colors.svelte-twg6ow.svelte-twg6ow{display:flex;gap:0.2em;align-items:center;flex-direction:row}.lineWidth.svelte-twg6ow.svelte-twg6ow{display:flex;align-items:center}.shapes.svelte-twg6ow.svelte-twg6ow{display:flex;flex-direction:row;align-items:center}.shapes.svelte-twg6ow span.svelte-twg6ow{display:flex;align-items:center;padding:0.2em}.colors.svelte-twg6ow button.svelte-twg6ow{width:2em;height:2em;padding:0em;align-items:center;justify-content:center}",
   map: null
 };
 const CanvasBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -27,24 +27,21 @@ const CanvasBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   $$unsubscribe_globalCompositeOperation();
   $$unsubscribe_drawMode();
   $$unsubscribe_clearAll();
-  return `<div class="${"shapes svelte-1t5pp56"}"><span class="${"svelte-1t5pp56"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 -5 20 10"}"><line x1="${"0%"}" y1="${"0%"}" x2="${"100%"}" y2="${"0%"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></line>${$drawMode === "line" ? `<line x1="${"0%"}" y1="${"0%"}" x2="${"100%"}" y2="${"0%"}" stroke="${"black"}" stroke-width="${"2"}" fill="${"none"}"></line>` : ``}</svg></span>
-    <span class="${"svelte-1t5pp56"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 0 20 20"}"><rect x="${"2"}" y="${"2"}" width="${"16"}" height="${"16"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></rect>${$drawMode === "rect" ? `<rect x="${"4"}" y="${"4"}" width="${"12"}" height="${"12"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></rect>` : ``}</svg></span>
-    <span class="${"svelte-1t5pp56"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 0 20 10"}"><circle cx="${"50%"}" cy="${"50%"}" r="${"8"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></circle>${$drawMode === "circle" ? `<circle cx="${"50%"}" cy="${"50%"}" r="${"6"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></circle>` : ``}</svg></span></div>
-
-<div class="${"colors svelte-1t5pp56"}">${each(colors, (color) => {
-    return `<button style="${"background: " + escape(color, true) + "; border: white " + escape($strokeColor === color ? "5px double" : "solid", true) + "; border-radius: 50%; padding: " + escape(color === "eraser" ? 0 : "", true) + ";"}" class="${"svelte-1t5pp56"}">${color === "eraser" ? `<svg width="${"100%"}" height="${"100%"}" viewBox="${"0 0 20 40"}"><g transform="${"rotate(-45 10 20) translate(0 5)"}"><rect x="${"0"}" y="${"0"}" width="${"20"}" height="${"10"}" stroke="${"black"}" stroke-width="${"1"}"></rect><rect x="${"0"}" y="${"10"}" width="${"20"}" height="${"20"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></rect></g></svg>` : ``}
-        </button>`;
+  return `<div class="${"canvasbar svelte-twg6ow"}"><div class="${"shapes svelte-twg6ow"}"><span class="${"svelte-twg6ow"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 -5 20 10"}"><line x1="${"0%"}" y1="${"0%"}" x2="${"100%"}" y2="${"0%"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></line>${$drawMode === "line" ? `<line x1="${"0%"}" y1="${"0%"}" x2="${"100%"}" y2="${"0%"}" stroke="${"black"}" stroke-width="${"2"}" fill="${"none"}"></line>` : ``}</svg></span>
+        <span class="${"svelte-twg6ow"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 0 20 20"}"><rect x="${"2"}" y="${"2"}" width="${"16"}" height="${"16"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></rect>${$drawMode === "rect" ? `<rect x="${"4"}" y="${"4"}" width="${"12"}" height="${"12"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></rect>` : ``}</svg></span>
+        <span class="${"svelte-twg6ow"}"><svg width="${"20px"}" height="${"20px"}" viewBox="${"0 0 20 10"}"><circle cx="${"50%"}" cy="${"50%"}" r="${"8"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></circle>${$drawMode === "circle" ? `<circle cx="${"50%"}" cy="${"50%"}" r="${"6"}" stroke="${"black"}" stroke-width="${"1"}" fill="${"none"}"></circle>` : ``}</svg></span></div>
+    
+    <div class="${"colors svelte-twg6ow"}">${each(colors, (color) => {
+    return `<button style="${"background: " + escape(color, true) + "; border: white " + escape($strokeColor === color ? "5px double" : "solid", true) + "; border-radius: 50%; padding: " + escape(color === "eraser" ? 0 : "", true) + ";"}" class="${"svelte-twg6ow"}">${color === "eraser" ? `<svg width="${"20"}" height="${"20"}" viewBox="${"0 0 20 40"}"><g transform="${"rotate(-45 10 20) translate(0 5)"}"><rect x="${"0"}" y="${"0"}" width="${"20"}" height="${"10"}" stroke="${"black"}" stroke-width="${"1"}"></rect><rect x="${"0"}" y="${"10"}" width="${"20"}" height="${"20"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></rect></g></svg>` : ``}
+            </button>`;
   })}
-    
-    <span class="${"material-icons"}" style="${"cursor:pointer;"}">clear
-    </span></div>
-<div class="${"lineWidth svelte-1t5pp56"}">
-    <svg width="${"20"}" height="${"20"}" viewBox="${"0 0 20 20"}" style="${"cursor:pointer"}">${$lineWidth === 2 ? `<circle cx="${"10"}" cy="${"10"}" r="${"4"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></circle>` : ``}<circle cx="${"10"}" cy="${"10"}" r="${"2"}" fill="${"black"}"></circle></svg>
-    
-    <svg width="${"20"}" height="${"20"}" viewBox="${"0 0 20 20"}" style="${"cursor:pointer"}">${$lineWidth === 4 ? `<circle cx="${"10"}" cy="${"10"}" r="${"6"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></circle>` : ``}<circle cx="${"10"}" cy="${"10"}" r="${"4"}" fill="${"black"}"></circle></svg>
-    
-    <svg width="${"20"}" height="${"20"}" viewBox="${"0 0 20 20"}" style="${"cursor:pointer"}">${$lineWidth === 20 ? `<circle cx="${"10"}" cy="${"10"}" r="${"9"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></circle>` : ``}<circle cx="${"10"}" cy="${"10"}" r="${"7"}" fill="${"black"}"></circle></svg>
-    <label><input style="${"width: 4em; height: 1em; padding-left: 0.5em; padding-right: 0.5em;"}" type="${"number"}" step="${"0.1"}"${add_attribute("value", $lineWidth, 0)}></label></div>`;
+        
+        <span class="${"material-icons"}" style="${"cursor:pointer;"}">clear
+        </span></div>
+    <div class="${"lineWidth svelte-twg6ow"}"><svg width="${"20"}" height="${"20"}" viewBox="${"0 0 20 20"}" style="${"cursor:pointer"}">${$lineWidth === 2 ? `<circle cx="${"10"}" cy="${"10"}" r="${"4"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></circle>` : ``}<circle cx="${"10"}" cy="${"10"}" r="${"2"}" fill="${"black"}"></circle></svg>
+        <svg width="${"20"}" height="${"20"}" viewBox="${"0 0 20 20"}" style="${"cursor:pointer"}">${$lineWidth === 4 ? `<circle cx="${"10"}" cy="${"10"}" r="${"6"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></circle>` : ``}<circle cx="${"10"}" cy="${"10"}" r="${"4"}" fill="${"black"}"></circle></svg>
+        <svg width="${"20"}" height="${"20"}" viewBox="${"0 0 20 20"}" style="${"cursor:pointer"}">${$lineWidth === 20 ? `<circle cx="${"10"}" cy="${"10"}" r="${"9"}" fill="${"none"}" stroke="${"black"}" stroke-width="${"1"}"></circle>` : ``}<circle cx="${"10"}" cy="${"10"}" r="${"7"}" fill="${"black"}"></circle></svg>
+        </div></div>`;
 });
 const css$1 = {
   code: "canvas.svelte-ot4q75{cursor:crosshair;-webkit-touch-callout:none !important;-webkit-user-select:none !important;-webkit-tap-highlight-color:transparent !important;-moz-user-select:-moz-none;-ms-user-select:none;touch-action:none !important;user-select:none !important;-webkit-user-drag:none}",

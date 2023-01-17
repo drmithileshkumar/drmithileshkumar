@@ -2,8 +2,8 @@ import * as universal from '../entries/pages/notes/maths/Matrices/Matrix/_page.j
 
 export const index = 86;
 export const component = async () => (await import('../entries/pages/notes/maths/Matrices/Matrix/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/notes/maths/Matrices/Matrix/_page.svelte-62eba61a.js';
+export const file = '_app/immutable/components/pages/notes/maths/Matrices/Matrix/_page.svelte-bb2b798e.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/notes/maths/Matrices/Matrix/_page.svelte-62eba61a.js","_app/immutable/chunks/index-9b74571d.js","_app/immutable/chunks/stores-6ae268f7.js","_app/immutable/chunks/index-bf2387e6.js","_app/immutable/chunks/stores-406c7d31.js","_app/immutable/chunks/singletons-956b34b2.js","_app/immutable/modules/pages/notes/maths/Matrices/Matrix/_page.js-2e5c62be.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-2e150106.js"];
+export const imports = ["_app/immutable/components/pages/notes/maths/Matrices/Matrix/_page.svelte-bb2b798e.js","_app/immutable/chunks/index-718f7f6d.js","_app/immutable/chunks/stores-4eaf4443.js","_app/immutable/chunks/index-bc7d8f45.js","_app/immutable/chunks/stores-5bc72a2f.js","_app/immutable/chunks/singletons-4fd20d80.js","_app/immutable/modules/pages/notes/maths/Matrices/Matrix/_page.js-2e5c62be.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-1c4cdf8d.js"];
 export const stylesheets = ["_app/immutable/assets/Practice-ceaad90d.css","_app/immutable/assets/Message-1e964222.css"];
 export const fonts = [];

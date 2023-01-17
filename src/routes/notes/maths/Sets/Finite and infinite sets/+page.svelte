@@ -31,7 +31,7 @@
 	onMount(() => {
 		$selectedChapter = 'Sets';
 		$selectedSection = 'Finite and infinite sets';
-		$slideCounter = 27;
+		$slideCounter = 30;
 		$currentSlide = -2;
 		MathJax.typeset();
 	});
@@ -116,7 +116,11 @@
 <article class:absolute={$presentationMode} bind:this={$presentation}>
 	{#if $presentationMode && $currentSlide === -2}
 		<div class="thumbnail">
-			<p class="statement">Why is the set of primes infinite?</p>
+			<div class="statement">
+				<p>
+					Why is the set of primes infinite?
+				</p>
+			</div>
 		</div>
 	{/if}
     <div class="material {$presentationMode?'':'flex'}">
@@ -223,25 +227,34 @@
                     <Item item={20}>
                         <Li isActive={20}>The size of an infinite set is infinity (\(\infty\)).</Li>
                     </Item>
+					<Item item={21}>
+                        <Li isActive={21}>A complete roster form can not be provided for an infinite set.</Li>
+                    </Item>
+					<Item item={22}>
+                        <Li isActive={22}>Some websites call infinite sets as <strong>uncountable</strong>. That is <span style="color:red; font-weight:bold;">wrong</span>. Finite sets are definitely countable. Infinite sets <em>can</em> be countable or uncountable. The concept of countability is related to one-to-one correspondance with a subset of natural numbers. Key thing to keep in mind is that the process of counting an infinite set can not end.</Li>
+                    </Item>
                 </ul>
             </section>
     
             <section>
-                <Item item={21}>
-                    <H3 class="examples" isActive={21}>Examples</H3>
+                <Item item={23}>
+                    <H3 class="examples" isActive={23}>Examples</H3>
                 </Item>
                 <ul>
-                    <Item item={22}>
-                        <Li isActive={22}>The set of natural numbers \(N\) is an infinite set.</Li>
-                    </Item>
-                    <Item item={23}>
-                        <Li isActive={23}>The set of numbers divisible by \(2\) is an infinite set.</Li>
-                    </Item>
                     <Item item={24}>
-                        <Li isActive={24}>The set of real numbers is an infinite set.</Li>
+                        <Li isActive={24}>The set of natural numbers \(N\) is an infinite set. It can be written in the Roster form as {`\\(\\{1, 2, 3,\\dots\\}\\)`}. The \(\dots\) denotes that the pattern goes on. Here the pattern is that for any \(n\in N\), the number \(n+1\) is also in \(N\). An unending process of counting of elements of \(N\) can be provided, hence it is a countable set.</Li>
                     </Item>
                     <Item item={25}>
-                        <Li isActive={25}>The set of prime numbers is an infinite set.</Li>
+                        <Li isActive={25}>The set \(E\) of numbers divisible by \(2\) is an infinite set. It can be written in the Roster form as {`\\(\\{2, 4, 6,\\dots\\}\\)`}. The \(\dots\) denotes that the pattern goes on. Here the pattern is that for any \(n\in E\), the number \(n+2\) is also in \(E\). An unending process of counting of elements of \(E\) can be provided, hence it is a countable set.</Li>
+                    </Item>
+					<Item item={26}>
+                        <Li isActive={26}>The set \(Z\) of integers is an infinite set. It can be written in the Roster form as {`\\(\\{\\dots, -3, -2, -1, 0, 1, 2, 3,\\dots\\}\\)`}. The \(\dots\) denotes that the pattern goes on. Here the pattern is that for any \(n\in Z\), both numbers \(n-1\) and \(n+1\) belong to \(Z\). An unending process of counting of elements of \(Z\) can be provided, hence it is a countable set. If you imagine the set of natural numbers as an arrow indicating that the numbers keep increasing in one direction, the set of integers would represent a line such that numbers keep on decreasing in one direction and increasing in another direction. To indicate this we have used \(\dots\) at the begining as well as at the end in the Roster form.</Li>
+                    </Item>
+                    <Item item={27}>
+                        <Li isActive={27}>The set of real numbers \(R\) is an infinite set. \(R\) is an uncountable set. Why? The proof is a little complicated. Geog Cantor gave the first proof.</Li>
+                    </Item>
+                    <Item item={28}>
+                        <Li isActive={28}>The set of prime numbers is an infinite set. If we have discovered \(p1, p2,\dots, p_n\) as the first \(n\) primes, then the number \(p1\times p2\times \dots \times p_n + 1\) is either a prime or divisible by a prime larger than \(p_n\). In either case, a prime larger than \(p_n\) exists. Hence, the set of primes must have infinitely many elements.</Li>
                     </Item>
                 </ul>
             </section>
@@ -254,7 +267,7 @@
     </div>
 	
 	<section>
-		<Item item={26}>
+		<Item item={29}>
 			<section>
 				<h2>Practice</h2>
 				<Practice {generateProblem} />
@@ -300,10 +313,11 @@
 	}
 	.statement {
 		background: radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));
-		color: rgb(246, 246, 246);
+		color: red;
 		text-shadow: 1px 1px 3px rgb(4, 4, 4);
 		box-shadow: 1px 1px 3px rgb(129, 128, 128);
 		padding: 1em;
+		background-image: url('/notes/maths/sets/finite/thumbnail.svg');
 	}
     .material {
         display: grid;

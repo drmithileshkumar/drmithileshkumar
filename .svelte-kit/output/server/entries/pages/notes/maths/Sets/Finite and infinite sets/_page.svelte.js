@@ -8,7 +8,7 @@ import { H as H3 } from "../../../../../../chunks/H3.js";
 import { H as H2 } from "../../../../../../chunks/H2.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "article.svelte-swui9i{position:relative;padding:0.5em}.absolute.svelte-swui9i{margin:auto;width:100%;height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-swui9i::-webkit-scrollbar{width:0;height:0}.pad.svelte-swui9i{min-height:150px}.thumbnail.svelte-swui9i{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-swui9i{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}.material.svelte-swui9i{display:grid;grid-template-columns:1fr 1fr}.flex.svelte-swui9i{display:flex}",
+  code: "article.svelte-1xd8vw7{position:relative;padding:0.5em}.absolute.svelte-1xd8vw7{margin:auto;width:100%;height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1xd8vw7::-webkit-scrollbar{width:0;height:0}.pad.svelte-1xd8vw7{min-height:150px}.thumbnail.svelte-1xd8vw7{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1xd8vw7{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:red;text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em;background-image:url('/notes/maths/sets/finite/thumbnail.svg')}.material.svelte-1xd8vw7{display:grid;grid-template-columns:1fr 1fr}.flex.svelte-1xd8vw7{display:flex}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -94,8 +94,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-ykzmzv_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Finite and infinite sets"}"><!-- HEAD_svelte-ykzmzv_END -->`, ""}
-<article class="${["svelte-swui9i", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-swui9i"}"><p class="${"statement svelte-swui9i"}">Why is the set of primes infinite?</p></div>` : ``}
-    <div class="${"material " + escape($presentationMode ? "" : "flex", true) + " svelte-swui9i"}"><div class="${"content"}">${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
+<article class="${["svelte-1xd8vw7", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1xd8vw7"}"><div class="${"statement svelte-1xd8vw7"}"><p>Why is the set of primes infinite?
+				</p></div></div>` : ``}
+    <div class="${"material " + escape($presentationMode ? "" : "flex", true) + " svelte-1xd8vw7"}"><div class="${"content"}">${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
             ${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 0 }, {}, {
@@ -293,40 +294,40 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
+  })}
+					${validate_component(Item, "Item").$$render($$result, { item: 21 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 21 }, {}, {
+        default: () => {
+          return `A complete roster form can not be provided for an infinite set.`;
+        }
+      })}`;
+    }
+  })}
+					${validate_component(Item, "Item").$$render($$result, { item: 22 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 22 }, {}, {
+        default: () => {
+          return `Some websites call infinite sets as <strong>uncountable</strong>. That is <span style="${"color:red; font-weight:bold;"}">wrong</span>. Finite sets are definitely countable. Infinite sets <em>can</em> be countable or uncountable. The concept of countability is related to one-to-one correspondance with a subset of natural numbers. Key thing to keep in mind is that the process of counting an infinite set can not end.`;
+        }
+      })}`;
+    }
   })}</ul></section>
     
-            <section>${validate_component(Item, "Item").$$render($$result, { item: 21 }, {}, {
+            <section>${validate_component(Item, "Item").$$render($$result, { item: 23 }, {}, {
     default: () => {
-      return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 21 }, {}, {
+      return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 23 }, {}, {
         default: () => {
           return `Examples`;
         }
       })}`;
     }
   })}
-                <ul>${validate_component(Item, "Item").$$render($$result, { item: 22 }, {}, {
-    default: () => {
-      return `${validate_component(Li, "Li").$$render($$result, { isActive: 22 }, {}, {
-        default: () => {
-          return `The set of natural numbers \\(N\\) is an infinite set.`;
-        }
-      })}`;
-    }
-  })}
-                    ${validate_component(Item, "Item").$$render($$result, { item: 23 }, {}, {
-    default: () => {
-      return `${validate_component(Li, "Li").$$render($$result, { isActive: 23 }, {}, {
-        default: () => {
-          return `The set of numbers divisible by \\(2\\) is an infinite set.`;
-        }
-      })}`;
-    }
-  })}
-                    ${validate_component(Item, "Item").$$render($$result, { item: 24 }, {}, {
+                <ul>${validate_component(Item, "Item").$$render($$result, { item: 24 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 24 }, {}, {
         default: () => {
-          return `The set of real numbers is an infinite set.`;
+          return `The set of natural numbers \\(N\\) is an infinite set. It can be written in the Roster form as ${escape(`\\(\\{1, 2, 3,\\dots\\}\\)`)}. The \\(\\dots\\) denotes that the pattern goes on. Here the pattern is that for any \\(n\\in N\\), the number \\(n+1\\) is also in \\(N\\). An unending process of counting of elements of \\(N\\) can be provided, hence it is a countable set.`;
         }
       })}`;
     }
@@ -335,20 +336,47 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 25 }, {}, {
         default: () => {
-          return `The set of prime numbers is an infinite set.`;
+          return `The set \\(E\\) of numbers divisible by \\(2\\) is an infinite set. It can be written in the Roster form as ${escape(`\\(\\{2, 4, 6,\\dots\\}\\)`)}. The \\(\\dots\\) denotes that the pattern goes on. Here the pattern is that for any \\(n\\in E\\), the number \\(n+2\\) is also in \\(E\\). An unending process of counting of elements of \\(E\\) can be provided, hence it is a countable set.`;
+        }
+      })}`;
+    }
+  })}
+					${validate_component(Item, "Item").$$render($$result, { item: 26 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 26 }, {}, {
+        default: () => {
+          return `The set \\(Z\\) of integers is an infinite set. It can be written in the Roster form as ${escape(`\\(\\{\\dots, -3, -2, -1, 0, 1, 2, 3,\\dots\\}\\)`)}. The \\(\\dots\\) denotes that the pattern goes on. Here the pattern is that for any \\(n\\in Z\\), both numbers \\(n-1\\) and \\(n+1\\) belong to \\(Z\\). An unending process of counting of elements of \\(Z\\) can be provided, hence it is a countable set. If you imagine the set of natural numbers as an arrow indicating that the numbers keep increasing in one direction, the set of integers would represent a line such that numbers keep on decreasing in one direction and increasing in another direction. To indicate this we have used \\(\\dots\\) at the begining as well as at the end in the Roster form.`;
+        }
+      })}`;
+    }
+  })}
+                    ${validate_component(Item, "Item").$$render($$result, { item: 27 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 27 }, {}, {
+        default: () => {
+          return `The set of real numbers \\(R\\) is an infinite set. \\(R\\) is an uncountable set. Why? The proof is a little complicated. Geog Cantor gave the first proof.`;
+        }
+      })}`;
+    }
+  })}
+                    ${validate_component(Item, "Item").$$render($$result, { item: 28 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 28 }, {}, {
+        default: () => {
+          return `The set of prime numbers is an infinite set. If we have discovered \\(p1, p2,\\dots, p_n\\) as the first \\(n\\) primes, then the number \\(p1\\times p2\\times \\dots \\times p_n + 1\\) is either a prime or divisible by a prime larger than \\(p_n\\). In either case, a prime larger than \\(p_n\\) exists. Hence, the set of primes must have infinitely many elements.`;
         }
       })}`;
     }
   })}</ul></section></div>
         ${$presentationMode ? `<div class="${"slate"}"></div>` : ``}</div>
 	
-	<section>${validate_component(Item, "Item").$$render($$result, { item: 26 }, {}, {
+	<section>${validate_component(Item, "Item").$$render($$result, { item: 29 }, {}, {
     default: () => {
       return `<section><h2>Practice</h2>
 				${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
     }
   })}</section>
-	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-swui9i"}"></div>` : ``}
+	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1xd8vw7"}"></div>` : ``}
 </article>`;
 });
 export {

@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-e5c22b31.js";import{default as t}from"../components/pages/notes/maths/Statistics/Variance and standard deviation/_page.svelte-9fcae462.js";export{t as component,r as universal};

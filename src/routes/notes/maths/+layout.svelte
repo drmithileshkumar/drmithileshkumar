@@ -12,6 +12,7 @@
         import Canvas from '$lib/canvas/Canvas.svelte';
         import {ripple} from '$lib/ui/ripple';
 	    import Presenter from "$lib/canvas/Presenter.svelte";
+        let checkbox;
         const makeSmallLetter = (str) => {
             if(str.length <= 0) return str;
             return str[0].toLowerCase() + str.slice(1);
@@ -103,7 +104,7 @@
             height: 600px;
         }
         aside {
-            background-color: rgb(230, 228, 228);
+            background-color: rgba(230, 228, 228, 0.25);
             cursor: pointer;
             width: 1em;
         }
@@ -149,7 +150,8 @@
     <div class="maths {$presentationMode ? 'noMenu':''}"> 
         <div class="presentationMode">
             <label style="display:flex;align-items:center;">
-                <input type="checkbox" bind:checked={$presentationMode} on:change={noContextMenu}> <span class="material-icons">slideshow</span>
+                <input style="display:none;" bind:this={checkbox} type="checkbox" bind:checked={$presentationMode} on:change={noContextMenu}> 
+                <span class="material-icons" style="color: {$presentationMode ? 'teal':'black'}" on:click={() => checkbox.click}>slideshow</span>
             </label>
             {#if !$presentationMode}
                 <nav>

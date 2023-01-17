@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-32a4fdea.js";import{default as t}from"../components/pages/notes/maths/Three dimensional geometry/Angle between two planes/_page.svelte-50a44cf0.js";export{t as component,r as universal};
