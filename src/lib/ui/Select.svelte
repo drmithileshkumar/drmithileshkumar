@@ -50,7 +50,7 @@
     ul {
         position: absolute;
         list-style: none;
-        box-shadow: 0 0 3px black;
+        box-shadow: 0 0 3px rgb(199, 199, 199);
         width: 100%;
         margin: 0;
         padding: 0.5em 0.5em;
@@ -70,7 +70,7 @@
     </legend>
     <span class="value" on:click={select} {...$$props}>{value}</span>
     {#if showmenu}
-        <ul on:change use:clickOutside on:outclick={() => showmenu = false}>
+        <ul {...$$props} on:change use:clickOutside on:outclick={() => showmenu = false}>
             {#each options as option}
                 <!-- svelte-ignore a11y-click-events-have-key-events -->
                 <li on:click={() => setvalue(option)}>

@@ -6,6 +6,7 @@
         display: grid;
         grid-template-rows: auto auto auto;
         margin-bottom: 2em;
+        color: rgb(169, 168, 168);
     }
     .authors {
         color: #7d848a;

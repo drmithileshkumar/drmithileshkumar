@@ -1,7 +1,7 @@
 <script>
     import {clearAll, stMode, arcMode, drawMode, strokeColor, lineWidth, globalCompositeOperation} from '$lib/canvas/stores';
     import { ripple } from '$lib/ui/ripple';
-    let colors = ['green', 'blue', 'red', 'orange', 'black', 'eraser'];
+    let colors = ['green', 'blue', 'red', 'orange', 'white', 'eraser'];
     function setColor(chosenColor) {
         $globalCompositeOperation = 'source-over';
         $lineWidth = 2;
@@ -18,8 +18,8 @@
             case "orange":
                 $strokeColor = "orange";
                 break;
-            case "black":
-                $strokeColor = "black";
+            case "white":
+                $strokeColor = "white";
                 break;
             case "white":
                 $strokeColor = "white";
@@ -81,25 +81,25 @@
     
         <span on:click={() => {$drawMode = $drawMode !== 'line' ? 'line' : 'pen'}}>
             <svg width='20px' height="20px" viewBox="0 -5 20 10">
-                <line x1="0%" y1="0%" x2="100%" y2="0%" stroke="black" stroke-width="1" fill="none" />
+                <line x1="0%" y1="0%" x2="100%" y2="0%" stroke="white" stroke-width="1" fill="none" />
                 {#if $drawMode === 'line'}
-                    <line x1="0%" y1="0%" x2="100%" y2="0%" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="0%" y1="0%" x2="100%" y2="0%" stroke="white" stroke-width="2" fill="none" />
                 {/if}
             </svg>
         </span>
         <span on:click={() => {$drawMode = $drawMode !== 'rect' ? 'rect' : 'pen'}}>
             <svg width='20px' height="20px" viewBox="0 0 20 20">
-                <rect x="2" y="2" width="16" height="16" stroke="black" stroke-width="1" fill="none" />
+                <rect x="2" y="2" width="16" height="16" stroke="white" stroke-width="1" fill="none" />
                 {#if $drawMode === 'rect'}
-                <rect x="4" y="4" width="12" height="12" stroke="black" stroke-width="1" fill="none" />
+                <rect x="4" y="4" width="12" height="12" stroke="white" stroke-width="1" fill="none" />
                 {/if}
             </svg>
         </span>
         <span on:click={() => {$drawMode = $drawMode !== 'circle' ? 'circle' : 'pen'}}>
             <svg width='20px' height="20px" viewBox="0 0 20 10">
-                <circle cx="50%" cy="50%" r="8" stroke="black" stroke-width="1" fill="none" />
+                <circle cx="50%" cy="50%" r="8" stroke="white" stroke-width="1" fill="none" />
                 {#if $drawMode === 'circle'}
-                    <circle cx="50%" cy="50%" r="6" stroke="black" stroke-width="1" fill="none" />
+                    <circle cx="50%" cy="50%" r="6" stroke="white" stroke-width="1" fill="none" />
                 {/if}
             </svg>
         </span>
@@ -126,21 +126,21 @@
     <div class="lineWidth">
         <svg width="20" height="20" viewBox="0 0 20 20" on:click={() => $lineWidth = 2} style="cursor:pointer">
             {#if $lineWidth === 2}
-                <circle cx="10" cy="10" r="4" fill="none" stroke="black" stroke-width=1 />
+                <circle cx="10" cy="10" r="4" fill="none" stroke="white" stroke-width=1 />
             {/if}
-            <circle cx="10" cy="10" r="2" fill="black" />
+            <circle cx="10" cy="10" r="2" fill="white" />
         </svg>
         <svg width="20" height="20" viewBox="0 0 20 20" on:click={() => $lineWidth = 4} style="cursor:pointer">
             {#if $lineWidth === 4}
-                <circle cx="10" cy="10" r="6" fill="none" stroke="black" stroke-width=1 />
+                <circle cx="10" cy="10" r="6" fill="none" stroke="white" stroke-width=1 />
             {/if}
-            <circle cx="10" cy="10" r="4" fill="black" />
+            <circle cx="10" cy="10" r="4" fill="white" />
         </svg>
         <svg width="20" height="20" viewBox="0 0 20 20" on:click={() => $lineWidth = 20} style="cursor:pointer">
             {#if $lineWidth === 20}
-                <circle cx="10" cy="10" r="9" fill="none" stroke="black" stroke-width=1 />
+                <circle cx="10" cy="10" r="9" fill="none" stroke="white" stroke-width=1 />
             {/if}
-            <circle cx="10" cy="10" r="7" fill="black" />
+            <circle cx="10" cy="10" r="7" fill="white" />
         </svg>
         <!-- <label><input style="width: 4em; height: 1em; padding-left: 0.5em; padding-right: 0.5em;" type="number" step="0.1" bind:value={$lineWidth}></label> -->
     </div>

@@ -34,11 +34,11 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$rendered = `${$$result.head += `<!-- HEAD_svelte-jatvq7_START --><!-- HEAD_svelte-jatvq7_END -->`, ""}
     ${!$presentationMode ? `<span class="${"noMenu"}"${add_attribute("this", $overlay, 0)}></span>` : ``}
     <div class="${"maths " + escape($presentationMode ? "noMenu" : "", true) + " svelte-6l1wjv"}"><div class="${"presentationMode svelte-6l1wjv"}"><label style="${"display:flex;align-items:center;"}"><input style="${"display:none;"}" type="${"checkbox"}"${add_attribute("this", checkbox, 0)}${add_attribute("checked", $presentationMode, 1)}> 
-                <span class="${"material-icons"}" style="${"color: " + escape($presentationMode ? "teal" : "black", true)}">slideshow</span></label>
+                <span class="${"material-icons"}" style="${"color: " + escape($presentationMode ? "teal" : "white", true)}">slideshow</span></label>
             ${!$presentationMode ? `<nav class="${"svelte-6l1wjv"}">${validate_component(Select, "Select").$$render(
       $$result,
       {
-        style: "width: 35vw;",
+        style: "width: 35vw; background:black; color:white;",
         options: chapters,
         label: "Chapter",
         value: $selectedChapter
@@ -54,7 +54,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                     ${validate_component(Select, "Select").$$render(
       $$result,
       {
-        style: "width: 35vw;",
+        style: "width: 35vw; background:black; color:white;",
         options: sections[$selectedChapter],
         label: "Section",
         value: $selectedSection

@@ -33,7 +33,7 @@
         padding: 0 0.5em;
         max-width: 1200px;
         margin: auto;
-        background-color: white;
+        background-color: black;
     }
     .logo {
         display: flex;
@@ -46,12 +46,11 @@
         width: 2em;
     } */
     .name {
-        color: black;
-        font-variant: all-petite-caps;
-        font-size: 1.1em;
+        color: white;
+        /* font-variant: all-petite-caps;
         letter-spacing: 0.1em;
         font-weight: 500;
-        text-shadow: 1px 1px 3px rgb(128, 128, 128);
+        text-shadow: 1px 1px 3px rgb(245, 241, 241); */
     }
     .pages {
         display: flex;

@@ -151,12 +151,12 @@
         <div class="presentationMode">
             <label style="display:flex;align-items:center;">
                 <input style="display:none;" bind:this={checkbox} type="checkbox" bind:checked={$presentationMode} on:change={noContextMenu}> 
-                <span class="material-icons" style="color: {$presentationMode ? 'teal':'black'}" on:click={() => checkbox.click}>slideshow</span>
+                <span class="material-icons" style="color: {$presentationMode ? 'teal':'white'}" on:click={() => checkbox.click}>slideshow</span>
             </label>
             {#if !$presentationMode}
                 <nav>
-                    <Select style="width: 35vw;" options={chapters} bind:value={$selectedChapter} label="Chapter" on:selected={chapterSelected}/>
-                    <Select style="width: 35vw;" options={sections[$selectedChapter]} bind:value={$selectedSection} label="Section" on:selected={sectionSelected}/>
+                    <Select style="width: 35vw; background:black; color:white;" options={chapters} bind:value={$selectedChapter} label="Chapter" on:selected={chapterSelected}/>
+                    <Select style="width: 35vw; background:black; color:white;" options={sections[$selectedChapter]} bind:value={$selectedSection} label="Section" on:selected={sectionSelected}/>
                 </nav>
             {/if}
             {#if $presentationMode}

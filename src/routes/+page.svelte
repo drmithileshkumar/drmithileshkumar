@@ -14,10 +14,16 @@
         line-height: 1.45;
         word-spacing: 0.1em;
     } */
+    .homepage {
+        background: black;
+    }
 </style>
 <svelte:head><title>Dr Mithilesh Kumar</title></svelte:head>
 <!-- Youtube, Twitter -->
-<Youtube />
-<Notes />
-<Practice />
-<Twitter />
+<div class="homepage">
+    <Youtube />
+    <Notes />
+    <Practice />
+    <Twitter />
+</div>
+

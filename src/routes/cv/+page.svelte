@@ -13,6 +13,7 @@
             padding: 1em;
             width: 1200px;
             margin: auto;
+            background: white;
         }
         header {
             grid-area: header;

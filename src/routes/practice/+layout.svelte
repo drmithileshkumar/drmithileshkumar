@@ -533,5 +533,5 @@
         }
     }
 </script>
-<Select style="max-width: 600px;"  label="Chapter" options={chapters} bind:value={$selectedChapter} on:selected={setGenerator}/>
+<Select style="max-width: 600px; background:black;color:white;"  label="Chapter" options={chapters} bind:value={$selectedChapter} on:selected={setGenerator}/>
 <slot></slot>

@@ -18,7 +18,7 @@
       "_index2.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-8c3b1b8a.css"
+      "_app/immutable/assets/_layout-8dd166c4.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
@@ -92,7 +92,7 @@
     ],
     "css": [
       "_app/immutable/assets/_layout-13140589.css",
-      "_app/immutable/assets/Select-346592cf.css"
+      "_app/immutable/assets/Select-88e41d9c.css"
     ]
   },
   "src/routes/practice/+layout.svelte": {
@@ -114,7 +114,7 @@
       "_stores2.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-2eed81c8.css",
+      "_app/immutable/assets/_page-ae6ed7b8.css",
       "_app/immutable/assets/Practice-a30674f0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
@@ -136,7 +136,7 @@
       "_Papers.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-2f6448b5.css"
+      "_app/immutable/assets/_page-bdebd046.css"
     ]
   },
   "src/routes/about/+page.js": {
@@ -156,7 +156,7 @@
       "_Papers.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-52d5bb98.css"
+      "_app/immutable/assets/_page-3e73e764.css"
     ]
   },
   "src/routes/cv/+page.js": {
@@ -378,12 +378,11 @@
     "src": "src/routes/notes/maths/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index3.js",
-      "_Link.js",
-      "_constants.js"
+      "_index3.js"
     ],
     "css": [
-      "_app/immutable/assets/Message-9326233f.css"
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Link-15b705f6.css"
     ]
   },
   "src/routes/notes/maths/+page.js": {
@@ -3420,7 +3419,7 @@
       "_index3.js"
     ],
     "css": [
-      "_app/immutable/assets/Select-346592cf.css"
+      "_app/immutable/assets/Select-88e41d9c.css"
     ]
   },
   "_stores3.js": {
@@ -3435,7 +3434,7 @@
       "_index3.js"
     ],
     "css": [
-      "_app/immutable/assets/Papers-e2c1dcda.css"
+      "_app/immutable/assets/Papers-7a914383.css"
     ]
   },
   "_Link.js": {

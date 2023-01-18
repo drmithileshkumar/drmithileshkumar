@@ -29,6 +29,6 @@
     <div class="body">
         <slot />
     </div>
-    <span class="material-icons" on:click={() => open = false}>close</span>
+    <span class="material-icons" style="color:red;" on:click={() => open = false}>close</span>
 </div>
 {/if}

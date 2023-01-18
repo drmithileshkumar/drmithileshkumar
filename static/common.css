@@ -1,5 +1,5 @@
 :root {
-    font-family: 'Roboto', sans-serif;
+    font-family: Georgia, serif;
     font-size: 100%;
     
     --font-mono: 'Fira Mono', monospace;
@@ -249,4 +249,8 @@ table th, table td {
 table th, table td {
 	padding-right: 1em;
 	padding-bottom: 0.5em;
+}
+a {
+    text-decoration: none;
+    color:rgb(0, 115, 170)
 }

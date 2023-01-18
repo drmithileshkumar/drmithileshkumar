@@ -1,14 +1,14 @@
 import { c as create_ssr_component, e as escape, v as validate_component } from "./index3.js";
 const Paper_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: ".paper.svelte-1mhki6f{display:grid;grid-template-rows:auto auto auto;margin-bottom:2em}.authors.svelte-1mhki6f{color:#7d848a;text-decoration:none;font-weight:300;font-size:0.9em}.title.svelte-1mhki6f{font-weight:700;font-size:1.1em}.venue.svelte-1mhki6f{color:#7d848a;font-size:0.8em}",
+  code: ".paper.svelte-1wjcz33{display:grid;grid-template-rows:auto auto auto;margin-bottom:2em;color:rgb(169, 168, 168)}.authors.svelte-1wjcz33{color:#7d848a;text-decoration:none;font-weight:300;font-size:0.9em}.title.svelte-1wjcz33{font-weight:700;font-size:1.1em}.venue.svelte-1wjcz33{color:#7d848a;font-size:0.8em}",
   map: null
 };
 const Paper = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<div class="${"paper svelte-1mhki6f"}"><div class="${"authors svelte-1mhki6f"}">${slots.authors ? slots.authors({}) : ``}</div>
-    <div class="${"title svelte-1mhki6f"}">${slots.title ? slots.title({}) : ``}</div>
-    <div class="${"venue svelte-1mhki6f"}">${slots.venue ? slots.venue({}) : ``}</div></div>`;
+  return `<div class="${"paper svelte-1wjcz33"}"><div class="${"authors svelte-1wjcz33"}">${slots.authors ? slots.authors({}) : ``}</div>
+    <div class="${"title svelte-1wjcz33"}">${slots.title ? slots.title({}) : ``}</div>
+    <div class="${"venue svelte-1wjcz33"}">${slots.venue ? slots.venue({}) : ``}</div></div>`;
 });
 const Papers_svelte_svelte_type_style_lang = "";
 const css = {

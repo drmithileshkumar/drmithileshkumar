@@ -1,7 +1,7 @@
 import { c as create_ssr_component, d as subscribe, f as add_attribute, h as each, e as escape, v as validate_component } from "../../chunks/index3.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../chunks/stores2.js";
 /* empty css                                                   *//* empty css                                                  */const Notes_svelte_svelte_type_style_lang = "";
-const css$2 = {
+const css$3 = {
   code: ".notes.svelte-18xqx1z{font-size:1.2em;background-color:green;color:white;padding:0.5em 1em;border-radius:10px}article.svelte-18xqx1z{position:relative;padding:0.5em;max-height:400px;overflow:hidden;padding:1em 1em;background-color:rgba(110, 120, 150, 0.3);border-radius:10px;cursor:pointer}.absolute.svelte-18xqx1z{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-18xqx1z::-webkit-scrollbar{width:0;height:0}.thumbnail.svelte-18xqx1z{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-18xqx1z{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:red;text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em;background-image:url('/notes/maths/sets/finite/thumbnail.svg')}",
   map: null
 };
@@ -18,7 +18,7 @@ const Notes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter = subscribe(selectedChapter, (value) => value);
   $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   $$unsubscribe_presentation = subscribe(presentation, (value) => $presentation = value);
-  $$result.css.add(css$2);
+  $$result.css.add(css$3);
   $$unsubscribe_currentSlide();
   $$unsubscribe_slideCounter();
   $$unsubscribe_selectedSection();
@@ -34,16 +34,16 @@ const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   return ``;
 });
 const Twitter_svelte_svelte_type_style_lang = "";
-const css$1 = {
+const css$2 = {
   code: ".twitter.svelte-1uu1tax{display:flex;margin:1em 0;padding:1em 0;align-items:center;justify-content:center}",
   map: null
 };
 const Twitter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$1);
+  $$result.css.add(css$2);
   return `<div class="${"twitter svelte-1uu1tax"}"><blockquote class="${"twitter-tweet"}"><p lang="${"zxx"}" dir="${"ltr"}"><a href="${"https://t.co/OuJAxIYnuV"}">pic.twitter.com/OuJAxIYnuV</a></p>— Dr Mithilesh Kumar (@DrMithileshKr) <a href="${"https://twitter.com/DrMithileshKr/status/1612815196262928386?ref_src=twsrc%5Etfw"}">January 10, 2023</a></blockquote></div>`;
 });
 const Youtube_svelte_svelte_type_style_lang = "";
-const css = {
+const css$1 = {
   code: ".videos.svelte-170kte0{display:flex;flex-direction:row;gap:1em;flex-wrap:nowrap;margin-bottom:2em;background-color:rgba(110, 120, 150, 0.3);padding:1em;border-radius:10px;overflow-x:auto}.video.svelte-170kte0{display:flex;flex-direction:column;flex-wrap:wrap;box-shadow:1px 1px 3px gray;padding:0.5em;background-color:white}.title.svelte-170kte0{font-weight:bold;padding-top:0.5em;display:inline-block;width:210px}",
   map: null
 };
@@ -74,7 +74,7 @@ const Youtube = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       height: "150"
     }
   ];
-  $$result.css.add(css);
+  $$result.css.add(css$1);
   return `<h1><a href="${"https://www.youtube.com/@drmithilesh"}">Youtube Channel</a></h1>
 <div class="${"videos svelte-170kte0"}">${each(videos, (video) => {
     return `<div class="${"video svelte-170kte0"}"><iframe${add_attribute("width", video.width, 0)}${add_attribute("height", video.height, 0)}${add_attribute("src", video.src, 0)}${add_attribute("title", video.title, 0)} frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe>
@@ -83,13 +83,19 @@ const Youtube = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   })}
 </div>`;
 });
+const _page_svelte_svelte_type_style_lang = "";
+const css = {
+  code: ".homepage.svelte-18z69xb{background:black}",
+  map: null
+};
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  $$result.css.add(css);
   return `${$$result.head += `<!-- HEAD_svelte-d6qc0s_START -->${$$result.title = `<title>Dr Mithilesh Kumar</title>`, ""}<!-- HEAD_svelte-d6qc0s_END -->`, ""}
 
-${validate_component(Youtube, "Youtube").$$render($$result, {}, {}, {})}
-${validate_component(Notes, "Notes").$$render($$result, {}, {}, {})}
-${validate_component(Practice, "Practice").$$render($$result, {}, {}, {})}
-${validate_component(Twitter, "Twitter").$$render($$result, {}, {}, {})}`;
+<div class="${"homepage svelte-18z69xb"}">${validate_component(Youtube, "Youtube").$$render($$result, {}, {}, {})}
+    ${validate_component(Notes, "Notes").$$render($$result, {}, {}, {})}
+    ${validate_component(Practice, "Practice").$$render($$result, {}, {}, {})}
+    ${validate_component(Twitter, "Twitter").$$render($$result, {}, {}, {})}</div>`;
 });
 export {
   Page as default

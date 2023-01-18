@@ -108,36 +108,36 @@ const LogoSvg = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Nav_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: "nav.svelte-1twd5ym.svelte-1twd5ym{position:sticky;top:0;height:4.5em;backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:space-between;z-index:100;gap:1em;padding:0 0.5em;max-width:1200px;margin:auto;background-color:white}.logo.svelte-1twd5ym.svelte-1twd5ym{display:flex;justify-content:center;align-items:center;gap:0.5em;text-align:center}.name.svelte-1twd5ym.svelte-1twd5ym{color:black;font-variant:all-petite-caps;font-size:1.1em;letter-spacing:0.1em;font-weight:500;text-shadow:1px 1px 3px rgb(128, 128, 128)}.pages.svelte-1twd5ym.svelte-1twd5ym{display:flex;gap:1em}.logoimage.svelte-1twd5ym.svelte-1twd5ym{border-radius:50%;overflow:hidden}.links.svelte-1twd5ym a.svelte-1twd5ym{border:0.5px solid;padding:0.3em 0.5em}.links.svelte-1twd5ym.svelte-1twd5ym{display:flex}",
+  code: "nav.svelte-xleltc.svelte-xleltc{position:sticky;top:0;height:4.5em;backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:space-between;z-index:100;gap:1em;padding:0 0.5em;max-width:1200px;margin:auto;background-color:black}.logo.svelte-xleltc.svelte-xleltc{display:flex;justify-content:center;align-items:center;gap:0.5em;text-align:center}.name.svelte-xleltc.svelte-xleltc{color:white}.pages.svelte-xleltc.svelte-xleltc{display:flex;gap:1em}.logoimage.svelte-xleltc.svelte-xleltc{border-radius:50%;overflow:hidden}.links.svelte-xleltc a.svelte-xleltc{border:0.5px solid;padding:0.3em 0.5em}.links.svelte-xleltc.svelte-xleltc{display:flex}",
   map: null
 };
 const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$2);
-  return `<nav class="${"svelte-1twd5ym"}"><a class="${"logo svelte-1twd5ym"}" href="${"/"}">
-        <span class="${"logoimage svelte-1twd5ym"}">${validate_component(LogoSvg, "LogoSvg").$$render($$result, {}, {}, {})}</span>
+  return `<nav class="${"svelte-xleltc"}"><a class="${"logo svelte-xleltc"}" href="${"/"}">
+        <span class="${"logoimage svelte-xleltc"}">${validate_component(LogoSvg, "LogoSvg").$$render($$result, {}, {}, {})}</span>
         
-        <span class="${"name svelte-1twd5ym"}">Dr Mithilesh Kumar</span></a>
-    <div class="${"pages svelte-1twd5ym"}">
+        <span class="${"name svelte-xleltc"}">Dr Mithilesh Kumar</span></a>
+    <div class="${"pages svelte-xleltc"}">
         
         </div>
-    <div class="${"links svelte-1twd5ym"}"><a href="${"/notes"}" class="${"svelte-1twd5ym"}">Notes
+    <div class="${"links svelte-xleltc"}"><a href="${"/notes"}" class="${"svelte-xleltc"}">Notes
         </a>
-        <a href="${"/practice"}" class="${"svelte-1twd5ym"}">Practice
+        <a href="${"/practice"}" class="${"svelte-xleltc"}">Practice
         </a>
-        <a href="${"/iit"}" class="${"svelte-1twd5ym"}">IIT
+        <a href="${"/iit"}" class="${"svelte-xleltc"}">IIT
         </a></div>
     </nav>`;
 });
 const Footer_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: "nav.svelte-8jjdhp{height:2.5em;backdrop-filter:blur(5px);display:flex;padding:0.5em;max-width:1200px;margin:auto;border-top:2px solid;padding-top:0.5em;margin-top:2em}.copyright.svelte-8jjdhp{font-variant:small-caps;font-size:0.8em;padding:0.5em 0}.contactrights.svelte-8jjdhp{display:flex;flex-direction:column;padding:1em 0}.about.svelte-8jjdhp{padding:1em 0}",
+  code: "nav.svelte-15t2xyb{height:2.5em;backdrop-filter:blur(5px);display:flex;padding:0.5em;max-width:1200px;margin:auto;border-top:2px solid white;padding-top:0.5em;margin-top:2em}.copyright.svelte-15t2xyb{font-size:0.8em;padding:0.5em 0;color:white}.contactrights.svelte-15t2xyb{display:flex;flex-direction:column;padding:1em 0;color:white}.about.svelte-15t2xyb{padding:1em 0}",
   map: null
 };
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<nav class="${"svelte-8jjdhp"}"><div class="${"contactrights svelte-8jjdhp"}"><a href="${"/about"}" class="${"about svelte-8jjdhp"}">About me</a>
+  return `<nav class="${"svelte-15t2xyb"}"><div class="${"contactrights svelte-15t2xyb"}"><a href="${"/about"}" class="${"about svelte-15t2xyb"}">About me</a>
         <span class="${"contact"}">Email at <strong>drmithileshkumar@outlook.com</strong></span>
-        <span class="${"copyright svelte-8jjdhp"}">All rights reserved. © drmithileshkumar.com</span></div>
+        <span class="${"copyright svelte-15t2xyb"}">All rights reserved. © drmithileshkumar.com</span></div>
     
     </nav>`;
 });

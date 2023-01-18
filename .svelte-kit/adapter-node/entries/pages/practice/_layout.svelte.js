@@ -15,7 +15,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$rendered = `${validate_component(Select, "Select").$$render(
       $$result,
       {
-        style: "max-width: 600px;",
+        style: "max-width: 600px; background:black;color:white;",
         label: "Chapter",
         options: chapters,
         value: $selectedChapter

@@ -48,7 +48,7 @@
     <h1>
         Study notes
     </h1>
-    <Sets />
+    <!-- <Sets />
     <RelationsAndFunctions />
     <TrigonometricFunctions />
     <Inverse />
@@ -67,7 +67,7 @@
     <Determinants />
     <Continuity />
     <Integrals />
-    <Link href='/notes/maths/conic'>Conic Section and Circle</Link>
+    <Link href='/notes/maths/conic'>Conic Section and Circle</Link> -->
     
     <br>
 </article>

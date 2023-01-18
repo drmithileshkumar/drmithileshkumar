@@ -387,7 +387,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 28 }, {}, {
         default: () => {
-          return `The set of prime numbers is an infinite set. If we have discovered \\(p1, p2,\\dots,
+          return `The set of prime numbers is an infinite set. If we have discovered \\(p_1, p_2,\\dots,
 							p_n\\) as the first \\(n\\) primes, then the number \\(p1\\times p2\\times \\dots \\times p_n
 							+ 1\\) is either a prime or divisible by a prime larger than \\(p_n\\). In either case, a
 							prime larger than \\(p_n\\) exists. Hence, the set of primes must have infinitely many

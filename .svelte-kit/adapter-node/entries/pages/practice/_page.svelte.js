@@ -11,7 +11,7 @@ const Message = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.open(open);
   $$result.css.add(css);
   return `${open ? `<div class="${"message svelte-5cmsvs"}"><div class="${"body"}">${slots.default ? slots.default({}) : ``}</div>
-    <span class="${"material-icons svelte-5cmsvs"}">close</span></div>` : ``}`;
+    <span class="${"material-icons svelte-5cmsvs"}" style="${"color:red;"}">close</span></div>` : ``}`;
 });
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $selectedChapter, $$unsubscribe_selectedChapter;
