@@ -1,5 +1,5 @@
 import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
+import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../../../chunks/stores2.js";
 import { P as Practice } from "../../../../../../chunks/Practice.js";
 /* empty css                                                              */import { r as randInt } from "../../../../../../chunks/common.js";
 import { Q as Quadratic } from "../../../../../../chunks/quadratic.js";
@@ -8,27 +8,28 @@ import { I as Item, P, L as Li } from "../../../../../../chunks/Image.svelte_sve
 import { H as H3 } from "../../../../../../chunks/H3.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".youtube.svelte-zt9i2v{width:fit-content;display:flex;margin:auto;align-items:center;justify-content:center;position:sticky;top:5em;box-shadow:0 0 3px gray;background-color:white;z-index:10;resize:both;padding:0.5em;overflow:auto}article.svelte-zt9i2v{position:relative;padding:0.5em}.absolute.svelte-zt9i2v{margin:auto;width:100%;height:90vh;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-zt9i2v::-webkit-scrollbar{width:0;height:0}.pad.svelte-zt9i2v{min-height:150px}.thumbnail.svelte-zt9i2v{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-zt9i2v{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
+  code: ".display.svelte-11z1cc9{position:relative;position:-webkit-sticky}.youtube.svelte-11z1cc9{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\r\n	}article.svelte-11z1cc9{position:relative;padding:0.5em}.absolute.svelte-11z1cc9{margin:auto;width:100%;height:90vh;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-11z1cc9::-webkit-scrollbar{width:0;height:0}.pad.svelte-11z1cc9{min-height:150px}.thumbnail.svelte-11z1cc9{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-11z1cc9{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}.grid.svelte-11z1cc9{display:grid;grid-template-columns:auto 420px}.flex.svelte-11z1cc9{display:flex;flex-direction:column-reverse}.contentpart.svelte-11z1cc9{padding:0.5em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let splitMode;
+  let $presentationMode, $$unsubscribe_presentationMode;
   let $currentSlide, $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
   let $selectedSection, $$unsubscribe_selectedSection;
   let $$unsubscribe_selectedChapter;
   let $page, $$unsubscribe_page;
-  let $presentationMode, $$unsubscribe_presentationMode;
   let $presentation, $$unsubscribe_presentation;
+  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => $currentSlide = value);
   $$unsubscribe_slideCounter = subscribe(slideCounter, (value) => value);
   $$unsubscribe_selectedSection = subscribe(selectedSection, (value) => $selectedSection = value);
   $$unsubscribe_selectedChapter = subscribe(selectedChapter, (value) => value);
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
-  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   $$unsubscribe_presentation = subscribe(presentation, (value) => $presentation = value);
   let problemset = {
     s: "",
-    o: { "A": "", "B": "", "C": "", "D": "" },
+    o: { A: "", B: "", C: "", D: "" },
     c: ""
   };
   const generateProblem = (problemnumber) => {
@@ -82,116 +83,116 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     problemset = problemset;
     return problemset;
   };
+  let DW;
   $$result.css.add(css);
+  splitMode = !$presentationMode && DW > 800;
+  $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();
   $$unsubscribe_slideCounter();
   $$unsubscribe_selectedSection();
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
-  $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-1cd2i6b_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"The empty set"}"><!-- HEAD_svelte-1cd2i6b_END -->`, ""}
-    <article class="${["svelte-zt9i2v", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-zt9i2v"}"><p class="${"statement svelte-zt9i2v"}">The empty set
-                </p></div>` : ``}
-        ${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-        ${!$presentationMode ? `<div class="${"youtube svelte-zt9i2v"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/-VP7utgjA8I"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}
-        <section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+  return `${$$result.head += `<!-- HEAD_svelte-1oiqp9i_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"The empty set"}"><!-- HEAD_svelte-1oiqp9i_END -->`, ""}
+<article class="${["svelte-11z1cc9", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-11z1cc9"}"><p class="${"statement svelte-11z1cc9"}">The empty set</p></div>` : ``}
+	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
+	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-11z1cc9"}"><section class="${"contentpart svelte-11z1cc9"}"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
-          return `The simplest possible set is one that does not contain any element at all.
-                `;
+          return `The simplest possible set is one that does not contain any element at all.`;
         }
       })}`;
     }
   })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
+				${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 1 }, {}, {
         default: () => {
           return `A set which does not contain any element is called the <strong>empty</strong> set.
-                `;
+					`;
         }
       })}`;
     }
   })}
-            <ul>${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 2 }, {}, {
         default: () => {
           return `An empty set is also called the <em>null set</em> or the <em>void set</em>.
-                `;
+						`;
         }
       })}`;
     }
   })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 3 }, {}, {
         default: () => {
           return `An empty set is denoted either as ${escape("{ }")} or \\(\\varphi\\) (read as &quot;phi&quot;).
-                `;
+						`;
         }
       })}`;
     }
   })}</ul></section>
-        <section>${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
     default: () => {
       return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 4 }, {}, {
         default: () => {
-          return `Examples
-                `;
+          return `Examples`;
         }
       })}`;
     }
   })}
-            <ul>${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 5 }, {}, {
         default: () => {
           return `The set of positive numbers less than 0 contains no element. Hence, it is an empty set
-                    `;
+						`;
         }
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 6 }, {}, {
         default: () => {
-          return `The set of apples in an empty basket is an empty set.
-                    `;
+          return `The set of apples in an empty basket is an empty set.`;
         }
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 7 }, {}, {
         default: () => {
-          return `Set of prime numbers divisible by 4 is an empty set.
-                    `;
+          return `Set of prime numbers divisible by 4 is an empty set.`;
         }
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 8 }, {}, {
         default: () => {
-          return `The set of real roots of the equation \\(x^2 + 1 = 0\\) is an empty set.
-                    `;
+          return `The set of real roots of the equation \\(x^2 + 1 = 0\\) is an empty set.`;
         }
       })}`;
     }
   })}</ul></section>
-        <section>${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
+			<section></section></section>
+        ${!$presentationMode ? `<div class="${"youtube svelte-11z1cc9"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/-VP7utgjA8I"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}</div>
+	
+	${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
     default: () => {
       return `<section><h2>Practice</h2>
-                    ${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
+			${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
     }
-  })}</section>
-        ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-zt9i2v"}"></div>` : ``}</article>`;
+  })}
+
+	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-11z1cc9"}"></div>` : ``}
+</article>`;
 });
 export {
   Page as default

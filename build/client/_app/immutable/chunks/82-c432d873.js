@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-ca90f9ca.js";import{default as t}from"../components/pages/notes/maths/Linear inequalities/Solution of system in two variables/_page.svelte-fd552341.js";export{t as component,r as universal};

@@ -1,5 +1,5 @@
 import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
+import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../../../chunks/stores2.js";
 import { P as Practice } from "../../../../../../chunks/Practice.js";
 /* empty css                                                              */import { r as randInt } from "../../../../../../chunks/common.js";
 import { p as page } from "../../../../../../chunks/stores.js";
@@ -8,23 +8,24 @@ import { H as H3 } from "../../../../../../chunks/H3.js";
 import { H as H2 } from "../../../../../../chunks/H2.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "article.svelte-1xd8vw7{position:relative;padding:0.5em}.absolute.svelte-1xd8vw7{margin:auto;width:100%;height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1xd8vw7::-webkit-scrollbar{width:0;height:0}.pad.svelte-1xd8vw7{min-height:150px}.thumbnail.svelte-1xd8vw7{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1xd8vw7{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:red;text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em;background-image:url('/notes/maths/sets/finite/thumbnail.svg')}.material.svelte-1xd8vw7{display:grid;grid-template-columns:1fr 1fr}.flex.svelte-1xd8vw7{display:flex}",
+  code: ".display.svelte-2tbfq2{position:relative;position:-webkit-sticky}.youtube.svelte-2tbfq2{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\r\n	}article.svelte-2tbfq2{position:relative;padding:0.5em}.absolute.svelte-2tbfq2{margin:auto;width:100%;height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-2tbfq2::-webkit-scrollbar{width:0;height:0}.pad.svelte-2tbfq2{min-height:150px}.thumbnail.svelte-2tbfq2{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-2tbfq2{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:red;text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em;background-image:url('/notes/maths/sets/finite/thumbnail.svg')}.grid.svelte-2tbfq2{display:grid;grid-template-columns:auto 420px}.flex.svelte-2tbfq2{display:flex;flex-direction:column-reverse}.contentpart.svelte-2tbfq2{padding:0.5em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let splitMode;
+  let $presentationMode, $$unsubscribe_presentationMode;
   let $currentSlide, $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
   let $selectedSection, $$unsubscribe_selectedSection;
   let $$unsubscribe_selectedChapter;
   let $page, $$unsubscribe_page;
-  let $presentationMode, $$unsubscribe_presentationMode;
   let $presentation, $$unsubscribe_presentation;
+  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => $currentSlide = value);
   $$unsubscribe_slideCounter = subscribe(slideCounter, (value) => value);
   $$unsubscribe_selectedSection = subscribe(selectedSection, (value) => $selectedSection = value);
   $$unsubscribe_selectedChapter = subscribe(selectedChapter, (value) => value);
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
-  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   $$unsubscribe_presentation = subscribe(presentation, (value) => $presentation = value);
   let problemset = {
     s: "",
@@ -32,7 +33,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     c: ""
   };
   const generateProblem = (problemnumber) => {
-    let N = 1;
+    let N = 3;
     problemnumber = problemnumber % N;
     let choices = ["A", "B", "C", "D"];
     let correctChoiceIndex = Math.floor(Math.random() * 4);
@@ -85,19 +86,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     problemset = problemset;
     return problemset;
   };
+  let DW;
   $$result.css.add(css);
+  splitMode = !$presentationMode && DW > 800;
+  $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();
   $$unsubscribe_slideCounter();
   $$unsubscribe_selectedSection();
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
-  $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-ykzmzv_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Finite and infinite sets"}"><!-- HEAD_svelte-ykzmzv_END -->`, ""}
-<article class="${["svelte-1xd8vw7", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1xd8vw7"}"><div class="${"statement svelte-1xd8vw7"}"><p>Why is the set of primes infinite?
-				</p></div></div>` : ``}
-    <div class="${"material " + escape($presentationMode ? "" : "flex", true) + " svelte-1xd8vw7"}"><div class="${"content"}">${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-            ${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+<article class="${["svelte-2tbfq2", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-2tbfq2"}"><div class="${"statement svelte-2tbfq2"}"><p>Why is the set of primes infinite?</p></div></div>` : ``}
+	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
+	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-2tbfq2"}"><section class="${"contentpart svelte-2tbfq2"}">${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
@@ -106,7 +108,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-            <section>${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
@@ -115,27 +117,27 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
+				${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 2 }, {}, {
         default: () => {
           return `The size of a set is equal to the number of elements in the set.
-                    `;
+					`;
         }
       })}`;
     }
   })}
-                <ul>${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 3 }, {}, {
         default: () => {
           return `The size of a set is also called the <em>cardinality</em> of the set.
-                        `;
+						`;
         }
       })}`;
     }
   })}
-                    ${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 4 }, {}, {
         default: () => {
@@ -144,17 +146,18 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</ul>
-                ${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
+				${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "remark", isActive: 5 }, {}, {
         default: () => {
-          return `Elements are counted only once. Repeating an element in the set will not change its size.
-                    `;
+          return `Elements are counted only once. Repeating an element in the set will not change its
+						size.
+					`;
         }
       })}`;
     }
   })}</section>
-            <section>${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
     default: () => {
       return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 6 }, {}, {
         default: () => {
@@ -163,37 +166,37 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                <ul>${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 7 }, {}, {
         default: () => {
           return `The size of set ${escape("\\(A = \\{1, 2, 3\\}\\)")} is \\(n(A) = 3\\).
-                        `;
+						`;
         }
       })}`;
     }
   })}
-                    ${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 8 }, {}, {
         default: () => {
           return `The size of set ${escape("\\(A = \\{1, 1, 2, 3, 3, 3\\}\\)")} is also \\(n(A) = 3\\).
-                        `;
+						`;
         }
       })}`;
     }
   })}
-                    ${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 9 }, {}, {
         default: () => {
           return `The number of elements in an empty set is 0. That is, \\(n(\\varphi) = 0\\).
-                        `;
+						`;
         }
       })}`;
     }
   })}</ul></section>
-            ${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
+			${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 10 }, {}, {
         default: () => {
@@ -202,17 +205,17 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-            <section>${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 11 }, {}, {
         default: () => {
           return `If counting of the elements of a set can finish, it called a <em>finite set</em>.
-                    `;
+					`;
         }
       })}`;
     }
   })}
-                <ul>${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 12 }, {}, {
         default: () => {
@@ -221,7 +224,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                    ${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 13 }, {}, {
         default: () => {
@@ -230,7 +233,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</ul></section>
-            <section>${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
     default: () => {
       return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 14 }, {}, {
         default: () => {
@@ -239,17 +242,17 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                <ul>${validate_component(Item, "Item").$$render($$result, { item: 15 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 15 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 15 }, {}, {
         default: () => {
           return `Counting of elements of ${escape("\\(A = \\{1, 2, 3\\}\\)")} can finish, and hence it is finite.
-                        `;
+						`;
         }
       })}`;
     }
   })}
-                    ${validate_component(Item, "Item").$$render($$result, { item: 16 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 16 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 16 }, {}, {
         default: () => {
@@ -258,7 +261,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                    ${validate_component(Item, "Item").$$render($$result, { item: 17 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 17 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 17 }, {}, {
         default: () => {
@@ -267,7 +270,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</ul></section>
-            ${validate_component(Item, "Item").$$render($$result, { item: 18 }, {}, {
+			${validate_component(Item, "Item").$$render($$result, { item: 18 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 18 }, {}, {
         default: () => {
@@ -276,17 +279,17 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-            <section>${validate_component(Item, "Item").$$render($$result, { item: 19 }, {}, {
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 19 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 19 }, {}, {
         default: () => {
           return `If counting of the elements of a set can not finish, it called an <em>infinite set</em>.
-                    `;
+					`;
         }
       })}`;
     }
   })}
-                <ul>${validate_component(Item, "Item").$$render($$result, { item: 20 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 20 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 20 }, {}, {
         default: () => {
@@ -308,13 +311,17 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 22 }, {}, {
         default: () => {
-          return `Some websites call infinite sets as <strong>uncountable</strong>. That is <span style="${"color:red; font-weight:bold;"}">wrong</span>. Finite sets are definitely countable. Infinite sets <em>can</em> be countable or uncountable. The concept of countability is related to one-to-one correspondance with a subset of natural numbers. Key thing to keep in mind is that the process of counting an infinite set can not end.`;
+          return `Some websites call infinite sets as <strong>uncountable</strong>. That is
+							<span style="${"color:red; font-weight:bold;"}">wrong</span>. Finite sets are definitely
+							countable. Infinite sets <em>can</em> be countable or uncountable. The concept of countability
+							is related to one-to-one correspondance with a subset of natural numbers. Key thing to
+							keep in mind is that the process of counting an infinite set can not end.`;
         }
       })}`;
     }
   })}</ul></section>
-    
-            <section>${validate_component(Item, "Item").$$render($$result, { item: 23 }, {}, {
+
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 23 }, {}, {
     default: () => {
       return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 23 }, {}, {
         default: () => {
@@ -323,20 +330,28 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                <ul>${validate_component(Item, "Item").$$render($$result, { item: 24 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 24 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 24 }, {}, {
         default: () => {
-          return `The set of natural numbers \\(N\\) is an infinite set. It can be written in the Roster form as ${escape(`\\(\\{1, 2, 3,\\dots\\}\\)`)}. The \\(\\dots\\) denotes that the pattern goes on. Here the pattern is that for any \\(n\\in N\\), the number \\(n+1\\) is also in \\(N\\). An unending process of counting of elements of \\(N\\) can be provided, hence it is a countable set.`;
+          return `The set of natural numbers \\(N\\) is an infinite set. It can be written in the Roster
+							form as ${escape(`\\(\\{1, 2, 3,\\dots\\}\\)`)}. The \\(\\dots\\) denotes that the pattern goes
+							on. Here the pattern is that for any \\(n\\in N\\), the number \\(n+1\\) is also in \\(N\\).
+							An unending process of counting of elements of \\(N\\) can be provided, hence it is a
+							countable set.`;
         }
       })}`;
     }
   })}
-                    ${validate_component(Item, "Item").$$render($$result, { item: 25 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 25 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 25 }, {}, {
         default: () => {
-          return `The set \\(E\\) of numbers divisible by \\(2\\) is an infinite set. It can be written in the Roster form as ${escape(`\\(\\{2, 4, 6,\\dots\\}\\)`)}. The \\(\\dots\\) denotes that the pattern goes on. Here the pattern is that for any \\(n\\in E\\), the number \\(n+2\\) is also in \\(E\\). An unending process of counting of elements of \\(E\\) can be provided, hence it is a countable set.`;
+          return `The set \\(E\\) of numbers divisible by \\(2\\) is an infinite set. It can be written in
+							the Roster form as ${escape(`\\(\\{2, 4, 6,\\dots\\}\\)`)}. The \\(\\dots\\) denotes that the
+							pattern goes on. Here the pattern is that for any \\(n\\in E\\), the number \\(n+2\\) is
+							also in \\(E\\). An unending process of counting of elements of \\(E\\) can be provided,
+							hence it is a countable set.`;
         }
       })}`;
     }
@@ -345,38 +360,50 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 26 }, {}, {
         default: () => {
-          return `The set \\(Z\\) of integers is an infinite set. It can be written in the Roster form as ${escape(`\\(\\{\\dots, -3, -2, -1, 0, 1, 2, 3,\\dots\\}\\)`)}. The \\(\\dots\\) denotes that the pattern goes on. Here the pattern is that for any \\(n\\in Z\\), both numbers \\(n-1\\) and \\(n+1\\) belong to \\(Z\\). An unending process of counting of elements of \\(Z\\) can be provided, hence it is a countable set. If you imagine the set of natural numbers as an arrow indicating that the numbers keep increasing in one direction, the set of integers would represent a line such that numbers keep on decreasing in one direction and increasing in another direction. To indicate this we have used \\(\\dots\\) at the begining as well as at the end in the Roster form.`;
+          return `The set \\(Z\\) of integers is an infinite set. It can be written in the Roster form as ${escape(`\\(\\{\\dots, -3, -2, -1, 0, 1, 2, 3,\\dots\\}\\)`)}.
+							The \\(\\dots\\) denotes that the pattern goes on. Here the pattern is that for any
+							\\(n\\in Z\\), both numbers \\(n-1\\) and \\(n+1\\) belong to \\(Z\\). An unending process of
+							counting of elements of \\(Z\\) can be provided, hence it is a countable set. If you
+							imagine the set of natural numbers as an arrow indicating that the numbers keep
+							increasing in one direction, the set of integers would represent a line such that
+							numbers keep on decreasing in one direction and increasing in another direction. To
+							indicate this we have used \\(\\dots\\) at the begining as well as at the end in the
+							Roster form.`;
         }
       })}`;
     }
   })}
-                    ${validate_component(Item, "Item").$$render($$result, { item: 27 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 27 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 27 }, {}, {
         default: () => {
-          return `The set of real numbers \\(R\\) is an infinite set. \\(R\\) is an uncountable set. Why? The proof is a little complicated. Geog Cantor gave the first proof.`;
+          return `The set of real numbers \\(R\\) is an infinite set. \\(R\\) is an uncountable set. Why?
+							The proof is a little complicated. Geog Cantor gave the first proof.`;
         }
       })}`;
     }
   })}
-                    ${validate_component(Item, "Item").$$render($$result, { item: 28 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 28 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 28 }, {}, {
         default: () => {
-          return `The set of prime numbers is an infinite set. If we have discovered \\(p1, p2,\\dots, p_n\\) as the first \\(n\\) primes, then the number \\(p1\\times p2\\times \\dots \\times p_n + 1\\) is either a prime or divisible by a prime larger than \\(p_n\\). In either case, a prime larger than \\(p_n\\) exists. Hence, the set of primes must have infinitely many elements.`;
+          return `The set of prime numbers is an infinite set. If we have discovered \\(p1, p2,\\dots,
+							p_n\\) as the first \\(n\\) primes, then the number \\(p1\\times p2\\times \\dots \\times p_n
+							+ 1\\) is either a prime or divisible by a prime larger than \\(p_n\\). In either case, a
+							prime larger than \\(p_n\\) exists. Hence, the set of primes must have infinitely many
+							elements.`;
         }
       })}`;
     }
-  })}</ul></section></div>
-        ${$presentationMode ? `<div class="${"slate"}"></div>` : ``}</div>
-	
+  })}</ul></section></section>
+		${!$presentationMode ? `<div class="${"youtube svelte-2tbfq2"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/xitRVmUKQz8"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}</div>
 	<section>${validate_component(Item, "Item").$$render($$result, { item: 29 }, {}, {
     default: () => {
       return `<section><h2>Practice</h2>
 				${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
     }
   })}</section>
-	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1xd8vw7"}"></div>` : ``}
+	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-2tbfq2"}"></div>` : ``}
 </article>`;
 });
 export {

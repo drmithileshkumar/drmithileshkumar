@@ -1,5 +1,5 @@
 import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
+import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../../../chunks/stores2.js";
 import { P as Practice } from "../../../../../../chunks/Practice.js";
 /* empty css                                                              */import { a as randSubset, s as shuffle, r as randInt } from "../../../../../../chunks/common.js";
 import { Q as Quadratic } from "../../../../../../chunks/quadratic.js";
@@ -520,27 +520,28 @@ class Sets {
 }
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".youtube.svelte-1wtdnqc{width:fit-content;display:flex;margin:auto;align-items:center;justify-content:center;position:sticky;top:5em;box-shadow:0 0 3px gray;background-color:white;z-index:10}article.svelte-1wtdnqc{position:relative;padding:0.5em}.absolute.svelte-1wtdnqc{margin:auto;width:100%;height:90vh;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1wtdnqc::-webkit-scrollbar{width:0;height:0}.pad.svelte-1wtdnqc{min-height:150px}.thumbnail.svelte-1wtdnqc{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1wtdnqc{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
+  code: ".display.svelte-3atj6u{position:relative;position:-webkit-sticky}.youtube.svelte-3atj6u{width:100%;height:300px;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start}article.svelte-3atj6u{position:relative;padding:0.5em}.absolute.svelte-3atj6u{margin:auto;width:100%;height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-3atj6u::-webkit-scrollbar{width:0;height:0}.pad.svelte-3atj6u{min-height:150px}.thumbnail.svelte-3atj6u{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-3atj6u{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}.grid.svelte-3atj6u{display:grid;grid-template-columns:auto 420px}.flex.svelte-3atj6u{display:flex;flex-direction:column-reverse}.contentpart.svelte-3atj6u{padding:0.5em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let splitMode;
+  let $presentationMode, $$unsubscribe_presentationMode;
   let $currentSlide, $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
   let $selectedSection, $$unsubscribe_selectedSection;
   let $$unsubscribe_selectedChapter;
   let $page, $$unsubscribe_page;
-  let $presentationMode, $$unsubscribe_presentationMode;
   let $presentation, $$unsubscribe_presentation;
+  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => $currentSlide = value);
   $$unsubscribe_slideCounter = subscribe(slideCounter, (value) => value);
   $$unsubscribe_selectedSection = subscribe(selectedSection, (value) => $selectedSection = value);
   $$unsubscribe_selectedChapter = subscribe(selectedChapter, (value) => value);
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
-  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   $$unsubscribe_presentation = subscribe(presentation, (value) => $presentation = value);
   let problemset = {
     s: "",
-    o: { "A": "", "B": "", "C": "", "D": "" },
+    o: { A: "", B: "", C: "", D: "" },
     c: ""
   };
   const generateProblem = (problemnumber) => {
@@ -644,94 +645,100 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     problemset = problemset;
     return problemset;
   };
+  let DW;
   $$result.css.add(css);
+  splitMode = !$presentationMode && DW > 800;
+  $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();
   $$unsubscribe_slideCounter();
   $$unsubscribe_selectedSection();
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
-  $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-iu5uph_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedSection, 0)}><!-- HEAD_svelte-iu5uph_END -->`, ""}
-    <article class="${["svelte-1wtdnqc", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1wtdnqc"}"><img class="${"statement svelte-1wtdnqc"}" width="${"100%"}" src="${"/notes/maths/sets/representation/heroparadox.svg"}" alt="${""}" style="${"color:white;"}"></div>` : ``}
-        ${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-        ${!$presentationMode ? `<div class="${"youtube svelte-1wtdnqc"}"><iframe width="${"100%"}" height="${"auto"}" src="${"https://www.youtube.com/embed/kj1VeKqMlJc"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}
-        ${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+  return `${$$result.head += `<!-- HEAD_svelte-1zxtvw_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedSection, 0)}><!-- HEAD_svelte-1zxtvw_END -->`, ""}
+<article class="${["svelte-3atj6u", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-3atj6u"}"><img class="${"statement svelte-3atj6u"}" width="${"100%"}" src="${"/notes/maths/sets/representation/heroparadox.svg"}" alt="${""}" style="${"color:white;"}"></div>` : ``}
+	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
+	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-3atj6u"}"><section class="${"contentpart svelte-3atj6u"}">${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
-          return `Definition
-            `;
+          return `Definition`;
         }
       })}`;
     }
   })}
-        <section>${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
-          return `We are used to a practical idea of what is a <em>collection</em>. A <em>set</em> is the mathematical refinement of this idea of collection. It turns out that not every collection can be a set. One basic requirement of a mathematical concept is that its definition must be unique. Not every collection has a unique definition. Consider, for example, <span class="${"specialtext"}">the hero paradox</span>. A <em>hero</em> is a person who helps those and only those, who can not help themselves. <em>Does the hero help himself?</em>`;
+          return `We are used to a practical idea of what is a <em>collection</em>. A <em>set</em> is the
+						mathematical refinement of this idea of collection. It turns out that not every
+						collection can be a set. One basic requirement of a mathematical concept is that its
+						definition must be unique. Not every collection has a unique definition. Consider, for
+						example, <span class="${"specialtext"}">the hero paradox</span>. A <em>hero</em> is a person
+						who helps those and only those, who can not help themselves.
+						<em>Does the hero help himself?</em>`;
         }
       })}
-                ${validate_component(Image, "Image").$$render($$result, { isActive: 1 }, {}, {
+					${validate_component(Image, "Image").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
           return `<img style="${"width: 100%;"}" src="${"/notes/maths/sets/representation/heroparadox.svg"}" alt="${""}">`;
         }
       })}`;
     }
   })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
+				${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 2 }, {}, {
         default: () => {
-          return `A simple idea of collections can lead to many such paradoxes.
-                `;
+          return `A simple idea of collections can lead to many such paradoxes.`;
         }
       })}`;
     }
   })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
+				${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 3 }, {}, {
         default: () => {
-          return `Such paradoxes can be avoided if it is possible to decide, with certainty, whether an object is part of the collection. This is how we define the mathematical notion of a <em>set</em>.
-                `;
+          return `Such paradoxes can be avoided if it is possible to decide, with certainty, whether an
+						object is part of the collection. This is how we define the mathematical notion of a <em>set</em>.
+					`;
         }
       })}`;
     }
   })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
+				${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 4 }, {}, {
         default: () => {
           return `A <strong>set</strong> is a <em>well-defined</em> collection of objects.
-                `;
+					`;
         }
       })}`;
     }
   })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
+				${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 5 }, {}, {
         default: () => {
-          return `The property <em>well-defined</em> means given a set and an object, we can determine, without ambiguity, whether the object <em>belongs</em> to the set or not.
-                `;
+          return `The property <em>well-defined</em> means given a set and an object, we can determine,
+						without ambiguity, whether the object <em>belongs</em> to the set or not.
+					`;
         }
       })}`;
     }
   })}</section>
-        
-        <section>${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
     default: () => {
       return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 6 }, {}, {
         default: () => {
-          return `Examples
-                `;
+          return `Examples`;
         }
       })}`;
     }
   })}
-            <ul>${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 7 }, {}, {
         default: () => {
@@ -740,7 +747,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 8 }, {}, {
         default: () => {
@@ -749,7 +756,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 9 }, {}, {
         default: () => {
@@ -758,7 +765,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 10 }, {}, {
         default: () => {
@@ -767,7 +774,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 11 }, {}, {
         default: () => {
@@ -776,17 +783,16 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</ul></section>
-        ${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
+			${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 12 }, {}, {
         default: () => {
-          return `Elements of a set
-            `;
+          return `Elements of a set`;
         }
       })}`;
     }
   })}
-        <section><ul>${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
+			<section><ul>${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 13 }, {}, {
         default: () => {
@@ -795,7 +801,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 14 }, {}, {
         default: () => {
@@ -804,7 +810,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 15 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 15 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 15 }, {}, {
         default: () => {
@@ -813,72 +819,75 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</ul>
-            ${validate_component(Item, "Item").$$render($$result, { item: 16 }, {}, {
+				${validate_component(Item, "Item").$$render($$result, { item: 16 }, {}, {
     default: () => {
       return `${validate_component(H3, "H3").$$render($$result, { "isActive{16}": true }, {}, {
         default: () => {
-          return `Epsilon (\\(\\in\\)) notation
-                `;
+          return `Epsilon (\\(\\in\\)) notation`;
         }
       })}`;
     }
   })}
-            <ul>${validate_component(Item, "Item").$$render($$result, { item: 17 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 17 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 17 }, {}, {
         default: () => {
-          return `If \\(a\\) is an elment of a set \\(A\\), we say that \\(a\\) <em>belongs to</em> \\(A\\) and denote this fact using \\(a\\in A\\).`;
+          return `If \\(a\\) is an elment of a set \\(A\\), we say that \\(a\\) <em>belongs to</em> \\(A\\) and
+							denote this fact using \\(a\\in A\\).`;
         }
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 18 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 18 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 18 }, {}, {
         default: () => {
-          return `If \\(a\\) is <strong>not</strong> an elment of a set \\(A\\), we say that \\(a\\) <em>does not belongs to</em> \\(A\\) and denote this fact using \\(a\\notin A\\).`;
+          return `If \\(a\\) is <strong>not</strong> an elment of a set \\(A\\), we say that \\(a\\)
+							<em>does not belongs to</em> \\(A\\) and denote this fact using \\(a\\notin A\\).`;
         }
       })}`;
     }
   })}</ul></section>
-        <section>${validate_component(Item, "Item").$$render($$result, { item: 19 }, {}, {
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 19 }, {}, {
     default: () => {
       return `${validate_component(H3, "H3").$$render($$result, { class: "examples", "isActive{19}": true }, {}, {
         default: () => {
-          return `Examples
-            `;
+          return `Examples`;
         }
       })}`;
     }
   })}
-        <ul>${validate_component(Item, "Item").$$render($$result, { item: 20 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 20 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 20 }, {}, {
         default: () => {
-          return `If \\(A\\) is the set of vowels in English, then \\(a\\in A\\) because \\(a\\) is a vowel, but \\(x\\notin A\\) because \\(x\\) is not a vowel.`;
+          return `If \\(A\\) is the set of vowels in English, then \\(a\\in A\\) because \\(a\\) is a vowel,
+							but \\(x\\notin A\\) because \\(x\\) is not a vowel.`;
         }
       })}`;
     }
   })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 21 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 21 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 21 }, {}, {
         default: () => {
-          return `If \\(E\\) is the set of Natural numbers divisible by 2, then \\(2\\in E\\), but \\(0\\notin E\\) and \\(3\\notin E\\).`;
+          return `If \\(E\\) is the set of Natural numbers divisible by 2, then \\(2\\in E\\), but \\(0\\notin
+							E\\) and \\(3\\notin E\\).`;
         }
       })}`;
     }
   })}
-            ${validate_component(Item, "Item").$$render($$result, { item: 22 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 22 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 22 }, {}, {
         default: () => {
-          return `If \\(R\\) is the set of all rivers in the world, then \\(Ganga\\in R\\), but \\(India\\notin R\\).`;
+          return `If \\(R\\) is the set of all rivers in the world, then \\(Ganga\\in R\\), but
+							\\(India\\notin R\\).`;
         }
       })}`;
     }
   })}</ul></section>
-        ${validate_component(Item, "Item").$$render($$result, { item: 23 }, {}, {
+			${validate_component(Item, "Item").$$render($$result, { item: 23 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 23 }, {}, {
         default: () => {
@@ -887,26 +896,26 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-        <section>${validate_component(Item, "Item").$$render($$result, { item: 24 }, {}, {
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 24 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 24 }, {}, {
         default: () => {
-          return `In roster form, all the elements of a set are listed, comma-separated and enclosed within braces ${escape("\\[\\{a_1, a_2,\\dots, a_n \\}\\]")}`;
+          return `In roster form, all the elements of a set are listed, comma-separated and enclosed
+						within braces ${escape("\\[\\{a_1, a_2,\\dots, a_n \\}\\]")}`;
         }
       })}`;
     }
   })}</section>
-        ${validate_component(Item, "Item").$$render($$result, { item: 25 }, {}, {
+			${validate_component(Item, "Item").$$render($$result, { item: 25 }, {}, {
     default: () => {
       return `${validate_component(H3, "H3").$$render($$result, { class: "examples", "isActive{25}": true }, {}, {
         default: () => {
-          return `Examples
-            `;
+          return `Examples`;
         }
       })}`;
     }
   })}
-        <section><ul>${validate_component(Item, "Item").$$render($$result, { item: 26 }, {}, {
+			<section><ul>${validate_component(Item, "Item").$$render($$result, { item: 26 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 26 }, {}, {
         default: () => {
@@ -915,7 +924,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 27 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 27 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 27 }, {}, {
         default: () => {
@@ -924,7 +933,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 28 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 28 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 28 }, {}, {
         default: () => {
@@ -933,44 +942,48 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</ul></section>
-        <section>${validate_component(Item, "Item").$$render($$result, { item: 29 }, {}, {
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 29 }, {}, {
     default: () => {
       return `${validate_component(H3, "H3").$$render($$result, { class: "remark", "isActive{29}": true }, {}, {
         default: () => {
-          return `Remarks
-                `;
+          return `Remarks`;
         }
       })}`;
     }
   })}
-            <ul>${validate_component(Item, "Item").$$render($$result, { item: 30 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 30 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 30 }, {}, {
         default: () => {
-          return `In roster form, the order in which the elements are listed does not matter. For example, the set ${escape(`\\(\\{2, 4\\}\\)`)} is the same as ${escape(`\\(\\{4, 2\\}\\)`)}.`;
+          return `In roster form, the order in which the elements are listed does not matter. For
+							example, the set ${escape(`\\(\\{2, 4\\}\\)`)} is the same as ${escape(`\\(\\{4, 2\\}\\)`)}.`;
         }
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 31 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 31 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 31 }, {}, {
         default: () => {
-          return `In roster form, repeating an element in the list does not change the set. Hence, an element is usually listed only once in the set. For example, the set of letter in BETTER is ${escape(`\\(\\{B, E, T, T, E, R\\}\\)`)}, there is no need to repeat E and T. We can just write ${escape(`\\(\\{B, E, T, R\\}\\)`)}.`;
+          return `In roster form, repeating an element in the list does not change the set. Hence, an
+							element is usually listed only once in the set. For example, the set of letter in
+							BETTER is ${escape(`\\(\\{B, E, T, T, E, R\\}\\)`)}, there is no need to repeat E and T. We can
+							just write ${escape(`\\(\\{B, E, T, R\\}\\)`)}.`;
         }
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 32 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 32 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 32 }, {}, {
         default: () => {
-          return `The set of roots of quadratic equation \\(x^2 - 2x + 1 = 0\\) is ${escape(`\\(\\{1, 1\\}\\)`)} or just ${escape(`\\(\\{1\\}\\)`)}.`;
+          return `The set of roots of quadratic equation \\(x^2 - 2x + 1 = 0\\) is ${escape(`\\(\\{1, 1\\}\\)`)} or
+							just ${escape(`\\(\\{1\\}\\)`)}.`;
         }
       })}`;
     }
   })}</ul></section>
-        ${validate_component(Item, "Item").$$render($$result, { item: 33 }, {}, {
+			${validate_component(Item, "Item").$$render($$result, { item: 33 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 33 }, {}, {
         default: () => {
@@ -979,36 +992,40 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-        <section>${validate_component(Item, "Item").$$render($$result, { item: 34 }, {}, {
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 34 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 34 }, {}, {
         default: () => {
-          return `In set-builder form, we specify a property that is satisfied <strong>only</strong> by the elements of the set. It is written as ${escape(`\\[\\{x : \\text{Property satisfied by } x\\}\\]`)} The symbol \\(x\\) can be replaced with any other symbol like \\(a, b, y\\) etc. The colon (:) stands for &quot;such that&quot;. After colon (:) we write the property satisfied by all elements of the set.
-                `;
+          return `In set-builder form, we specify a property that is satisfied <strong>only</strong> by
+						the elements of the set. It is written as ${escape(`\\[\\{x : \\text{Property satisfied by } x\\}\\]`)}
+						The symbol \\(x\\) can be replaced with any other symbol like \\(a, b, y\\) etc. The colon (:)
+						stands for &quot;such that&quot;. After colon (:) we write the property satisfied by all elements of
+						the set.
+					`;
         }
       })}`;
     }
   })}</section>
-        ${validate_component(Item, "Item").$$render($$result, { item: 35 }, {}, {
+			${validate_component(Item, "Item").$$render($$result, { item: 35 }, {}, {
     default: () => {
       return `${validate_component(H3, "H3").$$render($$result, { class: "examples", "isActive{35}": true }, {}, {
         default: () => {
-          return `Examples
-            `;
+          return `Examples`;
         }
       })}`;
     }
   })}
-        <section><ul>${validate_component(Item, "Item").$$render($$result, { item: 36 }, {}, {
+			<section><ul>${validate_component(Item, "Item").$$render($$result, { item: 36 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 36 }, {}, {
         default: () => {
-          return `The set-builder form of the set ${escape(`\\(\\{2, 4, 6, 8\\}\\)`)} is ${escape(`\\(\\{x: x\\)`)} is a natural numbers less than 10 and divisible by  2${escape(`\\(\\}\\)`)}.`;
+          return `The set-builder form of the set ${escape(`\\(\\{2, 4, 6, 8\\}\\)`)} is ${escape(`\\(\\{x: x\\)`)} is a natural
+							numbers less than 10 and divisible by 2${escape(`\\(\\}\\)`)}.`;
         }
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 37 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 37 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 37 }, {}, {
         default: () => {
@@ -1017,24 +1034,28 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 38 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 38 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 38 }, {}, {
         default: () => {
-          return `Let ${escape(`\\(A = \\Big\\{\\dfrac{2}{3}, \\dfrac{3}{4}, \\dfrac{4}{5}, \\dfrac{5}{6},\\dfrac{6}{7}\\Big\\}\\)`)}, then in set-builder form it will be written as ${escape(`\\[\\{x: x = \\frac{n + 1}{n + 2}, \\text{ where } n \\text{ is a natural number and } 1\\leq n\\leq 5\\}\\]`)}`;
+          return `Let ${escape(`\\(A = \\Big\\{\\dfrac{2}{3}, \\dfrac{3}{4}, \\dfrac{4}{5}, \\dfrac{5}{6},\\dfrac{6}{7}\\Big\\}\\)`)},
+							then in set-builder form it will be written as ${escape(`\\[\\{x: x = \\frac{n + 1}{n + 2}, \\text{ where } n \\text{ is a natural number and } 1\\leq n\\leq 5\\}\\]`)}`;
         }
       })}`;
     }
-  })}</ul></section>
-        ${validate_component(Item, "Item").$$render($$result, { item: 39 }, {}, {
+  })}</ul></section></section>
+
+		${!$presentationMode ? `<div class="${"youtube svelte-3atj6u"}"><iframe width="${"100%"}" height="${"auto"}" src="${"https://www.youtube.com/embed/kj1VeKqMlJc"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}</div>
+
+	${validate_component(Item, "Item").$$render($$result, { item: 39 }, {}, {
     default: () => {
       return `<section><h2>Practice</h2>
-                ${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
+			${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
     }
   })}
-        
-        ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1wtdnqc"}"></div>` : ``}
-    </article>`;
+
+	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-3atj6u"}"></div>` : ``}
+</article>`;
 });
 export {
   Page as default

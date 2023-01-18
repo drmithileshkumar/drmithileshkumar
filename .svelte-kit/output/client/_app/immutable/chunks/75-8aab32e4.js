@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-d803ff01.js";import{default as t}from"../components/pages/notes/maths/Limits and derivatives/Derivatives/_page.svelte-c0e14740.js";export{t as component,r as universal};
