@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-b774eedf.js";import{default as t}from"../components/pages/notes/maths/Sets/Equal sets/_page.svelte-b58a54d4.js";export{t as component,r as universal};
+import{_ as r}from"./_page-6261e811.js";import{default as t}from"../components/pages/notes/maths/Sets/Equal sets/_page.svelte-b58a54d4.js";export{t as component,r as universal};
