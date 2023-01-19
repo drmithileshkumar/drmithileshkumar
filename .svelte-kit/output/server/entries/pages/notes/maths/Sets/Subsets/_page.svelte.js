@@ -163,22 +163,12 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-				<ul>${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
-    default: () => {
-      return `${validate_component(Li, "Li").$$render($$result, { isActive: 2 }, {}, {
-        default: () => {
-          return `If \\(A\\) is a subset of \\(B\\), then we write \\(A \\subset B\\) or \\(B\\supset A\\).
-						`;
-        }
-      })}`;
-    }
-  })}
-					${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 3 }, {}, {
         default: () => {
-          return `If \\(A\\) is not a subset of \\(B\\), then we write \\(A \\not\\subset B\\).
-                        `;
+          return `If \\(A\\) is a subset of \\(B\\), then we write \\(A \\subset B\\) or \\(B\\supset A\\).
+						`;
         }
       })}`;
     }
@@ -187,8 +177,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 4 }, {}, {
         default: () => {
-          return `To indicate that \\(A\\) is either a subset of or equal to \\(B\\), we write \\(A\\subseteq
-							B\\).
+          return `If \\(A\\) is not a subset of \\(B\\), then we write \\(A \\not\\subset B\\).
                         `;
         }
       })}`;
@@ -198,6 +187,17 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 5 }, {}, {
         default: () => {
+          return `To indicate that \\(A\\) is either a subset of or equal to \\(B\\), we write \\(A\\subseteq
+							B\\).
+                        `;
+        }
+      })}`;
+    }
+  })}
+					${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 6 }, {}, {
+        default: () => {
           return `A subset \\(A\\) of set \\(B\\) is called a <em>proper</em> subset of \\(B\\) if \\(A\\) is not
 							equal to \\(B\\).
                         `;
@@ -205,18 +205,18 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</ul></section>
-			<section>${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
     default: () => {
-      return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 6 }, {}, {
+      return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 7 }, {}, {
         default: () => {
           return `Examples`;
         }
       })}`;
     }
   })}
-				<ul>${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
     default: () => {
-      return `${validate_component(Li, "Li").$$render($$result, { isActive: 7 }, {}, {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 8 }, {}, {
         default: () => {
           return `${escape(`\\(\\{1, 2\\} \\subset \\{2, 1, 3\\}\\)`)} is a proper subset.
 						`;
@@ -224,36 +224,36 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-					${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
+					${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
     default: () => {
-      return `${validate_component(Li, "Li").$$render($$result, { isActive: 8 }, {}, {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 9 }, {}, {
         default: () => {
           return `${escape(`\\(\\{1, 2, 3, 0\\} \\not\\subset \\{2, 1, 3, 4, 5\\}\\)`)}`;
         }
       })}`;
     }
   })}</ul></section>
-			<section>${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
     default: () => {
-      return `${validate_component(H2, "H2").$$render($$result, { isActive: 6 }, {}, {
+      return `${validate_component(H2, "H2").$$render($$result, { isActive: 10 }, {}, {
         default: () => {
           return `Subset Tree`;
         }
       })}`;
     }
   })}
-				${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+				${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
     default: () => {
-      return `${validate_component(Image, "Image").$$render($$result, { isActive: 6 }, {}, {
+      return `${validate_component(Image, "Image").$$render($$result, { isActive: 11 }, {}, {
         default: () => {
           return `<img style="${"width:min(400px, 90vw);"}" src="${"/notes/maths/sets/subsets/tree.svg"}" alt="${""}">`;
         }
       })}`;
     }
   })}</section>
-            <section>${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
+            <section>${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 9 }, {}, {
+      return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 12 }, {}, {
         default: () => {
           return `\\(A\\) is a subset of \\(B\\) if \\(a\\) is an element of \\(A\\) implies that \\(a\\) is also an element of \\(B\\). \\[A\\subset B ~~~if~~a\\in A\\implies a\\in B\\]  Alternatively, we can say that if \\(A\\subset B\\), then there does not exist any element in \\(A\\) that is also not in \\(B\\). \\[A\\subset B ~~~if~~\\nexists ~ a\\in A~~such~that~~ a\\notin B\\]
 					`;
@@ -261,9 +261,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
+                ${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { class: "remark", isActive: 10 }, {}, {
+      return `${validate_component(P, "P").$$render($$result, { class: "remark", isActive: 13 }, {}, {
         default: () => {
           return `Every set \\(A\\) is a subset of itself, i.e. \\(A\\subset A\\).
 					`;
@@ -271,18 +271,18 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
+                ${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { class: "question", isActive: 11 }, {}, {
+      return `${validate_component(P, "P").$$render($$result, { class: "question", isActive: 14 }, {}, {
         default: () => {
           return `Why is empty set a subset of every set?`;
         }
       })}`;
     }
   })}
-				${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
+				${validate_component(Item, "Item").$$render($$result, { item: 15 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { class: "solution", isActive: 12 }, {}, {
+      return `${validate_component(P, "P").$$render($$result, { class: "solution", isActive: 15 }, {}, {
         default: () => {
           return `An empty set \\(A = \\phi\\) contains no element. A set \\(A\\) is a subset of another set \\(B\\)
 						if \\(A\\) does not contain any element that is not in \\(B\\). Since, \\(\\phi\\) does not
@@ -293,9 +293,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</section>
-            <section>${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
+            <section>${validate_component(Item, "Item").$$render($$result, { item: 16 }, {}, {
     default: () => {
-      return `${validate_component(H2, "H2").$$render($$result, { isActive: 13 }, {}, {
+      return `${validate_component(H2, "H2").$$render($$result, { isActive: 16 }, {}, {
         default: () => {
           return `Set equality 
                     `;
@@ -303,9 +303,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-				${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
+				${validate_component(Item, "Item").$$render($$result, { item: 17 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 14 }, {}, {
+      return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 17 }, {}, {
         default: () => {
           return `\\(A\\) is equal to \\(B\\) if and only if (iff) \\(A\\subset B\\) and \\(B\\subset A\\). \\[A=B \\iff (a\\in A\\iff a\\in B)\\] 
 					`;
@@ -313,18 +313,18 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-				${validate_component(Item, "Item").$$render($$result, { item: 15 }, {}, {
+				${validate_component(Item, "Item").$$render($$result, { item: 18 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { class: "question", isActive: 15 }, {}, {
+      return `${validate_component(P, "P").$$render($$result, { class: "question", isActive: 18 }, {}, {
         default: () => {
           return `Is ${escape(`\\(\\phi = \\{\\phi\\}\\)`)} ?`;
         }
       })}`;
     }
   })}
-				${validate_component(Item, "Item").$$render($$result, { item: 16 }, {}, {
+				${validate_component(Item, "Item").$$render($$result, { item: 19 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { class: "solution", isActive: 16 }, {}, {
+      return `${validate_component(P, "P").$$render($$result, { class: "solution", isActive: 19 }, {}, {
         default: () => {
           return `We can write ${escape("\\(\\phi = \\{\\}\\)")}. It is clear that ${escape(`\\(\\{\\}\\)`)} has no elements
 						and ${escape(`\\(\\{\\phi\\}\\)`)}
@@ -333,18 +333,18 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 17 }, {}, {
+                ${validate_component(Item, "Item").$$render($$result, { item: 20 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { class: "question", isActive: 17 }, {}, {
+      return `${validate_component(P, "P").$$render($$result, { class: "question", isActive: 20 }, {}, {
         default: () => {
           return `Consider two sets ${escape(`\\(A = \\{x: x=3r-1, r\\in Z\\}\\)`)} and ${escape(`\\(B = \\{x: x=3s + 2, s\\in Z\\}\\)`)}. Is \\(A = B\\)?`;
         }
       })}`;
     }
   })}
-                <div class="${"solution"}">${validate_component(Item, "Item").$$render($$result, { item: 18 }, {}, {
+                <div class="${"solution"}">${validate_component(Item, "Item").$$render($$result, { item: 21 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 18 }, {}, {
+      return `${validate_component(P, "P").$$render($$result, { isActive: 121 }, {}, {
         default: () => {
           return `We need to check both conditions \\(A\\subset B\\) and \\(B\\subset A\\).
                         `;
@@ -352,9 +352,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                    <ul>${validate_component(Item, "Item").$$render($$result, { item: 19 }, {}, {
+                    <ul>${validate_component(Item, "Item").$$render($$result, { item: 22 }, {}, {
     default: () => {
-      return `${validate_component(Li, "Li").$$render($$result, { isActive: 19 }, {}, {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 22 }, {}, {
         default: () => {
           return `Let \\(a = 3r - 1 \\in A\\) where \\(r\\in Z\\). Does there exists \\(s\\in Z\\) such that \\(a = 3s + 2\\)? Let&#39;s find out. ${escape(`\\[
                                     \\begin{eqnarray}
@@ -369,9 +369,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })} 
-                        ${validate_component(Item, "Item").$$render($$result, { item: 20 }, {}, {
+                        ${validate_component(Item, "Item").$$render($$result, { item: 23 }, {}, {
     default: () => {
-      return `${validate_component(Li, "Li").$$render($$result, { isActive: 20 }, {}, {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 23 }, {}, {
         default: () => {
           return `Let \\(b = 3s + 2 \\in B\\) where \\(s\\in Z\\). Does there exists \\(r\\in Z\\) such that \\(b = 3r - 1\\)? Let&#39;s find out. ${escape(`\\[
                                     \\begin{eqnarray}
@@ -386,9 +386,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</ul>
-                    ${validate_component(Item, "Item").$$render($$result, { item: 21 }, {}, {
+                    ${validate_component(Item, "Item").$$render($$result, { item: 24 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { isActive: 21 }, {}, {
+      return `${validate_component(P, "P").$$render($$result, { isActive: 24 }, {}, {
         default: () => {
           return `This proves that \\(A = B\\).
                         `;
@@ -396,9 +396,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</div>
-                ${validate_component(Item, "Item").$$render($$result, { item: 22 }, {}, {
+                ${validate_component(Item, "Item").$$render($$result, { item: 25 }, {}, {
     default: () => {
-      return `${validate_component(P, "P").$$render($$result, { class: "question", isActive: 22 }, {}, {
+      return `${validate_component(P, "P").$$render($$result, { class: "question", isActive: 25 }, {}, {
         default: () => {
           return `Verify that \\(N\\subset Z \\subset Q\\subset R\\).
                     `;
@@ -408,7 +408,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   })}</section></section>
 		${!$presentationMode ? `<div class="${"youtube svelte-1o0j6m0"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/jbBsClpZmPQ"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}
 		${$presentationMode ? `<div class="${"slate"}"></div>` : ``}</div>
-	<section>${validate_component(Item, "Item").$$render($$result, { item: 23 }, {}, {
+	<section>${validate_component(Item, "Item").$$render($$result, { item: 26 }, {}, {
     default: () => {
       return `<section><h2>Practice</h2>
 				${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;

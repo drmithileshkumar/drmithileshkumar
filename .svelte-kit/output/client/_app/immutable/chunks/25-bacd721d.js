@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-e4032ebd.js";import{default as t}from"../components/pages/notes/maths/Application of derivatives/Maxima and minima/_page.svelte-7eb27052.js";export{t as component,r as universal};
+import{_ as r}from"./_page-33acaac8.js";import{default as t}from"../components/pages/notes/maths/Application of derivatives/Maxima and minima/_page.svelte-7eb27052.js";export{t as component,r as universal};
