@@ -44,11 +44,17 @@ const Twitter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Youtube_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: ".videos.svelte-170kte0{display:flex;flex-direction:row;gap:1em;flex-wrap:nowrap;margin-bottom:2em;background-color:rgba(110, 120, 150, 0.3);padding:1em;border-radius:10px;overflow-x:auto}.video.svelte-170kte0{display:flex;flex-direction:column;flex-wrap:wrap;box-shadow:1px 1px 3px gray;padding:0.5em;background-color:white}.title.svelte-170kte0{font-weight:bold;padding-top:0.5em;display:inline-block;width:210px}",
+  code: ".videos.svelte-6np4nz{display:flex;flex-direction:row;gap:1em;flex-wrap:nowrap;margin-bottom:2em;background-color:rgba(110, 120, 150, 0.3);padding:1em;border-radius:10px;overflow-x:auto}.videos.svelte-6np4nz::-webkit-scrollbar{width:0;height:0}.video.svelte-6np4nz{display:flex;flex-direction:column;flex-wrap:wrap;box-shadow:1px 1px 3px gray;padding:0.5em;background-color:white}.title.svelte-6np4nz{font-weight:bold;padding-top:0.5em;display:inline-block;width:210px;color:black}",
   map: null
 };
 const Youtube = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let videos = [
+    {
+      title: "Set : Equal sets",
+      src: "https://www.youtube.com/embed/jbBsClpZmPQ",
+      width: "210",
+      height: "150"
+    },
     {
       title: "Set : Finite and Infinite sets",
       src: "https://www.youtube.com/embed/xitRVmUKQz8",
@@ -76,9 +82,9 @@ const Youtube = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   ];
   $$result.css.add(css$1);
   return `<h1><a href="${"https://www.youtube.com/@drmithilesh"}">Youtube Channel</a></h1>
-<div class="${"videos svelte-170kte0"}">${each(videos, (video) => {
-    return `<div class="${"video svelte-170kte0"}"><iframe${add_attribute("width", video.width, 0)}${add_attribute("height", video.height, 0)}${add_attribute("src", video.src, 0)}${add_attribute("title", video.title, 0)} frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe>
-            <span class="${"title svelte-170kte0"}">${escape(video.title)}</span>
+<div class="${"videos svelte-6np4nz"}">${each(videos, (video) => {
+    return `<div class="${"video svelte-6np4nz"}"><iframe${add_attribute("width", video.width, 0)}${add_attribute("height", video.height, 0)}${add_attribute("src", video.src, 0)}${add_attribute("title", video.title, 0)} frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe>
+            <span class="${"title svelte-6np4nz"}">${escape(video.title)}</span>
         </div>`;
   })}
 </div>`;

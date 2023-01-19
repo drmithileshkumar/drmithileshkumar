@@ -12,7 +12,7 @@ let problemset = {
     c: ""
 };
 export const sets = (problemnumber) => {
-    let N = 12;
+    let N = 13;
     problemnumber = problemnumber % N;
     let choices = ['A', 'B', 'C', 'D'];
     let correctChoiceIndex = Math.floor(Math.random()*4);
@@ -291,6 +291,28 @@ export const sets = (problemnumber) => {
                 problemset.o[choices[correctChoiceIndex + 3]] = `\\(A\\subset \\mathbb{R}\\)`;
             }
             problemset.s = `Given set \\(A = ${s.str()}\\), which of the following is ${ques} correct?`;
+            break;
+        }
+        case 12: {
+            let c = randInt(20, 2);
+            let b = randInt(20, 2);
+            let l = randInt(20, 2);
+            let nmin = randInt(1,-1);
+            let nmax = randInt(5, 4);
+            let a = c;
+            let d = b - c * l;
+            let mmin = nmin + l;
+            let mmax = nmax + l;
+            let sign = d < 0 ? '' : '+';
+            values[0] = `\\(\\{x: x = ${c}m ${sign} ${d},~${mmin}\\leq m\\leq ${mmax}\\}\\)`;
+            values[1] = `\\(\\{x: x = ${c}m ${sign} ${d},~${nmin + 1}\\leq m\\leq ${nmax}\\}\\)`;
+            values[2] = `\\(\\{x: x = ${c}m ${sign} ${d},~${nmin}\\leq m\\leq ${nmax}\\}\\)`;
+            values[3] = `\\(\\{x: x = ${c}m ${sign} ${d},~${mmin}\\leq m\\leq ${mmax + 1}\\}\\)`;
+            for (let i = 0; i < 4; i++) {
+                problemset.o[choices[(correctChoiceIndex + i) % 4]] = values[i];
+            }
+
+            problemset.s = `Let \\(A = \\{x: x = ${a}n + ${b}, ${nmin}\\leq n\\leq ${nmax}\\}\\). Then which of the set is equal to \\(A\\)?`;
             break;
         }
     }

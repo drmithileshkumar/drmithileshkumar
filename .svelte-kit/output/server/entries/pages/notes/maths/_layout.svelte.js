@@ -4,7 +4,7 @@ import { d as chapters, e as sections, b as presentationMode, c as currentSlide,
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../chunks/Presenter.js";
 const _layout_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "nav.svelte-6l1wjv{display:grid;grid-template-columns:auto 1fr;max-width:600px}.maths.svelte-6l1wjv{margin:auto;font-family:'Georgia', serif;line-height:1.5;word-spacing:0.5ex}.presentationMode.svelte-6l1wjv{display:flex;height:1em;margin:0.5em 0;align-items:center;flex-direction:row}.container.svelte-6l1wjv{display:grid;grid-template-columns:1em 1fr 1em;position:relative;height:600px}aside.svelte-6l1wjv{background-color:rgba(230, 228, 228, 0.25);cursor:pointer;width:1em}.overlay.svelte-6l1wjv{position:absolute;z-index:2;left:0.5em;top:0;margin:auto;width:calc(100% - 2em);height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none}.overlay.svelte-6l1wjv::-webkit-scrollbar{width:0;height:0}.presenter.svelte-6l1wjv{position:absolute;right:35px;top:0;z-index:10}",
+  code: "nav.svelte-1f5hv28{display:grid;grid-template-columns:auto 1fr;max-width:600px}.maths.svelte-1f5hv28{margin:auto;font-family:'Georgia', serif;line-height:1.5;word-spacing:0.5ex}.presentationMode.svelte-1f5hv28{display:flex;height:1em;margin:0.5em 0;align-items:center;flex-direction:row}.container.svelte-1f5hv28{display:grid;grid-template-columns:1em 1fr 1em;position:relative;height:600px}aside.svelte-1f5hv28{background-color:rgba(230, 228, 228, 0.25);cursor:pointer;width:1em}.overlay.svelte-1f5hv28{position:absolute;z-index:2;left:0.5em;top:0;margin:auto;width:calc(100% - 2em);height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none}.overlay.svelte-1f5hv28::-webkit-scrollbar{width:0;height:0}.presenter.svelte-1f5hv28{position:absolute;right:35px;top:0;z-index:10}",
   map: null
 };
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -31,11 +31,11 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$rendered;
   do {
     $$settled = true;
-    $$rendered = `${$$result.head += `<!-- HEAD_svelte-jatvq7_START --><!-- HEAD_svelte-jatvq7_END -->`, ""}
-    ${!$presentationMode ? `<span class="${"noMenu"}"${add_attribute("this", $overlay, 0)}></span>` : ``}
-    <div class="${"maths " + escape($presentationMode ? "noMenu" : "", true) + " svelte-6l1wjv"}"><div class="${"presentationMode svelte-6l1wjv"}"><label style="${"display:flex;align-items:center;"}"><input style="${"display:none;"}" type="${"checkbox"}"${add_attribute("this", checkbox, 0)}${add_attribute("checked", $presentationMode, 1)}> 
-                <span class="${"material-icons"}" style="${"color: " + escape($presentationMode ? "teal" : "white", true)}">slideshow</span></label>
-            ${!$presentationMode ? `<nav class="${"svelte-6l1wjv"}">${validate_component(Select, "Select").$$render(
+    $$rendered = `${$$result.head += `<!-- HEAD_svelte-pzt9nu_START --><!-- HEAD_svelte-pzt9nu_END -->`, ""}
+${!$presentationMode ? `<span class="${"noMenu"}"${add_attribute("this", $overlay, 0)}></span>` : ``}
+<div class="${"maths " + escape($presentationMode ? "noMenu" : "", true) + " svelte-1f5hv28"}"><div class="${"presentationMode svelte-1f5hv28"}"><label style="${"display:flex;align-items:center;"}"><input style="${"display:none;"}" type="${"checkbox"}"${add_attribute("this", checkbox, 0)}${add_attribute("checked", $presentationMode, 1)}>
+			<span class="${"material-icons"}" style="${"color: " + escape($presentationMode ? "teal" : "white", true)}">slideshow</span></label>
+		${!$presentationMode ? `<nav class="${"svelte-1f5hv28"}">${validate_component(Select, "Select").$$render(
       $$result,
       {
         style: "width: 35vw; background:black; color:white;",
@@ -51,7 +51,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       },
       {}
     )}
-                    ${validate_component(Select, "Select").$$render(
+				${validate_component(Select, "Select").$$render(
       $$result,
       {
         style: "width: 35vw; background:black; color:white;",
@@ -67,13 +67,14 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       },
       {}
     )}</nav>` : ``}
-            ${$presentationMode ? `${validate_component(CanvasBar, "CanvasBar").$$render($$result, {}, {}, {})}` : ``}</div>
-        <div class="${escape(null_to_empty($presentationMode ? "container noMenu" : ""), true) + " svelte-6l1wjv"}">${$presentationMode ? `<aside class="${"back noMenu svelte-6l1wjv"}"></aside>` : ``}
-            
-            ${$presentationMode ? `<div class="${"absolute overlay noMenu svelte-6l1wjv"}"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>
-                <div class="${"presenter noMenu svelte-6l1wjv"}">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>` : ``}
-            ${slots.default ? slots.default({ class: $presentationMode ? "noMenu" : "" }) : ``}
-            ${$presentationMode ? `<aside class="${"next noMenu svelte-6l1wjv"}"></aside>` : ``}</div></div>`;
+		${$presentationMode ? `${validate_component(CanvasBar, "CanvasBar").$$render($$result, {}, {}, {})}` : ``}</div>
+	<div class="${escape(null_to_empty($presentationMode ? "container noMenu" : ""), true) + " svelte-1f5hv28"}">${$presentationMode ? `<aside class="${"back noMenu svelte-1f5hv28"}"></aside>` : ``}
+
+		${$presentationMode ? `<div class="${"absolute overlay noMenu svelte-1f5hv28"}"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>
+			<div class="${"presenter noMenu svelte-1f5hv28"}">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>` : ``}
+		${slots.default ? slots.default({ class: $presentationMode ? "noMenu" : "" }) : ``}
+		${$presentationMode ? `<aside class="${"next noMenu svelte-1f5hv28"}"></aside>` : ``}</div>
+</div>`;
   } while (!$$settled);
   $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();

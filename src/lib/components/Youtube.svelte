@@ -1,6 +1,12 @@
 <script>
     let videos = [
         {
+            title: "Set : Equal sets",
+            src: "https://www.youtube.com/embed/jbBsClpZmPQ",
+            width: "210",
+            height: "150"
+        },
+        {
             title: "Set : Finite and Infinite sets",
             src: "https://www.youtube.com/embed/xitRVmUKQz8",
             width: "210",
@@ -47,6 +53,10 @@
         border-radius: 10px;
         overflow-x: auto;
     }
+    .videos::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+	}
     .video {
         display: flex;
         flex-direction: column;
@@ -60,5 +70,6 @@
         padding-top: 0.5em;
         display: inline-block;
         width: 210px;
+        color: black;
     }
 </style>

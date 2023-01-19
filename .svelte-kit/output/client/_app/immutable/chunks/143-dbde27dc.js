@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-44630c89.js";import{default as t}from"../components/pages/notes/maths/Trigonometric functions/Trigonometric equations/_page.svelte-e8835f52.js";export{t as component,r as universal};
+import{_ as r}from"./_page-a8a77640.js";import{default as t}from"../components/pages/notes/maths/Trigonometric functions/Trigonometric equations/_page.svelte-e8835f52.js";export{t as component,r as universal};
