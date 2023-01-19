@@ -160,8 +160,7 @@
 			<section>
 				<Item item={0}>
 					<P isActive={0}>
-                        Given a set, we can construct other sets by using some of the elements of the given
-						set.
+                        In the last section we defined equal sets. In this section, we'll learn how to compare two sets. At the same time, it will give us a way to construct new sets from a given set.
                     </P>
 				</Item>
 				<Item item={1}>
@@ -169,6 +168,11 @@
 						Given sets \(A\) and \(B\), \(A\) is said to be <em>subset</em> of \(B\) if every
 						element of \(A\) is also in \(B\). In such a case, \(B\) is called a <em>superset</em> of
 						\(A\).
+					</P>
+				</Item>
+				<Item item={2}>
+					<P class="definition" isActive={2}>
+						Intuitively, this is like less than ( \({TeX.less}\) ) relation of numbers. The only difference is that while two numbers are always related, two sets will not be related like this if they contain different elements.
 					</P>
 				</Item>
 				<ul>
@@ -213,6 +217,16 @@
 					</Item>
 				</ul>
             </section>
+			<section>
+				<Item item={6}>
+					<H2 isActive={6}>Subset Tree</H2>
+				</Item>
+				<Item item={6}>
+					<Image isActive={6}>
+						<img style="width:min(400px, 90vw);" src="/notes/maths/sets/subsets/tree.svg" alt=''>
+					</Image>
+				</Item>
+			</section>
             <section>
                 <Item item={9}>
 					<P class="definition" isActive={9}>

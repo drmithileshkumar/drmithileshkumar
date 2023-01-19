@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-dfb1f920.js";import{default as t}from"../components/pages/notes/maths/Application of derivatives/Approximations/_page.svelte-b40412b5.js";export{t as component,r as universal};
+import{_ as r}from"./_page-725d067f.js";import{default as t}from"../components/pages/notes/maths/Application of derivatives/Approximations/_page.svelte-b40412b5.js";export{t as component,r as universal};

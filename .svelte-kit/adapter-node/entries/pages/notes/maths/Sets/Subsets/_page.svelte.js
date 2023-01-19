@@ -4,9 +4,11 @@ import { P as Practice } from "../../../../../../chunks/Practice.js";
 /* empty css                                                              */import { S as Sets } from "../../../../../../chunks/sets.js";
 import { r as randInt } from "../../../../../../chunks/common.js";
 import { p as page } from "../../../../../../chunks/stores.js";
+import { T as TeX } from "../../../../../../chunks/constants.js";
 import { I as Item, P, L as Li } from "../../../../../../chunks/Image.svelte_svelte_type_style_lang.js";
 import { H as H3 } from "../../../../../../chunks/H3.js";
 import { H as H2 } from "../../../../../../chunks/H2.js";
+import { I as Image } from "../../../../../../chunks/Image.js";
 /* empty css                                                          */const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: ".display.svelte-1o0j6m0{position:relative;position:-webkit-sticky}.youtube.svelte-1o0j6m0{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start}article.svelte-1o0j6m0{position:relative;padding:0.5em}.absolute.svelte-1o0j6m0{margin:auto;width:100%;height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1o0j6m0::-webkit-scrollbar{width:0;height:0}.pad.svelte-1o0j6m0{min-height:150px}.thumbnail.svelte-1o0j6m0{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1o0j6m0{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:red;text-shadow:1px 1px 3px rgb(4, 4, 4);padding:1em;background-image:url('/notes/maths/sets/subsets/thumbnail.svg');background-repeat:no-repeat;background-position:center;width:500px;height:500px}.grid.svelte-1o0j6m0{display:grid;grid-template-columns:auto 420px}.flex.svelte-1o0j6m0{display:flex;flex-direction:column-reverse}.contentpart.svelte-1o0j6m0{padding:0.5em}",
@@ -133,8 +135,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
-          return `Given a set, we can construct other sets by using some of the elements of the given
-						set.
+          return `In the last section we defined equal sets. In this section, we&#39;ll learn how to compare two sets. At the same time, it will give us a way to construct new sets from a given set.
                     `;
         }
       })}`;
@@ -147,6 +148,16 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           return `Given sets \\(A\\) and \\(B\\), \\(A\\) is said to be <em>subset</em> of \\(B\\) if every
 						element of \\(A\\) is also in \\(B\\). In such a case, \\(B\\) is called a <em>superset</em> of
 						\\(A\\).
+					`;
+        }
+      })}`;
+    }
+  })}
+				${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 2 }, {}, {
+        default: () => {
+          return `Intuitively, this is like less than ( \\(${escape(TeX.less)}\\) ) relation of numbers. The only difference is that while two numbers are always related, two sets will not be related like this if they contain different elements.
 					`;
         }
       })}`;
@@ -222,6 +233,24 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</ul></section>
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+    default: () => {
+      return `${validate_component(H2, "H2").$$render($$result, { isActive: 6 }, {}, {
+        default: () => {
+          return `Subset Tree`;
+        }
+      })}`;
+    }
+  })}
+				${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+    default: () => {
+      return `${validate_component(Image, "Image").$$render($$result, { isActive: 6 }, {}, {
+        default: () => {
+          return `<img style="${"width:min(400px, 90vw);"}" src="${"/notes/maths/sets/subsets/tree.svg"}" alt="${""}">`;
+        }
+      })}`;
+    }
+  })}</section>
             <section>${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 9 }, {}, {
