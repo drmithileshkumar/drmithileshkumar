@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-7d7a3607.js";import{default as t}from"../components/pages/notes/maths/Binomial theorem/General and middle terms/_page.svelte-adb421ad.js";export{t as component,r as universal};

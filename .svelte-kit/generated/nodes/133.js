@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Three dimensional geometry/Angle between a line and a plane/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Straight lines/Various forms of the equation of a line/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Three dimensional geometry/Angle between a line and a plane/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Straight lines/Various forms of the equation of a line/+page.svelte";

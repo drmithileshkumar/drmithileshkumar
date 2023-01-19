@@ -2599,6 +2599,30 @@
       "_index.js"
     ]
   },
+  "src/routes/notes/maths/Sets/Real numbers/+page.svelte": {
+    "file": "entries/pages/notes/maths/Sets/Real numbers/_page.svelte.js",
+    "src": "src/routes/notes/maths/Sets/Real numbers/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores2.js",
+      "_stores.js",
+      "_constants.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-18c92c9f.css",
+      "_app/immutable/assets/Practice-a30674f0.css",
+      "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "src/routes/notes/maths/Sets/Real numbers/+page.js": {
+    "file": "entries/pages/notes/maths/Sets/Real numbers/_page.js",
+    "src": "src/routes/notes/maths/Sets/Real numbers/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
   "src/routes/notes/maths/Sets/Sets and their representations/+page.svelte": {
     "file": "entries/pages/notes/maths/Sets/Sets and their representations/_page.svelte.js",
     "src": "src/routes/notes/maths/Sets/Sets and their representations/+page.svelte",
@@ -2636,13 +2660,18 @@
     "imports": [
       "_index3.js",
       "_stores2.js",
+      "_Practice.js",
+      "_sets.js",
+      "_common.js",
       "_stores.js",
-      "_constants.js"
+      "_Image.svelte_svelte_type_style_lang.js",
+      "_H3.js",
+      "_H2.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-58267112.css",
-      "_app/immutable/assets/Practice-a30674f0.css",
-      "_app/immutable/assets/Message-9326233f.css"
+      "_app/immutable/assets/_page-1bdfe697.css",
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Div-a8ab5461.css"
     ]
   },
   "src/routes/notes/maths/Sets/Subsets/+page.js": {
@@ -3334,9 +3363,10 @@
       "_Image.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-937bda07.css",
+      "_app/immutable/assets/_page-9c59cf67.css",
       "_app/immutable/assets/Practice-a30674f0.css",
-      "_app/immutable/assets/Message-9326233f.css"
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Div-a8ab5461.css"
     ]
   },
   "src/routes/notes/quantum/+page.js": {

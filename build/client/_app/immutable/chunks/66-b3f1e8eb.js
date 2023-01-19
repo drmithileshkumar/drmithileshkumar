@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-690ef50f.js";import{default as t}from"../components/pages/notes/maths/Integrals/Fundamental theorem of calculus/_page.svelte-39ddcef4.js";export{t as component,r as universal};

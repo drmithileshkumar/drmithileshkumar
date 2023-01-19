@@ -1,744 +1,340 @@
 <script id="MathJax-script">
-    // @ts-nocheck
-        import {chapters, sections, selectedChapter, selectedSection} from '$lib/pages/notes/maths/stores';
-        import {presentationMode, presentation, overlay, slideCounter, autoScroll, currentSlide} from '$lib/pages/notes/maths/stores';
-        import Practice from '$lib/utils/practiceproblem/Practice.svelte';
-        import Message from '$lib/ui/Message.svelte';
-        import {Point2D} from '$lib/utils/common/point2d';
-        import {randNum, randInt} from '$lib/utils/common/common';
-        import {page} from '$app/stores';
-        import {TeX} from '$lib/utils/common/constants';
-        import {onMount} from 'svelte';
-        onMount(() => {
-            $selectedChapter = 'Sets';
-            $selectedSection = 'Subsets';
-            $slideCounter = 11;
-            $currentSlide = -2;
-            MathJax.typeset();
-        });
-        let problemset = {
-            s: "",
-            o: {
-                    'A': '',
-                    'B': "",
-                    'C': "",
-                    'D': ''
-                },
-            c: ""
-        };
-        const generateProblem = (problemnumber) => {
-            let N = 1;
-            problemnumber = problemnumber % N;
-            let choices = ['A', 'B', 'C', 'D'];
-            let correctChoiceIndex = Math.floor(Math.random()*4);
-            problemset.c = choices[correctChoiceIndex];
-            let ans;
-            let values = [0, 0, 0, 0];
-            switch(problemnumber) {
-                case 0: {
-                    
-                    let n = randInt(20, 1);
-                    let m = randInt(n + 1, n + 10) + 10;
-                    let k = randInt(8, 2);
-                    let U = new Sets();
-                    U.interval(n, m);
-                    let s = new Sets();
-                    s.randomSet(n, m, k);
-                    let sc = s.c(U);
-                    let sbad = s.randomSubset();
-                    sbad.add(sc.randomElem());
-                    
-                    values[0] = `\\(${sbad.str()}\\)`;
-                    values[1] = `\\(${s.randomSubset().str()}\\)`;
-                    values[2] = `\\(${s.randomSubset().str()}\\)`;
-                    values[3] = `\\(${s.randomSubset().str()}\\)`;
-                    for(let i = 0; i < 4; i++) {
-                        problemset.o[choices[(correctChoiceIndex + i) % 4]] = values[i];
-                    } 
-                    
-                    problemset.s = `Which of the following is not a subset of \\(${s.str()}\\)?`;
-                    break;
-                }
-                case 1: {
-                    
-                    let n = randInt(20, 1);
-                    let m = randInt(n + 1, n + 10) + 10;
-                    let k = randInt(8, 2);
-                    
-                    let s = new Sets();
-                    s.randomSet(n, m, k);
-                    
-                    let r = Math.random();
-                    let suset = r < 0.25 ? 'N' : r < 0.5 ? 'Z' : r < 0.75 ? 'Q' : 'T';
-                    let opt = [`\\(A\\subset \\mathbb{N}\\)`, `\\(A\\subset \\mathbb{Z}\\)`, `\\(A\\subset \\mathbb{Q}\\)`, `\\(A\\subset \\mathbb{T}\\)`];
-                    let ques = "";
-                    let co;
-                    switch(suset) {
-                        case 'N': 
-                            s.add(randInt(m, n));
-                            ques = 'not';
-                            co = 3;
-                            break;
-                        case 'Z':
-                            s.add(-randInt(m, n));
-                            ques = 'not';
-                            co = 0;
-                            break;
-                        case 'Q':
-                            let q = new Q();
-                            q.randF(m, n);
-                            let q1 = q.add(new Q(1, 2))
-                            s.add(q1);
-                            co = 2;
-                            break;
-                        case 'T':
-                            let nq = new Surd();
-                            nq.randomSurd(m);
-                            s.add(nq);
-                            co = 3;
-                            break;
-                    }
-                    for(let i = 0; i < 4; i++) {
-                        problemset.o[choices[(correctChoiceIndex + i) % 4]] = opt[(co + i) % 4];
-                    } 
-                    if(suset == 'Z') {
-                        problemset.o[choices[correctChoiceIndex + 3]] = `\\(A\\subset \\mathbb{R}\\)`;
-                    }
-                    problemset.s = `Given set \\(A = ${s.str()}\\), which of the following is ${ques} correct?`;
-                    break;
-                }
-            }
-            problemset = problemset;
-            return problemset;
-        }
-    </script>
-    <style>
-        p {
-            text-indent: 2em;
-        }
-        /* .image {
-            display: flex;
-            justify-content: center;
-            width: min(95vw, 600px);
-        } */
-    </style>
-    <svelte:head>
-        <title>{$selectedSection}</title>
-        <link rel="canonical" href="https://drmithileshkumar.com{$page.url.pathname}" />
-        <meta name="description" content="Subsets" />
-        
-    </svelte:head>
-    <article class:absolute={$presentationMode} bind:this={$presentation}>
-        <h1>{$selectedSection}</h1>
-        <section>
-            <p>Given a set, we can construct other sets by using some of the elements of the given set.</p>
-           <div class="definition">
-               <p>
-                    Given sets \(A\) and \(B\), \(A\) is said to be <em>subset</em> of \(B\) if every element of \(A\) is also in \(B\). In such a case, \(B\) is called a <em>superset</em> of \(A\).
-               </p>
-               <ul>
-                   <li>
-                    If \(A\) is a subset of \(B\), then we write \(A \subset B\) or \(B\supset A\).
-                   </li>
-                   <li>
-                    If \(A\) is not a subset of \(B\), then we write \(A \not\subset B\).
-                   </li>
-                   <li>
-                       To indicate that \(A\) is either a subset of or equal to \(B\), we write \(A\subseteq B\).
-                   </li>
-                   <li>
-                       A subset \(A\) of set \(B\) is called a <em>proper</em> subset of \(B\) if \(A\) is not equal to \(B\). 
-                   </li>
-               </ul>
-           </div>
-        </section>
-        
-        <section>
-            <h3 class="examples">Examples</h3>
-            <ul>
-                <li>
-                    {`\\(\\{1, 2\\} \\subset \\{2, 1, 3\\}\\)`} is a proper subset.
-                </li>
-                <li>
-                    {`\\(\\{1, 2, 3, 0\\} \\not\\subset \\{2, 1, 3, 4, 5\\}\\)`}
-                </li>
-            </ul>
-            <div class="question">
-                Why is empty set a subset of every set?
-            </div>
-            <p class="solution">
-                An empty set \(\phi\) contains no element. A set \(B\) is a subset of another set \(A\) if \(B\) does not contain any element that is not in \(A\). Since, \(\phi\) does not contain any element, it is also true that it does not contain any element that is not in \(A\). Hence, \(\phi\) is a subset of \(A\).
-            </p>
-            <div class="question">
-                Is {`\\(\\phi = \\{\\phi\\}\\)`} ?
-            </div>
-            <p class="solution">
-                We can write {'\\(\\phi = \\{\\}\\)'}. It is clear that {`\\(\\{\\}\\)`} has no elements and {`\\(\\{\\phi\\}\\)`} has one element, namely \(\phi\). Hence {`\\(\\phi \\neq \\{\\phi\\}\\)`}
-            </p>
-        </section>
-    
-        <h2>Real Numbers</h2>
-        <section>
-            <p>Some of the important subsets of real number are</p>
-           
-            <dl>
-                <dt>Natural numbers</dt>
-                <dd>{`\\(\\mathbb{N} = \\{1, 2, 3, \\dots\\}\\)`}</dd>
-        
-                <dt>Integers</dt>
-                <dd>{`\\(\\mathbb{Z} = \\{\\dots, -1, 0, 1, \\dots\\}\\)`}</dd>
-        
-                <dt>Rational numbers</dt>
-                <dd>{`\\(\\mathbb{Q} = \\{x: x = \\frac{p}{q}, p, q\\in \\mathbb{Z}, q\\neq 0\\}\\)`}</dd>
-        
-                <dt>Irrational numbers</dt>
-                <dd>{`\\(\\mathbb{T} = \\{x: x \\notin \\mathbb{Q}\\}\\)`}</dd>
-            </dl>
-           <p>
-               A natural number is an integer as well. An integer is a rational number too. But, a rational number is not an irrational number. These observations can be written compactly as 
-               {`\\[\\mathbb{N}\\subset \\mathbb{Z}\\subset \\mathbb{Q} \\subset \\mathbb{R}, \\mathbb{T}\\subset\\mathbb{R},  \\mathbb{Q}\\not\\subset\\mathbb{T}\\]`}
-           </p>
-        </section>
-        
-        <section>
-            <h3 class="examples">Examples</h3>
-            <ul>
-                <li>
-                    {`\\(\\{\\pi, \\sqrt{2}\\} \\subset \\mathbb{T}\\)`}
-                </li>
-                <li>
-                    {`\\(\\{1, -2, \\sqrt{3}, \\frac{1}{2}\\} \\subset \\mathbb{T}\\)`}
-                </li>
-            </ul>
-        </section>
-        <h2>Intervals as subsets of {'\\(\\mathbb{R}\\)'}</h2>
-        <div class="definition">
-            Let \(a, b{TeX.inR}\) and \(a {TeX.less} b\). Then the set of real numbers \({TeX.set('y', 'a<y<b')}\) is called an <em>open interval</em> and is denoted by \((a,b)\). Note that \(a\) and \(b\) do not belong to the open interval.
-        </div>
-        <div class="definition">
-            Let \(a, b{TeX.inR}\) and \(a {TeX.less} b\). Then the set of real numbers \({TeX.set('y', 'a\\leq y\\leq b')}\) is called a <em>closed interval</em> and is denoted by \([a,b]\). Note that \(a\) and \(b\) belong to the closed interval.
-        </div>
-        <p>There are two other type of intervals (called <em>clopen</em>).</p>
-        <ul>
-            <li>
-                \([a,b) = {TeX.set('y', 'a\\leq y<b')}\) where \(a\) is in the interval, but not \(b\).
-            </li>
-            <li>
-                \((a,b] = {TeX.set('y', 'a< y\\leq b')}\) where \(b\) is in the interval, but not \(a\).
-            </li>
-        </ul>
-        <p>
-            An interval of {TeX.R} is visualized by a segment on a number line.
-        </p>
-        <div class="image">
-            <svg width="100%" height="100%" viewBox="-292.75 -293.58499908447266 600 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <defs></defs><g>
-                        <g  
-                            class='draggable'
-                            id='Layer-0'
-                            fill='none'
-                            stroke='none'
-                            stroke-width='0'
-                            stroke-dasharray='none'
-                            opacity='1'
-                            mask='none'
-                            filter='none'
-                            transform='matrix(1 0 0 1 0 0)'
-                        >
-                        
-                        <g  
-                            class='draggable'
-                            id='WebdutTeam18R12Group-10'
-                            fill='rgba(0, 0, 0, 0)'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='1'
-                            stroke-dasharray='none'
-                            opacity='1'
-                            mask='none'
-                            filter='none'
-                            transform='matrix(1 0 0 1 14 41)'
-                        >
-                        
-                        <path  
-                            id='WebdutTeam18R12Path-2'
-                            d='M -253.75,-225.05999755859375 H -27.75'
-                            fill='rgba(0, 0, 0, 0)'
-                            fill-rule='evenodd'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='2'
-                            stroke-dasharray='none'
-                            stroke-linecap='butt'
-                            stroke-linejoin='miter'
-                            stroke-miterlimit='4'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            marker-start='none'
-                            marker-mid='none'
-                            marker-end='none'
-                            transform='matrix(1 0 0 1 0 -13)'
-                        />
-                        
-                        <path  
-                            id='WebdutTeam18R12Path-3'
-                            d='M -195.75,-221.05999755859375 H -96.75'
-                            fill='rgba(0, 0, 0, 0)'
-                            fill-rule='evenodd'
-                            stroke='rgba(0, 234, 193, 1)'
-                            stroke-width='4'
-                            stroke-dasharray='none'
-                            stroke-linecap='butt'
-                            stroke-linejoin='miter'
-                            stroke-miterlimit='4'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            marker-start='none'
-                            marker-mid='none'
-                            marker-end='none'
-                            transform='matrix(1 0 0 1 6 -17)'
-                        />
-                        
-                        <circle  
-                            id='WebdutTeam18R12Circle-4'
-                            cx='24.25'
-                            cy='-188.55999755859375'
-                            r='10'
-                            fill='rgba(255, 255, 255, 1)'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='1'
-                            stroke-dasharray='none'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            transform='matrix(1 0 0 1 -212.25 -49)'
-                        />
-                        
-                        <circle  
-                            id='WebdutTeam18R12Circle-5'
-                            cx='24.25'
-                            cy='-188.55999755859375'
-                            r='10'
-                            fill='rgba(255, 255, 255, 1)'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='1'
-                            stroke-dasharray='none'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            transform='matrix(1 0 0 1 -111.25 -49)'
-                        />
-                        
-                        <g  
-                            id='WebdutTeam18R12Latex-6'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='undefined'
-                            stroke-width='undefined'
-                            stroke-dasharray='undefined'
-                            opacity='1'
-                            filter='none'
-                            mask='undefined'
-                            transform='matrix(0.03 0 0 0.03 -196 -201)'
-                        ><defs><path id="MJX-16057-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></defs><g stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D44E" xlink:href="#MJX-16057-TEX-I-1D44E"></use></g></g></g>
-                        </g>
-                        
-                        <g  
-                            id='WebdutTeam18R12Latex-7'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='undefined'
-                            stroke-width='undefined'
-                            stroke-dasharray='undefined'
-                            opacity='1'
-                            filter='none'
-                            mask='undefined'
-                            transform='matrix(0.03 0 0 0.03 -92 -200)'
-                        ><defs><path id="MJX-16058-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></defs><g stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D44F" xlink:href="#MJX-16058-TEX-I-1D44F"></use></g></g></g>
-                        </g>
-                        
-                        <g  
-                            id='WebdutTeam18R12Latex-8'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='undefined'
-                            stroke-width='undefined'
-                            stroke-dasharray='undefined'
-                            opacity='1'
-                            filter='none'
-                            mask='undefined'
-                            transform='matrix(0.03 0 0 0.03 -172 -262)'
-                        ><defs><path id="MJX-16059-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-16059-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJX-16059-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-16059-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path id="MJX-16059-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></defs><g stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><use data-c="28" xlink:href="#MJX-16059-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(389,0)"><use data-c="1D44E" xlink:href="#MJX-16059-TEX-I-1D44E"></use></g><g data-mml-node="mo" transform="translate(918,0)"><use data-c="2C" xlink:href="#MJX-16059-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(1362.7,0)"><use data-c="1D44F" xlink:href="#MJX-16059-TEX-I-1D44F"></use></g><g data-mml-node="mo" transform="translate(1791.7,0)"><use data-c="29" xlink:href="#MJX-16059-TEX-N-29"></use></g></g></g>
-                        </g>
-                        </g>
-                        <g  
-                            class='draggable'
-                            id='WebdutTeam18R12Group-11'
-                            fill='rgba(0, 0, 0, 0)'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='1'
-                            stroke-dasharray='none'
-                            opacity='1'
-                            mask='none'
-                            filter='none'
-                            transform='matrix(1 0 0 1 279 39)'
-                        >
-                        
-                        <path  
-                            id='WebdutTeam18R12Path-12'
-                            d='M -253.75,-225.05999755859375 H -27.75'
-                            fill='rgba(0, 0, 0, 0)'
-                            fill-rule='evenodd'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='2'
-                            stroke-dasharray='none'
-                            stroke-linecap='butt'
-                            stroke-linejoin='miter'
-                            stroke-miterlimit='4'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            marker-start='none'
-                            marker-mid='none'
-                            marker-end='none'
-                            transform='matrix(1 0 0 1 0 -13)'
-                        />
-                        
-                        <path  
-                            id='WebdutTeam18R12Path-13'
-                            d='M -195.75,-221.05999755859375 H -96.75'
-                            fill='rgba(0, 0, 0, 0)'
-                            fill-rule='evenodd'
-                            stroke='rgba(0, 234, 193, 1)'
-                            stroke-width='4'
-                            stroke-dasharray='none'
-                            stroke-linecap='butt'
-                            stroke-linejoin='miter'
-                            stroke-miterlimit='4'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            marker-start='none'
-                            marker-mid='none'
-                            marker-end='none'
-                            transform='matrix(1 0 0 1 6 -17)'
-                        />
-                        
-                        <circle  
-                            id='WebdutTeam18R12Circle-14'
-                            cx='24.25'
-                            cy='-188.55999755859375'
-                            r='10'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='1'
-                            stroke-dasharray='none'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            transform='matrix(1 0 0 1 -213.25 -50)'
-                        />
-                        
-                        <circle  
-                            id='WebdutTeam18R12Circle-15'
-                            cx='24.25'
-                            cy='-188.55999755859375'
-                            r='10'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='1'
-                            stroke-dasharray='none'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            transform='matrix(1 0 0 1 -111.25 -49)'
-                        />
-                        
-                        <g  
-                            id='WebdutTeam18R12Latex-16'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='undefined'
-                            stroke-width='undefined'
-                            stroke-dasharray='undefined'
-                            opacity='1'
-                            filter='none'
-                            mask='undefined'
-                            transform='matrix(0.03 0 0 0.03 -196 -201)'
-                        ><defs><path id="MJX-16060-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></defs><g stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D44E" xlink:href="#MJX-16060-TEX-I-1D44E"></use></g></g></g>
-                        </g>
-                        
-                        <g  
-                            id='WebdutTeam18R12Latex-17'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='undefined'
-                            stroke-width='undefined'
-                            stroke-dasharray='undefined'
-                            opacity='1'
-                            filter='none'
-                            mask='undefined'
-                            transform='matrix(0.03 0 0 0.03 -92 -200)'
-                        ><defs><path id="MJX-16061-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></defs><g stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D44F" xlink:href="#MJX-16061-TEX-I-1D44F"></use></g></g></g>
-                        </g>
-                        
-                        <g  
-                            id='WebdutTeam18R12Latex-18'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='undefined'
-                            stroke-width='undefined'
-                            stroke-dasharray='undefined'
-                            opacity='1'
-                            filter='none'
-                            mask='undefined'
-                            transform='matrix(0.03 0 0 0.03 -166 -262)'
-                        ><defs><path id="MJX-16062-TEX-N-5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"></path><path id="MJX-16062-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJX-16062-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-16062-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path id="MJX-16062-TEX-N-5D" d="M22 710V750H159V-250H22V-210H119V710H22Z"></path></defs><g stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><use data-c="5B" xlink:href="#MJX-16062-TEX-N-5B"></use></g><g data-mml-node="mi" transform="translate(278,0)"><use data-c="1D44E" xlink:href="#MJX-16062-TEX-I-1D44E"></use></g><g data-mml-node="mo" transform="translate(807,0)"><use data-c="2C" xlink:href="#MJX-16062-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(1251.7,0)"><use data-c="1D44F" xlink:href="#MJX-16062-TEX-I-1D44F"></use></g><g data-mml-node="mo" transform="translate(1680.7,0)"><use data-c="5D" xlink:href="#MJX-16062-TEX-N-5D"></use></g></g></g>
-                        </g>
-                        </g>
-                        <g  
-                            class='draggable'
-                            id='WebdutTeam18R12Group-19'
-                            fill='rgba(0, 0, 0, 0)'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='1'
-                            stroke-dasharray='none'
-                            opacity='1'
-                            mask='none'
-                            filter='none'
-                            transform='matrix(1 0 0 1 15 158)'
-                        >
-                        
-                        <path  
-                            id='WebdutTeam18R12Path-20'
-                            d='M -253.75,-225.05999755859375 H -27.75'
-                            fill='rgba(0, 0, 0, 0)'
-                            fill-rule='evenodd'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='2'
-                            stroke-dasharray='none'
-                            stroke-linecap='butt'
-                            stroke-linejoin='miter'
-                            stroke-miterlimit='4'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            marker-start='none'
-                            marker-mid='none'
-                            marker-end='none'
-                            transform='matrix(1 0 0 1 0 -13)'
-                        />
-                        
-                        <path  
-                            id='WebdutTeam18R12Path-21'
-                            d='M -195.75,-221.05999755859375 H -96.75'
-                            fill='rgba(0, 0, 0, 0)'
-                            fill-rule='evenodd'
-                            stroke='rgba(0, 234, 193, 1)'
-                            stroke-width='4'
-                            stroke-dasharray='none'
-                            stroke-linecap='butt'
-                            stroke-linejoin='miter'
-                            stroke-miterlimit='4'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            marker-start='none'
-                            marker-mid='none'
-                            marker-end='none'
-                            transform='matrix(1 0 0 1 6 -17)'
-                        />
-                        
-                        <circle  
-                            id='WebdutTeam18R12Circle-22'
-                            cx='24.25'
-                            cy='-188.55999755859375'
-                            r='10'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='1'
-                            stroke-dasharray='none'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            transform='matrix(1 0 0 1 -212.25 -49)'
-                        />
-                        
-                        <circle  
-                            id='WebdutTeam18R12Circle-23'
-                            cx='24.25'
-                            cy='-188.55999755859375'
-                            r='10'
-                            fill='rgba(255, 255, 255, 1)'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='1'
-                            stroke-dasharray='none'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            transform='matrix(1 0 0 1 -111.25 -49)'
-                        />
-                        
-                        <g  
-                            id='WebdutTeam18R12Latex-24'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='undefined'
-                            stroke-width='undefined'
-                            stroke-dasharray='undefined'
-                            opacity='1'
-                            filter='none'
-                            mask='undefined'
-                            transform='matrix(0.03 0 0 0.03 -196 -201)'
-                        ><defs><path id="MJX-16063-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></defs><g stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D44E" xlink:href="#MJX-16063-TEX-I-1D44E"></use></g></g></g>
-                        </g>
-                        
-                        <g  
-                            id='WebdutTeam18R12Latex-25'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='undefined'
-                            stroke-width='undefined'
-                            stroke-dasharray='undefined'
-                            opacity='1'
-                            filter='none'
-                            mask='undefined'
-                            transform='matrix(0.03 0 0 0.03 -92 -200)'
-                        ><defs><path id="MJX-16064-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></defs><g stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D44F" xlink:href="#MJX-16064-TEX-I-1D44F"></use></g></g></g>
-                        </g>
-                        
-                        <g  
-                            id='WebdutTeam18R12Latex-26'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='undefined'
-                            stroke-width='undefined'
-                            stroke-dasharray='undefined'
-                            opacity='1'
-                            filter='none'
-                            mask='undefined'
-                            transform='matrix(0.03 0 0 0.03 -166 -262)'
-                        ><defs><path id="MJX-16065-TEX-N-5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"></path><path id="MJX-16065-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJX-16065-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-16065-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path id="MJX-16065-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></defs><g stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><use data-c="5B" xlink:href="#MJX-16065-TEX-N-5B"></use></g><g data-mml-node="mi" transform="translate(278,0)"><use data-c="1D44E" xlink:href="#MJX-16065-TEX-I-1D44E"></use></g><g data-mml-node="mo" transform="translate(807,0)"><use data-c="2C" xlink:href="#MJX-16065-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(1251.7,0)"><use data-c="1D44F" xlink:href="#MJX-16065-TEX-I-1D44F"></use></g><g data-mml-node="mo" transform="translate(1680.7,0)"><use data-c="29" xlink:href="#MJX-16065-TEX-N-29"></use></g></g></g>
-                        </g>
-                        </g>
-                        <g  
-                            class='draggable'
-                            id='WebdutTeam18R12Group-27'
-                            fill='rgba(0, 0, 0, 0)'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='1'
-                            stroke-dasharray='none'
-                            opacity='1'
-                            mask='none'
-                            filter='none'
-                            transform='matrix(1 0 0 1 282 157)'
-                        >
-                        
-                        <path  
-                            id='WebdutTeam18R12Path-28'
-                            d='M -253.75,-225.05999755859375 H -27.75'
-                            fill='rgba(0, 0, 0, 0)'
-                            fill-rule='evenodd'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='2'
-                            stroke-dasharray='none'
-                            stroke-linecap='butt'
-                            stroke-linejoin='miter'
-                            stroke-miterlimit='4'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            marker-start='none'
-                            marker-mid='none'
-                            marker-end='none'
-                            transform='matrix(1 0 0 1 0 -13)'
-                        />
-                        
-                        <path  
-                            id='WebdutTeam18R12Path-29'
-                            d='M -195.75,-221.05999755859375 H -96.75'
-                            fill='rgba(0, 0, 0, 0)'
-                            fill-rule='evenodd'
-                            stroke='rgba(0, 234, 193, 1)'
-                            stroke-width='4'
-                            stroke-dasharray='none'
-                            stroke-linecap='butt'
-                            stroke-linejoin='miter'
-                            stroke-miterlimit='4'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            marker-start='none'
-                            marker-mid='none'
-                            marker-end='none'
-                            transform='matrix(1 0 0 1 6 -17)'
-                        />
-                        
-                        <circle  
-                            id='WebdutTeam18R12Circle-30'
-                            cx='24.25'
-                            cy='-188.55999755859375'
-                            r='10'
-                            fill='rgba(255, 255, 255, 1)'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='1'
-                            stroke-dasharray='none'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            transform='matrix(1 0 0 1 -212.25 -49)'
-                        />
-                        
-                        <circle  
-                            id='WebdutTeam18R12Circle-31'
-                            cx='24.25'
-                            cy='-188.55999755859375'
-                            r='10'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='rgba(0, 0, 0, 1)'
-                            stroke-width='1'
-                            stroke-dasharray='none'
-                            opacity='1'
-                            filter='none'
-                            mask='none'
-                            transform='matrix(1 0 0 1 -111.25 -49)'
-                        />
-                        
-                        <g  
-                            id='WebdutTeam18R12Latex-32'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='undefined'
-                            stroke-width='undefined'
-                            stroke-dasharray='undefined'
-                            opacity='1'
-                            filter='none'
-                            mask='undefined'
-                            transform='matrix(0.03 0 0 0.03 -196 -201)'
-                        ><defs><path id="MJX-16066-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></defs><g stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D44E" xlink:href="#MJX-16066-TEX-I-1D44E"></use></g></g></g>
-                        </g>
-                        
-                        <g  
-                            id='WebdutTeam18R12Latex-33'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='undefined'
-                            stroke-width='undefined'
-                            stroke-dasharray='undefined'
-                            opacity='1'
-                            filter='none'
-                            mask='undefined'
-                            transform='matrix(0.03 0 0 0.03 -92 -200)'
-                        ><defs><path id="MJX-16067-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></defs><g stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D44F" xlink:href="#MJX-16067-TEX-I-1D44F"></use></g></g></g>
-                        </g>
-                        
-                        <g  
-                            id='WebdutTeam18R12Latex-34'
-                            fill='rgba(0, 0, 0, 1)'
-                            stroke='undefined'
-                            stroke-width='undefined'
-                            stroke-dasharray='undefined'
-                            opacity='1'
-                            filter='none'
-                            mask='undefined'
-                            transform='matrix(0.03 0 0 0.03 -166 -262)'
-                        ><defs><path id="MJX-16068-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-16068-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJX-16068-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-16068-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path id="MJX-16068-TEX-N-5D" d="M22 710V750H159V-250H22V-210H119V710H22Z"></path></defs><g stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><use data-c="28" xlink:href="#MJX-16068-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(389,0)"><use data-c="1D44E" xlink:href="#MJX-16068-TEX-I-1D44E"></use></g><g data-mml-node="mo" transform="translate(918,0)"><use data-c="2C" xlink:href="#MJX-16068-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(1362.7,0)"><use data-c="1D44F" xlink:href="#MJX-16068-TEX-I-1D44F"></use></g><g data-mml-node="mo" transform="translate(1791.7,0)"><use data-c="5D" xlink:href="#MJX-16068-TEX-N-5D"></use></g></g></g>
-                        </g>
-                        </g></g></g></svg>
-        </div>
-        <p>
-            The number \((b-a)\) is called the <em>length of any of the intervals</em> \((a,b), [a,b], [a,b)\) or \((a,b]\).
-        </p>
-        <!-- <section>
+	// @ts-nocheck
+	import {
+		chapters,
+		sections,
+		selectedChapter,
+		selectedSection
+	} from '$lib/pages/notes/maths/stores';
+	import {
+		presentationMode,
+		presentation,
+		overlay,
+		slideCounter,
+		autoScroll,
+		currentSlide
+	} from '$lib/pages/notes/maths/stores';
+	import Practice from '$lib/utils/practiceproblem/Practice.svelte';
+	import Message from '$lib/ui/Message.svelte';
+	import { Sets } from '$lib/utils/common/sets';
+	import { Point2D } from '$lib/utils/common/point2d';
+	import { randNum, randInt } from '$lib/utils/common/common';
+	import { page } from '$app/stores';
+	import { TeX } from '$lib/utils/common/constants';
+	import { onMount } from 'svelte';
+	import P from '$lib/presentation/P.svelte';
+	import H1 from '$lib/presentation/H1.svelte';
+	import H2 from '$lib/presentation/H2.svelte';
+	import H3 from '$lib/presentation/H3.svelte';
+	import Li from '$lib/presentation/Li.svelte';
+	import Item from '$lib/presentation/Item.svelte';
+	import Image from '$lib/presentation/Image.svelte';
+    import Div from '$lib/presentation/Div.svelte';
+	onMount(() => {
+		$selectedChapter = 'Sets';
+		$selectedSection = 'Subsets';
+		$slideCounter = 24;
+		$currentSlide = -2;
+		MathJax.typeset();
+	});
+	let problemset = {
+		s: '',
+		o: {
+			A: '',
+			B: '',
+			C: '',
+			D: ''
+		},
+		c: ''
+	};
+	const generateProblem = (problemnumber) => {
+		let N = 1;
+		problemnumber = problemnumber % N;
+		let choices = ['A', 'B', 'C', 'D'];
+		let correctChoiceIndex = Math.floor(Math.random() * 4);
+		problemset.c = choices[correctChoiceIndex];
+		let ans;
+		let values = [0, 0, 0, 0];
+		switch (problemnumber) {
+			case 0: {
+				let n = randInt(20, 1);
+				let m = randInt(n + 1, n + 10) + 10;
+				let k = randInt(8, 2);
+				let U = new Sets();
+				U.interval(n, m);
+				let s = new Sets();
+				s.randomSet(n, m, k);
+				let sc = s.c(U);
+				let sbad = s.randomSubset();
+				sbad.add(sc.randomElem());
+
+				values[0] = `\\(${sbad.str()}\\)`;
+				values[1] = `\\(${s.randomSubset().str()}\\)`;
+				values[2] = `\\(${s.randomSubset().str()}\\)`;
+				values[3] = `\\(${s.randomSubset().str()}\\)`;
+				for (let i = 0; i < 4; i++) {
+					problemset.o[choices[(correctChoiceIndex + i) % 4]] = values[i];
+				}
+
+				problemset.s = `Which of the following is not a subset of \\(${s.str()}\\)?`;
+				break;
+			}
+			case 1: {
+				let n = randInt(20, 1);
+				let m = randInt(n + 1, n + 10) + 10;
+				let k = randInt(8, 2);
+
+				let s = new Sets();
+				s.randomSet(n, m, k);
+
+				let r = Math.random();
+				let suset = r < 0.25 ? 'N' : r < 0.5 ? 'Z' : r < 0.75 ? 'Q' : 'T';
+				let opt = [
+					`\\(A\\subset \\mathbb{N}\\)`,
+					`\\(A\\subset \\mathbb{Z}\\)`,
+					`\\(A\\subset \\mathbb{Q}\\)`,
+					`\\(A\\subset \\mathbb{T}\\)`
+				];
+				let ques = '';
+				let co;
+				switch (suset) {
+					case 'N':
+						s.add(randInt(m, n));
+						ques = 'not';
+						co = 3;
+						break;
+					case 'Z':
+						s.add(-randInt(m, n));
+						ques = 'not';
+						co = 0;
+						break;
+					case 'Q':
+						let q = new Q();
+						q.randF(m, n);
+						let q1 = q.add(new Q(1, 2));
+						s.add(q1);
+						co = 2;
+						break;
+					case 'T':
+						let nq = new Surd();
+						nq.randomSurd(m);
+						s.add(nq);
+						co = 3;
+						break;
+				}
+				for (let i = 0; i < 4; i++) {
+					problemset.o[choices[(correctChoiceIndex + i) % 4]] = opt[(co + i) % 4];
+				}
+				if (suset == 'Z') {
+					problemset.o[choices[correctChoiceIndex + 3]] = `\\(A\\subset \\mathbb{R}\\)`;
+				}
+				problemset.s = `Given set \\(A = ${s.str()}\\), which of the following is ${ques} correct?`;
+				break;
+			}
+		}
+		problemset = problemset;
+		return problemset;
+	};
+	let DW;
+	$: splitMode = !$presentationMode && DW > 800;
+</script>
+
+<svelte:head>
+	<title>{$selectedSection}</title>
+	<link rel="canonical" href="https://drmithileshkumar.com{$page.url.pathname}" />
+	<meta name="description" content="Subsets" />
+</svelte:head>
+<article class:absolute={$presentationMode} bind:this={$presentation}>
+	{#if $presentationMode && $currentSlide === -2}
+		<div class="thumbnail">
+			<div class="statement">
+				<p></p>
+			</div>
+		</div>
+	{/if}
+	{#if !$presentationMode || $currentSlide >= -1}
+		<h1>{$selectedSection}</h1>
+	{/if}
+	<div class="display {splitMode ? 'grid' : 'flex'}" bind:clientWidth={DW}> 
+		<section class="contentpart">
+			<section>
+				<Item item={0}>
+					<P isActive={0}>
+                        Given a set, we can construct other sets by using some of the elements of the given
+						set.
+                    </P>
+				</Item>
+				<Item item={1}>
+					<P class="definition" isActive={1}>
+						Given sets \(A\) and \(B\), \(A\) is said to be <em>subset</em> of \(B\) if every
+						element of \(A\) is also in \(B\). In such a case, \(B\) is called a <em>superset</em> of
+						\(A\).
+					</P>
+				</Item>
+				<ul>
+					<Item item={2}>
+						<Li isActive={2}>
+							If \(A\) is a subset of \(B\), then we write \(A \subset B\) or \(B\supset A\).
+						</Li>
+					</Item>
+					<Item item={3}>
+						<Li isActive={3}
+							>If \(A\) is not a subset of \(B\), then we write \(A \not\subset B\).
+                        </Li>
+					</Item>
+					<Item item={4}>
+						<Li isActive={4}>
+                            To indicate that \(A\) is either a subset of or equal to \(B\), we write \(A\subseteq
+							B\).
+                        </Li>
+					</Item>
+					<Item item={5}>
+						<Li isActive={5}>
+                            A subset \(A\) of set \(B\) is called a <em>proper</em> subset of \(B\) if \(A\) is not
+							equal to \(B\).
+                        </Li>
+					</Item>
+				</ul>
+			</section>
+			<section>
+				<Item item={6}>
+					<H3 class="examples" isActive={6}>Examples</H3>
+				</Item>
+				<ul>
+					<Item item={7}>
+						<Li isActive={7}>
+							{`\\(\\{1, 2\\} \\subset \\{2, 1, 3\\}\\)`} is a proper subset.
+						</Li>
+					</Item>
+					<Item item={8}>
+						<Li isActive={8}>
+							{`\\(\\{1, 2, 3, 0\\} \\not\\subset \\{2, 1, 3, 4, 5\\}\\)`}
+						</Li>
+					</Item>
+				</ul>
+            </section>
+            <section>
+                <Item item={9}>
+					<P class="definition" isActive={9}>
+						\(A\) is a subset of \(B\) if \(a\) is an element of \(A\) implies that \(a\) is also an element of \(B\). \[A\subset B ~~~if~~a\in A\implies a\in B\]  Alternatively, we can say that if \(A\subset B\), then there does not exist any element in \(A\) that is also not in \(B\). \[A\subset B ~~~if~~\nexists ~ a\in A~~such~that~~ a\notin B\]
+					</P>
+				</Item>
+                <Item item={10}>
+					<P class="remark" isActive={10}>
+						Every set \(A\) is a subset of itself, i.e. \(A\subset A\).
+					</P>
+				</Item>
+                <Item item={11}>
+					<P class="question" isActive={11}>Why is empty set a subset of every set?</P>
+				</Item>
+				<Item item={12}>
+					<P class="solution" isActive={12}
+						>An empty set \(A = \phi\) contains no element. A set \(A\) is a subset of another set \(B\)
+						if \(A\) does not contain any element that is not in \(B\). Since, \(\phi\) does not
+						contain any element, it is also true that it does not contain any element that is not in
+						\(B\). Hence, \(\phi\) is a subset of \(B\).
+                    </P>
+				</Item>
+                
+            </section>
+            <section>
+                <Item item={13}>
+					<H2 isActive={13}>
+						Set equality 
+                    </H2>
+				</Item>
+				<Item item={14}>
+					<P class="definition" isActive={14}>
+						\(A\) is equal to \(B\) if and only if (iff) \(A\subset B\) and \(B\subset A\). \[A=B \iff (a\in A\iff a\in B)\] 
+					</P>
+				</Item>
+				<Item item={15}>
+					<P class="question" isActive={15}>Is {`\\(\\phi = \\{\\phi\\}\\)`} ?</P>
+				</Item>
+				<Item item={16}>
+					<P class="solution" isActive={16}
+						>We can write {'\\(\\phi = \\{\\}\\)'}. It is clear that {`\\(\\{\\}\\)`} has no elements
+						and {`\\(\\{\\phi\\}\\)`}
+						has one element, namely \(\phi\). Hence {`\\(\\phi \\neq \\{\\phi\\}\\)`}
+                    </P>
+				</Item>
+                <Item item={17}>
+                    <P class="question" isActive={17}>Consider two sets {`\\(A = \\{x: x=3r-1, r\\in Z\\}\\)`} and {`\\(B = \\{x: x=3s + 2, s\\in Z\\}\\)`}. Is \(A = B\)?</P>
+                </Item>
+                <div class="solution">
+                    <Item item={18}>
+                        <P isActive={18}>
+                            We need to check both conditions \(A\subset B\) and \(B\subset A\).
+                        </P>
+                    </Item>
+                    <ul>
+                        <Item item={19}>
+                            <Li isActive={19}>
+                                Let \(a = 3r - 1 \in A\) where \(r\in Z\). Does there exists \(s\in Z\) such that \(a = 3s + 2\)? Let's find out. {`\\[
+                                    \\begin{eqnarray}
+                                    3s + 2 &=& 3r - 1\\\\
+                                    \\implies s &=& \\frac{3r - 3}{3}\\\\
+                                                &=& r - 1 \\in Z
+                                    \\end{eqnarray}
+                                    \\]`}
+                                This implies that \(a\in B\). Hence, \(A\subset B\)
+                            </Li>
+                        </Item> 
+                        <Item item={20}>
+                            <Li isActive={20}>
+                                Let \(b = 3s + 2 \in B\) where \(s\in Z\). Does there exists \(r\in Z\) such that \(b = 3r - 1\)? Let's find out. {`\\[
+                                    \\begin{eqnarray}
+                                    3r - 1 &=& 3s + 2\\\\
+                                    \\implies r &=& \\frac{3s + 3}{3}\\\\
+                                                &=& s + 1 \\in Z
+                                    \\end{eqnarray}
+                                    \\]`}
+                                This implies that \(b\in A\). Hence, \(B\subset A\)
+                            </Li>
+                        </Item> 
+                    </ul>
+                    <Item item={21}>
+                        <P isActive={21}>
+                            This proves that \(A = B\).
+                        </P>
+                    </Item>
+                </div>
+                <Item item={22}>
+                    <P class="question" isActive={22}>
+                        Verify that \(N\subset Z \subset Q\subset R\).
+                    </P>
+                </Item>
+			</section>
+		</section>
+		{#if !$presentationMode}
+			<div class="youtube">
+				<iframe
+					width="420"
+					height="300"
+					src="https://www.youtube.com/embed/jbBsClpZmPQ"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				/>
+			</div>
+		{/if}
+		{#if $presentationMode}
+			<div class="slate" />
+		{/if}
+	</div>
+	<section>
+		<Item item={23}>
+			<section>
+				<h2>Practice</h2>
+				<Practice {generateProblem} />
+			</section>
+		</Item>
+	</section>
+	{#if $presentationMode && $currentSlide >= 2}
+		<div class="pad" />
+	{/if}
+	<!-- <section>
             <h2>Practice</h2>
             {#if $session.user}
             <Practice {generateProblem}/>
@@ -746,4 +342,75 @@
                 <Message>You need to be logged in to practice.</Message>
             {/if}
         </section> -->
-    </article>
+</article>
+
+<style>
+	.display {
+		position: relative;
+		position: -webkit-sticky;
+	}
+	.youtube {
+		width: 100%;
+		display: flex;
+		position: sticky;
+		top: 5em;
+		/* box-shadow: 0 0 3px gray;
+		background-color: white; */
+		z-index: 10;
+		align-self: flex-start;
+	}
+	article {
+		position: relative;
+		padding: 0.5em;
+	}
+	.absolute {
+		margin: auto;
+		/* width: 90vw; */
+		width: 100%;
+		height: 600px;
+		/* height: 90vh; */
+		/* height: min(78vh, 60vw); */
+		/* height: min(70vh,600px); */
+		overflow-y: auto;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+		padding: 0 1em 0 1em;
+	}
+	.absolute::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+	}
+	.pad {
+		min-height: 150px;
+	}
+	.thumbnail {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2.5em;
+		height: 100%;
+	}
+	.statement {
+		background: radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));
+		color: red;
+		text-shadow: 1px 1px 3px rgb(4, 4, 4);
+		/* box-shadow: 1px 1px 3px rgb(129, 128, 128); */
+		padding: 1em;
+		background-image: url('/notes/maths/sets/subsets/thumbnail.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+        width: 500px;
+        height: 500px;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: auto 420px;
+	}
+	.flex {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.contentpart {
+		padding: 0.5em;
+	}
+</style>

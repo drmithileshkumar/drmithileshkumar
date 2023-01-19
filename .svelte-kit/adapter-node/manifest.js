@@ -1,10 +1,10 @@
 export const manifest = {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set(["app.css","circle_demo/circle.png","circle_demo/circle_anime.mp4","circle_demo/Cone-equation.png","circle_demo/Cone.png","circle_demo/conics.png","circle_demo/Conic_anime.mp4","circle_demo/Conic_deg.mp4","circle_demo/ellipse_anime.mp4","circle_demo/hyperbola_anime.mp4","circle_demo/IIT21Q1.png","circle_demo/orthocenter.png","circle_demo/parabola_anime.mp4","circle_demo/Plane.png","circle_demo/Tangents.png","circle_demo/threepointcircle.png","CMIMedal.jpg","cmithesis.pdf","common.css","dark.css","favicon.png","IITMSc.jpg","LCPath.svg","light.css","mithileshkumar.png","notes/maths/sets/equal/thumbnail.svg","notes/maths/sets/finite/thumbnail.svg","notes/maths/sets/introduction/example.svg","notes/maths/sets/introduction/oddeven.svg","notes/maths/sets/representation/heroparadox.svg","notes/quantum/CNOT.svg","notes/quantum/qubit2d.svg","notes/quantum/teleportation.svg","photo_cv.jpg","profilephoto.jpeg","robots copy.txt","robots.txt","santa.svg","svelte-welcome.png","svelte-welcome.webp","thesis.pdf","webdutIcon.png"]),
+	assets: new Set(["app.css","circle_demo/circle.png","circle_demo/circle_anime.mp4","circle_demo/Cone-equation.png","circle_demo/Cone.png","circle_demo/conics.png","circle_demo/Conic_anime.mp4","circle_demo/Conic_deg.mp4","circle_demo/ellipse_anime.mp4","circle_demo/hyperbola_anime.mp4","circle_demo/IIT21Q1.png","circle_demo/orthocenter.png","circle_demo/parabola_anime.mp4","circle_demo/Plane.png","circle_demo/Tangents.png","circle_demo/threepointcircle.png","CMIMedal.jpg","cmithesis.pdf","common.css","dark.css","favicon.png","IITMSc.jpg","LCPath.svg","light.css","mithileshkumar.png","notes/maths/sets/equal/thumbnail.svg","notes/maths/sets/finite/thumbnail.svg","notes/maths/sets/introduction/example.svg","notes/maths/sets/introduction/oddeven.svg","notes/maths/sets/representation/heroparadox.svg","notes/maths/sets/subsets/thumbnail.svg","notes/quantum/CNOT.svg","notes/quantum/qubit2d.svg","notes/quantum/teleportation.svg","photo_cv.jpg","profilephoto.jpeg","robots copy.txt","robots.txt","santa.svg","svelte-welcome.png","svelte-welcome.webp","thesis.pdf","webdutIcon.png"]),
 	mimeTypes: {".css":"text/css",".png":"image/png",".mp4":"video/mp4",".jpg":"image/jpeg",".pdf":"application/pdf",".svg":"image/svg+xml",".jpeg":"image/jpeg",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		entry: {"file":"_app/immutable/start-53035c08.js","imports":["_app/immutable/start-53035c08.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/singletons-2210570e.js","_app/immutable/chunks/index-b1bbdf52.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/control-e7f5239e.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-3c7d5003.js","imports":["_app/immutable/start-3c7d5003.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/singletons-2210570e.js","_app/immutable/chunks/index-b1bbdf52.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/control-e7f5239e.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
@@ -158,7 +158,8 @@ export const manifest = {
 			() => import('./nodes/149.js'),
 			() => import('./nodes/150.js'),
 			() => import('./nodes/151.js'),
-			() => import('./nodes/152.js')
+			() => import('./nodes/152.js'),
+			() => import('./nodes/153.js')
 		],
 		routes: [
 			{
@@ -932,220 +933,227 @@ export const manifest = {
 				endpoint: null
 			},
 			{
+				id: "/notes/maths/Sets/Real numbers",
+				pattern: /^\/notes\/maths\/Sets\/Real numbers\/?$/,
+				params: [],
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 120 },
+				endpoint: null
+			},
+			{
 				id: "/notes/maths/Sets/Sets and their representations",
 				pattern: /^\/notes\/maths\/Sets\/Sets and their representations\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 120 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 121 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Subsets",
 				pattern: /^\/notes\/maths\/Sets\/Subsets\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 121 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 122 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/The empty set",
 				pattern: /^\/notes\/maths\/Sets\/The empty set\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 122 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 123 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Universal set",
 				pattern: /^\/notes\/maths\/Sets\/Universal set\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 123 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 124 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Sets/Venn diagrams",
 				pattern: /^\/notes\/maths\/Sets\/Venn diagrams\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 124 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 125 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Statistics/Analysis of frequency distributions",
 				pattern: /^\/notes\/maths\/Statistics\/Analysis of frequency distributions\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 125 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 126 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Statistics/Mean deviation",
 				pattern: /^\/notes\/maths\/Statistics\/Mean deviation\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 126 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 127 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Statistics/Range",
 				pattern: /^\/notes\/maths\/Statistics\/Range\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 127 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 128 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Statistics/Variance and standard deviation",
 				pattern: /^\/notes\/maths\/Statistics\/Variance and standard deviation\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 128 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 129 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Straight lines/Distance of a point from a line",
 				pattern: /^\/notes\/maths\/Straight lines\/Distance of a point from a line\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 129 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 130 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Straight lines/General equation of a line",
 				pattern: /^\/notes\/maths\/Straight lines\/General equation of a line\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 130 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 131 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Straight lines/Slope of a line",
 				pattern: /^\/notes\/maths\/Straight lines\/Slope of a line\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 131 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 132 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Straight lines/Various forms of the equation of a line",
 				pattern: /^\/notes\/maths\/Straight lines\/Various forms of the equation of a line\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 132 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 133 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Three dimensional geometry/Angle between a line and a plane",
 				pattern: /^\/notes\/maths\/Three dimensional geometry\/Angle between a line and a plane\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 133 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 134 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Three dimensional geometry/Angle between two lines",
 				pattern: /^\/notes\/maths\/Three dimensional geometry\/Angle between two lines\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 134 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 135 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Three dimensional geometry/Angle between two planes",
 				pattern: /^\/notes\/maths\/Three dimensional geometry\/Angle between two planes\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 135 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 136 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Three dimensional geometry/Coplanarity of two lines",
 				pattern: /^\/notes\/maths\/Three dimensional geometry\/Coplanarity of two lines\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 136 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 137 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line",
 				pattern: /^\/notes\/maths\/Three dimensional geometry\/Direction cosines and direction ratios of a line\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 137 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 138 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Three dimensional geometry/Distance of a point from a plane",
 				pattern: /^\/notes\/maths\/Three dimensional geometry\/Distance of a point from a plane\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 138 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 139 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Three dimensional geometry/Equation of a line in space",
 				pattern: /^\/notes\/maths\/Three dimensional geometry\/Equation of a line in space\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 139 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 140 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Three dimensional geometry/Plane",
 				pattern: /^\/notes\/maths\/Three dimensional geometry\/Plane\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 140 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 141 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Three dimensional geometry/Shortest distance between two lines",
 				pattern: /^\/notes\/maths\/Three dimensional geometry\/Shortest distance between two lines\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 141 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 142 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Trigonometric functions/Angles",
 				pattern: /^\/notes\/maths\/Trigonometric functions\/Angles\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 142 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 143 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Trigonometric functions/Trigonometric equations",
 				pattern: /^\/notes\/maths\/Trigonometric functions\/Trigonometric equations\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 143 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 144 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles",
 				pattern: /^\/notes\/maths\/Trigonometric functions\/Trigonometric functions of sum and difference of two angles\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 145 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 146 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Trigonometric functions/Trigonometric functions",
 				pattern: /^\/notes\/maths\/Trigonometric functions\/Trigonometric functions\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 144 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 145 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Vector algebra/Addition of vectors",
 				pattern: /^\/notes\/maths\/Vector algebra\/Addition of vectors\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 146 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 147 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Vector algebra/Multiplication of a vector by a scalar",
 				pattern: /^\/notes\/maths\/Vector algebra\/Multiplication of a vector by a scalar\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 147 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 148 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Vector algebra/Product of two vectors",
 				pattern: /^\/notes\/maths\/Vector algebra\/Product of two vectors\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 148 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 149 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Vector algebra/Some basic concepts",
 				pattern: /^\/notes\/maths\/Vector algebra\/Some basic concepts\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 149 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 150 },
 				endpoint: null
 			},
 			{
 				id: "/notes/maths/Vector algebra/Types of vectors",
 				pattern: /^\/notes\/maths\/Vector algebra\/Types of vectors\/?$/,
 				params: [],
-				page: { layouts: [0,,5], errors: [1,4,6], leaf: 150 },
+				page: { layouts: [0,,5], errors: [1,4,6], leaf: 151 },
 				endpoint: null
 			},
 			{
@@ -1159,14 +1167,14 @@ export const manifest = {
 				id: "/notes/quantum",
 				pattern: /^\/notes\/quantum\/?$/,
 				params: [],
-				page: { layouts: [0,,7], errors: [1,4,,], leaf: 151 },
+				page: { layouts: [0,,7], errors: [1,4,,], leaf: 152 },
 				endpoint: null
 			},
 			{
 				id: "/practice",
 				pattern: /^\/practice\/?$/,
 				params: [],
-				page: { layouts: [0,8], errors: [1,,], leaf: 152 },
+				page: { layouts: [0,8], errors: [1,,], leaf: 153 },
 				endpoint: null
 			}
 		],

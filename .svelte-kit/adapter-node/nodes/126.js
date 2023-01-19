@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/notes/maths/Statistics/Mean deviation/_page.js';
+import * as universal from '../entries/pages/notes/maths/Statistics/Analysis of frequency distributions/_page.js';
 
 export const index = 126;
-export const component = async () => (await import('../entries/pages/notes/maths/Statistics/Mean deviation/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/notes/maths/Statistics/Mean deviation/_page.svelte-7fe49f2f.js';
+export const component = async () => (await import('../entries/pages/notes/maths/Statistics/Analysis of frequency distributions/_page.svelte.js')).default;
+export const file = '_app/immutable/components/pages/notes/maths/Statistics/Analysis of frequency distributions/_page.svelte-b3270e77.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/notes/maths/Statistics/Mean deviation/_page.svelte-7fe49f2f.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/stores-8e03a13a.js","_app/immutable/chunks/index-b1bbdf52.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/chunks/stores-4374dc01.js","_app/immutable/chunks/singletons-2210570e.js","_app/immutable/modules/pages/notes/maths/Statistics/Mean deviation/_page.js-2e5c62be.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-bbd1fcc8.js"];
+export const imports = ["_app/immutable/components/pages/notes/maths/Statistics/Analysis of frequency distributions/_page.svelte-b3270e77.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/stores-152f5629.js","_app/immutable/chunks/index-b1bbdf52.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/chunks/stores-4374dc01.js","_app/immutable/chunks/singletons-2210570e.js","_app/immutable/modules/pages/notes/maths/Statistics/Analysis of frequency distributions/_page.js-2e5c62be.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-a7a7d64e.js"];
 export const stylesheets = ["_app/immutable/assets/Practice-ceaad90d.css","_app/immutable/assets/Message-1e964222.css"];
 export const fonts = [];

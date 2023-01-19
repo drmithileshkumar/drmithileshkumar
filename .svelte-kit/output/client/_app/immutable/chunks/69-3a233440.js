@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-7fe8a728.js";import{default as t}from"../components/pages/notes/maths/Integrals/Integration by partial fractions/_page.svelte-3df3052b.js";export{t as component,r as universal};

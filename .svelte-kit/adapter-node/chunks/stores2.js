@@ -36,6 +36,7 @@ const sections = {
     "Finite and infinite sets",
     "Equal sets",
     "Subsets",
+    "Real numbers",
     "Power set",
     "Universal set",
     "Venn diagrams",
