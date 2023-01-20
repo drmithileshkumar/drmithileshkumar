@@ -79,8 +79,8 @@
 		height: 40px;
 		border-radius: 50%;
 		position: absolute;
-        top: 0;
-        left: 0;
+        top: 50%;
+        left: 50%;
         z-index: 10;
 	}
     img {

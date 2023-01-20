@@ -160,7 +160,7 @@
 			<section>
 				<Item item={0}>
 					<P isActive={0}>
-                        In the last section we defined equal sets. In this section, we'll learn how to compare two sets. At the same time, it will give us a way to construct new sets from a given set.
+                        Given two numbers \(n\) and \(m\), we can show that either \(n = m, n > m\) or \(n {TeX.less} m\). In the last section we saw that for two sets \(A\) and \(B\) we can tell whether \(A = B\) or \(A\neq B\). Just like numbers <em>can we say that either \(A {TeX.less} B\) or \(A > B\)</em>  ? In this section, we'll learn how to compare two sets. At the same time, it will give us a way to construct new sets from a given set.
                     </P>
 				</Item>
 				<Item item={1}>
@@ -228,6 +228,9 @@
 				</Item>
 			</section>
             <section>
+				<Item item={12}>
+					<H2 isActive={12}>Mathematical notation</H2>
+				</Item>
                 <Item item={12}>
 					<P class="definition" isActive={12}>
 						\(A\) is a subset of \(B\) if \(a\) is an element of \(A\) implies that \(a\) is also an element of \(B\). \[A\subset B ~~~if~~a\in A\implies a\in B\]  Alternatively, we can say that if \(A\subset B\), then there does not exist any element in \(A\) that is also not in \(B\). \[A\subset B ~~~if~~\nexists ~ a\in A~~such~that~~ a\notin B\]

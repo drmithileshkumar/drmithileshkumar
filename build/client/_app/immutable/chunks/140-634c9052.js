@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-32a4fdea.js";import{default as t}from"../components/pages/notes/maths/Three dimensional geometry/Equation of a line in space/_page.svelte-5cbcc996.js";export{t as component,r as universal};
+import{_ as r}from"./_page-44630c89.js";import{default as t}from"../components/pages/notes/maths/Three dimensional geometry/Equation of a line in space/_page.svelte-5cbcc996.js";export{t as component,r as universal};

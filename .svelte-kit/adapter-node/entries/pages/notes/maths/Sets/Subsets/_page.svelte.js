@@ -138,7 +138,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
-          return `In the last section we defined equal sets. In this section, we&#39;ll learn how to compare two sets. At the same time, it will give us a way to construct new sets from a given set.
+          return `Given two numbers \\(n\\) and \\(m\\), we can show that either \\(n = m, n &gt; m\\) or \\(n ${escape(TeX.less)} m\\). In the last section we saw that for two sets \\(A\\) and \\(B\\) we can tell whether \\(A = B\\) or \\(A\\neq B\\). Just like numbers <em>can we say that either \\(A ${escape(TeX.less)} B\\) or \\(A &gt; B\\)</em>  ? In this section, we&#39;ll learn how to compare two sets. At the same time, it will give us a way to construct new sets from a given set.
                     `;
         }
       })}`;
@@ -255,6 +255,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   })}</section>
             <section>${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
+    default: () => {
+      return `${validate_component(H2, "H2").$$render($$result, { isActive: 12 }, {}, {
+        default: () => {
+          return `Mathematical notation`;
+        }
+      })}`;
+    }
+  })}
+                ${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 12 }, {}, {
         default: () => {

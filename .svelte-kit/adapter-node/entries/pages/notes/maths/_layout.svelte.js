@@ -125,7 +125,7 @@ class Point {
 }
 const Teacher_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: ".teacher.svelte-18gvr3y{background:transparent;width:40px;height:40px;border-radius:50%;position:absolute;top:0;left:0;z-index:10}img.svelte-18gvr3y{width:40px;height:40px;border-radius:50%}",
+  code: ".teacher.svelte-e6uf7i{background:transparent;width:40px;height:40px;border-radius:50%;position:absolute;top:50%;left:50%;z-index:10}img.svelte-e6uf7i{width:40px;height:40px;border-radius:50%}",
   map: null
 };
 const Teacher = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -175,7 +175,7 @@ const Teacher = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.makeDraggable === void 0 && $$bindings.makeDraggable && makeDraggable !== void 0)
     $$bindings.makeDraggable(makeDraggable);
   $$result.css.add(css$1);
-  return `<div class="${"teacher noMenu svelte-18gvr3y"}"${add_attribute("this", teacher, 0)}><img class="${"noMenu svelte-18gvr3y"}" src="${"/favicon.png"}" alt="${""}">
+  return `<div class="${"teacher noMenu svelte-e6uf7i"}"${add_attribute("this", teacher, 0)}><img class="${"noMenu svelte-e6uf7i"}" src="${"/favicon.png"}" alt="${""}">
 </div>`;
 });
 const _layout_svelte_svelte_type_style_lang = "";

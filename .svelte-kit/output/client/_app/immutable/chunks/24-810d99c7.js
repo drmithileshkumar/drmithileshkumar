@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-ec9c8ff1.js";import{default as t}from"../components/pages/notes/maths/Application of derivatives/Increasing and decreasing functions/_page.svelte-8e347295.js";export{t as component,r as universal};
+import{_ as r}from"./_page-3412b2b7.js";import{default as t}from"../components/pages/notes/maths/Application of derivatives/Increasing and decreasing functions/_page.svelte-8e347295.js";export{t as component,r as universal};

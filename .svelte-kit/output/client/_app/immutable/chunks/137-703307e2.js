@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-ce2756ef.js";import{default as t}from"../components/pages/notes/maths/Three dimensional geometry/Coplanarity of two lines/_page.svelte-fb523643.js";export{t as component,r as universal};
+import{_ as r}from"./_page-5edbe4d6.js";import{default as t}from"../components/pages/notes/maths/Three dimensional geometry/Coplanarity of two lines/_page.svelte-fb523643.js";export{t as component,r as universal};
