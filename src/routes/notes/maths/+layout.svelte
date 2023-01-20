@@ -158,7 +158,7 @@
 			<Teacher />
 			
 		{/if}
-		<slot class={$presentationMode ? 'noMenu' : ''} />
+		<slot class={$presentationMode ? 'noMenu gridBackground' : ''} />
 		{#if $presentationMode}
 			<aside use:ripple class="next noMenu" on:click={next} />
 		{/if}

@@ -42,7 +42,7 @@
 	<meta name="description" content="Introduction to sets" />
 </svelte:head>
 
-<article class:absolute={$presentationMode} bind:this={$presentation}>
+<article class:absolute={$presentationMode} bind:this={$presentation} class="{$presentationMode ? 'gridBackground':''}">
 	{#if $presentationMode && $currentSlide === -2}
 		<div class="thumbnail">
 			<p class="statement">
@@ -273,5 +273,10 @@
     .contentpart {
         padding: 0.5em;
     }
-    
+    .gridBackground {
+		background-image: url('/background.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
 </style>

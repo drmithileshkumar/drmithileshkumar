@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../../../chunks/index3.js";
+import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component, j as null_to_empty } from "../../../../../../chunks/index3.js";
 import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../../../chunks/stores2.js";
 import { P as Practice } from "../../../../../../chunks/Practice.js";
 /* empty css                                                              */import { r as randInt } from "../../../../../../chunks/common.js";
@@ -8,7 +8,7 @@ import { H as H3 } from "../../../../../../chunks/H3.js";
 import { H as H2 } from "../../../../../../chunks/H2.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".display.svelte-2tbfq2{position:relative;position:-webkit-sticky}.youtube.svelte-2tbfq2{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\r\n	}article.svelte-2tbfq2{position:relative;padding:0.5em}.absolute.svelte-2tbfq2{margin:auto;width:100%;height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-2tbfq2::-webkit-scrollbar{width:0;height:0}.pad.svelte-2tbfq2{min-height:150px}.thumbnail.svelte-2tbfq2{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-2tbfq2{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:red;text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em;background-image:url('/notes/maths/sets/finite/thumbnail.svg')}.grid.svelte-2tbfq2{display:grid;grid-template-columns:auto 420px}.flex.svelte-2tbfq2{display:flex;flex-direction:column-reverse}.contentpart.svelte-2tbfq2{padding:0.5em}",
+  code: ".display.svelte-1p1xuho{position:relative;position:-webkit-sticky}.youtube.svelte-1p1xuho{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\r\n	}article.svelte-1p1xuho{position:relative;padding:0.5em}.absolute.svelte-1p1xuho{margin:auto;width:100%;height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1p1xuho::-webkit-scrollbar{width:0;height:0}.pad.svelte-1p1xuho{min-height:150px}.thumbnail.svelte-1p1xuho{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1p1xuho{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:red;text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em;background-image:url('/notes/maths/sets/finite/thumbnail.svg')}.grid.svelte-1p1xuho{display:grid;grid-template-columns:auto 420px}.flex.svelte-1p1xuho{display:flex;flex-direction:column-reverse}.contentpart.svelte-1p1xuho{padding:0.5em}.gridBackground.svelte-1p1xuho{background-image:url('/background.svg');background-repeat:no-repeat;background-position:center;background-size:cover}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -97,9 +97,12 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-ykzmzv_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Finite and infinite sets"}"><!-- HEAD_svelte-ykzmzv_END -->`, ""}
-<article class="${["svelte-2tbfq2", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-2tbfq2"}"><div class="${"statement svelte-2tbfq2"}"><p>Why is the set of primes infinite?</p></div></div>` : ``}
+<article class="${[
+    escape(null_to_empty($presentationMode ? "gridBackground" : ""), true) + " svelte-1p1xuho",
+    $presentationMode ? "absolute" : ""
+  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1p1xuho"}"><div class="${"statement svelte-1p1xuho"}"><p>Why is the set of primes infinite?</p></div></div>` : ``}
 	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-2tbfq2"}"><section class="${"contentpart svelte-2tbfq2"}">${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-1p1xuho"}"><section class="${"contentpart svelte-1p1xuho"}">${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
@@ -396,14 +399,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</ul></section></section>
-		${!$presentationMode ? `<div class="${"youtube svelte-2tbfq2"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/xitRVmUKQz8"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}</div>
+		${!$presentationMode ? `<div class="${"youtube svelte-1p1xuho"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/xitRVmUKQz8"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}</div>
 	<section>${validate_component(Item, "Item").$$render($$result, { item: 29 }, {}, {
     default: () => {
       return `<section><h2>Practice</h2>
 				${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
     }
   })}</section>
-	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-2tbfq2"}"></div>` : ``}
+	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1p1xuho"}"></div>` : ``}
 </article>`;
 });
 export {

@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component } from "../../../../../../chunks/index3.js";
+import { c as create_ssr_component, d as subscribe, e as escape, f as add_attribute, v as validate_component, j as null_to_empty } from "../../../../../../chunks/index3.js";
 import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../../../chunks/stores2.js";
 import { P as Practice } from "../../../../../../chunks/Practice.js";
 /* empty css                                                              */import { r as randInt } from "../../../../../../chunks/common.js";
@@ -8,7 +8,7 @@ import { I as Item, P, L as Li } from "../../../../../../chunks/Image.svelte_sve
 import { H as H3 } from "../../../../../../chunks/H3.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".display.svelte-11z1cc9{position:relative;position:-webkit-sticky}.youtube.svelte-11z1cc9{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\r\n	}article.svelte-11z1cc9{position:relative;padding:0.5em}.absolute.svelte-11z1cc9{margin:auto;width:100%;height:90vh;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-11z1cc9::-webkit-scrollbar{width:0;height:0}.pad.svelte-11z1cc9{min-height:150px}.thumbnail.svelte-11z1cc9{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-11z1cc9{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}.grid.svelte-11z1cc9{display:grid;grid-template-columns:auto 420px}.flex.svelte-11z1cc9{display:flex;flex-direction:column-reverse}.contentpart.svelte-11z1cc9{padding:0.5em}",
+  code: ".display.svelte-1qvfvsn{position:relative;position:-webkit-sticky}.youtube.svelte-1qvfvsn{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\r\n	}article.svelte-1qvfvsn{position:relative;padding:0.5em}.absolute.svelte-1qvfvsn{margin:auto;width:100%;height:90vh;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1qvfvsn::-webkit-scrollbar{width:0;height:0}.pad.svelte-1qvfvsn{min-height:150px}.thumbnail.svelte-1qvfvsn{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1qvfvsn{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}.grid.svelte-1qvfvsn{display:grid;grid-template-columns:auto 420px}.flex.svelte-1qvfvsn{display:flex;flex-direction:column-reverse}.contentpart.svelte-1qvfvsn{padding:0.5em}.gridBackground.svelte-1qvfvsn{background-image:url('/background.svg');background-repeat:no-repeat;background-position:center;background-size:cover}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -94,9 +94,12 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-1oiqp9i_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"The empty set"}"><!-- HEAD_svelte-1oiqp9i_END -->`, ""}
-<article class="${["svelte-11z1cc9", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-11z1cc9"}"><p class="${"statement svelte-11z1cc9"}">The empty set</p></div>` : ``}
+<article class="${[
+    escape(null_to_empty($presentationMode ? "gridBackground" : ""), true) + " svelte-1qvfvsn",
+    $presentationMode ? "absolute" : ""
+  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1qvfvsn"}"><p class="${"statement svelte-1qvfvsn"}">The empty set</p></div>` : ``}
 	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-11z1cc9"}"><section class="${"contentpart svelte-11z1cc9"}"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-1qvfvsn"}"><section class="${"contentpart svelte-1qvfvsn"}"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
@@ -182,7 +185,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   })}</ul></section>
 			<section></section></section>
-        ${!$presentationMode ? `<div class="${"youtube svelte-11z1cc9"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/-VP7utgjA8I"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}</div>
+        ${!$presentationMode ? `<div class="${"youtube svelte-1qvfvsn"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/-VP7utgjA8I"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}</div>
 	
 	${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
     default: () => {
@@ -191,7 +194,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   })}
 
-	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-11z1cc9"}"></div>` : ``}
+	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1qvfvsn"}"></div>` : ``}
 </article>`;
 });
 export {

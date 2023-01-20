@@ -250,7 +250,9 @@ ${!$presentationMode ? `<span class="${"noMenu"}"${add_attribute("this", $overla
 			<div class="${"presenter noMenu svelte-v6pok5"}">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>
 			
 			${validate_component(Teacher, "Teacher").$$render($$result, {}, {}, {})}` : ``}
-		${slots.default ? slots.default({ class: $presentationMode ? "noMenu" : "" }) : ``}
+		${slots.default ? slots.default({
+      class: $presentationMode ? "noMenu gridBackground" : ""
+    }) : ``}
 		${$presentationMode ? `<aside class="${"next noMenu svelte-v6pok5"}"></aside>` : ``}</div>
 </div>`;
   } while (!$$settled);

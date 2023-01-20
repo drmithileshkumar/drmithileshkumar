@@ -144,7 +144,7 @@
 	<link rel="canonical" href="https://drmithileshkumar.com{$page.url.pathname}" />
 	<meta name="description" content="Subsets" />
 </svelte:head>
-<article class:absolute={$presentationMode} bind:this={$presentation}>
+<article class:absolute={$presentationMode} bind:this={$presentation} class="{$presentationMode ? 'gridBackground':''}">
 	{#if $presentationMode && $currentSlide === -2}
 		<div class="thumbnail">
 			<div class="statement">
@@ -426,5 +426,11 @@
 	}
 	.contentpart {
 		padding: 0.5em;
+	}
+	.gridBackground {
+		background-image: url('/background.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 	}
 </style>
