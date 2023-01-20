@@ -267,7 +267,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 12 }, {}, {
         default: () => {
-          return `\\(A\\) is a subset of \\(B\\) if \\(a\\) is an element of \\(A\\) implies that \\(a\\) is also an element of \\(B\\). \\[A\\subset B ~~~if~~a\\in A\\implies a\\in B\\]  Alternatively, we can say that if \\(A\\subset B\\), then there does not exist any element in \\(A\\) that is also not in \\(B\\). \\[A\\subset B ~~~if~~\\nexists ~ a\\in A~~such~that~~ a\\notin B\\]
+          return `\\(A\\) is a subset of \\(B\\) if \\(a\\) is an element of \\(A\\) implies that \\(a\\) is also an element of \\(B\\). \\[A\\subset B ~~~if~~a\\in A\\implies a\\in B\\]  Alternatively, we can say that if \\(A\\subset B\\), then if an element does not belong to \\(B\\), then it also does not belong to \\(A\\). \\[A\\subset B ~~~if~~\\forall~a, ~ a\\notin B\\implies a\\notin A\\]
 					`;
         }
       })}`;
@@ -287,7 +287,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "question", isActive: 14 }, {}, {
         default: () => {
-          return `Why is empty set a subset of every set?`;
+          return `why is empty set a subset of every set?`;
         }
       })}`;
     }
@@ -296,10 +296,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "solution", isActive: 15 }, {}, {
         default: () => {
-          return `An empty set \\(A = \\phi\\) contains no element. A set \\(A\\) is a subset of another set \\(B\\)
-						if \\(A\\) does not contain any element that is not in \\(B\\). Since, \\(\\phi\\) does not
-						contain any element, it is also true that it does not contain any element that is not in
-						\\(B\\). Hence, \\(\\phi\\) is a subset of \\(B\\).
+          return `Consider any set \\(B\\). Consider any element \\(a\\) such that \\(a\\notin B\\). An empty set \\( \\phi\\) contains no element. Then, \\(a\\notin \\phi\\). Hence, \\(\\phi\\) is a subset of \\(B\\).
                     `;
         }
       })}`;
