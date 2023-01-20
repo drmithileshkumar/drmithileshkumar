@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-bf4ef1a7.js";import{default as t}from"../components/pages/notes/maths/Three dimensional geometry/Angle between a line and a plane/_page.svelte-1db1fec7.js";export{t as component,r as universal};

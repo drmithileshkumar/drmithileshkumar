@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-9414076e.js";import{default as t}from"../components/pages/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/_page.svelte-77a97656.js";export{t as component,r as universal};

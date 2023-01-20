@@ -2,8 +2,8 @@ import * as universal from '../entries/pages/notes/maths/Indroduction to 3D geom
 
 export const index = 63;
 export const component = async () => (await import('../entries/pages/notes/maths/Indroduction to 3D geometry/Section formula/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/notes/maths/Indroduction to 3D geometry/Section formula/_page.svelte-f258ea94.js';
+export const file = '_app/immutable/components/pages/notes/maths/Indroduction to 3D geometry/Section formula/_page.svelte-54a53e81.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/notes/maths/Indroduction to 3D geometry/Section formula/_page.svelte-f258ea94.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/stores-152f5629.js","_app/immutable/chunks/index-b1bbdf52.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/chunks/stores-4374dc01.js","_app/immutable/chunks/singletons-2210570e.js","_app/immutable/modules/pages/notes/maths/Indroduction to 3D geometry/Section formula/_page.js-2e5c62be.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-ea1b765c.js"];
+export const imports = ["_app/immutable/components/pages/notes/maths/Indroduction to 3D geometry/Section formula/_page.svelte-54a53e81.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/stores-b2882b48.js","_app/immutable/chunks/index-b1bbdf52.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/chunks/stores-4374dc01.js","_app/immutable/chunks/singletons-2210570e.js","_app/immutable/modules/pages/notes/maths/Indroduction to 3D geometry/Section formula/_page.js-2e5c62be.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-a7b7310d.js"];
 export const stylesheets = ["_app/immutable/assets/Practice-ceaad90d.css","_app/immutable/assets/Message-1e964222.css"];
 export const fonts = [];

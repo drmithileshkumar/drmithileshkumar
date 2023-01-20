@@ -24,6 +24,7 @@
 	import Canvas from '$lib/canvas/Canvas.svelte';
 	import { ripple } from '$lib/ui/ripple';
 	import Presenter from '$lib/canvas/Presenter.svelte';
+	import Teacher from '$lib/canvas/Teacher.svelte';
 	let checkbox;
 	const makeSmallLetter = (str) => {
 		if (str.length <= 0) return str;
@@ -88,6 +89,7 @@
 			document.removeEventListener('contextmenu', preventD);
 			document.body.classList.remove('noMenu');
 		}
+		$currentSlide = -2;
 	};
 </script>
 
@@ -152,6 +154,9 @@
 			<div class="presenter noMenu">
 				<Presenter />
 			</div>
+			
+			<Teacher />
+			
 		{/if}
 		<slot class={$presentationMode ? 'noMenu' : ''} />
 		{#if $presentationMode}
@@ -221,6 +226,7 @@
 		top: 0;
 		z-index: 10;
 	}
+	
 	/* .noMenu {
             touch-action: none;
             -webkit-touch-callout: none;

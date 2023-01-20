@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-7d7a3607.js";import{default as t}from"../components/pages/notes/maths/Indroduction to 3D geometry/Distance between two points/_page.svelte-8a25783d.js";export{t as component,r as universal};

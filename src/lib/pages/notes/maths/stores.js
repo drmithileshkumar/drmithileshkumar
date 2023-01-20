@@ -387,7 +387,7 @@ export const subsections = {
 }
 
 export const selectedChapter = writable(chapters[0]);
-export const selectedSection = writable('');
+export const selectedSection = writable(sections[chapters[0]][0]);
 
 //bind:lineWidth bind:strokeColor bind:globalCompositeOperation bind:stMode bind:arcMode
 export const lineWidth = writable(2);

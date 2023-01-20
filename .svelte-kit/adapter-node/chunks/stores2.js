@@ -220,7 +220,7 @@ const sections = {
   ]
 };
 const selectedChapter = writable(chapters[0]);
-const selectedSection = writable("");
+const selectedSection = writable(sections[chapters[0]][0]);
 const presentationMode = writable(false);
 const presentation = writable(null);
 const currentSlide = writable(-2);
