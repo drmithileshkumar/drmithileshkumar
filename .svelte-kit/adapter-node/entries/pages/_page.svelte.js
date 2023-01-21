@@ -2,7 +2,7 @@ import { c as create_ssr_component, d as subscribe, f as add_attribute, h as eac
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../chunks/stores2.js";
 /* empty css                                                   *//* empty css                                                  */const Notes_svelte_svelte_type_style_lang = "";
 const css$3 = {
-  code: ".notes.svelte-18xqx1z{font-size:1.2em;background-color:green;color:white;padding:0.5em 1em;border-radius:10px}article.svelte-18xqx1z{position:relative;padding:0.5em;max-height:400px;overflow:hidden;padding:1em 1em;background-color:rgba(110, 120, 150, 0.3);border-radius:10px;cursor:pointer}.absolute.svelte-18xqx1z{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-18xqx1z::-webkit-scrollbar{width:0;height:0}.thumbnail.svelte-18xqx1z{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-18xqx1z{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:red;text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em;background-image:url('/notes/maths/sets/finite/thumbnail.svg')}",
+  code: ".notes.svelte-5yx4j9{font-size:1.2em;background-color:green;color:white;padding:0.5em 1em;border-radius:10px}article.svelte-5yx4j9{position:relative;padding:0.5em;max-height:400px;overflow:hidden;padding:1em 1em;background-color:rgba(110, 120, 150, 0.3);border-radius:10px;cursor:pointer}.absolute.svelte-5yx4j9{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-5yx4j9::-webkit-scrollbar{width:0;height:0}.thumbnail.svelte-5yx4j9{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-5yx4j9{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:white;text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em;background-image:url('/notes/maths/sets/subsets/thumbnail.svg');background-position:center;background-size:cover;background-repeat:no-repeat}",
   map: null
 };
 const Notes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -25,8 +25,8 @@ const Notes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `<a href="${"/notes/maths"}" class="${"notes svelte-18xqx1z"}">Lecture of the day</a>
-    <article class="${["svelte-18xqx1z", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}><div class="${"thumbnail svelte-18xqx1z"}"><div class="${"statement svelte-18xqx1z"}"><p>Why is the set of primes infinite?
+  return `<a href="${"/notes/maths"}" class="${"notes svelte-5yx4j9"}">Lecture of the day</a>
+    <article class="${["svelte-5yx4j9", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}><div class="${"thumbnail svelte-5yx4j9"}"><div class="${"statement svelte-5yx4j9"}"><p>Why is empty set subset of every set?
                 </p></div></div>
     </article>`;
 });
@@ -49,6 +49,12 @@ const css$1 = {
 };
 const Youtube = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let videos = [
+    {
+      title: "Set : Subsets",
+      src: "https://www.youtube.com/embed/w4SBKulJJh4",
+      width: "210",
+      height: "150"
+    },
     {
       title: "Set : Equal sets",
       src: "https://www.youtube.com/embed/jbBsClpZmPQ",

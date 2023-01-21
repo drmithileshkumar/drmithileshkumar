@@ -24,7 +24,7 @@
         <div class="thumbnail">
             <div class="statement">
                 <p>
-                    Why is the set of primes infinite?
+                    Why is empty set subset of every set?
                 </p>
             </div>
         </div>
@@ -82,10 +82,13 @@
         }
         .statement {
             background: radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));
-            color: red;
+            color: white;
             text-shadow: 1px 1px 3px rgb(4, 4, 4);
             box-shadow: 1px 1px 3px rgb(129, 128, 128);
             padding: 1em;
-            background-image: url('/notes/maths/sets/finite/thumbnail.svg');
+            background-image: url('/notes/maths/sets/subsets/thumbnail.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     </style>

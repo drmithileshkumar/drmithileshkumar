@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-0d2810b3.js";import{default as t}from"../components/pages/notes/maths/Conic sections/Parabola/_page.svelte-14de9c7f.js";export{t as component,r as universal};
+import{_ as r}from"./_page-f28b0a44.js";import{default as t}from"../components/pages/notes/maths/Conic sections/Parabola/_page.svelte-14de9c7f.js";export{t as component,r as universal};

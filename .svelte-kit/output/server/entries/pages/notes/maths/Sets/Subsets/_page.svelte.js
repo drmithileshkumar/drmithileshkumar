@@ -415,7 +415,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</section></section>
-		${!$presentationMode ? `<div class="${"youtube svelte-1tds5s2"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/jbBsClpZmPQ"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}
+		${!$presentationMode ? `<div class="${"youtube svelte-1tds5s2"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/w4SBKulJJh4"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}
 		${$presentationMode ? `<div class="${"slate"}"></div>` : ``}</div>
 	<section>${validate_component(Item, "Item").$$render($$result, { item: 26 }, {}, {
     default: () => {
