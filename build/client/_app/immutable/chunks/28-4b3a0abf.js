@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-f3083aa1.js";import{default as t}from"../components/pages/notes/maths/Application of integrals/Area between two curves/_page.svelte-3b39ccc3.js";export{t as component,r as universal};
+import{_ as r}from"./_page-77fd0499.js";import{default as t}from"../components/pages/notes/maths/Application of integrals/Area between two curves/_page.svelte-3b39ccc3.js";export{t as component,r as universal};

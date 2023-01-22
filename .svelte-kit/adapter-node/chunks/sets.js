@@ -253,11 +253,15 @@ class Sets {
       for (let i = 0; i < this.e.length - 1; i++) {
         if (typeof this.e[i] === "number") {
           tex = tex + this.e[i] + ", ";
+        } else if (typeof this.e[i] === "string") {
+          tex = tex + this.e[i] + ", ";
         } else {
           tex = tex + this.e[i].str() + ", ";
         }
       }
       if (typeof this.e[this.e.length - 1] === "number") {
+        tex = tex + this.e[this.e.length - 1];
+      } else if (typeof this.e[this.e.length - 1] === "string") {
         tex = tex + this.e[this.e.length - 1];
       } else {
         tex = tex + this.e[this.e.length - 1].str();
@@ -510,5 +514,6 @@ class Sets {
   }
 }
 export {
-  Sets as S
+  Sets as S,
+  powerset as p
 };

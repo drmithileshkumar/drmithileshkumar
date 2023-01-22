@@ -348,14 +348,7 @@
 	{#if $presentationMode && $currentSlide >= 2}
 		<div class="pad" />
 	{/if}
-	<!-- <section>
-            <h2>Practice</h2>
-            {#if $session.user}
-            <Practice {generateProblem}/>
-            {:else}
-                <Message>You need to be logged in to practice.</Message>
-            {/if}
-        </section> -->
+	
 </article>
 
 <style>

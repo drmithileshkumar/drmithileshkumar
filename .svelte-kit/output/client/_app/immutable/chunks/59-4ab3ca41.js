@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-1c4cdf8d.js";import{default as t}from"../components/pages/notes/maths/Differential equations/Methods of solving first order first degree differential equations/_page.svelte-8ba8fcce.js";export{t as component,r as universal};
+import{_ as r}from"./_page-7fe8a728.js";import{default as t}from"../components/pages/notes/maths/Differential equations/Methods of solving first order first degree differential equations/_page.svelte-8ba8fcce.js";export{t as component,r as universal};

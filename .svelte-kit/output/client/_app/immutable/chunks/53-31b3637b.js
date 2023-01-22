@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-70e4c228.js";import{default as t}from"../components/pages/notes/maths/Determinants/Determinant/_page.svelte-7ef6e036.js";export{t as component,r as universal};
+import{_ as r}from"./_page-c7200c70.js";import{default as t}from"../components/pages/notes/maths/Determinants/Determinant/_page.svelte-7ef6e036.js";export{t as component,r as universal};

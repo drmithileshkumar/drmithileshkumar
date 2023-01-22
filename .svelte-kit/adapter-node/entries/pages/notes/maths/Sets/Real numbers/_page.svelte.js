@@ -1,66 +1,931 @@
-import { c as create_ssr_component, d as subscribe, e as escape, r as add_classes, f as add_attribute } from "../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
-/* empty css                                                               *//* empty css                                                              */import { p as page } from "../../../../../../chunks/stores.js";
+import { c as create_ssr_component, q as compute_rest_props, d as subscribe, e as escape, j as null_to_empty, f as add_attribute, v as validate_component } from "../../../../../../chunks/index3.js";
+import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../../../chunks/stores2.js";
+import { P as Practice } from "../../../../../../chunks/Practice.js";
+/* empty css                                                              */import { p as powerset, S as Sets } from "../../../../../../chunks/sets.js";
+import { r as randInt } from "../../../../../../chunks/common.js";
+import { p as page } from "../../../../../../chunks/stores.js";
 import { T as TeX } from "../../../../../../chunks/constants.js";
+import { I as Item, P, L as Li } from "../../../../../../chunks/Image.svelte_svelte_type_style_lang.js";
+import { H as H3 } from "../../../../../../chunks/H3.js";
+import { H as H2 } from "../../../../../../chunks/H2.js";
+import { I as Image } from "../../../../../../chunks/Image.js";
+/* empty css                                                          */const seive = (N) => {
+  if (N <= 1)
+    return [];
+  var numbers = new Array(N);
+  for (var i = 0; i < N; i++) {
+    numbers[i] = true;
+  }
+  for (var i = 2; i < Math.sqrt(N); i++) {
+    for (var j = i * i; j < N; j += i) {
+      numbers[j] = false;
+    }
+  }
+  var primes = [];
+  for (var i = 2; i < N; i++) {
+    if (numbers[i]) {
+      primes.push(i);
+    }
+  }
+  return primes;
+};
+const factor = (N) => {
+  if (N <= 1)
+    return [{ prime: N, power: 0 }];
+  let primes = seive(N);
+  let factors = [];
+  for (let k = 0; k < primes.length && N > 1; k++) {
+    let p = primes[k];
+    if (N % p === 0) {
+      let fact = { prime: p, power: 0 };
+      while (N % p === 0) {
+        fact.power++;
+        N /= p;
+      }
+      factors.push(fact);
+    }
+  }
+  if (N > 1) {
+    factors.push({ prime: N, power: 1 });
+  }
+  return factors;
+};
+const filterSquare = (N) => {
+  let factors = factor(N);
+  let squares = [];
+  let nonSquares = [];
+  for (let i = 0; i < factors.length; i++) {
+    if (factors[i].power > 1) {
+      squares.push({ prime: factors[i].prime, power: Math.floor(factors[i].power / 2) });
+    }
+    factors[i].power = factors[i].power % 2;
+  }
+  nonSquares = factors.filter((factor2) => factor2.power == 1);
+  return { a: squares, r: nonSquares };
+};
+class Surd {
+  // natural radicals
+  constructor(terms = []) {
+    this.terms = terms;
+  }
+  reduced() {
+    for (let i = 0; i < this.terms.length; i++) {
+      if (this.terms[i].r !== 1) {
+        let { a, r } = filterSquare(this.terms[i].r);
+        let an = a.length > 0 ? a.map((item) => Math.pow(item.prime, item.power)).reduce((x, y) => x * y) : 1;
+        let rn = r.length > 0 ? r.map((item) => Math.pow(item.prime, item.power)).reduce((x, y) => x * y) : 1;
+        this.terms[i].a *= an;
+        this.terms[i].r = rn;
+      }
+    }
+    this.removeDuplicates();
+  }
+  removeDuplicates() {
+    if (this.terms.length > 1) {
+      let markTerms = new Array(this.terms.length);
+      for (let i = 0; i < this.terms.length; i++) {
+        markTerms[i] = true;
+      }
+      for (let i = 0; i < this.terms.length; i++) {
+        if (markTerms[i]) {
+          for (let j = i + 1; j < this.terms.length; j++) {
+            if (this.terms[i].r == this.terms[j].r) {
+              this.terms[i].a += this.terms[j].a;
+              markTerms[j] = false;
+            }
+          }
+        }
+      }
+      this.terms = this.terms.filter((index) => markTerms[index]);
+      this.terms = this.terms.filter((term) => term.a != 0 || term.r == 1);
+      this.sortR();
+    }
+  }
+  sortR() {
+    this.terms.sort((a, b) => a.r - b.r);
+  }
+  value() {
+    let val = 0;
+    for (let term of this.terms) {
+      val += term.a * Math.sqrt(term.r);
+    }
+    return val;
+  }
+  randomPureSurd(max) {
+    this.terms.push({ a: randInt(max, 2), r: randInt(max, 2) });
+  }
+  randomSurd(max) {
+    let n = randInt(4, 2);
+    this.terms.push({ a: randInt(max, 2), r: 1 });
+    for (let i = 1; i < n; i++) {
+      this.terms.push({ a: randInt(max, 2), r: randInt(max, 2) });
+    }
+  }
+  equal(s) {
+    this.reduced();
+    s.reduced();
+    if (this.terms.length != s.terms.length)
+      return false;
+    for (let i = 0; i < this.terms.length; i++) {
+      if (this.terms[i].a != s.terms[i].a || this.terms[i].r != s.terms[i].r)
+        return false;
+    }
+    return true;
+  }
+  isNum() {
+    return this.terms.length == 1 && this.terms[0].r == 1;
+  }
+  isOne() {
+    return this.isNum() && this.terms[0].a == 1;
+  }
+  isMinusOne() {
+    return this.isNum() && this.terms[0].a == -1;
+  }
+  isZero() {
+    return this.value() == 0;
+  }
+  isGZero() {
+    return this.value() > 0;
+  }
+  isLZero() {
+    return this.value() < 0;
+  }
+  scale(k) {
+    let newSurd = new Surd();
+    for (let term of this.terms) {
+      newSurd.terms.push({ a: k * term.a, r: term.r });
+    }
+    return newSurd;
+  }
+  add(s) {
+    this.reduced();
+    s.reduced();
+    let newSurd = new Surd();
+    let matched = new Array(s.terms.length);
+    for (let i = 0; i < s.terms.length; i++) {
+      matched[i] = false;
+    }
+    for (let i = 0; i < this.terms.length; i++) {
+      newSurd.terms.push(this.terms[i]);
+      for (let j = 0; j < s.terms.length; j++) {
+        if (this.terms[i].r == s.terms[j].r) {
+          matched[j] = true;
+          newSurd.terms[i].a += s.terms[j].a;
+        }
+      }
+    }
+    for (let i = 0; i < s.terms.length; i++) {
+      if (!matched[i]) {
+        newSurd.terms.push(s.terms[i]);
+      }
+    }
+    newSurd.terms = newSurd.terms.filter((term) => term.a != 0 || term.r == 1);
+    return newSurd;
+  }
+  sub(s) {
+    this.reduced();
+    s.reduced();
+    let newS = s.scale(-1);
+    return this.add(newS);
+  }
+  termMul(s) {
+    let newSurd = new Surd();
+    for (let term of this.terms) {
+      newSurd.push({ a: term.a * s.a, r: term.r * s.r });
+    }
+  }
+  mul(s) {
+    this.reduced();
+    s.reduced();
+    let newSurd = new Surd();
+    let newTerm;
+    for (let i = 0; i < this.terms.length; i++) {
+      for (let j = 0; j < s.terms.length; j++) {
+        newTerm = { a: this.terms[i].a * s.terms[j].a, r: this.terms[i].r * s.terms[j].r };
+        newSurd.terms.push(newTerm);
+      }
+    }
+    newSurd.reduced();
+    return newSurd;
+  }
+  flipSign(sign) {
+    let newSurd = new Surd();
+    newSurd.terms.push(this.terms[0]);
+    let term;
+    for (let i = 1; i < this.terms.length; i++) {
+      term = sign[i - 1] == "0" ? { a: -Math.abs(this.terms[i].a), r: this.terms[i].r } : { a: Math.abs(this.terms[i].a), r: this.terms[i].r };
+      newSurd.terms.push(term);
+    }
+    return newSurd;
+  }
+  conjugate() {
+    if (this.terms.length == 1)
+      return this;
+    if (this.terms.length == 2) {
+      let newSurd = new Surd();
+      newSurd.terms.push(this.terms[0]);
+      newSurd.terms.push(this.terms[1]);
+      newSurd.terms[1].a = -newSurd.terms[1].a;
+      return newSurd;
+    }
+    let signs = powerset(this.terms.length - 1);
+    let conj = new Surd();
+    conj.terms.push({ a: 1, r: 1 });
+    let thisSign = "";
+    for (let i = 1; i < this.terms.length; i++) {
+      if (this.terms[i].a < 0) {
+        thisSign += 0;
+      } else {
+        thisSign += 1;
+      }
+    }
+    for (let sign of signs) {
+      if (sign != thisSign) {
+        conj = conj.mul(this.flipSign(sign));
+      }
+    }
+    return conj;
+  }
+  gcd(a, b) {
+    if (b > a) {
+      var temp = a;
+      a = b;
+      b = temp;
+    }
+    while (true) {
+      if (b == 0)
+        return a;
+      a %= b;
+      if (a == 0)
+        return b;
+      b %= a;
+    }
+  }
+  gcda() {
+    let g = this.terms[0].a;
+    for (let i = 1; i < this.terms.length; i++) {
+      if (this.terms[i].a !== 0)
+        g = this.gcd(g, this.terms[i].a);
+    }
+    return g;
+  }
+  div(s) {
+    let conj = s.conjugate();
+    let den = s.mul(conj);
+    let num = this.mul(conj);
+    let g = num.gcda();
+    let g1 = this.gcd(g, den.terms[0].a);
+    if (g1 !== 0) {
+      for (let i = 0; i < num.terms.length; i++) {
+        num.terms[i].a = num.terms[i].a / g1;
+      }
+      den.terms[0].a = den.terms[0].a / g1;
+    }
+    return new Q(num, den);
+  }
+  str() {
+    let factor2 = "";
+    let str = "";
+    if (this.terms.length == 0)
+      return "";
+    let i = 0;
+    if (this.terms[i].a == 0) {
+      str = str + "";
+    } else if (this.terms[i].a > 0) {
+      factor2 = this.terms[i].a == 1 && this.terms[i].r !== 1 ? "" : this.terms[i].a;
+    } else {
+      factor2 = this.terms[i].a == -1 && this.terms[i].r !== 1 ? "-" : this.terms[i].a;
+    }
+    str += this.terms[i].r !== 1 ? factor2 + `\\sqrt{${this.terms[i].r}}` : factor2;
+    for (i = 1; i < this.terms.length; i++) {
+      if (this.terms[i].a == 0) {
+        str = str + "";
+      } else if (this.terms[i].a > 0) {
+        factor2 = this.terms[i].a == 1 ? "" : this.terms[i].a;
+        str += this.terms[i].r !== 1 ? "+" + factor2 + `\\sqrt{${this.terms[i].r}}` : "+" + factor2;
+      } else {
+        factor2 = this.terms[i].a == -1 ? "-" : this.terms[i].a;
+        str += this.terms[i].r !== 1 ? factor2 + `\\sqrt{${this.terms[i].r}}` : factor2;
+      }
+    }
+    return str;
+  }
+}
+class Q {
+  constructor(num = 0, den = 1) {
+    this.num = num;
+    this.den = den;
+  }
+  randF(n, d) {
+    this.num = randInt(n, -n);
+    this.den = randInt(d, 1);
+    this.reduced();
+  }
+  isSurd() {
+    return this.num instanceof Surd && this.den instanceof Surd;
+  }
+  sqrt() {
+    let sq = new Q();
+    if (this.num instanceof Surd && this.den instanceof Surd) {
+      if (this.num.isNum()) {
+        sq.num = new Surd([{ a: 1, r: this.num.terms[0].a }]);
+      } else {
+        sq.num = new Surd([{ a: 1, r: this.num.value() }]);
+      }
+      if (this.den.isNum()) {
+        sq.den = new Surd([{ a: 1, r: this.den.terms[0].a }]);
+      } else {
+        sq.den = new Surd([{ a: 1, r: this.den.value() }]);
+      }
+    } else {
+      sq.num = new Surd([{ a: 1, r: this.num }]);
+      sq.den = new Surd([{ a: 1, r: this.den }]);
+    }
+    return sq;
+  }
+  isZero() {
+    return this.num instanceof Surd && this.den instanceof Surd ? this.num.value() == 0 : this.num == 0;
+  }
+  isOne() {
+    return this.num instanceof Surd && this.den instanceof Surd ? this.num.isOne() && this.den.isOne() : this.num == 1 && this.den == 1;
+  }
+  isMinusOne() {
+    return this.num instanceof Surd && this.den instanceof Surd ? this.num.isMinusOne() && this.den.isOne() : this.num == -1 && this.den == 1;
+  }
+  isGZero() {
+    if (this.num instanceof Surd && this.den instanceof Surd) {
+      return this.num.value() > 0 && this.den.value() > 0 || this.num.value() < 0 && this.den.value() < 0;
+    } else {
+      return this.num > 0;
+    }
+  }
+  isLZero() {
+    if (this.num instanceof Surd && this.den instanceof Surd) {
+      return this.num.value() < 0 && this.den.value() > 0 || this.num.value() > 0 && this.den.value() < 0;
+    } else {
+      return this.num < 0;
+    }
+  }
+  isUndefined() {
+    if (this.num instanceof Surd && this.den instanceof Surd) {
+      return this.den.terms.length == 1 && this.den.terms[0].a == 0;
+    } else {
+      return this.den == 0;
+    }
+  }
+  str() {
+    if (this.num instanceof Surd && this.den instanceof Surd) {
+      if (this.den.equal(new Surd([{ a: 1, r: 1 }]))) {
+        return `${this.num.str()}`;
+      } else {
+        let numstr = this.num.str();
+        let denstr = this.den.str();
+        return `\\frac{${numstr}}{${denstr}}`;
+      }
+    } else {
+      if (this.num == 0) {
+        return 0;
+      }
+      if (this.den == 1) {
+        return this.num;
+      }
+      if (this.den == -1) {
+        return -this.num;
+      }
+      if (this.den < 0) {
+        return `\\frac{${-this.num}}{${-this.den}}`;
+      }
+      return `\\frac{${this.num}}{${this.den}}`;
+    }
+  }
+  gcd() {
+    let a = Math.abs(this.num);
+    let b = Math.abs(this.den);
+    if (b > a) {
+      var temp = a;
+      a = b;
+      b = temp;
+    }
+    while (true) {
+      if (b == 0)
+        return a;
+      a %= b;
+      if (a == 0)
+        return b;
+      b %= a;
+    }
+  }
+  lcm() {
+    let g = this.gcd();
+    return this.num * this.den / g;
+  }
+  reduced() {
+    if (this.num instanceof Surd && this.den instanceof Surd) {
+      let newQ = this.num.div(this.den);
+      this.num = newQ.num;
+      this.den = newQ.den;
+    } else {
+      if (this.den < 0) {
+        this.den = -this.den;
+        this.num = -this.num;
+      }
+      if (this.num == this.den) {
+        this.num = 1;
+        this.den = 1;
+      } else if (this.num % this.den == 0) {
+        this.num = this.num / this.den;
+        this.den = 1;
+      } else if (this.num % 1 == 0 && this.den % 1 == 0) {
+        let g = this.gcd();
+        this.num = this.num / g;
+        this.den = this.den / g;
+      } else {
+        this.num = this.num / this.den;
+        this.den = 1;
+      }
+    }
+  }
+  equal(f) {
+    this.reduced();
+    f.reduced();
+    if (this.num instanceof Surd && this.den instanceof Surd) {
+      if (this.isUndefined())
+        return false;
+      if (f.isSurd()) {
+        if (f.den.value() == 0)
+          return false;
+        return this.num.value() / this.den.value() == f.num.value() / f.den.value();
+      } else {
+        return this.num.value() / this.den.value() == f.num / f.den;
+      }
+    } else {
+      if (f.isSurd()) {
+        if (f.den.value() == 0)
+          return false;
+        return this.num / this.den == f.num.value() / f.den.value();
+      } else {
+        return this.num / this.den == f.num / f.den;
+      }
+    }
+  }
+  scale(k) {
+    return this.num instanceof Surd && this.den instanceof Surd ? new Q(this.num.scale(k), this.den) : new Q(this.num * k, this.den);
+  }
+  abs() {
+    return this.isLZero() ? this.scale(-1) : this;
+  }
+  add(f) {
+    let newNum, newDen;
+    if (this.num instanceof Surd && this.den instanceof Surd) {
+      if (f.isSurd()) {
+        newNum = this.num.mul(f.den).add(this.den.mul(f.num));
+        newDen = this.den.mul(f.den);
+      } else {
+        newNum = this.num.scale(f.den).add(this.den.scale(f.num));
+        newDen = this.den.scale(f.den);
+      }
+    } else {
+      if (f.isSurd()) {
+        newNum = f.den.scale(this.num).add(f.num.scale(this.den));
+        newDen = f.den.scale(this.den);
+      } else {
+        newNum = this.num * f.den + this.den * f.num;
+        newDen = this.den * f.den;
+      }
+    }
+    return new Q(newNum, newDen);
+  }
+  sub(f) {
+    let nf = f.scale(-1);
+    return this.add(nf);
+  }
+  mul(f) {
+    let newNum, newDen;
+    if (this.num instanceof Surd && this.den instanceof Surd) {
+      if (f.isSurd()) {
+        newNum = this.num.mul(f.num);
+        newDen = this.den.mul(f.den);
+      } else {
+        newNum = this.num.scale(f.num);
+        newDen = this.den.scale(f.den);
+      }
+    } else {
+      if (f.isSurd()) {
+        newNum = f.num.scale(this.num);
+        newDen = f.den.scale(this.den);
+      } else {
+        newNum = this.num * f.num;
+        newDen = this.den * f.den;
+      }
+    }
+    return new Q(newNum, newDen);
+  }
+  div(f) {
+    let newNum, newDen;
+    if (this.num instanceof Surd && this.den instanceof Surd) {
+      if (f.isSurd()) {
+        newNum = this.num.mul(f.den);
+        newDen = this.den.mul(f.num);
+      } else {
+        newNum = this.num.scale(f.den);
+        newDen = this.den.scale(f.num);
+      }
+    } else {
+      if (f.isSurd()) {
+        newNum = f.den.scale(this.num);
+        newDen = f.num.scale(this.den);
+      } else {
+        newNum = this.num * f.den;
+        newDen = this.den * f.num;
+      }
+    }
+    return new Q(newNum, newDen);
+  }
+  value() {
+    if (this.num instanceof Surd && this.den instanceof Surd) {
+      return this.num.value() / this.num.value();
+    } else {
+      return this.num / this.den;
+    }
+  }
+}
+const Dt_svelte_svelte_type_style_lang = "";
+const css$2 = {
+  code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
+  map: null
+};
+const Dt = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["isActive"]);
+  let $presentationMode, $$unsubscribe_presentationMode;
+  let $currentSlide, $$unsubscribe_currentSlide;
+  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
+  $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => $currentSlide = value);
+  let { isActive = -1 } = $$props;
+  if ($$props.isActive === void 0 && $$bindings.isActive && isActive !== void 0)
+    $$bindings.isActive(isActive);
+  $$result.css.add(css$2);
+  $$unsubscribe_presentationMode();
+  $$unsubscribe_currentSlide();
+  return `${$presentationMode ? `<dt class="${escape($$restProps.class || "", true) + " " + escape(
+    $presentationMode && isActive === $currentSlide ? "currentActive" : "",
+    true
+  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</dt>` : `<dt class="${escape(null_to_empty($$restProps.class || ""), true) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</dt>`}`;
+});
+const Dd_svelte_svelte_type_style_lang = "";
+const css$1 = {
+  code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
+  map: null
+};
+const Dd = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["isActive"]);
+  let $presentationMode, $$unsubscribe_presentationMode;
+  let $currentSlide, $$unsubscribe_currentSlide;
+  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
+  $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => $currentSlide = value);
+  let { isActive = -1 } = $$props;
+  if ($$props.isActive === void 0 && $$bindings.isActive && isActive !== void 0)
+    $$bindings.isActive(isActive);
+  $$result.css.add(css$1);
+  $$unsubscribe_presentationMode();
+  $$unsubscribe_currentSlide();
+  return `${$presentationMode ? `<dd class="${escape($$restProps.class || "", true) + " " + escape(
+    $presentationMode && isActive === $currentSlide ? "currentActive" : "",
+    true
+  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</dd>` : `<dd class="${escape(null_to_empty($$restProps.class || ""), true) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</dd>`}`;
+});
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "p.svelte-1lit5v{text-indent:2em}",
+  code: ".display.svelte-gkd15d{position:relative;position:-webkit-sticky}.youtube.svelte-gkd15d{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start}article.svelte-gkd15d{position:relative;padding:0.5em}.absolute.svelte-gkd15d{margin:auto;width:100%;height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-gkd15d::-webkit-scrollbar{width:0;height:0}.pad.svelte-gkd15d{min-height:150px}.thumbnail.svelte-gkd15d{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-gkd15d{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:red;text-shadow:1px 1px 3px rgb(4, 4, 4);padding:1em;background-image:url('/notes/maths/sets/real/subsetreal.svg');background-repeat:no-repeat;background-position:center;width:500px;height:500px}.grid.svelte-gkd15d{display:grid;grid-template-columns:auto 420px}.flex.svelte-gkd15d{display:flex;flex-direction:column-reverse}.contentpart.svelte-gkd15d{padding:0.5em}.gridBackground.svelte-gkd15d{background-image:url('/background.svg');background-repeat:no-repeat;background-position:center;background-size:cover}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$unsubscribe_currentSlide;
+  let splitMode;
+  let $presentationMode, $$unsubscribe_presentationMode;
+  let $currentSlide, $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
   let $selectedSection, $$unsubscribe_selectedSection;
   let $$unsubscribe_selectedChapter;
   let $page, $$unsubscribe_page;
-  let $presentationMode, $$unsubscribe_presentationMode;
   let $presentation, $$unsubscribe_presentation;
-  $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => value);
+  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
+  $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => $currentSlide = value);
   $$unsubscribe_slideCounter = subscribe(slideCounter, (value) => value);
   $$unsubscribe_selectedSection = subscribe(selectedSection, (value) => $selectedSection = value);
   $$unsubscribe_selectedChapter = subscribe(selectedChapter, (value) => value);
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
-  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   $$unsubscribe_presentation = subscribe(presentation, (value) => $presentation = value);
+  let problemset = {
+    s: "",
+    o: { A: "", B: "", C: "", D: "" },
+    c: ""
+  };
+  const generateProblem = (problemnumber) => {
+    let N = 1;
+    problemnumber = problemnumber % N;
+    let choices = ["A", "B", "C", "D"];
+    let correctChoiceIndex = Math.floor(Math.random() * 4);
+    problemset.c = choices[correctChoiceIndex];
+    switch (problemnumber) {
+      case 0: {
+        let n = randInt(20, 1);
+        let m = randInt(n + 1, n + 10) + 10;
+        let k = randInt(8, 2);
+        let irrationals = new Sets(["e", "\\pi", "\\varphi"]);
+        let s = new Sets();
+        s.randomSet(n, m, k);
+        let r = Math.random();
+        let suset = r < 0.25 ? "N" : r < 0.5 ? "Z" : r < 0.75 ? "Q" : "T";
+        let opt = [
+          `\\(A\\subset \\mathbb{N}\\)`,
+          `\\(A\\subset \\mathbb{Z}\\)`,
+          `\\(A\\subset \\mathbb{Q}\\)`,
+          `\\(A\\subset \\mathbb{T}\\)`
+        ];
+        let ques = "";
+        let co;
+        switch (suset) {
+          case "N":
+            s.add(randInt(m, n));
+            ques = "not";
+            co = 3;
+            break;
+          case "Z":
+            s.add(-randInt(m, n));
+            ques = "not";
+            co = 0;
+            break;
+          case "Q":
+            let q = new Q();
+            q.randF(m, n);
+            let q1 = q.add(new Q(1, 2));
+            s.add(q1);
+            co = 2;
+            break;
+          case "T":
+            s = irrationals.randomSubset();
+            let nq = new Surd();
+            nq.randomSurd(m);
+            s.add(nq);
+            let nq1 = new Surd();
+            s.add(nq1);
+            co = 3;
+            break;
+        }
+        for (let i = 0; i < 4; i++) {
+          problemset.o[choices[(correctChoiceIndex + i) % 4]] = opt[(co + i) % 4];
+        }
+        if (suset == "Z") {
+          problemset.o[choices[correctChoiceIndex + 3]] = `\\(A\\subset \\mathbb{R}\\)`;
+        }
+        problemset.s = `Given set \\(A = ${s.str()}\\), which of the following is ${ques} correct?`;
+        break;
+      }
+    }
+    problemset = problemset;
+    return problemset;
+  };
+  let DW;
   $$result.css.add(css);
+  splitMode = !$presentationMode && DW > 800;
+  $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();
   $$unsubscribe_slideCounter();
   $$unsubscribe_selectedSection();
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
-  $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
   return `${$$result.head += `<!-- HEAD_svelte-1up1sq_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Real numbers"}"><!-- HEAD_svelte-1up1sq_END -->`, ""}
-<article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-	<section><p class="${"svelte-1lit5v"}">Some of the important subsets of real number are</p>
-
-		<dl><dt>Natural numbers</dt><dd>${escape(`\\(\\mathbb{N} = \\{1, 2, 3, \\dots\\}\\)`)}</dd><dt>Integers</dt><dd>${escape(`\\(\\mathbb{Z} = \\{\\dots, -1, 0, 1, \\dots\\}\\)`)}</dd><dt>Rational numbers</dt><dd>${escape(`\\(\\mathbb{Q} = \\{x: x = \\frac{p}{q}, p, q\\in \\mathbb{Z}, q\\neq 0\\}\\)`)}</dd><dt>Irrational numbers</dt><dd>${escape(`\\(\\mathbb{T} = \\{x: x \\notin \\mathbb{Q}\\}\\)`)}</dd></dl>
-		<p class="${"svelte-1lit5v"}">A natural number is an integer as well. An integer is a rational number too. But, a rational
-			number is not an irrational number. These observations can be written compactly as
-			${escape(`\\[\\mathbb{N}\\subset \\mathbb{Z}\\subset \\mathbb{Q} \\subset \\mathbb{R}, \\mathbb{T}\\subset\\mathbb{R},  \\mathbb{Q}\\not\\subset\\mathbb{T}\\]`)}</p></section>
-
-	<section><h3 class="${"examples"}">Examples</h3>
-		<ul><li>${escape(`\\(\\{\\pi, \\sqrt{2}\\} \\subset \\mathbb{T}\\)`)}</li>
-			<li>${escape(`\\(\\{1, -2, \\sqrt{3}, \\frac{1}{2}\\} \\subset \\mathbb{T}\\)`)}</li></ul></section>
-	<h2>Intervals as subsets of ${escape("\\(\\mathbb{R}\\)")}</h2>
-	<div class="${"definition"}">Let \\(a, b${escape(TeX.inR)}\\) and \\(a ${escape(TeX.less)} b\\). Then the set of real numbers \\(${escape(TeX.set("y", "a<y<b"))}\\) is called an <em>open interval</em> and is denoted by \\((a,b)\\). Note that \\(a\\) and \\(b\\) do
-		not belong to the open interval.
-	</div>
-	<div class="${"definition"}">Let \\(a, b${escape(TeX.inR)}\\) and \\(a ${escape(TeX.less)} b\\). Then the set of real numbers \\(${escape(TeX.set("y", "a\\leq y\\leq b"))}\\) is called a <em>closed interval</em> and is denoted by \\([a,b]\\). Note that \\(a\\) and \\(b\\)
-		belong to the closed interval.
-	</div>
-	<p class="${"svelte-1lit5v"}">There are two other type of intervals (called <em>clopen</em>).</p>
-	<ul><li>\\([a,b) = ${escape(TeX.set("y", "a\\leq y<b"))}\\) where \\(a\\) is in the interval, but not \\(b\\).
-		</li>
-		<li>\\((a,b] = ${escape(TeX.set("y", "a< y\\leq b"))}\\) where \\(b\\) is in the interval, but not \\(a\\).
-		</li></ul>
-	<p class="${"svelte-1lit5v"}">An interval of ${escape(TeX.R)} is visualized by a segment on a number line.
-	</p>
-	<div class="${"image"}"><svg width="${"100%"}" height="${"100%"}" viewBox="${"-292.75 -293.58499908447266 600 300"}" xmlns="${"http://www.w3.org/2000/svg"}" xmlns:xlink="${"http://www.w3.org/1999/xlink"}"><defs></defs><g><g class="${"draggable"}" id="${"Layer-0"}" fill="${"none"}" stroke="${"none"}" stroke-width="${"0"}" stroke-dasharray="${"none"}" opacity="${"1"}" mask="${"none"}" filter="${"none"}" transform="${"matrix(1 0 0 1 0 0)"}"><g class="${"draggable"}" id="${"WebdutTeam18R12Group-10"}" fill="${"rgba(0, 0, 0, 0)"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"1"}" stroke-dasharray="${"none"}" opacity="${"1"}" mask="${"none"}" filter="${"none"}" transform="${"matrix(1 0 0 1 14 41)"}"><path id="${"WebdutTeam18R12Path-2"}" d="${"M -253.75,-225.05999755859375 H -27.75"}" fill="${"rgba(0, 0, 0, 0)"}" fill-rule="${"evenodd"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"2"}" stroke-dasharray="${"none"}" stroke-linecap="${"butt"}" stroke-linejoin="${"miter"}" stroke-miterlimit="${"4"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" marker-start="${"none"}" marker-mid="${"none"}" marker-end="${"none"}" transform="${"matrix(1 0 0 1 0 -13)"}"></path><path id="${"WebdutTeam18R12Path-3"}" d="${"M -195.75,-221.05999755859375 H -96.75"}" fill="${"rgba(0, 0, 0, 0)"}" fill-rule="${"evenodd"}" stroke="${"rgba(0, 234, 193, 1)"}" stroke-width="${"4"}" stroke-dasharray="${"none"}" stroke-linecap="${"butt"}" stroke-linejoin="${"miter"}" stroke-miterlimit="${"4"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" marker-start="${"none"}" marker-mid="${"none"}" marker-end="${"none"}" transform="${"matrix(1 0 0 1 6 -17)"}"></path><circle id="${"WebdutTeam18R12Circle-4"}" cx="${"24.25"}" cy="${"-188.55999755859375"}" r="${"10"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"1"}" stroke-dasharray="${"none"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" transform="${"matrix(1 0 0 1 -212.25 -49)"}"></circle><circle id="${"WebdutTeam18R12Circle-5"}" cx="${"24.25"}" cy="${"-188.55999755859375"}" r="${"10"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"1"}" stroke-dasharray="${"none"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" transform="${"matrix(1 0 0 1 -111.25 -49)"}"></circle><g id="${"WebdutTeam18R12Latex-6"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"undefined"}" stroke-width="${"undefined"}" stroke-dasharray="${"undefined"}" opacity="${"1"}" filter="${"none"}" mask="${"undefined"}" transform="${"matrix(0.03 0 0 0.03 -196 -201)"}"><defs><path id="${"MJX-16057-TEX-I-1D44E"}" d="${"M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"}"></path></defs><g stroke-width="${"0"}" transform="${"scale(1,-1)"}"><g data-mml-node="${"math"}"><g data-mml-node="${"mi"}"><use data-c="${"1D44E"}" xlink:href="${"#MJX-16057-TEX-I-1D44E"}"></use></g></g></g></g><g id="${"WebdutTeam18R12Latex-7"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"undefined"}" stroke-width="${"undefined"}" stroke-dasharray="${"undefined"}" opacity="${"1"}" filter="${"none"}" mask="${"undefined"}" transform="${"matrix(0.03 0 0 0.03 -92 -200)"}"><defs><path id="${"MJX-16058-TEX-I-1D44F"}" d="${"M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"}"></path></defs><g stroke-width="${"0"}" transform="${"scale(1,-1)"}"><g data-mml-node="${"math"}"><g data-mml-node="${"mi"}"><use data-c="${"1D44F"}" xlink:href="${"#MJX-16058-TEX-I-1D44F"}"></use></g></g></g></g><g id="${"WebdutTeam18R12Latex-8"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"undefined"}" stroke-width="${"undefined"}" stroke-dasharray="${"undefined"}" opacity="${"1"}" filter="${"none"}" mask="${"undefined"}" transform="${"matrix(0.03 0 0 0.03 -172 -262)"}"><defs><path id="${"MJX-16059-TEX-N-28"}" d="${"M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"}"></path><path id="${"MJX-16059-TEX-I-1D44E"}" d="${"M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"}"></path><path id="${"MJX-16059-TEX-N-2C"}" d="${"M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"}"></path><path id="${"MJX-16059-TEX-I-1D44F"}" d="${"M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"}"></path><path id="${"MJX-16059-TEX-N-29"}" d="${"M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"}"></path></defs><g stroke-width="${"0"}" transform="${"scale(1,-1)"}"><g data-mml-node="${"math"}"><g data-mml-node="${"mo"}"><use data-c="${"28"}" xlink:href="${"#MJX-16059-TEX-N-28"}"></use></g><g data-mml-node="${"mi"}" transform="${"translate(389,0)"}"><use data-c="${"1D44E"}" xlink:href="${"#MJX-16059-TEX-I-1D44E"}"></use></g><g data-mml-node="${"mo"}" transform="${"translate(918,0)"}"><use data-c="${"2C"}" xlink:href="${"#MJX-16059-TEX-N-2C"}"></use></g><g data-mml-node="${"mi"}" transform="${"translate(1362.7,0)"}"><use data-c="${"1D44F"}" xlink:href="${"#MJX-16059-TEX-I-1D44F"}"></use></g><g data-mml-node="${"mo"}" transform="${"translate(1791.7,0)"}"><use data-c="${"29"}" xlink:href="${"#MJX-16059-TEX-N-29"}"></use></g></g></g></g></g><g class="${"draggable"}" id="${"WebdutTeam18R12Group-11"}" fill="${"rgba(0, 0, 0, 0)"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"1"}" stroke-dasharray="${"none"}" opacity="${"1"}" mask="${"none"}" filter="${"none"}" transform="${"matrix(1 0 0 1 279 39)"}"><path id="${"WebdutTeam18R12Path-12"}" d="${"M -253.75,-225.05999755859375 H -27.75"}" fill="${"rgba(0, 0, 0, 0)"}" fill-rule="${"evenodd"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"2"}" stroke-dasharray="${"none"}" stroke-linecap="${"butt"}" stroke-linejoin="${"miter"}" stroke-miterlimit="${"4"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" marker-start="${"none"}" marker-mid="${"none"}" marker-end="${"none"}" transform="${"matrix(1 0 0 1 0 -13)"}"></path><path id="${"WebdutTeam18R12Path-13"}" d="${"M -195.75,-221.05999755859375 H -96.75"}" fill="${"rgba(0, 0, 0, 0)"}" fill-rule="${"evenodd"}" stroke="${"rgba(0, 234, 193, 1)"}" stroke-width="${"4"}" stroke-dasharray="${"none"}" stroke-linecap="${"butt"}" stroke-linejoin="${"miter"}" stroke-miterlimit="${"4"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" marker-start="${"none"}" marker-mid="${"none"}" marker-end="${"none"}" transform="${"matrix(1 0 0 1 6 -17)"}"></path><circle id="${"WebdutTeam18R12Circle-14"}" cx="${"24.25"}" cy="${"-188.55999755859375"}" r="${"10"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"1"}" stroke-dasharray="${"none"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" transform="${"matrix(1 0 0 1 -213.25 -50)"}"></circle><circle id="${"WebdutTeam18R12Circle-15"}" cx="${"24.25"}" cy="${"-188.55999755859375"}" r="${"10"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"1"}" stroke-dasharray="${"none"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" transform="${"matrix(1 0 0 1 -111.25 -49)"}"></circle><g id="${"WebdutTeam18R12Latex-16"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"undefined"}" stroke-width="${"undefined"}" stroke-dasharray="${"undefined"}" opacity="${"1"}" filter="${"none"}" mask="${"undefined"}" transform="${"matrix(0.03 0 0 0.03 -196 -201)"}"><defs><path id="${"MJX-16060-TEX-I-1D44E"}" d="${"M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"}"></path></defs><g stroke-width="${"0"}" transform="${"scale(1,-1)"}"><g data-mml-node="${"math"}"><g data-mml-node="${"mi"}"><use data-c="${"1D44E"}" xlink:href="${"#MJX-16060-TEX-I-1D44E"}"></use></g></g></g></g><g id="${"WebdutTeam18R12Latex-17"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"undefined"}" stroke-width="${"undefined"}" stroke-dasharray="${"undefined"}" opacity="${"1"}" filter="${"none"}" mask="${"undefined"}" transform="${"matrix(0.03 0 0 0.03 -92 -200)"}"><defs><path id="${"MJX-16061-TEX-I-1D44F"}" d="${"M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"}"></path></defs><g stroke-width="${"0"}" transform="${"scale(1,-1)"}"><g data-mml-node="${"math"}"><g data-mml-node="${"mi"}"><use data-c="${"1D44F"}" xlink:href="${"#MJX-16061-TEX-I-1D44F"}"></use></g></g></g></g><g id="${"WebdutTeam18R12Latex-18"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"undefined"}" stroke-width="${"undefined"}" stroke-dasharray="${"undefined"}" opacity="${"1"}" filter="${"none"}" mask="${"undefined"}" transform="${"matrix(0.03 0 0 0.03 -166 -262)"}"><defs><path id="${"MJX-16062-TEX-N-5B"}" d="${"M118 -250V750H255V710H158V-210H255V-250H118Z"}"></path><path id="${"MJX-16062-TEX-I-1D44E"}" d="${"M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"}"></path><path id="${"MJX-16062-TEX-N-2C"}" d="${"M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"}"></path><path id="${"MJX-16062-TEX-I-1D44F"}" d="${"M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"}"></path><path id="${"MJX-16062-TEX-N-5D"}" d="${"M22 710V750H159V-250H22V-210H119V710H22Z"}"></path></defs><g stroke-width="${"0"}" transform="${"scale(1,-1)"}"><g data-mml-node="${"math"}"><g data-mml-node="${"mo"}"><use data-c="${"5B"}" xlink:href="${"#MJX-16062-TEX-N-5B"}"></use></g><g data-mml-node="${"mi"}" transform="${"translate(278,0)"}"><use data-c="${"1D44E"}" xlink:href="${"#MJX-16062-TEX-I-1D44E"}"></use></g><g data-mml-node="${"mo"}" transform="${"translate(807,0)"}"><use data-c="${"2C"}" xlink:href="${"#MJX-16062-TEX-N-2C"}"></use></g><g data-mml-node="${"mi"}" transform="${"translate(1251.7,0)"}"><use data-c="${"1D44F"}" xlink:href="${"#MJX-16062-TEX-I-1D44F"}"></use></g><g data-mml-node="${"mo"}" transform="${"translate(1680.7,0)"}"><use data-c="${"5D"}" xlink:href="${"#MJX-16062-TEX-N-5D"}"></use></g></g></g></g></g><g class="${"draggable"}" id="${"WebdutTeam18R12Group-19"}" fill="${"rgba(0, 0, 0, 0)"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"1"}" stroke-dasharray="${"none"}" opacity="${"1"}" mask="${"none"}" filter="${"none"}" transform="${"matrix(1 0 0 1 15 158)"}"><path id="${"WebdutTeam18R12Path-20"}" d="${"M -253.75,-225.05999755859375 H -27.75"}" fill="${"rgba(0, 0, 0, 0)"}" fill-rule="${"evenodd"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"2"}" stroke-dasharray="${"none"}" stroke-linecap="${"butt"}" stroke-linejoin="${"miter"}" stroke-miterlimit="${"4"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" marker-start="${"none"}" marker-mid="${"none"}" marker-end="${"none"}" transform="${"matrix(1 0 0 1 0 -13)"}"></path><path id="${"WebdutTeam18R12Path-21"}" d="${"M -195.75,-221.05999755859375 H -96.75"}" fill="${"rgba(0, 0, 0, 0)"}" fill-rule="${"evenodd"}" stroke="${"rgba(0, 234, 193, 1)"}" stroke-width="${"4"}" stroke-dasharray="${"none"}" stroke-linecap="${"butt"}" stroke-linejoin="${"miter"}" stroke-miterlimit="${"4"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" marker-start="${"none"}" marker-mid="${"none"}" marker-end="${"none"}" transform="${"matrix(1 0 0 1 6 -17)"}"></path><circle id="${"WebdutTeam18R12Circle-22"}" cx="${"24.25"}" cy="${"-188.55999755859375"}" r="${"10"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"1"}" stroke-dasharray="${"none"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" transform="${"matrix(1 0 0 1 -212.25 -49)"}"></circle><circle id="${"WebdutTeam18R12Circle-23"}" cx="${"24.25"}" cy="${"-188.55999755859375"}" r="${"10"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"1"}" stroke-dasharray="${"none"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" transform="${"matrix(1 0 0 1 -111.25 -49)"}"></circle><g id="${"WebdutTeam18R12Latex-24"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"undefined"}" stroke-width="${"undefined"}" stroke-dasharray="${"undefined"}" opacity="${"1"}" filter="${"none"}" mask="${"undefined"}" transform="${"matrix(0.03 0 0 0.03 -196 -201)"}"><defs><path id="${"MJX-16063-TEX-I-1D44E"}" d="${"M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"}"></path></defs><g stroke-width="${"0"}" transform="${"scale(1,-1)"}"><g data-mml-node="${"math"}"><g data-mml-node="${"mi"}"><use data-c="${"1D44E"}" xlink:href="${"#MJX-16063-TEX-I-1D44E"}"></use></g></g></g></g><g id="${"WebdutTeam18R12Latex-25"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"undefined"}" stroke-width="${"undefined"}" stroke-dasharray="${"undefined"}" opacity="${"1"}" filter="${"none"}" mask="${"undefined"}" transform="${"matrix(0.03 0 0 0.03 -92 -200)"}"><defs><path id="${"MJX-16064-TEX-I-1D44F"}" d="${"M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"}"></path></defs><g stroke-width="${"0"}" transform="${"scale(1,-1)"}"><g data-mml-node="${"math"}"><g data-mml-node="${"mi"}"><use data-c="${"1D44F"}" xlink:href="${"#MJX-16064-TEX-I-1D44F"}"></use></g></g></g></g><g id="${"WebdutTeam18R12Latex-26"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"undefined"}" stroke-width="${"undefined"}" stroke-dasharray="${"undefined"}" opacity="${"1"}" filter="${"none"}" mask="${"undefined"}" transform="${"matrix(0.03 0 0 0.03 -166 -262)"}"><defs><path id="${"MJX-16065-TEX-N-5B"}" d="${"M118 -250V750H255V710H158V-210H255V-250H118Z"}"></path><path id="${"MJX-16065-TEX-I-1D44E"}" d="${"M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"}"></path><path id="${"MJX-16065-TEX-N-2C"}" d="${"M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"}"></path><path id="${"MJX-16065-TEX-I-1D44F"}" d="${"M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"}"></path><path id="${"MJX-16065-TEX-N-29"}" d="${"M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"}"></path></defs><g stroke-width="${"0"}" transform="${"scale(1,-1)"}"><g data-mml-node="${"math"}"><g data-mml-node="${"mo"}"><use data-c="${"5B"}" xlink:href="${"#MJX-16065-TEX-N-5B"}"></use></g><g data-mml-node="${"mi"}" transform="${"translate(278,0)"}"><use data-c="${"1D44E"}" xlink:href="${"#MJX-16065-TEX-I-1D44E"}"></use></g><g data-mml-node="${"mo"}" transform="${"translate(807,0)"}"><use data-c="${"2C"}" xlink:href="${"#MJX-16065-TEX-N-2C"}"></use></g><g data-mml-node="${"mi"}" transform="${"translate(1251.7,0)"}"><use data-c="${"1D44F"}" xlink:href="${"#MJX-16065-TEX-I-1D44F"}"></use></g><g data-mml-node="${"mo"}" transform="${"translate(1680.7,0)"}"><use data-c="${"29"}" xlink:href="${"#MJX-16065-TEX-N-29"}"></use></g></g></g></g></g><g class="${"draggable"}" id="${"WebdutTeam18R12Group-27"}" fill="${"rgba(0, 0, 0, 0)"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"1"}" stroke-dasharray="${"none"}" opacity="${"1"}" mask="${"none"}" filter="${"none"}" transform="${"matrix(1 0 0 1 282 157)"}"><path id="${"WebdutTeam18R12Path-28"}" d="${"M -253.75,-225.05999755859375 H -27.75"}" fill="${"rgba(0, 0, 0, 0)"}" fill-rule="${"evenodd"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"2"}" stroke-dasharray="${"none"}" stroke-linecap="${"butt"}" stroke-linejoin="${"miter"}" stroke-miterlimit="${"4"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" marker-start="${"none"}" marker-mid="${"none"}" marker-end="${"none"}" transform="${"matrix(1 0 0 1 0 -13)"}"></path><path id="${"WebdutTeam18R12Path-29"}" d="${"M -195.75,-221.05999755859375 H -96.75"}" fill="${"rgba(0, 0, 0, 0)"}" fill-rule="${"evenodd"}" stroke="${"rgba(0, 234, 193, 1)"}" stroke-width="${"4"}" stroke-dasharray="${"none"}" stroke-linecap="${"butt"}" stroke-linejoin="${"miter"}" stroke-miterlimit="${"4"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" marker-start="${"none"}" marker-mid="${"none"}" marker-end="${"none"}" transform="${"matrix(1 0 0 1 6 -17)"}"></path><circle id="${"WebdutTeam18R12Circle-30"}" cx="${"24.25"}" cy="${"-188.55999755859375"}" r="${"10"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"1"}" stroke-dasharray="${"none"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" transform="${"matrix(1 0 0 1 -212.25 -49)"}"></circle><circle id="${"WebdutTeam18R12Circle-31"}" cx="${"24.25"}" cy="${"-188.55999755859375"}" r="${"10"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"rgba(255, 255, 255, 1)"}" stroke-width="${"1"}" stroke-dasharray="${"none"}" opacity="${"1"}" filter="${"none"}" mask="${"none"}" transform="${"matrix(1 0 0 1 -111.25 -49)"}"></circle><g id="${"WebdutTeam18R12Latex-32"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"undefined"}" stroke-width="${"undefined"}" stroke-dasharray="${"undefined"}" opacity="${"1"}" filter="${"none"}" mask="${"undefined"}" transform="${"matrix(0.03 0 0 0.03 -196 -201)"}"><defs><path id="${"MJX-16066-TEX-I-1D44E"}" d="${"M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"}"></path></defs><g stroke-width="${"0"}" transform="${"scale(1,-1)"}"><g data-mml-node="${"math"}"><g data-mml-node="${"mi"}"><use data-c="${"1D44E"}" xlink:href="${"#MJX-16066-TEX-I-1D44E"}"></use></g></g></g></g><g id="${"WebdutTeam18R12Latex-33"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"undefined"}" stroke-width="${"undefined"}" stroke-dasharray="${"undefined"}" opacity="${"1"}" filter="${"none"}" mask="${"undefined"}" transform="${"matrix(0.03 0 0 0.03 -92 -200)"}"><defs><path id="${"MJX-16067-TEX-I-1D44F"}" d="${"M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"}"></path></defs><g stroke-width="${"0"}" transform="${"scale(1,-1)"}"><g data-mml-node="${"math"}"><g data-mml-node="${"mi"}"><use data-c="${"1D44F"}" xlink:href="${"#MJX-16067-TEX-I-1D44F"}"></use></g></g></g></g><g id="${"WebdutTeam18R12Latex-34"}" fill="${"rgba(255, 255, 255, 1)"}" stroke="${"undefined"}" stroke-width="${"undefined"}" stroke-dasharray="${"undefined"}" opacity="${"1"}" filter="${"none"}" mask="${"undefined"}" transform="${"matrix(0.03 0 0 0.03 -166 -262)"}"><defs><path id="${"MJX-16068-TEX-N-28"}" d="${"M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"}"></path><path id="${"MJX-16068-TEX-I-1D44E"}" d="${"M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"}"></path><path id="${"MJX-16068-TEX-N-2C"}" d="${"M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"}"></path><path id="${"MJX-16068-TEX-I-1D44F"}" d="${"M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"}"></path><path id="${"MJX-16068-TEX-N-5D"}" d="${"M22 710V750H159V-250H22V-210H119V710H22Z"}"></path></defs><g stroke-width="${"0"}" transform="${"scale(1,-1)"}"><g data-mml-node="${"math"}"><g data-mml-node="${"mo"}"><use data-c="${"28"}" xlink:href="${"#MJX-16068-TEX-N-28"}"></use></g><g data-mml-node="${"mi"}" transform="${"translate(389,0)"}"><use data-c="${"1D44E"}" xlink:href="${"#MJX-16068-TEX-I-1D44E"}"></use></g><g data-mml-node="${"mo"}" transform="${"translate(918,0)"}"><use data-c="${"2C"}" xlink:href="${"#MJX-16068-TEX-N-2C"}"></use></g><g data-mml-node="${"mi"}" transform="${"translate(1362.7,0)"}"><use data-c="${"1D44F"}" xlink:href="${"#MJX-16068-TEX-I-1D44F"}"></use></g><g data-mml-node="${"mo"}" transform="${"translate(1791.7,0)"}"><use data-c="${"5D"}" xlink:href="${"#MJX-16068-TEX-N-5D"}"></use></g></g></g></g></g></g></g></svg></div>
-	<p class="${"svelte-1lit5v"}">The number \\((b-a)\\) is called the <em>length of any of the intervals</em> \\((a,b), [a,b], [a,b)\\)
-		or \\((a,b]\\).
-	</p>
-	
+<article class="${[
+    escape(null_to_empty($presentationMode ? "gridBackground" : ""), true) + " svelte-gkd15d",
+    $presentationMode ? "absolute" : ""
+  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-gkd15d"}"><div class="${"statement svelte-gkd15d"}"><p></p></div></div>` : ``}
+	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
+	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-gkd15d"}"><section class="${"contentpart svelte-gkd15d"}"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
+        default: () => {
+          return `All numbers are either real numbers or made of real numbers. The set of real numbers is denoted by \\(R\\) or \\(${escape(TeX.bbR)}\\). It is an infinite uncountable set. In this video, we&#39;ll review some of its well-known subsets and introduce intervals. Let&#39;s begin with the subsets first.
+                    `;
+        }
+      })}`;
+    }
+  })}
+				<dl>${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
+    default: () => {
+      return `${validate_component(Dt, "Dt").$$render($$result, { isActive: 1 }, {}, {
+        default: () => {
+          return `Natural numbers
+						`;
+        }
+      })}`;
+    }
+  })}${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
+    default: () => {
+      return `${validate_component(Dd, "Dd").$$render($$result, { isActive: 1 }, {}, {
+        default: () => {
+          return `${escape(`\\(\\mathbb{N} = \\{1, 2, 3, \\dots\\}\\)`)}`;
+        }
+      })}`;
+    }
+  })}${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
+    default: () => {
+      return `${validate_component(Dt, "Dt").$$render($$result, { isActive: 2 }, {}, {
+        default: () => {
+          return `Integers
+						`;
+        }
+      })}`;
+    }
+  })}${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
+    default: () => {
+      return `${validate_component(Dd, "Dd").$$render($$result, { isActive: 2 }, {}, {
+        default: () => {
+          return `${escape(`\\(\\mathbb{Z} = \\{\\dots, -1, 0, 1, \\dots\\}\\)`)}`;
+        }
+      })}`;
+    }
+  })}${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
+    default: () => {
+      return `${validate_component(Dt, "Dt").$$render($$result, { isActive: 3 }, {}, {
+        default: () => {
+          return `Rational numbers
+						`;
+        }
+      })}`;
+    }
+  })}${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
+    default: () => {
+      return `${validate_component(Dd, "Dd").$$render($$result, { isActive: 3 }, {}, {
+        default: () => {
+          return `${escape(`\\(\\mathbb{Q} = \\{x: x = \\dfrac{p}{q}, p, q\\in \\mathbb{Z}, q\\neq 0\\}\\)`)}`;
+        }
+      })}`;
+    }
+  })}${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
+    default: () => {
+      return `${validate_component(Dt, "Dt").$$render($$result, { isActive: 4 }, {}, {
+        default: () => {
+          return `Irrational numbers
+						`;
+        }
+      })}`;
+    }
+  })}${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
+    default: () => {
+      return `${validate_component(Dd, "Dd").$$render($$result, { isActive: 4 }, {}, {
+        default: () => {
+          return `${escape(`\\(\\mathbb{T} = \\{x: x \\notin \\mathbb{Q}\\}\\)`)}`;
+        }
+      })}`;
+    }
+  })}</dl>
+				${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { isActive: 5 }, {}, {
+        default: () => {
+          return `A natural number is an integer as well. An integer is a rational number too. But, a rational
+					number is not an irrational number. These observations can be written compactly as
+					${escape(`\\[\\mathbb{N}\\subset \\mathbb{Z}\\subset \\mathbb{Q} \\subset \\mathbb{R}, \\mathbb{T}\\subset\\mathbb{R},  \\mathbb{Q}\\not\\subset\\mathbb{T}\\]`)}`;
+        }
+      })}`;
+    }
+  })}
+				${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+    default: () => {
+      return `${validate_component(Image, "Image").$$render($$result, { isActive: 6 }, {}, {
+        default: () => {
+          return `<img style="${"width:min(400px, 90vw);"}" src="${"/notes/maths/sets/real/subsetreal.svg"}" alt="${""}">`;
+        }
+      })}`;
+    }
+  })}</section>
+		
+			<section>${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
+    default: () => {
+      return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 7 }, {}, {
+        default: () => {
+          return `Examples`;
+        }
+      })}`;
+    }
+  })}
+				<ul>${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 8 }, {}, {
+        default: () => {
+          return `${escape(`\\(\\{\\pi, \\sqrt{2}\\} \\subset \\mathbb{T}\\)`)}`;
+        }
+      })}`;
+    }
+  })}
+					${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 9 }, {}, {
+        default: () => {
+          return `${escape(`\\(\\{1, -2, \\sqrt{3}, \\frac{1}{2}\\} \\not\\subset \\mathbb{T}\\)`)}`;
+        }
+      })}`;
+    }
+  })}</ul></section>
+			${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
+    default: () => {
+      return `${validate_component(H2, "H2").$$render($$result, { isActive: 10 }, {}, {
+        default: () => {
+          return `Intervals as subsets of ${escape("\\(\\mathbb{R}\\)")}`;
+        }
+      })}`;
+    }
+  })}
+			${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 11 }, {}, {
+        default: () => {
+          return `Let \\(a, b${escape(TeX.inR)}\\) and \\(a ${escape(TeX.less)} b\\). Then the set of real numbers \\(${escape(TeX.set("y", "a<y<b"))}\\) is called an <em>open interval</em> and is denoted by \\((a,b)\\). Note that \\(a\\) and \\(b\\) do
+					not belong to the open interval.
+				`;
+        }
+      })}`;
+    }
+  })}
+			${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 12 }, {}, {
+        default: () => {
+          return `Let \\(a, b${escape(TeX.inR)}\\) and \\(a ${escape(TeX.less)} b\\). Then the set of real numbers \\(${escape(TeX.set("y", "a\\leq y\\leq b"))}\\) is called a <em>closed interval</em> and is denoted by \\([a,b]\\). Note that \\(a\\) and \\(b\\)
+					belong to the closed interval.
+				`;
+        }
+      })}`;
+    }
+  })}
+			${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { isActive: 13 }, {}, {
+        default: () => {
+          return `There are two other type of intervals (called <em>clopen</em>).`;
+        }
+      })}`;
+    }
+  })}
+			<ul>${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 14 }, {}, {
+        default: () => {
+          return `\\([a,b) = ${escape(TeX.set("y", "a\\leq y<b"))}\\) where \\(a\\) is in the interval, but not \\(b\\).
+					`;
+        }
+      })}`;
+    }
+  })}
+				${validate_component(Item, "Item").$$render($$result, { item: 15 }, {}, {
+    default: () => {
+      return `${validate_component(Li, "Li").$$render($$result, { isActive: 15 }, {}, {
+        default: () => {
+          return `\\((a,b] = ${escape(TeX.set("y", "a< y\\leq b"))}\\) where \\(b\\) is in the interval, but not \\(a\\).
+					`;
+        }
+      })}`;
+    }
+  })}</ul>
+			${validate_component(Item, "Item").$$render($$result, { item: 16 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { isActive: 16 }, {}, {
+        default: () => {
+          return `An interval of ${escape(TeX.R)} is visualized by a segment on a number line.`;
+        }
+      })}`;
+    }
+  })}
+			
+			${validate_component(Item, "Item").$$render($$result, { item: 17 }, {}, {
+    default: () => {
+      return `${validate_component(Image, "Image").$$render($$result, { isActive: 17 }, {}, {
+        default: () => {
+          return `<img style="${"width:min(400px, 90vw);"}" src="${"/notes/maths/sets/real/interval.svg"}" alt="${""}">`;
+        }
+      })}`;
+    }
+  })}
+			${validate_component(Item, "Item").$$render($$result, { item: 18 }, {}, {
+    default: () => {
+      return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 18 }, {}, {
+        default: () => {
+          return `The number \\((b-a)\\) is called the <em>length of any of the intervals</em> \\((a,b), [a,b], [a,b)\\)
+					or \\((a,b]\\).
+				`;
+        }
+      })}`;
+    }
+  })}</section>
+		${!$presentationMode ? `<div class="${"youtube svelte-gkd15d"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/w4SBKulJJh4"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}
+		${$presentationMode ? `<div class="${"slate"}"></div>` : ``}</div>
+	<section>${validate_component(Item, "Item").$$render($$result, { item: 19 }, {}, {
+    default: () => {
+      return `<section><h2>Practice</h2>
+				${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
+    }
+  })}</section>
+	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-gkd15d"}"></div>` : ``}
 </article>`;
 });
 export {

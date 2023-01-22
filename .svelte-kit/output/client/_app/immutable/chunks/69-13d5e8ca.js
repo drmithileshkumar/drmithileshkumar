@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-afb428f9.js";import{default as t}from"../components/pages/notes/maths/Integrals/Integration by partial fractions/_page.svelte-c40870b1.js";export{t as component,r as universal};
+import{_ as r}from"./_page-31b5b2b8.js";import{default as t}from"../components/pages/notes/maths/Integrals/Integration by partial fractions/_page.svelte-c40870b1.js";export{t as component,r as universal};
