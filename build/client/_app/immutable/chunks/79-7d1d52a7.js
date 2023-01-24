@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-8aa71dd5.js";import{default as t}from"../components/pages/notes/maths/Limits and derivatives/Limits of Trigonometric functions/_page.svelte-8424001c.js";export{t as component,r as universal};
+import{_ as r}from"./_page-ffa791ac.js";import{default as t}from"../components/pages/notes/maths/Limits and derivatives/Limits of Trigonometric functions/_page.svelte-8424001c.js";export{t as component,r as universal};

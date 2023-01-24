@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-475a95c7.js";import{default as t}from"../components/pages/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/_page.svelte-b3236e2a.js";export{t as component,r as universal};
+import{_ as r}from"./_page-bb57b1c0.js";import{default as t}from"../components/pages/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/_page.svelte-b3236e2a.js";export{t as component,r as universal};

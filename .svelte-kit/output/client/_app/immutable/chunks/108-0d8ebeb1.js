@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-bf4ef1a7.js";import{default as t}from"../components/pages/notes/maths/Sequences and series/Arithmetic progression/_page.svelte-7b972262.js";export{t as component,r as universal};
+import{_ as r}from"./_page-725d067f.js";import{default as t}from"../components/pages/notes/maths/Sequences and series/Arithmetic progression/_page.svelte-7b972262.js";export{t as component,r as universal};

@@ -91,7 +91,6 @@
 					<div class="refresh">
 						<button
 							class="noborder"
-							class:green={$attempted}
 							on:click={() => loadnext(false)}
 							use:ripple
 						>
@@ -102,7 +101,6 @@
 					<div class="next">
 						<button
 							class="noborder"
-							class:green={$attempted}
 							on:click={() => loadnext(true)}
 							use:ripple
 						>
@@ -205,15 +203,12 @@
 		border: none;
 		outline: none;
 		background: transparent;
-		color: gray;
+		color: green;
 		cursor: pointer;
 	}
 	/* .noborder:hover {
         box-shadow: 1px 1px 1px green;
     } */
-	.green {
-		color: green;
-	}
 	abbr {
 		text-decoration: none;
 	}

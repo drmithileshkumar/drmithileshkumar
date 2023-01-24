@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-77f7540f.js";import{default as t}from"../components/pages/notes/maths/Integrals/Some properties of definite integrals/_page.svelte-4ee38635.js";export{t as component,r as universal};
+import{_ as r}from"./_page-eeddfc6d.js";import{default as t}from"../components/pages/notes/maths/Integrals/Some properties of definite integrals/_page.svelte-4ee38635.js";export{t as component,r as universal};
