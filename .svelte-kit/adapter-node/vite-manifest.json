@@ -95,9 +95,119 @@
       "_app/immutable/assets/Select-5c0370c0.css"
     ]
   },
-  "src/routes/practice/+layout.svelte": {
-    "file": "entries/pages/practice/_layout.svelte.js",
-    "src": "src/routes/practice/+layout.svelte",
+  "src/routes/practice/class1/+layout.svelte": {
+    "file": "entries/pages/practice/class1/_layout.svelte.js",
+    "src": "src/routes/practice/class1/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/practice/class10/+layout.svelte": {
+    "file": "entries/pages/practice/class10/_layout.svelte.js",
+    "src": "src/routes/practice/class10/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/practice/class11/+layout.svelte": {
+    "file": "entries/pages/practice/class11/_layout.svelte.js",
+    "src": "src/routes/practice/class11/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/practice/class12/+layout.svelte": {
+    "file": "entries/pages/practice/class12/_layout.svelte.js",
+    "src": "src/routes/practice/class12/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/practice/class2/+layout.svelte": {
+    "file": "entries/pages/practice/class2/_layout.svelte.js",
+    "src": "src/routes/practice/class2/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/practice/class3/+layout.svelte": {
+    "file": "entries/pages/practice/class3/_layout.svelte.js",
+    "src": "src/routes/practice/class3/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/practice/class4/+layout.svelte": {
+    "file": "entries/pages/practice/class4/_layout.svelte.js",
+    "src": "src/routes/practice/class4/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/practice/class5/+layout.svelte": {
+    "file": "entries/pages/practice/class5/_layout.svelte.js",
+    "src": "src/routes/practice/class5/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/practice/class6/+layout.svelte": {
+    "file": "entries/pages/practice/class6/_layout.svelte.js",
+    "src": "src/routes/practice/class6/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/practice/class7/+layout.svelte": {
+    "file": "entries/pages/practice/class7/_layout.svelte.js",
+    "src": "src/routes/practice/class7/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/practice/class8/+layout.svelte": {
+    "file": "entries/pages/practice/class8/_layout.svelte.js",
+    "src": "src/routes/practice/class8/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/practice/class9/+layout.svelte": {
+    "file": "entries/pages/practice/class9/_layout.svelte.js",
+    "src": "src/routes/practice/class9/+layout.svelte",
     "isEntry": true,
     "imports": [
       "_index3.js",
@@ -3401,18 +3511,281 @@
     "src": "src/routes/practice/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index3.js",
-      "_stores3.js",
-      "_Practice.js"
+      "_index3.js"
     ],
     "css": [
       "_app/immutable/assets/Message-9326233f.css",
-      "_app/immutable/assets/Link-15b705f6.css"
+      "_app/immutable/assets/Link-15b705f6.css",
+      "_app/immutable/assets/Practice-6d752dd2.css"
     ]
   },
   "src/routes/practice/+page.js": {
     "file": "entries/pages/practice/_page.js",
     "src": "src/routes/practice/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/practice/class1/+page.svelte": {
+    "file": "entries/pages/practice/class1/_page.svelte.js",
+    "src": "src/routes/practice/class1/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Message.js",
+      "_stores3.js",
+      "_Practice.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/practice/class1/+page.js": {
+    "file": "entries/pages/practice/class1/_page.js",
+    "src": "src/routes/practice/class1/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/practice/class10/+page.svelte": {
+    "file": "entries/pages/practice/class10/_page.svelte.js",
+    "src": "src/routes/practice/class10/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Message.js",
+      "_stores3.js",
+      "_Practice.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/practice/class10/+page.js": {
+    "file": "entries/pages/practice/class10/_page.js",
+    "src": "src/routes/practice/class10/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/practice/class11/+page.svelte": {
+    "file": "entries/pages/practice/class11/_page.svelte.js",
+    "src": "src/routes/practice/class11/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Message.js",
+      "_stores3.js",
+      "_Practice.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/practice/class11/+page.js": {
+    "file": "entries/pages/practice/class11/_page.js",
+    "src": "src/routes/practice/class11/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/practice/class12/+page.svelte": {
+    "file": "entries/pages/practice/class12/_page.svelte.js",
+    "src": "src/routes/practice/class12/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Message.js",
+      "_stores3.js",
+      "_Practice.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/practice/class12/+page.js": {
+    "file": "entries/pages/practice/class12/_page.js",
+    "src": "src/routes/practice/class12/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/practice/class2/+page.svelte": {
+    "file": "entries/pages/practice/class2/_page.svelte.js",
+    "src": "src/routes/practice/class2/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Message.js",
+      "_stores3.js",
+      "_Practice.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/practice/class2/+page.js": {
+    "file": "entries/pages/practice/class2/_page.js",
+    "src": "src/routes/practice/class2/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/practice/class3/+page.svelte": {
+    "file": "entries/pages/practice/class3/_page.svelte.js",
+    "src": "src/routes/practice/class3/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Message.js",
+      "_stores3.js",
+      "_Practice.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/practice/class3/+page.js": {
+    "file": "entries/pages/practice/class3/_page.js",
+    "src": "src/routes/practice/class3/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/practice/class4/+page.svelte": {
+    "file": "entries/pages/practice/class4/_page.svelte.js",
+    "src": "src/routes/practice/class4/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Message.js",
+      "_stores3.js",
+      "_Practice.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/practice/class4/+page.js": {
+    "file": "entries/pages/practice/class4/_page.js",
+    "src": "src/routes/practice/class4/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/practice/class5/+page.svelte": {
+    "file": "entries/pages/practice/class5/_page.svelte.js",
+    "src": "src/routes/practice/class5/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Message.js",
+      "_stores3.js",
+      "_Practice.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/practice/class5/+page.js": {
+    "file": "entries/pages/practice/class5/_page.js",
+    "src": "src/routes/practice/class5/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/practice/class6/+page.svelte": {
+    "file": "entries/pages/practice/class6/_page.svelte.js",
+    "src": "src/routes/practice/class6/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Message.js",
+      "_stores3.js",
+      "_Practice.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/practice/class6/+page.js": {
+    "file": "entries/pages/practice/class6/_page.js",
+    "src": "src/routes/practice/class6/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/practice/class7/+page.svelte": {
+    "file": "entries/pages/practice/class7/_page.svelte.js",
+    "src": "src/routes/practice/class7/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Message.js",
+      "_stores3.js",
+      "_Practice.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/practice/class7/+page.js": {
+    "file": "entries/pages/practice/class7/_page.js",
+    "src": "src/routes/practice/class7/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/practice/class8/+page.svelte": {
+    "file": "entries/pages/practice/class8/_page.svelte.js",
+    "src": "src/routes/practice/class8/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Message.js",
+      "_stores3.js",
+      "_Practice.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/practice/class8/+page.js": {
+    "file": "entries/pages/practice/class8/_page.js",
+    "src": "src/routes/practice/class8/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/practice/class9/+page.svelte": {
+    "file": "entries/pages/practice/class9/_page.svelte.js",
+    "src": "src/routes/practice/class9/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Message.js",
+      "_stores3.js",
+      "_Practice.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/practice/class9/+page.js": {
+    "file": "entries/pages/practice/class9/_page.js",
+    "src": "src/routes/practice/class9/+page.js",
     "isEntry": true,
     "imports": [
       "_index.js"
@@ -3585,6 +3958,15 @@
     "file": "chunks/quadratic.js",
     "imports": [
       "_common.js"
+    ]
+  },
+  "_Message.js": {
+    "file": "chunks/Message.js",
+    "imports": [
+      "_index3.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Message-9326233f.css"
     ]
   }
 }

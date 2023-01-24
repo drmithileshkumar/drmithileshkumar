@@ -1,5 +1,6 @@
 import { w as writable } from "./index2.js";
-const chapters = [
+const chapters = [];
+const chapters11 = [
   "Sets",
   "Relations and functions 11",
   "Trigonometric functions",
@@ -20,7 +21,9 @@ const chapters = [
   "Derivatives",
   "Mathematical reasoning",
   "Statistics",
-  "Probability",
+  "Probability"
+];
+const chapters12 = [
   "Relations and functions 12",
   "Inverse trigonometric functions",
   "Matrices",
@@ -41,7 +44,9 @@ const selectedGenerator = writable(null);
 const generators = writable({});
 export {
   selectedChapter as a,
+  chapters11 as b,
   chapters as c,
+  chapters12 as d,
   generators as g,
   selectedGenerator as s
 };

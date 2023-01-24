@@ -1,38 +1,19 @@
-import { c as create_ssr_component, d as subscribe, v as validate_component, e as escape } from "../../../chunks/index3.js";
-/* empty css                                                     *//* empty css                                                  */import { a as selectedChapter, s as selectedGenerator } from "../../../chunks/stores3.js";
-import { P as Practice } from "../../../chunks/Practice.js";
-const css = {
-  code: ".message.svelte-5cmsvs{display:flex;padding:0.5em 1em;align-items:center;flex-direction:row;gap:0.5em;justify-content:space-between;background:rgb(255, 255, 225);font-weight:400;font-size:0.9em;bottom:2em;margin-top:1em;margin-bottom:1em}span.svelte-5cmsvs{cursor:pointer}span.svelte-5cmsvs:hover{font-weight:600}",
-  map: null
-};
-const Message = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { open = true } = $$props;
-  if ($$props.open === void 0 && $$bindings.open && open !== void 0)
-    $$bindings.open(open);
-  $$result.css.add(css);
-  return `${open ? `<div class="${"message svelte-5cmsvs"}"><div class="${"body"}">${slots.default ? slots.default({}) : ``}</div>
-    <span class="${"material-icons svelte-5cmsvs"}" style="${"color:red;"}">close</span></div>` : ``}`;
-});
-const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $selectedChapter, $$unsubscribe_selectedChapter;
-  let $selectedGenerator, $$unsubscribe_selectedGenerator;
-  $$unsubscribe_selectedChapter = subscribe(selectedChapter, (value) => $selectedChapter = value);
-  $$unsubscribe_selectedGenerator = subscribe(selectedGenerator, (value) => $selectedGenerator = value);
-  $$unsubscribe_selectedChapter();
-  $$unsubscribe_selectedGenerator();
+import { c as create_ssr_component } from "../../../chunks/index3.js";
+/* empty css                                                     *//* empty css                                                  *//* empty css                                                      */const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${$$result.head += `<!-- HEAD_svelte-1jd0cmq_START -->${$$result.title = `<title>Practice Mathematics</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com/practice"}"><meta name="${"description"}" content="${"Learn and practice Physics and Mathematics for school, IIT JEE, Olympiad"}"><!-- HEAD_svelte-1jd0cmq_END -->`, ""}
 <article><h2>Practice Mathematics</h2>
-    ${validate_component(Message, "Message").$$render($$result, {}, {}, {
-    default: () => {
-      return `<ul style="${"color:green;"}"><li>Select a chapter to start solving problems.
-            </li>
-            <li>To generate similar problem type, click refresh button <span class="${"material-icons"}" style="${"vertical-align:middle;"}">refresh</span></li>
-            <li>To generate next problem type, click next button <span class="${"material-icons"}" style="${"vertical-align:middle;"}">arrow_forward</span></li></ul>`;
-    }
-  })}
-    <h3>${escape($selectedChapter)}</h3>
-    ${$selectedGenerator ? `${validate_component(Practice, "Practice").$$render($$result, { generateProblem: $selectedGenerator }, {}, {})}
-        <br>` : ``}</article>`;
+    <ul><li><a href="${"/practice/class1"}">Class 1</a></li>
+        <li><a href="${"/practice/class2"}">Class 2</a></li>
+        <li><a href="${"/practice/class3"}">Class 3</a></li>
+        <li><a href="${"/practice/class4"}">Class 4</a></li>
+        <li><a href="${"/practice/class5"}">Class 5</a></li>
+        <li><a href="${"/practice/class6"}">Class 6</a></li>
+        <li><a href="${"/practice/class7"}">Class 7</a></li>
+        <li><a href="${"/practice/class8"}">Class 8</a></li>
+        <li><a href="${"/practice/class9"}">Class 9</a></li>
+        <li><a href="${"/practice/class10"}">Class 10</a></li>
+        <li><a href="${"/practice/class11"}">Class 11</a></li>
+        <li><a href="${"/practice/class12"}">Class 12</a></li></ul></article>`;
 });
 export {
   Page as default

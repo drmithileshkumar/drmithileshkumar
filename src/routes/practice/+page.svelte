@@ -32,23 +32,42 @@
 </svelte:head>
 <article>
     <h2>Practice Mathematics</h2>
-    <Message>
-        <ul style="color:green;">
-            <li>
-                Select a chapter to start solving problems.
-            </li>
-            <li>
-                To generate similar problem type, click refresh button <span class="material-icons" style="vertical-align:middle;">refresh</span>
-            </li>
-            <li>
-                To generate next problem type, click next button <span class="material-icons" style="vertical-align:middle;">arrow_forward</span>
-            </li>
-        </ul>
-        
-    </Message>
-    <h3>{$selectedChapter}</h3>
-    {#if $selectedGenerator}
-        <Practice generateProblem={$selectedGenerator}/>
-        <br>
-    {/if}
+    <ul>
+        <li>
+            <a href="/practice/class1">Class 1</a>
+        </li>
+        <li>
+            <a href="/practice/class2">Class 2</a>
+        </li>
+        <li>
+            <a href="/practice/class3">Class 3</a>
+        </li>
+        <li>
+            <a href="/practice/class4">Class 4</a>
+        </li>
+        <li>
+            <a href="/practice/class5">Class 5</a>
+        </li>
+        <li>
+            <a href="/practice/class6">Class 6</a>
+        </li>
+        <li>
+            <a href="/practice/class7">Class 7</a>
+        </li>
+        <li>
+            <a href="/practice/class8">Class 8</a>
+        </li>
+        <li>
+            <a href="/practice/class9">Class 9</a>
+        </li>
+        <li>
+            <a href="/practice/class10">Class 10</a>
+        </li>
+        <li>
+            <a href="/practice/class11">Class 11</a>
+        </li>
+        <li>
+            <a href="/practice/class12">Class 12</a>
+        </li>
+    </ul>
 </article>

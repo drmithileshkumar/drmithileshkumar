@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Linear programming/Different types of linear programming problems/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Integrals/Some properties of definite integrals/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Linear programming/Different types of linear programming problems/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Integrals/Some properties of definite integrals/+page.svelte";

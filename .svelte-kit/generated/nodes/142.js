@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Three dimensional geometry/Shortest distance between two lines/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Straight lines/General equation of a line/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Three dimensional geometry/Shortest distance between two lines/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Straight lines/General equation of a line/+page.svelte";

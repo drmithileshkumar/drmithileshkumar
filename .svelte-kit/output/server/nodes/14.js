@@ -1,9 +1,8 @@
-import * as universal from '../entries/pages/iit/maths/_page.js';
+
 
 export const index = 14;
-export const component = async () => (await import('../entries/pages/iit/maths/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/iit/maths/_page.svelte-e1ea0810.js';
-export { universal };
-export const imports = ["_app/immutable/components/pages/iit/maths/_page.svelte-e1ea0810.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/Link-783af15a.js","_app/immutable/modules/pages/iit/maths/_page.js-816ed6a2.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-5d43e86e.js"];
-export const stylesheets = ["_app/immutable/assets/Message-1e964222.css","_app/immutable/assets/Link-867ad8ee.css"];
+export const component = async () => (await import('../entries/pages/practice/class4/_layout.svelte.js')).default;
+export const file = '_app/immutable/components/pages/practice/class4/_layout.svelte-e678cedf.js';
+export const imports = ["_app/immutable/components/pages/practice/class4/_layout.svelte-e678cedf.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/Select-323c5815.js","_app/immutable/chunks/stores-36e76767.js","_app/immutable/chunks/index-b1bbdf52.js"];
+export const stylesheets = ["_app/immutable/assets/Select-60103244.css"];
 export const fonts = [];

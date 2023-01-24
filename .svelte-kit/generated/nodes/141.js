@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Three dimensional geometry/Plane/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Straight lines/Distance of a point from a line/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Three dimensional geometry/Plane/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Straight lines/Distance of a point from a line/+page.svelte";

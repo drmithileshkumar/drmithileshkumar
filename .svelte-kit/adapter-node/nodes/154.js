@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/practice/_page.js';
+import * as universal from '../entries/pages/notes/maths/Trigonometric functions/Angles/_page.js';
 
 export const index = 154;
-export const component = async () => (await import('../entries/pages/practice/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/practice/_page.svelte-894a302d.js';
+export const component = async () => (await import('../entries/pages/notes/maths/Trigonometric functions/Angles/_page.svelte.js')).default;
+export const file = '_app/immutable/components/pages/notes/maths/Trigonometric functions/Angles/_page.svelte-5ac7eb5a.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/practice/_page.svelte-894a302d.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/stores-0209e424.js","_app/immutable/chunks/index-b1bbdf52.js","_app/immutable/chunks/Practice-e3993fd1.js","_app/immutable/chunks/ripple-d6af89fa.js","_app/immutable/modules/pages/practice/_page.js-63bfec5a.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-c8c2f8eb.js"];
-export const stylesheets = ["_app/immutable/assets/Message-1e964222.css","_app/immutable/assets/Link-867ad8ee.css","_app/immutable/assets/Practice-f3316732.css"];
+export const imports = ["_app/immutable/components/pages/notes/maths/Trigonometric functions/Angles/_page.svelte-5ac7eb5a.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/stores-b2882b48.js","_app/immutable/chunks/index-b1bbdf52.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/chunks/stores-4374dc01.js","_app/immutable/chunks/singletons-2210570e.js","_app/immutable/modules/pages/notes/maths/Trigonometric functions/Angles/_page.js-2e5c62be.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-6bd91353.js"];
+export const stylesheets = ["_app/immutable/assets/Practice-f3316732.css","_app/immutable/assets/Message-1e964222.css"];
 export const fonts = [];
