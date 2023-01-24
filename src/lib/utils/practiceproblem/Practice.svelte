@@ -1,6 +1,6 @@
-<script id="MathJax-script">
+<script>
 	// @ts-nocheck
-
+	import {QuestionTimer} from '$lib/pages/practice/stores';
 	import { saved, attempted } from './practiceStore';
 	import Performance from './Performance.svelte';
 	import Practiceradiobutton from './Practiceradiobutton.svelte';
@@ -21,7 +21,7 @@
 	export let generateProblem = (a) => {
 		return problemset;
 	};
-
+	let clock = 0;
 	let newproblem = '';
 	let answered = 0;
 	let nextproblemnumber = 0;
@@ -41,7 +41,18 @@
 		valueC = problemset.o['C'];
 		valueD = problemset.o['D'];
 		optionValues = [valueA, valueB, valueC, valueD];
-		MathJax.typeset();
+		setTimeout(() => {
+			renderMathInElement(panel, {
+				delimiters: [
+					{ left: '$$', right: '$$', display: true },
+					{ left: '$', right: '$', display: false },
+					{ left: '\\(', right: '\\)', display: false },
+					{ left: '\\[', right: '\\]', display: true }
+				],
+				// • rendering keys, e.g.:
+				throwOnError: false
+			});
+		}, 0);
 	}
 	const updateScores = (event) => {
 		$saved = false;
@@ -53,12 +64,15 @@
 	};
 
 	const loadnext = (isNext) => {
+		clearInterval($QuestionTimer);
+		clock = 0;
 		answer = '';
 		$attempted = false;
 		if (isNext) {
 			nextproblemnumber++;
 		}
 		problemset = generateProblem(nextproblemnumber);
+		$QuestionTimer = setInterval(() => clock++, 1000)
 	};
 	loadnext(false);
 	$: strokedasharray = answered > 0 ? correctly / answered : 0;
@@ -69,12 +83,14 @@
 	<div class="problemset" style="display: block;" bind:clientWidth={W}>
 		<fieldset class="problemField">
 			<legend>
+				<div class="site">drmithileshkumar.com</div>
 				<div class="problemLegend">
 					<div class="dayscore">
 						<abbr title="Today's accuracy">
 							<Performance {strokedasharray} />
 						</abbr>
 					</div>
+					<span class="timer">{clock} s</span>
 					<div class="refresh">
 						<button
 							class="noborder"
@@ -161,7 +177,7 @@
 		border-top: rgb(0, 163, 240) 1px solid;
 		border-bottom: rgb(0, 163, 240) 1px solid;
 		border-radius: 10px;
-		margin-left: 20px;
+		/* margin-left: 20px; */
 		align-items: center;
 		/* box-shadow: rgb(0 0 0 / 31%) 1px 1px 0px 0px inset, rgb(0 0 0 / 35%) 2px 2px 3px 1px inset, rgb(255 255 255 / 50%) -3px -3px 6px 1px inset; */
 	}
@@ -172,7 +188,7 @@
 		margin-top: 0.5rem;
 		word-spacing: 0.4rem;
 		line-height: 1.5rem;
-
+		font-size: 1.5em;
 		overflow: auto;
 		scrollbar-width: thin;
 	}
@@ -182,6 +198,7 @@
 	.problemArea {
 		display: flex;
 		flex-direction: column;
+		max-width: 86vw;
 	}
 	.noborder {
 		border: none;
@@ -198,5 +215,22 @@
 	}
 	abbr {
 		text-decoration: none;
+	}
+	.timer {
+		display: inline-block;
+		width: 60px;
+		display: flex;
+		justify-content: end;
+		font-size: 2em;
+		color: red;
+	}
+	.site {
+		display: flex;
+		font-family: roboto;
+		letter-spacing: 0.2ex;
+		font-weight: 300;
+		align-items: center;
+		justify-content: center;
+		font-variant: small-caps;
 	}
 </style>

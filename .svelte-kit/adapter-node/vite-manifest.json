@@ -67,10 +67,11 @@
       "_index3.js",
       "_Select.js",
       "_stores2.js",
-      "_Presenter.js"
+      "_Presenter.js",
+      "_Teacher.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-2ac0df50.css"
+      "_app/immutable/assets/_layout-9ba2b1b4.css"
     ]
   },
   "src/routes/notes/maths/+error.svelte": {
@@ -215,9 +216,119 @@
       "_stores3.js"
     ]
   },
-  "src/routes/shorts/+layout.svelte": {
-    "file": "entries/pages/shorts/_layout.svelte.js",
-    "src": "src/routes/shorts/+layout.svelte",
+  "src/routes/shorts/class1/+layout.svelte": {
+    "file": "entries/pages/shorts/class1/_layout.svelte.js",
+    "src": "src/routes/shorts/class1/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/shorts/class10/+layout.svelte": {
+    "file": "entries/pages/shorts/class10/_layout.svelte.js",
+    "src": "src/routes/shorts/class10/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/shorts/class11/+layout.svelte": {
+    "file": "entries/pages/shorts/class11/_layout.svelte.js",
+    "src": "src/routes/shorts/class11/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/shorts/class12/+layout.svelte": {
+    "file": "entries/pages/shorts/class12/_layout.svelte.js",
+    "src": "src/routes/shorts/class12/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/shorts/class2/+layout.svelte": {
+    "file": "entries/pages/shorts/class2/_layout.svelte.js",
+    "src": "src/routes/shorts/class2/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/shorts/class3/+layout.svelte": {
+    "file": "entries/pages/shorts/class3/_layout.svelte.js",
+    "src": "src/routes/shorts/class3/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/shorts/class4/+layout.svelte": {
+    "file": "entries/pages/shorts/class4/_layout.svelte.js",
+    "src": "src/routes/shorts/class4/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/shorts/class5/+layout.svelte": {
+    "file": "entries/pages/shorts/class5/_layout.svelte.js",
+    "src": "src/routes/shorts/class5/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/shorts/class6/+layout.svelte": {
+    "file": "entries/pages/shorts/class6/_layout.svelte.js",
+    "src": "src/routes/shorts/class6/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/shorts/class7/+layout.svelte": {
+    "file": "entries/pages/shorts/class7/_layout.svelte.js",
+    "src": "src/routes/shorts/class7/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/shorts/class8/+layout.svelte": {
+    "file": "entries/pages/shorts/class8/_layout.svelte.js",
+    "src": "src/routes/shorts/class8/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Select.js",
+      "_stores3.js"
+    ]
+  },
+  "src/routes/shorts/class9/+layout.svelte": {
+    "file": "entries/pages/shorts/class9/_layout.svelte.js",
+    "src": "src/routes/shorts/class9/+layout.svelte",
     "isEntry": true,
     "imports": [
       "_index3.js",
@@ -235,7 +346,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-41ae2d29.css",
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -276,7 +387,7 @@
       "_Papers.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-b71443ea.css"
+      "_app/immutable/assets/_page-3e73e764.css"
     ]
   },
   "src/routes/cv/+page.js": {
@@ -524,7 +635,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -547,7 +658,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -570,7 +681,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -593,7 +704,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -616,7 +727,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -639,7 +750,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -661,7 +772,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -684,7 +795,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -707,7 +818,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -730,7 +841,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -753,7 +864,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -775,7 +886,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -798,7 +909,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -821,13 +932,35 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
   "src/routes/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/+page.js": {
     "file": "entries/pages/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/_page.js",
     "src": "src/routes/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/notes/maths/conic/+page.svelte": {
+    "file": "entries/pages/notes/maths/conic/_page.svelte.js",
+    "src": "src/routes/notes/maths/conic/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-03d834cb.css",
+      "_app/immutable/assets/Canvas-f2e54c4c.css"
+    ]
+  },
+  "src/routes/notes/maths/conic/+page.js": {
+    "file": "entries/pages/notes/maths/conic/_page.js",
+    "src": "src/routes/notes/maths/conic/+page.js",
     "isEntry": true,
     "imports": [
       "_index.js"
@@ -843,7 +976,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -866,7 +999,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -889,7 +1022,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -912,7 +1045,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -935,7 +1068,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -958,7 +1091,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -980,7 +1113,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1003,7 +1136,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1026,7 +1159,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1048,7 +1181,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1071,7 +1204,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1093,7 +1226,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1116,7 +1249,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1139,7 +1272,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1162,7 +1295,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1185,7 +1318,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-9029cfef.css",
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1208,7 +1341,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1231,7 +1364,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1253,7 +1386,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1275,7 +1408,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1297,7 +1430,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1320,7 +1453,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1342,7 +1475,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1364,7 +1497,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1386,7 +1519,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1409,7 +1542,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1431,7 +1564,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1453,7 +1586,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1475,7 +1608,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1498,7 +1631,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1521,7 +1654,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1544,7 +1677,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1567,7 +1700,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1590,7 +1723,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1613,7 +1746,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1636,7 +1769,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1659,7 +1792,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1682,7 +1815,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1704,7 +1837,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1727,7 +1860,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1750,7 +1883,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1773,7 +1906,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1796,7 +1929,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1818,7 +1951,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1840,7 +1973,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1862,7 +1995,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1884,7 +2017,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1907,7 +2040,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1929,7 +2062,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1952,7 +2085,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1975,7 +2108,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1997,7 +2130,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2020,7 +2153,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2043,7 +2176,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2066,7 +2199,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2088,7 +2221,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2111,7 +2244,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2133,7 +2266,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2155,7 +2288,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2178,7 +2311,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2200,7 +2333,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2222,7 +2355,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2245,7 +2378,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2268,7 +2401,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2290,7 +2423,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2313,7 +2446,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2335,7 +2468,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2357,7 +2490,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2379,7 +2512,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2402,7 +2535,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2425,7 +2558,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2447,7 +2580,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2469,7 +2602,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2491,7 +2624,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2514,7 +2647,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2537,7 +2670,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-9029cfef.css",
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2564,7 +2697,7 @@
       "_H3.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-fa9520a0.css",
+      "_app/immutable/assets/_page-972a3adf.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2591,7 +2724,7 @@
       "_H2.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-19ad2389.css",
+      "_app/immutable/assets/_page-4db39171.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2615,8 +2748,8 @@
       "_Image.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-41385273.css",
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/_page-1d38ef13.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2639,7 +2772,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-9029cfef.css",
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2662,7 +2795,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-58267112.css",
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2685,7 +2818,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-9029cfef.css",
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2804,7 +2937,7 @@
       "_H3.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-e0cc0988.css",
+      "_app/immutable/assets/_page-fc0a6380.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2828,7 +2961,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-58267112.css",
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2851,7 +2984,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-04124470.css",
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2874,7 +3007,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2897,7 +3030,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2919,7 +3052,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2942,7 +3075,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2965,7 +3098,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2987,7 +3120,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3010,7 +3143,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3033,7 +3166,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3055,7 +3188,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3077,7 +3210,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3100,7 +3233,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3123,7 +3256,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3145,7 +3278,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3168,7 +3301,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3191,7 +3324,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3214,7 +3347,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3237,7 +3370,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3260,7 +3393,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3283,7 +3416,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3306,7 +3439,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3329,7 +3462,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3351,7 +3484,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3374,7 +3507,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3397,7 +3530,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3420,7 +3553,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3443,35 +3576,13 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
   "src/routes/notes/maths/Vector algebra/Types of vectors/+page.js": {
     "file": "entries/pages/notes/maths/Vector algebra/Types of vectors/_page.js",
     "src": "src/routes/notes/maths/Vector algebra/Types of vectors/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index.js"
-    ]
-  },
-  "src/routes/notes/maths/conic/+page.svelte": {
-    "file": "entries/pages/notes/maths/conic/_page.svelte.js",
-    "src": "src/routes/notes/maths/conic/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index3.js",
-      "_stores2.js",
-      "_stores.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-03d834cb.css",
-      "_app/immutable/assets/Canvas-f2e54c4c.css"
-    ]
-  },
-  "src/routes/notes/maths/conic/+page.js": {
-    "file": "entries/pages/notes/maths/conic/_page.js",
-    "src": "src/routes/notes/maths/conic/+page.js",
     "isEntry": true,
     "imports": [
       "_index.js"
@@ -3493,7 +3604,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-9c59cf67.css",
-      "_app/immutable/assets/Practice-6d752dd2.css",
+      "_app/immutable/assets/Practice-77d34689.css",
       "_app/immutable/assets/Message-9326233f.css",
       "_app/immutable/assets/Div-a8ab5461.css"
     ]
@@ -3516,7 +3627,7 @@
     "css": [
       "_app/immutable/assets/Message-9326233f.css",
       "_app/immutable/assets/Link-15b705f6.css",
-      "_app/immutable/assets/Practice-6d752dd2.css"
+      "_app/immutable/assets/Practice-77d34689.css"
     ]
   },
   "src/routes/practice/+page.js": {
@@ -3796,19 +3907,294 @@
     "src": "src/routes/shorts/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index3.js",
-      "_stores3.js",
-      "_index2.js"
+      "_index3.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-1dfd3a5a.css",
       "_app/immutable/assets/Message-9326233f.css",
-      "_app/immutable/assets/Link-15b705f6.css"
+      "_app/immutable/assets/Link-15b705f6.css",
+      "_app/immutable/assets/Practice-77d34689.css"
     ]
   },
   "src/routes/shorts/+page.js": {
     "file": "entries/pages/shorts/_page.js",
     "src": "src/routes/shorts/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/shorts/class1/+page.svelte": {
+    "file": "entries/pages/shorts/class1/_page.svelte.js",
+    "src": "src/routes/shorts/class1/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores3.js",
+      "_Practice2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-203e1151.css",
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/shorts/class1/+page.js": {
+    "file": "entries/pages/shorts/class1/_page.js",
+    "src": "src/routes/shorts/class1/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/shorts/class10/+page.svelte": {
+    "file": "entries/pages/shorts/class10/_page.svelte.js",
+    "src": "src/routes/shorts/class10/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores3.js",
+      "_Practice2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-203e1151.css",
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/shorts/class10/+page.js": {
+    "file": "entries/pages/shorts/class10/_page.js",
+    "src": "src/routes/shorts/class10/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/shorts/class11/+page.svelte": {
+    "file": "entries/pages/shorts/class11/_page.svelte.js",
+    "src": "src/routes/shorts/class11/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores3.js",
+      "_Practice2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-203e1151.css",
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/shorts/class11/+page.js": {
+    "file": "entries/pages/shorts/class11/_page.js",
+    "src": "src/routes/shorts/class11/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/shorts/class12/+page.svelte": {
+    "file": "entries/pages/shorts/class12/_page.svelte.js",
+    "src": "src/routes/shorts/class12/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_Teacher.js",
+      "_stores3.js",
+      "_Practice2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-203e1151.css",
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/shorts/class12/+page.js": {
+    "file": "entries/pages/shorts/class12/_page.js",
+    "src": "src/routes/shorts/class12/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/shorts/class2/+page.svelte": {
+    "file": "entries/pages/shorts/class2/_page.svelte.js",
+    "src": "src/routes/shorts/class2/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores3.js",
+      "_Practice2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-203e1151.css",
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/shorts/class2/+page.js": {
+    "file": "entries/pages/shorts/class2/_page.js",
+    "src": "src/routes/shorts/class2/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/shorts/class3/+page.svelte": {
+    "file": "entries/pages/shorts/class3/_page.svelte.js",
+    "src": "src/routes/shorts/class3/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores3.js",
+      "_Practice2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-203e1151.css",
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/shorts/class3/+page.js": {
+    "file": "entries/pages/shorts/class3/_page.js",
+    "src": "src/routes/shorts/class3/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/shorts/class4/+page.svelte": {
+    "file": "entries/pages/shorts/class4/_page.svelte.js",
+    "src": "src/routes/shorts/class4/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores3.js",
+      "_Practice2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-203e1151.css",
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/shorts/class4/+page.js": {
+    "file": "entries/pages/shorts/class4/_page.js",
+    "src": "src/routes/shorts/class4/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/shorts/class5/+page.svelte": {
+    "file": "entries/pages/shorts/class5/_page.svelte.js",
+    "src": "src/routes/shorts/class5/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores3.js",
+      "_Practice2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-203e1151.css",
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/shorts/class5/+page.js": {
+    "file": "entries/pages/shorts/class5/_page.js",
+    "src": "src/routes/shorts/class5/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/shorts/class6/+page.svelte": {
+    "file": "entries/pages/shorts/class6/_page.svelte.js",
+    "src": "src/routes/shorts/class6/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores3.js",
+      "_Practice2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-203e1151.css",
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/shorts/class6/+page.js": {
+    "file": "entries/pages/shorts/class6/_page.js",
+    "src": "src/routes/shorts/class6/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/shorts/class7/+page.svelte": {
+    "file": "entries/pages/shorts/class7/_page.svelte.js",
+    "src": "src/routes/shorts/class7/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores3.js",
+      "_Practice2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-203e1151.css",
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/shorts/class7/+page.js": {
+    "file": "entries/pages/shorts/class7/_page.js",
+    "src": "src/routes/shorts/class7/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/shorts/class8/+page.svelte": {
+    "file": "entries/pages/shorts/class8/_page.svelte.js",
+    "src": "src/routes/shorts/class8/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores3.js",
+      "_Practice2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-203e1151.css",
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/shorts/class8/+page.js": {
+    "file": "entries/pages/shorts/class8/_page.js",
+    "src": "src/routes/shorts/class8/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/shorts/class9/+page.svelte": {
+    "file": "entries/pages/shorts/class9/_page.svelte.js",
+    "src": "src/routes/shorts/class9/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores3.js",
+      "_Practice2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-203e1151.css",
+      "_app/immutable/assets/Message-9326233f.css",
+      "_app/immutable/assets/Link-15b705f6.css"
+    ]
+  },
+  "src/routes/shorts/class9/+page.js": {
+    "file": "entries/pages/shorts/class9/_page.js",
+    "src": "src/routes/shorts/class9/+page.js",
     "isEntry": true,
     "imports": [
       "_index.js"
@@ -3872,6 +4258,15 @@
       "_app/immutable/assets/Select-5c0370c0.css"
     ]
   },
+  "_Teacher.js": {
+    "file": "chunks/Teacher.js",
+    "imports": [
+      "_index3.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Teacher-4e061cd0.css"
+    ]
+  },
   "_stores3.js": {
     "file": "chunks/stores3.js",
     "imports": [
@@ -3903,10 +4298,11 @@
     "file": "chunks/Practice.js",
     "imports": [
       "_index3.js",
+      "_stores3.js",
       "_index2.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-6d752dd2.css"
+      "_app/immutable/assets/Practice-77d34689.css"
     ]
   },
   "_sets.js": {
@@ -3967,6 +4363,17 @@
     ],
     "css": [
       "_app/immutable/assets/Message-9326233f.css"
+    ]
+  },
+  "_Practice2.js": {
+    "file": "chunks/Practice2.js",
+    "imports": [
+      "_index3.js",
+      "_stores3.js",
+      "_index2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-3a95817a.css"
     ]
   }
 }

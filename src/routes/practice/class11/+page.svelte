@@ -26,12 +26,12 @@
     } */
 </style>
 <svelte:head>
-    <title>Practice Mathematics</title>
+    <title>XI Practice Mathematics</title>
     <link rel="canonical" href="https://drmithileshkumar.com/practice" />
     <meta name="description" content="Learn and practice Physics and Mathematics for school, IIT JEE, Olympiad" />
 </svelte:head>
 <article>
-    <h2>Practice Mathematics</h2>
+    <h2>Mathematics XI</h2>
     <Message>
         <ul style="color:green;">
             <li>

@@ -1,8 +1,8 @@
 
 
 export const index = 26;
-export const component = async () => (await import('../entries/pages/iit/maths/2021/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/iit/maths/2021/_page.svelte-d85100d1.js';
-export const imports = ["_app/immutable/components/pages/iit/maths/2021/_page.svelte-d85100d1.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/constants-5a4b1f74.js"];
-export const stylesheets = ["_app/immutable/assets/_page-75b15002.css","_app/immutable/assets/Message-1e964222.css","_app/immutable/assets/Link-867ad8ee.css"];
+export const component = async () => (await import('../entries/pages/shorts/class4/_layout.svelte.js')).default;
+export const file = '_app/immutable/components/pages/shorts/class4/_layout.svelte-ff3741ba.js';
+export const imports = ["_app/immutable/components/pages/shorts/class4/_layout.svelte-ff3741ba.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/Select-323c5815.js","_app/immutable/chunks/stores-c256a4d3.js","_app/immutable/chunks/index-b1bbdf52.js"];
+export const stylesheets = ["_app/immutable/assets/Select-60103244.css"];
 export const fonts = [];

@@ -1,6 +1,6 @@
 <script>
 	// @ts-nocheck
-
+    import {QuestionTimer} from '$lib/pages/practice/stores';
 	import { saved, attempted } from './practiceStore';
 	import Performance from './Performance.svelte';
 	import Practiceradiobutton from './Practiceradiobutton.svelte';
@@ -22,7 +22,7 @@
 	export let generateProblem = (a) => {
 		return problemset;
 	};
-
+    let clock = 0;
 	let newproblem = '';
 	let answered = 0;
 	let nextproblemnumber = 0;
@@ -44,17 +44,17 @@
 		optionValues = [valueA, valueB, valueC, valueD];
 		// MathJax.typeset();
 		setTimeout(() => {
-            renderMathInElement(panel, {
-			delimiters: [
-				{ left: '$$', right: '$$', display: true },
-				{ left: '$', right: '$', display: false },
-				{ left: '\\(', right: '\\)', display: false },
-				{ left: '\\[', right: '\\]', display: true }
-			],
-			// • rendering keys, e.g.:
-			throwOnError: false
-		})
-        }, 0)
+			renderMathInElement(panel, {
+				delimiters: [
+					{ left: '$$', right: '$$', display: true },
+					{ left: '$', right: '$', display: false },
+					{ left: '\\(', right: '\\)', display: false },
+					{ left: '\\[', right: '\\]', display: true }
+				],
+				// • rendering keys, e.g.:
+				throwOnError: false
+			});
+		}, 0);
 	}
 	const updateScores = (event) => {
 		$saved = false;
@@ -66,12 +66,15 @@
 	};
 
 	const loadnext = (isNext) => {
+		clearInterval($QuestionTimer);
+		clock = 0;
 		answer = '';
 		$attempted = false;
 		if (isNext) {
 			nextproblemnumber++;
 		}
 		problemset = generateProblem(nextproblemnumber);
+		$QuestionTimer = setInterval(() => clock++, 1000)
 	};
 	loadnext(false);
 	$: strokedasharray = answered > 0 ? correctly / answered : 0;
@@ -82,12 +85,14 @@
 	<div class="problemset" style="display: block;" bind:clientWidth={W}>
 		<fieldset class="problemField">
 			<legend>
+				<div class="site">drmithileshkumar.com</div>
 				<div class="problemLegend">
 					<div class="dayscore">
 						<abbr title="Today's accuracy">
 							<Performance {strokedasharray} />
 						</abbr>
 					</div>
+                    <span class="timer">{clock} s</span>
 					<span class="refresh material-icons" on:click={() => loadnext(false)}>refresh</span>
 					<span class="next material-icons" on:click={() => loadnext(true)}>arrow_forward</span>
 				</div>
@@ -110,8 +115,8 @@
 	.problemPanel {
 		margin-top: 1rem;
 		/* width: 300px; */
-        
-        width: auto;
+
+		width: auto;
 	}
 	.problemField {
 		padding: 0.5em;
@@ -121,7 +126,7 @@
 		/* width: 300px; */
 		font-size: 0.8em;
 		font-family: Georgia, 'Times New Roman', Times, serif;
-        overflow-x: auto;
+		overflow-x: auto;
 	}
 	.dayscore {
 		border-radius: 50%;
@@ -146,7 +151,7 @@
 		/* background: transparent;
 		border: none;
 		outline: none; */
-		padding: 0.5em;
+		padding: 0.3em;
 		color: gray;
 	}
 	.problemLegend {
@@ -155,7 +160,7 @@
 		border-top: rgb(0, 163, 240) 1px solid;
 		border-bottom: rgb(0, 163, 240) 1px solid;
 		border-radius: 10px;
-		margin-left: 20px;
+		/* margin-left: 20px; */
 		align-items: center;
 		/* box-shadow: rgb(0 0 0 / 31%) 1px 1px 0px 0px inset, rgb(0 0 0 / 35%) 2px 2px 3px 1px inset, rgb(255 255 255 / 50%) -3px -3px 6px 1px inset; */
 	}
@@ -177,12 +182,29 @@
 	.problemArea {
 		display: flex;
 		flex-direction: column;
-        max-width: 86vw;
+		max-width: 86vw;
 	}
 	/* .noborder:hover {
         box-shadow: 1px 1px 1px green;
     } */
 	abbr {
 		text-decoration: none;
+	}
+	.timer {
+		display: inline-block;
+		width: 60px;
+		display: flex;
+		justify-content: end;
+		font-size: 2em;
+		color: red;
+	}
+	.site {
+		display: flex;
+		font-family: roboto;
+		letter-spacing: 0.2ex;
+		font-weight: 300;
+		align-items: center;
+		justify-content: center;
+		font-variant: small-caps;
 	}
 </style>

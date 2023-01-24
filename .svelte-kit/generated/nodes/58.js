@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Complex numbers and quadratic equations/Quadratic equations/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Complex numbers and quadratic equations/Quadratic equations/+page.svelte";

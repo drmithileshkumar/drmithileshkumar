@@ -9,8 +9,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedGenerator = subscribe(selectedGenerator, (value) => $selectedGenerator = value);
   $$unsubscribe_selectedChapter();
   $$unsubscribe_selectedGenerator();
-  return `${$$result.head += `<!-- HEAD_svelte-1jd0cmq_START -->${$$result.title = `<title>Practice Mathematics</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com/practice"}"><meta name="${"description"}" content="${"Learn and practice Physics and Mathematics for school, IIT JEE, Olympiad"}"><!-- HEAD_svelte-1jd0cmq_END -->`, ""}
-<article><h2>Practice Mathematics</h2>
+  return `${$$result.head += `<!-- HEAD_svelte-1430w95_START -->${$$result.title = `<title>XI Practice Mathematics</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com/practice"}"><meta name="${"description"}" content="${"Learn and practice Physics and Mathematics for school, IIT JEE, Olympiad"}"><!-- HEAD_svelte-1430w95_END -->`, ""}
+<article><h2>Mathematics XI</h2>
     ${validate_component(Message, "Message").$$render($$result, {}, {}, {
     default: () => {
       return `<ul style="${"color:green;"}"><li>Select a chapter to start solving problems.

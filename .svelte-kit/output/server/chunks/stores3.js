@@ -42,7 +42,9 @@ const chapters12 = [
 const selectedChapter = writable("");
 const selectedGenerator = writable(null);
 const generators = writable({});
+const QuestionTimer = writable(null);
 export {
+  QuestionTimer as Q,
   selectedChapter as a,
   chapters11 as b,
   chapters as c,

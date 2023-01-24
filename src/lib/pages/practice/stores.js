@@ -12,3 +12,5 @@ export const chapters12 = [
 export const selectedChapter = writable('');
 export const selectedGenerator = writable(null);
 export const generators = writable({})
+
+export const QuestionTimer = writable(null);

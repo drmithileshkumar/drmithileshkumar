@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-381ae379.js";import{default as t}from"../components/pages/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/_page.svelte-b6144341.js";export{t as component,r as universal};

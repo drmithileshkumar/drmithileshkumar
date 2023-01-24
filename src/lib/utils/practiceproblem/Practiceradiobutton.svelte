@@ -280,6 +280,10 @@
         height: 2rem;
         border-radius: 100%;
         border: 0.2rem solid rgb(0, 163, 253);
+        background-image: url('/favicon.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
     .circleInner {

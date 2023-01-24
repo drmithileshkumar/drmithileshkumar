@@ -13,7 +13,7 @@
     let option3;
     let option4;
     let options;
-    
+    let optionNumber = -1;
     const dispatch = createEventDispatcher();
     
     const chosen = () => {
@@ -29,6 +29,7 @@
     
     $: if(browser && options) {
         // answer = '';
+        optionNumber = -1;
         option1 = optionValues[0];
         option2 = optionValues[1];
         option3 = optionValues[2];
@@ -48,106 +49,130 @@
         }, 0)
         
     }
+    const nextTick = () => {
+        optionNumber++;
+        setTimeout(() => {
+            renderMathInElement(options, {
+			delimiters: [
+				{ left: '$$', right: '$$', display: false },
+				{ left: '$', right: '$', display: false },
+				{ left: '\\(', right: '\\)', display: false },
+				{ left: '\\[', right: '\\]', display: false }
+			],
+			// • rendering keys, e.g.:
+			throwOnError: false
+		})
+        }, 0)
+    }
 </script>
+<div class="clicker" on:click={nextTick}></div>
 <div class="options" bind:this={options}>
     <div class="option1">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>
-            <div style="position: relative;">
-                <input type="radio" class="option" name="prob" bind:group={answer} value={'A'} on:change={chosen}>
-                <div class="optiond">
-                    { @html option1 }
-                </div> 
-                <div class="circle">
-                    {#if correct === 'A' && answer !== ''}
-                        <div class="circleInner" style="background: green;"></div>
-                        <div class="circleOuter" style="border: 0.2rem solid green;"></div>
-                    {:else if correct !== 'A' && answer === 'A' }
-                        <div class="circleInner" style="background: red;"></div>
-                        <div class="circleOuter" style="border: 0.2rem solid red;"></div>
-                    {:else}
-                        <div class="circleInner"></div>
-                        <div class="circleOuter"></div>
-                    {/if}  
-                </div>     
-            </div>
-        </label>
+        {#if optionNumber >= 0}
+            <label>
+                <div style="position: relative;">
+                    <input type="radio" class="option" name="prob" bind:group={answer} value={'A'} on:change={chosen}>
+                    <div class="optiond">
+                        { @html option1 }
+                    </div> 
+                    <div class="circle">
+                        {#if correct === 'A' && answer !== ''}
+                            <div class="circleInner" style="background: green;"></div>
+                            <div class="circleOuter" style="border: 0.2rem solid green;"></div>
+                        {:else if correct !== 'A' && answer === 'A' }
+                            <div class="circleInner" style="background: red;"></div>
+                            <div class="circleOuter" style="border: 0.2rem solid red;"></div>
+                        {:else}
+                            <div class="circleInner"></div>
+                            <div class="circleOuter"></div>
+                        {/if}  
+                    </div>     
+                </div>
+            </label>
+        {/if}
     </div>
     <div class="option2">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>
-            <div style="position: relative;">
-                <input type="radio" class="option" name="prob" bind:group={answer} value={'B'} on:change={chosen}>
-                <div class="optiond">
-                    {@html option2 }
-                </div> 
-                <div class="circle">
-                    {#if correct === 'B' && answer !== ''}
-                        <div class="circleInner" style="background: green;"></div>
-                        <div class="circleOuter" style="border: 0.2rem solid green;"></div>
-                    {:else if correct !== 'B' && answer === 'B' }
-                        <div class="circleInner" style="background: red;"></div>
-                        <div class="circleOuter" style="border: 0.2rem solid red;"></div>
-                    {:else}
-                        <div class="circleInner"></div>
-                        <div class="circleOuter"></div>
-                    {/if}  
-                </div>     
-            </div>
-        </label>
+        {#if optionNumber >= 1}
+            <label>
+                <div style="position: relative;">
+                    <input type="radio" class="option" name="prob" bind:group={answer} value={'B'} on:change={chosen}>
+                    <div class="optiond">
+                        {@html option2 }
+                    </div> 
+                    <div class="circle">
+                        {#if correct === 'B' && answer !== ''}
+                            <div class="circleInner" style="background: green;"></div>
+                            <div class="circleOuter" style="border: 0.2rem solid green;"></div>
+                        {:else if correct !== 'B' && answer === 'B' }
+                            <div class="circleInner" style="background: red;"></div>
+                            <div class="circleOuter" style="border: 0.2rem solid red;"></div>
+                        {:else}
+                            <div class="circleInner"></div>
+                            <div class="circleOuter"></div>
+                        {/if}  
+                    </div>     
+                </div>
+            </label>
+        {/if}
     </div>
     <div class="option3">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>
-            <div style="position: relative;">
-                <input type="radio" class="option" name="prob" bind:group={answer} value={'C'} on:change={chosen}>
-                <div class="optiond">
-                    { @html option3 }
-                </div> 
-                <div class="circle">
-                    {#if correct === 'C' && answer !== ''}
-                        <div class="circleInner" style="background: green;"></div>
-                        <div class="circleOuter" style="border: 0.2rem solid green;"></div>
-                    {:else if correct !== 'C' && answer === 'C' }
-                        <div class="circleInner" style="background: red;"></div>
-                        <div class="circleOuter" style="border: 0.2rem solid red;"></div>
-                    {:else}
-                        <div class="circleInner"></div>
-                        <div class="circleOuter"></div>
-                    {/if}  
-                </div>     
-            </div>
-        </label>
+        {#if optionNumber >= 2}
+            <label>
+                <div style="position: relative;">
+                    <input type="radio" class="option" name="prob" bind:group={answer} value={'C'} on:change={chosen}>
+                    <div class="optiond">
+                        { @html option3 }
+                    </div> 
+                    <div class="circle">
+                        {#if correct === 'C' && answer !== ''}
+                            <div class="circleInner" style="background: green;"></div>
+                            <div class="circleOuter" style="border: 0.2rem solid green;"></div>
+                        {:else if correct !== 'C' && answer === 'C' }
+                            <div class="circleInner" style="background: red;"></div>
+                            <div class="circleOuter" style="border: 0.2rem solid red;"></div>
+                        {:else}
+                            <div class="circleInner"></div>
+                            <div class="circleOuter"></div>
+                        {/if}  
+                    </div>     
+                </div>
+            </label>
+        {/if}
     </div>
     <div class="option4">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>
-            <div style="position: relative;">
-                <input type="radio" class="option" name="prob" bind:group={answer} value={'D'} on:change={chosen}>
-                <div class="optiond">
-                    { @html option4 }
-                </div> 
-                <div class="circle">
-                    {#if correct === 'D' && answer !== ''}
-                        <div class="circleInner" style="background: green;"></div>
-                        <div class="circleOuter" style="border: 0.2rem solid green;"></div>
-                    {:else if correct !== 'D' && answer === 'D' }
-                        <div class="circleInner" style="background: red;"></div>
-                        <div class="circleOuter" style="border: 0.2rem solid red;"></div>
-                    {:else}
-                        <div class="circleInner"></div>
-                        <div class="circleOuter"></div>
-                    {/if}  
-                </div>     
-            </div>
-        </label>
+        {#if optionNumber >= 3}
+            <label>
+                <div style="position: relative;">
+                    <input type="radio" class="option" name="prob" bind:group={answer} value={'D'} on:change={chosen}>
+                    <div class="optiond">
+                        { @html option4 }
+                    </div> 
+                    <div class="circle">
+                        {#if correct === 'D' && answer !== ''}
+                            <div class="circleInner" style="background: green;"></div>
+                            <div class="circleOuter" style="border: 0.2rem solid green;"></div>
+                        {:else if correct !== 'D' && answer === 'D' }
+                            <div class="circleInner" style="background: red;"></div>
+                            <div class="circleOuter" style="border: 0.2rem solid red;"></div>
+                        {:else}
+                            <div class="circleInner"></div>
+                            <div class="circleOuter"></div>
+                        {/if}  
+                    </div>     
+                </div>
+            </label>
+        {/if}
     </div>
 </div>
 
 
 <style>
      
-
+    .clicker {
+        width: 100%;
+        background: rgba(128, 128, 128, 0.5);
+        height: 0.5em;
+    }
     .options {
         display: grid;
         margin-left: 5px;
@@ -231,6 +256,7 @@
         top: 50%;
         left: 0%;
         transform: translate(0%, -50%);
+        /* background-image: url('/favicon.png'); */
         /*filter: url('#gooey');*/
     }
 
@@ -286,6 +312,7 @@
         animation-duration: 1000ms;
         animation-timing-function: ease;
         cursor: pointer;
+        
     }
 
     .circleOuter {
@@ -293,6 +320,10 @@
         height: 2rem;
         border-radius: 100%;
         border: 0.2rem solid rgb(0, 163, 253);
+        background-image: url('/favicon.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
     .circleInner {
@@ -303,6 +334,7 @@
         height: 1.5rem;
         border-radius: 100%;
         background: rgb(0, 163, 253);
+        
     }
 
     @keyframes circleInner__in {

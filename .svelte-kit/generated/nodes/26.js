@@ -1,1 +1,1 @@
-export { default as component } from "../../../src/routes/iit/maths/2021/+page.svelte";
+export { default as component } from "../../../src/routes/shorts/class4/+layout.svelte";

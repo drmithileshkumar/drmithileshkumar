@@ -1,0 +1,72 @@
+<script>
+	// @ts-nocheck
+	import Message from '$lib/ui/Message.svelte';
+	import Link from '$lib/ui/Link.svelte';
+	import { page } from '$app/stores';
+
+	import { onMount } from 'svelte';
+	import { selectedChapter, selectedGenerator } from '$lib/pages/practice/stores';
+	import Practice from '$lib/utils/practiceproblemshorts/Practice.svelte';
+	let shorts;
+	onMount(() => {
+		// MathJax.typeset();
+		renderMathInElement(shorts, {
+			delimiters: [
+				{ left: '$$', right: '$$', display: false },
+				{ left: '$', right: '$', display: false },
+				{ left: '\\(', right: '\\)', display: false },
+				{ left: '\\[', right: '\\]', display: false }
+			],
+			throwOnError: false
+		});
+	});
+</script>
+
+<svelte:head>
+	<title>Shorts Mathematics</title>
+	<link rel="canonical" href="https://drmithileshkumar.com/shorts/classXI" />
+	<meta
+		name="description"
+		content="Learn and practice Physics and Mathematics for school, IIT JEE, Olympiad"
+	/>
+</svelte:head>
+<article bind:this={shorts}>
+	<h2 style="color:green;">Mathematics XI</h2>
+	<!-- <Message>
+        <ul style="color:green;">
+            <li>
+                Select a chapter to start solving problems.
+            </li>
+            <li>
+                To generate similar problem type, click refresh button <span class="material-icons" style="vertical-align:middle;">refresh</span>
+            </li>
+            <li>
+                To generate next problem type, click next button <span class="material-icons" style="vertical-align:middle;">arrow_forward</span>
+            </li>
+        </ul>
+    </Message> -->
+	<h3 style="font-weight: 400;">{$selectedChapter}</h3>
+	{#if $selectedGenerator}
+		<Practice generateProblem={$selectedGenerator} />
+		<br />
+	{/if}
+</article>
+
+<style>
+	/* a {
+        text-decoration: none;
+    }
+    .options {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        width: 100%;
+        flex-wrap: wrap;
+    } */
+    article {
+        overflow-x: auto;
+    }
+    :global(.katex) {
+        color: rgba(0, 175, 255, 1);
+    }
+</style>
