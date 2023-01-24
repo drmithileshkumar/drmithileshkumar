@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-bbd1fcc8.js";import{default as t}from"../components/pages/notes/maths/Sequences and series/Geometric progression/_page.svelte-308e4690.js";export{t as component,r as universal};

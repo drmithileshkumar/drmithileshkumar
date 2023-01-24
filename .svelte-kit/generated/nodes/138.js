@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Three dimensional geometry/Coplanarity of two lines/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Three dimensional geometry/Coplanarity of two lines/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/+page.svelte";

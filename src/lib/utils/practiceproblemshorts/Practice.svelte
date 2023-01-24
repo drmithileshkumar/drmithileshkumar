@@ -88,26 +88,8 @@
 							<Performance {strokedasharray} />
 						</abbr>
 					</div>
-					<div class="refresh">
-						<button
-							class="noborder"
-							on:click={() => loadnext(false)}
-							use:ripple
-						>
-							<span />
-							<span class="icon is-small material-icons"> refresh </span>
-						</button>
-					</div>
-					<div class="next">
-						<button
-							class="noborder"
-							on:click={() => loadnext(true)}
-							use:ripple
-						>
-							<span />
-							<span class="icon is-small material-icons"> arrow_forward </span>
-						</button>
-					</div>
+					<span class="refresh material-icons" on:click={() => loadnext(false)}>refresh</span>
+					<span class="next material-icons" on:click={() => loadnext(true)}>arrow_forward</span>
 				</div>
 			</legend>
 
@@ -142,7 +124,6 @@
         overflow-x: auto;
 	}
 	.dayscore {
-		grid-area: dayscore;
 		border-radius: 50%;
 		border: rgba(0, 143, 253, 0) 1px solid;
 		padding: 0px;
@@ -157,17 +138,16 @@
 	}
 	.next,
 	.refresh {
+		display: inline-block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		cursor: pointer;
-		background: transparent;
+		/* background: transparent;
 		border: none;
-		outline: none;
+		outline: none; */
+		padding: 0.5em;
 		color: gray;
-	}
-	.next {
-		grid-area: next;
-	}
-	.refresh {
-		grid-area: refresh;
 	}
 	.problemLegend {
 		display: flex;
@@ -198,13 +178,6 @@
 		display: flex;
 		flex-direction: column;
         max-width: 86vw;
-	}
-	.noborder {
-		border: none;
-		outline: none;
-		background: transparent;
-		color: green;
-		cursor: pointer;
 	}
 	/* .noborder:hover {
         box-shadow: 1px 1px 1px green;
