@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-77fd0499.js";import{default as t}from"../components/pages/notes/maths/Three dimensional geometry/Shortest distance between two lines/_page.svelte-e2784220.js";export{t as component,r as universal};

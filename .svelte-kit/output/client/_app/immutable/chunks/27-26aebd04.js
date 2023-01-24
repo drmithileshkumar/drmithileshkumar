@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-5d43e86e.js";import{default as t}from"../components/pages/notes/maths/Application of derivatives/Tangents and normals/_page.svelte-9c8e149b.js";export{t as component,r as universal};

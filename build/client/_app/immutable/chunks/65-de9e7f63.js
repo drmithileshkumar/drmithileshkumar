@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-b406674c.js";import{default as t}from"../components/pages/notes/maths/Integrals/Evaluation of definite integrals by substitution/_page.svelte-9b1a8d97.js";export{t as component,r as universal};

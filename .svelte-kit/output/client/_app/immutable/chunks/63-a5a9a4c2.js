@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-379fd008.js";import{default as t}from"../components/pages/notes/maths/Indroduction to 3D geometry/Section formula/_page.svelte-54a53e81.js";export{t as component,r as universal};

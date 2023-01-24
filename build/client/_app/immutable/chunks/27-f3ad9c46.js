@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-25878940.js";import{default as t}from"../components/pages/notes/maths/Application of derivatives/Rate of change of quantities/_page.svelte-0c072203.js";export{t as component,r as universal};

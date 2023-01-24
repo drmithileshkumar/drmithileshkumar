@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-bc846d04.js";import{default as t}from"../components/pages/notes/maths/Relations and functions 11/Relations/_page.svelte-4120d5d8.js";export{t as component,r as universal};

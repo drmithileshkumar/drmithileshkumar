@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-d803ff01.js";import{default as t}from"../components/pages/notes/maths/Vector algebra/Multiplication of a vector by a scalar/_page.svelte-0606c2a0.js";export{t as component,r as universal};

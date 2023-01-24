@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-aa041a53.js";import{default as t}from"../components/pages/notes/maths/Application of integrals/Area under simple curves/_page.svelte-4c759d05.js";export{t as component,r as universal};

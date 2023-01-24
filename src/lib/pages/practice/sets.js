@@ -1,6 +1,9 @@
 import {Point2D} from '$lib/utils/common/point2d';
 import {randNum, randInt} from '$lib/utils/common/common';
+import {Q} from '$lib/utils/common/fraction';
+import {Surd} from '$lib/utils/common/surd';
 import {Sets} from '$lib/utils/common/sets';
+import {Quadratic} from '$lib/utils/common/quadratic';
 let problemset = {
     s: "",
     o: {
@@ -53,7 +56,7 @@ export const sets = (problemnumber) => {
                 problemset.o[choices[(correctChoiceIndex + i) % 4]] = values[i];
             } 
             
-            problemset.s = `Which of the following is correct Roster form of the set \\[ x \\text{ is an integer such that } ${n} < x < ${m} \\text{ and divisible by } ${l}\\]`;
+            problemset.s = `Which of the following is correct Roster form of the set \\(\\{x\\) is an integer such that \\(\\nobreak ${n} < x < ${m}\\) and divisible by \\(${l}\\}\\)`;
             break;
         }
         case 2: {
@@ -72,7 +75,7 @@ export const sets = (problemnumber) => {
                 problemset.o[choices[(correctChoiceIndex + i) % 4]] = values[i];
             } 
             
-            problemset.s = `Given a set \\[A = ${A.str()}\\] which of the following is not correct?`;
+            problemset.s = `Given a set \\[\\allowbreak A = ${A.str()}\\] which of the following is not correct?`;
             break;
         }
         case 3: {
@@ -115,7 +118,7 @@ export const sets = (problemnumber) => {
             values[3] = q3.str();
 
             for(let i = 0; i < 4; i++) {
-                problemset.o[choices[(correctChoiceIndex + i) % 4]] = '\\(\\{x: x = ' + values[i] + ', n~\\)' + ' is a natural number and ' + '\\(~1\\leq n\\leq 5\\}\\)';
+                problemset.o[choices[(correctChoiceIndex + i) % 4]] = `\\(\\allowbreak\\{{x : x = ${values[i]}}, n \\text{ is a natural}\\\\ \\text{ number and } {1\\leq n\\leq 5}\\}\\)`;
             } 
             problemset.s = `Which of the following is correct set-builder form of the set \\[${set.str()}\\]`;
             break;
@@ -207,8 +210,12 @@ export const sets = (problemnumber) => {
             let sbad = new Sets();
             sbad.randomSet(n, n + 20, k);
             let poly = '';
+            let setlength = Math.min(3, s.e.length);
             for(let i = 0; i < s.e.length; i++) {
-                poly = poly + `(x - ${s.e[i]})`;
+                poly = poly + `{(x - ${s.e[i]})}`;
+                if(i > 0 && (i+1) % 3 === 0) {
+                    poly += '\\\\';
+                }
             }
             values[0] = `\\(${s.str()}\\)`;
             values[1] = `\\(${sbad.str()}\\)`;
@@ -218,7 +225,7 @@ export const sets = (problemnumber) => {
                 problemset.o[choices[(correctChoiceIndex + i) % 4]] = values[i];
             } 
             
-            problemset.s = `Let \\(R\\) be the set of roots of the polynomial \\[${poly} = 0\\] Which of sets is equal to \\(R\\)?`;
+            problemset.s = `Let \\(R\\) be the set of roots of the polynomial \\[\\allowbreak${poly} = 0\\] Which of sets is equal to \\(R\\)?`;
             break;
         }
         case 10: {
@@ -290,7 +297,7 @@ export const sets = (problemnumber) => {
             if(suset == 'Z') {
                 problemset.o[choices[correctChoiceIndex + 3]] = `\\(A\\subset \\mathbb{R}\\)`;
             }
-            problemset.s = `Given set \\(A = ${s.str()}\\), which of the following is ${ques} correct?`;
+            problemset.s = `Given set \\(\\allowbreak A = ${s.str()}\\), which of the following is ${ques} correct?`;
             break;
         }
         case 12: {

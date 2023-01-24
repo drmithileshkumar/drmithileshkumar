@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-9971fbce.js";import{default as t}from"../components/pages/notes/maths/Integrals/Integration as an inverse process of differentiation/_page.svelte-6b40f5db.js";export{t as component,r as universal};

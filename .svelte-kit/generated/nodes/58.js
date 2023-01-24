@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/+page.svelte";

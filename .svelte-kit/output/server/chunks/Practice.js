@@ -75,7 +75,7 @@ const Practiceradiobutton = create_ssr_component(($$result, $$props, $$bindings,
 </div>`;
 });
 const css = {
-  code: ".problemPanel.svelte-1hqorv6{margin-top:1rem;width:auto}.problemField.svelte-1hqorv6{padding:0.5em;padding-bottom:1em;border:1px solid rgb(0, 163, 240);border-radius:10px;width:auto;font-size:0.8em;font-family:Georgia, 'Times New Roman', Times, serif}.dayscore.svelte-1hqorv6{grid-area:dayscore;border-radius:50%;border:rgba(0, 143, 253, 0) 1px solid;padding:0px;font-size:small;width:55px}.dayscore.svelte-1hqorv6{margin-left:auto;margin-right:auto;display:flex;align-items:center}.next.svelte-1hqorv6,.refresh.svelte-1hqorv6{cursor:pointer;background:transparent;border:none;outline:none;color:gray}.next.svelte-1hqorv6{grid-area:next}.refresh.svelte-1hqorv6{grid-area:refresh}.problemLegend.svelte-1hqorv6{display:flex;flex-direction:row;border-top:rgb(0, 163, 240) 1px solid;border-bottom:rgb(0, 163, 240) 1px solid;border-radius:10px;margin-left:20px;align-items:center}.problemStatement.svelte-1hqorv6{padding-left:0.3rem;margin-top:0.5rem;word-spacing:0.4rem;line-height:1.5rem;overflow:auto;scrollbar-width:thin}.svelte-1hqorv6::-webkit-scrollbar{width:10px}.problemArea.svelte-1hqorv6{display:flex;flex-direction:column}.noborder.svelte-1hqorv6{border:none;outline:none;background:transparent;color:gray;cursor:pointer}.green.svelte-1hqorv6{color:green}abbr.svelte-1hqorv6{text-decoration:none}",
+  code: ".problemPanel.svelte-13iotv0{margin-top:1rem;width:auto}.problemField.svelte-13iotv0{padding:0.5em;padding-bottom:1em;border:1px solid rgb(0, 163, 240);border-radius:10px;width:auto;font-size:0.8em;font-family:Georgia, 'Times New Roman', Times, serif}.dayscore.svelte-13iotv0{grid-area:dayscore;border-radius:50%;border:rgba(0, 143, 253, 0) 1px solid;padding:0px;font-size:small;width:55px}.dayscore.svelte-13iotv0{margin-left:auto;margin-right:auto;display:flex;align-items:center}.next.svelte-13iotv0,.refresh.svelte-13iotv0{cursor:pointer;background:transparent;border:none;outline:none;color:gray}.next.svelte-13iotv0{grid-area:next}.refresh.svelte-13iotv0{grid-area:refresh}.problemLegend.svelte-13iotv0{display:flex;flex-direction:row;border-top:rgb(0, 163, 240) 1px solid;border-bottom:rgb(0, 163, 240) 1px solid;border-radius:10px;margin-left:20px;align-items:center}.problemStatement.svelte-13iotv0{padding-left:0.3rem;margin-top:0.5rem;word-spacing:0.4rem;line-height:1.5rem;overflow:auto;scrollbar-width:thin}.svelte-13iotv0::-webkit-scrollbar{width:10px}.problemArea.svelte-13iotv0{display:flex;flex-direction:column}.noborder.svelte-13iotv0{border:none;outline:none;background:transparent;color:gray;cursor:pointer}.green.svelte-13iotv0{color:green}abbr.svelte-13iotv0{text-decoration:none}",
   map: null
 };
 const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -88,7 +88,7 @@ const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   let correct = "-1";
   let problemset = {
     s: "",
-    o: { "A": "", "B": "", "C": "", "D": "" },
+    o: { A: "", B: "", C: "", D: "" },
     c: ""
   };
   let { generateProblem = (a) => {
@@ -116,18 +116,14 @@ const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     $$settled = true;
     strokedasharray = 0;
     $$rendered = `
+<div class="${"problemPanel svelte-13iotv0"}"><div class="${"problemset svelte-13iotv0"}" style="${"display: block;"}"><fieldset class="${"problemField svelte-13iotv0"}"><legend class="${"svelte-13iotv0"}"><div class="${"problemLegend svelte-13iotv0"}"><div class="${"dayscore svelte-13iotv0"}"><abbr title="${"Today's accuracy"}" class="${"svelte-13iotv0"}">${validate_component(Performance, "Performance").$$render($$result, { strokedasharray }, {}, {})}</abbr></div>
+					<div class="${"refresh svelte-13iotv0"}"><button class="${["noborder svelte-13iotv0", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-13iotv0"}"></span>
+							<span class="${"icon is-small material-icons svelte-13iotv0"}">refresh </span></button></div>
+					<div class="${"next svelte-13iotv0"}"><button class="${["noborder svelte-13iotv0", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-13iotv0"}"></span>
+							<span class="${"icon is-small material-icons svelte-13iotv0"}">arrow_forward </span></button></div></div></legend>
 
-
-<div class="${"problemPanel svelte-1hqorv6"}"><div class="${"problemset svelte-1hqorv6"}" style="${"display: block;"}"><fieldset class="${"problemField svelte-1hqorv6"}"><legend class="${"svelte-1hqorv6"}"><div class="${"problemLegend svelte-1hqorv6"}"><div class="${"dayscore svelte-1hqorv6"}"><abbr title="${"Today's accuracy"}" class="${"svelte-1hqorv6"}">${validate_component(Performance, "Performance").$$render($$result, { strokedasharray }, {}, {})}</abbr></div>
-                    <div class="${"refresh svelte-1hqorv6"}"><button class="${["noborder svelte-1hqorv6", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1hqorv6"}"></span>
-                            <span class="${"icon is-small material-icons svelte-1hqorv6"}">refresh
-                            </span></button></div>
-                    <div class="${"next svelte-1hqorv6"}"><button class="${["noborder svelte-1hqorv6", $attempted ? "green" : ""].join(" ").trim()}"><span class="${"svelte-1hqorv6"}"></span>
-                            <span class="${"icon is-small material-icons svelte-1hqorv6"}">arrow_forward
-                            </span></button></div></div></legend>
-
-            <div class="${"problemArea svelte-1hqorv6"}"><div class="${"problemStatement svelte-1hqorv6"}"><!-- HTML_TAG_START -->${newproblem}<!-- HTML_TAG_END --></div>
-                <div class="${"options svelte-1hqorv6"}">${validate_component(Practiceradiobutton, "Practiceradiobutton").$$render(
+			<div class="${"problemArea svelte-13iotv0"}"><div class="${"problemStatement svelte-13iotv0"}"><!-- HTML_TAG_START -->${newproblem}<!-- HTML_TAG_END --></div>
+				<div class="${"options svelte-13iotv0"}">${validate_component(Practiceradiobutton, "Practiceradiobutton").$$render(
       $$result,
       { optionValues, correct, answer },
       {
@@ -137,7 +133,9 @@ const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => 
         }
       },
       {}
-    )}</div></div></fieldset></div></div>`;
+    )}</div></div></fieldset></div></div>
+
+`;
   } while (!$$settled);
   $$unsubscribe_attempted();
   $$unsubscribe_saved();
