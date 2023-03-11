@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/notes/maths/Vector algebra/Product of two vectors/_page.js';
+import * as universal from '../entries/pages/notes/maths/Vector algebra/Some basic concepts/_page.js';
 
 export const index = 172;
-export const component = async () => (await import('../entries/pages/notes/maths/Vector algebra/Product of two vectors/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/notes/maths/Vector algebra/Product of two vectors/_page.svelte-37c0dc7d.js';
+export const component = async () => (await import('../entries/pages/notes/maths/Vector algebra/Some basic concepts/_page.svelte.js')).default;
+export const file = '_app/immutable/components/pages/notes/maths/Vector algebra/Some basic concepts/_page.svelte-8757fcdb.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/notes/maths/Vector algebra/Product of two vectors/_page.svelte-37c0dc7d.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/stores-b2882b48.js","_app/immutable/chunks/index-b1bbdf52.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/chunks/stores-4374dc01.js","_app/immutable/chunks/singletons-2210570e.js","_app/immutable/modules/pages/notes/maths/Vector algebra/Product of two vectors/_page.js-2e5c62be.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-690ef50f.js"];
+export const imports = ["_app/immutable/components/pages/notes/maths/Vector algebra/Some basic concepts/_page.svelte-8757fcdb.js","_app/immutable/chunks/index-a6a7ad2f.js","_app/immutable/chunks/stores-b2882b48.js","_app/immutable/chunks/index-b1bbdf52.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/chunks/stores-4374dc01.js","_app/immutable/chunks/singletons-2210570e.js","_app/immutable/modules/pages/notes/maths/Vector algebra/Some basic concepts/_page.js-2e5c62be.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-f7c3abc7.js"];
 export const stylesheets = ["_app/immutable/assets/Practice-5698baa0.css","_app/immutable/assets/Message-1e964222.css"];
 export const fonts = [];

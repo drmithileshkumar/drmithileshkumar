@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-bf4ef1a7.js";import{default as t}from"../components/pages/notes/maths/Straight lines/Various forms of the equation of a line/_page.svelte-8006149c.js";export{t as component,r as universal};

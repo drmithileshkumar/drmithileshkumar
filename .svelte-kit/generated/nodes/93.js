@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Integrals/Integration by parts/+page.js";
+import * as universal from "../../../src/routes/notes/maths/Integrals/Methods of integration/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Integrals/Integration by parts/+page.svelte";
+export { default as component } from "../../../src/routes/notes/maths/Integrals/Methods of integration/+page.svelte";

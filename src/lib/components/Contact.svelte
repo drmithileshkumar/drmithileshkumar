@@ -1,3 +1,3 @@
 <div class="contact">
-    Contact me at drmithileshkumar@outlook.com
+    Contact me at info@drmithileshkumar.com
 </div>

@@ -346,7 +346,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-41ae2d29.css",
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -387,7 +387,7 @@
       "_Papers.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-3e73e764.css"
+      "_app/immutable/assets/_page-b71443ea.css"
     ]
   },
   "src/routes/cv/+page.js": {
@@ -635,7 +635,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -658,7 +658,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -681,7 +681,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -704,7 +704,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -727,7 +727,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -750,7 +750,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -772,7 +772,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -795,7 +795,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -818,7 +818,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -841,7 +841,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -864,7 +864,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -886,7 +886,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -909,7 +909,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -932,35 +932,13 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
   "src/routes/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/+page.js": {
     "file": "entries/pages/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/_page.js",
     "src": "src/routes/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index.js"
-    ]
-  },
-  "src/routes/notes/maths/conic/+page.svelte": {
-    "file": "entries/pages/notes/maths/conic/_page.svelte.js",
-    "src": "src/routes/notes/maths/conic/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index3.js",
-      "_stores2.js",
-      "_stores.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-03d834cb.css",
-      "_app/immutable/assets/Canvas-f2e54c4c.css"
-    ]
-  },
-  "src/routes/notes/maths/conic/+page.js": {
-    "file": "entries/pages/notes/maths/conic/_page.js",
-    "src": "src/routes/notes/maths/conic/+page.js",
     "isEntry": true,
     "imports": [
       "_index.js"
@@ -976,7 +954,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -999,7 +977,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1022,7 +1000,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1045,7 +1023,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1068,7 +1046,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1091,7 +1069,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1113,7 +1091,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1136,7 +1114,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1159,7 +1137,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1181,7 +1159,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1204,7 +1182,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1226,7 +1204,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1249,7 +1227,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1272,7 +1250,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1295,7 +1273,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1318,7 +1296,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-9029cfef.css",
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1341,7 +1319,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1364,7 +1342,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1386,7 +1364,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1408,7 +1386,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1430,7 +1408,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1453,7 +1431,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1475,7 +1453,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1497,7 +1475,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1519,7 +1497,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1542,7 +1520,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1564,7 +1542,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1586,7 +1564,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1608,7 +1586,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1631,7 +1609,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1654,7 +1632,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1677,7 +1655,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1700,7 +1678,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1723,7 +1701,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1746,7 +1724,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1769,7 +1747,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1792,7 +1770,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1815,7 +1793,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1837,7 +1815,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1860,7 +1838,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1883,7 +1861,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1906,7 +1884,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1929,7 +1907,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1951,7 +1929,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1973,7 +1951,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -1995,7 +1973,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2017,7 +1995,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2040,7 +2018,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2062,7 +2040,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2085,7 +2063,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2108,7 +2086,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2130,7 +2108,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2153,7 +2131,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2176,7 +2154,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2199,7 +2177,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2221,7 +2199,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2244,7 +2222,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2266,7 +2244,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2288,7 +2266,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2311,7 +2289,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2333,7 +2311,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2355,7 +2333,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2378,7 +2356,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2401,7 +2379,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2423,7 +2401,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2446,7 +2424,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2468,7 +2446,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2490,7 +2468,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2512,7 +2490,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2535,7 +2513,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2558,7 +2536,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2580,7 +2558,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2602,7 +2580,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2624,7 +2602,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2647,7 +2625,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2670,7 +2648,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-9029cfef.css",
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2697,7 +2675,7 @@
       "_H3.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-972a3adf.css",
+      "_app/immutable/assets/_page-fa9520a0.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2724,7 +2702,7 @@
       "_H2.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-4db39171.css",
+      "_app/immutable/assets/_page-19ad2389.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2748,8 +2726,8 @@
       "_Image.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-1d38ef13.css",
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/_page-41385273.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2772,7 +2750,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-9029cfef.css",
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2795,7 +2773,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-58267112.css",
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2818,7 +2796,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-9029cfef.css",
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2937,7 +2915,7 @@
       "_H3.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-fc0a6380.css",
+      "_app/immutable/assets/_page-e0cc0988.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2961,7 +2939,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-58267112.css",
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -2984,7 +2962,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-04124470.css",
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3007,7 +2985,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3030,7 +3008,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3052,7 +3030,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3075,7 +3053,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3098,7 +3076,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3120,7 +3098,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3143,7 +3121,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3166,7 +3144,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3188,7 +3166,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3210,7 +3188,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3233,7 +3211,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3256,7 +3234,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3278,7 +3256,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3301,7 +3279,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3324,7 +3302,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3347,7 +3325,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3370,7 +3348,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3393,7 +3371,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3416,7 +3394,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3439,7 +3417,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3462,7 +3440,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3484,7 +3462,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3507,7 +3485,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3530,7 +3508,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3553,7 +3531,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
@@ -3576,13 +3554,35 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css"
     ]
   },
   "src/routes/notes/maths/Vector algebra/Types of vectors/+page.js": {
     "file": "entries/pages/notes/maths/Vector algebra/Types of vectors/_page.js",
     "src": "src/routes/notes/maths/Vector algebra/Types of vectors/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/notes/maths/conic/+page.svelte": {
+    "file": "entries/pages/notes/maths/conic/_page.svelte.js",
+    "src": "src/routes/notes/maths/conic/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_stores2.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-03d834cb.css",
+      "_app/immutable/assets/Canvas-f2e54c4c.css"
+    ]
+  },
+  "src/routes/notes/maths/conic/+page.js": {
+    "file": "entries/pages/notes/maths/conic/_page.js",
+    "src": "src/routes/notes/maths/conic/+page.js",
     "isEntry": true,
     "imports": [
       "_index.js"
@@ -3604,7 +3604,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page-9c59cf67.css",
-      "_app/immutable/assets/Practice-77d34689.css",
+      "_app/immutable/assets/Practice-e5a1779a.css",
       "_app/immutable/assets/Message-9326233f.css",
       "_app/immutable/assets/Div-a8ab5461.css"
     ]
@@ -3627,7 +3627,7 @@
     "css": [
       "_app/immutable/assets/Message-9326233f.css",
       "_app/immutable/assets/Link-15b705f6.css",
-      "_app/immutable/assets/Practice-77d34689.css"
+      "_app/immutable/assets/Practice-e5a1779a.css"
     ]
   },
   "src/routes/practice/+page.js": {
@@ -3912,7 +3912,7 @@
     "css": [
       "_app/immutable/assets/Message-9326233f.css",
       "_app/immutable/assets/Link-15b705f6.css",
-      "_app/immutable/assets/Practice-77d34689.css"
+      "_app/immutable/assets/Practice-e5a1779a.css"
     ]
   },
   "src/routes/shorts/+page.js": {
@@ -4302,7 +4302,7 @@
       "_index2.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-77d34689.css"
+      "_app/immutable/assets/Practice-e5a1779a.css"
     ]
   },
   "_sets.js": {
@@ -4373,7 +4373,7 @@
       "_index2.js"
     ],
     "css": [
-      "_app/immutable/assets/Practice-3a95817a.css"
+      "_app/immutable/assets/Practice-f88886c0.css"
     ]
   }
 }
