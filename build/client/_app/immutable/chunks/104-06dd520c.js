@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-bf4ef1a7.js";import{default as t}from"../components/pages/notes/maths/Linear inequalities/Solution of system in two variables/_page.svelte-278623c8.js";export{t as component,r as universal};
+import{_ as r}from"./_page-f28b0a44.js";import{default as t}from"../components/pages/notes/maths/Linear inequalities/Solution of system in two variables/_page.svelte-278623c8.js";export{t as component,r as universal};

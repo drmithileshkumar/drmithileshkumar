@@ -136,7 +136,7 @@ const css$1 = {
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
   return `<nav class="${"svelte-15t2xyb"}"><div class="${"contactrights svelte-15t2xyb"}"><a href="${"/about"}" class="${"about svelte-15t2xyb"}">About me</a>
-        <span class="${"contact"}">Email at <strong>drmithileshkumar@outlook.com</strong></span>
+        <span class="${"contact"}">Email at <strong>info@drmithileshkumar.com</strong></span>
         <span class="${"copyright svelte-15t2xyb"}">All rights reserved. © drmithileshkumar.com</span></div>
     
     </nav>`;

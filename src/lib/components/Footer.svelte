@@ -61,7 +61,7 @@
 <nav>
     <div class="contactrights">
         <a href="/about" class="about">About me</a>
-        <span class="contact">Email at <strong>drmithileshkumar@outlook.com</strong> </span>
+        <span class="contact">Email at <strong>info@drmithileshkumar.com</strong> </span>
         <span class="copyright">All rights reserved. &#169; drmithileshkumar.com</span>
     </div>
     

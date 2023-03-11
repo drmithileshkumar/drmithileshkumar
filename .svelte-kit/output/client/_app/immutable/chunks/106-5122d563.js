@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-ba68e34c.js";import{default as t}from"../components/pages/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/_page.svelte-d6c512e5.js";export{t as component,r as universal};
+import{_ as r}from"./_page-70e4c228.js";import{default as t}from"../components/pages/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/_page.svelte-d6c512e5.js";export{t as component,r as universal};
