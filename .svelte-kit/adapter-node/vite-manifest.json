@@ -15,7 +15,8 @@
     "isEntry": true,
     "imports": [
       "_index3.js",
-      "_index2.js"
+      "_index2.js",
+      "_stores.js"
     ],
     "css": [
       "_app/immutable/assets/_layout-8dd166c4.css"

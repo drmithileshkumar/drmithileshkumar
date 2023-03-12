@@ -1,5 +1,6 @@
-import { b as now, l as loop, c as create_ssr_component, v as validate_component } from "../../chunks/index3.js";
+import { b as now, l as loop, c as create_ssr_component, v as validate_component, d as subscribe } from "../../chunks/index3.js";
 import { w as writable } from "../../chunks/index2.js";
+import { p as page } from "../../chunks/stores.js";
 function is_date(obj) {
   return Object.prototype.toString.call(obj) === "[object Date]";
 }
@@ -128,6 +129,29 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         </a></div>
     </nav>`;
 });
+const Analytics = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $page, $$unsubscribe_page;
+  $$unsubscribe_page = subscribe(page, (value) => $page = value);
+  {
+    {
+      if (typeof gtag !== "undefined") {
+        gtag("config", "G-NLWD2V1K9N", {
+          page_title: document.title,
+          page_path: $page.url.pathname
+        });
+      }
+    }
+  }
+  $$unsubscribe_page();
+  return `${$$result.head += `<!-- HEAD_svelte-1r81vvh_START --><script async src="${"https://www.googletagmanager.com/gtag/js?id=G-NLWD2V1K9N"}"><\/script><script>window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-NLWD2V1K9N");
+    <\/script><!-- HEAD_svelte-1r81vvh_END -->`, ""}`;
+});
 const Footer_svelte_svelte_type_style_lang = "";
 const css$1 = {
   code: "nav.svelte-15t2xyb{height:2.5em;backdrop-filter:blur(5px);display:flex;padding:0.5em;max-width:1200px;margin:auto;border-top:2px solid white;padding-top:0.5em;margin-top:2em}.copyright.svelte-15t2xyb{font-size:0.8em;padding:0.5em 0;color:white}.contactrights.svelte-15t2xyb{display:flex;flex-direction:column;padding:1em 0;color:white}.about.svelte-15t2xyb{padding:1em 0}",
@@ -152,7 +176,8 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   {
     menuwidth.set(200);
   }
-  return `${validate_component(Nav, "Nav").$$render($$result, {}, {}, {})}
+  return `${validate_component(Analytics, "Analytics").$$render($$result, {}, {}, {})}
+${validate_component(Nav, "Nav").$$render($$result, {}, {}, {})}
 <div class="${"container svelte-1u6lw92"}">
     ${slots.default ? slots.default({}) : ``}</div>
 ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;

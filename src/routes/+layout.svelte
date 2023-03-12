@@ -4,6 +4,7 @@
     import {onMount} from 'svelte';
     
     import Nav from '$lib/components/Nav.svelte';
+    import Analytics from '$lib/components/Analytics.svelte';
     import Footer from '$lib/components/Footer.svelte';
     
     let showmenu = true;
@@ -12,6 +13,7 @@
     $: menuwidth.set(showmenu ? 200 : 0);
     
 </script>
+<Analytics />
 <Nav />
 <div class="container" bind:clientWidth={W}>
     <!-- <div class="leftpanel" style="width: {$menuwidth}px">

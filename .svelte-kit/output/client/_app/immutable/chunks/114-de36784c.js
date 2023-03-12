@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-40ceeed6.js";import{default as t}from"../components/pages/notes/maths/Permutations and combinations/Combinations/_page.svelte-05ad7dbd.js";export{t as component,r as universal};
