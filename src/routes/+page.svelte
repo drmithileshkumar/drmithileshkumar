@@ -3,6 +3,7 @@
 	import Practice from "$lib/components/Practice.svelte";
 	import Twitter from "$lib/components/Twitter.svelte";
 	import Youtube from "$lib/components/Youtube.svelte";
+	import Vectorial from "$lib/pages/home/Vectorial.svelte";
 
     
 </script>
@@ -15,12 +16,13 @@
         word-spacing: 0.1em;
     } */
     .homepage {
-        background: black;
+        background: white;
     }
 </style>
 <svelte:head><title>Dr Mithilesh Kumar</title></svelte:head>
 <!-- Youtube, Twitter -->
 <div class="homepage">
+    <Vectorial />
     <Youtube />
     <Notes />
     <Practice />

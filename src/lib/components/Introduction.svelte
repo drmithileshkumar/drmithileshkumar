@@ -5,7 +5,7 @@
     .introduction {
         line-height: 1.45;
         word-spacing: 0.1em;
-        color: white;
+        color: black;
     }
 </style>
 <div class="introduction">

@@ -16,7 +16,7 @@
         flex-direction: column;
         line-height: 1.45;
         word-spacing: 0.1em;
-        color: white;
+        color: black;
     }
 </style>
 <svelte:head><title>Dr Mithilesh Kumar</title></svelte:head>

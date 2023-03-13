@@ -25,7 +25,7 @@
         padding: 0.5em;
         max-width: 1200px;
         margin: auto;
-        border-top: 2px solid white;
+        border-top: 2px solid black;
         padding-top: 0.5em;
         margin-top: 2em;
     }
@@ -46,13 +46,13 @@
     .copyright {
         font-size: 0.8em;
         padding: 0.5em 0;
-        color: white;
+        color: black;
     }
     .contactrights {
         display: flex;
         flex-direction: column;
         padding: 1em 0;
-        color:white;
+        color:black;
     }
     .about {
         padding: 1em 0;

@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-c1ceab9a.js";import{default as t}from"../components/pages/practice/class5/_page.svelte-8409903f.js";export{t as component,r as universal};
+import{_ as r}from"./_page-509f6c03.js";import{default as t}from"../components/pages/practice/class5/_page.svelte-8409903f.js";export{t as component,r as universal};

@@ -7,7 +7,7 @@
         line-height: 1.45;
         word-spacing: 0.1em;
         max-width: 1200px;
-        color: white;
+        color: black;
     }
     .fillerImage {
         /* width: min(90vw,200px); */

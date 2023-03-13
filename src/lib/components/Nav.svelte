@@ -33,7 +33,7 @@
         padding: 0 0.5em;
         max-width: 1200px;
         margin: auto;
-        background-color: black;
+        background-color: white;
     }
     .logo {
         display: flex;
@@ -46,7 +46,7 @@
         width: 2em;
     } */
     .name {
-        color: white;
+        color: black;
         /* font-variant: all-petite-caps;
         letter-spacing: 0.1em;
         font-weight: 500;

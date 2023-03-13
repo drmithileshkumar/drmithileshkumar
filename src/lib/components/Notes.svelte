@@ -35,7 +35,7 @@
         .notes {
             font-size: 1.2em;
             background-color: green;
-            color: white;
+            color: black;
             padding: 0.5em 1em;
             border-radius: 10px;
         }
@@ -82,7 +82,7 @@
         }
         .statement {
             background: radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));
-            color: white;
+            color: black;
             text-shadow: 1px 1px 3px rgb(4, 4, 4);
             box-shadow: 1px 1px 3px rgb(129, 128, 128);
             padding: 1em;
