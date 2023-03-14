@@ -278,9 +278,9 @@ function style_object_to_string(style_object) {
 }
 export {
   safe_not_equal as a,
-  now as b,
+  subscribe as b,
   create_ssr_component as c,
-  subscribe as d,
+  now as d,
   escape as e,
   add_attribute as f,
   getContext as g,

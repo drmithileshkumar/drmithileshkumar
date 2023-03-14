@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/notes/maths/Vector algebra/Addition of vectors/_page.js';
+import * as universal from '../entries/pages/(general)/practice/class11/_page.js';
 
 export const index = 169;
-export const component = async () => (await import('../entries/pages/notes/maths/Vector algebra/Addition of vectors/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/notes/maths/Vector algebra/Addition of vectors/_page.svelte-2ae2efba.js';
+export const component = async () => (await import('../entries/pages/(general)/practice/class11/_page.svelte.js')).default;
+export const file = '_app/immutable/components/pages/(general)/practice/class11/_page.svelte-641745a7.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/notes/maths/Vector algebra/Addition of vectors/_page.svelte-2ae2efba.js","_app/immutable/chunks/index-d6f2153b.js","_app/immutable/chunks/stores-12920cee.js","_app/immutable/chunks/index-00232363.js","_app/immutable/chunks/stores-9ff75ee0.js","_app/immutable/chunks/singletons-38a56914.js","_app/immutable/modules/pages/notes/maths/Vector algebra/Addition of vectors/_page.js-2e5c62be.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-44630c89.js"];
-export const stylesheets = ["_app/immutable/assets/Practice-5698baa0.css","_app/immutable/assets/Message-1e964222.css"];
+export const imports = ["_app/immutable/components/pages/(general)/practice/class11/_page.svelte-641745a7.js","_app/immutable/chunks/index-ade51a35.js","_app/immutable/chunks/Message-750adab6.js","_app/immutable/chunks/stores-5a9af228.js","_app/immutable/chunks/index-c2cc1873.js","_app/immutable/chunks/Practice-5a49aa4a.js","_app/immutable/chunks/ripple-d6af89fa.js","_app/immutable/modules/pages/(general)/practice/class11/_page.js-fd5db701.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-ad5c4b7f.js"];
+export const stylesheets = ["_app/immutable/assets/Link-867ad8ee.css","_app/immutable/assets/Message-1e964222.css","_app/immutable/assets/Practice-5698baa0.css"];
 export const fonts = [];

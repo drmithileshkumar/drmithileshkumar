@@ -21,6 +21,7 @@ const Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { data_0 = null } = $$props;
   let { data_1 = null } = $$props;
   let { data_2 = null } = $$props;
+  let { data_3 = null } = $$props;
   {
     setContext("__svelte__", stores);
   }
@@ -39,6 +40,8 @@ const Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.data_1(data_1);
   if ($$props.data_2 === void 0 && $$bindings.data_2 && data_2 !== void 0)
     $$bindings.data_2(data_2);
+  if ($$props.data_3 === void 0 && $$bindings.data_3 && data_3 !== void 0)
+    $$bindings.data_3(data_3);
   {
     stores.page.set(page);
   }
@@ -49,7 +52,11 @@ ${components[1] ? `${validate_component(components[0] || missing_component, "sve
     default: () => {
       return `${components[2] ? `${validate_component(components[1] || missing_component, "svelte:component").$$render($$result, { data: data_1 }, {}, {
         default: () => {
-          return `${validate_component(components[2] || missing_component, "svelte:component").$$render($$result, { data: data_2, form }, {}, {})}`;
+          return `${components[3] ? `${validate_component(components[2] || missing_component, "svelte:component").$$render($$result, { data: data_2 }, {}, {
+            default: () => {
+              return `${validate_component(components[3] || missing_component, "svelte:component").$$render($$result, { data: data_3, form }, {}, {})}`;
+            }
+          })}` : `${validate_component(components[2] || missing_component, "svelte:component").$$render($$result, { data: data_2, form }, {}, {})}`}`;
         }
       })}` : `${validate_component(components[1] || missing_component, "svelte:component").$$render($$result, { data: data_1, form }, {}, {})}`}`;
     }
@@ -58,7 +65,7 @@ ${components[1] ? `${validate_component(components[0] || missing_component, "sve
 ${``}`;
 });
 set_paths({ "base": "", "assets": "" });
-set_version("1678698874953");
+set_version("1678778618928");
 const options = {
   csp: { "mode": "auto", "directives": { "upgrade-insecure-requests": false, "block-all-mixed-content": false }, "reportOnly": { "upgrade-insecure-requests": false, "block-all-mixed-content": false } },
   csrf_check_origin: true,

@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/cv/_page.js';
+import * as universal from '../entries/pages/(general)/notes/_page.js';
 
 export const index = 34;
-export const component = async () => (await import('../entries/pages/cv/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/cv/_page.svelte-a430a35b.js';
+export const component = async () => (await import('../entries/pages/(general)/notes/_page.svelte.js')).default;
+export const file = '_app/immutable/components/pages/(general)/notes/_page.svelte-35d3d811.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/cv/_page.svelte-a430a35b.js","_app/immutable/chunks/index-d6f2153b.js","_app/immutable/chunks/Papers-b4cbb53d.js","_app/immutable/modules/pages/cv/_page.js-1da4edb6.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-e52bee93.js"];
-export const stylesheets = ["_app/immutable/assets/_page-b15e5c28.css","_app/immutable/assets/Papers-04a964fd.css"];
+export const imports = ["_app/immutable/components/pages/(general)/notes/_page.svelte-35d3d811.js","_app/immutable/chunks/index-ade51a35.js","_app/immutable/chunks/Link-3f2b67f9.js","_app/immutable/modules/pages/(general)/notes/_page.js-53187923.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-7e5a6ef1.js"];
+export const stylesheets = ["_app/immutable/assets/Message-1e964222.css","_app/immutable/assets/Link-867ad8ee.css"];
 export const fonts = [];

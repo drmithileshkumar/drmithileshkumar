@@ -1,8 +1,9 @@
-
+import * as universal from '../entries/pages/(cv)/cv/_page.js';
 
 export const index = 23;
-export const component = async () => (await import('../entries/pages/shorts/class12/_layout.svelte.js')).default;
-export const file = '_app/immutable/components/pages/shorts/class12/_layout.svelte-b0c252b9.js';
-export const imports = ["_app/immutable/components/pages/shorts/class12/_layout.svelte-b0c252b9.js","_app/immutable/chunks/preload-helper-41c905a7.js","_app/immutable/chunks/index-d6f2153b.js","_app/immutable/chunks/Select-a482e882.js","_app/immutable/chunks/stores-b5bb507d.js","_app/immutable/chunks/index-00232363.js"];
-export const stylesheets = ["_app/immutable/assets/Select-60103244.css"];
+export const component = async () => (await import('../entries/pages/(cv)/cv/_page.svelte.js')).default;
+export const file = '_app/immutable/components/pages/(cv)/cv/_page.svelte-cfcde2ea.js';
+export { universal };
+export const imports = ["_app/immutable/components/pages/(cv)/cv/_page.svelte-cfcde2ea.js","_app/immutable/chunks/index-ade51a35.js","_app/immutable/chunks/Papers-76ddcfd3.js","_app/immutable/modules/pages/(cv)/cv/_page.js-fe912fe0.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-e52bee93.js"];
+export const stylesheets = ["_app/immutable/assets/_page-b15e5c28.css","_app/immutable/assets/Papers-04a964fd.css"];
 export const fonts = [];

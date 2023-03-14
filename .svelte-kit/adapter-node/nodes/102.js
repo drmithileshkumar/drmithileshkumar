@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/notes/maths/Linear inequalities/Inequalities/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Matrices/Transpose of a matrix/_page.js';
 
 export const index = 102;
-export const component = async () => (await import('../entries/pages/notes/maths/Linear inequalities/Inequalities/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/notes/maths/Linear inequalities/Inequalities/_page.svelte-10efd638.js';
+export const component = async () => (await import('../entries/pages/(general)/notes/maths/Matrices/Transpose of a matrix/_page.svelte.js')).default;
+export const file = '_app/immutable/components/pages/(general)/notes/maths/Matrices/Transpose of a matrix/_page.svelte-ff437878.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/notes/maths/Linear inequalities/Inequalities/_page.svelte-10efd638.js","_app/immutable/chunks/index-d6f2153b.js","_app/immutable/chunks/stores-12920cee.js","_app/immutable/chunks/index-00232363.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/chunks/stores-9ff75ee0.js","_app/immutable/chunks/singletons-38a56914.js","_app/immutable/modules/pages/notes/maths/Linear inequalities/Inequalities/_page.js-2e5c62be.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-a7a7d64e.js"];
+export const imports = ["_app/immutable/components/pages/(general)/notes/maths/Matrices/Transpose of a matrix/_page.svelte-ff437878.js","_app/immutable/chunks/index-ade51a35.js","_app/immutable/chunks/stores-cbf9661a.js","_app/immutable/chunks/index-c2cc1873.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/chunks/stores-3ecb71e6.js","_app/immutable/chunks/singletons-2c9f5b5d.js","_app/immutable/modules/pages/(general)/notes/maths/Matrices/Transpose of a matrix/_page.js-0ab52947.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-27d96fd4.js"];
 export const stylesheets = ["_app/immutable/assets/Practice-5698baa0.css","_app/immutable/assets/Message-1e964222.css"];
 export const fonts = [];

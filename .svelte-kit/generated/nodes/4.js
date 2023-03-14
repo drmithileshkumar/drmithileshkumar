@@ -1,1 +1,1 @@
-export { default as component } from "../../../src/routes/notes/+error.svelte";
+export { default as component } from "../../../src/routes/(general)/+layout.svelte";

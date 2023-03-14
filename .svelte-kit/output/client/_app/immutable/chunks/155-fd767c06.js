@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-6bd91353.js";import{default as t}from"../components/pages/(general)/notes/maths/Trigonometric functions/Angles/_page.svelte-e7aee626.js";export{t as component,r as universal};

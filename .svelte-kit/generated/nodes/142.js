@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Sets/Real numbers/+page.js";
+import * as universal from "../../../src/routes/(general)/notes/maths/Straight lines/Distance of a point from a line/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Sets/Real numbers/+page.svelte";
+export { default as component } from "../../../src/routes/(general)/notes/maths/Straight lines/Distance of a point from a line/+page.svelte";

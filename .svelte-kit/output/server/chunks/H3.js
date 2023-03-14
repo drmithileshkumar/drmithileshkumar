@@ -1,4 +1,4 @@
-import { c as create_ssr_component, q as compute_rest_props, d as subscribe, e as escape, j as null_to_empty } from "./index3.js";
+import { c as create_ssr_component, q as compute_rest_props, b as subscribe, e as escape, j as null_to_empty } from "./index3.js";
 import { b as presentationMode, c as currentSlide } from "./stores2.js";
 const H1_svelte_svelte_type_style_lang = "";
 const H2_svelte_svelte_type_style_lang = "";

@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/notes/maths/Trigonometric functions/Angles/_page.js';
+import * as universal from '../entries/pages/(general)/notes/quantum/_page.js';
 
 export const index = 165;
-export const component = async () => (await import('../entries/pages/notes/maths/Trigonometric functions/Angles/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/notes/maths/Trigonometric functions/Angles/_page.svelte-d1088563.js';
+export const component = async () => (await import('../entries/pages/(general)/notes/quantum/_page.svelte.js')).default;
+export const file = '_app/immutable/components/pages/(general)/notes/quantum/_page.svelte-62d28e06.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/notes/maths/Trigonometric functions/Angles/_page.svelte-d1088563.js","_app/immutable/chunks/index-d6f2153b.js","_app/immutable/chunks/stores-12920cee.js","_app/immutable/chunks/index-00232363.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/chunks/stores-9ff75ee0.js","_app/immutable/chunks/singletons-38a56914.js","_app/immutable/modules/pages/notes/maths/Trigonometric functions/Angles/_page.js-2e5c62be.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-6bd91353.js"];
-export const stylesheets = ["_app/immutable/assets/Practice-5698baa0.css","_app/immutable/assets/Message-1e964222.css"];
+export const imports = ["_app/immutable/components/pages/(general)/notes/quantum/_page.svelte-62d28e06.js","_app/immutable/chunks/index-ade51a35.js","_app/immutable/chunks/stores-cbf9661a.js","_app/immutable/chunks/index-c2cc1873.js","_app/immutable/chunks/stores-3ecb71e6.js","_app/immutable/chunks/singletons-2c9f5b5d.js","_app/immutable/chunks/constants-5a4b1f74.js","_app/immutable/chunks/Image.svelte_svelte_type_style_lang-ed50eec8.js","_app/immutable/chunks/index-f0f232d7.js","_app/immutable/chunks/H3-146ef3bc.js","_app/immutable/chunks/H2-a9aa2672.js","_app/immutable/chunks/Image-bb46eaba.js","_app/immutable/modules/pages/(general)/notes/quantum/_page.js-614206ca.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-e0139a24.js"];
+export const stylesheets = ["_app/immutable/assets/_page-2da0b3c0.css","_app/immutable/assets/Practice-5698baa0.css","_app/immutable/assets/Message-1e964222.css","_app/immutable/assets/H3-79f4b182.css","_app/immutable/assets/Image-da34f997.css"];
 export const fonts = [];

@@ -1,0 +1,1 @@
+import{_ as r}from"./_page-b774eedf.js";import{default as t}from"../components/pages/(general)/notes/maths/Sets/Finite and infinite sets/_page.svelte-58204026.js";export{t as component,r as universal};

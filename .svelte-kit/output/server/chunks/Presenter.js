@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as subscribe, h as each, e as escape, i as set_store_value, f as add_attribute } from "./index3.js";
+import { c as create_ssr_component, b as subscribe, h as each, e as escape, i as set_store_value, f as add_attribute } from "./index3.js";
 /* empty css                                      */import { w as writable } from "./index2.js";
 const lineWidth = writable(2);
 const strokeColor = writable("red");

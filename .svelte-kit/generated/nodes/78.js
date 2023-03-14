@@ -1,3 +1,3 @@
-import * as universal from "../../../src/routes/notes/maths/Differential equations/Basic concepts/+page.js";
+import * as universal from "../../../src/routes/(general)/notes/maths/Integrals/Fundamental theorem of calculus/+page.js";
 export { universal };
-export { default as component } from "../../../src/routes/notes/maths/Differential equations/Basic concepts/+page.svelte";
+export { default as component } from "../../../src/routes/(general)/notes/maths/Integrals/Fundamental theorem of calculus/+page.svelte";

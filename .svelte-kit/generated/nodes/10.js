@@ -1,1 +1,1 @@
-export { default as component } from "../../../src/routes/practice/class11/+layout.svelte";
+export { default as component } from "../../../src/routes/(general)/practice/class1/+layout.svelte";
