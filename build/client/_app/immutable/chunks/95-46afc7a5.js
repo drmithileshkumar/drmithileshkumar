@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-bf4ef1a7.js";import{default as t}from"../components/pages/(general)/notes/maths/Linear programming/Different types of linear programming problems/_page.svelte-6ea25588.js";export{t as component,r as universal};
+import{_ as r}from"./_page-70e4c228.js";import{default as t}from"../components/pages/(general)/notes/maths/Linear programming/Different types of linear programming problems/_page.svelte-6ea25588.js";export{t as component,r as universal};

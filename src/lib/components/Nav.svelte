@@ -64,14 +64,14 @@
         font-variant: all-petite-caps;
         font-size: 1.5em;
     } */
-    .links a {
+    /* .links a {
         border: 0.5px solid;
         padding: 0.3em 0.5em;
     }
     .links {
         display: flex;
 
-    }
+    } */
 </style>
 <nav bind:clientWidth={W}>
     <a class="logo" href="/">
@@ -87,7 +87,7 @@
         <!-- <a class="link" style="font-size:{fs}px;" href="/features">Features</a> -->
         <!-- <a class="link" href="/projects">Projects</a> -->
     </div>
-    <div class="links">
+    <!-- <div class="links">
         <a href='/notes'>
             Notes
         </a>
@@ -97,6 +97,6 @@
         <a href='/iit'>
             IIT
         </a>
-    </div>
+    </div> -->
     <!-- <button class="iconButton" on:click={switchTheme}><span class='material-icons'>{lightTheme ? 'light_mode' : 'dark_mode'}</span></button> -->
 </nav>

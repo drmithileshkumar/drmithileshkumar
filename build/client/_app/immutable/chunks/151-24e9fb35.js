@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-690ef50f.js";import{default as t}from"../components/pages/(general)/notes/maths/Three dimensional geometry/Distance of a point from a plane/_page.svelte-deb02c57.js";export{t as component,r as universal};
+import{_ as r}from"./_page-1210e5d4.js";import{default as t}from"../components/pages/(general)/notes/maths/Three dimensional geometry/Distance of a point from a plane/_page.svelte-deb02c57.js";export{t as component,r as universal};

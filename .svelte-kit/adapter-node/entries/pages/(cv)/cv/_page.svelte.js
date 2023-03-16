@@ -14,11 +14,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 <p style="${"font-weight: 400;line-height: 1.45;font-size: 0.9em;"}">I&#39;m passionate about teaching, but I&#39;m full-time learner. I want to contribute to the society by teaching young ones what I have learnt so far and learn from them in return. I taught quantum computing to my research group at Simula-UiB, Bergen, Norway.</p></section>
             <div class="${"contact svelte-lpuv3"}"><h2 class="${"svelte-lpuv3"}">Contact</h2>
                 <table class="${"contactable svelte-lpuv3"}" style="${"font-size: 0.9em"}"><tr><td class="${"svelte-lpuv3"}"><span class="${"material-icons"}">home</span></td>
-                        <td class="${"svelte-lpuv3"}">Chandigarh</td></tr>
+                        <td class="${"svelte-lpuv3"}">Bokaro</td></tr>
                     <tr><td style="${"padding-right:0"}" class="${"svelte-lpuv3"}"><span class="${"material-icons"}">phone</span></td>
                         <td class="${"svelte-lpuv3"}">8797081308</td></tr>
                     <tr><td style="${"padding-right:0"}" class="${"svelte-lpuv3"}"><span class="${"material-icons"}">email</span></td>
-                        <td class="${"svelte-lpuv3"}">drmithileshkumar@outlook.com</td></tr>
+                        <td class="${"svelte-lpuv3"}">info@drmithileshkumar.com</td></tr>
                     <tr><td style="${"padding-right:0"}" class="${"svelte-lpuv3"}"><span class="${"material-icons"}">link</span></td>
                         <td class="${"svelte-lpuv3"}">www.drmithileshkumar.com</td></tr></table></div></aside>
         <div class="${"main svelte-lpuv3"}"><section class="${"education"}"><h2 class="${"svelte-lpuv3"}">Education</h2>

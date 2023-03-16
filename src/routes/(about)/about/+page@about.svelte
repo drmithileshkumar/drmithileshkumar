@@ -10,7 +10,7 @@
 </script>
 <style>
     .container {
-        padding: 1em;
+        padding: 0 1em;
     }
     .profile {
         position: relative;
@@ -19,13 +19,15 @@
     .dp {
         aspect-ratio: 1 / 1;
         width: 15%;
+        height: auto;
         border-radius: 50%;
         position: absolute;
         top: 60%;
         left: 2%;
         overflow: hidden;
-        border: 2px solid black;
+        border: 2px solid transparent;
         box-shadow: 1px 1px 3px gray;
+        background: white;
     }
     .bar {
         height: 1em;

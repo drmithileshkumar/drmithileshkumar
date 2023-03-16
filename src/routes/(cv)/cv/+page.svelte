@@ -126,7 +126,7 @@
                 <table class="contactable" style="font-size: 0.9em">
                     <tr>
                         <td><span class="material-icons">home</span></td>
-                        <td>Chandigarh</td>
+                        <td>Bokaro</td>
                     </tr>
                     <tr>
                         <td style="padding-right:0"><span class="material-icons">phone</span></td>
@@ -134,7 +134,7 @@
                     </tr>
                     <tr>
                         <td style="padding-right:0"><span class="material-icons">email</span></td>
-                        <td>drmithileshkumar@outlook.com</td>
+                        <td>info@drmithileshkumar.com</td>
                     </tr>
                     <tr>
                         <td style="padding-right:0"><span class="material-icons">link</span></td>

@@ -109,24 +109,19 @@ const LogoSvg = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Nav_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: "nav.svelte-qz6x08.svelte-qz6x08{position:sticky;top:0;height:4.5em;backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:space-between;z-index:100;gap:1em;padding:0 0.5em;max-width:1200px;margin:auto;background-color:white}.logo.svelte-qz6x08.svelte-qz6x08{display:flex;justify-content:center;align-items:center;gap:0.5em;text-align:center}.name.svelte-qz6x08.svelte-qz6x08{color:black}.pages.svelte-qz6x08.svelte-qz6x08{display:flex;gap:1em}.logoimage.svelte-qz6x08.svelte-qz6x08{border-radius:50%;overflow:hidden}.links.svelte-qz6x08 a.svelte-qz6x08{border:0.5px solid;padding:0.3em 0.5em}.links.svelte-qz6x08.svelte-qz6x08{display:flex}",
+  code: "nav.svelte-35gkse{position:sticky;top:0;height:4.5em;backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:space-between;z-index:100;gap:1em;padding:0 0.5em;max-width:1200px;margin:auto;background-color:white}.logo.svelte-35gkse{display:flex;justify-content:center;align-items:center;gap:0.5em;text-align:center}.name.svelte-35gkse{color:black}.pages.svelte-35gkse{display:flex;gap:1em}.logoimage.svelte-35gkse{border-radius:50%;overflow:hidden}",
   map: null
 };
 const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$2);
-  return `<nav class="${"svelte-qz6x08"}"><a class="${"logo svelte-qz6x08"}" href="${"/"}">
-        <span class="${"logoimage svelte-qz6x08"}">${validate_component(LogoSvg, "LogoSvg").$$render($$result, {}, {}, {})}</span>
+  return `<nav class="${"svelte-35gkse"}"><a class="${"logo svelte-35gkse"}" href="${"/"}">
+        <span class="${"logoimage svelte-35gkse"}">${validate_component(LogoSvg, "LogoSvg").$$render($$result, {}, {}, {})}</span>
         
-        <span class="${"name svelte-qz6x08"}">Dr Mithilesh Kumar</span></a>
-    <div class="${"pages svelte-qz6x08"}">
+        <span class="${"name svelte-35gkse"}">Dr Mithilesh Kumar</span></a>
+    <div class="${"pages svelte-35gkse"}">
         
         </div>
-    <div class="${"links svelte-qz6x08"}"><a href="${"/notes"}" class="${"svelte-qz6x08"}">Notes
-        </a>
-        <a href="${"/practice"}" class="${"svelte-qz6x08"}">Practice
-        </a>
-        <a href="${"/iit"}" class="${"svelte-qz6x08"}">IIT
-        </a></div>
+    
     </nav>`;
 });
 const Analytics = create_ssr_component(($$result, $$props, $$bindings, slots) => {

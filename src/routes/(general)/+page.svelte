@@ -4,7 +4,8 @@
 	import Twitter from "$lib/components/Twitter.svelte";
 	import Youtube from "$lib/components/Youtube.svelte";
 	import Vectorial from "$lib/pages/home/Vectorial.svelte";
-
+	import Trigonometry from "$lib/pages/home/Trigonometry.svelte";
+    import HTML from "$lib/pages/home/HTML.svelte";
     
 </script>
 <style>
@@ -22,10 +23,13 @@
 <svelte:head><title>Dr Mithilesh Kumar</title></svelte:head>
 <!-- Youtube, Twitter -->
 <div class="homepage">
+    <Trigonometry />
+    <br>
+    <HTML />
     <Vectorial />
-    <Youtube />
+    <!-- <Youtube />
     <Notes />
-    <Practice />
+    <Practice /> -->
     <Twitter />
 </div>
 

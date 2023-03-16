@@ -72,18 +72,18 @@ const Research = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 });
 const _page_about_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".container.svelte-1fzfsea{padding:1em}.profile.svelte-1fzfsea{position:relative}.dp.svelte-1fzfsea{aspect-ratio:1 / 1;width:15%;border-radius:50%;position:absolute;top:60%;left:2%;overflow:hidden;border:2px solid black;box-shadow:1px 1px 3px gray}.bar.svelte-1fzfsea{height:1em}.intro.svelte-1fzfsea{margin-top:auto}.name.svelte-1fzfsea{font-size:1.3em}.welcome.svelte-1fzfsea{display:flex;justify-content:flex-start;flex-direction:column;line-height:1.45;word-spacing:0.1em;color:black}",
+  code: ".container.svelte-snxo6c{padding:0 1em}.profile.svelte-snxo6c{position:relative}.dp.svelte-snxo6c{aspect-ratio:1 / 1;width:15%;height:auto;border-radius:50%;position:absolute;top:60%;left:2%;overflow:hidden;border:2px solid transparent;box-shadow:1px 1px 3px gray;background:white}.bar.svelte-snxo6c{height:1em}.intro.svelte-snxo6c{margin-top:auto}.name.svelte-snxo6c{font-size:1.3em}.welcome.svelte-snxo6c{display:flex;justify-content:flex-start;flex-direction:column;line-height:1.45;word-spacing:0.1em;color:black}",
   map: null
 };
 const Page_about = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `${$$result.head += `<!-- HEAD_svelte-d6qc0s_START -->${$$result.title = `<title>Dr Mithilesh Kumar</title>`, ""}<!-- HEAD_svelte-d6qc0s_END -->`, ""}
-<div class="${"container svelte-1fzfsea"}"><div class="${"profile svelte-1fzfsea"}"><div class="${"cover"}"><img src="${"/notes/quantum/teleportation.svg"}"></div>
-        <div class="${"dp svelte-1fzfsea"}"><img width="${"100%"}" height="${"100%"}" src="${"/favicon.png"}"></div></div>
-    <div class="${"bar svelte-1fzfsea"}"></div>
-    <div class="${"intro svelte-1fzfsea"}"><div class="${"name svelte-1fzfsea"}"><a href="${"/"}">Dr Mithilesh Kumar</a></div>
+<div class="${"container svelte-snxo6c"}"><div class="${"profile svelte-snxo6c"}"><div class="${"cover"}"><img src="${"/notes/quantum/teleportation.svg"}"></div>
+        <div class="${"dp svelte-snxo6c"}"><img width="${"100%"}" height="${"100%"}" src="${"/favicon.png"}"></div></div>
+    <div class="${"bar svelte-snxo6c"}"></div>
+    <div class="${"intro svelte-snxo6c"}"><div class="${"name svelte-snxo6c"}"><a href="${"/"}">Dr Mithilesh Kumar</a></div>
         <div class="${"interests"}"></div></div>
-    <div class="${"welcome svelte-1fzfsea"}">
+    <div class="${"welcome svelte-snxo6c"}">
         <p>Hello, my passion is teaching, but I&#39;m a full-time learner. I&#39;m a self-taught full-stack web developer. In addition, I&#39;ve master degrees in theoretical physics (<strong>AIR 971, IIT Kanpur</strong>) and theoretical computer science (<strong>Gold Medalist, CMI, Chennai</strong>). I&#39;ve done PhD in parameterized algorithms (<strong>UiB, Norway</strong>) and Post Doctoral research (<strong>Simula-UiB, Norway</strong>) in quantum-safe cryptography. I taught quantum algorithm to my research group at Simula-UiB. My goal is to contribute to the society by teaching young ones what I have learnt so far and learn from them in return. ( <a href="${"/cv"}">My CV</a> )
         </p></div>
     <br>

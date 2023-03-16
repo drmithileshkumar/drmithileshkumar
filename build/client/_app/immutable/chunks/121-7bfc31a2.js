@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-bbd1fcc8.js";import{default as t}from"../components/pages/(general)/notes/maths/Sequences and series/Relationship between AM and GM/_page.svelte-c346cc51.js";export{t as component,r as universal};
+import{_ as r}from"./_page-a979002b.js";import{default as t}from"../components/pages/(general)/notes/maths/Sequences and series/Relationship between AM and GM/_page.svelte-c346cc51.js";export{t as component,r as universal};
