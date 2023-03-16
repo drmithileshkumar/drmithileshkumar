@@ -32,56 +32,56 @@ const Vectorial = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 });
 const Trigonometry_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: ".trigonometry.svelte-39czx7.svelte-39czx7{position:relative;background-image:url('/announcement/perspective.svg');background-repeat:no-repeat;background-size:cover;background-position:center;padding:0 1em;color:white;border-radius:10px;overflow:hidden}.title.svelte-39czx7.svelte-39czx7{font-size:10vw;margin-bottom:0;font-weight:600;display:flex;align-items:center;justify-content:center;text-shadow:9px 3px 5px rgba(81, 81, 81, 0.445);color:rgb(7 68 75);margin-top:10px;margin-bottom:10px}.target.svelte-39czx7.svelte-39czx7,.date.svelte-39czx7.svelte-39czx7,.duration.svelte-39czx7.svelte-39czx7,.price.svelte-39czx7.svelte-39czx7{display:flex;justify-content:space-between;line-height:1.4em}.action.svelte-39czx7.svelte-39czx7{display:flex;justify-content:center;padding:1em}.action.svelte-39czx7 a.svelte-39czx7{background-color:white;padding:0.5em 0.7em;border-radius:5px;font-size:1.1em}",
+  code: ".trigonometry.svelte-gsb6u3.svelte-gsb6u3{max-width:400px;position:relative;background-image:url('/announcement/perspective.svg');background-repeat:no-repeat;background-size:cover;background-position:center;padding:0 1em;color:white;border-radius:10px;overflow:hidden}.title.svelte-gsb6u3.svelte-gsb6u3{font-size:2em;margin-bottom:0;font-weight:600;display:flex;align-items:center;justify-content:center;text-shadow:9px 3px 5px rgba(81, 81, 81, 0.445);color:rgb(7 68 75);margin-top:10px;margin-bottom:10px}.target.svelte-gsb6u3.svelte-gsb6u3,.date.svelte-gsb6u3.svelte-gsb6u3,.duration.svelte-gsb6u3.svelte-gsb6u3,.price.svelte-gsb6u3.svelte-gsb6u3{display:flex;justify-content:space-between;line-height:1.4em}.action.svelte-gsb6u3.svelte-gsb6u3{display:flex;justify-content:center;padding:1em}.action.svelte-gsb6u3 a.svelte-gsb6u3{background-color:white;padding:0.5em 0.7em;border-radius:5px;font-size:1.1em}",
   map: null
 };
 const Trigonometry = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$2);
-  return `<div class="${"trigonometry svelte-39czx7"}"><div class="${"title svelte-39czx7"}">Trigonometry</div>
-    <div class="${"target svelte-39czx7"}"><span class="${"label"}">Target</span>
+  return `<div class="${"trigonometry svelte-gsb6u3"}"><div class="${"title svelte-gsb6u3"}">Trigonometry</div>
+    <div class="${"target svelte-gsb6u3"}"><span class="${"label"}">Target</span>
         <span class="${"value"}">Class 11 + 12</span></div>
-    <div class="${"date svelte-39czx7"}"><span class="${"label"}">Starting</span>
+    <div class="${"date svelte-gsb6u3"}"><span class="${"label"}">Starting</span>
         <div class="${"value"}">15 April, 2023</div></div>
-    <div class="${"duration svelte-39czx7"}"><span class="${"label"}">Duration</span>
+    <div class="${"duration svelte-gsb6u3"}"><span class="${"label"}">Duration</span>
         <span class="${"value"}">2 months</span></div>
-    <div class="${"price svelte-39czx7"}"><span class="${"label"}">Price</span>
+    <div class="${"price svelte-gsb6u3"}"><span class="${"label"}">Price</span>
         <span class="${"value"}">Rs 2000</span></div>
     
-    <div class="${"action svelte-39czx7"}"><a href="${"https://mathril.com"}" class="${"svelte-39czx7"}">Register</a></div>
+    <div class="${"action svelte-gsb6u3"}"><a href="${"https://mathril.com"}" class="${"svelte-gsb6u3"}">Register</a></div>
 </div>`;
 });
 const HTML_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: ".trigonometry.svelte-1k1bmy8.svelte-1k1bmy8{position:relative;background-image:url('/announcement/html.svg');background-repeat:no-repeat;background-size:cover;background-position:center;padding:0 1em;color:white;border-radius:10px;overflow:hidden}.title.svelte-1k1bmy8.svelte-1k1bmy8{font-size:10vw;margin-bottom:0;font-weight:600;display:flex;align-items:center;justify-content:center;text-shadow:9px 3px 5px rgba(81, 81, 81, 0.445);color:rgb(75 68 7);margin-top:10px;margin-bottom:10px}.target.svelte-1k1bmy8.svelte-1k1bmy8,.date.svelte-1k1bmy8.svelte-1k1bmy8,.duration.svelte-1k1bmy8.svelte-1k1bmy8,.price.svelte-1k1bmy8.svelte-1k1bmy8{display:flex;justify-content:space-between;line-height:1.4em}.action.svelte-1k1bmy8.svelte-1k1bmy8{display:flex;justify-content:center;padding:1em}.action.svelte-1k1bmy8 a.svelte-1k1bmy8{background-color:white;padding:0.5em 0.7em;border-radius:5px;font-size:1.1em}",
+  code: ".trigonometry.svelte-1ipt74o.svelte-1ipt74o{max-width:400px;position:relative;background-image:url('/announcement/html.svg');background-repeat:no-repeat;background-size:cover;background-position:center;padding:0 1em;color:white;border-radius:10px;overflow:hidden}.title.svelte-1ipt74o.svelte-1ipt74o{font-size:2em;margin-bottom:0;font-weight:600;display:flex;align-items:center;justify-content:center;text-shadow:9px 3px 5px rgba(81, 81, 81, 0.445);color:rgb(75 68 7);margin-top:10px;margin-bottom:10px}.target.svelte-1ipt74o.svelte-1ipt74o,.date.svelte-1ipt74o.svelte-1ipt74o,.duration.svelte-1ipt74o.svelte-1ipt74o,.price.svelte-1ipt74o.svelte-1ipt74o{display:flex;justify-content:space-between;line-height:1.4em}.action.svelte-1ipt74o.svelte-1ipt74o{display:flex;justify-content:center;padding:1em}.action.svelte-1ipt74o a.svelte-1ipt74o{background-color:white;padding:0.5em 0.7em;border-radius:5px;font-size:1.1em}",
   map: null
 };
 const HTML = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<div class="${"trigonometry svelte-1k1bmy8"}"><div class="${"title svelte-1k1bmy8"}">HTML with AI</div>
-    <div class="${"target svelte-1k1bmy8"}"><span class="${"label"}">Target</span>
+  return `<div class="${"trigonometry svelte-1ipt74o"}"><div class="${"title svelte-1ipt74o"}">HTML with AI</div>
+    <div class="${"target svelte-1ipt74o"}"><span class="${"label"}">Target</span>
         <span class="${"value"}">All</span></div>
-    <div class="${"date svelte-1k1bmy8"}"><span class="${"label"}">Starting</span>
+    <div class="${"date svelte-1ipt74o"}"><span class="${"label"}">Starting</span>
         <div class="${"value"}">15 April, 2023</div></div>
-    <div class="${"duration svelte-1k1bmy8"}"><span class="${"label"}">Duration</span>
+    <div class="${"duration svelte-1ipt74o"}"><span class="${"label"}">Duration</span>
         <span class="${"value"}">2 months</span></div>
-    <div class="${"price svelte-1k1bmy8"}"><span class="${"label"}">Price</span>
+    <div class="${"price svelte-1ipt74o"}"><span class="${"label"}">Price</span>
         <span class="${"value"}">Rs 2000</span></div>
     
-    <div class="${"action svelte-1k1bmy8"}"><a href="${"https://aiguru.dev"}" class="${"svelte-1k1bmy8"}">Register</a></div>
+    <div class="${"action svelte-1ipt74o"}"><a href="${"https://aiguru.dev"}" class="${"svelte-1ipt74o"}">Register</a></div>
 </div>`;
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".homepage.svelte-1gjct{background:white}",
+  code: ".homepage.svelte-r9j3h8{background:white}.courses.svelte-r9j3h8{display:flex;gap:1em;flex-wrap:wrap;align-items:center;justify-content:center}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `${$$result.head += `<!-- HEAD_svelte-d6qc0s_START -->${$$result.title = `<title>Dr Mithilesh Kumar</title>`, ""}<!-- HEAD_svelte-d6qc0s_END -->`, ""}
 
-<div class="${"homepage svelte-1gjct"}">${validate_component(Trigonometry, "Trigonometry").$$render($$result, {}, {}, {})}
-    <br>
-    ${validate_component(HTML, "HTML").$$render($$result, {}, {}, {})}
+<div class="${"homepage svelte-r9j3h8"}"><div class="${"courses svelte-r9j3h8"}">${validate_component(Trigonometry, "Trigonometry").$$render($$result, {}, {}, {})}
+        ${validate_component(HTML, "HTML").$$render($$result, {}, {}, {})}</div>
+    
     ${validate_component(Vectorial, "Vectorial").$$render($$result, {}, {}, {})}
     
     ${validate_component(Twitter, "Twitter").$$render($$result, {}, {}, {})}</div>`;

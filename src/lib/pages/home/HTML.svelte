@@ -29,6 +29,7 @@
 </div>
 <style>
     .trigonometry {
+        max-width: 400px;
         position: relative;
         background-image: url('/announcement/html.svg');
         background-repeat: no-repeat;
@@ -40,7 +41,7 @@
         overflow: hidden;
     }
     .title {
-        font-size: 10vw;
+        font-size: 2em;
         margin-bottom: 0;
         font-weight: 600;
         display: flex;

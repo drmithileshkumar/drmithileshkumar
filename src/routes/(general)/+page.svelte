@@ -19,13 +19,22 @@
     .homepage {
         background: white;
     }
+    .courses {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 </style>
 <svelte:head><title>Dr Mithilesh Kumar</title></svelte:head>
 <!-- Youtube, Twitter -->
 <div class="homepage">
-    <Trigonometry />
-    <br>
-    <HTML />
+    <div class="courses">
+        <Trigonometry />
+        <HTML />
+    </div>
+    
     <Vectorial />
     <!-- <Youtube />
     <Notes />

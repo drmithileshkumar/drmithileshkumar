@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-ba68e34c.js";import{default as t}from"../components/pages/(general)/notes/maths/Matrices/Invertible matrices/_page.svelte-ef3f85be.js";export{t as component,r as universal};
+import{_ as r}from"./_page-a01f28c7.js";import{default as t}from"../components/pages/(general)/notes/maths/Matrices/Invertible matrices/_page.svelte-ef3f85be.js";export{t as component,r as universal};

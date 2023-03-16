@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-b213665a.js";import{default as t}from"../components/pages/(general)/notes/maths/Matrices/Operations on matrices/_page.svelte-00ff8015.js";export{t as component,r as universal};
+import{_ as r}from"./_page-27d96fd4.js";import{default as t}from"../components/pages/(general)/notes/maths/Matrices/Operations on matrices/_page.svelte-00ff8015.js";export{t as component,r as universal};
