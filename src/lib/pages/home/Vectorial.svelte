@@ -56,7 +56,7 @@
             color: rgb(7 68 75);
         }
         .subtitle {
-            font-size: 2em;
+            font-size: 1.5em;
             color: rgb(212, 163, 13);
             margin-top: 0;
             margin-bottom: 0em;

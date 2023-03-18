@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-4076fbac.js";import{default as t}from"../components/pages/(general)/notes/maths/Differential equations/Basic concepts/_page.svelte-0614536d.js";export{t as component,r as universal};
+import{_ as r}from"./_page-62bcb827.js";import{default as t}from"../components/pages/(general)/notes/maths/Differential equations/Basic concepts/_page.svelte-0614536d.js";export{t as component,r as universal};

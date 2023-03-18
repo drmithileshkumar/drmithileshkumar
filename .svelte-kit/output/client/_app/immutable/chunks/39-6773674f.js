@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-0188ae89.js";import{default as t}from"../components/pages/(general)/notes/maths/Application of derivatives/Rate of change of quantities/_page.svelte-b018024e.js";export{t as component,r as universal};
+import{_ as r}from"./_page-a82bf935.js";import{default as t}from"../components/pages/(general)/notes/maths/Application of derivatives/Rate of change of quantities/_page.svelte-b018024e.js";export{t as component,r as universal};

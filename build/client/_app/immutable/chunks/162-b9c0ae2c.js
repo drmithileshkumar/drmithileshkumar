@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-f7c3abc7.js";import{default as t}from"../components/pages/(general)/notes/maths/Vector algebra/Some basic concepts/_page.svelte-94422118.js";export{t as component,r as universal};
+import{_ as r}from"./_page-5edbe4d6.js";import{default as t}from"../components/pages/(general)/notes/maths/Vector algebra/Some basic concepts/_page.svelte-94422118.js";export{t as component,r as universal};

@@ -24,12 +24,12 @@
         <span class="value">Syllabus</span>
     </div> -->
     <div class="action">
-        <a href="https://aiguru.dev" use:ripple>Register</a>
+        <a href="https://aiguru.dev/register" use:ripple>Register</a>
     </div>
 </div>
 <style>
     .trigonometry {
-        max-width: 400px;
+        width: min(90vw, 500px);
         position: relative;
         background-image: url('/announcement/html.svg');
         background-repeat: no-repeat;
