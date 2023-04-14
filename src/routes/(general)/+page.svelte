@@ -33,8 +33,8 @@
 <div class="homepage">
     <div class="courses">
         
-        <Trigonometry />
-        <HTML />
+        <!-- <Trigonometry />
+        <HTML /> -->
     </div>
     
     <Vectorial />

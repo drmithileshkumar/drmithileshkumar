@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-a28b8a38.js";import{default as t}from"../components/pages/(general)/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.svelte-c42b03a0.js";export{t as component,r as universal};
+import{_ as r}from"./_page-25878940.js";import{default as t}from"../components/pages/(general)/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.svelte-c42b03a0.js";export{t as component,r as universal};

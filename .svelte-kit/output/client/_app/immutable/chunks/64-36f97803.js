@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-987d16a2.js";import{default as t}from"../components/pages/(general)/notes/maths/Determinants/Area of a triangle/_page.svelte-d43ba912.js";export{t as component,r as universal};
+import{_ as r}from"./_page-1c4cdf8d.js";import{default as t}from"../components/pages/(general)/notes/maths/Determinants/Area of a triangle/_page.svelte-d43ba912.js";export{t as component,r as universal};

@@ -1,1 +1,1 @@
-import{_ as r}from"./_page-89af7cc5.js";import{default as t}from"../components/pages/(general)/notes/maths/Linear inequalities/One variable/_page.svelte-3b3eec79.js";export{t as component,r as universal};
+import{_ as r}from"./_page-2e150106.js";import{default as t}from"../components/pages/(general)/notes/maths/Linear inequalities/One variable/_page.svelte-3b3eec79.js";export{t as component,r as universal};

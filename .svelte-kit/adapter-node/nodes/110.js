@@ -4,6 +4,6 @@ export const index = 110;
 export const component = async () => (await import('../entries/pages/(general)/notes/maths/Probability/Event/_page.svelte.js')).default;
 export const file = '_app/immutable/components/pages/(general)/notes/maths/Probability/Event/_page.svelte-80c43a97.js';
 export { universal };
-export const imports = ["_app/immutable/components/pages/(general)/notes/maths/Probability/Event/_page.svelte-80c43a97.js","_app/immutable/chunks/index-ade51a35.js","_app/immutable/chunks/stores-cbf9661a.js","_app/immutable/chunks/index-c2cc1873.js","_app/immutable/chunks/stores-3ecb71e6.js","_app/immutable/chunks/singletons-2c9f5b5d.js","_app/immutable/modules/pages/(general)/notes/maths/Probability/Event/_page.js-0ab52947.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-53fea96e.js"];
+export const imports = ["_app/immutable/components/pages/(general)/notes/maths/Probability/Event/_page.svelte-80c43a97.js","_app/immutable/chunks/index-ade51a35.js","_app/immutable/chunks/stores-cbf9661a.js","_app/immutable/chunks/index-c2cc1873.js","_app/immutable/chunks/stores-3ecb71e6.js","_app/immutable/chunks/singletons-2c9f5b5d.js","_app/immutable/modules/pages/(general)/notes/maths/Probability/Event/_page.js-0ab52947.js","_app/immutable/chunks/index-323790f7.js","_app/immutable/chunks/control-e7f5239e.js","_app/immutable/chunks/_page-65a72218.js"];
 export const stylesheets = ["_app/immutable/assets/Practice-5698baa0.css","_app/immutable/assets/Message-1e964222.css"];
 export const fonts = [];
