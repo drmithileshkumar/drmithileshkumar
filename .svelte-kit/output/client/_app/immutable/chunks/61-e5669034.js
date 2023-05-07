@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-987d16a2.js";import{default as t}from"../components/pages/(general)/notes/maths/Continuity and differentiability/Second order derivative/_page.svelte-8a0ddfcb.js";export{t as component,r as universal};

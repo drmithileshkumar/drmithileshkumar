@@ -50,11 +50,26 @@ function redirect(status, location) {
   return new Redirect(status, location);
 }
 function json(data, init) {
+  const body = JSON.stringify(data);
   const headers = new Headers(init?.headers);
+  if (!headers.has("content-length")) {
+    headers.set("content-length", encoder.encode(body).byteLength.toString());
+  }
   if (!headers.has("content-type")) {
     headers.set("content-type", "application/json");
   }
-  return new Response(JSON.stringify(data), {
+  return new Response(body, {
+    ...init,
+    headers
+  });
+}
+const encoder = new TextEncoder();
+function text(body, init) {
+  const headers = new Headers(init?.headers);
+  if (!headers.has("content-length")) {
+    headers.set("content-length", encoder.encode(body).byteLength.toString());
+  }
+  return new Response(body, {
     ...init,
     headers
   });
@@ -65,5 +80,6 @@ export {
   Redirect as R,
   error as e,
   json as j,
-  redirect as r
+  redirect as r,
+  text as t
 };

@@ -2,7 +2,6 @@
 
 export const index = 0;
 export const component = async () => (await import('../entries/fallbacks/layout.svelte.js')).default;
-export const file = '_app/immutable/components/layout.svelte-3654d7ff.js';
-export const imports = ["_app/immutable/components/layout.svelte-3654d7ff.js","_app/immutable/chunks/index-ade51a35.js"];
+export const imports = ["_app/immutable/nodes/0.ca69bcf9.js","_app/immutable/chunks/index.4c2ff479.js"];
 export const stylesheets = [];
 export const fonts = [];

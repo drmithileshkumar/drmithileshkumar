@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-b213665a.js";import{default as t}from"../components/pages/(general)/notes/maths/Matrices/Symmetric and skew symmetric matrices/_page.svelte-f00bd95b.js";export{t as component,r as universal};

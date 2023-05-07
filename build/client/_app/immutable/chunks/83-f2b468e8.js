@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-3e97b25b.js";import{default as t}from"../components/pages/(general)/notes/maths/Integrals/Methods of integration/_page.svelte-e05c489b.js";export{t as component,r as universal};

@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-dada83a7.js";import{default as t}from"../components/pages/(general)/notes/maths/Indroduction to 3D geometry/Section formula/_page.svelte-15644faf.js";export{t as component,r as universal};

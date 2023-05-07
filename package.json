@@ -21,6 +21,7 @@
 	"dependencies": {
 		"@jridgewell/sourcemap-codec": "^1.4.14",
 		"@sveltejs/adapter-node": "^1.0.0",
+		"dotenv": "^16.0.3",
 		"nvm": "^0.0.4"
 	}
 }

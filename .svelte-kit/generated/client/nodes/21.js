@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/(general)/practice/class9/+layout.svelte";

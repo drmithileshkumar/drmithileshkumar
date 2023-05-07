@@ -26,6 +26,21 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const VITE_LOCAL: string;
+	export const ORIGIN: string;
+	export const VITE_NODE_ENV: string;
+	export const VITE_TEST_KEY_ID: string;
+	export const VITE_TEST_KEY_SECRET: string;
+	export const VITE_LIVE_KEY_ID: string;
+	export const VITE_LIVE_KEY_SECRET: string;
+	export const VITE_WA_CLIENT: string;
+	export const VITE_WA_SECRET: string;
+	export const VITE_WEB: string;
+	export const VITE_MONGO_URI: string;
+	export const VITE_MONGO_DATABASE: string;
+	export const VITE_MONGO_USERDATABASE: string;
+	export const VITE_JWT_PRIVATE_KEY: string;
+	export const VITE_JWT_PUBLIC_KEY: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
 	export const INIT_CWD: string;
@@ -50,6 +65,7 @@ declare module '$env/static/private' {
 	export const npm_package_json: string;
 	export const npm_config_engine_strict: string;
 	export const _: string;
+	export const LaunchInstanceID: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_init_module: string;
 	export const __CFBundleIdentifier: string;
@@ -74,6 +90,7 @@ declare module '$env/static/private' {
 	export const npm_config_user_agent: string;
 	export const GIT_ASKPASS: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
+	export const SECURITYSESSIONID: string;
 	export const npm_node_execpath: string;
 	export const npm_config_prefix: string;
 	export const COLORTERM: string;
@@ -90,7 +107,7 @@ declare module '$env/static/private' {
  * ```
  */
 declare module '$env/static/public' {
-
+	
 }
 
 /**
@@ -107,6 +124,21 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		VITE_LOCAL: string;
+		ORIGIN: string;
+		VITE_NODE_ENV: string;
+		VITE_TEST_KEY_ID: string;
+		VITE_TEST_KEY_SECRET: string;
+		VITE_LIVE_KEY_ID: string;
+		VITE_LIVE_KEY_SECRET: string;
+		VITE_WA_CLIENT: string;
+		VITE_WA_SECRET: string;
+		VITE_WEB: string;
+		VITE_MONGO_URI: string;
+		VITE_MONGO_DATABASE: string;
+		VITE_MONGO_USERDATABASE: string;
+		VITE_JWT_PRIVATE_KEY: string;
+		VITE_JWT_PUBLIC_KEY: string;
 		TERM_PROGRAM: string;
 		NODE: string;
 		INIT_CWD: string;
@@ -131,6 +163,7 @@ declare module '$env/dynamic/private' {
 		npm_package_json: string;
 		npm_config_engine_strict: string;
 		_: string;
+		LaunchInstanceID: string;
 		npm_config_userconfig: string;
 		npm_config_init_module: string;
 		__CFBundleIdentifier: string;
@@ -155,6 +188,7 @@ declare module '$env/dynamic/private' {
 		npm_config_user_agent: string;
 		GIT_ASKPASS: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
+		SECURITYSESSIONID: string;
 		npm_node_execpath: string;
 		npm_config_prefix: string;
 		COLORTERM: string;

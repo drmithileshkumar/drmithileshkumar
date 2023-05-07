@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-f7c3abc7.js";import{default as t}from"../components/pages/(general)/notes/maths/Vector algebra/Product of two vectors/_page.svelte-b3c718f6.js";export{t as component,r as universal};
