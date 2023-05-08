@@ -34,31 +34,21 @@ function set_store_value(store, ret, value) {
   store.set(value);
   return ret;
 }
-const is_client = typeof window !== "undefined";
-let now = is_client ? () => window.performance.now() : () => Date.now();
-let raf = is_client ? (cb) => requestAnimationFrame(cb) : noop;
-const tasks = /* @__PURE__ */ new Set();
-function run_tasks(now2) {
-  tasks.forEach((task) => {
-    if (!task.c(now2)) {
-      tasks.delete(task);
-      task.f();
-    }
-  });
-  if (tasks.size !== 0)
-    raf(run_tasks);
+/* @__PURE__ */ new Set();
+function listen(node, event, handler, options) {
+  node.addEventListener(event, handler, options);
+  return () => node.removeEventListener(event, handler, options);
 }
-function loop(callback) {
-  let task;
-  if (tasks.size === 0)
-    raf(run_tasks);
-  return {
-    promise: new Promise((fulfill) => {
-      tasks.add(task = { c: callback, f: fulfill });
-    }),
-    abort() {
-      tasks.delete(task);
-    }
+function prevent_default(fn) {
+  return function(event) {
+    event.preventDefault();
+    return fn.call(this, event);
+  };
+}
+function stop_propagation(fn) {
+  return function(event) {
+    event.stopPropagation();
+    return fn.call(this, event);
   };
 }
 function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
@@ -66,6 +56,7 @@ function custom_event(type, detail, { bubbles = false, cancelable = false } = {}
   e.initCustomEvent(type, bubbles, cancelable, detail);
   return e;
 }
+/* @__PURE__ */ new Map();
 let current_component;
 function set_current_component(component) {
   current_component = component;
@@ -74,6 +65,9 @@ function get_current_component() {
   if (!current_component)
     throw new Error("Function called outside component initialization");
   return current_component;
+}
+function onDestroy(fn) {
+  get_current_component().$$.on_destroy.push(fn);
 }
 function createEventDispatcher() {
   const component = get_current_component();
@@ -96,7 +90,16 @@ function setContext(key, context) {
 function getContext(key) {
   return get_current_component().$$.context.get(key);
 }
+function bubble(component, event) {
+  const callbacks = component.$$.callbacks[event.type];
+  if (callbacks) {
+    callbacks.slice().forEach((fn) => fn.call(this, event));
+  }
+}
 Promise.resolve();
+/* @__PURE__ */ new Set();
+/* @__PURE__ */ new Set();
+const globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
 const boolean_attributes = /* @__PURE__ */ new Set([
   "allowfullscreen",
   "allowpaymentrequest",
@@ -125,6 +128,10 @@ const boolean_attributes = /* @__PURE__ */ new Set([
   "reversed",
   "selected"
 ]);
+const void_element_names = /^(?:area|base|br|col|command|embed|hr|img|input|keygen|link|meta|param|source|track|wbr)$/;
+function is_void(name) {
+  return void_element_names.test(name) || name.toLowerCase() === "!doctype";
+}
 const invalid_attribute_name_character = /[\s'">/=\u{FDD0}-\u{FDEF}\u{FFFE}\u{FFFF}\u{1FFFE}\u{1FFFF}\u{2FFFE}\u{2FFFF}\u{3FFFE}\u{3FFFF}\u{4FFFE}\u{4FFFF}\u{5FFFE}\u{5FFFF}\u{6FFFE}\u{6FFFF}\u{7FFFE}\u{7FFFF}\u{8FFFE}\u{8FFFF}\u{9FFFE}\u{9FFFF}\u{AFFFE}\u{AFFFF}\u{BFFFE}\u{BFFFF}\u{CFFFE}\u{CFFFF}\u{DFFFE}\u{DFFFF}\u{EFFFE}\u{EFFFF}\u{FFFFE}\u{FFFFF}\u{10FFFE}\u{10FFFF}]/u;
 function spread(args, attrs_to_add) {
   const attributes = Object.assign({}, ...args);
@@ -277,24 +284,31 @@ function style_object_to_string(style_object) {
   return Object.keys(style_object).filter((key) => style_object[key]).map((key) => `${key}: ${escape_attribute_value(style_object[key])};`).join(" ");
 }
 export {
-  safe_not_equal as a,
-  subscribe as b,
+  add_classes as A,
+  subscribe as a,
+  bubble as b,
   create_ssr_component as c,
-  now as d,
+  stop_propagation as d,
   escape as e,
-  add_attribute as f,
-  getContext as g,
-  each as h,
-  set_store_value as i,
-  null_to_empty as j,
-  createEventDispatcher as k,
-  loop as l,
+  compute_rest_props as f,
+  get_current_component as g,
+  spread as h,
+  escape_attribute_value as i,
+  escape_object as j,
+  add_attribute as k,
+  listen as l,
   missing_component as m,
-  noop as n,
-  spread as o,
-  escape_object as p,
-  compute_rest_props as q,
-  add_classes as r,
+  getContext as n,
+  onDestroy as o,
+  prevent_default as p,
+  is_void as q,
+  globals as r,
   setContext as s,
-  validate_component as v
+  each as t,
+  null_to_empty as u,
+  validate_component as v,
+  set_store_value as w,
+  createEventDispatcher as x,
+  noop as y,
+  safe_not_equal as z
 };

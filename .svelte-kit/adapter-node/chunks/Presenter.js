@@ -1,10 +1,5 @@
-import { c as create_ssr_component, b as subscribe, h as each, e as escape, i as set_store_value, f as add_attribute } from "./index3.js";
-/* empty css                                      */import { w as writable } from "./index2.js";
-const lineWidth = writable(2);
-const strokeColor = writable("red");
-const globalCompositeOperation = writable("source-over");
-const drawMode = writable("pen");
-const clearAll = writable(false);
+import { c as create_ssr_component, a as subscribe, t as each, e as escape, w as set_store_value, k as add_attribute } from "./index3.js";
+import { l as lineWidth, s as strokeColor, g as globalCompositeOperation, d as drawMode, c as clearAll } from "./Canvas.svelte_svelte_type_style_lang.js";
 const css$2 = {
   code: ".canvasbar.svelte-twg6ow.svelte-twg6ow{display:flex;align-items:center;background:rgba(0, 0, 0, 0.1);padding:0.2em;border-radius:10px;box-shadow:0 0 1px gray}.colors.svelte-twg6ow.svelte-twg6ow{display:flex;gap:0.2em;align-items:center;flex-direction:row}.lineWidth.svelte-twg6ow.svelte-twg6ow{display:flex;align-items:center}.shapes.svelte-twg6ow.svelte-twg6ow{display:flex;flex-direction:row;align-items:center}.shapes.svelte-twg6ow span.svelte-twg6ow{display:flex;align-items:center;padding:0.2em}.colors.svelte-twg6ow button.svelte-twg6ow{width:2em;height:2em;padding:0em;align-items:center;justify-content:center}",
   map: null

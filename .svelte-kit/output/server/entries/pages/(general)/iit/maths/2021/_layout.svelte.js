@@ -1,4 +1,5 @@
-import { c as create_ssr_component, b as subscribe, f as add_attribute, v as validate_component } from "../../../../../../chunks/index3.js";
+import { c as create_ssr_component, a as subscribe, k as add_attribute, v as validate_component } from "../../../../../../chunks/index3.js";
+import "../../../../../../chunks/singletons.js";
 import { c as currentSlide, s as slideCounter, p as presentation, o as overlay, a as autoScroll, b as presentationMode } from "../../../../../../chunks/stores2.js";
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../../../chunks/Presenter.js";
 const _layout_svelte_svelte_type_style_lang = "";

@@ -1,7 +1,8 @@
-import { c as create_ssr_component, b as subscribe, e as escape, f as add_attribute, j as null_to_empty } from "../../../../../../chunks/index3.js";
+import { c as create_ssr_component, a as subscribe, e as escape, k as add_attribute, u as null_to_empty } from "../../../../../../chunks/index3.js";
 import { c as currentSlide, s as slideCounter, b as presentationMode, p as presentation } from "../../../../../../chunks/stores2.js";
 import { p as page } from "../../../../../../chunks/stores.js";
-/* empty css                                                             */const _page_svelte_svelte_type_style_lang = "";
+import "../../../../../../chunks/Canvas.svelte_svelte_type_style_lang.js";
+const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: "article.svelte-mgyz3d{position:relative;padding:0.5em}.absolute.svelte-mgyz3d{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-mgyz3d::-webkit-scrollbar{width:0;height:0}.currentActive.svelte-mgyz3d{color:tomato;border-radius:10px;transition:all 1s}.pad.svelte-mgyz3d{min-height:100px}figure.svelte-mgyz3d{width:300px}.thumbnail.svelte-mgyz3d{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.title.svelte-mgyz3d{position:absolute;margin:auto;font-weight:bold;font-size:2em;text-shadow:1px 1px 3px gray;color:red}.heading.svelte-mgyz3d{font-size:1.5em;font-weight:bold}",
   map: null

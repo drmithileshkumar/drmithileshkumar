@@ -1,6 +1,8 @@
-import { c as create_ssr_component, b as subscribe, e as escape, r as add_classes, f as add_attribute } from "../../../../../../../chunks/index3.js";
+import { c as create_ssr_component, a as subscribe, e as escape, A as add_classes, k as add_attribute } from "../../../../../../../chunks/index3.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
+import "../../../../../../../chunks/stores3.js";
+import "../../../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
+/* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: "p.svelte-ihitw8{text-indent:2em}.image.svelte-ihitw8{display:flex;justify-content:center;width:min(95vw, 600px);margin:auto}",

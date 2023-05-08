@@ -1,9 +1,6 @@
-import { c as create_ssr_component, f as add_attribute, e as escape, b as subscribe, k as createEventDispatcher, v as validate_component, i as set_store_value } from "./index3.js";
+import { c as create_ssr_component, k as add_attribute, e as escape, a as subscribe, x as createEventDispatcher, v as validate_component, w as set_store_value } from "./index3.js";
 import { Q as QuestionTimer } from "./stores3.js";
-import { w as writable } from "./index2.js";
-/* empty css                                        */let attempted = writable(false);
-let saved = writable(true);
-let newChapter = writable(false);
+import { a as attempted, n as newChapter, s as saved } from "./Practice.svelte_svelte_type_style_lang.js";
 const css$2 = {
   code: ".scorepercent.svelte-1fthwjb{display:flex;align-items:center;width:100%}",
   map: null

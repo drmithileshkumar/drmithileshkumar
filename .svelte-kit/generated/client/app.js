@@ -182,7 +182,7 @@ export const nodes = [
 	() => import('./nodes/178')
 ];
 
-export const server_loads = [];
+export const server_loads = [4];
 
 export const dictionary = {
 		"/(general)": [24,[4]],

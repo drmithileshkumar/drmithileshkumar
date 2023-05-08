@@ -1,6 +1,7 @@
-import { c as create_ssr_component, b as subscribe, v as validate_component, e as escape } from "../../../../../chunks/index3.js";
+import { c as create_ssr_component, a as subscribe, v as validate_component, e as escape } from "../../../../../chunks/index3.js";
 import { M as Message } from "../../../../../chunks/Message.js";
-/* empty css                                                        */import { a as selectedChapter, s as selectedGenerator } from "../../../../../chunks/stores3.js";
+/* empty css                                                        */import "../../../../../chunks/singletons.js";
+import { a as selectedChapter, s as selectedGenerator } from "../../../../../chunks/stores3.js";
 import { P as Practice } from "../../../../../chunks/Practice.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $selectedChapter, $$unsubscribe_selectedChapter;

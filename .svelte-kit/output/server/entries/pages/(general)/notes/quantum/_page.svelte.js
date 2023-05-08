@@ -1,6 +1,8 @@
-import { c as create_ssr_component, q as compute_rest_props, b as subscribe, e as escape, j as null_to_empty, f as add_attribute, v as validate_component } from "../../../../../chunks/index3.js";
+import { c as create_ssr_component, f as compute_rest_props, a as subscribe, e as escape, u as null_to_empty, k as add_attribute, v as validate_component } from "../../../../../chunks/index3.js";
 import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../../chunks/stores2.js";
-/* empty css                                                            *//* empty css                                                           */import { p as page } from "../../../../../chunks/stores.js";
+import "../../../../../chunks/stores3.js";
+import "../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
+/* empty css                                                           */import { p as page } from "../../../../../chunks/stores.js";
 import { T as TeX } from "../../../../../chunks/constants.js";
 import { I as Item, P, L as Li } from "../../../../../chunks/Image.svelte_svelte_type_style_lang.js";
 /* empty css                                                       */import { H as H3 } from "../../../../../chunks/H3.js";

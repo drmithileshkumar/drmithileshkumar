@@ -1,4 +1,5 @@
-<script>
+<script lang='ts'>
+    //@ts-nocheck
     let lightTheme = true;
 	function switchTheme() {
 		lightTheme = !lightTheme;

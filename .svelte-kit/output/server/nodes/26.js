@@ -4,6 +4,6 @@ export const index = 26;
 export const component = async () => (await import('../entries/pages/(general)/iit/maths/_page.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/(general)/iit/maths/+page.js";
-export const imports = ["_app/immutable/nodes/26.f03fae56.js","_app/immutable/chunks/index.1de1fe79.js","_app/immutable/chunks/control.e7f5239e.js","_app/immutable/chunks/index.4c2ff479.js","_app/immutable/chunks/Link.858af03f.js","_app/immutable/chunks/paths.553cd4a4.js"];
+export const imports = ["_app/immutable/nodes/26.757682e9.js","_app/immutable/chunks/index.1de1fe79.js","_app/immutable/chunks/control.e7f5239e.js","_app/immutable/chunks/index.4c5142a2.js","_app/immutable/chunks/Link.465104d7.js","_app/immutable/chunks/singletons.70b72f07.js","_app/immutable/chunks/index.e53142fc.js"];
 export const stylesheets = ["_app/immutable/assets/Message.1e964222.css","_app/immutable/assets/Link.867ad8ee.css"];
 export const fonts = [];

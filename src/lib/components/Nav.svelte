@@ -1,102 +1,141 @@
-<script>
-    import LogoSvg from '$lib/components/LogoSvg.svelte';
+<script lang="ts">
+    //@ts-nocheck
+    import List, {
+        Item,
+        Graphic,
+        Separator,
+        Meta,
+        Text,
+        PrimaryText,
+        SecondaryText,
+    } from "@smui/list";
+    import Button, { Label } from "@smui/button";
     
-    let lightTheme = true;
-	function switchTheme() {
-		lightTheme = !lightTheme;
-		let themeLink = document.head.querySelector('#theme');
-		if (!themeLink) {
-			themeLink = document.createElement('link');
-			themeLink.rel = 'stylesheet';
-			themeLink.id = 'theme';
-		}
-		themeLink.href = `/${lightTheme ? 'light' : 'dark'}.css`;
-		document.head
-			.querySelector('link[href="/dark.css"]')
-			?.insertAdjacentElement('afterend', themeLink);
-	}
-    let W;
-    $: fs = W < 400? W/30: 16;
+    import { goto } from "$app/navigation";
+    import { page } from "$app/stores";
+    import { profileImage, navList } from "$lib/stores";
+
+    export let isAuth = null;
 </script>
+
+<nav>
+    <div class="top">
+        <!-- <List twoLine avatarList>
+            {#if isAuth}
+                <Item on:click={() => goto("/auth")}>
+                    <Graphic>
+                        <img
+                            class="round"
+                            width="40px"
+                            height="40px"
+                            src={$profileImage}
+                            alt="Profile"
+                        />
+                    </Graphic>
+                    <Text>
+                        <PrimaryText>{isAuth.name}</PrimaryText>
+                        <SecondaryText>{isAuth.publicID}</SecondaryText>
+                    </Text>
+                </Item>
+            {:else}
+                <Item>
+                    <Button on:click={() => goto("/auth")}
+                        >Log in / Sign up</Button
+                    >
+                </Item>
+            {/if}
+        </List> -->
+        <List>
+            {#if isAuth}
+                <Item
+                    on:SMUI:action={() => goto(`/${$page.data.user.publicID}`)}
+                >
+                    <Graphic class="material-icons">person</Graphic>
+                    <Text>Profile</Text>
+                </Item>
+                <!-- <Item
+                    on:SMUI:action={() => goto(`/${$page.data.user.publicID}/questions`)}
+                >
+                    <Graphic class="material-icons">card_membership</Graphic>
+                    <Text>Questions</Text>
+                </Item> -->
+                <Item
+                    on:SMUI:action={() => goto(`/${$page.data.user.publicID}/quiz`)}
+                >
+                    <Graphic class="material-icons">card_membership</Graphic>
+                    <Text>Quizzes</Text>
+                </Item>
+                <Separator />
+            {/if}
+                <Item
+                    on:SMUI:action={() => goto(`/about`)}
+                >
+                    <Graphic class="material-icons">person</Graphic>
+                    <Text>About</Text>
+                </Item>
+                <Item
+                    on:SMUI:action={() => goto(`/cv`)}
+                >
+                    <Graphic class="material-icons">badge</Graphic>
+                    <Text>CV</Text>
+                </Item>
+        </List>
+        <List>
+            <!-- {#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] as cl}
+                <Item on:SMUI:action={() => goto(`/class_${cl}`)}>
+                    <Graphic class="material-icons">view_headline</Graphic>
+                    <Text>Class {cl}</Text>
+                </Item>
+            {/each} -->
+            <!-- <Item on:SMUI:action={() => goto("/home")}>
+                <Graphic class="material-icons">home</Graphic>
+                <Text>Home</Text>
+            </Item> -->
+            <!-- {#if $navList.length > 0}
+                <Separator />
+                {#each $navList as link}
+                    <Item on:SMUI:action={() => goto(`/${$page.data.user.publicID}${link.url}`)}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>{link.name}</Text>
+                    </Item>
+                {/each}
+            {/if} -->
+            <!-- <Item on:SMUI:action={() => goto('/settings')}>
+                <Graphic class="material-icons">settings</Graphic>
+                <Text>Settings</Text>
+            </Item> -->
+        </List>
+        <!-- <Separator />
+        {#if isAuth}
+            <div class="post">
+                <Button on:click={() => goto("/compose")}>
+                    <Label>Create Post</Label>
+                </Button>
+            </div>
+        {/if} -->
+    </div>
+    <div class="bottom" />
+</nav>
+
 <style>
     nav {
-        position: sticky;
-        top: 0;
-        height: 4.5em;
-        /* background: radial-gradient(circle at left, transparent 0, rgba(0, 0, 255, 0.1), rgba(255, 0, 0, 0.1), rgba(255, 255, 0, 0.1), rgba(0, 128, 0, 0.1) 100%); */
-        backdrop-filter: blur(5px);
+        /* height: calc(100vh - 5em); */
+        /* height: 500px; */
+        overflow-y: auto;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        z-index: 100;
-        gap: 1em;
-        padding: 0 0.5em;
-        max-width: 1200px;
-        margin: auto;
-        background-color: white;
+        justify-content: start;
+        flex-direction: column;
+        /* position: sticky;
+        top: 0.5em; */
+        padding-bottom: 5em;
     }
-    .logo {
+    .round {
+        border-radius: 50%;
+        /* overflow: hidden; */
+    }
+    
+    /* .post {
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 0.5em;
-        text-align: center;
-    }
-    /* .logo img {
-        width: 2em;
-    } */
-    .name {
-        color: black;
-        /* font-variant: all-petite-caps;
-        letter-spacing: 0.1em;
-        font-weight: 500;
-        text-shadow: 1px 1px 3px rgb(245, 241, 241); */
-    }
-    .pages {
-        display: flex;
-        gap: 1em;
-    }
-    .logoimage {
-        border-radius: 50%;
-        overflow: hidden;
-    }
-    /* .link {
-        font-variant: all-petite-caps;
-        font-size: 1.5em;
-    } */
-    /* .links a {
-        border: 0.5px solid;
-        padding: 0.3em 0.5em;
-    }
-    .links {
-        display: flex;
-
     } */
 </style>
-<nav bind:clientWidth={W}>
-    <a class="logo" href="/">
-        <!-- <img width="2em" src="/webtarlogo.PNG" alt=""> -->
-        <span class="logoimage">
-            <LogoSvg />
-        </span>
-        
-        <span class="name">Dr Mithilesh Kumar</span>
-    </a>
-    <div class="pages">
-        <!-- <a class="link" style="font-size:{fs}px;" href="/elements">Elements</a> -->
-        <!-- <a class="link" style="font-size:{fs}px;" href="/features">Features</a> -->
-        <!-- <a class="link" href="/projects">Projects</a> -->
-    </div>
-    <!-- <div class="links">
-        <a href='/notes'>
-            Notes
-        </a>
-        <a href='/practice'>
-            Practice
-        </a>
-        <a href='/iit'>
-            IIT
-        </a>
-    </div> -->
-    <!-- <button class="iconButton" on:click={switchTheme}><span class='material-icons'>{lightTheme ? 'light_mode' : 'dark_mode'}</span></button> -->
-</nav>

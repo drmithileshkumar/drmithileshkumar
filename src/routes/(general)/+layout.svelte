@@ -1,65 +1,198 @@
-<script>
-    
-    import { spring } from 'svelte/motion';
-    import {onMount} from 'svelte';
-    
-    import Nav from '$lib/components/Nav.svelte';
-    import Analytics from '$lib/components/Analytics.svelte';
-    import Footer from '$lib/components/Footer.svelte';
-    
-    let showmenu = true;
-    let W;
-    let menuwidth = spring(200, {stiffness: 0.1, damping: 0.5});
-    $: menuwidth.set(showmenu ? 200 : 0);
-    
-</script>
-<Analytics />
-<Nav />
-<div class="container" bind:clientWidth={W}>
-    <!-- <div class="leftpanel" style="width: {$menuwidth}px">
-        <Login />
-    </div>
-    <div class="menucontrol" on:click={() => showmenu = !showmenu}>
-        {#if showmenu}
-            <span style="font-size: 10px;">&#9664;</span>
-        {:else}
-            <span style="font-size: 10px;">&#9654;</span>
-        {/if}
-        
-    </div>
-    <div class="contentpanel" style="width: {W - $menuwidth - 10}px; box-sizing:border-box;">
-        <slot />
-    </div>     -->
-    <slot />
-    
-</div>
-<Footer />
-<style>
-    .container {
-        position: relative;
-        max-width: 1200px;
-        margin: auto;
-        padding: 1em;
-    }
-    /* .leftpanel {
-        grid-area: leftpanel;
-        height: 100vh;
-        overflow: auto;
-        scrollbar-width: thin;
-        box-sizing: border-box;
-    }
-    
-    .contentpanel {
-        grid-area: contentpanel;
-        padding: 0.5em;
-        height: fit-content;
-        font-weight: 500;
-        word-spacing: 0.13em;
-        line-height: 1.45;
-        box-sizing: border-box;
-    } */
+<script lang="ts">
+    //@ts-nocheck
+    import Drawer, {
+        AppContent,
+        Content,
+        Scrim,
+        Header,
+        Title,
+        Subtitle,
+    } from "@smui/drawer";
+    import Fab from "@smui/fab";
+    import { Svg } from "@smui/common";
+    import LayoutGrid, { Cell } from "@smui/layout-grid";
+    import Nav from "$lib/components/Nav.svelte";
+    import Sidebar from "$lib/components/Sidebar.svelte";
+    import TopAppBar, { Row, Section } from "@smui/top-app-bar";
+    import IconButton, {Icon} from "@smui/icon-button";
+    import Button, { Label } from "@smui/button";
+    import List, { Item, Text } from "@smui/list";
+    import { showLeft, darkMode } from "$lib/stores.js";
+    import {page} from '$app/stores';
+    import Analytics from "$lib/components/Analytics.svelte";
+    import { goto } from '$app/navigation';
+    import {currentPath} from '$lib/stores';
 
-    ::-webkit-scrollbar {
-        width: 10px;
+    export let data;
+    let W;
+    $: fixed = W < 600;
+</script>
+<svelte:head>
+    <link
+        rel="stylesheet"
+        id="theme"
+        href="/smui{$darkMode ? '-dark' : ''}.css"
+    />
+</svelte:head>
+<Analytics />
+<header>
+    <TopAppBar variant="fixed" color="secondary">
+        <Row>
+            <Section style="align-items:center;">
+                <div class="logo">
+                    <Fab on:click={() => goto("/")}>
+                        <Icon>
+                            <img width="60px" height="60px" style="background:white; border-radius:50%;" src="/favicon.png" alt="1" />
+                        </Icon>
+                    </Fab>
+                </div>
+                <IconButton class="material-icons" on:click={() => $showLeft = !$showLeft}>menu</IconButton>
+                <span>
+                    {$currentPath}
+                    <!-- {#if $page.route.id === '/'}
+                        AI Guru Dev
+                    {:else if $page.route.id === '/home'}
+                        Home
+                    {:else if $page.route.id === '/settings/profile'}
+                        Edit Profile
+                    {:else if $page.route.id === '/auth'}
+                        Authentication
+                    {:else if $page.route.id === '/[publicID]'}
+                        {$page.params.publicID}
+                    {:else if $page.route.id === '/post/[postID]'}
+                        Post
+                    {:else if $page.route.id === '/[publicID]/courses'}
+                        My Courses
+                    {:else if $page.route.id === '/fundamentals' || $page.route.id === '/[publicID]/fundamentals'}
+                        Fundamentals
+                    {:else if $page.route.id === '/calculus' || $page.route.id === '/[publicID]/calculus'}
+                        Calculus
+                    {:else if $page.route.id === '/linearAlgebra' || $page.route.id === '/[publicID]/linearAlgebra'}
+                        Linear Algebra
+                    {:else if $page.route.id === '/probability' || $page.route.id === '/[publicID]/probability'}
+                        Probability
+                    {:else if $page.route.id === '/statistics' || $page.route.id === '/[publicID]/statistics'}
+                        Statistics
+                    {:else if $page.route.id === '/optimization' || $page.route.id === '/[publicID]/optimization'}
+                        Optimization
+                    {:else if $page.route.id === '/graph' || $page.route.id === '/[publicID]/graph'}
+                        Graph theory
+                    {/if} -->
+                </span>
+            </Section>
+            <Section align="end" toolbar>
+                
+                <!-- <IconButton class="material-icons" aria-label="Settings"
+                    >settings</IconButton
+                >
+                <IconButton class="material-icons" aria-label="Cancel"
+                    >close</IconButton
+                > -->
+                <IconButton toggle bind:pressed={$darkMode}>
+                    <Icon class="material-icons" on>dark_mode</Icon>
+                    <Icon class="material-icons">light_mode</Icon>
+                </IconButton>
+            </Section>
+        </Row>
+    </TopAppBar>
+    <div class="navback"></div>
+</header>
+
+<div class="container" bind:clientWidth={W}>
+    
+    <Drawer variant='modal' fixed={true} bind:open={$showLeft}>
+        <Content>
+            <header class='nav'>
+                <Nav isAuth={data.user} />
+            </header>
+        </Content>
+    </Drawer>
+    <!-- <Scrim /> -->
+    {#if fixed}
+        <Scrim fixed={false}/>
+    {/if}
+    <AppContent>
+        <main>
+            <div class="center">
+                <slot />
+            </div>
+            <div class="side">
+                <Sidebar isAuth={data.user} />
+            </div>
+        </main>
+    </AppContent>
+</div>
+
+<style>
+    /* .container {
+        display: grid;
+        grid-template-columns: 0.16fr auto;
+        width: 100%;
+        gap: 0.5em;
+    } */
+    * {
+        box-sizing: border-box;
     }
+    .container {
+        width: 100%;
+    }
+    .logo {
+        margin-left: 0.5em;
+        margin-top: 0.5em;
+    }
+    header {
+        min-width: 100%;
+        z-index: 200;
+    }
+    .navback {
+        min-height: 4em;
+    }
+    .nav {
+        max-width: 150px;
+    }
+    /* main {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        width: 100%;
+        justify-items: center;
+        
+    } */
+    main {
+        display: grid;
+        grid-template-columns: calc(100% - 256px) 256px;
+    }
+    .center {
+        width: 100%;
+        flex-grow: 1;
+        padding: 0.5em;
+    }
+    .side {
+        min-width: 250px;
+        position: sticky;
+        top: 4em;
+        height: 100vh;
+        /* padding: 0.5em; */
+    }
+    @media only screen and (max-width: 600px) {
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            width: 100%;
+            flex: 1;
+            min-width: 300px;
+            /* overflow: hidden; */
+        }
+        .side {
+            /* padding: 0 1em; */
+            width: 100%;
+            position: relative;
+            height: fit-content;
+        }
+        .navback {
+            min-height: 3.5em;
+        }
+    }
+    
 </style>

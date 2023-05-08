@@ -1,5 +1,6 @@
-import { c as create_ssr_component, f as add_attribute, e as escape } from "../../../../../../chunks/index3.js";
-/* empty css                                                              *//* empty css                                                           */import { T as TeX } from "../../../../../../chunks/constants.js";
+import { c as create_ssr_component, k as add_attribute, e as escape } from "../../../../../../chunks/index3.js";
+/* empty css                                                              *//* empty css                                                           */import "../../../../../../chunks/singletons.js";
+import { T as TeX } from "../../../../../../chunks/constants.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: "a.svelte-1asvsve{text-decoration:none}.options.svelte-1asvsve{display:flex;flex-direction:row;gap:2em;width:100%;flex-wrap:wrap}",

@@ -1,4 +1,4 @@
-import { c as create_ssr_component, q as compute_rest_props, f as add_attribute, o as spread, p as escape_object } from "./index3.js";
+import { c as create_ssr_component, f as compute_rest_props, k as add_attribute, h as spread, j as escape_object } from "./index3.js";
 /* empty css                                    */const css = {
   code: "a.svelte-h06gar{text-decoration:none;display:flex;justify-content:start;align-items:center;gap:0.3em}.text.svelte-h06gar{display:flex;align-items:center}",
   map: null

@@ -1,5 +1,8 @@
 import { c as create_ssr_component } from "../../../../chunks/index3.js";
-/* empty css                                                        *//* empty css                                                     *//* empty css                                                         */const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+/* empty css                                                        *//* empty css                                                     */import "../../../../chunks/singletons.js";
+import "../../../../chunks/stores3.js";
+import "../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
+const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${$$result.head += `<!-- HEAD_svelte-1jd0cmq_START -->${$$result.title = `<title>Practice Mathematics</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com/practice"}"><meta name="${"description"}" content="${"Learn and practice Physics and Mathematics for school, IIT JEE, Olympiad"}"><!-- HEAD_svelte-1jd0cmq_END -->`, ""}
 <article><h2>Practice Mathematics</h2>
     <ul><li><a href="${"/practice/class1"}">Class 1</a></li>

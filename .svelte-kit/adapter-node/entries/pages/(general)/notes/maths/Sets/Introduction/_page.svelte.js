@@ -1,6 +1,8 @@
-import { c as create_ssr_component, b as subscribe, e as escape, f as add_attribute, v as validate_component, j as null_to_empty } from "../../../../../../../chunks/index3.js";
+import { c as create_ssr_component, a as subscribe, e as escape, k as add_attribute, v as validate_component, u as null_to_empty } from "../../../../../../../chunks/index3.js";
 import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
+import "../../../../../../../chunks/stores3.js";
+import "../../../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
+/* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
 import { I as Item, P, L as Li } from "../../../../../../../chunks/Image.svelte_svelte_type_style_lang.js";
 import { I as Image } from "../../../../../../../chunks/Image.js";
 const _page_svelte_svelte_type_style_lang = "";

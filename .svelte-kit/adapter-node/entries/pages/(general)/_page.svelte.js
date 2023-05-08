@@ -1,6 +1,9 @@
 import { c as create_ssr_component, v as validate_component } from "../../../chunks/index3.js";
 import "../../../chunks/stores2.js";
-/* empty css                                                      *//* empty css                                                     */const Notes_svelte_svelte_type_style_lang = "";
+import "../../../chunks/stores3.js";
+import "../../../chunks/Practice.svelte_svelte_type_style_lang.js";
+/* empty css                                                     */import "../../../chunks/singletons.js";
+const Notes_svelte_svelte_type_style_lang = "";
 const Twitter_svelte_svelte_type_style_lang = "";
 const css$2 = {
   code: ".twitter.svelte-1uu1tax{display:flex;margin:1em 0;padding:1em 0;align-items:center;justify-content:center}",
