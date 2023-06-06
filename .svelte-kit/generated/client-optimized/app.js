@@ -179,7 +179,8 @@ export const nodes = [
 	() => import('./nodes/175'),
 	() => import('./nodes/176'),
 	() => import('./nodes/177'),
-	() => import('./nodes/178')
+	() => import('./nodes/178'),
+	() => import('./nodes/179')
 ];
 
 export const server_loads = [4];
@@ -341,7 +342,8 @@ export const dictionary = {
 		"/(general)/practice/class6": [175,[4,18]],
 		"/(general)/practice/class7": [176,[4,19]],
 		"/(general)/practice/class8": [177,[4,20]],
-		"/(general)/practice/class9": [178,[4,21]]
+		"/(general)/practice/class9": [178,[4,21]],
+		"/[...catchAll]": [179]
 	};
 
 export const hooks = {

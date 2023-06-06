@@ -4,7 +4,7 @@ export const manifest = {
 	assets: new Set(["CMIMedal.jpg","IITMSc.jpg","LCPath.svg","announcement/html.svg","announcement/perspective.svg","app.css","background.svg","circle_demo/Cone-equation.png","circle_demo/Cone.png","circle_demo/Conic_anime.mp4","circle_demo/Conic_deg.mp4","circle_demo/IIT21Q1.png","circle_demo/Plane.png","circle_demo/Tangents.png","circle_demo/circle.png","circle_demo/circle_anime.mp4","circle_demo/conics.png","circle_demo/ellipse_anime.mp4","circle_demo/hyperbola_anime.mp4","circle_demo/orthocenter.png","circle_demo/parabola_anime.mp4","circle_demo/threepointcircle.png","cmithesis.pdf","common.css","dark.css","facebook.svg","favicon.png","instagram.svg","light.css","mithileshkumar.png","notes/maths/sets/equal/thumbnail.svg","notes/maths/sets/finite/thumbnail.svg","notes/maths/sets/introduction/example.svg","notes/maths/sets/introduction/oddeven.svg","notes/maths/sets/real/interval.svg","notes/maths/sets/real/subsetreal.svg","notes/maths/sets/representation/heroparadox.svg","notes/maths/sets/subsets/thumbnail.svg","notes/maths/sets/subsets/tree.svg","notes/quantum/CNOT.svg","notes/quantum/qubit2d.svg","notes/quantum/teleportation.svg","photo_cv.jpg","profilephoto.jpeg","robots.txt","santa.svg","smui-dark.css","smui.css","svelte-welcome.png","svelte-welcome.webp","telegram.svg","thesis.pdf","twitter copy.png","twitter.png","vectorial/vectorialhome.svg","webdutIcon.png","youtube.svg","service-worker.js"]),
 	mimeTypes: {".jpg":"image/jpeg",".svg":"image/svg+xml",".css":"text/css",".png":"image/png",".mp4":"video/mp4",".pdf":"application/pdf",".jpeg":"image/jpeg",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.29025601.js","app":"_app/immutable/entry/app.e5c45d3b.js","imports":["_app/immutable/entry/start.29025601.js","_app/immutable/chunks/index.4c5142a2.js","_app/immutable/chunks/singletons.70b72f07.js","_app/immutable/chunks/index.e53142fc.js","_app/immutable/chunks/control.e7f5239e.js","_app/immutable/entry/app.e5c45d3b.js","_app/immutable/chunks/preload-helper.41c905a7.js","_app/immutable/chunks/index.4c5142a2.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.fba94895.js","app":"_app/immutable/entry/app.8661d05c.js","imports":["_app/immutable/entry/start.fba94895.js","_app/immutable/chunks/index.6422d2b8.js","_app/immutable/chunks/singletons.edf20d34.js","_app/immutable/chunks/index.ece20a09.js","_app/immutable/chunks/control.e7f5239e.js","_app/immutable/entry/app.8661d05c.js","_app/immutable/chunks/preload-helper.41c905a7.js","_app/immutable/chunks/index.6422d2b8.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
@@ -184,7 +184,8 @@ export const manifest = {
 			() => import('./nodes/175.js'),
 			() => import('./nodes/176.js'),
 			() => import('./nodes/177.js'),
-			() => import('./nodes/178.js')
+			() => import('./nodes/178.js'),
+			() => import('./nodes/179.js')
 		],
 		routes: [
 			{
@@ -1284,6 +1285,13 @@ export const manifest = {
 				pattern: /^\/practice\/class9\/?$/,
 				params: [],
 				page: { layouts: [0,4,21,], errors: [1,,,], leaf: 178 },
+				endpoint: null
+			},
+			{
+				id: "/[...catchAll]",
+				pattern: /^(?:\/(.*))?\/?$/,
+				params: [{"name":"catchAll","optional":false,"rest":true,"chained":true}],
+				page: { layouts: [0,], errors: [1,], leaf: 179 },
 				endpoint: null
 			}
 		],

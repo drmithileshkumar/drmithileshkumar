@@ -23,9 +23,9 @@
     import { goto } from '$app/navigation';
     import {currentPath} from '$lib/stores';
 
-    export let data;
     let W;
     $: fixed = W < 600;
+    // $:console.log($page.data.user)
 </script>
 <svelte:head>
     <link
@@ -35,53 +35,24 @@
     />
 </svelte:head>
 <Analytics />
-<header>
+<header style="position: relative;">
     <TopAppBar variant="fixed" color="secondary">
         <Row>
             <Section style="align-items:center;">
                 <div class="logo">
                     <Fab on:click={() => goto("/")}>
                         <Icon>
-                            <img width="60px" height="60px" style="background:white; border-radius:50%;" src="/favicon.png" alt="1" />
+                            <img width="40px" height="40px" style="background:white; border-radius:50%;" src="/favicon.png" alt="1" />
                         </Icon>
                     </Fab>
                 </div>
                 <IconButton class="material-icons" on:click={() => $showLeft = !$showLeft}>menu</IconButton>
                 <span>
                     {$currentPath}
-                    <!-- {#if $page.route.id === '/'}
-                        AI Guru Dev
-                    {:else if $page.route.id === '/home'}
-                        Home
-                    {:else if $page.route.id === '/settings/profile'}
-                        Edit Profile
-                    {:else if $page.route.id === '/auth'}
-                        Authentication
-                    {:else if $page.route.id === '/[publicID]'}
-                        {$page.params.publicID}
-                    {:else if $page.route.id === '/post/[postID]'}
-                        Post
-                    {:else if $page.route.id === '/[publicID]/courses'}
-                        My Courses
-                    {:else if $page.route.id === '/fundamentals' || $page.route.id === '/[publicID]/fundamentals'}
-                        Fundamentals
-                    {:else if $page.route.id === '/calculus' || $page.route.id === '/[publicID]/calculus'}
-                        Calculus
-                    {:else if $page.route.id === '/linearAlgebra' || $page.route.id === '/[publicID]/linearAlgebra'}
-                        Linear Algebra
-                    {:else if $page.route.id === '/probability' || $page.route.id === '/[publicID]/probability'}
-                        Probability
-                    {:else if $page.route.id === '/statistics' || $page.route.id === '/[publicID]/statistics'}
-                        Statistics
-                    {:else if $page.route.id === '/optimization' || $page.route.id === '/[publicID]/optimization'}
-                        Optimization
-                    {:else if $page.route.id === '/graph' || $page.route.id === '/[publicID]/graph'}
-                        Graph theory
-                    {/if} -->
                 </span>
             </Section>
             <Section align="end" toolbar>
-                
+                <IconButton class="material-icons" aria-label="Search" on:click={() => goto('/search')}>search</IconButton>
                 <!-- <IconButton class="material-icons" aria-label="Settings"
                     >settings</IconButton
                 >
@@ -100,16 +71,16 @@
 
 <div class="container" bind:clientWidth={W}>
     
-    <Drawer variant='modal' fixed={true} bind:open={$showLeft}>
+    <Drawer variant='modal' bind:open={$showLeft}>
         <Content>
             <header class='nav'>
-                <Nav isAuth={data.user} />
+                <Nav/>
             </header>
         </Content>
     </Drawer>
     <!-- <Scrim /> -->
     {#if fixed}
-        <Scrim fixed={false}/>
+        <Scrim on:click={() => $showLeft = false}/>
     {/if}
     <AppContent>
         <main>
@@ -117,7 +88,7 @@
                 <slot />
             </div>
             <div class="side">
-                <Sidebar isAuth={data.user} />
+                <Sidebar />
             </div>
         </main>
     </AppContent>
@@ -136,10 +107,10 @@
     .container {
         width: 100%;
     }
-    .logo {
+    /* .logo {
         margin-left: 0.5em;
         margin-top: 0.5em;
-    }
+    } */
     header {
         min-width: 100%;
         z-index: 200;
@@ -172,6 +143,7 @@
         position: sticky;
         top: 4em;
         height: 100vh;
+        overflow-y: auto;
         /* padding: 0.5em; */
     }
     @media only screen and (max-width: 600px) {

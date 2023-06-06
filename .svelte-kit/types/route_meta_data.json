@@ -642,5 +642,6 @@
 		"src/routes/(general)/practice/class9/+page.js",
 		"src/routes/(general)/+layout.server.js",
 		"src/routes/(general)/+layout.server.js"
-	]
+	],
+	"/[...catchAll]": []
 }
