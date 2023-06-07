@@ -4,6 +4,6 @@ export const index = 34;
 export const component = async () => (await import('../entries/pages/(general)/notes/_page.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/(general)/notes/+page.js";
-export const imports = ["_app/immutable/nodes/34.a7b62d43.js","_app/immutable/chunks/index.1de1fe79.js","_app/immutable/chunks/control.e7f5239e.js","_app/immutable/chunks/index.6422d2b8.js","_app/immutable/chunks/Link.f738fa2a.js","_app/immutable/chunks/singletons.edf20d34.js","_app/immutable/chunks/index.ece20a09.js"];
+export const imports = ["_app/immutable/nodes/34.f4188a9b.js","_app/immutable/chunks/index.1de1fe79.js","_app/immutable/chunks/control.e7f5239e.js","_app/immutable/chunks/index.83aee1b3.js","_app/immutable/chunks/Link.50ab600e.js","_app/immutable/chunks/singletons.2140748f.js","_app/immutable/chunks/index.c0198b8b.js"];
 export const stylesheets = ["_app/immutable/assets/Message.1e964222.css","_app/immutable/assets/Link.867ad8ee.css"];
 export const fonts = [];

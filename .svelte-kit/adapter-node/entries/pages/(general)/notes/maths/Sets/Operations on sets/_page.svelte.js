@@ -1,4 +1,4 @@
-import { c as create_ssr_component, a as subscribe, e as escape, A as add_classes, k as add_attribute } from "../../../../../../../chunks/index3.js";
+import { c as create_ssr_component, a as subscribe, e as escape, A as add_classes, i as add_attribute } from "../../../../../../../chunks/index3.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../../chunks/stores2.js";
 import "../../../../../../../chunks/stores3.js";
 import "../../../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";

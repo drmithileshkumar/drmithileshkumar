@@ -17,9 +17,9 @@
         line-height: 1.45;
         word-spacing: 0.1em;
     } */
-    .homepage {
+    /* .homepage {
         background: white;
-    }
+    } */
     .courses {
         display: flex;
         gap: 1em;

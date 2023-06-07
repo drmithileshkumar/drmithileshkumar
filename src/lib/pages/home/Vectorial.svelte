@@ -1,6 +1,7 @@
-<script>
+<script lang='ts'>
     // @ts-nocheck
     import {ripple} from '$lib/ui/ripple';
+    import Card, {Content, Actions} from '@smui/card';
     </script>
     <style>
         .vectorial {
@@ -11,7 +12,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between; */
-            /* background: rgba(255, 115, 0, 0); */
+            background: rgb(0, 254, 13);
             border-radius: 10px;
             display: flex;
             flex-direction: column;
@@ -81,8 +82,8 @@
             <p class="subtitle">
                 Create Vector Graphics.
             </p>
-            <p class="subsubtitle">
-                in Browser!
+            <p style="color:black;">
+                in <strong>browser</strong>!
             </p>
             <a use:ripple href="https://vectorial.app">Get Started</a>
             <!-- <Link href={'/vectorial'} style="font-size: 1.2em;">Get started</Link> -->
@@ -106,5 +107,4 @@
             
             
         </figure>
-    
     </article>

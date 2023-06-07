@@ -4,6 +4,6 @@ export const index = 24;
 export const component = async () => (await import('../entries/pages/(general)/_page.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/(general)/+page.js";
-export const imports = ["_app/immutable/nodes/24.4764b563.js","_app/immutable/chunks/index.1de1fe79.js","_app/immutable/chunks/control.e7f5239e.js","_app/immutable/chunks/index.6422d2b8.js","_app/immutable/chunks/stores.fdedd971.js","_app/immutable/chunks/index.ece20a09.js","_app/immutable/chunks/stores.153b6257.js","_app/immutable/chunks/Practice.svelte_svelte_type_style_lang.4b324f0b.js","_app/immutable/chunks/singletons.edf20d34.js","_app/immutable/chunks/ripple.d6af89fa.js"];
-export const stylesheets = ["_app/immutable/assets/24.08b50bae.css","_app/immutable/assets/Message.1e964222.css","_app/immutable/assets/Practice.5698baa0.css"];
+export const imports = ["_app/immutable/nodes/24.d92a1775.js","_app/immutable/chunks/index.1de1fe79.js","_app/immutable/chunks/control.e7f5239e.js","_app/immutable/chunks/index.83aee1b3.js","_app/immutable/chunks/stores.db15c074.js","_app/immutable/chunks/index.c0198b8b.js","_app/immutable/chunks/stores.835e7125.js","_app/immutable/chunks/Practice.svelte_svelte_type_style_lang.d0fa009c.js","_app/immutable/chunks/singletons.2140748f.js","_app/immutable/chunks/ripple.d6af89fa.js","_app/immutable/chunks/ActionIcons.db52e67e.js"];
+export const stylesheets = ["_app/immutable/assets/24.f4cbe78b.css","_app/immutable/assets/Message.1e964222.css","_app/immutable/assets/Practice.5698baa0.css"];
 export const fonts = [];

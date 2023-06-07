@@ -4,6 +4,6 @@ export const index = 28;
 export const component = async () => (await import('../entries/pages/(general)/iit/maths/2021/question1/_page.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/(general)/iit/maths/2021/question1/+page.js";
-export const imports = ["_app/immutable/nodes/28.538b23f4.js","_app/immutable/chunks/index.1de1fe79.js","_app/immutable/chunks/control.e7f5239e.js","_app/immutable/chunks/index.6422d2b8.js","_app/immutable/chunks/stores.fdedd971.js","_app/immutable/chunks/index.ece20a09.js","_app/immutable/chunks/stores.22400e87.js","_app/immutable/chunks/singletons.edf20d34.js","_app/immutable/chunks/index.9e92b955.js","_app/immutable/chunks/constants.5a4b1f74.js"];
+export const imports = ["_app/immutable/nodes/28.86469860.js","_app/immutable/chunks/index.1de1fe79.js","_app/immutable/chunks/control.e7f5239e.js","_app/immutable/chunks/index.83aee1b3.js","_app/immutable/chunks/stores.db15c074.js","_app/immutable/chunks/index.c0198b8b.js","_app/immutable/chunks/stores.d85bd91a.js","_app/immutable/chunks/singletons.2140748f.js","_app/immutable/chunks/index.7eee1a3b.js","_app/immutable/chunks/constants.5a4b1f74.js"];
 export const stylesheets = ["_app/immutable/assets/28.dc187d06.css"];
 export const fonts = [];

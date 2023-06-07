@@ -1,4 +1,4 @@
-import { c as create_ssr_component, k as add_attribute, e as escape } from "../../../../../../chunks/index3.js";
+import { c as create_ssr_component, i as add_attribute, e as escape } from "../../../../../../chunks/index3.js";
 /* empty css                                                              *//* empty css                                                           */import "../../../../../../chunks/singletons.js";
 import { T as TeX } from "../../../../../../chunks/constants.js";
 const _page_svelte_svelte_type_style_lang = "";

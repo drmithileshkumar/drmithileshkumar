@@ -1,4 +1,4 @@
-import { c as create_ssr_component, k as add_attribute, e as escape, a as subscribe, x as createEventDispatcher, v as validate_component, w as set_store_value } from "./index3.js";
+import { c as create_ssr_component, i as add_attribute, e as escape, a as subscribe, q as createEventDispatcher, v as validate_component, p as set_store_value } from "./index3.js";
 import { Q as QuestionTimer } from "./stores3.js";
 import { a as attempted, n as newChapter, s as saved } from "./Practice.svelte_svelte_type_style_lang.js";
 const css$2 = {

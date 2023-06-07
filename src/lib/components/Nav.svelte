@@ -83,7 +83,7 @@
                     on:SMUI:action={() => goto(`https://mathril.com`)}
                 >
                     <Graphic>
-                        <Svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <Svg style="width: 100%; height: 100%;" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs>
                                 <linearGradient id='LinearGradient-VectorialApp19R21-3' x1="0%" y1="0%" x2="100%" y2="0%" >
                                     <stop offset="0%" stop-color="rgba(255, 0, 0, 1)"/>
@@ -260,7 +260,7 @@
                     on:SMUI:action={() => goto(`https://vectorial.app`)}
                 >
                     <Graphic>
-                        <Svg viewBox="-336 -140 224.00000095367432 222.00000286102295" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="s-96Qa8tULeGx4">
+                        <Svg style="width: 100%; height: 100%;" viewBox="-336 -140 224.00000095367432 222.00000286102295" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="s-96Qa8tULeGx4">
                             <defs class="s-96Qa8tULeGx4">
                                 <radialGradient id="radGrad604" cx="50%" cy="50%" r="50%" fx="50%" fy="50%" fr="0%" class="s-96Qa8tULeGx4">
                                     <stop offset="0%" stop-color="rgba(0, 0, 0, 0.1)" class="s-96Qa8tULeGx4"></stop>
@@ -299,7 +299,7 @@
                     on:SMUI:action={() => goto(`https://aiguru.dev`)}
                 >
                     <Graphic>
-                        <Svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <Svg style="width: 100%; height: 100%;" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs></defs>
                             <g>
                                 <g  
