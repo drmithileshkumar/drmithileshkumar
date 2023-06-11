@@ -8,8 +8,8 @@ const Message = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.open === void 0 && $$bindings.open && open !== void 0)
     $$bindings.open(open);
   $$result.css.add(css);
-  return `${open ? `<div class="${"message svelte-5cmsvs"}"><div class="${"body"}">${slots.default ? slots.default({}) : ``}</div>
-    <span class="${"material-icons svelte-5cmsvs"}" style="${"color:red;"}">close</span></div>` : ``}`;
+  return `${open ? `<div class="message svelte-5cmsvs"><div class="body">${slots.default ? slots.default({}) : ``}</div>
+    <span class="material-icons svelte-5cmsvs" style="color:red;">close</span></div>` : ``}`;
 });
 export {
   Message as M

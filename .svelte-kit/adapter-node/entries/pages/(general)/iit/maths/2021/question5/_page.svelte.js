@@ -27,7 +27,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-1hick8_START -->${$$result.title = `<title>Mathematics Question 5</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"How do we define base or fundamental units? How long really is one meter?"}"><!-- HEAD_svelte-1hick8_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-1hick8_START -->${$$result.title = `<title>Mathematics Question 5</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="How do we define base or fundamental units? How long really is one meter?"><!-- HEAD_svelte-1hick8_END -->`, ""}
     <article class="${["svelte-qqtpro", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}><h1>Question 5 [JEE adv, 2021]</h1>
         ${!$presentationMode || $currentSlide >= 0 ? `<p class="${"question " + escape(
     $presentationMode && isActive === 0 ? "currentActive" : "",

@@ -128,13 +128,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-1o7l939_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Subsets"}"><!-- HEAD_svelte-1o7l939_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-1o7l939_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="Subsets"><!-- HEAD_svelte-1o7l939_END -->`, ""}
 <article class="${[
     escape(null_to_empty($presentationMode ? "gridBackground" : ""), true) + " svelte-1tds5s2",
     $presentationMode ? "absolute" : ""
-  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1tds5s2"}"><div class="${"statement svelte-1tds5s2"}"><p></p></div></div>` : ``}
+  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-1tds5s2"><div class="statement svelte-1tds5s2"><p></p></div></div>` : ``}
 	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-1tds5s2"}"><section class="${"contentpart svelte-1tds5s2"}"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-1tds5s2"}"><section class="contentpart svelte-1tds5s2"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
@@ -249,7 +249,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Image, "Image").$$render($$result, { isActive: 11 }, {}, {
         default: () => {
-          return `<img style="${"width:min(400px, 90vw);"}" src="${"/notes/maths/sets/subsets/tree.svg"}" alt="${""}">`;
+          return `<img style="width:min(400px, 90vw);" src="/notes/maths/sets/subsets/tree.svg" alt="">`;
         }
       })}`;
     }
@@ -351,7 +351,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-                <div class="${"solution"}">${validate_component(Item, "Item").$$render($$result, { item: 21 }, {}, {
+                <div class="solution">${validate_component(Item, "Item").$$render($$result, { item: 21 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 121 }, {}, {
         default: () => {
@@ -415,15 +415,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</section></section>
-		${!$presentationMode ? `<div class="${"youtube svelte-1tds5s2"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/w4SBKulJJh4"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}
-		${$presentationMode ? `<div class="${"slate"}"></div>` : ``}</div>
+		${!$presentationMode ? `<div class="youtube svelte-1tds5s2"><iframe width="420" height="300" src="https://www.youtube.com/embed/w4SBKulJJh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ``}
+		${$presentationMode ? `<div class="slate"></div>` : ``}</div>
 	<section>${validate_component(Item, "Item").$$render($$result, { item: 26 }, {}, {
     default: () => {
       return `<section><h2>Practice</h2>
 				${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
     }
   })}</section>
-	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1tds5s2"}"></div>` : ``}
+	${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-1tds5s2"></div>` : ``}
 	
 </article>`;
 });

@@ -25,9 +25,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-l581lx_START -->${$$result.title = `<title>Mathematics Question 3</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"IIT JEE Advanced Mathematics 2021"}"><!-- HEAD_svelte-l581lx_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-l581lx_START -->${$$result.title = `<title>Mathematics Question 3</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="IIT JEE Advanced Mathematics 2021"><!-- HEAD_svelte-l581lx_END -->`, ""}
 
-    <article class="${["svelte-akjtnj", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-akjtnj"}"><p class="${"question statement svelte-akjtnj"}">For \\(x${escape(TeX.inR)}\\), thi number of real roots of the equation \\(3x^2-4|x^2 - 1| + x - 1 = 0\\) is ______.
+    <article class="${["svelte-akjtnj", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-akjtnj"><p class="question statement svelte-akjtnj">For \\(x${escape(TeX.inR)}\\), thi number of real roots of the equation \\(3x^2-4|x^2 - 1| + x - 1 = 0\\) is ______.
                 </p></div>` : ``}   
         ${!$presentationMode || $currentSlide >= -1 ? `<h1>Question 3 [JEE adv, 2021]</h1>` : ``}
         ${!$presentationMode || $currentSlide >= 0 ? `<p class="${"question " + escape(
@@ -109,7 +109,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     true
   ) + " svelte-akjtnj"}">There are two roots each of the two quadratic equations. Hence, the total number of roots is 4.
                 </p>` : ``}
-            ${$presentationMode && $currentSlide > 0 ? `<div class="${"pad svelte-akjtnj"}"></div>` : ``}</section></article>`;
+            ${$presentationMode && $currentSlide > 0 ? `<div class="pad svelte-akjtnj"></div>` : ``}</section></article>`;
 });
 export {
   Page as default

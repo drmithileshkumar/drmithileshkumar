@@ -8,7 +8,7 @@ import { I as Item, P, L as Li } from "../../../../../../../chunks/Image.svelte_
 import { H as H3 } from "../../../../../../../chunks/H3.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".display.svelte-bh5c3l{position:relative;position:-webkit-sticky}.youtube.svelte-bh5c3l{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\n	}article.svelte-bh5c3l{position:relative;padding:0.5em}.absolute.svelte-bh5c3l{margin:auto;width:100%;height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-bh5c3l::-webkit-scrollbar{width:0;height:0}.pad.svelte-bh5c3l{min-height:150px}.thumbnail.svelte-bh5c3l{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-bh5c3l{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:red;text-shadow:1px 1px 3px rgb(4, 4, 4);padding:1em;background-image:url('/notes/maths/sets/equal/thumbnail.svg');background-repeat:no-repeat;background-position:center}.grid.svelte-bh5c3l{display:grid;grid-template-columns:auto 420px}.flex.svelte-bh5c3l{display:flex;flex-direction:column-reverse}.contentpart.svelte-bh5c3l{padding:0.5em}.gridBackground.svelte-bh5c3l{background-image:url('/background.svg');background-repeat:no-repeat;background-position:center;background-size:cover}",
+  code: ".display.svelte-bh5c3l{position:relative;position:-webkit-sticky}.youtube.svelte-bh5c3l{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\r\n	}article.svelte-bh5c3l{position:relative;padding:0.5em}.absolute.svelte-bh5c3l{margin:auto;width:100%;height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-bh5c3l::-webkit-scrollbar{width:0;height:0}.pad.svelte-bh5c3l{min-height:150px}.thumbnail.svelte-bh5c3l{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-bh5c3l{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:red;text-shadow:1px 1px 3px rgb(4, 4, 4);padding:1em;background-image:url('/notes/maths/sets/equal/thumbnail.svg');background-repeat:no-repeat;background-position:center}.grid.svelte-bh5c3l{display:grid;grid-template-columns:auto 420px}.flex.svelte-bh5c3l{display:flex;flex-direction:column-reverse}.contentpart.svelte-bh5c3l{padding:0.5em}.gridBackground.svelte-bh5c3l{background-image:url('/background.svg');background-repeat:no-repeat;background-position:center;background-size:cover}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -97,13 +97,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-1mv7jwh_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Equal sets"}"><!-- HEAD_svelte-1mv7jwh_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-1mv7jwh_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="Equal sets"><!-- HEAD_svelte-1mv7jwh_END -->`, ""}
 <article class="${[
     escape(null_to_empty($presentationMode ? "gridBackground" : ""), true) + " svelte-bh5c3l",
     $presentationMode ? "absolute" : ""
-  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-bh5c3l"}"><div class="${"statement svelte-bh5c3l"}"><p>Equal sets</p></div></div>` : ``}
+  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-bh5c3l"><div class="statement svelte-bh5c3l"><p>Equal sets</p></div></div>` : ``}
 	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-    <div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-bh5c3l"}"><section class="${"contentpart svelte-bh5c3l"}"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+    <div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-bh5c3l"}"><section class="contentpart svelte-bh5c3l"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
@@ -198,15 +198,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</section></section>
-        ${!$presentationMode ? `<div class="${"youtube svelte-bh5c3l"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/jbBsClpZmPQ"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}
-        ${$presentationMode ? `<div class="${"slate"}"></div>` : ``}</div>
+        ${!$presentationMode ? `<div class="youtube svelte-bh5c3l"><iframe width="420" height="300" src="https://www.youtube.com/embed/jbBsClpZmPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ``}
+        ${$presentationMode ? `<div class="slate"></div>` : ``}</div>
     <section>${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
     default: () => {
       return `<section><h2>Practice</h2>
 				${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
     }
   })}</section>
-	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-bh5c3l"}"></div>` : ``}
+	${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-bh5c3l"></div>` : ``}
 </article>`;
 });
 export {

@@ -1,8 +1,6 @@
 import { c as create_ssr_component, b as compute_rest_props, a as subscribe, e as escape, n as null_to_empty, i as add_attribute, v as validate_component } from "../../../../../chunks/index3.js";
 import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../../chunks/stores2.js";
-import "../../../../../chunks/stores3.js";
-import "../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
-/* empty css                                                           */import { p as page } from "../../../../../chunks/stores.js";
+/* empty css                                                            *//* empty css                                                           */import { p as page } from "../../../../../chunks/stores.js";
 import { T as TeX } from "../../../../../chunks/constants.js";
 import { I as Item, P, L as Li } from "../../../../../chunks/Image.svelte_svelte_type_style_lang.js";
 /* empty css                                                       */import { H as H3 } from "../../../../../chunks/H3.js";
@@ -57,9 +55,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-mltdyf_START -->${$$result.title = `<title>Quantum Teleportation</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Quantum Teleportation"}"><!-- HEAD_svelte-mltdyf_END -->`, ""}
-    <article class="${["svelte-1sxsvd", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-1sxsvd"}"><h3>Quantum Teleportation</h3>
-                <img class="${"statement svelte-1sxsvd"}" width="${"100%"}" src="${"/notes/quantum/teleportation.svg"}" alt="${""}" style="${"color:white;"}"></div>` : ``}
+  return `${$$result.head += `<!-- HEAD_svelte-mltdyf_START -->${$$result.title = `<title>Quantum Teleportation</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="Quantum Teleportation"><!-- HEAD_svelte-mltdyf_END -->`, ""}
+    <article class="${["svelte-1sxsvd", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-1sxsvd"><h3>Quantum Teleportation</h3>
+                <img class="statement svelte-1sxsvd" width="100%" src="/notes/quantum/teleportation.svg" alt="" style="color:white;"></div>` : ``}
         ${!$presentationMode || $currentSlide >= -1 ? `<h1>Quantum Teleportation</h1>` : ``}
         ${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
@@ -99,7 +97,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Image, "Image").$$render($$result, { isActive: 3 }, {}, {
         default: () => {
-          return `<img style="${"width:min(90vw, 400px)"}" src="${"/notes/quantum/qubit2d.svg"}" alt="${""}">`;
+          return `<img style="width:min(90vw, 400px)" src="/notes/quantum/qubit2d.svg" alt="">`;
         }
       })}`;
     }
@@ -313,7 +311,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                                 0 & 0 & 0 & 1\\\\
                                 0 & 0 & 1 & 0
                                 \\end{bmatrix}\\]`)}</td>
-                            <td><img width="${"200px"}" src="${"/notes/quantum/CNOT.svg"}" alt="${""}"></td></tr></table>
+                            <td><img width="200px" src="/notes/quantum/CNOT.svg" alt=""></td></tr></table>
                      
                     The action of CNOT gate on basis states is ${escape(`\\[
                             \\begin{eqnarray}
@@ -438,7 +436,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Image, "Image").$$render($$result, { isActive: 34 }, {}, {
         default: () => {
-          return `<img style="${"width:80vw;"}" src="${"/notes/quantum/teleportation.svg"}" alt="${""}">`;
+          return `<img style="width:80vw;" src="/notes/quantum/teleportation.svg" alt="">`;
         }
       })}`;
     }
@@ -503,7 +501,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   })}</ol></section>
         
         
-        ${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-1sxsvd"}"></div>` : ``}
+        ${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-1sxsvd"></div>` : ``}
     </article>`;
 });
 export {

@@ -1,6 +1,5 @@
 import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, v as validate_component } from "../../../../../chunks/index3.js";
 /* empty css                                                          */import { b as presentationMode, c as currentSlide, s as slideCounter, p as presentation, o as overlay, a as autoScroll, f as selectedSection, g as selectedChapter } from "../../../../../chunks/stores2.js";
-import "../../../../../chunks/singletons.js";
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../../chunks/Presenter.js";
 const _layout_svelte_svelte_type_style_lang = "";
 const css = {
@@ -36,17 +35,17 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter();
   return `${$$result.head += `<!-- HEAD_svelte-jatvq7_START --><!-- HEAD_svelte-jatvq7_END -->`, ""}
         
-    <div class="${"maths " + escape($presentationMode ? "noMenu" : "", true) + " svelte-w80leu"}"><div class="${"presentationMode svelte-w80leu"}"><label style="${"display:flex;align-items:center;"}"><input type="${"checkbox"}"${add_attribute("checked", $presentationMode, 1)}> <span class="${"material-icons"}">slideshow</span></label>
+    <div class="${"maths " + escape($presentationMode ? "noMenu" : "", true) + " svelte-w80leu"}"><div class="presentationMode svelte-w80leu"><label style="display:flex;align-items:center;"><input type="checkbox"${add_attribute("checked", $presentationMode, 1)}> <span class="material-icons">slideshow</span></label>
             
             ${$presentationMode ? `${validate_component(CanvasBar, "CanvasBar").$$render($$result, {}, {}, {})}` : ``}</div>
         <div class="${"container " + escape($presentationMode ? "noMenu" : "", true) + " svelte-w80leu"}">${$presentationMode ? `
-                <aside class="${"back noMenu svelte-w80leu"}"></aside>` : ``}
-            ${!$presentationMode ? `<span class="${"noMenu"}"${add_attribute("this", $overlay, 0)}></span>` : ``}
-            ${$presentationMode ? `<div class="${"absolute overlay noMenu svelte-w80leu"}"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>
-                <div class="${"presenter noMenu svelte-w80leu"}">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>` : ``}
+                <aside class="back noMenu svelte-w80leu"></aside>` : ``}
+            ${!$presentationMode ? `<span class="noMenu"${add_attribute("this", $overlay, 0)}></span>` : ``}
+            ${$presentationMode ? `<div class="absolute overlay noMenu svelte-w80leu"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>
+                <div class="presenter noMenu svelte-w80leu">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>` : ``}
             ${slots.default ? slots.default({ class: $presentationMode ? "noMenu" : "" }) : ``}
             ${$presentationMode ? `
-                <aside class="${"next noMenu svelte-w80leu"}"></aside>` : ``}</div></div>`;
+                <aside class="next noMenu svelte-w80leu"></aside>` : ``}</div></div>`;
 });
 export {
   Layout as default

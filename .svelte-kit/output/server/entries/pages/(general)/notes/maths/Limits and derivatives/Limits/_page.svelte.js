@@ -1,8 +1,6 @@
 import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, A as add_classes } from "../../../../../../../chunks/index3.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../../chunks/stores2.js";
-import "../../../../../../../chunks/stores3.js";
-import "../../../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
-/* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -26,19 +24,19 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="${"definition"}"><p>We say \\(${escape(TeX.lim("x", "a^-"))}f(x)\\) is the expected value of \\(f\\) at \\(x = a\\) given the values of \\(f\\) near \\(x\\) to the left of \\(a\\). This value is called the <em>left hand limit</em> of \\(f\\) at \\(a\\).
+        <section><div class="definition"><p>We say \\(${escape(TeX.lim("x", "a^-"))}f(x)\\) is the expected value of \\(f\\) at \\(x = a\\) given the values of \\(f\\) near \\(x\\) to the left of \\(a\\). This value is called the <em>left hand limit</em> of \\(f\\) at \\(a\\).
                 </p>
                 <p>We say \\(${escape(TeX.lim("x", "a^+"))}f(x)\\) is the expected value of \\(f\\) at \\(x = a\\) given the values of \\(f\\) near \\(x\\) to the right of \\(a\\). This value is called the <em>right hand limit</em> of \\(f\\) at \\(a\\).
                 </p>
                 <p>If the right and left hand limits coincide, we call that common value as the limit of \\(f(x)\\) at \\(x = a\\) and denote it by \\(${escape(TeX.lim("x", "a"))}f(x)\\)
                 </p></div>
-            <ul><li style="${"padding-top: 0.5em;"}">\\(${escape(TeX.lim("x", "a"))}${escape(TeX.dfrac("x^n - a^n", "x-a"))} = n${escape(TeX.pow("a", "n-1"))}\\)
+            <ul><li style="padding-top: 0.5em;">\\(${escape(TeX.lim("x", "a"))}${escape(TeX.dfrac("x^n - a^n", "x-a"))} = n${escape(TeX.pow("a", "n-1"))}\\)
                 </li>
-                <li style="${"padding-top: 0.5em;"}">\\(${escape(TeX.lim("x", 0))}${escape(TeX.dfrac("\\sin x", "x"))} = 1\\)
+                <li style="padding-top: 0.5em;">\\(${escape(TeX.lim("x", 0))}${escape(TeX.dfrac("\\sin x", "x"))} = 1\\)
                 </li>
-                <li style="${"padding-top: 0.5em;"}">\\(${escape(TeX.lim("x", 0))}${escape(TeX.dfrac("1-\\cos x", "x"))} = 0\\)
+                <li style="padding-top: 0.5em;">\\(${escape(TeX.lim("x", 0))}${escape(TeX.dfrac("1-\\cos x", "x"))} = 0\\)
                 </li></ul></section>
         <section><h2>Algebra of limits
             </h2>

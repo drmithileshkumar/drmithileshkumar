@@ -14,6 +14,7 @@
             width: 1200px;
             margin: auto;
             background: white;
+            font-family: 'Roboto', sans-serif;
         }
         header {
             grid-area: header;
@@ -81,7 +82,10 @@
         .dates {
             font-weight: 500;
         }
-        .degree, .awardname {
+        .degree {
+            font-weight: 600;
+        }
+        .awardname {
             font-weight: 500;
         }
         .institute {

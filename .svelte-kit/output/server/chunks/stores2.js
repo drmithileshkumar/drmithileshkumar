@@ -221,11 +221,6 @@ const sections = {
 };
 const selectedChapter = writable(chapters[0]);
 const selectedSection = writable(sections[chapters[0]][0]);
-writable(2);
-writable("red");
-writable("source-over");
-writable(false);
-writable(false);
 const presentationMode = writable(false);
 const presentation = writable(null);
 const currentSlide = writable(-2);

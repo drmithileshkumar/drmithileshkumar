@@ -1,8 +1,6 @@
 import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, A as add_classes } from "../../../../../../../chunks/index3.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../../chunks/stores2.js";
-import "../../../../../../../chunks/stores3.js";
-import "../../../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
-/* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
+/* empty css                                                                  *//* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
@@ -25,9 +23,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-fc07ip_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-fc07ip_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-fc07ip_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-fc07ip_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="${"definition"}"><p><strong>Relation</strong> A relation \\(R\\) from a set \\(A\\) to a set \\(B\\) is a subset of the cartesian product \\(A\\times B\\) obtained by describing a relationship between the first element \\(x\\) and the second element \\(y\\) of the ordered pairs in \\(A\\times B\\).
+        <section><div class="definition"><p><strong>Relation</strong> A relation \\(R\\) from a set \\(A\\) to a set \\(B\\) is a subset of the cartesian product \\(A\\times B\\) obtained by describing a relationship between the first element \\(x\\) and the second element \\(y\\) of the ordered pairs in \\(A\\times B\\).
                </p></div>
            <ul><li>The <strong>image</strong> of an element \\(x\\) under a relation \\(R\\) is given by \\(y\\), where \\((x,y)\\in R\\).
                 </li>

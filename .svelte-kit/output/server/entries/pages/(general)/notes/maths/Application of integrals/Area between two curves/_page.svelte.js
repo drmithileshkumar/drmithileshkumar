@@ -1,8 +1,6 @@
 import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, A as add_classes } from "../../../../../../../chunks/index3.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../../chunks/stores2.js";
-import "../../../../../../../chunks/stores3.js";
-import "../../../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
-/* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -26,9 +24,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="${"definition"}"><p>The area of the region enclosed between two curves \\(y=f(x), y = g(x)\\) and the lines \\(x=a,x=b\\) is given by \\[A = \\int_a^b[f(x) - g(x)]dx\\] where \\(f(x)\\geq g(x)\\) in \\([a,b]\\)
+        <section><div class="definition"><p>The area of the region enclosed between two curves \\(y=f(x), y = g(x)\\) and the lines \\(x=a,x=b\\) is given by \\[A = \\int_a^b[f(x) - g(x)]dx\\] where \\(f(x)\\geq g(x)\\) in \\([a,b]\\)
                 </p>
                 <p>If \\(f(x)\\geq g(x)\\) in \\([a, c]\\) and \\(f(x)\\leq g(x)\\) in \\([c, b]\\), for \\(a${escape(TeX.less)} c ${escape(TeX.less)} b\\), then \\[\\int_a^c[f(x) - g(x)]dx + \\int_c^b[g(x) - f(x)]dx\\]
                 </p></div></section>

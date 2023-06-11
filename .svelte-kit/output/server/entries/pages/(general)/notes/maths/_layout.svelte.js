@@ -1,7 +1,6 @@
 import { c as create_ssr_component, i as add_attribute, a as subscribe, e as escape, v as validate_component, n as null_to_empty } from "../../../../../chunks/index3.js";
 import { S as Select } from "../../../../../chunks/Select.js";
 import { d as chapters, e as sections, c as currentSlide, b as presentationMode, s as slideCounter, p as presentation, o as overlay, a as autoScroll, f as selectedSection, g as selectedChapter } from "../../../../../chunks/stores2.js";
-import "../../../../../chunks/singletons.js";
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../../chunks/Presenter.js";
 class Point {
   constructor(x = 0, y = 0) {
@@ -176,7 +175,7 @@ const Teacher = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.makeDraggable === void 0 && $$bindings.makeDraggable && makeDraggable !== void 0)
     $$bindings.makeDraggable(makeDraggable);
   $$result.css.add(css$1);
-  return `<div class="${"teacher noMenu svelte-e6uf7i"}"${add_attribute("this", teacher, 0)}><img class="${"noMenu svelte-e6uf7i"}" src="${"/favicon.png"}" alt="${""}">
+  return `<div class="teacher noMenu svelte-e6uf7i"${add_attribute("this", teacher, 0)}><img class="noMenu svelte-e6uf7i" src="/favicon.png" alt="">
 </div>`;
 });
 const _layout_svelte_svelte_type_style_lang = "";
@@ -209,10 +208,10 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   do {
     $$settled = true;
     $$rendered = `${$$result.head += `<!-- HEAD_svelte-pzt9nu_START --><!-- HEAD_svelte-pzt9nu_END -->`, ""}
-${!$presentationMode ? `<span class="${"noMenu"}"${add_attribute("this", $overlay, 0)}></span>` : ``}
-<div class="${"maths " + escape($presentationMode ? "noMenu" : "", true) + " svelte-v6pok5"}"><div class="${"presentationMode svelte-v6pok5"}"><label style="${"display:flex;align-items:center;"}"><input style="${"display:none;"}" type="${"checkbox"}"${add_attribute("this", checkbox, 0)}${add_attribute("checked", $presentationMode, 1)}>
-			<span class="${"material-icons"}" style="${"color: " + escape($presentationMode ? "teal" : "white", true)}">slideshow</span></label>
-		${!$presentationMode ? `<nav class="${"svelte-v6pok5"}">${validate_component(Select, "Select").$$render(
+${!$presentationMode ? `<span class="noMenu"${add_attribute("this", $overlay, 0)}></span>` : ``}
+<div class="${"maths " + escape($presentationMode ? "noMenu" : "", true) + " svelte-v6pok5"}"><div class="presentationMode svelte-v6pok5"><label style="display:flex;align-items:center;"><input style="display:none;" type="checkbox"${add_attribute("this", checkbox, 0)}${add_attribute("checked", $presentationMode, 1)}>
+			<span class="material-icons" style="${"color: " + escape($presentationMode ? "teal" : "white", true)}">slideshow</span></label>
+		${!$presentationMode ? `<nav class="svelte-v6pok5">${validate_component(Select, "Select").$$render(
       $$result,
       {
         style: "width: 35vw; background:black; color:white;",
@@ -245,16 +244,16 @@ ${!$presentationMode ? `<span class="${"noMenu"}"${add_attribute("this", $overla
       {}
     )}</nav>` : ``}
 		${$presentationMode ? `${validate_component(CanvasBar, "CanvasBar").$$render($$result, {}, {}, {})}` : ``}</div>
-	<div class="${escape(null_to_empty($presentationMode ? "container noMenu" : ""), true) + " svelte-v6pok5"}">${$presentationMode ? `<aside class="${"back noMenu svelte-v6pok5"}"></aside>` : ``}
+	<div class="${escape(null_to_empty($presentationMode ? "container noMenu" : ""), true) + " svelte-v6pok5"}">${$presentationMode ? `<aside class="back noMenu svelte-v6pok5"></aside>` : ``}
 
-		${$presentationMode ? `<div class="${"absolute overlay noMenu svelte-v6pok5"}"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>
-			<div class="${"presenter noMenu svelte-v6pok5"}">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>
+		${$presentationMode ? `<div class="absolute overlay noMenu svelte-v6pok5"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>
+			<div class="presenter noMenu svelte-v6pok5">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>
 			
 			${validate_component(Teacher, "Teacher").$$render($$result, {}, {}, {})}` : ``}
 		${slots.default ? slots.default({
       class: $presentationMode ? "noMenu gridBackground" : ""
     }) : ``}
-		${$presentationMode ? `<aside class="${"next noMenu svelte-v6pok5"}"></aside>` : ``}</div>
+		${$presentationMode ? `<aside class="next noMenu svelte-v6pok5"></aside>` : ``}</div>
 </div>`;
   } while (!$$settled);
   $$unsubscribe_currentSlide();

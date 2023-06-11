@@ -27,11 +27,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-1vrun5y_START -->${$$result.title = `<title>Mathematics Question 4</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"IIT JEE Advanced Mathematics 2021"}"><!-- HEAD_svelte-1vrun5y_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-1vrun5y_START -->${$$result.title = `<title>Mathematics Question 4</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="IIT JEE Advanced Mathematics 2021"><!-- HEAD_svelte-1vrun5y_END -->`, ""}
 
-    <article class="${["svelte-k7pfkr", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail question statement svelte-k7pfkr"}"><p>For any complex number \\(w = c + id\\), let \\(arg(w)\\in (-\\pi,\\pi]\\), where \\(i=${escape(TeX.sqrt("-1"))}\\). Let \\(\\alpha\\) and \\(\\beta\\) be real numbers such that for all complex numbers \\(z = x + iy\\) satisfying \\(arg\\Big[${escape(TeX.dfrac("z + \\alpha", "z + \\beta"))}\\Big]=${escape(TeX.dfrac("\\pi", "4"))}\\), the ordered pair \\((x, y)\\) lies on the circle \\(x^2 + y^2 + 5x - 3y + 4 = 0\\). Then, which of the following statements is (are) <strong>True</strong>?
+    <article class="${["svelte-k7pfkr", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail question statement svelte-k7pfkr"><p>For any complex number \\(w = c + id\\), let \\(arg(w)\\in (-\\pi,\\pi]\\), where \\(i=${escape(TeX.sqrt("-1"))}\\). Let \\(\\alpha\\) and \\(\\beta\\) be real numbers such that for all complex numbers \\(z = x + iy\\) satisfying \\(arg\\Big[${escape(TeX.dfrac("z + \\alpha", "z + \\beta"))}\\Big]=${escape(TeX.dfrac("\\pi", "4"))}\\), the ordered pair \\((x, y)\\) lies on the circle \\(x^2 + y^2 + 5x - 3y + 4 = 0\\). Then, which of the following statements is (are) <strong>True</strong>?
                 </p>
-                <ol class="${"grid svelte-k7pfkr"}" style="${"width: 100%"}"><li>${escape(`\\(\\alpha = -1\\)`)}</li>
+                <ol class="grid svelte-k7pfkr" style="width: 100%"><li>${escape(`\\(\\alpha = -1\\)`)}</li>
                     <li>${escape(`\\(\\alpha\\beta = 4\\)`)}</li>
                     <li>${escape(`\\(\\alpha\\beta = -4\\)`)}</li>
                     <li>${escape(`\\(\\beta = 4\\)`)}</li></ol></div>` : ``}    
@@ -118,7 +118,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                             \\]`)}
                     Therefore, options 1 and 4 are correct.
                 </p>` : ``}
-            ${$presentationMode && $currentSlide > 0 ? `<div class="${"pad svelte-k7pfkr"}"></div>` : ``}</section></article>`;
+            ${$presentationMode && $currentSlide > 0 ? `<div class="pad svelte-k7pfkr"></div>` : ``}</section></article>`;
 });
 export {
   Page as default

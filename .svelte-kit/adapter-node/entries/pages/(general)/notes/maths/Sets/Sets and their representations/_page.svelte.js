@@ -146,13 +146,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-1zxtvw_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedSection, 0)}><!-- HEAD_svelte-1zxtvw_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-1zxtvw_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedSection, 0)}><!-- HEAD_svelte-1zxtvw_END -->`, ""}
 <article class="${[
     escape(null_to_empty($presentationMode ? "gridBackground" : ""), true) + " svelte-dgnj1u",
     $presentationMode ? "absolute" : ""
-  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-dgnj1u"}"><img class="${"statement svelte-dgnj1u"}" width="${"100%"}" src="${"/notes/maths/sets/representation/heroparadox.svg"}" alt="${""}" style="${"color:white;"}"></div>` : ``}
+  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-dgnj1u"><img class="statement svelte-dgnj1u" width="100%" src="/notes/maths/sets/representation/heroparadox.svg" alt="" style="color:white;"></div>` : ``}
 	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-dgnj1u"}"><section class="${"contentpart svelte-dgnj1u"}">${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-dgnj1u"}"><section class="contentpart svelte-dgnj1u">${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
@@ -169,14 +169,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 						mathematical refinement of this idea of collection. It turns out that not every
 						collection can be a set. One basic requirement of a mathematical concept is that its
 						definition must be unique. Not every collection has a unique definition. Consider, for
-						example, <span class="${"specialtext"}">the hero paradox</span>. A <em>hero</em> is a person
+						example, <span class="specialtext">the hero paradox</span>. A <em>hero</em> is a person
 						who helps those and only those, who can not help themselves.
 						<em>Does the hero help himself?</em>`;
         }
       })}
 					${validate_component(Image, "Image").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
-          return `<img style="${"width: 100%;"}" src="${"/notes/maths/sets/representation/heroparadox.svg"}" alt="${""}">`;
+          return `<img style="width: 100%;" src="/notes/maths/sets/representation/heroparadox.svg" alt="">`;
         }
       })}`;
     }
@@ -539,7 +539,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   })}</ul></section></section>
 
-		${!$presentationMode ? `<div class="${"youtube svelte-dgnj1u"}"><iframe width="${"100%"}" height="${"auto"}" src="${"https://www.youtube.com/embed/kj1VeKqMlJc"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}</div>
+		${!$presentationMode ? `<div class="youtube svelte-dgnj1u"><iframe width="100%" height="auto" src="https://www.youtube.com/embed/kj1VeKqMlJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ``}</div>
 
 	${validate_component(Item, "Item").$$render($$result, { item: 39 }, {}, {
     default: () => {
@@ -548,7 +548,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   })}
 
-	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-dgnj1u"}"></div>` : ``}
+	${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-dgnj1u"></div>` : ``}
 </article>`;
 });
 export {

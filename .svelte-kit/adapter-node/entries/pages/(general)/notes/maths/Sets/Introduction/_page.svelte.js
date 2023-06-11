@@ -1,13 +1,11 @@
 import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, v as validate_component, n as null_to_empty } from "../../../../../../../chunks/index3.js";
 import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../../../../chunks/stores2.js";
-import "../../../../../../../chunks/stores3.js";
-import "../../../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
-/* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
+/* empty css                                                                  *//* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
 import { I as Item, P, L as Li } from "../../../../../../../chunks/Image.svelte_svelte_type_style_lang.js";
 import { I as Image } from "../../../../../../../chunks/Image.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".display.svelte-b3oeu9{position:relative;position:-webkit-sticky}.youtube.svelte-b3oeu9{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\n	}article.svelte-b3oeu9{position:relative;padding:0.5em}.absolute.svelte-b3oeu9{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-b3oeu9::-webkit-scrollbar{width:0;height:0}.pad.svelte-b3oeu9{min-height:100px}.thumbnail.svelte-b3oeu9{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-b3oeu9{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}.grid.svelte-b3oeu9{display:grid;grid-template-columns:auto 420px}.flex.svelte-b3oeu9{display:flex;flex-direction:column-reverse}.contentpart.svelte-b3oeu9{padding:0.5em}.gridBackground.svelte-b3oeu9{background-image:url('/background.svg');background-repeat:no-repeat;background-position:center;background-size:cover}",
+  code: ".display.svelte-b3oeu9{position:relative;position:-webkit-sticky}.youtube.svelte-b3oeu9{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\r\n	}article.svelte-b3oeu9{position:relative;padding:0.5em}.absolute.svelte-b3oeu9{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-b3oeu9::-webkit-scrollbar{width:0;height:0}.pad.svelte-b3oeu9{min-height:100px}.thumbnail.svelte-b3oeu9{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-b3oeu9{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}.grid.svelte-b3oeu9{display:grid;grid-template-columns:auto 420px}.flex.svelte-b3oeu9{display:flex;flex-direction:column-reverse}.contentpart.svelte-b3oeu9{padding:0.5em}.gridBackground.svelte-b3oeu9{background-image:url('/background.svg');background-repeat:no-repeat;background-position:center;background-size:cover}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -36,14 +34,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-16awbk2_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Introduction to sets"}"><!-- HEAD_svelte-16awbk2_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-16awbk2_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="Introduction to sets"><!-- HEAD_svelte-16awbk2_END -->`, ""}
 
 <article class="${[
     escape(null_to_empty($presentationMode ? "gridBackground" : ""), true) + " svelte-b3oeu9",
     $presentationMode ? "absolute" : ""
-  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-b3oeu9"}"><p class="${"statement svelte-b3oeu9"}">${escape(`\\(\\{x:x\\)`)} is the foundation of mathematics${escape(`\\(\\}\\)`)}</p></div>` : ``}
+  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-b3oeu9"><p class="statement svelte-b3oeu9">${escape(`\\(\\{x:x\\)`)} is the foundation of mathematics${escape(`\\(\\}\\)`)}</p></div>` : ``}
 	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-b3oeu9"}"><section class="${"contentpart svelte-b3oeu9"}">${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-b3oeu9"}"><section class="contentpart svelte-b3oeu9">${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
@@ -61,7 +59,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</td>
-					<td><ul style="${"border-left: 1px solid"}">${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
+					<td><ul style="border-left: 1px solid">${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
@@ -130,7 +128,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}
 				${validate_component(Image, "Image").$$render($$result, { isActive: 4 }, {}, {
         default: () => {
-          return `<img style="${"width:min(90vw, 400px)"}" src="${"/notes/maths/sets/introduction/oddeven.svg"}" alt="${""}">`;
+          return `<img style="width:min(90vw, 400px)" src="/notes/maths/sets/introduction/oddeven.svg" alt="">`;
         }
       })}`;
     }
@@ -206,7 +204,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}
 				${validate_component(Image, "Image").$$render($$result, { isActive: 10 }, {}, {
         default: () => {
-          return `<img style="${"width:min(90vw, 400px)"}" src="${"/notes/maths/sets/introduction/example.svg"}" alt="${""}">`;
+          return `<img style="width:min(90vw, 400px)" src="/notes/maths/sets/introduction/example.svg" alt="">`;
         }
       })}`;
     }
@@ -222,8 +220,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}
-			${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-b3oeu9"}"></div>` : ``}</section>
-        ${!$presentationMode ? `<div class="${"youtube svelte-b3oeu9"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/Ii1HysDxd5U"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}</div>
+			${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-b3oeu9"></div>` : ``}</section>
+        ${!$presentationMode ? `<div class="youtube svelte-b3oeu9"><iframe width="420" height="300" src="https://www.youtube.com/embed/Ii1HysDxd5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ``}</div>
 </article>`;
 });
 export {

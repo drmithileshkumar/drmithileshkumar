@@ -694,13 +694,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-1up1sq_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}" content="${"Real numbers"}"><!-- HEAD_svelte-1up1sq_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-1up1sq_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="Real numbers"><!-- HEAD_svelte-1up1sq_END -->`, ""}
 <article class="${[
     escape(null_to_empty($presentationMode ? "gridBackground" : ""), true) + " svelte-gkd15d",
     $presentationMode ? "absolute" : ""
-  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="${"thumbnail svelte-gkd15d"}"><div class="${"statement svelte-gkd15d"}"><p></p></div></div>` : ``}
+  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-gkd15d"><div class="statement svelte-gkd15d"><p></p></div></div>` : ``}
 	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-gkd15d"}"><section class="${"contentpart svelte-gkd15d"}"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-gkd15d"}"><section class="contentpart svelte-gkd15d"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
@@ -794,7 +794,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Image, "Image").$$render($$result, { isActive: 6 }, {}, {
         default: () => {
-          return `<img style="${"width:min(400px, 90vw);"}" src="${"/notes/maths/sets/real/subsetreal.svg"}" alt="${""}">`;
+          return `<img style="width:min(400px, 90vw);" src="/notes/maths/sets/real/subsetreal.svg" alt="">`;
         }
       })}`;
     }
@@ -901,7 +901,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Image, "Image").$$render($$result, { isActive: 17 }, {}, {
         default: () => {
-          return `<img style="${"width:min(400px, 90vw);"}" src="${"/notes/maths/sets/real/interval.svg"}" alt="${""}">`;
+          return `<img style="width:min(400px, 90vw);" src="/notes/maths/sets/real/interval.svg" alt="">`;
         }
       })}`;
     }
@@ -917,15 +917,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })}</section>
-		${!$presentationMode ? `<div class="${"youtube svelte-gkd15d"}"><iframe width="${"420"}" height="${"300"}" src="${"https://www.youtube.com/embed/w4SBKulJJh4"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"}" allowfullscreen></iframe></div>` : ``}
-		${$presentationMode ? `<div class="${"slate"}"></div>` : ``}</div>
+		${!$presentationMode ? `<div class="youtube svelte-gkd15d"><iframe width="420" height="300" src="https://www.youtube.com/embed/w4SBKulJJh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ``}
+		${$presentationMode ? `<div class="slate"></div>` : ``}</div>
 	<section>${validate_component(Item, "Item").$$render($$result, { item: 19 }, {}, {
     default: () => {
       return `<section><h2>Practice</h2>
 				${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
     }
   })}</section>
-	${$presentationMode && $currentSlide >= 2 ? `<div class="${"pad svelte-gkd15d"}"></div>` : ``}
+	${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-gkd15d"></div>` : ``}
 </article>`;
 });
 export {

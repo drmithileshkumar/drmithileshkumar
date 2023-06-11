@@ -1,8 +1,6 @@
 import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, A as add_classes } from "../../../../../../../chunks/index3.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../../chunks/stores2.js";
-import "../../../../../../../chunks/stores3.js";
-import "../../../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
-/* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
+/* empty css                                                                  *//* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
@@ -25,7 +23,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
         <section><p>A linear programming problem is one that is concerned with finding the optimal value (maximum or minimum) of a linear function of several variables (called <strong>objective function</strong> ) subject to the conditions that the variables are non-negative and satisfy a set of linear inequalities (called linear <strong>constraints</strong> ). Variables are sometimes called <strong>decision variables</strong> and are <strong>non-negative</strong>.
             </p>
@@ -35,9 +33,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             </p>
             <p>Any point in the feasible region that gives the optimal value (maximum or minimum) of the objective is called an <strong>optimal solution</strong>.
             </p>
-            <p class="${"theorem"}"><strong>Theorem 1:</strong> Let \\(R\\) be the feasible region (convex polygon) for a linear programming problem and let \\(Z = ax + by\\) be the objective function. When \\(Z\\) has an optimal value (maximum or minimum), where the variables \\(x\\) and \\(y\\) are subject to constraints described by linear inequalities, this optimal value must occur at a corner point (vertex) of the feasible region.
+            <p class="theorem"><strong>Theorem 1:</strong> Let \\(R\\) be the feasible region (convex polygon) for a linear programming problem and let \\(Z = ax + by\\) be the objective function. When \\(Z\\) has an optimal value (maximum or minimum), where the variables \\(x\\) and \\(y\\) are subject to constraints described by linear inequalities, this optimal value must occur at a corner point (vertex) of the feasible region.
             </p>
-            <p class="${"theorem"}"><strong>Theorem 2:</strong> Let \\(R\\) be the feasible region (convex polygon) for a linear programming problem and let \\(Z = ax + by\\) be the objective function. If \\(R\\) is <strong>bounded</strong>, then the objective function \\(Z\\) has bothe a <strong>maximum</strong> and a <strong>minimum</strong> value on \\(R\\) and each of these occurs at a corner point (vertex) of \\(R\\).
+            <p class="theorem"><strong>Theorem 2:</strong> Let \\(R\\) be the feasible region (convex polygon) for a linear programming problem and let \\(Z = ax + by\\) be the objective function. If \\(R\\) is <strong>bounded</strong>, then the objective function \\(Z\\) has bothe a <strong>maximum</strong> and a <strong>minimum</strong> value on \\(R\\) and each of these occurs at a corner point (vertex) of \\(R\\).
             </p>
             <p>If the feasible region is unbounded, then a maximum or a minimum may not exist. However, if it exists, it must occur at a corner point of \\(R\\).
             </p></section>

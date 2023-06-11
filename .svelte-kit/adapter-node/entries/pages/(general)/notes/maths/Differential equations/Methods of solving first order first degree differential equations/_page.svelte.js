@@ -1,8 +1,6 @@
 import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, A as add_classes } from "../../../../../../../chunks/index3.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../../chunks/stores2.js";
-import "../../../../../../../chunks/stores3.js";
-import "../../../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
-/* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -26,7 +24,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
         <section><h2>Differential equations with variable seperable</h2>
             <p>A first order-first degree differential equation is of the form \\[${escape(TeX.dydx())} = F(x,y)\\] 
@@ -38,11 +36,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             <p>Integrating both sides, we get \\[\\int ${escape(TeX.frac("1", "h(y)"))}dy = \\int g(x)dx\\]
             </p></section>
         <section><h2>Homogeneous differential equations</h2>
-            <p class="${"definition"}">A function \\(F(x,y)\\) is said to be <em>homogeneous function of degree n</em> if \\(F(\\lambda x, \\lambda y) = \\lambda^n F(x, y)\\) for any nonzero constant \\(\\lambda\\).
+            <p class="definition">A function \\(F(x,y)\\) is said to be <em>homogeneous function of degree n</em> if \\(F(\\lambda x, \\lambda y) = \\lambda^n F(x, y)\\) for any nonzero constant \\(\\lambda\\).
             </p>
             <p>A function \\(F(x,y)\\) is a homogeneous function of degree \\(n\\) if \\[F(x,y) = x^ng(${escape(TeX.frac("y", "x"))})~or~y^nh(${escape(TeX.frac("x", "y"))})\\]
             </p>
-            <p class="${"definition"}">A differential equation of the form \\(${escape(TeX.dydx())} = F(x,y)\\) is said to be <em>homogeneous</em> if \\(F(x,y)\\) is a homogeneous function of degree zero.
+            <p class="definition">A differential equation of the form \\(${escape(TeX.dydx())} = F(x,y)\\) is said to be <em>homogeneous</em> if \\(F(x,y)\\) is a homogeneous function of degree zero.
             </p>
             <p>To solve a homogeneous differential equation of the type \\[${escape(TeX.dydx())} = F(x,y) = g(${escape(TeX.frac("y", "x"))})\\]
             </p>

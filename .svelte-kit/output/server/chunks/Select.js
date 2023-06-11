@@ -16,7 +16,7 @@ const Select = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.value(value);
   $$result.css.add(css);
   return `
-<fieldset class="${"svelte-5yji2q"}"><legend class="${"svelte-5yji2q"}">${escape(label)}</legend>
+<fieldset class="svelte-5yji2q"><legend class="svelte-5yji2q">${escape(label)}</legend>
 	<span${spread([{ class: "value" }, escape_object($$props)], { classes: "svelte-5yji2q" })}>${escape(value)}</span>
 	${``}
 </fieldset>`;

@@ -1,5 +1,4 @@
 import { c as create_ssr_component, a as subscribe, i as add_attribute, v as validate_component } from "../../../../../../chunks/index3.js";
-import "../../../../../../chunks/singletons.js";
 import { c as currentSlide, s as slideCounter, p as presentation, o as overlay, a as autoScroll, b as presentationMode } from "../../../../../../chunks/stores2.js";
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../../../chunks/Presenter.js";
 const _layout_svelte_svelte_type_style_lang = "";
@@ -30,16 +29,16 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentationMode();
   return `${$$result.head += `<!-- HEAD_svelte-jatvq7_START --><!-- HEAD_svelte-jatvq7_END -->`, ""}
     
-    <div class="${"questions svelte-ys2ybb"}"><div class="${"presentationMode svelte-ys2ybb"}"><label style="${"display:flex;align-items:center;"}"><input type="${"checkbox"}"${add_attribute("checked", $presentationMode, 1)}> <span class="${"material-icons"}">slideshow</span></label>
+    <div class="questions svelte-ys2ybb"><div class="presentationMode svelte-ys2ybb"><label style="display:flex;align-items:center;"><input type="checkbox"${add_attribute("checked", $presentationMode, 1)}> <span class="material-icons">slideshow</span></label>
             ${$presentationMode ? `${validate_component(CanvasBar, "CanvasBar").$$render($$result, {}, {}, {})}` : ``}</div>
-        <div class="${"container svelte-ys2ybb"}">${$presentationMode ? `
-                <aside class="${"back svelte-ys2ybb"}"></aside>` : ``}
+        <div class="container svelte-ys2ybb">${$presentationMode ? `
+                <aside class="back svelte-ys2ybb"></aside>` : ``}
             ${!$presentationMode ? `<span${add_attribute("this", $overlay, 0)}></span>` : ``}
-            ${$presentationMode ? `<div class="${"absolute overlay svelte-ys2ybb"}"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>
-                <div class="${"presenter svelte-ys2ybb"}">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>` : ``}
+            ${$presentationMode ? `<div class="absolute overlay svelte-ys2ybb"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>
+                <div class="presenter svelte-ys2ybb">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>` : ``}
             ${slots.default ? slots.default({}) : ``}
             ${$presentationMode ? `
-                <aside class="${"next svelte-ys2ybb"}"></aside>` : ``}</div></div>`;
+                <aside class="next svelte-ys2ybb"></aside>` : ``}</div></div>`;
 });
 export {
   Layout as default

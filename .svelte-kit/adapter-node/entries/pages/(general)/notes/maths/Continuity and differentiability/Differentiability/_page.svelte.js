@@ -1,8 +1,6 @@
 import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, A as add_classes } from "../../../../../../../chunks/index3.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../../chunks/stores2.js";
-import "../../../../../../../chunks/stores3.js";
-import "../../../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
-/* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -26,13 +24,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="${"definition"}"><p>Suppose \\(f\\) is a real function. Then, the function defined by ${escape(`\\[
+        <section><div class="definition"><p>Suppose \\(f\\) is a real function. Then, the function defined by ${escape(`\\[
                     f'(x) = \\lim_{h\\to 0}\\frac{f(x + h) - f(x)}{h}\\]`)} wherever the limit exists is defined to be the derivative of \\(f\\).</p></div>
-            <div class="${"theorem"}"><p>If a function \\(f\\) is differentiable at a point \\(c\\), then it is also continuous at that point.
+            <div class="theorem"><p>If a function \\(f\\) is differentiable at a point \\(c\\), then it is also continuous at that point.
                 </p></div>
-            <div class="${"theorem"}"><p><strong>Chain Rule:</strong> Let \\(f\\) be a real valued function which is a composite of two functions \\(u\\) and \\(v\\); i.e. \\(f = v\\circ u\\). Suppose \\(t = u(x)\\) and if both \\(${escape(TeX.dfrac("dt", "dx"))}\\) and \\(${escape(TeX.dfrac("dv", "dt"))}\\) exist, we have ${escape(`\\[\\frac{df}{dx} = \\frac{dv}{dt}\\cdot \\frac{dt}{dx}\\]`)}</p></div>
+            <div class="theorem"><p><strong>Chain Rule:</strong> Let \\(f\\) be a real valued function which is a composite of two functions \\(u\\) and \\(v\\); i.e. \\(f = v\\circ u\\). Suppose \\(t = u(x)\\) and if both \\(${escape(TeX.dfrac("dt", "dx"))}\\) and \\(${escape(TeX.dfrac("dv", "dt"))}\\) exist, we have ${escape(`\\[\\frac{df}{dx} = \\frac{dv}{dt}\\cdot \\frac{dt}{dx}\\]`)}</p></div>
             <table><tr><td>\\(${escape(TeX.dfrac("d", "dx"))}(${escape(TeX.asin)}x) = ${escape(TeX.dfrac(1, TeX.sqrt("1-x^2")))}\\)
                     </td>
                     <td>\\(${escape(TeX.dfrac("d", "dx"))}(${escape(TeX.acos)}x) = -${escape(TeX.dfrac(1, TeX.sqrt("1-x^2")))}\\)

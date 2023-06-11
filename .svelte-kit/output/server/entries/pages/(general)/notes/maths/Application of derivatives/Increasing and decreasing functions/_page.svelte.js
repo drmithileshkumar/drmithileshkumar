@@ -1,8 +1,6 @@
 import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, A as add_classes } from "../../../../../../../chunks/index3.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../../chunks/stores2.js";
-import "../../../../../../../chunks/stores3.js";
-import "../../../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
-/* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -26,9 +24,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="${"definition"}"><p>Let \\(I\\) be an interval contained in the domain of a real valued function \\(f\\). Then \\(f\\) is said to be 
+        <section><div class="definition"><p>Let \\(I\\) be an interval contained in the domain of a real valued function \\(f\\). Then \\(f\\) is said to be 
                 </p>
                 <ol><li>increasing on \\(I\\) if \\(x_1${escape(TeX.less)} x_2\\) in \\(I\\) implies that \\(f(x_1)\\leq f(x_2)\\) for all \\(x_1, x_2\\in I\\).
                     </li>
@@ -38,7 +36,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                     </li>
                     <li>strictly decreasing on \\(I\\) if \\(x_1${escape(TeX.less)} x_2\\) in \\(I\\) implies that \\(f(x_1)${escape(TeX.more)} f(x_2)\\) for all \\(x_1, x_2\\in I\\).
                     </li></ol></div>
-            <div class="${"theorem"}"><p>Let \\(f\\) be continuous on \\([a, b]\\) and differentiable on the open interval \\((a,b)\\). Then
+            <div class="theorem"><p>Let \\(f\\) be continuous on \\([a, b]\\) and differentiable on the open interval \\((a,b)\\). Then
                 </p>
                 <ol><li>\\(f\\) is strictly increasing in \\([a, b]\\) if \\(f&#39;(x) ${escape(TeX.more)} 0\\) for each \\(x\\in (a,b)\\)
                     </li>

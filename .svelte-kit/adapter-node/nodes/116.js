@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Relations and functions 12/Composition of functions and invertible function/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Relations and functions 12/Binary operations/_page.js';
 
 export const index = 116;
-export const component = async () => (await import('../entries/pages/(general)/notes/maths/Relations and functions 12/Composition of functions and invertible function/_page.svelte.js')).default;
+export const component = async () => (await import('../entries/pages/(general)/notes/maths/Relations and functions 12/Binary operations/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Relations and functions 12/Composition of functions and invertible function/+page.js";
-export const imports = ["_app/immutable/nodes/116.d10002f7.js","_app/immutable/chunks/index.1de1fe79.js","_app/immutable/chunks/control.e7f5239e.js","_app/immutable/chunks/index.83aee1b3.js","_app/immutable/chunks/stores.db15c074.js","_app/immutable/chunks/index.c0198b8b.js","_app/immutable/chunks/stores.835e7125.js","_app/immutable/chunks/Practice.svelte_svelte_type_style_lang.d0fa009c.js","_app/immutable/chunks/stores.d85bd91a.js","_app/immutable/chunks/singletons.2140748f.js"];
-export const stylesheets = ["_app/immutable/assets/Message.1e964222.css","_app/immutable/assets/Practice.5698baa0.css"];
+export const universal_id = "src/routes/(general)/notes/maths/Relations and functions 12/Binary operations/+page.js";
+export const imports = ["_app/immutable/nodes/116.f828cb0f.js","_app/immutable/chunks/index.ade5cbd2.js","_app/immutable/chunks/control.f5b05b5f.js","_app/immutable/chunks/index.aa11adab.js","_app/immutable/chunks/stores.10eacb08.js","_app/immutable/chunks/index.3fa823be.js","_app/immutable/chunks/constants.5a4b1f74.js","_app/immutable/chunks/stores.8ffe4a1d.js","_app/immutable/chunks/singletons.5cbc033f.js","_app/immutable/chunks/paths.bf3a73ee.js"];
+export const stylesheets = ["_app/immutable/assets/Practice.5698baa0.css","_app/immutable/assets/Message.1e964222.css"];
 export const fonts = [];

@@ -34,7 +34,7 @@ function set_store_value(store, ret, value) {
   store.set(value);
   return ret;
 }
-/* @__PURE__ */ new Set();
+const globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
 function listen(node, event, handler, options) {
   node.addEventListener(event, handler, options);
   return () => node.removeEventListener(event, handler, options);
@@ -56,7 +56,6 @@ function custom_event(type, detail, { bubbles = false, cancelable = false } = {}
   e.initCustomEvent(type, bubbles, cancelable, detail);
   return e;
 }
-/* @__PURE__ */ new Map();
 let current_component;
 function set_current_component(component) {
   current_component = component;
@@ -96,11 +95,7 @@ function bubble(component, event) {
     callbacks.slice().forEach((fn) => fn.call(this, event));
   }
 }
-Promise.resolve();
-/* @__PURE__ */ new Set();
-/* @__PURE__ */ new Set();
-const globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
-const boolean_attributes = /* @__PURE__ */ new Set([
+const _boolean_attributes = [
   "allowfullscreen",
   "allowpaymentrequest",
   "async",
@@ -115,7 +110,6 @@ const boolean_attributes = /* @__PURE__ */ new Set([
   "hidden",
   "inert",
   "ismap",
-  "itemscope",
   "loop",
   "multiple",
   "muted",
@@ -127,7 +121,8 @@ const boolean_attributes = /* @__PURE__ */ new Set([
   "required",
   "reversed",
   "selected"
-]);
+];
+const boolean_attributes = /* @__PURE__ */ new Set([..._boolean_attributes]);
 const void_element_names = /^(?:area|base|br|col|command|embed|hr|img|input|keygen|link|meta|param|source|track|wbr)$/;
 function is_void(name) {
   return void_element_names.test(name) || name.toLowerCase() === "!doctype";

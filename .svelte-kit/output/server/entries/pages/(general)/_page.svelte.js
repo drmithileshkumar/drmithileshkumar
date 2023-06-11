@@ -1,9 +1,6 @@
 import { c as create_ssr_component, v as validate_component } from "../../../chunks/index3.js";
 import "../../../chunks/stores2.js";
-import "../../../chunks/stores3.js";
-import "../../../chunks/Practice.svelte_svelte_type_style_lang.js";
-/* empty css                                                     */import "../../../chunks/singletons.js";
-import "../../../chunks/ActionIcons.js";
+/* empty css                                                      *//* empty css                                                     */import "../../../chunks/ActionIcons.js";
 const Notes_svelte_svelte_type_style_lang = "";
 const Twitter_svelte_svelte_type_style_lang = "";
 const css$2 = {
@@ -12,7 +9,7 @@ const css$2 = {
 };
 const Twitter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$2);
-  return `<div class="${"twitter svelte-1uu1tax"}"><blockquote class="${"twitter-tweet"}"><p lang="${"zxx"}" dir="${"ltr"}"><a href="${"https://t.co/OuJAxIYnuV"}">pic.twitter.com/OuJAxIYnuV</a></p>— Dr Mithilesh Kumar (@DrMithileshKr) <a href="${"https://twitter.com/DrMithileshKr/status/1612815196262928386?ref_src=twsrc%5Etfw"}">January 10, 2023</a></blockquote></div>`;
+  return `<div class="twitter svelte-1uu1tax"><blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/OuJAxIYnuV">pic.twitter.com/OuJAxIYnuV</a></p>— Dr Mithilesh Kumar (@DrMithileshKr) <a href="https://twitter.com/DrMithileshKr/status/1612815196262928386?ref_src=twsrc%5Etfw">January 10, 2023</a></blockquote></div>`;
 });
 const Youtube_svelte_svelte_type_style_lang = "";
 const Vectorial_svelte_svelte_type_style_lang = "";
@@ -22,17 +19,17 @@ const css$1 = {
 };
 const Vectorial = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<article class="${"vectorial svelte-190zn03"}"><section style="${"z-index: 1"}" class="${"svelte-190zn03"}"><h1 class="${"title svelte-190zn03"}">Vectorial</h1>
-            <p class="${"subtitle svelte-190zn03"}">Create Vector Graphics.
+  return `<article class="vectorial svelte-190zn03"><section style="z-index: 1" class="svelte-190zn03"><h1 class="title svelte-190zn03">Vectorial</h1>
+            <p class="subtitle svelte-190zn03">Create Vector Graphics.
             </p>
-            <p style="${"color:black;"}">in <strong>browser</strong>!
+            <p style="color:black;">in <strong>browser</strong>!
             </p>
-            <a href="${"https://vectorial.app"}" class="${"svelte-190zn03"}">Get Started</a>
+            <a href="https://vectorial.app" class="svelte-190zn03">Get Started</a>
             </section>
-        <figure class="${"svelte-190zn03"}">
+        <figure class="svelte-190zn03">
             
             
-            <img src="${"/vectorial/vectorialhome.svg"}" width="${"95%"}" alt="${"vectorialhome"}"></figure></article>`;
+            <img src="/vectorial/vectorialhome.svg" width="95%" alt="vectorialhome"></figure></article>`;
 });
 const Trigonometry_svelte_svelte_type_style_lang = "";
 const HTML_svelte_svelte_type_style_lang = "";
@@ -45,7 +42,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `${$$result.head += `<!-- HEAD_svelte-d6qc0s_START -->${$$result.title = `<title>Dr Mithilesh Kumar</title>`, ""}<!-- HEAD_svelte-d6qc0s_END -->`, ""}
 
-<div class="${"homepage"}"><div class="${"courses svelte-1ctnaem"}"></div>
+<div class="homepage"><div class="courses svelte-1ctnaem"></div>
     
     ${validate_component(Vectorial, "Vectorial").$$render($$result, {}, {}, {})}
     

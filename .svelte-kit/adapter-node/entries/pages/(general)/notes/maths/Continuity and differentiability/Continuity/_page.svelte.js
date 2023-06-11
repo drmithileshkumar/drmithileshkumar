@@ -1,8 +1,6 @@
 import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, A as add_classes } from "../../../../../../../chunks/index3.js";
 import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, b as presentationMode, p as presentation } from "../../../../../../../chunks/stores2.js";
-import "../../../../../../../chunks/stores3.js";
-import "../../../../../../../chunks/Practice.svelte_svelte_type_style_lang.js";
-/* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -26,13 +24,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="${"canonical"}" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="${"description"}"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
     <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="${"definition"}"><p>Suppose \\(f\\) is a real function on a subset of the real numbers and let \\(c\\) be a point in the domain of \\(f\\). Then \\(f\\) is continuous at \\(c\\) if ${escape(`\\[\\lim_{x\\to c}f(x) = f(c)\\]`)}</p></div>
-            <div class="${"definition"}">A real function \\(f\\) is said to be continuous if it is continuous at every point in the domain of \\(f\\).
+        <section><div class="definition"><p>Suppose \\(f\\) is a real function on a subset of the real numbers and let \\(c\\) be a point in the domain of \\(f\\). Then \\(f\\) is continuous at \\(c\\) if ${escape(`\\[\\lim_{x\\to c}f(x) = f(c)\\]`)}</p></div>
+            <div class="definition">A real function \\(f\\) is said to be continuous if it is continuous at every point in the domain of \\(f\\).
             </div></section>
         <section><h2>Algebra of continuous functions</h2>
-            <div class="${"theorem"}"><p>Suppose \\(f\\) and \\(g\\) be two real functions continuous at a real number \\(c\\). Then
+            <div class="theorem"><p>Suppose \\(f\\) and \\(g\\) be two real functions continuous at a real number \\(c\\). Then
                 </p>
                 <ol><li>\\(f + g\\) is continuous at \\(x = c\\).
                     </li>
@@ -42,7 +40,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                     </li>
                     <li>\\(\\Big [${escape(TeX.dfrac("f", "g"))}\\Big ]\\) is continuous at \\(x = c\\) (provided \\(g(c)\\neq 0\\))
                     </li></ol></div>
-            <div class="${"theorem"}"><p>Suppose \\(f\\) and \\(g\\) are real valued functions such that \\((f\\circ g)\\) is continuous at \\(c\\).
+            <div class="theorem"><p>Suppose \\(f\\) and \\(g\\) are real valued functions such that \\((f\\circ g)\\) is continuous at \\(c\\).
                 </p></div></section>
         
         
