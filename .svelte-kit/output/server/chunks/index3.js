@@ -35,22 +35,6 @@ function set_store_value(store, ret, value) {
   return ret;
 }
 const globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
-function listen(node, event, handler, options) {
-  node.addEventListener(event, handler, options);
-  return () => node.removeEventListener(event, handler, options);
-}
-function prevent_default(fn) {
-  return function(event) {
-    event.preventDefault();
-    return fn.call(this, event);
-  };
-}
-function stop_propagation(fn) {
-  return function(event) {
-    event.stopPropagation();
-    return fn.call(this, event);
-  };
-}
 function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
   const e = document.createEvent("CustomEvent");
   e.initCustomEvent(type, bubbles, cancelable, detail);
@@ -88,12 +72,6 @@ function setContext(key, context) {
 }
 function getContext(key) {
   return get_current_component().$$.context.get(key);
-}
-function bubble(component, event) {
-  const callbacks = component.$$.callbacks[event.type];
-  if (callbacks) {
-    callbacks.slice().forEach((fn) => fn.call(this, event));
-  }
 }
 const _boolean_attributes = [
   "allowfullscreen",
@@ -279,7 +257,6 @@ function style_object_to_string(style_object) {
   return Object.keys(style_object).filter((key) => style_object[key]).map((key) => `${key}: ${escape_attribute_value(style_object[key])};`).join(" ");
 }
 export {
-  add_classes as A,
   subscribe as a,
   compute_rest_props as b,
   create_ssr_component as c,
@@ -297,13 +274,10 @@ export {
   onDestroy as o,
   set_store_value as p,
   createEventDispatcher as q,
-  listen as r,
+  is_void as r,
   setContext as s,
-  bubble as t,
-  prevent_default as u,
+  noop as t,
+  safe_not_equal as u,
   validate_component as v,
-  stop_propagation as w,
-  is_void as x,
-  noop as y,
-  safe_not_equal as z
+  add_classes as w
 };

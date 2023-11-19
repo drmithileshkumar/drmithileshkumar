@@ -1,10 +1,21 @@
-import { b as base, a as assets, r as reset, p as public_env, o as options, g as get_hooks, s as set_public_env } from "./chunks/internal.js";
-import { H as HttpError, j as json, t as text, R as Redirect, e as error, A as ActionFailure } from "./chunks/index.js";
+import { b as base, a as assets, r as reset, p as public_env, o as options, s as set_private_env, c as set_public_env, g as get_hooks } from "./chunks/internal.js";
+import { t as text, H as HttpError, j as json, R as Redirect, e as error, A as ActionFailure } from "./chunks/index.js";
 import * as devalue from "devalue";
 import { w as writable, r as readable } from "./chunks/index2.js";
 import { parse, serialize } from "cookie";
 import * as set_cookie_parser from "set-cookie-parser";
 const DEV = false;
+const SVELTE_KIT_ASSETS = "/_svelte_kit_assets";
+const ENDPOINT_METHODS = /* @__PURE__ */ new Set([
+  "GET",
+  "POST",
+  "PUT",
+  "PATCH",
+  "DELETE",
+  "OPTIONS",
+  "HEAD"
+]);
+const PAGE_METHODS = /* @__PURE__ */ new Set(["GET", "POST", "HEAD"]);
 function negotiate(accept, types) {
   const parts = [];
   accept.split(",").forEach((str, i) => {
@@ -58,11 +69,10 @@ function exec(match, params, matchers) {
   let buffered = 0;
   for (let i = 0; i < params.length; i += 1) {
     const param = params[i];
-    const value = values[i - buffered];
+    let value = values[i - buffered];
     if (param.chained && param.rest && buffered) {
-      result[param.name] = values.slice(i - buffered, i + 1).filter((s2) => s2).join("/");
+      value = values.slice(i - buffered, i + 1).filter((s2) => s2).join("/");
       buffered = 0;
-      continue;
     }
     if (value === void 0) {
       if (param.rest)
@@ -113,9 +123,7 @@ function method_not_allowed(mod, method) {
   });
 }
 function allowed_methods(mod) {
-  const allowed = ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"].filter(
-    (method) => method in mod
-  );
+  const allowed = Array.from(ENDPOINT_METHODS).filter((method) => method in mod);
   if ("GET" in mod || "HEAD" in mod)
     allowed.push("HEAD");
   return allowed;
@@ -237,7 +245,7 @@ async function render_endpoint(event, mod, state) {
 }
 function is_endpoint_request(event) {
   const { method, headers } = event.request;
-  if (method === "PUT" || method === "PATCH" || method === "DELETE" || method === "OPTIONS") {
+  if (ENDPOINT_METHODS.has(method) && !PAGE_METHODS.has(method)) {
     return true;
   }
   if (method === "POST" && headers.get("x-sveltekit-action") === "true")
@@ -302,6 +310,7 @@ function make_trackable(url, callback) {
   return tracked;
 }
 function disable_hash(url) {
+  allow_nodejs_console_log(url);
   Object.defineProperty(url, "hash", {
     get() {
       throw new Error(
@@ -311,12 +320,20 @@ function disable_hash(url) {
   });
 }
 function disable_search(url) {
+  allow_nodejs_console_log(url);
   for (const property of ["search", "searchParams"]) {
     Object.defineProperty(url, property, {
       get() {
         throw new Error(`Cannot access url.${property} on a page with prerendering enabled`);
       }
     });
+  }
+}
+function allow_nodejs_console_log(url) {
+  {
+    url[Symbol.for("nodejs.util.inspect.custom")] = (depth, opts, inspect) => {
+      return inspect(new URL(url), opts);
+    };
   }
 }
 const DATA_SUFFIX = "/__data.json";
@@ -538,6 +555,7 @@ async function unwrap_promises(object) {
   return object;
 }
 const INVALIDATED_PARAM = "x-sveltekit-invalidated";
+const TRAILING_SLASH_PARAM = "x-sveltekit-trailing-slash";
 async function load_server_data({
   event,
   state,
@@ -640,6 +658,7 @@ async function load_data({
 function create_universal_fetch(event, state, fetched, csr, resolve_opts) {
   return async (input, init2) => {
     const cloned_body = input instanceof Request && input.body ? input.clone().body : null;
+    const cloned_headers = input instanceof Request && [...input.headers].length ? new Headers(input.headers) : init2?.headers;
     let response = await event.fetch(input, init2);
     const url = new URL(input instanceof Request ? input.url : input, event.url);
     const same_origin = url.origin === event.url.origin;
@@ -684,7 +703,7 @@ function create_universal_fetch(event, state, fetched, csr, resolve_opts) {
                 /** @type {string | ArrayBufferView | undefined} */
                 input instanceof Request && cloned_body ? await stream_to_string(cloned_body) : init2?.body
               ),
-              request_headers: init2?.headers,
+              request_headers: cloned_headers,
               response_body: body,
               response: response2
             });
@@ -792,17 +811,17 @@ function serialize_data(fetched, filter, prerendering = false) {
   const headers = {};
   let cache_control = null;
   let age = null;
-  let vary = false;
+  let varyAny = false;
   for (const [key2, value] of fetched.response.headers) {
     if (filter(key2, value)) {
       headers[key2] = value;
     }
     if (key2 === "cache-control")
       cache_control = value;
-    if (key2 === "age")
+    else if (key2 === "age")
       age = value;
-    if (key2 === "vary")
-      vary = true;
+    else if (key2 === "vary" && value.trim() === "*")
+      varyAny = true;
   }
   const payload = {
     status: fetched.response.status,
@@ -826,7 +845,7 @@ function serialize_data(fetched, filter, prerendering = false) {
     }
     attrs.push(`data-hash="${hash(...values)}"`);
   }
-  if (!prerendering && fetched.method === "GET" && cache_control && !vary) {
+  if (!prerendering && fetched.method === "GET" && cache_control && !varyAny) {
     const match = /s-maxage=(\d+)/g.exec(cache_control) ?? /max-age=(\d+)/g.exec(cache_control);
     if (match) {
       const ttl = +match[1] - +(age ?? "0");
@@ -1170,7 +1189,6 @@ function create_async_iterator() {
     }
   };
 }
-const SVELTE_KIT_ASSETS = "/_svelte_kit_assets";
 const updated = {
   ...readable(false),
   check: () => false
@@ -2358,6 +2376,7 @@ const valid_server_exports = /* @__PURE__ */ new Set([
   "PUT",
   "DELETE",
   "OPTIONS",
+  "HEAD",
   "prerender",
   "trailingSlash",
   "config",
@@ -2371,6 +2390,8 @@ const validate_server_exports = validator(valid_server_exports);
 const default_transform = ({ html }) => html;
 const default_filter = () => false;
 const default_preload = ({ type }) => type === "js" || type === "css";
+const page_methods = /* @__PURE__ */ new Set(["GET", "HEAD", "POST"]);
+const allowed_page_methods = /* @__PURE__ */ new Set(["GET", "HEAD", "OPTIONS"]);
 async function respond(request, options2, manifest, state) {
   const url = new URL(request.url);
   if (options2.csrf_check_origin) {
@@ -2401,7 +2422,8 @@ async function respond(request, options2, manifest, state) {
   let invalidated_data_nodes;
   if (is_data_request) {
     decoded = strip_data_suffix(decoded) || "/";
-    url.pathname = strip_data_suffix(url.pathname) || "/";
+    url.pathname = strip_data_suffix(url.pathname) + (url.searchParams.get(TRAILING_SLASH_PARAM) === "1" ? "/" : "") || "/";
+    url.searchParams.delete(TRAILING_SLASH_PARAM);
     invalidated_data_nodes = url.searchParams.get(INVALIDATED_PARAM)?.split("").map((node) => node === "1");
     url.searchParams.delete(INVALIDATED_PARAM);
   }
@@ -2457,7 +2479,8 @@ async function respond(request, options2, manifest, state) {
       }
     },
     url,
-    isDataRequest: is_data_request
+    isDataRequest: is_data_request,
+    isSubRequest: state.depth > 0
   };
   let resolve_opts = {
     transformPageChunk: default_transform,
@@ -2611,6 +2634,10 @@ async function respond(request, options2, manifest, state) {
         });
       }
       if (route) {
+        const method = (
+          /** @type {import('types').HttpMethod} */
+          event2.request.method
+        );
         let response;
         if (is_data_request) {
           response = await render_data(
@@ -2625,9 +2652,46 @@ async function respond(request, options2, manifest, state) {
         } else if (route.endpoint && (!route.page || is_endpoint_request(event2))) {
           response = await render_endpoint(event2, await route.endpoint(), state);
         } else if (route.page) {
-          response = await render_page(event2, route.page, options2, manifest, state, resolve_opts);
+          if (page_methods.has(method)) {
+            response = await render_page(event2, route.page, options2, manifest, state, resolve_opts);
+          } else {
+            const allowed_methods2 = new Set(allowed_page_methods);
+            const node = await manifest._.nodes[route.page.leaf]();
+            if (node?.server?.actions) {
+              allowed_methods2.add("POST");
+            }
+            if (method === "OPTIONS") {
+              response = new Response(null, {
+                status: 204,
+                headers: {
+                  allow: Array.from(allowed_methods2.values()).join(", ")
+                }
+              });
+            } else {
+              const mod = [...allowed_methods2].reduce(
+                (acc, curr) => {
+                  acc[curr] = true;
+                  return acc;
+                },
+                /** @type {Record<string, any>} */
+                {}
+              );
+              response = method_not_allowed(mod, method);
+            }
+          }
         } else {
           throw new Error("This should never happen");
+        }
+        if (request.method === "GET" && route.page && route.endpoint) {
+          const vary = response.headers.get("vary")?.split(",")?.map((v) => v.trim().toLowerCase());
+          if (!(vary?.includes("accept") || vary?.includes("*"))) {
+            response = new Response(response.body, {
+              status: response.status,
+              statusText: response.statusText,
+              headers: new Headers(response.headers)
+            });
+            response.headers.append("Vary", "Accept");
+          }
         }
         return response;
       }
@@ -2663,6 +2727,20 @@ async function respond(request, options2, manifest, state) {
     }
   }
 }
+function filter_private_env(env, { public_prefix, private_prefix }) {
+  return Object.fromEntries(
+    Object.entries(env).filter(
+      ([k]) => k.startsWith(private_prefix) && (public_prefix === "" || !k.startsWith(public_prefix))
+    )
+  );
+}
+function filter_public_env(env, { public_prefix, private_prefix }) {
+  return Object.fromEntries(
+    Object.entries(env).filter(
+      ([k]) => k.startsWith(public_prefix) && (private_prefix === "" || !k.startsWith(private_prefix))
+    )
+  );
+}
 class Server {
   /** @type {import('types').SSROptions} */
   #options;
@@ -2679,11 +2757,18 @@ class Server {
    * }} opts
    */
   async init({ env }) {
-    const entries = Object.entries(env);
-    const prefix = this.#options.env_public_prefix;
-    Object.fromEntries(entries.filter(([k]) => !k.startsWith(prefix)));
-    const pub = Object.fromEntries(entries.filter(([k]) => k.startsWith(prefix)));
-    set_public_env(pub);
+    set_private_env(
+      filter_private_env(env, {
+        public_prefix: this.#options.env_public_prefix,
+        private_prefix: this.#options.env_private_prefix
+      })
+    );
+    set_public_env(
+      filter_public_env(env, {
+        public_prefix: this.#options.env_public_prefix,
+        private_prefix: this.#options.env_private_prefix
+      })
+    );
     if (!this.#options.hooks) {
       try {
         const module = await get_hooks();

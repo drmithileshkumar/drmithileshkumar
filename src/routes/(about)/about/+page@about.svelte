@@ -33,7 +33,7 @@
         height: 1em;
     }
     .intro {
-        margin-top: auto;
+        margin-top: 1em;
     }
     .name {
         font-size: 1.3em;
@@ -68,7 +68,7 @@
     <div class="welcome">
         <!-- <h1>Welcome to my page.</h1> -->
         <p>
-            Hello, my passion is teaching, but I'm a full-time learner. I'm a self-taught full-stack web developer. In addition, I've master degrees in theoretical physics (<strong>AIR 971, IIT Kanpur</strong>) and theoretical computer science (<strong>Gold Medalist, CMI, Chennai</strong>). I've done PhD in parameterized algorithms (<strong>UiB, Norway</strong>) and Post Doctoral research (<strong>Simula-UiB, Norway</strong>) in quantum-safe cryptography. I taught quantum algorithm to my research group at Simula-UiB. My goal is to contribute to the society by teaching young ones what I have learnt so far and learn from them in return. ( <a href="/cv">My CV</a> )
+            Hello, I'm Mithilesh Kumar. I'm passionate about anything related to Quantum Mechanics. Currently, I'm working actively in quantum error correction. I have done research in quantum-safe cryptography (Post-Doc). My PhD involved studying parameterized algorithms. Prior to that I have masters in two fields, computer science (CMI) and physics (IIT Kanpur). In addition, I have founded two websites <a href="https://mathril.com">Mathril</a> (Mathematics) and <a href="https://vectorial.app">Vectorial</a> (Graphics). ( <a href="/cv">My CV</a> )
         </p>
     </div>
     <br>

@@ -123,7 +123,7 @@
         <aside>
             <section class="about">
                 <h2>Profile</h2>
-                <p style="font-weight: 400;line-height: 1.45;font-size: 0.9em;">I'm passionate about teaching, but I'm full-time learner. I want to contribute to the society by teaching young ones what I have learnt so far and learn from them in return. I taught quantum computing to my research group at Simula-UiB, Bergen, Norway.</p>
+                <p style="font-weight: 400;line-height: 1.45;font-size: 0.9em;">Hello, I'm Mithilesh Kumar. I'm passionate about anything related to Quantum Mechanics. Currently, I'm working actively in quantum error correction. I have done research in quantum-safe cryptography (Post-Doc). My PhD involved studying parameterized algorithms. Prior to that I have masters in two fields, computer science (CMI) and physics (IIT Kanpur). In addition, I have founded two websites Mathril (Mathematics) and Vectorial (Graphics).</p>
             </section>
             <div class="contact">
                 <h2>Contact</h2>
@@ -159,7 +159,7 @@
                             <div class="edu">
                                 <div class="degree">Web development</div>
                                 <div class="institute">Self-taught</div>
-                                <div class="description">nodejs, mongodb, svelte, sveltekit, html, css, javascript</div>
+                                <div class="description">created websites mathril.com and vectorial.app</div>
                             </div>
                         </td>
                     </tr>

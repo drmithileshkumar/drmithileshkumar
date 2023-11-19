@@ -235,6 +235,9 @@ const CommonIcon = create_ssr_component(($$result, $$props, $$bindings, slots) =
 });
 const Svg = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["use", "getElement"]);
+  if (console && console.warn) {
+    console.warn('The @smui/common Svg component is deprecated. You can use `tag="svg"` now.');
+  }
   let { use = [] } = $$props;
   forwardEventsBuilder(get_current_component());
   let element;

@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Probability/Event/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Probability/Random experiments/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Probability/Event/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Probability/Random experiments/+page.svelte";

@@ -1,4 +1,4 @@
-import { r as listen, t as bubble, u as prevent_default, w as stop_propagation, c as create_ssr_component, b as compute_rest_props, g as get_current_component, d as spread, h as escape_object, i as add_attribute, x as is_void, j as getContext, s as setContext, o as onDestroy, v as validate_component, k as globals, m as missing_component } from "./index3.js";
+import { c as create_ssr_component, b as compute_rest_props, g as get_current_component, d as spread, h as escape_object, i as add_attribute, r as is_void, j as getContext, s as setContext, o as onDestroy, v as validate_component, k as globals, m as missing_component } from "./index3.js";
 function classMap(classObj) {
   return Object.entries(classObj).filter(([name, value]) => name !== "" && value).map(([name]) => name).join(" ");
 }
@@ -24,8 +24,11 @@ function forwardEventsBuilder(component) {
       destructor();
     };
   };
-  function forward(e) {
-    bubble(component, e);
+  function bubble(e) {
+    const callbacks = component.$$.callbacks[e.type];
+    if (callbacks) {
+      callbacks.slice().forEach((fn) => fn.call(this, e));
+    }
   }
   return (node) => {
     const destructors = [];
@@ -75,6 +78,15 @@ function forwardEventsBuilder(component) {
         if (eventOptions.stopPropagation) {
           handler = stop_propagation(handler);
         }
+        if (eventOptions.stopImmediatePropagation) {
+          handler = stop_immediate_propagation(handler);
+        }
+        if (eventOptions.self) {
+          handler = self_event(node, handler);
+        }
+        if (eventOptions.trusted) {
+          handler = trusted_event(handler);
+        }
       }
       const off = listen(node, eventType, handler, options);
       const destructor = () => {
@@ -86,7 +98,7 @@ function forwardEventsBuilder(component) {
       };
       destructors.push(destructor);
       if (!(eventType in forwardDestructors)) {
-        forwardDestructors[eventType] = listen(node, eventType, forward);
+        forwardDestructors[eventType] = listen(node, eventType, bubble);
       }
       return destructor;
     };
@@ -103,6 +115,44 @@ function forwardEventsBuilder(component) {
         }
       }
     };
+  };
+}
+function listen(node, event, handler, options) {
+  node.addEventListener(event, handler, options);
+  return () => node.removeEventListener(event, handler, options);
+}
+function prevent_default(fn) {
+  return function(event) {
+    event.preventDefault();
+    return fn.call(this, event);
+  };
+}
+function stop_propagation(fn) {
+  return function(event) {
+    event.stopPropagation();
+    return fn.call(this, event);
+  };
+}
+function stop_immediate_propagation(fn) {
+  return function(event) {
+    event.stopImmediatePropagation();
+    return fn.call(this, event);
+  };
+}
+function self_event(node, fn) {
+  return function(event) {
+    if (event.target !== node) {
+      return;
+    }
+    return fn.call(this, event);
+  };
+}
+function trusted_event(fn) {
+  return function(event) {
+    if (!event.isTrusted) {
+      return;
+    }
+    return fn.call(this, event);
   };
 }
 const SmuiElement = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -137,11 +187,11 @@ const SmuiElement = create_ssr_component(($$result, $$props, $$bindings, slots) 
     "track",
     "wbr"
   ].indexOf(tag) > -1;
-  return `${selfClosing ? `${((tag$1) => {
+  return `${tag === "svg" ? `<svg${spread([escape_object($$restProps)], {})}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``}</svg>` : `${selfClosing ? `${((tag$1) => {
     return tag$1 ? `<${tag}${spread([escape_object($$restProps)], {})}${add_attribute("this", element, 0)}>${is_void(tag$1) ? "" : ``}${is_void(tag$1) ? "" : `</${tag$1}>`}` : "";
   })(tag)}` : `${((tag$1) => {
     return tag$1 ? `<${tag}${spread([escape_object($$restProps)], {})}${add_attribute("this", element, 0)}>${is_void(tag$1) ? "" : `${slots.default ? slots.default({}) : ``}`}${is_void(tag$1) ? "" : `</${tag$1}>`}` : "";
-  })(tag)}`}`;
+  })(tag)}`}`}`;
 });
 const { Object: Object_1 } = globals;
 const internals = {

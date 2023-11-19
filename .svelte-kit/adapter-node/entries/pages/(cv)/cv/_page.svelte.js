@@ -2,8 +2,8 @@ import { c as create_ssr_component, v as validate_component } from "../../../../
 import { P as Papers } from "../../../../chunks/Papers.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: `article.svelte-9fdrmv.svelte-9fdrmv{display:grid;grid-template-columns:0.25fr 0.75fr;grid-template-areas:"header header"\r
-            "aside main"\r
+  code: `article.svelte-9fdrmv.svelte-9fdrmv{display:grid;grid-template-columns:0.25fr 0.75fr;grid-template-areas:"header header"
+            "aside main"
             "papers papers";padding:1em;width:1200px;margin:auto;background:white;font-family:'Roboto', sans-serif}header.svelte-9fdrmv.svelte-9fdrmv{grid-area:header;display:grid;grid-template-columns:200px 0.7fr;grid-template-areas:"profile details";align-items:center;background:linear-gradient(45deg, white, rgba(41, 170, 230, 0.2), rgb(41, 170, 230));height:200px}aside.svelte-9fdrmv.svelte-9fdrmv{grid-area:aside;display:flex;gap:1em;flex-direction:column;margin-top:1em}.main.svelte-9fdrmv.svelte-9fdrmv{grid-area:main;padding:1em;padding-top:0;display:grid;grid-template-columns:1fr 1fr}.papers.svelte-9fdrmv.svelte-9fdrmv{grid-area:papers}.profile.svelte-9fdrmv.svelte-9fdrmv{grid-area:profile;width:200px;height:200px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center}.details.svelte-9fdrmv.svelte-9fdrmv{grid-area:details;display:flex;flex-direction:column;padding-left:0.5em}.name.svelte-9fdrmv.svelte-9fdrmv{font-size:3em;color:rgb(0, 147, 220);text-shadow:1px 1px 2px #888;font-weight:300}.intro.svelte-9fdrmv.svelte-9fdrmv{font-weight:300;color:black}h2.svelte-9fdrmv.svelte-9fdrmv,.symbol.svelte-9fdrmv.svelte-9fdrmv{color:rgb(0, 147, 220)}.about.svelte-9fdrmv.svelte-9fdrmv,.contact.svelte-9fdrmv.svelte-9fdrmv{background-color:rgba(136, 136, 136, 0.212);padding:1em}.dates.svelte-9fdrmv.svelte-9fdrmv{font-weight:500}.degree.svelte-9fdrmv.svelte-9fdrmv{font-weight:600}.awardname.svelte-9fdrmv.svelte-9fdrmv{font-weight:500}.institute.svelte-9fdrmv.svelte-9fdrmv{font-weight:400;font-size:0.9em}.description.svelte-9fdrmv.svelte-9fdrmv,.awarddescription.svelte-9fdrmv.svelte-9fdrmv{font-weight:300;font-size:0.8em}td.svelte-9fdrmv.svelte-9fdrmv{padding-right:2em;padding-bottom:1em}.symbol.svelte-9fdrmv.svelte-9fdrmv{padding-right:0.5em}.contactable.svelte-9fdrmv td.svelte-9fdrmv{padding-bottom:0;padding-right:0;font-size:0.9em;letter-spacing:0.02em}`,
   map: null
 };
@@ -13,7 +13,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             <div class="details svelte-9fdrmv"><div class="name svelte-9fdrmv">Dr Mithilesh Kumar</div>
                 <div class="intro svelte-9fdrmv">Ex-IITian, Gold Medalist, Scientist, Teacher, Web developer</div></div></header>
         <aside class="svelte-9fdrmv"><section class="about svelte-9fdrmv"><h2 class="svelte-9fdrmv">Profile</h2>
-                <p style="font-weight: 400;line-height: 1.45;font-size: 0.9em;">I&#39;m passionate about teaching, but I&#39;m full-time learner. I want to contribute to the society by teaching young ones what I have learnt so far and learn from them in return. I taught quantum computing to my research group at Simula-UiB, Bergen, Norway.</p></section>
+                <p style="font-weight: 400;line-height: 1.45;font-size: 0.9em;">Hello, I&#39;m Mithilesh Kumar. I&#39;m passionate about anything related to Quantum Mechanics. Currently, I&#39;m working actively in quantum error correction. I have done research in quantum-safe cryptography (Post-Doc). My PhD involved studying parameterized algorithms. Prior to that I have masters in two fields, computer science (CMI) and physics (IIT Kanpur). In addition, I have founded two websites Mathril (Mathematics) and Vectorial (Graphics).</p></section>
             <div class="contact svelte-9fdrmv"><h2 class="svelte-9fdrmv">Contact</h2>
                 <table class="contactable svelte-9fdrmv" style="font-size: 0.9em"><tr><td class="svelte-9fdrmv"><span class="material-icons">home</span></td>
                         <td class="svelte-9fdrmv">Bokaro</td></tr>
@@ -28,7 +28,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         </td>
                         <td class="svelte-9fdrmv"><div class="edu"><div class="degree svelte-9fdrmv">Web development</div>
                                 <div class="institute svelte-9fdrmv">Self-taught</div>
-                                <div class="description svelte-9fdrmv">nodejs, mongodb, svelte, sveltekit, html, css, javascript</div></div></td></tr>
+                                <div class="description svelte-9fdrmv">created websites mathril.com and vectorial.app</div></div></td></tr>
                     <tr><td class="dates svelte-9fdrmv">2017 - 2020
                         </td>
                         <td class="svelte-9fdrmv"><div class="edu"><div class="degree svelte-9fdrmv">Post Doc Research</div>
