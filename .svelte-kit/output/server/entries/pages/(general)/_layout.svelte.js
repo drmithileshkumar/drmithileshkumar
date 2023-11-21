@@ -1,4 +1,4 @@
-import { c as create_ssr_component, b as compute_rest_props, g as get_current_component, s as setContext, o as onDestroy, d as spread, f as escape_attribute_value, h as escape_object, i as add_attribute, j as getContext, v as validate_component, m as missing_component, k as globals, a as subscribe, l as each, e as escape } from "../../../chunks/index3.js";
+import { c as create_ssr_component, b as compute_rest_props, g as get_current_component, s as setContext, o as onDestroy, d as spread, f as escape_attribute_value, h as escape_object, i as add_attribute, j as getContext, v as validate_component, m as missing_component, k as globals, a as subscribe, l as each, e as escape, n as null_to_empty } from "../../../chunks/index3.js";
 import { MDCDismissibleDrawerFoundation, MDCModalDrawerFoundation } from "@material/drawer";
 import { f as forwardEventsBuilder, c as classMap, S as SmuiElement, a as classAdderBuilder, C as Content$1 } from "../../../chunks/ActionIcons.js";
 import { MDCRippleFoundation, util } from "@material/ripple";
@@ -7,6 +7,7 @@ import { p as page } from "../../../chunks/stores.js";
 import { w as writable, r as readable } from "../../../chunks/index2.js";
 /* empty css                                                  */import { MDCTopAppBarBaseFoundation, MDCShortTopAppBarFoundation, MDCFixedTopAppBarFoundation, MDCTopAppBarFoundation } from "@material/top-app-bar";
 import { MDCIconButtonToggleFoundation } from "@material/icon-button";
+import { p as presentationMode } from "../../../chunks/stores2.js";
 function dispatch(element, eventType, detail, eventInit = { bubbles: true }, duplicateEventForMDC = false) {
   if (typeof Event === "undefined") {
     throw new Error("Event not defined.");
@@ -1191,10 +1192,13 @@ const Separator = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   } while (!$$settled);
   return $$rendered;
 });
+const TopBarHeight = writable(0);
+const refreshApp = writable(false);
 const currentPath = writable("Dr Mithilesh Kumar");
 const navList = writable([]);
-const darkMode = writable(true);
+const darkMode = writable(false);
 const showLeft = writable(true);
+const showRight = writable(false);
 const defaultProfileImage = "/avatar.svg";
 const initialProfileImage = defaultProfileImage;
 const profileImage = writable(initialProfileImage);
@@ -1362,7 +1366,7 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           })}
                 ${validate_component(Text, "Text").$$render($$result, {}, {}, {
             default: () => {
-              return `aigurudev`;
+              return `Quantum`;
             }
           })}`;
         }
@@ -2044,37 +2048,48 @@ const Analytics = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 });
 const _layout_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".svelte-kiwt7b{box-sizing:border-box}.container.svelte-kiwt7b{width:100%}header.svelte-kiwt7b{min-width:100%;z-index:200}.navback.svelte-kiwt7b{min-height:4em}.nav.svelte-kiwt7b{max-width:150px}main.svelte-kiwt7b{display:grid;grid-template-columns:calc(100% - 256px) 256px}.center.svelte-kiwt7b{width:100%;flex-grow:1;padding:0.5em}.side.svelte-kiwt7b{min-width:250px;position:sticky;top:4em;height:100vh;overflow-y:auto}@media only screen and (max-width: 600px){main.svelte-kiwt7b{display:flex;flex-direction:column;gap:1em;width:100%;flex:1;min-width:300px}.side.svelte-kiwt7b{width:100%;position:relative;height:fit-content}.navback.svelte-kiwt7b{min-height:3.5em}}",
+  code: ".svelte-j3aqo7{box-sizing:border-box}.container.svelte-j3aqo7{width:100%}header.svelte-j3aqo7{min-width:100%;z-index:200}.navback.svelte-j3aqo7{min-height:4em}.nav.svelte-j3aqo7{max-width:150px}main.svelte-j3aqo7{display:flex}.grid.svelte-j3aqo7{display:grid;grid-template-columns:calc(100% - 256px) 256px}.center.svelte-j3aqo7{display:flex;flex-direction:column;width:100%;padding:0.5em}.side.svelte-j3aqo7{min-width:300px;position:fixed;top:4em;right:0;height:100vh;overflow-y:auto;z-index:6;box-shadow:rgba(0, 0, 0, 0.2) 0px 8px 10px -5px, rgba(0, 0, 0, 0.14) 0px 16px 24px 2px, rgba(0, 0, 0, 0.12) 0px 6px 30px 5px}@media only screen and (max-width: 600px){.navback.svelte-j3aqo7{min-height:3.5em}}",
   map: null
 };
+let mainClass = "";
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let fixed;
+  let sideWidth;
+  let $showRight, $$unsubscribe_showRight;
+  let $$unsubscribe_refreshApp;
   let $darkMode, $$unsubscribe_darkMode;
+  let $TopBarHeight, $$unsubscribe_TopBarHeight;
   let $showLeft, $$unsubscribe_showLeft;
   let $currentPath, $$unsubscribe_currentPath;
+  let $presentationMode, $$unsubscribe_presentationMode;
+  $$unsubscribe_showRight = subscribe(showRight, (value) => $showRight = value);
+  $$unsubscribe_refreshApp = subscribe(refreshApp, (value) => value);
   $$unsubscribe_darkMode = subscribe(darkMode, (value) => $darkMode = value);
+  $$unsubscribe_TopBarHeight = subscribe(TopBarHeight, (value) => $TopBarHeight = value);
   $$unsubscribe_showLeft = subscribe(showLeft, (value) => $showLeft = value);
   $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
-  let W;
+  $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
+  let W = 500;
   $$result.css.add(css);
   let $$settled;
   let $$rendered;
   do {
     $$settled = true;
     fixed = W < 600;
-    $$rendered = `${$$result.head += `<!-- HEAD_svelte-191nvh5_START --><link rel="stylesheet" id="theme" href="${"/smui" + escape($darkMode ? "-dark" : "", true) + ".css"}" class="svelte-kiwt7b"><!-- HEAD_svelte-191nvh5_END -->`, ""}
+    sideWidth = $showRight ? 300 : 0;
+    $$rendered = `${$$result.head += `<!-- HEAD_svelte-191nvh5_START --><link rel="stylesheet" id="theme" href="${"/smui" + escape($darkMode ? "-dark" : "", true) + ".css"}" class="svelte-j3aqo7"><!-- HEAD_svelte-191nvh5_END -->`, ""}
 ${validate_component(Analytics, "Analytics").$$render($$result, {}, {}, {})}
-<header style="position: relative;" class="svelte-kiwt7b">${validate_component(TopAppBar, "TopAppBar").$$render($$result, { variant: "fixed", color: "secondary" }, {}, {
+<header style="position: relative;" class="svelte-j3aqo7">${validate_component(TopAppBar, "TopAppBar").$$render($$result, { variant: "fixed", color: "secondary" }, {}, {
       default: () => {
         return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
           default: () => {
             return `${validate_component(Section, "Section").$$render($$result, { style: "align-items:center;" }, {}, {
               default: () => {
-                return `<div class="logo svelte-kiwt7b">${validate_component(Fab, "Fab").$$render($$result, {}, {}, {
+                return `<div class="logo svelte-j3aqo7">${validate_component(Fab, "Fab").$$render($$result, {}, {}, {
                   default: () => {
                     return `${validate_component(CommonIcon, "Icon").$$render($$result, {}, {}, {
                       default: () => {
-                        return `<img width="40px" height="40px" style="background:white; border-radius:50%;" src="/favicon.png" alt="1" class="svelte-kiwt7b">`;
+                        return `<img width="40px" height="40px" style="background:white; border-radius:50%;" src="/favicon.png" alt="1" class="svelte-j3aqo7">`;
                       }
                     })}`;
                   }
@@ -2084,21 +2099,22 @@ ${validate_component(Analytics, "Analytics").$$render($$result, {}, {}, {})}
                     return `menu`;
                   }
                 })}
-                <span class="svelte-kiwt7b">${escape($currentPath)}</span>`;
+                <span class="svelte-j3aqo7">${escape($currentPath)}</span>`;
               }
             })}
             ${validate_component(Section, "Section").$$render($$result, { align: "end", toolbar: true }, {}, {
               default: () => {
-                return `${validate_component(IconButton, "IconButton").$$render(
+                return `
+                ${validate_component(IconButton, "IconButton").$$render(
                   $$result,
                   {
                     class: "material-icons",
-                    "aria-label": "Search"
+                    "aria-label": "Refresh"
                   },
                   {},
                   {
                     default: () => {
-                      return `search`;
+                      return `refresh`;
                     }
                   }
                 )}
@@ -2126,6 +2142,30 @@ ${validate_component(Analytics, "Analytics").$$render($$result, {}, {}, {})}
                       })}`;
                     }
                   }
+                )}
+                ${validate_component(IconButton, "IconButton").$$render(
+                  $$result,
+                  { toggle: true, pressed: $showRight },
+                  {
+                    pressed: ($$value) => {
+                      $showRight = $$value;
+                      $$settled = false;
+                    }
+                  },
+                  {
+                    default: () => {
+                      return `${validate_component(CommonIcon, "Icon").$$render($$result, { class: "material-icons", on: true }, {}, {
+                        default: () => {
+                          return `close`;
+                        }
+                      })}
+                    ${validate_component(CommonIcon, "Icon").$$render($$result, { class: "material-icons" }, {}, {
+                        default: () => {
+                          return `menu`;
+                        }
+                      })}`;
+                    }
+                  }
                 )}`;
               }
             })}`;
@@ -2133,11 +2173,15 @@ ${validate_component(Analytics, "Analytics").$$render($$result, {}, {}, {})}
         })}`;
       }
     })}
-    <div class="navback svelte-kiwt7b"></div></header>
+    <div class="navback svelte-j3aqo7"></div></header>
 
-<div class="container svelte-kiwt7b">${validate_component(Drawer, "Drawer").$$render(
+<div class="container svelte-j3aqo7">${validate_component(Drawer, "Drawer").$$render(
       $$result,
-      { variant: "modal", open: $showLeft },
+      {
+        style: "width:180px;",
+        variant: "modal",
+        open: $showLeft
+      },
       {
         open: ($$value) => {
           $showLeft = $$value;
@@ -2148,7 +2192,7 @@ ${validate_component(Analytics, "Analytics").$$render($$result, {}, {}, {})}
         default: () => {
           return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
             default: () => {
-              return `<header class="nav svelte-kiwt7b">${validate_component(Nav, "Nav").$$render($$result, {}, {}, {})}</header>`;
+              return `<header class="nav svelte-j3aqo7">${validate_component(Nav, "Nav").$$render($$result, {}, {}, {})}</header>`;
             }
           })}`;
         }
@@ -2156,17 +2200,29 @@ ${validate_component(Analytics, "Analytics").$$render($$result, {}, {}, {})}
     )}
     
     ${fixed ? `${validate_component(Scrim, "Scrim").$$render($$result, {}, {}, {})}` : ``}
-    ${validate_component(AppContent, "AppContent").$$render($$result, {}, {}, {
-      default: () => {
-        return `<main class="svelte-kiwt7b"><div class="center svelte-kiwt7b">${slots.default ? slots.default({}) : ``}</div>
-            <div class="side svelte-kiwt7b">${validate_component(Sidebar, "Sidebar").$$render($$result, {}, {}, {})}</div></main>`;
+    ${validate_component(AppContent, "AppContent").$$render(
+      $$result,
+      {
+        style: "margin-left: " + (!fixed && $showLeft ? "180px" : "0px") + ";margin-right: " + ($showRight && W > 600 ? "300px" : "0px") + ";"
+      },
+      {},
+      {
+        default: () => {
+          return `<main class="${escape(null_to_empty(mainClass), true) + " svelte-j3aqo7"}"><div class="center svelte-j3aqo7">${slots.default ? slots.default({}) : ``}</div>
+            </main>`;
+        }
       }
-    })}
+    )}
+    ${!$presentationMode && $showRight ? `<div class="side svelte-j3aqo7" style="${"width:" + escape(sideWidth, true) + "px; top: " + escape($TopBarHeight, true) + "px;"}">${validate_component(Sidebar, "Sidebar").$$render($$result, {}, {}, {})}</div>` : ``}
 </div>`;
   } while (!$$settled);
+  $$unsubscribe_showRight();
+  $$unsubscribe_refreshApp();
   $$unsubscribe_darkMode();
+  $$unsubscribe_TopBarHeight();
   $$unsubscribe_showLeft();
   $$unsubscribe_currentPath();
+  $$unsubscribe_presentationMode();
   return $$rendered;
 });
 export {

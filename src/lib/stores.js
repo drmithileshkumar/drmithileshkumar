@@ -1,16 +1,19 @@
 import { writable } from "svelte/store";
 import { browser } from "$app/environment";
 
+export const TopBarHeight = writable(0);
+export const refreshApp = writable(false);
 export const clipboardData = writable('');
 export const currentPath = writable('Dr Mithilesh Kumar');
 export const navList = writable([]);
-export const darkMode = writable(true);
+export const darkMode = writable(false);
 export const showSettings = writable(false)
 export const loggedInUser = writable();
 export const visitedUser = writable();
 export const scannedQR = writable();
 export const INVOICE = writable();
 export const showLeft = writable(true);
+export const showRight = writable(false);
 export const saveProfile = writable(false);
 const defaultProfileImage = '/avatar.svg';
 const initialProfileImage = browser ? window.localStorage.getItem('profileImage') ?? defaultProfileImage : defaultProfileImage;

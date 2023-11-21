@@ -12,7 +12,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between; */
-            background: rgb(0, 254, 13);
+            background: white;
             border-radius: 10px;
             display: flex;
             flex-direction: column;

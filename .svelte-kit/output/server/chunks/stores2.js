@@ -228,14 +228,14 @@ const autoScroll = writable(false);
 const slideCounter = writable(0);
 const overlay = writable(null);
 export {
-  autoScroll as a,
-  presentationMode as b,
+  presentation as a,
+  autoScroll as b,
   currentSlide as c,
   chapters as d,
   sections as e,
   selectedSection as f,
   selectedChapter as g,
   overlay as o,
-  presentation as p,
+  presentationMode as p,
   slideCounter as s
 };

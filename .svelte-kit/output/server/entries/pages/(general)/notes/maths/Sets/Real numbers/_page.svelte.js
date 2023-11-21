@@ -1,5 +1,5 @@
 import { c as create_ssr_component, b as compute_rest_props, a as subscribe, e as escape, n as null_to_empty, i as add_attribute, v as validate_component } from "../../../../../../../chunks/index3.js";
-import { b as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentation } from "../../../../../../../chunks/stores2.js";
+import { p as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, a as presentation } from "../../../../../../../chunks/stores2.js";
 import { P as Practice } from "../../../../../../../chunks/Practice.js";
 /* empty css                                                                 */import { p as powerset, S as Sets } from "../../../../../../../chunks/sets.js";
 import { r as randInt } from "../../../../../../../chunks/common.js";

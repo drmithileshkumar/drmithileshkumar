@@ -14,19 +14,19 @@ const Twitter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 const Youtube_svelte_svelte_type_style_lang = "";
 const Vectorial_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: ".vectorial.svelte-190zn03.svelte-190zn03{margin-top:1em;padding:0.5em;width:100%;background:rgb(0, 254, 13);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center}.vectorial.svelte-190zn03.svelte-190zn03:hover{box-shadow:0 0 0px #888}.vectorial.svelte-190zn03 section.svelte-190zn03{display:flex;flex-direction:column;align-items:center;justify-content:center}section.svelte-190zn03 a.svelte-190zn03{text-decoration:none;font-size:1em;margin-top:0;color:white;text-shadow:1px 2px 1px rgb(77, 77, 77);text-transform:uppercase;letter-spacing:1px;font-weight:400;background:rgb(0, 150, 200);padding:1em 2em;border-radius:10px;box-shadow:1px 2px 2px 0px #891010}.title.svelte-190zn03.svelte-190zn03{font-size:4em;margin-bottom:0;margin-top:1em;font-weight:600;display:flex;align-items:center;justify-content:center;text-shadow:9px 3px 5px rgba(81, 81, 81, 0.445);color:rgb(7 68 75)}.subtitle.svelte-190zn03.svelte-190zn03{font-size:1.5em;color:rgb(212, 163, 13);margin-top:0;margin-bottom:0em}figure.svelte-190zn03.svelte-190zn03{width:100%;margin:auto;display:flex;align-items:center;flex-direction:row;position:relative;z-index:0;justify-content:center}",
+  code: ".vectorial.svelte-404pnn.svelte-404pnn{margin-top:1em;padding:0.5em;width:100%;background:white;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center}.vectorial.svelte-404pnn.svelte-404pnn:hover{box-shadow:0 0 0px #888}.vectorial.svelte-404pnn section.svelte-404pnn{display:flex;flex-direction:column;align-items:center;justify-content:center}section.svelte-404pnn a.svelte-404pnn{text-decoration:none;font-size:1em;margin-top:0;color:white;text-shadow:1px 2px 1px rgb(77, 77, 77);text-transform:uppercase;letter-spacing:1px;font-weight:400;background:rgb(0, 150, 200);padding:1em 2em;border-radius:10px;box-shadow:1px 2px 2px 0px #891010}.title.svelte-404pnn.svelte-404pnn{font-size:4em;margin-bottom:0;margin-top:1em;font-weight:600;display:flex;align-items:center;justify-content:center;text-shadow:9px 3px 5px rgba(81, 81, 81, 0.445);color:rgb(7 68 75)}.subtitle.svelte-404pnn.svelte-404pnn{font-size:1.5em;color:rgb(212, 163, 13);margin-top:0;margin-bottom:0em}figure.svelte-404pnn.svelte-404pnn{width:100%;margin:auto;display:flex;align-items:center;flex-direction:row;position:relative;z-index:0;justify-content:center}",
   map: null
 };
 const Vectorial = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<article class="vectorial svelte-190zn03"><section style="z-index: 1" class="svelte-190zn03"><h1 class="title svelte-190zn03">Vectorial</h1>
-            <p class="subtitle svelte-190zn03">Create Vector Graphics.
+  return `<article class="vectorial svelte-404pnn"><section style="z-index: 1" class="svelte-404pnn"><h1 class="title svelte-404pnn">Vectorial</h1>
+            <p class="subtitle svelte-404pnn">Create Vector Graphics.
             </p>
             <p style="color:black;">in <strong>browser</strong>!
             </p>
-            <a href="https://vectorial.app" class="svelte-190zn03">Get Started</a>
+            <a href="https://vectorial.app" class="svelte-404pnn">Get Started</a>
             </section>
-        <figure class="svelte-190zn03">
+        <figure class="svelte-404pnn">
             
             
             <img src="/vectorial/vectorialhome.svg" width="95%" alt="vectorialhome"></figure></article>`;

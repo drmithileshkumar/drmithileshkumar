@@ -1,6 +1,6 @@
 import { c as create_ssr_component, i as add_attribute, a as subscribe, e as escape, v as validate_component, n as null_to_empty } from "../../../../../chunks/index3.js";
 import { S as Select } from "../../../../../chunks/Select.js";
-import { d as chapters, e as sections, c as currentSlide, b as presentationMode, s as slideCounter, p as presentation, o as overlay, a as autoScroll, f as selectedSection, g as selectedChapter } from "../../../../../chunks/stores2.js";
+import { d as chapters, e as sections, c as currentSlide, p as presentationMode, s as slideCounter, a as presentation, o as overlay, b as autoScroll, f as selectedSection, g as selectedChapter } from "../../../../../chunks/stores2.js";
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../../chunks/Presenter.js";
 class Point {
   constructor(x = 0, y = 0) {

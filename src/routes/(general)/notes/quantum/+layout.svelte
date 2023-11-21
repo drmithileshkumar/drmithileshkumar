@@ -79,6 +79,7 @@
         } */
         .maths {
             /* max-width: 600px; */
+            width:100%;
             margin: auto;
             font-family: 'Georgia', serif;
             line-height: 1.5;

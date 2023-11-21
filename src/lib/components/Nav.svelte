@@ -296,7 +296,7 @@
                     <Text>vectorial</Text>
                 </Item>
                 <Item
-                    on:SMUI:action={() => goto(`https://aiguru.dev`)}
+                    on:SMUI:action={() => goto(`/notes/quantum`)}
                 >
                     <Graphic>
                         <Svg style="width: 100%; height: 100%;" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -415,7 +415,7 @@
                             </g>
                         </Svg>
                     </Graphic>
-                <Text>aigurudev</Text>
+                <Text>Quantum</Text>
             </Item>
         </List>
         <List>
