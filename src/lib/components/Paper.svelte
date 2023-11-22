@@ -6,21 +6,23 @@
         display: grid;
         grid-template-rows: auto auto auto;
         margin-bottom: 2em;
-        color: rgb(169, 168, 168);
+        color: currentColor;
     }
     .authors {
-        color: #7d848a;
+        color: currentColor;
         text-decoration: none;
         font-weight: 300;
         font-size: 0.9em;
+        opacity: 0.8;
     }
     .title {
         font-weight: 700;
         font-size: 1.1em;
     }
     .venue {
-        color: #7d848a;
+        color: currentColor;
         font-size: 0.8em;
+        opacity: 0.9;
     }
 </style>
 <div class="paper">

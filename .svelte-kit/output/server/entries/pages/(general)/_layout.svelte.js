@@ -1273,6 +1273,20 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         default: () => {
           return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
             default: () => {
+              return `article`;
+            }
+          })}
+                    ${validate_component(Text, "Text").$$render($$result, {}, {}, {
+            default: () => {
+              return `Publications`;
+            }
+          })}`;
+        }
+      })}
+                ${validate_component(Item, "Item").$$render($$result, {}, {}, {
+        default: () => {
+          return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
+            default: () => {
               return `badge`;
             }
           })}

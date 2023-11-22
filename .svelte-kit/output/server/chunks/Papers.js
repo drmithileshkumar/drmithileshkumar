@@ -1,14 +1,14 @@
 import { c as create_ssr_component, e as escape, v as validate_component } from "./index3.js";
 const Paper_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: ".paper.svelte-1wjcz33{display:grid;grid-template-rows:auto auto auto;margin-bottom:2em;color:rgb(169, 168, 168)}.authors.svelte-1wjcz33{color:#7d848a;text-decoration:none;font-weight:300;font-size:0.9em}.title.svelte-1wjcz33{font-weight:700;font-size:1.1em}.venue.svelte-1wjcz33{color:#7d848a;font-size:0.8em}",
+  code: ".paper.svelte-1rnqfn2{display:grid;grid-template-rows:auto auto auto;margin-bottom:2em;color:currentColor}.authors.svelte-1rnqfn2{color:currentColor;text-decoration:none;font-weight:300;font-size:0.9em;opacity:0.8}.title.svelte-1rnqfn2{font-weight:700;font-size:1.1em}.venue.svelte-1rnqfn2{color:currentColor;font-size:0.8em;opacity:0.9}",
   map: null
 };
 const Paper = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<div class="paper svelte-1wjcz33"><div class="authors svelte-1wjcz33">${slots.authors ? slots.authors({}) : ``}</div>
-    <div class="title svelte-1wjcz33">${slots.title ? slots.title({}) : ``}</div>
-    <div class="venue svelte-1wjcz33">${slots.venue ? slots.venue({}) : ``}</div></div>`;
+  return `<div class="paper svelte-1rnqfn2"><div class="authors svelte-1rnqfn2">${slots.authors ? slots.authors({}) : ``}</div>
+    <div class="title svelte-1rnqfn2">${slots.title ? slots.title({}) : ``}</div>
+    <div class="venue svelte-1rnqfn2">${slots.venue ? slots.venue({}) : ``}</div></div>`;
 });
 const Papers_svelte_svelte_type_style_lang = "";
 const css = {
@@ -17,36 +17,12 @@ const css = {
 };
 const Papers = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let classType;
+  let { pdfReady = false } = $$props;
+  if ($$props.pdfReady === void 0 && $$bindings.pdfReady && pdfReady !== void 0)
+    $$bindings.pdfReady(pdfReady);
   $$result.css.add(css);
-  classType = "grid";
-  return `<div class="${"papers " + escape(classType, true) + " svelte-7pie2m"}">${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
-    venue: () => {
-      return `<p slot="venue" class="svelte-7pie2m">CoRR abs/2008.09660 (2020)
-        </p>`;
-    },
-    title: () => {
-      return `<p slot="title" class="svelte-7pie2m">Deletion to Induced Matching
-        </p>`;
-    },
-    authors: () => {
-      return `<p slot="authors" class="svelte-7pie2m">Akash Kumar, Mithilesh Kumar
-        </p>`;
-    }
-  })}
-    ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
-    venue: () => {
-      return `<p slot="venue" class="svelte-7pie2m">CoRR abs/2009.00384 (2020)
-        </p>`;
-    },
-    title: () => {
-      return `<p slot="title" class="svelte-7pie2m">Obtuse Lattice Bases
-        </p>`;
-    },
-    authors: () => {
-      return `<p slot="authors" class="svelte-7pie2m">Kanav Gupta, Mithilesh Kumar, Håvard Raddum
-        </p>`;
-    }
-  })}
+  classType = "flex";
+  return `<div class="${"papers " + escape(classType, true) + " " + escape(pdfReady ? "flex" : classType, true) + " svelte-7pie2m"}"><h2>Journal</h2>
     ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
     venue: () => {
       return `<p slot="venue" class="svelte-7pie2m">WCC, 2019
@@ -77,34 +53,6 @@ const Papers = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   })}
     ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
     venue: () => {
-      return `<p slot="venue" class="svelte-7pie2m">CoRR abs/1903.05425 (2019)
-        </p>`;
-    },
-    title: () => {
-      return `<p slot="title" class="svelte-7pie2m">2-CLUB is NP-hard for distance to 2-club cluster graphs
-        </p>`;
-    },
-    authors: () => {
-      return `<p slot="authors" class="svelte-7pie2m">Mithilesh Kumar
-        </p>`;
-    }
-  })}
-    ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
-    venue: () => {
-      return `<p slot="venue" class="svelte-7pie2m">CoRR abs/1912.01781 (2019)
-        </p>`;
-    },
-    title: () => {
-      return `<p slot="title" class="svelte-7pie2m">Faster Lattice Enumeration
-        </p>`;
-    },
-    authors: () => {
-      return `<p slot="authors" class="svelte-7pie2m">Mithilesh Kumar
-        </p>`;
-    }
-  })}
-    ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
-    venue: () => {
       return `<p slot="venue" class="svelte-7pie2m">SIAM J. Discret. Math. 33(3): 1743-1771 (2019)
         </p>`;
     },
@@ -117,23 +65,10 @@ const Papers = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         </p>`;
     }
   })}
+    <h2>Conferences</h2>
     ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
     venue: () => {
       return `<p slot="venue" class="svelte-7pie2m">STACS 2018: 29:1-29:15
-        </p>`;
-    },
-    title: () => {
-      return `<p slot="title" class="svelte-7pie2m">Lossy Kernels for Connected Dominating Set on Sparse Graphs
-        </p>`;
-    },
-    authors: () => {
-      return `<p slot="authors" class="svelte-7pie2m">Eduard Eiben, Mithilesh Kumar, Amer E. Mouawad, Fahad Panolan, Sebastian Siebertz
-        </p>`;
-    }
-  })}
-    ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
-    venue: () => {
-      return `<p slot="venue" class="svelte-7pie2m">CoRR abs/1706.09339 (2017)
         </p>`;
     },
     title: () => {
@@ -187,6 +122,84 @@ const Papers = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         </p>`;
     }
   })}
+    <h2>Arxiv</h2>
+    ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
+    venue: () => {
+      return `<p slot="venue" class="svelte-7pie2m">CoRR abs/2008.09660 (2020)
+        </p>`;
+    },
+    title: () => {
+      return `<p slot="title" class="svelte-7pie2m">Deletion to Induced Matching
+        </p>`;
+    },
+    authors: () => {
+      return `<p slot="authors" class="svelte-7pie2m">Akash Kumar, Mithilesh Kumar
+        </p>`;
+    }
+  })}
+    ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
+    venue: () => {
+      return `<p slot="venue" class="svelte-7pie2m">CoRR abs/2009.00384 (2020)
+        </p>`;
+    },
+    title: () => {
+      return `<p slot="title" class="svelte-7pie2m">Obtuse Lattice Bases
+        </p>`;
+    },
+    authors: () => {
+      return `<p slot="authors" class="svelte-7pie2m">Kanav Gupta, Mithilesh Kumar, Håvard Raddum
+        </p>`;
+    }
+  })}
+    
+    
+    ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
+    venue: () => {
+      return `<p slot="venue" class="svelte-7pie2m">CoRR abs/1903.05425 (2019)
+        </p>`;
+    },
+    title: () => {
+      return `<p slot="title" class="svelte-7pie2m">2-CLUB is NP-hard for distance to 2-club cluster graphs
+        </p>`;
+    },
+    authors: () => {
+      return `<p slot="authors" class="svelte-7pie2m">Mithilesh Kumar
+        </p>`;
+    }
+  })}
+    ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
+    venue: () => {
+      return `<p slot="venue" class="svelte-7pie2m">CoRR abs/1912.01781 (2019)
+        </p>`;
+    },
+    title: () => {
+      return `<p slot="title" class="svelte-7pie2m">Faster Lattice Enumeration
+        </p>`;
+    },
+    authors: () => {
+      return `<p slot="authors" class="svelte-7pie2m">Mithilesh Kumar
+        </p>`;
+    }
+  })}
+    
+    
+    ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
+    venue: () => {
+      return `<p slot="venue" class="svelte-7pie2m">CoRR abs/1706.09339 (2017)
+        </p>`;
+    },
+    title: () => {
+      return `<p slot="title" class="svelte-7pie2m">Lossy Kernels for Connected Dominating Set on Sparse Graphs
+        </p>`;
+    },
+    authors: () => {
+      return `<p slot="authors" class="svelte-7pie2m">Eduard Eiben, Mithilesh Kumar, Amer E. Mouawad, Fahad Panolan, Sebastian Siebertz
+        </p>`;
+    }
+  })}
+    
+    
+    
     ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
     venue: () => {
       return `<p slot="venue" class="svelte-7pie2m">CoRR abs/1610.04711 (2016)

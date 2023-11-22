@@ -76,7 +76,7 @@
     <!-- <Interests /> -->
     <Education />
     <!-- <Experience /> -->
-    <Research />
+    <!-- <Research /> -->
     <Skills />
     <!-- <Contact /> -->
     <h2>Research Papers</h2>

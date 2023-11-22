@@ -74,6 +74,12 @@
                     <Text>About</Text>
                 </Item>
                 <Item
+                    on:SMUI:action={() => goto(`/publications`)}
+                >
+                    <Graphic class="material-icons">article</Graphic>
+                    <Text>Publications</Text>
+                </Item>
+                <Item
                     on:SMUI:action={() => goto(`/cv`)}
                 >
                     <Graphic class="material-icons">badge</Graphic>

@@ -1,22 +1,22 @@
 import { c as create_ssr_component, e as escape, n as null_to_empty, i as add_attribute, v as validate_component } from "../../../../chunks/index3.js";
-import { P as Papers } from "../../../../chunks/Papers.js";
+/* empty css                                                         */import { P as Papers } from "../../../../chunks/Papers.js";
 const Introduction_svelte_svelte_type_style_lang = "";
-const css$4 = {
+const css$3 = {
   code: ".introduction.svelte-1791xnj{line-height:1.45;word-spacing:0.1em;color:black}",
   map: null
 };
 const Introduction = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$4);
+  $$result.css.add(css$3);
   return `<div class="introduction svelte-1791xnj"></div>`;
 });
 const Education_svelte_svelte_type_style_lang = "";
-const css$3 = {
+const css$2 = {
   code: ".education.svelte-124q32d{line-height:1.45;word-spacing:0.1em;max-width:1200px;color:black}.fillerImage.svelte-124q32d{width:100%;display:flex;align-items:center;justify-content:center}.grid.svelte-124q32d{display:flex;flex-direction:row;align-items:center;width:100%;gap:1em}.flex.svelte-124q32d{display:flex;flex-direction:column;flex-wrap:wrap;align-items:center;justify-content:center}",
   map: null
 };
 const Education = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let sectionClass;
-  $$result.css.add(css$3);
+  $$result.css.add(css$2);
   sectionClass = "grid";
   return `<article class="education svelte-124q32d">
 
@@ -53,22 +53,13 @@ const Education = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         <p></p></section></article>`;
 });
 const Skills_svelte_svelte_type_style_lang = "";
-const css$2 = {
+const css$1 = {
   code: ".skills.svelte-18i5h7m{line-height:1.45;word-spacing:0.1em;display:flex;justify-content:center}",
   map: null
 };
 const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$2);
-  return `<div class="skills svelte-18i5h7m"></div>`;
-});
-const Research_svelte_svelte_type_style_lang = "";
-const css$1 = {
-  code: ".research.svelte-1ggrs5p{line-height:1.45;word-spacing:0.1em}",
-  map: null
-};
-const Research = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<div class="research svelte-1ggrs5p"></div>`;
+  return `<div class="skills svelte-18i5h7m"></div>`;
 });
 const _page_about_svelte_svelte_type_style_lang = "";
 const css = {
@@ -91,7 +82,7 @@ const Page_about = create_ssr_component(($$result, $$props, $$bindings, slots) =
     
     ${validate_component(Education, "Education").$$render($$result, {}, {}, {})}
     
-    ${validate_component(Research, "Research").$$render($$result, {}, {}, {})}
+    
     ${validate_component(Skills, "Skills").$$render($$result, {}, {}, {})}
     
     <h2>Research Papers</h2>

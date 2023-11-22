@@ -274,10 +274,10 @@ export {
   onDestroy as o,
   set_store_value as p,
   createEventDispatcher as q,
-  is_void as r,
+  noop as r,
   setContext as s,
-  noop as t,
-  safe_not_equal as u,
+  safe_not_equal as t,
+  is_void as u,
   validate_component as v,
   add_classes as w
 };

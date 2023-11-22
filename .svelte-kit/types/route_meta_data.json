@@ -643,5 +643,14 @@
 		"src/routes/(general)/+layout.server.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(about)/publications": [
+		"src/routes/(about)/publications/+page.js"
+	],
+	"/(about)/research": [
+		"src/routes/(about)/research/+page.js"
+	],
+	"/(about)/teaching": [
+		"src/routes/(about)/teaching/+page.js"
+	],
 	"/[...catchAll]": []
 }
