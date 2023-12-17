@@ -111,7 +111,7 @@
     {#if !$presentationMode || $currentSlide >= 0}
         <p 
             class="question {$presentationMode && isActive === 0 ? 'currentActive': ''}" 
-            transition:fly="{{ x: 200, duration: 1000}}"
+            transition:fly|global="{{ x: 200, duration: 1000}}"
             on:introstart={() => {isActive = -1}}
             on:introend={() => {isActive = $currentSlide}}
             on:outroend={() => {isActive = -1}}
@@ -130,14 +130,14 @@
         {#if !$presentationMode || $currentSlide >= 1}
             <h2 
                 class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}
                 >Concepts</h2>
             <p 
                 class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}
@@ -155,7 +155,7 @@
                 
                 <figure
                     class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
-                    transition:fly="{{ x: 200, duration: 1000 }}"
+                    transition:fly|global="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 1}}
                     on:outroend={() => {isActive = -1}}>
@@ -456,7 +456,7 @@
         {#if !$presentationMode || $currentSlide >= 2}
             <p
                 class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>
@@ -466,7 +466,7 @@
         {#if !$presentationMode || $currentSlide >= 3}
             <p
                 class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>
@@ -485,13 +485,13 @@
         {#if !$presentationMode || $currentSlide >= 4}
             <h2 
                 class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>Solution</h2>
             <p 
                 class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}
@@ -500,13 +500,13 @@
         {#if !$presentationMode || $currentSlide >= 5}
             <h4 
                 class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>Step 1</h4>
             <p 
                 class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 3}}
                 on:outroend={() => {isActive = -1}}>Use the triple product of the vectors which is equal to the given volume. \[\] {`\\[\\vec{u}\\cdot(\\vec{v}\\times\\vec{w}) = \\sqrt{2}\\]`} {`\\[\\Big|${TeX.vec('u')}~~${TeX.vec('v')}~~${TeX.vec('w')}\\Big| = \\sqrt{2}\\]`} </p>
@@ -514,7 +514,7 @@
         {#if !$presentationMode || $currentSlide >= 6}
             <p 
                 class="{$presentationMode && isActive === 6 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>
@@ -526,13 +526,13 @@
         {#if !$presentationMode || $currentSlide >= 7}
             <h4 
                 class="{$presentationMode && isActive === 7 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>Step 2</h4>
             <p 
                 class="{$presentationMode && isActive === 7 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>
@@ -550,7 +550,7 @@
         {#if !$presentationMode || $currentSlide >= 8}
             <p 
                 class="{$presentationMode && isActive === 8 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>
@@ -568,7 +568,7 @@
         {#if !$presentationMode || $currentSlide >= 9}
             <p 
                 class="{$presentationMode && isActive === 9 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>
@@ -585,13 +585,13 @@
         {#if !$presentationMode || $currentSlide >= 10}
             <h4 
                 class="{$presentationMode && isActive === 10 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>Step 3</h4>
             <p 
                 class="{$presentationMode && isActive === 10 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>

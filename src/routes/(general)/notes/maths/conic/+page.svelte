@@ -114,12 +114,12 @@
             {/if}
             {#if !$presentationMode || $currentSlide >= 0}
                 <h2 class="heading {$presentationMode && isActive === 0 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000}}"
+                transition:fly|global="{{ x: 200, duration: 1000}}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = $currentSlide}}
                 on:outroend={() => {isActive = -1}}>Cone and a plane</h2>
                 <figure 
-                    transition:fly="{{ x: 200, duration: 1000}}"
+                    transition:fly|global="{{ x: 200, duration: 1000}}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = $currentSlide}}
                     on:outroend={() => {isActive = -1}}
@@ -517,14 +517,14 @@
                 {#if !$presentationMode || $currentSlide >= 1}
                     <h2 
                         class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         >Slice cone with a plane</h2>
                     <p 
                         class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
@@ -537,14 +537,14 @@
                 {#if !$presentationMode || $currentSlide >= 2}
                     <h2 
                         class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         >The plane passes through the vertex</h2>
                     <p 
                         class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
@@ -559,14 +559,14 @@
                 {#if !$presentationMode || $currentSlide >= 3}
                     <h2 
                         class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         >How is a circle created?</h2>
                     <p 
                         class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
@@ -579,14 +579,14 @@
                 {#if !$presentationMode || $currentSlide >= 4}
                     <h2 
                         class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         >How is a parabola created?</h2>
                     <p 
                         class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
@@ -599,14 +599,14 @@
                 {#if !$presentationMode || $currentSlide >= 5}
                     <h2 
                         class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         >How is an ellipse created?</h2>
                     <p 
                         class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
@@ -619,14 +619,14 @@
                 {#if !$presentationMode || $currentSlide >= 6}
                     <h2 
                         class="{$presentationMode && isActive === 6 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
                         >How is a hyperbola created?</h2>
                     <p 
                         class="{$presentationMode && isActive === 6 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
@@ -639,7 +639,7 @@
                 {#if !$presentationMode || $currentSlide >= 7}
                     <h2 
                         class="{$presentationMode && isActive === 7 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
@@ -648,7 +648,7 @@
                 {#if !$presentationMode || $currentSlide >= 8}
                     <p 
                         class="{$presentationMode && isActive === 8 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
@@ -664,7 +664,7 @@
                 {#if !$presentationMode || $currentSlide >= 9}
                     <p 
                         class="{$presentationMode && isActive === 9 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}
@@ -680,7 +680,7 @@
                 {#if !$presentationMode || $currentSlide >= 10}
                     <p 
                         class="{$presentationMode && isActive === 10 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
@@ -694,7 +694,7 @@
                 {#if !$presentationMode || $currentSlide >= 11}
                     <p 
                         class="{$presentationMode && isActive === 11 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
@@ -705,7 +705,7 @@
                 {#if !$presentationMode || $currentSlide >= 12}
                     <p 
                         class="{$presentationMode && isActive === 12 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
@@ -715,7 +715,7 @@
                 {#if !$presentationMode || $currentSlide >= 13}
                     <p 
                         class="{$presentationMode && isActive === 13 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
@@ -725,7 +725,7 @@
                 {#if !$presentationMode || $currentSlide >= 14}
                     <p 
                         class="{$presentationMode && isActive === 14 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
@@ -735,7 +735,7 @@
                 {#if !$presentationMode || $currentSlide >= 15}
                     <p 
                         class="{$presentationMode && isActive === 15 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
@@ -745,7 +745,7 @@
                 {#if !$presentationMode || $currentSlide >= 16}
                     <p 
                         class="{$presentationMode && isActive === 16 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
@@ -755,7 +755,7 @@
                 {#if !$presentationMode || $currentSlide >= 17}
                     <p 
                         class="{$presentationMode && isActive === 17 ? 'currentActive': ''}" 
-                        transition:fly="{{ x: 200, duration: 1000 }}"
+                        transition:fly|global="{{ x: 200, duration: 1000 }}"
                         on:introstart={() => {isActive = -1}}
                         on:introend={() => {isActive = $currentSlide}}
                         on:outroend={() => {isActive = -1}}>
@@ -766,7 +766,7 @@
                     {#if !$presentationMode || $currentSlide >= 18}
                         <h2 
                             class="{$presentationMode && isActive === 18 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
@@ -775,7 +775,7 @@
                     {#if !$presentationMode || $currentSlide >= 19}
                         <img width="300px" style="float: right;" 
                             class="{$presentationMode && isActive === 10 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
@@ -785,7 +785,7 @@
                     {#if !$presentationMode || $currentSlide >= 20}
                         <p 
                             class="{$presentationMode && isActive === 20 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -795,7 +795,7 @@
                     {#if !$presentationMode || $currentSlide >= 21}
                         <p 
                             class="{$presentationMode && isActive === 21 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -805,7 +805,7 @@
                     {#if !$presentationMode || $currentSlide >= 22}
                         <p 
                             class="{$presentationMode && isActive === 22 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -815,7 +815,7 @@
                     {#if !$presentationMode || $currentSlide >= 23}
                         <p 
                             class="{$presentationMode && isActive === 23 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -825,7 +825,7 @@
                     {#if !$presentationMode || $currentSlide >= 24}
                         <p 
                             class="{$presentationMode && isActive === 24 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -838,7 +838,7 @@
                         <br><br><br>
                         <h2 
                             class="{$presentationMode && isActive === 25 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
@@ -847,7 +847,7 @@
                     {#if !$presentationMode || $currentSlide >= 26}
                         <img width="350px" style="float: right;" 
                             class="{$presentationMode && isActive === 26 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
@@ -857,7 +857,7 @@
                     {#if !$presentationMode || $currentSlide >= 27}
                         <p 
                             class="{$presentationMode && isActive === 27 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -867,7 +867,7 @@
                     {#if !$presentationMode || $currentSlide >= 28}
                         <p 
                             class="{$presentationMode && isActive === 28 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -877,7 +877,7 @@
                     {#if !$presentationMode || $currentSlide >= 29}
                         <p 
                             class="{$presentationMode && isActive === 29 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -888,7 +888,7 @@
                     {#if !$presentationMode || $currentSlide >= 30}
                         <p 
                             class="{$presentationMode && isActive === 30 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -899,7 +899,7 @@
                     {#if !$presentationMode || $currentSlide >= 31}
                         <p 
                             class="{$presentationMode && isActive === 31 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -912,7 +912,7 @@
                         <br><br><br>
                         <h2 
                             class="{$presentationMode && isActive === 32 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
@@ -921,7 +921,7 @@
                     {#if !$presentationMode || $currentSlide >= 33}
                         <img width="350px" style="float: right;" 
                             class="{$presentationMode && isActive === 33 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
@@ -931,7 +931,7 @@
                     {#if !$presentationMode || $currentSlide >= 34}
                         <p 
                             class="{$presentationMode && isActive === 34 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -941,7 +941,7 @@
                     {#if !$presentationMode || $currentSlide >= 35}
                         <p 
                             class="{$presentationMode && isActive === 35 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -951,7 +951,7 @@
                     {#if !$presentationMode || $currentSlide >= 36}
                         <p 
                             class="{$presentationMode && isActive === 36 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -961,7 +961,7 @@
                     {#if !$presentationMode || $currentSlide >= 37}
                         <p 
                             class="{$presentationMode && isActive === 37 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -971,7 +971,7 @@
                     {#if !$presentationMode || $currentSlide >= 38}
                         <p 
                             class="{$presentationMode && isActive === 38 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -985,7 +985,7 @@
                         <div class="pad"></div>
                         <h2 
                             class="{$presentationMode && isActive === 39 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
@@ -994,7 +994,7 @@
                     {#if !$presentationMode || $currentSlide >= 40}
                         <p 
                             class="question {$presentationMode && isActive === 40 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -1004,7 +1004,7 @@
                     {#if !$presentationMode || $currentSlide >= 41}
                         <figure width="450px" style="float: right;" 
                             class="{$presentationMode && isActive === 41 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}
@@ -1371,7 +1371,7 @@
                     {#if !$presentationMode || $currentSlide >= 42}
                         <h4 
                             class="{$presentationMode && isActive === 42 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -1379,7 +1379,7 @@
                         </h4>
                         <p 
                             class="{$presentationMode && isActive === 42 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -1389,7 +1389,7 @@
                     {#if !$presentationMode || $currentSlide >= 43}
                         <h4 
                             class="{$presentationMode && isActive === 43 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}>
@@ -1403,7 +1403,7 @@
                         <div class="pad"></div>
                         <figure width="70%" style="float: right;" 
                             class="{$presentationMode && isActive === 45 ? 'currentActive': ''}" 
-                            transition:fly="{{ x: 200, duration: 1000 }}"
+                            transition:fly|global="{{ x: 200, duration: 1000 }}"
                             on:introstart={() => {isActive = -1}}
                             on:introend={() => {isActive = $currentSlide}}
                             on:outroend={() => {isActive = -1}}

@@ -21,7 +21,7 @@
 </style>
 {#if $presentationMode}
 <figure class="{$presentationMode && isActive === $currentSlide ? 'currentActive': ''}" 
-    transition:fly="{{ x: 200, duration: 1000}}"
+    transition:fly|global="{{ x: 200, duration: 1000}}"
     on:introstart={() => {isActive = -1}}
     on:introend={() => {isActive = $currentSlide}}
     on:outroend={() => {isActive = -1}}

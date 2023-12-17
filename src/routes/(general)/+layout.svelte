@@ -104,7 +104,7 @@
         </main>
     </AppContent>
     {#if !$presentationMode && $showRight}
-            <div class="side" style="width:{sideWidth}px; top: {$TopBarHeight}px;" transition:fly={{x:300}}>
+            <div class="side" style="width:{sideWidth}px; top: {$TopBarHeight}px;" transition:fly|global={{x:300}}>
                 <Sidebar />
             </div>
         {/if}

@@ -80,7 +80,7 @@ import {presentationMode, presentation, overlay, slideCounter, autoScroll, curre
         {#if !$presentationMode || $currentSlide >= 0}
         <p 
             class="question {$presentationMode && isActive === 0 ? 'currentActive': ''}" 
-            transition:fly="{{ x: 200, duration: 1000}}"
+            transition:fly|global="{{ x: 200, duration: 1000}}"
             on:introstart={() => {isActive = -1}}
             on:introend={() => {isActive = 0}}
             on:outroend={() => {isActive = -1}}>
@@ -90,22 +90,22 @@ import {presentationMode, presentation, overlay, slideCounter, autoScroll, curre
         {#if !$presentationMode || $currentSlide >= 1}
             <ol class={optionStyle}>
                 <li class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
-                    transition:fly="{{ x: 200, duration: 1000}}"
+                    transition:fly|global="{{ x: 200, duration: 1000}}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 1}}
                     on:outroend={() => {isActive = -1}}> {`\\(S_{10}(x) = \\dfrac{\\pi}{2}-\\tan^{-1}\\Big(\\dfrac{1 + 11x^2}{10x}\\Big)\\)`}, for all \(x>0\) </li>
                 <li class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
-                    transition:fly="{{ x: 200, duration: 1000}}"
+                    transition:fly|global="{{ x: 200, duration: 1000}}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 1}}
                     on:outroend={() => {isActive = -1}}> {`\\(\\lim_{n\\to \\infty}\\cot(S_n(x)) = x\\)`}, for all \(x>0\) </li>
                 <li class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
-                    transition:fly="{{ x: 200, duration: 1000}}"
+                    transition:fly|global="{{ x: 200, duration: 1000}}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 1}}
                     on:outroend={() => {isActive = -1}}> The equation {`\\(S_3(x)=\\dfrac{\\pi}{4}\\)`} has a root in \((0,\infty)\)</li>
                 <li class="{$presentationMode && isActive === 1 ? 'currentActive': ''}" 
-                    transition:fly="{{ x: 200, duration: 1000}}"
+                    transition:fly|global="{{ x: 200, duration: 1000}}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 1}}
                     on:outroend={() => {isActive = -1}}> {`\\(\\tan(S_n(x))\\leq \\dfrac{1}{2}\\)`}, for all \(n\geq 1\) and \(x > 0\) </li>
@@ -114,12 +114,12 @@ import {presentationMode, presentation, overlay, slideCounter, autoScroll, curre
         <section>
             {#if !$presentationMode || $currentSlide >= 2}
                 <h2 class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
-                    transition:fly="{{ x: 200, duration: 1000 }}"
+                    transition:fly|global="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 2}}
                     on:outroend={() => {isActive = -1}}>Concepts</h2>
                 <p class="{$presentationMode && isActive === 2 ? 'currentActive': ''}" 
-                    transition:fly="{{ x: 200, duration: 1000 }}"
+                    transition:fly|global="{{ x: 200, duration: 1000 }}"
                     on:introstart={() => {isActive = -1}}
                     on:introend={() => {isActive = 2}}
                     on:outroend={() => {isActive = -1}}>
@@ -130,19 +130,19 @@ import {presentationMode, presentation, overlay, slideCounter, autoScroll, curre
         <section>
             {#if !$presentationMode || $currentSlide >= 3}
             <h2 class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 3}}
                 on:outroend={() => {isActive = -1}}>Solution</h2>
             <h4 class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 3}}
                 on:outroend={() => {isActive = -1}}>
                 Step 1
             </h4>
             <p class="{$presentationMode && isActive === 3 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 3}}
                 on:outroend={() => {isActive = -1}}>
@@ -167,12 +167,12 @@ import {presentationMode, presentation, overlay, slideCounter, autoScroll, curre
             {/if}
             {#if !$presentationMode || $currentSlide >= 4}
             <h4 class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 4}}
                 on:outroend={() => {isActive = -1}}>Step 3: 1.</h4>
             <p class="{$presentationMode && isActive === 4 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 4}}
                 on:outroend={() => {isActive = -1}}>
@@ -187,12 +187,12 @@ import {presentationMode, presentation, overlay, slideCounter, autoScroll, curre
             {/if}
             {#if !$presentationMode || $currentSlide >= 5}
             <h4 class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive =5}}
                 on:outroend={() => {isActive = -1}}>Step 3: 2.</h4>
             <p class="{$presentationMode && isActive === 5 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive =5}}
                 on:outroend={() => {isActive = -1}}>
@@ -207,12 +207,12 @@ import {presentationMode, presentation, overlay, slideCounter, autoScroll, curre
             {/if}
             {#if !$presentationMode || $currentSlide >= 6}
             <h4 class="{$presentationMode && isActive === 6 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 6}}
                 on:outroend={() => {isActive = -1}}>Step 3: 3.</h4>
             <p class="{$presentationMode && isActive === 6 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive =6}}
                 on:outroend={() => {isActive = -1}}>
@@ -229,12 +229,12 @@ import {presentationMode, presentation, overlay, slideCounter, autoScroll, curre
             {/if}
             {#if !$presentationMode || $currentSlide >= 7}
             <h4 class="{$presentationMode && isActive === 7 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 7}}
                 on:outroend={() => {isActive = -1}}>Step 3: 4</h4>
             <p class="{$presentationMode && isActive === 7 ? 'currentActive': ''}" 
-                transition:fly="{{ x: 200, duration: 1000 }}"
+                transition:fly|global="{{ x: 200, duration: 1000 }}"
                 on:introstart={() => {isActive = -1}}
                 on:introend={() => {isActive = 7}}
                 on:outroend={() => {isActive = -1}}>
@@ -247,7 +247,7 @@ import {presentationMode, presentation, overlay, slideCounter, autoScroll, curre
                     \\end{aligned}
                 \\]`}
             </p>
-            <p transition:fly="{{ x: 200, duration: 1000 }}">
+            <p transition:fly|global="{{ x: 200, duration: 1000 }}">
                 Only options 1 and 2 are correct.
             </p>
             {/if}

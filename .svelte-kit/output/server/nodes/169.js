@@ -5,6 +5,6 @@ let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/(general)/practice/_page.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/(general)/practice/+page.js";
-export const imports = ["_app/immutable/nodes/169.a113418c.js","_app/immutable/chunks/index.d7eb2526.js","_app/immutable/chunks/control.f5b05b5f.js","_app/immutable/chunks/index.2b82be55.js","_app/immutable/chunks/paths.a50c861d.js"];
+export const imports = ["_app/immutable/nodes/169.210af06e.js","_app/immutable/chunks/index.c6708bed.js","_app/immutable/chunks/control.c2cf8273.js","_app/immutable/chunks/index.2b82be55.js","_app/immutable/chunks/paths.5be67630.js"];
 export const stylesheets = ["_app/immutable/assets/Message.1e964222.css","_app/immutable/assets/Link.867ad8ee.css","_app/immutable/assets/Practice.5698baa0.css"];
 export const fonts = [];
