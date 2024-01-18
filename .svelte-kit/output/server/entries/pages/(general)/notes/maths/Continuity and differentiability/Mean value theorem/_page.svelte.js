@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -24,16 +26,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><ul><li><strong>Rolle&#39;s Theorem:</strong> If \\(f:[a,b]\\to R\\) is continuous on \\([a,b]\\) and differentiable on \\((a, b)\\) such that \\(f(a) = f(b)\\), then there exists some \\(c\\in (a,b)\\) such that \\(f&#39;(c) = 0\\)
-                </li>
-                <li><strong>Mean Value Theorem:</strong> If \\(f:[a,b]\\to R\\) is continuous on \\([a,b]\\) and differentiable on \\((a,b)\\), then there exists some \\(c\\in (a,b)\\) such that \\[f&#39;(c) = ${escape(TeX.frac("f(b) - f(a)", "b-a"))}\\] 
-                </li></ul></section>
-        
-        
-        
-        </article>`;
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section><ul><li data-svelte-h="svelte-1vzqmes"><strong>Rolle&#39;s Theorem:</strong> If \\(f:[a,b]\\to R\\) is continuous on \\([a,b]\\) and differentiable on \\((a, b)\\) such that \\(f(a) = f(b)\\), then there exists some \\(c\\in (a,b)\\) such that \\(f&#39;(c) = 0\\)</li> <li><strong data-svelte-h="svelte-vrmzds">Mean Value Theorem:</strong> If \\(f:[a,b]\\to R\\) is continuous on \\([a,b]\\) and differentiable on \\((a,b)\\), then there exists some \\(c\\in (a,b)\\) such that \\[f&#39;(c) = ${escape(TeX.frac("f(b) - f(a)", "b-a"))}\\]</li></ul></section>  </article>`;
 });
 export {
   Page as default

@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -24,22 +26,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-fc07ip_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-fc07ip_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><ul><li>\\(\\sin x = 0\\) gives \\(x = n\\pi\\), where \\(n${escape(TeX.inZ)}\\)
-            </li>
-            <li>\\(\\cos x = 0\\) gives \\(x = (2n + 1)${escape(TeX.dfrac("\\pi", "2"))}\\), where \\(n${escape(TeX.inZ)}\\)
-            </li>
-            <li>\\(\\sin x = \\sin y\\) implies \\(x = n\\pi + (-1)^n y\\), where \\(n${escape(TeX.inZ)}\\)
-            </li>
-            <li>\\(\\cos x = \\cos y\\) implies \\(x = 2n\\pi \\pm y\\), where \\(n${escape(TeX.inZ)}\\)
-            </li>
-            <li>\\(\\tan x = \\tan y\\) implies \\(x = n\\pi + y\\), where \\(n${escape(TeX.inZ)}\\)
-            </li></ul></section>
-        
-        
-        
-        </article>`;
+  return `${$$result.head += `<!-- HEAD_svelte-fc07ip_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-fc07ip_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section><ul><li>\\(\\sin x = 0\\) gives \\(x = n\\pi\\), where \\(n${escape(TeX.inZ)}\\)</li> <li>\\(\\cos x = 0\\) gives \\(x = (2n + 1)${escape(TeX.dfrac("\\pi", "2"))}\\), where \\(n${escape(TeX.inZ)}\\)</li> <li>\\(\\sin x = \\sin y\\) implies \\(x = n\\pi + (-1)^n y\\), where \\(n${escape(TeX.inZ)}\\)</li> <li>\\(\\cos x = \\cos y\\) implies \\(x = 2n\\pi \\pm y\\), where \\(n${escape(TeX.inZ)}\\)</li> <li>\\(\\tan x = \\tan y\\) implies \\(x = n\\pi + y\\), where \\(n${escape(TeX.inZ)}\\)</li></ul></section>  </article>`;
 });
 export {
   Page as default

@@ -1,8 +1,5 @@
-import { c as create_ssr_component, b as compute_rest_props, a as subscribe, e as escape, n as null_to_empty } from "./index3.js";
-import { p as presentationMode, c as currentSlide } from "./stores2.js";
-const H1_svelte_svelte_type_style_lang = "";
-const H2_svelte_svelte_type_style_lang = "";
-const H3_svelte_svelte_type_style_lang = "";
+import { c as create_ssr_component, b as compute_rest_props, a as subscribe, e as escape, n as null_to_empty } from "./ssr.js";
+import { p as presentationMode, c as currentSlide } from "./stores3.js";
 const css = {
   code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
   map: null

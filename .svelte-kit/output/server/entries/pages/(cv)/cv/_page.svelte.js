@@ -1,6 +1,5 @@
-import { c as create_ssr_component, v as validate_component } from "../../../../chunks/index3.js";
+import { c as create_ssr_component, v as validate_component } from "../../../../chunks/ssr.js";
 import { P as Papers } from "../../../../chunks/Papers.js";
-const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: `article.svelte-9fdrmv.svelte-9fdrmv{display:grid;grid-template-columns:0.25fr 0.75fr;grid-template-areas:"header header"
             "aside main"
@@ -9,73 +8,7 @@ const css = {
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<article class="svelte-9fdrmv"><header class="svelte-9fdrmv"><div class="profile svelte-9fdrmv"><img width="100%" src="/profilephoto.jpeg" alt="mithileshkumar"></div>
-            <div class="details svelte-9fdrmv"><div class="name svelte-9fdrmv">Dr Mithilesh Kumar</div>
-                <div class="intro svelte-9fdrmv">Ex-IITian, Gold Medalist, Scientist, Teacher, Web developer</div></div></header>
-        <aside class="svelte-9fdrmv"><section class="about svelte-9fdrmv"><h2 class="svelte-9fdrmv">Profile</h2>
-                <p style="font-weight: 400;line-height: 1.45;font-size: 0.9em;">Hello, I&#39;m Mithilesh Kumar. I&#39;m passionate about anything related to Quantum Mechanics. Currently, I&#39;m working actively in quantum error correction. I have done research in quantum-safe cryptography (Post-Doc). My PhD involved studying parameterized algorithms. Prior to that I have masters in two fields, computer science (CMI) and physics (IIT Kanpur). In addition, I have founded two websites Mathril (Mathematics) and Vectorial (Graphics).</p></section>
-            <div class="contact svelte-9fdrmv"><h2 class="svelte-9fdrmv">Contact</h2>
-                <table class="contactable svelte-9fdrmv" style="font-size: 0.9em"><tr><td class="svelte-9fdrmv"><span class="material-icons">home</span></td>
-                        <td class="svelte-9fdrmv">Bokaro</td></tr>
-                    <tr><td style="padding-right:0" class="svelte-9fdrmv"><span class="material-icons">phone</span></td>
-                        <td class="svelte-9fdrmv">8797081308</td></tr>
-                    <tr><td style="padding-right:0" class="svelte-9fdrmv"><span class="material-icons">email</span></td>
-                        <td class="svelte-9fdrmv">info@drmithileshkumar.com</td></tr>
-                    <tr><td style="padding-right:0" class="svelte-9fdrmv"><span class="material-icons">link</span></td>
-                        <td class="svelte-9fdrmv">www.drmithileshkumar.com</td></tr></table></div></aside>
-        <div class="main svelte-9fdrmv"><section class="education"><h2 class="svelte-9fdrmv">Education</h2>
-                <table><tr><td class="dates svelte-9fdrmv">2020 - Present
-                        </td>
-                        <td class="svelte-9fdrmv"><div class="edu"><div class="degree svelte-9fdrmv">Web development</div>
-                                <div class="institute svelte-9fdrmv">Self-taught</div>
-                                <div class="description svelte-9fdrmv">created websites mathril.com and vectorial.app</div></div></td></tr>
-                    <tr><td class="dates svelte-9fdrmv">2017 - 2020
-                        </td>
-                        <td class="svelte-9fdrmv"><div class="edu"><div class="degree svelte-9fdrmv">Post Doc Research</div>
-                                <div class="institute svelte-9fdrmv">Simula-UiB, Bergen, Norway</div>
-                                <div class="description svelte-9fdrmv">Quantum-safe cryptography</div></div></td></tr>
-                    <tr><td class="dates svelte-9fdrmv">2014 - 2017
-                        </td>
-                        <td class="svelte-9fdrmv"><div class="edu"><div class="degree svelte-9fdrmv">PhD</div>
-                                <div class="institute svelte-9fdrmv">University of Bergen, Norway</div>
-                                <div class="description svelte-9fdrmv">Parameterized algorithms</div></div></td></tr>
-                    <tr><td class="dates svelte-9fdrmv">2011 - 2013
-                        </td>
-                        <td class="svelte-9fdrmv"><div class="edu"><div class="degree svelte-9fdrmv">Masters in Computer Science</div>
-                                <div class="institute svelte-9fdrmv">Chennai Mathematical Institute, Chennai</div>
-                                <div class="description svelte-9fdrmv">Theoretical Computer Science</div></div></td></tr>
-                    <tr><td class="dates svelte-9fdrmv">2004 - 2010
-                        </td>
-                        <td class="svelte-9fdrmv"><div class="edu"><div class="degree svelte-9fdrmv">Masters in Physics</div>
-                                <div class="institute svelte-9fdrmv">IIT Kanpur, Kanpur</div>
-                                <div class="description svelte-9fdrmv">MSc(I) Physics</div></div></td></tr></table></section>
-            <section class="achievements"><h2 class="svelte-9fdrmv">Achievements</h2>
-                <table><tr><td class="symbol svelte-9fdrmv" style="color: goldenrod"><span class="material-icons">military_tech</span></td>
-                        <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">Gold Medalist</div>
-                                <div class="awarddescription svelte-9fdrmv">Academic excellence in masters degree in computer science, Chennai Mathematical Institute, Chennai</div></div></td></tr>
-                    <tr><td class="symbol svelte-9fdrmv"><span class="material-icons">military_tech</span></td>
-                        <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">Merit-cum-means Scholarship</div>
-                                <div class="awarddescription svelte-9fdrmv">Academic performance in IIT Kanpur</div></div></td></tr>
-                    <tr><td class="symbol svelte-9fdrmv" style="color: silver"><span class="material-icons">military_tech</span></td>
-                        <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">Finalist in Carrom Competition</div>
-                                <div class="awarddescription svelte-9fdrmv">Every year between 2004-2009 in Sports Event, IIT Kanpur</div></div></td></tr>
-                    <tr><td class="symbol svelte-9fdrmv"><span class="material-icons">military_tech</span></td>
-                        <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">AIR 971</div>
-                                <div class="awarddescription svelte-9fdrmv">IIT JEE Entrance Exam</div></div></td></tr>
-                    <tr><td class="symbol svelte-9fdrmv" style="color: silver"><span class="material-icons">military_tech</span></td>
-                        <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">2nd Position Board X</div>
-                                <div class="awarddescription svelte-9fdrmv">Class X result 94% (ranked 2nd in all Steel Plant Schools, Bokaro</div></div></td></tr>
-                    <tr><td class="symbol svelte-9fdrmv" style="color: goldenrod"><span class="material-icons">military_tech</span></td>
-                        <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">Gold Medalist</div>
-                                <div class="awarddescription svelte-9fdrmv">1st position in Class IX-X, BISSC 8B, Bokaro</div></div></td></tr>
-                    <tr><td class="symbol svelte-9fdrmv" style="color: goldenrod"><span class="material-icons">military_tech</span></td>
-                        <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">Silver Medalist</div>
-                                <div class="awarddescription svelte-9fdrmv">1st position in Class VII-VIII, BISSC 8B, Bokaro</div></div></td></tr>
-                    <tr><td class="symbol svelte-9fdrmv" style="color: goldenrod"><span class="material-icons">military_tech</span></td>
-                        <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">1st Rank</div>
-                                <div class="awarddescription svelte-9fdrmv">Intercity English Essay Competition, Bokaro</div></div></td></tr></table></section></div>
-        <section class="papers svelte-9fdrmv"><h2 class="svelte-9fdrmv">Publications</h2>
-            ${validate_component(Papers, "Papers").$$render($$result, {}, {}, {})}</section></article>`;
+  return `<article class="svelte-9fdrmv"><header class="svelte-9fdrmv" data-svelte-h="svelte-1lyfwr2"><div class="profile svelte-9fdrmv"><img width="100%" src="/profilephoto.jpeg" alt="mithileshkumar"></div> <div class="details svelte-9fdrmv"><div class="name svelte-9fdrmv">Dr Mithilesh Kumar</div> <div class="intro svelte-9fdrmv">Ex-IITian, Gold Medalist, Scientist, Teacher, Web developer</div></div></header> <aside class="svelte-9fdrmv" data-svelte-h="svelte-r7z49y"><section class="about svelte-9fdrmv"><h2 class="svelte-9fdrmv">Profile</h2> <p style="font-weight: 400;line-height: 1.45;font-size: 0.9em;">Hello, I&#39;m Mithilesh Kumar. I&#39;m passionate about anything related to Quantum Mechanics. Currently, I&#39;m working actively in quantum error correction. I have done research in quantum-safe cryptography (Post-Doc). My PhD involved studying parameterized algorithms. Prior to that I have masters in two fields, computer science (CMI) and physics (IIT Kanpur). In addition, I have founded two websites Mathril (Mathematics) and Vectorial (Graphics).</p></section> <div class="contact svelte-9fdrmv"><h2 class="svelte-9fdrmv">Contact</h2> <table class="contactable svelte-9fdrmv" style="font-size: 0.9em"><tr><td class="svelte-9fdrmv"><span class="material-icons">home</span></td> <td class="svelte-9fdrmv">Bokaro</td></tr> <tr><td style="padding-right:0" class="svelte-9fdrmv"><span class="material-icons">phone</span></td> <td class="svelte-9fdrmv">8797081308</td></tr> <tr><td style="padding-right:0" class="svelte-9fdrmv"><span class="material-icons">email</span></td> <td class="svelte-9fdrmv">info@drmithileshkumar.com</td></tr> <tr><td style="padding-right:0" class="svelte-9fdrmv"><span class="material-icons">link</span></td> <td class="svelte-9fdrmv">www.drmithileshkumar.com</td></tr></table></div></aside> <div class="main svelte-9fdrmv" data-svelte-h="svelte-1tw3zrj"><section class="education"><h2 class="svelte-9fdrmv">Education</h2> <table><tr><td class="dates svelte-9fdrmv">2020 - Present</td> <td class="svelte-9fdrmv"><div class="edu"><div class="degree svelte-9fdrmv">Web development</div> <div class="institute svelte-9fdrmv">Self-taught</div> <div class="description svelte-9fdrmv">created websites mathril.com and vectorial.app</div></div></td></tr> <tr><td class="dates svelte-9fdrmv">2017 - 2020</td> <td class="svelte-9fdrmv"><div class="edu"><div class="degree svelte-9fdrmv">Post Doc Research</div> <div class="institute svelte-9fdrmv">Simula-UiB, Bergen, Norway</div> <div class="description svelte-9fdrmv">Quantum-safe cryptography</div></div></td></tr> <tr><td class="dates svelte-9fdrmv">2014 - 2017</td> <td class="svelte-9fdrmv"><div class="edu"><div class="degree svelte-9fdrmv">PhD</div> <div class="institute svelte-9fdrmv">University of Bergen, Norway</div> <div class="description svelte-9fdrmv">Parameterized algorithms</div></div></td></tr> <tr><td class="dates svelte-9fdrmv">2011 - 2013</td> <td class="svelte-9fdrmv"><div class="edu"><div class="degree svelte-9fdrmv">Masters in Computer Science</div> <div class="institute svelte-9fdrmv">Chennai Mathematical Institute, Chennai</div> <div class="description svelte-9fdrmv">Theoretical Computer Science</div></div></td></tr> <tr><td class="dates svelte-9fdrmv">2004 - 2010</td> <td class="svelte-9fdrmv"><div class="edu"><div class="degree svelte-9fdrmv">Masters in Physics</div> <div class="institute svelte-9fdrmv">IIT Kanpur, Kanpur</div> <div class="description svelte-9fdrmv">MSc(I) Physics</div></div></td></tr></table></section> <section class="achievements"><h2 class="svelte-9fdrmv">Achievements</h2> <table><tr><td class="symbol svelte-9fdrmv" style="color: goldenrod"><span class="material-icons">military_tech</span></td> <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">Gold Medalist</div> <div class="awarddescription svelte-9fdrmv">Academic excellence in masters degree in computer science, Chennai Mathematical Institute, Chennai</div></div></td></tr> <tr><td class="symbol svelte-9fdrmv"><span class="material-icons">military_tech</span></td> <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">Merit-cum-means Scholarship</div> <div class="awarddescription svelte-9fdrmv">Academic performance in IIT Kanpur</div></div></td></tr> <tr><td class="symbol svelte-9fdrmv" style="color: silver"><span class="material-icons">military_tech</span></td> <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">Finalist in Carrom Competition</div> <div class="awarddescription svelte-9fdrmv">Every year between 2004-2009 in Sports Event, IIT Kanpur</div></div></td></tr> <tr><td class="symbol svelte-9fdrmv"><span class="material-icons">military_tech</span></td> <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">AIR 971</div> <div class="awarddescription svelte-9fdrmv">IIT JEE Entrance Exam</div></div></td></tr> <tr><td class="symbol svelte-9fdrmv" style="color: silver"><span class="material-icons">military_tech</span></td> <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">2nd Position Board X</div> <div class="awarddescription svelte-9fdrmv">Class X result 94% (ranked 2nd in all Steel Plant Schools, Bokaro</div></div></td></tr> <tr><td class="symbol svelte-9fdrmv" style="color: goldenrod"><span class="material-icons">military_tech</span></td> <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">Gold Medalist</div> <div class="awarddescription svelte-9fdrmv">1st position in Class IX-X, BISSC 8B, Bokaro</div></div></td></tr> <tr><td class="symbol svelte-9fdrmv" style="color: goldenrod"><span class="material-icons">military_tech</span></td> <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">Silver Medalist</div> <div class="awarddescription svelte-9fdrmv">1st position in Class VII-VIII, BISSC 8B, Bokaro</div></div></td></tr> <tr><td class="symbol svelte-9fdrmv" style="color: goldenrod"><span class="material-icons">military_tech</span></td> <td class="svelte-9fdrmv"><div class="award"><div class="awardname svelte-9fdrmv">1st Rank</div> <div class="awarddescription svelte-9fdrmv">Intercity English Essay Competition, Bokaro</div></div></td></tr></table></section></div> <section class="papers svelte-9fdrmv"><h2 class="svelte-9fdrmv" data-svelte-h="svelte-10baqc9">Publications</h2> ${validate_component(Papers, "Papers").$$render($$result, {}, {}, {})}</section></article>`;
 });
 export {
   Page as default

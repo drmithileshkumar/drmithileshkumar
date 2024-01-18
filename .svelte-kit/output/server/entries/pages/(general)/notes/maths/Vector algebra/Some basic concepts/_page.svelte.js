@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -24,18 +26,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="definition"><p>A quantity that has magnitude as well as direction is called a vector.
-                </p></div>
-            <ul><li>The scalar components of a vector are its direction ratios, and represent its projections along the respective axes.
-                </li>
-                <li>The magnitude (\\(r\\)), direction ratios \\((a, b, c)\\) and direction cosines \\((l, m, n)\\) of any vector are related as: \\[l=${escape(TeX.frac("a", "r"))}, m=${escape(TeX.frac("b", "r"))}, n=${escape(TeX.frac("c", "r"))}\\]
-                </li></ul></section>
-        
-        
-        
-        </article>`;
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section><div class="definition" data-svelte-h="svelte-jsfnea"><p>A quantity that has magnitude as well as direction is called a vector.</p></div> <ul><li data-svelte-h="svelte-y98der">The scalar components of a vector are its direction ratios, and represent its projections along the respective axes.</li> <li>The magnitude (\\(r\\)), direction ratios \\((a, b, c)\\) and direction cosines \\((l, m, n)\\) of any vector are related as: \\[l=${escape(TeX.frac("a", "r"))}, m=${escape(TeX.frac("b", "r"))}, n=${escape(TeX.frac("c", "r"))}\\]</li></ul></section>  </article>`;
 });
 export {
   Page as default

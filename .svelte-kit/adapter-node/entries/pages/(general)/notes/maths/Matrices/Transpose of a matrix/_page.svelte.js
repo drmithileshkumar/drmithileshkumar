@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -24,22 +26,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="definition"><p>If \\(A = ${escape(TeX.mat())}\\), then the matrix obtained by interchanging the rows and columns of \\(A\\) is called the <em>transpose</em> of \\(A\\). Transpose of the matrix \\(A\\) is denoted by \\(A&#39;\\) or \\(A^T\\). If \\(A = ${escape(TeX.mat())}\\), then \\(A&#39; = ${escape(TeX.mat("a", "j", "i", "n", "m"))}\\)
-                </p></div></section>
-        <section><h2>Properties of transpose of the matrices</h2>
-            <ol><li>\\((A&#39;)&#39; = A\\)
-                </li>
-                <li>\\((kA)&#39; = kA&#39;\\) (where \\(k\\) is a constant)
-                </li>
-                <li>\\((A + B)&#39; = A&#39; + B&#39;\\)
-                </li>
-                <li>\\((AB)&#39; = B&#39;A&#39;\\)
-                </li></ol></section>
-        
-        
-        </article>`;
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section><div class="definition"><p>If \\(A = ${escape(TeX.mat())}\\), then the matrix obtained by interchanging the rows and columns of \\(A\\) is called the <em data-svelte-h="svelte-rdjyib">transpose</em> of \\(A\\). Transpose of the matrix \\(A\\) is denoted by \\(A&#39;\\) or \\(A^T\\). If \\(A = ${escape(TeX.mat())}\\), then \\(A&#39; = ${escape(TeX.mat("a", "j", "i", "n", "m"))}\\)</p></div></section> <section data-svelte-h="svelte-y1funm"><h2>Properties of transpose of the matrices</h2> <ol><li>\\((A&#39;)&#39; = A\\)</li> <li>\\((kA)&#39; = kA&#39;\\) (where \\(k\\) is a constant)</li> <li>\\((A + B)&#39; = A&#39; + B&#39;\\)</li> <li>\\((AB)&#39; = B&#39;A&#39;\\)</li></ol></section>  </article>`;
 });
 export {
   Page as default

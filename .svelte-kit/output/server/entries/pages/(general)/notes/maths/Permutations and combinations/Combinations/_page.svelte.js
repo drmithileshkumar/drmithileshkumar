@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -24,19 +26,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><ul><li>The number of combinations of \\(n\\) different things taken \\(r\\) at a time, denoted by \\(${escape(TeX.ncr())}\\) is given by \\[${escape(TeX.ncr())} = ${escape(TeX.frac("n!", "r!(n-r)!"))}\\]
-                </li>
-                <li>Selecting \\(r\\) objects out of \\(n\\) objects is same as rejecting \\(n-r\\) objects, i.e.
-                    \\[${escape(TeX.ncr("n", "n-r"))} = ${escape(TeX.ncr())}\\]
-                </li>
-                <li>\\(${escape(TeX.ncr())} + ${escape(TeX.ncr("n", "r-1"))} = ${escape(TeX.ncr("n + 1", "r"))}\\)
-                </li></ul></section>
-        
-        
-        
-        </article>`;
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section><ul><li>The number of combinations of \\(n\\) different things taken \\(r\\) at a time, denoted by \\(${escape(TeX.ncr())}\\) is given by \\[${escape(TeX.ncr())} = ${escape(TeX.frac("n!", "r!(n-r)!"))}\\]</li> <li>Selecting \\(r\\) objects out of \\(n\\) objects is same as rejecting \\(n-r\\) objects, i.e.
+                    \\[${escape(TeX.ncr("n", "n-r"))} = ${escape(TeX.ncr())}\\]</li> <li>\\(${escape(TeX.ncr())} + ${escape(TeX.ncr("n", "r-1"))} = ${escape(TeX.ncr("n + 1", "r"))}\\)</li></ul></section>  </article>`;
 });
 export {
   Page as default

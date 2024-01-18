@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -24,23 +26,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><ul><li><strong>Integration by parts:</strong> \\(\\int uv dx = u\\int vdx - \\int \\Big[u&#39;\\int vdx\\Big]dx\\)
-                </li>
-                <li>\\(\\int e^x[f(x) + f&#39;(x)]dx = e^xf(x) + C\\)
-                </li>
-                <li>Some special integrals
-                    <ol><li>\\(\\int ${escape(TeX.sqrt("x^2-a^2"))} dx = ${escape(TeX.dfrac("x", 2))}${escape(TeX.sqrt("x^2-a^2"))} - ${escape(TeX.dfrac("a^2", 2))}\\log|x + ${escape(TeX.sqrt("x^2 - a^2"))}| + C\\)
-                        </li>
-                        <li style="padding-top: 0.5em;">\\(\\int ${escape(TeX.sqrt("x^2+a^2"))} dx = ${escape(TeX.dfrac("x", 2))}${escape(TeX.sqrt("x^2+a^2"))} + ${escape(TeX.dfrac("a^2", 2))}\\log|x + ${escape(TeX.sqrt("x^2 + a^2"))}| + C\\)
-                        </li>
-                        <li style="padding-top: 0.5em;">\\(\\int ${escape(TeX.sqrt("a^2-x^2"))} dx = ${escape(TeX.dfrac("x", 2))}${escape(TeX.sqrt("a^2-x^2"))} + ${escape(TeX.asin)}${escape(TeX.dfrac("x", "a"))} + C\\)
-                        </li></ol></li></ul></section>
-        
-        
-        
-        </article>`;
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section><ul><li data-svelte-h="svelte-192kjkv"><strong>Integration by parts:</strong> \\(\\int uv dx = u\\int vdx - \\int \\Big[u&#39;\\int vdx\\Big]dx\\)</li> <li data-svelte-h="svelte-1t89evy">\\(\\int e^x[f(x) + f&#39;(x)]dx = e^xf(x) + C\\)</li> <li>Some special integrals
+                    <ol><li>\\(\\int ${escape(TeX.sqrt("x^2-a^2"))} dx = ${escape(TeX.dfrac("x", 2))}${escape(TeX.sqrt("x^2-a^2"))} - ${escape(TeX.dfrac("a^2", 2))}\\log|x + ${escape(TeX.sqrt("x^2 - a^2"))}| + C\\)</li> <li style="padding-top: 0.5em;">\\(\\int ${escape(TeX.sqrt("x^2+a^2"))} dx = ${escape(TeX.dfrac("x", 2))}${escape(TeX.sqrt("x^2+a^2"))} + ${escape(TeX.dfrac("a^2", 2))}\\log|x + ${escape(TeX.sqrt("x^2 + a^2"))}| + C\\)</li> <li style="padding-top: 0.5em;">\\(\\int ${escape(TeX.sqrt("a^2-x^2"))} dx = ${escape(TeX.dfrac("x", 2))}${escape(TeX.sqrt("a^2-x^2"))} + ${escape(TeX.asin)}${escape(TeX.dfrac("x", "a"))} + C\\)</li></ol></li></ul></section>  </article>`;
 });
 export {
   Page as default

@@ -1,8 +1,7 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, n as null_to_empty } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, n as null_to_empty } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 import { T as TeX } from "../../../../../../../chunks/constants.js";
-const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: "article.svelte-akjtnj{position:relative;padding:0.5em}.absolute.svelte-akjtnj{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-akjtnj::-webkit-scrollbar{width:0;height:0}.currentActive.svelte-akjtnj{color:tomato;border-radius:10px;transition:all 1s}.pad.svelte-akjtnj{min-height:100px}.thumbnail.svelte-akjtnj{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-akjtnj{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",
   map: null
@@ -25,35 +24,22 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-l581lx_START -->${$$result.title = `<title>Mathematics Question 3</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="IIT JEE Advanced Mathematics 2021"><!-- HEAD_svelte-l581lx_END -->`, ""}
-
-    <article class="${["svelte-akjtnj", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-akjtnj"><p class="question statement svelte-akjtnj">For \\(x${escape(TeX.inR)}\\), thi number of real roots of the equation \\(3x^2-4|x^2 - 1| + x - 1 = 0\\) is ______.
-                </p></div>` : ``}   
-        ${!$presentationMode || $currentSlide >= -1 ? `<h1>Question 3 [JEE adv, 2021]</h1>` : ``}
-        ${!$presentationMode || $currentSlide >= 0 ? `<p class="${"question " + escape(
+  return `${$$result.head += `<!-- HEAD_svelte-l581lx_START -->${$$result.title = `<title>Mathematics Question 3</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="IIT JEE Advanced Mathematics 2021"><!-- HEAD_svelte-l581lx_END -->`, ""} <article class="${["svelte-akjtnj", $presentationMode ? "absolute" : ""].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-akjtnj"><p class="question statement svelte-akjtnj">For \\(x${escape(TeX.inR)}\\), thi number of real roots of the equation \\(3x^2-4|x^2 - 1| + x - 1 = 0\\) is ______.</p></div>` : ``} ${!$presentationMode || $currentSlide >= -1 ? `<h1 data-svelte-h="svelte-bv9nv9">Question 3 [JEE adv, 2021]</h1>` : ``} ${!$presentationMode || $currentSlide >= 0 ? `<p class="${"question " + escape(
     $presentationMode && isActive === 0 ? "currentActive" : "",
     true
-  ) + " svelte-akjtnj"}">For \\(x${escape(TeX.inR)}\\), thi number of real roots of the equation \\(3x^2-4|x^2 - 1| + x - 1 = 0\\) is ______.
-            </p>` : ``}
-        <section>${!$presentationMode || $currentSlide >= 1 ? `<h2 class="${escape(
+  ) + " svelte-akjtnj"}">For \\(x${escape(TeX.inR)}\\), thi number of real roots of the equation \\(3x^2-4|x^2 - 1| + x - 1 = 0\\) is ______.</p>` : ``} <section>${!$presentationMode || $currentSlide >= 1 ? `<h2 class="${escape(
     null_to_empty($presentationMode && isActive === 1 ? "currentActive" : ""),
     true
-  ) + " svelte-akjtnj"}">Concepts</h2>
-                <p class="${escape(
+  ) + " svelte-akjtnj"}">Concepts</h2> <p class="${escape(
     null_to_empty($presentationMode && isActive === 1 ? "currentActive" : ""),
     true
-  ) + " svelte-akjtnj"}">Consider the sign of  \\(x^2 - 1\\) to get two quadratic equations.
-                </p>` : ``}</section>
-        <section>${!$presentationMode || $currentSlide >= 2 ? `<h2 class="${escape(
+  ) + " svelte-akjtnj"}">Consider the sign of  \\(x^2 - 1\\) to get two quadratic equations.</p>` : ``}</section> <section>${!$presentationMode || $currentSlide >= 2 ? `<h2 class="${escape(
     null_to_empty($presentationMode && isActive === 2 ? "currentActive" : ""),
     true
-  ) + " svelte-akjtnj"}">Solution</h2>
-                <h4 class="${escape(
+  ) + " svelte-akjtnj"}">Solution</h2> <h4 class="${escape(
     null_to_empty($presentationMode && isActive === 2 ? "currentActive" : ""),
     true
-  ) + " svelte-akjtnj"}">Step 1
-                </h4>
-                <p class="${escape(
+  ) + " svelte-akjtnj"}">Step 1</h4> <p class="${escape(
     null_to_empty($presentationMode && isActive === 2 ? "currentActive" : ""),
     true
   ) + " svelte-akjtnj"}">${escape(`\\[
@@ -61,16 +47,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                             x^2 - 1 > 0&\\implies& x\\in (-\\infty, -1)\\cup(1,\\infty)\\\\
                             x^2 - 1 < 0&\\implies& x\\in (-1, 1)
                         \\end{eqnarray}
-                    \\]`)}</p>` : ``}
-            ${!$presentationMode || $currentSlide >= 3 ? `<h4 class="${escape(
+                    \\]`)}</p>` : ``} ${!$presentationMode || $currentSlide >= 3 ? `<h4 class="${escape(
     null_to_empty($presentationMode && isActive === 3 ? "currentActive" : ""),
     true
-  ) + " svelte-akjtnj"}">Step 2</h4>
-                <h5 class="${escape(
+  ) + " svelte-akjtnj"}">Step 2</h4> <h5 class="${escape(
     null_to_empty($presentationMode && isActive === 3 ? "currentActive" : ""),
     true
-  ) + " svelte-akjtnj"}">Case 1: \\(x^2 - 1&gt;0\\)</h5>
-                <p class="${escape(
+  ) + " svelte-akjtnj"}">Case 1: \\(x^2 - 1&gt;0\\)</h5> <p class="${escape(
     null_to_empty($presentationMode && isActive === 3 ? "currentActive" : ""),
     true
   ) + " svelte-akjtnj"}">This gives the quadratic equation
@@ -81,13 +64,10 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                             \\implies x &=& \\frac{1\\pm \\sqrt{13}}{2}
                         \\end{eqnarray}
                     \\]`)}
-                    Both the roots are in the allowed interval \\(x\\in (-\\infty, -1)\\cup(1,\\infty)\\).
-                </p>` : ``}
-            ${!$presentationMode || $currentSlide >= 4 ? `<h5 class="${escape(
+                    Both the roots are in the allowed interval \\(x\\in (-\\infty, -1)\\cup(1,\\infty)\\).</p>` : ``} ${!$presentationMode || $currentSlide >= 4 ? `<h5 class="${escape(
     null_to_empty($presentationMode && isActive === 4 ? "currentActive" : ""),
     true
-  ) + " svelte-akjtnj"}">Case 2: \\(x^2 - 1${escape(TeX.less)}0\\)</h5>
-                <p class="${escape(
+  ) + " svelte-akjtnj"}">Case 2: \\(x^2 - 1${escape(TeX.less)}0\\)</h5> <p class="${escape(
     null_to_empty($presentationMode && isActive === 4 ? "currentActive" : ""),
     true
   ) + " svelte-akjtnj"}">This gives the quadratic equation
@@ -98,18 +78,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                             \\implies x &=& \\frac{-1\\pm \\sqrt{141}}{14}
                         \\end{eqnarray}
                     \\]`)}
-                    Both the roots are in the allowed interval \\(x\\in (-1,1)\\).
-                </p>` : ``}
-            ${!$presentationMode || $currentSlide >= 5 ? `<h4 class="${escape(
+                    Both the roots are in the allowed interval \\(x\\in (-1,1)\\).</p>` : ``} ${!$presentationMode || $currentSlide >= 5 ? `<h4 class="${escape(
     null_to_empty($presentationMode && isActive === 5 ? "currentActive" : ""),
     true
-  ) + " svelte-akjtnj"}">Step 3</h4>
-                <p class="${escape(
+  ) + " svelte-akjtnj"}">Step 3</h4> <p class="${escape(
     null_to_empty($presentationMode && isActive === 5 ? "currentActive" : ""),
     true
-  ) + " svelte-akjtnj"}">There are two roots each of the two quadratic equations. Hence, the total number of roots is 4.
-                </p>` : ``}
-            ${$presentationMode && $currentSlide > 0 ? `<div class="pad svelte-akjtnj"></div>` : ``}</section></article>`;
+  ) + " svelte-akjtnj"}">There are two roots each of the two quadratic equations. Hence, the total number of roots is 4.</p>` : ``} ${$presentationMode && $currentSlide > 0 ? `<div class="pad svelte-akjtnj"></div>` : ``}</section></article>`;
 });
 export {
   Page as default

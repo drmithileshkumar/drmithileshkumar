@@ -1,6 +1,6 @@
-import { c as create_ssr_component, a as subscribe, v as validate_component } from "../../../../../chunks/index3.js";
+import { c as create_ssr_component, a as subscribe, v as validate_component } from "../../../../../chunks/ssr.js";
 import { S as Select } from "../../../../../chunks/Select.js";
-import { d as chapters12, g as generators, s as selectedGenerator, a as selectedChapter } from "../../../../../chunks/stores3.js";
+import { d as chapters12, g as generators, s as selectedGenerator, a as selectedChapter } from "../../../../../chunks/stores4.js";
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_generators;
   let $$unsubscribe_selectedGenerator;
@@ -10,8 +10,10 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter = subscribe(selectedChapter, (value) => $selectedChapter = value);
   let $$settled;
   let $$rendered;
+  let previous_head = $$result.head;
   do {
     $$settled = true;
+    $$result.head = previous_head;
     $$rendered = `${validate_component(Select, "Select").$$render(
       $$result,
       {
@@ -27,8 +29,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       },
       {}
-    )}
-${slots.default ? slots.default({}) : ``}`;
+    )} ${slots.default ? slots.default({}) : ``}`;
   } while (!$$settled);
   $$unsubscribe_generators();
   $$unsubscribe_selectedGenerator();

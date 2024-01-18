@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
@@ -23,30 +25,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><ul><li><strong>Event:</strong> A subset of the sample space
-                </li>
-                <li><strong>Impossible event:</strong> The empty set
-                </li>
-                <li><strong>Sure event:</strong> The whole sample space
-                </li>
-                <li><strong>Complementary event or &#39;not&#39; event:</strong> The set \\(A&#39;\\) or \\(S-A\\)
-                </li>
-                <li><strong>Event \\(A\\) or \\(B\\):</strong> The set \\(A\\cup B\\)
-                </li>
-                <li><strong>Event \\(A\\) and \\(B\\):</strong> The set \\(A\\cap B\\)
-                </li>
-                <li><strong>Event \\(A\\) and not \\(B\\):</strong> The set \\(A-B\\)
-                </li>
-                <li><strong>Mutually exclusive event:</strong> \\(A\\) and \\(B\\) are mutually exclusive if \\(A\\cap B=\\phi\\)
-                </li>
-                <li><strong>Exhaustive and mutually exclusive events:</strong> Events \\(E_1, E_2,\\dots,E_n\\) are mutually exclusive and exhaustive if \\(E_1\\cup E_2\\cup\\cdots\\cup E_n = S\\) and \\(\\forall i\\neq j, E_i\\cap E_j = \\phi\\)
-                </li></ul></section>
-        
-        
-        
-        </article>`;
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section data-svelte-h="svelte-qlg07v"><ul><li><strong>Event:</strong> A subset of the sample space</li> <li><strong>Impossible event:</strong> The empty set</li> <li><strong>Sure event:</strong> The whole sample space</li> <li><strong>Complementary event or &#39;not&#39; event:</strong> The set \\(A&#39;\\) or \\(S-A\\)</li> <li><strong>Event \\(A\\) or \\(B\\):</strong> The set \\(A\\cup B\\)</li> <li><strong>Event \\(A\\) and \\(B\\):</strong> The set \\(A\\cap B\\)</li> <li><strong>Event \\(A\\) and not \\(B\\):</strong> The set \\(A-B\\)</li> <li><strong>Mutually exclusive event:</strong> \\(A\\) and \\(B\\) are mutually exclusive if \\(A\\cap B=\\phi\\)</li> <li><strong>Exhaustive and mutually exclusive events:</strong> Events \\(E_1, E_2,\\dots,E_n\\) are mutually exclusive and exhaustive if \\(E_1\\cup E_2\\cup\\cdots\\cup E_n = S\\) and \\(\\forall i\\neq j, E_i\\cap E_j = \\phi\\)</li></ul></section>  </article>`;
 });
 export {
   Page as default

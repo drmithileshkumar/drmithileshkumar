@@ -1,12 +1,12 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, v as validate_component, n as null_to_empty } from "../../../../../../../chunks/index3.js";
-import { p as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, a as presentation } from "../../../../../../../chunks/stores2.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, v as validate_component, n as null_to_empty } from "../../../../../../../chunks/ssr.js";
+import { p as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, a as presentation } from "../../../../../../../chunks/stores3.js";
 import { P as Practice } from "../../../../../../../chunks/Practice.js";
-/* empty css                                                                 */import { r as randInt } from "../../../../../../../chunks/common.js";
+/* empty css                                                                */
+import { r as randInt } from "../../../../../../../chunks/common.js";
 import { Q as Quadratic } from "../../../../../../../chunks/quadratic.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 import { I as Item, P, L as Li } from "../../../../../../../chunks/Image.svelte_svelte_type_style_lang.js";
 import { H as H3 } from "../../../../../../../chunks/H3.js";
-const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: ".display.svelte-1qvfvsn{position:relative;position:-webkit-sticky}.youtube.svelte-1qvfvsn{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\n	}article.svelte-1qvfvsn{position:relative;padding:0.5em}.absolute.svelte-1qvfvsn{margin:auto;width:100%;height:90vh;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1qvfvsn::-webkit-scrollbar{width:0;height:0}.pad.svelte-1qvfvsn{min-height:150px}.thumbnail.svelte-1qvfvsn{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1qvfvsn{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}.grid.svelte-1qvfvsn{display:grid;grid-template-columns:auto 420px}.flex.svelte-1qvfvsn{display:flex;flex-direction:column-reverse}.contentpart.svelte-1qvfvsn{padding:0.5em}.gridBackground.svelte-1qvfvsn{background-image:url('/background.svg');background-repeat:no-repeat;background-position:center;background-size:cover}",
   map: null
@@ -93,13 +93,10 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-1oiqp9i_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="The empty set"><!-- HEAD_svelte-1oiqp9i_END -->`, ""}
-<article class="${[
+  return `${$$result.head += `<!-- HEAD_svelte-1oiqp9i_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="The empty set"><!-- HEAD_svelte-1oiqp9i_END -->`, ""} <article class="${[
     escape(null_to_empty($presentationMode ? "gridBackground" : ""), true) + " svelte-1qvfvsn",
     $presentationMode ? "absolute" : ""
-  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-1qvfvsn"><p class="statement svelte-1qvfvsn">The empty set</p></div>` : ``}
-	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-1qvfvsn"}"><section class="contentpart svelte-1qvfvsn"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-1qvfvsn" data-svelte-h="svelte-1t5wc5l"><p class="statement svelte-1qvfvsn">The empty set</p></div>` : ``} ${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``} <div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-1qvfvsn"}"><section class="contentpart svelte-1qvfvsn"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
@@ -107,38 +104,31 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-				${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 1 }, {}, {
         default: () => {
-          return `A set which does not contain any element is called the <strong>empty</strong> set.
-					`;
+          return `A set which does not contain any element is called the <strong data-svelte-h="svelte-36f0v5">empty</strong> set.`;
         }
       })}`;
     }
-  })}
-				<ul>${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
+  })} <ul>${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 2 }, {}, {
         default: () => {
-          return `An empty set is also called the <em>null set</em> or the <em>void set</em>.
-						`;
+          return `An empty set is also called the <em data-svelte-h="svelte-119sll7">null set</em> or the <em data-svelte-h="svelte-thac94">void set</em>.`;
         }
       })}`;
     }
-  })}
-					${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 3 }, {}, {
         default: () => {
-          return `An empty set is denoted either as ${escape("{ }")} or \\(\\varphi\\) (read as &quot;phi&quot;).
-						`;
+          return `An empty set is denoted either as ${escape("{ }")} or \\(\\varphi\\) (read as &quot;phi&quot;).`;
         }
       })}`;
     }
-  })}</ul></section>
-			<section>${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
+  })}</ul></section> <section>${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
     default: () => {
       return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 4 }, {}, {
         default: () => {
@@ -146,18 +136,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-				<ul>${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
+  })} <ul>${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 5 }, {}, {
         default: () => {
-          return `The set of positive numbers less than 0 contains no element. Hence, it is an empty set
-						`;
+          return `The set of positive numbers less than 0 contains no element. Hence, it is an empty set`;
         }
       })}`;
     }
-  })}
-					${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 6 }, {}, {
         default: () => {
@@ -165,8 +152,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-					${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 7 }, {}, {
         default: () => {
@@ -174,8 +160,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-					${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 8 }, {}, {
         default: () => {
@@ -183,19 +168,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}</ul></section>
-			<section></section></section>
-        ${!$presentationMode ? `<div class="youtube svelte-1qvfvsn"><iframe width="420" height="300" src="https://www.youtube.com/embed/-VP7utgjA8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ``}</div>
-	
-	${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
+  })}</ul></section> <section></section></section> ${!$presentationMode ? `<div class="youtube svelte-1qvfvsn" data-svelte-h="svelte-kyxfk6"><iframe width="420" height="300" src="https://www.youtube.com/embed/-VP7utgjA8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ``}</div> ${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
     default: () => {
-      return `<section><h2>Practice</h2>
-			${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
+      return `<section><h2 data-svelte-h="svelte-1g25fwj">Practice</h2> ${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
     }
-  })}
-
-	${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-1qvfvsn"></div>` : ``}
-</article>`;
+  })} ${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-1qvfvsn"></div>` : ``} </article>`;
 });
 export {
   Page as default

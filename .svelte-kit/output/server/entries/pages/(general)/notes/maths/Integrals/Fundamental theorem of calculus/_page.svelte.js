@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
@@ -23,18 +25,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="definition"><p>The area function is given by \\[A(x) = \\int_a^x f(x)dx\\]
-                </p></div>
-            <div class="theorem"><p><strong>First fundamental theorem of integral calculus:</strong> Let \\(f\\) be a continuous function on the closed interval \\([a, b]\\) and let \\(A(x)\\) be the area function. Then \\[A&#39;(x) = f(x)\\], for all \\(x\\in [a,b]\\)
-            </p></div>
-            <div class="theor"><p><strong>Second fundamental theorem of integral calculus:</strong> Let \\(f\\) be continuous function defined on the closed interval \\([a, b]\\) and \\(F\\) be an anti derivative of \\(f\\). Then \\[\\int_a^bf(x)dx = [F(x)]_a^b = F(b) - F(a)\\]
-                </p></div></section>
-        
-        
-        
-        </article>`;
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section data-svelte-h="svelte-gu4khj"><div class="definition"><p>The area function is given by \\[A(x) = \\int_a^x f(x)dx\\]</p></div> <div class="theorem"><p><strong>First fundamental theorem of integral calculus:</strong> Let \\(f\\) be a continuous function on the closed interval \\([a, b]\\) and let \\(A(x)\\) be the area function. Then \\[A&#39;(x) = f(x)\\], for all \\(x\\in [a,b]\\)</p></div> <div class="theor"><p><strong>Second fundamental theorem of integral calculus:</strong> Let \\(f\\) be continuous function defined on the closed interval \\([a, b]\\) and \\(F\\) be an anti derivative of \\(f\\). Then \\[\\int_a^bf(x)dx = [F(x)]_a^b = F(b) - F(a)\\]</p></div></section>  </article>`;
 });
 export {
   Page as default

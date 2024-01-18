@@ -423,6 +423,12 @@
                     </Graphic>
                 <Text>Quantum</Text>
             </Item>
+            <Item
+                    on:SMUI:action={() => goto(`/courses`)}
+                >
+                    <Graphic class="material-icons">folder</Graphic>
+                    <Text>Courses</Text>
+                </Item>
         </List>
         <List>
             <!-- {#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] as cl}

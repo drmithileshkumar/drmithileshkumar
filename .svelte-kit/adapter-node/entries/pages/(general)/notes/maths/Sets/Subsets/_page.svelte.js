@@ -1,7 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, v as validate_component, n as null_to_empty } from "../../../../../../../chunks/index3.js";
-import { p as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, a as presentation } from "../../../../../../../chunks/stores2.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, v as validate_component, n as null_to_empty } from "../../../../../../../chunks/ssr.js";
+import { p as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, a as presentation } from "../../../../../../../chunks/stores3.js";
 import { P as Practice } from "../../../../../../../chunks/Practice.js";
-/* empty css                                                                 */import { S as Sets } from "../../../../../../../chunks/sets.js";
+/* empty css                                                                */
+import { S as Sets } from "../../../../../../../chunks/sets.js";
 import { r as randInt } from "../../../../../../../chunks/common.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 import { T as TeX } from "../../../../../../../chunks/constants.js";
@@ -9,7 +10,7 @@ import { I as Item, P, L as Li } from "../../../../../../../chunks/Image.svelte_
 import { H as H3 } from "../../../../../../../chunks/H3.js";
 import { H as H2 } from "../../../../../../../chunks/H2.js";
 import { I as Image } from "../../../../../../../chunks/Image.js";
-/* empty css                                                             */const _page_svelte_svelte_type_style_lang = "";
+/* empty css                                                            */
 const css = {
   code: ".display.svelte-1tds5s2{position:relative;position:-webkit-sticky}.youtube.svelte-1tds5s2{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start}article.svelte-1tds5s2{position:relative;padding:0.5em}.absolute.svelte-1tds5s2{margin:auto;width:100%;height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1tds5s2::-webkit-scrollbar{width:0;height:0}.pad.svelte-1tds5s2{min-height:150px}.thumbnail.svelte-1tds5s2{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1tds5s2{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:red;text-shadow:1px 1px 3px rgb(4, 4, 4);padding:1em;background-image:url('/notes/maths/sets/subsets/thumbnail.svg');background-repeat:no-repeat;background-position:center;width:500px;height:500px}.grid.svelte-1tds5s2{display:grid;grid-template-columns:auto 420px}.flex.svelte-1tds5s2{display:flex;flex-direction:column-reverse}.contentpart.svelte-1tds5s2{padding:0.5em}.gridBackground.svelte-1tds5s2{background-image:url('/background.svg');background-repeat:no-repeat;background-position:center;background-size:cover}",
   map: null
@@ -128,87 +129,70 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-1o7l939_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="Subsets"><!-- HEAD_svelte-1o7l939_END -->`, ""}
-<article class="${[
+  return `${$$result.head += `<!-- HEAD_svelte-1o7l939_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="Subsets"><!-- HEAD_svelte-1o7l939_END -->`, ""} <article class="${[
     escape(null_to_empty($presentationMode ? "gridBackground" : ""), true) + " svelte-1tds5s2",
     $presentationMode ? "absolute" : ""
-  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-1tds5s2"><div class="statement svelte-1tds5s2"><p></p></div></div>` : ``}
-	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-1tds5s2"}"><section class="contentpart svelte-1tds5s2"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-1tds5s2" data-svelte-h="svelte-23ii2j"><div class="statement svelte-1tds5s2"><p></p></div></div>` : ``} ${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``} <div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-1tds5s2"}"><section class="contentpart svelte-1tds5s2"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
-          return `Given two numbers \\(n\\) and \\(m\\), we can show that either \\(n = m, n &gt; m\\) or \\(n ${escape(TeX.less)} m\\). In the last section we saw that for two sets \\(A\\) and \\(B\\) we can tell whether \\(A = B\\) or \\(A\\neq B\\). Just like numbers <em>can we say that either \\(A ${escape(TeX.less)} B\\) or \\(A &gt; B\\)</em>  ? In this section, we&#39;ll learn how to compare two sets. At the same time, it will give us a way to construct new sets from a given set.
-                    `;
+          return `Given two numbers \\(n\\) and \\(m\\), we can show that either \\(n = m, n &gt; m\\) or \\(n ${escape(TeX.less)} m\\). In the last section we saw that for two sets \\(A\\) and \\(B\\) we can tell whether \\(A = B\\) or \\(A\\neq B\\). Just like numbers <em>can we say that either \\(A ${escape(TeX.less)} B\\) or \\(A &gt; B\\)</em>  ? In this section, we&#39;ll learn how to compare two sets. At the same time, it will give us a way to construct new sets from a given set.`;
         }
       })}`;
     }
-  })}
-				${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 1 }, {}, {
         default: () => {
-          return `Given sets \\(A\\) and \\(B\\), \\(A\\) is said to be <em>subset</em> of \\(B\\) if every
-						element of \\(A\\) is also in \\(B\\). In such a case, \\(B\\) is called a <em>superset</em> of
-						\\(A\\).
-					`;
+          return `Given sets \\(A\\) and \\(B\\), \\(A\\) is said to be <em data-svelte-h="svelte-1b8dhak">subset</em> of \\(B\\) if every
+						element of \\(A\\) is also in \\(B\\). In such a case, \\(B\\) is called a <em data-svelte-h="svelte-1xb2drn">superset</em> of
+						\\(A\\).`;
         }
       })}`;
     }
-  })}
-				${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 2 }, {}, {
         default: () => {
-          return `Intuitively, this is like less than ( \\(${escape(TeX.less)}\\) ) relation of numbers. The only difference is that while two numbers are always related, two sets will not be related like this if they contain different elements.
-					`;
+          return `Intuitively, this is like less than ( \\(${escape(TeX.less)}\\) ) relation of numbers. The only difference is that while two numbers are always related, two sets will not be related like this if they contain different elements.`;
         }
       })}`;
     }
-  })}
-				<ul>${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
+  })} <ul>${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 3 }, {}, {
         default: () => {
-          return `If \\(A\\) is a subset of \\(B\\), then we write \\(A \\subset B\\) or \\(B\\supset A\\).
-						`;
+          return `If \\(A\\) is a subset of \\(B\\), then we write \\(A \\subset B\\) or \\(B\\supset A\\).`;
         }
       })}`;
     }
-  })}
-					${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 4 }, {}, {
         default: () => {
-          return `If \\(A\\) is not a subset of \\(B\\), then we write \\(A \\not\\subset B\\).
-                        `;
+          return `If \\(A\\) is not a subset of \\(B\\), then we write \\(A \\not\\subset B\\).`;
         }
       })}`;
     }
-  })}
-					${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 5 }, {}, {
         default: () => {
           return `To indicate that \\(A\\) is either a subset of or equal to \\(B\\), we write \\(A\\subseteq
-							B\\).
-                        `;
+							B\\).`;
         }
       })}`;
     }
-  })}
-					${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 6 }, {}, {
         default: () => {
-          return `A subset \\(A\\) of set \\(B\\) is called a <em>proper</em> subset of \\(B\\) if \\(A\\) is not
-							equal to \\(B\\).
-                        `;
+          return `A subset \\(A\\) of set \\(B\\) is called a <em data-svelte-h="svelte-1w4wirg">proper</em> subset of \\(B\\) if \\(A\\) is not
+							equal to \\(B\\).`;
         }
       })}`;
     }
-  })}</ul></section>
-			<section>${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
+  })}</ul></section> <section>${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
     default: () => {
       return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 7 }, {}, {
         default: () => {
@@ -216,18 +200,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-				<ul>${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
+  })} <ul>${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 8 }, {}, {
         default: () => {
-          return `${escape(`\\(\\{1, 2\\} \\subset \\{2, 1, 3\\}\\)`)} is a proper subset.
-						`;
+          return `${escape(`\\(\\{1, 2\\} \\subset \\{2, 1, 3\\}\\)`)} is a proper subset.`;
         }
       })}`;
     }
-  })}
-					${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 9 }, {}, {
         default: () => {
@@ -235,8 +216,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}</ul></section>
-			<section>${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
+  })}</ul></section> <section>${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 10 }, {}, {
         default: () => {
@@ -244,8 +224,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-				${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
     default: () => {
       return `${validate_component(Image, "Image").$$render($$result, { isActive: 11 }, {}, {
         default: () => {
@@ -253,8 +232,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}</section>
-            <section>${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
+  })}</section> <section>${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 12 }, {}, {
         default: () => {
@@ -262,28 +240,23 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 12 }, {}, {
         default: () => {
-          return `\\(A\\) is a subset of \\(B\\) if \\(a\\) is an element of \\(A\\) implies that \\(a\\) is also an element of \\(B\\). \\[A\\subset B ~~~if~~a\\in A\\implies a\\in B\\]  Alternatively, we can say that if \\(A\\subset B\\), then if an element does not belong to \\(B\\), then it also does not belong to \\(A\\). \\[A\\subset B ~~~if~~\\forall~a, ~ a\\notin B\\implies a\\notin A\\]
-					`;
+          return `\\(A\\) is a subset of \\(B\\) if \\(a\\) is an element of \\(A\\) implies that \\(a\\) is also an element of \\(B\\). \\[A\\subset B ~~~if~~a\\in A\\implies a\\in B\\]  Alternatively, we can say that if \\(A\\subset B\\), then if an element does not belong to \\(B\\), then it also does not belong to \\(A\\). \\[A\\subset B ~~~if~~\\forall~a, ~ a\\notin B\\implies a\\notin A\\]`;
         }
       })}`;
     }
-  })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "remark", isActive: 13 }, {}, {
         default: () => {
-          return `Every set \\(A\\) is a subset of itself, i.e. \\(A\\subset A\\).
-					`;
+          return `Every set \\(A\\) is a subset of itself, i.e. \\(A\\subset A\\).`;
         }
       })}`;
     }
-  })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "question", isActive: 14 }, {}, {
         default: () => {
@@ -291,38 +264,31 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-				${validate_component(Item, "Item").$$render($$result, { item: 15 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 15 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "solution", isActive: 15 }, {}, {
         default: () => {
-          return `Consider any set \\(B\\). Consider any element \\(a\\) such that \\(a\\notin B\\). An empty set \\( \\phi\\) contains no element. Then, \\(a\\notin \\phi\\). Hence, \\(\\phi\\) is a subset of \\(B\\).
-                    `;
+          return `Consider any set \\(B\\). Consider any element \\(a\\) such that \\(a\\notin B\\). An empty set \\( \\phi\\) contains no element. Then, \\(a\\notin \\phi\\). Hence, \\(\\phi\\) is a subset of \\(B\\).`;
         }
       })}`;
     }
-  })}</section>
-            <section>${validate_component(Item, "Item").$$render($$result, { item: 16 }, {}, {
+  })}</section> <section>${validate_component(Item, "Item").$$render($$result, { item: 16 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 16 }, {}, {
         default: () => {
-          return `Set equality 
-                    `;
+          return `Set equality`;
         }
       })}`;
     }
-  })}
-				${validate_component(Item, "Item").$$render($$result, { item: 17 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 17 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 17 }, {}, {
         default: () => {
-          return `\\(A\\) is equal to \\(B\\) if and only if (iff) \\(A\\subset B\\) and \\(B\\subset A\\). \\[A=B \\iff (a\\in A\\iff a\\in B)\\] 
-					`;
+          return `\\(A\\) is equal to \\(B\\) if and only if (iff) \\(A\\subset B\\) and \\(B\\subset A\\). \\[A=B \\iff (a\\in A\\iff a\\in B)\\]`;
         }
       })}`;
     }
-  })}
-				${validate_component(Item, "Item").$$render($$result, { item: 18 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 18 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "question", isActive: 18 }, {}, {
         default: () => {
@@ -330,8 +296,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-				${validate_component(Item, "Item").$$render($$result, { item: 19 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 19 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "solution", isActive: 19 }, {}, {
         default: () => {
@@ -341,8 +306,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-                ${validate_component(Item, "Item").$$render($$result, { item: 20 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 20 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "question", isActive: 20 }, {}, {
         default: () => {
@@ -350,18 +314,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-                <div class="solution">${validate_component(Item, "Item").$$render($$result, { item: 21 }, {}, {
+  })} <div class="solution">${validate_component(Item, "Item").$$render($$result, { item: 21 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 121 }, {}, {
         default: () => {
-          return `We need to check both conditions \\(A\\subset B\\) and \\(B\\subset A\\).
-                        `;
+          return `We need to check both conditions \\(A\\subset B\\) and \\(B\\subset A\\).`;
         }
       })}`;
     }
-  })}
-                    <ul>${validate_component(Item, "Item").$$render($$result, { item: 22 }, {}, {
+  })} <ul>${validate_component(Item, "Item").$$render($$result, { item: 22 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 22 }, {}, {
         default: () => {
@@ -372,13 +333,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                                                 &=& r - 1 \\in Z
                                     \\end{eqnarray}
                                     \\]`)}
-                                This implies that \\(a\\in B\\). Hence, \\(A\\subset B\\)
-                            `;
+                                This implies that \\(a\\in B\\). Hence, \\(A\\subset B\\)`;
         }
       })}`;
     }
-  })} 
-                        ${validate_component(Item, "Item").$$render($$result, { item: 23 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 23 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 23 }, {}, {
         default: () => {
@@ -389,43 +348,31 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                                                 &=& s + 1 \\in Z
                                     \\end{eqnarray}
                                     \\]`)}
-                                This implies that \\(b\\in A\\). Hence, \\(B\\subset A\\)
-                            `;
+                                This implies that \\(b\\in A\\). Hence, \\(B\\subset A\\)`;
         }
       })}`;
     }
-  })}</ul>
-                    ${validate_component(Item, "Item").$$render($$result, { item: 24 }, {}, {
+  })}</ul> ${validate_component(Item, "Item").$$render($$result, { item: 24 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 24 }, {}, {
         default: () => {
-          return `This proves that \\(A = B\\).
-                        `;
+          return `This proves that \\(A = B\\).`;
         }
       })}`;
     }
-  })}</div>
-                ${validate_component(Item, "Item").$$render($$result, { item: 25 }, {}, {
+  })}</div> ${validate_component(Item, "Item").$$render($$result, { item: 25 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "question", isActive: 25 }, {}, {
         default: () => {
-          return `Verify that \\(N\\subset Z \\subset Q\\subset R\\).
-                    `;
+          return `Verify that \\(N\\subset Z \\subset Q\\subset R\\).`;
         }
       })}`;
     }
-  })}</section></section>
-		${!$presentationMode ? `<div class="youtube svelte-1tds5s2"><iframe width="420" height="300" src="https://www.youtube.com/embed/w4SBKulJJh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ``}
-		${$presentationMode ? `<div class="slate"></div>` : ``}</div>
-	<section>${validate_component(Item, "Item").$$render($$result, { item: 26 }, {}, {
+  })}</section></section> ${!$presentationMode ? `<div class="youtube svelte-1tds5s2" data-svelte-h="svelte-9ayz82"><iframe width="420" height="300" src="https://www.youtube.com/embed/w4SBKulJJh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ``} ${$presentationMode ? `<div class="slate"></div>` : ``}</div> <section>${validate_component(Item, "Item").$$render($$result, { item: 26 }, {}, {
     default: () => {
-      return `<section><h2>Practice</h2>
-				${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
+      return `<section><h2 data-svelte-h="svelte-1g25fwj">Practice</h2> ${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
     }
-  })}</section>
-	${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-1tds5s2"></div>` : ``}
-	
-</article>`;
+  })}</section> ${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-1tds5s2"></div>` : ``} </article>`;
 });
 export {
   Page as default

@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -24,20 +26,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><ul><li>The region containing all the solutions of an inequality is called the <em>solution region</em>.
-            </li>
-            <li>In order to identify the half plane represented by an inequality, it is just sufficient to take any point \\((a, b)\\) ( not online ) and check whether it satisfies the inequality or not. If it satisfies, then the inequality represents the half plane and shade the region which contains the point, otherwise, the inequality represents that half plane which does not contain the point within it. For convenience, the point \\((0, 0)\\) is preferred.
-            </li>
-            <li>If an inequality is of type \\(ax + by \\geq c\\) or \\( ax + by \\leq c\\), then the points on the line \\(ax + by = c\\) are also included in the solution region. So draw a dark line in the solution region.
-            </li>
-            <li>If an inequality is of type \\(ax + by ${escape(TeX.more)} c\\) or \\( ax + by ${escape(TeX.less)} c\\), then the points on the line \\(ax + by = c\\) are not included in the solution region. So draw a broken or dotted line in the solution region.
-            </li></ul></section>
-        
-        
-        
-        </article>`;
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section><ul><li data-svelte-h="svelte-1yr2fxu">The region containing all the solutions of an inequality is called the <em>solution region</em>.</li> <li data-svelte-h="svelte-1ofuqbl">In order to identify the half plane represented by an inequality, it is just sufficient to take any point \\((a, b)\\) ( not online ) and check whether it satisfies the inequality or not. If it satisfies, then the inequality represents the half plane and shade the region which contains the point, otherwise, the inequality represents that half plane which does not contain the point within it. For convenience, the point \\((0, 0)\\) is preferred.</li> <li data-svelte-h="svelte-1l7vn8r">If an inequality is of type \\(ax + by \\geq c\\) or \\( ax + by \\leq c\\), then the points on the line \\(ax + by = c\\) are also included in the solution region. So draw a dark line in the solution region.</li> <li>If an inequality is of type \\(ax + by ${escape(TeX.more)} c\\) or \\( ax + by ${escape(TeX.less)} c\\), then the points on the line \\(ax + by = c\\) are not included in the solution region. So draw a broken or dotted line in the solution region.</li></ul></section>  </article>`;
 });
 export {
   Page as default

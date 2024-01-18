@@ -1,0 +1,14 @@
+* {
+    font-family: 'Ysabeau', sans-serif
+}
+p, li {
+    font-weight: 300;
+}
+.question {
+    padding-left: 0.5em;
+    border-left: 2px solid red;
+}
+.solution {
+    padding-left: 0.5em;
+    border-left: 2px solid green;
+}

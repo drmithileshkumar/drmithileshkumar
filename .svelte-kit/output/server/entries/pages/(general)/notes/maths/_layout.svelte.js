@@ -1,6 +1,7 @@
-import { c as create_ssr_component, i as add_attribute, a as subscribe, e as escape, v as validate_component, n as null_to_empty } from "../../../../../chunks/index3.js";
+import { c as create_ssr_component, i as add_attribute, a as subscribe, e as escape, v as validate_component, n as null_to_empty } from "../../../../../chunks/ssr.js";
 import { S as Select } from "../../../../../chunks/Select.js";
-import { d as chapters, e as sections, c as currentSlide, p as presentationMode, s as slideCounter, a as presentation, o as overlay, b as autoScroll, f as selectedSection, g as selectedChapter } from "../../../../../chunks/stores2.js";
+import { d as chapters, e as sections, c as currentSlide, p as presentationMode, s as slideCounter, a as presentation, o as overlay, b as autoScroll, f as selectedSection, g as selectedChapter } from "../../../../../chunks/stores3.js";
+import "../../../../../chunks/client.js";
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../../chunks/Presenter.js";
 class Point {
   constructor(x = 0, y = 0) {
@@ -123,7 +124,6 @@ class Point {
     return this.x <= Math.max(p.x, q.x) && this.x >= Math.min(p.x, q.x) && this.y <= Math.max(p.y, q.y) && this.y >= Math.min(p.y, q.y);
   }
 }
-const Teacher_svelte_svelte_type_style_lang = "";
 const css$1 = {
   code: ".teacher.svelte-e6uf7i{background:transparent;width:40px;height:40px;border-radius:50%;position:absolute;top:50%;left:50%;z-index:10}img.svelte-e6uf7i{width:40px;height:40px;border-radius:50%}",
   map: null
@@ -175,10 +175,8 @@ const Teacher = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.makeDraggable === void 0 && $$bindings.makeDraggable && makeDraggable !== void 0)
     $$bindings.makeDraggable(makeDraggable);
   $$result.css.add(css$1);
-  return `<div class="teacher noMenu svelte-e6uf7i"${add_attribute("this", teacher, 0)}><img class="noMenu svelte-e6uf7i" src="/favicon.png" alt="">
-</div>`;
+  return `<div class="teacher noMenu svelte-e6uf7i"${add_attribute("this", teacher, 0)} data-svelte-h="svelte-1g2d600"><img class="noMenu svelte-e6uf7i" src="/favicon.png" alt=""> </div>`;
 });
-const _layout_svelte_svelte_type_style_lang = "";
 const css = {
   code: "nav.svelte-v6pok5{display:grid;grid-template-columns:auto 1fr;max-width:600px}.maths.svelte-v6pok5{margin:auto;font-family:'Georgia', serif;line-height:1.5;word-spacing:0.5ex}.presentationMode.svelte-v6pok5{display:flex;height:1em;margin:0.5em 0;align-items:center;flex-direction:row}.container.svelte-v6pok5{display:grid;grid-template-columns:1em 1fr 1em;position:relative;height:600px}aside.svelte-v6pok5{background-color:rgba(230, 228, 228, 0.25);cursor:pointer;width:1em}.overlay.svelte-v6pok5{position:absolute;z-index:2;left:0.5em;top:0;margin:auto;width:calc(100% - 2em);height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none}.overlay.svelte-v6pok5::-webkit-scrollbar{width:0;height:0}.presenter.svelte-v6pok5{position:absolute;right:35px;top:0;z-index:10}",
   map: null
@@ -205,13 +203,11 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   let $$settled;
   let $$rendered;
+  let previous_head = $$result.head;
   do {
     $$settled = true;
-    $$rendered = `${$$result.head += `<!-- HEAD_svelte-pzt9nu_START --><!-- HEAD_svelte-pzt9nu_END -->`, ""}
-${!$presentationMode ? `<span class="noMenu"${add_attribute("this", $overlay, 0)}></span>` : ``}
-<div class="${"maths " + escape($presentationMode ? "noMenu" : "", true) + " svelte-v6pok5"}"><div class="presentationMode svelte-v6pok5"><label style="display:flex;align-items:center;"><input style="display:none;" type="checkbox"${add_attribute("this", checkbox, 0)}${add_attribute("checked", $presentationMode, 1)}>
-			<span class="material-icons" style="${"color: " + escape($presentationMode ? "teal" : "white", true)}">slideshow</span></label>
-		${!$presentationMode ? `<nav class="svelte-v6pok5">${validate_component(Select, "Select").$$render(
+    $$result.head = previous_head;
+    $$rendered = `${$$result.head += `<!-- HEAD_svelte-pzt9nu_START --><!-- HEAD_svelte-pzt9nu_END -->`, ""} ${!$presentationMode ? `<span class="noMenu"${add_attribute("this", $overlay, 0)}></span>` : ``} <div class="${"maths " + escape($presentationMode ? "noMenu" : "", true) + " svelte-v6pok5"}"><div class="presentationMode svelte-v6pok5"><label style="display:flex;align-items:center;"><input style="display:none;" type="checkbox"${add_attribute("this", checkbox, 0)}${add_attribute("checked", $presentationMode, 1)}> <span class="material-icons" style="${"color: " + escape($presentationMode ? "teal" : "white", true)}">slideshow</span></label> ${!$presentationMode ? `<nav class="svelte-v6pok5">${validate_component(Select, "Select").$$render(
       $$result,
       {
         style: "width: 35vw; background:black; color:white;",
@@ -226,8 +222,7 @@ ${!$presentationMode ? `<span class="noMenu"${add_attribute("this", $overlay, 0)
         }
       },
       {}
-    )}
-				${validate_component(Select, "Select").$$render(
+    )} ${validate_component(Select, "Select").$$render(
       $$result,
       {
         style: "width: 35vw; background:black; color:white;",
@@ -242,19 +237,9 @@ ${!$presentationMode ? `<span class="noMenu"${add_attribute("this", $overlay, 0)
         }
       },
       {}
-    )}</nav>` : ``}
-		${$presentationMode ? `${validate_component(CanvasBar, "CanvasBar").$$render($$result, {}, {}, {})}` : ``}</div>
-	<div class="${escape(null_to_empty($presentationMode ? "container noMenu" : ""), true) + " svelte-v6pok5"}">${$presentationMode ? `<aside class="back noMenu svelte-v6pok5"></aside>` : ``}
-
-		${$presentationMode ? `<div class="absolute overlay noMenu svelte-v6pok5"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div>
-			<div class="presenter noMenu svelte-v6pok5">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div>
-			
-			${validate_component(Teacher, "Teacher").$$render($$result, {}, {}, {})}` : ``}
-		${slots.default ? slots.default({
+    )}</nav>` : ``} ${$presentationMode ? `${validate_component(CanvasBar, "CanvasBar").$$render($$result, {}, {}, {})}` : ``}</div> <div class="${escape(null_to_empty($presentationMode ? "container noMenu" : ""), true) + " svelte-v6pok5"}">${$presentationMode ? `<aside class="back noMenu svelte-v6pok5"></aside>` : ``} ${$presentationMode ? `<div class="absolute overlay noMenu svelte-v6pok5"${add_attribute("this", $overlay, 0)}>${validate_component(Canvas, "Canvas").$$render($$result, { width: W, height: 1e4 }, {}, {})}</div> <div class="presenter noMenu svelte-v6pok5">${validate_component(Presenter, "Presenter").$$render($$result, {}, {}, {})}</div> ${validate_component(Teacher, "Teacher").$$render($$result, {}, {}, {})}` : ``} ${slots.default ? slots.default({
       class: $presentationMode ? "noMenu gridBackground" : ""
-    }) : ``}
-		${$presentationMode ? `<aside class="next noMenu svelte-v6pok5"></aside>` : ``}</div>
-</div>`;
+    }) : ``} ${$presentationMode ? `<aside class="next noMenu svelte-v6pok5"></aside>` : ``}</div> </div>`;
   } while (!$$settled);
   $$unsubscribe_currentSlide();
   $$unsubscribe_presentationMode();

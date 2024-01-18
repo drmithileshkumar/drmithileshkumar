@@ -1,5 +1,6 @@
-import { c as create_ssr_component, a as subscribe, l as each, e as escape, p as set_store_value, i as add_attribute } from "./index3.js";
-/* empty css                                      */import { w as writable } from "./index2.js";
+import { c as create_ssr_component, a as subscribe, k as each, e as escape, l as set_store_value, i as add_attribute } from "./ssr.js";
+/* empty css                                     */
+import { w as writable } from "./index2.js";
 const lineWidth = writable(2);
 const strokeColor = writable("red");
 const globalCompositeOperation = writable("source-over");
@@ -27,21 +28,9 @@ const CanvasBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   $$unsubscribe_globalCompositeOperation();
   $$unsubscribe_drawMode();
   $$unsubscribe_clearAll();
-  return `<div class="canvasbar svelte-twg6ow"><div class="shapes svelte-twg6ow"><span class="svelte-twg6ow"><svg width="20px" height="20px" viewBox="0 -5 20 10"><line x1="0%" y1="0%" x2="100%" y2="0%" stroke="white" stroke-width="1" fill="none"></line>${$drawMode === "line" ? `<line x1="0%" y1="0%" x2="100%" y2="0%" stroke="white" stroke-width="2" fill="none"></line>` : ``}</svg></span>
-        <span class="svelte-twg6ow"><svg width="20px" height="20px" viewBox="0 0 20 20"><rect x="2" y="2" width="16" height="16" stroke="white" stroke-width="1" fill="none"></rect>${$drawMode === "rect" ? `<rect x="4" y="4" width="12" height="12" stroke="white" stroke-width="1" fill="none"></rect>` : ``}</svg></span>
-        <span class="svelte-twg6ow"><svg width="20px" height="20px" viewBox="0 0 20 10"><circle cx="50%" cy="50%" r="8" stroke="white" stroke-width="1" fill="none"></circle>${$drawMode === "circle" ? `<circle cx="50%" cy="50%" r="6" stroke="white" stroke-width="1" fill="none"></circle>` : ``}</svg></span></div>
-    
-    <div class="colors svelte-twg6ow">${each(colors, (color) => {
-    return `<button style="${"background: " + escape(color, true) + "; border: white " + escape($strokeColor === color ? "5px double" : "solid", true) + "; border-radius: 50%; padding: " + escape(color === "eraser" ? 0 : "", true) + ";"}" class="svelte-twg6ow">${color === "eraser" ? `<svg width="20" height="20" viewBox="0 0 20 40"><g transform="rotate(-45 10 20) translate(0 5)"><rect x="0" y="0" width="20" height="10" stroke="black" stroke-width="1"></rect><rect x="0" y="10" width="20" height="20" fill="none" stroke="black" stroke-width="1"></rect></g></svg>` : ``}
-            </button>`;
-  })}
-        
-        <span class="material-icons" style="cursor:pointer;">clear
-        </span></div>
-    <div class="lineWidth svelte-twg6ow"><svg width="20" height="20" viewBox="0 0 20 20" style="cursor:pointer">${$lineWidth === 2 ? `<circle cx="10" cy="10" r="4" fill="none" stroke="white" stroke-width="1"></circle>` : ``}<circle cx="10" cy="10" r="2" fill="white"></circle></svg>
-        <svg width="20" height="20" viewBox="0 0 20 20" style="cursor:pointer">${$lineWidth === 4 ? `<circle cx="10" cy="10" r="6" fill="none" stroke="white" stroke-width="1"></circle>` : ``}<circle cx="10" cy="10" r="4" fill="white"></circle></svg>
-        <svg width="20" height="20" viewBox="0 0 20 20" style="cursor:pointer">${$lineWidth === 20 ? `<circle cx="10" cy="10" r="9" fill="none" stroke="white" stroke-width="1"></circle>` : ``}<circle cx="10" cy="10" r="7" fill="white"></circle></svg>
-        </div></div>`;
+  return `<div class="canvasbar svelte-twg6ow"><div class="shapes svelte-twg6ow"><span class="svelte-twg6ow"><svg width="20px" height="20px" viewBox="0 -5 20 10"><line x1="0%" y1="0%" x2="100%" y2="0%" stroke="white" stroke-width="1" fill="none"></line>${$drawMode === "line" ? `<line x1="0%" y1="0%" x2="100%" y2="0%" stroke="white" stroke-width="2" fill="none"></line>` : ``}</svg></span> <span class="svelte-twg6ow"><svg width="20px" height="20px" viewBox="0 0 20 20"><rect x="2" y="2" width="16" height="16" stroke="white" stroke-width="1" fill="none"></rect>${$drawMode === "rect" ? `<rect x="4" y="4" width="12" height="12" stroke="white" stroke-width="1" fill="none"></rect>` : ``}</svg></span> <span class="svelte-twg6ow"><svg width="20px" height="20px" viewBox="0 0 20 10"><circle cx="50%" cy="50%" r="8" stroke="white" stroke-width="1" fill="none"></circle>${$drawMode === "circle" ? `<circle cx="50%" cy="50%" r="6" stroke="white" stroke-width="1" fill="none"></circle>` : ``}</svg></span></div> <div class="colors svelte-twg6ow">${each(colors, (color) => {
+    return `<button style="${"background: " + escape(color, true) + "; border: white " + escape($strokeColor === color ? "5px double" : "solid", true) + "; border-radius: 50%; padding: " + escape(color === "eraser" ? 0 : "", true) + ";"}" class="svelte-twg6ow">${color === "eraser" ? `<svg width="20" height="20" viewBox="0 0 20 40"><g transform="rotate(-45 10 20) translate(0 5)"><rect x="0" y="0" width="20" height="10" stroke="black" stroke-width="1"></rect><rect x="0" y="10" width="20" height="20" fill="none" stroke="black" stroke-width="1"></rect></g></svg>` : ``} </button>`;
+  })}  <span class="material-icons" style="cursor:pointer;" data-svelte-h="svelte-y9v620">clear</span></div> <div class="lineWidth svelte-twg6ow"><svg width="20" height="20" viewBox="0 0 20 20" style="cursor:pointer">${$lineWidth === 2 ? `<circle cx="10" cy="10" r="4" fill="none" stroke="white" stroke-width="1"></circle>` : ``}<circle cx="10" cy="10" r="2" fill="white"></circle></svg> <svg width="20" height="20" viewBox="0 0 20 20" style="cursor:pointer">${$lineWidth === 4 ? `<circle cx="10" cy="10" r="6" fill="none" stroke="white" stroke-width="1"></circle>` : ``}<circle cx="10" cy="10" r="4" fill="white"></circle></svg> <svg width="20" height="20" viewBox="0 0 20 20" style="cursor:pointer">${$lineWidth === 20 ? `<circle cx="10" cy="10" r="9" fill="none" stroke="white" stroke-width="1"></circle>` : ``}<circle cx="10" cy="10" r="7" fill="white"></circle></svg> </div></div>`;
 });
 const css$1 = {
   code: "canvas.svelte-ot4q75{cursor:crosshair;-webkit-touch-callout:none !important;-webkit-user-select:none !important;-webkit-tap-highlight-color:transparent !important;-moz-user-select:-moz-none;-ms-user-select:none;touch-action:none !important;user-select:none !important;-webkit-user-drag:none}",
@@ -77,19 +66,15 @@ const Canvas = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_lineWidth();
   $$unsubscribe_strokeColor();
   $$unsubscribe_globalCompositeOperation();
-  return `
-<canvas${add_attribute("width", width, 0)}${add_attribute("height", height, 0)} class="svelte-ot4q75"${add_attribute("this", canvas, 0)}></canvas>
-
-`;
+  return ` <canvas${add_attribute("width", width, 0)}${add_attribute("height", height, 0)} class="svelte-ot4q75"${add_attribute("this", canvas, 0)}></canvas> `;
 });
-const Presenter_svelte_svelte_type_style_lang = "";
 const css = {
   code: "img.svelte-wvekyu{width:70px;height:70px;border-radius:50%;box-shadow:0 0 3px gray}.ring.svelte-wvekyu{border:1px solid rgba(0, 175, 255, 1);border-radius:50%;display:flex;align-items:center;justify-content:center}.ring1.svelte-wvekyu{width:100px;height:100px;animation:svelte-wvekyu-blink 1s ease-in-out infinite alternate;animation-delay:1s}.ring2.svelte-wvekyu{width:90px;height:90px;animation:svelte-wvekyu-blink 1s ease-in-out infinite alternate;animation-delay:0.5s}.ring3.svelte-wvekyu{width:80px;height:80px;animation:svelte-wvekyu-blink 1s ease-in-out infinite alternate;animation-delay:0s}@keyframes svelte-wvekyu-blink{0%{border-color:rgba(0, 175, 255, 0)}100%{border-color:rgba(0, 175, 255, 1)}}",
   map: null
 };
 const Presenter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="ring ring1 noMenu svelte-wvekyu"><div class="ring ring2 noMenu svelte-wvekyu"><div class="ring ring3 noMenu svelte-wvekyu"><img class="noMenu svelte-wvekyu" src="/favicon.png" alt=""></div></div></div>`;
+  return `<div class="ring ring1 noMenu svelte-wvekyu" data-svelte-h="svelte-1gzhme8"><div class="ring ring2 noMenu svelte-wvekyu"><div class="ring ring3 noMenu svelte-wvekyu"><img class="noMenu svelte-wvekyu" src="/favicon.png" alt=""></div></div></div>`;
 });
 export {
   CanvasBar as C,

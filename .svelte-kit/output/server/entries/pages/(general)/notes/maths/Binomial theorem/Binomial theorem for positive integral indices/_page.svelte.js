@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -24,13 +26,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="definition"><p>The expansion of a binomial for any positive integral \\(n\\) is given by Binomial Theorem, which is \\[(a + b)^n = ${escape(TeX.ncr("n", 0))}a^n + ${escape(TeX.ncr("n", 1))}${escape(TeX.pow("a", "n-1"))}b + ${escape(TeX.ncr("n", 2))}${escape(TeX.pow("a", "n-2"))}b^2 + \\cdots + ${escape(TeX.ncr("n", "n-1"))}a${escape(TeX.pow("b", "n-1"))} + ${escape(TeX.ncr("n", "n"))}b^n\\]</p></div></section>
-        
-        
-        
-        </article>`;
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section><div class="definition"><p>The expansion of a binomial for any positive integral \\(n\\) is given by Binomial Theorem, which is \\[(a + b)^n = ${escape(TeX.ncr("n", 0))}a^n + ${escape(TeX.ncr("n", 1))}${escape(TeX.pow("a", "n-1"))}b + ${escape(TeX.ncr("n", 2))}${escape(TeX.pow("a", "n-2"))}b^2 + \\cdots + ${escape(TeX.ncr("n", "n-1"))}a${escape(TeX.pow("b", "n-1"))} + ${escape(TeX.ncr("n", "n"))}b^n\\]</p></div></section>  </article>`;
 });
 export {
   Page as default

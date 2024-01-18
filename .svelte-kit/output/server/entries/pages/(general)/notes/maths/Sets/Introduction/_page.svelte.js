@@ -1,9 +1,10 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, v as validate_component, n as null_to_empty } from "../../../../../../../chunks/index3.js";
-import { p as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, v as validate_component, n as null_to_empty } from "../../../../../../../chunks/ssr.js";
+import { p as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { p as page } from "../../../../../../../chunks/stores.js";
 import { I as Item, P, L as Li } from "../../../../../../../chunks/Image.svelte_svelte_type_style_lang.js";
 import { I as Image } from "../../../../../../../chunks/Image.js";
-const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: ".display.svelte-b3oeu9{position:relative;position:-webkit-sticky}.youtube.svelte-b3oeu9{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start\n	}article.svelte-b3oeu9{position:relative;padding:0.5em}.absolute.svelte-b3oeu9{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-b3oeu9::-webkit-scrollbar{width:0;height:0}.pad.svelte-b3oeu9{min-height:100px}.thumbnail.svelte-b3oeu9{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-b3oeu9{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}.grid.svelte-b3oeu9{display:grid;grid-template-columns:auto 420px}.flex.svelte-b3oeu9{display:flex;flex-direction:column-reverse}.contentpart.svelte-b3oeu9{padding:0.5em}.gridBackground.svelte-b3oeu9{background-image:url('/background.svg');background-repeat:no-repeat;background-position:center;background-size:cover}",
   map: null
@@ -34,14 +35,10 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-16awbk2_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="Introduction to sets"><!-- HEAD_svelte-16awbk2_END -->`, ""}
-
-<article class="${[
+  return `${$$result.head += `<!-- HEAD_svelte-16awbk2_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="Introduction to sets"><!-- HEAD_svelte-16awbk2_END -->`, ""} <article class="${[
     escape(null_to_empty($presentationMode ? "gridBackground" : ""), true) + " svelte-b3oeu9",
     $presentationMode ? "absolute" : ""
-  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-b3oeu9"><p class="statement svelte-b3oeu9">${escape(`\\(\\{x:x\\)`)} is the foundation of mathematics${escape(`\\(\\}\\)`)}</p></div>` : ``}
-	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-b3oeu9"}"><section class="contentpart svelte-b3oeu9">${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-b3oeu9"><p class="statement svelte-b3oeu9">${escape(`\\(\\{x:x\\)`)} is the foundation of mathematics${escape(`\\(\\}\\)`)}</p></div>` : ``} ${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``} <div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-b3oeu9"}"><section class="contentpart svelte-b3oeu9">${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
@@ -49,8 +46,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-			<table><tr><td>${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
+  })} <table><tr><td>${validate_component(Item, "Item").$$render($$result, { item: 2 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 2 }, {}, {
         default: () => {
@@ -58,63 +54,50 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}</td>
-					<td><ul style="border-left: 1px solid">${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
+  })}</td> <td><ul style="border-left: 1px solid">${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
-          return `<strong>Algebra:</strong> Numbers, Sequences and Series, Quadratic equations, Linear
-									equations
-								`;
+          return `<strong data-svelte-h="svelte-10au29u">Algebra:</strong> Numbers, Sequences and Series, Quadratic equations, Linear
+									equations`;
         }
-      })}
-								${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+      })} ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
-          return `<strong>Geometry:</strong> Lines, Arcs, Quadrilaterals, Circles
-								`;
+          return `<strong data-svelte-h="svelte-1p1hvjk">Geometry:</strong> Lines, Arcs, Quadrilaterals, Circles`;
         }
-      })}
-								${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+      })} ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
-          return `<strong>Co-ordinate Geometry:</strong> Point, Distance, Lines, Section Formula
-								`;
+          return `<strong data-svelte-h="svelte-mictzb">Co-ordinate Geometry:</strong> Point, Distance, Lines, Section Formula`;
         }
-      })}
-								${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+      })} ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
-          return `<strong>Trigonometry</strong>`;
+          return `<strong data-svelte-h="svelte-d6zjkn">Trigonometry</strong>`;
         }
-      })}
-								${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+      })} ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
-          return `<strong>Statistics and Probability</strong>`;
+          return `<strong data-svelte-h="svelte-1cy3pk5">Statistics and Probability</strong>`;
         }
-      })}
-								${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+      })} ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
-          return `<strong>Vector algebra</strong>`;
+          return `<strong data-svelte-h="svelte-1oh70nj">Vector algebra</strong>`;
         }
-      })}
-								${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
+      })} ${validate_component(Li, "Li").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
-          return `<strong>Calculus</strong>`;
+          return `<strong data-svelte-h="svelte-no50bg">Calculus</strong>`;
         }
       })}`;
     }
-  })}</ul></td></tr></table>
-			${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
+  })}</ul></td></tr></table> ${validate_component(Item, "Item").$$render($$result, { item: 3 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 3 }, {}, {
         default: () => {
           return `Set theory is the starting point in all these branches and many more. In set theory, we
 					study about sets. The concept of sets is even more basic than the concept of numbers. Sets
-					conceptualize the properties of objects.
-				`;
+					conceptualize the properties of objects.`;
         }
       })}`;
     }
-  })}
-			${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 4 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 4 }, {}, {
         default: () => {
@@ -122,28 +105,23 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 					numbers are appearing and in the second group, only even numbers are appearing. We say
 					that \\(1, 3, 5, 7,\\dots\\) is a collection of odd numbers and \\(2, 4, 6, 8, \\dots\\) is a
 					collection of even numbers. This chapter is about the study of collection of objects that
-					satisfy some property.
-				`;
+					satisfy some property.`;
         }
-      })}
-				${validate_component(Image, "Image").$$render($$result, { isActive: 4 }, {}, {
+      })} ${validate_component(Image, "Image").$$render($$result, { isActive: 4 }, {}, {
         default: () => {
           return `<img style="width:min(90vw, 400px)" src="/notes/maths/sets/introduction/oddeven.svg" alt="">`;
         }
       })}`;
     }
-  })}
-			${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 5 }, {}, {
         default: () => {
-          return `Such kind of collections are called <em>sets</em>.
-				`;
+          return `Such kind of collections are called <em data-svelte-h="svelte-1oa9n47">sets</em>.`;
         }
       })}`;
     }
-  })}
-			${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 6 }, {}, {
         default: () => {
@@ -153,76 +131,61 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-			${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 7 }, {}, {
         default: () => {
           return `Then, we&#39;ll define some special types of sets, like empty sets, finite and infinite sets,
-					power and universal sets.
-				`;
+					power and universal sets.`;
         }
       })}`;
     }
-  })}
-			${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 8 }, {}, {
         default: () => {
           return `After that we&#39;ll learn how to create new sets from a given set using various operations
 					that will feel like addition or subtraction. Finally, we&#39;ll conclude the chapter by using
-					the learnt concepts to solve problems like one described below.
-				`;
+					the learnt concepts to solve problems like one described below.`;
         }
       })}`;
     }
-  })}
-			${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 9 }, {}, {
         default: () => {
           return `Consider the following problem.`;
         }
-      })}
-				${validate_component(P, "P").$$render($$result, { isActive: 9, class: "question" }, {}, {
+      })} ${validate_component(P, "P").$$render($$result, { isActive: 9, class: "question" }, {}, {
         default: () => {
           return `In an IIT sports event, 50 medals were awarded in race, 30 in football and 25 in cricket.
 					If only 60 students got any medal and only 5 students got medals in all events, how many
-					received medals in exactly two of the events?
-				`;
+					received medals in exactly two of the events?`;
         }
       })}`;
     }
-  })}
-			${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 10 }, {}, {
         default: () => {
-          return `This simple problem is tricky to solve without using the language of <strong>Sets</strong>.
-				`;
+          return `This simple problem is tricky to solve without using the language of <strong data-svelte-h="svelte-1jsrc2g">Sets</strong>.`;
         }
-      })}
-				${validate_component(Image, "Image").$$render($$result, { isActive: 10 }, {}, {
+      })} ${validate_component(Image, "Image").$$render($$result, { isActive: 10 }, {}, {
         default: () => {
           return `<img style="width:min(90vw, 400px)" src="/notes/maths/sets/introduction/example.svg" alt="">`;
         }
       })}`;
     }
-  })}
-			${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 11 }, {}, {
         default: () => {
           return `Concepts learnt in this chapter will be useful in other chapters like relations and
-					functions, trigonometry, sequences and series, combinatorics, calculus and probability.
-				`;
+					functions, trigonometry, sequences and series, combinatorics, calculus and probability.`;
         }
       })}`;
     }
-  })}
-			${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-b3oeu9"></div>` : ``}</section>
-        ${!$presentationMode ? `<div class="youtube svelte-b3oeu9"><iframe width="420" height="300" src="https://www.youtube.com/embed/Ii1HysDxd5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ``}</div>
-</article>`;
+  })} ${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-b3oeu9"></div>` : ``}</section> ${!$presentationMode ? `<div class="youtube svelte-b3oeu9" data-svelte-h="svelte-qbd6bf"><iframe width="420" height="300" src="https://www.youtube.com/embed/Ii1HysDxd5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ``}</div> </article>`;
 });
 export {
   Page as default

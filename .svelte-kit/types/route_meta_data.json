@@ -10,6 +10,14 @@
 	"/(about)/about": [
 		"src/routes/(about)/about/+page.js"
 	],
+	"/(general)/courses": [
+		"src/routes/(general)/courses/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2": [
+		"src/routes/(general)/courses/mathematics2/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(cv)/cv": [
 		"src/routes/(cv)/cv/+page.js"
 	],
@@ -22,6 +30,7 @@
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/iit/maths/2021": [
+		"src/routes/(general)/iit/maths/2021/+page.js",
 		"src/routes/(general)/+layout.server.js",
 		"src/routes/(general)/+layout.server.js"
 	],

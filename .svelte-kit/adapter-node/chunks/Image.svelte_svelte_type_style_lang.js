@@ -1,6 +1,5 @@
-import { c as create_ssr_component, b as compute_rest_props, a as subscribe, e as escape, n as null_to_empty } from "./index3.js";
-import { p as presentationMode, c as currentSlide } from "./stores2.js";
-const P_svelte_svelte_type_style_lang = "";
+import { c as create_ssr_component, b as compute_rest_props, a as subscribe, e as escape, n as null_to_empty } from "./ssr.js";
+import { p as presentationMode, c as currentSlide } from "./stores3.js";
 const css$1 = {
   code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
   map: null
@@ -22,7 +21,6 @@ const P = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     true
   ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</p>` : `<p class="${escape(null_to_empty($$restProps.class || ""), true) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</p>`}`;
 });
-const Li_svelte_svelte_type_style_lang = "";
 const css = {
   code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
   map: null
@@ -56,7 +54,6 @@ const Item = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentSlide();
   return `${!$presentationMode || $currentSlide >= item ? `${slots.default ? slots.default({}) : ``}` : ``}`;
 });
-const Image_svelte_svelte_type_style_lang = "";
 export {
   Item as I,
   Li as L,

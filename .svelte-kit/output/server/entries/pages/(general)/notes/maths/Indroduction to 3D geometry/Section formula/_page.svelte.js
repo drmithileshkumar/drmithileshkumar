@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -24,14 +26,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><ul><li>The coordinates of the point \\(R\\) which divides the line segment joining two points \\(P(x_1, y_1, z_1)\\) and \\(Q(x_2, y_2, z_2)\\) internally and externally in the ratio \\(m:n\\) are given by \\[\\Big(${escape(TeX.frac("mx_2 + nx_1", "m + n"))}, ${escape(TeX.frac("my_2 + ny_1", "m + n"))}, ${escape(TeX.frac("mz_2 + nz_1", "m + n"))}\\Big)\\] and \\[\\Big(${escape(TeX.frac("mx_2 - nx_1", "m - n"))}, ${escape(TeX.frac("my_2 - ny_1", "m - n"))}, ${escape(TeX.frac("mz_2 - nz_1", "m - n"))}\\Big)\\]
-                </li></ul></section>
-        
-        
-        
-        </article>`;
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section><ul><li>The coordinates of the point \\(R\\) which divides the line segment joining two points \\(P(x_1, y_1, z_1)\\) and \\(Q(x_2, y_2, z_2)\\) internally and externally in the ratio \\(m:n\\) are given by \\[\\Big(${escape(TeX.frac("mx_2 + nx_1", "m + n"))}, ${escape(TeX.frac("my_2 + ny_1", "m + n"))}, ${escape(TeX.frac("mz_2 + nz_1", "m + n"))}\\Big)\\] and \\[\\Big(${escape(TeX.frac("mx_2 - nx_1", "m - n"))}, ${escape(TeX.frac("my_2 - ny_1", "m - n"))}, ${escape(TeX.frac("mz_2 - nz_1", "m - n"))}\\Big)\\]</li></ul></section>  </article>`;
 });
 export {
   Page as default

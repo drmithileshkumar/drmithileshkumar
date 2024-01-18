@@ -1,4 +1,12 @@
-import { c as create_ssr_component, b as compute_rest_props, g as get_current_component, d as spread, h as escape_object, i as add_attribute, u as is_void, j as getContext, s as setContext, o as onDestroy, v as validate_component, k as globals, m as missing_component } from "./index3.js";
+import { c as create_ssr_component, b as compute_rest_props, g as get_current_component, d as spread, h as escape_object, i as add_attribute, j as getContext, s as setContext, o as onDestroy, v as validate_component, m as missing_component } from "./ssr.js";
+const globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : (
+  // @ts-ignore Node typings have this
+  global
+);
+const void_element_names = /^(?:area|base|br|col|command|embed|hr|img|input|keygen|link|meta|param|source|track|wbr)$/;
+function is_void(name) {
+  return void_element_names.test(name) || name.toLowerCase() === "!doctype";
+}
 function classMap(classObj) {
   return Object.entries(classObj).filter(([name, value]) => name !== "" && value).map(([name]) => name).join(" ");
 }
@@ -248,8 +256,10 @@ const ClassAdder = create_ssr_component(($$result, $$props, $$bindings, slots) =
     $$bindings.getElement(getElement);
   let $$settled;
   let $$rendered;
+  let previous_head = $$result.head;
   do {
     $$settled = true;
+    $$result.head = previous_head;
     $$rendered = `${validate_component(component || missing_component, "svelte:component").$$render(
       $$result,
       Object_1.assign(
@@ -316,5 +326,6 @@ export {
   SmuiElement as S,
   classAdderBuilder as a,
   classMap as c,
-  forwardEventsBuilder as f
+  forwardEventsBuilder as f,
+  globals as g
 };

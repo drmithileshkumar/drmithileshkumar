@@ -1,7 +1,8 @@
-import { c as create_ssr_component, i as add_attribute, e as escape, a as subscribe, q as createEventDispatcher, v as validate_component, p as set_store_value } from "./index3.js";
-import { Q as QuestionTimer } from "./stores3.js";
+import { c as create_ssr_component, i as add_attribute, e as escape, a as subscribe, p as createEventDispatcher, v as validate_component, l as set_store_value } from "./ssr.js";
+import { Q as QuestionTimer } from "./stores4.js";
 import { w as writable } from "./index2.js";
-/* empty css                                        */let attempted = writable(false);
+/* empty css                                       */
+let attempted = writable(false);
 let saved = writable(true);
 let newChapter = writable(false);
 const css$2 = {
@@ -49,35 +50,7 @@ const Practiceradiobutton = create_ssr_component(($$result, $$props, $$bindings,
   $$result.css.add(css$1);
   $$unsubscribe_attempted();
   $$unsubscribe_newChapter();
-  return `<div class="options svelte-1697397"><div class="option1 svelte-1697397">
-        <label class="svelte-1697397"><div style="position: relative;" class="svelte-1697397"><input type="radio" class="option svelte-1697397" name="prob"${add_attribute("value", "A", 0)}${"A" === answer ? add_attribute("checked", true, 1) : ""}>
-                <div class="optiond svelte-1697397"><!-- HTML_TAG_START -->${option1}<!-- HTML_TAG_END --></div> 
-                <div class="circle svelte-1697397">${correct === "A" && answer !== "" ? `<div class="circleInner svelte-1697397" style="background: green;"></div>
-                        <div class="circleOuter svelte-1697397" style="border: 0.2rem solid green;"></div>` : `${correct !== "A" && answer === "A" ? `<div class="circleInner svelte-1697397" style="background: red;"></div>
-                        <div class="circleOuter svelte-1697397" style="border: 0.2rem solid red;"></div>` : `<div class="circleInner svelte-1697397"></div>
-                        <div class="circleOuter svelte-1697397"></div>`}`}</div></div></label></div>
-    <div class="option2 svelte-1697397">
-        <label class="svelte-1697397"><div style="position: relative;" class="svelte-1697397"><input type="radio" class="option svelte-1697397" name="prob"${add_attribute("value", "B", 0)}${"B" === answer ? add_attribute("checked", true, 1) : ""}>
-                <div class="optiond svelte-1697397"><!-- HTML_TAG_START -->${option2}<!-- HTML_TAG_END --></div> 
-                <div class="circle svelte-1697397">${correct === "B" && answer !== "" ? `<div class="circleInner svelte-1697397" style="background: green;"></div>
-                        <div class="circleOuter svelte-1697397" style="border: 0.2rem solid green;"></div>` : `${correct !== "B" && answer === "B" ? `<div class="circleInner svelte-1697397" style="background: red;"></div>
-                        <div class="circleOuter svelte-1697397" style="border: 0.2rem solid red;"></div>` : `<div class="circleInner svelte-1697397"></div>
-                        <div class="circleOuter svelte-1697397"></div>`}`}</div></div></label></div>
-    <div class="option3 svelte-1697397">
-        <label class="svelte-1697397"><div style="position: relative;" class="svelte-1697397"><input type="radio" class="option svelte-1697397" name="prob"${add_attribute("value", "C", 0)}${"C" === answer ? add_attribute("checked", true, 1) : ""}>
-                <div class="optiond svelte-1697397"><!-- HTML_TAG_START -->${option3}<!-- HTML_TAG_END --></div> 
-                <div class="circle svelte-1697397">${correct === "C" && answer !== "" ? `<div class="circleInner svelte-1697397" style="background: green;"></div>
-                        <div class="circleOuter svelte-1697397" style="border: 0.2rem solid green;"></div>` : `${correct !== "C" && answer === "C" ? `<div class="circleInner svelte-1697397" style="background: red;"></div>
-                        <div class="circleOuter svelte-1697397" style="border: 0.2rem solid red;"></div>` : `<div class="circleInner svelte-1697397"></div>
-                        <div class="circleOuter svelte-1697397"></div>`}`}</div></div></label></div>
-    <div class="option4 svelte-1697397">
-        <label class="svelte-1697397"><div style="position: relative;" class="svelte-1697397"><input type="radio" class="option svelte-1697397" name="prob"${add_attribute("value", "D", 0)}${"D" === answer ? add_attribute("checked", true, 1) : ""}>
-                <div class="optiond svelte-1697397"><!-- HTML_TAG_START -->${option4}<!-- HTML_TAG_END --></div> 
-                <div class="circle svelte-1697397">${correct === "D" && answer !== "" ? `<div class="circleInner svelte-1697397" style="background: green;"></div>
-                        <div class="circleOuter svelte-1697397" style="border: 0.2rem solid green;"></div>` : `${correct !== "D" && answer === "D" ? `<div class="circleInner svelte-1697397" style="background: red;"></div>
-                        <div class="circleOuter svelte-1697397" style="border: 0.2rem solid red;"></div>` : `<div class="circleInner svelte-1697397"></div>
-                        <div class="circleOuter svelte-1697397"></div>`}`}</div></div></label></div>
-</div>`;
+  return `<div class="options svelte-1697397"><div class="option1 svelte-1697397"> <label class="svelte-1697397"><div style="position: relative;" class="svelte-1697397"><input type="radio" class="option svelte-1697397" name="prob"${add_attribute("value", "A", 0)}${"A" === answer ? add_attribute("checked", true, 1) : ""}> <div class="optiond svelte-1697397"><!-- HTML_TAG_START -->${option1}<!-- HTML_TAG_END --></div> <div class="circle svelte-1697397">${correct === "A" && answer !== "" ? `<div class="circleInner svelte-1697397" style="background: green;"></div> <div class="circleOuter svelte-1697397" style="border: 0.2rem solid green;"></div>` : `${correct !== "A" && answer === "A" ? `<div class="circleInner svelte-1697397" style="background: red;"></div> <div class="circleOuter svelte-1697397" style="border: 0.2rem solid red;"></div>` : `<div class="circleInner svelte-1697397"></div> <div class="circleOuter svelte-1697397"></div>`}`}</div></div></label></div> <div class="option2 svelte-1697397"> <label class="svelte-1697397"><div style="position: relative;" class="svelte-1697397"><input type="radio" class="option svelte-1697397" name="prob"${add_attribute("value", "B", 0)}${"B" === answer ? add_attribute("checked", true, 1) : ""}> <div class="optiond svelte-1697397"><!-- HTML_TAG_START -->${option2}<!-- HTML_TAG_END --></div> <div class="circle svelte-1697397">${correct === "B" && answer !== "" ? `<div class="circleInner svelte-1697397" style="background: green;"></div> <div class="circleOuter svelte-1697397" style="border: 0.2rem solid green;"></div>` : `${correct !== "B" && answer === "B" ? `<div class="circleInner svelte-1697397" style="background: red;"></div> <div class="circleOuter svelte-1697397" style="border: 0.2rem solid red;"></div>` : `<div class="circleInner svelte-1697397"></div> <div class="circleOuter svelte-1697397"></div>`}`}</div></div></label></div> <div class="option3 svelte-1697397"> <label class="svelte-1697397"><div style="position: relative;" class="svelte-1697397"><input type="radio" class="option svelte-1697397" name="prob"${add_attribute("value", "C", 0)}${"C" === answer ? add_attribute("checked", true, 1) : ""}> <div class="optiond svelte-1697397"><!-- HTML_TAG_START -->${option3}<!-- HTML_TAG_END --></div> <div class="circle svelte-1697397">${correct === "C" && answer !== "" ? `<div class="circleInner svelte-1697397" style="background: green;"></div> <div class="circleOuter svelte-1697397" style="border: 0.2rem solid green;"></div>` : `${correct !== "C" && answer === "C" ? `<div class="circleInner svelte-1697397" style="background: red;"></div> <div class="circleOuter svelte-1697397" style="border: 0.2rem solid red;"></div>` : `<div class="circleInner svelte-1697397"></div> <div class="circleOuter svelte-1697397"></div>`}`}</div></div></label></div> <div class="option4 svelte-1697397"> <label class="svelte-1697397"><div style="position: relative;" class="svelte-1697397"><input type="radio" class="option svelte-1697397" name="prob"${add_attribute("value", "D", 0)}${"D" === answer ? add_attribute("checked", true, 1) : ""}> <div class="optiond svelte-1697397"><!-- HTML_TAG_START -->${option4}<!-- HTML_TAG_END --></div> <div class="circle svelte-1697397">${correct === "D" && answer !== "" ? `<div class="circleInner svelte-1697397" style="background: green;"></div> <div class="circleOuter svelte-1697397" style="border: 0.2rem solid green;"></div>` : `${correct !== "D" && answer === "D" ? `<div class="circleInner svelte-1697397" style="background: red;"></div> <div class="circleOuter svelte-1697397" style="border: 0.2rem solid red;"></div>` : `<div class="circleInner svelte-1697397"></div> <div class="circleOuter svelte-1697397"></div>`}`}</div></div></label></div> </div>`;
 });
 const css = {
   code: ".problemPanel.svelte-1vgqba8{margin-top:1rem;width:auto}.problemField.svelte-1vgqba8{padding:0.5em;padding-bottom:1em;border:1px solid rgb(0, 163, 240);border-radius:10px;width:auto;font-size:0.8em;font-family:Georgia, 'Times New Roman', Times, serif}.dayscore.svelte-1vgqba8{grid-area:dayscore;border-radius:50%;border:rgba(0, 143, 253, 0) 1px solid;padding:0px;font-size:small;width:55px}.dayscore.svelte-1vgqba8{margin-left:auto;margin-right:auto;display:flex;align-items:center}.next.svelte-1vgqba8,.refresh.svelte-1vgqba8{cursor:pointer;background:transparent;border:none;outline:none;color:gray}.next.svelte-1vgqba8{grid-area:next}.refresh.svelte-1vgqba8{grid-area:refresh}.problemLegend.svelte-1vgqba8{display:flex;flex-direction:row;border-top:rgb(0, 163, 240) 1px solid;border-bottom:rgb(0, 163, 240) 1px solid;border-radius:10px;align-items:center}.problemStatement.svelte-1vgqba8{padding-left:0.3rem;margin-top:0.5rem;word-spacing:0.4rem;line-height:1.5rem;font-size:1.5em;overflow:auto;scrollbar-width:thin}.svelte-1vgqba8::-webkit-scrollbar{width:10px}.problemArea.svelte-1vgqba8{display:flex;flex-direction:column;max-width:86vw}.noborder.svelte-1vgqba8{border:none;outline:none;background:transparent;color:gray;cursor:pointer}.green.svelte-1vgqba8{color:green}abbr.svelte-1vgqba8{text-decoration:none}.timer.svelte-1vgqba8{display:inline-block;width:60px;display:flex;justify-content:end;font-size:2em;color:red}.site.svelte-1vgqba8{display:flex;font-family:roboto;letter-spacing:0.2ex;font-weight:300;align-items:center;justify-content:center;font-variant:small-caps}",
@@ -123,20 +96,12 @@ const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   $$result.css.add(css);
   let $$settled;
   let $$rendered;
+  let previous_head = $$result.head;
   do {
     $$settled = true;
+    $$result.head = previous_head;
     strokedasharray = 0;
-    $$rendered = `
-<div class="problemPanel svelte-1vgqba8"><div class="problemset svelte-1vgqba8" style="display: block;"><fieldset class="problemField svelte-1vgqba8"><legend class="svelte-1vgqba8"><div class="site svelte-1vgqba8">drmithileshkumar.com</div>
-				<div class="problemLegend svelte-1vgqba8"><div class="dayscore svelte-1vgqba8"><abbr title="Today's accuracy" class="svelte-1vgqba8">${validate_component(Performance, "Performance").$$render($$result, { strokedasharray }, {}, {})}</abbr></div>
-					<span class="timer svelte-1vgqba8">${escape(clock)} s</span>
-					<div class="refresh svelte-1vgqba8"><button class="${["noborder svelte-1vgqba8", $attempted ? "green" : ""].join(" ").trim()}"><span class="svelte-1vgqba8"></span>
-							<span class="icon is-small material-icons svelte-1vgqba8">refresh </span></button></div>
-					<div class="next svelte-1vgqba8"><button class="${["noborder svelte-1vgqba8", $attempted ? "green" : ""].join(" ").trim()}"><span class="svelte-1vgqba8"></span>
-							<span class="icon is-small material-icons svelte-1vgqba8">arrow_forward </span></button></div></div></legend>
-
-			<div class="problemArea svelte-1vgqba8"><div class="problemStatement svelte-1vgqba8"><!-- HTML_TAG_START -->${newproblem}<!-- HTML_TAG_END --></div>
-				<div class="options svelte-1vgqba8">${validate_component(Practiceradiobutton, "Practiceradiobutton").$$render(
+    $$rendered = ` <div class="problemPanel svelte-1vgqba8"><div class="problemset svelte-1vgqba8" style="display: block;"><fieldset class="problemField svelte-1vgqba8"><legend class="svelte-1vgqba8"><div class="site svelte-1vgqba8" data-svelte-h="svelte-1fdyqxa">drmithileshkumar.com</div> <div class="problemLegend svelte-1vgqba8"><div class="dayscore svelte-1vgqba8"><abbr title="Today's accuracy" class="svelte-1vgqba8">${validate_component(Performance, "Performance").$$render($$result, { strokedasharray }, {}, {})}</abbr></div> <span class="timer svelte-1vgqba8">${escape(clock)} s</span> <div class="refresh svelte-1vgqba8"><button class="${["noborder svelte-1vgqba8", $attempted ? "green" : ""].join(" ").trim()}" data-svelte-h="svelte-i6111d"><span class="svelte-1vgqba8"></span> <span class="icon is-small material-icons svelte-1vgqba8">refresh</span></button></div> <div class="next svelte-1vgqba8"><button class="${["noborder svelte-1vgqba8", $attempted ? "green" : ""].join(" ").trim()}" data-svelte-h="svelte-1vfa6lq"><span class="svelte-1vgqba8"></span> <span class="icon is-small material-icons svelte-1vgqba8">arrow_forward</span></button></div></div></legend> <div class="problemArea svelte-1vgqba8"><div class="problemStatement svelte-1vgqba8"><!-- HTML_TAG_START -->${newproblem}<!-- HTML_TAG_END --></div> <div class="options svelte-1vgqba8">${validate_component(Practiceradiobutton, "Practiceradiobutton").$$render(
       $$result,
       { optionValues, correct, answer },
       {
@@ -146,9 +111,7 @@ const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => 
         }
       },
       {}
-    )}</div></div></fieldset></div></div>
-
-`;
+    )}</div></div></fieldset></div></div> `;
   } while (!$$settled);
   $$unsubscribe_QuestionTimer();
   $$unsubscribe_attempted();

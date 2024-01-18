@@ -1,7 +1,11 @@
-import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from "./index3.js";
+import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from "./ssr.js";
 let base = "";
 let assets = base;
 const initial = { base, assets };
+function override(paths) {
+  base = paths.base;
+  assets = paths.assets;
+}
 function reset() {
   base = initial.base;
   assets = initial.assets;
@@ -10,14 +14,22 @@ function set_assets(path) {
   assets = initial.assets = path;
 }
 let public_env = {};
+let safe_public_env = {};
 function set_private_env(environment) {
 }
 function set_public_env(environment) {
   public_env = environment;
 }
+function set_safe_public_env(environment) {
+  safe_public_env = environment;
+}
 function afterUpdate() {
 }
+let prerendering = false;
 function set_building() {
+}
+function set_prerendering() {
+  prerendering = true;
 }
 const Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { stores } = $$props;
@@ -53,16 +65,14 @@ const Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.data_3(data_3);
   let $$settled;
   let $$rendered;
+  let previous_head = $$result.head;
   do {
     $$settled = true;
+    $$result.head = previous_head;
     {
       stores.page.set(page);
     }
-    $$rendered = `
-
-
-
-${constructors[1] ? `${validate_component(constructors[0] || missing_component, "svelte:component").$$render(
+    $$rendered = `  ${constructors[1] ? `${validate_component(constructors[0] || missing_component, "svelte:component").$$render(
       $$result,
       { data: data_0, this: components[0] },
       {
@@ -144,17 +154,15 @@ ${constructors[1] ? `${validate_component(constructors[0] || missing_component, 
         }
       },
       {}
-    )}`}
-
-${``}`;
+    )}`} ${``}`;
   } while (!$$settled);
   return $$rendered;
 });
 const options = {
+  app_dir: "_app",
   app_template_contains_nonce: false,
   csp: { "mode": "auto", "directives": { "upgrade-insecure-requests": false, "block-all-mixed-content": false }, "reportOnly": { "upgrade-insecure-requests": false, "block-all-mixed-content": false } },
   csrf_check_origin: true,
-  track_server_fetches: false,
   embedded: false,
   env_public_prefix: "PUBLIC_",
   env_private_prefix: "",
@@ -164,7 +172,7 @@ const options = {
   root: Root,
   service_worker: true,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" type="image/png" href="' + assets2 + '/favicon.png" />\n		<link rel="manifest" crossorigin="use-credentials" href="' + assets2 + '/manifest.json" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		<meta name="apple-mobile-web-app-capable" content="yes" />\n		<meta name="mobile-web-app-capable" content="yes" />\n		<meta name="description" content="Home page of Dr Mithilesh Kumar" />\n		<meta name="keywords" content="Home Page" />\n		<meta name="author" content="Dr Mithilesh Kumar" />\n		<!-- <link rel="stylesheet" href="/common.css" /> -->\n		<!-- <script defer src="https://checkout.razorpay.com/v1/checkout.js"><\/script> -->\n		<!-----------------------------------MATHJAX----------------------------->\n		<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"><\/script>\n		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"><\/script>\n		<!-------------------------------------KATEX----------------------------->\n		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">\n		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"><\/script>\n		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"\n			onload="renderMathInElement(document.body);"><\/script>\n		<!-- Material Icons -->\n		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />\n		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>\n		<!-- Roboto -->\n		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap"\n		/>\n		<!-- Roboto Mono -->\n		<!-- <link rel="preconnect" href="https://fonts.googleapis.com">\n		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">\n		<link\n				rel="stylesheet"\n				href="https://fonts.googleapis.com/css?family=Roboto+Mono"\n		/> -->\n		<!-- <link rel="stylesheet" href="/light.css" media="(prefers-color-scheme: light)" />\n		<link rel="stylesheet" href="/dark.css" media="screen and (prefers-color-scheme: dark)"/> -->\n		<!-- <link rel="stylesheet" href="/light.css" id="theme" /> -->\n		<link rel="stylesheet" href="/app.css" id="theme" />\n		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"><\/script>\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n",
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" type="image/png" href="' + assets2 + '/favicon.png" />\n		<link rel="manifest" crossorigin="use-credentials" href="' + assets2 + '/manifest.json" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		<meta name="apple-mobile-web-app-capable" content="yes" />\n		<meta name="mobile-web-app-capable" content="yes" />\n		<meta name="description" content="Home page of Dr Mithilesh Kumar" />\n		<meta name="keywords" content="Home Page" />\n		<meta name="author" content="Dr Mithilesh Kumar" />\n		<!-- <link rel="stylesheet" href="/common.css" /> -->\n		<!-- <script defer src="https://checkout.razorpay.com/v1/checkout.js"><\/script> -->\n		<!-----------------------------------MATHJAX----------------------------->\n		<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"><\/script>\n		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"><\/script>\n		<!-------------------------------------KATEX----------------------------->\n		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">\n		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"><\/script>\n		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"\n			onload="renderMathInElement(document.body);"><\/script>\n		<!-- Material Icons -->\n		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />\n		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>\n		<link rel="preconnect" href="https://fonts.googleapis.com">\n	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n	<link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">\n		<!-- Roboto -->\n		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap"\n		/>\n		<!-- Roboto Mono -->\n		<!-- <link rel="preconnect" href="https://fonts.googleapis.com">\n		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">\n		<link\n				rel="stylesheet"\n				href="https://fonts.googleapis.com/css?family=Roboto+Mono"\n		/> -->\n		<!-- <link rel="stylesheet" href="/light.css" media="(prefers-color-scheme: light)" />\n		<link rel="stylesheet" href="/dark.css" media="screen and (prefers-color-scheme: dark)"/> -->\n		<!-- <link rel="stylesheet" href="/light.css" id="theme" /> -->\n		<link rel="stylesheet" href="/custom.css" id="theme" />\n		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"><\/script>\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n",
     error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -236,20 +244,27 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "sn3el6"
+  version_hash: "1ixu5md"
 };
-function get_hooks() {
-  return import("./hooks.server.js");
+async function get_hooks() {
+  return {
+    ...await import("./hooks.server.js")
+  };
 }
 export {
   assets as a,
   base as b,
-  set_public_env as c,
-  set_assets as d,
-  set_building as e,
+  options as c,
+  set_private_env as d,
+  prerendering as e,
+  set_public_env as f,
   get_hooks as g,
-  options as o,
+  set_safe_public_env as h,
+  set_assets as i,
+  set_building as j,
+  set_prerendering as k,
+  override as o,
   public_env as p,
   reset as r,
-  set_private_env as s
+  safe_public_env as s
 };

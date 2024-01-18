@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -24,22 +26,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="definition"><p>The number of permutations of \\(n\\) different things taken \\(r\\) at a time, where repetition is not allowed, is denoted by \\(${escape(TeX.npr("n", "r"))}\\) and is given by \\[${escape(TeX.npr("n", "r"))} = ${escape(TeX.dfrac("n!", "(n-r)!"))}\\] where \\(0\\leq r \\leq n\\)
-                </p></div>
-            <ul><li>\\(n! = 1\\times 2\\times 3\\times \\dots\\times n\\)
-                </li>
-                <li>\\(n! = n\\times (n - 1)!\\)
-                </li>
-                <li>The number of permutations of \\(n\\) different things, taken \\(r\\) at a time, where repeatition is allowed, is \\(n^r\\).
-                </li>
-                <li>The number of permutations of \\(n\\) objects taken all at a time, where \\(p_1\\) objects are of first kind, \\(p_2\\) objects are of the second kind, ..., \\(p_k\\) objects are of the \\(k\\)th kind and rest, if any, are all different is \\[${escape(TeX.frac("n!", "p_1!p_2!\\cdots p_k!"))}\\]
-                </li></ul></section>
-        
-        
-        
-        </article>`;
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section><div class="definition"><p>The number of permutations of \\(n\\) different things taken \\(r\\) at a time, where repetition is not allowed, is denoted by \\(${escape(TeX.npr("n", "r"))}\\) and is given by \\[${escape(TeX.npr("n", "r"))} = ${escape(TeX.dfrac("n!", "(n-r)!"))}\\] where \\(0\\leq r \\leq n\\)</p></div> <ul><li data-svelte-h="svelte-1scdgt5">\\(n! = 1\\times 2\\times 3\\times \\dots\\times n\\)</li> <li data-svelte-h="svelte-9j4c1r">\\(n! = n\\times (n - 1)!\\)</li> <li data-svelte-h="svelte-11pdyfv">The number of permutations of \\(n\\) different things, taken \\(r\\) at a time, where repeatition is allowed, is \\(n^r\\).</li> <li>The number of permutations of \\(n\\) objects taken all at a time, where \\(p_1\\) objects are of first kind, \\(p_2\\) objects are of the second kind, ..., \\(p_k\\) objects are of the \\(k\\)th kind and rest, if any, are all different is \\[${escape(TeX.frac("n!", "p_1!p_2!\\cdots p_k!"))}\\]</li></ul></section>  </article>`;
 });
 export {
   Page as default

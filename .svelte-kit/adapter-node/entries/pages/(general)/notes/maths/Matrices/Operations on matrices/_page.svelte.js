@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -24,20 +26,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><ul><li>If \\(A = ${escape(TeX.mat())}\\) and \\(B = ${escape(TeX.mat("b"))}\\), then \\(A + B = C = ${escape(TeX.mat("c"))}\\), where \\[${escape(TeX.sub("c", "ij"))} = ${escape(TeX.sub("a", "ij"))} + ${escape(TeX.sub("b", "ij"))}\\]
-                </li>
-                <li>If \\(A = ${escape(TeX.mat())}\\) and \\(B = ${escape(TeX.mat("b"))}\\), then \\(A - B = C = ${escape(TeX.mat("c"))}\\), where \\[${escape(TeX.sub("c", "ij"))} = ${escape(TeX.sub("a", "ij"))} - ${escape(TeX.sub("b", "ij"))}\\]
-                </li>
-                <li>If \\(A = ${escape(TeX.mat())}\\) and a scalar constant \\(k\\), then \\(kA = C = ${escape(TeX.mat("c"))}\\), where \\[${escape(TeX.sub("c", "ij"))} = k${escape(TeX.sub("a", "ij"))}\\]
-                </li>
-                <li>If \\(A = ${escape(TeX.mat())}\\) and \\(B = ${escape(TeX.mat("b", "j", "k", "n", "p"))}\\), then \\(AB = C = ${escape(TeX.mat("c", "i", "k", "m", "p"))}\\), where \\[${escape(TeX.sub("c", "ik"))} = ${escape(TeX.sum("j = 1", "n"))}${escape(TeX.sub("a", "ij"))}${escape(TeX.sub("b", "jk"))}\\]
-                </li></ul></section>
-        
-        
-        
-        </article>`;
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section><ul><li>If \\(A = ${escape(TeX.mat())}\\) and \\(B = ${escape(TeX.mat("b"))}\\), then \\(A + B = C = ${escape(TeX.mat("c"))}\\), where \\[${escape(TeX.sub("c", "ij"))} = ${escape(TeX.sub("a", "ij"))} + ${escape(TeX.sub("b", "ij"))}\\]</li> <li>If \\(A = ${escape(TeX.mat())}\\) and \\(B = ${escape(TeX.mat("b"))}\\), then \\(A - B = C = ${escape(TeX.mat("c"))}\\), where \\[${escape(TeX.sub("c", "ij"))} = ${escape(TeX.sub("a", "ij"))} - ${escape(TeX.sub("b", "ij"))}\\]</li> <li>If \\(A = ${escape(TeX.mat())}\\) and a scalar constant \\(k\\), then \\(kA = C = ${escape(TeX.mat("c"))}\\), where \\[${escape(TeX.sub("c", "ij"))} = k${escape(TeX.sub("a", "ij"))}\\]</li> <li>If \\(A = ${escape(TeX.mat())}\\) and \\(B = ${escape(TeX.mat("b", "j", "k", "n", "p"))}\\), then \\(AB = C = ${escape(TeX.mat("c", "i", "k", "m", "p"))}\\), where \\[${escape(TeX.sub("c", "ik"))} = ${escape(TeX.sum("j = 1", "n"))}${escape(TeX.sub("a", "ij"))}${escape(TeX.sub("b", "jk"))}\\]</li></ul></section>  </article>`;
 });
 export {
   Page as default

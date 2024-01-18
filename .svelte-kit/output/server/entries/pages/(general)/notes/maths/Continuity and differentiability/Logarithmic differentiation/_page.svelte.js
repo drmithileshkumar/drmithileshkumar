@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { p as page } from "../../../../../../../chunks/stores.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;
@@ -23,18 +25,12 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><p>Consider functions of the form ${escape(`\\[y = f(x) = [u(x)]^{v(x)}\\]`)} By taking logarithm (to base \\(e\\)) the above may be written as ${escape(`\\[\\log y = v(x) \\log [u(x)]\\]`)} Differentiating this we get ${escape(`\\[
+  return `${$$result.head += `<!-- HEAD_svelte-108lu2z_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-108lu2z_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section><p>Consider functions of the form ${escape(`\\[y = f(x) = [u(x)]^{v(x)}\\]`)} By taking logarithm (to base \\(e\\)) the above may be written as ${escape(`\\[\\log y = v(x) \\log [u(x)]\\]`)} Differentiating this we get ${escape(`\\[
                     \\begin{eqnarray}
                     \\frac{1}{y}\\cdot\\frac{dy}{dx} &=& v(x)\\cdot\\frac{1}{u(x)}\\cdot u'(x) + v'(x)\\cdot\\log [u(x)]\\\\
                     \\implies \\frac{dy}{dx} &=& y\\Big[\\frac{v(x)}{u(x)}\\cdot u'(x) + v'(x)\\cdot\\log[u(x)]\\Big]
                     \\end{eqnarray}
-                    \\]`)}</p></section>
-        
-        
-        
-        </article>`;
+                    \\]`)}</p></section>  </article>`;
 });
 export {
   Page as default

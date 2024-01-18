@@ -1,7 +1,8 @@
-import { c as create_ssr_component, b as compute_rest_props, a as subscribe, e as escape, n as null_to_empty, i as add_attribute, v as validate_component } from "../../../../../../../chunks/index3.js";
-import { p as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, a as presentation } from "../../../../../../../chunks/stores2.js";
+import { c as create_ssr_component, b as compute_rest_props, a as subscribe, e as escape, n as null_to_empty, i as add_attribute, v as validate_component } from "../../../../../../../chunks/ssr.js";
+import { p as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, a as presentation } from "../../../../../../../chunks/stores3.js";
 import { P as Practice } from "../../../../../../../chunks/Practice.js";
-/* empty css                                                                 */import { p as powerset, S as Sets } from "../../../../../../../chunks/sets.js";
+/* empty css                                                                */
+import { p as powerset, S as Sets } from "../../../../../../../chunks/sets.js";
 import { r as randInt } from "../../../../../../../chunks/common.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 import { T as TeX } from "../../../../../../../chunks/constants.js";
@@ -9,7 +10,8 @@ import { I as Item, P, L as Li } from "../../../../../../../chunks/Image.svelte_
 import { H as H3 } from "../../../../../../../chunks/H3.js";
 import { H as H2 } from "../../../../../../../chunks/H2.js";
 import { I as Image } from "../../../../../../../chunks/Image.js";
-/* empty css                                                             */const seive = (N) => {
+/* empty css                                                            */
+const seive = (N) => {
   if (N <= 1)
     return [];
   var numbers = new Array(N);
@@ -549,7 +551,6 @@ class Q {
     }
   }
 }
-const Dt_svelte_svelte_type_style_lang = "";
 const css$2 = {
   code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
   map: null
@@ -571,7 +572,6 @@ const Dt = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     true
   ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</dt>` : `<dt class="${escape(null_to_empty($$restProps.class || ""), true) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</dt>`}`;
 });
-const Dd_svelte_svelte_type_style_lang = "";
 const css$1 = {
   code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
   map: null
@@ -593,7 +593,6 @@ const Dd = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     true
   ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</dd>` : `<dd class="${escape(null_to_empty($$restProps.class || ""), true) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</dd>`}`;
 });
-const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: ".display.svelte-gkd15d{position:relative;position:-webkit-sticky}.youtube.svelte-gkd15d{width:100%;display:flex;position:sticky;top:5em;z-index:10;align-self:flex-start}article.svelte-gkd15d{position:relative;padding:0.5em}.absolute.svelte-gkd15d{margin:auto;width:100%;height:600px;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-gkd15d::-webkit-scrollbar{width:0;height:0}.pad.svelte-gkd15d{min-height:150px}.thumbnail.svelte-gkd15d{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-gkd15d{background:radial-gradient(rgba(120, 0, 150, 0.3), rgba(0, 93, 180, 0.3));color:red;text-shadow:1px 1px 3px rgb(4, 4, 4);padding:1em;background-image:url('/notes/maths/sets/real/subsetreal.svg');background-repeat:no-repeat;background-position:center;width:500px;height:500px}.grid.svelte-gkd15d{display:grid;grid-template-columns:auto 420px}.flex.svelte-gkd15d{display:flex;flex-direction:column-reverse}.contentpart.svelte-gkd15d{padding:0.5em}.gridBackground.svelte-gkd15d{background-image:url('/background.svg');background-repeat:no-repeat;background-position:center;background-size:cover}",
   map: null
@@ -694,28 +693,22 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_selectedChapter();
   $$unsubscribe_page();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-1up1sq_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="Real numbers"><!-- HEAD_svelte-1up1sq_END -->`, ""}
-<article class="${[
+  return `${$$result.head += `<!-- HEAD_svelte-1up1sq_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description" content="Real numbers"><!-- HEAD_svelte-1up1sq_END -->`, ""} <article class="${[
     escape(null_to_empty($presentationMode ? "gridBackground" : ""), true) + " svelte-gkd15d",
     $presentationMode ? "absolute" : ""
-  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-gkd15d"><div class="statement svelte-gkd15d"><p></p></div></div>` : ``}
-	${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``}
-	<div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-gkd15d"}"><section class="contentpart svelte-gkd15d"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
+  ].join(" ").trim()}"${add_attribute("this", $presentation, 0)}>${$presentationMode && $currentSlide === -2 ? `<div class="thumbnail svelte-gkd15d" data-svelte-h="svelte-23ii2j"><div class="statement svelte-gkd15d"><p></p></div></div>` : ``} ${!$presentationMode || $currentSlide >= -1 ? `<h1>${escape($selectedSection)}</h1>` : ``} <div class="${"display " + escape(splitMode ? "grid" : "flex", true) + " svelte-gkd15d"}"><section class="contentpart svelte-gkd15d"><section>${validate_component(Item, "Item").$$render($$result, { item: 0 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 0 }, {}, {
         default: () => {
-          return `All numbers are either real numbers or made of real numbers. The set of real numbers is denoted by \\(R\\) or \\(${escape(TeX.bbR)}\\). It is an infinite uncountable set. In this video, we&#39;ll review some of its well-known subsets and introduce intervals. Let&#39;s begin with the subsets first.
-                    `;
+          return `All numbers are either real numbers or made of real numbers. The set of real numbers is denoted by \\(R\\) or \\(${escape(TeX.bbR)}\\). It is an infinite uncountable set. In this video, we&#39;ll review some of its well-known subsets and introduce intervals. Let&#39;s begin with the subsets first.`;
         }
       })}`;
     }
-  })}
-				<dl>${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
+  })} <dl>${validate_component(Item, "Item").$$render($$result, { item: 1 }, {}, {
     default: () => {
       return `${validate_component(Dt, "Dt").$$render($$result, { isActive: 1 }, {}, {
         default: () => {
-          return `Natural numbers
-						`;
+          return `Natural numbers`;
         }
       })}`;
     }
@@ -731,8 +724,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Dt, "Dt").$$render($$result, { isActive: 2 }, {}, {
         default: () => {
-          return `Integers
-						`;
+          return `Integers`;
         }
       })}`;
     }
@@ -748,8 +740,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Dt, "Dt").$$render($$result, { isActive: 3 }, {}, {
         default: () => {
-          return `Rational numbers
-						`;
+          return `Rational numbers`;
         }
       })}`;
     }
@@ -765,8 +756,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Dt, "Dt").$$render($$result, { isActive: 4 }, {}, {
         default: () => {
-          return `Irrational numbers
-						`;
+          return `Irrational numbers`;
         }
       })}`;
     }
@@ -778,8 +768,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}</dl>
-				${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
+  })}</dl> ${validate_component(Item, "Item").$$render($$result, { item: 5 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 5 }, {}, {
         default: () => {
@@ -789,8 +778,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-				${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 6 }, {}, {
     default: () => {
       return `${validate_component(Image, "Image").$$render($$result, { isActive: 6 }, {}, {
         default: () => {
@@ -798,9 +786,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}</section>
-		
-			<section>${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
+  })}</section> <section>${validate_component(Item, "Item").$$render($$result, { item: 7 }, {}, {
     default: () => {
       return `${validate_component(H3, "H3").$$render($$result, { class: "examples", isActive: 7 }, {}, {
         default: () => {
@@ -808,8 +794,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-				<ul>${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
+  })} <ul>${validate_component(Item, "Item").$$render($$result, { item: 8 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 8 }, {}, {
         default: () => {
@@ -817,8 +802,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-					${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 9 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 9 }, {}, {
         default: () => {
@@ -826,8 +810,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}</ul></section>
-			${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
+  })}</ul></section> ${validate_component(Item, "Item").$$render($$result, { item: 10 }, {}, {
     default: () => {
       return `${validate_component(H2, "H2").$$render($$result, { isActive: 10 }, {}, {
         default: () => {
@@ -835,59 +818,49 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-			${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 11 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 11 }, {}, {
         default: () => {
-          return `Let \\(a, b${escape(TeX.inR)}\\) and \\(a ${escape(TeX.less)} b\\). Then the set of real numbers \\(${escape(TeX.set("y", "a<y<b"))}\\) is called an <em>open interval</em> and is denoted by \\((a,b)\\). Note that \\(a\\) and \\(b\\) do
-					not belong to the open interval.
-				`;
+          return `Let \\(a, b${escape(TeX.inR)}\\) and \\(a ${escape(TeX.less)} b\\). Then the set of real numbers \\(${escape(TeX.set("y", "a<y<b"))}\\) is called an <em data-svelte-h="svelte-moyad5">open interval</em> and is denoted by \\((a,b)\\). Note that \\(a\\) and \\(b\\) do
+					not belong to the open interval.`;
         }
       })}`;
     }
-  })}
-			${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 12 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 12 }, {}, {
         default: () => {
-          return `Let \\(a, b${escape(TeX.inR)}\\) and \\(a ${escape(TeX.less)} b\\). Then the set of real numbers \\(${escape(TeX.set("y", "a\\leq y\\leq b"))}\\) is called a <em>closed interval</em> and is denoted by \\([a,b]\\). Note that \\(a\\) and \\(b\\)
-					belong to the closed interval.
-				`;
+          return `Let \\(a, b${escape(TeX.inR)}\\) and \\(a ${escape(TeX.less)} b\\). Then the set of real numbers \\(${escape(TeX.set("y", "a\\leq y\\leq b"))}\\) is called a <em data-svelte-h="svelte-jtfw0p">closed interval</em> and is denoted by \\([a,b]\\). Note that \\(a\\) and \\(b\\)
+					belong to the closed interval.`;
         }
       })}`;
     }
-  })}
-			${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 13 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 13 }, {}, {
         default: () => {
-          return `There are two other type of intervals (called <em>clopen</em>).`;
+          return `There are two other type of intervals (called <em data-svelte-h="svelte-ruubyh">clopen</em>).`;
         }
       })}`;
     }
-  })}
-			<ul>${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
+  })} <ul>${validate_component(Item, "Item").$$render($$result, { item: 14 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 14 }, {}, {
         default: () => {
-          return `\\([a,b) = ${escape(TeX.set("y", "a\\leq y<b"))}\\) where \\(a\\) is in the interval, but not \\(b\\).
-					`;
+          return `\\([a,b) = ${escape(TeX.set("y", "a\\leq y<b"))}\\) where \\(a\\) is in the interval, but not \\(b\\).`;
         }
       })}`;
     }
-  })}
-				${validate_component(Item, "Item").$$render($$result, { item: 15 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 15 }, {}, {
     default: () => {
       return `${validate_component(Li, "Li").$$render($$result, { isActive: 15 }, {}, {
         default: () => {
-          return `\\((a,b] = ${escape(TeX.set("y", "a< y\\leq b"))}\\) where \\(b\\) is in the interval, but not \\(a\\).
-					`;
+          return `\\((a,b] = ${escape(TeX.set("y", "a< y\\leq b"))}\\) where \\(b\\) is in the interval, but not \\(a\\).`;
         }
       })}`;
     }
-  })}</ul>
-			${validate_component(Item, "Item").$$render($$result, { item: 16 }, {}, {
+  })}</ul> ${validate_component(Item, "Item").$$render($$result, { item: 16 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { isActive: 16 }, {}, {
         default: () => {
@@ -895,9 +868,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-			
-			${validate_component(Item, "Item").$$render($$result, { item: 17 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 17 }, {}, {
     default: () => {
       return `${validate_component(Image, "Image").$$render($$result, { isActive: 17 }, {}, {
         default: () => {
@@ -905,28 +876,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}
-			${validate_component(Item, "Item").$$render($$result, { item: 18 }, {}, {
+  })} ${validate_component(Item, "Item").$$render($$result, { item: 18 }, {}, {
     default: () => {
       return `${validate_component(P, "P").$$render($$result, { class: "definition", isActive: 18 }, {}, {
         default: () => {
-          return `The number \\((b-a)\\) is called the <em>length of any of the intervals</em> \\((a,b), [a,b], [a,b)\\)
-					or \\((a,b]\\).
-				`;
+          return `The number \\((b-a)\\) is called the <em data-svelte-h="svelte-djaw3">length of any of the intervals</em> \\((a,b), [a,b], [a,b)\\)
+					or \\((a,b]\\).`;
         }
       })}`;
     }
-  })}</section>
-		${!$presentationMode ? `<div class="youtube svelte-gkd15d"><iframe width="420" height="300" src="https://www.youtube.com/embed/w4SBKulJJh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ``}
-		${$presentationMode ? `<div class="slate"></div>` : ``}</div>
-	<section>${validate_component(Item, "Item").$$render($$result, { item: 19 }, {}, {
+  })}</section> ${!$presentationMode ? `<div class="youtube svelte-gkd15d" data-svelte-h="svelte-9ayz82"><iframe width="420" height="300" src="https://www.youtube.com/embed/w4SBKulJJh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ``} ${$presentationMode ? `<div class="slate"></div>` : ``}</div> <section>${validate_component(Item, "Item").$$render($$result, { item: 19 }, {}, {
     default: () => {
-      return `<section><h2>Practice</h2>
-				${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
+      return `<section><h2 data-svelte-h="svelte-1g25fwj">Practice</h2> ${validate_component(Practice, "Practice").$$render($$result, { generateProblem }, {}, {})}</section>`;
     }
-  })}</section>
-	${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-gkd15d"></div>` : ``}
-</article>`;
+  })}</section> ${$presentationMode && $currentSlide >= 2 ? `<div class="pad svelte-gkd15d"></div>` : ``} </article>`;
 });
 export {
   Page as default

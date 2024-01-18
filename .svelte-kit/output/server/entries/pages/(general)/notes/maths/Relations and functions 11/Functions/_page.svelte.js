@@ -1,6 +1,8 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, w as add_classes } from "../../../../../../../chunks/index3.js";
-import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores2.js";
-/* empty css                                                                  *//* empty css                                                                 */import { T as TeX } from "../../../../../../../chunks/constants.js";
+import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, t as add_classes } from "../../../../../../../chunks/ssr.js";
+import { c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, p as presentationMode, a as presentation } from "../../../../../../../chunks/stores3.js";
+/* empty css                                                                 */
+/* empty css                                                                */
+import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
@@ -24,18 +26,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   $$unsubscribe_presentation();
-  return `${$$result.head += `<!-- HEAD_svelte-fc07ip_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-fc07ip_END -->`, ""}
-    <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1>
-        <section><div class="definition"><p><strong>Function</strong> A function \\(f\\) from a set \\(A\\) to a set \\(B\\) is a specific type of relation for which every element \\(x\\) of set \\(A\\) has one and only one image \\(y\\) in set \\(B\\). We write \\(f:A\\to B\\), where \\(f(x) = y\\).
-               </p></div>
-           <ul><li>\\(A\\) is the domain and \\(B\\) is the codomain of \\(f\\).
-                </li>
-                <li>The range of the function is the set of images.
-                </li>
-                <li>A real function has the set of real numbers or one of its subsets both as its domain and as its range.
-                </li></ul></section>
-        <section><h2>Algebra of real functions</h2>
-            <p>For functions \\(f:X\\to R\\) and \\(g:X\\to R\\), we have 
+  return `${$$result.head += `<!-- HEAD_svelte-fc07ip_START -->${$$result.title = `<title>${escape($selectedSection)}</title>`, ""}<link rel="canonical" href="${"https://drmithileshkumar.com" + escape($page.url.pathname, true)}"><meta name="description"${add_attribute("content", $selectedChapter + " " + $selectedSection, 0)}><!-- HEAD_svelte-fc07ip_END -->`, ""} <article${add_classes(($presentationMode ? "absolute" : "").trim())}${add_attribute("this", $presentation, 0)}><h1>${escape($selectedSection)}</h1> <section data-svelte-h="svelte-ypowm0"><div class="definition"><p><strong>Function</strong> A function \\(f\\) from a set \\(A\\) to a set \\(B\\) is a specific type of relation for which every element \\(x\\) of set \\(A\\) has one and only one image \\(y\\) in set \\(B\\). We write \\(f:A\\to B\\), where \\(f(x) = y\\).</p></div> <ul><li>\\(A\\) is the domain and \\(B\\) is the codomain of \\(f\\).</li> <li>The range of the function is the set of images.</li> <li>A real function has the set of real numbers or one of its subsets both as its domain and as its range.</li></ul></section> <section><h2 data-svelte-h="svelte-c2jfu0">Algebra of real functions</h2> <p>For functions \\(f:X\\to R\\) and \\(g:X\\to R\\), we have 
                     ${escape(`\\[
                         \\begin{aligned}
                             (f + g)(x) &= f(x) + g(x), x\\in X\\\\
@@ -44,10 +35,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                             (kf)(x) &= k~f(x), x\\in X, k${TeX.inR}\\\\
                             \\Big(\\frac{f}{g}\\Big)(x) &= \\frac{f(x)}{g(x)}, x\\in X, g(x) \\neq 0
                         \\end{aligned}    
-                    \\]`)}</p></section>
-        
-        
-        </article>`;
+                    \\]`)}</p></section>  </article>`;
 });
 export {
   Page as default
