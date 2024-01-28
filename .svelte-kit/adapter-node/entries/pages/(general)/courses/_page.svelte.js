@@ -16,13 +16,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `Mathematics II`;
     }
-  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/networktechnologies` }, {}, {
+  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/internet` }, {}, {
     default: () => {
-      return `Network Technologies`;
+      return `Internet Technologies`;
     }
-  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/networktechnologieslab` }, {}, {
+  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/internetlab` }, {}, {
     default: () => {
-      return `Network Technologies Lab`;
+      return `Internet Technologies Lab`;
     }
   })} <br></article>`;
 });

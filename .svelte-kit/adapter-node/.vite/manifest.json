@@ -446,6 +446,53 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/+page.svelte"
   },
+  "src/routes/(general)/courses/internet/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/+page.js"
+  },
+  "src/routes/(general)/courses/internet/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hj3E2EKt.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores3.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/+page.svelte"
+  },
+  "src/routes/(general)/courses/internetlab/+page.js": {
+    "file": "entries/pages/(general)/courses/internetlab/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/+page.js"
+  },
+  "src/routes/(general)/courses/internetlab/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hj3E2EKt.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internetlab/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores3.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/+page.svelte"
+  },
   "src/routes/(general)/courses/mathematics2/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/_page.js",
     "imports": [

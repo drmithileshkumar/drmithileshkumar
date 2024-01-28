@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Continuity and differentiability/Continuity/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Conic sections/Parabola/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Continuity and differentiability/Continuity/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Conic sections/Parabola/+page.svelte";

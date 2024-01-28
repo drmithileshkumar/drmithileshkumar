@@ -35,7 +35,7 @@
         </h1>
         <h3>DSU</h3>
         <Link href={`/courses/mathematics2`}>Mathematics II</Link>
-        <Link href={`/courses/networktechnologies`}>Network Technologies</Link>
-        <Link href={`/courses/networktechnologieslab`}>Network Technologies Lab</Link>
+        <Link href={`/courses/internet`}>Internet Technologies</Link>
+        <Link href={`/courses/internetlab`}>Internet Technologies Lab</Link>
         <br>
     </article>

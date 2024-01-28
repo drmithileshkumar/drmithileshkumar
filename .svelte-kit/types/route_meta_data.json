@@ -14,6 +14,14 @@
 		"src/routes/(general)/courses/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internetlab": [
+		"src/routes/(general)/courses/internetlab/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet": [
+		"src/routes/(general)/courses/internet/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/mathematics2": [
 		"src/routes/(general)/courses/mathematics2/+page.js",
 		"src/routes/(general)/+layout.server.js"
