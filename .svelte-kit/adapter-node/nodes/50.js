@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/_page.js';
+import * as universal from '../entries/pages/(general)/iit/maths/2021/question1/_page.js';
 
 export const index = 50;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/maths/2021/question1/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/+page.js";
-export const imports = ["_app/immutable/nodes/50.7oswbYMR.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.YWuCqLZx.js","_app/immutable/chunks/index._dLxV_ys.js","_app/immutable/chunks/stores.J_TcoIh4.js","_app/immutable/chunks/index.20hFJ42h.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.utWUtsGu.js","_app/immutable/chunks/entry.1lhQPCFb.js"];
-export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
+export const universal_id = "src/routes/(general)/iit/maths/2021/question1/+page.js";
+export const imports = ["_app/immutable/nodes/50.FTF7QPpK.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.YWuCqLZx.js","_app/immutable/chunks/index._dLxV_ys.js","_app/immutable/chunks/stores.J_TcoIh4.js","_app/immutable/chunks/index.20hFJ42h.js","_app/immutable/chunks/stores.Gx3cDoLt.js","_app/immutable/chunks/entry.N2CA-9ar.js","_app/immutable/chunks/index.JynCmtlF.js","_app/immutable/chunks/constants.1x7ZJ2_l.js"];
+export const stylesheets = ["_app/immutable/assets/50.IlEfmJwn.css"];
 export const fonts = [];

@@ -1,5 +1,5 @@
-import { c as create_ssr_component, a as subscribe, e as escape, i as add_attribute, v as validate_component, n as null_to_empty } from "../../../../../../../chunks/ssr.js";
-import { p as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, a as presentation } from "../../../../../../../chunks/stores3.js";
+import { c as create_ssr_component, s as subscribe, e as escape, k as add_attribute, v as validate_component, o as null_to_empty } from "../../../../../../../chunks/ssr.js";
+import { p as presentationMode, c as currentSlide, s as slideCounter, a as selectedSection, b as selectedChapter, d as presentation } from "../../../../../../../chunks/stores4.js";
 /* empty css                                                                 */
 /* empty css                                                                */
 import { p as page } from "../../../../../../../chunks/stores.js";

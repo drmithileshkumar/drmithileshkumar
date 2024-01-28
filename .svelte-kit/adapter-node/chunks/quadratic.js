@@ -1,4 +1,4 @@
-import { r as randInt } from "./common.js";
+import { a as randInt } from "./common.js";
 class Quadratic {
   //ax^2 + bx + c
   constructor(a2 = 0, b2 = 0, c = 0, x = "x") {

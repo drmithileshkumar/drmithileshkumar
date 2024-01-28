@@ -1,6 +1,6 @@
-import { c as create_ssr_component, a as subscribe, v as validate_component } from "../../../../../chunks/ssr.js";
+import { c as create_ssr_component, s as subscribe, v as validate_component } from "../../../../../chunks/ssr.js";
 import { S as Select } from "../../../../../chunks/Select.js";
-import { c as chapters, g as generators, s as selectedGenerator, a as selectedChapter } from "../../../../../chunks/stores4.js";
+import { c as chapters, g as generators, s as selectedGenerator, a as selectedChapter } from "../../../../../chunks/stores2.js";
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_generators;
   let $$unsubscribe_selectedGenerator;

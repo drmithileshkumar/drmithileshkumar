@@ -1,9 +1,9 @@
-import { c as create_ssr_component, b as compute_rest_props, a as subscribe, e as escape, n as null_to_empty, i as add_attribute, v as validate_component } from "../../../../../../../chunks/ssr.js";
-import { p as presentationMode, c as currentSlide, s as slideCounter, f as selectedSection, g as selectedChapter, a as presentation } from "../../../../../../../chunks/stores3.js";
+import { c as create_ssr_component, h as compute_rest_props, s as subscribe, e as escape, o as null_to_empty, k as add_attribute, v as validate_component } from "../../../../../../../chunks/ssr.js";
+import { p as presentationMode, c as currentSlide, s as slideCounter, a as selectedSection, b as selectedChapter, d as presentation } from "../../../../../../../chunks/stores4.js";
 import { P as Practice } from "../../../../../../../chunks/Practice.js";
 /* empty css                                                                */
 import { p as powerset, S as Sets } from "../../../../../../../chunks/sets.js";
-import { r as randInt } from "../../../../../../../chunks/common.js";
+import { a as randInt } from "../../../../../../../chunks/common.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { I as Item, P, L as Li } from "../../../../../../../chunks/Image.svelte_svelte_type_style_lang.js";

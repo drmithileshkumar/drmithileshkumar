@@ -1,8 +1,8 @@
-import { c as create_ssr_component, a as subscribe, l as set_store_value, v as validate_component } from "../../../../chunks/ssr.js";
+import { c as create_ssr_component, s as subscribe, l as set_store_value, v as validate_component } from "../../../../chunks/ssr.js";
 /* empty css                                                       */
 import { L as Link } from "../../../../chunks/Link.js";
 import "../../../../chunks/client.js";
-import { d as darkMode, c as currentPath } from "../../../../chunks/stores2.js";
+import { d as darkMode, c as currentPath } from "../../../../chunks/stores3.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $darkMode, $$unsubscribe_darkMode;
   let $currentPath, $$unsubscribe_currentPath;

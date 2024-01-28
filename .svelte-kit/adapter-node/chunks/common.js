@@ -47,7 +47,7 @@ const shuffle = (array) => {
   return array;
 };
 export {
-  randSubset as a,
-  randInt as r,
+  randInt as a,
+  randSubset as r,
   shuffle as s
 };

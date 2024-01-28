@@ -24,33 +24,29 @@
       "_ActionIcons.js"
     ]
   },
-  "_Div.svelte_svelte_type_style_lang.js": {
-    "file": "_app/immutable/assets/H3.bOrlhsXY.css",
-    "src": "_Div.svelte_svelte_type_style_lang.js"
-  },
   "_H2.js": {
     "file": "chunks/H2.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_H3.js"
     ]
   },
   "_H3.js": {
     "css": [
-      "_app/immutable/assets/H3.bOrlhsXY.css"
+      "_app/immutable/assets/Div.bOrlhsXY.css"
     ],
     "file": "chunks/H3.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js"
+      "_stores4.js"
     ]
   },
   "_Image.js": {
     "file": "chunks/Image.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_Image.svelte_svelte_type_style_lang.js"
     ]
   },
@@ -61,7 +57,7 @@
     "file": "chunks/Image.svelte_svelte_type_style_lang.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js"
+      "_stores4.js"
     ]
   },
   "_Link.js": {
@@ -90,6 +86,18 @@
     "file": "_app/immutable/assets/Message.ctOi1nG9.css",
     "src": "_Message.svelte_svelte_type_style_lang.js"
   },
+  "_NavList.js": {
+    "css": [
+      "_app/immutable/assets/NavList.yy5IVOlJ.css"
+    ],
+    "file": "chunks/NavList.js",
+    "imports": [
+      "_ssr.js",
+      "_ActionIcons.js",
+      "_client.js",
+      "_stores3.js"
+    ]
+  },
   "_Papers.js": {
     "css": [
       "_app/immutable/assets/Papers.Bl4_WsLT.css"
@@ -106,7 +114,7 @@
     "file": "chunks/Practice.js",
     "imports": [
       "_ssr.js",
-      "_stores4.js",
+      "_stores2.js",
       "_index2.js"
     ]
   },
@@ -153,6 +161,9 @@
   },
   "_constants.js": {
     "file": "chunks/constants.js"
+  },
+  "_content.js": {
+    "file": "chunks/content.js"
   },
   "_exports.js": {
     "file": "chunks/exports.js"
@@ -378,12 +389,13 @@
     "imports": [
       "_ssr.js",
       "_ActionIcons.js",
+      "_NavList.js",
       "_client.js",
       "_stores.js",
-      "_stores2.js",
+      "_stores3.js",
       "_Card.js",
       "_index2.js",
-      "_stores3.js"
+      "_stores4.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/+layout.svelte"
@@ -405,7 +417,7 @@
     "file": "entries/pages/(general)/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_client.js",
       "_ActionIcons.js"
     ],
@@ -429,7 +441,7 @@
       "_ssr.js",
       "_Link.js",
       "_client.js",
-      "_stores2.js"
+      "_stores3.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/+page.svelte"
@@ -444,7 +456,7 @@
   },
   "src/routes/(general)/courses/mathematics2/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.CQnaRR1F.css",
+      "_app/immutable/assets/_page.hj3E2EKt.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/_page.svelte.js",
@@ -453,10 +465,352 @@
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores2.js"
+      "_NavList.js",
+      "_stores3.js",
+      "_content.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/bivariatedata/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/bivariatedata/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/bivariatedata/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/bivariatedata/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.E3mSGCqI.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/bivariatedata/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/bivariatedata/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/bivariatefrequency/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/bivariatefrequency/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/bivariatefrequency/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/bivariatefrequency/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.E3mSGCqI.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/bivariatefrequency/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/bivariatefrequency/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/correlation/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/correlation/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/correlation/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/correlation/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/correlation/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/correlation/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/correlation2/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/correlation2/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/correlation2/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/correlation2/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/correlation2/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/correlation2/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/correlationtypes/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/correlationtypes/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/correlationtypes/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/correlationtypes/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/correlationtypes/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/correlationtypes/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/deviation/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/deviation/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/deviation/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/deviation/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.QhXNCnV8.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/deviation/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/deviation/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/leastsquares/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/leastsquares/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/leastsquares/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/leastsquares/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/leastsquares/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/leastsquares/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/mean/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/mean/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/mean/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/mean/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.J1vT5W0f.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/mean/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/mean/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/measures/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/measures/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/measures/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/measures/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.bLscVOuH.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/measures/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/measures/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/median/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/median/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/median/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/median/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.QhXNCnV8.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/median/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/median/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/mode/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/mode/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/mode/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/mode/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.QhXNCnV8.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/mode/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/mode/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/pearson/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/pearson/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/pearson/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/pearson/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.0zesJziv.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/pearson/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/pearson/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/regression/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/regression/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/regression/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/regression/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/regression/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/regression/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/regressioncoefficient/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/regressioncoefficient/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/regressioncoefficient/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/regressioncoefficient/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/regressioncoefficient/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/regressioncoefficient/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/regressionlines/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/regressionlines/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/regressionlines/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/regressionlines/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/regressionlines/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/regressionlines/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/spearman/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/spearman/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/spearman/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/spearman/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.J1vT5W0f.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/spearman/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/spearman/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.qsn6FTUk.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/+page.svelte"
   },
   "src/routes/(general)/iit/+page.js": {
     "file": "entries/pages/(general)/iit/_page.js",
@@ -508,7 +862,7 @@
     "imports": [
       "_ssr.js",
       "_client.js",
-      "_stores3.js",
+      "_stores4.js",
       "_Presenter.js"
     ],
     "isEntry": true,
@@ -552,7 +906,7 @@
     "file": "entries/pages/(general)/iit/maths/2021/question1/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js",
       "_constants.js"
     ],
@@ -574,7 +928,7 @@
     "file": "entries/pages/(general)/iit/maths/2021/question2/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js",
       "_constants.js"
     ],
@@ -596,7 +950,7 @@
     "file": "entries/pages/(general)/iit/maths/2021/question3/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js",
       "_constants.js"
     ],
@@ -618,7 +972,7 @@
     "file": "entries/pages/(general)/iit/maths/2021/question4/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js",
       "_constants.js"
     ],
@@ -640,7 +994,7 @@
     "file": "entries/pages/(general)/iit/maths/2021/question5/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js",
       "_constants.js"
     ],
@@ -662,7 +1016,7 @@
     "file": "entries/pages/(general)/iit/maths/2021/question6/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js",
       "_constants.js"
     ],
@@ -714,7 +1068,7 @@
     "imports": [
       "_ssr.js",
       "_Select.js",
-      "_stores3.js",
+      "_stores4.js",
       "_client.js",
       "_Presenter.js"
     ],
@@ -758,7 +1112,7 @@
     "file": "entries/pages/(general)/notes/maths/Application of derivatives/Approximations/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -781,7 +1135,7 @@
     "file": "entries/pages/(general)/notes/maths/Application of derivatives/Increasing and decreasing functions/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -804,7 +1158,7 @@
     "file": "entries/pages/(general)/notes/maths/Application of derivatives/Maxima and minima/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -827,7 +1181,7 @@
     "file": "entries/pages/(general)/notes/maths/Application of derivatives/Rate of change of quantities/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -850,7 +1204,7 @@
     "file": "entries/pages/(general)/notes/maths/Application of derivatives/Tangents and normals/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -873,7 +1227,7 @@
     "file": "entries/pages/(general)/notes/maths/Application of integrals/Area between two curves/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -896,7 +1250,7 @@
     "file": "entries/pages/(general)/notes/maths/Application of integrals/Area under simple curves/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -918,7 +1272,7 @@
     "file": "entries/pages/(general)/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -941,7 +1295,7 @@
     "file": "entries/pages/(general)/notes/maths/Binomial theorem/General and middle terms/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -964,7 +1318,7 @@
     "file": "entries/pages/(general)/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -987,7 +1341,7 @@
     "file": "entries/pages/(general)/notes/maths/Complex numbers and quadratic equations/Argand plane and polar representation/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1010,7 +1364,7 @@
     "file": "entries/pages/(general)/notes/maths/Complex numbers and quadratic equations/Complex numbers/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1032,7 +1386,7 @@
     "file": "entries/pages/(general)/notes/maths/Complex numbers and quadratic equations/Quadratic equations/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1055,7 +1409,7 @@
     "file": "entries/pages/(general)/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1078,7 +1432,7 @@
     "file": "entries/pages/(general)/notes/maths/Conic sections/Circle/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1100,7 +1454,7 @@
     "file": "entries/pages/(general)/notes/maths/Conic sections/Ellipse/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1123,7 +1477,7 @@
     "file": "entries/pages/(general)/notes/maths/Conic sections/Hyperbola/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1146,7 +1500,7 @@
     "file": "entries/pages/(general)/notes/maths/Conic sections/Parabola/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1169,7 +1523,7 @@
     "file": "entries/pages/(general)/notes/maths/Conic sections/Sections of a cone/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1192,7 +1546,7 @@
     "file": "entries/pages/(general)/notes/maths/Continuity and differentiability/Continuity/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1215,7 +1569,7 @@
     "file": "entries/pages/(general)/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1237,7 +1591,7 @@
     "file": "entries/pages/(general)/notes/maths/Continuity and differentiability/Differentiability/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1260,7 +1614,7 @@
     "file": "entries/pages/(general)/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1283,7 +1637,7 @@
     "file": "entries/pages/(general)/notes/maths/Continuity and differentiability/Logarithmic differentiation/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1305,7 +1659,7 @@
     "file": "entries/pages/(general)/notes/maths/Continuity and differentiability/Mean value theorem/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1328,7 +1682,7 @@
     "file": "entries/pages/(general)/notes/maths/Continuity and differentiability/Second order derivative/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1350,7 +1704,7 @@
     "file": "entries/pages/(general)/notes/maths/Determinants/Adjoint and inverse of a matrix/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1373,7 +1727,7 @@
     "file": "entries/pages/(general)/notes/maths/Determinants/Applications of determinants and matrices/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1396,7 +1750,7 @@
     "file": "entries/pages/(general)/notes/maths/Determinants/Area of a triangle/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1420,7 +1774,7 @@
     "file": "entries/pages/(general)/notes/maths/Determinants/Determinant/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1442,7 +1796,7 @@
     "file": "entries/pages/(general)/notes/maths/Determinants/Minors and cofactors/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1465,7 +1819,7 @@
     "file": "entries/pages/(general)/notes/maths/Determinants/Properties of determinants/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1488,7 +1842,7 @@
     "file": "entries/pages/(general)/notes/maths/Differential equations/Basic concepts/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1510,7 +1864,7 @@
     "file": "entries/pages/(general)/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1532,7 +1886,7 @@
     "file": "entries/pages/(general)/notes/maths/Differential equations/General and particular solutions of a differential equation/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1554,7 +1908,7 @@
     "file": "entries/pages/(general)/notes/maths/Differential equations/Methods of solving first order first degree differential equations/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1577,7 +1931,7 @@
     "file": "entries/pages/(general)/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1599,7 +1953,7 @@
     "file": "entries/pages/(general)/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1621,7 +1975,7 @@
     "file": "entries/pages/(general)/notes/maths/Indroduction to 3D geometry/Distance between two points/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1643,7 +1997,7 @@
     "file": "entries/pages/(general)/notes/maths/Indroduction to 3D geometry/Section formula/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1666,7 +2020,7 @@
     "file": "entries/pages/(general)/notes/maths/Integrals/Definite integral/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1688,7 +2042,7 @@
     "file": "entries/pages/(general)/notes/maths/Integrals/Evaluation of definite integrals by substitution/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1710,7 +2064,7 @@
     "file": "entries/pages/(general)/notes/maths/Integrals/Fundamental theorem of calculus/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1732,7 +2086,7 @@
     "file": "entries/pages/(general)/notes/maths/Integrals/Integrals of some particular functions/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1755,7 +2109,7 @@
     "file": "entries/pages/(general)/notes/maths/Integrals/Integration as an inverse process of differentiation/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1778,7 +2132,7 @@
     "file": "entries/pages/(general)/notes/maths/Integrals/Integration by partial fractions/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1801,7 +2155,7 @@
     "file": "entries/pages/(general)/notes/maths/Integrals/Integration by parts/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1824,7 +2178,7 @@
     "file": "entries/pages/(general)/notes/maths/Integrals/Methods of integration/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1847,7 +2201,7 @@
     "file": "entries/pages/(general)/notes/maths/Integrals/Some properties of definite integrals/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1870,7 +2224,7 @@
     "file": "entries/pages/(general)/notes/maths/Inverse trigonometric functions/Basic concepts/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1893,7 +2247,7 @@
     "file": "entries/pages/(general)/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1916,7 +2270,7 @@
     "file": "entries/pages/(general)/notes/maths/Limits and derivatives/Derivatives/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1939,7 +2293,7 @@
     "file": "entries/pages/(general)/notes/maths/Limits and derivatives/Intuitive idea of derivatives/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -1961,7 +2315,7 @@
     "file": "entries/pages/(general)/notes/maths/Limits and derivatives/Limits of Trigonometric functions/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -1984,7 +2338,7 @@
     "file": "entries/pages/(general)/notes/maths/Limits and derivatives/Limits/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2007,7 +2361,7 @@
     "file": "entries/pages/(general)/notes/maths/Linear inequalities/Graphical solution in two variables/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2030,7 +2384,7 @@
     "file": "entries/pages/(general)/notes/maths/Linear inequalities/Inequalities/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2053,7 +2407,7 @@
     "file": "entries/pages/(general)/notes/maths/Linear inequalities/One variable/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2075,7 +2429,7 @@
     "file": "entries/pages/(general)/notes/maths/Linear inequalities/Solution of system in two variables/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2097,7 +2451,7 @@
     "file": "entries/pages/(general)/notes/maths/Linear programming/Different types of linear programming problems/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2119,7 +2473,7 @@
     "file": "entries/pages/(general)/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2141,7 +2495,7 @@
     "file": "entries/pages/(general)/notes/maths/Matrices/Invertible matrices/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2164,7 +2518,7 @@
     "file": "entries/pages/(general)/notes/maths/Matrices/Matrix/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2186,7 +2540,7 @@
     "file": "entries/pages/(general)/notes/maths/Matrices/Operations on matrices/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2209,7 +2563,7 @@
     "file": "entries/pages/(general)/notes/maths/Matrices/Symmetric and skew symmetric matrices/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2232,7 +2586,7 @@
     "file": "entries/pages/(general)/notes/maths/Matrices/Transformation of a matrix/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2254,7 +2608,7 @@
     "file": "entries/pages/(general)/notes/maths/Matrices/Transpose of a matrix/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2277,7 +2631,7 @@
     "file": "entries/pages/(general)/notes/maths/Matrices/Typse of matrices/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2300,7 +2654,7 @@
     "file": "entries/pages/(general)/notes/maths/Permutations and combinations/Combinations/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2323,7 +2677,7 @@
     "file": "entries/pages/(general)/notes/maths/Permutations and combinations/Fundamental principle of counting/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2345,7 +2699,7 @@
     "file": "entries/pages/(general)/notes/maths/Permutations and combinations/Permutations/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2368,7 +2722,7 @@
     "file": "entries/pages/(general)/notes/maths/Principle of mathematical induction/Motivation/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2390,7 +2744,7 @@
     "file": "entries/pages/(general)/notes/maths/Principle of mathematical induction/The principle of mathematical induction/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2412,7 +2766,7 @@
     "file": "entries/pages/(general)/notes/maths/Probability/Axiomatic approach to probability/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2435,7 +2789,7 @@
     "file": "entries/pages/(general)/notes/maths/Probability/Event/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2457,7 +2811,7 @@
     "file": "entries/pages/(general)/notes/maths/Probability/Random experiments/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2479,7 +2833,7 @@
     "file": "entries/pages/(general)/notes/maths/Relations and functions 11/Cartesian product of sets/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2502,7 +2856,7 @@
     "file": "entries/pages/(general)/notes/maths/Relations and functions 11/Functions/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2525,7 +2879,7 @@
     "file": "entries/pages/(general)/notes/maths/Relations and functions 11/Relations/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2547,7 +2901,7 @@
     "file": "entries/pages/(general)/notes/maths/Relations and functions 12/Binary operations/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2570,7 +2924,7 @@
     "file": "entries/pages/(general)/notes/maths/Relations and functions 12/Composition of functions and invertible function/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2592,7 +2946,7 @@
     "file": "entries/pages/(general)/notes/maths/Relations and functions 12/Types of functions/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2614,7 +2968,7 @@
     "file": "entries/pages/(general)/notes/maths/Relations and functions 12/Types of relations/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2636,7 +2990,7 @@
     "file": "entries/pages/(general)/notes/maths/Sequences and series/Arithmetic progression/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2659,7 +3013,7 @@
     "file": "entries/pages/(general)/notes/maths/Sequences and series/Geometric progression/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2682,7 +3036,7 @@
     "file": "entries/pages/(general)/notes/maths/Sequences and series/Relationship between AM and GM/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2704,7 +3058,7 @@
     "file": "entries/pages/(general)/notes/maths/Sequences and series/Sequences/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2726,7 +3080,7 @@
     "file": "entries/pages/(general)/notes/maths/Sequences and series/Series/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2748,7 +3102,7 @@
     "file": "entries/pages/(general)/notes/maths/Sequences and series/Sum to n terms of Special series/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -2772,7 +3126,7 @@
     "file": "entries/pages/(general)/notes/maths/Sets/Complement of a set/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2794,7 +3148,7 @@
     "file": "entries/pages/(general)/notes/maths/Sets/Equal sets/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_Practice.js",
       "_sets.js",
       "_common.js",
@@ -2821,7 +3175,7 @@
     "file": "entries/pages/(general)/notes/maths/Sets/Finite and infinite sets/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_Practice.js",
       "_common.js",
       "_stores.js",
@@ -2849,7 +3203,7 @@
     "file": "entries/pages/(general)/notes/maths/Sets/Introduction/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js",
       "_Image.svelte_svelte_type_style_lang.js",
       "_Image.js"
@@ -2874,7 +3228,7 @@
     "file": "entries/pages/(general)/notes/maths/Sets/Operations on sets/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2897,7 +3251,7 @@
     "file": "entries/pages/(general)/notes/maths/Sets/Power set/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2920,7 +3274,7 @@
     "file": "entries/pages/(general)/notes/maths/Sets/Practical problems/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -2938,12 +3292,12 @@
     "css": [
       "_app/immutable/assets/_page.lDREzSQg.css",
       "_app/immutable/assets/Message.ctOi1nG9.css",
-      "_app/immutable/assets/H3.bOrlhsXY.css"
+      "_app/immutable/assets/Div.bOrlhsXY.css"
     ],
     "file": "entries/pages/(general)/notes/maths/Sets/Real numbers/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_Practice.js",
       "_sets.js",
       "_common.js",
@@ -2973,7 +3327,7 @@
     "file": "entries/pages/(general)/notes/maths/Sets/Sets and their representations/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_Practice.js",
       "_common.js",
       "_sets.js",
@@ -2999,12 +3353,12 @@
     "css": [
       "_app/immutable/assets/_page.n_paFUl5.css",
       "_app/immutable/assets/Message.ctOi1nG9.css",
-      "_app/immutable/assets/H3.bOrlhsXY.css"
+      "_app/immutable/assets/Div.bOrlhsXY.css"
     ],
     "file": "entries/pages/(general)/notes/maths/Sets/Subsets/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_Practice.js",
       "_sets.js",
       "_common.js",
@@ -3034,7 +3388,7 @@
     "file": "entries/pages/(general)/notes/maths/Sets/The empty set/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_Practice.js",
       "_common.js",
       "_quadratic.js",
@@ -3062,7 +3416,7 @@
     "file": "entries/pages/(general)/notes/maths/Sets/Universal set/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3086,7 +3440,7 @@
     "file": "entries/pages/(general)/notes/maths/Sets/Venn diagrams/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3108,7 +3462,7 @@
     "file": "entries/pages/(general)/notes/maths/Statistics/Analysis of frequency distributions/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3131,7 +3485,7 @@
     "file": "entries/pages/(general)/notes/maths/Statistics/Mean deviation/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3154,7 +3508,7 @@
     "file": "entries/pages/(general)/notes/maths/Statistics/Range/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3176,7 +3530,7 @@
     "file": "entries/pages/(general)/notes/maths/Statistics/Variance and standard deviation/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3199,7 +3553,7 @@
     "file": "entries/pages/(general)/notes/maths/Straight lines/Distance of a point from a line/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3222,7 +3576,7 @@
     "file": "entries/pages/(general)/notes/maths/Straight lines/General equation of a line/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3244,7 +3598,7 @@
     "file": "entries/pages/(general)/notes/maths/Straight lines/Slope of a line/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3267,7 +3621,7 @@
     "file": "entries/pages/(general)/notes/maths/Straight lines/Various forms of the equation of a line/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3290,7 +3644,7 @@
     "file": "entries/pages/(general)/notes/maths/Three dimensional geometry/Angle between a line and a plane/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3312,7 +3666,7 @@
     "file": "entries/pages/(general)/notes/maths/Three dimensional geometry/Angle between two lines/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3334,7 +3688,7 @@
     "file": "entries/pages/(general)/notes/maths/Three dimensional geometry/Angle between two planes/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3357,7 +3711,7 @@
     "file": "entries/pages/(general)/notes/maths/Three dimensional geometry/Coplanarity of two lines/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3380,7 +3734,7 @@
     "file": "entries/pages/(general)/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3402,7 +3756,7 @@
     "file": "entries/pages/(general)/notes/maths/Three dimensional geometry/Distance of a point from a plane/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3425,7 +3779,7 @@
     "file": "entries/pages/(general)/notes/maths/Three dimensional geometry/Equation of a line in space/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3448,7 +3802,7 @@
     "file": "entries/pages/(general)/notes/maths/Three dimensional geometry/Plane/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3471,7 +3825,7 @@
     "file": "entries/pages/(general)/notes/maths/Three dimensional geometry/Shortest distance between two lines/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3494,7 +3848,7 @@
     "file": "entries/pages/(general)/notes/maths/Trigonometric functions/Angles/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3517,7 +3871,7 @@
     "file": "entries/pages/(general)/notes/maths/Trigonometric functions/Trigonometric equations/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3540,7 +3894,7 @@
     "file": "entries/pages/(general)/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3563,7 +3917,7 @@
     "file": "entries/pages/(general)/notes/maths/Trigonometric functions/Trigonometric functions/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3586,7 +3940,7 @@
     "file": "entries/pages/(general)/notes/maths/Vector algebra/Addition of vectors/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3608,7 +3962,7 @@
     "file": "entries/pages/(general)/notes/maths/Vector algebra/Multiplication of a vector by a scalar/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3631,7 +3985,7 @@
     "file": "entries/pages/(general)/notes/maths/Vector algebra/Product of two vectors/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3654,7 +4008,7 @@
     "file": "entries/pages/(general)/notes/maths/Vector algebra/Some basic concepts/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3677,7 +4031,7 @@
     "file": "entries/pages/(general)/notes/maths/Vector algebra/Types of vectors/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3700,7 +4054,7 @@
     "file": "entries/pages/(general)/notes/maths/conic/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3714,7 +4068,7 @@
     "file": "entries/pages/(general)/notes/quantum/_layout.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_client.js",
       "_Presenter.js"
     ],
@@ -3734,12 +4088,12 @@
       "_app/immutable/assets/_page.wXS4d_6p.css",
       "_app/immutable/assets/Practice.WYyIEcoM.css",
       "_app/immutable/assets/Message.ctOi1nG9.css",
-      "_app/immutable/assets/H3.bOrlhsXY.css"
+      "_app/immutable/assets/Div.bOrlhsXY.css"
     ],
     "file": "entries/pages/(general)/notes/quantum/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores3.js",
+      "_stores4.js",
       "_stores.js",
       "_constants.js",
       "_Image.svelte_svelte_type_style_lang.js",
@@ -3777,7 +4131,7 @@
     "imports": [
       "_ssr.js",
       "_Select.js",
-      "_stores4.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class1/+layout.svelte"
@@ -3799,7 +4153,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores4.js",
+      "_stores2.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -3810,7 +4164,7 @@
     "imports": [
       "_ssr.js",
       "_Select.js",
-      "_stores4.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class10/+layout.svelte"
@@ -3832,7 +4186,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores4.js",
+      "_stores2.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -3843,7 +4197,7 @@
     "imports": [
       "_ssr.js",
       "_Select.js",
-      "_stores4.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class11/+layout.svelte"
@@ -3865,7 +4219,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores4.js",
+      "_stores2.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -3876,7 +4230,7 @@
     "imports": [
       "_ssr.js",
       "_Select.js",
-      "_stores4.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class12/+layout.svelte"
@@ -3898,7 +4252,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores4.js",
+      "_stores2.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -3909,7 +4263,7 @@
     "imports": [
       "_ssr.js",
       "_Select.js",
-      "_stores4.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class2/+layout.svelte"
@@ -3931,7 +4285,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores4.js",
+      "_stores2.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -3942,7 +4296,7 @@
     "imports": [
       "_ssr.js",
       "_Select.js",
-      "_stores4.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class3/+layout.svelte"
@@ -3964,7 +4318,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores4.js",
+      "_stores2.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -3975,7 +4329,7 @@
     "imports": [
       "_ssr.js",
       "_Select.js",
-      "_stores4.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class4/+layout.svelte"
@@ -3997,7 +4351,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores4.js",
+      "_stores2.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -4008,7 +4362,7 @@
     "imports": [
       "_ssr.js",
       "_Select.js",
-      "_stores4.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class5/+layout.svelte"
@@ -4030,7 +4384,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores4.js",
+      "_stores2.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -4041,7 +4395,7 @@
     "imports": [
       "_ssr.js",
       "_Select.js",
-      "_stores4.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class6/+layout.svelte"
@@ -4063,7 +4417,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores4.js",
+      "_stores2.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -4074,7 +4428,7 @@
     "imports": [
       "_ssr.js",
       "_Select.js",
-      "_stores4.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class7/+layout.svelte"
@@ -4096,7 +4450,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores4.js",
+      "_stores2.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -4107,7 +4461,7 @@
     "imports": [
       "_ssr.js",
       "_Select.js",
-      "_stores4.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class8/+layout.svelte"
@@ -4129,7 +4483,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores4.js",
+      "_stores2.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -4140,7 +4494,7 @@
     "imports": [
       "_ssr.js",
       "_Select.js",
-      "_stores4.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class9/+layout.svelte"
@@ -4162,7 +4516,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores4.js",
+      "_stores2.js",
       "_Practice.js"
     ],
     "isEntry": true,

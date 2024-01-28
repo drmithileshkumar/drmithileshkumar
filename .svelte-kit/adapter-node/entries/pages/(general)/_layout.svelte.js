@@ -1,17 +1,18 @@
-import { c as create_ssr_component, b as compute_rest_props, g as get_current_component, s as setContext, o as onDestroy, d as spread, f as escape_attribute_value, h as escape_object, i as add_attribute, j as getContext, v as validate_component, m as missing_component, a as subscribe, k as each, e as escape, n as null_to_empty } from "../../../chunks/ssr.js";
+import { c as create_ssr_component, h as compute_rest_props, i as get_current_component, q as setContext, t as onDestroy, b as spread, j as escape_attribute_value, d as escape_object, k as add_attribute, g as getContext, v as validate_component, r as missing_component, s as subscribe, e as escape, o as null_to_empty } from "../../../chunks/ssr.js";
 import { MDCDismissibleDrawerFoundation, MDCModalDrawerFoundation } from "@material/drawer";
 import { f as forwardEventsBuilder, c as classMap, S as SmuiElement, a as classAdderBuilder, g as globals, C as Content$1 } from "../../../chunks/ActionIcons.js";
 import { MDCRippleFoundation, util } from "@material/ripple";
 import { events, ponyfill } from "@material/dom";
+import { T as Text, N as NavList } from "../../../chunks/NavList.js";
 import "../../../chunks/client.js";
 import { p as page } from "../../../chunks/stores.js";
-import { n as navList, s as showRight, r as refreshApp, d as darkMode, T as TopBarHeight, a as showLeft, c as currentPath } from "../../../chunks/stores2.js";
+import { n as navList, s as showRight, r as refreshApp, d as darkMode, T as TopBarHeight, a as showLeft, c as currentPath } from "../../../chunks/stores3.js";
 import { C as Card } from "../../../chunks/Card.js";
 /* empty css                                                 */
 import { MDCTopAppBarBaseFoundation, MDCShortTopAppBarFoundation, MDCFixedTopAppBarFoundation, MDCTopAppBarFoundation } from "@material/top-app-bar";
 import { r as readable } from "../../../chunks/index2.js";
 import { MDCIconButtonToggleFoundation } from "@material/icon-button";
-import { p as presentationMode } from "../../../chunks/stores3.js";
+import { p as presentationMode } from "../../../chunks/stores4.js";
 function dispatch(element, eventType, detail, eventInit = { bubbles: true }, duplicateEventForMDC = false) {
   if (typeof Event === "undefined") {
     throw new Error("Event not defined.");
@@ -1064,18 +1065,6 @@ const Item = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   } while (!$$settled);
   return $$rendered;
 });
-const Text = classAdderBuilder({
-  class: "mdc-deprecated-list-item__text",
-  tag: "span"
-});
-classAdderBuilder({
-  class: "mdc-deprecated-list-item__primary-text",
-  tag: "span"
-});
-classAdderBuilder({
-  class: "mdc-deprecated-list-item__secondary-text",
-  tag: "span"
-});
 const Graphic = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["use", "class", "getElement"]);
   forwardEventsBuilder(get_current_component());
@@ -1105,18 +1094,6 @@ const Graphic = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     ],
     {}
   )}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``}</span>`;
-});
-classAdderBuilder({
-  class: "mdc-deprecated-list-item__meta",
-  tag: "span"
-});
-classAdderBuilder({
-  class: "mdc-deprecated-list-group",
-  tag: "div"
-});
-classAdderBuilder({
-  class: "mdc-deprecated-list-group__subheader",
-  tag: "h3"
 });
 const Separator = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, [
@@ -1416,38 +1393,27 @@ const css$1 = {
 };
 const Sidebar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $navList, $$unsubscribe_navList;
-  let $$unsubscribe_page;
   $$unsubscribe_navList = subscribe(navList, (value) => $navList = value);
-  $$unsubscribe_page = subscribe(page, (value) => value);
   let { isAuth = null } = $$props;
   if ($$props.isAuth === void 0 && $$bindings.isAuth && isAuth !== void 0)
     $$bindings.isAuth(isAuth);
   $$result.css.add(css$1);
   $$unsubscribe_navList();
-  $$unsubscribe_page();
-  return `<aside class="svelte-kpoyhe"> ${isAuth ? `${$navList.length > 0 ? `${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  return `<aside class="svelte-kpoyhe">  ${$navList.length > 0 ? `${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
-      return ` ${validate_component(List, "List").$$render($$result, {}, {}, {
-        default: () => {
-          return `${each($navList, (link) => {
-            return `${validate_component(Item, "Item").$$render($$result, {}, {}, {
-              default: () => {
-                return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
-                  default: () => {
-                    return `menu_book`;
-                  }
-                })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
-                  default: () => {
-                    return `${escape(link.name)}`;
-                  }
-                })} `;
-              }
-            })}`;
-          })}`;
-        }
-      })} `;
+      return ` ${validate_component(NavList, "NavList").$$render(
+        $$result,
+        {
+          name: $navList[0].name,
+          url: $navList[0].url,
+          topics: $navList[0].topics,
+          expanded: true
+        },
+        {},
+        {}
+      )}  `;
     }
-  })}` : ``}` : ``}  ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })}` : ``}   ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content$1, "Content").$$render($$result, {}, {}, {
         default: () => {

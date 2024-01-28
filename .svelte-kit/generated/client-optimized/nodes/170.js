@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/quantum/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Three dimensional geometry/Angle between two planes/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/quantum/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Three dimensional geometry/Angle between two planes/+page.svelte";

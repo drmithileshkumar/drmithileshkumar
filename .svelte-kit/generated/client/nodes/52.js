@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Complex numbers and quadratic equations/Complex numbers/+page.js";
+import * as universal from "../../../../src/routes/(general)/iit/maths/2021/question3/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Complex numbers and quadratic equations/Complex numbers/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/iit/maths/2021/question3/+page.svelte";

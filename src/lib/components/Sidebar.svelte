@@ -17,18 +17,18 @@
     import { goto } from "$app/navigation";
     import { page } from "$app/stores";
     import { profileImage, navList } from "$lib/stores";
-
+    import NavList from "./NavList.svelte";
     export let isAuth = null;
 </script>
 
 <aside>
     <!-- <div class="fixed"> -->
-    {#if isAuth}
+    <!-- {#if isAuth} -->
         {#if $navList.length > 0}
             <Card>
                 <!-- <Content> -->
-
-                <List>
+                <NavList name="{$navList[0].name}" url="{$navList[0].url}" topics={$navList[0].topics} expanded />
+                <!-- <List>
                     {#each $navList as link}
                         <Item
                             on:SMUI:action={() =>
@@ -38,12 +38,12 @@
                             <Text>{link.name}</Text>
                         </Item>
                     {/each}
-                </List>
+                </List> -->
 
                 <!-- </Content> -->
             </Card>
         {/if}
-    {/if}
+    <!-- {/if} -->
     <!-- </div> -->
     <Card>
         <Content>
