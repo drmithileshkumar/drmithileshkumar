@@ -89,7 +89,7 @@
                     {`\\[
                         \\begin{aligned}
                         \\bar{r} &= \\bar{s}\\\\
-                                 &= 1 + 2 + \\cdots + n\\\\
+                                 &= \\frac{1 + 2 + \\cdots + n}{n}\\\\
                                  &= \\frac{n + 1}{2}
                         \\end{aligned}
                         \\]`}

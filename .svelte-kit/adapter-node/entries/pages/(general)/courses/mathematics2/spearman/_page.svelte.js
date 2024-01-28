@@ -42,7 +42,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                     ${escape(`\\[
                         \\begin{aligned}
                         \\bar{r} &= \\bar{s}\\\\
-                                 &= 1 + 2 + \\cdots + n\\\\
+                                 &= \\frac{1 + 2 + \\cdots + n}{n}\\\\
                                  &= \\frac{n + 1}{2}
                         \\end{aligned}
                         \\]`)}</p> <p class="svelte-n59hwk">Even the standard deviations ${escape(`\\(\\sigma_{R_x}\\)`)} and ${escape(`\\(\\sigma_{R_y}\\)`)} are equal.
