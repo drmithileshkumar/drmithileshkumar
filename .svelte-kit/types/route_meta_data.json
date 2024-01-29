@@ -26,72 +26,72 @@
 		"src/routes/(general)/courses/mathematics2/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
-	"/(general)/courses/mathematics2/bivariatedata": [
-		"src/routes/(general)/courses/mathematics2/bivariatedata/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/bivariatefrequency": [
-		"src/routes/(general)/courses/mathematics2/bivariatefrequency/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/correlation2": [
-		"src/routes/(general)/courses/mathematics2/correlation2/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/correlationtypes": [
-		"src/routes/(general)/courses/mathematics2/correlationtypes/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/correlation": [
-		"src/routes/(general)/courses/mathematics2/correlation/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/deviation": [
-		"src/routes/(general)/courses/mathematics2/deviation/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/leastsquares": [
-		"src/routes/(general)/courses/mathematics2/leastsquares/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/mean": [
-		"src/routes/(general)/courses/mathematics2/mean/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/measures": [
-		"src/routes/(general)/courses/mathematics2/measures/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/median": [
-		"src/routes/(general)/courses/mathematics2/median/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/mode": [
-		"src/routes/(general)/courses/mathematics2/mode/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/pearson": [
-		"src/routes/(general)/courses/mathematics2/pearson/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/regressioncoefficient": [
-		"src/routes/(general)/courses/mathematics2/regressioncoefficient/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/regressionlines": [
-		"src/routes/(general)/courses/mathematics2/regressionlines/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/regression": [
-		"src/routes/(general)/courses/mathematics2/regression/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/courses/mathematics2/spearman": [
-		"src/routes/(general)/courses/mathematics2/spearman/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
 	"/(general)/courses/mathematics2/statistics": [
 		"src/routes/(general)/courses/mathematics2/statistics/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/correlation": [
+		"src/routes/(general)/courses/mathematics2/statistics/correlation/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/correlation/bivariatedata": [
+		"src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatedata/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency": [
+		"src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/correlation/correlation2": [
+		"src/routes/(general)/courses/mathematics2/statistics/correlation/correlation2/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/correlation/correlationtypes": [
+		"src/routes/(general)/courses/mathematics2/statistics/correlation/correlationtypes/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/correlation/pearson": [
+		"src/routes/(general)/courses/mathematics2/statistics/correlation/pearson/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/correlation/spearman": [
+		"src/routes/(general)/courses/mathematics2/statistics/correlation/spearman/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/measures": [
+		"src/routes/(general)/courses/mathematics2/statistics/measures/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/measures/deviation": [
+		"src/routes/(general)/courses/mathematics2/statistics/measures/deviation/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/measures/mean": [
+		"src/routes/(general)/courses/mathematics2/statistics/measures/mean/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/measures/median": [
+		"src/routes/(general)/courses/mathematics2/statistics/measures/median/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/measures/mode": [
+		"src/routes/(general)/courses/mathematics2/statistics/measures/mode/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/regression": [
+		"src/routes/(general)/courses/mathematics2/statistics/regression/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/regression/leastsquares": [
+		"src/routes/(general)/courses/mathematics2/statistics/regression/leastsquares/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/regression/regressioncoefficient": [
+		"src/routes/(general)/courses/mathematics2/statistics/regression/regressioncoefficient/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/statistics/regression/regressionlines": [
+		"src/routes/(general)/courses/mathematics2/statistics/regression/regressionlines/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(cv)/cv": [

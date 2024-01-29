@@ -519,326 +519,6 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/+page.svelte"
   },
-  "src/routes/(general)/courses/mathematics2/bivariatedata/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/bivariatedata/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/bivariatedata/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/bivariatedata/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.E3mSGCqI.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/bivariatedata/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/bivariatedata/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/bivariatefrequency/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/bivariatefrequency/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/bivariatefrequency/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/bivariatefrequency/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.E3mSGCqI.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/bivariatefrequency/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/bivariatefrequency/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/correlation/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/correlation/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/correlation/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/correlation/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.KL6jlOoL.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/correlation/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/correlation/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/correlation2/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/correlation2/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/correlation2/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/correlation2/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.KL6jlOoL.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/correlation2/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/correlation2/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/correlationtypes/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/correlationtypes/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/correlationtypes/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/correlationtypes/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.KL6jlOoL.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/correlationtypes/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/correlationtypes/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/deviation/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/deviation/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/deviation/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/deviation/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.QhXNCnV8.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/deviation/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/deviation/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/leastsquares/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/leastsquares/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/leastsquares/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/leastsquares/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.KL6jlOoL.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/leastsquares/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/leastsquares/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/mean/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/mean/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/mean/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/mean/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.J1vT5W0f.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/mean/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/mean/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/measures/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/measures/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/measures/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/measures/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.bLscVOuH.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/measures/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/measures/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/median/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/median/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/median/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/median/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.QhXNCnV8.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/median/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/median/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/mode/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/mode/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/mode/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/mode/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.QhXNCnV8.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/mode/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/mode/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/pearson/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/pearson/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/pearson/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/pearson/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.0zesJziv.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/pearson/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/pearson/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/regression/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/regression/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/regression/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/regression/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.KL6jlOoL.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/regression/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/regression/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/regressioncoefficient/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/regressioncoefficient/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/regressioncoefficient/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/regressioncoefficient/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.KL6jlOoL.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/regressioncoefficient/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/regressioncoefficient/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/regressionlines/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/regressionlines/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/regressionlines/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/regressionlines/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.KL6jlOoL.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/regressionlines/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/regressionlines/+page.svelte"
-  },
-  "src/routes/(general)/courses/mathematics2/spearman/+page.js": {
-    "file": "entries/pages/(general)/courses/mathematics2/spearman/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/spearman/+page.js"
-  },
-  "src/routes/(general)/courses/mathematics2/spearman/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.J1vT5W0f.css"
-    ],
-    "file": "entries/pages/(general)/courses/mathematics2/spearman/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores3.js",
-      "_content.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/spearman/+page.svelte"
-  },
   "src/routes/(general)/courses/mathematics2/statistics/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/statistics/_page.js",
     "isEntry": true,
@@ -858,6 +538,326 @@
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatedata/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/bivariatedata/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatedata/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatedata/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.E3mSGCqI.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/bivariatedata/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatedata/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.E3mSGCqI.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/correlation2/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/correlation2/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/correlation2/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/correlation2/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/correlation2/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/correlation2/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/correlationtypes/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/correlationtypes/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/correlationtypes/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/correlationtypes/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/correlationtypes/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/correlationtypes/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/pearson/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/pearson/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/pearson/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/pearson/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.0zesJziv.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/pearson/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/pearson/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/spearman/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/spearman/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/spearman/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/correlation/spearman/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.J1vT5W0f.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/spearman/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/spearman/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/measures/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/measures/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/measures/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/measures/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.bLscVOuH.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/measures/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/measures/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/measures/deviation/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/measures/deviation/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/measures/deviation/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/measures/deviation/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.QhXNCnV8.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/measures/deviation/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/measures/deviation/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/measures/mean/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/measures/mean/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/measures/mean/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/measures/mean/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.J1vT5W0f.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/measures/mean/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/measures/mean/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/measures/median/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/measures/median/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/measures/median/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/measures/median/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.QhXNCnV8.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/measures/median/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/measures/median/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/measures/mode/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/measures/mode/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/measures/mode/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/measures/mode/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.QhXNCnV8.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/measures/mode/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/measures/mode/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/regression/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/regression/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/regression/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/regression/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/regression/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/regression/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/regression/leastsquares/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/regression/leastsquares/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/regression/leastsquares/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/regression/leastsquares/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/regression/leastsquares/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/regression/leastsquares/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/regression/regressioncoefficient/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/regression/regressioncoefficient/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/regression/regressioncoefficient/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/regression/regressioncoefficient/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/regression/regressioncoefficient/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/regression/regressioncoefficient/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/regression/regressionlines/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/regression/regressionlines/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/regression/regressionlines/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/statistics/regression/regressionlines/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.KL6jlOoL.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/statistics/regression/regressionlines/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/statistics/regression/regressionlines/+page.svelte"
   },
   "src/routes/(general)/iit/+page.js": {
     "file": "entries/pages/(general)/iit/_page.js",

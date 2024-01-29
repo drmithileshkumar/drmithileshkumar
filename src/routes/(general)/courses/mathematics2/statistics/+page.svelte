@@ -4,7 +4,7 @@
     import Card, { Content, Actions } from "@smui/card";
     import { currentPath } from "$lib/stores";
     import { darkMode, navList } from "$lib/stores"
-    import { contents } from "../content";
+    import { contents } from "$lib/pages/courses/mathematics2/content";
     $navList = contents;
     $darkMode = true;
     $currentPath = "Basics of Statistics";

@@ -9,71 +9,71 @@ const contents = [
         topics: [
           {
             name: "Measures of Central Tendency",
-            url: "/courses/mathematics2/measures",
+            url: "/courses/mathematics2/statistics/measures",
             topics: [
               {
                 name: "Mean (AM, GM, HM)",
-                url: "/courses/mathematics2/mean"
+                url: "/courses/mathematics2/statistics/measures/mean"
               },
               {
                 name: "Mode",
-                url: "/courses/mathematics2/mode"
+                url: "/courses/mathematics2/statistics/measures/mode"
               },
               {
                 name: "Median",
-                url: "/courses/mathematics2/median"
+                url: "/courses/mathematics2/statistics/measures/median"
               },
               {
                 name: "Standard deviation",
-                url: "/courses/mathematics2/deviation"
+                url: "/courses/mathematics2/statistics/measures/deviation"
               }
             ]
           },
           {
             name: "Correlation",
-            url: "/courses/mathematics2/correlation",
+            url: "/courses/mathematics2/statistics/correlation",
             topics: [
               {
                 name: "Bivariate Data",
-                url: "/courses/mathematics2/bivariatedata"
+                url: "/courses/mathematics2/statistics/correlation/bivariatedata"
               },
               {
                 name: "Bivariate frequency distribution",
-                url: "/courses/mathematics2/bivariatefrequency"
+                url: "/courses/mathematics2/statistics/correlation/bivariatefrequency"
               },
               {
                 name: "Correlation between two variables",
-                url: "/courses/mathematics2/correlation2"
+                url: "/courses/mathematics2/statistics/correlation/correlation2"
               },
               {
                 name: "Types of correlation",
-                url: "/courses/mathematics2/correlationtypes"
+                url: "/courses/mathematics2/statistics/correlation/correlationtypes"
               },
               {
                 name: "Karl Pearson's coefficient of correlation (r)",
-                url: "/courses/mathematics2/pearson"
+                url: "/courses/mathematics2/statistics/correlation/pearson"
               },
               {
                 name: "Spearman's rank correlation coefficient",
-                url: "/courses/mathematics2/spearman"
+                url: "/courses/mathematics2/statistics/correlation/spearman"
               }
             ]
           },
           {
             name: "Regression",
-            url: "/courses/mathematics2/regression",
+            url: "/courses/mathematics2/statistics/regression",
             topics: [
               {
                 name: "Lines of regression",
-                url: "/courses/mathematics2/regressionlines"
+                url: "/courses/mathematics2/statistics/regression/regressionlines"
               },
               {
                 name: "Least squares method",
-                url: "/courses/mathematics2/leastsquares"
+                url: "/courses/mathematics2/statistics/regression/leastsquares"
               },
               {
                 name: "Regression coefficient",
-                url: "/courses/mathematics2/regressioncoefficient"
+                url: "/courses/mathematics2/statistics/regression/regressioncoefficient"
               }
             ]
           }

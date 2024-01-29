@@ -10,7 +10,7 @@ return {
 	assets: new Set(["CMIMedal.jpg","IITMSc.jpg","LCPath.svg","announcement/html.svg","announcement/perspective.svg","app.css","background.svg","circle_demo/Cone-equation.png","circle_demo/Cone.png","circle_demo/Conic_anime.mp4","circle_demo/Conic_deg.mp4","circle_demo/IIT21Q1.png","circle_demo/Plane.png","circle_demo/Tangents.png","circle_demo/circle.png","circle_demo/circle_anime.mp4","circle_demo/conics.png","circle_demo/ellipse_anime.mp4","circle_demo/hyperbola_anime.mp4","circle_demo/orthocenter.png","circle_demo/parabola_anime.mp4","circle_demo/threepointcircle.png","cmithesis.pdf","common.css","custom.css","dark.css","facebook.svg","favicon.png","instagram.svg","light.css","manifest.json","mithileshkumar.png","notes/maths/sets/equal/thumbnail.svg","notes/maths/sets/finite/thumbnail.svg","notes/maths/sets/introduction/example.svg","notes/maths/sets/introduction/oddeven.svg","notes/maths/sets/real/interval.svg","notes/maths/sets/real/subsetreal.svg","notes/maths/sets/representation/heroparadox.svg","notes/maths/sets/subsets/thumbnail.svg","notes/maths/sets/subsets/tree.svg","notes/quantum/CNOT.svg","notes/quantum/qubit2d.svg","notes/quantum/teleportation.svg","photo_cv.jpg","profilephoto.jpeg","robots.txt","santa.svg","smui-dark.css","smui.css","svelte-welcome.png","svelte-welcome.webp","telegram.svg","thesis.pdf","twitter copy.png","twitter.png","vectorial/vectorialhome.svg","webdutIcon.png","youtube.svg","service-worker.js"]),
 	mimeTypes: {".jpg":"image/jpeg",".svg":"image/svg+xml",".css":"text/css",".png":"image/png",".mp4":"video/mp4",".pdf":"application/pdf",".json":"application/json",".jpeg":"image/jpeg",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.SF71S81X.js","app":"_app/immutable/entry/app.3B22sDmS.js","imports":["_app/immutable/entry/start.SF71S81X.js","_app/immutable/chunks/entry.1n2B4ktz.js","_app/immutable/chunks/scheduler.YWuCqLZx.js","_app/immutable/chunks/index.20hFJ42h.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/entry/app.3B22sDmS.js","_app/immutable/chunks/preload-helper.0HuHagjb.js","_app/immutable/chunks/scheduler.YWuCqLZx.js","_app/immutable/chunks/index._dLxV_ys.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
+		client: {"start":"_app/immutable/entry/start.oZmamAyi.js","app":"_app/immutable/entry/app.8oG8uHgz.js","imports":["_app/immutable/entry/start.oZmamAyi.js","_app/immutable/chunks/entry.GwJ0dDFU.js","_app/immutable/chunks/scheduler.YWuCqLZx.js","_app/immutable/chunks/index.20hFJ42h.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/entry/app.8oG8uHgz.js","_app/immutable/chunks/preload-helper.0HuHagjb.js","_app/immutable/chunks/scheduler.YWuCqLZx.js","_app/immutable/chunks/index._dLxV_ys.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -261,120 +261,120 @@ return {
 				endpoint: null
 			},
 			{
-				id: "/(general)/courses/mathematics2/bivariatedata",
-				pattern: /^\/courses\/mathematics2\/bivariatedata\/?$/,
+				id: "/(general)/courses/mathematics2/statistics",
+				pattern: /^\/courses\/mathematics2\/statistics\/?$/,
 				params: [],
 				page: { layouts: [0,4,], errors: [1,,], leaf: 32 },
 				endpoint: null
 			},
 			{
-				id: "/(general)/courses/mathematics2/bivariatefrequency",
-				pattern: /^\/courses\/mathematics2\/bivariatefrequency\/?$/,
+				id: "/(general)/courses/mathematics2/statistics/correlation",
+				pattern: /^\/courses\/mathematics2\/statistics\/correlation\/?$/,
 				params: [],
 				page: { layouts: [0,4,], errors: [1,,], leaf: 33 },
 				endpoint: null
 			},
 			{
-				id: "/(general)/courses/mathematics2/correlation2",
-				pattern: /^\/courses\/mathematics2\/correlation2\/?$/,
-				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 35 },
-				endpoint: null
-			},
-			{
-				id: "/(general)/courses/mathematics2/correlationtypes",
-				pattern: /^\/courses\/mathematics2\/correlationtypes\/?$/,
-				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 36 },
-				endpoint: null
-			},
-			{
-				id: "/(general)/courses/mathematics2/correlation",
-				pattern: /^\/courses\/mathematics2\/correlation\/?$/,
+				id: "/(general)/courses/mathematics2/statistics/correlation/bivariatedata",
+				pattern: /^\/courses\/mathematics2\/statistics\/correlation\/bivariatedata\/?$/,
 				params: [],
 				page: { layouts: [0,4,], errors: [1,,], leaf: 34 },
 				endpoint: null
 			},
 			{
-				id: "/(general)/courses/mathematics2/deviation",
-				pattern: /^\/courses\/mathematics2\/deviation\/?$/,
+				id: "/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency",
+				pattern: /^\/courses\/mathematics2\/statistics\/correlation\/bivariatefrequency\/?$/,
+				params: [],
+				page: { layouts: [0,4,], errors: [1,,], leaf: 35 },
+				endpoint: null
+			},
+			{
+				id: "/(general)/courses/mathematics2/statistics/correlation/correlation2",
+				pattern: /^\/courses\/mathematics2\/statistics\/correlation\/correlation2\/?$/,
+				params: [],
+				page: { layouts: [0,4,], errors: [1,,], leaf: 36 },
+				endpoint: null
+			},
+			{
+				id: "/(general)/courses/mathematics2/statistics/correlation/correlationtypes",
+				pattern: /^\/courses\/mathematics2\/statistics\/correlation\/correlationtypes\/?$/,
 				params: [],
 				page: { layouts: [0,4,], errors: [1,,], leaf: 37 },
 				endpoint: null
 			},
 			{
-				id: "/(general)/courses/mathematics2/leastsquares",
-				pattern: /^\/courses\/mathematics2\/leastsquares\/?$/,
+				id: "/(general)/courses/mathematics2/statistics/correlation/pearson",
+				pattern: /^\/courses\/mathematics2\/statistics\/correlation\/pearson\/?$/,
 				params: [],
 				page: { layouts: [0,4,], errors: [1,,], leaf: 38 },
 				endpoint: null
 			},
 			{
-				id: "/(general)/courses/mathematics2/mean",
-				pattern: /^\/courses\/mathematics2\/mean\/?$/,
+				id: "/(general)/courses/mathematics2/statistics/correlation/spearman",
+				pattern: /^\/courses\/mathematics2\/statistics\/correlation\/spearman\/?$/,
 				params: [],
 				page: { layouts: [0,4,], errors: [1,,], leaf: 39 },
 				endpoint: null
 			},
 			{
-				id: "/(general)/courses/mathematics2/measures",
-				pattern: /^\/courses\/mathematics2\/measures\/?$/,
+				id: "/(general)/courses/mathematics2/statistics/measures",
+				pattern: /^\/courses\/mathematics2\/statistics\/measures\/?$/,
 				params: [],
 				page: { layouts: [0,4,], errors: [1,,], leaf: 40 },
 				endpoint: null
 			},
 			{
-				id: "/(general)/courses/mathematics2/median",
-				pattern: /^\/courses\/mathematics2\/median\/?$/,
+				id: "/(general)/courses/mathematics2/statistics/measures/deviation",
+				pattern: /^\/courses\/mathematics2\/statistics\/measures\/deviation\/?$/,
 				params: [],
 				page: { layouts: [0,4,], errors: [1,,], leaf: 41 },
 				endpoint: null
 			},
 			{
-				id: "/(general)/courses/mathematics2/mode",
-				pattern: /^\/courses\/mathematics2\/mode\/?$/,
+				id: "/(general)/courses/mathematics2/statistics/measures/mean",
+				pattern: /^\/courses\/mathematics2\/statistics\/measures\/mean\/?$/,
 				params: [],
 				page: { layouts: [0,4,], errors: [1,,], leaf: 42 },
 				endpoint: null
 			},
 			{
-				id: "/(general)/courses/mathematics2/pearson",
-				pattern: /^\/courses\/mathematics2\/pearson\/?$/,
+				id: "/(general)/courses/mathematics2/statistics/measures/median",
+				pattern: /^\/courses\/mathematics2\/statistics\/measures\/median\/?$/,
 				params: [],
 				page: { layouts: [0,4,], errors: [1,,], leaf: 43 },
 				endpoint: null
 			},
 			{
-				id: "/(general)/courses/mathematics2/regressioncoefficient",
-				pattern: /^\/courses\/mathematics2\/regressioncoefficient\/?$/,
-				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 45 },
-				endpoint: null
-			},
-			{
-				id: "/(general)/courses/mathematics2/regressionlines",
-				pattern: /^\/courses\/mathematics2\/regressionlines\/?$/,
-				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 46 },
-				endpoint: null
-			},
-			{
-				id: "/(general)/courses/mathematics2/regression",
-				pattern: /^\/courses\/mathematics2\/regression\/?$/,
+				id: "/(general)/courses/mathematics2/statistics/measures/mode",
+				pattern: /^\/courses\/mathematics2\/statistics\/measures\/mode\/?$/,
 				params: [],
 				page: { layouts: [0,4,], errors: [1,,], leaf: 44 },
 				endpoint: null
 			},
 			{
-				id: "/(general)/courses/mathematics2/spearman",
-				pattern: /^\/courses\/mathematics2\/spearman\/?$/,
+				id: "/(general)/courses/mathematics2/statistics/regression",
+				pattern: /^\/courses\/mathematics2\/statistics\/regression\/?$/,
+				params: [],
+				page: { layouts: [0,4,], errors: [1,,], leaf: 45 },
+				endpoint: null
+			},
+			{
+				id: "/(general)/courses/mathematics2/statistics/regression/leastsquares",
+				pattern: /^\/courses\/mathematics2\/statistics\/regression\/leastsquares\/?$/,
+				params: [],
+				page: { layouts: [0,4,], errors: [1,,], leaf: 46 },
+				endpoint: null
+			},
+			{
+				id: "/(general)/courses/mathematics2/statistics/regression/regressioncoefficient",
+				pattern: /^\/courses\/mathematics2\/statistics\/regression\/regressioncoefficient\/?$/,
 				params: [],
 				page: { layouts: [0,4,], errors: [1,,], leaf: 47 },
 				endpoint: null
 			},
 			{
-				id: "/(general)/courses/mathematics2/statistics",
-				pattern: /^\/courses\/mathematics2\/statistics\/?$/,
+				id: "/(general)/courses/mathematics2/statistics/regression/regressionlines",
+				pattern: /^\/courses\/mathematics2\/statistics\/regression\/regressionlines\/?$/,
 				params: [],
 				page: { layouts: [0,4,], errors: [1,,], leaf: 48 },
 				endpoint: null

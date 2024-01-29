@@ -10,7 +10,7 @@
     import NavList from '$lib/components/NavList.svelte'
     import { currentPath } from "$lib/stores";
     import { darkMode, navList } from "$lib/stores";
-    import { contents } from "./content";
+    import { contents } from "$lib/pages/courses/mathematics2/content";
     $navList = contents;
     $currentPath = "Mathematics II";
     $darkMode = true;
