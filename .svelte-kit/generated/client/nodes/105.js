@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Differential equations/Basic concepts/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Continuity and differentiability/Mean value theorem/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Differential equations/Basic concepts/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Continuity and differentiability/Mean value theorem/+page.svelte";

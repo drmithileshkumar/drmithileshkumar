@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/courses/internet/wwwhtml/html/_page.js';
+import * as universal from '../entries/pages/(general)/courses/internet/wwwhtml/fundamentals/browsers/_page.js';
 
 export const index = 41;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/internet/wwwhtml/html/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/internet/wwwhtml/fundamentals/browsers/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/courses/internet/wwwhtml/html/+page.js";
-export const imports = ["_app/immutable/nodes/41.twQC2l1k.js","_app/immutable/chunks/scheduler.Wcy8l203.js","_app/immutable/chunks/index.3Wex8s3Q.js"];
-export const stylesheets = [];
+export const universal_id = "src/routes/(general)/courses/internet/wwwhtml/fundamentals/browsers/+page.js";
+export const imports = ["_app/immutable/nodes/41.W-gfjk79.js","_app/immutable/chunks/scheduler._OuDP6UF.js","_app/immutable/chunks/index.69cNLXHD.js","_app/immutable/chunks/content.YkN37DGi.js","_app/immutable/chunks/entry.JC3_HZpz.js","_app/immutable/chunks/index.ymjMDM6_.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/Card.n05XP32M.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/ActionIcons.S991rHMd.js","_app/immutable/chunks/NavList.svelte_svelte_type_style_lang.yn8r1B33.js","_app/immutable/chunks/stores.KcX466m2.js"];
+export const stylesheets = ["_app/immutable/assets/41.PCyroyDC.css","_app/immutable/assets/Link.mTa6ZPjX.css","_app/immutable/assets/NavList.yy5IVOlJ.css"];
 export const fonts = [];

@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Differential equations/General and particular solutions of a differential equation/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Determinants/Adjoint and inverse of a matrix/_page.js';
 
 export const index = 107;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Differential equations/General and particular solutions of a differential equation/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Determinants/Adjoint and inverse of a matrix/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.js";
-export const imports = ["_app/immutable/nodes/107.H-gtOIxf.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.Wcy8l203.js","_app/immutable/chunks/index.3Wex8s3Q.js","_app/immutable/chunks/stores.Bs1j_UiF.js","_app/immutable/chunks/index.dpPe8Tdf.js","_app/immutable/chunks/stores.wRmUPyz9.js","_app/immutable/chunks/entry.JiEGjc9j.js"];
+export const universal_id = "src/routes/(general)/notes/maths/Determinants/Adjoint and inverse of a matrix/+page.js";
+export const imports = ["_app/immutable/nodes/107.z68DDWAN.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler._OuDP6UF.js","_app/immutable/chunks/index.69cNLXHD.js","_app/immutable/chunks/stores.lN3I2KMI.js","_app/immutable/chunks/index.ymjMDM6_.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.z9rRTQk4.js","_app/immutable/chunks/entry.JC3_HZpz.js"];
 export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

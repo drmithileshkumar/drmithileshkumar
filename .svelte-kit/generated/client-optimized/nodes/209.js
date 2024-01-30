@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/practice/class3/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/conic/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/practice/class3/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/conic/+page.svelte";

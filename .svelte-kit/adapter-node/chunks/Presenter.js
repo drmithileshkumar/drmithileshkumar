@@ -1,4 +1,4 @@
-import { c as create_ssr_component, s as subscribe, p as each, e as escape, l as set_store_value, k as add_attribute } from "./ssr.js";
+import { c as create_ssr_component, s as subscribe, l as each, e as escape, m as set_store_value, k as add_attribute } from "./ssr.js";
 /* empty css                                     */
 import { w as writable } from "./index2.js";
 const lineWidth = writable(2);

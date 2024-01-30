@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Integrals/Integrals of some particular functions/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Differential equations/Methods of solving first order first degree differential equations/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Integrals/Integrals of some particular functions/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Differential equations/Methods of solving first order first degree differential equations/+page.svelte";

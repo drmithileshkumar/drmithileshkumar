@@ -1,4 +1,4 @@
-import { c as create_ssr_component, k as add_attribute, e as escape, s as subscribe, a as createEventDispatcher, v as validate_component, l as set_store_value } from "./ssr.js";
+import { c as create_ssr_component, k as add_attribute, e as escape, s as subscribe, a as createEventDispatcher, v as validate_component, m as set_store_value } from "./ssr.js";
 import { Q as QuestionTimer } from "./stores2.js";
 import { w as writable } from "./index2.js";
 /* empty css                                       */

@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Integrals/Fundamental theorem of calculus/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Integrals/Fundamental theorem of calculus/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.svelte";

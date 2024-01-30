@@ -1,14 +1,15 @@
-import { c as create_ssr_component, h as compute_rest_props, i as get_current_component, q as setContext, t as onDestroy, b as spread, j as escape_attribute_value, d as escape_object, k as add_attribute, g as getContext, v as validate_component, r as missing_component, s as subscribe, e as escape, o as null_to_empty } from "../../../chunks/ssr.js";
+import { c as create_ssr_component, h as compute_rest_props, i as get_current_component, q as setContext, t as onDestroy, b as spread, j as escape_attribute_value, d as escape_object, k as add_attribute, g as getContext, v as validate_component, r as missing_component, s as subscribe, e as escape, p as null_to_empty } from "../../../chunks/ssr.js";
 import { MDCDismissibleDrawerFoundation, MDCModalDrawerFoundation } from "@material/drawer";
 import { f as forwardEventsBuilder, c as classMap, S as SmuiElement, a as classAdderBuilder, g as globals, C as Content$1 } from "../../../chunks/ActionIcons.js";
 import { MDCRippleFoundation, util } from "@material/ripple";
 import { events, ponyfill } from "@material/dom";
-import { T as Text, N as NavList } from "../../../chunks/NavList.js";
+import { T as Text } from "../../../chunks/NavList.svelte_svelte_type_style_lang.js";
 import "../../../chunks/client.js";
 import { p as page } from "../../../chunks/stores.js";
 import { n as navList, s as showRight, r as refreshApp, d as darkMode, T as TopBarHeight, a as showLeft, c as currentPath } from "../../../chunks/stores3.js";
 import { C as Card } from "../../../chunks/Card.js";
 /* empty css                                                 */
+import { N as NavList } from "../../../chunks/NavList.js";
 import { MDCTopAppBarBaseFoundation, MDCShortTopAppBarFoundation, MDCFixedTopAppBarFoundation, MDCTopAppBarFoundation } from "@material/top-app-bar";
 import { r as readable } from "../../../chunks/index2.js";
 import { MDCIconButtonToggleFoundation } from "@material/icon-button";

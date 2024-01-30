@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Application of derivatives/Increasing and decreasing functions/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Application of derivatives/Increasing and decreasing functions/+page.svelte";

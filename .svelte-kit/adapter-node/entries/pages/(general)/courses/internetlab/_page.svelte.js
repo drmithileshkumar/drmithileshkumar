@@ -1,4 +1,4 @@
-import { c as create_ssr_component, s as subscribe, l as set_store_value, v as validate_component } from "../../../../../chunks/ssr.js";
+import { c as create_ssr_component, s as subscribe, m as set_store_value, v as validate_component } from "../../../../../chunks/ssr.js";
 /* empty css                                                       */
 import "../../../../../chunks/client.js";
 import { C as Card } from "../../../../../chunks/Card.js";

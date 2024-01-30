@@ -87,15 +87,21 @@
     "src": "_Message.svelte_svelte_type_style_lang.js"
   },
   "_NavList.js": {
-    "css": [
-      "_app/immutable/assets/NavList.yy5IVOlJ.css"
-    ],
     "file": "chunks/NavList.js",
     "imports": [
       "_ssr.js",
-      "_ActionIcons.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
       "_client.js",
       "_stores3.js"
+    ]
+  },
+  "_NavList.svelte_svelte_type_style_lang.js": {
+    "css": [
+      "_app/immutable/assets/NavList.yy5IVOlJ.css"
+    ],
+    "file": "chunks/NavList.svelte_svelte_type_style_lang.js",
+    "imports": [
+      "_ActionIcons.js"
     ]
   },
   "_Papers.js": {
@@ -164,6 +170,9 @@
   },
   "_content.js": {
     "file": "chunks/content.js"
+  },
+  "_content2.js": {
+    "file": "chunks/content2.js"
   },
   "_exports.js": {
     "file": "chunks/exports.js"
@@ -389,11 +398,12 @@
     "imports": [
       "_ssr.js",
       "_ActionIcons.js",
-      "_NavList.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
       "_client.js",
       "_stores.js",
       "_stores3.js",
       "_Card.js",
+      "_NavList.js",
       "_index2.js",
       "_stores4.js"
     ],
@@ -462,6 +472,7 @@
     "file": "entries/pages/(general)/courses/internet/_page.svelte.js",
     "imports": [
       "_ssr.js",
+      "_content2.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -594,9 +605,19 @@
     "src": "src/routes/(general)/courses/internet/wwwhtml/+page.js"
   },
   "src/routes/(general)/courses/internet/wwwhtml/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.L5ue5hK9.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/_page.svelte.js",
     "imports": [
-      "_ssr.js"
+      "_ssr.js",
+      "_content2.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
+      "_stores3.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/+page.svelte"
@@ -607,12 +628,206 @@
     "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/+page.js"
   },
   "src/routes/(general)/courses/internet/wwwhtml/fundamentals/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.L5ue5hK9.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/_page.svelte.js",
     "imports": [
-      "_ssr.js"
+      "_ssr.js",
+      "_content2.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
+      "_stores3.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/+page.svelte"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/browsers/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/browsers/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/browsers/+page.js"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/browsers/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/browsers/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_content2.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
+      "_stores3.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/browsers/+page.svelte"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/http/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/http/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/http/+page.js"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/http/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/http/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_content2.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
+      "_stores3.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/http/+page.svelte"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/intro/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/intro/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/intro/+page.js"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/intro/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/intro/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_content2.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
+      "_stores3.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/intro/+page.svelte"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/mime/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/mime/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/mime/+page.js"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/mime/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/mime/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_content2.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
+      "_stores3.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/mime/+page.svelte"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/security/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/security/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/security/+page.js"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/security/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/security/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_content2.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
+      "_stores3.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/security/+page.svelte"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/servers/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/servers/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/servers/+page.js"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/servers/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/servers/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_content2.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
+      "_stores3.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/servers/+page.svelte"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/url/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/url/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/url/+page.js"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/url/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/url/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_content2.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
+      "_stores3.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/url/+page.svelte"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/www/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/www/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/www/+page.js"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/fundamentals/www/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/www/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_content2.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
+      "_stores3.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/www/+page.svelte"
   },
   "src/routes/(general)/courses/internet/wwwhtml/html/+page.js": {
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/_page.js",

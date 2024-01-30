@@ -1,31 +1,7 @@
-import { c as create_ssr_component, e as escape, k as add_attribute, p as each, v as validate_component } from "./ssr.js";
-import { a as classAdderBuilder } from "./ActionIcons.js";
+import { c as create_ssr_component, e as escape, k as add_attribute, l as each, v as validate_component } from "./ssr.js";
+import "./NavList.svelte_svelte_type_style_lang.js";
 import "./client.js";
 import "./stores3.js";
-const Text = classAdderBuilder({
-  class: "mdc-deprecated-list-item__text",
-  tag: "span"
-});
-classAdderBuilder({
-  class: "mdc-deprecated-list-item__primary-text",
-  tag: "span"
-});
-classAdderBuilder({
-  class: "mdc-deprecated-list-item__secondary-text",
-  tag: "span"
-});
-classAdderBuilder({
-  class: "mdc-deprecated-list-item__meta",
-  tag: "span"
-});
-classAdderBuilder({
-  class: "mdc-deprecated-list-group",
-  tag: "div"
-});
-classAdderBuilder({
-  class: "mdc-deprecated-list-group__subheader",
-  tag: "h3"
-});
 const css = {
   code: "button.svelte-meh56p{background:url(/tutorial/icons/folder.svg) 0 0.1em no-repeat;background-size:1em 1em;color:currentColor;font-weight:bold;cursor:pointer;border:none;margin:0 0 0 -0.4em}ul.svelte-meh56p{padding:0.2em 0 0 0.5em;margin:0 0 0 0.5em;list-style:none;border-left:1px solid rgba(128, 128, 128, 0.4)}li.svelte-meh56p{padding:0.2em 0}a.svelte-meh56p{text-decoration:none}",
   map: null
@@ -49,6 +25,5 @@ const NavList = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   })}</ul>` : ``}`;
 });
 export {
-  NavList as N,
-  Text as T
+  NavList as N
 };

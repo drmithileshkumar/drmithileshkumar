@@ -1,4 +1,4 @@
-import { c as create_ssr_component, h as compute_rest_props, s as subscribe, e as escape, o as null_to_empty } from "./ssr.js";
+import { c as create_ssr_component, h as compute_rest_props, s as subscribe, e as escape, p as null_to_empty } from "./ssr.js";
 import { p as presentationMode, c as currentSlide } from "./stores4.js";
 import "./Image.svelte_svelte_type_style_lang.js";
 const css = {

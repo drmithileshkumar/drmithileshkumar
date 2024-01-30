@@ -66,6 +66,38 @@
 		"src/routes/(general)/courses/internet/wwwhtml/fundamentals/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/wwwhtml/fundamentals/browsers": [
+		"src/routes/(general)/courses/internet/wwwhtml/fundamentals/browsers/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/fundamentals/http": [
+		"src/routes/(general)/courses/internet/wwwhtml/fundamentals/http/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/fundamentals/intro": [
+		"src/routes/(general)/courses/internet/wwwhtml/fundamentals/intro/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/fundamentals/mime": [
+		"src/routes/(general)/courses/internet/wwwhtml/fundamentals/mime/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/fundamentals/security": [
+		"src/routes/(general)/courses/internet/wwwhtml/fundamentals/security/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/fundamentals/servers": [
+		"src/routes/(general)/courses/internet/wwwhtml/fundamentals/servers/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/fundamentals/url": [
+		"src/routes/(general)/courses/internet/wwwhtml/fundamentals/url/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/fundamentals/www": [
+		"src/routes/(general)/courses/internet/wwwhtml/fundamentals/www/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/wwwhtml/html": [
 		"src/routes/(general)/courses/internet/wwwhtml/html/+page.js",
 		"src/routes/(general)/+layout.server.js"
