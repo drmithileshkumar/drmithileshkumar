@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Integrals/Fundamental theorem of calculus/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Determinants/Determinant/_page.js';
 
 export const index = 102;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Integrals/Fundamental theorem of calculus/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Determinants/Determinant/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Integrals/Fundamental theorem of calculus/+page.js";
-export const imports = ["_app/immutable/nodes/102.GJqWPuJd.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.YWuCqLZx.js","_app/immutable/chunks/index._dLxV_ys.js","_app/immutable/chunks/stores.J_TcoIh4.js","_app/immutable/chunks/index.20hFJ42h.js","_app/immutable/chunks/stores.2Lpm83O-.js","_app/immutable/chunks/entry.GwJ0dDFU.js"];
-export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
+export const universal_id = "src/routes/(general)/notes/maths/Determinants/Determinant/+page.js";
+export const imports = ["_app/immutable/nodes/102.ljBVFmVt.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.Wcy8l203.js","_app/immutable/chunks/index.3Wex8s3Q.js","_app/immutable/chunks/stores.Bs1j_UiF.js","_app/immutable/chunks/index.dpPe8Tdf.js","_app/immutable/chunks/stores.wRmUPyz9.js","_app/immutable/chunks/entry.JiEGjc9j.js"];
+export const stylesheets = ["_app/immutable/assets/102.RfrDpo0v.css","_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

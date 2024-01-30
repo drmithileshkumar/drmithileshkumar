@@ -151,7 +151,7 @@ export const contents = [
                     },
                     {
                         name: 'The <span> and <div> tags',
-                        url: '/courses/internet/css/levels'
+                        url: '/courses/internet/css/tags'
                     },
                     {
                         name: 'Conflict Resolution',

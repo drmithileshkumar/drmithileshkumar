@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/courses/mathematics2/statistics/measures/median/_page.js';
+import * as universal from '../entries/pages/(general)/courses/internetlab/_page.js';
 
 export const index = 43;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/mathematics2/statistics/measures/median/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/internetlab/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/courses/mathematics2/statistics/measures/median/+page.js";
-export const imports = ["_app/immutable/nodes/43.Q4zTDttr.js","_app/immutable/chunks/scheduler.YWuCqLZx.js","_app/immutable/chunks/index._dLxV_ys.js","_app/immutable/chunks/typeset.4oI2U5Tz.js","_app/immutable/chunks/Card.7pw2nmLE.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/ActionIcons.uva-frad.js","_app/immutable/chunks/stores.JeTdzoaZ.js","_app/immutable/chunks/index.20hFJ42h.js","_app/immutable/chunks/content.tycUVTYH.js"];
-export const stylesheets = ["_app/immutable/assets/41.QhXNCnV8.css"];
+export const universal_id = "src/routes/(general)/courses/internetlab/+page.js";
+export const imports = ["_app/immutable/nodes/43.3FEqaD0Y.js","_app/immutable/chunks/scheduler.Wcy8l203.js","_app/immutable/chunks/index.3Wex8s3Q.js","_app/immutable/chunks/entry.JiEGjc9j.js","_app/immutable/chunks/index.dpPe8Tdf.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/Card.lNB2ACDy.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/ActionIcons.LVYQUx0w.js","_app/immutable/chunks/NavList.tXmFNYam.js","_app/immutable/chunks/each.6w4Ej4nR.js","_app/immutable/chunks/stores.CggJ_r3Q.js"];
+export const stylesheets = ["_app/immutable/assets/44.hj3E2EKt.css","_app/immutable/assets/Link.mTa6ZPjX.css","_app/immutable/assets/NavList.yy5IVOlJ.css"];
 export const fonts = [];

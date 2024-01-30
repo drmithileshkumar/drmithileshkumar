@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/iit/maths/2021/question4/_page.js';
+import * as universal from '../entries/pages/(general)/courses/mathematics2/statistics/measures/mean/_page.js';
 
 export const index = 55;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/maths/2021/question4/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/mathematics2/statistics/measures/mean/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/iit/maths/2021/question4/+page.js";
-export const imports = ["_app/immutable/nodes/55.4FsYuxAu.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.YWuCqLZx.js","_app/immutable/chunks/index._dLxV_ys.js","_app/immutable/chunks/stores.J_TcoIh4.js","_app/immutable/chunks/index.20hFJ42h.js","_app/immutable/chunks/stores.2Lpm83O-.js","_app/immutable/chunks/entry.GwJ0dDFU.js","_app/immutable/chunks/index.JynCmtlF.js","_app/immutable/chunks/constants.1x7ZJ2_l.js"];
-export const stylesheets = ["_app/immutable/assets/55.X7O_bEA7.css"];
+export const universal_id = "src/routes/(general)/courses/mathematics2/statistics/measures/mean/+page.js";
+export const imports = ["_app/immutable/nodes/55.y-nbhor4.js","_app/immutable/chunks/scheduler.Wcy8l203.js","_app/immutable/chunks/index.3Wex8s3Q.js","_app/immutable/chunks/typeset.4oI2U5Tz.js","_app/immutable/chunks/Card.lNB2ACDy.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/ActionIcons.LVYQUx0w.js","_app/immutable/chunks/stores.CggJ_r3Q.js","_app/immutable/chunks/index.dpPe8Tdf.js","_app/immutable/chunks/content.tycUVTYH.js"];
+export const stylesheets = ["_app/immutable/assets/52.J1vT5W0f.css"];
 export const fonts = [];

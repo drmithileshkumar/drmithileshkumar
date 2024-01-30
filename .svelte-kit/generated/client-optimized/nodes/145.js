@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Sequences and series/Relationship between AM and GM/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Sequences and series/Relationship between AM and GM/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.svelte";

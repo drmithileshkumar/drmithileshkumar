@@ -22,6 +22,58 @@
 		"src/routes/(general)/courses/internet/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/css": [
+		"src/routes/(general)/courses/internet/css/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/javascript": [
+		"src/routes/(general)/courses/internet/javascript/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/javascript/asynchronous": [
+		"src/routes/(general)/courses/internet/javascript/asynchronous/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/javascript/basics": [
+		"src/routes/(general)/courses/internet/javascript/basics/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/javascript/dynamic": [
+		"src/routes/(general)/courses/internet/javascript/dynamic/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/javascript/fetchapi": [
+		"src/routes/(general)/courses/internet/javascript/fetchapi/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/javascript/html": [
+		"src/routes/(general)/courses/internet/javascript/html/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/javascript/http": [
+		"src/routes/(general)/courses/internet/javascript/http/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/nodejs": [
+		"src/routes/(general)/courses/internet/nodejs/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml": [
+		"src/routes/(general)/courses/internet/wwwhtml/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/fundamentals": [
+		"src/routes/(general)/courses/internet/wwwhtml/fundamentals/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/html": [
+		"src/routes/(general)/courses/internet/wwwhtml/html/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/xml": [
+		"src/routes/(general)/courses/internet/xml/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/mathematics2": [
 		"src/routes/(general)/courses/mathematics2/+page.js",
 		"src/routes/(general)/+layout.server.js"

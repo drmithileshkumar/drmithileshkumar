@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Relations and functions 11/Functions/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Matrices/Symmetric and skew symmetric matrices/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Relations and functions 11/Functions/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Matrices/Symmetric and skew symmetric matrices/+page.svelte";
