@@ -53,30 +53,65 @@
     <h3>Least Squares Method</h3>
     <Card>
         <Content>
-            <div class="question">What is the least squares method? How is it used to fit lines of regression?</div>
-            <div class="solution" use:typeset>
-                <p>The Least Squares Method is a mathematical technique used in regression analysis to determine the parameters of a regression model that best fits the observed data. It is commonly employed to find the coefficients of the regression lines, such as the line of regression of Y on X or X on Y. The key aspects of the Least Squares Method in the context of fitting lines of regression include:</p>
+            <h6>What is the least squares method?</h6>
+            <div use:typeset>
+                <p>
+                    Given data points \((x_i, y_i)\) for variable \(X\) and \(Y\), suppose there is a model that for each input \(x_i\) predicts the value of \(Y\) to be \(f(x_i, \beta)\) for some function \(f\) and parameters \(\beta\), then the least squares method is used to determine the parameters \(\beta\) by minimizing the sum {`\\[S = \\sum_{i=1}^n (y_i - f(x_i, \\beta))^2\\]`} Notice that \(\beta\) can be more than one parameter.
+                </p>
+                <p>
+                    The above sum's minima is obtained by differentiating \(S\) with respect to parameters \(\beta\) to get a set of equations that can be solved to fix the parameters. As an example, we'll use this method in the case of linear regression.
+                </p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>The least squares method in linear regression</h6>
+            <div use:typeset>
+                <p>
+                    In the case of fitting a regression line, such as {`\\( Y = a + bX \\)`}, the method aims to find the values of {`\\( a \\)`} and {`\\( b \\)`} that minimize the sum of squared residuals, denoted as {`\\( S \\)`}:
+                    {`\\[ S = \\sum_{i=1}^{n} (y_i - (a + bx_i))^2 \\]`}
+                    Here, in the equation:
+                </p>
                 <ul>
-                    <li><p><strong>Objective:</strong> The primary goal of the Least Squares Method is to minimize the sum of the squared differences (residuals) between the observed data points and the predicted values from the regression line.</p></li>
-                    <li><p><strong>Mathematical Formula:</strong> In the case of fitting a regression line, such as {`\\( Y = a + bX \\)`}, the method aims to find the values of {`\\( a \\)`} and {`\\( b \\)`} that minimize the sum of squared residuals, denoted as {`\\( S \\)`}:</p>
-                        <p>{`\\[ S = \\sum_{i=1}^{n} (Y_i - (a + bX_i))^2 \\]`}</p>
-                        <p>Here, in the equation:</p>
-                        <ul>
-                            <li><p>{`\\( n \\)`} represents the number of data points.</p></li>
-                            <li><p>{`\\( (X_i, Y_i) \\)`} represents each observed data point.</p></li>
-                            <li><p>{`\\( a \\)`} and {`\\( b \\)`} are the coefficients (intercept and slope) of the regression line being fitted.</p></li>
-                            <li><p>{`\\( (Y_i - (a + bX_i)) \\)`} represents the residual (the difference between the observed {`\\( Y_i \\)`} and the predicted {`\\( a + bX_i \\)`} value).</p></li>
-                        </ul>
-                    </li>
+                    <li><p>{`\\( n \\)`} represents the number of data points.</p></li>
+                    <li><p>{`\\( (x_i, y_i) \\)`} represents each observed data point.</p></li>
+                    <li><p>{`\\( a \\)`} and {`\\( b \\)`} are the coefficients (intercept and slope) of the regression line being fitted.</p></li>
+                    <li><p>{`\\( (y_i - (a + bx_i)) \\)`} represents the residual (the difference between the observed {`\\( y_i \\)`} and the predicted {`\\( a + bx_i \\)`} value).</p></li>
                 </ul>
+                <p>
+                    Differentiating \(S\) with respect to \(a\) and \(b\), we get 
+                    {`\\[
+                        \\begin{aligned}
+                        \\frac{\\delta S}{\\delta a} &= -2\\sum (y_i - (a + bx_i)) \\\\
+                                                     &= -2n[\\overline{Y} -a - b\\overline{X}]\\\\
+                        \\frac{\\delta S}{\\delta b} &= -2\\sum x_i(y_i - (a + bx_i))\\\\
+                                                     &= -2[\\sum x_iy_i - na\\overline{X} - b\\sum x_i^2]
+                        \\end{aligned}
+                        \\]`}
+                </p>
+                <p>
+                    For minima, the above derivatives are set to zero.
+                    {`\\[
+                        \\begin{aligned}
+                        \\overline{Y} -a - b\\overline{X} &= 0\\\\
+                        \\implies a &= \\overline{Y} - b\\overline{X}\\\\
+                        \\sum x_iy_i -na\\overline{X} - b\\sum x_i^2 &= 0\\\\
+                        \\sum x_i y_i -n\\overline{XY} + nb\\overline{X}^2 - b\\sum x_i^2 &= 0
+                        
+                        \\end{aligned}
+                        \\]
+                    `}
+                    After simplification, we get
+                    {`\\[
+                        \\begin{aligned}
+                        b &= \\frac{\\sum x_i y_i - n\\overline{XY}}{\\sum x_i^2 - n\\overline{X}^2}\\\\
+                        \\implies b &= \\frac{\\sum (x_i - \\overline{X})(y_i - \\overline{Y})}{\\sum (x_i - \\overline{X})^2}
+                        \\end{aligned}
+                        \\]`}
+                </p>
                 
                 <p>The Least Squares Method calculates {`\\( a \\)`} and {`\\( b \\)`} values that minimize {`\\( S \\)`}, making the fitted regression line the "best fit" to the data.</p>
-                <ul>
-                    <li><p><strong>Applications:</strong> The Least Squares Method is widely used in regression analysis, including linear regression, to estimate the coefficients that describe the relationship between variables. It is also applicable to other regression models beyond simple linear regression.</p></li>
-                    <li><p><strong>Goodness of Fit:</strong> The method provides a measure of goodness of fit, indicating how well the regression line approximates the observed data points. A smaller sum of squared residuals indicates a better fit.</p></li>
-                </ul>
-                <p>In summary, the Least Squares Method is a fundamental technique in regression analysis that aims to find the coefficients of a regression line that minimizes the sum of squared differences between observed and predicted values, providing an optimal fit to the data.</p>
-
             </div>
         </Content>
     </Card>

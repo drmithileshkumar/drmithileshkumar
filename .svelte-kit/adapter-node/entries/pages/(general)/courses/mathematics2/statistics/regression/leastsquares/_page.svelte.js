@@ -4,7 +4,7 @@ import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores3.js";
 import { c as contents } from "../../../../../../../../chunks/content.js";
 const css = {
-  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}p.svelte-n59hwk,li.svelte-n59hwk{opacity:0.8}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}strong.svelte-n59hwk{color:goldenrod;opacity:1}.question.svelte-n59hwk{cursor:pointer;padding:0.3em}",
+  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}p.svelte-n59hwk,li.svelte-n59hwk{opacity:0.8}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}h6.svelte-n59hwk{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -25,7 +25,42 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-n59hwk" data-svelte-h="svelte-1vxquxh">What is the least squares method? How is it used to fit lines of regression?</div> <div class="solution"><p class="svelte-n59hwk" data-svelte-h="svelte-1xmticg">The Least Squares Method is a mathematical technique used in regression analysis to determine the parameters of a regression model that best fits the observed data. It is commonly employed to find the coefficients of the regression lines, such as the line of regression of Y on X or X on Y. The key aspects of the Least Squares Method in the context of fitting lines of regression include:</p> <ul><li class="svelte-n59hwk" data-svelte-h="svelte-11kbqtw"><p class="svelte-n59hwk"><strong class="svelte-n59hwk">Objective:</strong> The primary goal of the Least Squares Method is to minimize the sum of the squared differences (residuals) between the observed data points and the predicted values from the regression line.</p></li> <li class="svelte-n59hwk"><p class="svelte-n59hwk"><strong class="svelte-n59hwk" data-svelte-h="svelte-jk43k2">Mathematical Formula:</strong> In the case of fitting a regression line, such as ${escape(`\\( Y = a + bX \\)`)}, the method aims to find the values of ${escape(`\\( a \\)`)} and ${escape(`\\( b \\)`)} that minimize the sum of squared residuals, denoted as ${escape(`\\( S \\)`)}:</p> <p class="svelte-n59hwk">${escape(`\\[ S = \\sum_{i=1}^{n} (Y_i - (a + bX_i))^2 \\]`)}</p> <p class="svelte-n59hwk" data-svelte-h="svelte-1px7nsi">Here, in the equation:</p> <ul><li class="svelte-n59hwk"><p class="svelte-n59hwk">${escape(`\\( n \\)`)} represents the number of data points.</p></li> <li class="svelte-n59hwk"><p class="svelte-n59hwk">${escape(`\\( (X_i, Y_i) \\)`)} represents each observed data point.</p></li> <li class="svelte-n59hwk"><p class="svelte-n59hwk">${escape(`\\( a \\)`)} and ${escape(`\\( b \\)`)} are the coefficients (intercept and slope) of the regression line being fitted.</p></li> <li class="svelte-n59hwk"><p class="svelte-n59hwk">${escape(`\\( (Y_i - (a + bX_i)) \\)`)} represents the residual (the difference between the observed ${escape(`\\( Y_i \\)`)} and the predicted ${escape(`\\( a + bX_i \\)`)} value).</p></li></ul></li></ul> <p class="svelte-n59hwk">The Least Squares Method calculates ${escape(`\\( a \\)`)} and ${escape(`\\( b \\)`)} values that minimize ${escape(`\\( S \\)`)}, making the fitted regression line the &quot;best fit&quot; to the data.</p> <ul data-svelte-h="svelte-1ct33r5"><li class="svelte-n59hwk"><p class="svelte-n59hwk"><strong class="svelte-n59hwk">Applications:</strong> The Least Squares Method is widely used in regression analysis, including linear regression, to estimate the coefficients that describe the relationship between variables. It is also applicable to other regression models beyond simple linear regression.</p></li> <li class="svelte-n59hwk"><p class="svelte-n59hwk"><strong class="svelte-n59hwk">Goodness of Fit:</strong> The method provides a measure of goodness of fit, indicating how well the regression line approximates the observed data points. A smaller sum of squared residuals indicates a better fit.</p></li></ul> <p class="svelte-n59hwk" data-svelte-h="svelte-iyfm86">In summary, the Least Squares Method is a fundamental technique in regression analysis that aims to find the coefficients of a regression line that minimizes the sum of squared differences between observed and predicted values, providing an optimal fit to the data.</p></div>`;
+          return `<h6 class="svelte-n59hwk" data-svelte-h="svelte-1j613xs">What is the least squares method?</h6> <div><p class="svelte-n59hwk">Given data points \\((x_i, y_i)\\) for variable \\(X\\) and \\(Y\\), suppose there is a model that for each input \\(x_i\\) predicts the value of \\(Y\\) to be \\(f(x_i, \\beta)\\) for some function \\(f\\) and parameters \\(\\beta\\), then the least squares method is used to determine the parameters \\(\\beta\\) by minimizing the sum ${escape(`\\[S = \\sum_{i=1}^n (y_i - f(x_i, \\beta))^2\\]`)} Notice that \\(\\beta\\) can be more than one parameter.</p> <p class="svelte-n59hwk" data-svelte-h="svelte-14jk5r1">The above sum&#39;s minima is obtained by differentiating \\(S\\) with respect to parameters \\(\\beta\\) to get a set of equations that can be solved to fix the parameters. As an example, we&#39;ll use this method in the case of linear regression.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<h6 class="svelte-n59hwk" data-svelte-h="svelte-n7lu52">The least squares method in linear regression</h6> <div><p class="svelte-n59hwk">In the case of fitting a regression line, such as ${escape(`\\( Y = a + bX \\)`)}, the method aims to find the values of ${escape(`\\( a \\)`)} and ${escape(`\\( b \\)`)} that minimize the sum of squared residuals, denoted as ${escape(`\\( S \\)`)}:
+                    ${escape(`\\[ S = \\sum_{i=1}^{n} (y_i - (a + bx_i))^2 \\]`)}
+                    Here, in the equation:</p> <ul><li class="svelte-n59hwk"><p class="svelte-n59hwk">${escape(`\\( n \\)`)} represents the number of data points.</p></li> <li class="svelte-n59hwk"><p class="svelte-n59hwk">${escape(`\\( (x_i, y_i) \\)`)} represents each observed data point.</p></li> <li class="svelte-n59hwk"><p class="svelte-n59hwk">${escape(`\\( a \\)`)} and ${escape(`\\( b \\)`)} are the coefficients (intercept and slope) of the regression line being fitted.</p></li> <li class="svelte-n59hwk"><p class="svelte-n59hwk">${escape(`\\( (y_i - (a + bx_i)) \\)`)} represents the residual (the difference between the observed ${escape(`\\( y_i \\)`)} and the predicted ${escape(`\\( a + bx_i \\)`)} value).</p></li></ul> <p class="svelte-n59hwk">Differentiating \\(S\\) with respect to \\(a\\) and \\(b\\), we get 
+                    ${escape(`\\[
+                        \\begin{aligned}
+                        \\frac{\\delta S}{\\delta a} &= -2\\sum (y_i - (a + bx_i)) \\\\
+                                                     &= -2n[\\overline{Y} -a - b\\overline{X}]\\\\
+                        \\frac{\\delta S}{\\delta b} &= -2\\sum x_i(y_i - (a + bx_i))\\\\
+                                                     &= -2[\\sum x_iy_i - na\\overline{X} - b\\sum x_i^2]
+                        \\end{aligned}
+                        \\]`)}</p> <p class="svelte-n59hwk">For minima, the above derivatives are set to zero.
+                    ${escape(`\\[
+                        \\begin{aligned}
+                        \\overline{Y} -a - b\\overline{X} &= 0\\\\
+                        \\implies a &= \\overline{Y} - b\\overline{X}\\\\
+                        \\sum x_iy_i -na\\overline{X} - b\\sum x_i^2 &= 0\\\\
+                        \\sum x_i y_i -n\\overline{XY} + nb\\overline{X}^2 - b\\sum x_i^2 &= 0
+                        
+                        \\end{aligned}
+                        \\]
+                    `)}
+                    After simplification, we get
+                    ${escape(`\\[
+                        \\begin{aligned}
+                        b &= \\frac{\\sum x_i y_i - n\\overline{XY}}{\\sum x_i^2 - n\\overline{X}^2}\\\\
+                        \\implies b &= \\frac{\\sum (x_i - \\overline{X})(y_i - \\overline{Y})}{\\sum (x_i - \\overline{X})^2}
+                        \\end{aligned}
+                        \\]`)}</p> <p class="svelte-n59hwk">The Least Squares Method calculates ${escape(`\\( a \\)`)} and ${escape(`\\( b \\)`)} values that minimize ${escape(`\\( S \\)`)}, making the fitted regression line the &quot;best fit&quot; to the data.</p></div>`;
         }
       })}`;
     }
