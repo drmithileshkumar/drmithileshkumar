@@ -77,13 +77,19 @@
         <Content>
             <h6>Origins</h6>
             <p>
-                
+                The World Wide Web is a system of protocols and softwares that enable communication between devices over the Internet. It was proposed in 1989 by a group led by Tim Berners-Lee at CERN. In short, it is also known as the Web. The Web started with the protocal HTTP with document types HTML. Later other protocols and document types were supported.
             </p>
         </Content>
     </Card>
     <Card>
         <Content>
             <h6>Web or Internet?</h6>
+            <p>
+                The Internet is a collection of computers and other devices connected by equipment that allows them to communicate with each other.
+            </p>
+            <p>
+                The Web is a collection of software and protocols that has been installed on most of the computers on the Internet.
+            </p>
         </Content>
     </Card>
 </article>

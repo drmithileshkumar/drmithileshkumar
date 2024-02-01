@@ -28,7 +28,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-n59hwk" data-svelte-h="svelte-zfzmcz">Origins</h6> <p class="svelte-n59hwk" data-svelte-h="svelte-9to4fk"></p>`;
+          return `<h6 class="svelte-n59hwk" data-svelte-h="svelte-zfzmcz">Origins</h6> <p class="svelte-n59hwk" data-svelte-h="svelte-6tg2me">The World Wide Web is a system of protocols and softwares that enable communication between devices over the Internet. It was proposed in 1989 by a group led by Tim Berners-Lee at CERN. In short, it is also known as the Web. The Web started with the protocal HTTP with document types HTML. Later other protocols and document types were supported.</p>`;
         }
       })}`;
     }
@@ -36,7 +36,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-n59hwk" data-svelte-h="svelte-sz464z">Web or Internet?</h6>`;
+          return `<h6 class="svelte-n59hwk" data-svelte-h="svelte-sz464z">Web or Internet?</h6> <p class="svelte-n59hwk" data-svelte-h="svelte-1fq4nj2">The Internet is a collection of computers and other devices connected by equipment that allows them to communicate with each other.</p> <p class="svelte-n59hwk" data-svelte-h="svelte-103uzuu">The Web is a collection of software and protocols that has been installed on most of the computers on the Internet.</p>`;
         }
       })}`;
     }
