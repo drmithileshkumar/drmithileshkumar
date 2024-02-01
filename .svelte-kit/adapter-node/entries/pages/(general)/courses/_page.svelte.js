@@ -24,7 +24,51 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `Internet Technologies Lab`;
     }
-  })} <br></article>`;
+  })} <br> <h3 data-svelte-h="svelte-i0dsms">Quantum Computation</h3> ${validate_component(Link, "Link").$$render($$result, { href: `/courses/linearalgebra` }, {}, {
+    default: () => {
+      return `Linear Algebra`;
+    }
+  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/quantummechanics` }, {}, {
+    default: () => {
+      return `Quantum Mechanics`;
+    }
+  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/circuits` }, {}, {
+    default: () => {
+      return `Quantum Circuits`;
+    }
+  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/quantumalgorithms` }, {}, {
+    default: () => {
+      return `Quantum Algorithms`;
+    }
+  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/quantumcomputers` }, {}, {
+    default: () => {
+      return `Quantum Computers`;
+    }
+  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/quantuminformation1` }, {}, {
+    default: () => {
+      return `Quantum Information 1`;
+    }
+  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/qec` }, {}, {
+    default: () => {
+      return `Quantum Error Correction`;
+    }
+  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/quantuminformation2` }, {}, {
+    default: () => {
+      return `Quantum Information 2`;
+    }
+  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/quantumcryptography` }, {}, {
+    default: () => {
+      return `Quantum Cryptography`;
+    }
+  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/quantumcommunication` }, {}, {
+    default: () => {
+      return `Quantum Communication`;
+    }
+  })} ${validate_component(Link, "Link").$$render($$result, { href: `/courses/quantumml` }, {}, {
+    default: () => {
+      return `Quantum Machine Learning`;
+    }
+  })}</article>`;
 });
 export {
   Page as default

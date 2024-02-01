@@ -14,6 +14,10 @@
 		"src/routes/(general)/courses/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/circuits": [
+		"src/routes/(general)/courses/circuits/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internetlab": [
 		"src/routes/(general)/courses/internetlab/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -106,6 +110,10 @@
 		"src/routes/(general)/courses/internet/xml/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/linearalgebra": [
+		"src/routes/(general)/courses/linearalgebra/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/mathematics2": [
 		"src/routes/(general)/courses/mathematics2/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -176,6 +184,42 @@
 	],
 	"/(general)/courses/mathematics2/statistics/regression/regressionlines": [
 		"src/routes/(general)/courses/mathematics2/statistics/regression/regressionlines/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/qec": [
+		"src/routes/(general)/courses/qec/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantumalgorithms": [
+		"src/routes/(general)/courses/quantumalgorithms/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantumcommunication": [
+		"src/routes/(general)/courses/quantumcommunication/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantumcomputers": [
+		"src/routes/(general)/courses/quantumcomputers/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantumcryptography": [
+		"src/routes/(general)/courses/quantumcryptography/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantuminformation1": [
+		"src/routes/(general)/courses/quantuminformation1/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantuminformation2": [
+		"src/routes/(general)/courses/quantuminformation2/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantummechanics": [
+		"src/routes/(general)/courses/quantummechanics/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantumml": [
+		"src/routes/(general)/courses/quantumml/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(cv)/cv": [

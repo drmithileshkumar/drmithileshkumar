@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/iit/maths/2021/question2/_page.js';
+import * as universal from '../entries/pages/(general)/courses/quantumcommunication/_page.js';
 
 export const index = 74;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/maths/2021/question2/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/quantumcommunication/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/iit/maths/2021/question2/+page.js";
-export const imports = ["_app/immutable/nodes/74.N6tuwQV8.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler._OuDP6UF.js","_app/immutable/chunks/index.69cNLXHD.js","_app/immutable/chunks/stores.lN3I2KMI.js","_app/immutable/chunks/index.ymjMDM6_.js","_app/immutable/chunks/stores.Fwii--6K.js","_app/immutable/chunks/entry.i_tqfJ-d.js","_app/immutable/chunks/index.sBc_q6PL.js","_app/immutable/chunks/constants.1x7ZJ2_l.js"];
-export const stylesheets = ["_app/immutable/assets/74.gD7FQWmo.css"];
+export const universal_id = "src/routes/(general)/courses/quantumcommunication/+page.js";
+export const imports = ["_app/immutable/nodes/74._58J-Vaq.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler._OuDP6UF.js","_app/immutable/chunks/index.69cNLXHD.js","_app/immutable/chunks/entry.wTYUc-WC.js","_app/immutable/chunks/index.ymjMDM6_.js","_app/immutable/chunks/Card.n05XP32M.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/ActionIcons.S991rHMd.js","_app/immutable/chunks/NavList.nTvfcyYj.js","_app/immutable/chunks/each.6w4Ej4nR.js","_app/immutable/chunks/NavList.svelte_svelte_type_style_lang.yn8r1B33.js","_app/immutable/chunks/stores.KcX466m2.js"];
+export const stylesheets = ["_app/immutable/assets/30.hj3E2EKt.css","_app/immutable/assets/Link.mTa6ZPjX.css","_app/immutable/assets/NavList.yy5IVOlJ.css"];
 export const fonts = [];
