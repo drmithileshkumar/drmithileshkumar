@@ -45,7 +45,7 @@
     h6 {
         font-size: 1em;
         margin: 0.5em 0;
-        color: rgba(0, 150, 200, 1);
+        color: rgb(240, 85, 0);
     }
     strong {
         color: goldenrod;
@@ -75,18 +75,79 @@
     </h2>
     <Card>
         <Content>
+            <p>
+                Uniform (or universal) Resource Identifiers (URIs) are used to identify resources on the Internet. URIs are used for two different purposes:
+            </p>
+            <ol>
+                <li>
+                    To name a resource (For example, namespaces in XML)
+                </li>
+                <li>
+                    To provide a path to, or location of, a resource (Uniform Resource Locators (URL))
+                </li>
+            </ol>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
             <h6>URL Formats</h6>
             <p>
-                
+                All URLs have the same general format:
             </p>
+            <Highlight language={xml} code={`scheme:object-address`} let:highlighted>
+                <LineNumbers {highlighted} wrapLines/>
+            </Highlight>
+            <p>
+                The <code>scheme</code> is often a communications protocol. Some examples are:
+            </p>
+            <Highlight 
+            language={xml} 
+            code={`http://drmithileshkumar.com/favicon.png
+file://desktop/myfile.txt
+ftp://sales@host/c:/forms/myfile.txt`} 
+            let:highlighted>
+                <LineNumbers {highlighted} wrapLines/>
+            </Highlight>
+            <p>
+                The <strong>host name</strong> is the name of the server computer that stores the document. Messages to a host machine must be directed to the appropriate process running on the host for handling. Such processes are identified by their associated port numbers. The default port number of Web server processes is 80. For example:
+            </p>
+            <Highlight 
+            language={xml} 
+            code={`http://drmithileshkumar.com:1234/favicon.png`} 
+            let:highlighted>
+                <LineNumbers {highlighted} wrapLines/>
+            </Highlight>
+            in case <code>drmithileshkumar.com</code> is configured to listen on port 1234.
         </Content>
     </Card>
     <Card>
         <Content>
             <h6>URL Paths</h6>
             <p>
-                
+                The path to the document for the HTTP protocol is similar to a path to a file or directory in the file system of an operating system and is given by a sequence of directory names and a file name, all separated by \ (on windows) or / (on unix).
             </p>
+            <Highlight 
+            language={xml} 
+            code={`http://drmithileshkumar.com:1234/courses/internet/wwwhtml/foundamentals/url`} 
+            let:highlighted>
+                <LineNumbers {highlighted} wrapLines/>
+            </Highlight>
+            <p>
+                The path in a URL can differ from a path to a file because a URL need not include all directories on the path.
+            </p>
+            <p>
+                <strong>Complete path</strong>: A path that includes all directories along the way is called a complete path.
+            </p>
+            <p>
+                <strong>Partial paths</strong>: In most cases, the path to the document is relative to some base path that is specified in the configuration files of the server. Such paths are called partial paths. For example, if the server's configuration specifies that the root directory for files it can serve is <code>courses/internet</code>, the previous URL is specified as follows: 
+            </p>
+            <Highlight 
+            language={xml} 
+            code={`http://drmithileshkumar.com:1234/wwwhtml/foundamentals/url`} 
+            let:highlighted>
+                <LineNumbers {highlighted} wrapLines/>
+            </Highlight>
+            
         </Content>
     </Card>
 </article>

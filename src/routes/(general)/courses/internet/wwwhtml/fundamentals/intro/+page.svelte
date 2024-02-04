@@ -45,7 +45,7 @@
     h6 {
         font-size: 1em;
         margin: 0.5em 0;
-        color: rgba(0, 150, 200, 1);
+        color: rgb(240, 85, 0);
     }
     strong {
         color: goldenrod;
@@ -70,9 +70,9 @@
     {/if}
 </svelte:head>
 <article>
-    <h2>
+    <h4>
         The Internet
-    </h2>
+    </h4>
     <Card>
         <Content>
             <h6>Origins</h6>
@@ -102,15 +102,48 @@
                 The IP address of google is 8.8.8.8
             </p>
             <p use:typeset>
-                Total number of unique IP addresses that can be assigned is {`\\(2^{32} = 4294967296\\)`} which is approximately 4.2 billion. Due to being 32 bits in size, IPv4 allows for approximately 4.3 billion unique addresses. With the growth of the internet and the increasing number of devices online, this has led to a shortage of available IPv4 addresses.
+                Total number of unique IP addresses that can be assigned is {`\\(2^{32} = 4294967296\\)`} which is approximately 4.3 billion. Due to being 32 bits in size, IPv4 allows for approximately 4.3 billion unique addresses. With the growth of the internet and the increasing number of devices online, this has led to a shortage of available IPv4 addresses.
             </p>
         </Content>
     </Card>
     <Card>
         <Content>
             <h6>Domain Names</h6>
-            <p>Domain names are human-readable addresses used to access websites on the internet, serving as a memorable and intuitive alternative to numerical IP addresses. The Domain Name System (DNS) translates these domain names into IP addresses that computers use to locate and communicate with each other on the internet.</p>
-
+            <p>
+                IP addresses have some drawbacks.
+            </p>
+            <ol>
+                <li>They are hard to remember.</li>
+                <li>IP address of a device can be changed by the internet service provider.</li>
+            </ol>
+            <p>
+                Domain names are human-readable addresses used to access websites on the internet, serving as a memorable and intuitive alternative to numerical IP addresses. The Domain Name System (DNS) translates these domain names into IP addresses that computers use to locate and communicate with each other on the internet.
+            </p>
+            <p>
+                As we know <code>8.8.8.8</code> is reserved as IP address of <code>google.com</code>. But it is possible for Google to change its IP address to something else. Still the website <code>google.com</code> will continue to function (after appropriate configurations by Google).
+            </p>
+            <h6>Domain Name to IP address conversion</h6>
+            <p class="question">
+                How does <code>google.com</code> gets converted to <code>8.8.8.8</code>?
+            </p>
+            <div class="solution">
+                <p>
+                    As we know computers can only <em>see</em> numbers. There must be some mechanism that converts the domain name to IP address. This mechanism is called <strong>DNS Lookup</strong>. The image below shows how does it work.
+                </p>
+                <img width="100%" src="/courses/internet/wwwhtml/fundamentals/intro/dns.png">
+                <ol>
+                    <li><strong>Browser Cache Lookup:</strong> The browser checks its cache to see if the domain's IP address is already stored. If found, the DNS lookup process ends here.</li>
+                    <li><strong>OS Cache Lookup:</strong> If the IP address is not in the browser cache, the operating system's DNS cache is checked next.</li>
+                    <li><strong>Router Cache Lookup:</strong> If the IP address is not found in the OS cache, the search moves to the router, which typically maintains its own DNS cache.</li>
+                    <li><strong>ISP DNS Cache Lookup:</strong> If the router does not have the IP address cached, the request is forwarded to the Internet Service Provider's (ISP) DNS server.</li>
+                    <li><strong>Root Name Server Query:</strong> If the ISP's DNS server does not have the information, it queries a root name server, which responds with the address of a Top-Level Domain (TLD) server (e.g., .com, .net) that holds information for the domain's zone.</li>
+                    <li><strong>TLD Server Query:</strong> The ISP's DNS server then queries the TLD server, which responds with the IP address of the domain's authoritative name server.</li>
+                    <li><strong>Authoritative Name Server Query:</strong> Finally, the ISP's DNS server queries the domain's authoritative name server, which responds with the IP address of the requested domain.</li>
+                    <li><strong>Caching the Response:</strong> The resolved IP address is sent back through the chain to the original requester. Each server along the path can cache the DNS record to speed up future requests.</li>
+                    <li><strong>Browser Receives IP Address:</strong> The browser receives the IP address for the domain and can now initiate a connection to the web server hosting the website.</li>
+                  </ol>
+                  
+            </div>
             <h6>Structure of Domain Names</h6>
             <ul>
                 <li><strong>Top-Level Domain (TLD)</strong>: The last segment of the domain name, located after the last dot. Examples include .com, .org, .net, and country-specific TLDs like .uk, .ca.</li>
@@ -137,7 +170,7 @@
                 <li><strong>DNS Lookup</strong>: The process of finding the corresponding IP address for a domain name through querying DNS servers.</li>
                 <li><strong>Caching</strong>: DNS lookups are often cached by various components of the internet infrastructure to improve efficiency.</li>
             </ul>
-
+            
         </Content>
     </Card>
 </article>

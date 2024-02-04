@@ -45,7 +45,7 @@
     h6 {
         font-size: 1em;
         margin: 0.5em 0;
-        color: rgba(0, 150, 200, 1);
+        color: rgb(240, 85, 0);
     }
     strong {
         color: goldenrod;
@@ -70,23 +70,44 @@
     {/if}
 </svelte:head>
 <article>
-    <h2>
+    <h4>
         Multipurpose Internet Mail Extensions
-    </h2>
+    </h4>
+    <Card>
+        <Content>
+            <p>A browser needs some way to determine the format of a document it receives from a Web server. Without knowing the form of the document, the browser would not be able to render it, because different document formats require dif- ferent rendering software. The forms of these documents are specified with Multipurpose Internet Mail Extensions (MIMEs).
+            </p>
+        </Content>
+    </Card>
     <Card>
         <Content>
             <h6>Type Specifications</h6>
             <p>
-                
+                The various types of mimes are:
             </p>
+            <ul>
+                <li><strong>text/plain</strong>: Plain text files</li>
+                <li><strong>text/html</strong>: HTML documents</li>
+                <li><strong>text/css</strong>: Cascading Style Sheets</li>
+                <li><strong>text/javascript</strong>: JavaScript files</li>
+                <li><strong>image/jpeg</strong>: JPEG images</li>
+                <li><strong>image/png</strong>: PNG images</li>
+                <li><strong>image/gif</strong>: GIF images</li>
+                <li><strong>image/svg+xml</strong>: SVG (Scalable Vector Graphics) documents</li>
+                <li><strong>application/json</strong>: JSON data format</li>
+                <li><strong>application/xml</strong>: XML data format</li>
+                <li><strong>application/x-www-form-urlencoded</strong>: Form data encoded as a query string, typically used in POST requests</li>
+                <li><strong>application/pdf</strong>: PDF documents</li>
+                <li><strong>application/msword</strong>: Microsoft Word documents</li>
+                <li><strong>application/vnd.ms-excel</strong>: Microsoft Excel documents</li>
+                <li><strong>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</strong>: Microsoft Excel OpenXML spreadsheet</li>
+                <li><strong>application/vnd.openxmlformats-officedocument.wordprocessingml.document</strong>: Microsoft Word OpenXML document</li>
+                <li><strong>application/zip</strong>: ZIP archives</li>
+                <li><strong>application/x-7z-compressed</strong>: 7z archives</li>
+                <li><strong>application/octet-stream</strong>: Arbitrary binary data</li>
+              </ul>
+              
         </Content>
     </Card>
-    <Card>
-        <Content>
-            <h6>Experimental Document Types</h6>
-            <p>
-                
-            </p>
-        </Content>
-    </Card>
+
 </article>

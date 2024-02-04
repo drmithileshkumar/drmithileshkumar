@@ -7,7 +7,7 @@ import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
 import "../../../../../../../../chunks/NavList.svelte_svelte_type_style_lang.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores3.js";
 const css = {
-  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}p.svelte-n59hwk{opacity:0.8}h2.svelte-n59hwk{margin:0.5em 0}h6.svelte-n59hwk{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}",
+  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5{opacity:0.8}h2.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -24,11 +24,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
-  return `${$$result.head += `<!-- HEAD_svelte-10fkuro_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/fundamentals/www"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-10fkuro_END -->`, ""} <article class="svelte-n59hwk"><h2 class="svelte-n59hwk" data-svelte-h="svelte-1r51av2">The World Wide Web</h2> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  return `${$$result.head += `<!-- HEAD_svelte-10fkuro_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/fundamentals/www"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-10fkuro_END -->`, ""} <article class="svelte-9tb2l5"><h2 class="svelte-9tb2l5" data-svelte-h="svelte-1r51av2">The World Wide Web</h2> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-n59hwk" data-svelte-h="svelte-zfzmcz">Origins</h6> <p class="svelte-n59hwk" data-svelte-h="svelte-6tg2me">The World Wide Web is a system of protocols and softwares that enable communication between devices over the Internet. It was proposed in 1989 by a group led by Tim Berners-Lee at CERN. In short, it is also known as the Web. The Web started with the protocal HTTP with document types HTML. Later other protocols and document types were supported.</p>`;
+          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-zfzmcz">Origins</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-6tg2me">The World Wide Web is a system of protocols and softwares that enable communication between devices over the Internet. It was proposed in 1989 by a group led by Tim Berners-Lee at CERN. In short, it is also known as the Web. The Web started with the protocal HTTP with document types HTML. Later other protocols and document types were supported.</p>`;
         }
       })}`;
     }
@@ -36,7 +36,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-n59hwk" data-svelte-h="svelte-sz464z">Web or Internet?</h6> <p class="svelte-n59hwk" data-svelte-h="svelte-1fq4nj2">The Internet is a collection of computers and other devices connected by equipment that allows them to communicate with each other.</p> <p class="svelte-n59hwk" data-svelte-h="svelte-103uzuu">The Web is a collection of software and protocols that has been installed on most of the computers on the Internet.</p>`;
+          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-sz464z">Web or Internet?</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-1fq4nj2">The Internet is a collection of computers and other devices connected by equipment that allows them to communicate with each other.</p> <p class="svelte-9tb2l5" data-svelte-h="svelte-103uzuu">The Web is a collection of software and protocols that has been installed on most of the computers on the Internet.</p>`;
         }
       })}`;
     }

@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/courses/internet/wwwhtml/fundamentals/servers/_page.js';
+import * as universal from '../entries/pages/(general)/courses/internet/wwwhtml/fundamentals/security/_page.js';
 
 export const index = 47;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/internet/wwwhtml/fundamentals/servers/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/internet/wwwhtml/fundamentals/security/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/courses/internet/wwwhtml/fundamentals/servers/+page.js";
-export const imports = ["_app/immutable/nodes/47.RYGQaV3O.js","_app/immutable/chunks/scheduler._OuDP6UF.js","_app/immutable/chunks/index.69cNLXHD.js","_app/immutable/chunks/content.YkN37DGi.js","_app/immutable/chunks/entry.G797SBtN.js","_app/immutable/chunks/index.ymjMDM6_.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/Card.n05XP32M.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/ActionIcons.S991rHMd.js","_app/immutable/chunks/NavList.svelte_svelte_type_style_lang.yn8r1B33.js","_app/immutable/chunks/stores.KcX466m2.js"];
-export const stylesheets = ["_app/immutable/assets/42.PCyroyDC.css","_app/immutable/assets/Link.mTa6ZPjX.css","_app/immutable/assets/NavList.yy5IVOlJ.css"];
+export const universal_id = "src/routes/(general)/courses/internet/wwwhtml/fundamentals/security/+page.js";
+export const imports = ["_app/immutable/nodes/47.uTqR_wqv.js","_app/immutable/chunks/scheduler.2m08FdTt.js","_app/immutable/chunks/index.vbnytCL9.js","_app/immutable/chunks/content.YkN37DGi.js","_app/immutable/chunks/entry.hbUxuYYh.js","_app/immutable/chunks/index.fKG8P8G_.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/Card.S1YCyonB.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/ActionIcons.GG8dmijt.js","_app/immutable/chunks/NavList.svelte_svelte_type_style_lang.9asjx_8T.js","_app/immutable/chunks/stores.O_U5iIhZ.js"];
+export const stylesheets = ["_app/immutable/assets/47.hBfokGrF.css","_app/immutable/assets/Link.mTa6ZPjX.css","_app/immutable/assets/NavList.yy5IVOlJ.css"];
 export const fonts = [];

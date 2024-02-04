@@ -865,5 +865,7 @@
 	"/(about)/teaching": [
 		"src/routes/(about)/teaching/+page.js"
 	],
-	"/[...catchAll]": []
+	"/(general)/[...catchAll]": [
+		"src/routes/(general)/+layout.server.js"
+	]
 }

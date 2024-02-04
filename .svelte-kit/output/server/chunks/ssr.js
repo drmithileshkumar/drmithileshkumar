@@ -30,6 +30,13 @@ function compute_rest_props(props, keys) {
       rest[k] = props[k];
   return rest;
 }
+function compute_slots(slots) {
+  const result = {};
+  for (const key in slots) {
+    result[key] = true;
+  }
+  return result;
+}
 function null_to_empty(value) {
   return value == null ? "" : value;
 }
@@ -268,6 +275,10 @@ function add_classes(classes) {
 function style_object_to_string(style_object) {
   return Object.keys(style_object).filter((key) => style_object[key]).map((key) => `${key}: ${escape_attribute_value(style_object[key])};`).join(" ");
 }
+function add_styles(style_object) {
+  const styles = style_object_to_string(style_object);
+  return styles ? ` style="${styles}"` : "";
+}
 export {
   createEventDispatcher as a,
   spread as b,
@@ -285,9 +296,11 @@ export {
   noop as n,
   add_classes as o,
   null_to_empty as p,
-  setContext as q,
-  missing_component as r,
+  add_styles as q,
+  setContext as r,
   subscribe as s,
-  onDestroy as t,
-  validate_component as v
+  missing_component as t,
+  onDestroy as u,
+  validate_component as v,
+  compute_slots as w
 };

@@ -24,6 +24,14 @@
       "_ActionIcons.js"
     ]
   },
+  "_Cell.js": {
+    "file": "chunks/Cell.js",
+    "imports": [
+      "_ssr.js",
+      "_index2.js",
+      "_ActionIcons.js"
+    ]
+  },
   "_H2.js": {
     "file": "chunks/H2.js",
     "imports": [
@@ -235,6 +243,15 @@
       "_index2.js"
     ]
   },
+  "_xml.js": {
+    "css": [
+      "_app/immutable/assets/xml.KPyo-UG0.css"
+    ],
+    "file": "chunks/xml.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
     "file": "entries/fallbacks/error.svelte.js",
     "imports": [
@@ -434,6 +451,14 @@
     "isEntry": true,
     "src": "src/routes/(general)/+page.svelte"
   },
+  "src/routes/(general)/[...catchAll]/+page.svelte": {
+    "file": "entries/pages/(general)/_...catchAll_/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/[...catchAll]/+page.svelte"
+  },
   "src/routes/(general)/courses/+page.js": {
     "file": "entries/pages/(general)/courses/_page.js",
     "imports": [
@@ -491,7 +516,7 @@
   },
   "src/routes/(general)/courses/internet/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.hj3E2EKt.css",
+      "_app/immutable/assets/_page.eKWl8zPe.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/_page.svelte.js",
@@ -501,6 +526,7 @@
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
+      "_Cell.js",
       "_NavList.js",
       "_stores3.js"
     ],
@@ -631,7 +657,7 @@
   },
   "src/routes/(general)/courses/internet/wwwhtml/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.L5ue5hK9.css",
+      "_app/immutable/assets/_page.J7ZA_t1z.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/_page.svelte.js",
@@ -641,7 +667,7 @@
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_NavList.svelte_svelte_type_style_lang.js",
+      "_NavList.js",
       "_stores3.js"
     ],
     "isEntry": true,
@@ -654,7 +680,7 @@
   },
   "src/routes/(general)/courses/internet/wwwhtml/fundamentals/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.L5ue5hK9.css",
+      "_app/immutable/assets/_page.AVqrpmeN.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/_page.svelte.js",
@@ -664,7 +690,7 @@
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_NavList.svelte_svelte_type_style_lang.js",
+      "_NavList.js",
       "_stores3.js"
     ],
     "isEntry": true,
@@ -677,7 +703,7 @@
   },
   "src/routes/(general)/courses/internet/wwwhtml/fundamentals/browsers/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/_page.GpkGXIIi.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/browsers/_page.svelte.js",
@@ -700,16 +726,18 @@
   },
   "src/routes/(general)/courses/internet/wwwhtml/fundamentals/http/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/_page.3lFODxC-.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/http/_page.svelte.js",
     "imports": [
       "_ssr.js",
+      "_xml.js",
       "_content2.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
+      "_Cell.js",
       "_NavList.svelte_svelte_type_style_lang.js",
       "_stores3.js"
     ],
@@ -723,7 +751,7 @@
   },
   "src/routes/(general)/courses/internet/wwwhtml/fundamentals/intro/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.qsn6FTUk.css",
+      "_app/immutable/assets/_page.ngiKBXK1.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/intro/_page.svelte.js",
@@ -746,7 +774,7 @@
   },
   "src/routes/(general)/courses/internet/wwwhtml/fundamentals/mime/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/_page.3lFODxC-.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/mime/_page.svelte.js",
@@ -769,7 +797,7 @@
   },
   "src/routes/(general)/courses/internet/wwwhtml/fundamentals/security/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/_page.hBfokGrF.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/security/_page.svelte.js",
@@ -792,7 +820,7 @@
   },
   "src/routes/(general)/courses/internet/wwwhtml/fundamentals/servers/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/_page.hBfokGrF.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/servers/_page.svelte.js",
@@ -815,12 +843,13 @@
   },
   "src/routes/(general)/courses/internet/wwwhtml/fundamentals/url/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/_page.hBfokGrF.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/url/_page.svelte.js",
     "imports": [
       "_ssr.js",
+      "_xml.js",
       "_content2.js",
       "_client.js",
       "_Card.js",
@@ -838,7 +867,7 @@
   },
   "src/routes/(general)/courses/internet/wwwhtml/fundamentals/www/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.PCyroyDC.css",
+      "_app/immutable/assets/_page.GpkGXIIi.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/www/_page.svelte.js",
@@ -5227,13 +5256,5 @@
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class9/+page.svelte"
-  },
-  "src/routes/[...catchAll]/+page.svelte": {
-    "file": "entries/pages/_...catchAll_/_page.svelte.js",
-    "imports": [
-      "_ssr.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/[...catchAll]/+page.svelte"
   }
 }

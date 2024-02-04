@@ -4,10 +4,10 @@ import { g as githubDark, a as github, c as contents } from "../../../../../../c
 import "../../../../../../chunks/client.js";
 import { C as Card } from "../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../chunks/ActionIcons.js";
-import "../../../../../../chunks/NavList.svelte_svelte_type_style_lang.js";
+import { N as NavList } from "../../../../../../chunks/NavList.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../chunks/stores3.js";
 const css = {
-  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}p.svelte-n59hwk{opacity:0.8}h2.svelte-n59hwk{margin:0.5em 0}",
+  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5,h5.svelte-9tb2l5{margin:0.5em 0}h5.svelte-9tb2l5{font-size:1.1em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -24,11 +24,29 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
-  return `${$$result.head += `<!-- HEAD_svelte-775k1p_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-775k1p_END -->`, ""} <article class="svelte-n59hwk"><h2 class="svelte-n59hwk" data-svelte-h="svelte-1imxa09">Fundamentals of WWW, HTML and XHTML</h2> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  return `${$$result.head += `<!-- HEAD_svelte-775k1p_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-775k1p_END -->`, ""} <article class="svelte-9tb2l5"><h4 class="svelte-9tb2l5" data-svelte-h="svelte-wpvcrh">Fundamentals of WWW, HTML and XHTML</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<p class="svelte-n59hwk" data-svelte-h="svelte-r0b5ev">The World Wide Web (www) is a system of softwares used to transmit and receive information using the set of hardware called the Internet. The information is in the form of a string of 0s and 1s. Specific softwares are used to interpret and convert these strings into human readable format like text, image, audio, video etc.</p>`;
+          return `<h5 class="svelte-9tb2l5" data-svelte-h="svelte-vrhswa">Contents</h5> ${validate_component(NavList, "NavList").$$render(
+            $$result,
+            {
+              name: $navList[0].topics[0].name,
+              url: $navList[0].topics[0].url,
+              topics: $navList[0].topics[0].topics,
+              expanded: false
+            },
+            {},
+            {}
+          )}`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<p class="svelte-9tb2l5" data-svelte-h="svelte-r0b5ev">The World Wide Web (www) is a system of softwares used to transmit and receive information using the set of hardware called the Internet. The information is in the form of a string of 0s and 1s. Specific softwares are used to interpret and convert these strings into human readable format like text, image, audio, video etc.</p> <p class="svelte-9tb2l5" data-svelte-h="svelte-1czazwr">In this module, we&#39;ll go through a brief overview of the Internet and the World Wide Web. We&#39;ll have a glimpse of the client-server model of communication between the computers that are on the Internet. We&#39;ll see how browsers use HTTP to send request to a server that listens and responds to the request. We&#39;ll learn about the security issues in this communication process.</p> <p class="svelte-9tb2l5" data-svelte-h="svelte-1vgusaf">After understanding the model of communication, we&#39;ll go deep into web page design only using HTML/XHTML. We&#39;ll learn many HTML elements and their limitations that are solved via using XHTML.</p>`;
         }
       })}`;
     }

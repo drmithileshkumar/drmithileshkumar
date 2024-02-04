@@ -45,7 +45,7 @@
     h6 {
         font-size: 1em;
         margin: 0.5em 0;
-        color: rgba(0, 150, 200, 1);
+        color: rgb(240, 85, 0);
     }
     strong {
         color: goldenrod;
@@ -70,13 +70,25 @@
     {/if}
 </svelte:head>
 <article>
-    <h2>
+    <h4>
         Fundamentals of WWW, HTML and XHTML
-    </h2>
+    </h4>
+    <Card>
+        <Content>
+            <h5>Contents</h5>
+            <NavList name="{$navList[0].topics[0].name}" url="{$navList[0].topics[0].url}" topics={$navList[0].topics[0].topics} expanded={false} />
+        </Content>
+    </Card>
     <Card>
         <Content>
             <p>
                 The World Wide Web (www) is a system of softwares used to transmit and receive information using the set of hardware called the Internet. The information is in the form of a string of 0s and 1s. Specific softwares are used to interpret and convert these strings into human readable format like text, image, audio, video etc.
+            </p>
+            <p>
+                In this module, we'll go through a brief overview of the Internet and the World Wide Web. We'll have a glimpse of the client-server model of communication between the computers that are on the Internet. We'll see how browsers use HTTP to send request to a server that listens and responds to the request. We'll learn about the security issues in this communication process. 
+            </p>
+            <p>
+                After understanding the model of communication, we'll go deep into web page design only using HTML/XHTML. We'll learn many HTML elements and their limitations that are solved via using XHTML.
             </p>
         </Content>
     </Card>

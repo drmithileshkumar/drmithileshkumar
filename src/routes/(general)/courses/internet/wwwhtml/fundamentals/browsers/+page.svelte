@@ -45,7 +45,7 @@
     h6 {
         font-size: 1em;
         margin: 0.5em 0;
-        color: rgba(0, 150, 200, 1);
+        color: rgb(240, 85, 0);
     }
     strong {
         color: goldenrod;
@@ -75,9 +75,12 @@
     </h2>
     <Card>
         <Content>
-            <h6>Browsers</h6>
+            <h6>Client Server Model</h6>
             <p>
-                
+                For most cases, the internet communication works using a client-server model. One computer acts as a client that requests data from another computer that acts a server. The client computer, often uses a program called a browser that facilitates the role of the client, i.e. to request data.
+            </p>
+            <p>
+                A user enters an url which eventially links to the server. The browser mostly uses HTTP (or HTTPS) protocol to establish the connection.
             </p>
         </Content>
     </Card>

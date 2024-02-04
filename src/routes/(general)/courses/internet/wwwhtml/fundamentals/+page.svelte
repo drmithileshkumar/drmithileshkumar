@@ -75,6 +75,12 @@
     </h2>
     <Card>
         <Content>
+            <h5>Contents</h5>
+            <NavList name="{$navList[0].topics[0].topics[0].name}" url="{$navList[0].topics[0].topics[0].url}" topics={$navList[0].topics[0].topics[0].topics} expanded={false} />
+        </Content>
+    </Card>
+    <Card>
+        <Content>
             <p>
                 We'll start with the origins of the Internet in the research and the military setting and give overviews of various elements of the hardware, software and protocols that complete the communication system.
             </p>
