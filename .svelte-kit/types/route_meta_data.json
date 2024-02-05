@@ -106,6 +106,14 @@
 		"src/routes/(general)/courses/internet/wwwhtml/html/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/wwwhtml/html/origins": [
+		"src/routes/(general)/courses/internet/wwwhtml/html/origins/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/html/syntax": [
+		"src/routes/(general)/courses/internet/wwwhtml/html/syntax/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/xml": [
 		"src/routes/(general)/courses/internet/xml/+page.js",
 		"src/routes/(general)/+layout.server.js"

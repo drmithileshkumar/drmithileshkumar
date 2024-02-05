@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Permutations and combinations/Combinations/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Matrices/Transpose of a matrix/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Permutations and combinations/Combinations/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Matrices/Transpose of a matrix/+page.svelte";

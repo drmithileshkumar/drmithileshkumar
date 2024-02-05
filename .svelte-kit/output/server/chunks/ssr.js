@@ -296,11 +296,11 @@ export {
   noop as n,
   add_classes as o,
   null_to_empty as p,
-  add_styles as q,
-  setContext as r,
+  setContext as q,
+  onDestroy as r,
   subscribe as s,
-  missing_component as t,
-  onDestroy as u,
+  compute_slots as t,
+  add_styles as u,
   validate_component as v,
-  compute_slots as w
+  missing_component as w
 };

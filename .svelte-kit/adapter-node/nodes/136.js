@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Integrals/Integrals of some particular functions/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Integrals/Evaluation of definite integrals by substitution/_page.js';
 
 export const index = 136;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Integrals/Integrals of some particular functions/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Integrals/Evaluation of definite integrals by substitution/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Integrals/Integrals of some particular functions/+page.js";
-export const imports = ["_app/immutable/nodes/136.q_2xopne.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.2m08FdTt.js","_app/immutable/chunks/index.vbnytCL9.js","_app/immutable/chunks/stores.DnhZXbuE.js","_app/immutable/chunks/index.fKG8P8G_.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.ToeP0oEQ.js","_app/immutable/chunks/entry.ZVyOfNZo.js"];
+export const universal_id = "src/routes/(general)/notes/maths/Integrals/Evaluation of definite integrals by substitution/+page.js";
+export const imports = ["_app/immutable/nodes/136.d_sO6t4b.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js","_app/immutable/chunks/stores.XBsJh_dx.js","_app/immutable/chunks/index.JZWwPDI5.js","_app/immutable/chunks/stores.QWNjzraU.js","_app/immutable/chunks/entry.p87wJVPD.js"];
 export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

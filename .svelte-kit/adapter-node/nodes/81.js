@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/courses/quantumml/_page.js';
+import * as universal from '../entries/pages/(general)/courses/quantuminformation2/_page.js';
 
 export const index = 81;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/quantumml/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/quantuminformation2/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/courses/quantumml/+page.js";
-export const imports = ["_app/immutable/nodes/81.XI3Hmaz5.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.2m08FdTt.js","_app/immutable/chunks/index.vbnytCL9.js","_app/immutable/chunks/entry.ZVyOfNZo.js","_app/immutable/chunks/index.fKG8P8G_.js","_app/immutable/chunks/Card.S1YCyonB.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/ActionIcons.GG8dmijt.js","_app/immutable/chunks/NavList.qFea9d_S.js","_app/immutable/chunks/each.6w4Ej4nR.js","_app/immutable/chunks/NavList.svelte_svelte_type_style_lang.9asjx_8T.js","_app/immutable/chunks/stores.O_U5iIhZ.js"];
-export const stylesheets = ["_app/immutable/assets/55.hj3E2EKt.css","_app/immutable/assets/Link.mTa6ZPjX.css","_app/immutable/assets/NavList.yy5IVOlJ.css"];
+export const universal_id = "src/routes/(general)/courses/quantuminformation2/+page.js";
+export const imports = ["_app/immutable/nodes/81.QKYFqbzB.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js","_app/immutable/chunks/entry.p87wJVPD.js","_app/immutable/chunks/index.JZWwPDI5.js","_app/immutable/chunks/Card.6Z7INVJg.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/ActionIcons.oA2Cwr8z.js","_app/immutable/chunks/NavList.cp2QOwDX.js","_app/immutable/chunks/each.6w4Ej4nR.js","_app/immutable/chunks/NavList.svelte_svelte_type_style_lang.pJ7SdKy5.js","_app/immutable/chunks/stores.-1bOnq-o.js"];
+export const stylesheets = ["_app/immutable/assets/57.hj3E2EKt.css","_app/immutable/assets/Link.mTa6ZPjX.css","_app/immutable/assets/NavList.yy5IVOlJ.css"];
 export const fonts = [];

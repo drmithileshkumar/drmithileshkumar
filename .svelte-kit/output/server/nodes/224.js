@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/practice/class1/_page.js';
+import * as universal from '../entries/pages/(general)/notes/quantum/_page.js';
 
 export const index = 224;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/practice/class1/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/quantum/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/practice/class1/+page.js";
-export const imports = ["_app/immutable/nodes/224.u1Hn47v6.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.2m08FdTt.js","_app/immutable/chunks/index.vbnytCL9.js","_app/immutable/chunks/Message.Zq1jl1nV.js","_app/immutable/chunks/entry.ZVyOfNZo.js","_app/immutable/chunks/index.fKG8P8G_.js","_app/immutable/chunks/stores.vBF17IHW.js","_app/immutable/chunks/Practice.QF2dxLJu.js","_app/immutable/chunks/ripple.nJSaNfXx.js"];
-export const stylesheets = ["_app/immutable/assets/Link.mTa6ZPjX.css","_app/immutable/assets/Message.ctOi1nG9.css","_app/immutable/assets/Practice.5SCwWus9.css"];
+export const universal_id = "src/routes/(general)/notes/quantum/+page.js";
+export const imports = ["_app/immutable/nodes/224.fOHMG0Z7.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js","_app/immutable/chunks/stores.XBsJh_dx.js","_app/immutable/chunks/index.JZWwPDI5.js","_app/immutable/chunks/stores.QWNjzraU.js","_app/immutable/chunks/entry.p87wJVPD.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/Image.svelte_svelte_type_style_lang.MbPxpTp9.js","_app/immutable/chunks/index.gBHr9ICE.js","_app/immutable/chunks/H3.brlZG4Ko.js","_app/immutable/chunks/H2._6EVZ2gD.js","_app/immutable/chunks/Image.0LPF6EXl.js"];
+export const stylesheets = ["_app/immutable/assets/224.wXS4d_6p.css","_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css","_app/immutable/assets/Div.bOrlhsXY.css","_app/immutable/assets/Image.R1-0-laC.css"];
 export const fonts = [];
