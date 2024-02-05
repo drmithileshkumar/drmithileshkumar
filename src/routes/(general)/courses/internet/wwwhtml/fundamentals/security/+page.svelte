@@ -69,7 +69,7 @@
         {@html github}
     {/if}
 </svelte:head>
-<article>
+<article use:typeset>
     <h2>
         Security
     </h2>
@@ -116,6 +116,51 @@
     </Card>
     <Card>
         <Content>
+            <h6>RSA</h6>
+            <p>The RSA algorithm is a widely used public-key cryptosystem that facilitates secure data transmission. Named after its inventors, Ron Rivest, Adi Shamir, and Leonard Adleman, RSA was introduced in 1977 and remains one of the most respected and commonly implemented methods for encryption and digital signatures.</p>
+
+            <h6>How RSA Works:</h6>
+            <p>
+                RSA operates on the principle of using two keys: a public key, which is shared openly, and a private key, which is kept secret. These keys are generated from a pair of large prime numbers along with a derivative value. The algorithm's security relies on the computational difficulty of factoring the product of these two large prime numbers, a problem known as prime factorization.
+            </p>
+
+            <h6>Key Steps in RSA:</h6>
+            <ol>
+                <li><strong>Key Generation</strong>:
+                    <ul>
+                    <li>Select two large prime numbers, {`\\(p\\)`} and {`\\(q\\)`}.</li>
+                    <li>Compute {`\\(n = pq\\)`}, which will be used as the modulus for both keys.</li>
+                    <li>Calculate the Euler's totient function, {`\\(\\phi(n) = (p-1)(q-1)\\)`}.</li>
+                    <li>Choose an integer {`\\(e\\)`} such that {`\\(1 < e < \\phi(n)\\)`}, and {`\\(e\\)`} is co-prime to {`\\(\\phi(n)\\)`}; {`\\(e\\)`} becomes the public exponent.</li>
+                    <li>Determine {`\\(d\\)`} as the modular multiplicative inverse of {`\\(e\\)`} modulo {`\\(\\phi(n)\\)`}; {`\\(d\\)`} is the private exponent.</li>
+                    </ul>
+                </li>
+                <li><strong>Encryption</strong>:
+                    <ul>
+                    <li>Given a plaintext message {`\\(M\\)`}, it is converted into an integer {`\\(m\\)`} (such that {`\\(0 \\leq m < n\\)`}) using a reversible protocol known as padding.</li>
+                    <li>The ciphertext {`\\(c\\)`} is then computed as {`\\(c = m^e \\mod n\\)`}.</li>
+                    </ul>
+                </li>
+                <li><strong>Decryption</strong>:
+                    <ul>
+                    <li>The original message is recovered by computing {`\\(m = c^d \\mod n\\)`}.</li>
+                    <li>The plaintext message {`\\(M\\)`} is then obtained from the integer {`\\(m\\)`} using the reverse padding protocol.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h6>Security and Usage:</h6>
+            <p>
+                The RSA algorithm's security hinges on the difficulty of factoring the large composite number {`\\(n\\)`} into its prime factors, {`\\(p\\)`} and {`\\(q\\)`}, a task that is currently unfeasible for sufficiently large primes with today's computing power. RSA is used in various applications, including SSL/TLS for secure web browsing, digital signatures for document verification, and secure key exchange mechanisms.
+            </p>
+
+            <p>
+                Despite the emergence of new encryption methods and the potential threat from quantum computing, RSA remains a cornerstone of public-key cryptography due to its robustness and widespread support across numerous platforms and technologies.
+            </p>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
             <h6>Denial of Service</h6>
             <p>
                 Denial of Service (DoS) attacks can be created simply by flooding a Web server with requests, overwhelming its ability to operate effectively. Most DoS attacks are conducted with the use of networks of virally infected zombie computers, whose owners are unaware of their sinister use.
@@ -128,6 +173,41 @@
             <p>
                 Viruses are programs that often arrive in a system in attachments to electronic mail messages or attached to free downloaded programs. Then they attach to other programs. When executed, they replicate and can overwrite memory and attached memory devices, destroying programs and data alike.
             </p>
+            <ul>
+                <li><strong>ILOVEYOU</strong>
+                    <ul>
+                    <li><em>Year:</em> 2000</li>
+                    <li><em>Description:</em> Also known as "Love Letter," this virus spread via email with a subject line "ILOVEYOU" and an attachment that appeared to be a text file. Once executed, it overwrote files, spread itself through email, and made unauthorized changes to the user's system.</li>
+                    </ul>
+                </li>
+                <li><strong>Code Red</strong>
+                    <ul>
+                    <li><em>Year:</em> 2001</li>
+                    <li><em>Description:</em> Code Red targeted computers running Microsoft's IIS web server. It exploited a buffer overflow vulnerability to execute itself, deface websites, and propagate to other systems. At its peak, it infected millions of servers worldwide.</li>
+                    </ul>
+                </li>
+                <li><strong>Melissa</strong>
+                    <ul>
+                    <li><em>Year:</em> 1999</li>
+                    <li><em>Description:</em> Melissa began as an infected Word document attached to an email. When opened, it propagated itself by sending emails to the top 50 contacts in the user’s Microsoft Outlook address book, causing significant disruption to personal and corporate email systems.</li>
+                    </ul>
+                </li>
+                <li><strong>Conficker</strong>
+                    <ul>
+                    <li><em>Year:</em> 2008</li>
+                    <li><em>Description:</em> Also known as Downup or Downadup, Conficker is a worm that exploited vulnerabilities in Windows OS to infect computers. It could spread via the Internet, removable drives, and local networks. It blocked access to security websites and downloaded additional malware.</li>
+                    </ul>
+                </li>
+                <li><strong>Flashback</strong>
+                    <ul>
+                    <li><em>Year:</em> 2011</li>
+                    <li><em>Description:</em> Initially, Flashback masqueraded as a Flash Player installer for Mac OS X but later exploited Java vulnerabilities to install itself without user interaction. It was one of the largest virus infections affecting Macs, designed to steal personal information.</li>
+                    </ul>
+                </li>
+                </ul>
+            <p>
+                To protect against web-based viruses, it is essential to keep software, browsers, and operating systems updated, use reputable antivirus solutions, exercise caution with downloads and email attachments, enable a firewall, and regularly back up data.
+            </p>
         </Content>
     </Card>
     <Card>
@@ -136,6 +216,45 @@
             <p>
                 Worms damage memory, like viruses, but spread on their own, rather than being attached to other files. Perhaps the most famous worm so far has been the Blaster worm, spawned in 2003.
             </p>
+            <ol>
+                <li><strong>SQL Slammer/Sapphire Worm</strong>
+                    <ul>
+                    <li><em>Year:</em> 2003</li>
+                    <li><em>Description:</em> This worm targeted vulnerabilities in Microsoft SQL Server and MSDE, causing widespread denial of service on some internet hosts. It spread rapidly by generating random IP addresses and sending itself to those addresses, significantly slowing down internet traffic.</li>
+                    </ul>
+                </li>
+                <li><strong>Mydoom Worm</strong>
+                    <ul>
+                    <li><em>Year:</em> 2004</li>
+                    <li><em>Description:</em> Primarily spread through email, Mydoom also had a component that allowed it to propagate via the Kazaa file-sharing network. It is noteworthy for its attack on the SCO Group's website, launching a DDoS attack by instructing infected machines to connect to the site simultaneously.</li>
+                    </ul>
+                </li>
+                <li><strong>Santy Worm</strong>
+                    <ul>
+                    <li><em>Year:</em> 2004</li>
+                    <li><em>Description:</em> Santy, also known as PHPinclude.worm, exploited a vulnerability in PHP scripts used by bulletin board systems to spread itself. It searched Google for vulnerable forums and then used them to propagate, defacing websites in the process.</li>
+                    </ul>
+                </li>
+                <li><strong>JS/Spacehero Worm</strong>
+                    <ul>
+                    <li><em>Year:</em> 2005</li>
+                    <li><em>Description:</em> This worm spread through social networking sites by exploiting cross-site scripting (XSS) vulnerabilities. It propagated itself by adding links to the user's webpage or profile, which, when clicked by others, continued the spread of the worm.</li>
+                    </ul>
+                </li>
+                <li><strong>Samy (XSS Worm)</strong>
+                    <ul>
+                    <li><em>Year:</em> 2005</li>
+                    <li><em>Description:</em> This worm spread on the MySpace social networking site by exploiting XSS vulnerabilities. It was one of the first worms to spread through a social networking site, adding over a million friends to the creator's MySpace account within just 20 hours.</li>
+                    </ul>
+                </li>
+                <li><strong>Storm Worm</strong>
+                    <ul>
+                    <li><em>Year:</em> 2007</li>
+                    <li><em>Description:</em> Initially spread via email messages with sensational news subjects, the Storm Worm was a Trojan horse program that later allowed infected computers to be controlled remotely. It created a botnet used for various malicious activities, including sending more spam emails to spread further.</li>
+                    </ul>
+                </li>
+            </ol>
+              
         </Content>
     </Card>
 </article>
