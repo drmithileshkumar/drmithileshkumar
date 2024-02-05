@@ -21,7 +21,7 @@
     import { contents } from "$lib/pages/courses/internet/content";
     $navList = contents;
     $currentPath = "Uniform Resource Locators";
-    $darkMode = true;
+    $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });

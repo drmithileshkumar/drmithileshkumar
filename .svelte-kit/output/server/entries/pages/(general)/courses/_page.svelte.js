@@ -9,7 +9,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_darkMode = subscribe(darkMode, (value) => $darkMode = value);
   $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
   set_store_value(currentPath, $currentPath = "Courses", $currentPath);
-  set_store_value(darkMode, $darkMode = true, $darkMode);
+  set_store_value(darkMode, $darkMode = false, $darkMode);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
   return `${$$result.head += `<!-- HEAD_svelte-1g0w0gr_START -->${$$result.title = `<title>Courses</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1g0w0gr_END -->`, ""} <article><h1 data-svelte-h="svelte-jv3hik">Courses</h1> <h3 data-svelte-h="svelte-k8gjmi">DSU</h3> ${validate_component(Link, "Link").$$render($$result, { href: `/courses/mathematics2` }, {}, {

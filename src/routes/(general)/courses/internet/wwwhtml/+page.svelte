@@ -21,7 +21,7 @@
     import { contents } from "$lib/pages/courses/internet/content";
     $navList = contents;
     $currentPath = "Fundamentals of WWW, HTML and XHTML";
-    $darkMode = true;
+    $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });

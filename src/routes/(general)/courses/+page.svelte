@@ -7,7 +7,7 @@
         import { currentPath } from "$lib/stores";
         import { darkMode } from "$lib/stores"
         $currentPath = "Courses";
-        $darkMode = true;
+        $darkMode = false;
         onMount(() => {
             MathJax.typeset();
         });

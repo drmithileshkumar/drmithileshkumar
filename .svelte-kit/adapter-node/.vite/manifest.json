@@ -29,8 +29,7 @@
     "imports": [
       "_ssr.js",
       "_index2.js",
-      "_ActionIcons.js",
-      "_prefixFilter.js"
+      "_ActionIcons.js"
     ]
   },
   "_H2.js": {
@@ -171,6 +170,19 @@
     "file": "_app/immutable/assets/Select.Gh662Cch.css",
     "src": "_Select.svelte_svelte_type_style_lang.js"
   },
+  "_WebPractice.js": {
+    "css": [
+      "_app/immutable/assets/WebPractice.vrY1kCdR.css"
+    ],
+    "file": "chunks/WebPractice.js",
+    "imports": [
+      "_ssr.js",
+      "_index2.js",
+      "_ActionIcons.js",
+      "_Card.js",
+      "_Ripple.js"
+    ]
+  },
   "_client.js": {
     "file": "chunks/client.js",
     "imports": [
@@ -209,9 +221,6 @@
     "imports": [
       "_ssr.js"
     ]
-  },
-  "_prefixFilter.js": {
-    "file": "chunks/prefixFilter.js"
   },
   "_quadratic.js": {
     "file": "chunks/quadratic.js",
@@ -940,6 +949,30 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/origins/+page.svelte"
   },
+  "src/routes/(general)/courses/internet/wwwhtml/html/structure/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/html/structure/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/html/structure/+page.js"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/html/structure/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.6lUiVln4.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/html/structure/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_content2.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
+      "_stores3.js",
+      "_WebPractice.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/html/structure/+page.svelte"
+  },
   "src/routes/(general)/courses/internet/wwwhtml/html/syntax/+page.js": {
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/syntax/_page.js",
     "isEntry": true,
@@ -947,7 +980,7 @@
   },
   "src/routes/(general)/courses/internet/wwwhtml/html/syntax/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.wBL_MDmx.css",
+      "_app/immutable/assets/_page.6lUiVln4.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/syntax/_page.svelte.js",
@@ -959,9 +992,7 @@
       "_ActionIcons.js",
       "_NavList.svelte_svelte_type_style_lang.js",
       "_stores3.js",
-      "_prefixFilter.js",
-      "_index2.js",
-      "_Ripple.js"
+      "_WebPractice.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/syntax/+page.svelte"

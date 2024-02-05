@@ -26,7 +26,10 @@
     // onMount(() => {
     //     MathJax.typeset();
     // });
-    
+    let htmlContent = `<h1>This is h1 heading.</h1>
+<p>This is paragraph.</p>
+<button>This is button.</button>
+<!-- This is a comment -->`
 </script>
 <style>
     article {
@@ -77,9 +80,9 @@
     <Card>
         <Content>
             <p>
-                HTML is a markup language, which means it is used to mark parts of documents to indicate how they should appear, in print or on a display. CSS was added to HTML in 1990s.
+                The fundamental syntactic units of HTML are called tags. In general, tags are used to specify categories of content. For each kind of tag, a browser has default presen- tation specifications for the specified content. The syntax of a tag is the tag`s name surrounded by angle brackets (&lt; and &gt;). Tag names must be written in all lowercase letters. Most tags appear in pairs: an opening tag and a closing tag.
             </p>
         </Content>
     </Card>
-    <WebPractice />
+    <WebPractice htmlContent={htmlContent} cssContent={""} jsContent={""} />
 </article>

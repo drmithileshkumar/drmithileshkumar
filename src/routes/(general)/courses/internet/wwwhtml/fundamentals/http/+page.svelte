@@ -22,7 +22,7 @@
     import { contents } from "$lib/pages/courses/internet/content";
     $navList = contents;
     $currentPath = "The HyperText Transfer Protocol (HTTP)";
-    $darkMode = true;
+    $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });

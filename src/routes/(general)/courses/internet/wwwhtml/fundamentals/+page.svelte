@@ -21,7 +21,7 @@
     import { contents } from "$lib/pages/courses/internet/content";
     $navList = contents;
     $currentPath = "Fundamentals";
-    $darkMode = true;
+    $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });

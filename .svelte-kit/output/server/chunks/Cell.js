@@ -1,7 +1,33 @@
-import { c as create_ssr_component, h as compute_rest_props, i as get_current_component, g as getContext, s as subscribe, q as setContext, r as onDestroy, m as set_store_value, b as spread, j as escape_attribute_value, d as escape_object, k as add_attribute, t as compute_slots, e as escape } from "./ssr.js";
+import { c as create_ssr_component, h as compute_rest_props, i as get_current_component, g as getContext, s as subscribe, r as setContext, u as onDestroy, m as set_store_value, b as spread, j as escape_attribute_value, d as escape_object, k as add_attribute, w as compute_slots, e as escape } from "./ssr.js";
 import { w as writable } from "./index2.js";
 import { f as forwardEventsBuilder, c as classMap } from "./ActionIcons.js";
-import { e as exclude, p as prefixFilter } from "./prefixFilter.js";
+function exclude(obj, keys) {
+  let names = Object.getOwnPropertyNames(obj);
+  const newObj = {};
+  for (let i = 0; i < names.length; i++) {
+    const name = names[i];
+    const cashIndex = name.indexOf("$");
+    if (cashIndex !== -1 && keys.indexOf(name.substring(0, cashIndex + 1)) !== -1) {
+      continue;
+    }
+    if (keys.indexOf(name) !== -1) {
+      continue;
+    }
+    newObj[name] = obj[name];
+  }
+  return newObj;
+}
+function prefixFilter(obj, prefix) {
+  let names = Object.getOwnPropertyNames(obj);
+  const newObj = {};
+  for (let i = 0; i < names.length; i++) {
+    const name = names[i];
+    if (name.substring(0, prefix.length) === prefix) {
+      newObj[name.substring(prefix.length)] = obj[name];
+    }
+  }
+  return newObj;
+}
 const DataTable = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, [
     "use",
