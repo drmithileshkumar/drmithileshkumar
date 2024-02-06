@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Probability/Event/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Probability/Axiomatic approach to probability/_page.js';
 
 export const index = 171;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Probability/Event/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Probability/Axiomatic approach to probability/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Probability/Event/+page.js";
-export const imports = ["_app/immutable/nodes/171.1Y_ngOPu.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js","_app/immutable/chunks/stores.XBsJh_dx.js","_app/immutable/chunks/index.JZWwPDI5.js","_app/immutable/chunks/stores.2uaIcXfI.js","_app/immutable/chunks/entry.sz0M4nx_.js"];
+export const universal_id = "src/routes/(general)/notes/maths/Probability/Axiomatic approach to probability/+page.js";
+export const imports = ["_app/immutable/nodes/171.-XVzv_lD.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js","_app/immutable/chunks/stores.XBsJh_dx.js","_app/immutable/chunks/index.JZWwPDI5.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.IVRqhHaw.js","_app/immutable/chunks/entry.QpnJ778C.js"];
 export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

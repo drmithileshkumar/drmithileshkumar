@@ -926,6 +926,31 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/+page.svelte"
   },
+  "src/routes/(general)/courses/internet/wwwhtml/html/images/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/html/images/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/html/images/+page.js"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/html/images/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.StHVDXeH.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/html/images/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_content2.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.svelte_svelte_type_style_lang.js",
+      "_stores3.js",
+      "_WebPractice.js",
+      "_Cell.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/html/images/+page.svelte"
+  },
   "src/routes/(general)/courses/internet/wwwhtml/html/origins/+page.js": {
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/origins/_page.js",
     "isEntry": true,

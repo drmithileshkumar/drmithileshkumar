@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Linear programming/Different types of linear programming problems/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Linear inequalities/Solution of system in two variables/_page.js';
 
 export const index = 156;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Linear programming/Different types of linear programming problems/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Linear inequalities/Solution of system in two variables/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Linear programming/Different types of linear programming problems/+page.js";
-export const imports = ["_app/immutable/nodes/156.g9DdMTYA.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js","_app/immutable/chunks/stores.XBsJh_dx.js","_app/immutable/chunks/index.JZWwPDI5.js","_app/immutable/chunks/stores.2uaIcXfI.js","_app/immutable/chunks/entry.sz0M4nx_.js"];
+export const universal_id = "src/routes/(general)/notes/maths/Linear inequalities/Solution of system in two variables/+page.js";
+export const imports = ["_app/immutable/nodes/156.QuIDmNpp.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js","_app/immutable/chunks/stores.XBsJh_dx.js","_app/immutable/chunks/index.JZWwPDI5.js","_app/immutable/chunks/stores.IVRqhHaw.js","_app/immutable/chunks/entry.QpnJ778C.js"];
 export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

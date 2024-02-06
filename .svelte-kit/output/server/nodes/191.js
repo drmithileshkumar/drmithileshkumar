@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Sets/Power set/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Sets/Operations on sets/_page.js';
 
 export const index = 191;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Sets/Power set/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Sets/Operations on sets/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Sets/Power set/+page.js";
-export const imports = ["_app/immutable/nodes/191.qBSlX-WJ.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js","_app/immutable/chunks/stores.XBsJh_dx.js","_app/immutable/chunks/index.JZWwPDI5.js","_app/immutable/chunks/stores.2uaIcXfI.js","_app/immutable/chunks/entry.sz0M4nx_.js"];
-export const stylesheets = ["_app/immutable/assets/191.wbpFcsqy.css","_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
+export const universal_id = "src/routes/(general)/notes/maths/Sets/Operations on sets/+page.js";
+export const imports = ["_app/immutable/nodes/191.G7AzzAyK.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js","_app/immutable/chunks/stores.XBsJh_dx.js","_app/immutable/chunks/index.JZWwPDI5.js","_app/immutable/chunks/stores.IVRqhHaw.js","_app/immutable/chunks/entry.QpnJ778C.js"];
+export const stylesheets = ["_app/immutable/assets/127.RfrDpo0v.css","_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];
