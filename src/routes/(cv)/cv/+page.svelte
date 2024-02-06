@@ -148,71 +148,91 @@
             </div>
         </aside>
         <div class="main">
-            <section class="education">
-                <h2>Education</h2>
-                <table>
-                    <tr>
-                        <td class="dates">
-                            2020 - Present
-                        </td>
-                        <td>
-                            <div class="edu">
-                                <div class="degree">Web development</div>
-                                <div class="institute">Self-taught</div>
-                                <div class="description">created websites mathril.com and vectorial.app</div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="dates">
-                            2017 - 2020
-                        </td>
-                        <td>
-                            <div class="edu">
-                                <div class="degree">Post Doc Research</div>
-                                <div class="institute">Simula-UiB, Bergen, Norway</div>
-                                <div class="description">Quantum-safe cryptography</div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="dates">
-                            2014 - 2017
-                        </td>
-                        <td>
-                            <div class="edu">
-                                <div class="degree">PhD</div>
-                                <div class="institute">University of Bergen, Norway</div>
-                                <div class="description">Parameterized algorithms</div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="dates">
-                            2011 - 2013
-                        </td>
-                        <td>
-                            <div class="edu">
-                                <div class="degree">Masters in Computer Science</div>
-                                <div class="institute">Chennai Mathematical Institute, Chennai</div>
-                                <div class="description">Theoretical Computer Science</div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="dates">
-                            2004 - 2010
-                        </td>
-                        <td>
-                            <div class="edu">
-                                <div class="degree">Masters in Physics</div>
-                                <div class="institute">IIT Kanpur, Kanpur</div>
-                                <div class="description">MSc(I) Physics</div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+            <section>
+                <section class="work">
+                    <h2>Work</h2>
+                    <table>
+                        <tr>
+                            <td class="dates">
+                                2024 - Present
+                            </td>
+                            <td>
+                                <div class="edu">
+                                    <div class="degree">Assistant Professor</div>
+                                    <div class="institute">Dayananda Sagar University</div>
+                                    <div class="description">Computer Applications</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dates">
+                                2020 - Present
+                            </td>
+                            <td>
+                                <div class="edu">
+                                    <div class="degree">Web development</div>
+                                    <div class="institute">Self-taught</div>
+                                    <div class="description">created websites mathril.com and vectorial.app</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dates">
+                                2017 - 2020
+                            </td>
+                            <td>
+                                <div class="edu">
+                                    <div class="degree">Post Doc Research</div>
+                                    <div class="institute">Simula-UiB, Bergen, Norway</div>
+                                    <div class="description">Quantum-safe cryptography</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="education">
+                    <h2>Education</h2>
+                    <table>
+                        <tr>
+                            <td class="dates">
+                                2014 - 2017
+                            </td>
+                            <td>
+                                <div class="edu">
+                                    <div class="degree">PhD</div>
+                                    <div class="institute">University of Bergen, Norway</div>
+                                    <div class="description">Parameterized algorithms</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dates">
+                                2011 - 2013
+                            </td>
+                            <td>
+                                <div class="edu">
+                                    <div class="degree">Masters in Computer Science</div>
+                                    <div class="institute">Chennai Mathematical Institute, Chennai</div>
+                                    <div class="description">Theoretical Computer Science</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dates">
+                                2004 - 2010
+                            </td>
+                            <td>
+                                <div class="edu">
+                                    <div class="degree">Masters in Physics</div>
+                                    <div class="institute">IIT Kanpur, Kanpur</div>
+                                    <div class="description">MSc(I) Physics</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
             </section>
+            
             <section class="achievements">
                 <h2>Achievements</h2>
                 <table>

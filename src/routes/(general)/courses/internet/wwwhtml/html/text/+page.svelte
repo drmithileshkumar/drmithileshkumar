@@ -132,7 +132,7 @@
     <Card>
         <Content>
             <p>
-                The fundamental syntactic units of HTML are called tags. In general, tags are used to specify categories of content. For each kind of tag, a browser has default presen- tation specifications for the specified content. The syntax of a tag is the tag`s name surrounded by angle brackets (&lt; and &gt;). Tag names must be written in all lowercase letters. Most tags appear in pairs: an opening tag and a closing tag.
+                The fundamental syntactic units of HTML are called tags. In general, tags are used to specify categories of content. For each kind of tag, a browser has default presentation specifications for the specified content. The syntax of a tag is the tag`s name surrounded by angle brackets (&lt; and &gt;). Tag names must be written in all lowercase letters. Most tags appear in pairs: an opening tag and a closing tag.
             </p>
         </Content>
     </Card>
@@ -140,31 +140,49 @@
     <Card>
         <Content>
             <h6>Paragraphs <code>p</code></h6>
+            <p>
+                The <code>p</code> tag is used to create a paragraph. It is a <em>block</em>-level tag, i.e. it starts to display its content from a new line and the next content will start from a new line. The content in the <code>p</code> tag ignores any formatting applied by white spaces.
+            </p>
         </Content>
     </Card>
     <Card>
         <Content>
             <h6>Line Breaks <code>br</code></h6>
+            <p>
+                To create a new line at any place in the document, <code>br</code> tag is used. It does not have a closing tag.
+            </p>
         </Content>
     </Card>
     <Card>
         <Content>
             <h6>White Spaces <code>pre</code></h6>
+            <p>
+                To display whitespace formatted text, <code>pre</code> tag is used. 
+            </p>
         </Content>
     </Card>
     <Card>
         <Content>
             <h6>Headings <code>h1 h2 h3 h4 h5 h6</code></h6>
+            <p>
+                The headings in an article are marked with one of <code>h1 h2 h3 h4 h5 h6</code> tags where <code>h1</code> is the largest and <code>h6</code> is the smallest. These tags are <em>block</em>-level as well.
+            </p>
         </Content>
     </Card>
     <Card>
         <Content>
             <h6>Block Quotations <code>blockquote</code></h6>
+            <p>
+                Any quotation is a block of text that is slightly differently formatted than the usual paragraphs. The quotation is placed unside <code>blockquote</code> tag. Inside the block, many paragraphs can be included.
+            </p>
         </Content>
     </Card>
     <Card>
         <Content>
             <h6>Font Styles and Sizes <code>i b em strong code sub sup</code></h6>
+            <p>
+                Fonts can be styled using <code>i</code> tag for <i>italics</i>, <code>b</code> tag for <b>bold</b>, <code>em</code> tag for emphasized content. <code>strong</code> tag is used to make a text <strong style="color:currentColor">bold</strong> as well. <code>sub</code> tag is used to mark a text<sub>subscript</sub> to the preceeding text. <code>sup</code> tag is used to mark a text<sup>superscript</sup> to the preceeding text. 
+            </p>
         </Content>
     </Card>
     <Card>
@@ -211,6 +229,7 @@
     <Card>
         <Content>
             <h6>Horizontal Rules <code>hr</code></h6>
+            <p><code>hr</code> draws a line in a new line. Just like <code>br</code> tag, it does not have a closing tag.</p>
         </Content>
     </Card>
 </article>
