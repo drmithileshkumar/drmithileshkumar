@@ -150,6 +150,10 @@ const contents = [
                 url: "/courses/internet/wwwhtml/html/links"
               },
               {
+                name: "Lists",
+                url: "/courses/internet/wwwhtml/html/lists"
+              },
+              {
                 name: "Tables",
                 url: "/courses/internet/wwwhtml/html/tables"
               },

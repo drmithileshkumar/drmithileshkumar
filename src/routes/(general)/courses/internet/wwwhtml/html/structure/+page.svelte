@@ -83,7 +83,7 @@
 </svelte:head>
 <article>
     <h4>
-        Basic Syntax
+        HTML Document Structure
     </h4>
     <Card>
         <Content>

@@ -77,11 +77,11 @@
         
         <br>
         {#if selected === 'HTML'}
-            <CodeMirror bind:value={htmlContent} lang={xml()} />
+            <CodeMirror bind:value={htmlContent} lang={xml()} lineWrapping />
         {:else if selected === 'CSS'}
-            <CodeMirror bind:value={cssContent} lang={css()} />
+            <CodeMirror bind:value={cssContent} lang={css()} lineWrapping />
         {:else}
-            <CodeMirror bind:value={jsContent} lang={javascript()} />
+            <CodeMirror bind:value={jsContent} lang={javascript()} lineWrapping />
         {/if}
         <br>
     </Content>

@@ -609,7 +609,11 @@ const WebPractice = create_ssr_component(($$result, $$props, $$bindings, slots) 
               }
             )}</div> <br> ${selected === "HTML" ? `${validate_component(CodeMirror, "CodeMirror").$$render(
               $$result,
-              { lang: xml(), value: htmlContent },
+              {
+                lang: xml(),
+                lineWrapping: true,
+                value: htmlContent
+              },
               {
                 value: ($$value) => {
                   htmlContent = $$value;
@@ -619,7 +623,11 @@ const WebPractice = create_ssr_component(($$result, $$props, $$bindings, slots) 
               {}
             )}` : `${selected === "CSS" ? `${validate_component(CodeMirror, "CodeMirror").$$render(
               $$result,
-              { lang: css$2(), value: cssContent },
+              {
+                lang: css$2(),
+                lineWrapping: true,
+                value: cssContent
+              },
               {
                 value: ($$value) => {
                   cssContent = $$value;
@@ -629,7 +637,11 @@ const WebPractice = create_ssr_component(($$result, $$props, $$bindings, slots) 
               {}
             )}` : `${validate_component(CodeMirror, "CodeMirror").$$render(
               $$result,
-              { lang: javascript(), value: jsContent },
+              {
+                lang: javascript(),
+                lineWrapping: true,
+                value: jsContent
+              },
               {
                 value: ($$value) => {
                   jsContent = $$value;
