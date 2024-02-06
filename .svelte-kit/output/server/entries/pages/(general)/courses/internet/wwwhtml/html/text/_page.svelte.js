@@ -1,4 +1,4 @@
-import { c as create_ssr_component, s as subscribe, m as set_store_value, v as validate_component } from "../../../../../../../../chunks/ssr.js";
+import { c as create_ssr_component, s as subscribe, m as set_store_value, v as validate_component, e as escape } from "../../../../../../../../chunks/ssr.js";
 import { g as githubDark, a as github, c as contents } from "../../../../../../../../chunks/content2.js";
 /* empty css                                                                */
 import "../../../../../../../../chunks/client.js";
@@ -7,6 +7,7 @@ import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
 import "../../../../../../../../chunks/NavList.svelte_svelte_type_style_lang.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores3.js";
 import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js";
+import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../../../../chunks/Cell.js";
 const css = {
   code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}",
   map: null
@@ -142,7 +143,115 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-vynoqs">Character Entities</h6>`;
+          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-vynoqs">Character Entities</h6> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%;" }, {}, {
+            default: () => {
+              return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Character`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Entity`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Meaning`;
+                        }
+                      })}`;
+                    }
+                  })}`;
+                }
+              })} ${validate_component(Body, "Body").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `&amp;`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-dghgar">amp;</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Ampersand`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `&lt;`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code>${escape("&lt;")}</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Is less than`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `&gt;`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code>${escape("&gt;")}</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Is greater than`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `₹`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code>${escape("&#8377;")}</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Indian Rupee`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `©`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code>${escape("&copy;")}</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Copyright`;
+                        }
+                      })}`;
+                    }
+                  })}`;
+                }
+              })}`;
+            }
+          })}`;
         }
       })}`;
     }

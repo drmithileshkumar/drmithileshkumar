@@ -20,6 +20,7 @@
     import { darkMode, navList } from "$lib/stores";
     import { contents } from "$lib/pages/courses/internet/content";
 	import WebPractice from "$lib/pages/courses/internet/WebPractice.svelte";
+	import DataTable, {Head, Body, Row, Cell} from "@smui/data-table";
     $navList = contents;
     $currentPath = "Text Markup";
     $darkMode = false;
@@ -169,6 +170,42 @@
     <Card>
         <Content>
             <h6>Character Entities</h6>
+            <DataTable style="width:100%;">
+                <Head>
+                    <Row>
+                        <Cell>Character</Cell>
+                        <Cell>Entity</Cell>
+                        <Cell>Meaning</Cell>
+                    </Row>
+                </Head>
+                <Body>
+                    <Row>
+                        <Cell>&</Cell>
+                        <Cell><code>amp;</code></Cell>
+                        <Cell>Ampersand</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>&lt;</Cell>
+                        <Cell><code>{'&lt;'}</code></Cell>
+                        <Cell>Is less than</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>&gt;</Cell>
+                        <Cell><code>{'&gt;'}</code></Cell>
+                        <Cell>Is greater than</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>&#8377;</Cell>
+                        <Cell><code>{'&#8377;'}</code></Cell>
+                        <Cell>Indian Rupee</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>&copy;</Cell>
+                        <Cell><code>{'&copy;'}</code></Cell>
+                        <Cell>Copyright</Cell>
+                    </Row>
+                </Body>
+            </DataTable>
         </Content>
     </Card>
     <Card>
