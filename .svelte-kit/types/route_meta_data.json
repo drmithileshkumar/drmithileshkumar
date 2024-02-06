@@ -110,6 +110,10 @@
 		"src/routes/(general)/courses/internet/wwwhtml/html/images/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/wwwhtml/html/links": [
+		"src/routes/(general)/courses/internet/wwwhtml/html/links/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/wwwhtml/html/origins": [
 		"src/routes/(general)/courses/internet/wwwhtml/html/origins/+page.js",
 		"src/routes/(general)/+layout.server.js"
