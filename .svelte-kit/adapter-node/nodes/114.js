@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Conic sections/Circle/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/conic/_page.js';
 
 export const index = 114;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Conic sections/Circle/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/conic/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Conic sections/Circle/+page.js";
-export const imports = ["_app/immutable/nodes/114.wBUM4cMg.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js","_app/immutable/chunks/stores.XBsJh_dx.js","_app/immutable/chunks/index.JZWwPDI5.js","_app/immutable/chunks/stores.MoTJorNg.js","_app/immutable/chunks/entry.EDyy5ZhH.js"];
-export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
+export const universal_id = "src/routes/(general)/notes/maths/conic/+page.js";
+export const imports = ["_app/immutable/nodes/114.pcJ2QELh.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js","_app/immutable/chunks/stores.XBsJh_dx.js","_app/immutable/chunks/index.JZWwPDI5.js","_app/immutable/chunks/stores.lUt-VAB_.js","_app/immutable/chunks/entry.4j5PFxMP.js","_app/immutable/chunks/index.gBHr9ICE.js"];
+export const stylesheets = ["_app/immutable/assets/114.JiA7HhnV.css","_app/immutable/assets/Canvas.mjov6t4t.css"];
 export const fonts = [];

@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/courses/internet/javascript/dynamic/_page.js';
+import * as universal from '../entries/pages/(general)/courses/internet/javascript/fetchapi/_page.js';
 
 export const index = 36;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/internet/javascript/dynamic/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/internet/javascript/fetchapi/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/courses/internet/javascript/dynamic/+page.js";
+export const universal_id = "src/routes/(general)/courses/internet/javascript/fetchapi/+page.js";
 export const imports = ["_app/immutable/nodes/36.CNI3CeAP.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js"];
 export const stylesheets = [];
 export const fonts = [];

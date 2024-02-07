@@ -2,7 +2,7 @@ import { c as create_ssr_component, h as compute_rest_props, b as spread, j as e
 import hljs from "highlight.js/lib/core";
 import xml$2 from "highlight.js/lib/languages/xml";
 const css$1 = {
-  code: ".langtag.svelte-mxl95r{position:relative}.langtag.svelte-mxl95r::after{content:attr(data-language);position:absolute;top:0;right:0;display:flex;align-items:center;justify-content:center;background:var(--langtag-background, inherit);color:var(--langtag-color, inherit);border-radius:var(--langtag-border-radius, 0);padding:var(--langtag-padding, 1em)}",
+  code: ".langtag.svelte-1w9vok{position:relative}.langtag.svelte-1w9vok::after{content:attr(data-language);position:absolute;top:var(--langtag-top, 0);right:var(--langtag-right, 0);display:flex;align-items:center;justify-content:center;background:var(--langtag-background, inherit);color:var(--langtag-color, inherit);border-radius:var(--langtag-border-radius, 0);padding:var(--langtag-padding, 1em)}",
   map: null
 };
 const LangTag = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -28,7 +28,7 @@ const LangTag = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       escape_object($$restProps)
     ],
     {
-      classes: (langtag ? "langtag" : "") + " svelte-mxl95r"
+      classes: (langtag ? "langtag" : "") + " svelte-1w9vok"
     }
   )}><code${add_classes("hljs".trim())}>${highlighted ? `<!-- HTML_TAG_START -->${highlighted}<!-- HTML_TAG_END -->` : `${escape(code)}`}</code></pre>`;
 });
