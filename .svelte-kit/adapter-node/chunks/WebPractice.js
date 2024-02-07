@@ -611,6 +611,14 @@ const WebPractice = create_ssr_component(($$result, $$props, $$bindings, slots) 
               $$result,
               {
                 lang: xml(),
+                styles: {
+                  "&": {
+                    width: "100%",
+                    maxWidth: "100%",
+                    minHeight: "200px",
+                    maxHeight: "50vh"
+                  }
+                },
                 lineWrapping: true,
                 value: htmlContent
               },
@@ -625,6 +633,14 @@ const WebPractice = create_ssr_component(($$result, $$props, $$bindings, slots) 
               $$result,
               {
                 lang: css$2(),
+                styles: {
+                  "&": {
+                    width: "100%",
+                    maxWidth: "100%",
+                    minHeight: "200px",
+                    maxHeight: "50vh"
+                  }
+                },
                 lineWrapping: true,
                 value: cssContent
               },
@@ -639,6 +655,14 @@ const WebPractice = create_ssr_component(($$result, $$props, $$bindings, slots) 
               $$result,
               {
                 lang: javascript(),
+                styles: {
+                  "&": {
+                    width: "100%",
+                    maxWidth: "100%",
+                    minHeight: "200px",
+                    maxHeight: "50vh"
+                  }
+                },
                 lineWrapping: true,
                 value: jsContent
               },
@@ -655,7 +679,7 @@ const WebPractice = create_ssr_component(($$result, $$props, $$bindings, slots) 
       }
     })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
       default: () => {
-        return `<iframe class="preview svelte-16wm0q8" style="width:100%; height:300px;"${add_attribute("this", previewFrame, 0)} data-svelte-h="svelte-17l5n9i"></iframe>`;
+        return `<iframe class="preview svelte-16wm0q8" style="width:100%; min-height:200px; max-height:50vh;"${add_attribute("this", previewFrame, 0)} data-svelte-h="svelte-yzavse"></iframe>`;
       }
     })}`;
   } while (!$$settled);

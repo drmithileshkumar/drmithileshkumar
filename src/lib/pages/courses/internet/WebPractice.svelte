@@ -77,17 +77,53 @@
         
         <br>
         {#if selected === 'HTML'}
-            <CodeMirror bind:value={htmlContent} lang={xml()} lineWrapping />
+            <CodeMirror 
+                bind:value={htmlContent} 
+                lang={xml()} 
+                styles={{
+                    "&": {
+                        width: "100%",
+                        maxWidth: "100%",
+                        minHeight: "200px",
+                        maxHeight: "50vh",
+                    },
+                }}
+                lineWrapping 
+            />
         {:else if selected === 'CSS'}
-            <CodeMirror bind:value={cssContent} lang={css()} lineWrapping />
+            <CodeMirror 
+                bind:value={cssContent} 
+                lang={css()} 
+                styles={{
+                    "&": {
+                        width: "100%",
+                        maxWidth: "100%",
+                        minHeight: "200px",
+                        maxHeight: "50vh",
+                    },
+                }}
+                lineWrapping 
+            />
         {:else}
-            <CodeMirror bind:value={jsContent} lang={javascript()} lineWrapping />
+            <CodeMirror 
+                bind:value={jsContent} 
+                lang={javascript()} 
+                styles={{
+                    "&": {
+                        width: "100%",
+                        maxWidth: "100%",
+                        minHeight: "200px",
+                        maxHeight: "50vh",
+                    },
+                }}
+                lineWrapping 
+            />
         {/if}
         <br>
     </Content>
 </Card>
 <Card>
-    <iframe class="preview" bind:this={previewFrame} style="width:100%; height:300px;">
+    <iframe class="preview" bind:this={previewFrame} style="width:100%; min-height:200px; max-height:50vh;">
     </iframe>
 </Card>
 
