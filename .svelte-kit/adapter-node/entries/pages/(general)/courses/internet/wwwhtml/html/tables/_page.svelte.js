@@ -82,6 +82,78 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         </table>
     </body> 
 </html>`;
+  let htmlContent1 = `<!DOCTYPE html> 
+<!-- File name and document purpose --> 
+<html lang = "en">   
+    <head>     
+        <title> A title for the document </title>
+        <meta charset = "utf-8" />     
+        <!--include external resources here like adsense, javascript, styles-->
+    </head>   
+    <body>   
+        <table>
+            <caption>Basic Timetable</caption>
+            <thead>
+            <tr>
+                <th></th>
+                <th>8:45-9:45</th>
+                <th>9:45-10:45</th>
+                <th>11:00-12:00</th>
+                <th>12:00-01:00</th>
+                <th>01:45-02:45</th>
+                <th>02:45-03:45</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>Mon</th>
+                <td></td>
+                <td></td>
+                <td>IT</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Tue</th>
+                <td style="background: red;color:white;" colspan="2">Lab B2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Wed</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Thu</th>
+                <td></td>
+                <td>IT</td>
+                <td></td>
+                <td></td>
+                <td style="background: red;color:white;" colspan="2" colspan="2">Lab B1</td>
+            </tr>
+            <tr>
+                <th>Fri</th>
+                <td>IT</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </body> 
+</html>`;
   $$result.css.add(css);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
@@ -102,6 +174,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<h6 id="basicTable" class="svelte-9tb2l5" data-svelte-h="svelte-1d05kz">Basic Table Tags</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-1xmmvrc">A table begins with the <code>table</code> tag. Inside we create many rows using <code>tr</code> tag. Inside each row, the corresponding column entries are placed inside <code>td</code> tags. Table headings either in row or column are placed inside <code>th</code> tag.</p>`;
+        }
+      })}`;
+    }
   })} ${validate_component(WebPractice, "WebPractice").$$render(
     $$result,
     {
@@ -115,19 +195,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="basicTable" class="svelte-9tb2l5" data-svelte-h="svelte-1d05kz">Basic Table Tags</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-1xmmvrc">A table begins with the <code>table</code> tag. Inside we create many rows using <code>tr</code> tag. Inside each row, the corresponding column entries are placed inside <code>td</code> tags. Table headings either in row or column are placed inside <code>th</code> tag.</p>`;
-        }
-      })}`;
-    }
-  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
-    default: () => {
-      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
-        default: () => {
           return `<h6 id="tableSpan" class="svelte-9tb2l5" data-svelte-h="svelte-1d5x3sl">The <code>rowspan</code> and <code>colspan</code> Attributes</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-10gdojw">Cells can can be merged using <code>rowspan</code> and <code>colspan</code> attributes.</p>`;
         }
       })}`;
     }
-  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })} ${validate_component(WebPractice, "WebPractice").$$render(
+    $$result,
+    {
+      htmlContent: htmlContent1,
+      cssContent: "",
+      jsContent: ""
+    },
+    {},
+    {}
+  )} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {

@@ -89,6 +89,78 @@
         </table>
     </body> 
 </html>`
+let htmlContent1 = `<!DOCTYPE html> 
+<!-- File name and document purpose --> 
+<html lang = "en">   
+    <head>     
+        <title> A title for the document </title>
+        <meta charset = "utf-8" />     
+        <!--include external resources here like adsense, javascript, styles-->
+    </head>   
+    <body>   
+        <table>
+            <caption>Basic Timetable</caption>
+            <thead>
+            <tr>
+                <th></th>
+                <th>8:45-9:45</th>
+                <th>9:45-10:45</th>
+                <th>11:00-12:00</th>
+                <th>12:00-01:00</th>
+                <th>01:45-02:45</th>
+                <th>02:45-03:45</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>Mon</th>
+                <td></td>
+                <td></td>
+                <td>IT</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Tue</th>
+                <td style="background: red;color:white;" colspan="2">Lab B2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Wed</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Thu</th>
+                <td></td>
+                <td>IT</td>
+                <td></td>
+                <td></td>
+                <td style="background: red;color:white;" colspan="2" colspan="2">Lab B1</td>
+            </tr>
+            <tr>
+                <th>Fri</th>
+                <td>IT</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </body> 
+</html>`
 </script>
 <style>
     article {
@@ -153,7 +225,6 @@
             </p>
         </Content>
     </Card>
-    <WebPractice htmlContent={htmlContent} cssContent={""} jsContent={""} />
     <Card>
         <Content>
             <h6 id="basicTable">Basic Table Tags</h6>
@@ -162,6 +233,7 @@
             </p>
         </Content>
     </Card>
+    <WebPractice htmlContent={htmlContent} cssContent={""} jsContent={""} />
     <Card>
         <Content>
             <h6 id="tableSpan">The <code>rowspan</code> and <code>colspan</code> Attributes</h6>
@@ -170,6 +242,7 @@
             </p>
         </Content>
     </Card>
+    <WebPractice htmlContent={htmlContent1} cssContent={""} jsContent={""} />
     <Card>
         <Content>
             <h6 id="tableSection">Table Sections</h6>
