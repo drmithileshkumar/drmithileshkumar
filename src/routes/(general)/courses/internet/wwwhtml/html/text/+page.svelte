@@ -232,17 +232,69 @@
             <p><code>hr</code> draws a line in a new line. Just like <code>br</code> tag, it does not have a closing tag.</p>
         </Content>
     </Card>
+    <h4>Exercises</h4>
     <Card>
         <Content>
-            <h6>Exercise</h6>
+            <div class="question">
+                <p>Write HTML code that shows the following text:</p>
+                <p>
+                    <strong style='color:currentColor'>Theorem</strong>: Every prime number (greater than 2) <em>modulo</em> 4 can be written in the form <em>4n + 1</em> or <em>4n + 3</em>.
+                </p>
+                <p>
+                    <strong style='color:currentColor'>Proof</strong>: Any number p when divided by 4 leaves remainder 0, 1, 2 or 3. Therefore, the number has the form <em>4n</em>, <em>4n + 1</em>, <em>4n + 2</em> or <em>4n + 3</em>. Since <em>4n</em> and <em>4n + 2</em> are <strong style="color: currentColor;">even</strong>, so these can not be a form of a prime number which is an <strong style="color: currentColor;">odd</strong> number (except 2). This <em>proves</em> the theorem. &#9723;
+                </p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Write HTML code that shows the following text:</p>
+                <p>e<sup>&iota;&theta;</sup> = cos&theta; + &iota;sin&theta;</p>
+                <p><sup>n</sup>C<sub>r</sub> = <sup>n!</sup>&frasl;<sub>(n-r)!r!</sub> is equal to the number of ways of selecting r items from n <em>distinct</em> items.</p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Write HTML code that shows the following pattern:</p>
+                <pre>
+                      *
+                     ***
+                    *****</pre>
+                <hr/>
+                <pre>
+                    *****
+                     ***
+                      *</pre>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Write HTML code that shows the following code:</p>
+                <code><pre>
+let sum = (a, b) => {"{"}
+    return a + b;
+}
+console.log(sum(3 + 4));//prints 7</pre></code>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
             <div class="question">
                 Using above text-related html tags, write an article in HTML that teaches a student how to solve equations in 2 variables. Show a program in your programming language that solves the problem.
             </div>
-            <div class="solution">
-                <h6>Output</h6>
-                <p>
-                    
-                </p>
+        </Content>
+    </Card>
+    <h4>Assignment</h4>
+    <Card>
+        <Content>
+            <div class="question">
+                Create a repository on Github called resume. Clone it to your laptop. Create an HTML page called <code>resume.html</code> for your resume using only tags used in this page. (No CSS yet.)
             </div>
         </Content>
     </Card>

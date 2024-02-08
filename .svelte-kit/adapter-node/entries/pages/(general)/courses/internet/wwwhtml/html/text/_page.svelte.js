@@ -263,11 +263,58 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
+  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-cy8vvz">Exercises</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-14t2rl8"><p class="svelte-9tb2l5">Write HTML code that shows the following text:</p> <p class="svelte-9tb2l5"><strong style="color:currentColor" class="svelte-9tb2l5">Theorem</strong>: Every prime number (greater than 2) <em>modulo</em> 4 can be written in the form <em>4n + 1</em> or <em>4n + 3</em>.</p> <p class="svelte-9tb2l5"><strong style="color:currentColor" class="svelte-9tb2l5">Proof</strong>: Any number p when divided by 4 leaves remainder 0, 1, 2 or 3. Therefore, the number has the form <em>4n</em>, <em>4n + 1</em>, <em>4n + 2</em> or <em>4n + 3</em>. Since <em>4n</em> and <em>4n + 2</em> are <strong style="color: currentColor;" class="svelte-9tb2l5">even</strong>, so these can not be a form of a prime number which is an <strong style="color: currentColor;" class="svelte-9tb2l5">odd</strong> number (except 2). This <em>proves</em> the theorem. ◻</p></div>`;
+        }
+      })}`;
+    }
   })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-v3o0c0">Exercise</h6> <div class="question svelte-9tb2l5" data-svelte-h="svelte-mchjcq">Using above text-related html tags, write an article in HTML that teaches a student how to solve equations in 2 variables. Show a program in your programming language that solves the problem.</div> <div class="solution" data-svelte-h="svelte-85ritp"><h6 class="svelte-9tb2l5">Output</h6> <p class="svelte-9tb2l5"></p></div>`;
+          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-4swzn"><p class="svelte-9tb2l5">Write HTML code that shows the following text:</p> <p class="svelte-9tb2l5">e<sup>ιθ</sup> = cosθ + ιsinθ</p> <p class="svelte-9tb2l5"><sup>n</sup>C<sub>r</sub> = <sup>n!</sup>⁄<sub>(n-r)!r!</sub> is equal to the number of ways of selecting r items from n <em>distinct</em> items.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-qtneh7"><p class="svelte-9tb2l5">Write HTML code that shows the following pattern:</p> <pre>                      *
+                     ***
+                    *****</pre> <hr> <pre>                    *****
+                     ***
+                      *</pre></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-9tb2l5"><p class="svelte-9tb2l5" data-svelte-h="svelte-1j3kllr">Write HTML code that shows the following code:</p> <code><pre>let sum = (a, b) =&gt; ${escape("{")}
+    return a + b;
+}
+console.log(sum(3 + 4));//prints 7</pre></code></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-mchjcq">Using above text-related html tags, write an article in HTML that teaches a student how to solve equations in 2 variables. Show a program in your programming language that solves the problem.</div>`;
+        }
+      })}`;
+    }
+  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-hc8mgz">Assignment</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-1mqcxb7">Create a repository on Github called resume. Clone it to your laptop. Create an HTML page called <code>resume.html</code> for your resume using only tags used in this page. (No CSS yet.)</div>`;
         }
       })}`;
     }
