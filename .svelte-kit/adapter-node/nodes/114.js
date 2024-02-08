@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/conic/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/_page.js';
 
 export const index = 114;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/conic/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/conic/+page.js";
-export const imports = ["_app/immutable/nodes/114.MnAl53Wo.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js","_app/immutable/chunks/stores.XBsJh_dx.js","_app/immutable/chunks/index.JZWwPDI5.js","_app/immutable/chunks/stores.Db8xhipP.js","_app/immutable/chunks/entry.eDDyRKHw.js","_app/immutable/chunks/index.gBHr9ICE.js"];
-export const stylesheets = ["_app/immutable/assets/114.JiA7HhnV.css","_app/immutable/assets/Canvas.mjov6t4t.css"];
+export const universal_id = "src/routes/(general)/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/+page.js";
+export const imports = ["_app/immutable/nodes/114.Gxmexvg2.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.WZMESDHC.js","_app/immutable/chunks/index.5RaDercz.js","_app/immutable/chunks/stores.XBsJh_dx.js","_app/immutable/chunks/index.JZWwPDI5.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.2HbS-NMk.js","_app/immutable/chunks/entry.6Kdaw4Na.js"];
+export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

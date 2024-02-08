@@ -106,6 +106,10 @@
 		"src/routes/(general)/courses/internet/wwwhtml/html/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/wwwhtml/html/forms": [
+		"src/routes/(general)/courses/internet/wwwhtml/html/forms/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/wwwhtml/html/images": [
 		"src/routes/(general)/courses/internet/wwwhtml/html/images/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -893,6 +897,10 @@
 	],
 	"/(about)/research": [
 		"src/routes/(about)/research/+page.js"
+	],
+	"/(general)/students": [
+		"src/routes/(general)/students/+page.js",
+		"src/routes/(general)/+layout.server.js"
 	],
 	"/(about)/teaching": [
 		"src/routes/(about)/teaching/+page.js"

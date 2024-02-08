@@ -1219,6 +1219,18 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             }
           })}`;
         }
+      })} ${validate_component(Item, "Item").$$render($$result, {}, {}, {
+        default: () => {
+          return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
+            default: () => {
+              return `groups`;
+            }
+          })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
+            default: () => {
+              return `Students`;
+            }
+          })}`;
+        }
       })}`;
     }
   })} ${validate_component(List, "List").$$render($$result, {}, {}, {
