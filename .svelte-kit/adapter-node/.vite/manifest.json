@@ -933,7 +933,7 @@
   },
   "src/routes/(general)/courses/internet/wwwhtml/html/forms/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.CeJT5Jfy.css",
+      "_app/immutable/assets/_page.PIezTwLC.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/forms/_page.svelte.js",
@@ -945,7 +945,8 @@
       "_ActionIcons.js",
       "_NavList.svelte_svelte_type_style_lang.js",
       "_stores3.js",
-      "_WebPractice.js"
+      "_WebPractice.js",
+      "_Cell.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/forms/+page.svelte"
