@@ -232,4 +232,18 @@
             <p><code>hr</code> draws a line in a new line. Just like <code>br</code> tag, it does not have a closing tag.</p>
         </Content>
     </Card>
+    <Card>
+        <Content>
+            <h6>Exercise</h6>
+            <div class="question">
+                Using above text-related html tags, write an article in HTML that teaches a student how to solve equations in 2 variables. Show a program in your programming language that solves the problem.
+            </div>
+            <div class="solution">
+                <h6>Output</h6>
+                <p>
+                    
+                </p>
+            </div>
+        </Content>
+    </Card>
 </article>

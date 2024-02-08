@@ -9,7 +9,7 @@ import { d as darkMode, c as currentPath, n as navList } from "../../../../../..
 import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js";
 import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../../../../chunks/Cell.js";
 const css = {
-  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}strong.svelte-9tb2l5{color:goldenrod;opacity:1}a.svelte-9tb2l5{cursor:pointer}",
+  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}strong.svelte-9tb2l5{color:goldenrod;opacity:1}a.svelte-9tb2l5{cursor:pointer}.question.svelte-9tb2l5{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -260,6 +260,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
           return `<h6 id="p8" class="svelte-9tb2l5" data-svelte-h="svelte-17bejna">Horizontal Rules <code>hr</code></h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-ja6u5u"><code>hr</code> draws a line in a new line. Just like <code>br</code> tag, it does not have a closing tag.</p>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-v3o0c0">Exercise</h6> <div class="question svelte-9tb2l5" data-svelte-h="svelte-mchjcq">Using above text-related html tags, write an article in HTML that teaches a student how to solve equations in 2 variables. Show a program in your programming language that solves the problem.</div> <div class="solution" data-svelte-h="svelte-85ritp"><h6 class="svelte-9tb2l5">Output</h6> <p class="svelte-9tb2l5"></p></div>`;
         }
       })}`;
     }
