@@ -47,13 +47,17 @@
 	}
 
 	li {
-		padding: 0.2em 0;
+		padding: 0em 0;
 	}
+	
     a {
         text-decoration: none;
     }
+	a:hover {
+		background-color: bisque;
+	}
 </style>
-<span style="display:flex;flex-direction:row;gap:0.2em;">
+<span style="display:flex;flex-direction:row;gap:0.2em;font-size:0.8em;">
     <button class="material-symbols-outlined" on:click={toggle}>{expanded ? "expand_less" : "expand_more"}</button>
     <a href="{url}" style='font-weight: bold'>{name}</a>
 </span>
@@ -65,7 +69,7 @@
 				{#if topic.topics}
 					<svelte:self {...topic} />
 				{:else}
-					<a href="{topic.url}">{topic.name}</a>
+					<a style="font-size:0.8em;" href="{topic.url}">{topic.name}</a>
 				{/if}
 			</li>
 		{/each}

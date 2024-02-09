@@ -1211,7 +1211,7 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         default: () => {
           return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
             default: () => {
-              return `folder`;
+              return `local_library`;
             }
           })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
             default: () => {

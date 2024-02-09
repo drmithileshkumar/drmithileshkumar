@@ -155,7 +155,7 @@
             <h6>To-do app</h6>
             <div class="question">
                 <p>
-                    We'll create a To-do web app. We'll start with nested loops. Create a list of groceries. The primary list is of categories. The secondary lists are items in the categories.
+                    We'll create a To-do web app. We'll start with nested lists. Create a list of groceries. The primary list is of categories. The secondary lists are items in the categories.
                 </p>
             </div>
         </Content>

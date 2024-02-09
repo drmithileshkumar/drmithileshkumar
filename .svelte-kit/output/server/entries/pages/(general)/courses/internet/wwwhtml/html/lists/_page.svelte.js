@@ -110,7 +110,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-1o73v1g">To-do app</h6> <div class="question svelte-9tb2l5" data-svelte-h="svelte-h749uu"><p class="svelte-9tb2l5">We&#39;ll create a To-do web app. We&#39;ll start with nested loops. Create a list of groceries. The primary list is of categories. The secondary lists are items in the categories.</p></div>`;
+          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-1o73v1g">To-do app</h6> <div class="question svelte-9tb2l5" data-svelte-h="svelte-1w15hvk"><p class="svelte-9tb2l5">We&#39;ll create a To-do web app. We&#39;ll start with nested lists. Create a list of groceries. The primary list is of categories. The secondary lists are items in the categories.</p></div>`;
         }
       })}`;
     }

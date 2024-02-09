@@ -426,7 +426,7 @@
             <Item
                 on:SMUI:action={() => goto(`/courses`)}
             >
-                <Graphic class="material-icons">folder</Graphic>
+                <Graphic class="material-icons">local_library</Graphic>
                 <Text>Courses</Text>
             </Item>
             <Item
