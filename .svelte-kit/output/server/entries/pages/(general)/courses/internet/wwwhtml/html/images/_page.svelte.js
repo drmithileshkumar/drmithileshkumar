@@ -9,7 +9,7 @@ import { d as darkMode, c as currentPath, n as navList } from "../../../../../..
 import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js";
 import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../../../../chunks/Cell.js";
 const css = {
-  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}",
+  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}.question.svelte-9tb2l5{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -40,6 +40,16 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             />
             <figcaption>DNS Lookup</figcaption>
         </figure>
+        <figure>
+            <img 
+                src="/courses/internet/wwwhtml/fundamentals/intro/dns.webp" 
+                alt="DNS lookup" 
+                width="300px" 
+                height="auto" 
+            />
+            <figcaption>The <code>.webp</code> version of the above <code>.png</code> file.</figcaption>
+        </figure>
+        <p></p>
     </body> 
 </html>`;
   $$result.css.add(css);
@@ -147,6 +157,38 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         }
                       })}`;
                     }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-45gdye">.webp</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `WebP`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `Uses 24-bit color representations fo pixels, supports lossy and lossless compression, transparency, animation, small in size`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-d36mss">.svg</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `Scalable Vector Graphics`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `Uses code (XML syntax), high quality, supports transparency, animation, small in size`;
+                        }
+                      })}`;
+                    }
                   })}`;
                 }
               })}`;
@@ -160,6 +202,126 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
           return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-1ff6bh0">The Image Element</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-1qhgslr">The <code>img</code> element is an inline element that specifies an image that is to appear in a document. This element has no closing tag.</p> <p class="svelte-9tb2l5" data-svelte-h="svelte-dvw7m1">The image element includes following essential attributes:</p> <ol data-svelte-h="svelte-6ja778"><li class="svelte-9tb2l5"><code>src</code>: specifies the file containing the image</li> <li class="svelte-9tb2l5"><code>alt</code>: specifies text to be displayed when it is not possible to display the image</li> <li class="svelte-9tb2l5"><code>width</code>: width of the image</li> <li class="svelte-9tb2l5"><code>height</code>: height of the image</li></ol>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-1uggemt">Length units</h6> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%" }, {}, {
+            default: () => {
+              return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Unit`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Description`;
+                        }
+                      })}`;
+                    }
+                  })}`;
+                }
+              })} ${validate_component(Body, "Body").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-wl9nl8">px</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `One pixel. <code data-svelte-h="svelte-1xd212f">1px = 1 inch / 96</code>`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-uex3dc">cm</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `One centimeter. <code data-svelte-h="svelte-126y64b">1cm = 96px / 2.54</code>`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-zp5n6r">in</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `One inch. <code data-svelte-h="svelte-193xpc0">1in = 96px = 2.54cm</code>`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-hqlssn">%</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `One percent. <code data-svelte-h="svelte-1gq5n46">1%</code> is calculated relative to the parent container.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-1dl27ni">vh</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `One percent of the height of viewport. <code data-svelte-h="svelte-1gq5n46">1%</code> is calculated relative to the parent container.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-i14kzn">vw</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `One percent of the width of viewport. <code data-svelte-h="svelte-1gq5n46">1%</code> is calculated relative to the parent container.`;
+                        }
+                      })}`;
+                    }
+                  })}`;
+                }
+              })}`;
+            }
+          })}`;
+        }
+      })}`;
+    }
+  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-1yto96c">Exercise</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-1j1d9rk"><p class="svelte-9tb2l5">Experiment with various types of length units to reside an image.</p></div>`;
+        }
+      })}`;
+    }
+  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-hc8mgz">Assignment</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-x4dplk"><p class="svelte-9tb2l5">Update your resume by including your photo.</p></div>`;
         }
       })}`;
     }

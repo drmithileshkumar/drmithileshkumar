@@ -149,4 +149,23 @@
             </p>
         </Content>
     </Card>
+    <h4>Exercise</h4>
+    <Card>
+        <Content>
+            <h6>To-do app</h6>
+            <div class="question">
+                <p>
+                    We'll create a To-do web app. We'll start with nested loops. Create a list of groceries. The primary list is of categories. The secondary lists are items in the categories.
+                </p>
+            </div>
+        </Content>
+    </Card>
+    <h4>Assignment</h4>
+    <Card>
+        <Content>
+            <div class="question">
+                Create a section for education in your resume. Use list to show the list of your exams like Class X, Class XII etc.
+            </div>
+        </Content>
+    </Card>
 </article>

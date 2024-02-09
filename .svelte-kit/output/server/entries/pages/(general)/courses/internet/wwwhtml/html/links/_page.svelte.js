@@ -8,7 +8,7 @@ import "../../../../../../../../chunks/NavList.svelte_svelte_type_style_lang.js"
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores3.js";
 import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js";
 const css = {
-  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-9tb2l5{cursor:pointer}",
+  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-9tb2l5{cursor:pointer}.question.svelte-9tb2l5{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -80,6 +80,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
           return `<h6 id="target" class="svelte-9tb2l5" data-svelte-h="svelte-2vfq9s">Targets within Documents</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-7vhal6">It is possible to automatically scroll to an element in your document using the <code>a</code>. The <code>href</code> attribute of the <code>a</code> tag is assigned the <code>id</code> of the target element in the format <code>#id</code>.</p> <p class="svelte-9tb2l5" data-svelte-h="svelte-1cn3jae">If the target element is in another document, then the <code>#id</code> is attached at the end of the URL of the document.</p>`;
+        }
+      })}`;
+    }
+  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-hc8mgz">Assignment</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-14vafk3">Place a link to your github repository inside your resume. Use github logo.</div>`;
         }
       })}`;
     }

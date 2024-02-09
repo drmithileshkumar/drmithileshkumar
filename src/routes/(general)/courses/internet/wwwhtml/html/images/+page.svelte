@@ -46,6 +46,16 @@
             />
             <figcaption>DNS Lookup</figcaption>
         </figure>
+        <figure>
+            <img 
+                src="/courses/internet/wwwhtml/fundamentals/intro/dns.webp" 
+                alt="DNS lookup" 
+                width="300px" 
+                height="auto" 
+            />
+            <figcaption>The <code>.webp</code> version of the above <code>.png</code> file.</figcaption>
+        </figure>
+        <p></p>
     </body> 
 </html>`
 </script>
@@ -142,6 +152,16 @@
                         <Cell style="white-space:normal;">Portable Network Graphics</Cell>
                         <Cell style="white-space:normal;">Uses 24-bit color representations fo pixels, supports transparent, larger in size</Cell>
                     </Row>
+                    <Row>
+                        <Cell><code>.webp</code></Cell>
+                        <Cell style="white-space:normal;">WebP</Cell>
+                        <Cell style="white-space:normal;">Uses 24-bit color representations fo pixels, supports lossy and lossless compression, transparency, animation, small in size</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>.svg</code></Cell>
+                        <Cell style="white-space:normal;">Scalable Vector Graphics</Cell>
+                        <Cell style="white-space:normal;">Uses code (XML syntax), high quality, supports transparency, animation, small in size</Cell>
+                    </Row>
                 </Body>
             </DataTable>
         </Content>
@@ -161,6 +181,61 @@
                 <li><code>width</code>: width of the image</li>
                 <li><code>height</code>: height of the image</li>
             </ol>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Length units</h6>
+            <DataTable style="width:100%">
+                <Head>
+                    <Row>
+                        <Cell>Unit</Cell>
+                        <Cell>Description</Cell>
+                    </Row>
+                </Head>
+                <Body>
+                    <Row>
+                        <Cell><code>px</code></Cell>
+                        <Cell style="white-space:normal;">One pixel. <code>1px = 1 inch / 96</code></Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>cm</code></Cell>
+                        <Cell style="white-space:normal;">One centimeter. <code>1cm = 96px / 2.54</code></Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>in</code></Cell>
+                        <Cell style="white-space:normal;">One inch. <code>1in = 96px = 2.54cm</code></Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>%</code></Cell>
+                        <Cell style="white-space:normal;">One percent. <code>1%</code> is calculated relative to the parent container.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>vh</code></Cell>
+                        <Cell style="white-space:normal;">One percent of the height of viewport. <code>1%</code> is calculated relative to the parent container.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>vw</code></Cell>
+                        <Cell style="white-space:normal;">One percent of the width of viewport. <code>1%</code> is calculated relative to the parent container.</Cell>
+                    </Row>
+                </Body>
+            </DataTable>
+        </Content>
+    </Card>
+    <h4>Exercise</h4>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Experiment with various types of length units to reside an image.</p>
+            </div>
+        </Content>
+    </Card>
+    <h4>Assignment</h4>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Update your resume by including your photo.</p>
+            </div>
         </Content>
     </Card>
 </article>

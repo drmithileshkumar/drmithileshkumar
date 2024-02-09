@@ -129,4 +129,12 @@
             
         </Content>
     </Card>
+    <h4>Assignment</h4>
+    <Card>
+        <Content>
+            <div class="question">
+                Place a link to your github repository inside your resume. Use github logo.
+            </div>
+        </Content>
+    </Card>
 </article>

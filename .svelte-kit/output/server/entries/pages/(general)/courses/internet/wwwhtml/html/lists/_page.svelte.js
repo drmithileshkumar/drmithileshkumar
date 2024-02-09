@@ -8,7 +8,7 @@ import "../../../../../../../../chunks/NavList.svelte_svelte_type_style_lang.js"
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores3.js";
 import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js";
 const css = {
-  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-9tb2l5{cursor:pointer}",
+  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-9tb2l5{cursor:pointer}.question.svelte-9tb2l5{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -103,6 +103,22 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
           return `<h6 id="definitionList" class="svelte-9tb2l5" data-svelte-h="svelte-qgi96e">Definition List</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-1i7gbx5">Definition list is created using the tag <code>dl</code> (definition list). Inside, the items are placed inside individual item tags <code>dt</code> (definition title) and <code>dd</code> (definition data).</p>`;
+        }
+      })}`;
+    }
+  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-1yto96c">Exercise</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-1o73v1g">To-do app</h6> <div class="question svelte-9tb2l5" data-svelte-h="svelte-h749uu"><p class="svelte-9tb2l5">We&#39;ll create a To-do web app. We&#39;ll start with nested loops. Create a list of groceries. The primary list is of categories. The secondary lists are items in the categories.</p></div>`;
+        }
+      })}`;
+    }
+  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-hc8mgz">Assignment</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-16q5n00">Create a section for education in your resume. Use list to show the list of your exams like Class X, Class XII etc.</div>`;
         }
       })}`;
     }
