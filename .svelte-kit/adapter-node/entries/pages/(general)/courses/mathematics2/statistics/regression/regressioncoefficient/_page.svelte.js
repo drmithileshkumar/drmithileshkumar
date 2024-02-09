@@ -1,7 +1,6 @@
-import { c as create_ssr_component, s as subscribe, m as set_store_value, v as validate_component, e as escape } from "../../../../../../../../chunks/ssr.js";
-import { C as Card } from "../../../../../../../../chunks/Card.js";
+import { c as create_ssr_component, s as subscribe, p as set_store_value, v as validate_component, e as escape } from "../../../../../../../../chunks/ssr.js";
+import { d as darkMode, c as currentPath, n as navList, C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
-import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores3.js";
 import { c as contents } from "../../../../../../../../chunks/content.js";
 const css = {
   code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}p.svelte-n59hwk,li.svelte-n59hwk{opacity:0.8}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}strong.svelte-n59hwk{color:goldenrod;opacity:1}.question.svelte-n59hwk{cursor:pointer;padding:0.3em}",

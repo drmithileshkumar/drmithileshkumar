@@ -1,11 +1,11 @@
-import { c as create_ssr_component, s as subscribe, m as set_store_value, v as validate_component, e as escape } from "../../../../../../../../chunks/ssr.js";
+import { c as create_ssr_component, s as subscribe, p as set_store_value, v as validate_component, e as escape } from "../../../../../../../../chunks/ssr.js";
 import { g as githubDark, a as github, c as contents } from "../../../../../../../../chunks/content2.js";
 /* empty css                                                                */
 import "../../../../../../../../chunks/client.js";
-import { C as Card } from "../../../../../../../../chunks/Card.js";
+import { d as darkMode, c as currentPath, n as navList, C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
-import "../../../../../../../../chunks/NavList.svelte_svelte_type_style_lang.js";
-import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores3.js";
+import "../../../../../../../../chunks/Subheader.js";
+/* empty css                                                                   */
 import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js";
 import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../../../../chunks/Cell.js";
 const css = {

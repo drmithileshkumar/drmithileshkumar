@@ -1,11 +1,11 @@
-import { c as create_ssr_component, s as subscribe, m as set_store_value, v as validate_component } from "../../../../../../../../chunks/ssr.js";
+import { c as create_ssr_component, s as subscribe, p as set_store_value, v as validate_component } from "../../../../../../../../chunks/ssr.js";
 import { g as githubDark, a as github, c as contents } from "../../../../../../../../chunks/content2.js";
 /* empty css                                                                */
 import "../../../../../../../../chunks/client.js";
-import { C as Card } from "../../../../../../../../chunks/Card.js";
+import { d as darkMode, c as currentPath, n as navList, C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
-import "../../../../../../../../chunks/NavList.svelte_svelte_type_style_lang.js";
-import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores3.js";
+import "../../../../../../../../chunks/Subheader.js";
+/* empty css                                                                   */
 import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js";
 const css = {
   code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-9tb2l5{cursor:pointer}.question.svelte-9tb2l5{cursor:pointer;padding:0.3em}",

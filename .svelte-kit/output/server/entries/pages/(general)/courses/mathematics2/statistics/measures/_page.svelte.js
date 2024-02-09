@@ -1,7 +1,6 @@
-import { c as create_ssr_component, s as subscribe, m as set_store_value, v as validate_component } from "../../../../../../../chunks/ssr.js";
-import { C as Card } from "../../../../../../../chunks/Card.js";
+import { c as create_ssr_component, s as subscribe, p as set_store_value, v as validate_component } from "../../../../../../../chunks/ssr.js";
+import { c as currentPath, d as darkMode, n as navList, C as Card } from "../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../chunks/ActionIcons.js";
-import { c as currentPath, d as darkMode, n as navList } from "../../../../../../../chunks/stores3.js";
 import { c as contents } from "../../../../../../../chunks/content.js";
 const css = {
   code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}.question.svelte-n59hwk{cursor:pointer;padding:0.3em}",

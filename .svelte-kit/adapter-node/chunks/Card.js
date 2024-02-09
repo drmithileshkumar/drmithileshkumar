@@ -1,5 +1,23 @@
-import { c as create_ssr_component, h as compute_rest_props, i as get_current_component, b as spread, j as escape_attribute_value, d as escape_object, k as add_attribute } from "./ssr.js";
+import { w as writable } from "./index2.js";
+import { c as create_ssr_component, j as compute_rest_props, m as get_current_component, b as spread, o as escape_attribute_value, d as escape_object, h as add_attribute } from "./ssr.js";
 import { f as forwardEventsBuilder, c as classMap } from "./ActionIcons.js";
+const TopBarHeight = writable(0);
+const refreshApp = writable(false);
+const currentPath = writable("Dr Mithilesh Kumar");
+const navList = writable([]);
+const darkMode = writable(false);
+const showLeft = writable(true);
+const showRight = writable(false);
+const defaultProfileImage = "/avatar.svg";
+const initialProfileImage = defaultProfileImage;
+const profileImage = writable(initialProfileImage);
+profileImage.subscribe((value) => {
+});
+const defaultBannerImage = "/avatar.svg";
+const initialBannerImage = defaultBannerImage;
+const bannerImage = writable(initialBannerImage);
+bannerImage.subscribe((value) => {
+});
 const Card = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["use", "class", "variant", "padded", "getElement"]);
   forwardEventsBuilder(get_current_component());
@@ -37,5 +55,12 @@ const Card = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   )}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``} </div>`;
 });
 export {
-  Card as C
+  Card as C,
+  TopBarHeight as T,
+  showLeft as a,
+  currentPath as c,
+  darkMode as d,
+  navList as n,
+  refreshApp as r,
+  showRight as s
 };

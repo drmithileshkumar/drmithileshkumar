@@ -1,11 +1,15 @@
 <script>
     // @ts-nocheck
+        import Card, {Content} from '@smui/card';
+        import List, { Item, Graphic, Separator, Text } from '@smui/list';
+        import {goto} from "$app/navigation";
         import Message from '$lib/ui/Message.svelte';
         import Link from '$lib/ui/Link.svelte';
         import {page} from '$app/stores';
         import {onMount} from 'svelte';
         import { currentPath } from "$lib/stores";
         import { darkMode } from "$lib/stores"
+        let clicked;
         $currentPath = "Courses";
         $darkMode = false;
         onMount(() => {
@@ -13,16 +17,14 @@
         });
     </script>
     <style>
-        /* a {
-            text-decoration: none;
+        article {
+            display:flex;
+            flex-direction: column;
+            gap: 0.5em;
         }
-        .options {
-            display: flex;
-            flex-direction: row;
-            gap: 2em;
-            width: 100%;
-            flex-wrap: wrap;
-        } */
+        h3,h5 {
+            margin: 0.5em 0;
+        }
     </style>
     <svelte:head>
         <title>Courses</title>
@@ -30,24 +32,98 @@
         <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
     </svelte:head>
     <article>
-        <h1>
+        <h3>
+            Workshops
+        </h3>
+        <Card>
+            <Content>
+                <h5>Upcoming</h5>
+                <div>
+                    <List class="courses" dense>
+                      <Item on:SMUI:action={() => goto('/workshop/quantumstatus')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Current Status of Quantum Computing</Text>
+                      </Item>
+                    </List>
+                  </div>
+            </Content>
+        </Card>
+        <h3>
             Courses
-        </h1>
-        <h3>DSU</h3>
-        <Link href={`/courses/mathematics2`}>Mathematics II</Link>
-        <Link href={`/courses/internet`}>Internet Technologies</Link>
-        <Link href={`/courses/internetlab`}>Internet Technologies Lab</Link>
-        <br>
-        <h3>Quantum Computation</h3>
-        <Link href={`/courses/linearalgebra`}>Linear Algebra</Link>
-        <Link href={`/courses/quantummechanics`}>Quantum Mechanics</Link>
-        <Link href={`/courses/circuits`}>Quantum Circuits</Link>
-        <Link href={`/courses/quantumalgorithms`}>Quantum Algorithms</Link>
-        <Link href={`/courses/quantumcomputers`}>Quantum Computers</Link>
-        <Link href={`/courses/quantuminformation1`}>Quantum Information 1</Link>
-        <Link href={`/courses/qec`}>Quantum Error Correction</Link>
-        <Link href={`/courses/quantuminformation2`}>Quantum Information 2</Link>
-        <Link href={`/courses/quantumcryptography`}>Quantum Cryptography</Link>
-        <Link href={`/courses/quantumcommunication`}>Quantum Communication</Link>
-        <Link href={`/courses/quantumml`}>Quantum Machine Learning</Link>
+        </h3>
+        <Card>
+            <Content>
+                <h5>DSU</h5>
+                <div>
+                    <List class="courses" dense>
+                      <Item on:SMUI:action={() => goto('/courses/mathematics2')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Mathematics II</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/internet')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Internet Technologies</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/internetlab')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Internet Technologies Lab</Text>
+                      </Item>
+                    </List>
+                  </div>
+            </Content>
+        </Card>
+        <Card>
+            <Content>
+                <h5>Quantum Computation</h5>
+                <div>
+                    <List class="courses" dense>
+                      <Item on:SMUI:action={() => goto('/courses/linearalgebra')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Linear Algebra</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/quantummechanics')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Quantum Mechanics</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/circuits')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Quantum Circuits</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/quantumalgorithms')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Quantum Algorithms</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/quantumcomputers')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Quantum Computers</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/quantuminformation1')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Quantum Information 1</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/qec')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Quantum Error Correction</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/quantuminformation2')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Quantum Information 2</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/quantumcryptography')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Quantum Cryptography</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/quantumcommunication')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Quantum Communication</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/quantumml')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Quantum Machine Learning</Text>
+                      </Item>
+                    </List>
+                  </div>
+            </Content>
+        </Card>
+        
     </article>

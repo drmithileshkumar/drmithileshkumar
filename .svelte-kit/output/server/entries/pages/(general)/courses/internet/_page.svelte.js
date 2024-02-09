@@ -1,12 +1,11 @@
-import { c as create_ssr_component, s as subscribe, m as set_store_value, v as validate_component } from "../../../../../chunks/ssr.js";
+import { c as create_ssr_component, s as subscribe, p as set_store_value, v as validate_component } from "../../../../../chunks/ssr.js";
 import { g as githubDark, a as github, c as contents } from "../../../../../chunks/content2.js";
 /* empty css                                                       */
 import "../../../../../chunks/client.js";
-import { C as Card } from "../../../../../chunks/Card.js";
+import { d as darkMode, c as currentPath, n as navList, C as Card } from "../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../chunks/ActionIcons.js";
 import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../chunks/Cell.js";
 import { N as NavList } from "../../../../../chunks/NavList.js";
-import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores3.js";
 const css = {
   code: "article.svelte-14g8dvr{display:flex;flex-direction:column;gap:0.5em}p.svelte-14g8dvr,li.svelte-14g8dvr{opacity:0.8}h6.svelte-14g8dvr,h5.svelte-14g8dvr{margin:0.5em 0}h5.svelte-14g8dvr{font-size:1.1em}h6.svelte-14g8dvr{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}strong.svelte-14g8dvr{color:goldenrod;opacity:1}",
   map: null

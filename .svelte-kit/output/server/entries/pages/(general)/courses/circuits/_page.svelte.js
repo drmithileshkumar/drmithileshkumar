@@ -1,10 +1,9 @@
-import { c as create_ssr_component, s as subscribe, m as set_store_value, v as validate_component } from "../../../../../chunks/ssr.js";
+import { c as create_ssr_component, s as subscribe, p as set_store_value, v as validate_component } from "../../../../../chunks/ssr.js";
 /* empty css                                                       */
 import "../../../../../chunks/client.js";
-import { C as Card } from "../../../../../chunks/Card.js";
+import { d as darkMode, c as currentPath, n as navList, C as Card } from "../../../../../chunks/Card.js";
 import "../../../../../chunks/ActionIcons.js";
 import { N as NavList } from "../../../../../chunks/NavList.js";
-import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores3.js";
 const contents = [
   {
     name: "Quantum Circuits",

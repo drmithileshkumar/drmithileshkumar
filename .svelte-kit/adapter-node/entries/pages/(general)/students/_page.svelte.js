@@ -1,10 +1,9 @@
-import { c as create_ssr_component, s as subscribe, m as set_store_value, v as validate_component } from "../../../../chunks/ssr.js";
-import { C as Card } from "../../../../chunks/Card.js";
+import { c as create_ssr_component, s as subscribe, p as set_store_value, v as validate_component } from "../../../../chunks/ssr.js";
+import { d as darkMode, c as currentPath, C as Card } from "../../../../chunks/Card.js";
 import { C as Content } from "../../../../chunks/ActionIcons.js";
 /* empty css                                                       */
 /* empty css                                                    */
 import "../../../../chunks/client.js";
-import { d as darkMode, c as currentPath } from "../../../../chunks/stores3.js";
 const css = {
   code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h3.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}",
   map: null
