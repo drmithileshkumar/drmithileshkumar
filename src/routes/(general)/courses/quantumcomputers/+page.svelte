@@ -13,7 +13,7 @@
     import { contents } from "$lib/pages/courses/quantumcomputers/content";
     $navList = contents;
     $currentPath = "Quantum Computers";
-    $darkMode = true;
+    $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });

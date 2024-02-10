@@ -13,7 +13,7 @@
     import { contents } from "$lib/pages/courses/circuits/content";
     $navList = contents;
     $currentPath = "Quantum Circuits";
-    $darkMode = true;
+    $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });

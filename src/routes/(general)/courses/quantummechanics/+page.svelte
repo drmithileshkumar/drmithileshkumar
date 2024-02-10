@@ -13,7 +13,7 @@
     import { contents } from "$lib/pages/courses/quantummechanics/content";
     $navList = contents;
     $currentPath = "Quantum Mechanics";
-    $darkMode = true;
+    $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });

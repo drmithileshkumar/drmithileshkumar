@@ -7,7 +7,7 @@
     import { contents } from "$lib/pages/courses/mathematics2/content";
     $navList = contents;
     $currentPath = "Spearman's rank correlation coefficient";
-    $darkMode = true;
+    $darkMode = false;
 </script>
 <style>
     article {

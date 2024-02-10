@@ -13,7 +13,7 @@
     import { contents } from "$lib/pages/courses/linearalgebra/content";
     $navList = contents;
     $currentPath = "Linear Algebra";
-    $darkMode = true;
+    $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });

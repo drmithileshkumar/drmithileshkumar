@@ -13,7 +13,7 @@
     import { contents } from "../../../../lib/pages/courses/internetlab/content";
     $navList = contents;
     $currentPath = "Internet Technologies Lab";
-    $darkMode = true;
+    $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });

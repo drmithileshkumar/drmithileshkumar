@@ -6,7 +6,7 @@
     import { darkMode, navList } from "$lib/stores"
     import { contents } from "$lib/pages/courses/mathematics2/content";
     $navList = contents;
-    $darkMode = true;
+    $darkMode = false;
     $currentPath = "Measures of Central Tendency";
 </script>
 <style>

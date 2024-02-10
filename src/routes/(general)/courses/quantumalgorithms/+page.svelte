@@ -13,7 +13,7 @@
     import { contents } from "$lib/pages/courses/quantumalgorithms/content";
     $navList = contents;
     $currentPath = "Quantum Algorithms";
-    $darkMode = true;
+    $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });

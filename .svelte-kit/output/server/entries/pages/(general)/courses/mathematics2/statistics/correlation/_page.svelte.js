@@ -14,7 +14,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_darkMode = subscribe(darkMode, (value) => $darkMode = value);
   $$unsubscribe_navList = subscribe(navList, (value) => $navList = value);
   set_store_value(navList, $navList = contents, $navList);
-  set_store_value(darkMode, $darkMode = true, $darkMode);
+  set_store_value(darkMode, $darkMode = false, $darkMode);
   set_store_value(currentPath, $currentPath = "Correlation", $currentPath);
   $$result.css.add(css);
   $$unsubscribe_currentPath();

@@ -13,7 +13,7 @@
     import { contents } from "$lib/pages/courses/qec/content";
     $navList = contents;
     $currentPath = "Quantum Error Correction";
-    $darkMode = true;
+    $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });

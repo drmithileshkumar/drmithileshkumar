@@ -13,7 +13,7 @@
     import { contents } from "$lib/pages/courses/quantuminformation1/content";
     $navList = contents;
     $currentPath = "Quantum Information 1";
-    $darkMode = true;
+    $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });

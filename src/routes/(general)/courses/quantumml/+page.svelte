@@ -13,7 +13,7 @@
     import { contents } from "$lib/pages/courses/quantumml/content";
     $navList = contents;
     $currentPath = "Quantum Machine Learning";
-    $darkMode = true;
+    $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });

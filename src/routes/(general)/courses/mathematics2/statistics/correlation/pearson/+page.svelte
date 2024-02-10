@@ -7,7 +7,7 @@
     import { contents } from "$lib/pages/courses/mathematics2/content";
     $navList = contents;
     $currentPath = "Karl Pearson's coefficient of correlation (r)";
-    $darkMode = true;
+    $darkMode = false;
 </script>
 <style>
     article {

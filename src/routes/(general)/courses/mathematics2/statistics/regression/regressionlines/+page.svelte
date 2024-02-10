@@ -7,7 +7,7 @@
     import { contents } from "$lib/pages/courses/mathematics2/content";
     $navList = contents;
     $currentPath = "Lines of Regression";
-    $darkMode = true;
+    $darkMode = false;
 </script>
 <style>
     article {
