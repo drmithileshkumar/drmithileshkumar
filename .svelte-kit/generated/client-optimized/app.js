@@ -246,7 +246,9 @@ export const nodes = [
 	() => import('./nodes/242'),
 	() => import('./nodes/243'),
 	() => import('./nodes/244'),
-	() => import('./nodes/245')
+	() => import('./nodes/245'),
+	() => import('./nodes/246'),
+	() => import('./nodes/247')
 ];
 
 export const server_loads = [4];
@@ -474,8 +476,10 @@ export const dictionary = {
 		"/(about)/publications": [23,[2]],
 		"/(about)/research": [24,[2]],
 		"/(general)/students": [244,[4]],
+		"/(general)/talks": [245,[4]],
+		"/(general)/talks/quantumstatus": [246,[4]],
 		"/(about)/teaching": [25,[2]],
-		"/(general)/[...catchAll]": [245,[4]]
+		"/(general)/[...catchAll]": [247,[4]]
 	};
 
 export const hooks = {

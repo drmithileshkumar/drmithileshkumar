@@ -435,6 +435,12 @@
                 <Graphic class="material-icons">groups</Graphic>
                 <Text>Students</Text>
             </Item>
+            <Item
+                on:SMUI:action={() => goto(`/talks`)}
+            >
+                <Graphic class="material-symbols-outlined">podium</Graphic>
+                <Text>Talks</Text>
+            </Item>
         </List>
         <List>
             <!-- {#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] as cl}

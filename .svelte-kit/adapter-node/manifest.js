@@ -10,7 +10,7 @@ return {
 	assets: new Set(["announcement/html.svg","announcement/perspective.svg","app.css","background.svg","circle_demo/circle.png","circle_demo/circle_anime.mp4","circle_demo/Cone-equation.png","circle_demo/Cone.png","circle_demo/conics.png","circle_demo/Conic_anime.mp4","circle_demo/Conic_deg.mp4","circle_demo/ellipse_anime.mp4","circle_demo/hyperbola_anime.mp4","circle_demo/IIT21Q1.png","circle_demo/orthocenter.png","circle_demo/parabola_anime.mp4","circle_demo/Plane.png","circle_demo/Tangents.png","circle_demo/threepointcircle.png","CMIMedal.jpg","cmithesis.pdf","common.css","courses/internet/wwwhtml/fundamentals/intro/dns.png","courses/internet/wwwhtml/fundamentals/intro/dns.webp","custom.css","dark.css","facebook.svg","favicon.png","IITMSc.jpg","instagram.svg","LCPath.svg","light.css","manifest.json","mithileshkumar.png","notes/maths/sets/equal/thumbnail.svg","notes/maths/sets/finite/thumbnail.svg","notes/maths/sets/introduction/example.svg","notes/maths/sets/introduction/oddeven.svg","notes/maths/sets/real/interval.svg","notes/maths/sets/real/subsetreal.svg","notes/maths/sets/representation/heroparadox.svg","notes/maths/sets/subsets/thumbnail.svg","notes/maths/sets/subsets/tree.svg","notes/quantum/CNOT.svg","notes/quantum/qubit2d.svg","notes/quantum/teleportation.svg","photo_cv.jpg","profilephoto.jpeg","robots.txt","santa.svg","smui-dark.css","smui.css","svelte-welcome.png","svelte-welcome.webp","telegram.svg","thesis.pdf","twitter copy.png","twitter.png","vectorial/vectorialhome.svg","webdutIcon.png","youtube.svg","service-worker.js"]),
 	mimeTypes: {".svg":"image/svg+xml",".css":"text/css",".png":"image/png",".mp4":"video/mp4",".jpg":"image/jpeg",".pdf":"application/pdf",".webp":"image/webp",".json":"application/json",".jpeg":"image/jpeg",".txt":"text/plain"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.NwPdfw75.js","app":"_app/immutable/entry/app.5fqy2qJP.js","imports":["_app/immutable/entry/start.NwPdfw75.js","_app/immutable/chunks/entry.Igq3IN2R.js","_app/immutable/chunks/scheduler.6OEexJ1D.js","_app/immutable/chunks/index.0JK1PMzr.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/entry/app.5fqy2qJP.js","_app/immutable/chunks/preload-helper.0HuHagjb.js","_app/immutable/chunks/scheduler.6OEexJ1D.js","_app/immutable/chunks/index.uJtgCTqT.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
+		client: {"start":"_app/immutable/entry/start.J2gpFSLP.js","app":"_app/immutable/entry/app.WvddIZpY.js","imports":["_app/immutable/entry/start.J2gpFSLP.js","_app/immutable/chunks/entry.zt9YIbQc.js","_app/immutable/chunks/scheduler.OPFU5seO.js","_app/immutable/chunks/index.x-ybsOk2.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/entry/app.WvddIZpY.js","_app/immutable/chunks/preload-helper.0HuHagjb.js","_app/immutable/chunks/scheduler.OPFU5seO.js","_app/immutable/chunks/index.np_sXRfl.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -257,7 +257,9 @@ return {
 			__memo(() => import('./nodes/242.js')),
 			__memo(() => import('./nodes/243.js')),
 			__memo(() => import('./nodes/244.js')),
-			__memo(() => import('./nodes/245.js'))
+			__memo(() => import('./nodes/245.js')),
+			__memo(() => import('./nodes/246.js')),
+			__memo(() => import('./nodes/247.js'))
 		],
 		routes: [
 			{
@@ -1815,6 +1817,20 @@ return {
 				endpoint: null
 			},
 			{
+				id: "/(general)/talks",
+				pattern: /^\/talks\/?$/,
+				params: [],
+				page: { layouts: [0,4,], errors: [1,,], leaf: 245 },
+				endpoint: null
+			},
+			{
+				id: "/(general)/talks/quantumstatus",
+				pattern: /^\/talks\/quantumstatus\/?$/,
+				params: [],
+				page: { layouts: [0,4,], errors: [1,,], leaf: 246 },
+				endpoint: null
+			},
+			{
 				id: "/(about)/teaching",
 				pattern: /^\/teaching\/?$/,
 				params: [],
@@ -1825,7 +1841,7 @@ return {
 				id: "/(general)/[...catchAll]",
 				pattern: /^(?:\/(.*))?\/?$/,
 				params: [{"name":"catchAll","optional":false,"rest":true,"chained":true}],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 245 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 247 },
 				endpoint: null
 			}
 		],

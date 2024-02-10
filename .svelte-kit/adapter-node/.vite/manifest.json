@@ -105,18 +105,19 @@
   },
   "_NavList.js": {
     "css": [
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "chunks/NavList.js",
     "imports": [
       "_ssr.js",
+      "_Graphic.js",
       "_Subheader.js",
       "_client.js",
       "_Card.js"
     ]
   },
   "_NavList.svelte_svelte_type_style_lang.js": {
-    "file": "_app/immutable/assets/NavList.aMeAxv8b.css",
+    "file": "_app/immutable/assets/NavList.HFZ0se20.css",
     "src": "_NavList.svelte_svelte_type_style_lang.js"
   },
   "_Papers.js": {
@@ -732,7 +733,7 @@
     "css": [
       "_app/immutable/assets/_page.GpkGXIIi.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/browsers/_page.svelte.js",
     "imports": [
@@ -755,7 +756,7 @@
     "css": [
       "_app/immutable/assets/_page.3lFODxC-.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/http/_page.svelte.js",
     "imports": [
@@ -780,7 +781,7 @@
     "css": [
       "_app/immutable/assets/_page.ngiKBXK1.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/intro/_page.svelte.js",
     "imports": [
@@ -803,7 +804,7 @@
     "css": [
       "_app/immutable/assets/_page.3lFODxC-.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/mime/_page.svelte.js",
     "imports": [
@@ -826,7 +827,7 @@
     "css": [
       "_app/immutable/assets/_page.hBfokGrF.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/security/_page.svelte.js",
     "imports": [
@@ -849,7 +850,7 @@
     "css": [
       "_app/immutable/assets/_page.hBfokGrF.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/servers/_page.svelte.js",
     "imports": [
@@ -872,7 +873,7 @@
     "css": [
       "_app/immutable/assets/_page.hBfokGrF.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/url/_page.svelte.js",
     "imports": [
@@ -896,7 +897,7 @@
     "css": [
       "_app/immutable/assets/_page.GpkGXIIi.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/fundamentals/www/_page.svelte.js",
     "imports": [
@@ -941,7 +942,7 @@
     "css": [
       "_app/immutable/assets/_page.PIezTwLC.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/forms/_page.svelte.js",
     "imports": [
@@ -966,7 +967,7 @@
     "css": [
       "_app/immutable/assets/_page.8PrzwGJF.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/images/_page.svelte.js",
     "imports": [
@@ -991,7 +992,7 @@
     "css": [
       "_app/immutable/assets/_page.MnXsUImP.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/links/_page.svelte.js",
     "imports": [
@@ -1015,7 +1016,7 @@
     "css": [
       "_app/immutable/assets/_page.MnXsUImP.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/lists/_page.svelte.js",
     "imports": [
@@ -1039,7 +1040,7 @@
     "css": [
       "_app/immutable/assets/_page.6lUiVln4.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/origins/_page.svelte.js",
     "imports": [
@@ -1062,7 +1063,7 @@
     "css": [
       "_app/immutable/assets/_page.6lUiVln4.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/structure/_page.svelte.js",
     "imports": [
@@ -1086,7 +1087,7 @@
     "css": [
       "_app/immutable/assets/_page.6lUiVln4.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/syntax/_page.svelte.js",
     "imports": [
@@ -1110,7 +1111,7 @@
     "css": [
       "_app/immutable/assets/_page.CeJT5Jfy.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/tables/_page.svelte.js",
     "imports": [
@@ -1134,7 +1135,7 @@
     "css": [
       "_app/immutable/assets/_page.3ZqO9Uhf.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.aMeAxv8b.css"
+      "_app/immutable/assets/NavList.HFZ0se20.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/text/_page.svelte.js",
     "imports": [
@@ -1218,7 +1219,7 @@
   },
   "src/routes/(general)/courses/mathematics2/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.hj3E2EKt.css",
+      "_app/immutable/assets/_page.YblFEglR.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/_page.svelte.js",
@@ -1240,7 +1241,7 @@
   },
   "src/routes/(general)/courses/mathematics2/statistics/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.qsn6FTUk.css"
+      "_app/immutable/assets/_page.4ARZUjTd.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/statistics/_page.svelte.js",
     "imports": [
@@ -5502,5 +5503,57 @@
     ],
     "isEntry": true,
     "src": "src/routes/(general)/students/+page.svelte"
+  },
+  "src/routes/(general)/talks/+page.js": {
+    "file": "entries/pages/(general)/talks/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/talks/+page.js"
+  },
+  "src/routes/(general)/talks/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.37q-zF4e.css",
+      "_app/immutable/assets/Message.ctOi1nG9.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/talks/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Graphic.js",
+      "_Subheader.js",
+      "_client.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/talks/+page.svelte"
+  },
+  "src/routes/(general)/talks/quantumstatus/+page.js": {
+    "file": "entries/pages/(general)/talks/quantumstatus/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/talks/quantumstatus/+page.js"
+  },
+  "src/routes/(general)/talks/quantumstatus/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.1REQ1PuX.css",
+      "_app/immutable/assets/Message.ctOi1nG9.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/talks/quantumstatus/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Subheader.js",
+      "_Cell.js",
+      "_client.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/talks/quantumstatus/+page.svelte"
   }
 }

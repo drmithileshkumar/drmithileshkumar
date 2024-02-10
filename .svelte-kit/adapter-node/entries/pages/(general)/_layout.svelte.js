@@ -735,6 +735,18 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             }
           })}`;
         }
+      })} ${validate_component(Item, "Item").$$render($$result, {}, {}, {
+        default: () => {
+          return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-symbols-outlined" }, {}, {
+            default: () => {
+              return `podium`;
+            }
+          })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
+            default: () => {
+              return `Talks`;
+            }
+          })}`;
+        }
       })}`;
     }
   })} ${validate_component(List, "List").$$render($$result, {}, {}, {

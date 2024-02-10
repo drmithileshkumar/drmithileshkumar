@@ -20,31 +20,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
-  return `${$$result.head += `<!-- HEAD_svelte-1g0w0gr_START -->${$$result.title = `<title>Courses</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1g0w0gr_END -->`, ""} <article class="svelte-86n1i9"><h3 class="svelte-86n1i9" data-svelte-h="svelte-15xgbww">Workshops</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
-    default: () => {
-      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
-        default: () => {
-          return `<h5 class="svelte-86n1i9" data-svelte-h="svelte-4wi05q">Upcoming</h5> <div>${validate_component(List, "List").$$render($$result, { class: "courses", dense: true }, {}, {
-            default: () => {
-              return `${validate_component(Item, "Item").$$render($$result, {}, {}, {
-                default: () => {
-                  return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
-                    default: () => {
-                      return `menu_book`;
-                    }
-                  })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
-                    default: () => {
-                      return `Current Status of Quantum Computing`;
-                    }
-                  })}`;
-                }
-              })}`;
-            }
-          })}</div>`;
-        }
-      })}`;
-    }
-  })} <h3 class="svelte-86n1i9" data-svelte-h="svelte-1lxqlac">Courses</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  return `${$$result.head += `<!-- HEAD_svelte-1g0w0gr_START -->${$$result.title = `<title>Courses</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1g0w0gr_END -->`, ""} <article class="svelte-86n1i9"><h3 class="svelte-86n1i9" data-svelte-h="svelte-1lxqlac">Courses</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {

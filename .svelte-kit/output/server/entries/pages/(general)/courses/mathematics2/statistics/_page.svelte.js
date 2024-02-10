@@ -3,7 +3,7 @@ import { c as currentPath, d as darkMode, n as navList, C as Card } from "../../
 import { C as Content } from "../../../../../../chunks/ActionIcons.js";
 import { c as contents } from "../../../../../../chunks/content.js";
 const css = {
-  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}p.svelte-n59hwk,li.svelte-n59hwk{opacity:0.8}h2.svelte-n59hwk{margin:0.5em 0}h6.svelte-n59hwk{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}strong.svelte-n59hwk{color:goldenrod;opacity:1}",
+  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}p.svelte-n59hwk,li.svelte-n59hwk{opacity:0.8}h4.svelte-n59hwk{margin:0.5em 0}h6.svelte-n59hwk{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}strong.svelte-n59hwk{color:goldenrod;opacity:1}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -20,7 +20,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentPath();
   $$unsubscribe_darkMode();
   $$unsubscribe_navList();
-  return `${$$result.head += `<!-- HEAD_svelte-1rld7to_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/statistics"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1rld7to_END -->`, ""} <article class="svelte-n59hwk"><h2 class="svelte-n59hwk" data-svelte-h="svelte-veukkz">BASICS OF STATISTICS</h2> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  return `${$$result.head += `<!-- HEAD_svelte-1rld7to_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/statistics"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1rld7to_END -->`, ""} <article class="svelte-n59hwk"><h4 class="svelte-n59hwk" data-svelte-h="svelte-191m8w3">BASICS OF STATISTICS</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {

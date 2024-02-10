@@ -6,7 +6,7 @@ import "../../../../../chunks/ActionIcons.js";
 import { N as NavList } from "../../../../../chunks/NavList.js";
 import { c as contents } from "../../../../../chunks/content.js";
 const css = {
-  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}",
+  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}h3.svelte-n59hwk,h4.svelte-n59hwk{margin:0.5em 0}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -23,7 +23,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
-  return `${$$result.head += `<!-- HEAD_svelte-1am32do_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1am32do_END -->`, ""} <article class="svelte-n59hwk"><h2 class="svelte-n59hwk" data-svelte-h="svelte-1n001h2">Mathematics II</h2> <h3 class="svelte-n59hwk" data-svelte-h="svelte-1ee0su2">Contents</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  return `${$$result.head += `<!-- HEAD_svelte-1am32do_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1am32do_END -->`, ""} <article class="svelte-n59hwk"><h3 class="svelte-n59hwk" data-svelte-h="svelte-56fvm0">Mathematics II</h3> <h4 class="svelte-n59hwk" data-svelte-h="svelte-lx12lw">Contents</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(NavList, "NavList").$$render(
         $$result,
@@ -37,7 +37,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {}
       )}`;
     }
-  })} </article>`;
+  })}</article>`;
 });
 export {
   Page as default

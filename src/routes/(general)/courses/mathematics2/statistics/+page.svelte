@@ -47,9 +47,9 @@
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
 </svelte:head>
 <article>
-    <h2>
+    <h4>
         BASICS OF STATISTICS 
-    </h2>
+    </h4>
     
     <Card>
         <Content>

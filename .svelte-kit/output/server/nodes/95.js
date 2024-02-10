@@ -5,6 +5,6 @@ let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/maths/2021/question3/_page.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/(general)/iit/maths/2021/question3/+page.js";
-export const imports = ["_app/immutable/nodes/95.n3ohZYLe.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.6OEexJ1D.js","_app/immutable/chunks/index.uJtgCTqT.js","_app/immutable/chunks/stores.az4gHfxZ.js","_app/immutable/chunks/index.0JK1PMzr.js","_app/immutable/chunks/stores.dL2X7ZGg.js","_app/immutable/chunks/entry.Igq3IN2R.js","_app/immutable/chunks/index.urGhFGCw.js","_app/immutable/chunks/constants.1x7ZJ2_l.js"];
+export const imports = ["_app/immutable/nodes/95.XbhXQ0OC.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.OPFU5seO.js","_app/immutable/chunks/index.np_sXRfl.js","_app/immutable/chunks/stores.9F6itTw0.js","_app/immutable/chunks/index.x-ybsOk2.js","_app/immutable/chunks/stores.04EEAGg6.js","_app/immutable/chunks/entry.zt9YIbQc.js","_app/immutable/chunks/index.JtIRwKoW.js","_app/immutable/chunks/constants.1x7ZJ2_l.js"];
 export const stylesheets = ["_app/immutable/assets/95.o2_FUglo.css"];
 export const fonts = [];

@@ -33,22 +33,6 @@
     </svelte:head>
     <article>
         <h3>
-            Workshops
-        </h3>
-        <Card>
-            <Content>
-                <h5>Upcoming</h5>
-                <div>
-                    <List class="courses" dense>
-                      <Item on:SMUI:action={() => goto('/workshop/quantumstatus')}>
-                        <Graphic class="material-icons">menu_book</Graphic>
-                        <Text>Current Status of Quantum Computing</Text>
-                      </Item>
-                    </List>
-                  </div>
-            </Content>
-        </Card>
-        <h3>
             Courses
         </h3>
         <Card>

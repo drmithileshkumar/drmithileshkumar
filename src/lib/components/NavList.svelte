@@ -9,11 +9,13 @@
         PrimaryText,
         SecondaryText,
     } from "@smui/list";
+	
     import Button, { Label } from "@smui/button";
     import { Svg } from '@smui/common';
     import { goto } from "$app/navigation";
     import { page } from "$app/stores";
     import { profileImage, navList } from "$lib/stores";
+	import Ripple from "@smui/ripple";
 
     export let expanded = true;
     export let name;
@@ -53,17 +55,28 @@
     a {
         text-decoration: none;
     }
-	a:hover {
-		background-color: bisque;
-	}
 </style>
-<span style="display:flex;flex-direction:row;gap:0.2em;font-size:0.8em;">
+
+<span style="display:flex;flex-direction:row;gap:0.2em;padding: 0.2em 0;">
     <button class="material-symbols-outlined" on:click={toggle}>{expanded ? "expand_less" : "expand_more"}</button>
-    <a href="{url}" style='font-weight: bold'>{name}</a>
+    <a use:Ripple={{surface: true}} href="{url}" style='font-weight: bold'>{name}</a>
 </span>
 
 {#if expanded}
-	<ul>
+	<List style="background: rgba(0, 100, 200, 0.05);margin:0 0 0 0.5em;box-shadow: -1px 1px 1px gray" dense>
+		{#each topics as topic}
+			{#if topic.topics}
+				<svelte:self {...topic} />
+			{:else}
+				<Item on:SMUI:action={() => goto(topic.url)}>
+					<Graphic class="material-icons">topic</Graphic>
+					<Text>{topic.name}</Text>
+				</Item>
+			{/if}
+			
+		{/each}
+	</List>
+	<!-- <ul>
 		{#each topics as topic}
 			<li>
 				{#if topic.topics}
@@ -73,5 +86,5 @@
 				{/if}
 			</li>
 		{/each}
-	</ul>
+	</ul> -->
 {/if}

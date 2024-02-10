@@ -902,6 +902,14 @@
 		"src/routes/(general)/students/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/talks": [
+		"src/routes/(general)/talks/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/talks/quantumstatus": [
+		"src/routes/(general)/talks/quantumstatus/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(about)/teaching": [
 		"src/routes/(about)/teaching/+page.js"
 	],
