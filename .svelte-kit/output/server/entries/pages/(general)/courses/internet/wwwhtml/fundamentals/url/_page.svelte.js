@@ -1,4 +1,4 @@
-import { c as create_ssr_component, s as subscribe, p as set_store_value, v as validate_component } from "../../../../../../../../chunks/ssr.js";
+import { c as create_ssr_component, s as subscribe, o as set_store_value, v as validate_component } from "../../../../../../../../chunks/ssr.js";
 import { x as xml, H as Highlight, L as LineNumbers } from "../../../../../../../../chunks/xml.js";
 import { g as githubDark, a as github, c as contents } from "../../../../../../../../chunks/content2.js";
 /* empty css                                                                */

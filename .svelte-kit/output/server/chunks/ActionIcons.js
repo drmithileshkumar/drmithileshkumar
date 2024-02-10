@@ -1,4 +1,4 @@
-import { c as create_ssr_component, j as compute_rest_props, m as get_current_component, b as spread, d as escape_object, h as add_attribute, g as getContext, q as setContext, r as onDestroy, v as validate_component, t as missing_component } from "./ssr.js";
+import { c as create_ssr_component, h as compute_rest_props, l as get_current_component, b as spread, d as escape_object, i as add_attribute, g as getContext, q as setContext, r as onDestroy, v as validate_component, p as missing_component } from "./ssr.js";
 const globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : (
   // @ts-ignore Node typings have this
   global

@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as escape, l as null_to_empty, h as add_attribute, v as validate_component } from "../../../../chunks/ssr.js";
+import { c as create_ssr_component, e as escape, k as null_to_empty, i as add_attribute, v as validate_component } from "../../../../chunks/ssr.js";
 /* empty css                                                        */
 import { P as Papers } from "../../../../chunks/Papers.js";
 const css$3 = {

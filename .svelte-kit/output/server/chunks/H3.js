@@ -1,4 +1,4 @@
-import { c as create_ssr_component, j as compute_rest_props, s as subscribe, e as escape, l as null_to_empty } from "./ssr.js";
+import { c as create_ssr_component, h as compute_rest_props, s as subscribe, e as escape, k as null_to_empty } from "./ssr.js";
 import { p as presentationMode, c as currentSlide } from "./stores3.js";
 const css = {
   code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",

@@ -92,7 +92,7 @@ const contents = [
                 url: "/courses/internet/wwwhtml/fundamentals/intro"
               },
               {
-                name: "The World Wide web",
+                name: "The World Wide Web",
                 url: "/courses/internet/wwwhtml/fundamentals/www"
               },
               {

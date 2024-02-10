@@ -1,4 +1,4 @@
-import { c as create_ssr_component, s as subscribe, h as add_attribute, v as validate_component } from "../../../../../../chunks/ssr.js";
+import { c as create_ssr_component, s as subscribe, i as add_attribute, v as validate_component } from "../../../../../../chunks/ssr.js";
 import "../../../../../../chunks/client.js";
 import { c as currentSlide, s as slideCounter, d as presentation, o as overlay, e as autoScroll, p as presentationMode } from "../../../../../../chunks/stores3.js";
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../../../chunks/Presenter.js";

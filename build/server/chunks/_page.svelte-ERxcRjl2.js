@@ -1,0 +1,49 @@
+import { c as create_ssr_component, b as subscribe, q as set_store_value, v as validate_component } from './ssr-QYhyCQFk.js';
+import './client-_MkdHwD5.js';
+import { d as darkMode, c as currentPath, n as navList, C as Card } from './Card-sDgXjRKd.js';
+import './ActionIcons-xBhwPEnE.js';
+import { N as NavList } from './NavList-77AIM3sK.js';
+import { c as contents } from './content-gvOZTR_G.js';
+import './exports-mq_1S73-.js';
+import './index2-2iq6SjbL.js';
+import './Graphic-lGQRfn2K.js';
+import './Ripple-3bzQ9j1i.js';
+import './Subheader-vGMjMlem.js';
+
+const css = {
+  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}h3.svelte-n59hwk,h4.svelte-n59hwk{margin:0.5em 0}",
+  map: null
+};
+const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $darkMode, $$unsubscribe_darkMode;
+  let $currentPath, $$unsubscribe_currentPath;
+  let $navList, $$unsubscribe_navList;
+  $$unsubscribe_darkMode = subscribe(darkMode, (value) => $darkMode = value);
+  $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
+  $$unsubscribe_navList = subscribe(navList, (value) => $navList = value);
+  set_store_value(navList, $navList = contents, $navList);
+  set_store_value(currentPath, $currentPath = "Mathematics II", $currentPath);
+  set_store_value(darkMode, $darkMode = false, $darkMode);
+  $$result.css.add(css);
+  $$unsubscribe_darkMode();
+  $$unsubscribe_currentPath();
+  $$unsubscribe_navList();
+  return `${$$result.head += `<!-- HEAD_svelte-1am32do_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1am32do_END -->`, ""} <article class="svelte-n59hwk"><h3 class="svelte-n59hwk" data-svelte-h="svelte-56fvm0">Mathematics II</h3> <h4 class="svelte-n59hwk" data-svelte-h="svelte-lx12lw">Contents</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(NavList, "NavList").$$render(
+        $$result,
+        {
+          name: $navList[0].name,
+          url: $navList[0].url,
+          topics: $navList[0].topics,
+          expanded: true
+        },
+        {},
+        {}
+      )}`;
+    }
+  })}</article>`;
+});
+
+export { Page as default };
+//# sourceMappingURL=_page.svelte-ERxcRjl2.js.map

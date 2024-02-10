@@ -1,4 +1,4 @@
-import { c as create_ssr_component, s as subscribe, e as escape, h as add_attribute, v as validate_component } from "../../../../../chunks/ssr.js";
+import { c as create_ssr_component, s as subscribe, e as escape, i as add_attribute, v as validate_component } from "../../../../../chunks/ssr.js";
 /* empty css                                                         */
 import { p as presentationMode, c as currentSlide, s as slideCounter, d as presentation, o as overlay, e as autoScroll, a as selectedSection, b as selectedChapter } from "../../../../../chunks/stores3.js";
 import "../../../../../chunks/client.js";

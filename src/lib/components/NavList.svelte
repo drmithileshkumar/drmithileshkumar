@@ -9,7 +9,8 @@
         PrimaryText,
         SecondaryText,
     } from "@smui/list";
-	
+	import Fab from '@smui/fab';
+	import IconButton, { Icon } from '@smui/icon-button';
     import Button, { Label } from "@smui/button";
     import { Svg } from '@smui/common';
     import { goto } from "$app/navigation";
@@ -17,7 +18,7 @@
     import { profileImage, navList } from "$lib/stores";
 	import Ripple from "@smui/ripple";
 
-    export let expanded = true;
+    export let expanded = false;
     export let name;
     export let url;
     export let topics;
@@ -57,13 +58,16 @@
     }
 </style>
 
-<span style="display:flex;flex-direction:row;gap:0.2em;padding: 0.2em 0;">
-    <button class="material-symbols-outlined" on:click={toggle}>{expanded ? "expand_less" : "expand_more"}</button>
-    <a use:Ripple={{surface: true}} href="{url}" style='font-weight: bold'>{name}</a>
+<span style="display:flex;flex-direction:row;align-items:center;">
+	<IconButton  toggle bind:pressed={expanded}>
+		<Icon class="material-icons" on>remove</Icon>
+		<Icon class="material-icons">add</Icon>
+	  </IconButton>
+    <a use:Ripple={{surface: true}} href={url} style='color:currentColor;padding: 0.5em 0;margin:0;width:100%;font-weight: bold'>{name}</a>
 </span>
 
 {#if expanded}
-	<List style="background: rgba(0, 100, 200, 0.05);margin:0 0 0 0.5em;box-shadow: -1px 1px 1px gray" dense>
+	<List style="margin:0 0 0 0.5em;box-shadow: -1px 1px 1px rgba(0,0,0,0.1)" dense>
 		{#each topics as topic}
 			{#if topic.topics}
 				<svelte:self {...topic} />

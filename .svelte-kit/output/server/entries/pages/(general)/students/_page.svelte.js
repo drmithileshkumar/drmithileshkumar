@@ -1,4 +1,4 @@
-import { c as create_ssr_component, s as subscribe, p as set_store_value, v as validate_component } from "../../../../chunks/ssr.js";
+import { c as create_ssr_component, s as subscribe, o as set_store_value, v as validate_component } from "../../../../chunks/ssr.js";
 import { d as darkMode, c as currentPath, C as Card } from "../../../../chunks/Card.js";
 import { C as Content } from "../../../../chunks/ActionIcons.js";
 /* empty css                                                       */

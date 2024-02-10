@@ -1,5 +1,5 @@
 import { w as writable } from "./index2.js";
-import { c as create_ssr_component, j as compute_rest_props, m as get_current_component, b as spread, o as escape_attribute_value, d as escape_object, h as add_attribute } from "./ssr.js";
+import { c as create_ssr_component, h as compute_rest_props, l as get_current_component, b as spread, m as escape_attribute_value, d as escape_object, i as add_attribute } from "./ssr.js";
 import { f as forwardEventsBuilder, c as classMap } from "./ActionIcons.js";
 const TopBarHeight = writable(0);
 const refreshApp = writable(false);
