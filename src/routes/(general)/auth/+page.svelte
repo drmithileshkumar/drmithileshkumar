@@ -174,12 +174,12 @@
     {:else}
         <Card>
             <Content style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap: 0.5em;">
-                {#if $Guest}
+                <!-- {#if $Guest}
                     <p>Welcome! You are using Guest Access.</p>
                 {:else}
                 <Button on:click={setGuest}>Start as Guest User</Button>
                 <div>OR</div>
-                {/if}
+                {/if} -->
                 
                 <div class="choices">
                     <Set chips={choices} let:chip choice bind:selected>

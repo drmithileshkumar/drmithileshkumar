@@ -558,10 +558,10 @@ const css = {
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $Guest, $$unsubscribe_Guest;
+  let $$unsubscribe_Guest;
   let $page, $$unsubscribe_page;
   let $currentPath, $$unsubscribe_currentPath;
-  $$unsubscribe_Guest = subscribe(Guest, (value) => $Guest = value);
+  $$unsubscribe_Guest = subscribe(Guest, (value) => value);
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
   $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
   set_store_value(currentPath, $currentPath = "Authentication", $currentPath);
@@ -620,11 +620,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           {},
           {
             default: () => {
-              return `${$Guest ? `<p data-svelte-h="svelte-dbmfli">Welcome! You are using Guest Access.</p>` : `${validate_component(Button, "Button").$$render($$result, {}, {}, {
-                default: () => {
-                  return `Start as Guest User`;
-                }
-              })} <div data-svelte-h="svelte-ijvn4f">OR</div>`} <div class="choices">${validate_component(Set_1, "Set").$$render(
+              return ` <div class="choices">${validate_component(Set_1, "Set").$$render(
                 $$result,
                 { chips: choices, choice: true, selected },
                 {
