@@ -1,17 +1,17 @@
-import { a as classAdderBuilder } from "./ActionIcons.js";
+import { a as classAdderBuilder } from "./classAdderBuilder.js";
 const Text = classAdderBuilder({
   class: "mdc-deprecated-list-item__text",
   tag: "span"
 });
-classAdderBuilder({
+const PrimaryText = classAdderBuilder({
   class: "mdc-deprecated-list-item__primary-text",
   tag: "span"
 });
-classAdderBuilder({
+const SecondaryText = classAdderBuilder({
   class: "mdc-deprecated-list-item__secondary-text",
   tag: "span"
 });
-classAdderBuilder({
+const Meta = classAdderBuilder({
   class: "mdc-deprecated-list-item__meta",
   tag: "span"
 });
@@ -24,5 +24,8 @@ classAdderBuilder({
   tag: "h3"
 });
 export {
+  Meta as M,
+  PrimaryText as P,
+  SecondaryText as S,
   Text as T
 };

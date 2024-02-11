@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Sets/Operations on sets/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Sets/Introduction/_page.js';
 
 export const index = 195;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Sets/Operations on sets/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Sets/Introduction/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Sets/Operations on sets/+page.js";
-export const imports = ["_app/immutable/nodes/195.LV3fGYlu.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.XN8MnxCc.js","_app/immutable/chunks/index.hIVQ3JUV.js","_app/immutable/chunks/stores.rLer7KL8.js","_app/immutable/chunks/index.D7WnTG5a.js","_app/immutable/chunks/stores.5Eg0rLPx.js","_app/immutable/chunks/entry.mysIIOM0.js"];
-export const stylesheets = ["_app/immutable/assets/131.RfrDpo0v.css","_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
+export const universal_id = "src/routes/(general)/notes/maths/Sets/Introduction/+page.js";
+export const imports = ["_app/immutable/nodes/195.BmrUEXHr.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.wYmonAyn.js","_app/immutable/chunks/index.AwdIdbL-.js","_app/immutable/chunks/stores.r0S_1cbc.js","_app/immutable/chunks/index.KLghjZkg.js","_app/immutable/chunks/stores.q5OUzfKb.js","_app/immutable/chunks/entry.1S7OhNyw.js","_app/immutable/chunks/Image.svelte_svelte_type_style_lang.PvhRJib2.js","_app/immutable/chunks/index.lcHJh1q4.js","_app/immutable/chunks/Image.sIpZ15CH.js"];
+export const stylesheets = ["_app/immutable/assets/195.6UkPAcqe.css","_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css","_app/immutable/assets/Image.R1-0-laC.css"];
 export const fonts = [];

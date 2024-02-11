@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/students/_page.js';
+import * as universal from '../entries/pages/(general)/practice/class9/_page.js';
 
 export const index = 244;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/students/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/practice/class9/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/students/+page.js";
-export const imports = ["_app/immutable/nodes/244._zshHPel.js","_app/immutable/chunks/scheduler.XN8MnxCc.js","_app/immutable/chunks/index.hIVQ3JUV.js","_app/immutable/chunks/Card.5SpOS5eG.js","_app/immutable/chunks/index.D7WnTG5a.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/ActionIcons.A7KDZOPi.js","_app/immutable/chunks/entry.mysIIOM0.js","_app/immutable/chunks/control.pJ1mnnAb.js"];
-export const stylesheets = ["_app/immutable/assets/244.BKWf8z-r.css","_app/immutable/assets/Message.ctOi1nG9.css","_app/immutable/assets/Link.mTa6ZPjX.css"];
+export const universal_id = "src/routes/(general)/practice/class9/+page.js";
+export const imports = ["_app/immutable/nodes/244.1rMfBfkW.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.wYmonAyn.js","_app/immutable/chunks/index.AwdIdbL-.js","_app/immutable/chunks/Message.4A4jq45J.js","_app/immutable/chunks/entry.1S7OhNyw.js","_app/immutable/chunks/index.KLghjZkg.js","_app/immutable/chunks/stores.9MPSqhWm.js","_app/immutable/chunks/Practice.fnSVSPr7.js","_app/immutable/chunks/ripple.nJSaNfXx.js"];
+export const stylesheets = ["_app/immutable/assets/Link.mTa6ZPjX.css","_app/immutable/assets/Message.ctOi1nG9.css","_app/immutable/assets/Practice.5SCwWus9.css"];
 export const fonts = [];

@@ -1,5 +1,6 @@
-import { c as create_ssr_component, h as compute_rest_props, s as subscribe, e as escape, k as null_to_empty } from "./ssr.js";
-import { p as presentationMode, c as currentSlide } from "./stores3.js";
+import { c as compute_rest_props, s as subscribe, d as null_to_empty } from "./utils.js";
+import { c as create_ssr_component, e as escape } from "./ssr.js";
+import { p as presentationMode, c as currentSlide } from "./stores4.js";
 const css = {
   code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
   map: null

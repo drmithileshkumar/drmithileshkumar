@@ -1,4 +1,4 @@
-import { c as create_ssr_component, q as setContext, v as validate_component, p as missing_component } from "./ssr.js";
+import { c as create_ssr_component, h as setContext, v as validate_component, m as missing_component } from "./ssr.js";
 let base = "";
 let assets = base;
 const initial = { base, assets };
@@ -248,7 +248,7 @@ const options = {
 		<div class="error">\r
 			<span class="status">` + status + '</span>\r\n			<div class="message">\r\n				<h1>' + message + "</h1>\r\n			</div>\r\n		</div>\r\n	</body>\r\n</html>\r\n"
   },
-  version_hash: "tlkpzq"
+  version_hash: "4yaqsf"
 };
 async function get_hooks() {
   return {

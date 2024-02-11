@@ -1,9 +1,11 @@
-import { c as create_ssr_component, s as subscribe, o as set_store_value, v as validate_component } from "../../../../../chunks/ssr.js";
+import { s as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component } from "../../../../../chunks/ssr.js";
 /* empty css                                                       */
 import "../../../../../chunks/client.js";
-import { d as darkMode, c as currentPath, n as navList, C as Card } from "../../../../../chunks/Card.js";
+import { C as Card } from "../../../../../chunks/Card.js";
 import "../../../../../chunks/ActionIcons.js";
 import { N as NavList } from "../../../../../chunks/NavList.js";
+import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores3.js";
 const contents = [
   {
     name: "Linear algebra",

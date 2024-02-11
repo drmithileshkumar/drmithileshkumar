@@ -10,6 +10,34 @@
 	"/(about)/about": [
 		"src/routes/(about)/about/+page.js"
 	],
+	"/(general)/api/login": [
+		"src/routes/(general)/api/login/+server.js"
+	],
+	"/(general)/api/profilepic": [
+		"src/routes/(general)/api/profilepic/+server.js"
+	],
+	"/(general)/api/signup": [
+		"src/routes/(general)/api/signup/+server.js"
+	],
+	"/(general)/api/userDetail": [
+		"src/routes/(general)/api/userDetail/+server.js"
+	],
+	"/(general)/api/[publicID]": [
+		"src/routes/(general)/api/[publicID]/+server.js"
+	],
+	"/(general)/api/[publicID]/bannerpic": [
+		"src/routes/(general)/api/[publicID]/bannerpic/+server.js"
+	],
+	"/(general)/api/[publicID]/media": [
+		"src/routes/(general)/api/[publicID]/media/+server.js"
+	],
+	"/(general)/api/[publicID]/profilepic": [
+		"src/routes/(general)/api/[publicID]/profilepic/+server.js"
+	],
+	"/(general)/auth": [
+		"src/routes/(general)/auth/+page.server.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses": [
 		"src/routes/(general)/courses/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -898,6 +926,13 @@
 	"/(about)/research": [
 		"src/routes/(about)/research/+page.js"
 	],
+	"/(general)/settings": [
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/settings/profile": [
+		"src/routes/(general)/settings/profile/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/students": [
 		"src/routes/(general)/students/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -912,6 +947,10 @@
 	],
 	"/(about)/teaching": [
 		"src/routes/(about)/teaching/+page.js"
+	],
+	"/(general)/[publicID]": [
+		"src/routes/(general)/[publicID]/+page.js",
+		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/[...catchAll]": [
 		"src/routes/(general)/+layout.server.js"

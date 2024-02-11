@@ -1,4 +1,5 @@
-import { c as create_ssr_component, s as subscribe, v as validate_component, e as escape } from "../../../../../chunks/ssr.js";
+import { s as subscribe } from "../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component, e as escape } from "../../../../../chunks/ssr.js";
 import { M as Message } from "../../../../../chunks/Message.js";
 /* empty css                                                       */
 import "../../../../../chunks/client.js";

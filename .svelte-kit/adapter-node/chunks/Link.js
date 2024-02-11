@@ -1,4 +1,5 @@
-import { c as create_ssr_component, h as compute_rest_props, i as add_attribute, b as spread, d as escape_object } from "./ssr.js";
+import { c as compute_rest_props } from "./utils.js";
+import { c as create_ssr_component, f as add_attribute, s as spread, d as escape_object } from "./ssr.js";
 /* empty css                                   */
 const css = {
   code: "a.svelte-h06gar{text-decoration:none;display:flex;justify-content:start;align-items:center;gap:0.3em}.text.svelte-h06gar{display:flex;align-items:center}",

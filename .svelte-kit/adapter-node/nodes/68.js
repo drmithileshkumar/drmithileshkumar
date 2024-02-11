@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/courses/mathematics2/statistics/correlation/correlation2/_page.js';
+import * as universal from '../entries/pages/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency/_page.js';
 
 export const index = 68;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/mathematics2/statistics/correlation/correlation2/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/courses/mathematics2/statistics/correlation/correlation2/+page.js";
-export const imports = ["_app/immutable/nodes/68.C91txEAJ.js","_app/immutable/chunks/scheduler.XN8MnxCc.js","_app/immutable/chunks/index.hIVQ3JUV.js","_app/immutable/chunks/typeset.4oI2U5Tz.js","_app/immutable/chunks/Card.5SpOS5eG.js","_app/immutable/chunks/index.D7WnTG5a.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/ActionIcons.A7KDZOPi.js","_app/immutable/chunks/content.tycUVTYH.js"];
-export const stylesheets = ["_app/immutable/assets/65.KL6jlOoL.css"];
+export const universal_id = "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency/+page.js";
+export const imports = ["_app/immutable/nodes/68.-6kAVQfc.js","_app/immutable/chunks/scheduler.wYmonAyn.js","_app/immutable/chunks/index.AwdIdbL-.js","_app/immutable/chunks/typeset.4oI2U5Tz.js","_app/immutable/chunks/Card.Sl11uEgJ.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/classAdderBuilder.yqNPMMYB.js","_app/immutable/chunks/ActionIcons.IGfvHpx2.js","_app/immutable/chunks/stores.7oE78v3q.js","_app/immutable/chunks/index.KLghjZkg.js","_app/immutable/chunks/content.tycUVTYH.js"];
+export const stylesheets = ["_app/immutable/assets/67.E3mSGCqI.css"];
 export const fonts = [];

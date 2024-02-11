@@ -1,10 +1,12 @@
-import { c as create_ssr_component, s as subscribe, o as set_store_value, v as validate_component, e as escape } from "../../../../../../../../chunks/ssr.js";
+import { s as subscribe, b as set_store_value } from "../../../../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component, e as escape } from "../../../../../../../../chunks/ssr.js";
 import { g as githubDark, a as github, c as contents } from "../../../../../../../../chunks/content2.js";
 /* empty css                                                                */
 import "../../../../../../../../chunks/client.js";
-import { d as darkMode, c as currentPath, n as navList, C as Card } from "../../../../../../../../chunks/Card.js";
+import { C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
 import "../../../../../../../../chunks/Subheader.js";
+import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores3.js";
 /* empty css                                                                   */
 import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js";
 import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../../../../chunks/Cell.js";

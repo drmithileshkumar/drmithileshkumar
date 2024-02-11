@@ -1,6 +1,7 @@
-import { c as create_ssr_component, s as subscribe, i as add_attribute, v as validate_component } from "../../../../../../chunks/ssr.js";
+import { s as subscribe } from "../../../../../../chunks/utils.js";
+import { c as create_ssr_component, f as add_attribute, v as validate_component } from "../../../../../../chunks/ssr.js";
 import "../../../../../../chunks/client.js";
-import { c as currentSlide, s as slideCounter, d as presentation, o as overlay, e as autoScroll, p as presentationMode } from "../../../../../../chunks/stores3.js";
+import { c as currentSlide, s as slideCounter, d as presentation, o as overlay, e as autoScroll, p as presentationMode } from "../../../../../../chunks/stores4.js";
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../../../chunks/Presenter.js";
 const css = {
   code: ".container.svelte-ys2ybb{display:grid;grid-template-columns:1em 1fr 1em;position:relative}aside.svelte-ys2ybb{background-color:rgb(230, 228, 228);cursor:pointer;width:1em}.overlay.svelte-ys2ybb{position:absolute;z-index:2;left:0.5em;top:0;margin:auto;width:calc(100% - 2em);height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none}.overlay.svelte-ys2ybb::-webkit-scrollbar{width:0;height:0}.questions.svelte-ys2ybb{margin:auto;font-family:'Georgia', serif;line-height:1.5;word-spacing:0.5ex}.presentationMode.svelte-ys2ybb{display:flex;height:1em;margin-bottom:0.5em}.presenter.svelte-ys2ybb{position:absolute;right:35px;bottom:0;z-index:10}",

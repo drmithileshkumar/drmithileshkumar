@@ -1,10 +1,12 @@
-import { c as create_ssr_component, s as subscribe, o as set_store_value, v as validate_component } from "../../../../../../../../chunks/ssr.js";
+import { s as subscribe, b as set_store_value } from "../../../../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component } from "../../../../../../../../chunks/ssr.js";
 import { g as githubDark, a as github, c as contents } from "../../../../../../../../chunks/content2.js";
 /* empty css                                                                */
 import "../../../../../../../../chunks/client.js";
-import { d as darkMode, c as currentPath, n as navList, C as Card } from "../../../../../../../../chunks/Card.js";
+import { C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
 import "../../../../../../../../chunks/Subheader.js";
+import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores3.js";
 /* empty css                                                                   */
 const css = {
   code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}strong.svelte-9tb2l5{color:goldenrod;opacity:1}",

@@ -1,6 +1,7 @@
-import { c as create_ssr_component, i as add_attribute, s as subscribe, e as escape, v as validate_component, k as null_to_empty } from "../../../../../chunks/ssr.js";
+import { s as subscribe, d as null_to_empty } from "../../../../../chunks/utils.js";
+import { c as create_ssr_component, f as add_attribute, e as escape, v as validate_component } from "../../../../../chunks/ssr.js";
 import { S as Select } from "../../../../../chunks/Select.js";
-import { f as chapters, g as sections, c as currentSlide, p as presentationMode, s as slideCounter, d as presentation, o as overlay, e as autoScroll, a as selectedSection, b as selectedChapter } from "../../../../../chunks/stores3.js";
+import { f as chapters, g as sections, c as currentSlide, p as presentationMode, s as slideCounter, d as presentation, o as overlay, e as autoScroll, a as selectedSection, b as selectedChapter } from "../../../../../chunks/stores4.js";
 import "../../../../../chunks/client.js";
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../../chunks/Presenter.js";
 class Point {
