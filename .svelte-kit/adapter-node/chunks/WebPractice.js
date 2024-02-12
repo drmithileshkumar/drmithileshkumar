@@ -267,7 +267,7 @@ const CodeMirror = create_ssr_component(($$result, $$props, $$bindings, slots) =
   return `${is_browser ? `<div class="${"codemirror-wrapper " + escape(classes, true) + " svelte-kcx0g9"}"${add_attribute("this", element, 0)}></div>` : `<div class="${"scm-waiting " + escape(classes, true) + " svelte-kcx0g9"}"><div class="scm-waiting__loading scm-loading svelte-kcx0g9" data-svelte-h="svelte-1pxusly"><div class="scm-loading__spinner svelte-kcx0g9"></div> <p class="scm-loading__text svelte-kcx0g9">Loading editor...</p></div> <pre class="scm-pre cm-editor svelte-kcx0g9">${escape(value)}</pre></div>`}`;
 });
 const css$1 = {
-  code: ".preview.svelte-16wm0q8{border:0}.CodeMirror{border:1px solid #b005ff;height:auto}",
+  code: ".preview.svelte-1udcswz{border:0}.CodeMirror{border:1px solid #b005ff;height:auto}.preview.svelte-1udcswz{resize:vertical}",
   map: null
 };
 const WebPractice = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -404,7 +404,7 @@ const WebPractice = create_ssr_component(($$result, $$props, $$bindings, slots) 
       }
     })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
       default: () => {
-        return `<iframe class="preview svelte-16wm0q8" style="width:100%; min-height:200px; max-height:50vh;"${add_attribute("this", previewFrame, 0)} data-svelte-h="svelte-yzavse"></iframe>`;
+        return `<iframe class="preview svelte-1udcswz" style="width:100%; min-height:200px; max-height:50vh;"${add_attribute("this", previewFrame, 0)} data-svelte-h="svelte-yzavse"></iframe>`;
       }
     })}`;
   } while (!$$settled);

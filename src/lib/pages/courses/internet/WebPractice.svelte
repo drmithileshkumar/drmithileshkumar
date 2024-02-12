@@ -143,4 +143,7 @@
         border: 1px solid #b005ff;
         height: auto;
     }
+    .preview {
+        resize: vertical;
+    }
 </style>

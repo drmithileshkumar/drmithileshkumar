@@ -47,7 +47,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         <!--include external resources here like adsense, javascript, styles-->
     </head>   
     <body>   
-        <form action="" method="post">
+        <form id="myForm" action="">
             <label for="username">
                 Username: <input type="text" id="username" name="username" />    
             </label>
@@ -73,8 +73,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             </label>
             <br/>
             <br/>
-            <label for="age">
-                Age: <input type="number" id="age" name="age" />    
+            <label for="house">
+                House: <input type="number" id="house" name="house" />    
             </label>
             <br/>
             <br/>
@@ -96,6 +96,32 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             <label for="color">
                 Favourite Color: <input type="color" id="color" name="color" />    
             </label>
+            <br/>
+            <br/>
+            <label for="file">
+                Photo: <input type="file" accept="image/*" id="file" name="photo" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="laptop">
+                Laptop <input type="checkbox" id="laptop" name="laptop" value="Laptop" />    
+            </label>
+            <label for="mobile">
+                Mobile <input type="checkbox" id="mobile" name="mobile" value='Mobile' />    
+            </label>
+            <br/>
+            <br/>
+            <label for="male">
+                Male <input type="radio" id="male" name="gender" value="Male" />    
+            </label>
+            <label for="female">
+                Female <input type="radio" id="female" name="gender" value="Female" />    
+            </label>
+            <br/>
+            <br/>
+            <input type="reset" id="reset" value="Reset" />
+            <input type="button" id="button" onclick="console.log(document.getElementById('myForm').elements[0])" value="Alert" />
+            <input type="submit" id="submit" value="submit" />    
         </form>
     </body> 
 </html>`;
@@ -416,7 +442,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         }
                       })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
                         default: () => {
-                          return `select zero or more options of a limited number of choices`;
+                          return `select zero or more options of a limited number of choices. When <code data-svelte-h="svelte-1x67wg7">name</code> attribute is same, then query string has multiple entries with same variable.`;
                         }
                       })}`;
                     }
@@ -432,7 +458,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         }
                       })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
                         default: () => {
-                          return `select only one of a limited number of choices`;
+                          return `select only one of a limited number of choices, <code data-svelte-h="svelte-1x67wg7">name</code> attributes are same for related options.`;
                         }
                       })}`;
                     }
