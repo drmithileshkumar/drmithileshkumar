@@ -10,6 +10,7 @@ import { G as Graphic, L as List, I as Item, d as dispatch } from "../../../../.
 import { e as exclude, p as prefixFilter } from "../../../../../chunks/prefixFilter.js";
 import { T as Text } from "../../../../../chunks/Subheader.js";
 import { w as writable } from "../../../../../chunks/index2.js";
+import { F as FormField, R as Radio } from "../../../../../chunks/FormField.js";
 import { p as page } from "../../../../../chunks/stores.js";
 import { b as bannerImage, c as currentPath, p as profileImage } from "../../../../../chunks/stores3.js";
 import "../../../../../chunks/client.js";
@@ -248,7 +249,7 @@ classAdderBuilder({
   class: "mdc-menu__selection-group-icon",
   component: Graphic
 });
-let counter$1 = 0;
+let counter = 0;
 const Autocomplete = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let menuOpen;
   let $$restProps = compute_rest_props($$props, [
@@ -321,7 +322,7 @@ const Autocomplete = create_ssr_component(($$result, $$props, $$bindings, slots)
   let focused = false;
   let matches = [];
   let focusedIndex = -1;
-  let menuId = (_a = $$restProps["menu$id"]) !== null && _a !== void 0 ? _a : "SMUI-autocomplete-" + counter$1++ + "-menu";
+  let menuId = (_a = $$restProps["menu$id"]) !== null && _a !== void 0 ? _a : "SMUI-autocomplete-" + counter++ + "-menu";
   let previousText = text;
   let previousValue = value;
   let previousFocusedIndex = void 0;
@@ -762,159 +763,6 @@ const Actions = classAdderBuilder({
   contexts: {
     "SMUI:button:context": "dialog:action"
   }
-});
-const Radio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, [
-    "use",
-    "class",
-    "style",
-    "disabled",
-    "touch",
-    "group",
-    "value",
-    "valueKey",
-    "input$use",
-    "input$class",
-    "getId",
-    "getElement"
-  ]);
-  var _a;
-  forwardEventsBuilder(get_current_component());
-  let uninitializedValue = () => {
-  };
-  function isUninitializedValue(value2) {
-    return value2 === uninitializedValue;
-  }
-  let { use = [] } = $$props;
-  let { class: className = "" } = $$props;
-  let { style = "" } = $$props;
-  let { disabled = false } = $$props;
-  let { touch = false } = $$props;
-  let { group = void 0 } = $$props;
-  let { value = null } = $$props;
-  let { valueKey = uninitializedValue } = $$props;
-  let { input$use = [] } = $$props;
-  let { input$class = "" } = $$props;
-  let element;
-  let internalClasses = {};
-  let internalStyles = {};
-  let inputProps = (_a = getContext("SMUI:generic:input:props")) !== null && _a !== void 0 ? _a : {};
-  function getId() {
-    return inputProps && inputProps.id;
-  }
-  function getElement() {
-    return element;
-  }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.disabled === void 0 && $$bindings.disabled && disabled !== void 0)
-    $$bindings.disabled(disabled);
-  if ($$props.touch === void 0 && $$bindings.touch && touch !== void 0)
-    $$bindings.touch(touch);
-  if ($$props.group === void 0 && $$bindings.group && group !== void 0)
-    $$bindings.group(group);
-  if ($$props.value === void 0 && $$bindings.value && value !== void 0)
-    $$bindings.value(value);
-  if ($$props.valueKey === void 0 && $$bindings.valueKey && valueKey !== void 0)
-    $$bindings.valueKey(valueKey);
-  if ($$props.input$use === void 0 && $$bindings.input$use && input$use !== void 0)
-    $$bindings.input$use(input$use);
-  if ($$props.input$class === void 0 && $$bindings.input$class && input$class !== void 0)
-    $$bindings.input$class(input$class);
-  if ($$props.getId === void 0 && $$bindings.getId && getId !== void 0)
-    $$bindings.getId(getId);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
-  return `<div${spread(
-    [
-      {
-        class: escape_attribute_value(classMap({
-          [className]: true,
-          "mdc-radio": true,
-          "mdc-radio--disabled": disabled,
-          "mdc-radio--touch": touch,
-          ...internalClasses
-        }))
-      },
-      {
-        style: escape_attribute_value(Object.entries(internalStyles).map(([name, value2]) => `${name}: ${value2};`).concat([style]).join(" "))
-      },
-      escape_object(exclude($$restProps, ["input$"]))
-    ],
-    {}
-  )}${add_attribute("this", element, 0)}><input${spread(
-    [
-      {
-        class: escape_attribute_value(classMap({
-          [input$class]: true,
-          "mdc-radio__native-control": true
-        }))
-      },
-      { type: "radio" },
-      escape_object(inputProps),
-      { disabled: disabled || null },
-      {
-        value: escape_attribute_value(isUninitializedValue(valueKey) ? value : valueKey)
-      },
-      escape_object(prefixFilter($$restProps, "input$"))
-    ],
-    {}
-  )}${(isUninitializedValue(valueKey) ? value : valueKey) === group ? add_attribute("checked", true, 1) : ""}> <div class="mdc-radio__background" data-svelte-h="svelte-14iudo4"><div class="mdc-radio__outer-circle"></div> <div class="mdc-radio__inner-circle"></div></div> <div class="mdc-radio__ripple"></div> </div>`;
-});
-let counter = 0;
-const FormField = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["use", "class", "align", "noWrap", "inputId", "label$use", "getElement"]);
-  forwardEventsBuilder(get_current_component());
-  let { use = [] } = $$props;
-  let { class: className = "" } = $$props;
-  let { align = "start" } = $$props;
-  let { noWrap = false } = $$props;
-  let { inputId = "SMUI-form-field-" + counter++ } = $$props;
-  let { label$use = [] } = $$props;
-  let element;
-  let label;
-  setContext("SMUI:generic:input:props", { id: inputId });
-  function getElement() {
-    return element;
-  }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.align === void 0 && $$bindings.align && align !== void 0)
-    $$bindings.align(align);
-  if ($$props.noWrap === void 0 && $$bindings.noWrap && noWrap !== void 0)
-    $$bindings.noWrap(noWrap);
-  if ($$props.inputId === void 0 && $$bindings.inputId && inputId !== void 0)
-    $$bindings.inputId(inputId);
-  if ($$props.label$use === void 0 && $$bindings.label$use && label$use !== void 0)
-    $$bindings.label$use(label$use);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
-  return `<div${spread(
-    [
-      {
-        class: escape_attribute_value(classMap({
-          [className]: true,
-          "mdc-form-field": true,
-          "mdc-form-field--align-end": align === "end",
-          "mdc-form-field--nowrap": noWrap
-        }))
-      },
-      escape_object(exclude($$restProps, ["label$"]))
-    ],
-    {}
-  )}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``} <label${spread(
-    [
-      { for: escape_attribute_value(inputId) },
-      escape_object(prefixFilter($$restProps, "label$"))
-    ],
-    {}
-  )}${add_attribute("this", label, 0)}>${slots.label ? slots.label({}) : ``}</label> </div>`;
 });
 const css = {
   code: "article.svelte-1oqgc0g.svelte-1oqgc0g{width:100%}.display.svelte-1oqgc0g.svelte-1oqgc0g{margin-bottom:60px}.photos.svelte-1oqgc0g.svelte-1oqgc0g{position:relative}.banner.svelte-1oqgc0g.svelte-1oqgc0g{width:100%;height:170px;background-color:rgba(0, 247, 255, 0.919);cursor:pointer}.banner.svelte-1oqgc0g.svelte-1oqgc0g:hover{background-color:rgba(0, 247, 255, 0.519)}.profile.svelte-1oqgc0g.svelte-1oqgc0g{position:absolute;bottom:-50px;left:10px;width:120px;height:120px;border-radius:50%;border-width:2px;background:#888;cursor:pointer;overflow:hidden}.details.svelte-1oqgc0g.svelte-1oqgc0g{display:flex;flex-direction:column;gap:1.5em;padding:0 1em}.profile.svelte-1oqgc0g.svelte-1oqgc0g:hover{background-color:rgb(100, 100, 100)}.profile.svelte-1oqgc0g img.svelte-1oqgc0g{width:100%;height:100%}.hidden.svelte-1oqgc0g.svelte-1oqgc0g{display:none}",

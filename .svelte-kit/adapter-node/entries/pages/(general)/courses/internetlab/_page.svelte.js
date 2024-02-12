@@ -6,54 +6,7 @@ import { C as Card } from "../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../chunks/ActionIcons.js";
 import { N as NavList } from "../../../../../chunks/NavList.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores3.js";
-const contents = [
-  {
-    name: "INTERNET TECHNOLOGIES LAB",
-    url: "/courses/internetlab",
-    topics: [
-      {
-        name: "Resume with HTML tags",
-        url: "/courses/internetlab/resume"
-      },
-      {
-        name: "College Website",
-        url: "/courses/internetlab/college"
-      },
-      {
-        name: "Home Town Page",
-        url: "/courses/internetlab/home"
-      },
-      {
-        name: "College page with CSS",
-        url: "/courses/internetlab/collegecss"
-      },
-      {
-        name: "JavaScript Date",
-        url: "/courses/internetlab/date"
-      },
-      {
-        name: "Calculator",
-        url: "/courses/internetlab/calculator"
-      },
-      {
-        name: "XML file for students",
-        url: "/courses/internetlab/xml"
-      },
-      {
-        name: "DTD",
-        url: "/courses/internetlab/dtd"
-      },
-      {
-        name: "Node.js Date",
-        url: "/courses/internetlab/nodejsdate"
-      },
-      {
-        name: "Login Authentication",
-        url: "/courses/internetlab/authentication"
-      }
-    ]
-  }
-];
+import { c as contents } from "../../../../../chunks/content.js";
 const css = {
   code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}",
   map: null

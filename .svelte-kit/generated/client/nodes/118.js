@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Conic sections/Ellipse/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Conic sections/Ellipse/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.svelte";

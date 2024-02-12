@@ -1,5 +1,5 @@
 import { r as run_all, c as compute_rest_props, s as subscribe, b as set_store_value } from "../../../../chunks/utils.js";
-import { n as set_current_component, p as current_component, c as create_ssr_component, a as get_current_component, h as setContext, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, g as getContext, v as validate_component, m as missing_component, k as each, i as createEventDispatcher, e as escape } from "../../../../chunks/ssr.js";
+import { n as set_current_component, p as current_component, c as create_ssr_component, a as get_current_component, g as getContext, h as setContext, v as validate_component, m as missing_component, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, k as each, i as createEventDispatcher, e as escape } from "../../../../chunks/ssr.js";
 import { B as Button, C as CommonLabel } from "../../../../chunks/Button.js";
 import { f as forwardEventsBuilder, c as classMap, g as globals, S as SmuiElement } from "../../../../chunks/classAdderBuilder.js";
 import { w as writable } from "../../../../chunks/index2.js";
@@ -7,6 +7,7 @@ import { R as Ripple } from "../../../../chunks/Ripple.js";
 import { C as ContextFragment } from "../../../../chunks/ContextFragment.js";
 import { C as Card } from "../../../../chunks/Card.js";
 import { C as Content } from "../../../../chunks/ActionIcons.js";
+import { A as Actions } from "../../../../chunks/Actions.js";
 import { T as Textfield } from "../../../../chunks/Textfield.js";
 import "../../../../chunks/Suffix.js";
 import "devalue";
@@ -85,40 +86,6 @@ function update($$) {
     $$.after_update.forEach(add_render_callback);
   }
 }
-const Actions = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["use", "class", "fullBleed", "getElement"]);
-  forwardEventsBuilder(get_current_component());
-  let { use = [] } = $$props;
-  let { class: className = "" } = $$props;
-  let { fullBleed = false } = $$props;
-  let element;
-  setContext("SMUI:button:context", "card:action");
-  setContext("SMUI:icon-button:context", "card:action");
-  function getElement() {
-    return element;
-  }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.fullBleed === void 0 && $$bindings.fullBleed && fullBleed !== void 0)
-    $$bindings.fullBleed(fullBleed);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
-  return `<div${spread(
-    [
-      {
-        class: escape_attribute_value(classMap({
-          [className]: true,
-          "mdc-card__actions": true,
-          "mdc-card__actions--full-bleed": fullBleed
-        }))
-      },
-      escape_object($$restProps)
-    ],
-    {}
-  )}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``} </div>`;
-});
 const { Object: Object_1 } = globals;
 const Chip = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, [

@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Application of derivatives/Approximations/_page.js';
+import * as universal from '../entries/pages/(general)/iit/maths/2021/_page.js';
 
 export const index = 102;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Application of derivatives/Approximations/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/maths/2021/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Application of derivatives/Approximations/+page.js";
-export const imports = ["_app/immutable/nodes/102.cYdbtAr6.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.wYmonAyn.js","_app/immutable/chunks/index.AwdIdbL-.js","_app/immutable/chunks/stores.r0S_1cbc.js","_app/immutable/chunks/index.KLghjZkg.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.YV8cvqO3.js","_app/immutable/chunks/entry.i2HVWFHM.js"];
-export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
+export const universal_id = "src/routes/(general)/iit/maths/2021/+page.js";
+export const imports = ["_app/immutable/nodes/102.UrjaV47F.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.wYmonAyn.js","_app/immutable/chunks/index.AwdIdbL-.js","_app/immutable/chunks/entry.g0pxKYQm.js","_app/immutable/chunks/index.KLghjZkg.js","_app/immutable/chunks/constants.1x7ZJ2_l.js"];
+export const stylesheets = ["_app/immutable/assets/102.ex_iOiAb.css","_app/immutable/assets/Message.ctOi1nG9.css","_app/immutable/assets/Link.mTa6ZPjX.css"];
 export const fonts = [];

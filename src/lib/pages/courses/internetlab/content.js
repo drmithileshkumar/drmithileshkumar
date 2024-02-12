@@ -13,15 +13,11 @@ export const contents = [
             },
             {
                 name: 'Home Town Page',
-                url: '/courses/internetlab/home',
-            },
-            {
-                name: "College page with CSS",
-                url: "/courses/internetlab/collegecss",
+                url: '/courses/internetlab/town',
             },
             {
                 name: "JavaScript Date",
-                url: "/courses/internetlab/date",
+                url: "/courses/internetlab/javascript",
             },
             {
                 name: "Calculator",
@@ -37,7 +33,7 @@ export const contents = [
             },
             {
                 name: "Node.js Date",
-                url: "/courses/internetlab/nodejsdate",
+                url: "/courses/internetlab/nodejs",
             },
             {
                 name: "Login Authentication",

@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/practice/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Trigonometric functions/Trigonometric equations/_page.js';
 
 export const index = 232;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/practice/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Trigonometric functions/Trigonometric equations/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/practice/+page.js";
-export const imports = ["_app/immutable/nodes/232.YV2FKW5k.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.wYmonAyn.js","_app/immutable/chunks/index.AwdIdbL-.js","_app/immutable/chunks/entry.i2HVWFHM.js","_app/immutable/chunks/index.KLghjZkg.js"];
-export const stylesheets = ["_app/immutable/assets/Message.ctOi1nG9.css","_app/immutable/assets/Link.mTa6ZPjX.css","_app/immutable/assets/Practice.5SCwWus9.css"];
+export const universal_id = "src/routes/(general)/notes/maths/Trigonometric functions/Trigonometric equations/+page.js";
+export const imports = ["_app/immutable/nodes/232.4FYVN-ET.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.wYmonAyn.js","_app/immutable/chunks/index.AwdIdbL-.js","_app/immutable/chunks/stores.r0S_1cbc.js","_app/immutable/chunks/index.KLghjZkg.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.oULeJHlH.js","_app/immutable/chunks/entry.g0pxKYQm.js"];
+export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

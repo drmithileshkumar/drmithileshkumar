@@ -13,6 +13,14 @@
       "_classAdderBuilder.js"
     ]
   },
+  "_Actions.js": {
+    "file": "chunks/Actions.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_classAdderBuilder.js"
+    ]
+  },
   "_Button.js": {
     "file": "chunks/Button.js",
     "imports": [
@@ -50,6 +58,15 @@
       "_utils.js",
       "_ssr.js",
       "_index2.js"
+    ]
+  },
+  "_FormField.js": {
+    "file": "chunks/FormField.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_classAdderBuilder.js",
+      "_prefixFilter.js"
     ]
   },
   "_Graphic.js": {
@@ -300,6 +317,9 @@
   },
   "_content2.js": {
     "file": "chunks/content2.js"
+  },
+  "_content3.js": {
+    "file": "chunks/content3.js"
   },
   "_exports.js": {
     "file": "chunks/exports.js"
@@ -638,6 +658,59 @@
     "isEntry": true,
     "src": "src/routes/(general)/[publicID]/+page.svelte"
   },
+  "src/routes/(general)/[publicID]/questions/+page.js": {
+    "file": "entries/pages/(general)/_publicID_/questions/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/questions/+page.js"
+  },
+  "src/routes/(general)/[publicID]/questions/+page.svelte": {
+    "file": "entries/pages/(general)/_publicID_/questions/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/questions/+page.svelte"
+  },
+  "src/routes/(general)/[publicID]/questions/edit/+page.js": {
+    "file": "entries/pages/(general)/_publicID_/questions/edit/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/questions/edit/+page.js"
+  },
+  "src/routes/(general)/[publicID]/questions/edit/+page.svelte": {
+    "file": "entries/pages/(general)/_publicID_/questions/edit/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/questions/edit/+page.svelte"
+  },
+  "src/routes/(general)/[publicID]/questions/new/+page.js": {
+    "file": "entries/pages/(general)/_publicID_/questions/new/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/questions/new/+page.js"
+  },
+  "src/routes/(general)/[publicID]/questions/new/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.XJEC4CgM.css"
+    ],
+    "file": "entries/pages/(general)/_publicID_/questions/new/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Actions.js",
+      "_Button.js",
+      "_Textfield.js",
+      "_Suffix.js",
+      "_FormField.js",
+      "_utils.js",
+      "_classAdderBuilder.js",
+      "_prefixFilter.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/questions/new/+page.svelte"
+  },
   "src/routes/(general)/api/[publicID]/+server.js": {
     "file": "entries/endpoints/(general)/api/_publicID_/_server.js",
     "imports": [
@@ -673,6 +746,25 @@
     ],
     "isEntry": true,
     "src": "src/routes/(general)/api/[publicID]/profilepic/+server.js"
+  },
+  "src/routes/(general)/api/[publicID]/questions/+server.js": {
+    "file": "entries/endpoints/(general)/api/_publicID_/questions/_server.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/api/[publicID]/questions/+server.js"
+  },
+  "src/routes/(general)/api/[publicID]/questions/edit/+server.js": {
+    "file": "entries/endpoints/(general)/api/_publicID_/questions/edit/_server.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/api/[publicID]/questions/edit/+server.js"
+  },
+  "src/routes/(general)/api/[publicID]/questions/new/+server.js": {
+    "file": "entries/endpoints/(general)/api/_publicID_/questions/new/_server.js",
+    "imports": [
+      "_mongo.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/api/[publicID]/questions/new/+server.js"
   },
   "src/routes/(general)/api/login/+server.js": {
     "file": "entries/endpoints/(general)/api/login/_server.js",
@@ -738,6 +830,7 @@
       "_ContextFragment.js",
       "_Card.js",
       "_ActionIcons.js",
+      "_Actions.js",
       "_Textfield.js",
       "_Suffix.js",
       "_client.js",
@@ -818,7 +911,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -960,7 +1053,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -984,7 +1077,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1009,7 +1102,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1035,7 +1128,7 @@
       "_utils.js",
       "_ssr.js",
       "_xml.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1061,7 +1154,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1086,7 +1179,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1111,7 +1204,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1136,7 +1229,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1162,7 +1255,7 @@
       "_utils.js",
       "_ssr.js",
       "_xml.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1187,7 +1280,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1211,7 +1304,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1236,7 +1329,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1263,7 +1356,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1290,7 +1383,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1316,7 +1409,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1342,7 +1435,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1367,7 +1460,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1393,7 +1486,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1419,7 +1512,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1445,7 +1538,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content2.js",
+      "_content3.js",
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1488,10 +1581,228 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js"
+      "_stores3.js",
+      "_content.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internetlab/+page.svelte"
+  },
+  "src/routes/(general)/courses/internetlab/authentication/+page.js": {
+    "file": "entries/pages/(general)/courses/internetlab/authentication/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/authentication/+page.js"
+  },
+  "src/routes/(general)/courses/internetlab/authentication/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hj3E2EKt.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internetlab/authentication/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/authentication/+page.svelte"
+  },
+  "src/routes/(general)/courses/internetlab/calculator/+page.js": {
+    "file": "entries/pages/(general)/courses/internetlab/calculator/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/calculator/+page.js"
+  },
+  "src/routes/(general)/courses/internetlab/calculator/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hj3E2EKt.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internetlab/calculator/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/calculator/+page.svelte"
+  },
+  "src/routes/(general)/courses/internetlab/college/+page.js": {
+    "file": "entries/pages/(general)/courses/internetlab/college/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/college/+page.js"
+  },
+  "src/routes/(general)/courses/internetlab/college/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hj3E2EKt.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internetlab/college/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/college/+page.svelte"
+  },
+  "src/routes/(general)/courses/internetlab/dtd/+page.js": {
+    "file": "entries/pages/(general)/courses/internetlab/dtd/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/dtd/+page.js"
+  },
+  "src/routes/(general)/courses/internetlab/dtd/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hj3E2EKt.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internetlab/dtd/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/dtd/+page.svelte"
+  },
+  "src/routes/(general)/courses/internetlab/javascript/+page.js": {
+    "file": "entries/pages/(general)/courses/internetlab/javascript/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/javascript/+page.js"
+  },
+  "src/routes/(general)/courses/internetlab/javascript/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hj3E2EKt.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internetlab/javascript/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/javascript/+page.svelte"
+  },
+  "src/routes/(general)/courses/internetlab/nodejs/+page.js": {
+    "file": "entries/pages/(general)/courses/internetlab/nodejs/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/nodejs/+page.js"
+  },
+  "src/routes/(general)/courses/internetlab/nodejs/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hj3E2EKt.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internetlab/nodejs/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/nodejs/+page.svelte"
+  },
+  "src/routes/(general)/courses/internetlab/resume/+page.js": {
+    "file": "entries/pages/(general)/courses/internetlab/resume/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/resume/+page.js"
+  },
+  "src/routes/(general)/courses/internetlab/resume/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.78ZpxXH4.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css",
+      "_app/immutable/assets/NavList.buyRB24_.css"
+    ],
+    "file": "entries/pages/(general)/courses/internetlab/resume/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Subheader.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/resume/+page.svelte"
+  },
+  "src/routes/(general)/courses/internetlab/town/+page.js": {
+    "file": "entries/pages/(general)/courses/internetlab/town/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/town/+page.js"
+  },
+  "src/routes/(general)/courses/internetlab/town/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hj3E2EKt.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internetlab/town/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/town/+page.svelte"
+  },
+  "src/routes/(general)/courses/internetlab/xml/+page.js": {
+    "file": "entries/pages/(general)/courses/internetlab/xml/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/xml/+page.js"
+  },
+  "src/routes/(general)/courses/internetlab/xml/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hj3E2EKt.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internetlab/xml/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores3.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internetlab/xml/+page.svelte"
   },
   "src/routes/(general)/courses/linearalgebra/+page.js": {
     "file": "entries/pages/(general)/courses/linearalgebra/_page.js",
@@ -1541,7 +1852,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/+page.svelte"
@@ -1562,7 +1873,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/+page.svelte"
@@ -1583,7 +1894,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/+page.svelte"
@@ -1604,7 +1915,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatedata/+page.svelte"
@@ -1625,7 +1936,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency/+page.svelte"
@@ -1646,7 +1957,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/correlation2/+page.svelte"
@@ -1667,7 +1978,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/correlationtypes/+page.svelte"
@@ -1688,7 +1999,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/pearson/+page.svelte"
@@ -1709,7 +2020,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/correlation/spearman/+page.svelte"
@@ -1730,7 +2041,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/measures/+page.svelte"
@@ -1751,7 +2062,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/measures/deviation/+page.svelte"
@@ -1772,7 +2083,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/measures/mean/+page.svelte"
@@ -1793,7 +2104,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/measures/median/+page.svelte"
@@ -1814,7 +2125,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/measures/mode/+page.svelte"
@@ -1835,7 +2146,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/regression/+page.svelte"
@@ -1856,7 +2167,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/regression/leastsquares/+page.svelte"
@@ -1877,7 +2188,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/regression/regressioncoefficient/+page.svelte"
@@ -1898,7 +2209,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores3.js",
-      "_content.js"
+      "_content2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/regression/regressionlines/+page.svelte"
@@ -6055,6 +6366,7 @@
       "_prefixFilter.js",
       "_Subheader.js",
       "_index2.js",
+      "_FormField.js",
       "_stores.js",
       "_stores3.js",
       "_client.js"

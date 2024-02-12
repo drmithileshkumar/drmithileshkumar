@@ -34,6 +34,15 @@
 	"/(general)/api/[publicID]/profilepic": [
 		"src/routes/(general)/api/[publicID]/profilepic/+server.js"
 	],
+	"/(general)/api/[publicID]/questions": [
+		"src/routes/(general)/api/[publicID]/questions/+server.js"
+	],
+	"/(general)/api/[publicID]/questions/edit": [
+		"src/routes/(general)/api/[publicID]/questions/edit/+server.js"
+	],
+	"/(general)/api/[publicID]/questions/new": [
+		"src/routes/(general)/api/[publicID]/questions/new/+server.js"
+	],
 	"/(general)/auth": [
 		"src/routes/(general)/auth/+page.server.js",
 		"src/routes/(general)/+layout.server.js"
@@ -48,6 +57,42 @@
 	],
 	"/(general)/courses/internetlab": [
 		"src/routes/(general)/courses/internetlab/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internetlab/authentication": [
+		"src/routes/(general)/courses/internetlab/authentication/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internetlab/calculator": [
+		"src/routes/(general)/courses/internetlab/calculator/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internetlab/college": [
+		"src/routes/(general)/courses/internetlab/college/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internetlab/dtd": [
+		"src/routes/(general)/courses/internetlab/dtd/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internetlab/javascript": [
+		"src/routes/(general)/courses/internetlab/javascript/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internetlab/nodejs": [
+		"src/routes/(general)/courses/internetlab/nodejs/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internetlab/resume": [
+		"src/routes/(general)/courses/internetlab/resume/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internetlab/town": [
+		"src/routes/(general)/courses/internetlab/town/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internetlab/xml": [
+		"src/routes/(general)/courses/internetlab/xml/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/courses/internet": [
@@ -950,6 +995,18 @@
 	],
 	"/(general)/[publicID]": [
 		"src/routes/(general)/[publicID]/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/[publicID]/questions": [
+		"src/routes/(general)/[publicID]/questions/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/[publicID]/questions/edit": [
+		"src/routes/(general)/[publicID]/questions/edit/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/[publicID]/questions/new": [
+		"src/routes/(general)/[publicID]/questions/new/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/[...catchAll]": [

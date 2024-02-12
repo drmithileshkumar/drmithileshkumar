@@ -1,547 +1,381 @@
-const github = `<style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}
-/*!
-  Theme: GitHub
-  Description: Light theme as seen on github.com
-  Author: github.com
-  Maintainer: @Hirse
-  Updated: 2021-05-15
-
-  Outdated base version: https://github.com/primer/github-syntax-light
-  Current colors taken from GitHub's CSS
-*/.hljs{color:#24292e;background:#ffffff}.hljs-doctag,
-.hljs-keyword,
-.hljs-meta .hljs-keyword,
-.hljs-template-tag,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable.language_{color:#d73a49}.hljs-title,
-.hljs-title.class_,
-.hljs-title.class_.inherited__,
-.hljs-title.function_{color:#6f42c1}.hljs-attr,
-.hljs-attribute,
-.hljs-literal,
-.hljs-meta,
-.hljs-number,
-.hljs-operator,
-.hljs-variable,
-.hljs-selector-attr,
-.hljs-selector-class,
-.hljs-selector-id{color:#005cc5}.hljs-regexp,
-.hljs-string,
-.hljs-meta .hljs-string{color:#032f62}.hljs-built_in,
-.hljs-symbol{color:#e36209}.hljs-comment,
-.hljs-code,
-.hljs-formula{color:#6a737d}.hljs-name,
-.hljs-quote,
-.hljs-selector-tag,
-.hljs-selector-pseudo{color:#22863a}.hljs-subst{color:#24292e}.hljs-section{color:#005cc5;font-weight:bold}.hljs-bullet{color:#735c0f}.hljs-emphasis{color:#24292e;font-style:italic}.hljs-strong{color:#24292e;font-weight:bold}.hljs-addition{color:#22863a;background-color:#f0fff4}.hljs-deletion{color:#b31d28;background-color:#ffeef0}</style>`;
-const github$1 = github;
-const githubDark = `<style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}
-/*!
-  Theme: GitHub Dark
-  Description: Dark theme as seen on github.com
-  Author: github.com
-  Maintainer: @Hirse
-  Updated: 2021-05-15
-
-  Outdated base version: https://github.com/primer/github-syntax-dark
-  Current colors taken from GitHub's CSS
-*/.hljs{color:#c9d1d9;background:#0d1117}.hljs-doctag,
-.hljs-keyword,
-.hljs-meta .hljs-keyword,
-.hljs-template-tag,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable.language_{color:#ff7b72}.hljs-title,
-.hljs-title.class_,
-.hljs-title.class_.inherited__,
-.hljs-title.function_{color:#d2a8ff}.hljs-attr,
-.hljs-attribute,
-.hljs-literal,
-.hljs-meta,
-.hljs-number,
-.hljs-operator,
-.hljs-variable,
-.hljs-selector-attr,
-.hljs-selector-class,
-.hljs-selector-id{color:#79c0ff}.hljs-regexp,
-.hljs-string,
-.hljs-meta .hljs-string{color:#a5d6ff}.hljs-built_in,
-.hljs-symbol{color:#ffa657}.hljs-comment,
-.hljs-code,
-.hljs-formula{color:#8b949e}.hljs-name,
-.hljs-quote,
-.hljs-selector-tag,
-.hljs-selector-pseudo{color:#7ee787}.hljs-subst{color:#c9d1d9}.hljs-section{color:#1f6feb;font-weight:bold}.hljs-bullet{color:#f2cc60}.hljs-emphasis{color:#c9d1d9;font-style:italic}.hljs-strong{color:#c9d1d9;font-weight:bold}.hljs-addition{color:#aff5b4;background-color:#033a16}.hljs-deletion{color:#ffdcd7;background-color:#67060c}</style>`;
-const githubDark$1 = githubDark;
 const contents = [
   {
-    name: "INTERNET TECHNOLOGIES",
-    url: "/courses/internet",
+    name: "MATHEMATICS II",
+    url: "/courses/mathematics2",
     topics: [
       {
-        name: "WWW, HTML, XHTML",
-        url: "/courses/internet/wwwhtml",
+        name: "BASICS OF STATISTICS",
+        url: "/courses/mathematics2/statistics",
         topics: [
           {
-            name: "Fundamentals of Internet",
-            url: "/courses/internet/wwwhtml/fundamentals",
+            name: "Measures of Central Tendency",
+            url: "/courses/mathematics2/statistics/measures",
+            topics: [
+              {
+                name: "Mean (AM, GM, HM)",
+                url: "/courses/mathematics2/statistics/measures/mean"
+              },
+              {
+                name: "Mode",
+                url: "/courses/mathematics2/statistics/measures/mode"
+              },
+              {
+                name: "Median",
+                url: "/courses/mathematics2/statistics/measures/median"
+              },
+              {
+                name: "Standard deviation",
+                url: "/courses/mathematics2/statistics/measures/deviation"
+              }
+            ]
+          },
+          {
+            name: "Correlation",
+            url: "/courses/mathematics2/statistics/correlation",
+            topics: [
+              {
+                name: "Bivariate Data",
+                url: "/courses/mathematics2/statistics/correlation/bivariatedata"
+              },
+              {
+                name: "Bivariate frequency distribution",
+                url: "/courses/mathematics2/statistics/correlation/bivariatefrequency"
+              },
+              {
+                name: "Correlation between two variables",
+                url: "/courses/mathematics2/statistics/correlation/correlation2"
+              },
+              {
+                name: "Types of correlation",
+                url: "/courses/mathematics2/statistics/correlation/correlationtypes"
+              },
+              {
+                name: "Karl Pearson's coefficient of correlation (r)",
+                url: "/courses/mathematics2/statistics/correlation/pearson"
+              },
+              {
+                name: "Spearman's rank correlation coefficient",
+                url: "/courses/mathematics2/statistics/correlation/spearman"
+              }
+            ]
+          },
+          {
+            name: "Regression",
+            url: "/courses/mathematics2/statistics/regression",
+            topics: [
+              {
+                name: "Lines of regression",
+                url: "/courses/mathematics2/statistics/regression/regressionlines"
+              },
+              {
+                name: "Least squares method",
+                url: "/courses/mathematics2/statistics/regression/leastsquares"
+              },
+              {
+                name: "Regression coefficient",
+                url: "/courses/mathematics2/statistics/regression/regressioncoefficient"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: "PROBABILITY DISTRIBUTIONS",
+        url: "",
+        topics: [
+          {
+            name: "Prabability",
+            url: "",
+            topics: [
+              {
+                name: "Events",
+                url: ""
+              },
+              {
+                name: "Conditional Probability",
+                url: ""
+              },
+              {
+                name: "Independence",
+                url: ""
+              }
+            ]
+          },
+          {
+            name: "Distributions",
+            url: "",
+            topics: [
+              {
+                name: "Univariate Probability Distributionns",
+                url: ""
+              },
+              {
+                name: "Bivariate Probability Distribution",
+                url: ""
+              },
+              {
+                name: "Mathematical Expectation",
+                url: ""
+              },
+              {
+                name: "Bivariate distribution",
+                url: ""
+              },
+              {
+                name: "Conditional distribution",
+                url: ""
+              },
+              {
+                name: "Marginal distributions",
+                url: ""
+              }
+            ]
+          },
+          {
+            name: "Discrete distributions",
+            url: "",
+            topics: [
+              {
+                name: "Discrete uniform distribution",
+                url: ""
+              },
+              {
+                name: "Binomial distribution",
+                url: ""
+              },
+              {
+                name: "Poisson distribution",
+                url: ""
+              },
+              {
+                name: "Geometric distribution",
+                url: ""
+              }
+            ]
+          },
+          {
+            name: "Continuous distributions",
+            url: "",
+            topics: [
+              {
+                name: "Uniform distribution",
+                url: ""
+              },
+              {
+                name: "Normal distribution",
+                url: ""
+              },
+              {
+                name: "Exponential distribution",
+                url: ""
+              },
+              {
+                name: "Gamma distribution",
+                url: ""
+              }
+            ]
+          },
+          {
+            name: "Queueing theory",
+            url: "",
             topics: [
               {
                 name: "Introduction",
-                url: "/courses/internet/wwwhtml/fundamentals/intro"
-              },
-              {
-                name: "The World Wide Web",
-                url: "/courses/internet/wwwhtml/fundamentals/www"
-              },
-              {
-                name: "Web browsers",
-                url: "/courses/internet/wwwhtml/fundamentals/browsers"
-              },
-              {
-                name: "Web Servers",
-                url: "/courses/internet/wwwhtml/fundamentals/servers"
-              },
-              {
-                name: "Uniform Resource Locators",
-                url: "/courses/internet/wwwhtml/fundamentals/url"
-              },
-              {
-                name: "Multipurpose Internet Mail Extensions",
-                url: "/courses/internet/wwwhtml/fundamentals/mime"
-              },
-              {
-                name: "The Hypertext Transfer Protocol",
-                url: "/courses/internet/wwwhtml/fundamentals/http"
-              },
-              {
-                name: "Security",
-                url: "/courses/internet/wwwhtml/fundamentals/security"
-              }
-            ]
-          },
-          {
-            name: "HTML/XHTML",
-            url: "/courses/internet/wwwhtml/html",
-            topics: [
-              {
-                name: "Origins",
-                url: "/courses/internet/wwwhtml/html/origins"
-              },
-              {
-                name: "Basic Syntax",
-                url: "/courses/internet/wwwhtml/html/syntax"
-              },
-              {
-                name: "HTML Document Structure",
-                url: "/courses/internet/wwwhtml/html/structure"
-              },
-              {
-                name: "Text Markup",
-                url: "/courses/internet/wwwhtml/html/text"
-              },
-              {
-                name: "Images",
-                url: "/courses/internet/wwwhtml/html/images"
-              },
-              {
-                name: "Hypertext Links",
-                url: "/courses/internet/wwwhtml/html/links"
-              },
-              {
-                name: "Lists",
-                url: "/courses/internet/wwwhtml/html/lists"
-              },
-              {
-                name: "Tables",
-                url: "/courses/internet/wwwhtml/html/tables"
-              },
-              {
-                name: "Forms",
-                url: "/courses/internet/wwwhtml/html/forms"
-              },
-              {
-                name: "The audio Element",
-                url: "/courses/internet/wwwhtml/html/audio"
-              },
-              {
-                name: "The video Element",
-                url: "/courses/internet/wwwhtml/html/video"
-              },
-              {
-                name: "Organization Elements",
-                url: "/courses/internet/wwwhtml/html/organization"
-              },
-              {
-                name: "The time Element",
-                url: "/courses/internet/wwwhtml/html/time"
-              },
-              {
-                name: "HTML vs XHTML",
-                url: "/courses/internet/wwwhtml/html/xhtml"
+                url: ""
               }
             ]
           }
         ]
       },
       {
-        name: "CSS",
-        url: "/courses/internet/css",
+        name: "STATISTICAL INFERENCE",
+        url: "",
         topics: [
           {
-            name: "Levels of Style Sheets",
-            url: "/courses/internet/css/levels"
-          },
-          {
-            name: "Style Specification Formats",
-            url: "/courses/internet/css/formats"
-          },
-          {
-            name: "Selector Forms",
-            url: "/courses/internet/css/selector"
-          },
-          {
-            name: "Property-Value Forms",
-            url: "/courses/internet/css/property"
-          },
-          {
-            name: "Font Properties",
-            url: "/courses/internet/css/font"
-          },
-          {
-            name: "List Properties",
-            url: "/courses/internet/css/list"
-          },
-          {
-            name: "Allignment of text",
-            url: "/courses/internet/css/text"
-          },
-          {
-            name: "Color",
-            url: "/courses/internet/css/color"
-          },
-          {
-            name: "The Box model",
-            url: "/courses/internet/css/box"
-          },
-          {
-            name: "Background Images",
-            url: "/courses/internet/css/background"
-          },
-          {
-            name: "The <span> and <div> tags",
-            url: "/courses/internet/css/tags"
-          },
-          {
-            name: "Conflict Resolution",
-            url: "/courses/internet/css/conflict"
-          }
-        ]
-      },
-      {
-        name: "JAVASCRIPT",
-        url: "/courses/internet/javascript",
-        topics: [
-          {
-            name: "Basics",
-            url: "/courses/internet/javascript/basics",
+            name: "Significance",
+            url: "",
             topics: [
               {
-                name: "Overview",
-                url: "/courses/internet/javascript/basics/overview"
+                name: "Test of significance",
+                url: ""
               },
               {
-                name: "Object Orientation",
-                url: "/courses/internet/javascript/basics/objectorientation"
+                name: "Elements of Hypothesis Testing",
+                url: ""
               },
               {
-                name: "General Syntactic Characteristics",
-                url: "/courses/internet/javascript/basics/syntactic"
+                name: "Null hypothesis",
+                url: ""
               },
               {
-                name: "Primitives, Operations, and Expressions",
-                url: "/courses/internet/javascript/basics/primitives"
+                name: "Aleternative hypothesis",
+                url: ""
               },
               {
-                name: "Screen Output and Keyboard Input",
-                url: "/courses/internet/javascript/basics/io"
+                name: "Simple hypotheses",
+                url: ""
               },
               {
-                name: "Control Statements",
-                url: "/courses/internet/javascript/basics/control"
+                name: "Composite hypotheses",
+                url: ""
               },
               {
-                name: "Object Creation and Modification",
-                url: "/courses/internet/javascript/basics/object"
+                name: "Critical region",
+                url: ""
               },
               {
-                name: "Arrays",
-                url: "/courses/internet/javascript/basics/arrays"
+                name: "Type I errors",
+                url: ""
               },
               {
-                name: "Functions",
-                url: "/courses/internet/javascript/basics/functions"
+                name: "Type II errors",
+                url: ""
               },
               {
-                name: "Constructors",
-                url: "/courses/internet/javascript/basics/constructor"
-              },
-              {
-                name: "Regular Expressions",
-                url: "/courses/internet/javascript/basics/regex"
-              },
-              {
-                name: "Errors in Scripts",
-                url: "/courses/internet/javascript/basics/error"
+                name: "Levels of significance and size",
+                url: ""
               }
             ]
           },
           {
-            name: "JavaScript and HTML Documents",
-            url: "/courses/internet/javascript/html",
-            topics: [
-              {
-                name: "The JavaScript Execution Environment",
-                url: "/courses/internet/javascript/html/jee"
-              },
-              {
-                name: "The Document Object Model",
-                url: "/courses/internet/javascript/html/dom"
-              },
-              {
-                name: "Element Access in JavaScript",
-                url: "/courses/internet/javascript/html/element"
-              },
-              {
-                name: "Events and Event Handling",
-                url: "/courses/internet/javascript/html/events"
-              },
-              {
-                name: "Handling Events from Body Elements",
-                url: "/courses/internet/javascript/html/body"
-              },
-              {
-                name: "Handling Events from Button Elements",
-                url: "/courses/internet/javascript/html/button"
-              },
-              {
-                name: "Handling Events from Text Box and Password Elements",
-                url: "/courses/internet/javascript/html/textbox"
-              },
-              {
-                name: "The DOM 2 Event Model",
-                url: "/courses/internet/javascript/html/dom2"
-              },
-              {
-                name: "The canvas Element",
-                url: "/courses/internet/javascript/html/canvas"
-              },
-              {
-                name: "The navigator Object",
-                url: "/courses/internet/javascript/html/navigator"
-              },
-              {
-                name: "DOM Tree Traversal and Modification",
-                url: "/courses/internet/javascript/html/tree"
-              }
-            ]
-          },
-          {
-            name: "Dynamic Documents with JavaScript",
-            url: "/courses/internet/javascript/dynamic",
+            name: "Analysis of Variance (ANOVA)",
+            url: "",
             topics: [
               {
                 name: "Introduction",
-                url: "/courses/internet/javascript/dynamic/intro"
+                url: ""
               },
               {
-                name: "Positioning Elements",
-                url: "/courses/internet/javascript/dynamic/position"
+                name: "Heterogeneity",
+                url: ""
               },
               {
-                name: "Moving Elements",
-                url: "/courses/internet/javascript/dynamic/move"
+                name: "Analysis of Variance",
+                url: ""
               },
               {
-                name: "Element Visibility",
-                url: "/courses/internet/javascript/dynamic/visibility"
-              },
-              {
-                name: "Changing Colors and fonts",
-                url: "/courses/internet/javascript/dynamic/colors"
-              },
-              {
-                name: "Dynamic Content",
-                url: "/courses/internet/javascript/dynamic/content"
-              },
-              {
-                name: "Stacking Elements",
-                url: "/courses/internet/javascript/dynamic/stack"
-              },
-              {
-                name: "Locating the Mouse Cursor",
-                url: "/courses/internet/javascript/dynamic/cursor"
-              },
-              {
-                name: "Reating to a Mouse",
-                url: "/courses/internet/javascript/dynamic/mouse"
-              },
-              {
-                name: "Slow Movement of Elements",
-                url: "/courses/internet/javascript/dynamic/slow"
-              },
-              {
-                name: "Dragging and Dropping Elements",
-                url: "/courses/internet/javascript/dynamic/drag"
+                name: "Covariance",
+                url: ""
               }
             ]
           },
           {
-            name: "Asynchronous JavaScript",
-            url: "/courses/internet/javascript/asynchronous",
+            name: "Hypotheses",
+            url: "",
             topics: [
               {
-                name: "Callbacks",
-                url: "/courses/internet/javascript/asynchronous/callbacks"
+                name: "Linear Hypothesis",
+                url: ""
               },
               {
-                name: "Promises",
-                url: "/courses/internet/javascript/asynchronous/promises"
+                name: "Orthogonal splitting of total variation",
+                url: ""
               },
               {
-                name: "async and await",
-                url: "/courses/internet/javascript/asynchronous/async"
+                name: "Selection of Valid Error",
+                url: ""
               }
             ]
           },
           {
-            name: "HTTP",
-            url: "/courses/internet/javascript/http",
+            name: "Applications of ANOVA technique",
+            url: "",
             topics: [
               {
-                name: "Overview",
-                url: "/courses/internet/javascript/http/overview"
+                name: "One-way classified data",
+                url: ""
               },
               {
-                name: "HTTP Messages",
-                url: "/courses/internet/javascript/http/messages"
-              },
-              {
-                name: "A typical HTTP session",
-                url: "/courses/internet/javascript/http/session"
-              }
-            ]
-          },
-          {
-            name: "Fetch API",
-            url: "/courses/internet/javascript/fetchapi",
-            topics: [
-              {
-                name: "Overview",
-                url: "/courses/internet/javascript/fetchapi/overview"
-              },
-              {
-                name: "Using the Fetch API",
-                url: "/courses/internet/javascript/fetchapi/usages"
-              },
-              {
-                name: "fetch()",
-                url: "/courses/internet/javascript/fetchapi/fetch"
-              },
-              {
-                name: "Headers",
-                url: "/courses/internet/javascript/fetchapi/headers"
-              },
-              {
-                name: "Request",
-                url: "/courses/internet/javascript/fetchapi/request"
-              },
-              {
-                name: "Response",
-                url: "/courses/internet/javascript/fetchapi/response"
+                name: "Two-way classified data",
+                url: ""
               }
             ]
           }
         ]
       },
       {
-        name: "XML",
-        url: "/courses/internet/xml",
+        name: "TIME SERIES ANALYSIS",
+        url: "",
         topics: [
           {
             name: "Introduction",
-            url: "/courses/internet/xml/intro"
+            url: ""
           },
           {
-            name: "Uses of XML",
-            url: "/courses/internet/xml/uses"
+            name: "Examples of time series from various fields",
+            url: ""
           },
           {
-            name: "The syntax of XML",
-            url: "/courses/internet/xml/syntax"
+            name: "Components of a times series",
+            url: ""
           },
           {
-            name: "XML Document Structure",
-            url: "/courses/internet/xml/documents"
+            name: "Additive models",
+            url: ""
           },
           {
-            name: "Namespaces",
-            url: "/courses/internet/xml/namespaces"
+            name: "Multiplicative models",
+            url: ""
           },
           {
-            name: "XML Schemas",
-            url: "/courses/internet/xml/schemas"
+            name: "Trend and seasonal components",
+            url: ""
           },
           {
-            name: "Displaying raw XML documents",
-            url: "/courses/internet/xml/raw"
-          },
-          {
-            name: "Displaying XML documents with CSS",
-            url: "/courses/internet/xml/css"
-          },
-          {
-            name: "XSLT style sheets",
-            url: "/courses/internet/xml/xslt"
-          },
-          {
-            name: "XML Processors",
-            url: "/courses/internet/xml/processors"
-          },
-          {
-            name: "Web services",
-            url: "/courses/internet/xml/web"
+            name: "Estimation of trend by linear filtering (single and weighted moving averages)",
+            url: ""
           }
         ]
       },
       {
-        name: "NODE JS",
-        url: "/courses/internet/nodejs",
+        name: "LINEAR PROGRAMMING",
+        url: "",
         topics: [
           {
-            name: "Introduction to Node.js",
-            url: "/courses/internet/nodejs/intro"
+            name: "Meaning and scope of operations research",
+            url: ""
           },
           {
-            name: "Installation",
-            url: "/courses/internet/nodejs/installation"
+            name: "Definition of general LPP",
+            url: ""
           },
           {
-            name: "A Node.js application",
-            url: "/courses/internet/nodejs/application"
+            name: "Formulation of LPP",
+            url: ""
           },
           {
-            name: "Fundamentals of Node.js",
-            url: "/courses/internet/nodejs/fundamentals"
+            name: "Solution of LPP by graphical method",
+            url: ""
           },
           {
-            name: "Difference between Node.js and browser",
-            url: "/courses/internet/nodejs/difference"
+            name: "Simplex algorithm",
+            url: ""
           },
           {
-            name: "Anatomy of an HTTP Transaction",
-            url: "/courses/internet/nodejs/http"
+            name: "Transportation",
+            url: ""
+          },
+          {
+            name: "Assignment problems",
+            url: ""
+          },
+          {
+            name: "Sequencing problems",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "PROJECT MANAGEMENT",
+        url: "",
+        topics: [
+          {
+            name: "CPM",
+            url: ""
+          },
+          {
+            name: "PERT",
+            url: ""
           }
         ]
       }
@@ -549,7 +383,5 @@ const contents = [
   }
 ];
 export {
-  github$1 as a,
-  contents as c,
-  githubDark$1 as g
+  contents as c
 };
