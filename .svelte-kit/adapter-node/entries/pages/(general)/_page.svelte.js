@@ -4,14 +4,6 @@ import "../../../chunks/stores4.js";
 /* empty css                                                    */
 import "../../../chunks/client.js";
 import "../../../chunks/ActionIcons.js";
-const css$2 = {
-  code: ".twitter.svelte-1uu1tax{display:flex;margin:1em 0;padding:1em 0;align-items:center;justify-content:center}",
-  map: null
-};
-const Twitter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$2);
-  return `<div class="twitter svelte-1uu1tax" data-svelte-h="svelte-pyi1kf"><blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/OuJAxIYnuV">pic.twitter.com/OuJAxIYnuV</a></p>— Dr Mithilesh Kumar (@DrMithileshKr) <a href="https://twitter.com/DrMithileshKr/status/1612815196262928386?ref_src=twsrc%5Etfw">January 10, 2023</a></blockquote></div>`;
-});
 const css$1 = {
   code: ".vectorial.svelte-404pnn.svelte-404pnn{margin-top:1em;padding:0.5em;width:100%;background:white;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center}.vectorial.svelte-404pnn.svelte-404pnn:hover{box-shadow:0 0 0px #888}.vectorial.svelte-404pnn section.svelte-404pnn{display:flex;flex-direction:column;align-items:center;justify-content:center}section.svelte-404pnn a.svelte-404pnn{text-decoration:none;font-size:1em;margin-top:0;color:white;text-shadow:1px 2px 1px rgb(77, 77, 77);text-transform:uppercase;letter-spacing:1px;font-weight:400;background:rgb(0, 150, 200);padding:1em 2em;border-radius:10px;box-shadow:1px 2px 2px 0px #891010}.title.svelte-404pnn.svelte-404pnn{font-size:4em;margin-bottom:0;margin-top:1em;font-weight:600;display:flex;align-items:center;justify-content:center;text-shadow:9px 3px 5px rgba(81, 81, 81, 0.445);color:rgb(7 68 75)}.subtitle.svelte-404pnn.svelte-404pnn{font-size:1.5em;color:rgb(212, 163, 13);margin-top:0;margin-bottom:0em}figure.svelte-404pnn.svelte-404pnn{width:100%;margin:auto;display:flex;align-items:center;flex-direction:row;position:relative;z-index:0;justify-content:center}",
   map: null
@@ -26,7 +18,7 @@ const css = {
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `${$$result.head += `<!-- HEAD_svelte-d6qc0s_START -->${$$result.title = `<title>Dr Mithilesh Kumar</title>`, ""}<!-- HEAD_svelte-d6qc0s_END -->`, ""}  <div class="homepage"><div class="courses svelte-1ctnaem" data-svelte-h="svelte-1r0xnts"></div> ${validate_component(Vectorial, "Vectorial").$$render($$result, {}, {}, {})}  ${validate_component(Twitter, "Twitter").$$render($$result, {}, {}, {})}</div>`;
+  return `${$$result.head += `<!-- HEAD_svelte-d6qc0s_START -->${$$result.title = `<title>Dr Mithilesh Kumar</title>`, ""}<!-- HEAD_svelte-d6qc0s_END -->`, ""}  <div class="homepage"><div class="courses svelte-1ctnaem" data-svelte-h="svelte-1r0xnts"></div> ${validate_component(Vectorial, "Vectorial").$$render($$result, {}, {}, {})}  </div>`;
 });
 export {
   Page as default

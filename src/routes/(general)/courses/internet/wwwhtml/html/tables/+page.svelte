@@ -238,7 +238,7 @@ let htmlContent1 = `<!DOCTYPE html>
         <Content>
             <h6 id="tableSpan">The <code>rowspan</code> and <code>colspan</code> Attributes</h6>
             <p>
-                Cells can can be merged using <code>rowspan</code> and <code>colspan</code> attributes.
+                Cells can can be merged using <code>rowspan</code> and <code>colspan</code> attributes. Notice that these attributes belong to <code>th</code> and <code>td</code> elements.
             </p>
         </Content>
     </Card>
@@ -249,6 +249,22 @@ let htmlContent1 = `<!DOCTYPE html>
             <p>
                 Table sections are specified by tags <code>thead</code>, <code>tbody</code> and <code>tfoot</code>
             </p>
+        </Content>
+    </Card>
+    <h4>Exercise</h4>
+    <Card>
+        <Content>
+            <div class="question">
+                Create your timetable this semester. Instead of using name of courses, use representative images for each course.
+            </div>
+        </Content>
+    </Card>
+    <h4>Assignment</h4>
+    <Card>
+        <Content>
+            <div class="question">
+                Update your resume by including a table of courses you have done so far. The table should have three columns: Semester, Course Name, Course Description.
+            </div>
         </Content>
     </Card>
 </article>

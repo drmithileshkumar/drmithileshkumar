@@ -11,7 +11,7 @@ import { d as darkMode, c as currentPath, n as navList } from "../../../../../..
 import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js";
 import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../../../../chunks/Cell.js";
 const css = {
-  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}.question.svelte-9tb2l5{cursor:pointer;padding:0.3em}",
+  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-9tb2l5{cursor:pointer}.question.svelte-9tb2l5{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -62,7 +62,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-1ie1jj9"><li class="svelte-9tb2l5">Image Formats</li> <li class="svelte-9tb2l5">The Image Element</li></ol>`;
+          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-1fxbspd"><li class="svelte-9tb2l5"><a href="#formats" class="svelte-9tb2l5">Image Formats</a></li> <li class="svelte-9tb2l5"><a href="#element" class="svelte-9tb2l5">The Image Element</a></li></ol>`;
         }
       })}`;
     }
@@ -74,20 +74,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })} ${validate_component(WebPractice, "WebPractice").$$render(
-    $$result,
-    {
-      htmlContent,
-      cssContent: "",
-      jsContent: ""
-    },
-    {},
-    {}
-  )} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-1gscxq1">Image Formats</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-5toffn">The various image formats are</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%" }, {}, {
+          return `<h6 id="formats" class="svelte-9tb2l5" data-svelte-h="svelte-19wpuo3">Image Formats</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-5toffn">The various image formats are</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%" }, {}, {
             default: () => {
               return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
                 default: () => {
@@ -203,7 +194,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-1ff6bh0">The Image Element</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-1qhgslr">The <code>img</code> element is an inline element that specifies an image that is to appear in a document. This element has no closing tag.</p> <p class="svelte-9tb2l5" data-svelte-h="svelte-dvw7m1">The image element includes following essential attributes:</p> <ol data-svelte-h="svelte-6ja778"><li class="svelte-9tb2l5"><code>src</code>: specifies the file containing the image</li> <li class="svelte-9tb2l5"><code>alt</code>: specifies text to be displayed when it is not possible to display the image</li> <li class="svelte-9tb2l5"><code>width</code>: width of the image</li> <li class="svelte-9tb2l5"><code>height</code>: height of the image</li></ol>`;
+          return `<h6 id="element" class="svelte-9tb2l5" data-svelte-h="svelte-1mjvv9g">The Image Element</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-1qhgslr">The <code>img</code> element is an inline element that specifies an image that is to appear in a document. This element has no closing tag.</p> <p class="svelte-9tb2l5" data-svelte-h="svelte-dvw7m1">The image element includes following essential attributes:</p> <ol data-svelte-h="svelte-6ja778"><li class="svelte-9tb2l5"><code>src</code>: specifies the file containing the image</li> <li class="svelte-9tb2l5"><code>alt</code>: specifies text to be displayed when it is not possible to display the image</li> <li class="svelte-9tb2l5"><code>width</code>: width of the image</li> <li class="svelte-9tb2l5"><code>height</code>: height of the image</li></ol>`;
         }
       })}`;
     }
@@ -311,11 +302,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-1yto96c">Exercise</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })} ${validate_component(WebPractice, "WebPractice").$$render(
+    $$result,
+    {
+      htmlContent,
+      cssContent: "",
+      jsContent: ""
+    },
+    {},
+    {}
+  )} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-1yto96c">Exercise</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-1j1d9rk"><p class="svelte-9tb2l5">Experiment with various types of length units to reside an image.</p></div>`;
+          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-1e1jhq7">Experiment with various types of length units to resize an image.</div>`;
         }
       })}`;
     }
@@ -323,7 +323,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-x4dplk"><p class="svelte-9tb2l5">Update your resume by including your photo.</p></div>`;
+          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-o8fyed">Update your resume by including your photo.</div>`;
         }
       })}`;
     }

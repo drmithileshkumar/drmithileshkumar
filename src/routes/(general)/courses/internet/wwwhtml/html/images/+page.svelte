@@ -109,8 +109,8 @@
         <Content>
             <h6>Topics</h6>
             <ol>
-                <li>Image Formats</li>
-                <li>The Image Element</li>
+                <li><a href="#formats">Image Formats</a></li>
+                <li><a href="#element">The Image Element</a></li>
             </ol>
         </Content>
     </Card>
@@ -121,10 +121,9 @@
             </p>
         </Content>
     </Card>
-    <WebPractice htmlContent={htmlContent} cssContent={""} jsContent={""} />
     <Card>
         <Content>
-            <h6>Image Formats</h6>
+            <h6 id="formats">Image Formats</h6>
             <p>
                 The various image formats are 
             </p>
@@ -168,7 +167,7 @@
     </Card>
     <Card>
         <Content>
-            <h6>The Image Element</h6>
+            <h6 id="element">The Image Element</h6>
             <p>
                 The <code>img</code> element is an inline element that specifies an image that is to appear in a document. This element has no closing tag.
             </p>
@@ -222,11 +221,12 @@
             </DataTable>
         </Content>
     </Card>
+    <WebPractice htmlContent={htmlContent} cssContent={""} jsContent={""} />
     <h4>Exercise</h4>
     <Card>
         <Content>
             <div class="question">
-                <p>Experiment with various types of length units to reside an image.</p>
+                Experiment with various types of length units to resize an image.
             </div>
         </Content>
     </Card>
@@ -234,7 +234,7 @@
     <Card>
         <Content>
             <div class="question">
-                <p>Update your resume by including your photo.</p>
+                Update your resume by including your photo.
             </div>
         </Content>
     </Card>

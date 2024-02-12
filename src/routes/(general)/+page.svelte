@@ -41,6 +41,6 @@
     <!-- <Youtube />
     <Notes />
     <Practice /> -->
-    <Twitter />
+    <!-- <Twitter /> -->
 </div>
 

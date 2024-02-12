@@ -89,6 +89,7 @@ h1 {
 html, body, button, input {
     box-sizing: border-box;
     font-display: swap;
+	scroll-behavior:smooth;
 }
 /* body {
     background: radial-gradient(circle at left, transparent 0, rgba(0, 0, 255, 0.1), rgba(255, 0, 0, 0.1), rgba(255, 255, 0, 0.1), rgba(0, 128, 0, 0.1) 100%);

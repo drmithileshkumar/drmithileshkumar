@@ -152,11 +152,21 @@
     <h4>Exercise</h4>
     <Card>
         <Content>
-            <h6>To-do app</h6>
+            <h6>Groceries</h6>
             <div class="question">
-                <p>
-                    We'll create a To-do web app. We'll start with nested lists. Create a list of groceries. The primary list is of categories. The secondary lists are items in the categories.
-                </p>
+                
+                    Create a list of groceries. The primary list is of categories. The secondary lists are items in the categories.
+                
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>HTML tags</h6>
+            <div class="question">
+                
+                    Use definition list to create a list that defines <code>p, sub, sup, code, pre, img, a</code> tags.
+                
             </div>
         </Content>
     </Card>

@@ -10,7 +10,7 @@ import { d as darkMode, c as currentPath, n as navList } from "../../../../../..
 /* empty css                                                                   */
 import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js";
 const css = {
-  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-9tb2l5{cursor:pointer}",
+  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-9tb2l5{cursor:pointer}.question.svelte-9tb2l5{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -197,7 +197,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="tableSpan" class="svelte-9tb2l5" data-svelte-h="svelte-1d5x3sl">The <code>rowspan</code> and <code>colspan</code> Attributes</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-10gdojw">Cells can can be merged using <code>rowspan</code> and <code>colspan</code> attributes.</p>`;
+          return `<h6 id="tableSpan" class="svelte-9tb2l5" data-svelte-h="svelte-1d5x3sl">The <code>rowspan</code> and <code>colspan</code> Attributes</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-y4ge7j">Cells can can be merged using <code>rowspan</code> and <code>colspan</code> attributes. Notice that these attributes belong to <code>th</code> and <code>td</code> elements.</p>`;
         }
       })}`;
     }
@@ -215,6 +215,22 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
           return `<h6 id="tableSection" class="svelte-9tb2l5" data-svelte-h="svelte-py2xed">Table Sections</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-7dgmkw">Table sections are specified by tags <code>thead</code>, <code>tbody</code> and <code>tfoot</code></p>`;
+        }
+      })}`;
+    }
+  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-1yto96c">Exercise</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-ztkz9f">Create your timetable this semester. Instead of using name of courses, use representative images for each course.</div>`;
+        }
+      })}`;
+    }
+  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-hc8mgz">Assignment</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-t9iors">Update your resume by including a table of courses you have done so far. The table should have three columns: Semester, Course Name, Course Description.</div>`;
         }
       })}`;
     }
