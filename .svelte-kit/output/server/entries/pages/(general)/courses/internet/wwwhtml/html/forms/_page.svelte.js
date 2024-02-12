@@ -47,7 +47,56 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         <!--include external resources here like adsense, javascript, styles-->
     </head>   
     <body>   
-        
+        <form action="" method="post">
+            <label for="username">
+                Username: <input type="text" id="username" name="username" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="password">
+                Password: <input type="password" id="password" name="password" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="email">
+                Email: <input type="email" id="email" name="email" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="telephone">
+                Telephone: <input type="tel" id="telephone" name="telephone" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="page">
+                Website: <input type="url" id="page" name="homepage" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="age">
+                Age: <input type="number" id="age" name="age" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="date">
+                Current date: <input type="date" id="date" name="date" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="month">
+                Last month: <input type="month" id="month" name="month" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="week">
+                Current Week: <input type="week" id="week" name="week" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="color">
+                Favourite Color: <input type="color" id="color" name="color" />    
+            </label>
+        </form>
     </body> 
 </html>`;
   $$result.css.add(css);
@@ -58,7 +107,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-1kml81n"><li class="svelte-9tb2l5"><a href="#basicForm" class="svelte-9tb2l5">The <code>form</code> Element</a></li> <li class="svelte-9tb2l5"><a href="#inputForm" class="svelte-9tb2l5">The <code>input</code> Element</a></li> <li class="svelte-9tb2l5"><a href="#selectForm" class="svelte-9tb2l5">The <code>select</code> Element</a></li> <li class="svelte-9tb2l5"><a href="#textareaForm" class="svelte-9tb2l5">The <code>textarea</code> Element</a></li> <li class="svelte-9tb2l5"><a href="#buttonForm" class="svelte-9tb2l5">The Action Buttons</a></li> <li class="svelte-9tb2l5"><a href="#completeForm" class="svelte-9tb2l5">A Complete Form</a></li></ol>`;
+          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-1kml81n"><li class="svelte-9tb2l5"><a href="#basicForm" class="svelte-9tb2l5">The <code>form</code> Element</a></li> <li class="svelte-9tb2l5"><a href="#inputForm" class="svelte-9tb2l5">The <code>input</code> Element</a></li> <li class="svelte-9tb2l5"><a href="#selectForm" class="svelte-9tb2l5">The <code>select</code> Element</a></li> <li class="svelte-9tb2l5"><a href="#textareaForm" class="svelte-9tb2l5">The <code>textarea</code> Element</a></li> <li class="svelte-9tb2l5"><a href="#buttonForm" class="svelte-9tb2l5">The Action Buttons</a></li> <li class="svelte-9tb2l5"><a href="#completeForm" class="svelte-9tb2l5">A Complete Form</a></li></ol> <p class="svelte-9tb2l5" data-svelte-h="svelte-cobgds">For a better understanding of form submission, read <a href="/courses/internet/wwwhtml/fundamentals/http" class="svelte-9tb2l5">HTTP protocol</a>.</p>`;
         }
       })}`;
     }
@@ -144,6 +193,310 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                       })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
                         default: () => {
                           return `the typed letters are displayed as • or * use it with attribute <code data-svelte-h="svelte-1416n7d">size</code> to specifies the width of the text box.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `email`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `a valid email`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `browser may validate email address`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `tel`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `phone number`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `use it with <code data-svelte-h="svelte-12qjrs1">placeholder</code> to show an example, <code data-svelte-h="svelte-13zptt4">pattern</code> for validation.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `url`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `a url`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `browser may validate a url automatically.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `number`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `a number`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `a number`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `range`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `range of numbers`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `shows a slider, use it with attributes <code data-svelte-h="svelte-vngjza">min</code> and <code data-svelte-h="svelte-wq6pps">max</code> to set the limits.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `time`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `time`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `select a time without time zone.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `date`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `date`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `a date input. A date picker may be shown by the browser.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `datetime-local`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `local date time`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `input date and time without time zone.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `month`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `month`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `select a month and year`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `week`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `week`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `select a week and year`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `color`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `color`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `input color. A color picker may be shown by the browser.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `image`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `image`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `use image in the submit button, use with attributes <code data-svelte-h="svelte-1fkgjes">src</code> to locate the image, <code data-svelte-h="svelte-1stdfwe">width</code> and <code data-svelte-h="svelte-xu0kcf">height</code> for dimensions.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `file`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `file`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `shows a button to browse and select a file input.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `checkbox`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `checkbox`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `select zero or more options of a limited number of choices`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `radio`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `radio`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `select only one of a limited number of choices`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `search`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `search`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `behaves like a regular text field`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `button`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `button`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `used with attributes <code data-svelte-h="svelte-1kgo0yb">onclick</code> that takes a method/function and <code data-svelte-h="svelte-18vs4ol">value</code> as a text to label the button.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `reset`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `reset`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `reset all form values to their default values.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `submit`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `submit`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `button for submitting form`;
                         }
                       })}`;
                     }

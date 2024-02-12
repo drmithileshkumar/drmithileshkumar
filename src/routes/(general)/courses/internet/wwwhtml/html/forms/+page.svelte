@@ -51,7 +51,56 @@ let htmlContent1 = `<!DOCTYPE html>
         <!--include external resources here like adsense, javascript, styles-->
     </head>   
     <body>   
-        
+        <form action="" method="post">
+            <label for="username">
+                Username: <input type="text" id="username" name="username" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="password">
+                Password: <input type="password" id="password" name="password" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="email">
+                Email: <input type="email" id="email" name="email" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="telephone">
+                Telephone: <input type="tel" id="telephone" name="telephone" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="page">
+                Website: <input type="url" id="page" name="homepage" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="age">
+                Age: <input type="number" id="age" name="age" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="date">
+                Current date: <input type="date" id="date" name="date" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="month">
+                Last month: <input type="month" id="month" name="month" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="week">
+                Current Week: <input type="week" id="week" name="week" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="color">
+                Favourite Color: <input type="color" id="color" name="color" />    
+            </label>
+        </form>
     </body> 
 </html>`
 </script>
@@ -112,6 +161,7 @@ let htmlContent1 = `<!DOCTYPE html>
                 <li><a href="#buttonForm">The Action Buttons</a></li>
                 <li><a href="#completeForm">A Complete Form</a></li>
             </ol>
+            <p>For a better understanding of form submission, read <a href="/courses/internet/wwwhtml/fundamentals/http">HTTP protocol</a>.</p>
         </Content>
     </Card>
     <Card>
@@ -166,6 +216,101 @@ let htmlContent1 = `<!DOCTYPE html>
                         <Cell>password</Cell>
                         <Cell>a string</Cell>
                         <Cell style="white-space:normal;">the typed letters are displayed as &bullet; or * use it with attribute <code>size</code> to specifies the width of the text box.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>email</Cell>
+                        <Cell>a valid email</Cell>
+                        <Cell style="white-space:normal;">browser may validate email address</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>tel</Cell>
+                        <Cell>phone number</Cell>
+                        <Cell style="white-space:normal;">use it with <code>placeholder</code> to show an example, <code>pattern</code> for validation.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>url</Cell>
+                        <Cell>a url</Cell>
+                        <Cell style="white-space:normal;">browser may validate a url automatically.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>number</Cell>
+                        <Cell>a number</Cell>
+                        <Cell style="white-space:normal;">a number</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>range</Cell>
+                        <Cell>range of numbers</Cell>
+                        <Cell style="white-space:normal;">shows a slider, use it with attributes <code>min</code> and <code>max</code> to set the limits.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>time</Cell>
+                        <Cell>time</Cell>
+                        <Cell style="white-space:normal;">select a time without time zone.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>date</Cell>
+                        <Cell>date</Cell>
+                        <Cell style="white-space:normal;">a date input. A date picker may be shown by the browser.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>datetime-local</Cell>
+                        <Cell>local date time</Cell>
+                        <Cell style="white-space:normal;">input date and time without time zone.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>month</Cell>
+                        <Cell>month</Cell>
+                        <Cell style="white-space:normal;">select a month and year</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>week</Cell>
+                        <Cell>week</Cell>
+                        <Cell style="white-space:normal;">select a week and year</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>color</Cell>
+                        <Cell>color</Cell>
+                        <Cell style="white-space:normal;">input color. A color picker may be shown by the browser.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>image</Cell>
+                        <Cell>image</Cell>
+                        <Cell style="white-space:normal;">use image in the submit button, use with attributes <code>src</code> to locate the image, <code>width</code> and <code>height</code> for dimensions.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>file</Cell>
+                        <Cell>file</Cell>
+                        <Cell style="white-space:normal;">shows a button to browse and select a file input.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>checkbox</Cell>
+                        <Cell>checkbox</Cell>
+                        <Cell style="white-space:normal;">select zero or more options of a limited number of choices</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>radio</Cell>
+                        <Cell>radio</Cell>
+                        <Cell style="white-space:normal;">select only one of a limited number of choices</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>search</Cell>
+                        <Cell>search</Cell>
+                        <Cell style="white-space:normal;">behaves like a regular text field</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>button</Cell>
+                        <Cell>button</Cell>
+                        <Cell style="white-space:normal;">used with attributes <code>onclick</code> that takes a method/function and <code>value</code> as a text to label the button.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>reset</Cell>
+                        <Cell>reset</Cell>
+                        <Cell style="white-space:normal;">reset all form values to their default values.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>submit</Cell>
+                        <Cell>submit</Cell>
+                        <Cell style="white-space:normal;">button for submitting form</Cell>
                     </Row>
                 </Body>
             </DataTable>
