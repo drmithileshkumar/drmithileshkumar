@@ -5,13 +5,14 @@ export async function load({parent, fetch, params, url}) {
         redirect(301, `https://drmithileshkumar.com`);
     }
 	const { user } = await parent();
-    if( !user ) redirect(301, '/auth');
-    
-    let publicID = params.publicID;
+    //if( !user ) redirect(301, '/auth');
+    let assignments = [];
+    if(user) {
+        let publicID = user.publicID;
 	
-	let res = await fetch(`/api/${publicID}/assignments`);
-	let assignments = await res.json();
-	
+        let res = await fetch(`/api/${publicID}/assignments`);
+        assignments = await res.json();
+    }
 	// console.log('publici..D', publicID)
     return {
         assignments
