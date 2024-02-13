@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/(general)/notes/quantum/+layout.svelte";
+export { default as component } from "../../../../src/routes/(general)/practice/class1/+layout.svelte";

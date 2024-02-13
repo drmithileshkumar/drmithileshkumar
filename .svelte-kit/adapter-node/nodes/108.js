@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/iit/maths/2021/question6/_page.js';
+import * as universal from '../entries/pages/(general)/iit/maths/2021/question5/_page.js';
 
 export const index = 108;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/maths/2021/question6/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/maths/2021/question5/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/iit/maths/2021/question6/+page.js";
-export const imports = ["_app/immutable/nodes/108.VU-z2SmU.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.wYmonAyn.js","_app/immutable/chunks/index.AwdIdbL-.js","_app/immutable/chunks/stores.r0S_1cbc.js","_app/immutable/chunks/index.KLghjZkg.js","_app/immutable/chunks/stores.oULeJHlH.js","_app/immutable/chunks/entry.g0pxKYQm.js","_app/immutable/chunks/index.lcHJh1q4.js","_app/immutable/chunks/constants.1x7ZJ2_l.js"];
-export const stylesheets = ["_app/immutable/assets/108.Ts1EG-Xv.css"];
+export const universal_id = "src/routes/(general)/iit/maths/2021/question5/+page.js";
+export const imports = ["_app/immutable/nodes/108.vYoTc-Mk.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.cQRDEcOs.js","_app/immutable/chunks/index.3X1eH1mp.js","_app/immutable/chunks/stores.GoaI5prC.js","_app/immutable/chunks/index.yZBYQTEr.js","_app/immutable/chunks/stores.QReyBx_o.js","_app/immutable/chunks/entry.XppJd6zm.js","_app/immutable/chunks/index.MYUUn9Xp.js","_app/immutable/chunks/constants.1x7ZJ2_l.js"];
+export const stylesheets = ["_app/immutable/assets/108.WdCXIpQ3.css"];
 export const fonts = [];

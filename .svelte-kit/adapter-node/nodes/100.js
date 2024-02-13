@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/iit/_page.js';
+import * as universal from '../entries/pages/(general)/courses/quantumml/_page.js';
 
 export const index = 100;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/quantumml/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/iit/+page.js";
-export const imports = ["_app/immutable/nodes/100.seILv71J.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.wYmonAyn.js","_app/immutable/chunks/index.AwdIdbL-.js","_app/immutable/chunks/Link.ScOikh3x.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/entry.g0pxKYQm.js","_app/immutable/chunks/index.KLghjZkg.js"];
-export const stylesheets = ["_app/immutable/assets/Message.ctOi1nG9.css","_app/immutable/assets/Link.mTa6ZPjX.css"];
+export const universal_id = "src/routes/(general)/courses/quantumml/+page.js";
+export const imports = ["_app/immutable/nodes/100.39v6pjI1.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.cQRDEcOs.js","_app/immutable/chunks/index.3X1eH1mp.js","_app/immutable/chunks/entry.XppJd6zm.js","_app/immutable/chunks/index.yZBYQTEr.js","_app/immutable/chunks/Card.0VZDzDAB.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/classAdderBuilder.ijDhO6Jw.js","_app/immutable/chunks/ActionIcons.Nzs3Qx8M.js","_app/immutable/chunks/NavList.aBo6j2hT.js","_app/immutable/chunks/each.czemEVXE.js","_app/immutable/chunks/Item.XO026pTs.js","_app/immutable/chunks/dispatch.YktQzwJT.js","_app/immutable/chunks/keyboard.3eMe4_La.js","_app/immutable/chunks/Ripple.LbSITeNB.js","_app/immutable/chunks/Subheader.QWkzeqGY.js","_app/immutable/chunks/Graphic.OWjBjBne.js","_app/immutable/chunks/IconButton.Hpxv6Jdb.js","_app/immutable/chunks/stores.JTYDHTYU.js"];
+export const stylesheets = ["_app/immutable/assets/62.hj3E2EKt.css","_app/immutable/assets/Link.mTa6ZPjX.css","_app/immutable/assets/NavList.buyRB24_.css"];
 export const fonts = [];

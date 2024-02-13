@@ -11,6 +11,9 @@
         border-radius: 10px;
         transition: all 1s;
     }
+    h3 {
+        font-size: 1.2em;
+    }
 </style>
 {#if $presentationMode}
 <h3 class="{$$restProps.class || ''} {$presentationMode && isActive === $currentSlide ? 'currentActive': ''}" 

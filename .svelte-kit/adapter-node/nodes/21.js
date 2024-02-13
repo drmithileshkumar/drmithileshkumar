@@ -2,7 +2,7 @@
 
 export const index = 21;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/practice/class9/_layout.svelte.js')).default;
-export const imports = ["_app/immutable/nodes/21.C1ij1Im9.js","_app/immutable/chunks/preload-helper.0HuHagjb.js","_app/immutable/chunks/scheduler.wYmonAyn.js","_app/immutable/chunks/index.AwdIdbL-.js","_app/immutable/chunks/Select.JvEW3hER.js","_app/immutable/chunks/each.x_SzhXRZ.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/stores.9MPSqhWm.js","_app/immutable/chunks/index.KLghjZkg.js"];
-export const stylesheets = ["_app/immutable/assets/Select.Gh662Cch.css"];
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/talks/quantumteleportation/_layout.svelte.js')).default;
+export const imports = ["_app/immutable/nodes/21.Q6LTAOm1.js","_app/immutable/chunks/scheduler.cQRDEcOs.js","_app/immutable/chunks/index.3X1eH1mp.js","_app/immutable/chunks/stores.GoaI5prC.js","_app/immutable/chunks/index.yZBYQTEr.js","_app/immutable/chunks/entry.XppJd6zm.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/Presenter.s9TL819A.js","_app/immutable/chunks/each.czemEVXE.js","_app/immutable/chunks/ripple.nJSaNfXx.js"];
+export const stylesheets = ["_app/immutable/assets/21.gHAkUZs8.css","_app/immutable/assets/Select.Gh662Cch.css","_app/immutable/assets/Presenter.JWrKJMvp.css","_app/immutable/assets/Canvas.mjov6t4t.css"];
 export const fonts = [];

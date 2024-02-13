@@ -3,7 +3,7 @@ import { c as create_ssr_component, a as get_current_component, s as spread, b a
 import { MDCTopAppBarBaseFoundation, MDCShortTopAppBarFoundation, MDCFixedTopAppBarFoundation, MDCTopAppBarFoundation } from "@material/top-app-bar";
 import { r as readable } from "./index2.js";
 import { f as forwardEventsBuilder, c as classMap } from "./classAdderBuilder.js";
-import { d as dispatch } from "./Graphic.js";
+import { d as dispatch } from "./Item.js";
 const TopAppBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, [
     "use",

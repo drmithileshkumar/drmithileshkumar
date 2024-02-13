@@ -3,6 +3,6 @@
 export const index = 5;
 let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/maths/2021/_layout.svelte.js')).default;
-export const imports = ["_app/immutable/nodes/5.bgzYzbT0.js","_app/immutable/chunks/scheduler.wYmonAyn.js","_app/immutable/chunks/index.AwdIdbL-.js","_app/immutable/chunks/entry.g0pxKYQm.js","_app/immutable/chunks/index.KLghjZkg.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/stores.r0S_1cbc.js","_app/immutable/chunks/Presenter.8xvvN_m5.js","_app/immutable/chunks/each.x_SzhXRZ.js","_app/immutable/chunks/ripple.nJSaNfXx.js"];
+export const imports = ["_app/immutable/nodes/5.eGVuhPPy.js","_app/immutable/chunks/scheduler.cQRDEcOs.js","_app/immutable/chunks/index.3X1eH1mp.js","_app/immutable/chunks/entry.XppJd6zm.js","_app/immutable/chunks/index.yZBYQTEr.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/stores.GoaI5prC.js","_app/immutable/chunks/Presenter.s9TL819A.js","_app/immutable/chunks/each.czemEVXE.js","_app/immutable/chunks/ripple.nJSaNfXx.js"];
 export const stylesheets = ["_app/immutable/assets/5.bvqKY7wr.css","_app/immutable/assets/Presenter.JWrKJMvp.css","_app/immutable/assets/Canvas.mjov6t4t.css"];
 export const fonts = [];

@@ -3,7 +3,7 @@ import { c as create_ssr_component, e as escape } from "./ssr.js";
 import { p as presentationMode, c as currentSlide } from "./stores4.js";
 import "./H3.js";
 const css = {
-  code: ".currentActive.svelte-1y4ir69{color:tomato;border-radius:10px;transition:all 1s}",
+  code: ".currentActive.svelte-gn56lz{color:tomato;border-radius:10px;transition:all 1s}h2.svelte-gn56lz{font-size:1.5em}",
   map: null
 };
 const H2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -21,7 +21,7 @@ const H2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${$presentationMode ? `<h2 class="${escape($$restProps.class || "", true) + " " + escape(
     $presentationMode && isActive === $currentSlide ? "currentActive" : "",
     true
-  ) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</h2>` : `<h2 class="${escape(null_to_empty($$restProps.class || ""), true) + " svelte-1y4ir69"}">${slots.default ? slots.default({}) : ``}</h2>`}`;
+  ) + " svelte-gn56lz"}">${slots.default ? slots.default({}) : ``}</h2>` : `<h2 class="${escape(null_to_empty($$restProps.class || ""), true) + " svelte-gn56lz"}">${slots.default ? slots.default({}) : ``}</h2>`}`;
 });
 export {
   H2 as H

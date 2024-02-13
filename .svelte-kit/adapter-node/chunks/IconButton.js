@@ -2,7 +2,7 @@ import { c as compute_rest_props } from "./utils.js";
 import { f as forwardEventsBuilder, c as classMap, g as globals, S as SmuiElement } from "./classAdderBuilder.js";
 import { c as create_ssr_component, a as get_current_component, g as getContext, h as setContext, o as onDestroy, v as validate_component, m as missing_component } from "./ssr.js";
 import { MDCIconButtonToggleFoundation } from "@material/icon-button";
-import { d as dispatch } from "./Graphic.js";
+import { d as dispatch } from "./Item.js";
 import { R as Ripple } from "./Ripple.js";
 const { Object: Object_1 } = globals;
 const IconButton = create_ssr_component(($$result, $$props, $$bindings, slots) => {

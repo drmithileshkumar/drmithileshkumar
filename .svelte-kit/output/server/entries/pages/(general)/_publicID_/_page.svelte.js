@@ -2,7 +2,8 @@ import { c as compute_rest_props, s as subscribe, b as set_store_value, i as is_
 import { c as create_ssr_component, a as get_current_component, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, g as getContext, h as setContext, v as validate_component, m as missing_component, k as each, e as escape } from "../../../../chunks/ssr.js";
 import { C as Card } from "../../../../chunks/Card.js";
 import { C as Content } from "../../../../chunks/ActionIcons.js";
-import { B as Button, C as CommonLabel } from "../../../../chunks/Button.js";
+import { B as Button } from "../../../../chunks/Button.js";
+import { C as CommonLabel } from "../../../../chunks/CommonLabel.js";
 import { f as forwardEventsBuilder, c as classMap, g as globals, S as SmuiElement } from "../../../../chunks/classAdderBuilder.js";
 import { e as exclude, p as prefixFilter } from "../../../../chunks/prefixFilter.js";
 import { R as Ripple } from "../../../../chunks/Ripple.js";

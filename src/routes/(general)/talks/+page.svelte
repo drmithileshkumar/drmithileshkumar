@@ -32,6 +32,20 @@
         <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
     </svelte:head>
     <article>
+        <h3>Talks</h3>
+        <Card>
+            <Content>
+                <h5>Past</h5>
+                <div>
+                    <List class="courses" dense>
+                      <Item on:SMUI:action={() => goto('/talks/quantumteleportation')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Quantum Teleportation</Text>
+                      </Item>
+                    </List>
+                  </div>
+            </Content>
+        </Card> 
         <h3>
             Workshops
         </h3>

@@ -2,7 +2,7 @@
 
 export const index = 11;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/practice/class10/_layout.svelte.js')).default;
-export const imports = ["_app/immutable/nodes/11.C1ij1Im9.js","_app/immutable/chunks/preload-helper.0HuHagjb.js","_app/immutable/chunks/scheduler.wYmonAyn.js","_app/immutable/chunks/index.AwdIdbL-.js","_app/immutable/chunks/Select.JvEW3hER.js","_app/immutable/chunks/each.x_SzhXRZ.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/stores.9MPSqhWm.js","_app/immutable/chunks/index.KLghjZkg.js"];
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/practice/class11/_layout.svelte.js')).default;
+export const imports = ["_app/immutable/nodes/11.RM7c1b8e.js","_app/immutable/chunks/preload-helper.0HuHagjb.js","_app/immutable/chunks/scheduler.cQRDEcOs.js","_app/immutable/chunks/index.3X1eH1mp.js","_app/immutable/chunks/Select._a7V8pmR.js","_app/immutable/chunks/each.czemEVXE.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/stores.ojv7c_2x.js","_app/immutable/chunks/index.yZBYQTEr.js"];
 export const stylesheets = ["_app/immutable/assets/Select.Gh662Cch.css"];
 export const fonts = [];

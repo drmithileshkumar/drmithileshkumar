@@ -3,10 +3,11 @@ import { c as compute_rest_props, s as subscribe, b as set_store_value } from ".
 import { w as writable } from "./index2.js";
 import { f as forwardEventsBuilder, c as classMap } from "./classAdderBuilder.js";
 import { C as ContextFragment } from "./ContextFragment.js";
-import { C as CommonLabel, B as Button } from "./Button.js";
+import { C as CommonLabel } from "./CommonLabel.js";
 import "./Suffix.js";
 import { C as Card } from "./Card.js";
 import { C as Content } from "./ActionIcons.js";
+import { B as Button } from "./Button.js";
 import { basicSetup } from "codemirror";
 import { EditorView, keymap, placeholder } from "@codemirror/view";
 import { EditorState } from "@codemirror/state";

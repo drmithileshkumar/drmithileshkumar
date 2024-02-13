@@ -21,12 +21,29 @@
       "_classAdderBuilder.js"
     ]
   },
+  "_Assignment.js": {
+    "css": [
+      "_app/immutable/assets/Assignment.6WUqND9u.css"
+    ],
+    "file": "chunks/Assignment.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Actions.js",
+      "_Button.js",
+      "_Text.js",
+      "_client.js",
+      "_stores.js"
+    ]
+  },
   "_Button.js": {
     "file": "chunks/Button.js",
     "imports": [
       "_utils.js",
-      "_ssr.js",
       "_classAdderBuilder.js",
+      "_ssr.js",
       "_Ripple.js"
     ]
   },
@@ -52,6 +69,23 @@
       "_prefixFilter.js"
     ]
   },
+  "_Checkbox.js": {
+    "file": "chunks/Checkbox.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_classAdderBuilder.js",
+      "_prefixFilter.js"
+    ]
+  },
+  "_CommonLabel.js": {
+    "file": "chunks/CommonLabel.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_classAdderBuilder.js"
+    ]
+  },
   "_ContextFragment.js": {
     "file": "chunks/ContextFragment.js",
     "imports": [
@@ -59,6 +93,10 @@
       "_ssr.js",
       "_index2.js"
     ]
+  },
+  "_Div.svelte_svelte_type_style_lang.js": {
+    "file": "_app/immutable/assets/Div.bOrlhsXY.css",
+    "src": "_Div.svelte_svelte_type_style_lang.js"
   },
   "_FormField.js": {
     "file": "chunks/FormField.js",
@@ -74,8 +112,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_classAdderBuilder.js",
-      "_Ripple.js"
+      "_classAdderBuilder.js"
     ]
   },
   "_H2.js": {
@@ -89,7 +126,7 @@
   },
   "_H3.js": {
     "css": [
-      "_app/immutable/assets/Div.bOrlhsXY.css"
+      "_app/immutable/assets/H3.O6MZcA9D.css"
     ],
     "file": "chunks/H3.js",
     "imports": [
@@ -104,7 +141,7 @@
       "_utils.js",
       "_classAdderBuilder.js",
       "_ssr.js",
-      "_Graphic.js",
+      "_Item.js",
       "_Ripple.js"
     ]
   },
@@ -128,6 +165,15 @@
       "_stores4.js"
     ]
   },
+  "_Item.js": {
+    "file": "chunks/Item.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_classAdderBuilder.js",
+      "_Ripple.js"
+    ]
+  },
   "_Link.js": {
     "css": [
       "_app/immutable/assets/Link.mTa6ZPjX.css"
@@ -141,6 +187,14 @@
   "_Link.svelte_svelte_type_style_lang.js": {
     "file": "_app/immutable/assets/Link.mTa6ZPjX.css",
     "src": "_Link.svelte_svelte_type_style_lang.js"
+  },
+  "_Menu.js": {
+    "file": "chunks/Menu.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_classAdderBuilder.js"
+    ]
   },
   "_Message.js": {
     "css": [
@@ -162,8 +216,9 @@
     "file": "chunks/NavList.js",
     "imports": [
       "_ssr.js",
-      "_Graphic.js",
+      "_Item.js",
       "_Subheader.js",
+      "_Graphic.js",
       "_utils.js",
       "_classAdderBuilder.js",
       "_IconButton.js",
@@ -174,6 +229,14 @@
   "_NavList.svelte_svelte_type_style_lang.js": {
     "file": "_app/immutable/assets/NavList.buyRB24_.css",
     "src": "_NavList.svelte_svelte_type_style_lang.js"
+  },
+  "_NotchedOutline.js": {
+    "file": "chunks/NotchedOutline.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_classAdderBuilder.js"
+    ]
   },
   "_Papers.js": {
     "css": [
@@ -212,6 +275,15 @@
       "_index2.js"
     ]
   },
+  "_Radio.js": {
+    "file": "chunks/Radio.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_classAdderBuilder.js",
+      "_prefixFilter.js"
+    ]
+  },
   "_Research.svelte_svelte_type_style_lang.js": {
     "file": "_app/immutable/assets/Research.NGNsLVw9.css",
     "src": "_Research.svelte_svelte_type_style_lang.js"
@@ -235,6 +307,35 @@
     "file": "_app/immutable/assets/Select.Gh662Cch.css",
     "src": "_Select.svelte_svelte_type_style_lang.js"
   },
+  "_SelectionGroupIcon.js": {
+    "file": "chunks/SelectionGroupIcon.js",
+    "imports": [
+      "_classAdderBuilder.js",
+      "_Subheader.js",
+      "_Graphic.js"
+    ]
+  },
+  "_ShowQuestion.js": {
+    "css": [
+      "_app/immutable/assets/ShowQuestion.gnNZ8UE8.css"
+    ],
+    "file": "chunks/ShowQuestion.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Actions.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_Checkbox.js",
+      "_FormField.js",
+      "_SelectionGroupIcon.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js"
+    ]
+  },
   "_Subheader.js": {
     "file": "chunks/Subheader.js",
     "imports": [
@@ -247,6 +348,17 @@
       "_classAdderBuilder.js"
     ]
   },
+  "_Text.js": {
+    "file": "chunks/Text.js",
+    "imports": [
+      "_utils.js",
+      "_classAdderBuilder.js",
+      "_ssr.js",
+      "_index2.js",
+      "_Ripple.js",
+      "_ContextFragment.js"
+    ]
+  },
   "_Textfield.js": {
     "file": "chunks/Textfield.js",
     "imports": [
@@ -255,6 +367,7 @@
       "_ssr.js",
       "_prefixFilter.js",
       "_ContextFragment.js",
+      "_NotchedOutline.js",
       "_Suffix.js"
     ]
   },
@@ -273,7 +386,7 @@
       "_ssr.js",
       "_index2.js",
       "_classAdderBuilder.js",
-      "_Graphic.js"
+      "_Item.js"
     ]
   },
   "_WebPractice.js": {
@@ -287,10 +400,11 @@
       "_index2.js",
       "_classAdderBuilder.js",
       "_ContextFragment.js",
-      "_Button.js",
+      "_CommonLabel.js",
       "_Suffix.js",
       "_Card.js",
-      "_ActionIcons.js"
+      "_ActionIcons.js",
+      "_Button.js"
     ]
   },
   "_classAdderBuilder.js": {
@@ -579,10 +693,11 @@
       "_utils.js",
       "_ssr.js",
       "_classAdderBuilder.js",
-      "_Graphic.js",
+      "_Item.js",
       "_Ripple.js",
       "_NavList.js",
       "_Subheader.js",
+      "_Graphic.js",
       "_client.js",
       "_stores.js",
       "_stores3.js",
@@ -647,6 +762,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_Button.js",
+      "_CommonLabel.js",
       "_classAdderBuilder.js",
       "_prefixFilter.js",
       "_Ripple.js",
@@ -658,31 +774,143 @@
     "isEntry": true,
     "src": "src/routes/(general)/[publicID]/+page.svelte"
   },
+  "src/routes/(general)/[publicID]/assignments/+page.js": {
+    "file": "entries/pages/(general)/_publicID_/assignments/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/assignments/+page.js"
+  },
+  "src/routes/(general)/[publicID]/assignments/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.sFztbMp9.css"
+    ],
+    "file": "entries/pages/(general)/_publicID_/assignments/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_stores.js",
+      "_ActionIcons.js",
+      "_Button.js",
+      "_Assignment.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/assignments/+page.svelte"
+  },
+  "src/routes/(general)/[publicID]/assignments/[assignmentID]/+page.js": {
+    "file": "entries/pages/(general)/_publicID_/assignments/_assignmentID_/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/assignments/[assignmentID]/+page.js"
+  },
+  "src/routes/(general)/[publicID]/assignments/[assignmentID]/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.sFztbMp9.css"
+    ],
+    "file": "entries/pages/(general)/_publicID_/assignments/_assignmentID_/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_client.js",
+      "_ActionIcons.js",
+      "_Suffix.js",
+      "_Assignment.js",
+      "_ShowQuestion.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/assignments/[assignmentID]/+page.svelte"
+  },
+  "src/routes/(general)/[publicID]/assignments/new/+page.js": {
+    "file": "entries/pages/(general)/_publicID_/assignments/new/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/assignments/new/+page.js"
+  },
+  "src/routes/(general)/[publicID]/assignments/new/+page.svelte": {
+    "file": "entries/pages/(general)/_publicID_/assignments/new/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Actions.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_Textfield.js",
+      "_Suffix.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/assignments/new/+page.svelte"
+  },
   "src/routes/(general)/[publicID]/questions/+page.js": {
     "file": "entries/pages/(general)/_publicID_/questions/_page.js",
+    "imports": [
+      "_index.js"
+    ],
     "isEntry": true,
     "src": "src/routes/(general)/[publicID]/questions/+page.js"
   },
   "src/routes/(general)/[publicID]/questions/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.kxp9ydn1.css"
+    ],
     "file": "entries/pages/(general)/_publicID_/questions/_page.svelte.js",
     "imports": [
-      "_ssr.js"
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_stores.js",
+      "_ActionIcons.js",
+      "_Button.js",
+      "_Card.js",
+      "_Actions.js",
+      "_Checkbox.js",
+      "_FormField.js",
+      "_classAdderBuilder.js",
+      "_index2.js",
+      "_prefixFilter.js",
+      "_Menu.js",
+      "_SelectionGroupIcon.js",
+      "_Item.js",
+      "_Subheader.js",
+      "_NotchedOutline.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/[publicID]/questions/+page.svelte"
   },
-  "src/routes/(general)/[publicID]/questions/edit/+page.js": {
-    "file": "entries/pages/(general)/_publicID_/questions/edit/_page.js",
-    "isEntry": true,
-    "src": "src/routes/(general)/[publicID]/questions/edit/+page.js"
-  },
-  "src/routes/(general)/[publicID]/questions/edit/+page.svelte": {
-    "file": "entries/pages/(general)/_publicID_/questions/edit/_page.svelte.js",
+  "src/routes/(general)/[publicID]/questions/[questionID]/+page.js": {
+    "file": "entries/pages/(general)/_publicID_/questions/_questionID_/_page.js",
     "imports": [
-      "_ssr.js"
+      "_index.js"
     ],
     "isEntry": true,
-    "src": "src/routes/(general)/[publicID]/questions/edit/+page.svelte"
+    "src": "src/routes/(general)/[publicID]/questions/[questionID]/+page.js"
+  },
+  "src/routes/(general)/[publicID]/questions/[questionID]/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.XJEC4CgM.css"
+    ],
+    "file": "entries/pages/(general)/_publicID_/questions/_questionID_/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_client.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Actions.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_Textfield.js",
+      "_Suffix.js",
+      "_FormField.js",
+      "_Checkbox.js",
+      "_Radio.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/questions/[questionID]/+page.svelte"
   },
   "src/routes/(general)/[publicID]/questions/new/+page.js": {
     "file": "entries/pages/(general)/_publicID_/questions/new/_page.js",
@@ -701,12 +929,12 @@
       "_ActionIcons.js",
       "_Actions.js",
       "_Button.js",
+      "_CommonLabel.js",
       "_Textfield.js",
       "_Suffix.js",
       "_FormField.js",
-      "_utils.js",
-      "_classAdderBuilder.js",
-      "_prefixFilter.js"
+      "_Checkbox.js",
+      "_Radio.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/[publicID]/questions/new/+page.svelte"
@@ -719,6 +947,42 @@
     ],
     "isEntry": true,
     "src": "src/routes/(general)/api/[publicID]/+server.js"
+  },
+  "src/routes/(general)/api/[publicID]/assignments/+server.js": {
+    "file": "entries/endpoints/(general)/api/_publicID_/assignments/_server.js",
+    "imports": [
+      "_mongo.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/api/[publicID]/assignments/+server.js"
+  },
+  "src/routes/(general)/api/[publicID]/assignments/[assignmentID]/+server.js": {
+    "file": "entries/endpoints/(general)/api/_publicID_/assignments/_assignmentID_/_server.js",
+    "imports": [
+      "_mongo.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/api/[publicID]/assignments/[assignmentID]/+server.js"
+  },
+  "src/routes/(general)/api/[publicID]/assignments/[assignmentID]/question/+server.js": {
+    "file": "entries/endpoints/(general)/api/_publicID_/assignments/_assignmentID_/question/_server.js",
+    "imports": [
+      "_mongo.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/api/[publicID]/assignments/[assignmentID]/question/+server.js"
+  },
+  "src/routes/(general)/api/[publicID]/assignments/new/+server.js": {
+    "file": "entries/endpoints/(general)/api/_publicID_/assignments/new/_server.js",
+    "imports": [
+      "_mongo.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/api/[publicID]/assignments/new/+server.js"
   },
   "src/routes/(general)/api/[publicID]/bannerpic/+server.js": {
     "file": "entries/endpoints/(general)/api/_publicID_/bannerpic/_server.js",
@@ -749,13 +1013,21 @@
   },
   "src/routes/(general)/api/[publicID]/questions/+server.js": {
     "file": "entries/endpoints/(general)/api/_publicID_/questions/_server.js",
+    "imports": [
+      "_mongo.js",
+      "_index.js"
+    ],
     "isEntry": true,
     "src": "src/routes/(general)/api/[publicID]/questions/+server.js"
   },
-  "src/routes/(general)/api/[publicID]/questions/edit/+server.js": {
-    "file": "entries/endpoints/(general)/api/_publicID_/questions/edit/_server.js",
+  "src/routes/(general)/api/[publicID]/questions/[questionID]/+server.js": {
+    "file": "entries/endpoints/(general)/api/_publicID_/questions/_questionID_/_server.js",
+    "imports": [
+      "_mongo.js",
+      "_index.js"
+    ],
     "isEntry": true,
-    "src": "src/routes/(general)/api/[publicID]/questions/edit/+server.js"
+    "src": "src/routes/(general)/api/[publicID]/questions/[questionID]/+server.js"
   },
   "src/routes/(general)/api/[publicID]/questions/new/+server.js": {
     "file": "entries/endpoints/(general)/api/_publicID_/questions/new/_server.js",
@@ -824,10 +1096,8 @@
       "_utils.js",
       "_ssr.js",
       "_Button.js",
-      "_classAdderBuilder.js",
-      "_index2.js",
-      "_Ripple.js",
-      "_ContextFragment.js",
+      "_CommonLabel.js",
+      "_Text.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Actions.js",
@@ -860,8 +1130,9 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_Graphic.js",
+      "_Item.js",
       "_Subheader.js",
+      "_Graphic.js",
       "_client.js",
       "_stores3.js"
     ],
@@ -1840,7 +2111,7 @@
   },
   "src/routes/(general)/courses/mathematics2/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.YblFEglR.css",
+      "_app/immutable/assets/_page.r3HcPq1w.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/_page.svelte.js",
@@ -1852,10 +2123,35 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores3.js",
-      "_content2.js"
+      "_content2.js",
+      "_Subheader.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/[assignmentID]/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/_assignmentID_/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/[assignmentID]/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/[assignmentID]/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.sFztbMp9.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/_assignmentID_/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_client.js",
+      "_ActionIcons.js",
+      "_Suffix.js",
+      "_Assignment.js",
+      "_ShowQuestion.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/[assignmentID]/+page.svelte"
   },
   "src/routes/(general)/courses/mathematics2/statistics/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/statistics/_page.js",
@@ -5833,52 +6129,6 @@
     "isEntry": true,
     "src": "src/routes/(general)/notes/maths/conic/+page.svelte"
   },
-  "src/routes/(general)/notes/quantum/+layout.svelte": {
-    "css": [
-      "_app/immutable/assets/_layout.gHAkUZs8.css",
-      "_app/immutable/assets/Select.Gh662Cch.css"
-    ],
-    "file": "entries/pages/(general)/notes/quantum/_layout.svelte.js",
-    "imports": [
-      "_utils.js",
-      "_ssr.js",
-      "_stores4.js",
-      "_client.js",
-      "_Presenter.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/notes/quantum/+layout.svelte"
-  },
-  "src/routes/(general)/notes/quantum/+page.js": {
-    "file": "entries/pages/(general)/notes/quantum/_page.js",
-    "imports": [
-      "_index.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/notes/quantum/+page.js"
-  },
-  "src/routes/(general)/notes/quantum/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.wXS4d_6p.css",
-      "_app/immutable/assets/Practice.WYyIEcoM.css",
-      "_app/immutable/assets/Message.ctOi1nG9.css",
-      "_app/immutable/assets/Div.bOrlhsXY.css"
-    ],
-    "file": "entries/pages/(general)/notes/quantum/_page.svelte.js",
-    "imports": [
-      "_utils.js",
-      "_ssr.js",
-      "_stores4.js",
-      "_stores.js",
-      "_constants.js",
-      "_Image.svelte_svelte_type_style_lang.js",
-      "_H3.js",
-      "_H2.js",
-      "_Image.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(general)/notes/quantum/+page.svelte"
-  },
   "src/routes/(general)/practice/+page.js": {
     "file": "entries/pages/(general)/practice/_page.js",
     "imports": [
@@ -6333,8 +6583,9 @@
       "_TopAppBar.js",
       "_Title.js",
       "_IconButton.js",
-      "_Graphic.js",
+      "_Item.js",
       "_Subheader.js",
+      "_Graphic.js",
       "_stores3.js"
     ],
     "isEntry": true,
@@ -6359,13 +6610,17 @@
       "_Textfield.js",
       "_Suffix.js",
       "_Title.js",
-      "_Button.js",
+      "_CommonLabel.js",
       "_IconButton.js",
       "_classAdderBuilder.js",
-      "_Graphic.js",
+      "_Item.js",
       "_prefixFilter.js",
+      "_Menu.js",
+      "_SelectionGroupIcon.js",
       "_Subheader.js",
+      "_Button.js",
       "_index2.js",
+      "_Radio.js",
       "_FormField.js",
       "_stores.js",
       "_stores3.js",
@@ -6417,8 +6672,9 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_Graphic.js",
+      "_Item.js",
       "_Subheader.js",
+      "_Graphic.js",
       "_client.js",
       "_stores3.js"
     ],
@@ -6452,5 +6708,51 @@
     ],
     "isEntry": true,
     "src": "src/routes/(general)/talks/quantumstatus/+page.svelte"
+  },
+  "src/routes/(general)/talks/quantumteleportation/+layout.svelte": {
+    "css": [
+      "_app/immutable/assets/_layout.gHAkUZs8.css",
+      "_app/immutable/assets/Select.Gh662Cch.css"
+    ],
+    "file": "entries/pages/(general)/talks/quantumteleportation/_layout.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores4.js",
+      "_client.js",
+      "_Presenter.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/talks/quantumteleportation/+layout.svelte"
+  },
+  "src/routes/(general)/talks/quantumteleportation/+page.js": {
+    "file": "entries/pages/(general)/talks/quantumteleportation/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/talks/quantumteleportation/+page.js"
+  },
+  "src/routes/(general)/talks/quantumteleportation/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.ee3kH059.css",
+      "_app/immutable/assets/Practice.WYyIEcoM.css",
+      "_app/immutable/assets/Message.ctOi1nG9.css",
+      "_app/immutable/assets/Div.bOrlhsXY.css"
+    ],
+    "file": "entries/pages/(general)/talks/quantumteleportation/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores4.js",
+      "_stores.js",
+      "_constants.js",
+      "_Image.svelte_svelte_type_style_lang.js",
+      "_H3.js",
+      "_H2.js",
+      "_Image.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/talks/quantumteleportation/+page.svelte"
   }
 }

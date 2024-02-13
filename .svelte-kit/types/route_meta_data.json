@@ -25,6 +25,18 @@
 	"/(general)/api/[publicID]": [
 		"src/routes/(general)/api/[publicID]/+server.js"
 	],
+	"/(general)/api/[publicID]/assignments": [
+		"src/routes/(general)/api/[publicID]/assignments/+server.js"
+	],
+	"/(general)/api/[publicID]/assignments/new": [
+		"src/routes/(general)/api/[publicID]/assignments/new/+server.js"
+	],
+	"/(general)/api/[publicID]/assignments/[assignmentID]": [
+		"src/routes/(general)/api/[publicID]/assignments/[assignmentID]/+server.js"
+	],
+	"/(general)/api/[publicID]/assignments/[assignmentID]/question": [
+		"src/routes/(general)/api/[publicID]/assignments/[assignmentID]/question/+server.js"
+	],
 	"/(general)/api/[publicID]/bannerpic": [
 		"src/routes/(general)/api/[publicID]/bannerpic/+server.js"
 	],
@@ -37,11 +49,11 @@
 	"/(general)/api/[publicID]/questions": [
 		"src/routes/(general)/api/[publicID]/questions/+server.js"
 	],
-	"/(general)/api/[publicID]/questions/edit": [
-		"src/routes/(general)/api/[publicID]/questions/edit/+server.js"
-	],
 	"/(general)/api/[publicID]/questions/new": [
 		"src/routes/(general)/api/[publicID]/questions/new/+server.js"
+	],
+	"/(general)/api/[publicID]/questions/[questionID]": [
+		"src/routes/(general)/api/[publicID]/questions/[questionID]/+server.js"
 	],
 	"/(general)/auth": [
 		"src/routes/(general)/auth/+page.server.js",
@@ -293,6 +305,10 @@
 	],
 	"/(general)/courses/mathematics2/statistics/regression/regressionlines": [
 		"src/routes/(general)/courses/mathematics2/statistics/regression/regressionlines/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/[assignmentID]": [
+		"src/routes/(general)/courses/mathematics2/[assignmentID]/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/courses/qec": [
@@ -896,11 +912,6 @@
 		"src/routes/(general)/notes/maths/conic/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
-	"/(general)/notes/quantum": [
-		"src/routes/(general)/notes/quantum/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
-	],
 	"/(general)/practice": [
 		"src/routes/(general)/practice/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -990,6 +1001,11 @@
 		"src/routes/(general)/talks/quantumstatus/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/talks/quantumteleportation": [
+		"src/routes/(general)/talks/quantumteleportation/+page.js",
+		"src/routes/(general)/+layout.server.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(about)/teaching": [
 		"src/routes/(about)/teaching/+page.js"
 	],
@@ -997,16 +1013,28 @@
 		"src/routes/(general)/[publicID]/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/[publicID]/assignments": [
+		"src/routes/(general)/[publicID]/assignments/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/[publicID]/assignments/new": [
+		"src/routes/(general)/[publicID]/assignments/new/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/[publicID]/assignments/[assignmentID]": [
+		"src/routes/(general)/[publicID]/assignments/[assignmentID]/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/[publicID]/questions": [
 		"src/routes/(general)/[publicID]/questions/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
-	"/(general)/[publicID]/questions/edit": [
-		"src/routes/(general)/[publicID]/questions/edit/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
 	"/(general)/[publicID]/questions/new": [
 		"src/routes/(general)/[publicID]/questions/new/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/[publicID]/questions/[questionID]": [
+		"src/routes/(general)/[publicID]/questions/[questionID]/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/[...catchAll]": [

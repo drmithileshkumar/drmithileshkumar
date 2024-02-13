@@ -11,6 +11,9 @@
         border-radius: 10px;
         transition: all 1s;
     }
+    h2 {
+        font-size: 1.5em;
+    }
 </style>
 {#if $presentationMode}
 <h2 class="{$$restProps.class || ''} {$presentationMode && isActive === $currentSlide ? 'currentActive': ''}" 
