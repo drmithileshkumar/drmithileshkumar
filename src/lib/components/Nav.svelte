@@ -74,6 +74,12 @@
                 <Text>Courses</Text>
             </Item>
             <Item
+                on:SMUI:action={() => goto(`/assignments`)}
+            >
+                <Graphic class="material-icons">assignment</Graphic>
+                <Text>Assignments</Text>
+            </Item>
+            <Item
                 on:SMUI:action={() => goto(`/students`)}
             >
                 <Graphic class="material-icons">groups</Graphic>

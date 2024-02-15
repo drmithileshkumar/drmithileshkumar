@@ -11,9 +11,12 @@
     import { createEventDispatcher } from 'svelte';
     let dispatch = new createEventDispatcher();
     export let question;
+    export let answer = [];
     export let assignmentID = '';
     export let showOptions = true;
     export let showSolution = true;
+    export let showActions = true;
+    export let marks = 0;
     
     const addQuestion = async () => {
         
@@ -54,27 +57,41 @@
     .options {
         display: flex;
         flex-direction: column;
+        margin: 1em 0;
+    }
+    .solution {
+        margin-top: 1em;
+    }
+    .marks {
+        display: flex;
+        justify-content: end;
+        gap: 0.5em;
+        color: white;
+        background: rgba(0, 155, 0, 0.5);
+        margin-bottom: 0.5em;
+        padding: 0.5em;
     }
 </style>
 <Card>
     <Content>
+        <div class="marks"><strong>Marks:</strong> {marks}</div>
         <div class="question" use:typeset>{@html question.statement}</div>
         {#if showOptions}
         <div class="options">
             <FormField>
-                <Checkbox checked={question.correct.indexOf('A') !== -1} />
+                <Checkbox checked={answer.indexOf('A') !== -1} style="background:{question.correct.indexOf('A') !== -1 ? 'rgba(0, 155, 0, 0.5)' : ''}"/>
                 <span slot="label">{@html question.optionA}</span>
             </FormField>
             <FormField>
-                <Checkbox checked={question.correct.indexOf('B') !== -1} />
+                <Checkbox checked={answer.indexOf('B') !== -1} style="background:{question.correct.indexOf('B') !== -1 ? 'rgba(0, 155, 0, 0.5)' : ''}"/>
                 <span slot="label">{@html question.optionB}</span>
             </FormField>
             <FormField>
-                <Checkbox checked={question.correct.indexOf('C') !== -1} />
+                <Checkbox checked={answer.indexOf('C') !== -1} style="background:{question.correct.indexOf('C') !== -1 ? 'rgba(0, 155, 0, 0.5)' : ''}"/>
                 <span slot="label">{@html question.optionC}</span>
             </FormField>
             <FormField>
-                <Checkbox checked={question.correct.indexOf('D') !== -1} />
+                <Checkbox checked={answer.indexOf('D') !== -1} style="background:{question.correct.indexOf('D') !== -1 ? 'rgba(0, 155, 0, 0.5)' : ''}"/>
                 <span slot="label">{@html question.optionD}</span>
             </FormField>
         </div>
@@ -83,6 +100,7 @@
         <div class="solution" use:typeset>{@html question.solution}</div>
         {/if}
     </Content>
+    {#if showActions}
     <Actions>
         <Button on:click={() => showOptions = !showOptions}>
             <Label>
@@ -95,4 +113,5 @@
         <Button on:click={() => goto(`/${$page.data.user.publicID}/questions/${question._id}`)}><Label>Edit</Label></Button>
         <Button on:click={remove}><Label>Remove</Label></Button>
     </Actions>
+    {/if}
 </Card>

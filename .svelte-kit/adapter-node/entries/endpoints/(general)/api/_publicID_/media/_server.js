@@ -1,4 +1,4 @@
-import { g as getUsersCollection } from "../../../../../../chunks/mongo.js";
+import { a as getUsersCollection } from "../../../../../../chunks/mongo.js";
 import { readFileSync, existsSync, mkdirSync, writeFileSync } from "fs";
 import { e as error } from "../../../../../../chunks/index.js";
 async function GET({ locals, request, params, url }) {

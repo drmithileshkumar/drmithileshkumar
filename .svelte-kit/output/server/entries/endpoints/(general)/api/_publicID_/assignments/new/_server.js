@@ -1,4 +1,4 @@
-import { a as getDBCollection } from "../../../../../../../chunks/mongo.js";
+import { g as getDBCollection } from "../../../../../../../chunks/mongo.js";
 import { e as error } from "../../../../../../../chunks/index.js";
 import { ObjectId } from "mongodb";
 async function GET({ locals, params, request }) {

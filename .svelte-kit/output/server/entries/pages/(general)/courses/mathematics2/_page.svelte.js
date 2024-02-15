@@ -1,9 +1,11 @@
 import { s as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component } from "../../../../../chunks/ssr.js";
+import { c as create_ssr_component, v as validate_component, k as each, e as escape } from "../../../../../chunks/ssr.js";
 import "../../../../../chunks/client.js";
 /* empty css                                                       */
 import { C as Card } from "../../../../../chunks/Card.js";
-import "../../../../../chunks/ActionIcons.js";
+import { C as Content } from "../../../../../chunks/ActionIcons.js";
+import { B as Button } from "../../../../../chunks/Button.js";
+import { C as CommonLabel } from "../../../../../chunks/CommonLabel.js";
 import { N as NavList } from "../../../../../chunks/NavList.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores3.js";
 import { c as contents } from "../../../../../chunks/content2.js";
@@ -43,7 +45,25 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {}
       )}`;
     }
-  })} <h5 class="svelte-1a5or8o" data-svelte-h="svelte-1c1pxi4">Assignments</h5> </article>`;
+  })} <h5 class="svelte-1a5or8o" data-svelte-h="svelte-1c1pxi4">Assignments</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `${each(data.assignments, (assignment) => {
+            return `<div>${validate_component(Button, "Button").$$render($$result, {}, {}, {
+              default: () => {
+                return `${validate_component(CommonLabel, "Label").$$render($$result, {}, {}, {
+                  default: () => {
+                    return `${escape(assignment.title)}`;
+                  }
+                })}`;
+              }
+            })} </div>`;
+          })} `;
+        }
+      })}`;
+    }
+  })}</article>`;
 });
 export {
   Page as default

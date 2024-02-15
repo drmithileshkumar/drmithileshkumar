@@ -8,7 +8,8 @@ import { C as CommonLabel } from "../../../../../../chunks/CommonLabel.js";
 import { T as Textfield } from "../../../../../../chunks/Textfield.js";
 import "../../../../../../chunks/Suffix.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let title = "Assignment 1", university = "Dayananda Sagar University", department = "Computer Applications", session = "2023-2024", semester = "II", courseName = "Mathematics II", totalMarks = 100, numberOfQuestions = 10;
+  let title = "Assignment 1", university = "Dayananda Sagar University", department = "Computer Applications", session = "2023-2024", semester = "II", courseName = "Mathematics II", totalMarks = 100, numberOfQuestions = 10, dates = { start: Date.now(), end: Date.now() };
+  questions = [];
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;
@@ -143,6 +144,36 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 {
                   value: ($$value) => {
                     numberOfQuestions = $$value;
+                    $$settled = false;
+                  }
+                },
+                {}
+              )} ${validate_component(Textfield, "Textfield").$$render(
+                $$result,
+                {
+                  variant: "outlined",
+                  type: "date",
+                  label: "Start",
+                  value: dates.start
+                },
+                {
+                  value: ($$value) => {
+                    dates.start = $$value;
+                    $$settled = false;
+                  }
+                },
+                {}
+              )} ${validate_component(Textfield, "Textfield").$$render(
+                $$result,
+                {
+                  variant: "outlined",
+                  type: "date",
+                  label: "End",
+                  value: dates.end
+                },
+                {
+                  value: ($$value) => {
+                    dates.end = $$value;
                     $$settled = false;
                   }
                 },

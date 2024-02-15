@@ -1,5 +1,5 @@
 import { s as signJwt } from "../../../../../chunks/jwt.js";
-import { g as getUsersCollection, a as getDBCollection } from "../../../../../chunks/mongo.js";
+import { a as getUsersCollection, g as getDBCollection } from "../../../../../chunks/mongo.js";
 import { i as initializeNewUserDetail } from "../../../../../chunks/userDetail.js";
 import { e as error } from "../../../../../chunks/index.js";
 async function POST({ locals, params, request }) {

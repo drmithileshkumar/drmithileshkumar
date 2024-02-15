@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Sequences and series/Sequences/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Relations and functions 12/Types of relations/_page.js';
 
 export const index = 199;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Sequences and series/Sequences/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Relations and functions 12/Types of relations/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Sequences and series/Sequences/+page.js";
-export const imports = ["_app/immutable/nodes/199.Zp3PgLOg.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.cQRDEcOs.js","_app/immutable/chunks/index.3X1eH1mp.js","_app/immutable/chunks/stores.GoaI5prC.js","_app/immutable/chunks/index.yZBYQTEr.js","_app/immutable/chunks/stores.ttVGorVA.js","_app/immutable/chunks/entry.pDmfy2hM.js"];
+export const universal_id = "src/routes/(general)/notes/maths/Relations and functions 12/Types of relations/+page.js";
+export const imports = ["_app/immutable/nodes/199.Wi5L63EH.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.cQRDEcOs.js","_app/immutable/chunks/index.3X1eH1mp.js","_app/immutable/chunks/stores.GoaI5prC.js","_app/immutable/chunks/index.yZBYQTEr.js","_app/immutable/chunks/stores.jwJ_Xv-2.js","_app/immutable/chunks/entry.RQwruml5.js"];
 export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

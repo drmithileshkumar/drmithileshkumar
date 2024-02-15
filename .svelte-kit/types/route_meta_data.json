@@ -10,6 +10,15 @@
 	"/(about)/about": [
 		"src/routes/(about)/about/+page.js"
 	],
+	"/(general)/api/assignments": [
+		"src/routes/(general)/api/assignments/+server.js"
+	],
+	"/(general)/api/assignments/[assignmentID]": [
+		"src/routes/(general)/api/assignments/[assignmentID]/+server.js"
+	],
+	"/(general)/api/assignment": [
+		"src/routes/(general)/api/assignment/+server.js"
+	],
 	"/(general)/api/login": [
 		"src/routes/(general)/api/login/+server.js"
 	],
@@ -18,6 +27,9 @@
 	],
 	"/(general)/api/signup": [
 		"src/routes/(general)/api/signup/+server.js"
+	],
+	"/(general)/api/submissions": [
+		"src/routes/(general)/api/submissions/+server.js"
 	],
 	"/(general)/api/userDetail": [
 		"src/routes/(general)/api/userDetail/+server.js"
@@ -54,6 +66,18 @@
 	],
 	"/(general)/api/[publicID]/questions/[questionID]": [
 		"src/routes/(general)/api/[publicID]/questions/[questionID]/+server.js"
+	],
+	"/(general)/assignments": [
+		"src/routes/(general)/assignments/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/assignments/[assignmentID]": [
+		"src/routes/(general)/assignments/[assignmentID]/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/assignments/[assignmentID]/solution": [
+		"src/routes/(general)/assignments/[assignmentID]/solution/+page.js",
+		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/auth": [
 		"src/routes/(general)/auth/+page.server.js",
@@ -309,6 +333,10 @@
 	],
 	"/(general)/courses/mathematics2/[assignmentID]": [
 		"src/routes/(general)/courses/mathematics2/[assignmentID]/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/[assignmentID]/solution": [
+		"src/routes/(general)/courses/mathematics2/[assignmentID]/solution/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/courses/qec": [
@@ -1035,6 +1063,10 @@
 	],
 	"/(general)/[publicID]/questions/[questionID]": [
 		"src/routes/(general)/[publicID]/questions/[questionID]/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/[publicID]/submissions": [
+		"src/routes/(general)/[publicID]/submissions/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/[...catchAll]": [

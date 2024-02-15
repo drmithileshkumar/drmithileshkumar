@@ -17,6 +17,6 @@ const getDBCollection = async (collectionName) => {
     return (await getDb()).collection(collectionName);
 };
 export {
-  getDBCollection as a,
-  getUsersCollection as g
+  getUsersCollection as a,
+  getDBCollection as g
 };

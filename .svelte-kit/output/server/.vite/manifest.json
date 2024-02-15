@@ -23,7 +23,7 @@
   },
   "_Assignment.js": {
     "css": [
-      "_app/immutable/assets/Assignment.6WUqND9u.css"
+      "_app/immutable/assets/Assignment.yl7wM7VN.css"
     ],
     "file": "chunks/Assignment.js",
     "imports": [
@@ -34,9 +34,15 @@
       "_Actions.js",
       "_Button.js",
       "_Text.js",
+      "_Textfield.js",
+      "_Suffix.js",
       "_client.js",
       "_stores.js"
     ]
+  },
+  "_Assignment.svelte_svelte_type_style_lang.js": {
+    "file": "_app/immutable/assets/Assignment.yl7wM7VN.css",
+    "src": "_Assignment.svelte_svelte_type_style_lang.js"
   },
   "_Button.js": {
     "file": "chunks/Button.js",
@@ -238,6 +244,21 @@
       "_classAdderBuilder.js"
     ]
   },
+  "_Option.js": {
+    "file": "chunks/Option.js",
+    "imports": [
+      "_utils.js",
+      "_classAdderBuilder.js",
+      "_ssr.js",
+      "_index2.js",
+      "_prefixFilter.js",
+      "_Menu.js",
+      "_SelectionGroupIcon.js",
+      "_Item.js",
+      "_Subheader.js",
+      "_NotchedOutline.js"
+    ]
+  },
   "_Papers.js": {
     "css": [
       "_app/immutable/assets/Papers.Bl4_WsLT.css"
@@ -317,7 +338,7 @@
   },
   "_ShowQuestion.js": {
     "css": [
-      "_app/immutable/assets/ShowQuestion.gnNZ8UE8.css"
+      "_app/immutable/assets/ShowQuestion.VCvzNaCm.css"
     ],
     "file": "chunks/ShowQuestion.js",
     "imports": [
@@ -346,6 +367,24 @@
     "file": "chunks/Suffix.js",
     "imports": [
       "_classAdderBuilder.js"
+    ]
+  },
+  "_TestQuestion.js": {
+    "css": [
+      "_app/immutable/assets/TestQuestion.LrTP51C3.css"
+    ],
+    "file": "chunks/TestQuestion.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Checkbox.js",
+      "_FormField.js",
+      "_SelectionGroupIcon.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js"
     ]
   },
   "_Text.js": {
@@ -868,14 +907,7 @@
       "_Actions.js",
       "_Checkbox.js",
       "_FormField.js",
-      "_classAdderBuilder.js",
-      "_index2.js",
-      "_prefixFilter.js",
-      "_Menu.js",
-      "_SelectionGroupIcon.js",
-      "_Item.js",
-      "_Subheader.js",
-      "_NotchedOutline.js"
+      "_Option.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/[publicID]/questions/+page.svelte"
@@ -938,6 +970,30 @@
     ],
     "isEntry": true,
     "src": "src/routes/(general)/[publicID]/questions/new/+page.svelte"
+  },
+  "src/routes/(general)/[publicID]/submissions/+page.js": {
+    "file": "entries/pages/(general)/_publicID_/submissions/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/submissions/+page.js"
+  },
+  "src/routes/(general)/[publicID]/submissions/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.EsyEREeJ.css"
+    ],
+    "file": "entries/pages/(general)/_publicID_/submissions/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_Option.js",
+      "_Button.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Cell.js",
+      "_client.js",
+      "_stores3.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/[publicID]/submissions/+page.svelte"
   },
   "src/routes/(general)/api/[publicID]/+server.js": {
     "file": "entries/endpoints/(general)/api/_publicID_/_server.js",
@@ -1038,6 +1094,33 @@
     "isEntry": true,
     "src": "src/routes/(general)/api/[publicID]/questions/new/+server.js"
   },
+  "src/routes/(general)/api/assignment/+server.js": {
+    "file": "entries/endpoints/(general)/api/assignment/_server.js",
+    "imports": [
+      "_mongo.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/api/assignment/+server.js"
+  },
+  "src/routes/(general)/api/assignments/+server.js": {
+    "file": "entries/endpoints/(general)/api/assignments/_server.js",
+    "imports": [
+      "_mongo.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/api/assignments/+server.js"
+  },
+  "src/routes/(general)/api/assignments/[assignmentID]/+server.js": {
+    "file": "entries/endpoints/(general)/api/assignments/_assignmentID_/_server.js",
+    "imports": [
+      "_mongo.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/api/assignments/[assignmentID]/+server.js"
+  },
   "src/routes/(general)/api/login/+server.js": {
     "file": "entries/endpoints/(general)/api/login/_server.js",
     "imports": [
@@ -1070,6 +1153,15 @@
     "isEntry": true,
     "src": "src/routes/(general)/api/signup/+server.js"
   },
+  "src/routes/(general)/api/submissions/+server.js": {
+    "file": "entries/endpoints/(general)/api/submissions/_server.js",
+    "imports": [
+      "_mongo.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/api/submissions/+server.js"
+  },
   "src/routes/(general)/api/userDetail/+server.js": {
     "file": "entries/endpoints/(general)/api/userDetail/_server.js",
     "imports": [
@@ -1078,6 +1170,87 @@
     ],
     "isEntry": true,
     "src": "src/routes/(general)/api/userDetail/+server.js"
+  },
+  "src/routes/(general)/assignments/+page.js": {
+    "file": "entries/pages/(general)/assignments/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/assignments/+page.js"
+  },
+  "src/routes/(general)/assignments/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.sFztbMp9.css",
+      "_app/immutable/assets/Assignment.yl7wM7VN.css"
+    ],
+    "file": "entries/pages/(general)/assignments/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_client.js",
+      "_ActionIcons.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_Cell.js",
+      "_Suffix.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/assignments/+page.svelte"
+  },
+  "src/routes/(general)/assignments/[assignmentID]/+page.js": {
+    "file": "entries/pages/(general)/assignments/_assignmentID_/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/assignments/[assignmentID]/+page.js"
+  },
+  "src/routes/(general)/assignments/[assignmentID]/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.sFztbMp9.css"
+    ],
+    "file": "entries/pages/(general)/assignments/_assignmentID_/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_client.js",
+      "_ActionIcons.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_Suffix.js",
+      "_stores3.js",
+      "_Assignment.js",
+      "_TestQuestion.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/assignments/[assignmentID]/+page.svelte"
+  },
+  "src/routes/(general)/assignments/[assignmentID]/solution/+page.js": {
+    "file": "entries/pages/(general)/assignments/_assignmentID_/solution/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/assignments/[assignmentID]/solution/+page.js"
+  },
+  "src/routes/(general)/assignments/[assignmentID]/solution/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.2tKBAr1c.css"
+    ],
+    "file": "entries/pages/(general)/assignments/_assignmentID_/solution/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_ActionIcons.js",
+      "_Suffix.js",
+      "_stores3.js",
+      "_Assignment.js",
+      "_ShowQuestion.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/assignments/[assignmentID]/solution/+page.svelte"
   },
   "src/routes/(general)/auth/+page.server.js": {
     "file": "entries/pages/(general)/auth/_page.server.js",
@@ -2121,6 +2294,8 @@
       "_client.js",
       "_Card.js",
       "_ActionIcons.js",
+      "_Button.js",
+      "_CommonLabel.js",
       "_NavList.js",
       "_stores3.js",
       "_content2.js",
@@ -2143,15 +2318,46 @@
     ],
     "file": "entries/pages/(general)/courses/mathematics2/_assignmentID_/_page.svelte.js",
     "imports": [
+      "_utils.js",
       "_ssr.js",
+      "_stores.js",
+      "_client.js",
+      "_ActionIcons.js",
+      "_Button.js",
+      "_Suffix.js",
+      "_stores3.js",
+      "_Assignment.js",
+      "_TestQuestion.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/[assignmentID]/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/[assignmentID]/solution/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/_assignmentID_/solution/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/[assignmentID]/solution/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/[assignmentID]/solution/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.2tKBAr1c.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/_assignmentID_/solution/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
       "_client.js",
       "_ActionIcons.js",
       "_Suffix.js",
+      "_stores3.js",
       "_Assignment.js",
       "_ShowQuestion.js"
     ],
     "isEntry": true,
-    "src": "src/routes/(general)/courses/mathematics2/[assignmentID]/+page.svelte"
+    "src": "src/routes/(general)/courses/mathematics2/[assignmentID]/solution/+page.svelte"
   },
   "src/routes/(general)/courses/mathematics2/statistics/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/statistics/_page.js",

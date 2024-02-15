@@ -13,6 +13,10 @@ export const initializeNewAssignment = (title, university, department, session, 
         totalMarks: 100,
         numberOfQuestions: 10,
         questions: [],
+        dates: {
+            start: Date.now(),
+            end: Date.now()
+        },
         creationTimestamp: Date.now(), //private
     }
     return newAssignment;

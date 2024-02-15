@@ -18,6 +18,10 @@
         courseCode= 'CA',
         totalMarks= 100,
         numberOfQuestions= 10,
+        dates = {
+            start: Date.now(),
+            end: Date.now()
+        }
         questions= [];
     let options = ['A', 'B', 'C', 'D'];
     let types = ['Objective', 'Subjective'];
@@ -33,7 +37,8 @@
             courseCode,
             totalMarks,
             numberOfQuestions,
-            questions
+            questions,
+            dates
         }
         let res = await fetch("/api/${$page.data.user.publicID}/assignments/new", {
             method: 'POST',
@@ -130,6 +135,18 @@
                 label="Number of Questions"
                 bind:value={numberOfQuestions}
                 style="width:100%"
+            />
+            <Textfield 
+                variant="outlined"
+                type="date"
+                label="Start"
+                bind:value={dates.start}
+            />
+            <Textfield 
+                variant="outlined"
+                type="date"
+                label="End"
+                bind:value={dates.end}
             />
         </Content>
         <Actions>

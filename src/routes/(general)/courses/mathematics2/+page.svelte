@@ -8,6 +8,8 @@
     import Card, { Content, Actions } from "@smui/card";
     import Button from "@smui/button";
     import Ripple from "@smui/ripple";
+    import SegmentedButton, { Segment } from '@smui/segmented-button';
+    import { Label } from '@smui/common';
     import NavList from '$lib/components/NavList.svelte'
     import { currentPath } from "$lib/stores";
     import { darkMode, navList } from "$lib/stores";
@@ -77,16 +79,22 @@
         <NavList name="{$navList[0].name}" url="{$navList[0].url}" topics={$navList[0].topics} expanded />
     </Card>
     <h5>Assignments</h5>
-    <!-- <Card>
+    <Card>
         <Content>
-            <List>
+            {#each data.assignments as assignment}
+                <div>
+                    <Button on:click={() => goto(`/assignments/${assignment._id}`)}><Label>{assignment.title}</Label></Button>
+                </div>
+            {/each}
+            <!-- <List>
                 {#each data.assignments as assignment}
+
                     <Item on:SMUI:action={() => goto(`/courses/mathematics2/${assignment._id}`)}>
                         <Graphic class="material-icons">local_library</Graphic>
                         <Text>{assignment.title}</Text>
                     </Item>
                 {/each}
-            </List>
+            </List> -->
         </Content>
-    </Card> -->
+    </Card>
 </article>
