@@ -59,19 +59,19 @@
         <div class="options">
             <FormField>
                 <Checkbox checked={question.correct.indexOf('A') !== -1} />
-                <span slot="label">{@html question.optionA}</span>
+                <span slot="label" use:typeset>{@html question.optionA}</span>
             </FormField>
             <FormField>
                 <Checkbox checked={question.correct.indexOf('B') !== -1} />
-                <span slot="label">{@html question.optionB}</span>
+                <span slot="label" use:typeset>{@html question.optionB}</span>
             </FormField>
             <FormField>
                 <Checkbox checked={question.correct.indexOf('C') !== -1} />
-                <span slot="label">{@html question.optionC}</span>
+                <span slot="label" use:typeset>{@html question.optionC}</span>
             </FormField>
             <FormField>
                 <Checkbox checked={question.correct.indexOf('D') !== -1} />
-                <span slot="label">{@html question.optionD}</span>
+                <span slot="label" use:typeset>{@html question.optionD}</span>
             </FormField>
         </div>
         <div class="solution" use:typeset>{@html question.solution}</div>

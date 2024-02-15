@@ -67,19 +67,19 @@
             <div class="options">
                 <FormField>
                     <Checkbox bind:group={answer} value={'A'} />
-                    <span slot="label">{@html question.optionA}</span>
+                    <span slot="label" use:typeset>{@html question.optionA}</span>
                 </FormField>
                 <FormField>
                     <Checkbox bind:group={answer} value={'B'}/>
-                    <span slot="label">{@html question.optionB}</span>
+                    <span slot="label" use:typeset>{@html question.optionB}</span>
                 </FormField>
                 <FormField>
                     <Checkbox bind:group={answer} value={'C'} />
-                    <span slot="label">{@html question.optionC}</span>
+                    <span slot="label" use:typeset>{@html question.optionC}</span>
                 </FormField>
                 <FormField>
                     <Checkbox bind:group={answer} value={'D'} />
-                    <span slot="label">{@html question.optionD}</span>
+                    <span slot="label" use:typeset>{@html question.optionD}</span>
                 </FormField>
             </div>
         {/if}
