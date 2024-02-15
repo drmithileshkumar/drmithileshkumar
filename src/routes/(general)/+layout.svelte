@@ -85,7 +85,9 @@
     <Drawer style="width:180px;" variant='modal' bind:open={$showLeft}>
         <Content>
             <header class='nav'>
-                <Nav/>
+                {#key $page.data.user}
+                <Nav />
+                {/key}
             </header>
         </Content>
     </Drawer>

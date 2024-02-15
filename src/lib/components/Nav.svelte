@@ -13,71 +13,19 @@
     import { Svg } from '@smui/common';
     import { goto } from "$app/navigation";
     import { page } from "$app/stores";
-    import { profileImage, navList } from "$lib/stores";
+    import { profileImage, navList, isAuth } from "$lib/stores";
 
-    export let isAuth = null;
+    $: $isAuth = $page.data.user;
 </script>
 
 <nav>
     <div class="top">
-        <!-- <List twoLine avatarList>
-            {#if isAuth}
-                <Item on:click={() => goto("/auth")}>
-                    <Graphic>
-                        <img
-                            class="round"
-                            width="40px"
-                            height="40px"
-                            src={$profileImage}
-                            alt="Profile"
-                        />
-                    </Graphic>
-                    <Text>
-                        <PrimaryText>{isAuth.name}</PrimaryText>
-                        <SecondaryText>{isAuth.publicID}</SecondaryText>
-                    </Text>
-                </Item>
-            {:else}
-                <Item>
-                    <Button on:click={() => goto("/auth")}
-                        >Log in / Sign up</Button
-                    >
-                </Item>
-            {/if}
-        </List> -->
         <List>
-            {#if isAuth}
-                <Item
-                    on:SMUI:action={() => goto(`/${$page.data.user.publicID}`)}
-                >
-                    <Graphic class="material-icons">person</Graphic>
-                    <Text>Profile</Text>
-                </Item>
-                <!-- <Item
-                    on:SMUI:action={() => goto(`/${$page.data.user.publicID}/questions`)}
-                >
-                    <Graphic class="material-icons">card_membership</Graphic>
-                    <Text>Questions</Text>
-                </Item> -->
-                <Item
-                    on:SMUI:action={() => goto(`/${$page.data.user.publicID}/quiz`)}
-                >
-                    <Graphic class="material-icons">card_membership</Graphic>
-                    <Text>Quizzes</Text>
-                </Item>
-                <Separator />
-            {/if}
             <Item
                 on:SMUI:action={() => goto(`/courses`)}
             >
                 <Graphic class="material-icons">local_library</Graphic>
                 <Text>Courses</Text>
-            </Item>
-            <Item
-                on:SMUI:action={() => goto(`/assignments`)}
-            >
-                <Graphic class="material-icons">assignment</Graphic>
-                <Text>Assignments</Text>
             </Item>
             <Item
                 on:SMUI:action={() => goto(`/students`)}
@@ -328,41 +276,34 @@
             </Item>
             
         </List>
-        <List>
-            <!-- {#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] as cl}
-                <Item on:SMUI:action={() => goto(`/class_${cl}`)}>
-                    <Graphic class="material-icons">view_headline</Graphic>
-                    <Text>Class {cl}</Text>
-                </Item>
-            {/each} -->
-            <!-- <Item on:SMUI:action={() => goto("/home")}>
-                <Graphic class="material-icons">home</Graphic>
-                <Text>Home</Text>
-            </Item> -->
-            <!-- {#if $navList.length > 0}
-                <Separator />
-                {#each $navList as link}
-                    <Item on:SMUI:action={() => goto(`/${$page.data.user.publicID}${link.url}`)}>
-                        <Graphic class="material-icons">menu_book</Graphic>
-                        <Text>{link.name}</Text>
-                    </Item>
-                {/each}
-            {/if} -->
-            <!-- <Item on:SMUI:action={() => goto('/settings')}>
-                <Graphic class="material-icons">settings</Graphic>
-                <Text>Settings</Text>
-            </Item> -->
-        </List>
-        <!-- <Separator />
-        {#if isAuth}
-            <div class="post">
-                <Button on:click={() => goto("/compose")}>
-                    <Label>Create Post</Label>
-                </Button>
-            </div>
-        {/if} -->
     </div>
-    <div class="bottom" />
+    <div class="bottom">
+        <List twoLine avatarList>
+            {#if $isAuth}
+                <Item on:click={() => goto(`/${$page.data.user.publicID}`)}>
+                    <Graphic>
+                        <img
+                            class="round"
+                            width="40px"
+                            height="40px"
+                            src={$profileImage}
+                            alt="Profile"
+                        />
+                    </Graphic>
+                    <Text>
+                        <PrimaryText>{$isAuth.name}</PrimaryText>
+                        <SecondaryText>{$isAuth.publicID}</SecondaryText>
+                    </Text>
+                </Item>
+            {:else}
+                <Item>
+                    <Button on:click={() => goto("/auth")}
+                        >Log in / Sign up</Button
+                    >
+                </Item>
+            {/if}
+        </List>
+    </div>
 </nav>
 
 <style>

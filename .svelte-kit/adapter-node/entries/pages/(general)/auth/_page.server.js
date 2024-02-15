@@ -1,11 +1,13 @@
 import { r as redirect } from "../../../../chunks/index.js";
 async function load({ locals }) {
+  if (locals.user)
+    throw redirect(307, `/${locals.user.publicID}`);
 }
 const actions = {
   logout: async ({ cookies, locals }) => {
     cookies.delete("jwt", { path: "/" });
     locals.user = null;
-    redirect(300, "/auth");
+    redirect(300, "/");
   }
   // save: async ({ cookies, locals, request }) => {
   // 	if (!locals.user) throw error(401);

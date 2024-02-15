@@ -7,9 +7,9 @@
     import Textfield from "@smui/textfield";
     import HelperText from "@smui/textfield/helper-text";
     import { enhance } from "$app/forms";
-    import { goto, invalidateAll } from "$app/navigation";
+    import { goto, invalidate, invalidateAll } from "$app/navigation";
     import { page } from "$app/stores";
-    import { loggedInUser, profileImage } from "$lib/stores";
+    import { loggedInUser, profileImage, isAuth } from "$lib/stores";
     import ScanQR from "$lib/qr/ScanQR.svelte";
     import GenerateQR from "$lib/qr/GenerateQR.svelte";
     import { onMount } from "svelte";
@@ -66,8 +66,16 @@
         }
         // let user = await res.json();
         await setProfileImage();
-        invalidateAll();
-        // goto(`/${$page.data.user.publicID}`)
+        // invalidateAll();
+        setTimeout(() => {
+            invalidateAll();
+        }, 0)
+        // $isAuth = $page.data.user;
+        // setTimeout(() => {
+        //     goto(`/${$page.data.user.publicID}`)
+        //     $isAuth = $page.data.user;
+        // }, 100)
+        
 
         // if(user)  {
 
@@ -153,25 +161,7 @@
     <meta name="description" content="Home of Dr Mithilesh Kumar" />
 </svelte:head>
 <article>
-    {#if $page.data.user || generateQR}
-        <Card>
-            <Content style="display:flex;align-items:center;justify-content:center;">
-                <div class="authQR">
-                    <GenerateQR
-                        data={privateID + " " + otpID}
-                        filename={publicID}
-                        autoDownload={false}
-                    />
-                </div>
-            </Content>
-            <Actions>
-                <form use:enhance method="POST" action="?/logout">
-                    <!-- <button class="btn btn-outline-danger">Or click here to logout.</button> on:click={(e) => (e.preventDefault(), logout())}-->
-                    <Button style="width:100%;" class="logout">Log out</Button>
-                </form>
-            </Actions>
-        </Card>
-    {:else}
+    {#if !$page.data.user}
         <Card>
             <Content style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap: 0.5em;">
                 <!-- {#if $Guest}

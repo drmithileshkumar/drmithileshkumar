@@ -14,7 +14,8 @@ import { p as page } from "../../../../chunks/stores.js";
 import { a as scannedQR, G as Guest, c as currentPath } from "../../../../chunks/stores3.js";
 import "html5-qrcode";
 import "qrcode-generator";
-const css$2 = {
+/* empty css                                                          */
+const css$1 = {
   code: "#reader.svelte-17pu3xa{background:#888;width:200px;height:200px;display:flex;justify-content:center;align-items:center;margin-top:0.5em;margin-bottom:0.5em}",
   map: null
 };
@@ -23,7 +24,7 @@ const ScanQR = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_scannedQR = subscribe(scannedQR, (value) => value);
   let qrContainer;
   createEventDispatcher();
-  $$result.css.add(css$2);
+  $$result.css.add(css$1);
   $$unsubscribe_scannedQR();
   return `<div id="reader" width="200px" height="200px" class="svelte-17pu3xa"${add_attribute("this", qrContainer, 0)}></div> ${validate_component(Button, "Button").$$render($$result, { class: "upload" }, {}, {
     default: () => {
@@ -31,27 +32,8 @@ const ScanQR = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   })} <input style="display: none;" type="file" accept="image/*" id="input-file" name="input-file">`;
 });
-const css$1 = {
-  code: "#generatedQRCode.svelte-o78zgt img.svelte-o78zgt{width:200px;height:200px}",
-  map: null
-};
-const GenerateQR = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { data } = $$props;
-  let { filename } = $$props;
-  let { autoDownload = true } = $$props;
-  createEventDispatcher();
-  let qrlink;
-  if ($$props.data === void 0 && $$bindings.data && data !== void 0)
-    $$bindings.data(data);
-  if ($$props.filename === void 0 && $$bindings.filename && filename !== void 0)
-    $$bindings.filename(filename);
-  if ($$props.autoDownload === void 0 && $$bindings.autoDownload && autoDownload !== void 0)
-    $$bindings.autoDownload(autoDownload);
-  $$result.css.add(css$1);
-  return `<span id="generatedQRCode" class="svelte-o78zgt"><img${add_attribute("src", qrlink, 0)} alt="" class="svelte-o78zgt"></span> ${``}`;
-});
 const css = {
-  code: "article.svelte-3iqa1b{width:100%}.authQR.svelte-3iqa1b{display:flex;flex-direction:column;justify-content:center;align-items:center}.details.svelte-3iqa1b{display:flex;flex-direction:column;gap:1.5em;justify-content:center;align-items:center}",
+  code: "article.svelte-3iqa1b{width:100%}.details.svelte-3iqa1b{display:flex;flex-direction:column;gap:1.5em;justify-content:center;align-items:center}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -65,8 +47,6 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let choices = ["Log in", "Sign up"];
   let selected = "Log in";
   let phone = null, name = null;
-  let generateQR = false;
-  let privateID, otpID, publicID;
   let scanned = false;
   $$result.css.add(css);
   let $$settled;
@@ -75,39 +55,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   do {
     $$settled = true;
     $$result.head = previous_head;
-    $$rendered = `${$$result.head += `<!-- HEAD_svelte-1eo24a5_START -->${$$result.title = `<title>Authentication</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/auth"><meta name="description" content="Home of Dr Mithilesh Kumar"><!-- HEAD_svelte-1eo24a5_END -->`, ""} <article class="svelte-3iqa1b">${$page.data.user || generateQR ? `${validate_component(Card, "Card").$$render($$result, {}, {}, {
-      default: () => {
-        return `${validate_component(Content, "Content").$$render(
-          $$result,
-          {
-            style: "display:flex;align-items:center;justify-content:center;"
-          },
-          {},
-          {
-            default: () => {
-              return `<div class="authQR svelte-3iqa1b">${validate_component(GenerateQR, "GenerateQR").$$render(
-                $$result,
-                {
-                  data: privateID + " " + otpID,
-                  filename: publicID,
-                  autoDownload: false
-                },
-                {},
-                {}
-              )}</div>`;
-            }
-          }
-        )} ${validate_component(Actions, "Actions").$$render($$result, {}, {}, {
-          default: () => {
-            return `<form method="POST" action="?/logout"> ${validate_component(Button, "Button").$$render($$result, { style: "width:100%;", class: "logout" }, {}, {
-              default: () => {
-                return `Log out`;
-              }
-            })}</form>`;
-          }
-        })}`;
-      }
-    })}` : `${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    $$rendered = `${$$result.head += `<!-- HEAD_svelte-1eo24a5_START -->${$$result.title = `<title>Authentication</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/auth"><meta name="description" content="Home of Dr Mithilesh Kumar"><!-- HEAD_svelte-1eo24a5_END -->`, ""} <article class="svelte-3iqa1b">${!$page.data.user ? `${validate_component(Card, "Card").$$render($$result, {}, {}, {
       default: () => {
         return `${validate_component(Content, "Content").$$render(
           $$result,
@@ -211,7 +159,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           }
         })}`;
       }
-    })} `} </article>`;
+    })} ` : ``} </article>`;
   } while (!$$settled);
   $$unsubscribe_Guest();
   $$unsubscribe_page();

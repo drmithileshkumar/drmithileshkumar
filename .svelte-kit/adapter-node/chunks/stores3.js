@@ -1,4 +1,5 @@
 import { w as writable } from "./index2.js";
+const isAuth = writable(false);
 const Guest = writable(false);
 const TopBarHeight = writable(0);
 const refreshApp = writable(false);
@@ -26,6 +27,7 @@ export {
   currentPath as c,
   darkMode as d,
   showRight as e,
+  isAuth as i,
   navList as n,
   profileImage as p,
   refreshApp as r,

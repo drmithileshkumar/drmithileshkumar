@@ -12,13 +12,19 @@
         'Mathematics II': {
             name: 'Mathematics II',
             url: 'mathematics2',
-            courseID: 'CA',
+            courseID: '22CA1201',
             sessions: ["2023-2024"]
         },
         'Internet Technologies': {
             name: 'Internet Technologies',
             url: 'internet',
             courseID: '22CA2402',
+            sessions: ["2023-2024"]
+        },
+        'Internet Technologies Lab': {
+            name: 'Internet Technologies Lab',
+            url: 'internetlab',
+            courseID: '22CA2405',
             sessions: ["2023-2024"]
         }
     }

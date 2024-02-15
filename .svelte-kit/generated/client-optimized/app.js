@@ -521,7 +521,7 @@ export const dictionary = {
 		"/(general)/talks/quantumstatus": [262,[4]],
 		"/(general)/talks/quantumteleportation": [263,[4,21]],
 		"/(about)/teaching": [25,[2]],
-		"/(general)/[publicID]": [265,[4]],
+		"/(general)/[publicID]": [~265,[4]],
 		"/(general)/[publicID]/assignments": [266,[4]],
 		"/(general)/[publicID]/assignments/new": [267,[4]],
 		"/(general)/[publicID]/assignments/[assignmentID]": [268,[4]],

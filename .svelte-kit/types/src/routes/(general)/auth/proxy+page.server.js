@@ -5,7 +5,8 @@ import { fail, redirect } from '@sveltejs/kit';
 
 /** @param {Parameters<import('./$types').PageServerLoad>[0]} event */
 export async function load({ locals }) {
-	// if (locals.user) throw redirect(307, `/${locals.user.publicID}`);
+	// console.log('Logged in user', locals.user);
+	if (locals.user) throw redirect(307, `/${locals.user.publicID}`);
 }
 
 /** */
@@ -13,7 +14,7 @@ export const actions = {
 	logout:/** @param {import('./$types').RequestEvent} event */  async ({ cookies, locals }) => {
 		cookies.delete('jwt', { path: '/' });
 		locals.user = null;
-		redirect(300,'/auth');
+		redirect(300,'/');
 	}
 
 	// save: async ({ cookies, locals, request }) => {

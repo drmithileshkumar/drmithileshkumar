@@ -1,5 +1,5 @@
 import { c as compute_rest_props, s as subscribe, b as set_store_value, i as is_promise, n as noop } from "../../../../chunks/utils.js";
-import { c as create_ssr_component, a as get_current_component, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, g as getContext, h as setContext, v as validate_component, m as missing_component, k as each, e as escape } from "../../../../chunks/ssr.js";
+import { c as create_ssr_component, i as createEventDispatcher, f as add_attribute, a as get_current_component, s as spread, b as escape_attribute_value, d as escape_object, g as getContext, h as setContext, v as validate_component, m as missing_component, k as each, e as escape } from "../../../../chunks/ssr.js";
 import { C as Card } from "../../../../chunks/Card.js";
 import { C as Content } from "../../../../chunks/ActionIcons.js";
 import { B as Button } from "../../../../chunks/Button.js";
@@ -10,8 +10,33 @@ import { R as Ripple } from "../../../../chunks/Ripple.js";
 import { MDCFadingTabIndicatorFoundation, MDCSlidingTabIndicatorFoundation } from "@material/tab-indicator";
 import { p as page } from "../../../../chunks/stores.js";
 import "../../../../chunks/client.js";
+import { A as Actions } from "../../../../chunks/Actions.js";
+import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../chunks/Cell.js";
 import "../../../../chunks/Subheader.js";
-import { c as currentPath } from "../../../../chunks/stores3.js";
+import { c as currentPath, i as isAuth } from "../../../../chunks/stores3.js";
+import "html5-qrcode";
+import "qrcode-generator";
+/* empty css                                                          */
+import "devalue";
+const css$2 = {
+  code: "#generatedQRCode.svelte-o78zgt img.svelte-o78zgt{width:200px;height:200px}",
+  map: null
+};
+const GenerateQR = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { data } = $$props;
+  let { filename } = $$props;
+  let { autoDownload = true } = $$props;
+  createEventDispatcher();
+  let qrlink;
+  if ($$props.data === void 0 && $$bindings.data && data !== void 0)
+    $$bindings.data(data);
+  if ($$props.filename === void 0 && $$bindings.filename && filename !== void 0)
+    $$bindings.filename(filename);
+  if ($$props.autoDownload === void 0 && $$bindings.autoDownload && autoDownload !== void 0)
+    $$bindings.autoDownload(autoDownload);
+  $$result.css.add(css$2);
+  return `<span id="generatedQRCode" class="svelte-o78zgt"><img${add_attribute("src", qrlink, 0)} alt="" class="svelte-o78zgt"></span> ${``}`;
+});
 const TabIndicator = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, [
     "use",
@@ -667,7 +692,7 @@ const User = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       if (profile === "data:")
         profile = "/avatar.svg";
     }
-    tabs = ["Assignments"];
+    tabs = ["Assignments", "Log Out"];
     $$rendered = `${validate_component(Card, "Card").$$render($$result, {}, {}, {
       default: () => {
         return `<div class="photos svelte-14hlhok"><div class="banner svelte-14hlhok"><img${add_attribute("src", banner, 0)} alt="banner" class="svelte-14hlhok"></div> <div class="profile svelte-14hlhok"><img${add_attribute("src", profile, 0)} alt="" class="svelte-14hlhok"></div></div> <div class="action svelte-14hlhok">${$page.data.user && $page.data.user.publicID === currentUser.publicID ? `${validate_component(Button, "Button").$$render($$result, {}, {}, {
@@ -708,30 +733,25 @@ const User = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return $$rendered;
 });
 const css = {
-  code: "article.svelte-2x9uf8{width:100%;display:flex;flex-direction:column;gap:0.5em}",
+  code: "article.svelte-u7i3fp{width:100%;display:flex;flex-direction:column;gap:0.5em}.authQR.svelte-u7i3fp{display:flex;flex-direction:column;justify-content:center;align-items:center}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $page, $$unsubscribe_page;
+  let $isAuth, $$unsubscribe_isAuth;
   let $currentPath, $$unsubscribe_currentPath;
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
+  $$unsubscribe_isAuth = subscribe(isAuth, (value) => $isAuth = value);
   $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
   let { data } = $$props;
   let profile = "", banner;
-  const getPosts = async () => {
-    const resPosts = await fetch(`/api/${$page.params.publicID}/posts`);
-    if (!resPosts.ok)
+  let privateID, otpID, publicID;
+  const getAssignments = async () => {
+    const res = await fetch(`/api/assignments`);
+    if (!res.ok) {
       return [];
-    else {
-      return await resPosts.json();
-    }
-  };
-  const getComments = async () => {
-    const resComments = await fetch(`/api/${$page.params.publicID}/comments`);
-    if (!resComments.ok)
-      return [];
-    else {
-      return await resComments.json();
+    } else {
+      return await res.json();
     }
   };
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
@@ -744,7 +764,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$settled = true;
     $$result.head = previous_head;
     set_store_value(currentPath, $currentPath = `${$page.params.publicID}`, $currentPath);
-    $$rendered = `${$$result.head += `<!-- HEAD_svelte-g9k9eo_START -->${$$result.title = `<title>Mathril</title>`, ""}<meta name="description" content="Mathematics workout for all."><meta name="keywords" content="mathril.com, mathematics"><link rel="canonical" href="${"https://mathril.com/$" + escape(data.currentUser.publicID, true)}"><!-- HEAD_svelte-g9k9eo_END -->`, ""} <article class="svelte-2x9uf8"> ${validate_component(User, "User").$$render(
+    set_store_value(isAuth, $isAuth = $page.data.user, $isAuth);
+    $$rendered = `${$$result.head += `<!-- HEAD_svelte-1rvdi7m_START -->${$$result.title = `<title>Dr Mithilesh Kumar</title>`, ""}<meta name="description" content="Dr Mithilesh Kuamr"><meta name="keywords" content="drmithileshkumar.com, mathematics"><link rel="canonical" href="${"https://drmithileshkumar.com/$" + escape(data.currentUser.publicID, true)}"><!-- HEAD_svelte-1rvdi7m_END -->`, ""} <article class="svelte-u7i3fp"> ${validate_component(User, "User").$$render(
       $$result,
       {
         banner,
@@ -760,25 +781,120 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       },
       {}
-    )} ${data.active === "Posts" ? `${function(__value) {
+    )} ${data.active === "Assignments" ? `${function(__value) {
       if (is_promise(__value)) {
         __value.then(null, noop);
         return ``;
       }
-      return function(posts) {
-        return ` ${validate_component(Posts, "Posts").$$render($$result, { posts, profile }, {}, {})} `;
+      return function(assignments) {
+        return ` ${validate_component(DataTable, "Datatable").$$render($$result, { style: "width:100%" }, {}, {
+          default: () => {
+            return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
+              default: () => {
+                return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                  default: () => {
+                    return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                      default: () => {
+                        return `CourseID`;
+                      }
+                    })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                      default: () => {
+                        return `Title`;
+                      }
+                    })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                      default: () => {
+                        return `Status`;
+                      }
+                    })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                      default: () => {
+                        return `Action`;
+                      }
+                    })}`;
+                  }
+                })}`;
+              }
+            })} ${validate_component(Body, "Body").$$render($$result, {}, {}, {
+              default: () => {
+                return `${each(assignments, (assignment) => {
+                  return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `${escape(assignment.courseID)}`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `${escape(assignment.title)}`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `${escape(assignment.status)}`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `${assignment.status === "Draft" ? `${validate_component(Button, "Button").$$render($$result, {}, {}, {
+                            default: () => {
+                              return `${validate_component(CommonLabel, "Label").$$render($$result, {}, {}, {
+                                default: () => {
+                                  return `Go`;
+                                }
+                              })}`;
+                            }
+                          })}` : `${validate_component(Button, "Button").$$render($$result, {}, {}, {
+                            default: () => {
+                              return `${validate_component(CommonLabel, "Label").$$render($$result, {}, {}, {
+                                default: () => {
+                                  return `Solution`;
+                                }
+                              })}`;
+                            }
+                          })}`} `;
+                        }
+                      })} `;
+                    }
+                  })}`;
+                })}`;
+              }
+            })}`;
+          }
+        })} `;
       }(__value);
-    }(getPosts())}` : `${data.active === "Comments" ? `${function(__value) {
-      if (is_promise(__value)) {
-        __value.then(null, noop);
-        return ``;
+    }(getAssignments())}` : `${data.active === "Log Out" ? `${validate_component(Card, "Card").$$render($$result, {}, {}, {
+      default: () => {
+        return `${validate_component(Content, "Content").$$render(
+          $$result,
+          {
+            style: "display:flex;align-items:center;justify-content:center;"
+          },
+          {},
+          {
+            default: () => {
+              return `<div class="authQR svelte-u7i3fp">${validate_component(GenerateQR, "GenerateQR").$$render(
+                $$result,
+                {
+                  data: privateID + " " + otpID,
+                  filename: publicID,
+                  autoDownload: false
+                },
+                {},
+                {}
+              )}</div>`;
+            }
+          }
+        )} ${validate_component(Actions, "Actions").$$render($$result, {}, {}, {
+          default: () => {
+            return `<form method="POST" action="?/logout"> ${validate_component(Button, "Button").$$render($$result, { style: "width:100%;", class: "logout" }, {}, {
+              default: () => {
+                return `Log out`;
+              }
+            })}</form>`;
+          }
+        })}`;
       }
-      return function(comments) {
-        return ` ${validate_component(Comments, "Comments").$$render($$result, { comments, profile }, {}, {})} `;
-      }(__value);
-    }(getComments())}` : `${data.active === "Likes" ? `${validate_component(Likes, "Likes").$$render($$result, { profile }, {}, {})}` : `${data.active?.includes("Following") ? `${validate_component(Followings, "Followings").$$render($$result, { profile }, {}, {})}` : `${data.active?.includes("Followers") ? `${validate_component(Followers, "Followers").$$render($$result, { profile }, {}, {})}` : ``}`}`}`}`} </article>`;
+    })}` : ``}`} </article>`;
   } while (!$$settled);
   $$unsubscribe_page();
+  $$unsubscribe_isAuth();
   $$unsubscribe_currentPath();
   return $$rendered;
 });

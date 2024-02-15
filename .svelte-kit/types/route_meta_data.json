@@ -1039,6 +1039,7 @@
 	],
 	"/(general)/[publicID]": [
 		"src/routes/(general)/[publicID]/+page.js",
+		"src/routes/(general)/[publicID]/+page.server.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/[publicID]/assignments": [

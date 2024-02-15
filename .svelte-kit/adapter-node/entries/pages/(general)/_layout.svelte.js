@@ -1,15 +1,16 @@
-import { c as compute_rest_props, s as subscribe, d as null_to_empty } from "../../../chunks/utils.js";
+import { c as compute_rest_props, s as subscribe, b as set_store_value, d as null_to_empty } from "../../../chunks/utils.js";
 import { c as create_ssr_component, a as get_current_component, h as setContext, o as onDestroy, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, v as validate_component, m as missing_component, g as getContext, e as escape } from "../../../chunks/ssr.js";
 import { MDCDismissibleDrawerFoundation, MDCModalDrawerFoundation } from "@material/drawer";
 import { f as forwardEventsBuilder, c as classMap, a as classAdderBuilder, S as SmuiElement, g as globals } from "../../../chunks/classAdderBuilder.js";
 import { d as dispatch, L as List, I as Item } from "../../../chunks/Item.js";
 import { R as Ripple } from "../../../chunks/Ripple.js";
 import { S as Svg, N as NavList, C as CommonIcon } from "../../../chunks/NavList.js";
-import { T as Text } from "../../../chunks/Subheader.js";
+import { T as Text, P as PrimaryText, S as SecondaryText } from "../../../chunks/Subheader.js";
 import { G as Graphic } from "../../../chunks/Graphic.js";
+import { B as Button } from "../../../chunks/Button.js";
 import "../../../chunks/client.js";
 import { p as page } from "../../../chunks/stores.js";
-import { n as navList, e as showRight, r as refreshApp, d as darkMode, T as TopBarHeight, s as showLeft, c as currentPath } from "../../../chunks/stores3.js";
+import { i as isAuth, p as profileImage, n as navList, e as showRight, r as refreshApp, d as darkMode, T as TopBarHeight, s as showLeft, c as currentPath } from "../../../chunks/stores3.js";
 import { C as Card } from "../../../chunks/Card.js";
 import { C as Content$1 } from "../../../chunks/ActionIcons.js";
 /* empty css                                                 */
@@ -480,40 +481,20 @@ const css$6 = {
   map: null
 };
 const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$unsubscribe_page;
-  $$unsubscribe_page = subscribe(page, (value) => value);
-  let { isAuth = null } = $$props;
-  if ($$props.isAuth === void 0 && $$bindings.isAuth && isAuth !== void 0)
-    $$bindings.isAuth(isAuth);
+  let $page, $$unsubscribe_page;
+  let $isAuth, $$unsubscribe_isAuth;
+  let $profileImage, $$unsubscribe_profileImage;
+  $$unsubscribe_page = subscribe(page, (value) => $page = value);
+  $$unsubscribe_isAuth = subscribe(isAuth, (value) => $isAuth = value);
+  $$unsubscribe_profileImage = subscribe(profileImage, (value) => $profileImage = value);
   $$result.css.add(css$6);
+  set_store_value(isAuth, $isAuth = $page.data.user, $isAuth);
   $$unsubscribe_page();
-  return `<nav class="svelte-1hx4pyo"><div class="top"> ${validate_component(List, "List").$$render($$result, {}, {}, {
+  $$unsubscribe_isAuth();
+  $$unsubscribe_profileImage();
+  return `<nav class="svelte-1hx4pyo"><div class="top">${validate_component(List, "List").$$render($$result, {}, {}, {
     default: () => {
-      return `${isAuth ? `${validate_component(Item, "Item").$$render($$result, {}, {}, {
-        default: () => {
-          return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
-            default: () => {
-              return `person`;
-            }
-          })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
-            default: () => {
-              return `Profile`;
-            }
-          })}`;
-        }
-      })}  ${validate_component(Item, "Item").$$render($$result, {}, {}, {
-        default: () => {
-          return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
-            default: () => {
-              return `card_membership`;
-            }
-          })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
-            default: () => {
-              return `Quizzes`;
-            }
-          })}`;
-        }
-      })} ${validate_component(Separator, "Separator").$$render($$result, {}, {}, {})}` : ``} ${validate_component(Item, "Item").$$render($$result, {}, {}, {
+      return `${validate_component(Item, "Item").$$render($$result, {}, {}, {
         default: () => {
           return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
             default: () => {
@@ -522,18 +503,6 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
             default: () => {
               return `Courses`;
-            }
-          })}`;
-        }
-      })} ${validate_component(Item, "Item").$$render($$result, {}, {}, {
-        default: () => {
-          return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
-            default: () => {
-              return `assignment`;
-            }
-          })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
-            default: () => {
-              return `Assignments`;
             }
           })}`;
         }
@@ -652,11 +621,39 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })} ${validate_component(List, "List").$$render($$result, {}, {}, {
+  })}</div> <div class="bottom">${validate_component(List, "List").$$render($$result, { twoLine: true, avatarList: true }, {}, {
     default: () => {
-      return `   `;
+      return `${$isAuth ? `${validate_component(Item, "Item").$$render($$result, {}, {}, {
+        default: () => {
+          return `${validate_component(Graphic, "Graphic").$$render($$result, {}, {}, {
+            default: () => {
+              return `<img class="round" width="40px" height="40px"${add_attribute("src", $profileImage, 0)} alt="Profile">`;
+            }
+          })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
+            default: () => {
+              return `${validate_component(PrimaryText, "PrimaryText").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${escape($isAuth.name)}`;
+                }
+              })} ${validate_component(SecondaryText, "SecondaryText").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${escape($isAuth.publicID)}`;
+                }
+              })}`;
+            }
+          })}`;
+        }
+      })}` : `${validate_component(Item, "Item").$$render($$result, {}, {}, {
+        default: () => {
+          return `${validate_component(Button, "Button").$$render($$result, {}, {}, {
+            default: () => {
+              return `Log in / Sign up`;
+            }
+          })}`;
+        }
+      })}`}`;
     }
-  })} </div> <div class="bottom"></div> </nav>`;
+  })}</div> </nav>`;
 });
 const css$5 = {
   code: ".title.svelte-y40hrq{font-size:1.2em}p.svelte-y40hrq{display:flex;align-items:center;gap:1em;font-size:0.8em;margin:0.5em 0}",
@@ -697,9 +694,9 @@ const css$1 = {
 const Sidebar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $navList, $$unsubscribe_navList;
   $$unsubscribe_navList = subscribe(navList, (value) => $navList = value);
-  let { isAuth = null } = $$props;
-  if ($$props.isAuth === void 0 && $$bindings.isAuth && isAuth !== void 0)
-    $$bindings.isAuth(isAuth);
+  let { isAuth: isAuth2 = null } = $$props;
+  if ($$props.isAuth === void 0 && $$bindings.isAuth && isAuth2 !== void 0)
+    $$bindings.isAuth(isAuth2);
   $$result.css.add(css$1);
   $$unsubscribe_navList();
   return `<aside class="svelte-kpoyhe">  ${$navList.length > 0 ? `${validate_component(Card, "Card").$$render($$result, {}, {}, {
@@ -762,6 +759,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $TopBarHeight, $$unsubscribe_TopBarHeight;
   let $showLeft, $$unsubscribe_showLeft;
   let $currentPath, $$unsubscribe_currentPath;
+  let $$unsubscribe_page;
   let $presentationMode, $$unsubscribe_presentationMode;
   $$unsubscribe_showRight = subscribe(showRight, (value) => $showRight = value);
   $$unsubscribe_refreshApp = subscribe(refreshApp, (value) => value);
@@ -769,6 +767,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_TopBarHeight = subscribe(TopBarHeight, (value) => $TopBarHeight = value);
   $$unsubscribe_showLeft = subscribe(showLeft, (value) => $showLeft = value);
   $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
+  $$unsubscribe_page = subscribe(page, (value) => value);
   $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   let W = 500;
   $$result.css.add(css);
@@ -905,6 +904,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_TopBarHeight();
   $$unsubscribe_showLeft();
   $$unsubscribe_currentPath();
+  $$unsubscribe_page();
   $$unsubscribe_presentationMode();
   return $$rendered;
 });

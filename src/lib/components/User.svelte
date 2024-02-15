@@ -14,7 +14,7 @@
     $: if(profile === 'data:') profile = '/avatar.svg';
     // $: if(banner === 'data:' || !banner || "data:image/png;base64") banner = '/landing/banner.svg';
     $: tabs = [
-        "Assignments"
+        "Assignments", "Log Out"
     ]
     // // $: console.log(banner)
     const handleClick = (tab) => {

@@ -3,26 +3,29 @@
     import User from "$lib/components/User.svelte";
     import { page } from "$app/stores";
     import Card, {Content, Actions} from '@smui/card';
+    import Datatable, {Head, Body, Row, Cell} from "@smui/data-table";
     import Button from '@smui/button';
     import List, { Separator } from "@smui/list";
     import Tab, { Label } from "@smui/tab";
     import TabBar from "@smui/tab-bar";
     import { goto, invalidate } from "$app/navigation";
-
+    import GenerateQR from "$lib/qr/GenerateQR.svelte";
     // import Posts from "$lib/components/Posts.svelte";
     // import Comments from '$lib/components/Comments.svelte';
     // import Likes from '$lib/components/Likes.svelte';
     // import Followers from "$lib/components/Followers.svelte";
     // import Followings from '$lib/components/Followings.svelte';
     import { onMount } from "svelte";
-    import { showLeft, currentPath, profileImage, navList, TopBarHeight } from "$lib/stores";
+    import { showLeft, currentPath, profileImage, navList, TopBarHeight, isAuth } from "$lib/stores";
     import { browser } from '$app/environment';
-    
+    import { enhance } from "$app/forms";
     $: $currentPath = `${$page.params.publicID}`;
     export let data;
     let profile = "", banner;
     let active;
-    
+    let generateQR = false,
+        downloadQR = false;
+    let ids, privateID, otpID, publicID;
     // $: tabs = $page.data.user && $page.data.user.publicID === data.currentUser.publicID && $page.data.user.rank.label === 'Teacher' ? ['Teacher Profile'] : ['Questions', 'Certificates', 'Transcripts', 'Invoices'];
     // let targetURL = {
     //     'Questions': `/${$page.data.user.publicID}/questions`,
@@ -81,7 +84,15 @@
             banner = e.target.result;
         };
     }
-    
+    $: $isAuth = $page.data.user;
+    const getAssignments = async () => {
+        const res = await fetch(`/api/assignments`);
+        if(!res.ok) {
+            return []
+        } else {
+            return await res.json();
+        }
+    }
     const getLikes = async () => {
         const resLikes = await fetch(`/api/${$page.params.publicID}/likes`)
         if(!resLikes.ok) return [];
@@ -144,20 +155,20 @@
 
 <svelte:head>
     <title
-        >Mathril</title
+        >Dr Mithilesh Kumar</title
     >
     <meta
         name="description"
-        content="Mathematics workout for all."
+        content="Dr Mithilesh Kuamr"
     />
     <meta
         name="keywords"
-        content="mathril.com, mathematics"
+        content="drmithileshkumar.com, mathematics"
     />
 
     <link
         rel="canonical"
-        href="https://mathril.com/${data.currentUser.publicID}"
+        href="https://drmithileshkumar.com/${data.currentUser.publicID}"
     />
 </svelte:head>
 <article>
@@ -174,20 +185,53 @@
     </div> -->
     <User {banner} {profile} currentUser={data.currentUser} currentUserDetail={data.currentUserDetail} bind:active={data.active} />
     
-    {#if data.active === 'Posts'}
-        {#await getPosts() then posts}
-            <Posts posts={posts} {profile}/>
+    {#if data.active === 'Assignments'}
+        {#await getAssignments() then assignments}
+            <Datatable style="width:100%">
+                <Head>
+                    <Row>
+                        <Cell>CourseID</Cell>
+                        <Cell>Title</Cell>
+                        <Cell>Status</Cell>
+                        <Cell>Action</Cell>
+                    </Row>
+                </Head>
+                <Body>
+                    {#each assignments as assignment}
+                        <Row>
+                            <Cell>{assignment.courseID}</Cell>
+                            <Cell>{assignment.title}</Cell>
+                            <Cell>{assignment.status}</Cell>
+                            <Cell>
+                                {#if assignment.status === 'Draft'}
+                                    <Button on:click={() => goto(`/assignments/${assignment.assignmentID}`)}><Label>Go</Label></Button>
+                                {:else}
+                                    <Button on:click={() => goto(`/assignments/${assignment.assignmentID}/solution`)}><Label>Solution</Label></Button>
+                                {/if}
+                            </Cell>
+                        </Row>
+                    {/each}
+                </Body>
+            </Datatable>
         {/await}
-    {:else if data.active === 'Comments'}
-        {#await getComments() then comments}
-            <Comments comments={comments} {profile}/>
-        {/await}
-    {:else if data.active === 'Likes'}
-        <Likes {profile}/>
-    {:else if data.active?.includes('Following')}
-        <Followings {profile}/>
-    {:else if data.active?.includes('Followers')}
-        <Followers {profile}/>
+    {:else if data.active === 'Log Out'}
+        <Card>
+            <Content style="display:flex;align-items:center;justify-content:center;">
+                <div class="authQR">
+                    <GenerateQR
+                        data={privateID + " " + otpID}
+                        filename={publicID}
+                        autoDownload={false}
+                    />
+                </div>
+            </Content>
+            <Actions>
+                <form use:enhance method="POST" action="?/logout">
+                    <!-- <button class="btn btn-outline-danger">Or click here to logout.</button> on:click={(e) => (e.preventDefault(), logout())}-->
+                    <Button style="width:100%;" class="logout">Log out</Button>
+                </form>
+            </Actions>
+        </Card>
     {/if}
 
 </article>
@@ -205,4 +249,10 @@
         top: 4em;
         z-index: 5;
     } */
+    .authQR {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 </style>

@@ -1,6 +1,7 @@
 import { writable } from "svelte/store";
 import { browser } from "$app/environment";
 
+export const isAuth = writable(false);
 export const Guest = writable(false);
 export const TopBarHeight = writable(0);
 export const refreshApp = writable(false);
