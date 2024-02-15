@@ -20,6 +20,7 @@
     import { darkMode, navList } from "$lib/stores";
     import { contents } from "$lib/pages/courses/internet/content";
 	import WebPractice from "$lib/pages/courses/internet/WebPractice.svelte";
+    import Pathlist from "$lib/components/Pathlist.svelte";
     $navList = contents;
     $currentPath = "HTML Document Structure";
     $darkMode = false;
@@ -82,6 +83,7 @@
     {/if}
 </svelte:head>
 <article>
+    <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <h4>
         HTML Document Structure
     </h4>

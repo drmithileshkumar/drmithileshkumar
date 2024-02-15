@@ -14,6 +14,7 @@
     import GenerateQR from "$lib/qr/GenerateQR.svelte";
     import { onMount } from "svelte";
     import { currentPath, Guest } from "$lib/stores.js";
+    import { isTeacher } from '$lib/stores';
     $currentPath = 'Authentication'
 
     let choices = ["Log in", "Sign up"];

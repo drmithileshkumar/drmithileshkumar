@@ -1,5 +1,5 @@
 import { s as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, k as each, e as escape } from "../../../../../chunks/ssr.js";
+import { c as create_ssr_component, v as validate_component, j as each, e as escape } from "../../../../../chunks/ssr.js";
 import { S as Select, O as Option } from "../../../../../chunks/Option.js";
 import { B as Button } from "../../../../../chunks/Button.js";
 import { C as Card } from "../../../../../chunks/Card.js";
@@ -8,7 +8,7 @@ import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../..
 import "../../../../../chunks/client.js";
 import { c as currentPath } from "../../../../../chunks/stores3.js";
 const css = {
-  code: "article.svelte-o5h9iv{display:flex;flex-direction:column;gap:0.5em}.courses.svelte-o5h9iv{display:flex;flex-direction:row;gap:1em;align-items:center}",
+  code: "article.svelte-1lcfw8p{display:flex;flex-direction:column;gap:0.5em}.courses.svelte-1lcfw8p{display:flex;flex-direction:row;gap:1em;align-items:center}h6.svelte-1lcfw8p{margin:1em 0}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -44,7 +44,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   do {
     $$settled = true;
     $$result.head = previous_head;
-    $$rendered = `<article class="svelte-o5h9iv"><h4 data-svelte-h="svelte-3u0ib9">Submissions</h4> <h6 data-svelte-h="svelte-geslbe">Select Course and Session</h6> <div class="courses svelte-o5h9iv"><div class="course">${validate_component(Select, "Select").$$render(
+    $$rendered = `<article class="svelte-1lcfw8p"><h6 class="svelte-1lcfw8p" data-svelte-h="svelte-geslbe">Select Course and Session</h6> <div class="courses svelte-1lcfw8p"><div class="course">${validate_component(Select, "Select").$$render(
       $$result,
       {
         variant: "outlined",
@@ -141,15 +141,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         default: () => {
                           return `${escape(index + 1)}`;
                         }
-                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
                         default: () => {
                           return `${escape(assignment.name)}`;
                         }
-                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
                         default: () => {
                           return `${escape(assignment.title)}`;
                         }
-                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
                         default: () => {
                           return `${escape(new Date(assignment.submission).toDateString())}`;
                         }

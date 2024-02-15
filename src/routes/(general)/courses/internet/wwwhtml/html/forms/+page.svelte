@@ -21,7 +21,16 @@
     import { contents } from "$lib/pages/courses/internet/content";
 	import WebPractice from "$lib/pages/courses/internet/WebPractice.svelte";
 	import DataTable, {Head, Body, Row, Cell} from "@smui/data-table";
-
+	import Pathlist from "$lib/components/Pathlist.svelte";
+    // console.log($page.url)
+    let pathComponents = $page.url.pathname.split('/');
+    let pathUrls = pathComponents.map((u, index) => {
+        let path = $page.url.origin;
+        for(let i = 0; i <= index; i++) {
+            path += pathComponents[i] + '/';
+        }
+        return path;
+    })
     $navList = contents;
     $currentPath = "Forms";
     $darkMode = false;
@@ -161,6 +170,7 @@ let htmlContent1 = `<!DOCTYPE html>
         cursor: pointer;
         padding: 0.3em;
     }
+    
 </style>
 <svelte:head>
     <title>Internet Technologies</title>
@@ -173,6 +183,7 @@ let htmlContent1 = `<!DOCTYPE html>
     {/if}
 </svelte:head>
 <article>
+    <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <h4>
         Forms
     </h4>

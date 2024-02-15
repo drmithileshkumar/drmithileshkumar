@@ -21,7 +21,7 @@
     import { contents } from "$lib/pages/courses/internet/content";
 	import WebPractice from "$lib/pages/courses/internet/WebPractice.svelte";
 	import DataTable, {Head, Body, Row, Cell} from "@smui/data-table";
-
+    import Pathlist from '$lib/components/Pathlist.svelte';
     $navList = contents;
     $currentPath = "Lists";
     $darkMode = false;
@@ -104,6 +104,7 @@
     {/if}
 </svelte:head>
 <article>
+    <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <h4>
         Lists
     </h4>

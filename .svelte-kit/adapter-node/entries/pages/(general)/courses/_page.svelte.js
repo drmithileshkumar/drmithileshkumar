@@ -8,7 +8,9 @@ import { G as Graphic } from "../../../../chunks/Graphic.js";
 import "../../../../chunks/client.js";
 /* empty css                                                       */
 /* empty css                                                    */
+import { p as page } from "../../../../chunks/stores.js";
 import { d as darkMode, c as currentPath } from "../../../../chunks/stores3.js";
+import { P as Pathlist } from "../../../../chunks/Pathlist.js";
 const css = {
   code: "article.svelte-86n1i9{display:flex;flex-direction:column;gap:0.5em}h3.svelte-86n1i9,h5.svelte-86n1i9{margin:0.5em 0}",
   map: null
@@ -16,14 +18,25 @@ const css = {
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $darkMode, $$unsubscribe_darkMode;
   let $currentPath, $$unsubscribe_currentPath;
+  let $page, $$unsubscribe_page;
   $$unsubscribe_darkMode = subscribe(darkMode, (value) => $darkMode = value);
   $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
+  $$unsubscribe_page = subscribe(page, (value) => $page = value);
   set_store_value(currentPath, $currentPath = "Courses", $currentPath);
   set_store_value(darkMode, $darkMode = false, $darkMode);
   $$result.css.add(css);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
-  return `${$$result.head += `<!-- HEAD_svelte-1g0w0gr_START -->${$$result.title = `<title>Courses</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1g0w0gr_END -->`, ""} <article class="svelte-86n1i9"><h3 class="svelte-86n1i9" data-svelte-h="svelte-1lxqlac">Courses</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  $$unsubscribe_page();
+  return `${$$result.head += `<!-- HEAD_svelte-1g0w0gr_START -->${$$result.title = `<title>Courses</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1g0w0gr_END -->`, ""} <article class="svelte-86n1i9">${validate_component(Pathlist, "Pathlist").$$render(
+    $$result,
+    {
+      origin: $page.url.origin,
+      pathname: $page.url.pathname
+    },
+    {},
+    {}
+  )} <h3 class="svelte-86n1i9" data-svelte-h="svelte-1lxqlac">Courses</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {

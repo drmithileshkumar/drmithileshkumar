@@ -6,6 +6,8 @@
     import Button, { Label } from '@smui/button';
     import Datatable, {Head, Body, Row, Cell} from "@smui/data-table";
 	import Assignment from "$lib/components/Assignment.svelte";
+	import { currentPath } from "$lib/stores.js";
+    $currentPath = 'Assignments'
     export let data;
 </script>
 <style>
@@ -16,7 +18,7 @@
     }
 </style>
 <article>
-    <h2>Assignments</h2>
+    
     <Button on:click={() => goto(`/${$page.data.user.publicID}/assignments/new`)}>New assignment</Button>
     {#each data.assignments as assignment}
         <Assignment {assignment} />

@@ -2,14 +2,16 @@ import { s as subscribe, b as set_store_value } from "../../../../../../../../ch
 import { c as create_ssr_component, v as validate_component } from "../../../../../../../../chunks/ssr.js";
 import { g as githubDark, a as github, c as contents } from "../../../../../../../../chunks/content3.js";
 /* empty css                                                                */
-import "../../../../../../../../chunks/client.js";
+import { p as page } from "../../../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
 import "../../../../../../../../chunks/Subheader.js";
+import "../../../../../../../../chunks/client.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores3.js";
 /* empty css                                                                   */
 import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js";
 import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../../../../chunks/Cell.js";
+import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 const css = {
   code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-9tb2l5{cursor:pointer}.question.svelte-9tb2l5{cursor:pointer;padding:0.3em}",
   map: null
@@ -18,9 +20,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $darkMode, $$unsubscribe_darkMode;
   let $currentPath, $$unsubscribe_currentPath;
   let $navList, $$unsubscribe_navList;
+  let $page, $$unsubscribe_page;
   $$unsubscribe_darkMode = subscribe(darkMode, (value) => $darkMode = value);
   $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
   $$unsubscribe_navList = subscribe(navList, (value) => $navList = value);
+  $$unsubscribe_page = subscribe(page, (value) => $page = value);
   set_store_value(navList, $navList = contents, $navList);
   set_store_value(currentPath, $currentPath = "Images", $currentPath);
   set_store_value(darkMode, $darkMode = false, $darkMode);
@@ -58,7 +62,16 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
-  return `${$$result.head += `<!-- HEAD_svelte-1yjaqxq_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/html/images"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-1yjaqxq_END -->`, ""} <article class="svelte-9tb2l5"><h4 class="svelte-9tb2l5" data-svelte-h="svelte-cg9auw">Images</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  $$unsubscribe_page();
+  return `${$$result.head += `<!-- HEAD_svelte-1yjaqxq_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/html/images"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-1yjaqxq_END -->`, ""} <article class="svelte-9tb2l5">${validate_component(Pathlist, "Pathlist").$$render(
+    $$result,
+    {
+      origin: $page.url.origin,
+      pathname: $page.url.pathname
+    },
+    {},
+    {}
+  )} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-cg9auw">Images</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {

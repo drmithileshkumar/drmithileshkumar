@@ -9,6 +9,7 @@
         import {onMount} from 'svelte';
         import { currentPath } from "$lib/stores";
         import { darkMode } from "$lib/stores"
+        import Pathlist from '$lib/components/Pathlist.svelte';
         let clicked;
         $currentPath = "Courses";
         $darkMode = false;
@@ -32,6 +33,7 @@
         <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
     </svelte:head>
     <article>
+      <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
         <h3>
             Courses
         </h3>

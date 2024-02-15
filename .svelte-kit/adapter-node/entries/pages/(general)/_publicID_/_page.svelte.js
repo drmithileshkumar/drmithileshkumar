@@ -1,5 +1,5 @@
 import { c as compute_rest_props, s as subscribe, b as set_store_value, i as is_promise, n as noop } from "../../../../chunks/utils.js";
-import { c as create_ssr_component, i as createEventDispatcher, f as add_attribute, a as get_current_component, s as spread, b as escape_attribute_value, d as escape_object, g as getContext, h as setContext, v as validate_component, m as missing_component, k as each, e as escape } from "../../../../chunks/ssr.js";
+import { c as create_ssr_component, i as createEventDispatcher, f as add_attribute, a as get_current_component, s as spread, b as escape_attribute_value, d as escape_object, g as getContext, h as setContext, v as validate_component, m as missing_component, j as each, e as escape } from "../../../../chunks/ssr.js";
 import { C as Card } from "../../../../chunks/Card.js";
 import { C as Content } from "../../../../chunks/ActionIcons.js";
 import { B as Button } from "../../../../chunks/Button.js";
@@ -13,7 +13,7 @@ import "../../../../chunks/client.js";
 import { A as Actions } from "../../../../chunks/Actions.js";
 import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../chunks/Cell.js";
 import "../../../../chunks/Subheader.js";
-import { c as currentPath, i as isAuth } from "../../../../chunks/stores3.js";
+import { c as currentPath, i as isAuth, T as TopBarHeight } from "../../../../chunks/stores3.js";
 import "html5-qrcode";
 import "qrcode-generator";
 /* empty css                                                          */
@@ -737,15 +737,24 @@ const css = {
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let tabs;
   let $page, $$unsubscribe_page;
   let $isAuth, $$unsubscribe_isAuth;
   let $currentPath, $$unsubscribe_currentPath;
+  let $TopBarHeight, $$unsubscribe_TopBarHeight;
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
   $$unsubscribe_isAuth = subscribe(isAuth, (value) => $isAuth = value);
   $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
+  $$unsubscribe_TopBarHeight = subscribe(TopBarHeight, (value) => $TopBarHeight = value);
   let { data } = $$props;
   let profile = "", banner;
+  let active;
   let privateID, otpID, publicID;
+  ({
+    "Questions": `/${$page.data.user.publicID}/questions`,
+    "Assignments": `/${$page.data.user.publicID}/assignments`,
+    "Submissions": `/${$page.data.user.publicID}/submissions`
+  });
   const getAssignments = async () => {
     const res = await fetch(`/api/assignments`);
     if (!res.ok) {
@@ -764,8 +773,35 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$settled = true;
     $$result.head = previous_head;
     set_store_value(currentPath, $currentPath = `${$page.params.publicID}`, $currentPath);
+    tabs = $page.data.user.isTeacher ? ["Questions", "Assignments", "Submissions"] : [];
     set_store_value(isAuth, $isAuth = $page.data.user, $isAuth);
-    $$rendered = `${$$result.head += `<!-- HEAD_svelte-1rvdi7m_START -->${$$result.title = `<title>Dr Mithilesh Kumar</title>`, ""}<meta name="description" content="Dr Mithilesh Kuamr"><meta name="keywords" content="drmithileshkumar.com, mathematics"><link rel="canonical" href="${"https://drmithileshkumar.com/$" + escape(data.currentUser.publicID, true)}"><!-- HEAD_svelte-1rvdi7m_END -->`, ""} <article class="svelte-u7i3fp"> ${validate_component(User, "User").$$render(
+    $$rendered = `${$$result.head += `<!-- HEAD_svelte-1rvdi7m_START -->${$$result.title = `<title>Dr Mithilesh Kumar</title>`, ""}<meta name="description" content="Dr Mithilesh Kuamr"><meta name="keywords" content="drmithileshkumar.com, mathematics"><link rel="canonical" href="${"https://drmithileshkumar.com/$" + escape(data.currentUser.publicID, true)}"><!-- HEAD_svelte-1rvdi7m_END -->`, ""} <article class="svelte-u7i3fp"><div class="sticky" style="${"top: " + escape($TopBarHeight, true) + "px;"}">${$page.data.user && $page.data.user.publicID === data.currentUser.publicID ? `${validate_component(Card, "Card").$$render($$result, {}, {}, {
+      default: () => {
+        return `${validate_component(TabBar, "TabBar").$$render(
+          $$result,
+          { tabs, active },
+          {
+            active: ($$value) => {
+              active = $$value;
+              $$settled = false;
+            }
+          },
+          {
+            default: ({ tab }) => {
+              return `${validate_component(Tab, "Tab").$$render($$result, { tab }, {}, {
+                default: () => {
+                  return `${validate_component(CommonLabel, "Label").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${escape(tab)}`;
+                    }
+                  })}`;
+                }
+              })}`;
+            }
+          }
+        )}`;
+      }
+    })}` : ``}</div> ${validate_component(User, "User").$$render(
       $$result,
       {
         banner,
@@ -896,6 +932,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_isAuth();
   $$unsubscribe_currentPath();
+  $$unsubscribe_TopBarHeight();
   return $$rendered;
 });
 export {

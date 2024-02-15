@@ -25,13 +25,16 @@
     import {currentPath, refreshApp, TopBarHeight} from '$lib/stores';
     import {presentationMode} from '$lib/pages/notes/maths/stores';
     import { beforeUpdate, afterUpdate } from 'svelte';
+    import Pathlist from "$lib/components/Pathlist.svelte";
     beforeUpdate(() => $refreshApp = true)
     afterUpdate(() => $refreshApp = false)
     let W = 500;
     let mainClass = '';
     $: fixed = W < 600;
     // $:console.log($page.data.user)
+    
     $: sideWidth = $showRight ? 300 : 0;
+    
 </script>
 <svelte:head>
     <link

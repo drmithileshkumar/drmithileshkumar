@@ -1,5 +1,5 @@
-import { s as subscribe } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, k as each, e as escape } from "../../../../../chunks/ssr.js";
+import { s as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component, j as each, e as escape } from "../../../../../chunks/ssr.js";
 import "../../../../../chunks/client.js";
 import { p as page } from "../../../../../chunks/stores.js";
 import { C as Content } from "../../../../../chunks/ActionIcons.js";
@@ -9,6 +9,7 @@ import { A as Actions } from "../../../../../chunks/Actions.js";
 import { C as Checkbox } from "../../../../../chunks/Checkbox.js";
 import { F as FormField } from "../../../../../chunks/FormField.js";
 import { S as Select, O as Option } from "../../../../../chunks/Option.js";
+import { c as currentPath } from "../../../../../chunks/stores3.js";
 const css$1 = {
   code: ".assignments.svelte-hxlsrk{padding-bottom:1em}.options.svelte-hxlsrk{display:flex;flex-direction:column}",
   map: null
@@ -141,14 +142,18 @@ const css = {
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $currentPath, $$unsubscribe_currentPath;
   let $$unsubscribe_page;
+  $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
   $$unsubscribe_page = subscribe(page, (value) => value);
   let { data } = $$props;
+  set_store_value(currentPath, $currentPath = "Questions", $currentPath);
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
   $$result.css.add(css);
+  $$unsubscribe_currentPath();
   $$unsubscribe_page();
-  return `<article class="svelte-1s9ex9t"><h2 data-svelte-h="svelte-bo460d">Questions</h2> ${validate_component(Button, "Button").$$render($$result, {}, {}, {
+  return `<article class="svelte-1s9ex9t">${validate_component(Button, "Button").$$render($$result, {}, {}, {
     default: () => {
       return `New Question`;
     }

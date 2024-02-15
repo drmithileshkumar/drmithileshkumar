@@ -50,9 +50,11 @@
         gap: 1em;
         align-items:center;
     }
+    h6 {
+        margin: 1em 0;
+    }
 </style>
 <article>
-    <h4>Submissions</h4>
     <h6>Select Course and Session</h6>
     <div class="courses">
         <div class="course">
@@ -89,9 +91,9 @@
                 {#each submissions as assignment, index}
                     <Row>
                         <Cell>{index + 1}</Cell>
-                        <Cell>{assignment.name}</Cell>
-                        <Cell>{assignment.title}</Cell>
-                        <Cell>{(new Date(assignment.submission).toDateString())}</Cell>
+                        <Cell style="white-space:normal;">{assignment.name}</Cell>
+                        <Cell style="white-space:normal;">{assignment.title}</Cell>
+                        <Cell style="white-space:normal;">{(new Date(assignment.submission).toDateString())}</Cell>
                         <Cell>{assignment.total}</Cell>
                         <Cell><Button on:click={() => goto(`/assignments/${assignment.assignmentID}/solution`)}>View</Button></Cell>
                     </Row>

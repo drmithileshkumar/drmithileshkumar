@@ -13,6 +13,7 @@ export async function POST({locals, params, request}) {
     let existingUser;
     
     const usersCollection = await getUsersCollection()
+    const teachersCollection = await getDBCollection('teachers');
     
     existingUser = await usersCollection.findOne(query);
     if(!existingUser) {
@@ -46,13 +47,17 @@ export async function POST({locals, params, request}) {
         let detailConfirm = await userDetailsCollection.insertOne(newUserDetail);
         userDetail = newUserDetail;
     }
+    let isTeacher = false;
+    const confirmTeacher = await teachersCollection.findOne({publicID});
+    if(confirmTeacher) isTeacher = true;
     const user = {
         publicID: existingUser.publicID,
         name: existingUser.name,
         phone: String(existingUser.phone),
         profile: existingUser.profile,
         banner: existingUser.banner,
-        rank: userDetail.details.rank
+        rank: userDetail.details.rank,
+        isTeacher
     };
     // console.log('server...', userDetail)
     // const imagesCollection = await getImagesCollection();

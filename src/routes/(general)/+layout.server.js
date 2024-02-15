@@ -7,7 +7,8 @@ export function load({ locals }) {
             name: locals.user.name,
             phone: locals.user.phone,
             profile: locals.user.profile,
-            likes: locals.user.likes
+            likes: locals.user.likes,
+            isTeacher: locals.user.isTeacher
 		}
 	};
 }

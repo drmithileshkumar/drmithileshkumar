@@ -26,14 +26,12 @@
     let generateQR = false,
         downloadQR = false;
     let ids, privateID, otpID, publicID;
-    // $: tabs = $page.data.user && $page.data.user.publicID === data.currentUser.publicID && $page.data.user.rank.label === 'Teacher' ? ['Teacher Profile'] : ['Questions', 'Certificates', 'Transcripts', 'Invoices'];
-    // let targetURL = {
-    //     'Questions': `/${$page.data.user.publicID}/questions`,
-    //     'Certificates': `/${$page.data.user.publicID}/certificates`,
-    //     'Transcripts': `/${$page.data.user.publicID}/transcripts`,
-    //     'Invoices': `/${$page.data.user.publicID}/invoices`,
-    //     'Teacher Profile': `/${$page.data.user.publicID}/teacher`
-    // }
+    $: tabs = $page.data.user.isTeacher ? ['Questions', 'Assignments', 'Submissions'] : [];
+    let targetURL = {
+        'Questions': `/${$page.data.user.publicID}/questions`,
+        'Assignments': `/${$page.data.user.publicID}/assignments`,
+        'Submissions': `/${$page.data.user.publicID}/submissions`
+    }
     // let workouts = [], questions = [], likes = [];
     let profilePicReader, bannerReader;
     onMount(async () => {
@@ -172,7 +170,7 @@
     />
 </svelte:head>
 <article>
-    <!-- <div class="sticky" style="top: {$TopBarHeight}px;">
+    <div class="sticky" style="top: {$TopBarHeight}px;">
         {#if $page.data.user && $page.data.user.publicID === data.currentUser.publicID}
             <Card>
                 <TabBar {tabs} let:tab bind:active>
@@ -182,7 +180,7 @@
                 </TabBar>
             </Card>
         {/if}
-    </div> -->
+    </div>
     <User {banner} {profile} currentUser={data.currentUser} currentUserDetail={data.currentUserDetail} bind:active={data.active} />
     
     {#if data.active === 'Assignments'}

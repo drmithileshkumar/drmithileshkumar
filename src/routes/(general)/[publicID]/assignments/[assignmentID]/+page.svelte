@@ -87,7 +87,6 @@
     }
 </style>
 <article>
-    <h5>Assignment</h5>
     <Assignment assignment={data.assignment} viewable={false} />
     <h6 style="margin:0.5em 0">Questions</h6>
     {#each data.assignment.questions as question}

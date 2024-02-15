@@ -26,6 +26,7 @@
         optionD = data.question.optionD;
         correct = data.question.correct;
         solution = data.question.solution;
+        setTimeout(() => typeset(), 0);
     })
     let preview;
     const updateQuestion = async () => {
@@ -86,6 +87,9 @@
         display: flex;
         flex-direction: column;
         gap: 0.5em;
+    }
+    h5 {
+        margin: 1em 0;
     }
 </style>
 <article>

@@ -18,6 +18,7 @@ import { T as TopAppBar } from "../../../chunks/TopAppBar.js";
 import { R as Row, S as Section } from "../../../chunks/Title.js";
 import { I as IconButton } from "../../../chunks/IconButton.js";
 import { p as presentationMode } from "../../../chunks/stores4.js";
+/* empty css                                                     */
 const Drawer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["use", "class", "variant", "open", "fixed", "setOpen", "isOpen", "getElement"]);
   forwardEventsBuilder(get_current_component());

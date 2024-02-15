@@ -1,5 +1,5 @@
 import { s as subscribe } from "../../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, k as each, f as add_attribute, e as escape } from "../../../../../../chunks/ssr.js";
+import { c as create_ssr_component, v as validate_component, j as each, f as add_attribute, e as escape } from "../../../../../../chunks/ssr.js";
 import { p as page } from "../../../../../../chunks/stores.js";
 import "../../../../../../chunks/client.js";
 import { C as Card } from "../../../../../../chunks/Card.js";
@@ -13,7 +13,7 @@ import { F as FormField } from "../../../../../../chunks/FormField.js";
 import { C as Checkbox } from "../../../../../../chunks/Checkbox.js";
 import { R as Radio } from "../../../../../../chunks/Radio.js";
 const css = {
-  code: ".options.svelte-pwz68h{display:flex;flex-direction:column;gap:0.5em}",
+  code: ".options.svelte-oih4w4{display:flex;flex-direction:column;gap:0.5em}h5.svelte-oih4w4{margin:1em 0}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -33,7 +33,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   do {
     $$settled = true;
     $$result.head = previous_head;
-    $$rendered = `<article><h5 data-svelte-h="svelte-13hv5wu">New Question</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    $$rendered = `<article><h5 class="svelte-oih4w4" data-svelte-h="svelte-13hv5wu">New Question</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
       default: () => {
         return `${validate_component(Content, "Content").$$render(
           $$result,
@@ -219,11 +219,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           }
         })}`;
       }
-    })} <h5 data-svelte-h="svelte-xuhjly">Preview</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    })} <h5 class="svelte-oih4w4" data-svelte-h="svelte-xuhjly">Preview</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
       default: () => {
         return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
           default: () => {
-            return `<div${add_attribute("this", preview, 0)}><div class="question"><!-- HTML_TAG_START -->${statement}<!-- HTML_TAG_END --></div> <div class="options svelte-pwz68h">${validate_component(FormField, "FormField").$$render($$result, {}, {}, {
+            return `<div${add_attribute("this", preview, 0)}><div class="question"><!-- HTML_TAG_START -->${statement}<!-- HTML_TAG_END --></div> <div class="options svelte-oih4w4">${validate_component(FormField, "FormField").$$render($$result, {}, {}, {
               label: () => {
                 return `<span slot="label"><!-- HTML_TAG_START -->${optionA}<!-- HTML_TAG_END --></span>`;
               },

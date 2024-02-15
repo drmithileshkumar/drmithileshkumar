@@ -1,4 +1,4 @@
-import { c as create_ssr_component, v as validate_component, k as each } from "../../../../../../chunks/ssr.js";
+import { c as create_ssr_component, v as validate_component, j as each } from "../../../../../../chunks/ssr.js";
 import "../../../../../../chunks/client.js";
 import "../../../../../../chunks/ActionIcons.js";
 import "../../../../../../chunks/Suffix.js";
@@ -13,7 +13,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
   $$result.css.add(css);
-  return `<article class="svelte-1s9ex9t"><h5 data-svelte-h="svelte-1ir50o9">Assignment</h5> ${validate_component(Assignment, "Assignment").$$render(
+  return `<article class="svelte-1s9ex9t">${validate_component(Assignment, "Assignment").$$render(
     $$result,
     {
       assignment: data.assignment,
