@@ -222,7 +222,7 @@ let htmlContent1 = `<!DOCTYPE html>
         <Content>
             <h6 id="inputForm">The <code>input</code> Element</h6>
             <p>
-                The <code>input</code> element is the most versatile input mechanism. It has an attribute called <code>type</code> that can take many values like text, number, date etc shown in the table below. Except to reset and submit input types, all types require another attribute <code>name</code> that act as <em>variables</em>. These names are used on the server-side code. In the client-side, the elements are identified by their ids. Hence, each input element has <code>id, name</code> and <code>value</code> attributes.
+                The <code>input</code> element is the most versatile input mechanism. It has an attribute called <code>type</code> that can take many values like text, number, date etc shown in the table below. Except <code>reset</code> and <code>submit</code> input types, all types require another attribute <code>name</code> that acts as a <em>variable</em>. These names are used on the server-side code. In the client-side, the elements are identified by their ids. Hence, each input element has <code>id, name</code> and <code>value</code> attributes.
             </p>
             <DataTable style="width:100%;">
                 <Head>
@@ -235,13 +235,13 @@ let htmlContent1 = `<!DOCTYPE html>
                 <Body>
                     <Row>
                         <Cell>text</Cell>
-                        <Cell>a string</Cell>
-                        <Cell style="white-space:normal;">use it with attribute <code>size</code> to specifies the width of the text box.</Cell>
+                        <Cell style="white-space:normal;">a string, like name, username</Cell>
+                        <Cell style="white-space:normal;">useful for single line text</Cell>
                     </Row>
                     <Row>
                         <Cell>password</Cell>
                         <Cell>a string</Cell>
-                        <Cell style="white-space:normal;">the typed letters are displayed as &bullet; or * use it with attribute <code>size</code> to specifies the width of the text box.</Cell>
+                        <Cell style="white-space:normal;">the typed letters are displayed as &bullet; or *.</Cell>
                     </Row>
                     <Row>
                         <Cell>email</Cell>

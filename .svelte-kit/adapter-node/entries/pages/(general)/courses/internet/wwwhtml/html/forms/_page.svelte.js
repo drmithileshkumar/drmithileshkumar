@@ -166,7 +166,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="inputForm" class="svelte-9tb2l5" data-svelte-h="svelte-mjgx7u">The <code>input</code> Element</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-6glz62">The <code>input</code> element is the most versatile input mechanism. It has an attribute called <code>type</code> that can take many values like text, number, date etc shown in the table below. Except to reset and submit input types, all types require another attribute <code>name</code> that act as <em>variables</em>. These names are used on the server-side code. In the client-side, the elements are identified by their ids. Hence, each input element has <code>id, name</code> and <code>value</code> attributes.</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%;" }, {}, {
+          return `<h6 id="inputForm" class="svelte-9tb2l5" data-svelte-h="svelte-mjgx7u">The <code>input</code> Element</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-brxuqw">The <code>input</code> element is the most versatile input mechanism. It has an attribute called <code>type</code> that can take many values like text, number, date etc shown in the table below. Except <code>reset</code> and <code>submit</code> input types, all types require another attribute <code>name</code> that acts as a <em>variable</em>. These names are used on the server-side code. In the client-side, the elements are identified by their ids. Hence, each input element has <code>id, name</code> and <code>value</code> attributes.</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%;" }, {}, {
             default: () => {
               return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
                 default: () => {
@@ -196,13 +196,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         default: () => {
                           return `text`;
                         }
-                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
                         default: () => {
-                          return `a string`;
+                          return `a string, like name, username`;
                         }
                       })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
                         default: () => {
-                          return `use it with attribute <code data-svelte-h="svelte-1416n7d">size</code> to specifies the width of the text box.`;
+                          return `useful for single line text`;
                         }
                       })}`;
                     }
@@ -218,7 +218,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         }
                       })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
                         default: () => {
-                          return `the typed letters are displayed as • or * use it with attribute <code data-svelte-h="svelte-1416n7d">size</code> to specifies the width of the text box.`;
+                          return `the typed letters are displayed as • or *.`;
                         }
                       })}`;
                     }

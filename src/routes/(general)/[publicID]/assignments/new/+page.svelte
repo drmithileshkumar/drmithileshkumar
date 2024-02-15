@@ -21,7 +21,7 @@
         dates = {
             start: Date.now(),
             end: Date.now()
-        }
+        },
         questions= [];
     let options = ['A', 'B', 'C', 'D'];
     let types = ['Objective', 'Subjective'];
@@ -120,6 +120,12 @@
                 variant="outlined"
                 label="Course Name"
                 bind:value={courseName}
+                style="width:100%"
+            />
+            <Textfield 
+                variant="outlined"
+                label="Course Code"
+                bind:value={courseCode}
                 style="width:100%"
             />
             <Textfield 

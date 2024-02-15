@@ -8,8 +8,7 @@ import { C as CommonLabel } from "../../../../../../chunks/CommonLabel.js";
 import { T as Textfield } from "../../../../../../chunks/Textfield.js";
 import "../../../../../../chunks/Suffix.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let title = "Assignment 1", university = "Dayananda Sagar University", department = "Computer Applications", session = "2023-2024", semester = "II", courseName = "Mathematics II", totalMarks = 100, numberOfQuestions = 10, dates = { start: Date.now(), end: Date.now() };
-  questions = [];
+  let title = "Assignment 1", university = "Dayananda Sagar University", department = "Computer Applications", session = "2023-2024", semester = "II", courseName = "Mathematics II", courseCode = "CA", totalMarks = 100, numberOfQuestions = 10, dates = { start: Date.now(), end: Date.now() };
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;
@@ -112,6 +111,21 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 {
                   value: ($$value) => {
                     courseName = $$value;
+                    $$settled = false;
+                  }
+                },
+                {}
+              )} ${validate_component(Textfield, "Textfield").$$render(
+                $$result,
+                {
+                  variant: "outlined",
+                  label: "Course Code",
+                  style: "width:100%",
+                  value: courseCode
+                },
+                {
+                  value: ($$value) => {
+                    courseCode = $$value;
                     $$settled = false;
                   }
                 },

@@ -112,7 +112,7 @@
                 <span class="prop">
                     <span class="icon material-icons">stars</span>
                     <span class="propName"
-                        >{currentUserDetail.details.rank.label}</span
+                        >{currentUserDetail.details?.rank?.label}</span
                     >
                 </span>
                 <span class="bullet" />
