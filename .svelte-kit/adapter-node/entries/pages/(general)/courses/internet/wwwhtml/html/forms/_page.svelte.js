@@ -13,7 +13,7 @@ import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js"
 import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../../../../chunks/Cell.js";
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 const css = {
-  code: "article.svelte-kuiuk5{display:flex;flex-direction:column;gap:0.5em}p.svelte-kuiuk5,li.svelte-kuiuk5{opacity:0.8}h4.svelte-kuiuk5{margin:0.5em 0}h6.svelte-kuiuk5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}strong.svelte-kuiuk5{color:goldenrod;opacity:1}a.svelte-kuiuk5{cursor:pointer}",
+  code: "article.svelte-kuiuk5{display:flex;flex-direction:column;gap:0.5em}p.svelte-kuiuk5,li.svelte-kuiuk5{opacity:0.8}h4.svelte-kuiuk5{margin:0.5em 0}h6.svelte-kuiuk5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}strong.svelte-kuiuk5{color:goldenrod;opacity:1}a.svelte-kuiuk5{cursor:pointer}.question.svelte-kuiuk5{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -564,11 +564,27 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  )}  <h4 class="svelte-kuiuk5" data-svelte-h="svelte-1yto96c">Exercise</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="selectForm" class="svelte-kuiuk5" data-svelte-h="svelte-2vve02">The <code>select</code> Element</h6>`;
+          return `<div class="question svelte-kuiuk5" data-svelte-h="svelte-140swak">Create a user login page with input fields for username (email), password and a button for login. Create a link for forgot password and another button for sign up.</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-kuiuk5" data-svelte-h="svelte-o34h5a">Create a form for flight booking with fields for destination, date of journey, checkbox for round trip, date for return journey and button to find available flights.</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-kuiuk5" data-svelte-h="svelte-1qgtck6">Create a form for LPG connection with input fields for name, aadhar card, address, email, phone and input field to upload passport size photo.</div>`;
         }
       })}`;
     }

@@ -354,9 +354,31 @@ let htmlContent1 = `<!DOCTYPE html>
         </Content>
     </Card>
     <WebPractice htmlContent={htmlContent1} cssContent={""} jsContent={""} />
-    <Card>
+    <!-- <Card>
         <Content>
             <h6 id="selectForm">The <code>select</code> Element</h6>
+        </Content>
+    </Card> -->
+    <h4>Exercise</h4>
+    <Card>
+        <Content>
+            <div class="question">
+                Create a user login page with input fields for username (email), password and a button for login. Create a link for forgot password and another button for sign up.
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                Create a form for flight booking with fields for destination, date of journey, checkbox for round trip, date for return journey and button to find available flights.
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                Create a form for LPG connection with input fields for name, aadhar card, address, email, phone and input field to upload passport size photo.
+            </div>
         </Content>
     </Card>
 </article>
