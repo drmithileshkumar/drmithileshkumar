@@ -747,7 +747,7 @@ const Analytics = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         gtag("config", "G-NLWD2V1K9N");<\/script><!-- HEAD_svelte-1r81vvh_END -->`, ""}`;
 });
 const css = {
-  code: ".svelte-j3aqo7{box-sizing:border-box}.container.svelte-j3aqo7{width:100%}header.svelte-j3aqo7{min-width:100%;z-index:200}.navback.svelte-j3aqo7{min-height:4em}.nav.svelte-j3aqo7{max-width:150px}main.svelte-j3aqo7{display:flex}.grid.svelte-j3aqo7{display:grid;grid-template-columns:calc(100% - 256px) 256px}.center.svelte-j3aqo7{display:flex;flex-direction:column;width:100%;padding:0.5em}.side.svelte-j3aqo7{min-width:300px;position:fixed;top:4em;right:0;height:100vh;overflow-y:auto;z-index:6;box-shadow:rgba(0, 0, 0, 0.2) 0px 8px 10px -5px, rgba(0, 0, 0, 0.14) 0px 16px 24px 2px, rgba(0, 0, 0, 0.12) 0px 6px 30px 5px}@media only screen and (max-width: 600px){.navback.svelte-j3aqo7{min-height:3.5em}}",
+  code: ".modal.svelte-z3f1g{display:block;position:fixed;left:0;top:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.32);z-index:5;transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}.svelte-z3f1g{box-sizing:border-box}.container.svelte-z3f1g{width:100%}header.svelte-z3f1g{min-width:100%;z-index:200}.navback.svelte-z3f1g{min-height:4em}.nav.svelte-z3f1g{max-width:150px}main.svelte-z3f1g{display:flex}.grid.svelte-z3f1g{display:grid;grid-template-columns:calc(100% - 256px) 256px}.center.svelte-z3f1g{display:flex;flex-direction:column;width:100%;padding:0.5em}.side.svelte-z3f1g{min-width:300px;position:fixed;top:4em;right:0;height:100vh;overflow-y:auto;z-index:6;box-shadow:rgba(0, 0, 0, 0.2) 0px 8px 10px -5px, rgba(0, 0, 0, 0.14) 0px 16px 24px 2px, rgba(0, 0, 0, 0.12) 0px 6px 30px 5px}@media only screen and (max-width: 600px){.navback.svelte-z3f1g{min-height:3.5em}}",
   map: null
 };
 let mainClass = "";
@@ -780,25 +780,46 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$result.head = previous_head;
     fixed = W < 600;
     sideWidth = $showRight ? 300 : 0;
-    $$rendered = `${$$result.head += `<!-- HEAD_svelte-191nvh5_START --><link rel="stylesheet" id="theme" href="${"/smui" + escape($darkMode ? "-dark" : "", true) + ".css"}" class="svelte-j3aqo7"><!-- HEAD_svelte-191nvh5_END -->`, ""} ${validate_component(Analytics, "Analytics").$$render($$result, {}, {}, {})} <header style="position: relative;" class="svelte-j3aqo7">${validate_component(TopAppBar, "TopAppBar").$$render($$result, { variant: "fixed", color: "secondary" }, {}, {
+    {
+      console.log($showRight);
+    }
+    $$rendered = `${$$result.head += `<!-- HEAD_svelte-191nvh5_START --><link rel="stylesheet" id="theme" href="${"/smui" + escape($darkMode ? "-dark" : "", true) + ".css"}" class="svelte-z3f1g"><!-- HEAD_svelte-191nvh5_END -->`, ""} ${validate_component(Analytics, "Analytics").$$render($$result, {}, {}, {})} <header style="position: relative;" class="svelte-z3f1g">${validate_component(TopAppBar, "TopAppBar").$$render($$result, { variant: "fixed", color: "secondary" }, {}, {
       default: () => {
         return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
           default: () => {
             return `${validate_component(Section, "Section").$$render($$result, { style: "align-items:center;" }, {}, {
               default: () => {
-                return `<div class="logo svelte-j3aqo7">${validate_component(Fab, "Fab").$$render($$result, {}, {}, {
+                return `${validate_component(IconButton, "IconButton").$$render(
+                  $$result,
+                  { toggle: true, pressed: $showLeft },
+                  {
+                    pressed: ($$value) => {
+                      $showLeft = $$value;
+                      $$settled = false;
+                    }
+                  },
+                  {
+                    default: () => {
+                      return `${validate_component(CommonIcon, "Icon").$$render($$result, { class: "material-icons", on: true }, {}, {
+                        default: () => {
+                          return `close`;
+                        }
+                      })} ${validate_component(CommonIcon, "Icon").$$render($$result, { class: "material-icons" }, {}, {
+                        default: () => {
+                          return `menu`;
+                        }
+                      })}`;
+                    }
+                  }
+                )} <div class="logo svelte-z3f1g">${validate_component(Fab, "Fab").$$render($$result, {}, {}, {
                   default: () => {
                     return `${validate_component(CommonIcon, "Icon").$$render($$result, {}, {}, {
                       default: () => {
-                        return `<img width="40px" height="40px" style="background:white; border-radius:50%;" src="/favicon.png" alt="1" class="svelte-j3aqo7">`;
+                        return `<img width="40px" height="40px" style="background:white; border-radius:50%;" src="/favicon.png" alt="1" class="svelte-z3f1g">`;
                       }
                     })}`;
                   }
-                })}</div> ${validate_component(IconButton, "IconButton").$$render($$result, { class: "material-icons" }, {}, {
-                  default: () => {
-                    return `menu`;
-                  }
-                })} <span class="svelte-j3aqo7">${escape($currentPath)}</span>`;
+                })}</div> <span class="svelte-z3f1g">${escape($currentPath)}</span>`;
               }
             })} ${validate_component(Section, "Section").$$render($$result, { align: "end", toolbar: true }, {}, {
               default: () => {
@@ -864,7 +885,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           }
         })}`;
       }
-    })} <div class="navback svelte-j3aqo7"></div></header> <div class="container svelte-j3aqo7">${validate_component(Drawer, "Drawer").$$render(
+    })} <div class="navback svelte-z3f1g"></div></header> <div class="container svelte-z3f1g">${validate_component(Drawer, "Drawer").$$render(
       $$result,
       {
         style: "width:180px;",
@@ -881,7 +902,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         default: () => {
           return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
             default: () => {
-              return `<header class="nav svelte-j3aqo7">${validate_component(Nav, "Nav").$$render($$result, {}, {}, {})}</header>`;
+              return `<header class="nav svelte-z3f1g">${validate_component(Nav, "Nav").$$render($$result, {}, {}, {})}</header>`;
             }
           })}`;
         }
@@ -894,10 +915,10 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       {},
       {
         default: () => {
-          return `<main class="${escape(null_to_empty(mainClass), true) + " svelte-j3aqo7"}"><div class="center svelte-j3aqo7">${slots.default ? slots.default({}) : ``}</div> </main>`;
+          return `<main class="${escape(null_to_empty(mainClass), true) + " svelte-z3f1g"}"><div class="center svelte-z3f1g">${slots.default ? slots.default({}) : ``}</div> </main>`;
         }
       }
-    )} ${!$presentationMode && $showRight ? `<div class="side svelte-j3aqo7" style="${"width:" + escape(sideWidth, true) + "px; top: " + escape($TopBarHeight, true) + "px;"}">${validate_component(Sidebar, "Sidebar").$$render($$result, {}, {}, {})}</div>` : ``} </div>`;
+    )} ${!$presentationMode && $showRight ? `<div class="side svelte-z3f1g" style="${"width:" + escape(sideWidth, true) + "px; top: " + escape($TopBarHeight, true) + "px;"}">${validate_component(Sidebar, "Sidebar").$$render($$result, {}, {}, {})}</div>` : ``} ${fixed ? ` <div class="modal svelte-z3f1g" style="${"display: " + escape($showRight ? "" : "none", true)}"></div>` : ``} </div>`;
   } while (!$$settled);
   $$unsubscribe_showRight();
   $$unsubscribe_refreshApp();

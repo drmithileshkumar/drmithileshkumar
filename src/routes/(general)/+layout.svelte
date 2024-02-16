@@ -34,7 +34,7 @@
     // $:console.log($page.data.user)
     
     $: sideWidth = $showRight ? 300 : 0;
-    
+    $: console.log($showRight);
 </script>
 <svelte:head>
     <link
@@ -48,6 +48,10 @@
     <TopAppBar variant="fixed" color="secondary">
         <Row>
             <Section style="align-items:center;">
+                <IconButton toggle bind:pressed={$showLeft}>
+                    <Icon class="material-icons" on>close</Icon>
+                    <Icon class="material-icons">menu</Icon>
+                </IconButton>
                 <div class="logo">
                     <Fab on:click={() => goto("/")}>
                         <Icon>
@@ -55,7 +59,6 @@
                         </Icon>
                     </Fab>
                 </div>
-                <IconButton class="material-icons" on:click={() => $showLeft = !$showLeft}>menu</IconButton>
                 <span>
                     {$currentPath}
                 </span>
@@ -109,13 +112,29 @@
         </main>
     </AppContent>
     {#if !$presentationMode && $showRight}
-            <div class="side" style="width:{sideWidth}px; top: {$TopBarHeight}px;" transition:fly|global={{x:300}}>
-                <Sidebar />
-            </div>
-        {/if}
+        <div class="side" style="width:{sideWidth}px; top: {$TopBarHeight}px;" transition:fly|global={{x:300}}>
+            <Sidebar />
+        </div>
+    {/if}
+    {#if fixed}
+        <!-- svelte-ignore a11y-no-static-element-interactions -->
+        <div class="modal" on:click={() => $showRight = false} style="display: {$showRight ? '' : 'none'}"></div>
+    {/if}
 </div>
 
 <style>
+    .modal {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.32);
+        z-index: 5;
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
     /* .container {
         display: grid;
         grid-template-columns: 0.16fr auto;
