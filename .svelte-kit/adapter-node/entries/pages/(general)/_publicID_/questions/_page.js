@@ -6,14 +6,9 @@ async function load({ parent, fetch, params, url }) {
   const { user } = await parent();
   if (!user)
     redirect(301, "/auth");
-  let publicID = params.publicID;
-  let res = await fetch(`/api/${publicID}/questions`);
-  let questions = await res.json();
-  let res1 = await fetch(`/api/${publicID}/assignments`);
-  let assignments = await res1.json();
+  params.publicID;
   return {
-    questions,
-    assignments
+    // questions, assignments
   };
 }
 export {

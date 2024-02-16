@@ -1,13 +1,14 @@
 import { g as getDBCollection } from "../../../../../../chunks/mongo.js";
 import { e as error } from "../../../../../../chunks/index.js";
 import { ObjectId } from "mongodb";
-async function GET({ locals, params, request }) {
+async function GET({ locals, params, url, request }) {
   if (!locals.user) {
     return error(401, "Unauthorized");
   }
-  locals.user.publicID;
+  const publicID = locals.user.publicID;
+  const courseName = url.searchParams.get("courseName");
   const assignmentsCollection = await getDBCollection("assignments");
-  let assignments = await assignmentsCollection.find({}).toArray();
+  let assignments = await assignmentsCollection.find({ $or: [{ publicID, courseName }, { isPublic: true, courseName }] }).toArray();
   if (!assignments) {
     assignments = [];
   }

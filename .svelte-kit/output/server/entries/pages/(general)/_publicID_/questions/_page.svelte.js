@@ -142,24 +142,60 @@ const css = {
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $currentPath, $$unsubscribe_currentPath;
   let $$unsubscribe_page;
-  $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
+  let $currentPath, $$unsubscribe_currentPath;
   $$unsubscribe_page = subscribe(page, (value) => value);
-  let { data } = $$props;
+  $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
   set_store_value(currentPath, $currentPath = "Questions", $currentPath);
-  if ($$props.data === void 0 && $$bindings.data && data !== void 0)
-    $$bindings.data(data);
+  let courses = ["Mathematics II", "Internet Technologies", "Internet Technologies Lab"];
+  let questions = [], assignments = [];
+  let selectedCourse;
   $$result.css.add(css);
-  $$unsubscribe_currentPath();
+  let $$settled;
+  let $$rendered;
+  let previous_head = $$result.head;
+  do {
+    $$settled = true;
+    $$result.head = previous_head;
+    $$rendered = `<article class="svelte-1s9ex9t">${validate_component(Button, "Button").$$render($$result, {}, {}, {
+      default: () => {
+        return `New Question`;
+      }
+    })} <div class="courses">${validate_component(Select, "Select").$$render(
+      $$result,
+      {
+        variant: "outlined",
+        label: "Course",
+        value: selectedCourse
+      },
+      {
+        value: ($$value) => {
+          selectedCourse = $$value;
+          $$settled = false;
+        }
+      },
+      {
+        default: () => {
+          return `${validate_component(Option, "Option").$$render($$result, { value: "" }, {}, {})} ${each(courses, (course) => {
+            return `${validate_component(Option, "Option").$$render($$result, { value: course }, {}, {
+              default: () => {
+                return `${escape(course)}`;
+              }
+            })}`;
+          })}`;
+        }
+      }
+    )} ${validate_component(Button, "Button").$$render($$result, {}, {}, {
+      default: () => {
+        return `Get Questions`;
+      }
+    })}</div> ${each(questions, (question) => {
+      return `${validate_component(Question, "Question").$$render($$result, { question, assignments }, {}, {})}`;
+    })}</article>`;
+  } while (!$$settled);
   $$unsubscribe_page();
-  return `<article class="svelte-1s9ex9t">${validate_component(Button, "Button").$$render($$result, {}, {}, {
-    default: () => {
-      return `New Question`;
-    }
-  })} ${each(data.questions, (question) => {
-    return `${validate_component(Question, "Question").$$render($$result, { question, assignments: data.assignments }, {}, {})}`;
-  })}</article>`;
+  $$unsubscribe_currentPath();
+  return $$rendered;
 });
 export {
   Page as default

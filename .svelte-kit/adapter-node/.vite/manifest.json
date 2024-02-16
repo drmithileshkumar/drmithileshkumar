@@ -870,7 +870,8 @@
       "_ActionIcons.js",
       "_Button.js",
       "_Assignment.js",
-      "_stores3.js"
+      "_stores3.js",
+      "_Option.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/[publicID]/assignments/+page.svelte"
@@ -889,9 +890,13 @@
     ],
     "file": "entries/pages/(general)/_publicID_/assignments/_assignmentID_/_page.svelte.js",
     "imports": [
+      "_utils.js",
       "_ssr.js",
+      "_stores.js",
       "_client.js",
       "_ActionIcons.js",
+      "_Button.js",
+      "_CommonLabel.js",
       "_Suffix.js",
       "_Assignment.js",
       "_ShowQuestion.js"
@@ -915,7 +920,9 @@
       "_Button.js",
       "_CommonLabel.js",
       "_Textfield.js",
-      "_Suffix.js"
+      "_Suffix.js",
+      "_FormField.js",
+      "_Checkbox.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/[publicID]/assignments/new/+page.svelte"

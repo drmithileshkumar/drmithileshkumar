@@ -1,4 +1,4 @@
-import { c as create_ssr_component, v as validate_component } from "../../../../../../chunks/ssr.js";
+import { c as create_ssr_component, i as createEventDispatcher, v as validate_component } from "../../../../../../chunks/ssr.js";
 import "../../../../../../chunks/client.js";
 import { C as Card } from "../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../chunks/ActionIcons.js";
@@ -7,15 +7,20 @@ import { B as Button } from "../../../../../../chunks/Button.js";
 import { C as CommonLabel } from "../../../../../../chunks/CommonLabel.js";
 import { T as Textfield } from "../../../../../../chunks/Textfield.js";
 import "../../../../../../chunks/Suffix.js";
-const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let title = "Assignment 1", university = "Dayananda Sagar University", department = "Computer Applications", session = "2023-2024", semester = "II", courseName = "Mathematics II", courseCode = "CA", totalMarks = 100, numberOfQuestions = 10, dates = { start: Date.now(), end: Date.now() };
+import { F as FormField } from "../../../../../../chunks/FormField.js";
+import { C as Checkbox } from "../../../../../../chunks/Checkbox.js";
+const EditAssignment = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { assignment } = $$props;
+  new createEventDispatcher();
+  if ($$props.assignment === void 0 && $$bindings.assignment && assignment !== void 0)
+    $$bindings.assignment(assignment);
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;
   do {
     $$settled = true;
     $$result.head = previous_head;
-    $$rendered = `<article><h5 data-svelte-h="svelte-1vpfza7">New assignment</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    $$rendered = `${validate_component(Card, "Card").$$render($$result, {}, {}, {
       default: () => {
         return `${validate_component(Content, "Content").$$render(
           $$result,
@@ -25,17 +30,41 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           {},
           {
             default: () => {
-              return `${validate_component(Textfield, "Textfield").$$render(
+              return `${validate_component(FormField, "FormField").$$render($$result, {}, {}, {
+                label: () => {
+                  return `<span slot="label" data-svelte-h="svelte-1mcx8qw">Is Public</span>`;
+                },
+                default: () => {
+                  return `${validate_component(Checkbox, "Checkbox").$$render(
+                    $$result,
+                    {
+                      checked: assignment.isPublic,
+                      value: assignment.isPublic
+                    },
+                    {
+                      checked: ($$value) => {
+                        assignment.isPublic = $$value;
+                        $$settled = false;
+                      },
+                      value: ($$value) => {
+                        assignment.isPublic = $$value;
+                        $$settled = false;
+                      }
+                    },
+                    {}
+                  )}`;
+                }
+              })} ${validate_component(Textfield, "Textfield").$$render(
                 $$result,
                 {
                   variant: "outlined",
                   label: "Title",
                   style: "width:100%",
-                  value: title
+                  value: assignment.title
                 },
                 {
                   value: ($$value) => {
-                    title = $$value;
+                    assignment.title = $$value;
                     $$settled = false;
                   }
                 },
@@ -46,11 +75,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                   variant: "outlined",
                   label: "University",
                   style: "width:100%",
-                  value: university
+                  value: assignment.university
                 },
                 {
                   value: ($$value) => {
-                    university = $$value;
+                    assignment.university = $$value;
                     $$settled = false;
                   }
                 },
@@ -61,11 +90,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                   variant: "outlined",
                   label: "Department",
                   style: "width:100%",
-                  value: department
+                  value: assignment.department
                 },
                 {
                   value: ($$value) => {
-                    department = $$value;
+                    assignment.department = $$value;
                     $$settled = false;
                   }
                 },
@@ -76,11 +105,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                   variant: "outlined",
                   label: "Session",
                   style: "width:100%",
-                  value: session
+                  value: assignment.session
                 },
                 {
                   value: ($$value) => {
-                    session = $$value;
+                    assignment.session = $$value;
                     $$settled = false;
                   }
                 },
@@ -91,11 +120,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                   variant: "outlined",
                   label: "Semester",
                   style: "width:100%",
-                  value: semester
+                  value: assignment.semester
                 },
                 {
                   value: ($$value) => {
-                    semester = $$value;
+                    assignment.semester = $$value;
                     $$settled = false;
                   }
                 },
@@ -106,11 +135,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                   variant: "outlined",
                   label: "Course Name",
                   style: "width:100%",
-                  value: courseName
+                  value: assignment.courseName
                 },
                 {
                   value: ($$value) => {
-                    courseName = $$value;
+                    assignment.courseName = $$value;
                     $$settled = false;
                   }
                 },
@@ -121,11 +150,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                   variant: "outlined",
                   label: "Course Code",
                   style: "width:100%",
-                  value: courseCode
+                  value: assignment.courseCode
                 },
                 {
                   value: ($$value) => {
-                    courseCode = $$value;
+                    assignment.courseCode = $$value;
                     $$settled = false;
                   }
                 },
@@ -137,11 +166,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                   type: "number",
                   label: "Total Marks",
                   style: "width:100%",
-                  value: totalMarks
+                  value: assignment.totalMarks
                 },
                 {
                   value: ($$value) => {
-                    totalMarks = $$value;
+                    assignment.totalMarks = $$value;
                     $$settled = false;
                   }
                 },
@@ -153,11 +182,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                   type: "number",
                   label: "Number of Questions",
                   style: "width:100%",
-                  value: numberOfQuestions
+                  value: assignment.numberOfQuestions
                 },
                 {
                   value: ($$value) => {
-                    numberOfQuestions = $$value;
+                    assignment.numberOfQuestions = $$value;
                     $$settled = false;
                   }
                 },
@@ -166,13 +195,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 $$result,
                 {
                   variant: "outlined",
-                  type: "date",
+                  type: "text",
                   label: "Start",
-                  value: dates.start
+                  placeholder: "dd-mm-yy",
+                  value: assignment.dates.start
                 },
                 {
                   value: ($$value) => {
-                    dates.start = $$value;
+                    assignment.dates.start = $$value;
                     $$settled = false;
                   }
                 },
@@ -181,13 +211,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 $$result,
                 {
                   variant: "outlined",
-                  type: "date",
+                  type: "text",
                   label: "End",
-                  value: dates.end
+                  placeholder: "dd-mm-yy",
+                  value: assignment.dates.end
                 },
                 {
                   value: ($$value) => {
-                    dates.end = $$value;
+                    assignment.dates.end = $$value;
                     $$settled = false;
                   }
                 },
@@ -217,7 +248,43 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           }
         })}`;
       }
-    })}</article>`;
+    })}`;
+  } while (!$$settled);
+  return $$rendered;
+});
+const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let title = "Assignment 1", university = "Dayananda Sagar University", department = "Computer Applications", session = "2023-2024", semester = "II", courseName = "Mathematics II", courseCode = "CA", totalMarks = 100, numberOfQuestions = 10, dates = { start: "dd-mm-yy", end: "dd-mm-yy" }, isPublic = true, questions = [];
+  let assignment = {
+    title,
+    university,
+    department,
+    session,
+    semester,
+    courseName,
+    courseCode,
+    totalMarks,
+    numberOfQuestions,
+    questions,
+    dates,
+    isPublic
+  };
+  let $$settled;
+  let $$rendered;
+  let previous_head = $$result.head;
+  do {
+    $$settled = true;
+    $$result.head = previous_head;
+    $$rendered = `<article><h5 data-svelte-h="svelte-1vpfza7">New assignment</h5> ${validate_component(EditAssignment, "EditAssignment").$$render(
+      $$result,
+      { assignment },
+      {
+        assignment: ($$value) => {
+          assignment = $$value;
+          $$settled = false;
+        }
+      },
+      {}
+    )} </article>`;
   } while (!$$settled);
   return $$rendered;
 });

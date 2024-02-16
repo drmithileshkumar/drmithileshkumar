@@ -13,12 +13,12 @@
     import { onMount } from 'svelte';
     export let data;
     
-    let type= 'Objective', course = '', statement = '', optionA = '', optionB = '', optionC = '', optionD = '', solution = '', correct = [];
+    let type= 'Objective', courseName = '', statement = '', optionA = '', optionB = '', optionC = '', optionD = '', solution = '', correct = [], isPublic = true, publicID;
     let options = ['A', 'B', 'C', 'D'];
     let types = ['Objective', 'Subjective'];
     onMount(() => {
         type = data.question.type;
-        course = data.question.course;
+        courseName = data.question.courseName;
         statement = data.question.statement;
         optionA = data.question.optionA;
         optionB = data.question.optionB;
@@ -26,6 +26,9 @@
         optionD = data.question.optionD;
         correct = data.question.correct;
         solution = data.question.solution;
+        isPublic = data.question.isPublic;
+        publicID = data.question.publicID;
+        isPublic = data.question.isPublic;
         setTimeout(() => typeset(), 0);
     })
     let preview;
@@ -33,14 +36,16 @@
         let question = {
             _id: data.question._id,
             type,
-            course,
+            courseName,
             statement,
             optionA,
             optionB,
             optionC,
             optionD,
             correct,
-            solution
+            solution,
+            publicID,
+            isPublic
         }
         let res = await fetch("/api/${$page.data.user.publicID}/questions/${data.quention._id}", {
             method: 'PUT',
@@ -107,10 +112,14 @@
                     </FormField>
                 {/each}
             </div>
+            <FormField>
+                <Checkbox bind:checked={isPublic} value={isPublic} />
+                <span slot="label">Is Public</span>
+            </FormField>
             <Textfield 
                 variant="outlined"
                 label="Course Name"
-                bind:value={course}
+                bind:value={courseName}
                 style="width:100%"
             />
             <Textfield 

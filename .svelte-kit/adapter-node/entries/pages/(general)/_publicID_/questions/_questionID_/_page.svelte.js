@@ -20,7 +20,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_page;
   $$unsubscribe_page = subscribe(page, (value) => value);
   let { data } = $$props;
-  let type = "Objective", course = "", statement = "", optionA = "", optionB = "", optionC = "", optionD = "", solution = "", correct = [];
+  let type = "Objective", courseName = "", statement = "", optionA = "", optionB = "", optionC = "", optionD = "", solution = "", correct = [], isPublic = true;
   let options = ["A", "B", "C", "D"];
   let types = ["Objective", "Subjective"];
   let preview;
@@ -62,17 +62,34 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                     )} `;
                   }
                 })}`;
-              })}</div> ${validate_component(Textfield, "Textfield").$$render(
+              })}</div> ${validate_component(FormField, "FormField").$$render($$result, {}, {}, {
+                label: () => {
+                  return `<span slot="label" data-svelte-h="svelte-1mcx8qw">Is Public</span>`;
+                },
+                default: () => {
+                  return `${validate_component(Checkbox, "Checkbox").$$render(
+                    $$result,
+                    { value: isPublic, checked: isPublic },
+                    {
+                      checked: ($$value) => {
+                        isPublic = $$value;
+                        $$settled = false;
+                      }
+                    },
+                    {}
+                  )}`;
+                }
+              })} ${validate_component(Textfield, "Textfield").$$render(
                 $$result,
                 {
                   variant: "outlined",
                   label: "Course Name",
                   style: "width:100%",
-                  value: course
+                  value: courseName
                 },
                 {
                   value: ($$value) => {
-                    course = $$value;
+                    courseName = $$value;
                     $$settled = false;
                   }
                 },

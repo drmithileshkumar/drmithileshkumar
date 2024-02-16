@@ -5,6 +5,6 @@ let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/(general)/students/_page.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/(general)/students/+page.js";
-export const imports = ["_app/immutable/nodes/260.hHs5fBtU.js","_app/immutable/chunks/scheduler.cQRDEcOs.js","_app/immutable/chunks/index.3X1eH1mp.js","_app/immutable/chunks/Card.0VZDzDAB.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/classAdderBuilder.ijDhO6Jw.js","_app/immutable/chunks/ActionIcons.Nzs3Qx8M.js","_app/immutable/chunks/entry.xZhO_Ors.js","_app/immutable/chunks/index.yZBYQTEr.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/stores.3l2-g5YS.js"];
+export const imports = ["_app/immutable/nodes/260.0PO8XtE_.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/Card.N1WqjGNp.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/classAdderBuilder.Fy7yNOSN.js","_app/immutable/chunks/ActionIcons.1m99DklS.js","_app/immutable/chunks/entry.6FICq9J2.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/stores.hUncZlGF.js"];
 export const stylesheets = ["_app/immutable/assets/260.BKWf8z-r.css","_app/immutable/assets/Message.ctOi1nG9.css","_app/immutable/assets/Link.mTa6ZPjX.css"];
 export const fonts = [];

@@ -25,7 +25,7 @@ export async function POST({locals, params, request}) {
 
     const questionsCollection = await getDBCollection('questions');
     let creationTimestamp = Date.now()
-    const confirm = await questionsCollection.insertOne({...question});
+    const confirm = await questionsCollection.insertOne({...question, publicID});
     if(!confirm.acknowledged) {
         return error(400, 'Failed!') 
     }

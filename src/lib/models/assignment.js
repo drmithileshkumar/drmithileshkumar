@@ -1,7 +1,7 @@
 // @ts-nocheck
 
 
-export const initializeNewAssignment = (title, university, department, session, semester, courseName, courseCode, totalMarks, numberOfQuestions, questions) => {
+export const initializeNewAssignment = (title, university, department, session, semester, courseName, courseCode, totalMarks, numberOfQuestions, questions, isPublic) => {
     let newAssignment = {
         title: 'Assignment 1',
         university: 'Dayananda Sagar University',
@@ -17,6 +17,7 @@ export const initializeNewAssignment = (title, university, department, session, 
             start: Date.now(),
             end: Date.now()
         },
+        isPublic: true,
         creationTimestamp: Date.now(), //private
     }
     return newAssignment;

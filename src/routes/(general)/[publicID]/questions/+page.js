@@ -9,13 +9,13 @@ export async function load({parent, fetch, params, url}) {
     
     let publicID = params.publicID;
 	
-	let res = await fetch(`/api/${publicID}/questions`);
-	let questions = await res.json();
-    let res1 = await fetch(`/api/${publicID}/assignments`);
-	let assignments = await res1.json();
+	// let res = await fetch(`/api/${publicID}/questions`);
+	// let questions = await res.json();
+    // let res1 = await fetch(`/api/${publicID}/assignments`);
+	// let assignments = await res1.json();
 	
-	// console.log('publici..D', publicID)
+	
     return {
-        questions, assignments
+        // questions, assignments
     }
 }

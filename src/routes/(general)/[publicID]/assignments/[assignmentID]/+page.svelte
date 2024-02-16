@@ -13,41 +13,30 @@
     import Assignment from '$lib/components/Assignment.svelte';
     import ShowQuestion from '$lib/components/ShowQuestion.svelte';
     import { onMount } from 'svelte';
+	import EditAssignment from '$lib/components/EditAssignment.svelte';
     export let data;
     
-    let type= 'Objective', course = '', statement = '', optionA = '', optionB = '', optionC = '', optionD = '', solution = '', correct = [];
-    let options = ['A', 'B', 'C', 'D'];
-    let types = ['Objective', 'Subjective'];
+
+    
+    let showQ = true, editAssignment = false;
     onMount(() => {
         
     })
     let preview;
-    const updateassignment = async () => {
-        let assignment = {
-            _id: data.assignment._id,
-            type,
-            course,
-            statement,
-            optionA,
-            optionB,
-            optionC,
-            optionD,
-            correct,
-            solution
-        }
+    const putAssignment = async () => {
         let res = await fetch("/api/${$page.data.user.publicID}/assignments/${data.quention._id}", {
             method: 'PUT',
             'content-Type': 'application/json',
-            body: JSON.stringify(assignment)
+            body: JSON.stringify(data.assignment)
         })
         if(res.ok) {
-            alert('assignment uploaded successfully');
+            alert('assignment updated successfully');
         } else {
             alert('Failed');
         }
     }
     const cancel = () => {
-
+        editAssignment = false;
     }
     const typeset = () => {
         // console.log('typesetting...')
@@ -87,9 +76,21 @@
     }
 </style>
 <article>
+    {#if !editAssignment}
     <Assignment assignment={data.assignment} viewable={false} />
+    {:else}
+        <EditAssignment bind:assignment={data.assignment} on:submit={putAssignment} on:cancel={cancel} />
+    {/if}
+    <div class="actions">
+        <Button on:click={() => editAssignment = !editAssignment}><Label>{editAssignment ? "Done" : 'Edit Assignment'}</Label></Button>
+        <Button on:click={() => showQ = !showQ}><Label>{showQ ? 'Hide' : 'Show'} Questions</Label></Button>
+        <Button on:click={() => goto(`/${$page.data.user.publicID}/questions`)}><Label>Add Questions</Label></Button>
+    </div>
+    
+    {#if showQ}
     <h6 style="margin:0.5em 0">Questions</h6>
     {#each data.assignment.questions as question}
         <ShowQuestion assignmentID={data.assignment._id} {question} on:deleted={updateQuestions}/>
     {/each}
+    {/if}
 </article>

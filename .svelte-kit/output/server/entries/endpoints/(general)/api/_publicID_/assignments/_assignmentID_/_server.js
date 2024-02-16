@@ -41,20 +41,10 @@ async function PUT({ locals, params, request }) {
   locals.user.publicID;
   const assignment = await request.json();
   let _id = assignment._id;
+  delete assignment._id;
   let assignmentsCollection = await getDBCollection("assignments");
   let confirm = await assignmentsCollection.updateOne({ _id: new ObjectId(_id) }, {
-    $set: {
-      title: assignment.title,
-      university: assignment.university,
-      department: assignment.department,
-      session: assignment.session,
-      semester: assignment.semester,
-      courseName: assignment.courseName,
-      courseCode: assignment.courseCode,
-      totalMarks: assignment.totalMarks,
-      numberOfQuestions: assignment.numberOfQuestions,
-      questions: assignment.questions
-    }
+    $set: { ...assignment }
   });
   if (!confirm.acknowledged) {
     return error(400, "Failed!");

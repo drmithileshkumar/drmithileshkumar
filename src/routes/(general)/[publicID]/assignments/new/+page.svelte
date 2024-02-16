@@ -3,6 +3,7 @@
     import { page } from '$app/stores';
     import { browser } from "$app/environment";
     // import { typeset } from "$lib/shared/typeset";
+    import EditAssignment from '$lib/components/EditAssignment.svelte';
     import Card, { Content, Actions} from '@smui/card';
     import Button, { Label} from '@smui/button';
     import Textfield from '@smui/textfield';
@@ -19,27 +20,27 @@
         totalMarks= 100,
         numberOfQuestions= 10,
         dates = {
-            start: Date.now(),
-            end: Date.now()
+            start: 'dd-mm-yy',
+            end: 'dd-mm-yy'
         },
+        isPublic = true,
         questions= [];
-    let options = ['A', 'B', 'C', 'D'];
-    let types = ['Objective', 'Subjective'];
+    let assignment = {
+        title,
+        university,
+        department,
+        session,
+        semester,
+        courseName,
+        courseCode,
+        totalMarks,
+        numberOfQuestions,
+        questions,
+        dates,
+        isPublic
+    }
     let preview;
     const postAssignment = async () => {
-        let assignment = {
-            title,
-            university,
-            department,
-            session,
-            semester,
-            courseName,
-            courseCode,
-            totalMarks,
-            numberOfQuestions,
-            questions,
-            dates
-        }
         let res = await fetch("/api/${$page.data.user.publicID}/assignments/new", {
             method: 'POST',
             'content-Type': 'application/json',
@@ -84,80 +85,9 @@
 </style>
 <article>
     <h5>New assignment</h5>
-    <Card>
-        <Content style="display: flex; flex-direction:column;gap:1em;">
-            <Textfield 
-                variant="outlined"
-                label="Title"
-                bind:value={title}
-                style="width:100%"
-            />
-            <Textfield 
-                variant="outlined"
-                label="University"
-                bind:value={university}
-                style="width:100%"
-            />
-            <Textfield 
-                variant="outlined"
-                label="Department"
-                bind:value={department}
-                style="width:100%"
-            />
-            <Textfield 
-                variant="outlined"
-                label="Session"
-                bind:value={session}
-                style="width:100%"
-            />
-            <Textfield 
-                variant="outlined"
-                label="Semester"
-                bind:value={semester}
-                style="width:100%"
-            />
-            <Textfield 
-                variant="outlined"
-                label="Course Name"
-                bind:value={courseName}
-                style="width:100%"
-            />
-            <Textfield 
-                variant="outlined"
-                label="Course Code"
-                bind:value={courseCode}
-                style="width:100%"
-            />
-            <Textfield 
-                variant="outlined"
-                type="number"
-                label="Total Marks"
-                bind:value={totalMarks}
-                style="width:100%"
-            />
-            <Textfield 
-                variant="outlined"
-                type="number"
-                label="Number of Questions"
-                bind:value={numberOfQuestions}
-                style="width:100%"
-            />
-            <Textfield 
-                variant="outlined"
-                type="date"
-                label="Start"
-                bind:value={dates.start}
-            />
-            <Textfield 
-                variant="outlined"
-                type="date"
-                label="End"
-                bind:value={dates.end}
-            />
-        </Content>
-        <Actions>
-            <Button on:click={postAssignment}><Label>Submit</Label></Button>
-            <Button on:click={cancel}><Label>Cancel</Label></Button>
-        </Actions>
-    </Card>
-</article>
+    <EditAssignment bind:assignment on:submit={postAssignment} on:cancel={cancel} />
+    <!-- <Actions>
+        <Button on:click={postAssignment}><Label>Submit</Label></Button>
+        <Button on:click={cancel}><Label>Cancel</Label></Button>
+    </Actions> -->
+</article> 

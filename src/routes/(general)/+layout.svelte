@@ -34,7 +34,7 @@
     // $:console.log($page.data.user)
     
     $: sideWidth = $showRight ? 300 : 0;
-    $: console.log($showRight);
+    
 </script>
 <svelte:head>
     <link

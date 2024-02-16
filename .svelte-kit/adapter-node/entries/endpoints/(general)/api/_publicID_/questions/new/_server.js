@@ -17,10 +17,10 @@ async function POST({ locals, params, request }) {
   if (!locals.user) {
     return error(401, "Unauthorized");
   }
-  locals.user.publicID;
+  const publicID = locals.user.publicID;
   const question = await request.json();
   const questionsCollection = await getDBCollection("questions");
-  const confirm = await questionsCollection.insertOne({ ...question });
+  const confirm = await questionsCollection.insertOne({ ...question, publicID });
   if (!confirm.acknowledged) {
     return error(400, "Failed!");
   }

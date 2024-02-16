@@ -780,9 +780,6 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$result.head = previous_head;
     fixed = W < 600;
     sideWidth = $showRight ? 300 : 0;
-    {
-      console.log($showRight);
-    }
     $$rendered = `${$$result.head += `<!-- HEAD_svelte-191nvh5_START --><link rel="stylesheet" id="theme" href="${"/smui" + escape($darkMode ? "-dark" : "", true) + ".css"}" class="svelte-z3f1g"><!-- HEAD_svelte-191nvh5_END -->`, ""} ${validate_component(Analytics, "Analytics").$$render($$result, {}, {}, {})} <header style="position: relative;" class="svelte-z3f1g">${validate_component(TopAppBar, "TopAppBar").$$render($$result, { variant: "fixed", color: "secondary" }, {}, {
       default: () => {
         return `${validate_component(Row, "Row").$$render($$result, {}, {}, {

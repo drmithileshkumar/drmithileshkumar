@@ -9,21 +9,22 @@
     import FormField from '@smui/form-field';
     import Checkbox from '@smui/checkbox';
     import Radio from '@smui/radio';
-    let type= 'Objective', course = '', statement = '', optionA = '', optionB = '', optionC = '', optionD = '', solution = '', correct = [];
+    let type= 'Objective', courseName = '', statement = '', optionA = '', optionB = '', optionC = '', optionD = '', solution = '', correct = [], isPublic = true;
     let options = ['A', 'B', 'C', 'D'];
     let types = ['Objective', 'Subjective'];
     let preview;
     const postQuestion = async () => {
         let question = {
             type,
-            course,
+            courseName,
             statement,
             optionA,
             optionB,
             optionC,
             optionD,
             correct,
-            solution
+            solution,
+            isPublic
         }
         let res = await fetch("/api/${$page.data.user.publicID}/questions/new", {
             method: 'POST',
@@ -87,10 +88,14 @@
                     </FormField>
                 {/each}
             </div>
+            <FormField>
+                <Checkbox bind:checked={isPublic} value={isPublic} />
+                <span slot="label">Is Public</span>
+            </FormField>
             <Textfield 
                 variant="outlined"
                 label="Course Name"
-                bind:value={course}
+                bind:value={courseName}
                 style="width:100%"
             />
             <Textfield 

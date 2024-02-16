@@ -3,13 +3,14 @@ import {getDBCollection} from '$lib/server/mongo'
 import {error} from '@sveltejs/kit';
 import { ObjectId } from 'mongodb';
 
-export async function GET({locals, params, request}) {
+export async function GET({locals, params, url, request}) {
     if(!locals.user) {
         return error(401, 'Unauthorized');
     }
     const publicID = locals.user.publicID;
+    const courseName = url.searchParams.get('courseName')
     const assignmentsCollection = await getDBCollection('assignments');
-    let assignments = await assignmentsCollection.find({}).toArray();
+    let assignments = await assignmentsCollection.find({ $or : [{publicID, courseName}, {isPublic: true, courseName}]}).toArray();
     if(!assignments) {
         assignments = []
     }
