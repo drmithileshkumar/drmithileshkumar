@@ -18,7 +18,8 @@
     import NavList from '$lib/components/NavList.svelte'
     import { currentPath } from "$lib/stores";
     import { darkMode, navList } from "$lib/stores";
-    import { contents } from "$lib/pages/courses/internet/content";
+    import { contents, contentNav } from "$lib/pages/courses/internet/content";
+    import CourseNavigation from "$lib/components/CourseNavigation.svelte"
     $navList = contents;
     $currentPath = "Multipurpose Internet Mail Extensions";
     $darkMode = false;
@@ -70,6 +71,7 @@
     {/if}
 </svelte:head>
 <article>
+    <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
     <h4>
         Multipurpose Internet Mail Extensions
     </h4>

@@ -19,7 +19,8 @@
     import NavList from '$lib/components/NavList.svelte'
     import { currentPath } from "$lib/stores";
     import { darkMode, navList } from "$lib/stores";
-    import { contents } from "$lib/pages/courses/internet/content";
+    import { contents, contentNav } from "$lib/pages/courses/internet/content";
+    import CourseNavigation from "$lib/components/CourseNavigation.svelte";
     $navList = contents;
     $currentPath = "The HyperText Transfer Protocol (HTTP)";
     $darkMode = false;
@@ -71,6 +72,7 @@
     {/if}
 </svelte:head>
 <article>
+    <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
     <h4>
         The HyperText Transfer Protocol (HTTP)
     </h4>

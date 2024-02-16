@@ -7,7 +7,7 @@
         .vectorial {
             margin-top: 1em;
             padding: 0.5em;
-            width: 100%;
+            /* width: 100%; */
             /* display: flex;
             flex-direction: row;
             flex-wrap: wrap;

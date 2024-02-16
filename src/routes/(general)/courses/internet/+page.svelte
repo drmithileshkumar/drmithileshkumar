@@ -19,8 +19,9 @@
     import NavList from '$lib/components/NavList.svelte'
     import { currentPath } from "$lib/stores";
     import { darkMode, navList } from "$lib/stores";
-    import { contents } from "$lib/pages/courses/internet/content";
+    import { contents, contentNav } from "$lib/pages/courses/internet/content";
     import Pathlist from "$lib/components/Pathlist.svelte";
+	import CourseNavigation from "$lib/components/CourseNavigation.svelte";
     $navList = contents;
     $currentPath = "Internet Technologies";
     $darkMode = false;
@@ -73,6 +74,7 @@
 </svelte:head>
 <article>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
+    <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
     <h4>
         Internet Technologies
     </h4>

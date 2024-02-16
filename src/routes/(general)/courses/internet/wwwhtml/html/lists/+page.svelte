@@ -18,10 +18,11 @@
     import NavList from '$lib/components/NavList.svelte'
     import { currentPath } from "$lib/stores";
     import { darkMode, navList } from "$lib/stores";
-    import { contents } from "$lib/pages/courses/internet/content";
+    import { contents, contentNav } from "$lib/pages/courses/internet/content";
 	import WebPractice from "$lib/pages/courses/internet/WebPractice.svelte";
 	import DataTable, {Head, Body, Row, Cell} from "@smui/data-table";
     import Pathlist from '$lib/components/Pathlist.svelte';
+    import CourseNavigation from "$lib/components/CourseNavigation.svelte";
     $navList = contents;
     $currentPath = "Lists";
     $darkMode = false;
@@ -105,6 +106,7 @@
 </svelte:head>
 <article>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
+    <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
     <h4>
         Lists
     </h4>

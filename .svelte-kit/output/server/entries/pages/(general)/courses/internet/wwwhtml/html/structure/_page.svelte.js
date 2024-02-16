@@ -1,6 +1,6 @@
 import { s as subscribe, b as set_store_value } from "../../../../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component } from "../../../../../../../../chunks/ssr.js";
-import { g as githubDark, a as github, c as contents } from "../../../../../../../../chunks/content3.js";
+import { g as githubDark, a as github, c as contentNav, b as contents, C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 /* empty css                                                                */
 import { p as page } from "../../../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../../../chunks/Card.js";
@@ -49,6 +49,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     {
       origin: $page.url.origin,
       pathname: $page.url.pathname
+    },
+    {},
+    {}
+  )} ${validate_component(CourseNavigation, "CourseNavigation").$$render(
+    $$result,
+    {
+      contentNav,
+      currentUrl: $page.url.pathname
     },
     {},
     {}

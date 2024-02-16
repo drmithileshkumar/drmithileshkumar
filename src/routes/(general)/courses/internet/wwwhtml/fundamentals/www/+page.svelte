@@ -18,7 +18,8 @@
     import NavList from '$lib/components/NavList.svelte'
     import { currentPath } from "$lib/stores";
     import { darkMode, navList } from "$lib/stores";
-    import { contents } from "$lib/pages/courses/internet/content";
+    import { contents, contentNav } from "$lib/pages/courses/internet/content";
+    import CourseNavigation from '$lib/components/CourseNavigation.svelte'
     $navList = contents;
     $currentPath = "The World Wide Web";
     $darkMode = false;
@@ -70,9 +71,10 @@
     {/if}
 </svelte:head>
 <article>
-    <h2>
+    <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
+    <h4>
         The World Wide Web
-    </h2>
+    </h4>
     <Card>
         <Content>
             <h6>Origins</h6>
