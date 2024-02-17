@@ -180,9 +180,45 @@ let htmlContentSelect = `<!DOCTYPE html>
                 <option>Motorola</option>
                 <option>Vivo</option>
             </select>
+            <!--Opt goup-->
+            <select name="Nested">
+                <optgroup label="Apple">
+                    <option>iPhone</option>
+                    <option>iPad</option>
+                    <option>Mac</option>
+                    <option>Air Pod</option>
+                </optgroup>
+                <optgroup label="Android">
+                    <option>Samsung</opton>
+                    <option>Mi</option>
+                    <option>Vivo</option>
+                    <option>Oppo</option>
+                </optgroup>
+            </select>
         </form>
     </body> 
 </html>
+`
+let htmlContentTextarea = `<!DOCTYPE html>
+<html lang = "en" >
+    <head> 
+        <title> Textarea </title>
+        <meta charset = "utf-8" />
+    </head>
+    <body>
+        <p>
+            Please write about yourself
+        </p>
+        <form action = "handler">
+            <p>
+                <textarea name = "description"  rows = "3"  cols = "40">
+            (Word limit 300) 
+                </textarea>
+            </p>
+        </form>
+    </body>
+</html>
+
 `
 </script>
 <style>
@@ -217,7 +253,9 @@ let htmlContentSelect = `<!DOCTYPE html>
         cursor: pointer;
         padding: 0.3em;
     }
-    
+    :global(code) {
+        background-color: rgba(0, 100, 100, 0.1);
+    }
 </style>
 <svelte:head>
     <title>Internet Technologies</title>
@@ -243,8 +281,6 @@ let htmlContentSelect = `<!DOCTYPE html>
                 <li><a href="#inputForm">The <code>input</code> Element</a></li>
                 <li><a href="#selectForm">The <code>select</code> Element</a></li>
                 <li><a href="#textareaForm">The <code>textarea</code> Element</a></li>
-                <li><a href="#buttonForm">The Action Buttons</a></li>
-                <li><a href="#completeForm">A Complete Form</a></li>
             </ol>
             <p>For a better understanding of form submission, read <a href="/courses/internet/wwwhtml/fundamentals/http">HTTP protocol</a>.</p>
         </Content>
@@ -436,12 +472,30 @@ let htmlContentSelect = `<!DOCTYPE html>
                 </Body>
             </DataTable>
             <p>
-                Items in the menu are specified with <code>option</code> element, similar to <code>li</code> in case of lists. The content (the text) in the <code>option</code> tag is the value of that <em>option</em>. This means that tags are not allowed in the text to <code>option</code>. An attribute <code>selected</code> to an <code>option</code> implies that the option is pre-selected.
+                Items in the menu are specified with <code>option</code> element, similar to <code>li</code> in case of lists. The content (the text) in the <code>option</code> tag is the value of that <em>option</em>. To assign a value different than the textcontent, <code>option</code> has an attribute called <code>value</code>.
+            </p>
+            <p>
+                An attribute <code>selected</code> to an <code>option</code> implies that the option is pre-selected.
             </p>
             <p class="remark">Use <code>ctrl</code> to select more than one item in case of <code>multiple</code></p>
+            <p>
+                We can use <code>optgroup</code> to create separate groupings with label inside the menu as shown below.
+            </p>
         </Content>
     </Card>
     <WebPractice htmlContent={htmlContentSelect} cssContent={""} jsContent={""} />
+    <Card>
+        <Content>
+            <h6 id="textareaForm">The <code>textarea</code> Element</h6>
+            <p>
+                <code>textarea</code> is used to enter multiline text.
+            </p>
+            <p>
+                Usually <code>textarea</code> box is resizable. Attributes like <code>cols</code> and <code>rows</code> can be provided to start with a given number of columns and rows.
+            </p>
+        </Content>
+    </Card>
+    <WebPractice htmlContent={htmlContentTextarea} cssContent={""} jsContent={""} />
     <h4>Exercise</h4>
     <Card>
         <Content>
@@ -461,6 +515,13 @@ let htmlContentSelect = `<!DOCTYPE html>
         <Content>
             <div class="question">
                 Create a form for LPG connection with input fields for name, aadhar card, address, email, phone and input field to upload passport size photo.
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                Create a select menu that shows five states in India with at least three major cities in each state. Use <code>optgroup</code> for the states.
             </div>
         </Content>
     </Card>

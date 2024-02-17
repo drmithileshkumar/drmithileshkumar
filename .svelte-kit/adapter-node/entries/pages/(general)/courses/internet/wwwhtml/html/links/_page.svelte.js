@@ -13,7 +13,7 @@ import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js"
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 const css = {
-  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-9tb2l5{cursor:pointer}.question.svelte-9tb2l5{cursor:pointer;padding:0.3em}",
+  code: "article.svelte-beztui{display:flex;flex-direction:column;gap:0.5em}p.svelte-beztui,li.svelte-beztui{opacity:0.8}h4.svelte-beztui{margin:0.5em 0}h6.svelte-beztui{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-beztui{cursor:pointer;text-decoration:none}.question.svelte-beztui{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -50,7 +50,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
   $$unsubscribe_page();
-  return `${$$result.head += `<!-- HEAD_svelte-1qzde0x_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/html/links"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-1qzde0x_END -->`, ""} <article class="svelte-9tb2l5">${validate_component(Pathlist, "Pathlist").$$render(
+  return `${$$result.head += `<!-- HEAD_svelte-1qzde0x_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/html/links"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-1qzde0x_END -->`, ""} <article class="svelte-beztui">${validate_component(Pathlist, "Pathlist").$$render(
     $$result,
     {
       origin: $page.url.origin,
@@ -66,19 +66,26 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-1dito7u">Hypertext Links</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
-    default: () => {
-      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
-        default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-xst25n"><li class="svelte-9tb2l5"><a href="#link" class="svelte-9tb2l5">Links</a></li> <li class="svelte-9tb2l5"><a href="#target" class="svelte-9tb2l5">Targets within Documents</a></li></ol>`;
-        }
-      })}`;
+  )} <h4 class="svelte-beztui" data-svelte-h="svelte-1dito7u">Hypertext Links</h4> ${validate_component(Card, "Card").$$render(
+    $$result,
+    {
+      style: "background-color: rgba(0, 100, 100, 0.1"
+    },
+    {},
+    {
+      default: () => {
+        return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+          default: () => {
+            return `<h6 class="svelte-beztui" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-xst25n"><li class="svelte-beztui"><a href="#link" class="svelte-beztui">Links</a></li> <li class="svelte-beztui"><a href="#target" class="svelte-beztui">Targets within Documents</a></li></ol>`;
+          }
+        })}`;
+      }
     }
-  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  )} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<p class="svelte-9tb2l5" data-svelte-h="svelte-1whqgdb">Links are used to connect different resources.</p>`;
+          return `<p class="svelte-beztui" data-svelte-h="svelte-1whqgdb">Links are used to connect different resources.</p>`;
         }
       })}`;
     }
@@ -95,7 +102,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="link" class="svelte-9tb2l5" data-svelte-h="svelte-d3wap5">Links</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-12nhnig">A link points to a different resource via an address, usually URL or id. <code>a</code> tag (anchor) is used for linking documents. <code>a</code> tag has an attribute called <code>href</code> that takes the URL or id of the target.</p>`;
+          return `<h6 id="link" class="svelte-beztui" data-svelte-h="svelte-d3wap5">Links</h6> <p class="svelte-beztui" data-svelte-h="svelte-12nhnig">A link points to a different resource via an address, usually URL or id. <code>a</code> tag (anchor) is used for linking documents. <code>a</code> tag has an attribute called <code>href</code> that takes the URL or id of the target.</p>`;
         }
       })}`;
     }
@@ -103,15 +110,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="target" class="svelte-9tb2l5" data-svelte-h="svelte-2vfq9s">Targets within Documents</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-7vhal6">It is possible to automatically scroll to an element in your document using the <code>a</code>. The <code>href</code> attribute of the <code>a</code> tag is assigned the <code>id</code> of the target element in the format <code>#id</code>.</p> <p class="svelte-9tb2l5" data-svelte-h="svelte-1cn3jae">If the target element is in another document, then the <code>#id</code> is attached at the end of the URL of the document.</p>`;
+          return `<h6 id="target" class="svelte-beztui" data-svelte-h="svelte-2vfq9s">Targets within Documents</h6> <p class="svelte-beztui" data-svelte-h="svelte-7vhal6">It is possible to automatically scroll to an element in your document using the <code>a</code>. The <code>href</code> attribute of the <code>a</code> tag is assigned the <code>id</code> of the target element in the format <code>#id</code>.</p> <p class="svelte-beztui" data-svelte-h="svelte-1cn3jae">If the target element is in another document, then the <code>#id</code> is attached at the end of the URL of the document.</p>`;
         }
       })}`;
     }
-  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-hc8mgz">Assignment</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })} <h4 class="svelte-beztui" data-svelte-h="svelte-hc8mgz">Assignment</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-14vafk3">Place a link to your github repository inside your resume. Use github logo.</div>`;
+          return `<div class="question svelte-beztui" data-svelte-h="svelte-14vafk3">Place a link to your github repository inside your resume. Use github logo.</div>`;
         }
       })}`;
     }

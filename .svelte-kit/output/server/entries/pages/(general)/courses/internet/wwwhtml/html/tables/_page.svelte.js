@@ -13,7 +13,7 @@ import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js"
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 const css = {
-  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-9tb2l5{cursor:pointer}.question.svelte-9tb2l5{cursor:pointer;padding:0.3em}",
+  code: "article.svelte-jodgkw{display:flex;flex-direction:column;gap:0.5em}p.svelte-jodgkw,li.svelte-jodgkw{opacity:0.8}h4.svelte-jodgkw{margin:0.5em 0}h6.svelte-jodgkw{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-jodgkw{text-decoration:none;cursor:pointer}.question.svelte-jodgkw{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -166,7 +166,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
   $$unsubscribe_page();
-  return `${$$result.head += `<!-- HEAD_svelte-9jik69_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/html/tables"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-9jik69_END -->`, ""} <article class="svelte-9tb2l5">${validate_component(Pathlist, "Pathlist").$$render(
+  return `${$$result.head += `<!-- HEAD_svelte-9jik69_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/html/tables"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-9jik69_END -->`, ""} <article class="svelte-jodgkw">${validate_component(Pathlist, "Pathlist").$$render(
     $$result,
     {
       origin: $page.url.origin,
@@ -182,11 +182,26 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-1wtic7p">Tables</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  )} <h4 class="svelte-jodgkw" data-svelte-h="svelte-1wtic7p">Tables</h4> ${validate_component(Card, "Card").$$render(
+    $$result,
+    {
+      style: "background-color: rgba(0, 100, 100, 0.1"
+    },
+    {},
+    {
+      default: () => {
+        return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+          default: () => {
+            return `<h6 class="svelte-jodgkw" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-imayvc"><li class="svelte-jodgkw"><a href="#basicTable" class="svelte-jodgkw">Basic Table Tags</a></li> <li class="svelte-jodgkw"><a href="#tableSpan" class="svelte-jodgkw">The <code>rowspan</code> and <code>colspan</code> Attributes</a></li> <li class="svelte-jodgkw"><a href="#tableSection" class="svelte-jodgkw">Table Sections</a></li></ol>`;
+          }
+        })}`;
+      }
+    }
+  )} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-imayvc"><li class="svelte-9tb2l5"><a href="#basicTable" class="svelte-9tb2l5">Basic Table Tags</a></li> <li class="svelte-9tb2l5"><a href="#tableSpan" class="svelte-9tb2l5">The <code>rowspan</code> and <code>colspan</code> Attributes</a></li> <li class="svelte-9tb2l5"><a href="#tableSection" class="svelte-9tb2l5">Table Sections</a></li></ol>`;
+          return `<p class="svelte-jodgkw" data-svelte-h="svelte-1vg6yla">As the name suggests, a table is created using the <code>table</code> in HTML. There are many components to a <code>table</code> that we&#39;ll learn in this section.</p>`;
         }
       })}`;
     }
@@ -194,15 +209,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<p class="svelte-9tb2l5" data-svelte-h="svelte-1vg6yla">As the name suggests, a table is created using the <code>table</code> in HTML. There are many components to a <code>table</code> that we&#39;ll learn in this section.</p>`;
-        }
-      })}`;
-    }
-  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
-    default: () => {
-      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
-        default: () => {
-          return `<h6 id="basicTable" class="svelte-9tb2l5" data-svelte-h="svelte-1d05kz">Basic Table Tags</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-1xmmvrc">A table begins with the <code>table</code> tag. Inside we create many rows using <code>tr</code> tag. Inside each row, the corresponding column entries are placed inside <code>td</code> tags. Table headings either in row or column are placed inside <code>th</code> tag.</p>`;
+          return `<h6 id="basicTable" class="svelte-jodgkw" data-svelte-h="svelte-1d05kz">Basic Table Tags</h6> <p class="svelte-jodgkw" data-svelte-h="svelte-1xmmvrc">A table begins with the <code>table</code> tag. Inside we create many rows using <code>tr</code> tag. Inside each row, the corresponding column entries are placed inside <code>td</code> tags. Table headings either in row or column are placed inside <code>th</code> tag.</p>`;
         }
       })}`;
     }
@@ -219,7 +226,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="tableSpan" class="svelte-9tb2l5" data-svelte-h="svelte-1d5x3sl">The <code>rowspan</code> and <code>colspan</code> Attributes</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-y4ge7j">Cells can can be merged using <code>rowspan</code> and <code>colspan</code> attributes. Notice that these attributes belong to <code>th</code> and <code>td</code> elements.</p>`;
+          return `<h6 id="tableSpan" class="svelte-jodgkw" data-svelte-h="svelte-1d5x3sl">The <code>rowspan</code> and <code>colspan</code> Attributes</h6> <p class="svelte-jodgkw" data-svelte-h="svelte-y4ge7j">Cells can can be merged using <code>rowspan</code> and <code>colspan</code> attributes. Notice that these attributes belong to <code>th</code> and <code>td</code> elements.</p>`;
         }
       })}`;
     }
@@ -236,23 +243,23 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="tableSection" class="svelte-9tb2l5" data-svelte-h="svelte-py2xed">Table Sections</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-7dgmkw">Table sections are specified by tags <code>thead</code>, <code>tbody</code> and <code>tfoot</code></p>`;
+          return `<h6 id="tableSection" class="svelte-jodgkw" data-svelte-h="svelte-py2xed">Table Sections</h6> <p class="svelte-jodgkw" data-svelte-h="svelte-7dgmkw">Table sections are specified by tags <code>thead</code>, <code>tbody</code> and <code>tfoot</code></p>`;
         }
       })}`;
     }
-  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-1yto96c">Exercise</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })} <h4 class="svelte-jodgkw" data-svelte-h="svelte-1yto96c">Exercise</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-ztkz9f">Create your timetable this semester. Instead of using name of courses, use representative images for each course.</div>`;
+          return `<div class="question svelte-jodgkw" data-svelte-h="svelte-ztkz9f">Create your timetable this semester. Instead of using name of courses, use representative images for each course.</div>`;
         }
       })}`;
     }
-  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-hc8mgz">Assignment</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })} <h4 class="svelte-jodgkw" data-svelte-h="svelte-hc8mgz">Assignment</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-t9iors">Update your resume by including a table of courses you have done so far. The table should have three columns: Semester, Course Name, Course Description.</div>`;
+          return `<div class="question svelte-jodgkw" data-svelte-h="svelte-t9iors">Update your resume by including a table of courses you have done so far. The table should have three columns: Semester, Course Name, Course Description.</div>`;
         }
       })}`;
     }

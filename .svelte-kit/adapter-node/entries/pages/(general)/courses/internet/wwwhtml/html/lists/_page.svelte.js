@@ -13,7 +13,7 @@ import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js"
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 const css = {
-  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-9tb2l5{cursor:pointer}.question.svelte-9tb2l5{cursor:pointer;padding:0.3em}",
+  code: "article.svelte-beztui{display:flex;flex-direction:column;gap:0.5em}p.svelte-beztui,li.svelte-beztui{opacity:0.8}h4.svelte-beztui{margin:0.5em 0}h6.svelte-beztui{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-beztui{cursor:pointer;text-decoration:none}.question.svelte-beztui{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -65,7 +65,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
   $$unsubscribe_page();
-  return `${$$result.head += `<!-- HEAD_svelte-1h7cwkd_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/html/lists"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-1h7cwkd_END -->`, ""} <article class="svelte-9tb2l5">${validate_component(Pathlist, "Pathlist").$$render(
+  return `${$$result.head += `<!-- HEAD_svelte-1h7cwkd_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/html/lists"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-1h7cwkd_END -->`, ""} <article class="svelte-beztui">${validate_component(Pathlist, "Pathlist").$$render(
     $$result,
     {
       origin: $page.url.origin,
@@ -81,19 +81,26 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-1gv96er">Lists</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
-    default: () => {
-      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
-        default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-64z3l3"><li class="svelte-9tb2l5"><a href="#unorderedList" class="svelte-9tb2l5">Unordered List</a></li> <li class="svelte-9tb2l5"><a href="#orderedList" class="svelte-9tb2l5">Ordered List</a></li> <li class="svelte-9tb2l5"><a href="#definitionList" class="svelte-9tb2l5">Definition List</a></li></ol>`;
-        }
-      })}`;
+  )} <h4 class="svelte-beztui" data-svelte-h="svelte-1gv96er">Lists</h4> ${validate_component(Card, "Card").$$render(
+    $$result,
+    {
+      style: "background-color: rgba(0, 100, 100, 0.1"
+    },
+    {},
+    {
+      default: () => {
+        return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+          default: () => {
+            return `<h6 class="svelte-beztui" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-64z3l3"><li class="svelte-beztui"><a href="#unorderedList" class="svelte-beztui">Unordered List</a></li> <li class="svelte-beztui"><a href="#orderedList" class="svelte-beztui">Ordered List</a></li> <li class="svelte-beztui"><a href="#definitionList" class="svelte-beztui">Definition List</a></li></ol>`;
+          }
+        })}`;
+      }
     }
-  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  )} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<p class="svelte-9tb2l5" data-svelte-h="svelte-a0x6z">Lists are used to format content in some order, usually top to bottom with markers placed in front of each item.</p>`;
+          return `<p class="svelte-beztui" data-svelte-h="svelte-a0x6z">Lists are used to format content in some order, usually top to bottom with markers placed in front of each item.</p>`;
         }
       })}`;
     }
@@ -110,7 +117,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="unorderedList" class="svelte-9tb2l5" data-svelte-h="svelte-1rwr9wy">Unordered List</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-12he7pb">Unordered list is created using the tag <code>ul</code> (unordered list). Inside, the items are placed inside individual item tags <code>li</code> (list item).</p>`;
+          return `<h6 id="unorderedList" class="svelte-beztui" data-svelte-h="svelte-1rwr9wy">Unordered List</h6> <p class="svelte-beztui" data-svelte-h="svelte-12he7pb">Unordered list is created using the tag <code>ul</code> (unordered list). Inside, the items are placed inside individual item tags <code>li</code> (list item).</p>`;
         }
       })}`;
     }
@@ -118,7 +125,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="orderedList" class="svelte-9tb2l5" data-svelte-h="svelte-12gi53s">Ordered List</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-1ji8m2r">Ordered list is created using the tag <code>ol</code> (ordered list). Inside, the items are placed inside individual item tags <code>li</code> (list item).</p>`;
+          return `<h6 id="orderedList" class="svelte-beztui" data-svelte-h="svelte-12gi53s">Ordered List</h6> <p class="svelte-beztui" data-svelte-h="svelte-1ji8m2r">Ordered list is created using the tag <code>ol</code> (ordered list). Inside, the items are placed inside individual item tags <code>li</code> (list item).</p>`;
         }
       })}`;
     }
@@ -126,15 +133,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="definitionList" class="svelte-9tb2l5" data-svelte-h="svelte-qgi96e">Definition List</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-1i7gbx5">Definition list is created using the tag <code>dl</code> (definition list). Inside, the items are placed inside individual item tags <code>dt</code> (definition title) and <code>dd</code> (definition data).</p>`;
+          return `<h6 id="definitionList" class="svelte-beztui" data-svelte-h="svelte-qgi96e">Definition List</h6> <p class="svelte-beztui" data-svelte-h="svelte-1i7gbx5">Definition list is created using the tag <code>dl</code> (definition list). Inside, the items are placed inside individual item tags <code>dt</code> (definition title) and <code>dd</code> (definition data).</p>`;
         }
       })}`;
     }
-  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-1yto96c">Exercise</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })} <h4 class="svelte-beztui" data-svelte-h="svelte-1yto96c">Exercise</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-1lggxmb">Groceries</h6> <div class="question svelte-9tb2l5" data-svelte-h="svelte-gk5khy">Create a list of groceries. The primary list is of categories. The secondary lists are items in the categories.</div>`;
+          return `<h6 class="svelte-beztui" data-svelte-h="svelte-1lggxmb">Groceries</h6> <div class="question svelte-beztui" data-svelte-h="svelte-gk5khy">Create a list of groceries. The primary list is of categories. The secondary lists are items in the categories.</div>`;
         }
       })}`;
     }
@@ -142,15 +149,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-1r4sj6k">HTML tags</h6> <div class="question svelte-9tb2l5" data-svelte-h="svelte-1df74es">Use definition list to create a list that defines <code>p, sub, sup, code, pre, img, a</code> tags.</div>`;
+          return `<h6 class="svelte-beztui" data-svelte-h="svelte-1r4sj6k">HTML tags</h6> <div class="question svelte-beztui" data-svelte-h="svelte-1df74es">Use definition list to create a list that defines <code>p, sub, sup, code, pre, img, a</code> tags.</div>`;
         }
       })}`;
     }
-  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-hc8mgz">Assignment</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })} <h4 class="svelte-beztui" data-svelte-h="svelte-hc8mgz">Assignment</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-16q5n00">Create a section for education in your resume. Use list to show the list of your exams like Class X, Class XII etc.</div>`;
+          return `<div class="question svelte-beztui" data-svelte-h="svelte-16q5n00">Create a section for education in your resume. Use list to show the list of your exams like Class X, Class XII etc.</div>`;
         }
       })}`;
     }

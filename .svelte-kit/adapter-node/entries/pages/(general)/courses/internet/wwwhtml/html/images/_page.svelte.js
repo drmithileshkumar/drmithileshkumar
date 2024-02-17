@@ -14,7 +14,7 @@ import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../..
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 const css = {
-  code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-9tb2l5{cursor:pointer}.question.svelte-9tb2l5{cursor:pointer;padding:0.3em}",
+  code: "article.svelte-beztui{display:flex;flex-direction:column;gap:0.5em}p.svelte-beztui,li.svelte-beztui{opacity:0.8}h4.svelte-beztui{margin:0.5em 0}h6.svelte-beztui{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}a.svelte-beztui{cursor:pointer;text-decoration:none}.question.svelte-beztui{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -64,7 +64,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
   $$unsubscribe_page();
-  return `${$$result.head += `<!-- HEAD_svelte-1yjaqxq_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/html/images"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-1yjaqxq_END -->`, ""} <article class="svelte-9tb2l5">${validate_component(Pathlist, "Pathlist").$$render(
+  return `${$$result.head += `<!-- HEAD_svelte-1yjaqxq_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/html/images"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-1yjaqxq_END -->`, ""} <article class="svelte-beztui">${validate_component(Pathlist, "Pathlist").$$render(
     $$result,
     {
       origin: $page.url.origin,
@@ -80,11 +80,26 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-cg9auw">Images</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  )} <h4 class="svelte-beztui" data-svelte-h="svelte-cg9auw">Images</h4> ${validate_component(Card, "Card").$$render(
+    $$result,
+    {
+      style: "background-color: rgba(0, 100, 100, 0.1"
+    },
+    {},
+    {
+      default: () => {
+        return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+          default: () => {
+            return `<h6 class="svelte-beztui" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-1fxbspd"><li class="svelte-beztui"><a href="#formats" class="svelte-beztui">Image Formats</a></li> <li class="svelte-beztui"><a href="#element" class="svelte-beztui">The Image Element</a></li></ol>`;
+          }
+        })}`;
+      }
+    }
+  )} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-1fxbspd"><li class="svelte-9tb2l5"><a href="#formats" class="svelte-9tb2l5">Image Formats</a></li> <li class="svelte-9tb2l5"><a href="#element" class="svelte-9tb2l5">The Image Element</a></li></ol>`;
+          return `<p class="svelte-beztui" data-svelte-h="svelte-yw75ui">Apart from displaying text, browser can display image files of various types.</p>`;
         }
       })}`;
     }
@@ -92,15 +107,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<p class="svelte-9tb2l5" data-svelte-h="svelte-yw75ui">Apart from displaying text, browser can display image files of various types.</p>`;
-        }
-      })}`;
-    }
-  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
-    default: () => {
-      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
-        default: () => {
-          return `<h6 id="formats" class="svelte-9tb2l5" data-svelte-h="svelte-19wpuo3">Image Formats</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-5toffn">The various image formats are</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%" }, {}, {
+          return `<h6 id="formats" class="svelte-beztui" data-svelte-h="svelte-19wpuo3">Image Formats</h6> <p class="svelte-beztui" data-svelte-h="svelte-5toffn">The various image formats are</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%" }, {}, {
             default: () => {
               return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
                 default: () => {
@@ -216,7 +223,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="element" class="svelte-9tb2l5" data-svelte-h="svelte-1mjvv9g">The Image Element</h6> <p class="svelte-9tb2l5" data-svelte-h="svelte-1qhgslr">The <code>img</code> element is an inline element that specifies an image that is to appear in a document. This element has no closing tag.</p> <p class="svelte-9tb2l5" data-svelte-h="svelte-dvw7m1">The image element includes following essential attributes:</p> <ol data-svelte-h="svelte-6ja778"><li class="svelte-9tb2l5"><code>src</code>: specifies the file containing the image</li> <li class="svelte-9tb2l5"><code>alt</code>: specifies text to be displayed when it is not possible to display the image</li> <li class="svelte-9tb2l5"><code>width</code>: width of the image</li> <li class="svelte-9tb2l5"><code>height</code>: height of the image</li></ol>`;
+          return `<h6 id="element" class="svelte-beztui" data-svelte-h="svelte-1mjvv9g">The Image Element</h6> <p class="svelte-beztui" data-svelte-h="svelte-1qhgslr">The <code>img</code> element is an inline element that specifies an image that is to appear in a document. This element has no closing tag.</p> <p class="svelte-beztui" data-svelte-h="svelte-dvw7m1">The image element includes following essential attributes:</p> <ol data-svelte-h="svelte-6ja778"><li class="svelte-beztui"><code>src</code>: specifies the file containing the image</li> <li class="svelte-beztui"><code>alt</code>: specifies text to be displayed when it is not possible to display the image</li> <li class="svelte-beztui"><code>width</code>: width of the image</li> <li class="svelte-beztui"><code>height</code>: height of the image</li></ol>`;
         }
       })}`;
     }
@@ -224,7 +231,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-9tb2l5" data-svelte-h="svelte-1uggemt">Length units</h6> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%" }, {}, {
+          return `<h6 class="svelte-beztui" data-svelte-h="svelte-1uggemt">Length units</h6> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%" }, {}, {
             default: () => {
               return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
                 default: () => {
@@ -333,19 +340,19 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-1yto96c">Exercise</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  )} <h4 class="svelte-beztui" data-svelte-h="svelte-1yto96c">Exercise</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-1e1jhq7">Experiment with various types of length units to resize an image.</div>`;
+          return `<div class="question svelte-beztui" data-svelte-h="svelte-1e1jhq7">Experiment with various types of length units to resize an image.</div>`;
         }
       })}`;
     }
-  })} <h4 class="svelte-9tb2l5" data-svelte-h="svelte-hc8mgz">Assignment</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })} <h4 class="svelte-beztui" data-svelte-h="svelte-hc8mgz">Assignment</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-9tb2l5" data-svelte-h="svelte-o8fyed">Update your resume by including your photo.</div>`;
+          return `<div class="question svelte-beztui" data-svelte-h="svelte-o8fyed">Update your resume by including your photo.</div>`;
         }
       })}`;
     }

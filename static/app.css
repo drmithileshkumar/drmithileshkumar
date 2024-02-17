@@ -297,3 +297,6 @@ a {
     text-decoration: none;
     color:rgb(0, 115, 170)
 }
+code {
+	background-color: rgba(0, 0, 0, 0.1);
+}

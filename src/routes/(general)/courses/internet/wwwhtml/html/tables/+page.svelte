@@ -188,6 +188,7 @@ let htmlContent1 = `<!DOCTYPE html>
         opacity: 1;
     }
     a {
+        text-decoration: none;
         cursor: pointer;
     }
     .question {
@@ -211,7 +212,7 @@ let htmlContent1 = `<!DOCTYPE html>
     <h4>
         Tables
     </h4>
-    <Card>
+    <Card style="background-color: rgba(0, 100, 100, 0.1">
         <Content>
             <h6>Topics</h6>
             <ol>

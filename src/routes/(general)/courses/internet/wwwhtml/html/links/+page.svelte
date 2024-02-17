@@ -73,6 +73,7 @@
     }
     a {
         cursor: pointer;
+        text-decoration: none;
     }
     .question {
         cursor: pointer;
@@ -95,7 +96,7 @@
     <h4>
         Hypertext Links
     </h4>
-    <Card>
+    <Card style="background-color: rgba(0, 100, 100, 0.1">
         <Content>
             <h6>Topics</h6>
             <ol>
