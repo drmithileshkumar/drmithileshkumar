@@ -139,6 +139,51 @@ let htmlContent1 = `<!DOCTYPE html>
         </form>
     </body> 
 </html>`
+let htmlContentSelect = `<!DOCTYPE html> 
+<!-- File name and document purpose --> 
+<html lang = "en">   
+    <head>     
+        <title> A title for the document </title>
+        <meta charset = "utf-8" />     
+        <!--include external resources here like adsense, javascript, styles-->
+    </head>   
+    <body>   
+        <form action="" method="get">
+            <!--Simple select menu -->
+            <select name="simpleMenu">
+                <option>Apple</option>
+                <option>Samsung</option>
+                <option>Mi</option>
+                <option>OnePlus</option>
+            </select>
+            <!--Preselected item -->
+            <select name="preSelected">
+                <option>Apple</option>
+                <option selected>Samsung</option>
+                <option>Mi</option>
+                <option>OnePlus</option>
+            </select>
+            <!--with size -->
+            <select name="menuSize" size="3">
+                <option>Apple</option>
+                <option>Samsung</option>
+                <option>Mi</option>
+                <option>OnePlus</option>
+            </select>
+            <!--Multiple select-->
+            <select multiple name="multipleValue">
+                <option>Apple</option>
+                <option>Samsung</option>
+                <option selected>Mi</option>
+                <option>OnePlus</option>
+                <option>Nokia</option>
+                <option>Motorola</option>
+                <option>Vivo</option>
+            </select>
+        </form>
+    </body> 
+</html>
+`
 </script>
 <style>
     article {
@@ -158,13 +203,14 @@ let htmlContent1 = `<!DOCTYPE html>
     h6 {
         font-size: 1em;
         margin: 0.5em 0;
-        color: rgb(240, 85, 0);
+        color: rgb(74, 155, 139);
     }
     strong {
         color: goldenrod;
         opacity: 1;
     }
     a {
+        text-decoration: none;
         cursor: pointer;
     }
     .question {
@@ -189,7 +235,7 @@ let htmlContent1 = `<!DOCTYPE html>
     <h4>
         Forms
     </h4>
-    <Card>
+    <Card style="background-color: rgba(0, 100, 100, 0.1">
         <Content>
             <h6>Topics</h6>
             <ol>
@@ -356,11 +402,46 @@ let htmlContent1 = `<!DOCTYPE html>
         </Content>
     </Card>
     <WebPractice htmlContent={htmlContent1} cssContent={""} jsContent={""} />
-    <!-- <Card>
+    <Card>
         <Content>
             <h6 id="selectForm">The <code>select</code> Element</h6>
+            <p>
+                A menu is created using a <code>select</code> element.
+            </p>
+            <DataTable style="width:100%">
+                <Head>
+                    <Row>
+                        <Cell>Attribute</Cell>
+                        <Cell>Value</Cell>
+                        <Cell>Description</Cell>
+                    </Row>
+                </Head>
+                <Body>
+                    <Row>
+                        <Cell><code>name</code></Cell>
+                        <Cell style="white-space:normal;">a string (usually one word)</Cell>
+                        <Cell style="white-space:normal;">variable for the value of selected item</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>multiple</code></Cell>
+                        <Cell style="white-space:normal;"><code>multiple</code></Cell>
+                        <Cell style="white-space:normal;">allows more than one item to be selected</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>size</code></Cell>
+                        <Cell style="white-space:normal;">a number</Cell>
+                        <Cell style="white-space:normal;">specify the number of menu items that initially are 
+                            to be displayed for the user, default value is 1</Cell>
+                    </Row>
+                </Body>
+            </DataTable>
+            <p>
+                Items in the menu are specified with <code>option</code> element, similar to <code>li</code> in case of lists. The content (the text) in the <code>option</code> tag is the value of that <em>option</em>. This means that tags are not allowed in the text to <code>option</code>. An attribute <code>selected</code> to an <code>option</code> implies that the option is pre-selected.
+            </p>
+            <p class="remark">Use <code>ctrl</code> to select more than one item in case of <code>multiple</code></p>
         </Content>
-    </Card> -->
+    </Card>
+    <WebPractice htmlContent={htmlContentSelect} cssContent={""} jsContent={""} />
     <h4>Exercise</h4>
     <Card>
         <Content>

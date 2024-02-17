@@ -1,10 +1,13 @@
 <script lang='ts'>
     //@ts-nocheck
+    import {page} from '$app/stores';
     import { typeset } from "$lib/shared/typeset";
     import Card, { Content, Actions } from "@smui/card";
     import { currentPath } from "$lib/stores";
     import { darkMode, navList } from "$lib/stores"
-    import { contents } from "$lib/pages/courses/mathematics2/content";
+    import { contents, contentNav } from "$lib/pages/courses/mathematics2/content";
+    import Pathlist from "$lib/components/Pathlist.svelte";
+	import CourseNavigation from "$lib/components/CourseNavigation.svelte";
     $navList = contents;
     $currentPath = "Karl Pearson's coefficient of correlation (r)";
     $darkMode = false;
@@ -47,6 +50,8 @@
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
 </svelte:head>
 <article>
+    <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
+    <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
     <h2>
         Correlation
     </h2>

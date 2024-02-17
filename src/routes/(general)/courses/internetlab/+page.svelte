@@ -57,11 +57,11 @@
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
 </svelte:head>
 <article>
-    <h2>
+    <h4>
         Internet Technologies Lab
-    </h2>
-    <h3>Contents</h3>
-    <Card>
+    </h4>
+    <h5>Contents</h5>
+    <Card style="background-color: rgba(0, 100, 100, 0.1">
         <Content>
             <NavList name="{$navList[0].name}" url="{$navList[0].url}" topics={$navList[0].topics} expanded />
         </Content>

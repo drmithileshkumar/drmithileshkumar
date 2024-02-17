@@ -9,6 +9,7 @@ import "../../../../../../../../chunks/Subheader.js";
 import "../../../../../../../../chunks/client.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores2.js";
 /* empty css                                                                   */
+import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 const css = {
   code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}",
@@ -31,7 +32,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
   $$unsubscribe_page();
-  return `${$$result.head += `<!-- HEAD_svelte-10fkuro_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/fundamentals/www"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-10fkuro_END -->`, ""} <article class="svelte-9tb2l5">${validate_component(CourseNavigation, "CourseNavigation").$$render(
+  return `${$$result.head += `<!-- HEAD_svelte-10fkuro_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml/fundamentals/www"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-10fkuro_END -->`, ""} <article class="svelte-9tb2l5">${validate_component(Pathlist, "Pathlist").$$render(
+    $$result,
+    {
+      origin: $page.url.origin,
+      pathname: $page.url.pathname
+    },
+    {},
+    {}
+  )} ${validate_component(CourseNavigation, "CourseNavigation").$$render(
     $$result,
     {
       contentNav,

@@ -114,15 +114,6 @@
         Mathematics II  
     </h4>
     <Card>
-        <Content>
-            <h6>Course Objectives (22CA1201)</h6>
-        </Content>
-        <Actions>
-            <Textfield variant="outlined" bind:value={studentID} label="Student ID" style="width:50%;" input$emptyValueUndefined />
-            <Button on:click={register}>Register</Button>
-        </Actions>
-    </Card>
-    <Card>
         <TabBar {tabs} let:tab bind:active>
             <Tab {tab} on:click={() => {}}>
                 <Label>{tab}</Label>
@@ -130,8 +121,17 @@
         </TabBar>
     </Card>
     {#if active === 'Contents'}
-        <h5>Contents</h5>
         <Card>
+            <Content>
+                <h6>Course Objectives (22CA1201)</h6>
+            </Content>
+            <Actions>
+                <Textfield required variant="outlined" bind:value={studentID} label="Student ID" style="width:50%;" input$emptyValueUndefined />
+                <Button on:click={register}>Register</Button>
+            </Actions>
+        </Card>
+        <h5>Contents</h5>
+        <Card style="background-color: rgba(0, 100, 100, 0.1">
             <NavList name="{$navList[0].name}" url="{$navList[0].url}" topics={$navList[0].topics} expanded />
         </Card>
     {:else if active === 'Assignments'}

@@ -61,7 +61,7 @@
         Quantum Error Correction 
     </h2>
     <h3>Contents</h3>
-    <Card>
+    <Card style="background-color: rgba(0, 100, 100, 0.1">
         <NavList name="{$navList[0].name}" url="{$navList[0].url}" topics={$navList[0].topics} expanded />
     </Card>
     <!-- <Card>

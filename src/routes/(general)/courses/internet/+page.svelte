@@ -111,23 +111,14 @@
 <article>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
-    <h4>
+    <h4 style="margin: 0.5em 0;">
         Internet Technologies
     </h4>
     
     <!-- <Highlight language={xml} code={`<p>Hello World!</p>`} let:highlighted>
         <LineNumbers {highlighted} wrapLines/>
     </Highlight> -->
-    <Card>
-        <Content>
-            <h6>Course Objectives (22CA2402)</h6>
-            <p>This course aims at providing knowledge of web development, both front-end and back-end.</p>
-        </Content>
-        <Actions>
-            <Textfield variant="outlined" bind:value={studentID} label="Student ID" style="width:50%;" input$emptyValueUndefined />
-            <Button on:click={register}>Register</Button>
-        </Actions>
-    </Card>
+    
     <Card>
         <TabBar {tabs} let:tab bind:active>
             <Tab {tab} on:click={() => {}}>
@@ -137,6 +128,16 @@
     </Card>
     {#if active == 'Contents'}
         <Card>
+            <Content>
+                <h6>Course Objectives (22CA2402)</h6>
+                <p>This course aims at providing knowledge of web development, both front-end and back-end.</p>
+            </Content>
+            <Actions>
+                <Textfield required variant="outlined" bind:value={studentID} label="Student ID" style="width:50%;" input$emptyValueUndefined />
+                <Button on:click={register}>Register</Button>
+            </Actions>
+        </Card>
+        <Card style="background-color: rgba(0, 100, 100, 0.1">
             <Content>
                 <h5>Contents</h5>
                 <NavList name="{$navList[0].name}" url="{$navList[0].url}" topics={$navList[0].topics} expanded />

@@ -1,9 +1,12 @@
 import { s as subscribe, b as set_store_value } from "../../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component } from "../../../../../../chunks/ssr.js";
+import { p as page } from "../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../chunks/ActionIcons.js";
 import { c as currentPath, d as darkMode, n as navList } from "../../../../../../chunks/stores2.js";
-import { a as contents } from "../../../../../../chunks/content2.js";
+import { c as contentNav, a as contents } from "../../../../../../chunks/content2.js";
+import { P as Pathlist } from "../../../../../../chunks/Pathlist.js";
+import { C as CourseNavigation } from "../../../../../../chunks/CourseNavigation.js";
 const css = {
   code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}p.svelte-n59hwk,li.svelte-n59hwk{opacity:0.8}h4.svelte-n59hwk{margin:0.5em 0}h6.svelte-n59hwk{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}strong.svelte-n59hwk{color:goldenrod;opacity:1}",
   map: null
@@ -12,9 +15,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $currentPath, $$unsubscribe_currentPath;
   let $darkMode, $$unsubscribe_darkMode;
   let $navList, $$unsubscribe_navList;
+  let $page, $$unsubscribe_page;
   $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
   $$unsubscribe_darkMode = subscribe(darkMode, (value) => $darkMode = value);
   $$unsubscribe_navList = subscribe(navList, (value) => $navList = value);
+  $$unsubscribe_page = subscribe(page, (value) => $page = value);
   set_store_value(navList, $navList = contents, $navList);
   set_store_value(darkMode, $darkMode = false, $darkMode);
   set_store_value(currentPath, $currentPath = "Basics of Statistics", $currentPath);
@@ -22,7 +27,24 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentPath();
   $$unsubscribe_darkMode();
   $$unsubscribe_navList();
-  return `${$$result.head += `<!-- HEAD_svelte-1rld7to_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/statistics"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1rld7to_END -->`, ""} <article class="svelte-n59hwk"><h4 class="svelte-n59hwk" data-svelte-h="svelte-191m8w3">BASICS OF STATISTICS</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  $$unsubscribe_page();
+  return `${$$result.head += `<!-- HEAD_svelte-1rld7to_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/statistics"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1rld7to_END -->`, ""} <article class="svelte-n59hwk">${validate_component(Pathlist, "Pathlist").$$render(
+    $$result,
+    {
+      origin: $page.url.origin,
+      pathname: $page.url.pathname
+    },
+    {},
+    {}
+  )} ${validate_component(CourseNavigation, "CourseNavigation").$$render(
+    $$result,
+    {
+      contentNav,
+      currentUrl: $page.url.pathname
+    },
+    {},
+    {}
+  )} <h4 class="svelte-n59hwk" data-svelte-h="svelte-191m8w3">BASICS OF STATISTICS</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {

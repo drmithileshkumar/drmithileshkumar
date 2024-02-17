@@ -8,7 +8,7 @@ import { N as NavList } from "../../../../../chunks/NavList.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores2.js";
 import { c as contents } from "../../../../../chunks/content.js";
 const css = {
-  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}",
+  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}h4.svelte-n59hwk,h5.svelte-n59hwk{margin:0.5em 0}h5.svelte-n59hwk{font-size:1.1em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -25,25 +25,32 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
-  return `${$$result.head += `<!-- HEAD_svelte-6f17b2_START -->${$$result.title = `<title>Internet Technologies Lab</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internetlab"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-6f17b2_END -->`, ""} <article class="svelte-n59hwk"><h2 class="svelte-n59hwk" data-svelte-h="svelte-rs3css">Internet Technologies Lab</h2> <h3 class="svelte-n59hwk" data-svelte-h="svelte-1ee0su2">Contents</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
-    default: () => {
-      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
-        default: () => {
-          return `${validate_component(NavList, "NavList").$$render(
-            $$result,
-            {
-              name: $navList[0].name,
-              url: $navList[0].url,
-              topics: $navList[0].topics,
-              expanded: true
-            },
-            {},
-            {}
-          )}`;
-        }
-      })}`;
+  return `${$$result.head += `<!-- HEAD_svelte-6f17b2_START -->${$$result.title = `<title>Internet Technologies Lab</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internetlab"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-6f17b2_END -->`, ""} <article class="svelte-n59hwk"><h4 class="svelte-n59hwk" data-svelte-h="svelte-maqkf4">Internet Technologies Lab</h4> <h5 class="svelte-n59hwk" data-svelte-h="svelte-vrhswa">Contents</h5> ${validate_component(Card, "Card").$$render(
+    $$result,
+    {
+      style: "background-color: rgba(0, 100, 100, 0.1"
+    },
+    {},
+    {
+      default: () => {
+        return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+          default: () => {
+            return `${validate_component(NavList, "NavList").$$render(
+              $$result,
+              {
+                name: $navList[0].name,
+                url: $navList[0].url,
+                topics: $navList[0].topics,
+                expanded: true
+              },
+              {},
+              {}
+            )}`;
+          }
+        })}`;
+      }
     }
-  })}</article>`;
+  )}</article>`;
 });
 export {
   Page as default

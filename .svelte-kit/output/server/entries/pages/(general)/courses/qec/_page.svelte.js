@@ -105,21 +105,28 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
-  return `${$$result.head += `<!-- HEAD_svelte-atnyxm_START -->${$$result.title = `<title>Quantum Error Correction</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/qec"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-atnyxm_END -->`, ""} <article class="svelte-n59hwk"><h2 class="svelte-n59hwk" data-svelte-h="svelte-j02myp">Quantum Error Correction</h2> <h3 class="svelte-n59hwk" data-svelte-h="svelte-1ee0su2">Contents</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
-    default: () => {
-      return `${validate_component(NavList, "NavList").$$render(
-        $$result,
-        {
-          name: $navList[0].name,
-          url: $navList[0].url,
-          topics: $navList[0].topics,
-          expanded: true
-        },
-        {},
-        {}
-      )}`;
+  return `${$$result.head += `<!-- HEAD_svelte-atnyxm_START -->${$$result.title = `<title>Quantum Error Correction</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/qec"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-atnyxm_END -->`, ""} <article class="svelte-n59hwk"><h2 class="svelte-n59hwk" data-svelte-h="svelte-j02myp">Quantum Error Correction</h2> <h3 class="svelte-n59hwk" data-svelte-h="svelte-1ee0su2">Contents</h3> ${validate_component(Card, "Card").$$render(
+    $$result,
+    {
+      style: "background-color: rgba(0, 100, 100, 0.1"
+    },
+    {},
+    {
+      default: () => {
+        return `${validate_component(NavList, "NavList").$$render(
+          $$result,
+          {
+            name: $navList[0].name,
+            url: $navList[0].url,
+            topics: $navList[0].topics,
+            expanded: true
+          },
+          {},
+          {}
+        )}`;
+      }
     }
-  })} </article>`;
+  )} </article>`;
 });
 export {
   Page as default

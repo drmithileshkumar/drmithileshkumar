@@ -59,39 +59,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       },
       {},
       {}
-    )} <h4 data-svelte-h="svelte-4oe8qn">Internet Technologies</h4>  ${validate_component(Card, "Card").$$render($$result, {}, {}, {
-      default: () => {
-        return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
-          default: () => {
-            return `<h6 class="svelte-1ml351b" data-svelte-h="svelte-dl1tmw">Course Objectives (22CA2402)</h6> <p class="svelte-1ml351b" data-svelte-h="svelte-1jubqrw">This course aims at providing knowledge of web development, both front-end and back-end.</p>`;
-          }
-        })} ${validate_component(Actions, "Actions").$$render($$result, {}, {}, {
-          default: () => {
-            return `${validate_component(Textfield, "Textfield").$$render(
-              $$result,
-              {
-                variant: "outlined",
-                label: "Student ID",
-                style: "width:50%;",
-                input$emptyValueUndefined: true,
-                value: studentID
-              },
-              {
-                value: ($$value) => {
-                  studentID = $$value;
-                  $$settled = false;
-                }
-              },
-              {}
-            )} ${validate_component(Button, "Button").$$render($$result, {}, {}, {
-              default: () => {
-                return `Register`;
-              }
-            })}`;
-          }
-        })}`;
-      }
-    })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    )} <h4 style="margin: 0.5em 0;" data-svelte-h="svelte-af5rs1">Internet Technologies</h4>  ${validate_component(Card, "Card").$$render($$result, {}, {}, {
       default: () => {
         return `${validate_component(TabBar, "TabBar").$$render(
           $$result,
@@ -121,21 +89,61 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       default: () => {
         return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
           default: () => {
-            return `<h5 class="svelte-1ml351b" data-svelte-h="svelte-vrhswa">Contents</h5> ${validate_component(NavList, "NavList").$$render(
+            return `<h6 class="svelte-1ml351b" data-svelte-h="svelte-dl1tmw">Course Objectives (22CA2402)</h6> <p class="svelte-1ml351b" data-svelte-h="svelte-1jubqrw">This course aims at providing knowledge of web development, both front-end and back-end.</p>`;
+          }
+        })} ${validate_component(Actions, "Actions").$$render($$result, {}, {}, {
+          default: () => {
+            return `${validate_component(Textfield, "Textfield").$$render(
               $$result,
               {
-                name: $navList[0].name,
-                url: $navList[0].url,
-                topics: $navList[0].topics,
-                expanded: true
+                required: true,
+                variant: "outlined",
+                label: "Student ID",
+                style: "width:50%;",
+                input$emptyValueUndefined: true,
+                value: studentID
               },
-              {},
+              {
+                value: ($$value) => {
+                  studentID = $$value;
+                  $$settled = false;
+                }
+              },
               {}
-            )}`;
+            )} ${validate_component(Button, "Button").$$render($$result, {}, {}, {
+              default: () => {
+                return `Register`;
+              }
+            })}`;
           }
         })}`;
       }
-    })}` : `${active == "Assignments" ? `<h5 class="svelte-1ml351b" data-svelte-h="svelte-1c1pxi4">Assignments</h5> ${validate_component(Button, "Button").$$render($$result, {}, {}, {
+    })} ${validate_component(Card, "Card").$$render(
+      $$result,
+      {
+        style: "background-color: rgba(0, 100, 100, 0.1"
+      },
+      {},
+      {
+        default: () => {
+          return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+            default: () => {
+              return `<h5 class="svelte-1ml351b" data-svelte-h="svelte-vrhswa">Contents</h5> ${validate_component(NavList, "NavList").$$render(
+                $$result,
+                {
+                  name: $navList[0].name,
+                  url: $navList[0].url,
+                  topics: $navList[0].topics,
+                  expanded: true
+                },
+                {},
+                {}
+              )}`;
+            }
+          })}`;
+        }
+      }
+    )}` : `${active == "Assignments" ? `<h5 class="svelte-1ml351b" data-svelte-h="svelte-1c1pxi4">Assignments</h5> ${validate_component(Button, "Button").$$render($$result, {}, {}, {
       default: () => {
         return `${validate_component(CommonLabel, "Label").$$render($$result, {}, {}, {
           default: () => {
