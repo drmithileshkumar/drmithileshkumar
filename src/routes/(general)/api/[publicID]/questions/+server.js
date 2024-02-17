@@ -9,7 +9,7 @@ export async function GET({locals, params, url, request}) {
         return error(401, 'Unauthorized');
     }
     let courseName = url.searchParams.get('courseName')
-    console.log(courseName)
+    // console.log(courseName)
     const publicID = locals.user.publicID;
     const questionsCollection = await getDBCollection('questions');
     let questions = await questionsCollection.find({ $or : [{publicID, courseName}, {isPublic: true, courseName}]}).toArray();

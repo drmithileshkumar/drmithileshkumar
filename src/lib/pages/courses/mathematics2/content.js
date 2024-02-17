@@ -1,3 +1,4 @@
+//@ts-nocheck
 export const contents = [
     {
         name: 'MATHEMATICS II',
@@ -383,3 +384,145 @@ export const contents = [
     },
     
 ]
+export let contentNav = {
+    "/courses/mathematics2": {
+        "name": "MATHEMATICS II",
+        "url": "/courses/mathematics2",
+        "previous": "/courses/mathematics2",
+        "next": "/courses/mathematics2/statistics"
+    },
+    "/courses/mathematics2/statistics": {
+        "name": "BASICS OF STATISTICS",
+        "url": "/courses/mathematics2/statistics",
+        "previous": "/courses/mathematics2",
+        "next": "/courses/mathematics2/statistics/measures"
+    },
+    "/courses/mathematics2/statistics/measures": {
+        "name": "Measures of Central Tendency",
+        "url": "/courses/mathematics2/statistics/measures",
+        "previous": "/courses/mathematics2/statistics",
+        "next": "/courses/mathematics2/statistics/measures/mean"
+    },
+    "/courses/mathematics2/statistics/measures/mean": {
+        "name": "Mean (AM, GM, HM)",
+        "url": "/courses/mathematics2/statistics/measures/mean",
+        "previous": "/courses/mathematics2/statistics/measures",
+        "next": "/courses/mathematics2/statistics/measures/mode"
+    },
+    "/courses/mathematics2/statistics/measures/mode": {
+        "name": "Mode",
+        "url": "/courses/mathematics2/statistics/measures/mode",
+        "previous": "/courses/mathematics2/statistics/measures/mean",
+        "next": "/courses/mathematics2/statistics/measures/median"
+    },
+    "/courses/mathematics2/statistics/measures/median": {
+        "name": "Median",
+        "url": "/courses/mathematics2/statistics/measures/median",
+        "previous": "/courses/mathematics2/statistics/measures/mode",
+        "next": "/courses/mathematics2/statistics/measures/deviation"
+    },
+    "/courses/mathematics2/statistics/measures/deviation": {
+        "name": "Standard deviation",
+        "url": "/courses/mathematics2/statistics/measures/deviation",
+        "previous": "/courses/mathematics2/statistics/measures/median",
+        "next": "/courses/mathematics2/statistics/correlation"
+    },
+    "/courses/mathematics2/statistics/correlation": {
+        "name": "Correlation",
+        "url": "/courses/mathematics2/statistics/correlation",
+        "previous": "/courses/mathematics2/statistics/measures/deviation",
+        "next": "/courses/mathematics2/statistics/correlation/bivariatedata"
+    },
+    "/courses/mathematics2/statistics/correlation/bivariatedata": {
+        "name": "Bivariate Data",
+        "url": "/courses/mathematics2/statistics/correlation/bivariatedata",
+        "previous": "/courses/mathematics2/statistics/correlation",
+        "next": "/courses/mathematics2/statistics/correlation/bivariatefrequency"
+    },
+    "/courses/mathematics2/statistics/correlation/bivariatefrequency": {
+        "name": "Bivariate frequency distribution",
+        "url": "/courses/mathematics2/statistics/correlation/bivariatefrequency",
+        "previous": "/courses/mathematics2/statistics/correlation/bivariatedata",
+        "next": "/courses/mathematics2/statistics/correlation/correlation2"
+    },
+    "/courses/mathematics2/statistics/correlation/correlation2": {
+        "name": "Correlation between two variables",
+        "url": "/courses/mathematics2/statistics/correlation/correlation2",
+        "previous": "/courses/mathematics2/statistics/correlation/bivariatefrequency",
+        "next": "/courses/mathematics2/statistics/correlation/correlationtypes"
+    },
+    "/courses/mathematics2/statistics/correlation/correlationtypes": {
+        "name": "Types of correlation",
+        "url": "/courses/mathematics2/statistics/correlation/correlationtypes",
+        "previous": "/courses/mathematics2/statistics/correlation/correlation2",
+        "next": "/courses/mathematics2/statistics/correlation/pearson"
+    },
+    "/courses/mathematics2/statistics/correlation/pearson": {
+        "name": "Karl Pearson's coefficient of correlation (r)",
+        "url": "/courses/mathematics2/statistics/correlation/pearson",
+        "previous": "/courses/mathematics2/statistics/correlation/correlationtypes",
+        "next": "/courses/mathematics2/statistics/correlation/spearman"
+    },
+    "/courses/mathematics2/statistics/correlation/spearman": {
+        "name": "Spearman's rank correlation coefficient",
+        "url": "/courses/mathematics2/statistics/correlation/spearman",
+        "previous": "/courses/mathematics2/statistics/correlation/pearson",
+        "next": "/courses/mathematics2/statistics/regression"
+    },
+    "/courses/mathematics2/statistics/regression": {
+        "name": "Regression",
+        "url": "/courses/mathematics2/statistics/regression",
+        "previous": "/courses/mathematics2/statistics/correlation/spearman",
+        "next": "/courses/mathematics2/statistics/regression/regressionlines"
+    },
+    "/courses/mathematics2/statistics/regression/regressionlines": {
+        "name": "Lines of regression",
+        "url": "/courses/mathematics2/statistics/regression/regressionlines",
+        "previous": "/courses/mathematics2/statistics/regression",
+        "next": "/courses/mathematics2/statistics/regression/leastsquares"
+    },
+    "/courses/mathematics2/statistics/regression/leastsquares": {
+        "name": "Least squares method",
+        "url": "/courses/mathematics2/statistics/regression/leastsquares",
+        "previous": "/courses/mathematics2/statistics/regression/regressionlines",
+        "next": "/courses/mathematics2/statistics/regression/regressioncoefficient"
+    },
+    "/courses/mathematics2/statistics/regression/regressioncoefficient": {
+        "name": "Regression coefficient",
+        "url": "/courses/mathematics2/statistics/regression/regressioncoefficient",
+        "previous": "/courses/mathematics2/statistics/regression/leastsquares",
+        "next": ""
+    },
+    "": {
+        "name": "PERT",
+        "url": "",
+        "previous": "",
+        "next": ""
+    }
+}
+
+// let contentArray = [];
+// let getArray = (subContent) => {
+//     contentArray = [...contentArray, {name: subContent.name, url: subContent.url}];
+//     if(!subContent.topics) return;
+//     else {
+//         for(let i = 0; i < subContent.topics.length; i++) {
+//             getArray(subContent.topics[i]);
+//         }
+//     }
+// }
+// getArray(contents[0]);
+
+// let withSides = contentArray.map((u, i) => {
+//     return {
+//         name: u.name,
+//         url: u.url,
+//         previous: i > 0 ? contentArray[i - 1].url : u.url,
+//         next: i < contentArray.length - 1 ? contentArray[i + 1].url : u.url
+//     }
+// })
+// let objectWithSides = {};
+// for(let i = 0; i < withSides.length; i++) {
+//     objectWithSides[withSides[i].url] = withSides[i];
+// }
+// console.log(objectWithSides)

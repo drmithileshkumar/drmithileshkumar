@@ -2,8 +2,8 @@ import { s as subscribe, b as set_store_value } from "../../../../../../../../ch
 import { c as create_ssr_component, v as validate_component, e as escape } from "../../../../../../../../chunks/ssr.js";
 import { C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
-import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores3.js";
-import { c as contents } from "../../../../../../../../chunks/content2.js";
+import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores2.js";
+import { a as contents } from "../../../../../../../../chunks/content2.js";
 const css = {
   code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}p.svelte-n59hwk,li.svelte-n59hwk{opacity:0.8}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}h6.svelte-n59hwk{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}",
   map: null

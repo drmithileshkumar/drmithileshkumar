@@ -62,8 +62,8 @@
         />
         <Textfield 
             variant="outlined"
-            label="Course Code"
-            bind:value={assignment.courseCode}
+            label="Course ID"
+            bind:value={assignment.courseID}
             style="width:100%"
         />
         <Textfield 

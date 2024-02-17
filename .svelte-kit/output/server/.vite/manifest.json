@@ -139,7 +139,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_H3.js"
     ]
   },
@@ -151,7 +151,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js"
+      "_stores3.js"
     ]
   },
   "_IconButton.js": {
@@ -169,7 +169,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_Image.svelte_svelte_type_style_lang.js"
     ]
   },
@@ -181,7 +181,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js"
+      "_stores3.js"
     ]
   },
   "_Item.js": {
@@ -242,7 +242,7 @@
       "_classAdderBuilder.js",
       "_IconButton.js",
       "_client.js",
-      "_stores3.js"
+      "_stores2.js"
     ]
   },
   "_NavList.svelte_svelte_type_style_lang.js": {
@@ -302,7 +302,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores2.js",
+      "_stores4.js",
       "_index2.js"
     ]
   },
@@ -393,6 +393,16 @@
     "file": "chunks/Suffix.js",
     "imports": [
       "_classAdderBuilder.js"
+    ]
+  },
+  "_TabBar.js": {
+    "file": "chunks/TabBar.js",
+    "imports": [
+      "_utils.js",
+      "_classAdderBuilder.js",
+      "_ssr.js",
+      "_prefixFilter.js",
+      "_Ripple.js"
     ]
   },
   "_TestQuestion.js": {
@@ -496,6 +506,9 @@
   },
   "_content2.js": {
     "file": "chunks/content2.js"
+  },
+  "_content3.js": {
+    "file": "chunks/content3.js"
   },
   "_exports.js": {
     "file": "chunks/exports.js"
@@ -764,13 +777,13 @@
       "_Button.js",
       "_client.js",
       "_stores.js",
-      "_stores3.js",
+      "_stores2.js",
       "_Card.js",
       "_ActionIcons.js",
       "_TopAppBar.js",
       "_Title.js",
       "_IconButton.js",
-      "_stores4.js"
+      "_stores3.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/+layout.svelte"
@@ -792,7 +805,7 @@
     "file": "entries/pages/(general)/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_client.js",
       "_ActionIcons.js"
     ],
@@ -836,15 +849,13 @@
       "_ActionIcons.js",
       "_Button.js",
       "_CommonLabel.js",
-      "_classAdderBuilder.js",
-      "_prefixFilter.js",
-      "_Ripple.js",
+      "_TabBar.js",
       "_stores.js",
       "_client.js",
       "_Actions.js",
       "_Cell.js",
       "_Subheader.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/[publicID]/+page.svelte"
@@ -870,7 +881,7 @@
       "_ActionIcons.js",
       "_Button.js",
       "_Assignment.js",
-      "_stores3.js",
+      "_stores2.js",
       "_Option.js"
     ],
     "isEntry": true,
@@ -952,7 +963,7 @@
       "_Checkbox.js",
       "_FormField.js",
       "_Option.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/[publicID]/questions/+page.svelte"
@@ -1035,7 +1046,7 @@
       "_ActionIcons.js",
       "_Cell.js",
       "_client.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/[publicID]/submissions/+page.svelte"
@@ -1139,6 +1150,15 @@
     "isEntry": true,
     "src": "src/routes/(general)/api/[publicID]/questions/new/+server.js"
   },
+  "src/routes/(general)/api/[publicID]/register/+server.js": {
+    "file": "entries/endpoints/(general)/api/_publicID_/register/_server.js",
+    "imports": [
+      "_mongo.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/api/[publicID]/register/+server.js"
+  },
   "src/routes/(general)/api/assignment/+server.js": {
     "file": "entries/endpoints/(general)/api/assignment/_server.js",
     "imports": [
@@ -1191,7 +1211,7 @@
     "imports": [
       "_jwt.js",
       "_mongo.js",
-      "_stores3.js",
+      "_stores2.js",
       "_userDetail.js",
       "_index.js"
     ],
@@ -1264,7 +1284,7 @@
       "_Button.js",
       "_CommonLabel.js",
       "_Suffix.js",
-      "_stores3.js",
+      "_stores2.js",
       "_Assignment.js",
       "_TestQuestion.js"
     ],
@@ -1290,7 +1310,7 @@
       "_client.js",
       "_ActionIcons.js",
       "_Suffix.js",
-      "_stores3.js",
+      "_stores2.js",
       "_Assignment.js",
       "_ShowQuestion.js"
     ],
@@ -1324,7 +1344,7 @@
       "_Suffix.js",
       "_client.js",
       "_stores.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/auth/+page.svelte"
@@ -1354,7 +1374,7 @@
       "_Graphic.js",
       "_client.js",
       "_stores.js",
-      "_stores3.js",
+      "_stores2.js",
       "_Pathlist.js"
     ],
     "isEntry": true,
@@ -1381,7 +1401,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/circuits/+page.svelte"
@@ -1396,21 +1416,28 @@
   },
   "src/routes/(general)/courses/internet/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.eKWl8zPe.css",
-      "_app/immutable/assets/Link.mTa6ZPjX.css"
+      "_app/immutable/assets/_page.d_8RuduB.css"
     ],
     "file": "entries/pages/(general)/courses/internet/_page.svelte.js",
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
+      "_client.js",
       "_stores.js",
+      "_TabBar.js",
+      "_CommonLabel.js",
+      "_Textfield.js",
+      "_Suffix.js",
       "_Card.js",
       "_ActionIcons.js",
+      "_Actions.js",
       "_Cell.js",
+      "_Button.js",
       "_NavList.js",
-      "_stores3.js",
-      "_Pathlist.js"
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/+page.svelte"
@@ -1546,13 +1573,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js",
-      "_Pathlist.js"
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/+page.svelte"
@@ -1571,13 +1599,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js",
-      "_Pathlist.js"
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/+page.svelte"
@@ -1597,13 +1626,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js"
+      "_stores2.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/browsers/+page.svelte"
@@ -1624,14 +1654,15 @@
       "_utils.js",
       "_ssr.js",
       "_xml.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Cell.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js"
+      "_stores2.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/http/+page.svelte"
@@ -1651,13 +1682,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js"
+      "_stores2.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/intro/+page.svelte"
@@ -1677,13 +1709,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js"
+      "_stores2.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/mime/+page.svelte"
@@ -1703,13 +1736,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js"
+      "_stores2.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/security/+page.svelte"
@@ -1729,13 +1763,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js"
+      "_stores2.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/servers/+page.svelte"
@@ -1756,13 +1791,14 @@
       "_utils.js",
       "_ssr.js",
       "_xml.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js"
+      "_stores2.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/url/+page.svelte"
@@ -1782,13 +1818,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js"
+      "_stores2.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/fundamentals/www/+page.svelte"
@@ -1807,13 +1844,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js",
-      "_Pathlist.js"
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/+page.svelte"
@@ -1833,16 +1871,17 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js",
+      "_stores2.js",
       "_WebPractice.js",
       "_Cell.js",
-      "_Pathlist.js"
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/forms/+page.svelte"
@@ -1862,16 +1901,17 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js",
+      "_stores2.js",
       "_WebPractice.js",
       "_Cell.js",
-      "_Pathlist.js"
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/images/+page.svelte"
@@ -1891,15 +1931,16 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js",
+      "_stores2.js",
       "_WebPractice.js",
-      "_Pathlist.js"
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/links/+page.svelte"
@@ -1919,15 +1960,16 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js",
+      "_stores2.js",
       "_WebPractice.js",
-      "_Pathlist.js"
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/lists/+page.svelte"
@@ -1947,14 +1989,15 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js",
-      "_Pathlist.js"
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/origins/+page.svelte"
@@ -1974,15 +2017,16 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js",
+      "_stores2.js",
       "_WebPractice.js",
-      "_Pathlist.js"
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/structure/+page.svelte"
@@ -2002,15 +2046,16 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js",
+      "_stores2.js",
       "_WebPractice.js",
-      "_Pathlist.js"
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/syntax/+page.svelte"
@@ -2030,15 +2075,16 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js",
+      "_stores2.js",
       "_WebPractice.js",
-      "_Pathlist.js"
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/tables/+page.svelte"
@@ -2058,16 +2104,17 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_CourseNavigation.js",
+      "_content3.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
-      "_stores3.js",
+      "_stores2.js",
       "_WebPractice.js",
       "_Cell.js",
-      "_Pathlist.js"
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/text/+page.svelte"
@@ -2103,7 +2150,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content.js"
     ],
     "isEntry": true,
@@ -2127,7 +2174,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content.js"
     ],
     "isEntry": true,
@@ -2151,7 +2198,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content.js"
     ],
     "isEntry": true,
@@ -2175,7 +2222,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content.js"
     ],
     "isEntry": true,
@@ -2199,7 +2246,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content.js"
     ],
     "isEntry": true,
@@ -2223,7 +2270,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content.js"
     ],
     "isEntry": true,
@@ -2247,7 +2294,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content.js"
     ],
     "isEntry": true,
@@ -2272,7 +2319,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content.js"
     ],
     "isEntry": true,
@@ -2296,7 +2343,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content.js"
     ],
     "isEntry": true,
@@ -2320,7 +2367,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content.js"
     ],
     "isEntry": true,
@@ -2347,7 +2394,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/linearalgebra/+page.svelte"
@@ -2362,7 +2409,7 @@
   },
   "src/routes/(general)/courses/mathematics2/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.r3HcPq1w.css",
+      "_app/immutable/assets/_page._y3mlvp0.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/_page.svelte.js",
@@ -2370,13 +2417,20 @@
       "_utils.js",
       "_ssr.js",
       "_client.js",
+      "_stores.js",
+      "_Textfield.js",
+      "_Suffix.js",
       "_Card.js",
       "_ActionIcons.js",
+      "_Actions.js",
       "_Button.js",
       "_CommonLabel.js",
       "_NavList.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_TabBar.js",
       "_Subheader.js"
     ],
     "isEntry": true,
@@ -2403,7 +2457,7 @@
       "_ActionIcons.js",
       "_Button.js",
       "_Suffix.js",
-      "_stores3.js",
+      "_stores2.js",
       "_Assignment.js",
       "_TestQuestion.js"
     ],
@@ -2430,7 +2484,7 @@
       "_client.js",
       "_ActionIcons.js",
       "_Suffix.js",
-      "_stores3.js",
+      "_stores2.js",
       "_Assignment.js",
       "_ShowQuestion.js"
     ],
@@ -2452,7 +2506,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2473,7 +2527,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2494,7 +2548,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2515,7 +2569,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2536,7 +2590,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2557,7 +2611,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2578,7 +2632,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2599,7 +2653,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2620,7 +2674,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2641,7 +2695,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2662,7 +2716,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2683,7 +2737,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2704,7 +2758,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2725,7 +2779,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2746,7 +2800,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2767,7 +2821,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2788,7 +2842,7 @@
       "_ssr.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_stores3.js",
+      "_stores2.js",
       "_content2.js"
     ],
     "isEntry": true,
@@ -2815,7 +2869,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/qec/+page.svelte"
@@ -2841,7 +2895,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/quantumalgorithms/+page.svelte"
@@ -2867,7 +2921,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/quantumcommunication/+page.svelte"
@@ -2893,7 +2947,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/quantumcomputers/+page.svelte"
@@ -2919,7 +2973,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/quantumcryptography/+page.svelte"
@@ -2945,7 +2999,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/quantuminformation1/+page.svelte"
@@ -2971,7 +3025,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/quantuminformation2/+page.svelte"
@@ -2997,7 +3051,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/quantummechanics/+page.svelte"
@@ -3023,7 +3077,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/quantumml/+page.svelte"
@@ -3079,7 +3133,7 @@
       "_utils.js",
       "_ssr.js",
       "_client.js",
-      "_stores4.js",
+      "_stores3.js",
       "_Presenter.js"
     ],
     "isEntry": true,
@@ -3124,7 +3178,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js",
       "_constants.js"
     ],
@@ -3147,7 +3201,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js",
       "_constants.js"
     ],
@@ -3170,7 +3224,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js",
       "_constants.js"
     ],
@@ -3193,7 +3247,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js",
       "_constants.js"
     ],
@@ -3216,7 +3270,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js",
       "_constants.js"
     ],
@@ -3239,7 +3293,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js",
       "_constants.js"
     ],
@@ -3292,7 +3346,7 @@
       "_utils.js",
       "_ssr.js",
       "_Select.js",
-      "_stores4.js",
+      "_stores3.js",
       "_client.js",
       "_Presenter.js"
     ],
@@ -3337,7 +3391,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3361,7 +3415,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3385,7 +3439,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3409,7 +3463,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3433,7 +3487,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3457,7 +3511,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3481,7 +3535,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3504,7 +3558,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3528,7 +3582,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3552,7 +3606,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3576,7 +3630,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3600,7 +3654,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3623,7 +3677,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3647,7 +3701,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3671,7 +3725,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3694,7 +3748,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3718,7 +3772,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3742,7 +3796,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3766,7 +3820,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3790,7 +3844,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3814,7 +3868,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3837,7 +3891,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3861,7 +3915,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3885,7 +3939,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3908,7 +3962,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3932,7 +3986,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -3955,7 +4009,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -3979,7 +4033,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4003,7 +4057,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4028,7 +4082,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4051,7 +4105,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4075,7 +4129,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4099,7 +4153,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4122,7 +4176,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4145,7 +4199,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4168,7 +4222,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4192,7 +4246,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4215,7 +4269,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4238,7 +4292,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4261,7 +4315,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4285,7 +4339,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4308,7 +4362,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4331,7 +4385,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4354,7 +4408,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4378,7 +4432,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4402,7 +4456,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4426,7 +4480,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4450,7 +4504,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4474,7 +4528,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4498,7 +4552,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4522,7 +4576,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4546,7 +4600,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4570,7 +4624,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4593,7 +4647,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4617,7 +4671,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4641,7 +4695,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4665,7 +4719,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4689,7 +4743,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4712,7 +4766,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4735,7 +4789,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4758,7 +4812,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4781,7 +4835,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4805,7 +4859,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4828,7 +4882,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4852,7 +4906,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4876,7 +4930,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4899,7 +4953,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4923,7 +4977,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4947,7 +5001,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -4971,7 +5025,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -4994,7 +5048,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5018,7 +5072,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5041,7 +5095,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5064,7 +5118,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5088,7 +5142,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5111,7 +5165,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5134,7 +5188,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5158,7 +5212,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5182,7 +5236,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5205,7 +5259,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5229,7 +5283,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5252,7 +5306,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5275,7 +5329,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5298,7 +5352,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5322,7 +5376,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5346,7 +5400,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5369,7 +5423,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5392,7 +5446,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5415,7 +5469,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5440,7 +5494,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5463,7 +5517,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_Practice.js",
       "_sets.js",
       "_common.js",
@@ -5491,7 +5545,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_Practice.js",
       "_common.js",
       "_stores.js",
@@ -5520,7 +5574,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js",
       "_Image.svelte_svelte_type_style_lang.js",
       "_Image.js"
@@ -5546,7 +5600,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5570,7 +5624,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5594,7 +5648,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5618,7 +5672,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_Practice.js",
       "_sets.js",
       "_common.js",
@@ -5649,7 +5703,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_Practice.js",
       "_common.js",
       "_sets.js",
@@ -5681,7 +5735,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_Practice.js",
       "_sets.js",
       "_common.js",
@@ -5712,7 +5766,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_Practice.js",
       "_common.js",
       "_quadratic.js",
@@ -5741,7 +5795,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5766,7 +5820,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5789,7 +5843,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5813,7 +5867,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5837,7 +5891,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5860,7 +5914,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5884,7 +5938,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5908,7 +5962,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -5931,7 +5985,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5955,7 +6009,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -5979,7 +6033,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -6002,7 +6056,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -6025,7 +6079,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6049,7 +6103,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6073,7 +6127,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -6096,7 +6150,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6120,7 +6174,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6144,7 +6198,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6168,7 +6222,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6192,7 +6246,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6216,7 +6270,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6240,7 +6294,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6264,7 +6318,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6288,7 +6342,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -6311,7 +6365,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6335,7 +6389,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6359,7 +6413,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6383,7 +6437,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_constants.js",
       "_stores.js"
     ],
@@ -6407,7 +6461,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -6441,7 +6495,7 @@
       "_utils.js",
       "_ssr.js",
       "_Select.js",
-      "_stores2.js"
+      "_stores4.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class1/+layout.svelte"
@@ -6464,7 +6518,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores2.js",
+      "_stores4.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -6476,7 +6530,7 @@
       "_utils.js",
       "_ssr.js",
       "_Select.js",
-      "_stores2.js"
+      "_stores4.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class10/+layout.svelte"
@@ -6499,7 +6553,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores2.js",
+      "_stores4.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -6511,7 +6565,7 @@
       "_utils.js",
       "_ssr.js",
       "_Select.js",
-      "_stores2.js"
+      "_stores4.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class11/+layout.svelte"
@@ -6534,7 +6588,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores2.js",
+      "_stores4.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -6546,7 +6600,7 @@
       "_utils.js",
       "_ssr.js",
       "_Select.js",
-      "_stores2.js"
+      "_stores4.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class12/+layout.svelte"
@@ -6569,7 +6623,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores2.js",
+      "_stores4.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -6581,7 +6635,7 @@
       "_utils.js",
       "_ssr.js",
       "_Select.js",
-      "_stores2.js"
+      "_stores4.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class2/+layout.svelte"
@@ -6604,7 +6658,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores2.js",
+      "_stores4.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -6616,7 +6670,7 @@
       "_utils.js",
       "_ssr.js",
       "_Select.js",
-      "_stores2.js"
+      "_stores4.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class3/+layout.svelte"
@@ -6639,7 +6693,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores2.js",
+      "_stores4.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -6651,7 +6705,7 @@
       "_utils.js",
       "_ssr.js",
       "_Select.js",
-      "_stores2.js"
+      "_stores4.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class4/+layout.svelte"
@@ -6674,7 +6728,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores2.js",
+      "_stores4.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -6686,7 +6740,7 @@
       "_utils.js",
       "_ssr.js",
       "_Select.js",
-      "_stores2.js"
+      "_stores4.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class5/+layout.svelte"
@@ -6709,7 +6763,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores2.js",
+      "_stores4.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -6721,7 +6775,7 @@
       "_utils.js",
       "_ssr.js",
       "_Select.js",
-      "_stores2.js"
+      "_stores4.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class6/+layout.svelte"
@@ -6744,7 +6798,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores2.js",
+      "_stores4.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -6756,7 +6810,7 @@
       "_utils.js",
       "_ssr.js",
       "_Select.js",
-      "_stores2.js"
+      "_stores4.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class7/+layout.svelte"
@@ -6779,7 +6833,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores2.js",
+      "_stores4.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -6791,7 +6845,7 @@
       "_utils.js",
       "_ssr.js",
       "_Select.js",
-      "_stores2.js"
+      "_stores4.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class8/+layout.svelte"
@@ -6814,7 +6868,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores2.js",
+      "_stores4.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -6826,7 +6880,7 @@
       "_utils.js",
       "_ssr.js",
       "_Select.js",
-      "_stores2.js"
+      "_stores4.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/practice/class9/+layout.svelte"
@@ -6849,7 +6903,7 @@
       "_ssr.js",
       "_Message.js",
       "_client.js",
-      "_stores2.js",
+      "_stores4.js",
       "_Practice.js"
     ],
     "isEntry": true,
@@ -6870,7 +6924,7 @@
       "_Item.js",
       "_Subheader.js",
       "_Graphic.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/settings/+page.svelte"
@@ -6907,7 +6961,7 @@
       "_Radio.js",
       "_FormField.js",
       "_stores.js",
-      "_stores3.js",
+      "_stores2.js",
       "_client.js"
     ],
     "isEntry": true,
@@ -6931,7 +6985,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_client.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/students/+page.svelte"
@@ -6960,7 +7014,7 @@
       "_Subheader.js",
       "_Graphic.js",
       "_client.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/talks/+page.svelte"
@@ -6988,7 +7042,7 @@
       "_Subheader.js",
       "_Cell.js",
       "_client.js",
-      "_stores3.js"
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/talks/quantumstatus/+page.svelte"
@@ -7002,7 +7056,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_client.js",
       "_Presenter.js"
     ],
@@ -7028,7 +7082,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_stores4.js",
+      "_stores3.js",
       "_stores.js",
       "_constants.js",
       "_Image.svelte_svelte_type_style_lang.js",

@@ -6,15 +6,9 @@ export async function load({parent, fetch, params, url}) {
     }
 	const { user } = await parent();
     //if( !user ) redirect(301, '/auth');
-    let assignments = [];
-    if(user) {
-        let publicID = user.publicID;
-	
-        let res = await fetch(`/api/${publicID}/assignments`);
-        assignments = await res.json();
-    }
+    
 	// console.log('publici..D', publicID)
     return {
-        assignments
+        
     }
 }

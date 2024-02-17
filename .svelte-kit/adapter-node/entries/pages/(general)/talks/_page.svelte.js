@@ -8,7 +8,7 @@ import { G as Graphic } from "../../../../chunks/Graphic.js";
 import "../../../../chunks/client.js";
 /* empty css                                                       */
 /* empty css                                                    */
-import { d as darkMode, c as currentPath } from "../../../../chunks/stores3.js";
+import { d as darkMode, c as currentPath } from "../../../../chunks/stores2.js";
 const css = {
   code: "article.svelte-86n1i9{display:flex;flex-direction:column;gap:0.5em}h3.svelte-86n1i9,h5.svelte-86n1i9{margin:0.5em 0}",
   map: null

@@ -6,7 +6,7 @@ import { C as Card } from "../../../../../chunks/Card.js";
 import "../../../../../chunks/ActionIcons.js";
 import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../chunks/Cell.js";
 import "../../../../../chunks/client.js";
-import { c as currentPath } from "../../../../../chunks/stores3.js";
+import { c as currentPath } from "../../../../../chunks/stores2.js";
 const css = {
   code: "article.svelte-1lcfw8p{display:flex;flex-direction:column;gap:0.5em}.courses.svelte-1lcfw8p{display:flex;flex-direction:row;gap:1em;align-items:center}h6.svelte-1lcfw8p{margin:1em 0}",
   map: null

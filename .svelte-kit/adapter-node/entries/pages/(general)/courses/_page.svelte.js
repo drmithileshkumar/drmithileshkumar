@@ -9,7 +9,7 @@ import "../../../../chunks/client.js";
 /* empty css                                                       */
 /* empty css                                                    */
 import { p as page } from "../../../../chunks/stores.js";
-import { d as darkMode, c as currentPath } from "../../../../chunks/stores3.js";
+import { d as darkMode, c as currentPath } from "../../../../chunks/stores2.js";
 import { P as Pathlist } from "../../../../chunks/Pathlist.js";
 const css = {
   code: "article.svelte-86n1i9{display:flex;flex-direction:column;gap:0.5em}h3.svelte-86n1i9,h5.svelte-86n1i9{margin:0.5em 0}",

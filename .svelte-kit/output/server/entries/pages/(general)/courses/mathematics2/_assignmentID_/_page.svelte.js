@@ -5,7 +5,7 @@ import "../../../../../../chunks/client.js";
 import "../../../../../../chunks/ActionIcons.js";
 import { B as Button } from "../../../../../../chunks/Button.js";
 import "../../../../../../chunks/Suffix.js";
-import { c as currentPath } from "../../../../../../chunks/stores3.js";
+import { c as currentPath } from "../../../../../../chunks/stores2.js";
 import { A as Assignment } from "../../../../../../chunks/Assignment.js";
 import { T as TestQuestion } from "../../../../../../chunks/TestQuestion.js";
 const css = {

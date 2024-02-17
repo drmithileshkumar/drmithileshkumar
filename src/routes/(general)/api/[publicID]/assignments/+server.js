@@ -8,9 +8,9 @@ export async function GET({locals, params, url, request}) {
         return error(401, 'Unauthorized');
     }
     const publicID = locals.user.publicID;
-    const courseName = url.searchParams.get('courseName')
+    const courseID = url.searchParams.get('courseID')
     const assignmentsCollection = await getDBCollection('assignments');
-    let assignments = await assignmentsCollection.find({ $or : [{publicID, courseName}, {isPublic: true, courseName}]}).toArray();
+    let assignments = await assignmentsCollection.find({ $or : [{publicID, courseID}, {isPublic: true, courseID}]}).toArray();
     if(!assignments) {
         assignments = []
     }

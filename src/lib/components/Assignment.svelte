@@ -70,7 +70,7 @@
         <div class="courseDetails">
             <div class="course">
                 <span class="name"><strong>Course Name:</strong> {assignment.courseName}</span>
-                <span class="code"><strong>Course Code:</strong> {assignment.courseCode}</span>
+                <span class="code"><strong>Course ID:</strong> {assignment.courseID}</span>
                 <span class="start"><strong>Start date:</strong> {assignment.dates.start}</span>
             </div>
             <div class="marks">

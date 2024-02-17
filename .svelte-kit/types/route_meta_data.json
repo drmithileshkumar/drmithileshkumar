@@ -67,6 +67,9 @@
 	"/(general)/api/[publicID]/questions/[questionID]": [
 		"src/routes/(general)/api/[publicID]/questions/[questionID]/+server.js"
 	],
+	"/(general)/api/[publicID]/register": [
+		"src/routes/(general)/api/[publicID]/register/+server.js"
+	],
 	"/(general)/assignments": [
 		"src/routes/(general)/assignments/+page.js",
 		"src/routes/(general)/+layout.server.js"

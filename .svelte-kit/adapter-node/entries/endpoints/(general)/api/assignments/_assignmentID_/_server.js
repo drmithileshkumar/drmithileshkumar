@@ -10,7 +10,8 @@ async function GET({ locals, params, request }) {
   const assignmentsCollection2 = await getDBCollection("assignments");
   const studentAssignmentsCollection = await getDBCollection("studentAssignments");
   const questionsCollection = await getDBCollection("questions");
-  let assignment = await assignmentsCollection2.findOne({ _id: new ObjectId(assignmentID) });
+  let _id = new ObjectId(assignmentID);
+  let assignment = await assignmentsCollection2.findOne({ _id });
   let studentAssignment;
   if (publicID === "MithileshKumar") {
     studentAssignment = await studentAssignmentsCollection.findOne({ assignmentID });

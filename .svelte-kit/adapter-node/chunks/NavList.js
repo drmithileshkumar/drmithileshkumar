@@ -6,7 +6,7 @@ import { c as compute_rest_props } from "./utils.js";
 import { f as forwardEventsBuilder, c as classMap, S as SmuiElement } from "./classAdderBuilder.js";
 import { I as IconButton } from "./IconButton.js";
 import "./client.js";
-import "./stores3.js";
+import "./stores2.js";
 /* empty css                                      */
 const CommonIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["use", "class", "on", "component", "tag", "getElement"]);

@@ -5,7 +5,7 @@ import "../../../../../../chunks/client.js";
 import { C as Card } from "../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../chunks/ActionIcons.js";
 import { N as NavList } from "../../../../../../chunks/NavList.js";
-import { d as darkMode, c as currentPath, n as navList } from "../../../../../../chunks/stores3.js";
+import { d as darkMode, c as currentPath, n as navList } from "../../../../../../chunks/stores2.js";
 import { c as contents } from "../../../../../../chunks/content.js";
 const css = {
   code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}",

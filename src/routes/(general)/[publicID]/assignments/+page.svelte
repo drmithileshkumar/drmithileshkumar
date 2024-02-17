@@ -10,11 +10,23 @@
     import Select, {Option} from "@smui/select";
     $currentPath = 'Assignments'
     export let data;
-    let courses = ["Mathematics II", 'Internet Technologies', 'Internet Technologies Lab'];
+    let courses = [
+        {
+            name: "Mathematics II",
+            id: '22CA1201'
+        }, 
+        {
+            name: 'Internet Technologies',
+            id: '22CA2402'
+        },
+        {
+            name: 'Internet Technologies Lab',
+            id: '22CA2405'
+        }];
     let questions = [], assignments = [];
     let selectedCourse;
     const getAssignments = async () => {
-        let res = await fetch(`/api/${$page.data.user.publicID}/assignments?courseName=${selectedCourse}`);
+        let res = await fetch(`/api/${$page.data.user.publicID}/assignments?courseID=${selectedCourse}`);
         if(!res.ok) {
             alert('Failed to get questions');
             return;
@@ -41,7 +53,7 @@
         <Select variant="outlined" bind:value={selectedCourse} label="Course">
             <Option value="" />
             {#each courses as course}
-                <Option value={course}>{course}</Option>
+                <Option value={course.id}>{course.name}</Option>
             {/each}
         </Select>
         <Button on:click={getAssignments}>Get Assignments</Button>

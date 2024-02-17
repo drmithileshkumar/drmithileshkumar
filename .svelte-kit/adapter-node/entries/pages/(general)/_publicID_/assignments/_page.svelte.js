@@ -5,7 +5,7 @@ import { p as page } from "../../../../../chunks/stores.js";
 import "../../../../../chunks/ActionIcons.js";
 import { B as Button } from "../../../../../chunks/Button.js";
 import { A as Assignment } from "../../../../../chunks/Assignment.js";
-import { c as currentPath } from "../../../../../chunks/stores3.js";
+import { c as currentPath } from "../../../../../chunks/stores2.js";
 import { S as Select, O as Option } from "../../../../../chunks/Option.js";
 const css = {
   code: "article.svelte-1s9ex9t{display:flex;flex-direction:column;gap:0.5em}",
@@ -18,7 +18,17 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
   set_store_value(currentPath, $currentPath = "Assignments", $currentPath);
   let { data } = $$props;
-  let courses = ["Mathematics II", "Internet Technologies", "Internet Technologies Lab"];
+  let courses = [
+    { name: "Mathematics II", id: "22CA1201" },
+    {
+      name: "Internet Technologies",
+      id: "22CA2402"
+    },
+    {
+      name: "Internet Technologies Lab",
+      id: "22CA2405"
+    }
+  ];
   let assignments = [];
   let selectedCourse;
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
@@ -50,9 +60,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       {
         default: () => {
           return `${validate_component(Option, "Option").$$render($$result, { value: "" }, {}, {})} ${each(courses, (course) => {
-            return `${validate_component(Option, "Option").$$render($$result, { value: course }, {}, {
+            return `${validate_component(Option, "Option").$$render($$result, { value: course.id }, {}, {
               default: () => {
-                return `${escape(course)}`;
+                return `${escape(course.name)}`;
               }
             })}`;
           })}`;

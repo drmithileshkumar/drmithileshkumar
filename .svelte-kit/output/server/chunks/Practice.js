@@ -1,6 +1,6 @@
 import { s as subscribe, b as set_store_value } from "./utils.js";
 import { c as create_ssr_component, f as add_attribute, e as escape, i as createEventDispatcher, v as validate_component } from "./ssr.js";
-import { Q as QuestionTimer } from "./stores2.js";
+import { Q as QuestionTimer } from "./stores4.js";
 import { w as writable } from "./index2.js";
 /* empty css                                       */
 let attempted = writable(false);

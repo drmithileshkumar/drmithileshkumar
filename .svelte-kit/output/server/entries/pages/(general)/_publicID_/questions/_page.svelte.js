@@ -9,7 +9,7 @@ import { A as Actions } from "../../../../../chunks/Actions.js";
 import { C as Checkbox } from "../../../../../chunks/Checkbox.js";
 import { F as FormField } from "../../../../../chunks/FormField.js";
 import { S as Select, O as Option } from "../../../../../chunks/Option.js";
-import { c as currentPath } from "../../../../../chunks/stores3.js";
+import { c as currentPath } from "../../../../../chunks/stores2.js";
 const css$1 = {
   code: ".assignments.svelte-hxlsrk{padding-bottom:1em}.options.svelte-hxlsrk{display:flex;flex-direction:column}",
   map: null
@@ -147,7 +147,17 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page = subscribe(page, (value) => value);
   $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
   set_store_value(currentPath, $currentPath = "Questions", $currentPath);
-  let courses = ["Mathematics II", "Internet Technologies", "Internet Technologies Lab"];
+  let courses = [
+    { name: "Mathematics II", id: "22CA1201" },
+    {
+      name: "Internet Technologies",
+      id: "22CA2402"
+    },
+    {
+      name: "Internet Technologies Lab",
+      id: "22CA2405"
+    }
+  ];
   let questions = [], assignments = [];
   let selectedCourse;
   $$result.css.add(css);
@@ -177,9 +187,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       {
         default: () => {
           return `${validate_component(Option, "Option").$$render($$result, { value: "" }, {}, {})} ${each(courses, (course) => {
-            return `${validate_component(Option, "Option").$$render($$result, { value: course }, {}, {
+            return `${validate_component(Option, "Option").$$render($$result, { value: course.name }, {}, {
               default: () => {
-                return `${escape(course)}`;
+                return `${escape(course.name)}`;
               }
             })}`;
           })}`;

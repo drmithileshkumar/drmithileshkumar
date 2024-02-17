@@ -5,7 +5,7 @@ import "../../../../../chunks/client.js";
 import { C as Card } from "../../../../../chunks/Card.js";
 import "../../../../../chunks/ActionIcons.js";
 import { N as NavList } from "../../../../../chunks/NavList.js";
-import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores3.js";
+import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores2.js";
 const contents = [
   {
     name: "Linear algebra",

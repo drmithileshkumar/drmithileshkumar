@@ -60,7 +60,7 @@
     let text = "";
     onMount(async () => {
         // heic2any = await import('heic2any')
-        type = data.userDetail.type;
+        type = data.userDetail.type || 'Personal';
         details = data.userDetail.details;
         common = data.userDetail.common;
         name = data.user.name;

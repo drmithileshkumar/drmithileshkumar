@@ -10,7 +10,19 @@
     import Select, {Option} from "@smui/select";
     // export let data;
     $currentPath = 'Questions'
-    let courses = ["Mathematics II", 'Internet Technologies', 'Internet Technologies Lab'];
+    let courses = [
+        {
+            name: "Mathematics II",
+            id: '22CA1201'
+        }, 
+        {
+            name: 'Internet Technologies',
+            id: '22CA2402'
+        },
+        {
+            name: 'Internet Technologies Lab',
+            id: '22CA2405'
+        }];
     let questions = [], assignments = [];
     let selectedCourse;
     const getQuestions = async () => {
@@ -41,7 +53,7 @@
         <Select variant="outlined" bind:value={selectedCourse} label="Course">
             <Option value="" />
             {#each courses as course}
-                <Option value={course}>{course}</Option>
+                <Option value={course.name}>{course.name}</Option>
             {/each}
         </Select>
         <Button on:click={getQuestions}>Get Questions</Button>

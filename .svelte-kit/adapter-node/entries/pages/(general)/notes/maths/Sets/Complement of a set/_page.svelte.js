@@ -1,6 +1,6 @@
 import { s as subscribe } from "../../../../../../../chunks/utils.js";
 import { c as create_ssr_component, e as escape, k as add_classes, f as add_attribute } from "../../../../../../../chunks/ssr.js";
-import { c as currentSlide, s as slideCounter, a as selectedSection, b as selectedChapter, p as presentationMode, d as presentation } from "../../../../../../../chunks/stores4.js";
+import { c as currentSlide, s as slideCounter, a as selectedSection, b as selectedChapter, p as presentationMode, d as presentation } from "../../../../../../../chunks/stores3.js";
 /* empty css                                                                 */
 /* empty css                                                                */
 import { p as page } from "../../../../../../../chunks/stores.js";

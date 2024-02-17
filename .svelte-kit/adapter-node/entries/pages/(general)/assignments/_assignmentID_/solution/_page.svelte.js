@@ -3,7 +3,7 @@ import { c as create_ssr_component, v as validate_component, e as escape, j as e
 import "../../../../../../chunks/client.js";
 import "../../../../../../chunks/ActionIcons.js";
 import "../../../../../../chunks/Suffix.js";
-import { c as currentPath } from "../../../../../../chunks/stores3.js";
+import { c as currentPath } from "../../../../../../chunks/stores2.js";
 import { A as Assignment } from "../../../../../../chunks/Assignment.js";
 import { S as ShowQuestion } from "../../../../../../chunks/ShowQuestion.js";
 const css = {

@@ -16,7 +16,7 @@ import { w as writable } from "../../../../../chunks/index2.js";
 import { R as Radio } from "../../../../../chunks/Radio.js";
 import { F as FormField } from "../../../../../chunks/FormField.js";
 import { p as page } from "../../../../../chunks/stores.js";
-import { b as bannerImage, c as currentPath, p as profileImage } from "../../../../../chunks/stores3.js";
+import { b as bannerImage, c as currentPath, p as profileImage } from "../../../../../chunks/stores2.js";
 import "../../../../../chunks/client.js";
 let counter = 0;
 const Autocomplete = create_ssr_component(($$result, $$props, $$bindings, slots) => {

@@ -11,7 +11,7 @@ import "../../../../chunks/Suffix.js";
 import "devalue";
 import "../../../../chunks/client.js";
 import { p as page } from "../../../../chunks/stores.js";
-import { a as scannedQR, G as Guest, c as currentPath } from "../../../../chunks/stores3.js";
+import { a as scannedQR, G as Guest, c as currentPath } from "../../../../chunks/stores2.js";
 import "html5-qrcode";
 import "qrcode-generator";
 /* empty css                                                          */

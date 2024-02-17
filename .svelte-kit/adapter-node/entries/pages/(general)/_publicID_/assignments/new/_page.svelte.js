@@ -148,13 +148,13 @@ const EditAssignment = create_ssr_component(($$result, $$props, $$bindings, slot
                 $$result,
                 {
                   variant: "outlined",
-                  label: "Course Code",
+                  label: "Course ID",
                   style: "width:100%",
-                  value: assignment.courseCode
+                  value: assignment.courseID
                 },
                 {
                   value: ($$value) => {
-                    assignment.courseCode = $$value;
+                    assignment.courseID = $$value;
                     $$settled = false;
                   }
                 },

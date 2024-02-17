@@ -3,7 +3,7 @@ import { c as create_ssr_component, v as validate_component, e as escape } from 
 import { M as Message } from "../../../../../chunks/Message.js";
 /* empty css                                                       */
 import "../../../../../chunks/client.js";
-import { a as selectedChapter, s as selectedGenerator } from "../../../../../chunks/stores2.js";
+import { a as selectedChapter, s as selectedGenerator } from "../../../../../chunks/stores4.js";
 import { P as Practice } from "../../../../../chunks/Practice.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $selectedChapter, $$unsubscribe_selectedChapter;
