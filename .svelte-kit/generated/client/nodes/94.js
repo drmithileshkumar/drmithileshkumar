@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/courses/mathematics2/[assignmentID]/+page.js";
+import * as universal from "../../../../src/routes/(general)/courses/mathematics2/statistics/measures/mode/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/courses/mathematics2/[assignmentID]/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/courses/mathematics2/statistics/measures/mode/+page.svelte";

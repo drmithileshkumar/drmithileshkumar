@@ -218,6 +218,10 @@
 		"src/routes/(general)/courses/internet/wwwhtml/html/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/wwwhtml/html/audio": [
+		"src/routes/(general)/courses/internet/wwwhtml/html/audio/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/wwwhtml/html/forms": [
 		"src/routes/(general)/courses/internet/wwwhtml/html/forms/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -232,6 +236,10 @@
 	],
 	"/(general)/courses/internet/wwwhtml/html/lists": [
 		"src/routes/(general)/courses/internet/wwwhtml/html/lists/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/html/organization": [
+		"src/routes/(general)/courses/internet/wwwhtml/html/organization/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/courses/internet/wwwhtml/html/origins": [
@@ -252,6 +260,18 @@
 	],
 	"/(general)/courses/internet/wwwhtml/html/text": [
 		"src/routes/(general)/courses/internet/wwwhtml/html/text/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/html/time": [
+		"src/routes/(general)/courses/internet/wwwhtml/html/time/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/html/video": [
+		"src/routes/(general)/courses/internet/wwwhtml/html/video/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/wwwhtml/html/xhtml": [
+		"src/routes/(general)/courses/internet/wwwhtml/html/xhtml/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/courses/internet/xml": [

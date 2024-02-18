@@ -13,6 +13,7 @@ import { EditorView, keymap, placeholder } from "@codemirror/view";
 import { EditorState } from "@codemirror/state";
 import { indentWithTab } from "@codemirror/commands";
 import { indentUnit } from "@codemirror/language";
+/* empty css                                          */
 import { javascript } from "@codemirror/lang-javascript";
 import { xml } from "@codemirror/lang-xml";
 import { css as css$2 } from "@codemirror/lang-css";
