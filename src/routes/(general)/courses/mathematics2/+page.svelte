@@ -10,7 +10,7 @@
     import Button from "@smui/button";
     import Ripple from "@smui/ripple";
     import SegmentedButton, { Segment } from '@smui/segmented-button';
-    
+    import DataTable, {Head, Row, Cell, Body} from '@smui/data-table';
     import NavList from '$lib/components/NavList.svelte'
     import { currentPath } from "$lib/stores";
     import { darkMode, navList } from "$lib/stores";
@@ -153,6 +153,135 @@
                         </Item>
                     {/each}
                 </List> -->
+            </Content>
+        </Card>
+    {:else if active === 'Details'}
+        <Card>
+            <Content>
+                <h6>Course Outcomes</h6>
+                <p>At the end of the course student will be able to</p>
+                <ol>
+                    <li>Understand various statistical techniques that can be applied to real life situations</li>
+                    <li>study and appreciate discrete probability and it's uses</li>
+                    <li>understand and will be able to use operations research techniques to the given optimization problems</li>
+                </ol>
+            </Content>
+        </Card>
+        <Card>
+            <Content>
+                <h6>A brief overview of the course</h6>
+                <p>This course aims to equip students with the skills and knowledge required to use statistical methods in data centric problems. The course starts with basic measures of central tendencies, introduces correlation and regression. Then probability theory is applied to understand distributions. Once the tools are ready, they are applied for statistical inference. The course ends with using linear programming in solving optimization problems.</p>
+            </Content>
+        </Card>
+        <Card>
+            <Content>
+                <h6>Textbook and references</h6>
+                <ol>
+                    <li>Spiegel, Schiller, Srinivasan: Probability and Statistics-4th edition, McGraw Hill, 2013</li>
+                    <li>Study material at https://drmithileshkumar.com/courses/mathematics2</li>
+                    <li>Learn node.js at https://nodejs.org/en/learn</li>
+                    <li>Taha: Operations Research: An Introduction, Mac Millan.</li>
+                </ol>
+            </Content>
+        </Card>
+        <Card>
+            <Content>
+                <h6>Timetable</h6>
+                <strong>Room</strong>: TBD
+                <!-- <ol>
+                    <li><strong>Monday</strong>: 12:00-01:00</li>
+                    <li><strong>Thursday</strong>: 9:45-10:45</li>
+                    <li><strong>Friday</strong>: 8:45-9:45</li>
+                </ol> -->
+            </Content>
+        </Card>
+        <Card>
+            <Content>
+                <h6>Assessement</h6>
+                <DataTable table$aria-label="Marks breakup" style="max-width: 100%;">
+                    <Head>
+                        <Row>
+                            <Cell>Test</Cell>
+                            <Cell>Marks</Cell>
+                        </Row>
+                    </Head>
+                    <Body>
+                        <Row>
+                            <Cell>Internal Assessment 1 - (40M)</Cell>
+                            <Cell>20M</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>Internal Assessment 2 - (40M)</Cell>
+                            <Cell>20M</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>Assignment</Cell>
+                            <Cell>5M</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>Seminar</Cell>
+                            <Cell>5M</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>Reflection notes</Cell>
+                            <Cell>5M</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>Attendence</Cell>
+                            <Cell>5M</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>Total CIA</Cell>
+                            <Cell>60M</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>SEE - (100M)</Cell>
+                            <Cell>40M</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>Total - (100M)</Cell>
+                            <Cell>CIA (60M) + SEE (40M)</Cell>
+                        </Row>
+                    </Body>
+                </DataTable>
+            </Content>
+        </Card>
+        <Card>
+            <Content>
+                <h6>Attendence Requirements</h6>
+                <p>A student should have 75% or above to appear for the SEE exam failing which the admit card for the SEE will not be generated. </p>
+                <h6>Rubrics of attendance in CIA evaluation</h6>
+                <DataTable table$aria-label="Attendence Marks" style="max-width: 100%;">
+                    <Head>
+                        <Row>
+                            <Cell>Attendence (%)</Cell>
+                            <Cell>Marks</Cell>
+                        </Row>
+                    </Head>
+                    <Body>
+                        <Row>
+                            <Cell>95 - 100</Cell>
+                            <Cell>5</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>90 - 94</Cell>
+                            <Cell>4</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>85 - 89</Cell>
+                            <Cell>3</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>80 - 84</Cell>
+                            <Cell>2</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>75 - 79</Cell>
+                            <Cell>1</Cell>
+                        </Row>
+                    </Body>
+                </DataTable>
+                <p>Under extreme circumstances like medical emergencies etc. the student may apply permission with proper proofs attached and letter duly signed by the Chairperson of the department for obtaining 10% increment if he/she is having less than 75% attendance.</p>
             </Content>
         </Card>
     {/if}

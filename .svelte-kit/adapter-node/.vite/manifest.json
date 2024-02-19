@@ -2590,7 +2590,7 @@
   },
   "src/routes/(general)/courses/mathematics2/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page._y3mlvp0.css",
+      "_app/immutable/assets/_page.qTCENVhG.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/_page.svelte.js",
@@ -2606,6 +2606,7 @@
       "_Actions.js",
       "_Button.js",
       "_CommonLabel.js",
+      "_Cell.js",
       "_NavList.js",
       "_stores2.js",
       "_content2.js",
@@ -2679,7 +2680,7 @@
   },
   "src/routes/(general)/courses/mathematics2/statistics/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.4ARZUjTd.css"
+      "_app/immutable/assets/_page.OHLcN6TD.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/statistics/_page.svelte.js",
     "imports": [
