@@ -2304,12 +2304,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_client.js",
+      "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
       "_stores2.js",
-      "_content.js"
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internetlab/+page.svelte"
@@ -2328,12 +2330,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_client.js",
+      "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
       "_stores2.js",
-      "_content.js"
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internetlab/authentication/+page.svelte"
@@ -2352,12 +2356,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_client.js",
+      "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
       "_stores2.js",
-      "_content.js"
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internetlab/calculator/+page.svelte"
@@ -2369,19 +2375,23 @@
   },
   "src/routes/(general)/courses/internetlab/college/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.hj3E2EKt.css",
-      "_app/immutable/assets/Link.mTa6ZPjX.css"
+      "_app/immutable/assets/_page.78ZpxXH4.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css",
+      "_app/immutable/assets/NavList.buyRB24_.css"
     ],
     "file": "entries/pages/(general)/courses/internetlab/college/_page.svelte.js",
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_client.js",
+      "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_NavList.js",
+      "_Subheader.js",
+      "_client.js",
       "_stores2.js",
-      "_content.js"
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internetlab/college/+page.svelte"
@@ -2400,12 +2410,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_client.js",
+      "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
       "_stores2.js",
-      "_content.js"
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internetlab/dtd/+page.svelte"
@@ -2424,12 +2436,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_client.js",
+      "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
       "_stores2.js",
-      "_content.js"
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internetlab/javascript/+page.svelte"
@@ -2448,12 +2462,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_client.js",
+      "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
       "_stores2.js",
-      "_content.js"
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internetlab/nodejs/+page.svelte"
@@ -2473,12 +2489,15 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_client.js",
+      "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
+      "_client.js",
       "_stores2.js",
-      "_content.js"
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internetlab/resume/+page.svelte"
@@ -2497,12 +2516,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_client.js",
+      "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
       "_stores2.js",
-      "_content.js"
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internetlab/town/+page.svelte"
@@ -2521,12 +2542,14 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_client.js",
+      "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
       "_stores2.js",
-      "_content.js"
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internetlab/xml/+page.svelte"
