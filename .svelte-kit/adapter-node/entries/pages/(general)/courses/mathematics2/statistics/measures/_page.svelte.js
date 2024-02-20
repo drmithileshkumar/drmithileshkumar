@@ -8,7 +8,7 @@ import { c as contentNav, a as contents } from "../../../../../../../chunks/cont
 import { P as Pathlist } from "../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../chunks/CourseNavigation.js";
 const css = {
-  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}.question.svelte-n59hwk{cursor:pointer;padding:0.3em}",
+  code: "article.svelte-1hrf3r5{display:flex;flex-direction:column;gap:0.5em}p.svelte-1hrf3r5{opacity:0.8}h4.svelte-1hrf3r5,h5.svelte-1hrf3r5{margin:0.5em 0}h5.svelte-1hrf3r5{font-size:1.8em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -28,7 +28,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_darkMode();
   $$unsubscribe_navList();
   $$unsubscribe_page();
-  return `${$$result.head += `<!-- HEAD_svelte-1j5flhm_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/measures"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1j5flhm_END -->`, ""} <article class="svelte-n59hwk">${validate_component(Pathlist, "Pathlist").$$render(
+  return `${$$result.head += `<!-- HEAD_svelte-1j5flhm_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/measures"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1j5flhm_END -->`, ""} <article class="svelte-1hrf3r5">${validate_component(Pathlist, "Pathlist").$$render(
     $$result,
     {
       origin: $page.url.origin,
@@ -44,11 +44,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} <h2 class="svelte-n59hwk" data-svelte-h="svelte-veukkz">BASICS OF STATISTICS</h2> <h3 class="svelte-n59hwk" data-svelte-h="svelte-9mlwov">Measures of Central Tendency</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  )} <h4 class="svelte-1hrf3r5" data-svelte-h="svelte-191m8w3">BASICS OF STATISTICS</h4> <h5 class="svelte-1hrf3r5" data-svelte-h="svelte-7htjs7">Measures of Central Tendency</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-n59hwk" data-svelte-h="svelte-16178kr">What are measures of central tendency?</div> <div class="solution" data-svelte-h="svelte-idh4gy">Measures of central tendency are statistical metrics that summarize a data set by identifying the central point around which all other data points tend to cluster. These measures are crucial for understanding the typical or average values in the data. The most common measures of central tendency are the mean, median, and mode.</div>`;
+          return `<p class="svelte-1hrf3r5" data-svelte-h="svelte-z16c8j">Given data, measures of central tendency give an indication of values around which the data is centered around. The common measures are average, most frequent values or middle value. These are easy to calculate and used to get a quick idea about the nature of data.</p>`;
         }
       })}`;
     }

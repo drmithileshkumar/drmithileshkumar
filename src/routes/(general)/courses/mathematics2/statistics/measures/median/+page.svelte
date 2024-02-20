@@ -25,7 +25,7 @@
         margin: 0.5em 0;
     }
     h5 {
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
     h6 {
         font-size: 1em;
@@ -49,19 +49,19 @@
     <link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/median" />
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
 </svelte:head>
-<article>
+<article use:typeset>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
-    <h2>
+    <h4>
         Measures of Central Tendency 
-    </h2>
-    <h3>Median</h3>
+    </h4>
+    <h5>Median</h5>
     <Card>
         <Content>
             <div class="question">
                 What is median?
             </div>
-            <div class="solution" use:typeset>
+            <div class="solution">
                 <p>The median is the middle value in a data set when the values are arranged in ascending or descending order. The definition of the median depends on whether the number of observations in the data set is odd or even:</p>
                 <p>For an odd number of observations {`n`}, the median {`M`} is the value at position {`\\( \\frac{n+1}{2} \\)`} in the ordered set. Mathematically, if {`\\( X = \\{x_1, x_2, ..., x_n\\} \\)`} is the ordered data set, then:</p>
                 <p>{`\\[ M = x_{\\frac{n+1}{2}} \\]`}</p>
@@ -69,6 +69,28 @@
                 <p>{`\\[ M = \\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2} + 1}}{2} \\]`}</p>
                 <p>Thus, the median divides the data set into two equal parts, with half of the data points being less than or equal to the median and the other half being greater than or equal to the median.</p>
 
+            </div>
+        </Content>
+    </Card>
+    <h5>Questions</h5>
+    <Card>
+        <Content>
+            <div class="question">
+                If every data point is multiplied by a number \(k\), then what is the median of the new data (assuming \(m\) to be median of the origin data)?
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                Let \(x_1, x_2,\dots, x_n\) are numbers in ascending order. Two numbers \(a, A\) are added to this set such that \(a \lt x_1\) and \(A \gt x_n\). What will be the new median?
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                Give an example of data set where \(mean \lt median \lt mode\).
             </div>
         </Content>
     </Card>

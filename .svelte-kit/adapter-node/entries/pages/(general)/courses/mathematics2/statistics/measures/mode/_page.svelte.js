@@ -8,7 +8,7 @@ import { c as contentNav, a as contents } from "../../../../../../../../chunks/c
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 const css = {
-  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}p.svelte-n59hwk{opacity:0.8}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}.question.svelte-n59hwk{cursor:pointer;padding:0.3em}",
+  code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}.question.svelte-98uzi2{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -28,7 +28,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
   $$unsubscribe_page();
-  return `${$$result.head += `<!-- HEAD_svelte-2bqjw8_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/mode"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-2bqjw8_END -->`, ""} <article class="svelte-n59hwk">${validate_component(Pathlist, "Pathlist").$$render(
+  return `${$$result.head += `<!-- HEAD_svelte-2bqjw8_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/mode"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-2bqjw8_END -->`, ""} <article class="svelte-98uzi2">${validate_component(Pathlist, "Pathlist").$$render(
     $$result,
     {
       origin: $page.url.origin,
@@ -44,11 +44,43 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} <h2 class="svelte-n59hwk" data-svelte-h="svelte-ebnzvb">Measures of Central Tendency</h2> <h3 class="svelte-n59hwk" data-svelte-h="svelte-obyr5v">Mode</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  )} <h4 class="svelte-98uzi2" data-svelte-h="svelte-dwe40b">Measures of Central Tendency</h4> <h5 class="svelte-98uzi2" data-svelte-h="svelte-1oufz9v">Mode</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-n59hwk" data-svelte-h="svelte-1720nl7">What is mode?</div> <div class="solution"><p class="svelte-n59hwk">The mode of a data set is the value(s) that occur most frequently. The mode is defined mathematically as the value ${escape(`\\( x_{i} \\)`)} for which the frequency ${escape(`\\( f_{i} \\)`)} is maximum. In other words, if a data set consists of values ${escape(`\\( x_{1}, x_{2}, ..., x_{n} \\)`)} with corresponding frequencies ${escape(`\\( f_{1}, f_{2}, ..., f_{n} \\)`)}, then the mode ${escape(`\\( M \\)`)} is given by:</p> <p class="svelte-n59hwk">${escape(`\\[ M = x_{i} \\quad \\text{where} \\quad f_{i} = \\max(f_{1}, f_{2}, ..., f_{n}) \\]`)}</p> <p class="svelte-n59hwk" data-svelte-h="svelte-17v03og">If two or more values tie for the highest frequency, the data set is multimodal, and each of these values is a mode. If no value repeats, the data set is said to have no mode.</p></div>`;
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-1720nl7">What is mode?</div> <div class="solution"><p class="svelte-98uzi2">The mode of a data set is the value(s) that occur most frequently. The mode is defined mathematically as the value ${escape(`\\( x_{i} \\)`)} for which the frequency ${escape(`\\( f_{i} \\)`)} is maximum. In other words, if a data set consists of values ${escape(`\\( x_{1}, x_{2}, ..., x_{n} \\)`)} with corresponding frequencies ${escape(`\\( f_{1}, f_{2}, ..., f_{n} \\)`)}, then the mode ${escape(`\\( M \\)`)} is given by:</p> <p class="svelte-98uzi2">${escape(`\\[ M = x_{i} \\quad \\text{where} \\quad f_{i} = \\max(f_{1}, f_{2}, ..., f_{n}) \\]`)}</p> <p class="svelte-98uzi2" data-svelte-h="svelte-17v03og">If two or more values tie for the highest frequency, the data set is multimodal, and each of these values is a mode. If no value repeats, the data set is said to have no mode.</p></div>`;
+        }
+      })}`;
+    }
+  })} <h5 class="svelte-98uzi2" data-svelte-h="svelte-1984kyx">Questions</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-10jm1t">What is mode of letters in STATISTICS?</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-i13j70">If every data point is multiplied by a number \\(k\\), then what is the mode of the new data (assuming \\(m\\) to be mode of the origin data)?</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-1rjpfxs">The largest data point in the given data is doubled. How can this effect the mode?</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-zzk0f4">Can you compare mean and mode of any given data, i.e. conclude whether \\(mean \\leq mode\\)?</div>`;
         }
       })}`;
     }

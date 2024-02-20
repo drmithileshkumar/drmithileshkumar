@@ -8,6 +8,7 @@
     import { contents, contentNav } from "$lib/pages/courses/mathematics2/content";
     import Pathlist from "$lib/components/Pathlist.svelte";
 	import CourseNavigation from "$lib/components/CourseNavigation.svelte";
+    import MeanPlot from '$lib/pages/courses/mathematics2/statistics/measures/mean/MeanPlot.svelte'
     $navList = contents;
     $currentPath = "Mean";
     $darkMode = false;
@@ -25,7 +26,7 @@
         margin: 0.5em 0;
     }
     h5 {
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
     h6 {
         font-size: 1em;
@@ -49,13 +50,13 @@
     <link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/mean" />
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
 </svelte:head>
-<article>
+<article use:typeset>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
-    <h2>
+    <h4>
         Measures of Central Tendency 
-    </h2>
-    <h3>Mean</h3>
+    </h4>
+    <h5>Mean</h5>
     <Card>
         <Content>
             <div class="question">
@@ -74,6 +75,61 @@
                 <p>The Harmonic Mean of a set of <em>n</em> numbers <em>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></em>, where none of the numbers are zero, is defined as <em>n</em> divided by the sum of the reciprocals of the numbers. The formula for the harmonic mean is:</p>
                 <p>{`\\[ \\text{Harmonic Mean (HM)} = \\frac{n}{\\sum_{i=1}^{n} \\frac{1}{x_i}} \\]`}</p>
 
+            </div>
+        </Content>
+    </Card>
+    <!-- <Card>
+        <Content>
+            <div style="max-width:100%;">
+                <MeanPlot />
+            </div>
+        </Content>
+    </Card> -->
+    <h5>Questions</h5>
+    <Card>
+        <Content>
+            <div class="question">
+                What is the mean of \(n\) consecutive numbers starting with \(a\)?
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">Show that arithmetic mean is always between the smallest and the largest data point.</div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                Given data points \(x_1, x_2,\dots, x_n\) with arithmetic mean \(\mu\), what is the percentage change in \(\mu\) if \(x_1\) is increased by \(\lambda\)%?
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                The geometric mean of 2 numbers \(a,b\) doubles when \(a\) is changed to \(a'\). What is the value of \(a'\)?
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                Show that \(AM\geq GM\) in case of two variables.
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                Show that \(HM\leq GM\) in case of two variables.
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                If every data point is multiplied by a number \(k\), then what is AM, GM and HM of the new data in terms of previous values of AM, GM and HM?
             </div>
         </Content>
     </Card>

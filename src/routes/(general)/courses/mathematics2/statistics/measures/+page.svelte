@@ -25,7 +25,7 @@
         margin: 0.5em 0;
     }
     h5 {
-        font-size: 1.1em;
+        font-size: 1.8em;
     }
     h6 {
         font-size: 1em;
@@ -52,18 +52,15 @@
 <article>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
-    <h2>
+    <h4>
         BASICS OF STATISTICS 
-    </h2>
-    <h3>Measures of Central Tendency</h3>
+    </h4>
+    <h5>Measures of Central Tendency</h5>
     <Card>
         <Content>
-            <div class="question">
-                What are measures of central tendency?
-            </div>
-            <div class="solution">
-                Measures of central tendency are statistical metrics that summarize a data set by identifying the central point around which all other data points tend to cluster. These measures are crucial for understanding the typical or average values in the data. The most common measures of central tendency are the mean, median, and mode.
-            </div>
+            <p>
+                Given data, measures of central tendency give an indication of values around which the data is centered around. The common measures are average, most frequent values or middle value. These are easy to calculate and used to get a quick idea about the nature of data.
+            </p>
         </Content>
     </Card>
 </article>

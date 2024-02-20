@@ -7,8 +7,9 @@ import { d as darkMode, c as currentPath, n as navList } from "../../../../../..
 import { c as contentNav, a as contents } from "../../../../../../../../chunks/content2.js";
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
+import "d3";
 const css = {
-  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}p.svelte-n59hwk{opacity:0.8}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}h6.svelte-n59hwk{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}.question.svelte-n59hwk{cursor:pointer;padding:0.3em}",
+  code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}h6.svelte-98uzi2{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}.question.svelte-98uzi2{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -28,7 +29,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
   $$unsubscribe_page();
-  return `${$$result.head += `<!-- HEAD_svelte-1a8oqdm_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/mean"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1a8oqdm_END -->`, ""} <article class="svelte-n59hwk">${validate_component(Pathlist, "Pathlist").$$render(
+  return `${$$result.head += `<!-- HEAD_svelte-1a8oqdm_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/mean"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-1a8oqdm_END -->`, ""} <article class="svelte-98uzi2">${validate_component(Pathlist, "Pathlist").$$render(
     $$result,
     {
       origin: $page.url.origin,
@@ -44,11 +45,67 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} <h2 class="svelte-n59hwk" data-svelte-h="svelte-ebnzvb">Measures of Central Tendency</h2> <h3 class="svelte-n59hwk" data-svelte-h="svelte-1e6v5t9">Mean</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  )} <h4 class="svelte-98uzi2" data-svelte-h="svelte-dwe40b">Measures of Central Tendency</h4> <h5 class="svelte-98uzi2" data-svelte-h="svelte-1xrprax">Mean</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-n59hwk" data-svelte-h="svelte-1w4wpq1">What is mean (AM, GM, HM)?</div> <div class="solution"><h6 class="svelte-n59hwk" data-svelte-h="svelte-d6g3hn">Mean (Arithmetic Mean)</h6> <p class="svelte-n59hwk" data-svelte-h="svelte-1wvanrw">The mean, also known as the arithmetic mean, of a set of <em>n</em> numerical values <em>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></em> is defined as the sum of all the values divided by the number of values. The formula for the mean is:</p> <p class="svelte-n59hwk">${escape(`\\[ \\text{Mean} (\\bar{x}) = \\frac{1}{n} \\sum_{i=1}^{n} x_i \\]`)}</p> <h6 class="svelte-n59hwk" data-svelte-h="svelte-1smdv11">Geometric Mean (GM)</h6> <p class="svelte-n59hwk" data-svelte-h="svelte-78yyvr">The Geometric Mean of a set of <em>n</em> positive numbers <em>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></em> is defined as the <em>n</em>-th root of the product of all the <em>n</em> numbers. The formula for the geometric mean is:</p> <p class="svelte-n59hwk">${escape(`\\[ \\text{Geometric Mean (GM)} = \\left( \\prod_{i=1}^{n} x_i \\right)^{\\frac{1}{n}} \\]`)}</p> <h6 class="svelte-n59hwk" data-svelte-h="svelte-y481x8">Harmonic Mean (HM)</h6> <p class="svelte-n59hwk" data-svelte-h="svelte-juarun">The Harmonic Mean of a set of <em>n</em> numbers <em>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></em>, where none of the numbers are zero, is defined as <em>n</em> divided by the sum of the reciprocals of the numbers. The formula for the harmonic mean is:</p> <p class="svelte-n59hwk">${escape(`\\[ \\text{Harmonic Mean (HM)} = \\frac{n}{\\sum_{i=1}^{n} \\frac{1}{x_i}} \\]`)}</p></div>`;
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-1w4wpq1">What is mean (AM, GM, HM)?</div> <div class="solution"><h6 class="svelte-98uzi2" data-svelte-h="svelte-d6g3hn">Mean (Arithmetic Mean)</h6> <p class="svelte-98uzi2" data-svelte-h="svelte-1wvanrw">The mean, also known as the arithmetic mean, of a set of <em>n</em> numerical values <em>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></em> is defined as the sum of all the values divided by the number of values. The formula for the mean is:</p> <p class="svelte-98uzi2">${escape(`\\[ \\text{Mean} (\\bar{x}) = \\frac{1}{n} \\sum_{i=1}^{n} x_i \\]`)}</p> <h6 class="svelte-98uzi2" data-svelte-h="svelte-1smdv11">Geometric Mean (GM)</h6> <p class="svelte-98uzi2" data-svelte-h="svelte-78yyvr">The Geometric Mean of a set of <em>n</em> positive numbers <em>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></em> is defined as the <em>n</em>-th root of the product of all the <em>n</em> numbers. The formula for the geometric mean is:</p> <p class="svelte-98uzi2">${escape(`\\[ \\text{Geometric Mean (GM)} = \\left( \\prod_{i=1}^{n} x_i \\right)^{\\frac{1}{n}} \\]`)}</p> <h6 class="svelte-98uzi2" data-svelte-h="svelte-y481x8">Harmonic Mean (HM)</h6> <p class="svelte-98uzi2" data-svelte-h="svelte-juarun">The Harmonic Mean of a set of <em>n</em> numbers <em>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></em>, where none of the numbers are zero, is defined as <em>n</em> divided by the sum of the reciprocals of the numbers. The formula for the harmonic mean is:</p> <p class="svelte-98uzi2">${escape(`\\[ \\text{Harmonic Mean (HM)} = \\frac{n}{\\sum_{i=1}^{n} \\frac{1}{x_i}} \\]`)}</p></div>`;
+        }
+      })}`;
+    }
+  })}  <h5 class="svelte-98uzi2" data-svelte-h="svelte-1984kyx">Questions</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-nwwjfq">What is the mean of \\(n\\) consecutive numbers starting with \\(a\\)?</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-eohafb">Show that arithmetic mean is always between the smallest and the largest data point.</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-1bjojpc">Given data points \\(x_1, x_2,\\dots, x_n\\) with arithmetic mean \\(\\mu\\), what is the percentage change in \\(\\mu\\) if \\(x_1\\) is increased by \\(\\lambda\\)%?</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-1dcydni">The geometric mean of 2 numbers \\(a,b\\) doubles when \\(a\\) is changed to \\(a&#39;\\). What is the value of \\(a&#39;\\)?</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-1nasd46">Show that \\(AM\\geq GM\\) in case of two variables.</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-1gyzsum">Show that \\(HM\\leq GM\\) in case of two variables.</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-rjw0ug">If every data point is multiplied by a number \\(k\\), then what is AM, GM and HM of the new data in terms of previous values of AM, GM and HM?</div>`;
         }
       })}`;
     }
