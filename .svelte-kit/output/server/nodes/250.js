@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/practice/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Vector algebra/Types of vectors/_page.js';
 
 export const index = 250;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/practice/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Vector algebra/Types of vectors/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/practice/+page.js";
-export const imports = ["_app/immutable/nodes/250.j1JrgGyf.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/entry.JR0QvFaR.js","_app/immutable/chunks/index.dbCRPIkP.js"];
-export const stylesheets = ["_app/immutable/assets/Message.ctOi1nG9.css","_app/immutable/assets/Link.mTa6ZPjX.css","_app/immutable/assets/Practice.5SCwWus9.css"];
+export const universal_id = "src/routes/(general)/notes/maths/Vector algebra/Types of vectors/+page.js";
+export const imports = ["_app/immutable/nodes/250.6tpdopkc.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.BQ02wEPT.js","_app/immutable/chunks/entry.BHyVco25.js"];
+export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

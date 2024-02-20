@@ -282,6 +282,10 @@
 		"src/routes/(general)/courses/linearalgebra/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/linearalgebra/bases": [
+		"src/routes/(general)/courses/linearalgebra/bases/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/mathematics2": [
 		"src/routes/(general)/courses/mathematics2/+page.js",
 		"src/routes/(general)/+layout.server.js"

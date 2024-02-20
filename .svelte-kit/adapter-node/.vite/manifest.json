@@ -514,6 +514,9 @@
   "_content3.js": {
     "file": "chunks/content3.js"
   },
+  "_content4.js": {
+    "file": "chunks/content4.js"
+  },
   "_exports.js": {
     "file": "chunks/exports.js"
   },
@@ -1426,7 +1429,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_client.js",
       "_stores.js",
       "_TabBar.js",
@@ -1577,7 +1580,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1603,7 +1606,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1630,7 +1633,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1659,7 +1662,7 @@
       "_utils.js",
       "_ssr.js",
       "_xml.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1688,7 +1691,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1716,7 +1719,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1744,7 +1747,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1772,7 +1775,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1801,7 +1804,7 @@
       "_utils.js",
       "_ssr.js",
       "_xml.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1829,7 +1832,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1856,7 +1859,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1883,7 +1886,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1913,7 +1916,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1943,7 +1946,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -1973,7 +1976,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -2002,7 +2005,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -2031,7 +2034,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -2060,7 +2063,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -2088,7 +2091,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -2117,7 +2120,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -2146,7 +2149,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -2175,7 +2178,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
@@ -2206,7 +2209,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_ActionIcons.js",
       "_Subheader.js",
@@ -2235,7 +2238,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_ActionIcons.js",
       "_Subheader.js",
@@ -2264,7 +2267,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_content3.js",
+      "_content4.js",
       "_stores.js",
       "_ActionIcons.js",
       "_Subheader.js",
@@ -2564,21 +2567,55 @@
   },
   "src/routes/(general)/courses/linearalgebra/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.hj3E2EKt.css",
+      "_app/immutable/assets/_page.0LO-I8uZ.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/linearalgebra/_page.svelte.js",
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_client.js",
+      "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
       "_NavList.js",
-      "_stores2.js"
+      "_stores2.js",
+      "_content2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/linearalgebra/+page.svelte"
+  },
+  "src/routes/(general)/courses/linearalgebra/bases/+page.js": {
+    "file": "entries/pages/(general)/courses/linearalgebra/bases/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/linearalgebra/bases/+page.js"
+  },
+  "src/routes/(general)/courses/linearalgebra/bases/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.E6M-Cl7F.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css",
+      "_app/immutable/assets/NavList.buyRB24_.css"
+    ],
+    "file": "entries/pages/(general)/courses/linearalgebra/bases/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores2.js",
+      "_content2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/linearalgebra/bases/+page.svelte"
   },
   "src/routes/(general)/courses/mathematics2/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/_page.js",
@@ -2609,7 +2646,7 @@
       "_Cell.js",
       "_NavList.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_TabBar.js",
@@ -2690,7 +2727,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -2714,7 +2751,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -2738,7 +2775,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -2762,7 +2799,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -2786,7 +2823,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -2810,7 +2847,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -2834,7 +2871,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -2858,7 +2895,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -2882,7 +2919,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -2896,7 +2933,7 @@
   },
   "src/routes/(general)/courses/mathematics2/statistics/measures/deviation/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.QhXNCnV8.css"
+      "_app/immutable/assets/_page.EU7GI60Q.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/statistics/measures/deviation/_page.svelte.js",
     "imports": [
@@ -2906,7 +2943,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -2930,7 +2967,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -2954,7 +2991,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -2978,7 +3015,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -3002,7 +3039,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -3026,7 +3063,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -3050,7 +3087,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -3074,7 +3111,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],

@@ -139,17 +139,17 @@
                     <Row>
                         <Cell>MP3</Cell>
                         <Cell><code>.mp3</code></Cell>
-                        <Cell></Cell>
+                        <Cell style="white-space:normal;">lossy compression, small size, based on auditory range of humans</Cell>
                     </Row>
                     <Row>
-                        <Cell>WAV</Cell>
+                        <Cell style="white-space:normal;">Waveform Audio File Format</Cell>
                         <Cell><code>.wav</code></Cell>
-                        <Cell></Cell>
+                        <Cell style="white-space:normal;">Uncompressed, large size, files can not be larger than 4 GiB (32-bit file size header)</Cell>
                     </Row>
                     <Row>
                         <Cell>OGG</Cell>
                         <Cell><code>.ogg</code></Cell>
-                        <Cell></Cell>
+                        <Cell style="white-space:normal;">Both lossy and lossless compressions exist</Cell>
                     </Row>
                 </Body>
             </DataTable>

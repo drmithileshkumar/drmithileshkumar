@@ -25,7 +25,7 @@
         margin: 0.5em 0;
     }
     h5 {
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
     h6 {
         font-size: 1em;
@@ -49,13 +49,13 @@
     <link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/deviation" />
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
 </svelte:head>
-<article>
+<article use:typeset>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
-    <h2>
+    <h4>
         Measures of Central Tendency 
-    </h2>
-    <h3>Variance and Standard Deviation</h3>
+    </h4>
+    <h5>Variance and Standard Deviation</h5>
     <Card>
         <Content>
             <div class="question">
@@ -68,7 +68,26 @@
                 <p>Then, the standard deviation {`\\( \\sigma \\)`} is the square root of the variance:</p>
                 <p>{`\\[ \\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\]`}</p>
                 <p>In this formula, {`\\( \\bar{x} \\)`} is the mean of the data set, and {`\\( n \\)`} is the number of observations. The standard deviation provides a numerical measure of how spread out the values in a data set are around the mean.</p>
-
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <p>An observation is usually not very far away from a few standard deviations. For example, 50% of data is within {"\\(\\sqrt{2}\\sigma\\)"} from the mean and 97% of data is within \(6\sigma\) of the mean.</p>
+        </Content>
+    </Card>
+    <h5>Questions</h5>
+    <Card>
+        <Content>
+            <div class="question">
+                What will be the standard deviation if every data point is multiplied by \(a\) and increased by \(b\) i.e. \(x_i \to ax_i + b\)?
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                Calculate the standard deviation of \(n\) consecutive numbers start with \(a\).
             </div>
         </Content>
     </Card>

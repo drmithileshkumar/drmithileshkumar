@@ -1,6 +1,6 @@
 import { s as subscribe, b as set_store_value } from "../../../../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component } from "../../../../../../../../chunks/ssr.js";
-import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../../../chunks/content3.js";
+import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../../../chunks/content4.js";
 /* empty css                                                                */
 import { p as page } from "../../../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../../../chunks/Card.js";
@@ -113,19 +113,27 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         default: () => {
                           return `<code data-svelte-h="svelte-roccc4">.mp3</code>`;
                         }
-                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {})}`;
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `lossy compression, small size, based on auditory range of humans`;
+                        }
+                      })}`;
                     }
                   })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
                     default: () => {
-                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                      return `${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
                         default: () => {
-                          return `WAV`;
+                          return `Waveform Audio File Format`;
                         }
                       })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
                         default: () => {
                           return `<code data-svelte-h="svelte-1bldscw">.wav</code>`;
                         }
-                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {})}`;
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `Uncompressed, large size, files can not be larger than 4 GiB (32-bit file size header)`;
+                        }
+                      })}`;
                     }
                   })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
                     default: () => {
@@ -137,7 +145,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         default: () => {
                           return `<code data-svelte-h="svelte-1rmctwl">.ogg</code>`;
                         }
-                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {})}`;
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space:normal;" }, {}, {
+                        default: () => {
+                          return `Both lossy and lossless compressions exist`;
+                        }
+                      })}`;
                     }
                   })}`;
                 }

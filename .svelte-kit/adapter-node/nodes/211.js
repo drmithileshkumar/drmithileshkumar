@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Sets/Complement of a set/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Sequences and series/Sum to n terms of Special series/_page.js';
 
 export const index = 211;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Sets/Complement of a set/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Sequences and series/Sum to n terms of Special series/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Sets/Complement of a set/+page.js";
-export const imports = ["_app/immutable/nodes/211.UldZ3Klq.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/stores.oe4Qh49j.js","_app/immutable/chunks/entry.JR0QvFaR.js"];
-export const stylesheets = ["_app/immutable/assets/151.RfrDpo0v.css","_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
+export const universal_id = "src/routes/(general)/notes/maths/Sequences and series/Sum to n terms of Special series/+page.js";
+export const imports = ["_app/immutable/nodes/211.nHliFCTL.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.BQ02wEPT.js","_app/immutable/chunks/entry.BHyVco25.js"];
+export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];
