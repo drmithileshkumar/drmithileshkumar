@@ -25,7 +25,7 @@
         margin: 0.5em 0;
     }
     h5 {
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
     h6 {
         font-size: 1em;
@@ -52,10 +52,10 @@
 <article>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
-    <h2>
+    <h4>
         BASICS OF STATISTICS 
-    </h2>
-    <h3>Correlation</h3>
+    </h4>
+    <h5>Correlation</h5>
     <Card>
         <Content>
             <div class="question">
@@ -63,26 +63,18 @@
             </div>
             <div class="solution" use:typeset>
                 
-                <p>Correlation is a fundamental concept in statistics that measures the degree and direction of the relationship between two or more variables. It allows us to understand how changes in one variable are associated with changes in another, providing valuable insights into patterns and dependencies in data.</p>
-
-                <p>Correlation does not imply causation; it simply quantifies the strength and direction of the association between variables. There are different types of correlation coefficients, with the most common one being the Pearson correlation coefficient, denoted as {`\\( r \\)`}.</p>
-
-                <p><strong>Pearson Correlation Coefficient:</strong> Pearson's {`\\( r \\)`} quantifies the linear relationship between two variables. It ranges from -1 to +1, with the following interpretations:</p>
-
-                <ul>
-                    <li><p>Positive {`\\( r \\)`} (+1): Indicates a perfect positive linear relationship, meaning as one variable increases, the other also increases linearly.</p></li>
-                    <li><p>Negative {`\\( r \\)`} (-1): Indicates a perfect negative linear relationship, meaning as one variable increases, the other decreases linearly.</p></li>
-                    <li><p>Zero {`\\( r \\)`} (0): Indicates no linear relationship between the variables.</p></li>
-                </ul>
-
-                <p>The formula for calculating Pearson's {`\\( r \\)`} is as follows:</p>
-
-                <p>{`\\[ r = \\frac{\\sum{(x_i - \\bar{x})(y_i - \\bar{y})}}{\\sqrt{\\sum{(x_i - \\bar{x})^2}\\sum{(y_i - \\bar{y})^2}}} \\]`}</p>
-
-                <p>Here, {`\\( x_i \\)`} and {`\\( y_i \\)`} are data points, and {`\\( \\bar{x} \\)`} and {`\\( \\bar{y} \\)`} are the means (averages) of the two variables.</p>
-
-                <p>Correlation is a powerful tool for understanding relationships between variables, and it is widely used in fields such as economics, finance, psychology, and more. It helps in making predictions, identifying trends, and conducting data-driven analyses.</p>
-
+                <p>
+                    Correlation is a fundamental concept in statistics that measures the degree and direction of the relationship between two or more variables. It allows us to understand how changes in one variable are associated with changes in another, providing valuable insights into patterns and dependencies in data.
+                </p>
+                <p>
+                    Most famous example of correlation is the supply and demand in determining prices of commodities. Demand of electricity and weather conditions are correlated as well.
+                </p>
+                <p>
+                    Correlation does not imply causation; it simply quantifies the strength and direction of the association between variables.
+                </p>
+                <p>
+                    Although correlation is about studying relationship between any number of variables, we'll focus on the two variable case. Next we introduce bivariate data.
+                </p>
             </div>
         </Content>
     </Card>

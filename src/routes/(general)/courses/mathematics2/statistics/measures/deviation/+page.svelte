@@ -91,4 +91,11 @@
             </div>
         </Content>
     </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                Create any set of random data. Increase the largest data point by 10%, 20%, ..., 100%. Make a table that shows the change in standard deviation.
+            </div>
+        </Content>
+    </Card>
 </article>

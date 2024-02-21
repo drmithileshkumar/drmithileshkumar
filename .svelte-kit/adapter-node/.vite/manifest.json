@@ -2742,7 +2742,7 @@
   },
   "src/routes/(general)/courses/mathematics2/statistics/correlation/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.KL6jlOoL.css"
+      "_app/immutable/assets/_page.EU7GI60Q.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/_page.svelte.js",
     "imports": [
@@ -2766,7 +2766,7 @@
   },
   "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatedata/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.IUzS-RSO.css"
+      "_app/immutable/assets/_page.OckRbxQs.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/bivariatedata/_page.svelte.js",
     "imports": [
@@ -2775,6 +2775,7 @@
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
+      "_Button.js",
       "_stores2.js",
       "_content3.js",
       "_Pathlist.js",

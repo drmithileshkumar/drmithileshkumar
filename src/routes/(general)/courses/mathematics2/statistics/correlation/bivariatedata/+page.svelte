@@ -3,6 +3,7 @@
     import { page } from "$app/stores";
     import { typeset } from "$lib/shared/typeset";
     import Card, { Content, Actions } from "@smui/card";
+    import ScatteredPlot from '$lib/pages/courses/mathematics2/ScatteredPlot.svelte';
     import { currentPath } from "$lib/stores";
     import { darkMode, navList } from "$lib/stores"
     import { contents, contentNav } from "$lib/pages/courses/mathematics2/content";
@@ -25,7 +26,7 @@
         margin: 0.5em 0;
     }
     h5 {
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
     h6 {
         font-size: 1em;
@@ -55,23 +56,37 @@
     <h4>
         Correlation
     </h4>
-    <h3>Bivariate Data</h3>
+    <h5>Bivariate Data</h5>
     <Card>
         <Content>
             <div class="question">
                 What is bivariate data?
             </div>
             <div class="solution" use:typeset>
-                <p>Bivariate data involves pairs of related data points, each representing two different variables. These data points are used to explore the relationship between these two variables. For instance, if we consider a dataset with variables {`\\( X \\)`} and {`\\( Y \\)`}, each data point in the dataset will be a pair {`\\( (x_i, y_i) \\)`}, where {`\\( x_i \\)`} is a value of {`\\( X \\)`} and {`\\( y_i \\)`} is the corresponding value of {`\\( Y \\)`}. The main characteristics of bivariate data include:</p>
+                <p>
+                    Bivariate data involves pairs of related data points, each representing two different variables. These data points are used to explore the relationship between these two variables. For instance, if we consider a dataset with variables {`\\( X \\)`} and {`\\( Y \\)`}, each data point in the dataset will be a pair {`\\( (x_i, y_i) \\)`}, where {`\\( x_i \\)`} is a value of {`\\( X \\)`} and {`\\( y_i \\)`} is the corresponding value of {`\\( Y \\)`}. 
+                </p>
+                <p>
+                    The main characteristics of bivariate data include:
+                </p>
                 <ul>
-                    <li><p>Two Variables: Bivariate data consists of observations of two variables. For example, in a study of height and weight, each observation will include both a height and a weight value.</p></li>
-                    <li><p>Relationship Analysis: The primary purpose of collecting bivariate data is to analyze the relationship between the two variables. This can involve looking for patterns, correlations, or cause-and-effect relationships.</p></li>
-                    <li><p>Visualization: Bivariate data is often visualized using scatter plots, line graphs, or other graphical representations to help identify and understand relationships between the variables.</p></li>
-                    <li><p>Statistical Analysis: Various statistical methods, such as correlation and regression analysis, are used to quantify the strength and nature of the relationship between the two variables.</p></li>
-                    <li><p>Applications: Bivariate data analysis is used in numerous fields such as economics, biology, and social sciences to test hypotheses or make predictions.</p></li>
+                    <li>
+                        <p>
+                            <strong>Two Variables</strong>: Bivariate data consists of observations of two variables. For example, in a study of height and weight, each observation will include both a height and a weight value.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Visualization</strong>: Bivariate data is often visualized using scatter plots, line graphs, or other graphical representations to help identify and understand relationships between the variables.
+                        </p>
+                    </li>
                 </ul>
-                <p>Overall, bivariate data provides a way to understand how two variables interact with each other within a given dataset.</p>
             </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content style="display:flex; flex-direction: column; justify-content:center;">
+            <ScatteredPlot />
         </Content>
     </Card>
 </article>
