@@ -38,7 +38,7 @@
     // onMount(() => {
     //     MathJax.typeset();
     // });
-    let htmlContent = `<!DOCTYPE html> 
+    let htmlContentVideo = `<!DOCTYPE html> 
 <!-- File name and document purpose --> 
 <html lang = "en">   
     <head>     
@@ -47,179 +47,12 @@
         <!--include external resources here like adsense, javascript, styles-->
     </head>   
     <body>   
-        <form action="" method="get">
-            <!---form controls like input, select, button go here -->
-        </form>
+        <p>Watch the video</p>
+        <video width="100%" height="auto" controls preload>
+            <source src="/courses/internet/wwwhtml/html/video/germinate.mp4" />
+        </video>
     </body> 
 </html>`
-let htmlContent1 = `<!DOCTYPE html> 
-<!-- File name and document purpose --> 
-<html lang = "en">   
-    <head>     
-        <title> A title for the document </title>
-        <meta charset = "utf-8" />     
-        <!--include external resources here like adsense, javascript, styles-->
-    </head>   
-    <body>   
-        <form id="myForm" action="">
-            <label for="username">
-                Username: <input type="text" id="username" name="username" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="password">
-                Password: <input type="password" id="password" name="password" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="email">
-                Email: <input type="email" id="email" name="email" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="telephone">
-                Telephone: <input type="tel" id="telephone" name="telephone" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="page">
-                Website: <input type="url" id="page" name="homepage" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="house">
-                House: <input type="number" id="house" name="house" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="date">
-                Current date: <input type="date" id="date" name="date" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="month">
-                Last month: <input type="month" id="month" name="month" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="week">
-                Current Week: <input type="week" id="week" name="week" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="color">
-                Favourite Color: <input type="color" id="color" name="color" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="file">
-                Photo: <input type="file" accept="image/*" id="file" name="photo" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="laptop">
-                Laptop <input type="checkbox" id="laptop" name="laptop" value="Laptop" />    
-            </label>
-            <label for="mobile">
-                Mobile <input type="checkbox" id="mobile" name="mobile" value='Mobile' />    
-            </label>
-            <br/>
-            <br/>
-            <label for="male">
-                Male <input type="radio" id="male" name="gender" value="Male" />    
-            </label>
-            <label for="female">
-                Female <input type="radio" id="female" name="gender" value="Female" />    
-            </label>
-            <br/>
-            <br/>
-            <input type="reset" id="reset" value="Reset" />
-            <input type="button" id="button" onclick="console.log(document.getElementById('myForm').elements[0])" value="Alert" />
-            <input type="submit" id="submit" value="submit" />    
-        </form>
-    </body> 
-</html>`
-let htmlContentSelect = `<!DOCTYPE html> 
-<!-- File name and document purpose --> 
-<html lang = "en">   
-    <head>     
-        <title> A title for the document </title>
-        <meta charset = "utf-8" />     
-        <!--include external resources here like adsense, javascript, styles-->
-    </head>   
-    <body>   
-        <form action="" method="get">
-            <!--Simple select menu -->
-            <select name="simpleMenu">
-                <option>Apple</option>
-                <option>Samsung</option>
-                <option>Mi</option>
-                <option>OnePlus</option>
-            </select>
-            <!--Preselected item -->
-            <select name="preSelected">
-                <option>Apple</option>
-                <option selected>Samsung</option>
-                <option>Mi</option>
-                <option>OnePlus</option>
-            </select>
-            <!--with size -->
-            <select name="menuSize" size="3">
-                <option>Apple</option>
-                <option>Samsung</option>
-                <option>Mi</option>
-                <option>OnePlus</option>
-            </select>
-            <!--Multiple select-->
-            <select multiple name="multipleValue">
-                <option>Apple</option>
-                <option>Samsung</option>
-                <option selected>Mi</option>
-                <option>OnePlus</option>
-                <option>Nokia</option>
-                <option>Motorola</option>
-                <option>Vivo</option>
-            </select>
-            <!--Opt goup-->
-            <select name="Nested">
-                <optgroup label="Apple">
-                    <option>iPhone</option>
-                    <option>iPad</option>
-                    <option>Mac</option>
-                    <option>Air Pod</option>
-                </optgroup>
-                <optgroup label="Android">
-                    <option>Samsung</opton>
-                    <option>Mi</option>
-                    <option>Vivo</option>
-                    <option>Oppo</option>
-                </optgroup>
-            </select>
-        </form>
-    </body> 
-</html>
-`
-let htmlContentTextarea = `<!DOCTYPE html>
-<html lang = "en" >
-    <head> 
-        <title> Textarea </title>
-        <meta charset = "utf-8" />
-    </head>
-    <body>
-        <p>
-            Please write about yourself
-        </p>
-        <form action = "handler">
-            <p>
-                <textarea name = "description"  rows = "3"  cols = "40">
-            (Word limit 300) 
-                </textarea>
-            </p>
-        </form>
-    </body>
-</html>
-
-`
 </script>
 <style>
     article {
@@ -234,7 +67,7 @@ let htmlContentTextarea = `<!DOCTYPE html>
         margin: 0.5em 0;
     }
     h5 {
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
     h6 {
         font-size: 1em;
@@ -287,4 +120,84 @@ let htmlContentTextarea = `<!DOCTYPE html>
     </Card> -->
     
     <!-- <WebPractice htmlContent={htmlContent} cssContent={""} jsContent={""} /> -->
+    <Card>
+        <Content>
+            <p>
+                Video file can be embedded into an HTML file using the <code>video</code> element. The controls of the video player are displayed using the attribute <code>controls</code>. Link to video files are include into the <code>source</code> element inside the <code>video</code> element. The <code>source</code> element has attribute <code>src</code> attribute that takes the path to the video file just like <code>img</code> element takes path to image file.
+            </p>
+            <p>Common video file formats:</p>
+            <DataTable style="width:100%">
+                <Head>
+                    <Row>
+                        <Cell>Name</Cell>
+                        <Cell>Extension</Cell>
+                        <Cell>Description</Cell>
+                    </Row>
+                </Head>
+                <Body>
+                    <Row>
+                        <Cell>MP4</Cell>
+                        <Cell><code>.mp4</code></Cell>
+                        <Cell style="white-space:normal;"></Cell>
+                    </Row>
+                    <Row>
+                        <Cell style="white-space:normal;">WebM</Cell>
+                        <Cell><code>.webm</code></Cell>
+                        <Cell style="white-space:normal;"></Cell>
+                    </Row>
+                    <Row>
+                        <Cell>Audio Video Interleave</Cell>
+                        <Cell><code>.avi</code></Cell>
+                        <Cell style="white-space:normal;"></Cell>
+                    </Row>
+                </Body>
+            </DataTable>
+            <p>
+                It is common practice to provide various file formats for each video file. The browser plays the first file type it can.
+            </p>
+            <p>Some of the important attributes of <code>video</code> element are:</p>
+            <DataTable style="width:100%">
+                <Head>
+                    <Row>
+                        <Cell>Name</Cell>
+                        <Cell>value</Cell>
+                        <Cell>Description</Cell>
+                    </Row>
+                </Head>
+                <Body>
+                    <Row>
+                        <Cell><code>width</code></Cell>
+                        <Cell style="white-space:normal;">number (length units)</Cell>
+                        <Cell style="white-space:normal;">set width</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>height</code></Cell>
+                        <Cell style="white-space:normal;">number (length units)</Cell>
+                        <Cell style="white-space:normal;">set height</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>autoplay</code></Cell>
+                        <Cell><code>autoplay</code></Cell>
+                        <Cell style="white-space:normal;">autoplays the video</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>controls</code></Cell>
+                        <Cell style="white-space:normal;"><code>controls</code></Cell>
+                        <Cell style="white-space:normal;">show controls</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>preload</code></Cell>
+                        <Cell style="white-space:normal;"><code>preload</code></Cell>
+                        <Cell style="white-space:normal;">pre loads data</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>loop</code></Cell>
+                        <Cell style="white-space:normal;"><code>loop</code></Cell>
+                        <Cell style="white-space:normal;">play the video in loop</Cell>
+                    </Row>
+                </Body>
+            </DataTable>
+        </Content>
+    </Card>
+    <WebPractice htmlContent={htmlContentVideo} cssContent={""} jsContent={""} />
 </article>
