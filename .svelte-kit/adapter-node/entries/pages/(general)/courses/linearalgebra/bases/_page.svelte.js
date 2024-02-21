@@ -1,5 +1,5 @@
 import { s as subscribe, b as set_store_value } from "../../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component } from "../../../../../../chunks/ssr.js";
+import { c as create_ssr_component, v as validate_component, e as escape } from "../../../../../../chunks/ssr.js";
 /* empty css                                                          */
 import { p as page } from "../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../chunks/Card.js";
@@ -53,6 +53,69 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
           return `<h6 class="svelte-98uzi2" data-svelte-h="svelte-1w6yfxn">Vector space</h6> <p class="svelte-98uzi2" data-svelte-h="svelte-1r4pa2f">A vector space over a field \\(F\\) is a non-empty set \\(V\\) together with a binary operation and a binary function</p> <ul data-svelte-h="svelte-gvm3dt"><li class="svelte-98uzi2"><strong class="svelte-98uzi2">binary operation</strong> called vector addition such that forall \\( \\vert \\psi\\rangle\\) and \\(\\vert \\phi\\rangle\\) in \\(V\\), their sum \\(\\vert \\psi\\rangle + \\vert \\phi\\rangle\\) belongs to \\(V\\).</li> <li class="svelte-98uzi2"><strong class="svelte-98uzi2">binary function</strong> called scalar multiplication such that for any scalar \\(a\\in F\\) and any vector \\(\\vert \\psi\\rangle \\in V\\), we have \\(a\\vert \\psi\\rangle \\in V\\).</li></ul> <p class="svelte-98uzi2" data-svelte-h="svelte-15uyl2g">These operations then must satisfy for \\(V\\) to be a vector space:</p> <ol data-svelte-h="svelte-1qjthdc"><li class="svelte-98uzi2"><strong class="svelte-98uzi2">Associativity</strong> of vector addition</li> <li class="svelte-98uzi2"><strong class="svelte-98uzi2">Commutativity</strong> of vector addition</li> <li class="svelte-98uzi2"><strong class="svelte-98uzi2">Identity element</strong> of vector addition</li> <li class="svelte-98uzi2"><strong class="svelte-98uzi2">Inverse elements</strong> of vector addition</li> <li class="svelte-98uzi2"><strong class="svelte-98uzi2">Identity element</strong> of scalar multiplication</li> <li class="svelte-98uzi2"><strong class="svelte-98uzi2">Distributivity</strong> of scalar multiplication with respect to vector addition</li> <li class="svelte-98uzi2"><strong class="svelte-98uzi2">Distributivity</strong> of scalar multiplication with respect to field addition</li></ol>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<h6 class="svelte-98uzi2" data-svelte-h="svelte-2hz4nf">Vector space in Quantum computing</h6> <p class="svelte-98uzi2">In quantum computing, we are interested in vector space over ${escape(`\\(\\mathbb{C}^n\\)`)} where ${escape(`\\(\\mathbb{C}\\)`)} is the set of complex numbers. A vector is represented via <strong class="svelte-98uzi2" data-svelte-h="svelte-qwfs5s">bra-ket</strong> notation. A vector ${escape(`\\(\\mathbb{v}\\)`)} is denoted by \\(\\vert v\\rangle\\) (called ket \\(v\\)). In terms of matrices, a vector is specified using a column vector of length \\(n\\), i.e.
+                ${escape(`\\[
+                    \\vert v\\rangle \\equiv \\begin{bmatrix}
+                        v_1\\\\
+                        v_2\\\\
+                        \\vdots\\\\
+                        v_n
+                    \\end{bmatrix}
+                    \\]`)}
+                where ${escape(`\\(\\forall i, ~ v_i \\in \\mathbb{C}\\)`)}.</p> <p class="svelte-98uzi2">The vector addition ${escape(`\\(\\vert u\\rangle + \\vert v\\rangle\\)`)} is defined as 
+                ${escape(`\\[
+                    \\begin{bmatrix}
+                        u_1\\\\
+                        u_2\\\\
+                        \\vdots\\\\
+                        u_n
+                    \\end{bmatrix} + \\begin{bmatrix}
+                        v_1\\\\
+                        v_2\\\\
+                        \\vdots\\\\
+                        v_n
+                    \\end{bmatrix} \\equiv \\begin{bmatrix}
+                        u_1 + v_1\\\\
+                        u_2 + v_2\\\\
+                        \\vdots\\\\
+                        u_n + v_n
+                    \\end{bmatrix}
+                \\]`)}</p> <p class="svelte-98uzi2">The scalar multiplication ${escape(`\\(\\alpha\\vert v\\rangle\\)`)} is defined as 
+                ${escape(`\\[
+                    \\alpha\\begin{bmatrix}
+                        v_1\\\\
+                        v_2\\\\
+                        \\vdots\\\\
+                        v_n
+                    \\end{bmatrix} \\equiv \\begin{bmatrix}
+                        \\alpha v_1\\\\
+                        \\alpha v_2\\\\
+                        \\vdots\\\\
+                        \\alpha v_n
+                    \\end{bmatrix}
+                \\]`)}
+                where \\(\\alpha\\) is a complex number.</p> <p class="svelte-98uzi2" data-svelte-h="svelte-1ey6gtd">With these definitions, it is easy to verify that all the above axioms are satisfied.</p> <p class="svelte-98uzi2">The <strong class="svelte-98uzi2" data-svelte-h="svelte-1kykyu5">zero vector</strong> is represented not by \\(\\vert 0\\rangle\\), but by ${escape(`\\(\\mathbb{0}\\)`)}. This is the only exception. We can write 
+                ${escape(`\\[
+                    \\begin{aligned}
+                    \\vert v\\rangle + \\mathbb{0} &= \\vert v\\rangle\\\\
+                    \\alpha \\mathbb{0} &= \\mathbb{0}
+                    \\end{aligned}    
+                \\]`)}</p> <p class="svelte-98uzi2">Notice that the zero vector ${escape(`\\(\\mathbb{0}\\)`)} is represented with a column of all zeroes.</p>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<h6 class="svelte-98uzi2" data-svelte-h="svelte-1f3x9xp">Vector subspace</h6> <p class="svelte-98uzi2" data-svelte-h="svelte-me4p9n">A vector subspace of a vector space \\(V\\) is a subset \\(W\\) of \\(V\\) such that \\(W\\) is also a vector space, i.e., \\(W\\) must be closed under scalar multiplication and addition.</p> <p class="svelte-98uzi2" data-svelte-h="svelte-1g66aek">One way to construct subspaces is to set some of the coordinates to zero, i.e. a fixed set of coordinates are always zero in constructed subspace \\(W\\).</p> <p class="svelte-98uzi2" data-svelte-h="svelte-5hd3af">We&#39;ll learn another way to create subspaces using basis vectors.</p>`;
         }
       })}`;
     }

@@ -106,4 +106,88 @@
             </ol>
         </Content>
     </Card>
+    <Card>
+        <Content>
+            <h6>Vector space in Quantum computing</h6>
+            <p>
+                In quantum computing, we are interested in vector space over {`\\(\\mathbb{C}^n\\)`} where {`\\(\\mathbb{C}\\)`} is the set of complex numbers. A vector is represented via <strong>bra-ket</strong> notation. A vector {`\\(\\mathbb{v}\\)`} is denoted by \(\vert v\rangle\) (called ket \(v\)). In terms of matrices, a vector is specified using a column vector of length \(n\), i.e.
+                {`\\[
+                    \\vert v\\rangle \\equiv \\begin{bmatrix}
+                        v_1\\\\
+                        v_2\\\\
+                        \\vdots\\\\
+                        v_n
+                    \\end{bmatrix}
+                    \\]`}
+                where {`\\(\\forall i, ~ v_i \\in \\mathbb{C}\\)`}.
+            </p>
+            <p>
+                The vector addition {`\\(\\vert u\\rangle + \\vert v\\rangle\\)`} is defined as 
+                {`\\[
+                    \\begin{bmatrix}
+                        u_1\\\\
+                        u_2\\\\
+                        \\vdots\\\\
+                        u_n
+                    \\end{bmatrix} + \\begin{bmatrix}
+                        v_1\\\\
+                        v_2\\\\
+                        \\vdots\\\\
+                        v_n
+                    \\end{bmatrix} \\equiv \\begin{bmatrix}
+                        u_1 + v_1\\\\
+                        u_2 + v_2\\\\
+                        \\vdots\\\\
+                        u_n + v_n
+                    \\end{bmatrix}
+                \\]`}
+            </p>
+            <p>
+                The scalar multiplication {`\\(\\alpha\\vert v\\rangle\\)`} is defined as 
+                {`\\[
+                    \\alpha\\begin{bmatrix}
+                        v_1\\\\
+                        v_2\\\\
+                        \\vdots\\\\
+                        v_n
+                    \\end{bmatrix} \\equiv \\begin{bmatrix}
+                        \\alpha v_1\\\\
+                        \\alpha v_2\\\\
+                        \\vdots\\\\
+                        \\alpha v_n
+                    \\end{bmatrix}
+                \\]`}
+                where \(\alpha\) is a complex number.
+            </p>
+            <p>
+                With these definitions, it is easy to verify that all the above axioms are satisfied.
+            </p>
+            <p>
+                The <strong>zero vector</strong> is represented not by \(\vert 0\rangle\), but by {`\\(\\mathbb{0}\\)`}. This is the only exception. We can write 
+                {`\\[
+                    \\begin{aligned}
+                    \\vert v\\rangle + \\mathbb{0} &= \\vert v\\rangle\\\\
+                    \\alpha \\mathbb{0} &= \\mathbb{0}
+                    \\end{aligned}    
+                \\]`}
+            </p>
+            <p>
+                Notice that the zero vector {`\\(\\mathbb{0}\\)`} is represented with a column of all zeroes.
+            </p>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Vector subspace</h6>
+            <p>
+                A vector subspace of a vector space \(V\) is a subset \(W\) of \(V\) such that \(W\) is also a vector space, i.e., \(W\) must be closed under scalar multiplication and addition.
+            </p>
+            <p>
+                One way to construct subspaces is to set some of the coordinates to zero, i.e. a fixed set of coordinates are always zero in constructed subspace \(W\).
+            </p>
+            <p>
+                We'll learn another way to create subspaces using basis vectors.
+            </p>
+        </Content>
+    </Card>
 </article>

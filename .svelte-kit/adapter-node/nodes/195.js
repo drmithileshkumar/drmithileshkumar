@@ -5,6 +5,6 @@ let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Principle of mathematical induction/The principle of mathematical induction/_page.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/(general)/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.js";
-export const imports = ["_app/immutable/nodes/195.py3ytvRS.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/stores.nlYWf2nI.js","_app/immutable/chunks/entry.vC9SgyNR.js"];
+export const imports = ["_app/immutable/nodes/195.HdgaTkTH.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/stores.NEk0UQit.js","_app/immutable/chunks/entry.NFczwOgw.js"];
 export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];
