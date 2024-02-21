@@ -287,4 +287,45 @@ let htmlContentTextarea = `<!DOCTYPE html>
     </Card> -->
 
     <!-- <WebPractice htmlContent={htmlContent} cssContent={""} jsContent={""} /> -->
+    <DataTable style="width:100%;">
+        <Head>
+            <Row>
+                <Cell>HTML</Cell>
+                <Cell>XHTML</Cell>
+            </Row>
+        </Head>
+        <Body>
+            <Row>
+                <Cell style="white-space:normal;">tag and attributes are case insensitive</Cell>
+                <Cell style="white-space:normal;">tag and attributes are case sensitive</Cell>
+            </Row>
+            <Row>
+                <Cell style="white-space:normal;">closing tags may be omitted</Cell>
+                <Cell style="white-space:normal;">must have closing tags or a slash.</Cell>
+            </Row>
+            <Row>
+                <Cell style="white-space:normal;">attribute values must be quoted only if there are embedded special characters or white-space characters. Numeric attribute values are rarely quoted</Cell>
+                <Cell style="white-space:normal;"> all attribute values must be double quoted, regardless of what characters are included in the value</Cell>
+            </Row>
+            <Row>
+                <Cell style="white-space:normal;">some attribute values are implicit; that is, they need not be explicitly stated</Cell>
+                <Cell style="white-space:normal;">an attribute must be assigned a string of the name of the attribute.</Cell>
+            </Row>
+            <Row>
+                <Cell style="white-space:normal;"> HTML markup often uses the name attribute for elements. This attribute was deprecated for some elements in HTML 4.0, which added the id attribute to nearly all elements.</Cell>
+                <Cell style="white-space:normal;">the use of id is encouraged and the use of name is discouraged. However, form control elements must still use the name attribute because it is employed in processing form data on the server.</Cell>
+            </Row>
+            <Row>
+                <Cell style="white-space:normal;"> Although HTML has rules against improper nesting of ele
+                    ments, they are not enforced. Examples of nesting rules are (1) an anchor ele
+                    ment cannot contain another anchor element, and a form element cannot contain 
+                    another form element; (2) if an element appears inside another element, the clos
+                    ing tag of the inner element must appear before the closing tag of the outer ele
+                    ment; (3) block elements cannot be nested in inline elements; (4) text cannot be 
+                    directly nested in body or form elements; and (5) list elements cannot be directly 
+                    nested in list elements. </Cell>
+                <Cell style="white-space:normal;">these nesting rules are strictly enforced.</Cell>
+            </Row>
+        </Body>
+    </DataTable>
 </article>

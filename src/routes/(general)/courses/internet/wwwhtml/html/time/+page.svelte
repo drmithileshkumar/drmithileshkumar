@@ -47,179 +47,12 @@
         <!--include external resources here like adsense, javascript, styles-->
     </head>   
     <body>   
-        <form action="" method="get">
-            <!---form controls like input, select, button go here -->
-        </form>
+       <time datetime="2024-02-22T09:45" pubdat="pubdate">
+            February 22, 2024 9:45am IST
+        </time
     </body> 
 </html>`
-let htmlContent1 = `<!DOCTYPE html> 
-<!-- File name and document purpose --> 
-<html lang = "en">   
-    <head>     
-        <title> A title for the document </title>
-        <meta charset = "utf-8" />     
-        <!--include external resources here like adsense, javascript, styles-->
-    </head>   
-    <body>   
-        <form id="myForm" action="">
-            <label for="username">
-                Username: <input type="text" id="username" name="username" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="password">
-                Password: <input type="password" id="password" name="password" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="email">
-                Email: <input type="email" id="email" name="email" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="telephone">
-                Telephone: <input type="tel" id="telephone" name="telephone" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="page">
-                Website: <input type="url" id="page" name="homepage" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="house">
-                House: <input type="number" id="house" name="house" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="date">
-                Current date: <input type="date" id="date" name="date" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="month">
-                Last month: <input type="month" id="month" name="month" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="week">
-                Current Week: <input type="week" id="week" name="week" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="color">
-                Favourite Color: <input type="color" id="color" name="color" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="file">
-                Photo: <input type="file" accept="image/*" id="file" name="photo" />    
-            </label>
-            <br/>
-            <br/>
-            <label for="laptop">
-                Laptop <input type="checkbox" id="laptop" name="laptop" value="Laptop" />    
-            </label>
-            <label for="mobile">
-                Mobile <input type="checkbox" id="mobile" name="mobile" value='Mobile' />    
-            </label>
-            <br/>
-            <br/>
-            <label for="male">
-                Male <input type="radio" id="male" name="gender" value="Male" />    
-            </label>
-            <label for="female">
-                Female <input type="radio" id="female" name="gender" value="Female" />    
-            </label>
-            <br/>
-            <br/>
-            <input type="reset" id="reset" value="Reset" />
-            <input type="button" id="button" onclick="console.log(document.getElementById('myForm').elements[0])" value="Alert" />
-            <input type="submit" id="submit" value="submit" />    
-        </form>
-    </body> 
-</html>`
-let htmlContentSelect = `<!DOCTYPE html> 
-<!-- File name and document purpose --> 
-<html lang = "en">   
-    <head>     
-        <title> A title for the document </title>
-        <meta charset = "utf-8" />     
-        <!--include external resources here like adsense, javascript, styles-->
-    </head>   
-    <body>   
-        <form action="" method="get">
-            <!--Simple select menu -->
-            <select name="simpleMenu">
-                <option>Apple</option>
-                <option>Samsung</option>
-                <option>Mi</option>
-                <option>OnePlus</option>
-            </select>
-            <!--Preselected item -->
-            <select name="preSelected">
-                <option>Apple</option>
-                <option selected>Samsung</option>
-                <option>Mi</option>
-                <option>OnePlus</option>
-            </select>
-            <!--with size -->
-            <select name="menuSize" size="3">
-                <option>Apple</option>
-                <option>Samsung</option>
-                <option>Mi</option>
-                <option>OnePlus</option>
-            </select>
-            <!--Multiple select-->
-            <select multiple name="multipleValue">
-                <option>Apple</option>
-                <option>Samsung</option>
-                <option selected>Mi</option>
-                <option>OnePlus</option>
-                <option>Nokia</option>
-                <option>Motorola</option>
-                <option>Vivo</option>
-            </select>
-            <!--Opt goup-->
-            <select name="Nested">
-                <optgroup label="Apple">
-                    <option>iPhone</option>
-                    <option>iPad</option>
-                    <option>Mac</option>
-                    <option>Air Pod</option>
-                </optgroup>
-                <optgroup label="Android">
-                    <option>Samsung</opton>
-                    <option>Mi</option>
-                    <option>Vivo</option>
-                    <option>Oppo</option>
-                </optgroup>
-            </select>
-        </form>
-    </body> 
-</html>
-`
-let htmlContentTextarea = `<!DOCTYPE html>
-<html lang = "en" >
-    <head> 
-        <title> Textarea </title>
-        <meta charset = "utf-8" />
-    </head>
-    <body>
-        <p>
-            Please write about yourself
-        </p>
-        <form action = "handler">
-            <p>
-                <textarea name = "description"  rows = "3"  cols = "40">
-            (Word limit 300) 
-                </textarea>
-            </p>
-        </form>
-    </body>
-</html>
 
-`
 </script>
 <style>
     article {
@@ -285,6 +118,10 @@ let htmlContentTextarea = `<!DOCTYPE html>
             <p>For a better understanding of form submission, read <a href="/courses/internet/wwwhtml/fundamentals/http">HTTP protocol</a>.</p>
         </Content>
     </Card> -->
-    
-    <!-- <WebPractice htmlContent={htmlContent} cssContent={""} jsContent={""} /> -->
+    <Card>
+        <Content>
+            <code>time</code> element is used to time stamp an article or a document. Although it does not render anything different. It has textcontent to show human typed date and an attribute <code>datetime</code> that is machine readable date in the format YYYY-MM-DD for date. The time part is added as YYYY-MM-DDTHH:MM:SS where H is for hour, the 2nd M is for minute and S is for second. <code>time</code> element is used to pass information to calenders, otherwise it does not do anything special.
+        </Content>
+    </Card>
+    <WebPractice htmlContent={htmlContent} cssContent={""} jsContent={""} />
 </article>

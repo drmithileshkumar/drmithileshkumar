@@ -3,13 +3,13 @@ import { c as create_ssr_component, v as validate_component } from "../../../../
 import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../../../chunks/content4.js";
 /* empty css                                                                */
 import { p as page } from "../../../../../../../../chunks/stores.js";
-import "../../../../../../../../chunks/ActionIcons.js";
+import { C as Card } from "../../../../../../../../chunks/Card.js";
+import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
 import "../../../../../../../../chunks/Subheader.js";
 import "../../../../../../../../chunks/client.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores2.js";
 /* empty css                                                                   */
-import "../../../../../../../../chunks/Suffix.js";
-/* empty css                                                                       */
+import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js";
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 const css = {
@@ -36,6 +36,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   set_store_value(navList, $navList = contents, $navList);
   set_store_value(currentPath, $currentPath = "The time element", $currentPath);
   set_store_value(darkMode, $darkMode = false, $darkMode);
+  let htmlContent = `<!DOCTYPE html> 
+<!-- File name and document purpose --> 
+<html lang = "en">   
+    <head>     
+        <title> A title for the document </title>
+        <meta charset = "utf-8" />     
+        <!--include external resources here like adsense, javascript, styles-->
+    </head>   
+    <body>   
+       <time datetime="2024-02-22T09:45" pubdat="pubdate">
+            February 22, 2024 9:45am IST
+        </time
+    </body> 
+</html>`;
   $$result.css.add(css);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
@@ -57,7 +71,24 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} <h4 class="svelte-1la69s" data-svelte-h="svelte-f1m6ar">The <code>time</code> element</h4>  </article>`;
+  )} <h4 class="svelte-1la69s" data-svelte-h="svelte-f1m6ar">The <code>time</code> element</h4>  ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<code data-svelte-h="svelte-191m7ft">time</code> element is used to time stamp an article or a document. Although it does not render anything different. It has textcontent to show human typed date and an attribute <code data-svelte-h="svelte-1duc33x">datetime</code> that is machine readable date in the format YYYY-MM-DD for date. The time part is added as YYYY-MM-DDTHH:MM:SS where H is for hour, the 2nd M is for minute and S is for second. <code data-svelte-h="svelte-191m7ft">time</code> element is used to pass information to calenders, otherwise it does not do anything special.`;
+        }
+      })}`;
+    }
+  })} ${validate_component(WebPractice, "WebPractice").$$render(
+    $$result,
+    {
+      htmlContent,
+      cssContent: "",
+      jsContent: ""
+    },
+    {},
+    {}
+  )}</article>`;
 });
 export {
   Page as default

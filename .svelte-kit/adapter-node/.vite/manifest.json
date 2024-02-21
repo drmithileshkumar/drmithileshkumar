@@ -2206,8 +2206,7 @@
     "css": [
       "_app/immutable/assets/_page.tGZwk1Sp.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
-      "_app/immutable/assets/NavList.buyRB24_.css",
-      "_app/immutable/assets/WebPractice.nnZ3ei7Y.css"
+      "_app/immutable/assets/NavList.buyRB24_.css"
     ],
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/time/_page.svelte.js",
     "imports": [
@@ -2215,11 +2214,12 @@
       "_ssr.js",
       "_content4.js",
       "_stores.js",
+      "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
       "_stores2.js",
-      "_Suffix.js",
+      "_WebPractice.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -2279,6 +2279,7 @@
       "_client.js",
       "_stores2.js",
       "_Suffix.js",
+      "_Cell.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
