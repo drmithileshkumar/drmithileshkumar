@@ -5,6 +5,7 @@ import { C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
 import "d3";
 import { B as Button } from "../../../../../../../../chunks/Button.js";
+/* empty css                                                                         */
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores2.js";
 import { c as contentNav, a as contents } from "../../../../../../../../chunks/content3.js";
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
@@ -14,6 +15,15 @@ const css$1 = {
   map: null
 };
 const ScatteredPlot = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { rangeX = [0, 100] } = $$props;
+  let { rangeY = [0, 100] } = $$props;
+  let { dataSize = 50 } = $$props;
+  if ($$props.rangeX === void 0 && $$bindings.rangeX && rangeX !== void 0)
+    $$bindings.rangeX(rangeX);
+  if ($$props.rangeY === void 0 && $$bindings.rangeY && rangeY !== void 0)
+    $$bindings.rangeY(rangeY);
+  if ($$props.dataSize === void 0 && $$bindings.dataSize && dataSize !== void 0)
+    $$bindings.dataSize(dataSize);
   $$result.css.add(css$1);
   return `<div id="scatter-plot" class="svelte-tcv392"></div> ${validate_component(Button, "Button").$$render($$result, {}, {}, {
     default: () => {

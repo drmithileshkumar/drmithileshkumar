@@ -341,6 +341,10 @@
       "_ssr.js"
     ]
   },
+  "_ScatteredPlot.svelte_svelte_type_style_lang.js": {
+    "file": "_app/immutable/assets/ScatteredPlot.Hwnk9BOf.css",
+    "src": "_ScatteredPlot.svelte_svelte_type_style_lang.js"
+  },
   "_Select.js": {
     "css": [
       "_app/immutable/assets/Select.Gh662Cch.css"
@@ -2766,7 +2770,8 @@
   },
   "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatedata/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.OckRbxQs.css"
+      "_app/immutable/assets/_page.-ZKX_bV0.css",
+      "_app/immutable/assets/ScatteredPlot.Hwnk9BOf.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/bivariatedata/_page.svelte.js",
     "imports": [
@@ -2791,7 +2796,8 @@
   },
   "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.IUzS-RSO.css"
+      "_app/immutable/assets/_page.EU7GI60Q.css",
+      "_app/immutable/assets/ScatteredPlot.Hwnk9BOf.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/bivariatefrequency/_page.svelte.js",
     "imports": [

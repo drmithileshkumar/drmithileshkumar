@@ -5,6 +5,9 @@
     import Button from '@smui/button';
     let data = [];
     let svg;
+    export let rangeX = [0, 100];
+    export let rangeY = [0, 100];
+    export let dataSize = 50;
   
     onMount(() => {
       // Initialize D3 chart
@@ -23,12 +26,20 @@
       // Initial empty scatter plot
       drawChart();
     });
-  
+    function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
     function generateRandomData() {
       // Generate random bivariate data
-      data = Array.from({ length: 50 }, () => ({
-        x: Math.floor(Math.random() * 100),
-        y: Math.floor(Math.random() * 100),
+      data = Array.from({ length: dataSize }, () => ({
+        x: rangeX[0] + Math.floor(Math.random() * (rangeX[1] - rangeX[0] + 1)),
+        y: rangeY[0] + Math.floor(Math.random() * (rangeY[1] - rangeY[0] + 1)),
+        color: getRandomColor()
       }));
   
       // Update the scatter plot
@@ -58,7 +69,7 @@
         .attr('cx', (d) => xScale(d.x))
         .attr('cy', (d) => yScale(d.y))
         .attr('r', 5) // Radius of the circle
-        .style('fill', 'steelblue');
+        .style('fill', (d)=> d.color);
   
       // Add x and y axis
       svg.append('g').attr('class', 'x-axis').attr('transform', `translate(0,${height})`).call(d3.axisBottom(xScale));
