@@ -123,48 +123,52 @@ export const contents = [
                 url: '/courses/internet/css',
                 topics: [
                     {
-                        name: 'Levels of Style Sheets',
-                        url: '/courses/internet/css/levels'
+                        name: 'Layout',
+                        url: '/courses/internet/css/layout'
                     },
                     {
-                        name: 'Style Specification Formats',
-                        url: '/courses/internet/css/formats'
-                    },
-                    {
-                        name: 'Selector Forms',
-                        url: '/courses/internet/css/selector'
-                    },
-                    {
-                        name: 'Property-Value Forms',
-                        url: '/courses/internet/css/property'
-                    },
-                    {
-                        name: 'Font Properties',
-                        url: '/courses/internet/css/font'
-                    },
-                    {
-                        name: 'List Properties',
-                        url: '/courses/internet/css/list'
-                    },
-                    {
-                        name: 'Allignment of text',
-                        url: '/courses/internet/css/text'
-                    },
-                    {
-                        name: 'Color',
-                        url: '/courses/internet/css/color'
-                    },
-                    {
-                        name: 'The Box model',
+                        name: 'Box model',
                         url: '/courses/internet/css/box'
                     },
                     {
-                        name: 'Background Images',
+                        name: 'Typography',
+                        url: '/courses/internet/css/typography'
+                    },
+                    {
+                        name: 'Colors',
+                        url: '/courses/internet/css/colors'
+                    },
+                    {
+                        name: 'Border',
+                        url: '/courses/internet/css/border'
+                    },
+                    {
+                        name: 'Selectors',
+                        url: '/courses/internet/css/selectors'
+                    },
+                    {
+                        name: 'Lists',
+                        url: '/courses/internet/css/lists'
+                    },
+                    {
+                        name: 'Table',
+                        url: '/courses/internet/css/table'
+                    },
+                    {
+                        name: 'Form',
+                        url: '/courses/internet/css/form'
+                    },
+                    {
+                        name: 'Transform',
+                        url: '/courses/internet/css/transform'
+                    },
+                    {
+                        name: 'Transition',
                         url: '/courses/internet/css/background'
                     },
                     {
-                        name: 'The <span> and <div> tags',
-                        url: '/courses/internet/css/tags'
+                        name: 'Responsive design',
+                        url: '/courses/internet/css/responsive'
                     },
                     {
                         name: 'Conflict Resolution',
@@ -654,7 +658,7 @@ export const contentNav = {
         "name": "Inside Head",
         "url": "/courses/internet/wwwhtml/html/head",
         "previous": "/courses/internet/wwwhtml/html/xhtml",
-        "next": "/courses/internet/css"
+        "next": "/courses/internet/wwwhtml/practice1"
     },
     "/courses/internet/wwwhtml/practice1": {
         "name": "Practice Problems",
@@ -665,79 +669,85 @@ export const contentNav = {
     "/courses/internet/css": {
         "name": "CSS",
         "url": "/courses/internet/css",
-        "previous": "/courses/internet/wwwhtml/html/xhtml",
-        "next": "/courses/internet/css/levels"
+        "previous": "/courses/internet/wwwhtml/practice1",
+        "next": "/courses/internet/css/layout"
     },
-    "/courses/internet/css/levels": {
-        "name": "Levels of Style Sheets",
-        "url": "/courses/internet/css/levels",
+    "/courses/internet/css/layout": {
+        "name": "Layout",
+        "url": "/courses/internet/css/layout",
         "previous": "/courses/internet/css",
-        "next": "/courses/internet/css/formats"
-    },
-    "/courses/internet/css/formats": {
-        "name": "Style Specification Formats",
-        "url": "/courses/internet/css/formats",
-        "previous": "/courses/internet/css/levels",
-        "next": "/courses/internet/css/selector"
-    },
-    "/courses/internet/css/selector": {
-        "name": "Selector Forms",
-        "url": "/courses/internet/css/selector",
-        "previous": "/courses/internet/css/formats",
-        "next": "/courses/internet/css/property"
-    },
-    "/courses/internet/css/property": {
-        "name": "Property-Value Forms",
-        "url": "/courses/internet/css/property",
-        "previous": "/courses/internet/css/selector",
-        "next": "/courses/internet/css/font"
-    },
-    "/courses/internet/css/font": {
-        "name": "Font Properties",
-        "url": "/courses/internet/css/font",
-        "previous": "/courses/internet/css/property",
-        "next": "/courses/internet/css/list"
-    },
-    "/courses/internet/css/list": {
-        "name": "List Properties",
-        "url": "/courses/internet/css/list",
-        "previous": "/courses/internet/css/font",
-        "next": "/courses/internet/css/text"
-    },
-    "/courses/internet/css/text": {
-        "name": "Allignment of text",
-        "url": "/courses/internet/css/text",
-        "previous": "/courses/internet/css/list",
-        "next": "/courses/internet/css/color"
-    },
-    "/courses/internet/css/color": {
-        "name": "Color",
-        "url": "/courses/internet/css/color",
-        "previous": "/courses/internet/css/text",
         "next": "/courses/internet/css/box"
     },
     "/courses/internet/css/box": {
-        "name": "The Box model",
+        "name": "Box model",
         "url": "/courses/internet/css/box",
-        "previous": "/courses/internet/css/color",
+        "previous": "/courses/internet/css/layout",
+        "next": "/courses/internet/css/typography"
+    },
+    "/courses/internet/css/typography": {
+        "name": "Typography",
+        "url": "/courses/internet/css/typography",
+        "previous": "/courses/internet/css/box",
+        "next": "/courses/internet/css/colors"
+    },
+    "/courses/internet/css/colors": {
+        "name": "Colors",
+        "url": "/courses/internet/css/colors",
+        "previous": "/courses/internet/css/typography",
+        "next": "/courses/internet/css/border"
+    },
+    "/courses/internet/css/border": {
+        "name": "Border",
+        "url": "/courses/internet/css/border",
+        "previous": "/courses/internet/css/colors",
+        "next": "/courses/internet/css/selectors"
+    },
+    "/courses/internet/css/selectors": {
+        "name": "Selectors",
+        "url": "/courses/internet/css/selectors",
+        "previous": "/courses/internet/css/border",
+        "next": "/courses/internet/css/lists"
+    },
+    "/courses/internet/css/lists": {
+        "name": "Lists",
+        "url": "/courses/internet/css/lists",
+        "previous": "/courses/internet/css/selectors",
+        "next": "/courses/internet/css/table"
+    },
+    "/courses/internet/css/table": {
+        "name": "Table",
+        "url": "/courses/internet/css/table",
+        "previous": "/courses/internet/css/lists",
+        "next": "/courses/internet/css/form"
+    },
+    "/courses/internet/css/form": {
+        "name": "Form",
+        "url": "/courses/internet/css/form",
+        "previous": "/courses/internet/css/table",
+        "next": "/courses/internet/css/transform"
+    },
+    "/courses/internet/css/transform": {
+        "name": "Transform",
+        "url": "/courses/internet/css/transform",
+        "previous": "/courses/internet/css/form",
         "next": "/courses/internet/css/background"
     },
     "/courses/internet/css/background": {
-        "name": "Background Images",
+        "name": "Transition",
         "url": "/courses/internet/css/background",
-        "previous": "/courses/internet/css/box",
-        "next": "/courses/internet/css/tags"
+        "previous": "/courses/internet/css/transform",
+        "next": "/courses/internet/css/responsive"
     },
-    "/courses/internet/css/tags": {
-        "name": "The <span> and <div> tags",
-        "url": "/courses/internet/css/tags",
+    "/courses/internet/css/responsive": {
+        "name": "Responsive design",
+        "url": "/courses/internet/css/responsive",
         "previous": "/courses/internet/css/background",
         "next": "/courses/internet/css/conflict"
     },
     "/courses/internet/css/conflict": {
         "name": "Conflict Resolution",
         "url": "/courses/internet/css/conflict",
-        "previous": "/courses/internet/css/tags",
+        "previous": "/courses/internet/css/responsive",
         "next": "/courses/internet/javascript"
     },
     "/courses/internet/javascript": {
@@ -1173,13 +1183,7 @@ export const contentNav = {
         "next": "/courses/internet/nodejs/http"
     }
 }
-// const withIndex = contentNav.map((c, i) => {return {name: c.name, url: c.url, index: i}});
-// console.log(withIndex)
-// const objectWithPath = {};
-// for(let i = 0; i < contentNav.length; i++) {
-//     objectWithPath[contentNav[i].url] = contentNav[i];
-// }
-// console.log(objectWithPath);
+
 // let withSides = contentArray.map((u, i) => {
 //     return {
 //         name: u.name,

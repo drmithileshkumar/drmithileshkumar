@@ -109,6 +109,10 @@
       "_ssr.js"
     ]
   },
+  "_CourseNavigation.svelte_svelte_type_style_lang.js": {
+    "file": "_app/immutable/assets/CourseNavigation.tZEubBx8.css",
+    "src": "_CourseNavigation.svelte_svelte_type_style_lang.js"
+  },
   "_Div.svelte_svelte_type_style_lang.js": {
     "file": "_app/immutable/assets/Div.bOrlhsXY.css",
     "src": "_Div.svelte_svelte_type_style_lang.js"
@@ -1427,7 +1431,8 @@
   },
   "src/routes/(general)/courses/internet/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.d_8RuduB.css"
+      "_app/immutable/assets/_page.d_8RuduB.css",
+      "_app/immutable/assets/CourseNavigation.tZEubBx8.css"
     ],
     "file": "entries/pages/(general)/courses/internet/_page.svelte.js",
     "imports": [
@@ -1447,8 +1452,7 @@
       "_Button.js",
       "_NavList.js",
       "_stores2.js",
-      "_Pathlist.js",
-      "_CourseNavigation.js"
+      "_Pathlist.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/+page.svelte"

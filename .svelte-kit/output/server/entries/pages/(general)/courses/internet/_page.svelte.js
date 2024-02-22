@@ -1,6 +1,6 @@
 import { s as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component, e as escape, j as each } from "../../../../../chunks/ssr.js";
-import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../chunks/content4.js";
+import { g as githubDark, a as github, c as contents } from "../../../../../chunks/content4.js";
 import "../../../../../chunks/client.js";
 import { p as page } from "../../../../../chunks/stores.js";
 import { T as TabBar, a as Tab } from "../../../../../chunks/TabBar.js";
@@ -15,7 +15,7 @@ import { B as Button } from "../../../../../chunks/Button.js";
 import { N as NavList } from "../../../../../chunks/NavList.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores2.js";
 import { P as Pathlist } from "../../../../../chunks/Pathlist.js";
-import { C as CourseNavigation } from "../../../../../chunks/CourseNavigation.js";
+/* empty css                                                                   */
 const css = {
   code: "article.svelte-1ml351b{display:flex;flex-direction:column;gap:0.5em}p.svelte-1ml351b,li.svelte-1ml351b{opacity:0.8}h6.svelte-1ml351b,h5.svelte-1ml351b{margin:0.5em 0}h5.svelte-1ml351b{font-size:1.1em}h6.svelte-1ml351b{font-size:1em;margin:0.5em 0;color:rgb(74, 155, 139)}strong.svelte-1ml351b{color:goldenrod;opacity:1}",
   map: null
@@ -51,15 +51,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       },
       {},
       {}
-    )} ${validate_component(CourseNavigation, "CourseNavigation").$$render(
-      $$result,
-      {
-        contentNav,
-        currentUrl: $page.url.pathname
-      },
-      {},
-      {}
-    )} <h4 style="margin: 0.5em 0;" data-svelte-h="svelte-af5rs1">Internet Technologies</h4>  ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    )}  <h4 style="margin: 0.5em 0;" data-svelte-h="svelte-af5rs1">Internet Technologies</h4>  ${validate_component(Card, "Card").$$render($$result, {}, {}, {
       default: () => {
         return `${validate_component(TabBar, "TabBar").$$render(
           $$result,

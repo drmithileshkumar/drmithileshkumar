@@ -1,4 +1,5 @@
 import { c as create_ssr_component, f as add_attribute } from "./ssr.js";
+/* empty css                                               */
 const css = {
   code: "section.svelte-epvtsn{display:flex;justify-content:space-between;background-color:rgba(0, 0, 0, 0.1)}a.svelte-epvtsn{text-decoration:none;padding:0.3em 0.5em;font-variant:small-caps}",
   map: null
