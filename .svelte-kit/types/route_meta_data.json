@@ -226,6 +226,10 @@
 		"src/routes/(general)/courses/internet/wwwhtml/html/forms/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/wwwhtml/html/head": [
+		"src/routes/(general)/courses/internet/wwwhtml/html/head/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/wwwhtml/html/images": [
 		"src/routes/(general)/courses/internet/wwwhtml/html/images/+page.js",
 		"src/routes/(general)/+layout.server.js"

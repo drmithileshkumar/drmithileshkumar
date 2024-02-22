@@ -180,6 +180,10 @@ const contents = [
               {
                 name: "HTML vs XHTML",
                 url: "/courses/internet/wwwhtml/html/xhtml"
+              },
+              {
+                name: "Inside Head",
+                url: "/courses/internet/wwwhtml/html/head"
               }
             ]
           }
@@ -703,6 +707,12 @@ const contentNav = {
     "name": "HTML vs XHTML",
     "url": "/courses/internet/wwwhtml/html/xhtml",
     "previous": "/courses/internet/wwwhtml/html/time",
+    "next": "/courses/internet/wwwhtml/html/head"
+  },
+  "/courses/internet/wwwhtml/html/head": {
+    "name": "Inside Head",
+    "url": "/courses/internet/wwwhtml/html/head",
+    "previous": "/courses/internet/wwwhtml/html/xhtml",
     "next": "/courses/internet/css"
   },
   "/courses/internet/css": {

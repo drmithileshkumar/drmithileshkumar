@@ -1935,6 +1935,35 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/wwwhtml/html/forms/+page.svelte"
   },
+  "src/routes/(general)/courses/internet/wwwhtml/html/head/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/html/head/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/html/head/+page.js"
+  },
+  "src/routes/(general)/courses/internet/wwwhtml/html/head/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.oJjTU9hU.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css",
+      "_app/immutable/assets/NavList.buyRB24_.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/wwwhtml/html/head/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_content4.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores2.js",
+      "_WebPractice.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/wwwhtml/html/head/+page.svelte"
+  },
   "src/routes/(general)/courses/internet/wwwhtml/html/images/+page.js": {
     "file": "entries/pages/(general)/courses/internet/wwwhtml/html/images/_page.js",
     "isEntry": true,
