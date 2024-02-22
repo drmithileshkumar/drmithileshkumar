@@ -1,5 +1,5 @@
 import { s as subscribe, b as set_store_value } from "../../../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component } from "../../../../../../../chunks/ssr.js";
+import { c as create_ssr_component, v as validate_component, e as escape } from "../../../../../../../chunks/ssr.js";
 import { x as xml, H as Highlight, L as LineNumbers } from "../../../../../../../chunks/xml.js";
 import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../../chunks/content4.js";
 /* empty css                                                             */
@@ -153,7 +153,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-4h8i2n" data-svelte-h="svelte-1jvtt69"><p class="svelte-4h8i2n">Create a table that shows possible outcomes of rolling two die. Fill the cells with random outcomes. Either use html entities or images for the die face.</p></div>`;
+          return `<div class="question svelte-4h8i2n"><p class="svelte-4h8i2n" data-svelte-h="svelte-1bx3gkz">Create a table that shows possible outcomes of rolling two die. Fill the cells with random outcomes. Either use html entities or images for the die face.</p> <ol><li class="svelte-4h8i2n">⚀ <code>${escape("&#9856;")}</code></li> <li class="svelte-4h8i2n">⚁ <code>${escape("&#9857;")}</code></li> <li class="svelte-4h8i2n">⚂ <code>${escape("&#9858;")}</code></li> <li class="svelte-4h8i2n">⚃ <code>${escape("&#9859;")}</code></li> <li class="svelte-4h8i2n">⚄ <code>${escape("&#9860;")}</code></li> <li class="svelte-4h8i2n">⚅ <code>${escape("&#9861;")}</code></li></ol></div>`;
         }
       })}`;
     }

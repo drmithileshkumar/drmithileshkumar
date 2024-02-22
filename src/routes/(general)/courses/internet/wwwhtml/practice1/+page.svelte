@@ -195,6 +195,14 @@
         <Content>
             <div class="question">
                 <p>Create a table that shows possible outcomes of rolling two die. Fill the cells with random outcomes. Either use html entities or images for the die face.</p>
+                <ol>
+                    <li>&#9856; <code>{'&#9856;'}</code></li>
+                    <li>&#9857; <code>{'&#9857;'}</code></li>
+                    <li>&#9858; <code>{'&#9858;'}</code></li>
+                    <li>&#9859; <code>{'&#9859;'}</code></li>
+                    <li>&#9860; <code>{'&#9860;'}</code></li>
+                    <li>&#9861; <code>{'&#9861;'}</code></li>
+                </ol>
             </div>
         </Content>
     </Card>
