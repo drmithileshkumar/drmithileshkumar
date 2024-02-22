@@ -29,6 +29,16 @@
     // });
     let code1=`<h1>Quantum Computation</H1>
 <p>There are various disciplines in quantum computation.<p>`
+    let code2=`<!DOCTYPE html>
+<head>
+    <body>
+    </body>
+</head>
+<article>
+    <html>
+    </html>
+<article>
+<title>My Page</title>`
 </script>
 <style>
     article {
@@ -129,6 +139,87 @@
                 <Highlight language={xml} code={code1} let:highlighted>
                     <LineNumbers {highlighted} wrapLines/>
                 </Highlight>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>
+                    Correct the document structure.
+                </p>
+                <Highlight language={xml} code={code2} let:highlighted>
+                    <LineNumbers {highlighted} wrapLines/>
+                </Highlight>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Which of the tags has <code>href</code> as attribute</p>
+                <ol>
+                    <li><code>a</code></li>
+                    <li><code>link</code></li>
+                    <li><code>img</code></li>
+                    <li><code>input</code></li>
+                </ol>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Which of the tags has <code>src</code> as attribute</p>
+                <ol>
+                    <li><code>a</code></li>
+                    <li><code>link</code></li>
+                    <li><code>img</code></li>
+                    <li><code>input</code></li>
+                    <li><code>source</code></li>
+                    <li><code>audio</code></li>
+                    <li><code>video</code></li>
+                    <li><code>table</code></li>
+                </ol>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>List any five organization elements.</p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Create a table that shows possible outcomes of rolling two die. Fill the cells with random outcomes. Either use html entities or images for the die face.</p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>
+                    Create a definition list showing state names (as dt) and at least two cities (as dd) in each state.
+                </p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>
+                    Solve the above problem using nested lists: one list for state names and inside each item another list for cities.
+                </p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Create a form for setting up profile of a costumer. It should take inputs for name, age, gender, photo, house number, street, locality, city, zip code, state. It should contain a submit button.</p>
             </div>
         </Content>
     </Card>

@@ -5,6 +5,6 @@ let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Three dimensional geometry/Angle between two planes/_page.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/(general)/notes/maths/Three dimensional geometry/Angle between two planes/+page.js";
-export const imports = ["_app/immutable/nodes/237.WbrR-LMW.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.HamTK82D.js","_app/immutable/chunks/entry.puCaY5ki.js"];
+export const imports = ["_app/immutable/nodes/237.-S6-jeOK.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.eflDSeO3.js","_app/immutable/chunks/entry.FyRxBq1E.js"];
 export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

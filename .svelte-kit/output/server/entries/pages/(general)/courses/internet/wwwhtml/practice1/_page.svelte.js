@@ -28,6 +28,16 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   set_store_value(darkMode, $darkMode = false, $darkMode);
   let code1 = `<h1>Quantum Computation</H1>
 <p>There are various disciplines in quantum computation.<p>`;
+  let code2 = `<!DOCTYPE html>
+<head>
+    <body>
+    </body>
+</head>
+<article>
+    <html>
+    </html>
+<article>
+<title>My Page</title>`;
   $$result.css.add(css);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
@@ -100,6 +110,74 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
               return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
             }
           })}</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-4h8i2n"><p class="svelte-4h8i2n" data-svelte-h="svelte-2hhpg5">Correct the document structure.</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: xml, code: code2 }, {}, {
+            default: ({ highlighted }) => {
+              return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
+            }
+          })}</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-4h8i2n" data-svelte-h="svelte-fx8zfz"><p class="svelte-4h8i2n">Which of the tags has <code>href</code> as attribute</p> <ol><li class="svelte-4h8i2n"><code>a</code></li> <li class="svelte-4h8i2n"><code>link</code></li> <li class="svelte-4h8i2n"><code>img</code></li> <li class="svelte-4h8i2n"><code>input</code></li></ol></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-4h8i2n" data-svelte-h="svelte-998zwc"><p class="svelte-4h8i2n">Which of the tags has <code>src</code> as attribute</p> <ol><li class="svelte-4h8i2n"><code>a</code></li> <li class="svelte-4h8i2n"><code>link</code></li> <li class="svelte-4h8i2n"><code>img</code></li> <li class="svelte-4h8i2n"><code>input</code></li> <li class="svelte-4h8i2n"><code>source</code></li> <li class="svelte-4h8i2n"><code>audio</code></li> <li class="svelte-4h8i2n"><code>video</code></li> <li class="svelte-4h8i2n"><code>table</code></li></ol></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-4h8i2n" data-svelte-h="svelte-1bzd1yg"><p class="svelte-4h8i2n">List any five organization elements.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-4h8i2n" data-svelte-h="svelte-1jvtt69"><p class="svelte-4h8i2n">Create a table that shows possible outcomes of rolling two die. Fill the cells with random outcomes. Either use html entities or images for the die face.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-4h8i2n" data-svelte-h="svelte-1ltvxmz"><p class="svelte-4h8i2n">Create a definition list showing state names (as dt) and at least two cities (as dd) in each state.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-4h8i2n" data-svelte-h="svelte-kbe2yo"><p class="svelte-4h8i2n">Solve the above problem using nested lists: one list for state names and inside each item another list for cities.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-4h8i2n" data-svelte-h="svelte-1ciqlpg"><p class="svelte-4h8i2n">Create a form for setting up profile of a costumer. It should take inputs for name, age, gender, photo, house number, street, locality, city, zip code, state. It should contain a submit button.</p></div>`;
         }
       })}`;
     }
