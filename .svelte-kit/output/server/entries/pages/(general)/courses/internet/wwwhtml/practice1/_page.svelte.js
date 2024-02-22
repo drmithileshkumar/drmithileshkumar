@@ -1,0 +1,110 @@
+import { s as subscribe, b as set_store_value } from "../../../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component } from "../../../../../../../chunks/ssr.js";
+import { x as xml, H as Highlight, L as LineNumbers } from "../../../../../../../chunks/xml.js";
+import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../../chunks/content4.js";
+/* empty css                                                             */
+import { p as page } from "../../../../../../../chunks/stores.js";
+import { C as Card } from "../../../../../../../chunks/Card.js";
+import { C as Content } from "../../../../../../../chunks/ActionIcons.js";
+import { N as NavList } from "../../../../../../../chunks/NavList.js";
+import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../chunks/stores2.js";
+import { P as Pathlist } from "../../../../../../../chunks/Pathlist.js";
+import { C as CourseNavigation } from "../../../../../../../chunks/CourseNavigation.js";
+const css = {
+  code: "article.svelte-4h8i2n{display:flex;flex-direction:column;gap:0.5em}p.svelte-4h8i2n,li.svelte-4h8i2n{opacity:0.8}h4.svelte-4h8i2n,h5.svelte-4h8i2n{margin:0.5em 0}h5.svelte-4h8i2n{font-size:1.7em}.question.svelte-4h8i2n{cursor:pointer;padding:0.3em}",
+  map: null
+};
+const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $darkMode, $$unsubscribe_darkMode;
+  let $currentPath, $$unsubscribe_currentPath;
+  let $navList, $$unsubscribe_navList;
+  let $page, $$unsubscribe_page;
+  $$unsubscribe_darkMode = subscribe(darkMode, (value) => $darkMode = value);
+  $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
+  $$unsubscribe_navList = subscribe(navList, (value) => $navList = value);
+  $$unsubscribe_page = subscribe(page, (value) => $page = value);
+  set_store_value(navList, $navList = contents, $navList);
+  set_store_value(currentPath, $currentPath = "Practice Problems", $currentPath);
+  set_store_value(darkMode, $darkMode = false, $darkMode);
+  let code1 = `<h1>Quantum Computation</H1>
+<p>There are various disciplines in quantum computation.<p>`;
+  $$result.css.add(css);
+  $$unsubscribe_darkMode();
+  $$unsubscribe_currentPath();
+  $$unsubscribe_navList();
+  $$unsubscribe_page();
+  return `${$$result.head += `<!-- HEAD_svelte-775k1p_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/wwwhtml"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-775k1p_END -->`, ""} <article class="svelte-4h8i2n">${validate_component(Pathlist, "Pathlist").$$render(
+    $$result,
+    {
+      origin: $page.url.origin,
+      pathname: $page.url.pathname
+    },
+    {},
+    {}
+  )} ${validate_component(CourseNavigation, "CourseNavigation").$$render(
+    $$result,
+    {
+      contentNav,
+      currentUrl: $page.url.pathname
+    },
+    {},
+    {}
+  )} <h4 class="svelte-4h8i2n" data-svelte-h="svelte-1cd8yhl">Practice Problems</h4> <h5 class="svelte-4h8i2n" data-svelte-h="svelte-17d92cp">Fundamentals of WWW, HTML and XHTML</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<h5 class="svelte-4h8i2n" data-svelte-h="svelte-vrhswa">Contents</h5> ${validate_component(NavList, "NavList").$$render(
+            $$result,
+            {
+              name: $navList[0].topics[0].name,
+              url: $navList[0].topics[0].url,
+              topics: $navList[0].topics[0].topics,
+              expanded: false
+            },
+            {},
+            {}
+          )}`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-4h8i2n" data-svelte-h="svelte-10fyu1s"><p class="svelte-4h8i2n">Which of the following is not a valid IP address:</p> <ol><li class="svelte-4h8i2n">172.168.0.1</li> <li class="svelte-4h8i2n">172.168.0.0.1</li> <li class="svelte-4h8i2n">255.255.255.255</li> <li class="svelte-4h8i2n">256.255.0.1</li></ol></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-4h8i2n" data-svelte-h="svelte-xyii0q"><p class="svelte-4h8i2n">If it were allowed to use 36 bit IP addresses, how many unique IP address would be there?</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-4h8i2n" data-svelte-h="svelte-tq5ciu"><p class="svelte-4h8i2n">If you want to edit an existing document, which is the right HTTP method to use:</p> <ol><li class="svelte-4h8i2n">GET</li> <li class="svelte-4h8i2n">POST</li> <li class="svelte-4h8i2n">PUT</li> <li class="svelte-4h8i2n">DELETE</li></ol></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-4h8i2n"><p class="svelte-4h8i2n" data-svelte-h="svelte-fktuqt">Find errors in the following HTML code:</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: xml, code: code1 }, {}, {
+            default: ({ highlighted }) => {
+              return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
+            }
+          })}</div>`;
+        }
+      })}`;
+    }
+  })}</article>`;
+});
+export {
+  Page as default
+};

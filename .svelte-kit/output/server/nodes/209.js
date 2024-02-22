@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Sequences and series/Relationship between AM and GM/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Sequences and series/Geometric progression/_page.js';
 
 export const index = 209;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Sequences and series/Relationship between AM and GM/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Sequences and series/Geometric progression/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Sequences and series/Relationship between AM and GM/+page.js";
-export const imports = ["_app/immutable/nodes/209.4axphY6W.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/stores.8ci78OXr.js","_app/immutable/chunks/entry.lPSqAgg1.js"];
+export const universal_id = "src/routes/(general)/notes/maths/Sequences and series/Geometric progression/+page.js";
+export const imports = ["_app/immutable/nodes/209.vtcZoroS.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.HamTK82D.js","_app/immutable/chunks/entry.puCaY5ki.js"];
 export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

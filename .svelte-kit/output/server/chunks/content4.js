@@ -186,6 +186,10 @@ const contents = [
                 url: "/courses/internet/wwwhtml/html/head"
               }
             ]
+          },
+          {
+            name: "Practice Problems",
+            url: "/courses/internet/wwwhtml/practice1"
           }
         ]
       },
@@ -713,6 +717,12 @@ const contentNav = {
     "name": "Inside Head",
     "url": "/courses/internet/wwwhtml/html/head",
     "previous": "/courses/internet/wwwhtml/html/xhtml",
+    "next": "/courses/internet/css"
+  },
+  "/courses/internet/wwwhtml/practice1": {
+    "name": "Practice Problems",
+    "url": "/courses/internet/wwwhtml/practice1",
+    "previous": "/courses/internet/wwwhtml/html/head",
     "next": "/courses/internet/css"
   },
   "/courses/internet/css": {

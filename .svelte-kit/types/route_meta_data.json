@@ -278,6 +278,10 @@
 		"src/routes/(general)/courses/internet/wwwhtml/html/xhtml/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/wwwhtml/practice1": [
+		"src/routes/(general)/courses/internet/wwwhtml/practice1/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/xml": [
 		"src/routes/(general)/courses/internet/xml/+page.js",
 		"src/routes/(general)/+layout.server.js"
