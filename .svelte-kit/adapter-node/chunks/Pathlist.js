@@ -1,7 +1,7 @@
 import { c as create_ssr_component, j as each, f as add_attribute, e as escape } from "./ssr.js";
 /* empty css                                       */
 const css = {
-  code: ".paths.svelte-q05d73.svelte-q05d73{display:flex;align-items:center}.paths.svelte-q05d73 a.svelte-q05d73{text-decoration:none}",
+  code: ".paths.svelte-16te6qo.svelte-16te6qo{display:flex;align-items:center;flex-wrap:wrap}.paths.svelte-16te6qo a.svelte-16te6qo{text-decoration:none}",
   map: null
 };
 const Pathlist = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -24,8 +24,8 @@ const Pathlist = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     }
     return path;
   });
-  return `<div class="paths svelte-q05d73">${each(pathComponents, (pathComponent, i) => {
-    return `<a${add_attribute("href", pathUrls[i], 0)} class="svelte-q05d73">${escape(pathComponent.component)}</a> <span class="material-symbols-outlined">${escape(i > 0 && i < pathComponents.length - 1 ? "chevron_right" : "")} </span>`;
+  return `<div class="paths svelte-16te6qo">${each(pathComponents, (pathComponent, i) => {
+    return `<a${add_attribute("href", pathUrls[i], 0)} class="svelte-16te6qo">${escape(pathComponent.component)}</a> <span class="material-symbols-outlined">${escape(i > 0 && i < pathComponents.length - 1 ? "chevron_right" : "")} </span>`;
   })}</div>`;
 });
 export {

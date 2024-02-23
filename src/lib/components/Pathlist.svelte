@@ -18,6 +18,7 @@
     .paths {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
     .paths a {
         text-decoration: none;
