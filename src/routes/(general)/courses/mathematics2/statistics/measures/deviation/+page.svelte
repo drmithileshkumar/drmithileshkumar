@@ -58,17 +58,14 @@
     <h5>Variance and Standard Deviation</h5>
     <Card>
         <Content>
-            <div class="question">
-                What is standard deviation?
-            </div>
-            <div class="solution" use:typeset>
-                <p>The standard deviation is a measure of the amount of variation or dispersion in a set of values. It is defined as the square root of the variance. For a data set with values {`\\( x_1, x_2, ..., x_n \\)`} and a mean {`\\( \\bar{x} \\)`}, the standard deviation {`\\( \\sigma \\)`} is calculated as follows:</p>
-                <p>First, calculate the variance {`\\( \\sigma^2 \\)`}, which is the average of the squared differences from the Mean:</p>
-                <p>{`\\[ \\sigma^2 = \\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^2 \\]`}</p>
-                <p>Then, the standard deviation {`\\( \\sigma \\)`} is the square root of the variance:</p>
-                <p>{`\\[ \\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\]`}</p>
-                <p>In this formula, {`\\( \\bar{x} \\)`} is the mean of the data set, and {`\\( n \\)`} is the number of observations. The standard deviation provides a numerical measure of how spread out the values in a data set are around the mean.</p>
-            </div>
+            
+            <p>The standard deviation is a measure of the amount of variation or dispersion in a set of values. It is defined as the square root of the variance. For a data set with values {`\\( x_1, x_2, ..., x_n \\)`} and a mean {`\\( \\bar{x} \\)`}, the standard deviation {`\\( \\sigma \\)`} is calculated as follows:</p>
+            <p>First, calculate the variance {`\\( \\sigma^2 \\)`}, which is the average of the squared differences from the Mean:</p>
+            <p>{`\\[ \\sigma^2 = \\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^2 \\]`}</p>
+            <p>Then, the standard deviation {`\\( \\sigma \\)`} is the square root of the variance:</p>
+            <p>{`\\[ \\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\]`}</p>
+            <p>In this formula, {`\\( \\bar{x} \\)`} is the mean of the data set, and {`\\( n \\)`} is the number of observations. The standard deviation provides a numerical measure of how spread out the values in a data set are around the mean.</p>
+        
         </Content>
     </Card>
     <Card>

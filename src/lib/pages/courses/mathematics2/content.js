@@ -47,10 +47,6 @@ export const contents = [
                                 url: '/courses/mathematics2/statistics/correlation/correlation2'
                             },
                             {
-                                name: 'Types of correlation',
-                                url: '/courses/mathematics2/statistics/correlation/correlationtypes'
-                            },
-                            {
                                 name: "Karl Pearson's coefficient of correlation (r)",
                                 url: '/courses/mathematics2/statistics/correlation/pearson'
                             },
@@ -449,18 +445,12 @@ export let contentNav = {
         "name": "Correlation between two variables",
         "url": "/courses/mathematics2/statistics/correlation/correlation2",
         "previous": "/courses/mathematics2/statistics/correlation/bivariatefrequency",
-        "next": "/courses/mathematics2/statistics/correlation/correlationtypes"
-    },
-    "/courses/mathematics2/statistics/correlation/correlationtypes": {
-        "name": "Types of correlation",
-        "url": "/courses/mathematics2/statistics/correlation/correlationtypes",
-        "previous": "/courses/mathematics2/statistics/correlation/correlation2",
         "next": "/courses/mathematics2/statistics/correlation/pearson"
     },
     "/courses/mathematics2/statistics/correlation/pearson": {
         "name": "Karl Pearson's coefficient of correlation (r)",
         "url": "/courses/mathematics2/statistics/correlation/pearson",
-        "previous": "/courses/mathematics2/statistics/correlation/correlationtypes",
+        "previous": "/courses/mathematics2/statistics/correlation/correlation2",
         "next": "/courses/mathematics2/statistics/correlation/spearman"
     },
     "/courses/mathematics2/statistics/correlation/spearman": {
@@ -485,14 +475,9 @@ export let contentNav = {
         "name": "Least squares method",
         "url": "/courses/mathematics2/statistics/regression/leastsquares",
         "previous": "/courses/mathematics2/statistics/regression/regressionlines",
-        "next": "/courses/mathematics2/statistics/regression/regressioncoefficient"
-    },
-    "/courses/mathematics2/statistics/regression/regressioncoefficient": {
-        "name": "Regression coefficient",
-        "url": "/courses/mathematics2/statistics/regression/regressioncoefficient",
-        "previous": "/courses/mathematics2/statistics/regression/leastsquares",
         "next": ""
     },
+    
     "": {
         "name": "PERT",
         "url": "",

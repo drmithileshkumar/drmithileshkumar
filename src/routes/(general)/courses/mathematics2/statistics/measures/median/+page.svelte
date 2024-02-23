@@ -58,18 +58,15 @@
     <h5>Median</h5>
     <Card>
         <Content>
-            <div class="question">
-                What is median?
-            </div>
-            <div class="solution">
-                <p>The median is the middle value in a data set when the values are arranged in ascending or descending order. The definition of the median depends on whether the number of observations in the data set is odd or even:</p>
-                <p>For an odd number of observations {`n`}, the median {`M`} is the value at position {`\\( \\frac{n+1}{2} \\)`} in the ordered set. Mathematically, if {`\\( X = \\{x_1, x_2, ..., x_n\\} \\)`} is the ordered data set, then:</p>
-                <p>{`\\[ M = x_{\\frac{n+1}{2}} \\]`}</p>
-                <p>For an even number of observations {`n`}, the median is the average of the values at positions {`\\( \\frac{n}{2} \\)`} and {`\\( \\frac{n}{2} + 1 \\)`} in the ordered set. In this case:</p>
-                <p>{`\\[ M = \\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2} + 1}}{2} \\]`}</p>
-                <p>Thus, the median divides the data set into two equal parts, with half of the data points being less than or equal to the median and the other half being greater than or equal to the median.</p>
+            
+            <p>The median is the middle value in a data set when the values are arranged in ascending or descending order. The definition of the median depends on whether the number of observations in the data set is odd or even:</p>
+            <p>For an odd number of observations {`n`}, the median {`M`} is the value at position {`\\( \\frac{n+1}{2} \\)`} in the ordered set. Mathematically, if {`\\( X = \\{x_1, x_2, ..., x_n\\} \\)`} is the ordered data set, then:</p>
+            <p>{`\\[ M = x_{\\frac{n+1}{2}} \\]`}</p>
+            <p>For an even number of observations {`n`}, the median is the average of the values at positions {`\\( \\frac{n}{2} \\)`} and {`\\( \\frac{n}{2} + 1 \\)`} in the ordered set. In this case:</p>
+            <p>{`\\[ M = \\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2} + 1}}{2} \\]`}</p>
+            <p>Thus, the median divides the data set into two equal parts, with half of the data points being less than or equal to the median and the other half being greater than or equal to the median.</p>
 
-            </div>
+            
         </Content>
     </Card>
     <h5>Questions</h5>

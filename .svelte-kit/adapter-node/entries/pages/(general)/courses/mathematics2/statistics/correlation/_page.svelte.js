@@ -8,7 +8,7 @@ import { c as contentNav, a as contents } from "../../../../../../../chunks/cont
 import { P as Pathlist } from "../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../chunks/CourseNavigation.js";
 const css = {
-  code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}.question.svelte-98uzi2{cursor:pointer;padding:0.3em}",
+  code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -48,7 +48,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-27fw72">What is correlation?</div> <div class="solution" data-svelte-h="svelte-16nu1e2"><p class="svelte-98uzi2">Correlation is a fundamental concept in statistics that measures the degree and direction of the relationship between two or more variables. It allows us to understand how changes in one variable are associated with changes in another, providing valuable insights into patterns and dependencies in data.</p> <p class="svelte-98uzi2">Most famous example of correlation is the supply and demand in determining prices of commodities. Demand of electricity and weather conditions are correlated as well.</p> <p class="svelte-98uzi2">Correlation does not imply causation; it simply quantifies the strength and direction of the association between variables.</p> <p class="svelte-98uzi2">Although correlation is about studying relationship between any number of variables, we&#39;ll focus on the two variable case. Next we introduce bivariate data.</p></div>`;
+          return `<p class="svelte-98uzi2" data-svelte-h="svelte-1evgxc">Correlation is a fundamental concept in statistics that measures the degree and direction of the relationship between two or more variables. It allows us to understand how changes in one variable are associated with changes in another, providing valuable insights into patterns and dependencies in data.</p> <p class="svelte-98uzi2" data-svelte-h="svelte-189v9tb">Most famous example of correlation is the supply and demand in determining prices of commodities. Demand of electricity and weather conditions are correlated as well.</p> <p class="svelte-98uzi2" data-svelte-h="svelte-hf4yk5">Correlation does not imply causation; it simply quantifies the strength and direction of the association between variables.</p> <p class="svelte-98uzi2" data-svelte-h="svelte-5r02jz">Although correlation is about studying relationship between any number of variables, we&#39;ll focus on the two variable case. Next we introduce bivariate data.</p>`;
         }
       })}`;
     }

@@ -25,7 +25,7 @@
         margin: 0.5em 0;
     }
     h5 {
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
     h6 {
         font-size: 1em;
@@ -49,33 +49,36 @@
     <link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/pearson" />
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
 </svelte:head>
-<article>
+<article use:typeset>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
-    <h2>
+    <h4>
         Correlation
-    </h2>
-    <h3>Karl Pearson's coefficient of correlation (r)</h3>
+    </h4>
+    <h5>Karl Pearson's coefficient of correlation (r)</h5>
     <Card>
         <Content>
-            <div class="question">
-                What is Karl Pearson's coefficient of correlation (r) ?
-            </div>
-            <div class="solution" use:typeset>
-                <p>Karl Pearson's coefficient of correlation, commonly denoted as {`\\( r \\)`}, is a measure of the strength and direction of a linear relationship between two variables. It is a widely used method in statistics for quantifying the degree of correlation. The key aspects of Pearson's correlation coefficient include:</p>
-                <ul>
-                    <li><p><strong>Definition:</strong> Pearson's coefficient is defined as the covariance of the two variables divided by the product of their standard deviations. It quantifies the degree to which two variables are linearly related.</p></li>
-                    <li><p><strong>Mathematical Formula:</strong> For a sample size of {`\\( n \\)`}, with variables {`\\( X \\)`} and {`\\( Y \\)`} having means {`\\( \\bar{X} \\)`} and {`\\( \\bar{Y} \\)`} respectively, Pearson's {`\\( r \\)`} is calculated as:</p></li>
-                </ul>
-                <p>{`\\[ r = \\frac{\\sum_{i=1}^{n} (x_i - \\bar{X})(y_i - \\bar{Y})}{\\sqrt{\\sum_{i=1}^{n} (x_i - \\bar{X})^2 \\sum_{i=1}^{n} (y_i - \\bar{Y})^2}} \\]`}</p>
-                <ul>
-                    <li><p><strong>Value Range:</strong> Pearson's {`\\( r \\)`} ranges from -1 to +1. A value of +1 indicates a perfect positive linear correlation, -1 indicates a perfect negative linear correlation, and 0 indicates no linear correlation.</p></li>
-                    <li><p><strong>Interpretation:</strong> The magnitude of {`\\( r \\)`} indicates the strength of the correlation, while the sign indicates the direction (positive or negative).</p></li>
-                    <li><p><strong>Limitations:</strong> Pearson's correlation coefficient only measures linear relationships and might not accurately represent non-linear relationships. Also, it does not imply causation.</p></li>
-                </ul>
-                <p>This coefficient is a foundational tool in statistical analysis, helping to understand and quantify the linear relationship between variables in a dataset.</p>
-
-            </div>
+            
+            <p>
+                Karl Pearson's coefficient of correlation, commonly denoted as {`\\( r \\)`}, is a measure of the strength and direction of a linear relationship between two variables. It is a widely used method in statistics for quantifying the degree of correlation. 
+            </p>
+            <p>
+                Pearson's coefficient is defined as the covariance of the two variables divided by the product of their standard deviations. It quantifies the degree to which two variables are linearly related.
+            </p>
+            <p>
+                For a sample size of {`\\( n \\)`}, with variables {`\\( X \\)`} and {`\\( Y \\)`} having means {`\\( \\bar{X} \\)`} and {`\\( \\bar{Y} \\)`} respectively, Pearson's {`\\( r \\)`} is calculated as:
+            </p>
+            <p>{`\\[ r = \\frac{\\sum_{i=1}^{n} (x_i - \\bar{X})(y_i - \\bar{Y})}{\\sqrt{\\sum_{i=1}^{n} (x_i - \\bar{X})^2 \\sum_{i=1}^{n} (y_i - \\bar{Y})^2}} \\]`}</p>
+            <p>
+                Pearson's {`\\( r \\)`} ranges from -1 to +1. A value of +1 indicates a perfect positive linear correlation, -1 indicates a perfect negative linear correlation, and 0 indicates no linear correlation.
+            </p>
+            <p>
+                The magnitude of {`\\( r \\)`} indicates the strength of the correlation, while the sign indicates the direction (positive or negative).
+            </p>
+            <p>
+                Pearson's correlation coefficient only measures linear relationships and might not accurately represent non-linear relationships. Also, it does not imply causation.
+            </p>
+            
         </Content>
     </Card>
     <Card>

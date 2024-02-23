@@ -124,6 +124,7 @@
         <Card>
             <Content>
                 <h6>Course Objectives (22CA1201)</h6>
+                <p>Student should be comportable in using probability concepts in making statistical inferences. They should be able to handle basic problems in linear optimization.</p>
             </Content>
             <Actions>
                 <Textfield required variant="outlined" bind:value={studentID} label="Student ID" style="width:50%;" input$emptyValueUndefined />
@@ -188,11 +189,12 @@
             <Content>
                 <h6>Timetable</h6>
                 <strong>Room</strong>: TBD
-                <!-- <ol>
-                    <li><strong>Monday</strong>: 12:00-01:00</li>
-                    <li><strong>Thursday</strong>: 9:45-10:45</li>
-                    <li><strong>Friday</strong>: 8:45-9:45</li>
-                </ol> -->
+                <ol>
+                    <li><strong>Monday</strong>: 9:45-10:45</li>
+                    <li><strong>Tuesday</strong>: 2:45-4:45</li>
+                    <li><strong>Wednesday</strong>: 8:45-9:45</li>
+                    <li><strong>Friday</strong>: 12:00-1:00</li>
+                </ol>
             </Content>
         </Card>
         <Card>

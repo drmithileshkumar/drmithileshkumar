@@ -25,7 +25,7 @@
         margin: 0.5em 0;
     }
     h5 {
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
     h6 {
         font-size: 1em;
@@ -49,13 +49,13 @@
     <link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/spearman" />
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
 </svelte:head>
-<article>
+<article use:typeset>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
-    <h2>
+    <h4>
         Correlation
-    </h2>
-    <h3>Spearman's rank correlation coefficient</h3>
+    </h4>
+    <h5>Spearman's rank correlation coefficient</h5>
     <Card>
         <Content>
             <h6>Ranks</h6>
@@ -71,10 +71,7 @@
     </Card>
     <Card>
         <Content>
-            <div class="question">
-                What is Spearman's rank correlation coefficient?
-            </div>
-            <div class="solution" use:typeset>
+            
                 <p>
                     Spearman's rank correlation is the same as Pearson's correlation, but instead of using the data values \(x_i\) and \(y_i\), we use their ranks \(r_i = rank(x_i)\) and \(s_i = rank(y_i)\). Let us denote the rank data for variable \(X\) as \(R_x\) and for \(Y\) as \(R_y\).
                 </p>
@@ -138,7 +135,7 @@
                 <p class="question">
                     Show that \(r_s = -1\) when \(x_i\) and \(y_i\) are anti-monotonic, i.e. if ranks of \(x_i\) are \(1, 2, \dots, n\), then the ranks of \(y_i\) are \(n, n-1, \dots, 1\).
                 </p>
-            </div>
+           
         </Content>
     </Card>
 </article>

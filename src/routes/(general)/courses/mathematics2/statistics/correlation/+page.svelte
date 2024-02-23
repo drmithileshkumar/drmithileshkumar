@@ -49,7 +49,7 @@
     <link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/correlation" />
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
 </svelte:head>
-<article>
+<article use:typeset>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
     <h4>
@@ -58,11 +58,7 @@
     <h5>Correlation</h5>
     <Card>
         <Content>
-            <div class="question">
-                What is correlation?
-            </div>
-            <div class="solution" use:typeset>
-                
+            
                 <p>
                     Correlation is a fundamental concept in statistics that measures the degree and direction of the relationship between two or more variables. It allows us to understand how changes in one variable are associated with changes in another, providing valuable insights into patterns and dependencies in data.
                 </p>
@@ -75,7 +71,7 @@
                 <p>
                     Although correlation is about studying relationship between any number of variables, we'll focus on the two variable case. Next we introduce bivariate data.
                 </p>
-            </div>
+           
         </Content>
     </Card>
 </article>

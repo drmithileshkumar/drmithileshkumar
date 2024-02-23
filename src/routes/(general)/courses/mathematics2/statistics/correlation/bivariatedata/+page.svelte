@@ -50,7 +50,7 @@
     <link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/bivariatedata" />
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
 </svelte:head>
-<article>
+<article use:typeset>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
     <h4>
@@ -59,10 +59,7 @@
     <h5>Bivariate Data</h5>
     <Card>
         <Content>
-            <div class="question">
-                What is bivariate data?
-            </div>
-            <div class="solution" use:typeset>
+            
                 <p>
                     Bivariate data involves pairs of related data points, each representing two different variables. These data points are used to explore the relationship between these two variables. For instance, if we consider a dataset with variables {`\\( X \\)`} and {`\\( Y \\)`}, each data point in the dataset will be a pair {`\\( (x_i, y_i) \\)`}, where {`\\( x_i \\)`} is a value of {`\\( X \\)`} and {`\\( y_i \\)`} is the corresponding value of {`\\( Y \\)`}. 
                 </p>
@@ -81,7 +78,7 @@
                         </p>
                     </li>
                 </ul>
-            </div>
+            
         </Content>
     </Card>
     <Card>

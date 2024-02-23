@@ -25,7 +25,7 @@
         margin: 0.5em 0;
     }
     h5 {
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
     h6 {
         font-size: 1em;
@@ -52,10 +52,10 @@
 <article>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
-    <h2>
+    <h4>
         Regression
-    </h2>
-    <h3>Least Squares Method</h3>
+    </h4>
+    <h5>Least Squares Method</h5>
     <Card>
         <Content>
             <h6>What is the least squares method?</h6>

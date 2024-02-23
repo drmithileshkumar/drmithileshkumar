@@ -94,7 +94,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       default: () => {
         return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
           default: () => {
-            return `<h6 class="svelte-1a5or8o" data-svelte-h="svelte-1bkysss">Course Objectives (22CA1201)</h6>`;
+            return `<h6 class="svelte-1a5or8o" data-svelte-h="svelte-1bkysss">Course Objectives (22CA1201)</h6> <p class="svelte-1a5or8o" data-svelte-h="svelte-kcqwqn">Student should be comportable in using probability concepts in making statistical inferences. They should be able to handle basic problems in linear optimization.</p>`;
           }
         })} ${validate_component(Actions, "Actions").$$render($$result, {}, {}, {
           default: () => {
@@ -199,7 +199,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
           default: () => {
             return `<h6 class="svelte-1a5or8o" data-svelte-h="svelte-1l2n45b">Timetable</h6> <strong class="svelte-1a5or8o" data-svelte-h="svelte-laz63v">Room</strong>: TBD
-                `;
+                <ol data-svelte-h="svelte-14orddr"><li class="svelte-1a5or8o"><strong class="svelte-1a5or8o">Monday</strong>: 9:45-10:45</li> <li class="svelte-1a5or8o"><strong class="svelte-1a5or8o">Tuesday</strong>: 2:45-4:45</li> <li class="svelte-1a5or8o"><strong class="svelte-1a5or8o">Wednesday</strong>: 8:45-9:45</li> <li class="svelte-1a5or8o"><strong class="svelte-1a5or8o">Friday</strong>: 12:00-1:00</li></ol>`;
           }
         })}`;
       }

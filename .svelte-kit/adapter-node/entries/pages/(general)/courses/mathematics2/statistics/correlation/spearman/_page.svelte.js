@@ -8,7 +8,7 @@ import { c as contentNav, a as contents } from "../../../../../../../../chunks/c
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 const css = {
-  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}p.svelte-n59hwk{opacity:0.8}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}h6.svelte-n59hwk{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}.question.svelte-n59hwk{cursor:pointer;padding:0.3em}",
+  code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}h6.svelte-98uzi2{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}.question.svelte-98uzi2{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -28,7 +28,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
   $$unsubscribe_page();
-  return `${$$result.head += `<!-- HEAD_svelte-3wcfkg_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/spearman"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-3wcfkg_END -->`, ""} <article class="svelte-n59hwk">${validate_component(Pathlist, "Pathlist").$$render(
+  return `${$$result.head += `<!-- HEAD_svelte-3wcfkg_START -->${$$result.title = `<title>Mathematics II</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/spearman"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-3wcfkg_END -->`, ""} <article class="svelte-98uzi2">${validate_component(Pathlist, "Pathlist").$$render(
     $$result,
     {
       origin: $page.url.origin,
@@ -44,11 +44,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} <h2 class="svelte-n59hwk" data-svelte-h="svelte-5c76qq">Correlation</h2> <h3 class="svelte-n59hwk" data-svelte-h="svelte-vaf13u">Spearman&#39;s rank correlation coefficient</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  )} <h4 class="svelte-98uzi2" data-svelte-h="svelte-19r4q2a">Correlation</h4> <h5 class="svelte-98uzi2" data-svelte-h="svelte-1fw8q6a">Spearman&#39;s rank correlation coefficient</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 class="svelte-n59hwk" data-svelte-h="svelte-wfmcz7">Ranks</h6> <div data-svelte-h="svelte-1dejemw"><p class="svelte-n59hwk">Given a variable \\(X\\) with values \\(x_1, x_2, \\dots, x_n\\), the rank of a value \\(x_i\\) is assigned based on its size, with the smallest value getting rank 1, next smallest rank 2, and so on. Ties are given an average rank.</p> <p class="example svelte-n59hwk">Let \\(X\\) has values 13, 3, 14, 19, 5, 6, 9. The ranks of the data are 5, 1, 6, 7, 2, 3, 4.</p></div>`;
+          return `<h6 class="svelte-98uzi2" data-svelte-h="svelte-wfmcz7">Ranks</h6> <div data-svelte-h="svelte-1dejemw"><p class="svelte-98uzi2">Given a variable \\(X\\) with values \\(x_1, x_2, \\dots, x_n\\), the rank of a value \\(x_i\\) is assigned based on its size, with the smallest value getting rank 1, next smallest rank 2, and so on. Ties are given an average rank.</p> <p class="example svelte-98uzi2">Let \\(X\\) has values 13, 3, 14, 19, 5, 6, 9. The ranks of the data are 5, 1, 6, 7, 2, 3, 4.</p></div>`;
         }
       })}`;
     }
@@ -56,19 +56,19 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-n59hwk" data-svelte-h="svelte-7ya2je">What is Spearman&#39;s rank correlation coefficient?</div> <div class="solution"><p class="svelte-n59hwk" data-svelte-h="svelte-gdzt5c">Spearman&#39;s rank correlation is the same as Pearson&#39;s correlation, but instead of using the data values \\(x_i\\) and \\(y_i\\), we use their ranks \\(r_i = rank(x_i)\\) and \\(s_i = rank(y_i)\\). Let us denote the rank data for variable \\(X\\) as \\(R_x\\) and for \\(Y\\) as \\(R_y\\).</p> <p class="svelte-n59hwk">Spearman&#39;s rank correlation coefficient is defined as ${escape(`
+          return `<p class="svelte-98uzi2" data-svelte-h="svelte-gdzt5c">Spearman&#39;s rank correlation is the same as Pearson&#39;s correlation, but instead of using the data values \\(x_i\\) and \\(y_i\\), we use their ranks \\(r_i = rank(x_i)\\) and \\(s_i = rank(y_i)\\). Let us denote the rank data for variable \\(X\\) as \\(R_x\\) and for \\(Y\\) as \\(R_y\\).</p> <p class="svelte-98uzi2">Spearman&#39;s rank correlation coefficient is defined as ${escape(`
                     \\[
                         r_s = \\dfrac{cov(R_x, R_y)}{\\sigma_{R_x}\\sigma_{R_y}}  
                     \\]
                     `)}
-                    where the covariance ${escape(`\\[cov(R_x, R_y) = \\dfrac{1}{n}\\sum(r_i-\\bar{r})(s_i - \\bar{s})\\]`)}, ${escape(`\\(\\bar{r}\\)`)} and ${escape(`\\(\\bar{s}\\)`)} are means of ranks of \\(X\\) and \\(Y\\). ${escape(`\\(\\sigma_{R_x}\\)`)} and ${escape(`\\(\\sigma_{R_y}\\)`)} are standard deviations of the ranks.</p> <p class="svelte-n59hwk" data-svelte-h="svelte-1rcnx3h">Easier formula for Spearman correlation coefficient can be obtained assuming that the ranks \\(x_i\\) and \\(y_i\\) take values from 1 to n, i.e. no two elements get the same rank, i.e. all elements are distinct.</p> <p class="svelte-n59hwk">The means ${escape(`\\(\\bar{r}\\)`)} and ${escape(`\\(\\bar{s}\\)`)} are equal under above assumption as shown below.
+                    where the covariance ${escape(`\\[cov(R_x, R_y) = \\dfrac{1}{n}\\sum(r_i-\\bar{r})(s_i - \\bar{s})\\]`)}, ${escape(`\\(\\bar{r}\\)`)} and ${escape(`\\(\\bar{s}\\)`)} are means of ranks of \\(X\\) and \\(Y\\). ${escape(`\\(\\sigma_{R_x}\\)`)} and ${escape(`\\(\\sigma_{R_y}\\)`)} are standard deviations of the ranks.</p> <p class="svelte-98uzi2" data-svelte-h="svelte-1rcnx3h">Easier formula for Spearman correlation coefficient can be obtained assuming that the ranks \\(x_i\\) and \\(y_i\\) take values from 1 to n, i.e. no two elements get the same rank, i.e. all elements are distinct.</p> <p class="svelte-98uzi2">The means ${escape(`\\(\\bar{r}\\)`)} and ${escape(`\\(\\bar{s}\\)`)} are equal under above assumption as shown below.
                     ${escape(`\\[
                         \\begin{aligned}
                         \\bar{r} &= \\bar{s}\\\\
                                  &= \\frac{1 + 2 + \\cdots + n}{n}\\\\
                                  &= \\frac{n + 1}{2}
                         \\end{aligned}
-                        \\]`)}</p> <p class="svelte-n59hwk">Even the standard deviations ${escape(`\\(\\sigma_{R_x}\\)`)} and ${escape(`\\(\\sigma_{R_y}\\)`)} are equal.
+                        \\]`)}</p> <p class="svelte-98uzi2">Even the standard deviations ${escape(`\\(\\sigma_{R_x}\\)`)} and ${escape(`\\(\\sigma_{R_y}\\)`)} are equal.
                     ${escape(`\\[
                         \\begin{aligned}
                         \\sigma_{R_x}^2 &= \\sigma_{R_y}^2\\\\
@@ -78,7 +78,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                                       &= \\frac{1}{n}\\frac{n(n+1)(2n+1)}{6} - \\left(\\frac{n + 1}{2}\\right)^2\\\\
                                       &= \\frac{n^2 - 1}{12}
                         \\end{aligned}
-                        \\]`)}</p> <p class="svelte-n59hwk" data-svelte-h="svelte-ipkp9a">For each pair of values \\((x_i, y_i)\\) define \\[d_i = r_i - s_i\\]</p> <p class="svelte-n59hwk">${escape(`\\[
+                        \\]`)}</p> <p class="svelte-98uzi2" data-svelte-h="svelte-ipkp9a">For each pair of values \\((x_i, y_i)\\) define \\[d_i = r_i - s_i\\]</p> <p class="svelte-98uzi2">${escape(`\\[
                         \\begin{aligned}
                         \\sum d_i^2 &= \\sum (r_i - s_i)^2\\\\
                                     &= \\sum (r_i - \\bar{r} - s_i + \\bar{r})^2\\\\
@@ -92,7 +92,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                               r_s   &= 1 - \\frac{12\\sum d_i^2}{2n(n^2 - 1)}\\\\
                                     &= 1 - \\frac{6\\sum d_i^2}{n(n^2 - 1)}
                         \\end{aligned}
-                        \\]`)}</p> <p class="svelte-n59hwk" data-svelte-h="svelte-ermykk">When the data points \\(x_i\\) and \\(y_i\\) are monotonic (even if non-linear), the ranks \\(x_i\\) and \\(y_i\\) will be equal and hence \\(d_i = 0\\). This implies \\(r_s = 1\\).</p> <p class="question svelte-n59hwk" data-svelte-h="svelte-bdryu8">Show that \\(r_s = -1\\) when \\(x_i\\) and \\(y_i\\) are anti-monotonic, i.e. if ranks of \\(x_i\\) are \\(1, 2, \\dots, n\\), then the ranks of \\(y_i\\) are \\(n, n-1, \\dots, 1\\).</p></div>`;
+                        \\]`)}</p> <p class="svelte-98uzi2" data-svelte-h="svelte-ermykk">When the data points \\(x_i\\) and \\(y_i\\) are monotonic (even if non-linear), the ranks \\(x_i\\) and \\(y_i\\) will be equal and hence \\(d_i = 0\\). This implies \\(r_s = 1\\).</p> <p class="question svelte-98uzi2" data-svelte-h="svelte-bdryu8">Show that \\(r_s = -1\\) when \\(x_i\\) and \\(y_i\\) are anti-monotonic, i.e. if ranks of \\(x_i\\) are \\(1, 2, \\dots, n\\), then the ranks of \\(y_i\\) are \\(n, n-1, \\dots, 1\\).</p>`;
         }
       })}`;
     }

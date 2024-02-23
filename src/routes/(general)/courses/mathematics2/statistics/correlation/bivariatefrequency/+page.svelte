@@ -66,7 +66,7 @@
     <link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/bivariatefrequency" />
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
 </svelte:head>
-<article>
+<article use:typeset>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
     <h4>
@@ -75,17 +75,14 @@
     <h5>Bivariate Frequency Distribution</h5>
     <Card>
         <Content>
-            <div class="question">
-                What is bivariate frequency distribution?
-            </div>
-            <div class="solution" use:typeset>
+            
                 <p>
                     A bivariate frequency distribution is a table of frequencies of occurrences of pairs of variables in a dataset. The distribution is typically represented in a tabular format, where one variable is listed along the rows and the other along the columns. The table contains the frequency count, which is the number of times each pair of variable values occurs together in the dataset. 
                 </p>
                 <p>
                     Mathematically, if we have two variables {`\\( X \\)`} and {`\\( Y \\)`}, with {`\\( X \\)`} taking values {`\\( x_1, x_2, ..., x_m \\)`} and {`\\( Y \\)`} taking values {`\\( y_1, y_2, ..., y_n \\)`}, the frequency of occurrence of the pair {`\\( (x_i, y_j) \\)`} in the dataset is denoted as {`\\( f_{ij} \\)`}. The entire set of frequencies forms the bivariate frequency distribution.
                 </p>
-            </div>
+            
         </Content>
     </Card>
     <h5>Questions</h5>

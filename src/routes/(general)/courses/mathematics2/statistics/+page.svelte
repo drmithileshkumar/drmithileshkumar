@@ -60,7 +60,7 @@
         <Content>
             <div use:typeset>
                 <p>
-                    We use statistics in decision making in the face of uncertainty. Consider situations where there is a repetitive process that creates data. For example, outcome a coin toss, temperature at any time in a day, value of a stock, defects in a product etc. Each of these situations create a lot of data which seem random to an extent. Can we predict what will be likely outcome of the coin toss, or temperature next hour, or price of the stock? We use statistical methods to answer questions like these.
+                    We use statistics in decision making in the face of uncertainty. Consider situations where there is a repetitive process that creates data. For example, outcome of repeated toss of a coin, temperature at any time in a day, value of a stock, defects in a product etc. Each of these situations create a lot of data which seem random to an extent. Can we predict what will be likely outcome of the coin toss, or temperature next hour, or price of the stock? We use statistical methods to answer questions like these.
                 </p>
                 <p>
                     One of the most useful tools in statistics is probability. Probability can be seen as idealization of frequency table in the case of finitely many data points. In this course, we'll take the approach of delaying the introduction to probability and start with a basic overview of statistical concepts like measures of central tendency, correlation and regression. After that we'll introduce probability theory.
