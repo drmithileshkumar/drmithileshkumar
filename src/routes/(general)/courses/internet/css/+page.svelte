@@ -41,6 +41,14 @@
         }
     </style>
 </head>`
+    let code3 = `selector1 {
+    property1: value1;
+    property2: value2;
+}
+selector2 {
+    property3: value3;
+    property4: value4;
+}`
 </script>
 <style>
     article {
@@ -60,7 +68,7 @@
     h6 {
         font-size: 1em;
         margin: 0.5em 0;
-        color: rgb(240, 85, 0);
+        color: rgb(74, 155, 139);
     }
     strong {
         color: goldenrod;
@@ -117,5 +125,19 @@
             
         </Content>
     </Card>
-    
+    <Card>
+        <Content>
+            <h6>Basic Selectors</h6>
+            <p>The general structure of CSS assignment is as follows:</p>
+            <Highlight language={xml} code={code3} let:highlighted>
+                <LineNumbers {highlighted} wrapLines/>
+            </Highlight>
+            <p>
+                Here <code>selector</code> can be tag name, id, or class name. There are other advanced selectors which we'll cover later. In case of <code>id</code>, the selector is written as <code>#id</code> and in case of classname it is written as <code>.classname</code>. 
+            </p>
+            <p class="remarks">
+                Notice that <code>id</code> must be unique for any element. <code>class</code> name can be assigned to as many elements as possible.
+            </p>
+        </Content>
+    </Card>
 </article>

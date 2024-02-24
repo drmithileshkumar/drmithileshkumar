@@ -6,8 +6,8 @@
 	import Vectorial from "$lib/pages/home/Vectorial.svelte";
 	import Trigonometry from "$lib/pages/home/Trigonometry.svelte";
     import HTML from "$lib/pages/home/HTML.svelte";
-	
-    
+	import { currentPath } from "$lib/stores";
+    $currentPath = "Dr Mithilesh Kumar"
 </script>
 <style>
     /* .welcome {

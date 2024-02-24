@@ -59,7 +59,7 @@
     h6 {
         font-size: 1em;
         margin: 0.5em 0;
-        color: rgb(240, 85, 0);
+        color: rgb(74, 155, 139);
     }
     strong {
         color: goldenrod;

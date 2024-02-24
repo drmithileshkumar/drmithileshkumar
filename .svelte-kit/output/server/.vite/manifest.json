@@ -818,10 +818,12 @@
     ],
     "file": "entries/pages/(general)/_page.svelte.js",
     "imports": [
+      "_utils.js",
       "_ssr.js",
       "_stores3.js",
       "_client.js",
-      "_ActionIcons.js"
+      "_ActionIcons.js",
+      "_stores2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/+page.svelte"
@@ -1463,7 +1465,7 @@
   },
   "src/routes/(general)/courses/internet/css/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.J7ZA_t1z.css",
+      "_app/immutable/assets/_page.3FayEt1J.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css"
     ],
     "file": "entries/pages/(general)/courses/internet/css/_page.svelte.js",
@@ -1491,7 +1493,7 @@
   },
   "src/routes/(general)/courses/internet/css/box/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.b1fha4gX.css",
+      "_app/immutable/assets/_page.HkNftmlc.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
       "_app/immutable/assets/NavList.buyRB24_.css"
     ],
@@ -1521,7 +1523,7 @@
   },
   "src/routes/(general)/courses/internet/css/layout/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.NFq-K7QQ.css",
+      "_app/immutable/assets/_page.HTSaxotM.css",
       "_app/immutable/assets/NavList.buyRB24_.css"
     ],
     "file": "entries/pages/(general)/courses/internet/css/layout/_page.svelte.js",
