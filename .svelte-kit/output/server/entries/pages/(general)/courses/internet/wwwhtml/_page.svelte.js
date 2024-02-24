@@ -1,6 +1,6 @@
 import { s as subscribe, b as set_store_value } from "../../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component } from "../../../../../../chunks/ssr.js";
-import { g as githubDark, a as github, b as contentNav, c as contents } from "../../../../../../chunks/content4.js";
+import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../chunks/content4.js";
 /* empty css                                                          */
 import { p as page } from "../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../chunks/Card.js";

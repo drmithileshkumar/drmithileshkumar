@@ -110,7 +110,7 @@
 </svelte:head>
 <article>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
-    <!-- <CourseNavigation {contentNav} currentUrl={$page.url.pathname} /> -->
+    <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
     <h4 style="margin: 0.5em 0;">
         Internet Technologies
     </h4>

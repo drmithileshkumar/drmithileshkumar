@@ -1,7 +1,7 @@
 import { s as subscribe, b as set_store_value } from "../../../../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component } from "../../../../../../../../chunks/ssr.js";
-import { x as xml, H as Highlight, L as LineNumbers } from "../../../../../../../../chunks/xml.js";
-import { g as githubDark, a as github, b as contentNav, c as contents } from "../../../../../../../../chunks/content4.js";
+import { x as xml } from "../../../../../../../../chunks/xml.js";
+import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../../../chunks/content4.js";
 /* empty css                                                                */
 import { p as page } from "../../../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../../../chunks/Card.js";
@@ -12,6 +12,7 @@ import { d as darkMode, c as currentPath, n as navList } from "../../../../../..
 /* empty css                                                                   */
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
+import { H as Highlight, L as LineNumbers } from "../../../../../../../../chunks/LineNumbers.js";
 const css = {
   code: "article.svelte-9tb2l5{display:flex;flex-direction:column;gap:0.5em}p.svelte-9tb2l5,li.svelte-9tb2l5{opacity:0.8}h4.svelte-9tb2l5{margin:0.5em 0}h6.svelte-9tb2l5{font-size:1em;margin:0.5em 0;color:rgb(240, 85, 0)}strong.svelte-9tb2l5{color:goldenrod;opacity:1}",
   map: null

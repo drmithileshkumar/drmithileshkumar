@@ -39,7 +39,6 @@
         p {
             color: tomato;
         }
-    /* ignore *{} BUG */
     </style>
 </head>`
 </script>

@@ -198,12 +198,12 @@ const contents = [
         url: "/courses/internet/css",
         topics: [
           {
-            name: "Layout",
-            url: "/courses/internet/css/layout"
-          },
-          {
             name: "Box model",
             url: "/courses/internet/css/box"
+          },
+          {
+            name: "Layout",
+            url: "/courses/internet/css/layout"
           },
           {
             name: "Typography",
@@ -733,18 +733,18 @@ const contentNav = {
     "name": "CSS",
     "url": "/courses/internet/css",
     "previous": "/courses/internet/wwwhtml/practice1",
-    "next": "/courses/internet/css/layout"
-  },
-  "/courses/internet/css/layout": {
-    "name": "Layout",
-    "url": "/courses/internet/css/layout",
-    "previous": "/courses/internet/css",
     "next": "/courses/internet/css/box"
   },
   "/courses/internet/css/box": {
     "name": "Box model",
     "url": "/courses/internet/css/box",
-    "previous": "/courses/internet/css/layout",
+    "previous": "/courses/internet/css",
+    "next": "/courses/internet/css/layout"
+  },
+  "/courses/internet/css/layout": {
+    "name": "Layout",
+    "url": "/courses/internet/css/layout",
+    "previous": "/courses/internet/css/box",
     "next": "/courses/internet/css/typography"
   },
   "/courses/internet/css/typography": {
@@ -1248,7 +1248,7 @@ const contentNav = {
 };
 export {
   github$1 as a,
-  contentNav as b,
-  contents as c,
+  contents as b,
+  contentNav as c,
   githubDark$1 as g
 };
