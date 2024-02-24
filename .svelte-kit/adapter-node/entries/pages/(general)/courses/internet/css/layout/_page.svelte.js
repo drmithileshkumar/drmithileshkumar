@@ -275,7 +275,171 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         }
                       })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
                         default: () => {
-                          return `aligns items according to horizontal or vertical axis depending on <code data-svelte-h="svelte-1jzer5j">flex-direction</code>`;
+                          return `aligns items according cross-axis`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-1mtvmta">justify-content</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-1cog54d">center, start, end, space-between, space-around, space-evenly</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `control space between items along the main-axis`;
+                        }
+                      })}`;
+                    }
+                  })}`;
+                }
+              })}`;
+            }
+          })}`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<h6 id="grid" class="svelte-beztui" data-svelte-h="svelte-ub1k4a">The grid model</h6> <p class="svelte-beztui" data-svelte-h="svelte-173xwx2">We can set <code>display: grid;</code> to use grid model for layouting items inside the element. Unlike <code>flex</code> model, the items are placed in a two-dimensional grid system defined using <code>grid-template-columns</code>,<code>grid-template-rows</code> and <code>grid-template-areas</code>.</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width: 100%" }, {}, {
+            default: () => {
+              return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Property`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Values`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Description`;
+                        }
+                      })}`;
+                    }
+                  })}`;
+                }
+              })} ${validate_component(Body, "Body").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-o5h4hn">grid-template-columns</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `a list of length or fraction units (<code data-svelte-h="svelte-vvgz54">fr</code>)`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `creates as many columns of the given length as in the list.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-wq602l">grid-template-rows</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `a list of length or fraction units (<code data-svelte-h="svelte-vvgz54">fr</code>)`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `creates as many rows of the given length as in the list.`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-kqf21s">grid-template-areas</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `a string of names of areas of items`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `places items according to the structure defined by the string`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-1vd6y0w">grid-area</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `name`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `it is set on the items of the grid. These names are parts of the string in <code data-svelte-h="svelte-kqf21s">grid-template-areas</code>`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-1iysvyz">column-gap</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `number`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `set the column gap between items`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-1qm15hq">gap</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `number(s)`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `sets row (and) column gap between items`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-e748ze">align-items</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `<code data-svelte-h="svelte-1qs8x19">center, start, end, stretch</code>`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `aligns items according to cross-axis`;
                         }
                       })}`;
                     }

@@ -182,7 +182,67 @@
                     <Row>
                         <Cell><code>align-items</code></Cell>
                         <Cell style="white-space: normal;"><code>center, start, end, stretch</code></Cell>
-                        <Cell style="white-space: normal;">aligns items according to horizontal or vertical axis depending on <code>flex-direction</code></Cell>
+                        <Cell style="white-space: normal;">aligns items according cross-axis</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>justify-content</code></Cell>
+                        <Cell style="white-space: normal;"><code>center, start, end, space-between, space-around, space-evenly</code></Cell>
+                        <Cell style="white-space: normal;">control space between items along the main-axis</Cell>
+                    </Row>
+                </Body>
+            </DataTable>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6 id="grid">The grid model</h6>
+            <p>
+                We can set <code>display: grid;</code> to use grid model for layouting items inside the element. Unlike <code>flex</code> model, the items are placed in a two-dimensional grid system defined using <code>grid-template-columns</code>,<code>grid-template-rows</code> and <code>grid-template-areas</code>.
+            </p>
+            <DataTable style="width: 100%">
+                <Head>
+                    <Row>
+                        <Cell>Property</Cell>
+                        <Cell>Values</Cell>
+                        <Cell>Description</Cell>
+                    </Row>
+                </Head>
+                <Body>
+                    <Row>
+                        <Cell><code>grid-template-columns</code></Cell>
+                        <Cell style="white-space: normal;">a list of length or fraction units (<code>fr</code>)</Cell>
+                        <Cell style="white-space: normal;">creates as many columns of the given length as in the list.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>grid-template-rows</code></Cell>
+                        <Cell style="white-space: normal;">a list of length or fraction units (<code>fr</code>)</Cell>
+                        <Cell style="white-space: normal;">creates as many rows of the given length as in the list.</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>grid-template-areas</code></Cell>
+                        <Cell style="white-space: normal;">a string of names of areas of items</Cell>
+                        <Cell style="white-space: normal;">places items according to the structure defined by the string</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>grid-area</code></Cell>
+                        <Cell style="white-space: normal;">name</Cell>
+                        <Cell style="white-space: normal;">it is set on the items of the grid. These names are parts of the string in <code>grid-template-areas</code></Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>column-gap</code></Cell>
+                        <Cell style="white-space: normal;">number</Cell>
+                        <Cell style="white-space: normal;">set the column gap between items</Cell>
+                    </Row>
+                    <Row>
+                        <Cell><code>gap</code></Cell>
+                        <Cell style="white-space: normal;">number(s)</Cell>
+                        <Cell style="white-space: normal;">sets row (and) column gap between items</Cell>
+                    </Row>
+                    
+                    <Row>
+                        <Cell><code>align-items</code></Cell>
+                        <Cell style="white-space: normal;"><code>center, start, end, stretch</code></Cell>
+                        <Cell style="white-space: normal;">aligns items according to cross-axis</Cell>
                     </Row>
                     <Row>
                         <Cell><code>justify-content</code></Cell>
