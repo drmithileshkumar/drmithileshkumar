@@ -225,16 +225,8 @@
                             <Cell>20M</Cell>
                         </Row>
                         <Row>
-                            <Cell>Assignment</Cell>
-                            <Cell>5M</Cell>
-                        </Row>
-                        <Row>
-                            <Cell>Seminar</Cell>
-                            <Cell>5M</Cell>
-                        </Row>
-                        <Row>
-                            <Cell>Reflection notes</Cell>
-                            <Cell>5M</Cell>
+                            <Cell>Git Repositories</Cell>
+                            <Cell>15M</Cell>
                         </Row>
                         <Row>
                             <Cell>Attendence</Cell>

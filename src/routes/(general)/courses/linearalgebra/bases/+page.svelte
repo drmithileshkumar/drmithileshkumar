@@ -190,4 +190,12 @@
             </p>
         </Content>
     </Card>
+    <Card>
+        <Content>
+            <h6>Spanning Set</h6>
+            <div class="definition">
+                A <em>spanning set</em> for a vector space is a set of vectors \(\vert v_1\rangle,\dots, \vert v_n\rangle\) such that any vector \(\vert v\rangle\) in the vector space can be written as a linear combination \[\vert v\rangle = \sum_i a_i\vert v_i\rangle\] of vectors in that set.
+            </div>
+        </Content>
+    </Card>
 </article>

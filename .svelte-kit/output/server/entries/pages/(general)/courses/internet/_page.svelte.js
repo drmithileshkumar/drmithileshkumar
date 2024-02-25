@@ -261,35 +261,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         default: () => {
                           return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
                             default: () => {
-                              return `Assignment`;
+                              return `Git Repositories`;
                             }
                           })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
                             default: () => {
-                              return `5M`;
-                            }
-                          })}`;
-                        }
-                      })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
-                        default: () => {
-                          return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
-                            default: () => {
-                              return `Seminar`;
-                            }
-                          })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
-                            default: () => {
-                              return `5M`;
-                            }
-                          })}`;
-                        }
-                      })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
-                        default: () => {
-                          return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
-                            default: () => {
-                              return `Reflection notes`;
-                            }
-                          })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
-                            default: () => {
-                              return `5M`;
+                              return `15M`;
                             }
                           })}`;
                         }
