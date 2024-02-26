@@ -23,7 +23,7 @@
         return path;
     })
     $navList = contents;
-    $currentPath = "Home town page";
+    $currentPath = "Home town";
     $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
@@ -71,12 +71,21 @@
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
     <h2>
-        Home town page
+        Home town
     </h2>
-    <h3>Contents</h3>
     <Card>
         <Content>
-            <NavList name="{$navList[0].name}" url="{$navList[0].url}" topics={$navList[0].topics} expanded />
+            <div class="question"><strong>Task</strong>: Create an outline of your home town website.</div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <p>Steps:</p>
+            <ol>
+                <li>Create an outline on paper.</li>
+                <li>Divide the page into sections</li>
+                <li>Format each section</li>
+            </ol>
         </Content>
     </Card>
 </article>

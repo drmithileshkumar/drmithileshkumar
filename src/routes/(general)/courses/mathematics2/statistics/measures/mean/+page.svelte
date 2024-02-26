@@ -61,27 +61,45 @@
         <Content>
             <h6>Mean (Arithmetic Mean)</h6>
             <p>The mean, also known as the arithmetic mean, of a set of <em>n</em> numerical values <em>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></em> is defined as the sum of all the values divided by the number of values. The formula for the mean is:</p>
-            <p>{`\\[ \\text{Mean} (\\bar{x}) = \\frac{1}{n} \\sum_{i=1}^{n} x_i \\]`}</p>
+            <p>{`\\[\\begin{aligned} 
+            \\text{Mean} (\\bar{x}) &= \\frac{1}{n} \\sum_{i=1}^{n} x_i\\\\
+                                    &= \\frac{x_1 + x_2 + \\cdots + x_n}{n}
+             \\end{aligned}\\]`}</p>
+            <div class="examples">
+                The arithmetic mean of 1, 3, 5, 7 is {`\\(\\frac{1 + 3 + 5 + 7}{4} = 4\\)`}
+            </div>
         </Content>
     </Card>
     <Card>
         <Content>
             <h6>Geometric Mean (GM)</h6>
             <p>The Geometric Mean of a set of <em>n</em> positive numbers <em>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></em> is defined as the <em>n</em>-th root of the product of all the <em>n</em> numbers. The formula for the geometric mean is:</p>
-            <p>{`\\[ \\text{Geometric Mean (GM)} = \\left( \\prod_{i=1}^{n} x_i \\right)^{\\frac{1}{n}} \\]`}</p>
+            <p>{`\\[\\begin{aligned} 
+            \\text{Geometric Mean (GM)} &= \\left( \\prod_{i=1}^{n} x_i \\right)^{\\frac{1}{n}}\\\\ 
+                                        &= \\left(x_1\\times x_2\\times\\cdots\\times x_n\\right)^{\\frac{1}{n}}
+            \\end{aligned} \\]`}</p>
             <p>
                 It is used when the information we want has volume-like property.
             </p>
+            <div class="examples">
+                The geometric mean of 2, 9, 12 is {`\\((2\\times 9\\times 12)^\\frac{1}{3} = (2^3\\times 3^3)^\\frac{1}{3} = 6\\)`}
+            </div>
         </Content>
     </Card>
     <Card>
         <Content>
             <h6>Harmonic Mean (HM)</h6>
             <p>The Harmonic Mean of a set of <em>n</em> numbers <em>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></em>, where none of the numbers are zero, is defined as <em>n</em> divided by the sum of the reciprocals of the numbers. The formula for the harmonic mean is:</p>
-            <p>{`\\[ \\text{Harmonic Mean (HM)} = \\frac{n}{\\sum_{i=1}^{n} \\frac{1}{x_i}} \\]`}</p>
+            <p>{`\\[\\begin{aligned} 
+            \\text{Harmonic Mean (HM)} &= \\frac{n}{\\sum_{i=1}^{n} \\frac{1}{x_i}}\\\\
+                                       &= \\frac{n}{\\frac{1}{x_1} + \\frac{1}{x_2} + \\cdots + \\frac{1}{x_n}}
+            \\end{aligned} \\]`}</p>
             <p>
                 It is used when the information we want considers reciprocals of the given data.
             </p>
+            <div class="examples">
+                The harmonic mean of {`\\(\\frac{1}{2}, \\frac{1}{3},\\frac{1}{4}\\)`} is {`\\(\\frac{3}{2 + 3 + 4} = \\frac{1}{3}\\)`}
+            </div>
         </Content>
     </Card>
     <!-- <Card>

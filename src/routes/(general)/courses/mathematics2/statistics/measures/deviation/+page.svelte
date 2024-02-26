@@ -65,7 +65,13 @@
             <p>Then, the standard deviation {`\\( \\sigma \\)`} is the square root of the variance:</p>
             <p>{`\\[ \\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\]`}</p>
             <p>In this formula, {`\\( \\bar{x} \\)`} is the mean of the data set, and {`\\( n \\)`} is the number of observations. The standard deviation provides a numerical measure of how spread out the values in a data set are around the mean.</p>
-        
+            <div class="examples">
+                Given data 1, 2, 3 with mean 2, the standard deviation is {`\\[\\begin{aligned}
+                \\sigma &= \\sqrt{\\frac{1}{3}[(1-2)^2 + (2-2)^2 + (3-2)^2]}\\\\
+                        &= \\sqrt{\\frac{1}{3}(1 + 0 + 1)}\\\\
+                        &= \\sqrt{\\frac{2}{3}}
+                \\end{aligned}\\]`}
+            </div>
         </Content>
     </Card>
     <Card>

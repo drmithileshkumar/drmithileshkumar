@@ -59,14 +59,16 @@
     <Card>
         <Content>
             
-            <p>The median is the middle value in a data set when the values are arranged in ascending or descending order. The definition of the median depends on whether the number of observations in the data set is odd or even:</p>
+            <p>The median is the middle value in a data set when the values are arranged in <strong>ascending</strong> or <strong>descending</strong> order. The definition of the median depends on whether the number of observations in the data set is odd or even:</p>
             <p>For an odd number of observations {`n`}, the median {`M`} is the value at position {`\\( \\frac{n+1}{2} \\)`} in the ordered set. Mathematically, if {`\\( X = \\{x_1, x_2, ..., x_n\\} \\)`} is the ordered data set, then:</p>
             <p>{`\\[ M = x_{\\frac{n+1}{2}} \\]`}</p>
             <p>For an even number of observations {`n`}, the median is the average of the values at positions {`\\( \\frac{n}{2} \\)`} and {`\\( \\frac{n}{2} + 1 \\)`} in the ordered set. In this case:</p>
             <p>{`\\[ M = \\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2} + 1}}{2} \\]`}</p>
             <p>Thus, the median divides the data set into two equal parts, with half of the data points being less than or equal to the median and the other half being greater than or equal to the median.</p>
 
-            
+            <div class="examples">
+                The median of 1, 3, 2, 9, 3, 5, 6, 3 (after sorting [1, 2, 3, 3, 3, 5, 6, 9]) is {`\\(\\frac{x_4 + x_5 }{2} = \\frac{3 + 3}{2} = 3\\)`}
+            </div>
         </Content>
     </Card>
     <h5>Questions</h5>

@@ -4,13 +4,15 @@ import { c as create_ssr_component, v as validate_component } from "../../../../
 import { p as page } from "../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../chunks/ActionIcons.js";
-import { N as NavList } from "../../../../../../chunks/NavList.js";
+import "../../../../../../chunks/Subheader.js";
+import "../../../../../../chunks/client.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../chunks/stores2.js";
+/* empty css                                                             */
 import { c as contentNav, a as contents } from "../../../../../../chunks/content.js";
 import { P as Pathlist } from "../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../chunks/CourseNavigation.js";
 const css = {
-  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}h2.svelte-n59hwk,h3.svelte-n59hwk{margin:0.5em 0}",
+  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}p.svelte-n59hwk,li.svelte-n59hwk{opacity:0.8}h2.svelte-n59hwk{margin:0.5em 0}strong.svelte-n59hwk{color:goldenrod;opacity:1}.question.svelte-n59hwk{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -31,7 +33,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     return path;
   });
   set_store_value(navList, $navList = contents, $navList);
-  set_store_value(currentPath, $currentPath = "Home town page", $currentPath);
+  set_store_value(currentPath, $currentPath = "Home town", $currentPath);
   set_store_value(darkMode, $darkMode = false, $darkMode);
   $$result.css.add(css);
   $$unsubscribe_darkMode();
@@ -54,21 +56,19 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} <h2 class="svelte-n59hwk" data-svelte-h="svelte-1vwnz26">Home town page</h2> <h3 class="svelte-n59hwk" data-svelte-h="svelte-1ee0su2">Contents</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  )} <h2 class="svelte-n59hwk" data-svelte-h="svelte-1tznbxr">Home town</h2> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `${validate_component(NavList, "NavList").$$render(
-            $$result,
-            {
-              name: $navList[0].name,
-              url: $navList[0].url,
-              topics: $navList[0].topics,
-              expanded: true
-            },
-            {},
-            {}
-          )}`;
+          return `<div class="question svelte-n59hwk" data-svelte-h="svelte-75anne"><strong class="svelte-n59hwk">Task</strong>: Create an outline of your home town website.</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<p class="svelte-n59hwk" data-svelte-h="svelte-1drv31l">Steps:</p> <ol data-svelte-h="svelte-hrmas7"><li class="svelte-n59hwk">Create an outline on paper.</li> <li class="svelte-n59hwk">Divide the page into sections</li> <li class="svelte-n59hwk">Format each section</li></ol>`;
         }
       })}`;
     }

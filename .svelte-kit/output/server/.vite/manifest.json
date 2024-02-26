@@ -2657,8 +2657,9 @@
   },
   "src/routes/(general)/courses/internetlab/town/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.hj3E2EKt.css",
-      "_app/immutable/assets/Link.mTa6ZPjX.css"
+      "_app/immutable/assets/_page.78ZpxXH4.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css",
+      "_app/immutable/assets/NavList.buyRB24_.css"
     ],
     "file": "entries/pages/(general)/courses/internetlab/town/_page.svelte.js",
     "imports": [
@@ -2667,7 +2668,8 @@
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_NavList.js",
+      "_Subheader.js",
+      "_client.js",
       "_stores2.js",
       "_content.js",
       "_Pathlist.js",
@@ -3129,7 +3131,7 @@
   },
   "src/routes/(general)/courses/mathematics2/statistics/measures/median/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.EU7GI60Q.css"
+      "_app/immutable/assets/_page.NC8rkBz1.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/statistics/measures/median/_page.svelte.js",
     "imports": [

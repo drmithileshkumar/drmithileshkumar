@@ -62,7 +62,9 @@
             <p>The mode of a data set is the value(s) that occur most frequently. The mode is defined mathematically as the value {`\\( x_{i} \\)`} for which the frequency {`\\( f_{i} \\)`} is maximum. In other words, if a data set consists of values {`\\( x_{1}, x_{2}, ..., x_{n} \\)`} with corresponding frequencies {`\\( f_{1}, f_{2}, ..., f_{n} \\)`}, then the mode {`\\( M \\)`} is given by:</p>
             <p>{`\\[ M = x_{i} \\quad \\text{where} \\quad f_{i} = \\max(f_{1}, f_{2}, ..., f_{n}) \\]`}</p>
             <p>If two or more values tie for the highest frequency, the data set is multimodal, and each of these values is a mode. If no value repeats, the data set is said to have no mode.</p>
-        
+            <div class="examples">
+                The mode of 1, 2, 2, 5, 5, 5, 4, 4 is 5.
+            </div>
         </Content>
     </Card>
     <h5>Questions</h5>
