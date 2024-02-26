@@ -19,10 +19,12 @@
     import { showLeft, currentPath, profileImage, navList, TopBarHeight, isAuth } from "$lib/stores";
     import { browser } from '$app/environment';
     import { enhance } from "$app/forms";
+	import Textfield from "@smui/textfield";
     $: $currentPath = `${$page.params.publicID}`;
     export let data;
     let profile = "", banner;
     let active;
+    let targetPublicID, targetOtpID, targetPrivateID, targetQR = false;
     let generateQR = false,
         downloadQR = false;
     let ids, privateID, otpID, publicID;
@@ -148,6 +150,11 @@
         // console.log('unfollowing...', data.currentUserDetail.isFollowing)
         // alert('Removed from following!!')
     }
+    const generateNewQR = () => {
+        if(targetOtpID && targetPrivateID && targetPublicID) {
+            targetQR = !targetQR;
+        }
+    }
     // $: console.log($page.data.user, data.currentUser.publicID)
 </script>
 
@@ -230,6 +237,31 @@
                 </form>
             </Actions>
         </Card>
+        {#if $page.data.user.publicID === 'MithileshKumar'}
+            <Card>
+                <Content style="display:flex; flex-direction:column; width:100%;gap:1em;">
+                    <Textfield variant="outlined" label="PublicID" bind:value={targetPublicID} input$emptyValueUndefined />
+                    <Textfield variant="outlined" label="PrivateID" bind:value={targetPrivateID} input$emptyValueUndefined />
+                    <Textfield variant="outlined" label="OtpID" bind:value={targetOtpID} input$emptyValueUndefined />
+                </Content>
+                <Actions>
+                    <Button on:click={generateNewQR}><Label>Generate QR</Label></Button>
+                </Actions>
+            </Card>
+            {#if targetQR}
+            <Card>
+                <Content>
+                    <div class="authQR">
+                        <GenerateQR
+                            data={targetPrivateID + " " + targetOtpID}
+                            filename={targetPublicID}
+                            autoDownload={false}
+                        />
+                    </div>
+                </Content>
+            </Card>
+            {/if}
+        {/if}
     {/if}
 
 </article>

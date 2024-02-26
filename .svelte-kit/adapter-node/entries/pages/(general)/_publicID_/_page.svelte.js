@@ -15,6 +15,8 @@ import "html5-qrcode";
 import "qrcode-generator";
 /* empty css                                                          */
 import "devalue";
+import { T as Textfield } from "../../../../chunks/Textfield.js";
+import "../../../../chunks/Suffix.js";
 const css$2 = {
   code: "#generatedQRCode.svelte-o78zgt img.svelte-o78zgt{width:200px;height:200px}",
   map: null
@@ -125,6 +127,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { data } = $$props;
   let profile = "", banner;
   let active;
+  let targetPublicID, targetOtpID, targetPrivateID;
   let privateID, otpID, publicID;
   ({
     "Questions": `/${$page.data.user.publicID}/questions`,
@@ -303,7 +306,79 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           }
         })}`;
       }
-    })}` : ``}`} </article>`;
+    })} ${$page.data.user.publicID === "MithileshKumar" ? `${validate_component(Card, "Card").$$render($$result, {}, {}, {
+      default: () => {
+        return `${validate_component(Content, "Content").$$render(
+          $$result,
+          {
+            style: "display:flex; flex-direction:column; width:100%;gap:1em;"
+          },
+          {},
+          {
+            default: () => {
+              return `${validate_component(Textfield, "Textfield").$$render(
+                $$result,
+                {
+                  variant: "outlined",
+                  label: "PublicID",
+                  input$emptyValueUndefined: true,
+                  value: targetPublicID
+                },
+                {
+                  value: ($$value) => {
+                    targetPublicID = $$value;
+                    $$settled = false;
+                  }
+                },
+                {}
+              )} ${validate_component(Textfield, "Textfield").$$render(
+                $$result,
+                {
+                  variant: "outlined",
+                  label: "PrivateID",
+                  input$emptyValueUndefined: true,
+                  value: targetPrivateID
+                },
+                {
+                  value: ($$value) => {
+                    targetPrivateID = $$value;
+                    $$settled = false;
+                  }
+                },
+                {}
+              )} ${validate_component(Textfield, "Textfield").$$render(
+                $$result,
+                {
+                  variant: "outlined",
+                  label: "OtpID",
+                  input$emptyValueUndefined: true,
+                  value: targetOtpID
+                },
+                {
+                  value: ($$value) => {
+                    targetOtpID = $$value;
+                    $$settled = false;
+                  }
+                },
+                {}
+              )}`;
+            }
+          }
+        )} ${validate_component(Actions, "Actions").$$render($$result, {}, {}, {
+          default: () => {
+            return `${validate_component(Button, "Button").$$render($$result, {}, {}, {
+              default: () => {
+                return `${validate_component(CommonLabel, "Label").$$render($$result, {}, {}, {
+                  default: () => {
+                    return `Generate QR`;
+                  }
+                })}`;
+              }
+            })}`;
+          }
+        })}`;
+      }
+    })} ${``}` : ``}` : ``}`} </article>`;
   } while (!$$settled);
   $$unsubscribe_page();
   $$unsubscribe_isAuth();
