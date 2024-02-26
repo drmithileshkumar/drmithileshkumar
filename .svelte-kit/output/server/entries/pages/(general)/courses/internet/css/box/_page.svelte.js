@@ -46,6 +46,86 @@ padding: 10px 20px 30px 40px; /* top right bottom left */`;
 p {
     border: 2px solid green;
 }`;
+  let htmlContentMargin = `<section>
+    <div class='borderBlue row1'>
+        <p class="border marginRight">Check right margin</p>
+        <p class="border marginLeft">Check left margin</p>
+    </div>
+    <div class='borderBlue row2'>
+        <p class="border marginTop">Check top margin</p>
+        <p class="border marginBottom">Check bottom margin</p>
+    </div>
+    <div class="borderBlue row3">
+        <p class="border margin">
+            Margin shorthand
+        </p>
+    </div>
+</section>
+    `;
+  let cssContentMargin = `.border {
+    border: 1px solid red;
+}
+.borderBlue {
+    border: 1px solid blue;
+}
+.row1, .row2, .row3 {
+    margin-bottom: 20px;
+}
+.marginRight {
+    margin-right: 10px;
+}
+.marginLeft {
+    margin-left: 20px;
+}
+.marginTop {
+    margin-top: 30px;
+}
+.marginBottom {
+    margin-Bottom: 40px;
+}
+.margin {
+    margin: 10px 20px;
+}`;
+  let htmlContentPadding = `<section>
+    <div class='borderBlue row1'>
+        <p class="border paddingRight">Check right padding</p>
+        <p class="border paddingLeft">Check left padding</p>
+    </div>
+    <div class='borderBlue row2'>
+        <p class="border paddingTop">Check top padding</p>
+        <p class="border paddingBottom">Check bottom padding</p>
+    </div>
+    <div class="borderBlue row3">
+        <p class="border padding">
+            Margin shorthand
+        </p>
+    </div>
+</section>
+    `;
+  let cssContentPadding = `.border {
+    border: 1px solid red;
+}
+.borderBlue {
+    border: 1px solid blue;
+}
+.row1, .row2, .row3 {
+    padding-bottom: 20px;
+}
+.paddingRight {
+    padding-right: 10px;
+}
+.paddingLeft {
+    padding-left: 20px;
+}
+.paddingTop {
+    padding-top: 30px;
+}
+.paddingBottom {
+    padding-Bottom: 40px;
+}
+.padding {
+    padding: 10px 20px;
+}`;
   $$result.css.add(css$1);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
@@ -164,7 +244,16 @@ p {
         }
       })}`;
     }
-  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })} ${validate_component(WebPractice, "WebPractice").$$render(
+    $$result,
+    {
+      htmlContent: htmlContentMargin,
+      cssContent: cssContentMargin,
+      jsContent: ""
+    },
+    {},
+    {}
+  )} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
@@ -229,7 +318,16 @@ p {
         }
       })}`;
     }
-  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })} ${validate_component(WebPractice, "WebPractice").$$render(
+    $$result,
+    {
+      htmlContent: htmlContentPadding,
+      cssContent: cssContentPadding,
+      jsContent: ""
+    },
+    {},
+    {}
+  )} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
