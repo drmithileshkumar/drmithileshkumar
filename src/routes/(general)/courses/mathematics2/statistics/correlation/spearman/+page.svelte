@@ -8,9 +8,21 @@
     import { contents, contentNav } from "$lib/pages/courses/mathematics2/content";
     import Pathlist from "$lib/components/Pathlist.svelte";
 	import CourseNavigation from "$lib/components/CourseNavigation.svelte";
+    import { randSubset } from '$lib/utils/common/common';
+    import { onMount } from 'svelte';
     $navList = contents;
     $currentPath = "Spearman's rank correlation coefficient";
     $darkMode = false;
+    let numbersX = [];
+    let numbersY = [];
+    let n = 15;
+    let k= 7;
+    onMount(() => {
+        numbersX = [];
+        numbersY = [];
+        numbersX = randSubset(n, k);
+        numbersY = randSubset(n, k);
+    })
 </script>
 <style>
     article {
@@ -132,10 +144,29 @@
                 <p>
                     When the data points \(x_i\) and \(y_i\) are monotonic (even if non-linear), the ranks \(x_i\) and \(y_i\) will be equal and hence \(d_i = 0\). This implies \(r_s = 1\).
                 </p>
-                <p class="question">
-                    Show that \(r_s = -1\) when \(x_i\) and \(y_i\) are anti-monotonic, i.e. if ranks of \(x_i\) are \(1, 2, \dots, n\), then the ranks of \(y_i\) are \(n, n-1, \dots, 1\).
-                </p>
+                
            
+        </Content>
+    </Card>
+    <h5>Questions</h5>
+    <Card>
+        <Content>
+            
+            <div class="question">
+                {#key numbersX}
+                <p>
+                    Calculate \(r_s\) for X = {numbersX} and Y = {numbersY}.
+                </p>
+                {/key}
+            </div>
+            
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <p class="question">
+                Show that \(r_s = -1\) when \(x_i\) and \(y_i\) are anti-monotonic, i.e. if ranks of \(x_i\) are \(1, 2, \dots, n\), then the ranks of \(y_i\) are \(n, n-1, \dots, 1\).
+            </p>
         </Content>
     </Card>
 </article>

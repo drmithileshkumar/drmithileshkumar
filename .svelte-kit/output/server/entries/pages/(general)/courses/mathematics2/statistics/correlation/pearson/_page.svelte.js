@@ -8,7 +8,7 @@ import { c as contentNav, a as contents } from "../../../../../../../../chunks/c
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 const css = {
-  code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}h6.svelte-98uzi2{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}",
+  code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}h6.svelte-98uzi2{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}.question.svelte-98uzi2{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -23,6 +23,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   set_store_value(navList, $navList = contents, $navList);
   set_store_value(currentPath, $currentPath = "Karl Pearson's coefficient of correlation (r)", $currentPath);
   set_store_value(darkMode, $darkMode = false, $darkMode);
+  let numbersX = [];
+  let numbersY = [];
   $$result.css.add(css);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
@@ -57,7 +59,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
           return `<h6 class="svelte-98uzi2" data-svelte-h="svelte-1g8p96z">Cauchy-Schwarz inequality</h6> <div class="theorem">Given two sets of \\(n\\) real numbers \\(a_1, a_2, \\dots, a_n\\) and \\(b_1, b_2, \\dots, b_n\\), the following inequality holds: 
-                ${escape(`\\[\\left (\\sum a_ib_i\\right )^2 \\leq \\sum a_i^2 \\sum b_i^2\\]`)}</div> <div class="proof"><p class="svelte-98uzi2">Let use define ${escape(`
+                ${escape(`\\[\\left (\\sum a_ib_i\\right )^2 \\leq \\sum a_i^2 \\sum b_i^2\\]`)}</div> <div class="proof"><p class="svelte-98uzi2">Let us define ${escape(`
                     \\[
                     \\begin{aligned}
                     A &= \\sum a_i^2\\\\
@@ -73,6 +75,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         \\end{aligned}
                         \\]`)}
                     Equality to 0 happens for \\(a_ix = -b_i\\)</p> <p class="svelte-98uzi2" data-svelte-h="svelte-1g05cdi">Cauchy-Schwarz inequality proves that \\(r\\) will lie between -1 and 1. Notice that \\(a_ix = -b_i\\) implies linear relationship between \\(a_i\\) and \\(b_i\\). For this case, \\(r\\) is equal to -1 or 1. That is why, Pearson&#39;s coefficient of correlation is said to show linear correlation between data points.</p></div>`;
+        }
+      })}`;
+    }
+  })} <h5 class="svelte-98uzi2" data-svelte-h="svelte-1984kyx">Questions</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2"><p class="svelte-98uzi2">Calculate \\(r\\) for X = ${escape(numbersX)} and Y = ${escape(numbersY)}.</p></div>`;
         }
       })}`;
     }

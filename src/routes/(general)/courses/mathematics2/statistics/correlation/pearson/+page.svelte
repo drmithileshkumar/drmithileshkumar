@@ -8,9 +8,21 @@
     import { contents, contentNav } from "$lib/pages/courses/mathematics2/content";
     import Pathlist from "$lib/components/Pathlist.svelte";
 	import CourseNavigation from "$lib/components/CourseNavigation.svelte";
+    import { randSubset } from '$lib/utils/common/common';
+    import { onMount } from 'svelte';
     $navList = contents;
     $currentPath = "Karl Pearson's coefficient of correlation (r)";
     $darkMode = false;
+    let numbersX = [];
+    let numbersY = [];
+    let n = 15;
+    let k= 7;
+    onMount(() => {
+        numbersX = [];
+        numbersY = [];
+        numbersX = randSubset(n, k);
+        numbersY = randSubset(n, k);
+    })
 </script>
 <style>
     article {
@@ -90,7 +102,7 @@
             </div>
             <div class="proof" use:typeset>
                 <p>
-                    Let use define {`
+                    Let us define {`
                     \\[
                     \\begin{aligned}
                     A &= \\sum a_i^2\\\\
@@ -117,6 +129,20 @@
                     Cauchy-Schwarz inequality proves that \(r\) will lie between -1 and 1. Notice that \(a_ix = -b_i\) implies linear relationship between \(a_i\) and \(b_i\). For this case, \(r\) is equal to -1 or 1. That is why, Pearson's coefficient of correlation is said to show linear correlation between data points.
                 </p>
             </div>
+        </Content>
+    </Card>
+    <h5>Questions</h5>
+    <Card>
+        <Content>
+            
+            <div class="question">
+                {#key numbersX}
+                <p>
+                    Calculate \(r\) for X = {numbersX} and Y = {numbersY}.
+                </p>
+                {/key}
+            </div>
+            
         </Content>
     </Card>
 </article>

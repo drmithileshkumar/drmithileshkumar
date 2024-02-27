@@ -23,6 +23,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   set_store_value(navList, $navList = contents, $navList);
   set_store_value(currentPath, $currentPath = "Spearman's rank correlation coefficient", $currentPath);
   set_store_value(darkMode, $darkMode = false, $darkMode);
+  let numbersX = [];
+  let numbersY = [];
   $$result.css.add(css);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
@@ -92,7 +94,23 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                               r_s   &= 1 - \\frac{12\\sum d_i^2}{2n(n^2 - 1)}\\\\
                                     &= 1 - \\frac{6\\sum d_i^2}{n(n^2 - 1)}
                         \\end{aligned}
-                        \\]`)}</p> <p class="svelte-98uzi2" data-svelte-h="svelte-ermykk">When the data points \\(x_i\\) and \\(y_i\\) are monotonic (even if non-linear), the ranks \\(x_i\\) and \\(y_i\\) will be equal and hence \\(d_i = 0\\). This implies \\(r_s = 1\\).</p> <p class="question svelte-98uzi2" data-svelte-h="svelte-bdryu8">Show that \\(r_s = -1\\) when \\(x_i\\) and \\(y_i\\) are anti-monotonic, i.e. if ranks of \\(x_i\\) are \\(1, 2, \\dots, n\\), then the ranks of \\(y_i\\) are \\(n, n-1, \\dots, 1\\).</p>`;
+                        \\]`)}</p> <p class="svelte-98uzi2" data-svelte-h="svelte-ermykk">When the data points \\(x_i\\) and \\(y_i\\) are monotonic (even if non-linear), the ranks \\(x_i\\) and \\(y_i\\) will be equal and hence \\(d_i = 0\\). This implies \\(r_s = 1\\).</p>`;
+        }
+      })}`;
+    }
+  })} <h5 class="svelte-98uzi2" data-svelte-h="svelte-1984kyx">Questions</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2"><p class="svelte-98uzi2">Calculate \\(r_s\\) for X = ${escape(numbersX)} and Y = ${escape(numbersY)}.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<p class="question svelte-98uzi2" data-svelte-h="svelte-1r7frj4">Show that \\(r_s = -1\\) when \\(x_i\\) and \\(y_i\\) are anti-monotonic, i.e. if ranks of \\(x_i\\) are \\(1, 2, \\dots, n\\), then the ranks of \\(y_i\\) are \\(n, n-1, \\dots, 1\\).</p>`;
         }
       })}`;
     }

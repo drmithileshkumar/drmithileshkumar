@@ -73,4 +73,30 @@
                 <p>It's important to note that correlation, regardless of its type, does not imply causation. Statistical analysis is required to determine if a causal relationship exists between the variables.</p>
         </Content>
     </Card>
+    <h5>Questions</h5>
+    <Card>
+        <Content>
+            <div class="question">Give an example of two variables with positive correlation.</div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">Give an example of two variables with negative correlation.</div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">Give an example of two variables with no correlation.</div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">Give an example of two variables with linear correlation.</div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">Give an example of two variables with non-linear correlation.</div>
+        </Content>
+    </Card>
 </article>
