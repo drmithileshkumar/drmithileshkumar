@@ -68,7 +68,23 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-kw4cdz">What will be the standard deviation if every data point is multiplied by \\(a\\) and increased by \\(b\\) i.e. \\(x_i \\to ax_i + b\\)?</div>`;
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-kw4cdz">What will be the standard deviation if every data point is multiplied by \\(a\\) and increased by \\(b\\) i.e. \\(x_i \\to ax_i + b\\)?</div> <div class="solution"><p class="svelte-98uzi2">The new mean is 
+                    ${escape(`\\[
+                        \\begin{aligned}
+                        \\bar{x}_{new} &= \\frac{(ax_1 + b) + \\cdots + (ax_n + b)}{n}\\\\
+                                       &= a\\frac{x_1 + \\cdots + x_n}{n} + \\frac{b + \\cdots b}{n}\\\\
+                                       &= a\\bar{x}_{old} + b
+                        \\end{aligned}
+                        \\]`)}</p> <p class="svelte-98uzi2">The new standard deviation is
+                    ${escape(`\\[
+                        \\begin{aligned}
+                        \\sigma_{new} &= \\sqrt{\\frac{1}{n}\\sum_{i = 1}^n (ax_i + b - \\bar{x}_{new})}\\\\
+                                      &= \\sqrt{\\frac{1}{n}\\sum_{i = 1}^n (ax_i + b - (a\\bar{x}_{old} + b)}\\\\
+                                      &= \\sqrt{\\frac{1}{n}a\\sum_{i = 1}^n(x_i - \\bar{x}_{old})}\\\\
+                                      &= \\sqrt{a}\\sqrt{\\frac{1}{n}\\sum_{i = 1}^n(x_i - \\bar{x}_{old})}\\\\
+                                      &= \\sqrt{a}\\sigma_{old}
+                        \\end{aligned}
+                        \\]`)}</p></div>`;
         }
       })}`;
     }
@@ -76,7 +92,24 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-exlw66">Calculate the standard deviation of \\(n\\) consecutive numbers start with \\(a\\).</div>`;
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-exlw66">Calculate the standard deviation of \\(n\\) consecutive numbers start with \\(a\\).</div> <div class="solution"><p class="svelte-98uzi2">The numbers are \\(a, a + 1, \\dots, a + (n - 1)\\). We have calculated its mean as ${escape(`\\[
+                    \\bar{x} = \\frac{2a + n - 1}{2} = a + \\frac{n- 1}{2}
+                    \\]`)}</p> <p class="svelte-98uzi2">The differences will be ${escape(`\\[\\begin{aligned}
+                    x_i - \\bar{x} &= a + i- 1 - a - \\frac{n- 1}{2}\\\\
+                                   &= i - \\frac{n + 1}{2}
+                    \\end{aligned}\\]`)}</p> <p class="svelte-98uzi2">Considering their square gives
+                    ${escape(`\\[\\begin{aligned}
+                    (x_i - \\bar{x})^2 &= [i - \\frac{n + 1}{2}]^2\\\\
+                                       &= i^2 - (n + 1)i + \\frac{(n + 1)^2}{4}
+                    \\end{aligned}\\]`)}</p> <p class="svelte-98uzi2">Now we calculate their sum as 
+                    ${escape(`\\[\\begin{aligned}
+                    \\sum_{i = 1}^{n-1}(x_i - \\bar{x})^2 &= \\sum i^2 - (n - 1)\\sum i\\\\ &+ \\sum \\frac{(n + 1)^2}{4} \\\\
+                        &= \\frac{n(n - 1)(2n + 1)}{6} - \\frac{n(n - 1)^2}{2}\\\\ &+ \\frac{(n - 1)(n + 1)^2}{4}\\\\
+                        &= (n- 1)\\frac{4n^2 + 2n -6n^2 + 6n + 3n^2 + 6n + 3}{12}\\\\
+                        &=\\frac{(n - 1)(n^2 + 14n + 3)}{12}
+                    \\end{aligned}\\]`)}</p> <p class="svelte-98uzi2">Now we can plug this value into the definition of standard deviation.
+                    ${escape(`\\[\\sigma = \\sqrt{\\frac{(n - 1)(n^2 + 14n + 3)}{12n}}\\]`)}
+                    Notice that the standard deviation does not depend on \\(a\\).</p></div>`;
         }
       })}`;
     }
@@ -84,7 +117,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-byymey">Create any set of random data. Increase the largest data point by 10%, 20%, ..., 100%. Make a table that shows the change in standard deviation.</div>`;
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-byymey">Create any set of random data. Increase the largest data point by 10%, 20%, ..., 100%. Make a table that shows the change in standard deviation.</div> <div class="solution"><p class="svelte-98uzi2">Let us assume that \\(x_n\\) is the largest data point and it is changed to \\(\\lambda x_n\\). The new mean will be ${escape(`\\[\\begin{aligned}
+                    \\bar{x}_{new} &= \\frac{x_1 + x_2 + \\cdots + \\lambda x_n}{n}\\\\
+                                   &= \\frac{x_1 + x_2 + \\cdots + x_n}{n} + \\frac{(\\lambda - 1)x_n}{n}\\\\
+                                   &= \\bar{x}_{old} + \\frac{(\\lambda - 1)x_n}{n}
+                    \\end{aligned}\\]`)} ${escape(`\\[\\begin{aligned}
+                    \\sigma_{new} &= \\sqrt{\\frac{1}{n}\\sum_{i = 1}^{n-1}(x_i - \\bar{x}_{new})^2 + \\frac{(\\lambda x_n - \\bar{x}_{new})^2}{n}}
+                    \\end{aligned}\\]`)}</p></div>`;
         }
       })}`;
     }

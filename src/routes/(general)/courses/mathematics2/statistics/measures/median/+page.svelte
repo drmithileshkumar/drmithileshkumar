@@ -75,14 +75,24 @@
     <Card>
         <Content>
             <div class="question">
-                If every data point is multiplied by a number \(k\), then what is the median of the new data (assuming \(m\) to be median of the origin data)?
+                If every data point is multiplied by a number \(k\), then what is the median of the new data (assuming \(m\) to be median of the original data)?
+            </div>
+            <div class="solution">
+                <p>
+                    Multiplication, a positive number does not change the order of sorted data. A negative number reverses the order. In any case, the new median gets multiplied by \(k\).
+                </p>
             </div>
         </Content>
     </Card>
     <Card>
         <Content>
             <div class="question">
-                Let \(x_1, x_2,\dots, x_n\) are numbers in ascending order. Two numbers \(a, A\) are added to this set such that \(a \lt x_1\) and \(A \gt x_n\). What will be the new median?
+                Let \(x_1, x_2,\dots, x_n\) be numbers in ascending order. Two numbers \(a, A\) are added to this set such that \(a \lt x_1\) and \(A \gt x_n\). What will be the new median?
+            </div>
+            <div class="solution">
+                <p>
+                    The new data set is \(a, x_1, x_2, \dots, x_n, A\). In this case, the middle values do not change. Hence, the median remains the same.
+                </p>
             </div>
         </Content>
     </Card>
@@ -90,6 +100,18 @@
         <Content>
             <div class="question">
                 Give an example of data set where \(mean \lt median \lt mode\).
+            </div>
+            <div class="solution">
+                <p>
+                    Consider 1, 2, 3, 90, 101, 101, 101. {`\\[
+                        \\begin{aligned}
+                        \\text{Mean} &= \\frac{399}{7} = 57\\\\
+                        \\text{Median} &= 90\\\\
+                        \\text{Mode} &= 101
+                        \\end{aligned}
+                        \\]`}
+                    This data set satisfies that \(mean \lt median \lt mode\).
+                </p>
             </div>
         </Content>
     </Card>

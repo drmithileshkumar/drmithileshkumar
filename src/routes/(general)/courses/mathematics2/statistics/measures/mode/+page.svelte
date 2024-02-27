@@ -8,6 +8,7 @@
     import { contents, contentNav } from "$lib/pages/courses/mathematics2/content";
     import Pathlist from "$lib/components/Pathlist.svelte";
 	import CourseNavigation from "$lib/components/CourseNavigation.svelte";
+	import DataTable, {Head, Body, Row, Cell} from '@smui/data-table';
     $navList = contents;
     $currentPath = "Mode";
     $darkMode = false;
@@ -73,12 +74,53 @@
             <div class="question">
                 What is mode of letters in STATISTICS?
             </div>
+            <div class="solution">
+                <p>
+                    The table of frequencies is 
+                </p>
+                <DataTable>
+                    <Head>
+                        <Row>
+                            <Cell>Letter</Cell>
+                            <Cell>Frequency</Cell>
+                        </Row>
+                    </Head>
+                    <Body>
+                        <Row>
+                            <Cell>S</Cell>
+                            <Cell>3</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>T</Cell>
+                            <Cell>3</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>A</Cell>
+                            <Cell>1</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>I</Cell>
+                            <Cell>2</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>C</Cell>
+                            <Cell>1</Cell>
+                        </Row>
+                    </Body>
+                </DataTable>
+                <p>There are two letters with highest frequency S and T. Hence, the dataset (set of letters) is multimodal.</p>
+            </div>
         </Content>
     </Card>
     <Card>
         <Content>
             <div class="question">
                 If every data point is multiplied by a number \(k\), then what is the mode of the new data (assuming \(m\) to be mode of the origin data)?
+            </div>
+            <div class="solution">
+                <p>
+                    The multiplication does not change the frequencies. If \(m\) is the mode, then the new mode will be \(km\).
+                </p>
             </div>
         </Content>
     </Card>
@@ -87,12 +129,28 @@
             <div class="question">
                 The largest data point in the given data is doubled. How can this effect the mode?
             </div>
+            <div class="solution">
+                <p>
+                    Mode does not depend on the quantitative value of data points, it only depends on their frequencies. The mode will not be affected as the new number will be larger than any other number in the data set, i.e. it will not change the frequency table. So mode remains unchanged if the largest data point is not the most frequent one.
+                </p>
+            </div>
         </Content>
     </Card>
     <Card>
         <Content>
             <div class="question">
                 Can you compare mean and mode of any given data, i.e. conclude whether \(mean \leq mode\)?
+            </div>
+            <div class="solution">
+                <p>
+                    Mean depends on the value and mode depends on the frequency. Consider the following data 2, 2, 2, 2, 100, 100, 100. Here the mean is {`\\(\\frac{308}{7} = 44\\)`} but mode is 2 as it is the most frequent data point. In this case, \(mean\gt mode\)
+                </p>
+                <p>
+                    In another example, consider data 100, 100, 100, 100. In this case, mean and mode are equal, i.e. \(mean = mode\)
+                </p>
+                <p>
+                    Consider 104, 104, 104, 100. Here, the mean is {`\\(\\frac{412}{4} = 103\\)`} but the mode is 104. In this case, \(mean \lt mode\)
+                </p>
             </div>
         </Content>
     </Card>

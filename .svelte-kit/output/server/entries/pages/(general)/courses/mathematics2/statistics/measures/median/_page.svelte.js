@@ -56,7 +56,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-11l72lu">If every data point is multiplied by a number \\(k\\), then what is the median of the new data (assuming \\(m\\) to be median of the origin data)?</div>`;
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-4jb9af">If every data point is multiplied by a number \\(k\\), then what is the median of the new data (assuming \\(m\\) to be median of the original data)?</div> <div class="solution" data-svelte-h="svelte-1n0ln9j"><p class="svelte-98uzi2">Multiplication, a positive number does not change the order of sorted data. A negative number reverses the order. In any case, the new median gets multiplied by \\(k\\).</p></div>`;
         }
       })}`;
     }
@@ -64,7 +64,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-1yp6ifo">Let \\(x_1, x_2,\\dots, x_n\\) are numbers in ascending order. Two numbers \\(a, A\\) are added to this set such that \\(a \\lt x_1\\) and \\(A \\gt x_n\\). What will be the new median?</div>`;
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-14m1kz5">Let \\(x_1, x_2,\\dots, x_n\\) be numbers in ascending order. Two numbers \\(a, A\\) are added to this set such that \\(a \\lt x_1\\) and \\(A \\gt x_n\\). What will be the new median?</div> <div class="solution" data-svelte-h="svelte-h6wfn8"><p class="svelte-98uzi2">The new data set is \\(a, x_1, x_2, \\dots, x_n, A\\). In this case, the middle values do not change. Hence, the median remains the same.</p></div>`;
         }
       })}`;
     }
@@ -72,7 +72,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-1r9bma0">Give an example of data set where \\(mean \\lt median \\lt mode\\).</div>`;
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-1r9bma0">Give an example of data set where \\(mean \\lt median \\lt mode\\).</div> <div class="solution"><p class="svelte-98uzi2">Consider 1, 2, 3, 90, 101, 101, 101. ${escape(`\\[
+                        \\begin{aligned}
+                        \\text{Mean} &= \\frac{399}{7} = 57\\\\
+                        \\text{Median} &= 90\\\\
+                        \\text{Mode} &= 101
+                        \\end{aligned}
+                        \\]`)}
+                    This data set satisfies that \\(mean \\lt median \\lt mode\\).</p></div>`;
         }
       })}`;
     }

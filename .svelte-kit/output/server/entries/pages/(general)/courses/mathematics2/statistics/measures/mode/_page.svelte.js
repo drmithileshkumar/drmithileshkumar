@@ -7,6 +7,7 @@ import { d as darkMode, c as currentPath, n as navList } from "../../../../../..
 import { c as contentNav, a as contents } from "../../../../../../../../chunks/content3.js";
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
+import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../../../../chunks/Cell.js";
 const css = {
   code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}.question.svelte-98uzi2{cursor:pointer;padding:0.3em}",
   map: null
@@ -56,7 +57,91 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-10jm1t">What is mode of letters in STATISTICS?</div>`;
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-10jm1t">What is mode of letters in STATISTICS?</div> <div class="solution"><p class="svelte-98uzi2" data-svelte-h="svelte-ndboji">The table of frequencies is</p> ${validate_component(DataTable, "DataTable").$$render($$result, {}, {}, {
+            default: () => {
+              return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Letter`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Frequency`;
+                        }
+                      })}`;
+                    }
+                  })}`;
+                }
+              })} ${validate_component(Body, "Body").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `S`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `3`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `T`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `3`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `A`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `1`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `I`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `2`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `C`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `1`;
+                        }
+                      })}`;
+                    }
+                  })}`;
+                }
+              })}`;
+            }
+          })} <p class="svelte-98uzi2" data-svelte-h="svelte-1rrbr9y">There are two letters with highest frequency S and T. Hence, the dataset (set of letters) is multimodal.</p></div>`;
         }
       })}`;
     }
@@ -64,7 +149,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-i13j70">If every data point is multiplied by a number \\(k\\), then what is the mode of the new data (assuming \\(m\\) to be mode of the origin data)?</div>`;
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-i13j70">If every data point is multiplied by a number \\(k\\), then what is the mode of the new data (assuming \\(m\\) to be mode of the origin data)?</div> <div class="solution" data-svelte-h="svelte-1xcjdrz"><p class="svelte-98uzi2">The multiplication does not change the frequencies. If \\(m\\) is the mode, then the new mode will be \\(km\\).</p></div>`;
         }
       })}`;
     }
@@ -72,7 +157,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-1rjpfxs">The largest data point in the given data is doubled. How can this effect the mode?</div>`;
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-1rjpfxs">The largest data point in the given data is doubled. How can this effect the mode?</div> <div class="solution" data-svelte-h="svelte-o64vja"><p class="svelte-98uzi2">Mode does not depend on the quantitative value of data points, it only depends on their frequencies. The mode will not be affected as the new number will be larger than any other number in the data set, i.e. it will not change the frequency table. So mode remains unchanged if the largest data point is not the most frequent one.</p></div>`;
         }
       })}`;
     }
@@ -80,7 +165,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-zzk0f4">Can you compare mean and mode of any given data, i.e. conclude whether \\(mean \\leq mode\\)?</div>`;
+          return `<div class="question svelte-98uzi2" data-svelte-h="svelte-zzk0f4">Can you compare mean and mode of any given data, i.e. conclude whether \\(mean \\leq mode\\)?</div> <div class="solution"><p class="svelte-98uzi2">Mean depends on the value and mode depends on the frequency. Consider the following data 2, 2, 2, 2, 100, 100, 100. Here the mean is ${escape(`\\(\\frac{308}{7} = 44\\)`)} but mode is 2 as it is the most frequent data point. In this case, \\(mean\\gt mode\\)</p> <p class="svelte-98uzi2" data-svelte-h="svelte-1qno4z1">In another example, consider data 100, 100, 100, 100. In this case, mean and mode are equal, i.e. \\(mean = mode\\)</p> <p class="svelte-98uzi2">Consider 104, 104, 104, 100. Here, the mean is ${escape(`\\(\\frac{412}{4} = 103\\)`)} but the mode is 104. In this case, \\(mean \\lt mode\\)</p></div>`;
         }
       })}`;
     }
