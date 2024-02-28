@@ -1,11 +1,14 @@
-import { s as subscribe, b as set_store_value } from "../../../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component } from "../../../../../../../chunks/ssr.js";
+import { s as subscribe, b as set_store_value, d as null_to_empty } from "../../../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component, f as add_attribute, j as each, e as escape } from "../../../../../../../chunks/ssr.js";
 import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../../chunks/content4.js";
 import { W as WebPractice } from "../../../../../../../chunks/WebPractice.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../chunks/ActionIcons.js";
+import { A as Actions } from "../../../../../../../chunks/Actions.js";
 import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../../../chunks/Cell.js";
+import { C as CommonLabel } from "../../../../../../../chunks/CommonLabel.js";
+import { B as Button } from "../../../../../../../chunks/Button.js";
 import "../../../../../../../chunks/Subheader.js";
 import "../../../../../../../chunks/client.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../chunks/stores2.js";
@@ -13,7 +16,7 @@ import { d as darkMode, c as currentPath, n as navList } from "../../../../../..
 import { P as Pathlist } from "../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../chunks/CourseNavigation.js";
 const css$1 = {
-  code: "article.svelte-acl3tm{display:flex;flex-direction:column;gap:0.5em}p.svelte-acl3tm,li.svelte-acl3tm{opacity:0.8}h4.svelte-acl3tm,h5.svelte-acl3tm{margin:0.5em 0}h5.svelte-acl3tm{font-size:1.1em}h6.svelte-acl3tm{font-size:1em;margin:0.5em 0;color:rgb(74, 155, 139)}a.svelte-acl3tm{cursor:pointer;text-decoration:none}.question.svelte-acl3tm{cursor:pointer;padding:0.3em}",
+  code: "article.svelte-1fbx8xj{display:flex;flex-direction:column;gap:0.5em}p.svelte-1fbx8xj,li.svelte-1fbx8xj{opacity:0.8}h4.svelte-1fbx8xj,h5.svelte-1fbx8xj{margin:0.5em 0}h5.svelte-1fbx8xj{font-size:1.1em}h6.svelte-1fbx8xj{font-size:1em;margin:0.5em 0;color:rgb(74, 155, 139)}a.svelte-1fbx8xj{cursor:pointer;text-decoration:none}.question.svelte-1fbx8xj{cursor:pointer;padding:0.3em}.cell.svelte-1fbx8xj{display:flex;align-items:center;justify-content:center;border:1px solid teal;height:auto}.grid.svelte-1fbx8xj{display:grid;gap:0.1em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -28,6 +31,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   set_store_value(navList, $navList = contents, $navList);
   set_store_value(currentPath, $currentPath = "Layout", $currentPath);
   set_store_value(darkMode, $darkMode = false, $darkMode);
+  let nDivs = 0;
+  let gridLayout;
   let htmlContentFlex = `<section class="container">
     <div class="cell one centerFlex">One</div>
     <div class="cell one centerFlex">One</div>
@@ -109,7 +114,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentPath();
   $$unsubscribe_navList();
   $$unsubscribe_page();
-  return `${$$result.head += `<!-- HEAD_svelte-11nx1nb_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/css/layout"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-11nx1nb_END -->`, ""} <article class="svelte-acl3tm">${validate_component(Pathlist, "Pathlist").$$render(
+  return `${$$result.head += `<!-- HEAD_svelte-11nx1nb_START -->${$$result.title = `<title>Internet Technologies</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/courses/internet/css/layout"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar">${$darkMode ? `<!-- HTML_TAG_START -->${githubDark}<!-- HTML_TAG_END -->` : `<!-- HTML_TAG_START -->${github}<!-- HTML_TAG_END -->`}<!-- HEAD_svelte-11nx1nb_END -->`, ""} <article class="svelte-1fbx8xj">${validate_component(Pathlist, "Pathlist").$$render(
     $$result,
     {
       origin: $page.url.origin,
@@ -125,7 +130,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} <h4 class="svelte-acl3tm" data-svelte-h="svelte-i9jd9s">Layout</h4> ${validate_component(Card, "Card").$$render(
+  )} <h4 class="svelte-1fbx8xj" data-svelte-h="svelte-i9jd9s">Layout</h4> ${validate_component(Card, "Card").$$render(
     $$result,
     {
       style: "background-color: rgba(0, 100, 100, 0.1"
@@ -135,7 +140,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       default: () => {
         return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
           default: () => {
-            return `<h6 class="svelte-acl3tm" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-13694rd"><li class="svelte-acl3tm"><a href="#display" class="svelte-acl3tm">Display</a></li> <li class="svelte-acl3tm"><a href="#flex" class="svelte-acl3tm">Flex</a></li> <li class="svelte-acl3tm"><a href="#grid" class="svelte-acl3tm">Grid</a></li></ol>`;
+            return `<h6 class="svelte-1fbx8xj" data-svelte-h="svelte-zdr1se">Topics</h6> <ol data-svelte-h="svelte-13694rd"><li class="svelte-1fbx8xj"><a href="#display" class="svelte-1fbx8xj">Display</a></li> <li class="svelte-1fbx8xj"><a href="#flex" class="svelte-1fbx8xj">Flex</a></li> <li class="svelte-1fbx8xj"><a href="#grid" class="svelte-1fbx8xj">Grid</a></li></ol>`;
           }
         })}`;
       }
@@ -144,7 +149,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="display" class="svelte-acl3tm" data-svelte-h="svelte-rpfnp6">Display</h6> <p class="svelte-acl3tm" data-svelte-h="svelte-16mqb8m">The <code>display</code> property sets an element&#39;s inner and outer display properties.</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%" }, {}, {
+          return `<h6 id="display" class="svelte-1fbx8xj" data-svelte-h="svelte-rpfnp6">Display</h6> <p class="svelte-1fbx8xj" data-svelte-h="svelte-16mqb8m">The <code>display</code> property sets an element&#39;s inner and outer display properties.</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%" }, {}, {
             default: () => {
               return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
                 default: () => {
@@ -236,7 +241,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="flex" class="svelte-acl3tm" data-svelte-h="svelte-yt90fr">The flexbox model</h6> <p class="svelte-acl3tm" data-svelte-h="svelte-3gsw13">We can set <code>display: flex;</code> to use flexbox model for layouting items inside the element. The items are placed automatically in one dimension (row-wise or column-wise) and items <em>adjust</em> their size depending on the content.</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width: 100%" }, {}, {
+          return `<h6 id="flex" class="svelte-1fbx8xj" data-svelte-h="svelte-yt90fr">The flexbox model</h6> <p class="svelte-1fbx8xj" data-svelte-h="svelte-3gsw13">We can set <code>display: flex;</code> to use flexbox model for layouting items inside the element. The items are placed automatically in one dimension (row-wise or column-wise) and items <em>adjust</em> their size depending on the content.</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width: 100%" }, {}, {
             default: () => {
               return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
                 default: () => {
@@ -393,7 +398,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="grid" class="svelte-acl3tm" data-svelte-h="svelte-ub1k4a">The grid model</h6> <p class="svelte-acl3tm" data-svelte-h="svelte-173xwx2">We can set <code>display: grid;</code> to use grid model for layouting items inside the element. Unlike <code>flex</code> model, the items are placed in a two-dimensional grid system defined using <code>grid-template-columns</code>,<code>grid-template-rows</code> and <code>grid-template-areas</code>.</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width: 100%" }, {}, {
+          return `<h6 id="grid" class="svelte-1fbx8xj" data-svelte-h="svelte-ub1k4a">The grid model</h6> <p class="svelte-1fbx8xj" data-svelte-h="svelte-173xwx2">We can set <code>display: grid;</code> to use grid model for layouting items inside the element. Unlike <code>flex</code> model, the items are placed in a two-dimensional grid system defined using <code>grid-template-columns</code>,<code>grid-template-rows</code> and <code>grid-template-areas</code>.</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width: 100%" }, {}, {
             default: () => {
               return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
                 default: () => {
@@ -562,11 +567,33 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )}  <h5 class="svelte-acl3tm" data-svelte-h="svelte-1984kyx">Questions</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  )}  <h5 class="svelte-1fbx8xj" data-svelte-h="svelte-1984kyx">Questions</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-acl3tm" data-svelte-h="svelte-sguf9i">Use grid and flex layouts in your resume and college websites.</div>`;
+          return `<div class="question svelte-1fbx8xj"><p class="svelte-1fbx8xj" data-svelte-h="svelte-1m9fiqi">Use <code>grid-template-areas</code> to obtain the following layout:</p> <div class="grid svelte-1fbx8xj"${add_attribute("this", gridLayout, 0)}>${`${each(new Array(nDivs), (rect, i) => {
+            return `<div class="${escape(null_to_empty("cell item" + (i + 1)), true) + " svelte-1fbx8xj"}" style="${"grid-area: " + escape("item" + (i + 1), true)}">${escape(i + 1)}</div>`;
+          })}`}</div></div>`;
+        }
+      })} ${validate_component(Actions, "Actions").$$render($$result, {}, {}, {
+        default: () => {
+          return `${validate_component(Button, "Button").$$render($$result, {}, {}, {
+            default: () => {
+              return `${validate_component(CommonLabel, "Label").$$render($$result, {}, {}, {
+                default: () => {
+                  return `Generate new layout`;
+                }
+              })}`;
+            }
+          })}`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1fbx8xj" data-svelte-h="svelte-sguf9i">Use grid and flex layouts in your resume and college websites.</div>`;
         }
       })}`;
     }

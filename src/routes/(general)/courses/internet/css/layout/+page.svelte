@@ -6,13 +6,13 @@
     import css from "svelte-highlight/languages/css";
     import github from "svelte-highlight/styles/github";
     import githubDark from "svelte-highlight/styles/github-dark";
-    
+    import { tileGrid } from "$lib/utils/common/tile";
     import WebPractice from "$lib/pages/courses/internet/WebPractice.svelte";
     import {page} from '$app/stores';
     import {onMount} from 'svelte';
     import Card, { Content, Actions } from "@smui/card";
     import DataTable, {Body, Head, Row, Cell} from '@smui/data-table';
-    import Button from "@smui/button";
+    import Button, {Label} from "@smui/button";
     import Ripple from "@smui/ripple";
     import NavList from '$lib/components/NavList.svelte'
     import { currentPath } from "$lib/stores";
@@ -23,6 +23,35 @@
     $navList = contents;
     $currentPath = "Layout";
     $darkMode = false;
+    // tileGrid(5, 5)
+    let cssLayout = [];
+    let nDivs = 0;
+    let gridLayout;
+    let hasZero = false;
+    const generateLayout = () => {
+        let {grid, rectangleCount} = tileGrid(5, 5);
+        //check zero
+        hasZero = 0;
+        for(let i = 0; i < grid.length; i++) {
+            for(let j = 0; j < grid[i].length; j++) {
+                if(grid[i][j] === 0) {
+                    hasZero = true;
+                    break;
+                }
+            }
+        }
+        cssLayout = grid;
+        nDivs = rectangleCount;
+        console.log(rectangleCount, grid);
+        let areas = "";
+        let rows = []
+        for(let i = 0; i < grid.length; i++) {
+            rows.push((grid[i].map((c) => 'item' + c)).join(" "));
+        }
+        areas = rows.map(r => `"${r}"`).join(" ");
+        // grid.map(row => `"${row.join(" ")}"`).join("\n");
+        gridLayout.style.gridTemplateAreas = areas;
+    }   
     // onMount(() => {
     //     MathJax.typeset();
     // });
@@ -148,6 +177,17 @@ let htmlContentGrid = `<section class="containerG">
     .question {
         cursor: pointer;
         padding: 0.3em;
+    }
+    .cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid teal;
+        height: auto;
+    }
+    .grid {
+        display: grid;
+        gap: 0.1em;
     }
 </style>
 <svelte:head>
@@ -339,6 +379,28 @@ let htmlContentGrid = `<section class="containerG">
         </Content>
     </Card> -->
     <h5>Questions</h5>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Use <code>grid-template-areas</code> to obtain the following layout:</p>
+                <div class="grid" bind:this={gridLayout}>
+                    {#if hasZero}
+                        {#each (new Array(nDivs + 1)) as rect, i}
+                            <div class={"cell item" + (i)} style="grid-area: {'item' + (i)}">{i}</div>
+                        {/each}
+                    {:else}
+                        {#each (new Array(nDivs)) as rect, i}
+                            <div class={"cell item" + (i + 1)} style="grid-area: {'item' + (i + 1)}">{i + 1}</div>
+                        {/each}
+                    {/if}
+                    
+                </div>
+            </div>
+        </Content>
+        <Actions>
+            <Button on:click={generateLayout}><Label>Generate new layout</Label></Button>
+        </Actions>
+    </Card>
     <Card>
         <Content>
             <div class="question">Use grid and flex layouts in your resume and college websites.</div>
