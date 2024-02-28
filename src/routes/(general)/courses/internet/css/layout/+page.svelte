@@ -7,7 +7,7 @@
     import github from "svelte-highlight/styles/github";
     import githubDark from "svelte-highlight/styles/github-dark";
     
-    
+    import WebPractice from "$lib/pages/courses/internet/WebPractice.svelte";
     import {page} from '$app/stores';
     import {onMount} from 'svelte';
     import Card, { Content, Actions } from "@smui/card";
@@ -40,6 +40,82 @@
     /* ignore *{} BUG */
     </style>
 </head>`
+    let htmlContentFlex = `<section class="container">
+    <div class="cell one centerFlex">One</div>
+    <div class="cell one centerFlex">One</div>
+    <div class="cell two centerFlex">Two</div>
+    <div class="cell two centerFlex">Two</div>
+    <div class="cell three centerFlex">Three</div>
+    <div class="cell three centerFlex">Three</div>
+</section>`
+    let cssContentFlex = `.container {
+    height: 200px;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell {
+    border: 1px solid teal;
+}
+.one {
+    width: 10%;
+    height: 15%;
+}
+.two {
+    width: 20%;
+    height: 15%;
+}
+.three {
+    width: 30%;
+    height: 15%;
+}`
+let htmlContentGrid = `<section class="containerG">
+    <div class="cell oneG centerFlex">One</div>
+    
+    <div class="cell twoG centerFlex">Two</div>
+    
+    <div class="cell threeG centerFlex">Three</div>
+    
+</section>`
+    let cssContentGrid = `.containerG {
+    height: 200px;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 1em;
+    display: grid;
+    grid-template-areas: "one two two"
+    "one two two"
+    "one three three";
+    gap: 1em;
+}
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell {
+    border: 1px solid teal;
+}
+.oneG {
+    grid-area: one;
+}
+.twoG {
+    grid-area: two;
+}
+.threeG {
+    grid-area: three;
+}`
 </script>
 <style>
     article {
@@ -193,6 +269,7 @@
             </DataTable>
         </Content>
     </Card>
+    <WebPractice htmlContent={htmlContentFlex} cssContent={cssContentFlex} jsContent={""} />
     <Card>
         <Content>
             <h6 id="grid">The grid model</h6>
@@ -220,12 +297,12 @@
                     </Row>
                     <Row>
                         <Cell><code>grid-template-areas</code></Cell>
-                        <Cell style="white-space: normal;">a string of names of areas of items</Cell>
+                        <Cell style="white-space: normal;">list of strings of names of areas of items</Cell>
                         <Cell style="white-space: normal;">places items according to the structure defined by the string</Cell>
                     </Row>
                     <Row>
                         <Cell><code>grid-area</code></Cell>
-                        <Cell style="white-space: normal;">name</Cell>
+                        <Cell style="white-space: normal;">name (not as string)</Cell>
                         <Cell style="white-space: normal;">it is set on the items of the grid. These names are parts of the string in <code>grid-template-areas</code></Cell>
                     </Row>
                     <Row>
@@ -253,6 +330,7 @@
             </DataTable>
         </Content>
     </Card>
+    <WebPractice htmlContent={htmlContentGrid} cssContent={cssContentGrid} jsContent={""} />
     <!-- <Card>
         <Content>
             <Highlight language={xml} code={code2} let:highlighted>

@@ -1,6 +1,7 @@
 import { s as subscribe, b as set_store_value } from "../../../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component } from "../../../../../../../chunks/ssr.js";
 import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../../chunks/content4.js";
+import { W as WebPractice } from "../../../../../../../chunks/WebPractice.js";
 import { p as page } from "../../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../chunks/ActionIcons.js";
@@ -27,6 +28,82 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   set_store_value(navList, $navList = contents, $navList);
   set_store_value(currentPath, $currentPath = "Layout", $currentPath);
   set_store_value(darkMode, $darkMode = false, $darkMode);
+  let htmlContentFlex = `<section class="container">
+    <div class="cell one centerFlex">One</div>
+    <div class="cell one centerFlex">One</div>
+    <div class="cell two centerFlex">Two</div>
+    <div class="cell two centerFlex">Two</div>
+    <div class="cell three centerFlex">Three</div>
+    <div class="cell three centerFlex">Three</div>
+</section>`;
+  let cssContentFlex = `.container {
+    height: 200px;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell {
+    border: 1px solid teal;
+}
+.one {
+    width: 10%;
+    height: 15%;
+}
+.two {
+    width: 20%;
+    height: 15%;
+}
+.three {
+    width: 30%;
+    height: 15%;
+}`;
+  let htmlContentGrid = `<section class="containerG">
+    <div class="cell oneG centerFlex">One</div>
+    
+    <div class="cell twoG centerFlex">Two</div>
+    
+    <div class="cell threeG centerFlex">Three</div>
+    
+</section>`;
+  let cssContentGrid = `.containerG {
+    height: 200px;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 1em;
+    display: grid;
+    grid-template-areas: "one two two"
+    "one two two"
+    "one three three";
+    gap: 1em;
+}
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell {
+    border: 1px solid teal;
+}
+.oneG {
+    grid-area: one;
+}
+.twoG {
+    grid-area: two;
+}
+.threeG {
+    grid-area: three;
+}`;
   $$result.css.add(css$1);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
@@ -303,7 +380,16 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })} ${validate_component(WebPractice, "WebPractice").$$render(
+    $$result,
+    {
+      htmlContent: htmlContentFlex,
+      cssContent: cssContentFlex,
+      jsContent: ""
+    },
+    {},
+    {}
+  )} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
@@ -371,7 +457,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         }
                       })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
                         default: () => {
-                          return `a string of names of areas of items`;
+                          return `list of strings of names of areas of items`;
                         }
                       })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
                         default: () => {
@@ -387,7 +473,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         }
                       })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
                         default: () => {
-                          return `name`;
+                          return `name (not as string)`;
                         }
                       })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
                         default: () => {
@@ -467,7 +553,16 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })} </article>`;
+  })} ${validate_component(WebPractice, "WebPractice").$$render(
+    $$result,
+    {
+      htmlContent: htmlContentGrid,
+      cssContent: cssContentGrid,
+      jsContent: ""
+    },
+    {},
+    {}
+  )} </article>`;
 });
 export {
   Page as default
