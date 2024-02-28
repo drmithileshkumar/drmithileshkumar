@@ -42,7 +42,7 @@
         }
         cssLayout = grid;
         nDivs = rectangleCount;
-        console.log(rectangleCount, grid);
+        // console.log(rectangleCount, grid);
         let areas = "";
         let rows = []
         for(let i = 0; i < grid.length; i++) {
@@ -52,9 +52,10 @@
         // grid.map(row => `"${row.join(" ")}"`).join("\n");
         gridLayout.style.gridTemplateAreas = areas;
     }   
-    // onMount(() => {
-    //     MathJax.typeset();
-    // });
+
+    onMount(() => {
+        generateLayout();
+    });
     let code1=`<!--Inline CSS-->
 <p style="color: tomato;">I'm tomato</p>`
     let code2=`<head>
@@ -188,6 +189,11 @@ let htmlContentGrid = `<section class="containerG">
     .grid {
         display: grid;
         gap: 0.1em;
+        height: 300px;
+        width: 300px;
+        border: 1px solid gray;
+        padding: 0.1em;
+        margin: auto;
     }
 </style>
 <svelte:head>
