@@ -338,5 +338,10 @@ let htmlContentGrid = `<section class="containerG">
             </Highlight>
         </Content>
     </Card> -->
-    
+    <h5>Questions</h5>
+    <Card>
+        <Content>
+            <div class="question">Use grid and flex layouts in your resume and college websites.</div>
+        </Content>
+    </Card>
 </article>

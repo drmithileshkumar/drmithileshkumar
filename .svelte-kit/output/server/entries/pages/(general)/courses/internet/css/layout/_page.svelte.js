@@ -13,7 +13,7 @@ import { d as darkMode, c as currentPath, n as navList } from "../../../../../..
 import { P as Pathlist } from "../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../chunks/CourseNavigation.js";
 const css$1 = {
-  code: "article.svelte-acl3tm{display:flex;flex-direction:column;gap:0.5em}p.svelte-acl3tm,li.svelte-acl3tm{opacity:0.8}h4.svelte-acl3tm{margin:0.5em 0}h6.svelte-acl3tm{font-size:1em;margin:0.5em 0;color:rgb(74, 155, 139)}a.svelte-acl3tm{cursor:pointer;text-decoration:none}",
+  code: "article.svelte-acl3tm{display:flex;flex-direction:column;gap:0.5em}p.svelte-acl3tm,li.svelte-acl3tm{opacity:0.8}h4.svelte-acl3tm,h5.svelte-acl3tm{margin:0.5em 0}h5.svelte-acl3tm{font-size:1.1em}h6.svelte-acl3tm{font-size:1em;margin:0.5em 0;color:rgb(74, 155, 139)}a.svelte-acl3tm{cursor:pointer;text-decoration:none}.question.svelte-acl3tm{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -562,7 +562,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} </article>`;
+  )}  <h5 class="svelte-acl3tm" data-svelte-h="svelte-1984kyx">Questions</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-acl3tm" data-svelte-h="svelte-sguf9i">Use grid and flex layouts in your resume and college websites.</div>`;
+        }
+      })}`;
+    }
+  })}</article>`;
 });
 export {
   Page as default
