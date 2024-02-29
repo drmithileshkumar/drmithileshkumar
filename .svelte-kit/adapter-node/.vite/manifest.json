@@ -1550,6 +1550,35 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/css/layout/+page.svelte"
   },
+  "src/routes/(general)/courses/internet/css/typography/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/css/typography/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/css/typography/+page.js"
+  },
+  "src/routes/(general)/courses/internet/css/typography/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page._uTlaj7R.css",
+      "_app/immutable/assets/NavList.buyRB24_.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/css/typography/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_content4.js",
+      "_WebPractice.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Cell.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/css/typography/+page.svelte"
+  },
   "src/routes/(general)/courses/internet/javascript/+page.js": {
     "file": "entries/pages/(general)/courses/internet/javascript/_page.js",
     "isEntry": true,
