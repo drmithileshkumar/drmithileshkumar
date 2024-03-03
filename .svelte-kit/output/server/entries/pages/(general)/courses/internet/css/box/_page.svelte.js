@@ -1,6 +1,6 @@
 import { s as subscribe, b as set_store_value } from "../../../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component } from "../../../../../../../chunks/ssr.js";
-import css$3 from "highlight.js/lib/languages/css";
+import { c as css } from "../../../../../../../chunks/css.js";
 import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../../chunks/content4.js";
 /* empty css                                                             */
 import { p as page } from "../../../../../../../chunks/stores.js";
@@ -14,8 +14,6 @@ import { W as WebPractice } from "../../../../../../../chunks/WebPractice.js";
 import { P as Pathlist } from "../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../chunks/CourseNavigation.js";
 import { H as Highlight, L as LineNumbers } from "../../../../../../../chunks/LineNumbers.js";
-const css = { name: "css", register: css$3 };
-const css$2 = css;
 const css$1 = {
   code: "article.svelte-acl3tm{display:flex;flex-direction:column;gap:0.5em}p.svelte-acl3tm,li.svelte-acl3tm{opacity:0.8}h4.svelte-acl3tm,h5.svelte-acl3tm{margin:0.5em 0}h5.svelte-acl3tm{font-size:1.1em}h6.svelte-acl3tm{font-size:1em;margin:0.5em 0;color:rgb(74, 155, 139)}a.svelte-acl3tm{cursor:pointer;text-decoration:none}.question.svelte-acl3tm{cursor:pointer;padding:0.3em}",
   map: null
@@ -192,7 +190,7 @@ p {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
           return `<h5 id="margin" class="svelte-acl3tm" data-svelte-h="svelte-11d4sw9"><code>margin</code></h5> <p class="svelte-acl3tm" data-svelte-h="svelte-qvjxd4">There are four sides to an element. The margins on each side can be set individually.</p> <ul><li class="svelte-acl3tm"><code data-svelte-h="svelte-1sfcd7o">margin-top</code> : sets top margin
-                    ${validate_component(Highlight, "Highlight").$$render($$result, { language: css$2, code: `margin-top: 10px;` }, {}, {
+                    ${validate_component(Highlight, "Highlight").$$render($$result, { language: css, code: `margin-top: 10px;` }, {}, {
             default: ({ highlighted }) => {
               return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
             }
@@ -200,7 +198,7 @@ p {
                     ${validate_component(Highlight, "Highlight").$$render(
             $$result,
             {
-              language: css$2,
+              language: css,
               code: `margin-bottom: 10px;`
             },
             {},
@@ -213,7 +211,7 @@ p {
                     ${validate_component(Highlight, "Highlight").$$render(
             $$result,
             {
-              language: css$2,
+              language: css,
               code: `margin-left: 10px;`
             },
             {},
@@ -226,7 +224,7 @@ p {
                     ${validate_component(Highlight, "Highlight").$$render(
             $$result,
             {
-              language: css$2,
+              language: css,
               code: `margin-right: 10px;`
             },
             {},
@@ -236,7 +234,7 @@ p {
               }
             }
           )}</li> <li class="svelte-acl3tm"><code data-svelte-h="svelte-1sp9mf2">margin</code> : sets margin
-                    ${validate_component(Highlight, "Highlight").$$render($$result, { language: css$2, code: marginCode }, {}, {
+                    ${validate_component(Highlight, "Highlight").$$render($$result, { language: css, code: marginCode }, {}, {
             default: ({ highlighted }) => {
               return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
             }
@@ -261,7 +259,7 @@ p {
                     ${validate_component(Highlight, "Highlight").$$render(
             $$result,
             {
-              language: css$2,
+              language: css,
               code: `padding-top: 10px;`
             },
             {},
@@ -274,7 +272,7 @@ p {
                     ${validate_component(Highlight, "Highlight").$$render(
             $$result,
             {
-              language: css$2,
+              language: css,
               code: `padding-bottom: 10px;`
             },
             {},
@@ -287,7 +285,7 @@ p {
                     ${validate_component(Highlight, "Highlight").$$render(
             $$result,
             {
-              language: css$2,
+              language: css,
               code: `padding-left: 10px;`
             },
             {},
@@ -300,7 +298,7 @@ p {
                     ${validate_component(Highlight, "Highlight").$$render(
             $$result,
             {
-              language: css$2,
+              language: css,
               code: `padding-right: 10px;`
             },
             {},
@@ -310,7 +308,7 @@ p {
               }
             }
           )}</li> <li class="svelte-acl3tm"><code data-svelte-h="svelte-17ukzv9">padding</code> : sets padding
-                    ${validate_component(Highlight, "Highlight").$$render($$result, { language: css$2, code: paddingCode }, {}, {
+                    ${validate_component(Highlight, "Highlight").$$render($$result, { language: css, code: paddingCode }, {}, {
             default: ({ highlighted }) => {
               return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
             }
@@ -334,7 +332,7 @@ p {
           return `<h5 id="boxsizing" class="svelte-acl3tm" data-svelte-h="svelte-1elacoi"><code>box-sizing</code></h5> <p class="svelte-acl3tm" data-svelte-h="svelte-13olvpa">When we specify <code>width</code> and <code>height</code> of an element, it&#39;s actual width will be <code>width + paddingRight + paddingLeft + marginRight + marginLeft</code>. Similarly, the actual height will be <code>width + paddingTop + paddingBottom + marginTop + marginBottom</code>. This creates a lot of confusion.</p> <p class="svelte-acl3tm" data-svelte-h="svelte-apr6pi">To include margins and paddings into <code>width</code> and <code>height</code> of the element, we set the property <code>box-sizing</code> to <code>border-box</code>.</p> ${validate_component(Highlight, "Highlight").$$render(
             $$result,
             {
-              language: css$2,
+              language: css,
               code: `box-sizing: border-box;`
             },
             {},

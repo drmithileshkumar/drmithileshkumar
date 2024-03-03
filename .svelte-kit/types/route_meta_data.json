@@ -158,6 +158,10 @@
 		"src/routes/(general)/courses/internet/css/layout/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/css/selectors": [
+		"src/routes/(general)/courses/internet/css/selectors/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/css/typography": [
 		"src/routes/(general)/courses/internet/css/typography/+page.js",
 		"src/routes/(general)/+layout.server.js"
