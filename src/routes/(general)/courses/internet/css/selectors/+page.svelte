@@ -67,7 +67,7 @@
 h2.blue { color: blue; }
 .gray { color: gray; }
 #golden { color: goldenrod; }
-.container:nth-child(2n) { background: yellow; }`
+.container :nth-child(2n) { background: yellow; }`
 
 </script>
 <style>

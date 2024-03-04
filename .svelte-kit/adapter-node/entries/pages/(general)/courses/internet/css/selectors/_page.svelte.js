@@ -42,7 +42,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 h2.blue { color: blue; }
 .gray { color: gray; }
 #golden { color: goldenrod; }
-.container:nth-child(2n) { background: yellow; }`;
+.container :nth-child(2n) { background: yellow; }`;
   $$result.css.add(css$1);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
