@@ -55,145 +55,19 @@
     onMount(() => {
         //generateLayout();
     });
-    let htmlContentSyntax = `<section class="container">
-    <div class="cell none centerFlex">none</div>
-    <div class="cell hidden centerFlex">hidden</div>
-    <div class="cell dotted centerFlex">dotted</div>
-    <div class="cell dashed centerFlex">dashed</div>
-    <div class="cell solid centerFlex">solid</div>
-    <div class="cell double centerFlex">double</div>
-    <div class="cell groove centerFlex">groove</div>
-    <div class="cell ridge centerFlex">ridge</div>
-    <div class="cell inset centerFlex">inset</div>
-    <div class="cell outset centerFlex">outset</div>
+    let htmlContentSelector = `<section class="container">
+    <h1>I'm a red head.</h1>
+    <h2 class="blue">I'm blue subhead.</h2>
+    <p class="gray blue">My class is blue, but I'm not blue.</p>
+    <span class="gray">Gray span.</span>
+    <p id="golden">I'm golden paragraph.</p>
+    <p>Normal paragraph</p>
 </section>`
-    let cssContentSyntax = `.container {
-    box-sizing: border-box;
-    height: 120px;
-    width: 100%;
-    border: 1px solid gray;
-    padding: 1em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 1em;
-    flex-wrap: wrap;
-}
-.centerFlex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cell {
-    border: 2px solid;
-    padding: 0.5em;
-}
-.none {
-    border: 2px none red;
-}
-.hidden {
-    border: 2px hidden red;
-}
-.dotted {
-    border: 2px dotted red;
-}
-.dashed {
-    border: 2px dashed red;
-}
-.solid {
-    border: 2px solid red;
-}
-.double {
-    border: 2px double red;
-}
-.groove {
-    border: 2px groove red;
-}
-.ridge {
-    border: 2px ridge red;
-}
-.inset {
-    border: 2px inset red;
-}
-.outset {
-    border: 2px outset red;
-}`
-
-let htmlContentSides = `<section class="container">
-    <div class="cell top centerFlex">top</div>
-    <div class="cell right centerFlex">right</div>
-    <div class="cell bottom centerFlex">bottom</div>
-    <div class="cell left centerFlex">left</div>
-</section>`
-    let cssContentSides = `.container {
-    box-sizing: border-box;
-    height: 100px;
-    width: 100%;
-    border: 1px solid gray;
-    padding: 1em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 1em;
-    flex-wrap: wrap;
-}
-.centerFlex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cell {
-    padding: 0.5em;
-}
-.top {
-    border-top: 2px solid red;
-}
-.right {
-    border-right: 2px solid red;
-}
-.bottom {
-    border-bottom: 2px solid red;
-}
-.left {
-    border-left: 2px solid red;
-}`
-let htmlContentRadius = `<section class="containerG">
-    <div class="cell round centerFlex">round</div>
-    <div class="cell opposite  centerFlex">opposite</div>
-    <div class="cell different centerFlex">different</div>
-</section>`
-    let cssContentRadius = `.containerG {
-    box-sizing: border-box;
-    height: auto;
-    width: 100%;
-    border: 1px solid gray;
-    padding: 1em;
-    display: flex;
-    gap: 1em;
-}
-.centerFlex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cell {
-    border: 1px solid teal;
-    padding: 0.5em;
-    width: 10%;
-    height: 50px;
-}
-.round {
-    border-radius: 50%;
-}
-.opposite {
-    border-radius: 50% 70%;
-}
-.different {
-    border-radius: 10% 20% 30% 40%;
-}
-`
+    let cssContentSelector = `h1 { color: red; }
+h2.blue { color: blue; }
+.gray { color: gray; }
+#golden { color: goldenrod; }
+.container:nth-child(2n) { background: yellow; }`
 
 </script>
 <style>
@@ -483,6 +357,8 @@ a:visited { color: red; }`}
             </p>
         </Content>
     </Card>
+    <WebPractice htmlContent={htmlContentSelector} cssContent={cssContentSelector} jsContent={""} />
+    
     <!-- <Card>
         <Content>
             <Highlight language={xml} code={code2} let:highlighted>

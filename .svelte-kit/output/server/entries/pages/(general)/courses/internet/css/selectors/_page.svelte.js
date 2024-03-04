@@ -3,11 +3,10 @@ import { c as create_ssr_component, v as validate_component } from "../../../../
 import { x as xml } from "../../../../../../../chunks/xml.js";
 import { c as css } from "../../../../../../../chunks/css.js";
 import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../../chunks/content4.js";
-import "../../../../../../../chunks/Suffix.js";
+import { W as WebPractice } from "../../../../../../../chunks/WebPractice.js";
+import { p as page } from "../../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../chunks/ActionIcons.js";
-/* empty css                                                                    */
-import { p as page } from "../../../../../../../chunks/stores.js";
 import "../../../../../../../chunks/Subheader.js";
 import "../../../../../../../chunks/client.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../chunks/stores2.js";
@@ -31,6 +30,19 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   set_store_value(navList, $navList = contents, $navList);
   set_store_value(currentPath, $currentPath = "Selectors", $currentPath);
   set_store_value(darkMode, $darkMode = false, $darkMode);
+  let htmlContentSelector = `<section class="container">
+    <h1>I'm a red head.</h1>
+    <h2 class="blue">I'm blue subhead.</h2>
+    <p class="gray blue">My class is blue, but I'm not blue.</p>
+    <span class="gray">Gray span.</span>
+    <p id="golden">I'm golden paragraph.</p>
+    <p>Normal paragraph</p>
+</section>`;
+  let cssContentSelector = `h1 { color: red; }
+h2.blue { color: blue; }
+.gray { color: gray; }
+#golden { color: goldenrod; }
+.container:nth-child(2n) { background: yellow; }`;
   $$result.css.add(css$1);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
@@ -399,7 +411,16 @@ a:visited { color: red; }`
         }
       })}`;
     }
-  })}  </article>`;
+  })} ${validate_component(WebPractice, "WebPractice").$$render(
+    $$result,
+    {
+      htmlContent: htmlContentSelector,
+      cssContent: cssContentSelector,
+      jsContent: ""
+    },
+    {},
+    {}
+  )}  </article>`;
 });
 export {
   Page as default
