@@ -7,8 +7,9 @@ import { d as darkMode, c as currentPath, n as navList } from "../../../../../..
 import { c as contentNav, a as contents } from "../../../../../../../../chunks/content3.js";
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
+import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../../../../chunks/Cell.js";
 const css = {
-  code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}h6.svelte-98uzi2{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}.question.svelte-98uzi2{cursor:pointer;padding:0.3em}",
+  code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}h6.svelte-98uzi2{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}strong.svelte-98uzi2{color:goldenrod;opacity:1}.question.svelte-98uzi2{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -58,6 +59,107 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
+          return `<h6 class="svelte-98uzi2" data-svelte-h="svelte-1vuv9xt">Calculation</h6> <p class="svelte-98uzi2"><strong class="svelte-98uzi2" data-svelte-h="svelte-sat26l">Step 1:</strong> To calculate \\(r\\), first calculate the arithmetic means ${escape(`\\[\\begin{aligned}
+                \\bar{X} &= \\frac{x_1 + x_2 + \\cdots + x_n}{n}\\\\
+                \\bar{Y} &= \\frac{y_1 + y_2 + \\cdots + y_n}{n}
+                \\end{aligned}\\]`)} <strong class="svelte-98uzi2" data-svelte-h="svelte-9uzuys">Step 2:</strong> Construct the following table</p> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%" }, {}, {
+            default: () => {
+              return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `\\(x_i\\)`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `\\(y_i\\)`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `\\(x_i^2\\)`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `\\(y_i^2\\)`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `\\(x_iy_i\\)`;
+                        }
+                      })}`;
+                    }
+                  })}`;
+                }
+              })} ${validate_component(Body, "Body").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `\\(\\vdots\\)`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `\\(\\vdots\\)`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `\\(\\vdots\\)`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `\\(\\vdots\\)`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `\\(\\vdots\\)`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `-`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `-`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `\\(\\sum x_i^2\\)`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `\\(\\sum y_i^2\\)`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `\\(\\sum x_iy_i\\)`;
+                        }
+                      })}`;
+                    }
+                  })}`;
+                }
+              })}`;
+            }
+          })} <p class="svelte-98uzi2"><strong class="svelte-98uzi2" data-svelte-h="svelte-8wm71b">Step 3:</strong> Calculate ${escape(`\\[\\begin{aligned}
+                N &= \\sum x_iy_i - n\\bar{X}\\bar{Y}\\\\
+                D_1 &= \\sum x_i^2 - n\\bar{X}^2\\\\
+                D_2 &= \\sum y_i^2 - n\\bar{Y}^2
+                \\end{aligned}\\]`)}</p> <p class="svelte-98uzi2"><strong class="svelte-98uzi2" data-svelte-h="svelte-1gxb9ry">Step 4:</strong> Now \\(r\\) can be calculated as ${escape(`\\[
+                    r = \\frac{N}{\\sqrt{D_1\\cdot D_2}}
+                    \\]`)}</p>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
           return `<h6 class="svelte-98uzi2" data-svelte-h="svelte-1g8p96z">Cauchy-Schwarz inequality</h6> <div class="theorem">Given two sets of \\(n\\) real numbers \\(a_1, a_2, \\dots, a_n\\) and \\(b_1, b_2, \\dots, b_n\\), the following inequality holds: 
                 ${escape(`\\[\\left (\\sum a_ib_i\\right )^2 \\leq \\sum a_i^2 \\sum b_i^2\\]`)}</div> <div class="proof"><p class="svelte-98uzi2">Let us define ${escape(`
                     \\[
@@ -79,6 +181,18 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       })}`;
     }
   })} <h5 class="svelte-98uzi2" data-svelte-h="svelte-1984kyx">Questions</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2">Show that ${escape(`\\[\\begin{aligned}
+                \\sum (x_i - \\bar{X})(y_i - \\bar{Y}) &= \\sum x_iy_i - n\\bar{X}\\bar{Y}\\\\
+                \\sum (x_i - \\bar{X})^2 &= \\sum x_i^2 - n\\bar{X}^2\\\\
+                \\sum (y_i - \\bar{Y})^2 &= \\sum y_i^2 - n\\bar{Y}^2
+                \\end{aligned}\\]`)}</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {

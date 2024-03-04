@@ -8,6 +8,7 @@
     import { contents, contentNav } from "$lib/pages/courses/mathematics2/content";
     import Pathlist from "$lib/components/Pathlist.svelte";
 	import CourseNavigation from "$lib/components/CourseNavigation.svelte";
+    import DataTable, {Head, Body, Row, Cell} from '@smui/data-table';
     import { randSubset } from '$lib/utils/common/common';
     import { onMount } from 'svelte';
     $navList = contents;
@@ -95,6 +96,55 @@
     </Card>
     <Card>
         <Content>
+            <h6>Calculation</h6>
+            <p><strong>Step 1:</strong> To calculate \(r\), first calculate the arithmetic means {`\\[\\begin{aligned}
+                \\bar{X} &= \\frac{x_1 + x_2 + \\cdots + x_n}{n}\\\\
+                \\bar{Y} &= \\frac{y_1 + y_2 + \\cdots + y_n}{n}
+                \\end{aligned}\\]`} 
+            <strong>Step 2:</strong> Construct the following table</p>
+            <DataTable style="width:100%">
+                <Head>
+                    <Row>
+                        <Cell>\(x_i\)</Cell>
+                        <Cell>\(y_i\)</Cell>
+                        <Cell>\(x_i^2\)</Cell>
+                        <Cell>\(y_i^2\)</Cell>
+                        <Cell>\(x_iy_i\)</Cell>
+                    </Row>
+                </Head>
+                <Body>
+                    <Row>
+                        <Cell>\(\vdots\)</Cell>
+                        <Cell>\(\vdots\)</Cell>
+                        <Cell>\(\vdots\)</Cell>
+                        <Cell>\(\vdots\)</Cell>
+                        <Cell>\(\vdots\)</Cell>
+                    </Row>
+                    <Row>
+                        <Cell>-</Cell>
+                        <Cell>-</Cell>
+                        <Cell>\(\sum x_i^2\)</Cell>
+                        <Cell>\(\sum y_i^2\)</Cell>
+                        <Cell>\(\sum x_iy_i\)</Cell>
+                    </Row>
+                </Body>
+            </DataTable>
+            <p>
+                <strong>Step 3:</strong> Calculate {`\\[\\begin{aligned}
+                N &= \\sum x_iy_i - n\\bar{X}\\bar{Y}\\\\
+                D_1 &= \\sum x_i^2 - n\\bar{X}^2\\\\
+                D_2 &= \\sum y_i^2 - n\\bar{Y}^2
+                \\end{aligned}\\]`}
+            </p>
+            <p>
+                <strong>Step 4:</strong> Now \(r\) can be calculated as {`\\[
+                    r = \\frac{N}{\\sqrt{D_1\\cdot D_2}}
+                    \\]`}
+            </p>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
             <h6>Cauchy-Schwarz inequality</h6>
             <div class="theorem" use:typeset>
                 Given two sets of \(n\) real numbers \(a_1, a_2, \dots, a_n\) and \(b_1, b_2, \dots, b_n\), the following inequality holds: 
@@ -132,6 +182,17 @@
         </Content>
     </Card>
     <h5>Questions</h5>
+    <Card>
+        <Content>
+            <div class="question">
+                Show that {`\\[\\begin{aligned}
+                \\sum (x_i - \\bar{X})(y_i - \\bar{Y}) &= \\sum x_iy_i - n\\bar{X}\\bar{Y}\\\\
+                \\sum (x_i - \\bar{X})^2 &= \\sum x_i^2 - n\\bar{X}^2\\\\
+                \\sum (y_i - \\bar{Y})^2 &= \\sum y_i^2 - n\\bar{Y}^2
+                \\end{aligned}\\]`}
+            </div>
+        </Content>
+    </Card>
     <Card>
         <Content>
             
