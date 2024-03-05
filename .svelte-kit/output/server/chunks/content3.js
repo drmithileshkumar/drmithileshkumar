@@ -66,10 +66,6 @@ const contents = [
               {
                 name: "Least squares method",
                 url: "/courses/mathematics2/statistics/regression/leastsquares"
-              },
-              {
-                name: "Regression coefficient",
-                url: "/courses/mathematics2/statistics/regression/regressioncoefficient"
               }
             ]
           }
