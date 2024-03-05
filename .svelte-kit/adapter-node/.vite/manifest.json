@@ -2571,8 +2571,7 @@
   },
   "src/routes/(general)/courses/internetlab/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.ZKN0pr-9.css",
-      "_app/immutable/assets/Link.mTa6ZPjX.css"
+      "_app/immutable/assets/_page.vyhOBrT2.css"
     ],
     "file": "entries/pages/(general)/courses/internetlab/_page.svelte.js",
     "imports": [
@@ -2585,7 +2584,8 @@
       "_stores2.js",
       "_content.js",
       "_Pathlist.js",
-      "_CourseNavigation.js"
+      "_CourseNavigation.js",
+      "_Cell.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internetlab/+page.svelte"

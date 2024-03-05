@@ -1,6 +1,5 @@
 import { s as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component } from "../../../../../chunks/ssr.js";
-/* empty css                                                       */
 import { p as page } from "../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../chunks/ActionIcons.js";
@@ -9,8 +8,9 @@ import { d as darkMode, c as currentPath, n as navList } from "../../../../../ch
 import { c as contentNav, a as contents } from "../../../../../chunks/content.js";
 import { P as Pathlist } from "../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../chunks/CourseNavigation.js";
+import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../chunks/Cell.js";
 const css = {
-  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}h4.svelte-n59hwk,h5.svelte-n59hwk{margin:0.5em 0}h5.svelte-n59hwk{font-size:1.1em}",
+  code: "article.svelte-n59hwk{display:flex;flex-direction:column;gap:0.5em}h4.svelte-n59hwk,h5.svelte-n59hwk{margin:0.5em 0}h5.svelte-n59hwk{font-size:1.1em}h6.svelte-n59hwk{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -79,7 +79,135 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         })}`;
       }
     }
-  )}</article>`;
+  )} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<h6 class="svelte-n59hwk" data-svelte-h="svelte-xgf3w0">Tasks</h6> ${validate_component(DataTable, "DataTable").$$render($$result, { style: "width:100%" }, {}, {
+            default: () => {
+              return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Week`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `Task`;
+                        }
+                      })}`;
+                    }
+                  })}`;
+                }
+              })} ${validate_component(Body, "Body").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `1`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `Experiment with basic HTML tags`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `2`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `Create HTML page for resume`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `3`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `Create HTML page of College website`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `4`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `Link CSS to HTML, Use Grid Layout for resume and college page`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `5`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `Use Grid Layout, Background Color, Border, Center elements using flex, use advanced CSS selectors, Home town page`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `6`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `Use CSS to create custom components, experiment with transforms and transitions`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `7`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `Basic javascript code, event handlers`;
+                        }
+                      })}`;
+                    }
+                  })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                        default: () => {
+                          return `8`;
+                        }
+                      })} ${validate_component(Cell, "Cell").$$render($$result, { style: "white-space: normal;" }, {}, {
+                        default: () => {
+                          return `Javascript calculator`;
+                        }
+                      })}`;
+                    }
+                  })}`;
+                }
+              })}`;
+            }
+          })}`;
+        }
+      })}`;
+    }
+  })}</article>`;
 });
 export {
   Page as default

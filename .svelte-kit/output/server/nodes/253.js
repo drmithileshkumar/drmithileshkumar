@@ -5,6 +5,6 @@ let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/_page.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/(general)/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.js";
-export const imports = ["_app/immutable/nodes/253.bx5y6f0o.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.-OLu_ipZ.js","_app/immutable/chunks/entry.Vng7rUs8.js"];
+export const imports = ["_app/immutable/nodes/253.vMGqxAYn.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.qwx-LVGA.js","_app/immutable/chunks/entry.HjaOK0mh.js"];
 export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

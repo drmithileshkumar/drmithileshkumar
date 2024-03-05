@@ -1,7 +1,5 @@
 <script lang="ts">
     // @ts-nocheck
-    import { typeset } from "$lib/shared/typeset";
-    import Link from '$lib/ui/Link.svelte';
     import {page} from '$app/stores';
     import {onMount} from 'svelte';
     import Card, { Content, Actions } from "@smui/card";
@@ -13,6 +11,7 @@
     import { contents, contentNav } from "$lib/pages/courses/internetlab/content";
     import Pathlist from "$lib/components/Pathlist.svelte";
     import CourseNavigation from "$lib/components/CourseNavigation.svelte";
+    import DataTable, {Head, Body, Row, Cell} from '@smui/data-table';
     // console.log($page.url)
     let pathComponents = $page.url.pathname.split('/');
     let pathUrls = pathComponents.map((u, index) => {
@@ -77,6 +76,69 @@
     <Card style="background-color: rgba(0, 100, 100, 0.1">
         <Content>
             <NavList name="{$navList[0].name}" url="{$navList[0].url}" topics={$navList[0].topics} expanded />
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Tasks</h6>
+            <DataTable style="width:100%">
+                <Head>
+                    <Row>
+                        <Cell>Week</Cell>
+                        <Cell>Task</Cell>
+                    </Row>
+                </Head>
+                <Body>
+                    <Row>
+                        <Cell>1</Cell>
+                        <Cell style="white-space: normal;">
+                            Experiment with basic HTML tags
+                        </Cell>
+                    </Row>
+                    <Row>
+                        <Cell>2</Cell>
+                        <Cell style="white-space: normal;">
+                            Create HTML page for resume
+                        </Cell>
+                    </Row>
+                    <Row>
+                        <Cell>3</Cell>
+                        <Cell style="white-space: normal;">
+                            Create HTML page of College website
+                        </Cell>
+                    </Row>
+                    <Row>
+                        <Cell>4</Cell>
+                        <Cell style="white-space: normal;">
+                            Link CSS to HTML, Use Grid Layout for resume and college page
+                        </Cell>
+                    </Row>
+                    <Row>
+                        <Cell>5</Cell>
+                        <Cell style="white-space: normal;">
+                            Use Grid Layout, Background Color, Border, Center elements using flex, use advanced CSS selectors, Home town page
+                        </Cell>
+                    </Row>
+                    <Row>
+                        <Cell>6</Cell>
+                        <Cell style="white-space: normal;">
+                            Use CSS to create custom components, experiment with transforms and transitions
+                        </Cell>
+                    </Row>
+                    <Row>
+                        <Cell>7</Cell>
+                        <Cell style="white-space: normal;">
+                            Basic javascript code, event handlers
+                        </Cell>
+                    </Row>
+                    <Row>
+                        <Cell>8</Cell>
+                        <Cell style="white-space: normal;">
+                            Javascript calculator
+                        </Cell>
+                    </Row>
+                </Body>
+            </DataTable>
         </Content>
     </Card>
 </article>
