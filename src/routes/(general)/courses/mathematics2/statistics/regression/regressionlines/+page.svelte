@@ -5,6 +5,7 @@
     import Card, { Content, Actions } from "@smui/card";
     import { currentPath } from "$lib/stores";
     import { darkMode, navList } from "$lib/stores"
+    import ScatteredPlot from '$lib/pages/courses/mathematics2/ScatteredPlot.svelte';
     import { contents, contentNav } from "$lib/pages/courses/mathematics2/content";
     import Pathlist from "$lib/components/Pathlist.svelte";
 	import CourseNavigation from "$lib/components/CourseNavigation.svelte";
@@ -79,6 +80,11 @@
                 <li><p>{`\\( a \\)`} and {`\\( c \\)`} are the intercepts of the regression lines on the Y and X axes, respectively.</p></li>
                 <li><p>{`\\( b \\)`} and {`\\( d \\)`} are the slope coefficients that quantify the strength and direction of the relationship between the variables.</p></li>
             </ul>
+        </Content>
+    </Card>
+    <Card>
+        <Content style="display:flex; flex-direction: column; justify-content:center;">
+            <ScatteredPlot linearX dataSize={10}/>
         </Content>
     </Card>
 </article>

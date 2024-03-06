@@ -3,34 +3,11 @@ import { c as create_ssr_component, v as validate_component, e as escape } from 
 import { p as page } from "../../../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
-import "d3";
-import { B as Button } from "../../../../../../../../chunks/Button.js";
-/* empty css                                                                         */
+import { S as ScatteredPlot } from "../../../../../../../../chunks/ScatteredPlot.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores2.js";
 import { c as contentNav, a as contents } from "../../../../../../../../chunks/content3.js";
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
-const css$1 = {
-  code: "#scatter-plot.svelte-tcv392{display:flex;justify-content:center}",
-  map: null
-};
-const ScatteredPlot = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { rangeX = [0, 100] } = $$props;
-  let { rangeY = [0, 100] } = $$props;
-  let { dataSize = 50 } = $$props;
-  if ($$props.rangeX === void 0 && $$bindings.rangeX && rangeX !== void 0)
-    $$bindings.rangeX(rangeX);
-  if ($$props.rangeY === void 0 && $$bindings.rangeY && rangeY !== void 0)
-    $$bindings.rangeY(rangeY);
-  if ($$props.dataSize === void 0 && $$bindings.dataSize && dataSize !== void 0)
-    $$bindings.dataSize(dataSize);
-  $$result.css.add(css$1);
-  return `<div id="scatter-plot" class="svelte-tcv392"></div> ${validate_component(Button, "Button").$$render($$result, {}, {}, {
-    default: () => {
-      return `Generate Random Data`;
-    }
-  })} `;
-});
 const css = {
   code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2,li.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}strong.svelte-98uzi2{color:goldenrod;opacity:1}",
   map: null

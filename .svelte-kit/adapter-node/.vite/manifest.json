@@ -351,6 +351,16 @@
       "_ssr.js"
     ]
   },
+  "_ScatteredPlot.js": {
+    "css": [
+      "_app/immutable/assets/ScatteredPlot.Hwnk9BOf.css"
+    ],
+    "file": "chunks/ScatteredPlot.js",
+    "imports": [
+      "_ssr.js",
+      "_Button.js"
+    ]
+  },
   "_ScatteredPlot.svelte_svelte_type_style_lang.js": {
     "file": "_app/immutable/assets/ScatteredPlot.Hwnk9BOf.css",
     "src": "_ScatteredPlot.svelte_svelte_type_style_lang.js"
@@ -3038,8 +3048,7 @@
   },
   "src/routes/(general)/courses/mathematics2/statistics/correlation/bivariatedata/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.5o2QqYmo.css",
-      "_app/immutable/assets/ScatteredPlot.Hwnk9BOf.css"
+      "_app/immutable/assets/_page.5o2QqYmo.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/statistics/correlation/bivariatedata/_page.svelte.js",
     "imports": [
@@ -3048,7 +3057,7 @@
       "_stores.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_Button.js",
+      "_ScatteredPlot.js",
       "_stores2.js",
       "_content3.js",
       "_Pathlist.js",
@@ -3389,6 +3398,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores2.js",
+      "_ScatteredPlot.js",
       "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"

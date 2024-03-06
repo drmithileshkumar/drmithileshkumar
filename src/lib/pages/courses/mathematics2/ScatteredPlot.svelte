@@ -8,7 +8,13 @@
     export let rangeX = [0, 100];
     export let rangeY = [0, 100];
     export let dataSize = 50;
-  
+    export let linearX = false;
+    export let linearY = false;
+    export let showLine = false;
+    export let x1 = 0;
+    export let y1 = 0;
+    export let x2 = 50;
+    export let y2 = 50;
     onMount(() => {
       // Initialize D3 chart
       const margin = { top: 20, right: 20, bottom: 40, left: 40 };
@@ -36,12 +42,40 @@
     }
     function generateRandomData() {
       // Generate random bivariate data
-      data = Array.from({ length: dataSize }, () => ({
+      if(!(linearX || linearY)) {
+        data = Array.from({ length: dataSize }, () => ({
         x: rangeX[0] + Math.floor(Math.random() * (rangeX[1] - rangeX[0] + 1)),
         y: rangeY[0] + Math.floor(Math.random() * (rangeY[1] - rangeY[0] + 1)),
         color: getRandomColor()
       }));
-  
+      }
+     
+      if(linearX) {
+        data = [];
+        let a = Math.floor(Math.random() * 10);
+        let b = Math.floor(Math.random() * 10);
+        for(let i = 0; i < dataSize; i++) {
+          let x = rangeX[0] + i * (rangeX[1] - rangeX[0]) / dataSize;
+          let y = a + b * x;
+          y = y + Math.random() * y
+          data.push({
+            x, y, color: getRandomColor()
+          })
+        }
+      }
+      if(linearY) {
+        data = [];
+        let a = Math.floor(Math.random() * 10);
+        let b = Math.floor(Math.random() * 10);
+        for(let i = 0; i < dataSize; i++) {
+          let y = rangeY[0] + i * (rangeY[1] - rangeY[0]) / dataSize;
+          let x = a + b * y;
+          x = x + Math.random() * x
+          data.push({
+            y, x, color: getRandomColor()
+          })
+        }
+      }
       // Update the scatter plot
       drawChart();
     }
@@ -58,6 +92,7 @@
       svg.selectAll('.point').remove();
       svg.selectAll('.x-axis').remove();
       svg.selectAll('.y-axis').remove();
+      svg.selectAll('.line').remove();
   
       // Draw data points
       svg
@@ -69,7 +104,16 @@
         .attr('cx', (d) => xScale(d.x))
         .attr('cy', (d) => yScale(d.y))
         .attr('r', 5) // Radius of the circle
-        .style('fill', (d)=> d.color);
+        .style('fill', (d)=> d.color)
+        .selectAll('.line')
+        .append('line')
+        .attr('class', 'line')
+        .attr('stroke', 'black')
+        .attr('x1', x1)
+        .attr('x2', x2)
+        .attr('y1', y1)
+        .attr('y2', y2)
+        ;
   
       // Add x and y axis
       svg.append('g').attr('class', 'x-axis').attr('transform', `translate(0,${height})`).call(d3.axisBottom(xScale));

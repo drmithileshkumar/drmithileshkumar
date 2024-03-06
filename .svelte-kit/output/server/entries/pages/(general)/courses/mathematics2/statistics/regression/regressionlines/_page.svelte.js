@@ -4,6 +4,7 @@ import { p as page } from "../../../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores2.js";
+import { S as ScatteredPlot } from "../../../../../../../../chunks/ScatteredPlot.js";
 import { c as contentNav, a as contents } from "../../../../../../../../chunks/content3.js";
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
@@ -51,6 +52,21 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           return `<p class="svelte-98uzi2" data-svelte-h="svelte-pvw12j">One of the most common nature of relationship between two variables that are explored is linear, i.e., we check whether the values of the variables lie on a line.</p> <h6 class="svelte-98uzi2" data-svelte-h="svelte-1uamxm4">Regression Line of Y on X</h6> <p class="svelte-98uzi2" data-svelte-h="svelte-oazvua">This line is used to predict the values of the dependent variable (Y) based on the values of the independent variable (X). It is often referred to as the &quot;line of best fit&quot; and is represented mathematically as:</p> <p class="svelte-98uzi2">${escape(`\\[ Y = a + bX \\]`)}</p> <h6 class="svelte-98uzi2" data-svelte-h="svelte-10odd8q">Regression Line of X on Y</h6> <p class="svelte-98uzi2" data-svelte-h="svelte-uj9ou4">This line is used to predict the values of the independent variable (X) based on the values of the dependent variable (Y). It is represented mathematically as:</p> <p class="svelte-98uzi2">${escape(`\\[ X = c + dY \\]`)}</p> <p class="svelte-98uzi2" data-svelte-h="svelte-4udse9">Here, in the equations:</p> <ul><li class="svelte-98uzi2"><p class="svelte-98uzi2">${escape(`\\( Y \\)`)} represents the dependent variable (outcome).</p></li> <li class="svelte-98uzi2"><p class="svelte-98uzi2">${escape(`\\( X \\)`)} represents the independent variable (predictor).</p></li> <li class="svelte-98uzi2"><p class="svelte-98uzi2">${escape(`\\( a \\)`)} and ${escape(`\\( c \\)`)} are the intercepts of the regression lines on the Y and X axes, respectively.</p></li> <li class="svelte-98uzi2"><p class="svelte-98uzi2">${escape(`\\( b \\)`)} and ${escape(`\\( d \\)`)} are the slope coefficients that quantify the strength and direction of the relationship between the variables.</p></li></ul>`;
         }
       })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render(
+        $$result,
+        {
+          style: "display:flex; flex-direction: column; justify-content:center;"
+        },
+        {},
+        {
+          default: () => {
+            return `${validate_component(ScatteredPlot, "ScatteredPlot").$$render($$result, { linearX: true, dataSize: 10 }, {}, {})}`;
+          }
+        }
+      )}`;
     }
   })}</article>`;
 });
