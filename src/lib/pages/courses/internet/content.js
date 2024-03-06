@@ -147,16 +147,16 @@ export const contents = [
                         url: '/courses/internet/css/selectors'
                     },
                     {
+                        name: 'Position',
+                        url: '/courses/internet/css/position'
+                    },
+                    {
                         name: 'Lists',
                         url: '/courses/internet/css/lists'
                     },
                     {
                         name: 'Table',
                         url: '/courses/internet/css/table'
-                    },
-                    {
-                        name: 'Form',
-                        url: '/courses/internet/css/form'
                     },
                     {
                         name: 'Transform',
@@ -706,6 +706,12 @@ export const contentNav = {
         "name": "Selectors",
         "url": "/courses/internet/css/selectors",
         "previous": "/courses/internet/css/border",
+        "next": "/courses/internet/css/position"
+    },
+    "/courses/internet/css/position": {
+        "name": "Form",
+        "url": "/courses/internet/css/position",
+        "previous": "/courses/internet/css/selectors",
         "next": "/courses/internet/css/lists"
     },
     "/courses/internet/css/lists": {
@@ -718,18 +724,13 @@ export const contentNav = {
         "name": "Table",
         "url": "/courses/internet/css/table",
         "previous": "/courses/internet/css/lists",
-        "next": "/courses/internet/css/form"
-    },
-    "/courses/internet/css/form": {
-        "name": "Form",
-        "url": "/courses/internet/css/form",
-        "previous": "/courses/internet/css/table",
         "next": "/courses/internet/css/transform"
     },
+    
     "/courses/internet/css/transform": {
         "name": "Transform",
         "url": "/courses/internet/css/transform",
-        "previous": "/courses/internet/css/form",
+        "previous": "/courses/internet/css/table",
         "next": "/courses/internet/css/background"
     },
     "/courses/internet/css/background": {

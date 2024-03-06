@@ -138,15 +138,16 @@
                 <p>
                     Now we calculate their sum as 
                     {`\\[\\begin{aligned}
-                    \\sum_{i = 1}^{n-1}(x_i - \\bar{x})^2 &= \\sum i^2 - (n - 1)\\sum i\\\\ &+ \\sum \\frac{(n + 1)^2}{4} \\\\
-                        &= \\frac{n(n - 1)(2n - 1)}{6} - \\frac{n(n - 1)^2}{2}\\\\ &+ \\frac{(n - 1)(n + 1)^2}{4}\\\\
-                        &= (n- 1)\\frac{4n^2 - 2n -6n^2 + 6n + 3n^2 + 6n + 3}{12}\\\\
-                        &=\\frac{(n - 1)(n^2 + 10n + 3)}{12}
+                    \\sum_{i = 1}^{n}(x_i - \\bar{x})^2 &= \\sum i^2 - (n + 1)\\sum i\\\\ &+ \\sum \\frac{(n + 1)^2}{4} \\\\
+                        &= \\frac{n(n + 1)(2n + 1)}{6} - \\frac{n(n + 1)^2}{2}\\\\ &+ \\frac{n(n + 1)^2}{4}\\\\
+                        &= \\frac{n(n + 1)(2n + 1)}{6} - \\frac{n(n + 1)^2}{4}\\\\
+                        &= n(n + 1)\\frac{4n + 2 - 3n - 3 }{12}\\\\
+                        &=\\frac{n(n^2 - 1)}{12}
                     \\end{aligned}\\]`}
                 </p>
                 <p>
                     Now we can plug this value into the definition of standard deviation.
-                    {`\\[\\sigma = \\sqrt{\\frac{(n - 1)(n^2 + 10n + 3)}{12n}}\\]`}
+                    {`\\[\\sigma = \\sqrt{\\frac{n(n^2 - 1)}{12n}}=\\sqrt{\\frac{n^2 - 1}{12}}\\]`}
                     Notice that the standard deviation does not depend on \(a\).
                 </p>
             </div>
