@@ -55,19 +55,66 @@
     onMount(() => {
         //generateLayout();
     });
-    let htmlContentSelector = `<section class="container">
-    <h1>I'm a red head.</h1>
-    <h2 class="blue">I'm blue subhead.</h2>
-    <p class="gray blue">My class is blue, but I'm not blue.</p>
-    <span class="gray">Gray span.</span>
-    <p id="golden">I'm golden paragraph.</p>
-    <p>Normal paragraph</p>
+    let htmlContentPosition = `<section class="container">
+    <div class="circle zero">Zero</div>
+    <div class="circle one">One</div>
+    <div class="stickyDiv">Sticky guy</div>
+    <div class="circle two">
+        <div class="circle inner1">
+            <div class="circle inner2">
+                two
+            </div>
+        </div>
+    </div>
+    <div class="circle three">Three</div>
+    <div class="circle four">Four</div>
 </section>`
-    let cssContentSelector = `h1 { color: red; }
-h2.blue { color: blue; }
-.gray { color: gray; }
-#golden { color: goldenrod; }
-.container :nth-child(2n) { background: yellow; }`
+    let cssContentPosition = `.section { position: relative; }
+.circle { border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zero {
+    width: 100px;
+    height: 100px;
+}
+.one {
+    width: 100px;
+    height: 100px;
+}
+.two {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 150px;
+    left: 50%;
+}
+.inner1 {
+    width: 90px;
+    height: 90px;
+}
+.inner2 {
+    width: 80px;
+    height: 80px;
+}
+.three {
+    width: 100px;
+    height: 100px;
+}
+.four {
+    width: 100px;
+    height: 100px;
+}
+.stickyDiv {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background: red;
+    padding: 10px;
+    margin: 10px;
+}`
 
 </script>
 <style>
@@ -286,7 +333,7 @@ h2.blue { color: blue; }
 
         </Content>
     </Card>
-    <!-- <WebPractice htmlContent={htmlContentSelector} cssContent={cssContentSelector} jsContent={""} /> -->
+    <WebPractice htmlContent={htmlContentPosition} cssContent={cssContentPosition} jsContent={""} />
     
     <!-- <Card>
         <Content>
@@ -295,10 +342,21 @@ h2.blue { color: blue; }
             </Highlight>
         </Content>
     </Card> -->
-    <!-- <h5>Questions</h5>
+    <h5>Questions</h5>
     <Card>
         <Content>
-            <div class="question">Apply these border properties to resume.</div>
+            <div class="question">Create <code>sticky</code> titles to sections in your resume, college and hometown pages.</div>
         </Content>
-    </Card> -->
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">Create the following pattern.
+                <section style="position: relative;border: 1px solid; padding: 1em;margin: 1em;height: 200px;">
+                    <div style="position: absolute; border: 2px solid teal;width:50px; height:50px;border-radius:50%;left:50%;top:20%;"></div>
+                    <div style="position: absolute; border: 2px solid teal;width:50px; height:50px;border-radius:50%;left:45.25%;top:41%;"></div>
+                    <div style="position: absolute; border: 2px solid teal;width:50px; height:50px;border-radius:50%;left:54.75%;top:41%;"></div>
+                </section>
+            </div>
+        </Content>
+    </Card>
 </article>

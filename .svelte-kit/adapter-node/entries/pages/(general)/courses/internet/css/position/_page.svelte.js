@@ -3,11 +3,10 @@ import { c as create_ssr_component, v as validate_component } from "../../../../
 import { x as xml } from "../../../../../../../chunks/xml.js";
 import { c as css } from "../../../../../../../chunks/css.js";
 import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../../chunks/content4.js";
-import "../../../../../../../chunks/Suffix.js";
+import { W as WebPractice } from "../../../../../../../chunks/WebPractice.js";
+import { p as page } from "../../../../../../../chunks/stores.js";
 import { C as Card } from "../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../chunks/ActionIcons.js";
-/* empty css                                                                    */
-import { p as page } from "../../../../../../../chunks/stores.js";
 import "../../../../../../../chunks/Subheader.js";
 import "../../../../../../../chunks/client.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../chunks/stores2.js";
@@ -16,7 +15,7 @@ import { P as Pathlist } from "../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../chunks/CourseNavigation.js";
 import { H as Highlight, L as LineNumbers } from "../../../../../../../chunks/LineNumbers.js";
 const css$1 = {
-  code: "article.svelte-1ptklpl{display:flex;flex-direction:column;gap:0.5em}p.svelte-1ptklpl,li.svelte-1ptklpl{opacity:0.8}h4.svelte-1ptklpl{margin:0.5em 0}h6.svelte-1ptklpl{font-size:1em;margin:0.5em 0;color:rgb(74, 155, 139)}a.svelte-1ptklpl{cursor:pointer;text-decoration:none}",
+  code: "article.svelte-1ptklpl{display:flex;flex-direction:column;gap:0.5em}p.svelte-1ptklpl,li.svelte-1ptklpl{opacity:0.8}h4.svelte-1ptklpl,h5.svelte-1ptklpl{margin:0.5em 0}h5.svelte-1ptklpl{font-size:1.1em}h6.svelte-1ptklpl{font-size:1em;margin:0.5em 0;color:rgb(74, 155, 139)}a.svelte-1ptklpl{cursor:pointer;text-decoration:none}.question.svelte-1ptklpl{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -31,6 +30,66 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   set_store_value(navList, $navList = contents, $navList);
   set_store_value(currentPath, $currentPath = "Position", $currentPath);
   set_store_value(darkMode, $darkMode = false, $darkMode);
+  let htmlContentPosition = `<section class="container">
+    <div class="circle zero">Zero</div>
+    <div class="circle one">One</div>
+    <div class="stickyDiv">Sticky guy</div>
+    <div class="circle two">
+        <div class="circle inner1">
+            <div class="circle inner2">
+                two
+            </div>
+        </div>
+    </div>
+    <div class="circle three">Three</div>
+    <div class="circle four">Four</div>
+</section>`;
+  let cssContentPosition = `.section { position: relative; }
+.circle { border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zero {
+    width: 100px;
+    height: 100px;
+}
+.one {
+    width: 100px;
+    height: 100px;
+}
+.two {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 150px;
+    left: 50%;
+}
+.inner1 {
+    width: 90px;
+    height: 90px;
+}
+.inner2 {
+    width: 80px;
+    height: 80px;
+}
+.three {
+    width: 100px;
+    height: 100px;
+}
+.four {
+    width: 100px;
+    height: 100px;
+}
+.stickyDiv {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background: red;
+    padding: 10px;
+    margin: 10px;
+}`;
   $$result.css.add(css$1);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
@@ -279,7 +338,33 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}   </article>`;
+  })} ${validate_component(WebPractice, "WebPractice").$$render(
+    $$result,
+    {
+      htmlContent: htmlContentPosition,
+      cssContent: cssContentPosition,
+      jsContent: ""
+    },
+    {},
+    {}
+  )}  <h5 class="svelte-1ptklpl" data-svelte-h="svelte-1984kyx">Questions</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1ptklpl" data-svelte-h="svelte-1d86frt">Create <code>sticky</code> titles to sections in your resume, college and hometown pages.</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1ptklpl" data-svelte-h="svelte-15kj375">Create the following pattern.
+                <section style="position: relative;border: 1px solid; padding: 1em;margin: 1em;height: 200px;"><div style="position: absolute; border: 2px solid teal;width:50px; height:50px;border-radius:50%;left:50%;top:20%;"></div> <div style="position: absolute; border: 2px solid teal;width:50px; height:50px;border-radius:50%;left:45.25%;top:41%;"></div> <div style="position: absolute; border: 2px solid teal;width:50px; height:50px;border-radius:50%;left:54.75%;top:41%;"></div></section></div>`;
+        }
+      })}`;
+    }
+  })}</article>`;
 });
 export {
   Page as default
