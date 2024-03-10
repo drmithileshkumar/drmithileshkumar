@@ -151,6 +151,10 @@ export const contents = [
                         url: '/courses/internet/css/position'
                     },
                     {
+                        name: 'Responsive design',
+                        url: '/courses/internet/css/responsive'
+                    },
+                    {
                         name: 'Lists',
                         url: '/courses/internet/css/lists'
                     },
@@ -165,10 +169,6 @@ export const contents = [
                     {
                         name: 'Transition',
                         url: '/courses/internet/css/background'
-                    },
-                    {
-                        name: 'Responsive design',
-                        url: '/courses/internet/css/responsive'
                     },
                     {
                         name: 'Conflict Resolution',
@@ -712,6 +712,12 @@ export const contentNav = {
         "name": "Form",
         "url": "/courses/internet/css/position",
         "previous": "/courses/internet/css/selectors",
+        "next": "/courses/internet/css/responsive"
+    },
+    "/courses/internet/css/responsive": {
+        "name": "Responsive design",
+        "url": "/courses/internet/css/responsive",
+        "previous": "/courses/internet/css/position",
         "next": "/courses/internet/css/lists"
     },
     "/courses/internet/css/lists": {
@@ -731,24 +737,18 @@ export const contentNav = {
         "name": "Transform",
         "url": "/courses/internet/css/transform",
         "previous": "/courses/internet/css/table",
-        "next": "/courses/internet/css/background"
+        "next": "/courses/internet/css/transition"
     },
-    "/courses/internet/css/background": {
+    "/courses/internet/css/transition": {
         "name": "Transition",
-        "url": "/courses/internet/css/background",
+        "url": "/courses/internet/css/transition",
         "previous": "/courses/internet/css/transform",
-        "next": "/courses/internet/css/responsive"
-    },
-    "/courses/internet/css/responsive": {
-        "name": "Responsive design",
-        "url": "/courses/internet/css/responsive",
-        "previous": "/courses/internet/css/background",
         "next": "/courses/internet/css/conflict"
     },
     "/courses/internet/css/conflict": {
         "name": "Conflict Resolution",
         "url": "/courses/internet/css/conflict",
-        "previous": "/courses/internet/css/responsive",
+        "previous": "/courses/internet/css/background",
         "next": "/courses/internet/javascript"
     },
     "/courses/internet/javascript": {

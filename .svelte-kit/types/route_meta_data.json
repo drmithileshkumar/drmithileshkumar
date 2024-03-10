@@ -162,6 +162,10 @@
 		"src/routes/(general)/courses/internet/css/position/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/css/responsive": [
+		"src/routes/(general)/courses/internet/css/responsive/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/css/selectors": [
 		"src/routes/(general)/courses/internet/css/selectors/+page.js",
 		"src/routes/(general)/+layout.server.js"
