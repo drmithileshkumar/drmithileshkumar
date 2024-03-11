@@ -3402,7 +3402,7 @@
   },
   "src/routes/(general)/courses/mathematics2/statistics/regression/leastsquares/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.9dOIEGjV.css"
+      "_app/immutable/assets/_page.Qx3KK1pk.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/statistics/regression/leastsquares/_page.svelte.js",
     "imports": [
@@ -3414,7 +3414,8 @@
       "_stores2.js",
       "_content3.js",
       "_Pathlist.js",
-      "_CourseNavigation.js"
+      "_CourseNavigation.js",
+      "_common.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/regression/leastsquares/+page.svelte"

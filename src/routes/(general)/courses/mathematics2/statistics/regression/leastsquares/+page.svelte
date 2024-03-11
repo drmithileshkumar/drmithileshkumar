@@ -8,9 +8,23 @@
     import { contents, contentNav } from "$lib/pages/courses/mathematics2/content";
     import Pathlist from "$lib/components/Pathlist.svelte";
 	import CourseNavigation from "$lib/components/CourseNavigation.svelte";
+    import { randSubset } from '$lib/utils/common/common';
+    import { onMount } from 'svelte';
     $navList = contents;
     $currentPath = "Least Squares Method";
     $darkMode = false;
+
+    
+    let n = 15;
+    let k= 7;
+    let numbersX = randSubset(n, k);
+    let numbersY = randSubset(n, k);
+    onMount(() => {
+        numbersX = [];
+        numbersY = [];
+        numbersX = randSubset(n, k);
+        numbersY = randSubset(n, k);
+    })
 </script>
 <style>
     article {
@@ -49,7 +63,7 @@
     <link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/leastsquares" />
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
 </svelte:head>
-<article>
+<article use:typeset>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
     <h4>
@@ -59,7 +73,7 @@
     <Card>
         <Content>
             <h6>What is the least squares method?</h6>
-            <div use:typeset>
+            <div>
                 <p>
                     Given data points \((x_i, y_i)\) for variable \(X\) and \(Y\), suppose there is a model that for each input \(x_i\) predicts the value of \(Y\) to be \(f(x_i, \beta)\) for some function \(f\) and parameters \(\beta\), then the least squares method is used to determine the parameters \(\beta\) by minimizing the sum {`\\[S = \\sum_{i=1}^n (y_i - f(x_i, \\beta))^2\\]`} Notice that \(\beta\) can be more than one parameter.
                 </p>
@@ -72,7 +86,7 @@
     <Card>
         <Content>
             <h6>The least squares method in linear regression</h6>
-            <div use:typeset>
+            <div>
                 <p>
                     In the case of fitting a regression line, such as {`\\( Y = a + bX \\)`}, the method aims to find the values of {`\\( a \\)`} and {`\\( b \\)`} that minimize the sum of squared residuals, denoted as {`\\( S \\)`}:
                     {`\\[ S = \\sum_{i=1}^{n} (y_i - (a + bx_i))^2 \\]`}
@@ -117,6 +131,17 @@
                 </p>
                 
                 <p>The Least Squares Method calculates {`\\( a \\)`} and {`\\( b \\)`} values that minimize {`\\( S \\)`}, making the fitted regression line the "best fit" to the data.</p>
+                <p>
+                    \(b\) is called the <strong>coefficient of regression</strong>.
+                </p>
+            </div>
+        </Content>
+    </Card>
+    <h5>Questions</h5>
+    <Card>
+        <Content>
+            <div class="question">
+                Calculate the coefficient of regression \(b\) for {`\\(X = ${numbersX}\\)`} and {`\\(Y = ${numbersY}\\)`}.
             </div>
         </Content>
     </Card>

@@ -7,10 +7,13 @@ import { d as darkMode, c as currentPath, n as navList } from "../../../../../..
 import { c as contentNav, a as contents } from "../../../../../../../../chunks/content3.js";
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
+import { r as randSubset } from "../../../../../../../../chunks/common.js";
 const css = {
-  code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2,li.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}h6.svelte-98uzi2{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}",
+  code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2,li.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}h6.svelte-98uzi2{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}strong.svelte-98uzi2{color:goldenrod;opacity:1}.question.svelte-98uzi2{cursor:pointer;padding:0.3em}",
   map: null
 };
+let n = 15;
+let k = 7;
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $darkMode, $$unsubscribe_darkMode;
   let $currentPath, $$unsubscribe_currentPath;
@@ -23,6 +26,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   set_store_value(navList, $navList = contents, $navList);
   set_store_value(currentPath, $currentPath = "Least Squares Method", $currentPath);
   set_store_value(darkMode, $darkMode = false, $darkMode);
+  let numbersX = randSubset(n, k);
+  let numbersY = randSubset(n, k);
   $$result.css.add(css);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
@@ -83,7 +88,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                         b &= \\frac{\\sum x_i y_i - n\\overline{XY}}{\\sum x_i^2 - n\\overline{X}^2}\\\\
                         \\implies b &= \\frac{\\sum (x_i - \\overline{X})(y_i - \\overline{Y})}{\\sum (x_i - \\overline{X})^2}
                         \\end{aligned}
-                        \\]`)}</p> <p class="svelte-98uzi2">The Least Squares Method calculates ${escape(`\\( a \\)`)} and ${escape(`\\( b \\)`)} values that minimize ${escape(`\\( S \\)`)}, making the fitted regression line the &quot;best fit&quot; to the data.</p></div>`;
+                        \\]`)}</p> <p class="svelte-98uzi2">The Least Squares Method calculates ${escape(`\\( a \\)`)} and ${escape(`\\( b \\)`)} values that minimize ${escape(`\\( S \\)`)}, making the fitted regression line the &quot;best fit&quot; to the data.</p> <p class="svelte-98uzi2" data-svelte-h="svelte-b4l865">\\(b\\) is called the <strong class="svelte-98uzi2">coefficient of regression</strong>.</p></div>`;
+        }
+      })}`;
+    }
+  })} <h5 class="svelte-98uzi2" data-svelte-h="svelte-1984kyx">Questions</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-98uzi2">Calculate the coefficient of regression \\(b\\) for ${escape(`\\(X = ${numbersX}\\)`)} and ${escape(`\\(Y = ${numbersY}\\)`)}.</div>`;
         }
       })}`;
     }
