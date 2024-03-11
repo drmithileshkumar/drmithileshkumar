@@ -248,6 +248,10 @@ const contents = [
           {
             name: "Conflict Resolution",
             url: "/courses/internet/css/conflict"
+          },
+          {
+            name: "Practice Problems",
+            url: "/courses/internet/css/practice"
           }
         ]
       },
@@ -811,12 +815,18 @@ const contentNav = {
     "name": "Conflict Resolution",
     "url": "/courses/internet/css/conflict",
     "previous": "/courses/internet/css/background",
+    "next": "/courses/internet/css/practice"
+  },
+  "/courses/internet/css/practice": {
+    "name": "JAVASCRIPT",
+    "url": "/courses/internet/css/practice",
+    "previous": "/courses/internet/css/conflict",
     "next": "/courses/internet/javascript"
   },
   "/courses/internet/javascript": {
     "name": "JAVASCRIPT",
     "url": "/courses/internet/javascript",
-    "previous": "/courses/internet/css/conflict",
+    "previous": "/courses/internet/css/practice",
     "next": "/courses/internet/javascript/basics"
   },
   "/courses/internet/javascript/basics": {

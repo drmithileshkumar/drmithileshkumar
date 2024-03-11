@@ -1653,6 +1653,34 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/css/position/+page.svelte"
   },
+  "src/routes/(general)/courses/internet/css/practice/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/css/practice/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/css/practice/+page.js"
+  },
+  "src/routes/(general)/courses/internet/css/practice/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.5gHuq06k.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/css/practice/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_xml.js",
+      "_content4.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_LineNumbers.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/css/practice/+page.svelte"
+  },
   "src/routes/(general)/courses/internet/css/responsive/+page.js": {
     "file": "entries/pages/(general)/courses/internet/css/responsive/_page.js",
     "isEntry": true,
