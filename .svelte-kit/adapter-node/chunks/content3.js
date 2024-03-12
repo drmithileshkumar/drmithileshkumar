@@ -72,24 +72,24 @@ const contents = [
         ]
       },
       {
-        name: "PROBABILITY DISTRIBUTIONS",
-        url: "",
+        name: "PROBABILITY THEORY",
+        url: "/courses/mathematics2/probabilitytheory",
         topics: [
           {
-            name: "Prabability",
-            url: "",
+            name: "Probability",
+            url: "/courses/mathematics2/probabilitytheory/probability",
             topics: [
               {
                 name: "Events",
-                url: ""
+                url: "/courses/mathematics2/probabilitytheory/probability/events"
               },
               {
                 name: "Conditional Probability",
-                url: ""
+                url: "/courses/mathematics2/probabilitytheory/probability/conditional"
               },
               {
                 name: "Independence",
-                url: ""
+                url: "/courses/mathematics2/probabilitytheory/probability/independence"
               }
             ]
           },
@@ -469,7 +469,25 @@ let contentNav = {
     "name": "Least squares method",
     "url": "/courses/mathematics2/statistics/regression/leastsquares",
     "previous": "/courses/mathematics2/statistics/regression/regressionlines",
-    "next": ""
+    "next": "/courses/mathematics2/probabilitytheory"
+  },
+  "/courses/mathematics2/probabilitytheory": {
+    "name": "Probability Theory",
+    "url": "/courses/mathematics2/probabilitytheory",
+    "previous": "/courses/mathematics2/statistics/regression/leastsquares",
+    "next": "/courses/mathematics2/probabilitytheory/probability"
+  },
+  "/courses/mathematics2/probabilitytheory/probability": {
+    "name": "Probability",
+    "url": "/courses/mathematics2/probabilitytheory/probability",
+    "previous": "/courses/mathematics2/probabilitytheory",
+    "next": "/courses/mathematics2/probabilitytheory/probability/events"
+  },
+  "/courses/mathematics2/probabilitytheory/probability/events": {
+    "name": "Events",
+    "url": "/courses/mathematics2/probabilitytheory/probability/events",
+    "previous": "/courses/mathematics2/probabilitytheory/probability",
+    "next": "/courses/mathematics2/probabilitytheory/probability/events"
   },
   "": {
     "name": "PERT",

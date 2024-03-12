@@ -3083,6 +3083,104 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/[assignmentID]/solution/+page.svelte"
   },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hi9AJgO5.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores2.js",
+      "_content3.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/probability/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hi9AJgO5.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/probability/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores2.js",
+      "_content3.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/conditional/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/probability/conditional/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/conditional/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/conditional/+page.svelte": {
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/probability/conditional/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/conditional/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/events/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/probability/events/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/events/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/events/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.OHLcN6TD.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/probability/events/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores2.js",
+      "_content3.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/events/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/independence/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/probability/independence/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/independence/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/independence/+page.svelte": {
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/probability/independence/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/independence/+page.svelte"
+  },
   "src/routes/(general)/courses/mathematics2/statistics/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/statistics/_page.js",
     "isEntry": true,
@@ -3443,7 +3541,8 @@
       "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
-      "_common.js"
+      "_common.js",
+      "_Cell.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/statistics/regression/leastsquares/+page.svelte"

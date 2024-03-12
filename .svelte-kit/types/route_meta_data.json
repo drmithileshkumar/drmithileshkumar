@@ -334,6 +334,26 @@
 		"src/routes/(general)/courses/mathematics2/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/mathematics2/probabilitytheory": [
+		"src/routes/(general)/courses/mathematics2/probabilitytheory/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/probabilitytheory/probability": [
+		"src/routes/(general)/courses/mathematics2/probabilitytheory/probability/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/probabilitytheory/probability/conditional": [
+		"src/routes/(general)/courses/mathematics2/probabilitytheory/probability/conditional/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/probabilitytheory/probability/events": [
+		"src/routes/(general)/courses/mathematics2/probabilitytheory/probability/events/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/probabilitytheory/probability/independence": [
+		"src/routes/(general)/courses/mathematics2/probabilitytheory/probability/independence/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/mathematics2/statistics": [
 		"src/routes/(general)/courses/mathematics2/statistics/+page.js",
 		"src/routes/(general)/+layout.server.js"

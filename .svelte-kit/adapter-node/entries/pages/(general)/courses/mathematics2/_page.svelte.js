@@ -190,7 +190,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       default: () => {
         return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
           default: () => {
-            return `<h6 class="svelte-1a5or8o" data-svelte-h="svelte-kgi1xz">Textbook and references</h6> <ol data-svelte-h="svelte-13ktqkq"><li class="svelte-1a5or8o">Spiegel, Schiller, Srinivasan: Probability and Statistics-4th edition, McGraw Hill, 2013</li> <li class="svelte-1a5or8o">Study material at https://drmithileshkumar.com/courses/mathematics2</li> <li class="svelte-1a5or8o">Learn node.js at https://nodejs.org/en/learn</li> <li class="svelte-1a5or8o">Taha: Operations Research: An Introduction, Mac Millan.</li></ol>`;
+            return `<h6 class="svelte-1a5or8o" data-svelte-h="svelte-kgi1xz">Textbook and references</h6> <ol data-svelte-h="svelte-p4ajtw"><li class="svelte-1a5or8o">Spiegel, Schiller, Srinivasan: Probability and Statistics-4th edition, McGraw Hill, 2013</li> <li class="svelte-1a5or8o">Study material at https://drmithileshkumar.com/courses/mathematics2</li> <li class="svelte-1a5or8o">Taha: Operations Research: An Introduction, Mac Millan.</li></ol>`;
           }
         })}`;
       }

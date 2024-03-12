@@ -9,6 +9,7 @@
     import Pathlist from "$lib/components/Pathlist.svelte";
 	import CourseNavigation from "$lib/components/CourseNavigation.svelte";
     import { randSubset } from '$lib/utils/common/common';
+    import DataTable, { Head, Body, Row, Cell } from '@smui/data-table'
     import { onMount } from 'svelte';
     $navList = contents;
     $currentPath = "Least Squares Method";
@@ -137,11 +138,61 @@
             </div>
         </Content>
     </Card>
+    <Card>
+        <Content>
+            <h6>Summary</h6>
+            <p>To calculate the line of regression, follow these steps:</p>
+            <div> <strong>Step 1</strong>: Make the following table:
+                <DataTable style="width: 100%;margin-top: 1em;margin-bottom: 1em;">
+                    <Head>
+                        <Row>
+                            <Cell>\(x_i\)</Cell>
+                            <Cell>\(y_i\)</Cell>
+                            <Cell>\(x_i^2\)</Cell>
+                            <Cell>\(x_iy_i\)</Cell>
+                        </Row>
+                    </Head>
+                    <Body>
+                        <Row>
+                            <Cell>\(\vdots\)</Cell>
+                            <Cell>\(\vdots\)</Cell>
+                            <Cell>\(\vdots\)</Cell>
+                            <Cell>\(\vdots\)</Cell>
+                        </Row>
+                        <Row>
+                            <Cell>\(\sum x_i\)</Cell>
+                            <Cell>\(\sum y_i\)</Cell>
+                            <Cell>\(\sum x_i^2\)</Cell>
+                            <Cell>\(\sum x_iy_i\)</Cell>
+                        </Row>
+                    </Body>
+                </DataTable>
+            </div>
+            <div>
+                <strong>Step 2</strong>: Calculate {`\\[\\begin{aligned}
+                \\overline{X} &= \\frac{\\sum x_i}{n}\\\\
+                \\overline{Y} &= \\frac{\\sum y_i}{n}
+                \\end{aligned}\\]`}
+            </div>
+            <div>
+                <strong>Step 3</strong>: Calculate {`\\(n \\overline{XY}\\)`} and {`\\(\\overline{X}^2\\)`}
+            </div>
+            <div>
+                <strong>Step 4</strong>: Calculate {`\\[\\begin{aligned}
+                b &= \\frac{\\sum x_i y_i - n\\overline{XY}}{\\sum x_i^2 - n \\overline{X}^2}\\\\
+                a &= \\overline{Y} - b\\overline{X}
+                \\end{aligned}\\]`}
+            </div>
+            <div>
+                <strong>Step 5</strong>: Plot the line \(Y = a + bX\).
+            </div>
+        </Content>
+    </Card>
     <h5>Questions</h5>
     <Card>
         <Content>
             <div class="question">
-                Calculate the coefficient of regression \(b\) for {`\\(X = ${numbersX}\\)`} and {`\\(Y = ${numbersY}\\)`}.
+                Calculate the coefficient of regression \(b\) for {`\\(X = ${numbersX}\\)`} and {`\\(Y = ${numbersY}\\)`}. Plot the data and draw the line of regression.
             </div>
         </Content>
     </Card>

@@ -8,6 +8,7 @@ import { c as contentNav, a as contents } from "../../../../../../../../chunks/c
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 import { r as randSubset } from "../../../../../../../../chunks/common.js";
+import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../../../../chunks/Cell.js";
 const css = {
   code: "article.svelte-98uzi2{display:flex;flex-direction:column;gap:0.5em}p.svelte-98uzi2,li.svelte-98uzi2{opacity:0.8}h4.svelte-98uzi2,h5.svelte-98uzi2{margin:0.5em 0}h5.svelte-98uzi2{font-size:1.7em}h6.svelte-98uzi2{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}strong.svelte-98uzi2{color:goldenrod;opacity:1}.question.svelte-98uzi2{cursor:pointer;padding:0.3em}",
   map: null
@@ -92,11 +93,105 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<h6 class="svelte-98uzi2" data-svelte-h="svelte-13bl8bq">Summary</h6> <p class="svelte-98uzi2" data-svelte-h="svelte-1jchuvd">To calculate the line of regression, follow these steps:</p> <div><strong class="svelte-98uzi2" data-svelte-h="svelte-1rhfhkp">Step 1</strong>: Make the following table:
+                ${validate_component(DataTable, "DataTable").$$render(
+            $$result,
+            {
+              style: "width: 100%;margin-top: 1em;margin-bottom: 1em;"
+            },
+            {},
+            {
+              default: () => {
+                return `${validate_component(Head, "Head").$$render($$result, {}, {}, {
+                  default: () => {
+                    return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                      default: () => {
+                        return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                          default: () => {
+                            return `\\(x_i\\)`;
+                          }
+                        })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                          default: () => {
+                            return `\\(y_i\\)`;
+                          }
+                        })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                          default: () => {
+                            return `\\(x_i^2\\)`;
+                          }
+                        })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                          default: () => {
+                            return `\\(x_iy_i\\)`;
+                          }
+                        })}`;
+                      }
+                    })}`;
+                  }
+                })} ${validate_component(Body, "Body").$$render($$result, {}, {}, {
+                  default: () => {
+                    return `${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                      default: () => {
+                        return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                          default: () => {
+                            return `\\(\\vdots\\)`;
+                          }
+                        })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                          default: () => {
+                            return `\\(\\vdots\\)`;
+                          }
+                        })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                          default: () => {
+                            return `\\(\\vdots\\)`;
+                          }
+                        })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                          default: () => {
+                            return `\\(\\vdots\\)`;
+                          }
+                        })}`;
+                      }
+                    })} ${validate_component(Row, "Row").$$render($$result, {}, {}, {
+                      default: () => {
+                        return `${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                          default: () => {
+                            return `\\(\\sum x_i\\)`;
+                          }
+                        })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                          default: () => {
+                            return `\\(\\sum y_i\\)`;
+                          }
+                        })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                          default: () => {
+                            return `\\(\\sum x_i^2\\)`;
+                          }
+                        })} ${validate_component(Cell, "Cell").$$render($$result, {}, {}, {
+                          default: () => {
+                            return `\\(\\sum x_iy_i\\)`;
+                          }
+                        })}`;
+                      }
+                    })}`;
+                  }
+                })}`;
+              }
+            }
+          )}</div> <div><strong class="svelte-98uzi2" data-svelte-h="svelte-1gnuaow">Step 2</strong>: Calculate ${escape(`\\[\\begin{aligned}
+                \\overline{X} &= \\frac{\\sum x_i}{n}\\\\
+                \\overline{Y} &= \\frac{\\sum y_i}{n}
+                \\end{aligned}\\]`)}</div> <div><strong class="svelte-98uzi2" data-svelte-h="svelte-1bvgl3f">Step 3</strong>: Calculate ${escape(`\\(n \\overline{XY}\\)`)} and ${escape(`\\(\\overline{X}^2\\)`)}</div> <div><strong class="svelte-98uzi2" data-svelte-h="svelte-15a2ivm">Step 4</strong>: Calculate ${escape(`\\[\\begin{aligned}
+                b &= \\frac{\\sum x_i y_i - n\\overline{XY}}{\\sum x_i^2 - n \\overline{X}^2}\\\\
+                a &= \\overline{Y} - b\\overline{X}
+                \\end{aligned}\\]`)}</div> <div data-svelte-h="svelte-2qkl"><strong class="svelte-98uzi2">Step 5</strong>: Plot the line \\(Y = a + bX\\).</div>`;
+        }
+      })}`;
+    }
   })} <h5 class="svelte-98uzi2" data-svelte-h="svelte-1984kyx">Questions</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-98uzi2">Calculate the coefficient of regression \\(b\\) for ${escape(`\\(X = ${numbersX}\\)`)} and ${escape(`\\(Y = ${numbersY}\\)`)}.</div>`;
+          return `<div class="question svelte-98uzi2">Calculate the coefficient of regression \\(b\\) for ${escape(`\\(X = ${numbersX}\\)`)} and ${escape(`\\(Y = ${numbersY}\\)`)}. Plot the data and draw the line of regression.</div>`;
         }
       })}`;
     }

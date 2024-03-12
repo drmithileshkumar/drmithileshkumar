@@ -180,7 +180,6 @@
                 <ol>
                     <li>Spiegel, Schiller, Srinivasan: Probability and Statistics-4th edition, McGraw Hill, 2013</li>
                     <li>Study material at https://drmithileshkumar.com/courses/mathematics2</li>
-                    <li>Learn node.js at https://nodejs.org/en/learn</li>
                     <li>Taha: Operations Research: An Introduction, Mac Millan.</li>
                 </ol>
             </Content>
