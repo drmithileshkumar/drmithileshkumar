@@ -8,7 +8,7 @@ import { c as contentNav, a as contents } from "../../../../../../../../chunks/c
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 const css = {
-  code: "article.svelte-1wjl3b9{display:flex;flex-direction:column;gap:0.5em}p.svelte-1wjl3b9,li.svelte-1wjl3b9{opacity:0.8}h4.svelte-1wjl3b9{margin:0.5em 0}h6.svelte-1wjl3b9{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}strong.svelte-1wjl3b9{color:rgb(159, 116, 7);opacity:1}.image.svelte-1wjl3b9{display:flex;align-items:center;justify-content:center}",
+  code: "article.svelte-1wjl3b9{display:flex;flex-direction:column;gap:0.5em}p.svelte-1wjl3b9,li.svelte-1wjl3b9{opacity:0.8}h4.svelte-1wjl3b9{margin:0.5em 0}h6.svelte-1wjl3b9{font-size:1em;margin:0.5em 0;color:rgba(0, 150, 200, 1)}strong.svelte-1wjl3b9{color:rgb(159, 116, 7);opacity:1}.question.svelte-1wjl3b9{cursor:pointer;padding:0.3em}.image.svelte-1wjl3b9{display:flex;align-items:center;justify-content:center}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -165,6 +165,22 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
           return `<h6 class="svelte-1wjl3b9" data-svelte-h="svelte-ikt5um">Theorem</h6> <div class="theorem"><p class="svelte-1wjl3b9">If \\(A\\) and \\(B\\) are any two events, then ${escape(`\\[P(A\\cup B) = P(A) + P(B) - P(A\\cap B)\\]`)}</p></div>`;
+        }
+      })}`;
+    }
+  })} <h4 class="svelte-1wjl3b9" data-svelte-h="svelte-9or4p">Questions</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1wjl3b9" data-svelte-h="svelte-1r0vyf1"><p class="svelte-1wjl3b9">A card is drawn at random from an ordinary deck of 52 playing cards. Find the probability that it is</p> <ol><li class="svelte-1wjl3b9">an ace</li> <li class="svelte-1wjl3b9">a jack of hearts</li> <li class="svelte-1wjl3b9">a three of clubs or a six of diamonds</li> <li class="svelte-1wjl3b9">a heart</li> <li class="svelte-1wjl3b9">any suit except hearts</li> <li class="svelte-1wjl3b9">a ten or a spade</li> <li class="svelte-1wjl3b9">neither a four nor a club</li></ol></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1wjl3b9" data-svelte-h="svelte-1hz9s3c"><p class="svelte-1wjl3b9">A ball is drawn at random from a box containing 6 red balls, 4 white balls, and 5 blue balls. Determine the probability that it is</p> <ol><li class="svelte-1wjl3b9">red</li> <li class="svelte-1wjl3b9">white</li> <li class="svelte-1wjl3b9">blue</li> <li class="svelte-1wjl3b9">not red</li> <li class="svelte-1wjl3b9">red or white</li></ol></div>`;
         }
       })}`;
     }

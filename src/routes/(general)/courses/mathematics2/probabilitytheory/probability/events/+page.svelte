@@ -265,4 +265,37 @@
             </div>
         </Content>
     </Card>
+    <h4>Questions</h4>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>
+                    A card is drawn at random from an ordinary deck of 52 playing cards. Find the probability that it is
+                </p>
+                <ol>
+                    <li>an ace</li>
+                    <li>a jack of hearts</li>
+                    <li>a three of clubs or a six of diamonds</li>
+                    <li>a heart</li>
+                    <li>any suit except hearts</li>
+                    <li>a ten or a spade</li>
+                    <li>neither a four nor a club</li>
+                </ol>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>A ball is drawn at random from a box containing 6 red balls, 4 white balls, and 5 blue balls. Determine the probability that it is </p>
+                <ol>
+                    <li>red</li>
+                    <li>white</li>
+                    <li>blue</li>
+                    <li>not red</li>
+                    <li>red or white</li>
+                </ol>
+            </div>
+        </Content>
+    </Card>
 </article>
