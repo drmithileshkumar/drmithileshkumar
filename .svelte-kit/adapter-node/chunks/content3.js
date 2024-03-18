@@ -489,6 +489,18 @@ let contentNav = {
     "previous": "/courses/mathematics2/probabilitytheory/probability",
     "next": "/courses/mathematics2/probabilitytheory/probability/events"
   },
+  "/courses/mathematics2/probabilitytheory/probability/conditional": {
+    "name": "Events",
+    "url": "/courses/mathematics2/probabilitytheory/probability/conditional",
+    "previous": "/courses/mathematics2/probabilitytheory/probability/events",
+    "next": "/courses/mathematics2/probabilitytheory/probability/independence"
+  },
+  "/courses/mathematics2/probabilitytheory/probability/independence": {
+    "name": "Events",
+    "url": "/courses/mathematics2/probabilitytheory/probability/independence",
+    "previous": "/courses/mathematics2/probabilitytheory/probability/conditional",
+    "next": "/courses/mathematics2/probabilitytheory/probability/independence"
+  },
   "": {
     "name": "PERT",
     "url": "",
