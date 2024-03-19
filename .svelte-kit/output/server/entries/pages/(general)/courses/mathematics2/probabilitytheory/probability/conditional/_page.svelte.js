@@ -65,11 +65,85 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
+  })} <h4 class="svelte-1wjl3b9" data-svelte-h="svelte-1o0mgzr">Independent Events</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="definition" data-svelte-h="svelte-1nq0ot9">If \\(P(B\\vert A) = P(B)\\), i.e. the probability of \\(B\\) occurring is not affected by the occurrence or non-occurrence of \\(A\\), then we say that \\(A\\) and \\(B\\) are <strong class="svelte-1wjl3b9">independent events</strong>. 
+                \\[P(A\\cap B) = P(A)P(B)\\]</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<h6 class="svelte-1wjl3b9" data-svelte-h="svelte-1dqnse3">Definition</h6> <div class="definition">We say that three events \\(A_1, A_2, A_3\\) are <strong class="svelte-1wjl3b9" data-svelte-h="svelte-1oeeis">independent</strong> if they are pairwise independent: 
+                ${escape(`\\[P(A_j\\cap A_k) = P(A_j)P(A_k)\\quad j\\neq k\\]`)} where \\(j, k = 1, 2, 3\\) and \\[P(A_1\\cap A_2\\cap A_3) = P(A_1)P(A_2)P(A_3)\\]</div>`;
+        }
+      })}`;
+    }
   })} <h4 class="svelte-1wjl3b9" data-svelte-h="svelte-9or4p">Questions</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
           return `<div class="question svelte-1wjl3b9" data-svelte-h="svelte-1nwi19p"><p class="svelte-1wjl3b9">A fair die is tossed twice. Find the probability of getting a 4, 5, or 6 on the first toss and a 1, 2, 3, or 4 on the second toss.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1wjl3b9" data-svelte-h="svelte-1ng37hx"><p class="svelte-1wjl3b9">Give five examples when two events are independent and when they are not independent.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1wjl3b9" data-svelte-h="svelte-1vzvnmg"><p class="svelte-1wjl3b9">Find the probability of not getting a 7 or 11 total on either of two tosses of a pair of fair dice.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1wjl3b9" data-svelte-h="svelte-11qztd9"><p class="svelte-1wjl3b9">Two cards are drawn from a well-shuffled ordinary deck of 52 cards. Find the probability that they are both aces if the first card is (a) replaced, (b) not replaced.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1wjl3b9" data-svelte-h="svelte-7deak"><p class="svelte-1wjl3b9">Three balls are drawn successively from the box which contains 6 red balls, 4 white balls and 5 blue balls. Find the probability that they are drawn in the order red, white, and blue if each ball is (a) replaced, (b) not replaced.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1wjl3b9" data-svelte-h="svelte-g8tlam"><p class="svelte-1wjl3b9">Find the probability of a 4 turning up at least once in two tosses of a fair die.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1wjl3b9" data-svelte-h="svelte-1hlq5ah"><p class="svelte-1wjl3b9">One bag contains 4 white balls and 2 black balls; another contains 3 white balls and 5 black balls. If one ball is drawn from each bag, find the probability that (a) both are white, (b) both are black, (c) one is white and one is black.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1wjl3b9" data-svelte-h="svelte-10nmm71"><p class="svelte-1wjl3b9">Box I contains 3 red and 2 blue marbles, while Box II contains 2 red and 8 blue marbles. A fair coin is tossed. If the coin turns up heads, a marble is chosen from Box I; if it turns up tails, a marble is chosen from Box II. Find the probability that a red marble is chosen.</p></div>`;
         }
       })}`;
     }

@@ -287,6 +287,26 @@
     <Card>
         <Content>
             <div class="question">
+                <p>
+                    A card is drawn at random from an ordinary deck of 52 playing cards. Let \(A\) be the event {`\\(\\{\\text{a king is drawn}\\}\\)`} and \(B\) the event {`\\(\\{\\text{a club is drawn}\\}\\)`}. Describe the events 
+                </p>
+                <ol>
+                    <li>\(A\cup B\)</li>
+                    <li>\(A\cap B\)</li>
+                    <li>\(A\cup B'\)</li>
+                    <li>\(A'\cup B'\)</li>
+                    <li>\(A - B\)</li>
+                    <li>\(A' - B'\)</li>
+                    <li>\(A\cup B\)</li>
+                    <li>\((A\cap B)\cup (A\cap B')\)</li>
+                </ol>
+                <p>Use Venn Diagrams to show the events.</p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
                 <p>A ball is drawn at random from a box containing 6 red balls, 4 white balls, and 5 blue balls. Determine the probability that it is </p>
                 <ol>
                     <li>red</li>

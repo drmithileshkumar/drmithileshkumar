@@ -180,6 +180,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
+          return `<div class="question svelte-1wjl3b9"><p class="svelte-1wjl3b9">A card is drawn at random from an ordinary deck of 52 playing cards. Let \\(A\\) be the event ${escape(`\\(\\{\\text{a king is drawn}\\}\\)`)} and \\(B\\) the event ${escape(`\\(\\{\\text{a club is drawn}\\}\\)`)}. Describe the events</p> <ol data-svelte-h="svelte-x2ra0n"><li class="svelte-1wjl3b9">\\(A\\cup B\\)</li> <li class="svelte-1wjl3b9">\\(A\\cap B\\)</li> <li class="svelte-1wjl3b9">\\(A\\cup B&#39;\\)</li> <li class="svelte-1wjl3b9">\\(A&#39;\\cup B&#39;\\)</li> <li class="svelte-1wjl3b9">\\(A - B\\)</li> <li class="svelte-1wjl3b9">\\(A&#39; - B&#39;\\)</li> <li class="svelte-1wjl3b9">\\(A\\cup B\\)</li> <li class="svelte-1wjl3b9">\\((A\\cap B)\\cup (A\\cap B&#39;)\\)</li></ol> <p class="svelte-1wjl3b9" data-svelte-h="svelte-1p8t70u">Use Venn Diagrams to show the events.</p></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
           return `<div class="question svelte-1wjl3b9" data-svelte-h="svelte-1hz9s3c"><p class="svelte-1wjl3b9">A ball is drawn at random from a box containing 6 red balls, 4 white balls, and 5 blue balls. Determine the probability that it is</p> <ol><li class="svelte-1wjl3b9">red</li> <li class="svelte-1wjl3b9">white</li> <li class="svelte-1wjl3b9">blue</li> <li class="svelte-1wjl3b9">not red</li> <li class="svelte-1wjl3b9">red or white</li></ol></div>`;
         }
       })}`;

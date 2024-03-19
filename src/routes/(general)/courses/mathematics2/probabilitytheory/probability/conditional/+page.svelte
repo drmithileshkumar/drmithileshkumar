@@ -88,11 +88,82 @@
             </div>
         </Content>
     </Card>
+    <h4>
+        Independent Events
+    </h4>
+    
+    <Card>
+        <Content>
+            <div class="definition">
+                If \(P(B\vert A) = P(B)\), i.e. the probability of \(B\) occurring is not affected by the occurrence or non-occurrence of \(A\), then we say that \(A\) and \(B\) are <strong>independent events</strong>. 
+                \[P(A\cap B) = P(A)P(B)\]
+            </div>
+        </Content>
+    </Card>
+    
+    <Card>
+        <Content>
+            <h6>Definition</h6>
+            <div class="definition">
+                We say that three events \(A_1, A_2, A_3\) are <strong>independent</strong> if they are pairwise independent: 
+                {`\\[P(A_j\\cap A_k) = P(A_j)P(A_k)\\quad j\\neq k\\]`} where \(j, k = 1, 2, 3\) and \[P(A_1\cap A_2\cap A_3) = P(A_1)P(A_2)P(A_3)\]
+            </div>
+        </Content>
+    </Card>
     <h4>Questions</h4>
     <Card>
         <Content>
             <div class="question">
                 <p>A fair die is tossed twice. Find the probability of getting a 4, 5, or 6 on the first toss and a 1, 2, 3, or 4 on the second toss.</p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Give five examples when two events are independent and when they are not independent.</p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Find the probability of not getting a 7 or 11 total on either of two tosses of a pair of fair dice.</p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Two cards are drawn from a well-shuffled ordinary deck of 52 cards. Find the probability that they are both aces if the first card is (a) replaced, (b) not replaced.</p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Three balls are drawn successively from the box which contains 6 red balls, 4 white balls and 5 blue balls. Find the probability that they are drawn in the order red, white, and blue if each ball is (a) replaced, (b) not replaced.</p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Find the probability of a 4 turning up at least once in two tosses of a fair die.</p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>One bag contains 4 white balls and 2 black balls; another contains 3 white balls and 5 black balls. If one ball is drawn from each bag, find the probability that (a) both are white, (b) both are black, (c) one is white and one is black.</p>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <p>Box I contains 3 red and 2 blue marbles, while Box II contains 2 red and 8 blue marbles. A fair coin is tossed. If the coin turns up heads, a marble is chosen from Box I; if it turns up tails, a marble is chosen from Box II. Find the probability that a red marble is chosen.</p>
             </div>
         </Content>
     </Card>

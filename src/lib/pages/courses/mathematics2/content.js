@@ -87,10 +87,6 @@ export const contents = [
                             {
                                 name: "Conditional Probability",
                                 url: "/courses/mathematics2/probabilitytheory/probability/conditional"
-                            },
-                            {
-                                name: "Independence",
-                                url: "/courses/mathematics2/probabilitytheory/probability/independence"
                             }
                         ]
                     },
@@ -489,19 +485,13 @@ export let contentNav = {
         "name": "Events",
         "url": "/courses/mathematics2/probabilitytheory/probability/events",
         "previous": "/courses/mathematics2/probabilitytheory/probability",
-        "next": "/courses/mathematics2/probabilitytheory/probability/events"
+        "next": "/courses/mathematics2/probabilitytheory/probability/conditional"
     },
     "/courses/mathematics2/probabilitytheory/probability/conditional": {
         "name": "Events",
         "url": "/courses/mathematics2/probabilitytheory/probability/conditional",
         "previous": "/courses/mathematics2/probabilitytheory/probability/events",
-        "next": "/courses/mathematics2/probabilitytheory/probability/independence"
-    },
-    "/courses/mathematics2/probabilitytheory/probability/independence": {
-        "name": "Events",
-        "url": "/courses/mathematics2/probabilitytheory/probability/independence",
-        "previous": "/courses/mathematics2/probabilitytheory/probability/conditional",
-        "next": "/courses/mathematics2/probabilitytheory/probability/independence"
+        "next": "/courses/mathematics2/probabilitytheory/probability/conditional"
     },
     "": {
         "name": "PERT",
