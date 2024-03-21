@@ -87,7 +87,12 @@ export const contents = [
                             {
                                 name: "Conditional Probability",
                                 url: "/courses/mathematics2/probabilitytheory/probability/conditional"
+                            },
+                            {
+                                name: "Practice Problems",
+                                url: "/courses/mathematics2/probabilitytheory/probability/practice"
                             }
+
                         ]
                     },
                     {
@@ -491,7 +496,13 @@ export let contentNav = {
         "name": "Events",
         "url": "/courses/mathematics2/probabilitytheory/probability/conditional",
         "previous": "/courses/mathematics2/probabilitytheory/probability/events",
-        "next": "/courses/mathematics2/probabilitytheory/probability/conditional"
+        "next": "/courses/mathematics2/probabilitytheory/probability/practice"
+    },
+    "/courses/mathematics2/probabilitytheory/probability/practice": {
+        "name": "Events",
+        "url": "/courses/mathematics2/probabilitytheory/probability/practice",
+        "previous": "/courses/mathematics2/probabilitytheory/probability/conditional",
+        "next": "/courses/mathematics2/probabilitytheory/probability/practice"
     },
     "": {
         "name": "PERT",

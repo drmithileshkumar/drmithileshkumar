@@ -354,6 +354,10 @@
 		"src/routes/(general)/courses/mathematics2/probabilitytheory/probability/independence/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/mathematics2/probabilitytheory/probability/practice": [
+		"src/routes/(general)/courses/mathematics2/probabilitytheory/probability/practice/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/mathematics2/statistics": [
 		"src/routes/(general)/courses/mathematics2/statistics/+page.js",
 		"src/routes/(general)/+layout.server.js"

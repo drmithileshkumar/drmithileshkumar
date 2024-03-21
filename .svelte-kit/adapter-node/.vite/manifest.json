@@ -3203,6 +3203,30 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/independence/+page.svelte"
   },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/practice/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/probability/practice/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/practice/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/practice/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.T6N8mpUp.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/probability/practice/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores2.js",
+      "_content3.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/practice/+page.svelte"
+  },
   "src/routes/(general)/courses/mathematics2/statistics/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/statistics/_page.js",
     "isEntry": true,
