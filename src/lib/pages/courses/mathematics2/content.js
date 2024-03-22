@@ -97,16 +97,8 @@ export const contents = [
                     },
                     {
                         name: "Distributions",
-                        url: '',
+                        url: '/courses/mathematics2/probabilitytheory/distributions',
                         topics: [
-                            {
-                                name: "Univariate Probability Distributionns",
-                                url: ""
-                            },
-                            {
-                                name: "Bivariate Probability Distribution",
-                                url: ""
-                            },
                             {
                                 name: "Mathematical Expectation",
                                 url: ""
@@ -503,6 +495,18 @@ export let contentNav = {
         "url": "/courses/mathematics2/probabilitytheory/probability/practice",
         "previous": "/courses/mathematics2/probabilitytheory/probability/conditional",
         "next": "/courses/mathematics2/probabilitytheory/probability/practice"
+    },
+    "/courses/mathematics2/probabilitytheory/probability/practice": {
+        "name": "Events",
+        "url": "/courses/mathematics2/probabilitytheory/probability/practice",
+        "previous": "/courses/mathematics2/probabilitytheory/probability/conditional",
+        "next": "/courses/mathematics2/probabilitytheory/distributions"
+    },
+    "/courses/mathematics2/probabilitytheory/distributions": {
+        "name": "Probability Distributions",
+        "url": "/courses/mathematics2/probabilitytheory/distributions",
+        "previous": "/courses/mathematics2/probabilitytheory/probability/practice",
+        "next": "/courses/mathematics2/probabilitytheory/distributions"
     },
     "": {
         "name": "PERT",
