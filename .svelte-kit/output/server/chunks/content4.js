@@ -230,26 +230,6 @@ const contents = [
             url: "/courses/internet/css/responsive"
           },
           {
-            name: "Lists",
-            url: "/courses/internet/css/lists"
-          },
-          {
-            name: "Table",
-            url: "/courses/internet/css/table"
-          },
-          {
-            name: "Transform",
-            url: "/courses/internet/css/transform"
-          },
-          {
-            name: "Transition",
-            url: "/courses/internet/css/background"
-          },
-          {
-            name: "Conflict Resolution",
-            url: "/courses/internet/css/conflict"
-          },
-          {
             name: "Practice Problems",
             url: "/courses/internet/css/practice"
           }
@@ -272,213 +252,205 @@ const contents = [
                 url: "/courses/internet/javascript/basics/objectorientation"
               },
               {
-                name: "General Syntactic Characteristics",
-                url: "/courses/internet/javascript/basics/syntactic"
+                name: "Variables",
+                url: "/courses/internet/javascript/basics/variables"
               },
               {
-                name: "Primitives, Operations, and Expressions",
-                url: "/courses/internet/javascript/basics/primitives"
+                name: "Expressions",
+                url: "/courses/internet/javascript/basics/expressions"
               },
               {
-                name: "Screen Output and Keyboard Input",
-                url: "/courses/internet/javascript/basics/io"
+                name: "Conditions",
+                url: "/courses/internet/javascript/basics/conditions"
               },
               {
-                name: "Control Statements",
-                url: "/courses/internet/javascript/basics/control"
-              },
-              {
-                name: "Object Creation and Modification",
-                url: "/courses/internet/javascript/basics/object"
-              },
-              {
-                name: "Arrays",
-                url: "/courses/internet/javascript/basics/arrays"
+                name: "Loops",
+                url: "/courses/internet/javascript/basics/loops"
               },
               {
                 name: "Functions",
                 url: "/courses/internet/javascript/basics/functions"
               },
               {
-                name: "Constructors",
-                url: "/courses/internet/javascript/basics/constructor"
-              },
-              {
-                name: "Regular Expressions",
-                url: "/courses/internet/javascript/basics/regex"
-              },
-              {
                 name: "Errors in Scripts",
                 url: "/courses/internet/javascript/basics/error"
-              }
-            ]
-          },
-          {
-            name: "JavaScript and HTML Documents",
-            url: "/courses/internet/javascript/html",
-            topics: [
-              {
-                name: "The JavaScript Execution Environment",
-                url: "/courses/internet/javascript/html/jee"
               },
               {
-                name: "The Document Object Model",
-                url: "/courses/internet/javascript/html/dom"
+                name: "Events",
+                url: "/courses/internet/javascript/basics/events"
               },
               {
-                name: "Element Access in JavaScript",
-                url: "/courses/internet/javascript/html/element"
-              },
-              {
-                name: "Events and Event Handling",
-                url: "/courses/internet/javascript/html/events"
-              },
-              {
-                name: "Handling Events from Body Elements",
-                url: "/courses/internet/javascript/html/body"
-              },
-              {
-                name: "Handling Events from Button Elements",
-                url: "/courses/internet/javascript/html/button"
-              },
-              {
-                name: "Handling Events from Text Box and Password Elements",
-                url: "/courses/internet/javascript/html/textbox"
-              },
-              {
-                name: "The DOM 2 Event Model",
-                url: "/courses/internet/javascript/html/dom2"
-              },
-              {
-                name: "The canvas Element",
-                url: "/courses/internet/javascript/html/canvas"
-              },
-              {
-                name: "The navigator Object",
-                url: "/courses/internet/javascript/html/navigator"
-              },
-              {
-                name: "DOM Tree Traversal and Modification",
-                url: "/courses/internet/javascript/html/tree"
-              }
-            ]
-          },
-          {
-            name: "Dynamic Documents with JavaScript",
-            url: "/courses/internet/javascript/dynamic",
-            topics: [
-              {
-                name: "Introduction",
-                url: "/courses/internet/javascript/dynamic/intro"
-              },
-              {
-                name: "Positioning Elements",
-                url: "/courses/internet/javascript/dynamic/position"
-              },
-              {
-                name: "Moving Elements",
-                url: "/courses/internet/javascript/dynamic/move"
-              },
-              {
-                name: "Element Visibility",
-                url: "/courses/internet/javascript/dynamic/visibility"
-              },
-              {
-                name: "Changing Colors and fonts",
-                url: "/courses/internet/javascript/dynamic/colors"
-              },
-              {
-                name: "Dynamic Content",
-                url: "/courses/internet/javascript/dynamic/content"
-              },
-              {
-                name: "Stacking Elements",
-                url: "/courses/internet/javascript/dynamic/stack"
-              },
-              {
-                name: "Locating the Mouse Cursor",
-                url: "/courses/internet/javascript/dynamic/cursor"
-              },
-              {
-                name: "Reating to a Mouse",
-                url: "/courses/internet/javascript/dynamic/mouse"
-              },
-              {
-                name: "Slow Movement of Elements",
-                url: "/courses/internet/javascript/dynamic/slow"
-              },
-              {
-                name: "Dragging and Dropping Elements",
-                url: "/courses/internet/javascript/dynamic/drag"
-              }
-            ]
-          },
-          {
-            name: "Asynchronous JavaScript",
-            url: "/courses/internet/javascript/asynchronous",
-            topics: [
-              {
-                name: "Callbacks",
-                url: "/courses/internet/javascript/asynchronous/callbacks"
-              },
-              {
-                name: "Promises",
-                url: "/courses/internet/javascript/asynchronous/promises"
-              },
-              {
-                name: "async and await",
-                url: "/courses/internet/javascript/asynchronous/async"
-              }
-            ]
-          },
-          {
-            name: "HTTP",
-            url: "/courses/internet/javascript/http",
-            topics: [
-              {
-                name: "Overview",
-                url: "/courses/internet/javascript/http/overview"
-              },
-              {
-                name: "HTTP Messages",
-                url: "/courses/internet/javascript/http/messages"
-              },
-              {
-                name: "A typical HTTP session",
-                url: "/courses/internet/javascript/http/session"
-              }
-            ]
-          },
-          {
-            name: "Fetch API",
-            url: "/courses/internet/javascript/fetchapi",
-            topics: [
-              {
-                name: "Overview",
-                url: "/courses/internet/javascript/fetchapi/overview"
-              },
-              {
-                name: "Using the Fetch API",
-                url: "/courses/internet/javascript/fetchapi/usages"
-              },
-              {
-                name: "fetch()",
-                url: "/courses/internet/javascript/fetchapi/fetch"
-              },
-              {
-                name: "Headers",
-                url: "/courses/internet/javascript/fetchapi/headers"
-              },
-              {
-                name: "Request",
-                url: "/courses/internet/javascript/fetchapi/request"
-              },
-              {
-                name: "Response",
-                url: "/courses/internet/javascript/fetchapi/response"
+                name: "HTTP",
+                url: "/courses/internet/javascript/basics/http"
               }
             ]
           }
+          // {
+          //     name: 'JavaScript and HTML Documents',
+          //     url: "/courses/internet/javascript/html",
+          //     topics: [
+          //         {
+          //             name: "The JavaScript Execution Environment",
+          //             url: "/courses/internet/javascript/html/jee"
+          //         },
+          //         {
+          //             name: "The Document Object Model",
+          //             url: "/courses/internet/javascript/html/dom"
+          //         },
+          //         {
+          //             name: "Element Access in JavaScript",
+          //             url: "/courses/internet/javascript/html/element"
+          //         },
+          //         {
+          //             name: "Events and Event Handling",
+          //             url: "/courses/internet/javascript/html/events"
+          //         },
+          //         {
+          //             name: "Handling Events from Body Elements",
+          //             url: "/courses/internet/javascript/html/body"
+          //         },
+          //         {
+          //             name: "Handling Events from Button Elements",
+          //             url: "/courses/internet/javascript/html/button"
+          //         },
+          //         {
+          //             name: "Handling Events from Text Box and Password Elements",
+          //             url: "/courses/internet/javascript/html/textbox"
+          //         },
+          //         {
+          //             name: "The DOM 2 Event Model",
+          //             url: "/courses/internet/javascript/html/dom2"
+          //         },
+          //         {
+          //             name: "The canvas Element",
+          //             url: "/courses/internet/javascript/html/canvas"
+          //         },
+          //         {
+          //             name: "The navigator Object",
+          //             url: "/courses/internet/javascript/html/navigator"
+          //         },
+          //         {
+          //             name: "DOM Tree Traversal and Modification",
+          //             url: "/courses/internet/javascript/html/tree"
+          //         }
+          //     ]
+          // },
+          // {
+          //     name: "Dynamic Documents with JavaScript",
+          //     url: "/courses/internet/javascript/dynamic",
+          //     topics: [
+          //         {
+          //             name: 'Introduction',
+          //             url: "/courses/internet/javascript/dynamic/intro"
+          //         },
+          //         {
+          //             name: "Positioning Elements",
+          //             url: "/courses/internet/javascript/dynamic/position"
+          //         },
+          //         {
+          //             name: "Moving Elements",
+          //             url: "/courses/internet/javascript/dynamic/move"
+          //         },
+          //         {
+          //             name: "Element Visibility",
+          //             url: "/courses/internet/javascript/dynamic/visibility"
+          //         },
+          //         {
+          //             name: "Changing Colors and fonts",
+          //             url: "/courses/internet/javascript/dynamic/colors"
+          //         },
+          //         {
+          //             name: "Dynamic Content",
+          //             url: "/courses/internet/javascript/dynamic/content"
+          //         },
+          //         {
+          //             name: "Stacking Elements",
+          //             url: "/courses/internet/javascript/dynamic/stack"
+          //         },
+          //         {
+          //             name: "Locating the Mouse Cursor",
+          //             url: "/courses/internet/javascript/dynamic/cursor"
+          //         },
+          //         {
+          //             name: "Reating to a Mouse",
+          //             url: "/courses/internet/javascript/dynamic/mouse"
+          //         },
+          //         {
+          //             name: "Slow Movement of Elements",
+          //             url: "/courses/internet/javascript/dynamic/slow"
+          //         },
+          //         {
+          //             name: "Dragging and Dropping Elements",
+          //             url: "/courses/internet/javascript/dynamic/drag"
+          //         },
+          //     ]
+          // },
+          // {
+          //     name: "Asynchronous JavaScript",
+          //     url: "/courses/internet/javascript/asynchronous",
+          //     topics: [
+          //         {
+          //             name: "Callbacks",
+          //             url: "/courses/internet/javascript/asynchronous/callbacks"
+          //         },
+          //         {
+          //             name: "Promises",
+          //             url: "/courses/internet/javascript/asynchronous/promises"
+          //         },
+          //         {
+          //             name: "async and await",
+          //             url: "/courses/internet/javascript/asynchronous/async"
+          //         }
+          //     ]
+          // },
+          // {
+          //     name: "HTTP",
+          //     url: "/courses/internet/javascript/http",
+          //     topics: [
+          //         {
+          //             name: "Overview",
+          //             url: "/courses/internet/javascript/http/overview"
+          //         },
+          //         {
+          //             name: "HTTP Messages",
+          //             url: "/courses/internet/javascript/http/messages"
+          //         },
+          //         {
+          //             name: "A typical HTTP session",
+          //             url: "/courses/internet/javascript/http/session"
+          //         }
+          //     ]
+          // },
+          // {
+          //     name: "Fetch API",
+          //     url: "/courses/internet/javascript/fetchapi",
+          //     topics: [
+          //         {
+          //             name: "Overview",
+          //             url: "/courses/internet/javascript/fetchapi/overview"
+          //         },
+          //         {
+          //             name: "Using the Fetch API",
+          //             url: "/courses/internet/javascript/fetchapi/usages"
+          //         },
+          //         {
+          //             name: "fetch()",
+          //             url: "/courses/internet/javascript/fetchapi/fetch"
+          //         },
+          //         {
+          //             name: "Headers",
+          //             url: "/courses/internet/javascript/fetchapi/headers"
+          //         },
+          //         {
+          //             name: "Request",
+          //             url: "/courses/internet/javascript/fetchapi/request"
+          //         },
+          //         {
+          //             name: "Response",
+          //             url: "/courses/internet/javascript/fetchapi/response"
+          //         }
+          //     ]
+          // }
         ]
       },
       {
@@ -754,7 +726,7 @@ const contentNav = {
   "/courses/internet/css/typography": {
     "name": "Typography",
     "url": "/courses/internet/css/typography",
-    "previous": "/courses/internet/css/box",
+    "previous": "/courses/internet/css/layout",
     "next": "/courses/internet/css/colors"
   },
   "/courses/internet/css/colors": {
@@ -776,7 +748,7 @@ const contentNav = {
     "next": "/courses/internet/css/position"
   },
   "/courses/internet/css/position": {
-    "name": "Form",
+    "name": "Position",
     "url": "/courses/internet/css/position",
     "previous": "/courses/internet/css/selectors",
     "next": "/courses/internet/css/responsive"
@@ -785,42 +757,12 @@ const contentNav = {
     "name": "Responsive design",
     "url": "/courses/internet/css/responsive",
     "previous": "/courses/internet/css/position",
-    "next": "/courses/internet/css/lists"
-  },
-  "/courses/internet/css/lists": {
-    "name": "Lists",
-    "url": "/courses/internet/css/lists",
-    "previous": "/courses/internet/css/selectors",
-    "next": "/courses/internet/css/table"
-  },
-  "/courses/internet/css/table": {
-    "name": "Table",
-    "url": "/courses/internet/css/table",
-    "previous": "/courses/internet/css/lists",
-    "next": "/courses/internet/css/transform"
-  },
-  "/courses/internet/css/transform": {
-    "name": "Transform",
-    "url": "/courses/internet/css/transform",
-    "previous": "/courses/internet/css/table",
-    "next": "/courses/internet/css/transition"
-  },
-  "/courses/internet/css/transition": {
-    "name": "Transition",
-    "url": "/courses/internet/css/transition",
-    "previous": "/courses/internet/css/transform",
-    "next": "/courses/internet/css/conflict"
-  },
-  "/courses/internet/css/conflict": {
-    "name": "Conflict Resolution",
-    "url": "/courses/internet/css/conflict",
-    "previous": "/courses/internet/css/background",
     "next": "/courses/internet/css/practice"
   },
   "/courses/internet/css/practice": {
-    "name": "JAVASCRIPT",
+    "name": "Practice Problems",
     "url": "/courses/internet/css/practice",
-    "previous": "/courses/internet/css/conflict",
+    "previous": "/courses/internet/css/responsive",
     "next": "/courses/internet/javascript"
   },
   "/courses/internet/javascript": {
@@ -845,306 +787,60 @@ const contentNav = {
     "name": "Object Orientation",
     "url": "/courses/internet/javascript/basics/objectorientation",
     "previous": "/courses/internet/javascript/basics/overview",
-    "next": "/courses/internet/javascript/basics/syntactic"
+    "next": "/courses/internet/javascript/basics/variables"
   },
-  "/courses/internet/javascript/basics/syntactic": {
-    "name": "General Syntactic Characteristics",
-    "url": "/courses/internet/javascript/basics/syntactic",
+  "/courses/internet/javascript/basics/variables": {
+    "name": "Variables",
+    "url": "/courses/internet/javascript/basics/variables",
     "previous": "/courses/internet/javascript/basics/objectorientation",
-    "next": "/courses/internet/javascript/basics/primitives"
+    "next": "/courses/internet/javascript/basics/expressions"
   },
-  "/courses/internet/javascript/basics/primitives": {
-    "name": "Primitives, Operations, and Expressions",
-    "url": "/courses/internet/javascript/basics/primitives",
-    "previous": "/courses/internet/javascript/basics/syntactic",
-    "next": "/courses/internet/javascript/basics/io"
+  "/courses/internet/javascript/basics/expressions": {
+    "name": "Variables",
+    "url": "/courses/internet/javascript/basics/expressions",
+    "previous": "/courses/internet/javascript/basics/variables",
+    "next": "/courses/internet/javascript/basics/conditions"
   },
-  "/courses/internet/javascript/basics/io": {
-    "name": "Screen Output and Keyboard Input",
-    "url": "/courses/internet/javascript/basics/io",
-    "previous": "/courses/internet/javascript/basics/primitives",
-    "next": "/courses/internet/javascript/basics/control"
+  "/courses/internet/javascript/basics/conditions": {
+    "name": "Conditions",
+    "url": "/courses/internet/javascript/basics/conditions",
+    "previous": "/courses/internet/javascript/basics/expressions",
+    "next": "/courses/internet/javascript/basics/loops"
   },
-  "/courses/internet/javascript/basics/control": {
-    "name": "Control Statements",
-    "url": "/courses/internet/javascript/basics/control",
-    "previous": "/courses/internet/javascript/basics/io",
-    "next": "/courses/internet/javascript/basics/object"
-  },
-  "/courses/internet/javascript/basics/object": {
-    "name": "Object Creation and Modification",
-    "url": "/courses/internet/javascript/basics/object",
-    "previous": "/courses/internet/javascript/basics/control",
-    "next": "/courses/internet/javascript/basics/arrays"
-  },
-  "/courses/internet/javascript/basics/arrays": {
-    "name": "Arrays",
-    "url": "/courses/internet/javascript/basics/arrays",
-    "previous": "/courses/internet/javascript/basics/object",
+  "/courses/internet/javascript/basics/loops": {
+    "name": "Loops",
+    "url": "/courses/internet/javascript/basics/loops",
+    "previous": "/courses/internet/javascript/basics/conditions",
     "next": "/courses/internet/javascript/basics/functions"
   },
   "/courses/internet/javascript/basics/functions": {
     "name": "Functions",
     "url": "/courses/internet/javascript/basics/functions",
-    "previous": "/courses/internet/javascript/basics/arrays",
-    "next": "/courses/internet/javascript/basics/constructor"
-  },
-  "/courses/internet/javascript/basics/constructor": {
-    "name": "Constructors",
-    "url": "/courses/internet/javascript/basics/constructor",
-    "previous": "/courses/internet/javascript/basics/functions",
-    "next": "/courses/internet/javascript/basics/regex"
-  },
-  "/courses/internet/javascript/basics/regex": {
-    "name": "Regular Expressions",
-    "url": "/courses/internet/javascript/basics/regex",
-    "previous": "/courses/internet/javascript/basics/constructor",
+    "previous": "/courses/internet/javascript/basics/loops",
     "next": "/courses/internet/javascript/basics/error"
   },
   "/courses/internet/javascript/basics/error": {
     "name": "Errors in Scripts",
     "url": "/courses/internet/javascript/basics/error",
-    "previous": "/courses/internet/javascript/basics/regex",
-    "next": "/courses/internet/javascript/html"
+    "previous": "/courses/internet/javascript/basics/functions",
+    "next": "/courses/internet/javascript/basics/events"
   },
-  "/courses/internet/javascript/html": {
-    "name": "JavaScript and HTML Documents",
-    "url": "/courses/internet/javascript/html",
+  "/courses/internet/javascript/basics/events": {
+    "name": "Events",
+    "url": "/courses/internet/javascript/basics/events",
     "previous": "/courses/internet/javascript/basics/error",
-    "next": "/courses/internet/javascript/html/jee"
+    "next": "/courses/internet/javascript/basics/http"
   },
-  "/courses/internet/javascript/html/jee": {
-    "name": "The JavaScript Execution Environment",
-    "url": "/courses/internet/javascript/html/jee",
-    "previous": "/courses/internet/javascript/html",
-    "next": "/courses/internet/javascript/html/dom"
-  },
-  "/courses/internet/javascript/html/dom": {
-    "name": "The Document Object Model",
-    "url": "/courses/internet/javascript/html/dom",
-    "previous": "/courses/internet/javascript/html/jee",
-    "next": "/courses/internet/javascript/html/element"
-  },
-  "/courses/internet/javascript/html/element": {
-    "name": "Element Access in JavaScript",
-    "url": "/courses/internet/javascript/html/element",
-    "previous": "/courses/internet/javascript/html/dom",
-    "next": "/courses/internet/javascript/html/events"
-  },
-  "/courses/internet/javascript/html/events": {
-    "name": "Events and Event Handling",
-    "url": "/courses/internet/javascript/html/events",
-    "previous": "/courses/internet/javascript/html/element",
-    "next": "/courses/internet/javascript/html/body"
-  },
-  "/courses/internet/javascript/html/body": {
-    "name": "Handling Events from Body Elements",
-    "url": "/courses/internet/javascript/html/body",
-    "previous": "/courses/internet/javascript/html/events",
-    "next": "/courses/internet/javascript/html/button"
-  },
-  "/courses/internet/javascript/html/button": {
-    "name": "Handling Events from Button Elements",
-    "url": "/courses/internet/javascript/html/button",
-    "previous": "/courses/internet/javascript/html/body",
-    "next": "/courses/internet/javascript/html/textbox"
-  },
-  "/courses/internet/javascript/html/textbox": {
-    "name": "Handling Events from Text Box and Password Elements",
-    "url": "/courses/internet/javascript/html/textbox",
-    "previous": "/courses/internet/javascript/html/button",
-    "next": "/courses/internet/javascript/html/dom2"
-  },
-  "/courses/internet/javascript/html/dom2": {
-    "name": "The DOM 2 Event Model",
-    "url": "/courses/internet/javascript/html/dom2",
-    "previous": "/courses/internet/javascript/html/textbox",
-    "next": "/courses/internet/javascript/html/canvas"
-  },
-  "/courses/internet/javascript/html/canvas": {
-    "name": "The canvas Element",
-    "url": "/courses/internet/javascript/html/canvas",
-    "previous": "/courses/internet/javascript/html/dom2",
-    "next": "/courses/internet/javascript/html/navigator"
-  },
-  "/courses/internet/javascript/html/navigator": {
-    "name": "The navigator Object",
-    "url": "/courses/internet/javascript/html/navigator",
-    "previous": "/courses/internet/javascript/html/canvas",
-    "next": "/courses/internet/javascript/html/tree"
-  },
-  "/courses/internet/javascript/html/tree": {
-    "name": "DOM Tree Traversal and Modification",
-    "url": "/courses/internet/javascript/html/tree",
-    "previous": "/courses/internet/javascript/html/navigator",
-    "next": "/courses/internet/javascript/dynamic"
-  },
-  "/courses/internet/javascript/dynamic": {
-    "name": "Dynamic Documents with JavaScript",
-    "url": "/courses/internet/javascript/dynamic",
-    "previous": "/courses/internet/javascript/html/tree",
-    "next": "/courses/internet/javascript/dynamic/intro"
-  },
-  "/courses/internet/javascript/dynamic/intro": {
-    "name": "Introduction",
-    "url": "/courses/internet/javascript/dynamic/intro",
-    "previous": "/courses/internet/javascript/dynamic",
-    "next": "/courses/internet/javascript/dynamic/position"
-  },
-  "/courses/internet/javascript/dynamic/position": {
-    "name": "Positioning Elements",
-    "url": "/courses/internet/javascript/dynamic/position",
-    "previous": "/courses/internet/javascript/dynamic/intro",
-    "next": "/courses/internet/javascript/dynamic/move"
-  },
-  "/courses/internet/javascript/dynamic/move": {
-    "name": "Moving Elements",
-    "url": "/courses/internet/javascript/dynamic/move",
-    "previous": "/courses/internet/javascript/dynamic/position",
-    "next": "/courses/internet/javascript/dynamic/visibility"
-  },
-  "/courses/internet/javascript/dynamic/visibility": {
-    "name": "Element Visibility",
-    "url": "/courses/internet/javascript/dynamic/visibility",
-    "previous": "/courses/internet/javascript/dynamic/move",
-    "next": "/courses/internet/javascript/dynamic/colors"
-  },
-  "/courses/internet/javascript/dynamic/colors": {
-    "name": "Changing Colors and fonts",
-    "url": "/courses/internet/javascript/dynamic/colors",
-    "previous": "/courses/internet/javascript/dynamic/visibility",
-    "next": "/courses/internet/javascript/dynamic/content"
-  },
-  "/courses/internet/javascript/dynamic/content": {
-    "name": "Dynamic Content",
-    "url": "/courses/internet/javascript/dynamic/content",
-    "previous": "/courses/internet/javascript/dynamic/colors",
-    "next": "/courses/internet/javascript/dynamic/stack"
-  },
-  "/courses/internet/javascript/dynamic/stack": {
-    "name": "Stacking Elements",
-    "url": "/courses/internet/javascript/dynamic/stack",
-    "previous": "/courses/internet/javascript/dynamic/content",
-    "next": "/courses/internet/javascript/dynamic/cursor"
-  },
-  "/courses/internet/javascript/dynamic/cursor": {
-    "name": "Locating the Mouse Cursor",
-    "url": "/courses/internet/javascript/dynamic/cursor",
-    "previous": "/courses/internet/javascript/dynamic/stack",
-    "next": "/courses/internet/javascript/dynamic/mouse"
-  },
-  "/courses/internet/javascript/dynamic/mouse": {
-    "name": "Reating to a Mouse",
-    "url": "/courses/internet/javascript/dynamic/mouse",
-    "previous": "/courses/internet/javascript/dynamic/cursor",
-    "next": "/courses/internet/javascript/dynamic/slow"
-  },
-  "/courses/internet/javascript/dynamic/slow": {
-    "name": "Slow Movement of Elements",
-    "url": "/courses/internet/javascript/dynamic/slow",
-    "previous": "/courses/internet/javascript/dynamic/mouse",
-    "next": "/courses/internet/javascript/dynamic/drag"
-  },
-  "/courses/internet/javascript/dynamic/drag": {
-    "name": "Dragging and Dropping Elements",
-    "url": "/courses/internet/javascript/dynamic/drag",
-    "previous": "/courses/internet/javascript/dynamic/slow",
-    "next": "/courses/internet/javascript/asynchronous"
-  },
-  "/courses/internet/javascript/asynchronous": {
-    "name": "Asynchronous JavaScript",
-    "url": "/courses/internet/javascript/asynchronous",
-    "previous": "/courses/internet/javascript/dynamic/drag",
-    "next": "/courses/internet/javascript/asynchronous/callbacks"
-  },
-  "/courses/internet/javascript/asynchronous/callbacks": {
-    "name": "Callbacks",
-    "url": "/courses/internet/javascript/asynchronous/callbacks",
-    "previous": "/courses/internet/javascript/asynchronous",
-    "next": "/courses/internet/javascript/asynchronous/promises"
-  },
-  "/courses/internet/javascript/asynchronous/promises": {
-    "name": "Promises",
-    "url": "/courses/internet/javascript/asynchronous/promises",
-    "previous": "/courses/internet/javascript/asynchronous/callbacks",
-    "next": "/courses/internet/javascript/asynchronous/async"
-  },
-  "/courses/internet/javascript/asynchronous/async": {
-    "name": "async and await",
-    "url": "/courses/internet/javascript/asynchronous/async",
-    "previous": "/courses/internet/javascript/asynchronous/promises",
-    "next": "/courses/internet/javascript/http"
-  },
-  "/courses/internet/javascript/http": {
+  "/courses/internet/javascript/basics/http": {
     "name": "HTTP",
-    "url": "/courses/internet/javascript/http",
-    "previous": "/courses/internet/javascript/asynchronous/async",
-    "next": "/courses/internet/javascript/http/overview"
-  },
-  "/courses/internet/javascript/http/overview": {
-    "name": "Overview",
-    "url": "/courses/internet/javascript/http/overview",
-    "previous": "/courses/internet/javascript/http",
-    "next": "/courses/internet/javascript/http/messages"
-  },
-  "/courses/internet/javascript/http/messages": {
-    "name": "HTTP Messages",
-    "url": "/courses/internet/javascript/http/messages",
-    "previous": "/courses/internet/javascript/http/overview",
-    "next": "/courses/internet/javascript/http/session"
-  },
-  "/courses/internet/javascript/http/session": {
-    "name": "A typical HTTP session",
-    "url": "/courses/internet/javascript/http/session",
-    "previous": "/courses/internet/javascript/http/messages",
-    "next": "/courses/internet/javascript/fetchapi"
-  },
-  "/courses/internet/javascript/fetchapi": {
-    "name": "Fetch API",
-    "url": "/courses/internet/javascript/fetchapi",
-    "previous": "/courses/internet/javascript/http/session",
-    "next": "/courses/internet/javascript/fetchapi/overview"
-  },
-  "/courses/internet/javascript/fetchapi/overview": {
-    "name": "Overview",
-    "url": "/courses/internet/javascript/fetchapi/overview",
-    "previous": "/courses/internet/javascript/fetchapi",
-    "next": "/courses/internet/javascript/fetchapi/usages"
-  },
-  "/courses/internet/javascript/fetchapi/usages": {
-    "name": "Using the Fetch API",
-    "url": "/courses/internet/javascript/fetchapi/usages",
-    "previous": "/courses/internet/javascript/fetchapi/overview",
-    "next": "/courses/internet/javascript/fetchapi/fetch"
-  },
-  "/courses/internet/javascript/fetchapi/fetch": {
-    "name": "fetch()",
-    "url": "/courses/internet/javascript/fetchapi/fetch",
-    "previous": "/courses/internet/javascript/fetchapi/usages",
-    "next": "/courses/internet/javascript/fetchapi/headers"
-  },
-  "/courses/internet/javascript/fetchapi/headers": {
-    "name": "Headers",
-    "url": "/courses/internet/javascript/fetchapi/headers",
-    "previous": "/courses/internet/javascript/fetchapi/fetch",
-    "next": "/courses/internet/javascript/fetchapi/request"
-  },
-  "/courses/internet/javascript/fetchapi/request": {
-    "name": "Request",
-    "url": "/courses/internet/javascript/fetchapi/request",
-    "previous": "/courses/internet/javascript/fetchapi/headers",
-    "next": "/courses/internet/javascript/fetchapi/response"
-  },
-  "/courses/internet/javascript/fetchapi/response": {
-    "name": "Response",
-    "url": "/courses/internet/javascript/fetchapi/response",
-    "previous": "/courses/internet/javascript/fetchapi/request",
+    "url": "/courses/internet/javascript/basics/http",
+    "previous": "/courses/internet/javascript/basics/events",
     "next": "/courses/internet/xml"
   },
   "/courses/internet/xml": {
     "name": "XML",
     "url": "/courses/internet/xml",
-    "previous": "/courses/internet/javascript/fetchapi/response",
+    "previous": "/courses/internet/javascript/basics/http",
     "next": "/courses/internet/xml/intro"
   },
   "/courses/internet/xml/intro": {

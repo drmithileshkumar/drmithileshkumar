@@ -1778,9 +1778,22 @@
     "src": "src/routes/(general)/courses/internet/javascript/+page.js"
   },
   "src/routes/(general)/courses/internet/javascript/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.JMTZMvjO.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
     "file": "entries/pages/(general)/courses/internet/javascript/_page.svelte.js",
     "imports": [
-      "_ssr.js"
+      "_utils.js",
+      "_ssr.js",
+      "_content4.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/javascript/+page.svelte"
@@ -1804,12 +1817,135 @@
     "src": "src/routes/(general)/courses/internet/javascript/basics/+page.js"
   },
   "src/routes/(general)/courses/internet/javascript/basics/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.JMTZMvjO.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
     "file": "entries/pages/(general)/courses/internet/javascript/basics/_page.svelte.js",
     "imports": [
-      "_ssr.js"
+      "_utils.js",
+      "_ssr.js",
+      "_content4.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/javascript/basics/+page.svelte"
+  },
+  "src/routes/(general)/courses/internet/javascript/basics/expressions/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/expressions/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/expressions/+page.js"
+  },
+  "src/routes/(general)/courses/internet/javascript/basics/expressions/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.Xue8_5p3.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css",
+      "_app/immutable/assets/NavList.buyRB24_.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/expressions/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_content4.js",
+      "_stores.js",
+      "_ActionIcons.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/expressions/+page.svelte"
+  },
+  "src/routes/(general)/courses/internet/javascript/basics/objectorientation/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/objectorientation/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/objectorientation/+page.js"
+  },
+  "src/routes/(general)/courses/internet/javascript/basics/objectorientation/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.0wUlFzQt.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/objectorientation/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_content4.js",
+      "_Cell.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/objectorientation/+page.svelte"
+  },
+  "src/routes/(general)/courses/internet/javascript/basics/overview/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/overview/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/overview/+page.js"
+  },
+  "src/routes/(general)/courses/internet/javascript/basics/overview/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.0wUlFzQt.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/overview/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_content4.js",
+      "_Cell.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/overview/+page.svelte"
+  },
+  "src/routes/(general)/courses/internet/javascript/basics/variables/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/variables/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/variables/+page.js"
+  },
+  "src/routes/(general)/courses/internet/javascript/basics/variables/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.GGjArkpW.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css",
+      "_app/immutable/assets/NavList.buyRB24_.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/variables/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_content4.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_LineNumbers.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/variables/+page.svelte"
   },
   "src/routes/(general)/courses/internet/javascript/dynamic/+page.js": {
     "file": "entries/pages/(general)/courses/internet/javascript/dynamic/_page.js",
@@ -3130,6 +3266,30 @@
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/joint/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/joint/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/joint/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/joint/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.0tsx4dA_.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/joint/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores2.js",
+      "_content3.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/joint/+page.svelte"
   },
   "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/probability/_page.js",

@@ -190,6 +190,22 @@
 		"src/routes/(general)/courses/internet/javascript/basics/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/javascript/basics/expressions": [
+		"src/routes/(general)/courses/internet/javascript/basics/expressions/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/javascript/basics/objectorientation": [
+		"src/routes/(general)/courses/internet/javascript/basics/objectorientation/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/javascript/basics/overview": [
+		"src/routes/(general)/courses/internet/javascript/basics/overview/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/internet/javascript/basics/variables": [
+		"src/routes/(general)/courses/internet/javascript/basics/variables/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/javascript/dynamic": [
 		"src/routes/(general)/courses/internet/javascript/dynamic/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -340,6 +356,10 @@
 	],
 	"/(general)/courses/mathematics2/probabilitytheory/distributions": [
 		"src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/probabilitytheory/distributions/joint": [
+		"src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/joint/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/courses/mathematics2/probabilitytheory/probability": [

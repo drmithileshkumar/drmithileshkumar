@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/courses/internet/wwwhtml/fundamentals/security/+page.js";
+import * as universal from "../../../../src/routes/(general)/courses/internet/wwwhtml/fundamentals/browsers/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/courses/internet/wwwhtml/fundamentals/security/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/courses/internet/wwwhtml/fundamentals/browsers/+page.svelte";

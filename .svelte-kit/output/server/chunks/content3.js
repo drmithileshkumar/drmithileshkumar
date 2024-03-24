@@ -98,77 +98,81 @@ const contents = [
             url: "/courses/mathematics2/probabilitytheory/distributions",
             topics: [
               {
-                name: "Mathematical Expectation",
-                url: ""
-              },
-              {
-                name: "Bivariate distribution",
-                url: ""
+                name: "Joint distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/joint"
               },
               {
                 name: "Conditional distribution",
-                url: ""
-              },
-              {
-                name: "Marginal distributions",
-                url: ""
-              }
-            ]
-          },
-          {
-            name: "Discrete distributions",
-            url: "",
-            topics: [
-              {
-                name: "Discrete uniform distribution",
-                url: ""
+                url: "/courses/mathematics2/probabilitytheory/distributions/conditional"
               },
               {
                 name: "Binomial distribution",
-                url: ""
-              },
-              {
-                name: "Poisson distribution",
-                url: ""
-              },
-              {
-                name: "Geometric distribution",
-                url: ""
-              }
-            ]
-          },
-          {
-            name: "Continuous distributions",
-            url: "",
-            topics: [
-              {
-                name: "Uniform distribution",
-                url: ""
+                url: "/courses/mathematics2/probabilitytheory/distributions/binomial"
               },
               {
                 name: "Normal distribution",
-                url: ""
+                url: "/courses/mathematics2/probabilitytheory/distributions/normal"
               },
               {
-                name: "Exponential distribution",
-                url: ""
-              },
-              {
-                name: "Gamma distribution",
-                url: ""
-              }
-            ]
-          },
-          {
-            name: "Queueing theory",
-            url: "",
-            topics: [
-              {
-                name: "Introduction",
-                url: ""
+                name: "Poisson distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/poisson"
               }
             ]
           }
+          // {
+          //     name: "Discrete distributions",
+          //     url: "",
+          //     topics: [
+          //         {
+          //             name: "Discrete uniform distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Binomial distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Poisson distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Geometric distribution",
+          //             url: ""
+          //         }
+          //     ]
+          // },
+          // {
+          //     name: "Continuous distributions",
+          //     url: "",
+          //     topics: [
+          //         {
+          //             name: "Uniform distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Normal distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Exponential distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Gamma distribution",
+          //             url: ""
+          //         }
+          //     ]
+          // },
+          // {
+          //     name: "Queueing theory",
+          //     url: "",
+          //     topics: [
+          //         {
+          //             name: 'Introduction',
+          //             url: ''
+          //         }
+          //     ]
+          // }
         ]
       },
       {
@@ -464,7 +468,7 @@ let contentNav = {
     "next": "/courses/mathematics2/probabilitytheory"
   },
   "/courses/mathematics2/probabilitytheory": {
-    "name": "Probability Theory",
+    "name": "PROBABILITY THEORY",
     "url": "/courses/mathematics2/probabilitytheory",
     "previous": "/courses/mathematics2/statistics/regression/leastsquares",
     "next": "/courses/mathematics2/probabilitytheory/probability"
@@ -482,28 +486,52 @@ let contentNav = {
     "next": "/courses/mathematics2/probabilitytheory/probability/conditional"
   },
   "/courses/mathematics2/probabilitytheory/probability/conditional": {
-    "name": "Events",
+    "name": "Conditional Probability",
     "url": "/courses/mathematics2/probabilitytheory/probability/conditional",
     "previous": "/courses/mathematics2/probabilitytheory/probability/events",
     "next": "/courses/mathematics2/probabilitytheory/probability/practice"
   },
   "/courses/mathematics2/probabilitytheory/probability/practice": {
-    "name": "Events",
-    "url": "/courses/mathematics2/probabilitytheory/probability/practice",
-    "previous": "/courses/mathematics2/probabilitytheory/probability/conditional",
-    "next": "/courses/mathematics2/probabilitytheory/probability/practice"
-  },
-  "/courses/mathematics2/probabilitytheory/probability/practice": {
-    "name": "Events",
+    "name": "Practice Problems",
     "url": "/courses/mathematics2/probabilitytheory/probability/practice",
     "previous": "/courses/mathematics2/probabilitytheory/probability/conditional",
     "next": "/courses/mathematics2/probabilitytheory/distributions"
   },
   "/courses/mathematics2/probabilitytheory/distributions": {
-    "name": "Probability Distributions",
+    "name": "Distributions",
     "url": "/courses/mathematics2/probabilitytheory/distributions",
     "previous": "/courses/mathematics2/probabilitytheory/probability/practice",
-    "next": "/courses/mathematics2/probabilitytheory/distributions"
+    "next": "/courses/mathematics2/probabilitytheory/distributions/joint"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/joint": {
+    "name": "Joint distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/joint",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/conditional"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/conditional": {
+    "name": "Conditional distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/conditional",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/joint",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/binomial"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/binomial": {
+    "name": "Binomial distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/binomial",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/conditional",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/normal"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/normal": {
+    "name": "Normal distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/normal",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/binomial",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/poisson"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/poisson": {
+    "name": "Poisson distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/poisson",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/normal",
+    "next": ""
   },
   "": {
     "name": "PERT",
