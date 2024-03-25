@@ -565,6 +565,9 @@
       "_ssr.js"
     ]
   },
+  "_javascript.js": {
+    "file": "chunks/javascript.js"
+  },
   "_jwt.js": {
     "file": "chunks/jwt.js"
   },
@@ -1844,7 +1847,7 @@
   },
   "src/routes/(general)/courses/internet/javascript/basics/expressions/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.Xue8_5p3.css",
+      "_app/immutable/assets/_page.vHDn9TNq.css",
       "_app/immutable/assets/Link.mTa6ZPjX.css",
       "_app/immutable/assets/NavList.buyRB24_.css"
     ],
@@ -1852,14 +1855,17 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
+      "_javascript.js",
       "_content4.js",
       "_stores.js",
+      "_Card.js",
       "_ActionIcons.js",
       "_Subheader.js",
       "_client.js",
       "_stores2.js",
       "_Pathlist.js",
-      "_CourseNavigation.js"
+      "_CourseNavigation.js",
+      "_LineNumbers.js"
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/javascript/basics/expressions/+page.svelte"
@@ -1933,6 +1939,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
+      "_javascript.js",
       "_content4.js",
       "_stores.js",
       "_Card.js",

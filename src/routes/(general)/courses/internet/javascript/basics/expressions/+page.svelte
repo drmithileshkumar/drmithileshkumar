@@ -28,31 +28,35 @@
     // onMount(() => {
     //     MathJax.typeset();
     // });
-    let names = `//variable names
-sum, _sum, $sum, _sum5, Sum, _Sum`
-    let constant = `//contant variable
-const sum = 0;
-sum = 1; //error`
-    let variable = `//var variable
-var sum; // assigned undefined
-sum = 1;`
-    let letVar = `//let variable
-let sum; // assigned undefined
-sum = 1;`
-    let number = `//numbers
-let sum = 1; // integer
-let mean = 1.4; // float`
-    let string = `//strings
-let str1 = "Hello";
-let str2 = 'World';`
+    let arithmetic = `//arithmetic operations
+let sum = 1 + 1.4; // 2.4
+let dif = 1 - 1.4; // -0.4
+let mul = 2 * 4; // 8
+let div = 4 / 2; // 2
+let mod = 5 % 2; // 1
+let pow = 5 ** 2; // 25
+let ex1 = 2 * (1 - 6 / 2); // -4`
     let boolean = `//boolean
-let isTrue = true;
-let isFalse = false;`
+let isMore = 2 >= 4; // false
+let isLess = 5 < 10; // true
+let bool1 = isMore || isLess; // true
+let bool2 = isMore && isLess; // false
+let isEqual1 = 0 == '0';//true type conversion
+let isEqual2 = 0 === '0; //false no type conversion
+let notEqual1 = 0 != '0'; //false
+let notEqual2 = 0 !== '0'; //true`
+    let string = `//string
+let str1 = 'Hello';
+let str2 = 'World';
+let str3 = str1 + ' ' + str2;//'Hello World'
+let num = 42;
+let str4 = \`The answer to universe is \${num}.\`;\\ The answer to universe is 42.`
     let arrays = `//arrays
-let arr1 = [0, 1, 1.432, "Text", true];
-console.log(arr1[2])//prints 1.432;
-let arr2 = new Array(2, "javascript", true);
-let n = arr2.length; // n is 3`
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let arr3 = arr1 + arr2; // '1, 23, 4'
+// ... spread operator
+let arr4 = [...arr1, ...arr2];// [1, 2, 3, 4]`
     let objects = `//objects
 let obj = {
     name: 'Mr X',
@@ -60,7 +64,16 @@ let obj = {
     salary: 1000,
     address: 'Bangaluru'
 }
-console.log(obj.name)`
+console.log(Object.keys(obj)); // [name, job, salary, address]
+let ob1 = {
+    name: 'Mr X',
+    job: 'Hacker',
+    salary: 1000,
+    address: 'Bangaluru'
+}
+let isEq1 = obj == obj1; // false
+let isEq2 = obj === obj2; // false
+`
 </script>
 <style>
     article {
@@ -75,7 +88,8 @@ console.log(obj.name)`
         margin: 0.5em 0;
     }
     h5 {
-        font-size: 1.1em;
+        font-size: 1.3em;
+        color: rgb(74, 155, 139);
     }
     h6 {
         font-size: 1em;
@@ -110,23 +124,59 @@ console.log(obj.name)`
     <h4>
         Expressions
     </h4>
-    <!-- <Card style="background-color: rgba(0, 100, 100, 0.1">
+    <Card style="background-color: rgba(0, 100, 100, 0.1">
         <Content>
             <h6>Topics</h6>
             <ol>
-                <li><a href="#names">Names</a></li>
-                <li><a href="#const"><code>const</code></a></li>
-                <li><a href="#var"><code>var</code></a></li>
-                <li><a href="#let"><code>let</code></a></li>
-                <li><a href="#number">Numbers</a></li>
-                <li><a href="#boolean">Boolean</a></li>
-                <li><a href="#strings">Strings</a></li>
-                <li><a href="#arrays">Arrays</a></li>
-                <li><a href="#objects">Objects</a></li>
+                <li><a href="#arithmetic">Arithmetic Operations</a></li>
+                <li><a href="#boolean">Boolean operations</a></li>
+                <li><a href="#strings">String operations</a></li>
+                <li><a href="#arrays">Array operations</a></li>
+                <li><a href="#objects">Object operations</a></li>
             </ol>
         </Content>
     </Card>
     <Card>
+        <Content>
+            <h5>Arithmetic Operations</h5>
+            <Highlight language={javascript} code={arithmetic} let:highlighted>
+                <LineNumbers {highlighted} wrapLines/>
+            </Highlight>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h5>Boolean Operations</h5>
+            <Highlight language={javascript} code={boolean} let:highlighted>
+                <LineNumbers {highlighted} wrapLines/>
+            </Highlight>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h5>String Operations</h5>
+            <Highlight language={javascript} code={string} let:highlighted>
+                <LineNumbers {highlighted} wrapLines/>
+            </Highlight>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h5>Array Operations</h5>
+            <Highlight language={javascript} code={arrays} let:highlighted>
+                <LineNumbers {highlighted} wrapLines/>
+            </Highlight>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h5>Object Operations</h5>
+            <Highlight language={javascript} code={objects} let:highlighted>
+                <LineNumbers {highlighted} wrapLines/>
+            </Highlight>
+        </Content>
+    </Card>
+    <!-- <Card>
         <Content>
             <h6 id="names">Names</h6>
             <p>The names of variables are called <strong>identifiers</strong>.</p>

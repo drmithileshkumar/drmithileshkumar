@@ -1,6 +1,6 @@
 import { s as subscribe, b as set_store_value } from "../../../../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component } from "../../../../../../../../chunks/ssr.js";
-import javascript$2 from "highlight.js/lib/languages/javascript";
+import { j as javascript } from "../../../../../../../../chunks/javascript.js";
 import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../../../chunks/content4.js";
 /* empty css                                                                */
 import { p as page } from "../../../../../../../../chunks/stores.js";
@@ -13,8 +13,6 @@ import { d as darkMode, c as currentPath, n as navList } from "../../../../../..
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 import { H as Highlight, L as LineNumbers } from "../../../../../../../../chunks/LineNumbers.js";
-const javascript = { name: "javascript", register: javascript$2 };
-const javascript$1 = javascript;
 const css$1 = {
   code: "article.svelte-wl5xjl{display:flex;flex-direction:column;gap:0.5em}p.svelte-wl5xjl,li.svelte-wl5xjl{opacity:0.8}h4.svelte-wl5xjl{margin:0.5em 0}h6.svelte-wl5xjl{font-size:1em;margin:0.5em 0;color:rgb(74, 155, 139)}strong.svelte-wl5xjl{color:goldenrod;opacity:1}a.svelte-wl5xjl{cursor:pointer}",
   map: null
@@ -104,7 +102,7 @@ console.log(obj.name)`;
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="names" class="svelte-wl5xjl" data-svelte-h="svelte-12kyjge">Names</h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-167ab0f">The names of variables are called <strong class="svelte-wl5xjl">identifiers</strong>.</p> <p class="svelte-wl5xjl" data-svelte-h="svelte-q7cg87">A JavaScript identifier usually starts with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0 – 9). Because JavaScript is case sensitive, letters include the characters A through Z (uppercase) as well as a through z (lowercase).</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript$1, code: names }, {}, {
+          return `<h6 id="names" class="svelte-wl5xjl" data-svelte-h="svelte-12kyjge">Names</h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-167ab0f">The names of variables are called <strong class="svelte-wl5xjl">identifiers</strong>.</p> <p class="svelte-wl5xjl" data-svelte-h="svelte-q7cg87">A JavaScript identifier usually starts with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0 – 9). Because JavaScript is case sensitive, letters include the characters A through Z (uppercase) as well as a through z (lowercase).</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript, code: names }, {}, {
             default: ({ highlighted }) => {
               return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
             }
@@ -116,7 +114,7 @@ console.log(obj.name)`;
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="const" class="svelte-wl5xjl" data-svelte-h="svelte-1hfk0wd"><code>const</code></h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-1bdqqvr">Variables are declared using keywords <code>const, let, var</code>.</p> <p class="svelte-wl5xjl" data-svelte-h="svelte-1m4quz4">When a variable is declared constant, its value can not be changed, hence its value must be assigned at the time of declaration.</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript$1, code: constant }, {}, {
+          return `<h6 id="const" class="svelte-wl5xjl" data-svelte-h="svelte-1hfk0wd"><code>const</code></h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-1bdqqvr">Variables are declared using keywords <code>const, let, var</code>.</p> <p class="svelte-wl5xjl" data-svelte-h="svelte-1m4quz4">When a variable is declared constant, its value can not be changed, hence its value must be assigned at the time of declaration.</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript, code: constant }, {}, {
             default: ({ highlighted }) => {
               return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
             }
@@ -128,7 +126,7 @@ console.log(obj.name)`;
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="var" class="svelte-wl5xjl" data-svelte-h="svelte-1lwpi81"><code>var</code></h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-1jzc98i">Variables can be declared using the keyword <code>var</code></p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript$1, code: variable }, {}, {
+          return `<h6 id="var" class="svelte-wl5xjl" data-svelte-h="svelte-1lwpi81"><code>var</code></h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-1jzc98i">Variables can be declared using the keyword <code>var</code></p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript, code: variable }, {}, {
             default: ({ highlighted }) => {
               return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
             }
@@ -140,7 +138,7 @@ console.log(obj.name)`;
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="let" class="svelte-wl5xjl" data-svelte-h="svelte-1yu5zbt"><code>let</code></h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-1b1gfbq">Variables can be declared using the keyword <code>let</code></p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript$1, code: letVar }, {}, {
+          return `<h6 id="let" class="svelte-wl5xjl" data-svelte-h="svelte-1yu5zbt"><code>let</code></h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-1b1gfbq">Variables can be declared using the keyword <code>let</code></p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript, code: letVar }, {}, {
             default: ({ highlighted }) => {
               return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
             }
@@ -152,7 +150,7 @@ console.log(obj.name)`;
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="number" class="svelte-wl5xjl" data-svelte-h="svelte-1mk16zt">Numbers</h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-1er0mts">A number in javascript can be of type integer or double.</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript$1, code: number }, {}, {
+          return `<h6 id="number" class="svelte-wl5xjl" data-svelte-h="svelte-1mk16zt">Numbers</h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-1er0mts">A number in javascript can be of type integer or double.</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript, code: number }, {}, {
             default: ({ highlighted }) => {
               return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
             }
@@ -164,7 +162,7 @@ console.log(obj.name)`;
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="boolean" class="svelte-wl5xjl" data-svelte-h="svelte-1w4igu">Boolean</h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-efy3fr">Boolean variables have two values <code>true</code> and <code>false</code>.</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript$1, code: boolean }, {}, {
+          return `<h6 id="boolean" class="svelte-wl5xjl" data-svelte-h="svelte-1w4igu">Boolean</h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-efy3fr">Boolean variables have two values <code>true</code> and <code>false</code>.</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript, code: boolean }, {}, {
             default: ({ highlighted }) => {
               return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
             }
@@ -176,7 +174,7 @@ console.log(obj.name)`;
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="strings" class="svelte-wl5xjl" data-svelte-h="svelte-9t5162">Strings</h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-rx7uvi">A string is a text inside single quotes (&#39;), double quotes (&quot;) or backtick (\`).</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript$1, code: string }, {}, {
+          return `<h6 id="strings" class="svelte-wl5xjl" data-svelte-h="svelte-9t5162">Strings</h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-rx7uvi">A string is a text inside single quotes (&#39;), double quotes (&quot;) or backtick (\`).</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript, code: string }, {}, {
             default: ({ highlighted }) => {
               return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
             }
@@ -191,7 +189,7 @@ to declare string variables in javascript.\`
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="arrays" class="svelte-wl5xjl" data-svelte-h="svelte-19aoch2">Arrays</h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-ohxu9i">Arrays in javascript can take any type of data in the same list.</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript$1, code: arrays }, {}, {
+          return `<h6 id="arrays" class="svelte-wl5xjl" data-svelte-h="svelte-19aoch2">Arrays</h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-ohxu9i">Arrays in javascript can take any type of data in the same list.</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript, code: arrays }, {}, {
             default: ({ highlighted }) => {
               return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
             }
@@ -203,7 +201,7 @@ to declare string variables in javascript.\`
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h6 id="objects" class="svelte-wl5xjl" data-svelte-h="svelte-16js3y6">Objects</h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-10p32ft">An object is a colletion of key-value pairs.</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript$1, code: objects }, {}, {
+          return `<h6 id="objects" class="svelte-wl5xjl" data-svelte-h="svelte-16js3y6">Objects</h6> <p class="svelte-wl5xjl" data-svelte-h="svelte-10p32ft">An object is a colletion of key-value pairs.</p> ${validate_component(Highlight, "Highlight").$$render($$result, { language: javascript, code: objects }, {}, {
             default: ({ highlighted }) => {
               return `${validate_component(LineNumbers, "LineNumbers").$$render($$result, { highlighted, wrapLines: true }, {}, {})}`;
             }
