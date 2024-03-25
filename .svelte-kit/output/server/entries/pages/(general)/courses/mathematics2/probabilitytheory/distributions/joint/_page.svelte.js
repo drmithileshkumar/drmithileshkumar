@@ -86,6 +86,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
+  })} <h4 class="svelte-1u2otn3" data-svelte-h="svelte-9or4p">Questions</h4> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1u2otn3" data-svelte-h="svelte-a5czot">The joint probability function of two random variables X and Y is given by \\(p(x, y) = c(2x + y)\\), where \\(x\\) and \\(y\\) can assume all integers such that \\(0\\leq x\\leq 2, 0\\leq y\\leq 3\\), and \\(p(x, y) = 0\\) otherwise.
+                <ol><li class="svelte-1u2otn3">Find the value of the constant \\(c\\).</li> <li class="svelte-1u2otn3">Find \\(P(X\\geq 1, Y\\leq 2)\\).</li> <li class="svelte-1u2otn3">Find \\(P(X = 2, Y = 1\\)</li> <li class="svelte-1u2otn3">Find the marginal probability functions (a) of \\(X\\) and (b) of \\(Y\\) for the random variables.</li> <li class="svelte-1u2otn3">Show that the random variables \\(X\\) and \\(Y\\) are dependent.</li> <li class="svelte-1u2otn3">Find (a) \\(y|2\\), (b) \\(P(Y = 1 | X = 2)\\).</li></ol></div>`;
+        }
+      })}`;
+    }
   })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {

@@ -354,6 +354,10 @@
 		"src/routes/(general)/courses/mathematics2/probabilitytheory/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/mathematics2/probabilitytheory/assignment": [
+		"src/routes/(general)/courses/mathematics2/probabilitytheory/assignment/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/mathematics2/probabilitytheory/distributions": [
 		"src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/+page.js",
 		"src/routes/(general)/+layout.server.js"

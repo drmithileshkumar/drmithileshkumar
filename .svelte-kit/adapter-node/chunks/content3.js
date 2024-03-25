@@ -102,8 +102,8 @@ const contents = [
                 url: "/courses/mathematics2/probabilitytheory/distributions/joint"
               },
               {
-                name: "Conditional distribution",
-                url: "/courses/mathematics2/probabilitytheory/distributions/conditional"
+                name: "Continuous distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/continuous"
               },
               {
                 name: "Binomial distribution",
@@ -507,11 +507,11 @@ let contentNav = {
     "name": "Joint distribution",
     "url": "/courses/mathematics2/probabilitytheory/distributions/joint",
     "previous": "/courses/mathematics2/probabilitytheory/distributions",
-    "next": "/courses/mathematics2/probabilitytheory/distributions/conditional"
+    "next": "/courses/mathematics2/probabilitytheory/distributions/continuous"
   },
-  "/courses/mathematics2/probabilitytheory/distributions/conditional": {
-    "name": "Conditional distribution",
-    "url": "/courses/mathematics2/probabilitytheory/distributions/conditional",
+  "/courses/mathematics2/probabilitytheory/distributions/continuous": {
+    "name": "Continuous distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/continuous",
     "previous": "/courses/mathematics2/probabilitytheory/distributions/joint",
     "next": "/courses/mathematics2/probabilitytheory/distributions/binomial"
   },

@@ -209,6 +209,34 @@
             </div>
         </Content>
     </Card>
+    <h4>Questions</h4>
+    <Card>
+        <Content>
+            <div class="question">
+                The joint probability function of two random variables X and Y is given by \(p(x, y) = c(2x + y)\), where \(x\) and \(y\) can assume all integers such that \(0\leq x\leq 2, 0\leq y\leq 3\), and \(p(x, y) = 0\) otherwise.
+                <ol>
+                    <li>
+                        Find the value of the constant \(c\).
+                    </li>
+                    <li>
+                        Find \(P(X\geq 1, Y\leq 2)\).
+                    </li>
+                    <li>
+                        Find \(P(X = 2, Y = 1\)
+                    </li>
+                    <li>
+                        Find the marginal probability functions (a) of \(X\) and (b) of \(Y\) for the random variables.
+                    </li>
+                    <li>
+                        Show that the random variables \(X\) and \(Y\) are dependent.
+                    </li>
+                    <li>
+                        Find (a) \(y|2\), (b) \(P(Y = 1 | X = 2)\).
+                    </li>
+                </ol>
+            </div>
+        </Content>
+    </Card>
     <Card>
         <Content>
             <div class="question">Write probability distributions for problems in the practice set. </div>
