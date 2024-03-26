@@ -362,6 +362,10 @@
 		"src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/mathematics2/probabilitytheory/distributions/binomial": [
+		"src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/binomial/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/mathematics2/probabilitytheory/distributions/joint": [
 		"src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/joint/+page.js",
 		"src/routes/(general)/+layout.server.js"

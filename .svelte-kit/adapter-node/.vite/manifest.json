@@ -3298,6 +3298,30 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/+page.svelte"
   },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/binomial/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/binomial/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/binomial/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/binomial/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.zLevDrtn.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/binomial/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores2.js",
+      "_content3.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/binomial/+page.svelte"
+  },
   "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/joint/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/joint/_page.js",
     "isEntry": true,

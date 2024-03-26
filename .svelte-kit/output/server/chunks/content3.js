@@ -102,12 +102,12 @@ const contents = [
                 url: "/courses/mathematics2/probabilitytheory/distributions/joint"
               },
               {
-                name: "Continuous distribution",
-                url: "/courses/mathematics2/probabilitytheory/distributions/continuous"
-              },
-              {
                 name: "Binomial distribution",
                 url: "/courses/mathematics2/probabilitytheory/distributions/binomial"
+              },
+              {
+                name: "Continuous distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/continuous"
               },
               {
                 name: "Normal distribution",
@@ -507,24 +507,24 @@ let contentNav = {
     "name": "Joint distribution",
     "url": "/courses/mathematics2/probabilitytheory/distributions/joint",
     "previous": "/courses/mathematics2/probabilitytheory/distributions",
-    "next": "/courses/mathematics2/probabilitytheory/distributions/continuous"
-  },
-  "/courses/mathematics2/probabilitytheory/distributions/continuous": {
-    "name": "Continuous distribution",
-    "url": "/courses/mathematics2/probabilitytheory/distributions/continuous",
-    "previous": "/courses/mathematics2/probabilitytheory/distributions/joint",
     "next": "/courses/mathematics2/probabilitytheory/distributions/binomial"
   },
   "/courses/mathematics2/probabilitytheory/distributions/binomial": {
     "name": "Binomial distribution",
     "url": "/courses/mathematics2/probabilitytheory/distributions/binomial",
-    "previous": "/courses/mathematics2/probabilitytheory/distributions/conditional",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/joint",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/continuous"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/continuous": {
+    "name": "Continuous distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/continuous",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/binomial",
     "next": "/courses/mathematics2/probabilitytheory/distributions/normal"
   },
   "/courses/mathematics2/probabilitytheory/distributions/normal": {
     "name": "Normal distribution",
     "url": "/courses/mathematics2/probabilitytheory/distributions/normal",
-    "previous": "/courses/mathematics2/probabilitytheory/distributions/binomial",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/continuous",
     "next": "/courses/mathematics2/probabilitytheory/distributions/poisson"
   },
   "/courses/mathematics2/probabilitytheory/distributions/poisson": {
