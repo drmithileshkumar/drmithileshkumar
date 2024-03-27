@@ -134,6 +134,19 @@
                 <li>What is Binomial distribution?</li>
                 <li>Two fair die are rolled once. Event A is getting a 6 on the first die. Event B is getting a number larger than the first die. Are events A and B independent?</li>
                 <li>A fair die is rolled 10 times. What is the probability of getting 4 sixes?</li>
+                <li>
+                    Joint probability function of two discrete random variables \(X\) and \(Y\) is given by \(f(x, y) = cxy\), where x and y can assume all integers such that \(1 \leq x \leq 3 , 1 \leq y \leq 3\) and \(f(x,y)=0\) otherwise.
+                    <ol>
+                        <li>Find the value of the constant \(c\).</li>
+                        <li>Find \(P(X=2, Y =3)\).</li>
+                        <li>Find \(P(1\leq X\leq 2, y\leq 2)\).</li>
+                        <li>Find \(P(X\geq 2)\)</li>
+                        <li>Find \(P(Y\lt 2)\)</li>
+                        <li>Find \(P(X=1)\)</li>
+                        <li>Find \(P(Y=3)\)</li>
+                    </ol>
+                    Find the probability distribution and distribution function of boys and girls in a family with 3 children, assuming equal probabilities for boys and girls. Also, draw a graph for both.
+                </li>
             </ol>
         </Content>
     </Card>
