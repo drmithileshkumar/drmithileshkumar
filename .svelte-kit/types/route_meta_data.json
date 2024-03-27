@@ -350,6 +350,10 @@
 		"src/routes/(general)/courses/mathematics2/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/mathematics2/assignment1": [
+		"src/routes/(general)/courses/mathematics2/assignment1/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/mathematics2/probabilitytheory": [
 		"src/routes/(general)/courses/mathematics2/probabilitytheory/+page.js",
 		"src/routes/(general)/+layout.server.js"

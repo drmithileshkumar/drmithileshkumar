@@ -366,6 +366,10 @@ const contents = [
             url: ""
           }
         ]
+      },
+      {
+        name: "ASSIGNMENT 1",
+        url: "/courses/mathematics2/assignment1"
       }
     ]
   }
@@ -536,6 +540,12 @@ let contentNav = {
   "": {
     "name": "PERT",
     "url": "",
+    "previous": "",
+    "next": ""
+  },
+  "/courses/mathematics2/assignment1": {
+    "name": "Assignment 1",
+    "url": "/courses/mathematics2/assignment1",
     "previous": "",
     "next": ""
   }

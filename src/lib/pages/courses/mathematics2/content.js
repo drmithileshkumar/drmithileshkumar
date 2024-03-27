@@ -368,6 +368,10 @@ export const contents = [
                         url: ''
                     }
                 ]
+            },
+            {
+                name: "ASSIGNMENT 1",
+                url: "/courses/mathematics2/assignment1"
             }
         ]
     },
@@ -541,7 +545,13 @@ export let contentNav = {
         "url": "",
         "previous": "",
         "next": ""
-    }
+    },
+    "/courses/mathematics2/assignment1": {
+        "name": "Assignment 1",
+        "url": "/courses/mathematics2/assignment1",
+        "previous": "",
+        "next": ""
+    },
 }
 
 // let contentArray = [];
