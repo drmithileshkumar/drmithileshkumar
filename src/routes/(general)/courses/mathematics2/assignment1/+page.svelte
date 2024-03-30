@@ -145,8 +145,8 @@
                         <li>Find \(P(X=1)\)</li>
                         <li>Find \(P(Y=3)\)</li>
                     </ol>
-                    Find the probability distribution and distribution function of boys and girls in a family with 3 children, assuming equal probabilities for boys and girls. Also, draw a graph for both.
                 </li>
+                <li>Find the probability distribution and distribution function of boys and girls in a family with 3 children, assuming equal probabilities for boys and girls. Also, draw a graph for both.</li>
             </ol>
         </Content>
     </Card>
