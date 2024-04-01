@@ -260,6 +260,10 @@ const contents = [
                 url: "/courses/internet/javascript/basics/expressions"
               },
               {
+                name: "Calculator",
+                url: "/courses/internet/javascript/basics/calculator"
+              },
+              {
                 name: "Conditions",
                 url: "/courses/internet/javascript/basics/conditions"
               },
@@ -799,12 +803,18 @@ const contentNav = {
     "name": "Variables",
     "url": "/courses/internet/javascript/basics/expressions",
     "previous": "/courses/internet/javascript/basics/variables",
+    "next": "/courses/internet/javascript/basics/calculator"
+  },
+  "/courses/internet/javascript/basics/calculator": {
+    "name": "Variables",
+    "url": "/courses/internet/javascript/basics/calculator",
+    "previous": "/courses/internet/javascript/basics/expressions",
     "next": "/courses/internet/javascript/basics/conditions"
   },
   "/courses/internet/javascript/basics/conditions": {
     "name": "Conditions",
     "url": "/courses/internet/javascript/basics/conditions",
-    "previous": "/courses/internet/javascript/basics/expressions",
+    "previous": "/courses/internet/javascript/basics/calculator",
     "next": "/courses/internet/javascript/basics/loops"
   },
   "/courses/internet/javascript/basics/loops": {

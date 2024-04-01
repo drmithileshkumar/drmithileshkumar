@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Complex numbers and quadratic equations/Complex numbers/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Binomial theorem/General and middle terms/_page.js';
 
 export const index = 159;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Complex numbers and quadratic equations/Complex numbers/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Binomial theorem/General and middle terms/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Complex numbers and quadratic equations/Complex numbers/+page.js";
-export const imports = ["_app/immutable/nodes/159.fkNvLfQK.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/stores.IwoiqDjd.js","_app/immutable/chunks/entry.QjSKs7d_.js"];
+export const universal_id = "src/routes/(general)/notes/maths/Binomial theorem/General and middle terms/+page.js";
+export const imports = ["_app/immutable/nodes/159.vT3Yumnn.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.D5QcmWKg.js","_app/immutable/chunks/entry.hy-wS87K.js"];
 export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

@@ -190,6 +190,10 @@
 		"src/routes/(general)/courses/internet/javascript/basics/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/javascript/basics/calculator": [
+		"src/routes/(general)/courses/internet/javascript/basics/calculator/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/javascript/basics/expressions": [
 		"src/routes/(general)/courses/internet/javascript/basics/expressions/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -370,8 +374,16 @@
 		"src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/binomial/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/mathematics2/probabilitytheory/distributions/continuous": [
+		"src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/continuous/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/mathematics2/probabilitytheory/distributions/joint": [
 		"src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/joint/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/probabilitytheory/distributions/normal": [
+		"src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/normal/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/courses/mathematics2/probabilitytheory/probability": [

@@ -1840,6 +1840,33 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/javascript/basics/+page.svelte"
   },
+  "src/routes/(general)/courses/internet/javascript/basics/calculator/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/calculator/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/calculator/+page.js"
+  },
+  "src/routes/(general)/courses/internet/javascript/basics/calculator/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.vERBzQU3.css",
+      "_app/immutable/assets/NavList.buyRB24_.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/calculator/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_content4.js",
+      "_WebPractice.js",
+      "_stores.js",
+      "_ActionIcons.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/calculator/+page.svelte"
+  },
   "src/routes/(general)/courses/internet/javascript/basics/expressions/+page.js": {
     "file": "entries/pages/(general)/courses/internet/javascript/basics/expressions/_page.js",
     "isEntry": true,
@@ -3346,6 +3373,30 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/binomial/+page.svelte"
   },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/continuous/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/continuous/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/continuous/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/continuous/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.OuUUlKb7.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/continuous/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores2.js",
+      "_content3.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/continuous/+page.svelte"
+  },
   "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/joint/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/joint/_page.js",
     "isEntry": true,
@@ -3369,6 +3420,30 @@
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/joint/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/normal/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/normal/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/normal/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/normal/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.Hi0drpWe.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/normal/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores2.js",
+      "_content3.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/normal/+page.svelte"
   },
   "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/probability/_page.js",
