@@ -3,8 +3,6 @@
         import Card, {Content} from '@smui/card';
         import List, { Item, Graphic, Separator, Text } from '@smui/list';
         import {goto} from "$app/navigation";
-        import Message from '$lib/ui/Message.svelte';
-        import Link from '$lib/ui/Link.svelte';
         import {page} from '$app/stores';
         import {onMount} from 'svelte';
         import { currentPath } from "$lib/stores";
@@ -40,7 +38,7 @@
         <Card>
             <Content>
                 <h5>DSU</h5>
-                <div>
+                
                     <List class="courses" dense>
                       <Item on:SMUI:action={() => goto('/courses/mathematics2')}>
                         <Graphic class="material-icons">menu_book</Graphic>
@@ -55,13 +53,13 @@
                         <Text>Internet Technologies Lab</Text>
                       </Item>
                     </List>
-                  </div>
+                  
             </Content>
         </Card>
         <Card>
             <Content>
                 <h5>Quantum Computation</h5>
-                <div>
+                
                     <List class="courses" dense>
                       <Item on:SMUI:action={() => goto('/courses/linearalgebra')}>
                         <Graphic class="material-icons">menu_book</Graphic>
@@ -108,7 +106,7 @@
                         <Text>Quantum Machine Learning</Text>
                       </Item>
                     </List>
-                  </div>
+                  
             </Content>
         </Card>
         

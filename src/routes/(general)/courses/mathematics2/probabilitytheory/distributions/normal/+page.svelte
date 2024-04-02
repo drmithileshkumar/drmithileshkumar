@@ -98,6 +98,30 @@
             </div>
         </Content>
     </Card>
+    <Card>
+        <Content>
+            <h6>Examples</h6>
+            <div class="examples">
+                <ol>
+                    <li>
+                        Height of adult humans
+                    </li>
+                    <li>
+                        IQ scores
+                    </li>
+                    <li>
+                        Weights of newborn babies
+                    </li>
+                    <li>
+                        Test scores
+                    </li>
+                    <li>
+                        Blood pressure
+                    </li>
+                </ol>
+            </div>
+        </Content>
+    </Card>
     <!-- <Card>
         <Content>
             <div class="question">

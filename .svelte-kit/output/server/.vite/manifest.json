@@ -1393,9 +1393,7 @@
   },
   "src/routes/(general)/courses/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.37q-zF4e.css",
-      "_app/immutable/assets/Message.ctOi1nG9.css",
-      "_app/immutable/assets/Link.mTa6ZPjX.css"
+      "_app/immutable/assets/_page.37q-zF4e.css"
     ],
     "file": "entries/pages/(general)/courses/_page.svelte.js",
     "imports": [
@@ -3459,7 +3457,7 @@
   },
   "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/normal/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.Hi0drpWe.css"
+      "_app/immutable/assets/_page.X5_P1GF9.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/normal/_page.svelte.js",
     "imports": [
@@ -3475,6 +3473,30 @@
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/normal/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/poisson/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/poisson/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/poisson/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/poisson/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.bjTIz_31.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/poisson/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores2.js",
+      "_content3.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/poisson/+page.svelte"
   },
   "src/routes/(general)/courses/mathematics2/probabilitytheory/probability/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/probability/_page.js",

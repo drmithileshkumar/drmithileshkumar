@@ -8,7 +8,7 @@ import { c as contentNav, a as contents } from "../../../../../../../../chunks/c
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 const css = {
-  code: "article.svelte-wk6i9k{display:flex;flex-direction:column;gap:0.7em}p.svelte-wk6i9k,li.svelte-wk6i9k{opacity:0.8}h4.svelte-wk6i9k{margin:0.7em 0}strong.svelte-wk6i9k{color:rgb(159, 116, 7);opacity:1}.image.svelte-wk6i9k{width:300px;margin:auto}",
+  code: "article.svelte-wk6i9k{display:flex;flex-direction:column;gap:0.7em}p.svelte-wk6i9k,li.svelte-wk6i9k{opacity:0.8}h4.svelte-wk6i9k{margin:0.7em 0}h6.svelte-wk6i9k{font-size:1em;margin:0.7em 0;color:rgba(0, 150, 200, 1)}strong.svelte-wk6i9k{color:rgb(159, 116, 7);opacity:1}.image.svelte-wk6i9k{width:300px;margin:auto}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -57,6 +57,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                          &= \\frac{1}{\\sigma\\sqrt{2\\pi}}\\int_{-\\infty}^x e^{-(u - \\mu)^2/2\\sigma^2}du
                     \\end{aligned}\\]`)}
                     If \\(X\\) has the distribution function given as above, we say that the random variable \\(X\\) is <em data-svelte-h="svelte-17f6idn">normally distributed</em> with mean \\(\\mu\\) and variance \\(\\sigma^2\\).</div> <div class="definition">We can replace ${escape(`\\[Z = \\frac{X -\\mu}{\\sigma}\\]`)} For this variable mean is zero and variance is 1. We can write the density function as ${escape(`\\[f(z) = \\frac{1}{\\sqrt{2\\pi}}e^{-z^2/2}\\]`)} This function is called the <strong class="svelte-wk6i9k" data-svelte-h="svelte-bdnefg">standard normal density function</strong>.</div> <div class="image svelte-wk6i9k" data-svelte-h="svelte-s217sd"><img src="/courses/mathematics2/normal.jpg" alt="normal" width="100%"></div></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<h6 class="svelte-wk6i9k" data-svelte-h="svelte-1igya3x">Examples</h6> <div class="examples" data-svelte-h="svelte-1jwnijk"><ol><li class="svelte-wk6i9k">Height of adult humans</li> <li class="svelte-wk6i9k">IQ scores</li> <li class="svelte-wk6i9k">Weights of newborn babies</li> <li class="svelte-wk6i9k">Test scores</li> <li class="svelte-wk6i9k">Blood pressure</li></ol></div>`;
         }
       })}`;
     }

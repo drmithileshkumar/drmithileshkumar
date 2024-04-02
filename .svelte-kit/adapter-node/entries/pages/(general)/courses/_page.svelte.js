@@ -6,8 +6,6 @@ import { L as List, I as Item } from "../../../../chunks/Item.js";
 import { T as Text } from "../../../../chunks/Subheader.js";
 import { G as Graphic } from "../../../../chunks/Graphic.js";
 import "../../../../chunks/client.js";
-/* empty css                                                       */
-/* empty css                                                    */
 import { p as page } from "../../../../chunks/stores.js";
 import { d as darkMode, c as currentPath } from "../../../../chunks/stores2.js";
 import { P as Pathlist } from "../../../../chunks/Pathlist.js";
@@ -40,7 +38,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h5 class="svelte-86n1i9" data-svelte-h="svelte-lm6kl2">DSU</h5> <div>${validate_component(List, "List").$$render($$result, { class: "courses", dense: true }, {}, {
+          return `<h5 class="svelte-86n1i9" data-svelte-h="svelte-lm6kl2">DSU</h5> ${validate_component(List, "List").$$render($$result, { class: "courses", dense: true }, {}, {
             default: () => {
               return `${validate_component(Item, "Item").$$render($$result, {}, {}, {
                 default: () => {
@@ -80,7 +78,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 }
               })}`;
             }
-          })}</div>`;
+          })}`;
         }
       })}`;
     }
@@ -88,7 +86,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h5 class="svelte-86n1i9" data-svelte-h="svelte-1ib2hw4">Quantum Computation</h5> <div>${validate_component(List, "List").$$render($$result, { class: "courses", dense: true }, {}, {
+          return `<h5 class="svelte-86n1i9" data-svelte-h="svelte-1ib2hw4">Quantum Computation</h5> ${validate_component(List, "List").$$render($$result, { class: "courses", dense: true }, {}, {
             default: () => {
               return `${validate_component(Item, "Item").$$render($$result, {}, {}, {
                 default: () => {
@@ -224,7 +222,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 }
               })}`;
             }
-          })}</div>`;
+          })}`;
         }
       })}`;
     }

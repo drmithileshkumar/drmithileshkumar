@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Application of integrals/Area under simple curves/_page.js';
 
 export const index = 159;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Application of integrals/Area under simple curves/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.js";
-export const imports = ["_app/immutable/nodes/159.G2t_BpGC.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.DziwE3Cu.js","_app/immutable/chunks/entry.kvfBD75f.js"];
+export const universal_id = "src/routes/(general)/notes/maths/Application of integrals/Area under simple curves/+page.js";
+export const imports = ["_app/immutable/nodes/159.3Kiw1IFq.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/stores.YP8YLv8J.js","_app/immutable/chunks/entry.4oryzxsh.js"];
 export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

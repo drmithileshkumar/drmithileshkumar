@@ -390,6 +390,10 @@
 		"src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/normal/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/mathematics2/probabilitytheory/distributions/poisson": [
+		"src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/poisson/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/mathematics2/probabilitytheory/probability": [
 		"src/routes/(general)/courses/mathematics2/probabilitytheory/probability/+page.js",
 		"src/routes/(general)/+layout.server.js"
