@@ -1872,7 +1872,7 @@
   },
   "src/routes/(general)/courses/internet/javascript/basics/conditions/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.bf280l74.css",
+      "_app/immutable/assets/_page.9Oq8cfZQ.css",
       "_app/immutable/assets/WebPractice.nnZ3ei7Y.css",
       "_app/immutable/assets/NavList.buyRB24_.css"
     ],
@@ -1925,6 +1925,37 @@
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/javascript/basics/expressions/+page.svelte"
+  },
+  "src/routes/(general)/courses/internet/javascript/basics/loops/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/loops/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/loops/+page.js"
+  },
+  "src/routes/(general)/courses/internet/javascript/basics/loops/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.9Oq8cfZQ.css",
+      "_app/immutable/assets/WebPractice.nnZ3ei7Y.css",
+      "_app/immutable/assets/NavList.buyRB24_.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/loops/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_javascript.js",
+      "_content4.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_LineNumbers.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/loops/+page.svelte"
   },
   "src/routes/(general)/courses/internet/javascript/basics/objectorientation/+page.js": {
     "file": "entries/pages/(general)/courses/internet/javascript/basics/objectorientation/_page.js",

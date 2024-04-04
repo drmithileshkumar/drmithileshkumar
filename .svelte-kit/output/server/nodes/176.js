@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Continuity and differentiability/Differentiability/_page.js';
 
 export const index = 176;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Continuity and differentiability/Differentiability/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/+page.js";
-export const imports = ["_app/immutable/nodes/176.dn2B2Tep.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.YP8YLv8J.js","_app/immutable/chunks/entry.4oryzxsh.js"];
+export const universal_id = "src/routes/(general)/notes/maths/Continuity and differentiability/Differentiability/+page.js";
+export const imports = ["_app/immutable/nodes/176.zw7Bd5Sh.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/constants.1x7ZJ2_l.js","_app/immutable/chunks/stores.kPEMvI4Q.js","_app/immutable/chunks/entry.IeNoKfOl.js"];
 export const stylesheets = ["_app/immutable/assets/Practice.5SCwWus9.css","_app/immutable/assets/Message.ctOi1nG9.css"];
 export const fonts = [];

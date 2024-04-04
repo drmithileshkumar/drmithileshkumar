@@ -326,6 +326,43 @@ function setNumber(num) {
             </p>
         </Content>
     </Card>
+	<h4>Questions</h4>
+	<Card>
+		<Content>
+			<ol>
+				<li>
+					Write a JavaScript program that checks if a number is even or odd using if-else statements.
+				</li>
+				<li>
+					Create a function that determines whether a given year is a leap year using if-else statements.
+				</li>
+				<li>
+					Implement a JavaScript function that calculates the grade of a student based on their score using if-else statements.
+				</li>
+				<li>
+					Write a program that determines the type of a triangle (equilateral, isosceles, or scalene) based on the lengths of its sides using if-else statements.
+				</li>
+				<li>
+					Develop a JavaScript function that converts a numerical grade into a letter grade (A, B, C, D, F) using if-else statements.
+				</li>
+				<li>
+					Implement a switch statement in JavaScript to determine the name of the day based on its number representation (1 for Monday, 2 for Tuesday, etc.).
+				</li>
+				<li>
+					Write a program that categorizes a given month into seasons (spring, summer, autumn, winter) using switch statements.
+				</li>
+				<li>
+					Create a function that determines the discount percentage based on the total purchase amount using a switch statement (e.g., 0-100: no discount, 101-500: 10% discount, etc.).
+				</li>
+				<li>
+					Write a JavaScript program that converts a given month number into its corresponding name (e.g., 1 for January) using a switch statement.
+				</li>
+				<li>
+					Implement a function that calculates the area of a shape (circle, square, triangle) based on user input and using a switch statement to determine the shape type.
+				</li>
+			</ol>
+		</Content>
+	</Card>
 </article>
 
 <style>
@@ -360,133 +397,12 @@ function setNumber(num) {
 		cursor: pointer;
 		text-decoration: none;
 	}
-	.question {
-		cursor: pointer;
-		padding: 0.3em;
-	}
-	.cell {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border: 1px solid teal;
-		height: auto;
-	}
-	.grid {
-		display: grid;
-		gap: 0.1em;
-		height: 300px;
-		width: 300px;
-		border: 1px solid gray;
-		padding: 0.1em;
-		margin: auto;
-	}
-	#container {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5em;
-		width: 300px;
-		align-items: center;
-		border: 1px solid;
-		padding: 0.2em;
-	}
-	#io {
-		display: flex;
-		flex-direction: column;
-		padding: 0.5em 0.2em;
-		border: 1px solid;
-		min-height: 1.5em;
-		width: 100%;
-	}
-	#expression {
-		color: gray;
-		display: flex;
-		align-items: end;
-		padding: 0.5em 0.2em;
-		min-height: 1.5em;
-	}
-	#output {
-		color: gray;
-		display: flex;
-		align-items: end;
-		padding: 0.5em 0.2em;
-		min-height: 1.5em;
-	}
-	#input {
-		width: 100%;
-		display: grid;
-		padding: 0.2em;
-		border: 1px solid;
-	}
-	#basic {
-		display: grid;
-		gap: 0.2em;
-		grid-template-areas:
-			'C pm per div'
-			'seven eight nine mul'
-			'four five six min'
-			'one two three plus'
-			'zero zero dot eq';
-	}
-	.C {
-		grid-area: C;
-	}
-	.pm {
-		grid-area: pm;
-	}
-	.per {
-		grid-area: per;
-	}
-	.div {
-		grid-area: div;
-	}
-	.mul {
-		grid-area: mul;
-	}
-	.min {
-		grid-area: min;
-	}
-	.plus {
-		grid-area: plus;
-	}
-	.eq {
-		grid-area: eq;
-	}
-	.zero {
-		grid-area: zero;
-	}
-	.one {
-		grid-area: one;
-	}
-	.two {
-		grid-area: two;
-	}
-	.three {
-		grid-area: three;
-	}
-	.four {
-		grid-area: four;
-	}
-	.five {
-		grid-area: five;
-	}
-	.six {
-		grid-area: six;
-	}
-	.seven {
-		grid-area: seven;
-	}
-	.eight {
-		grid-area: eight;
-	}
-	.nine {
-		grid-area: nine;
-	}
-
-	button {
-		font-size: 1.2em;
-	}
-	.operation {
-		background-color: rgb(245, 162, 7);
-		border-color: rgb(245, 162, 7);
-	}
+	ol li::marker {
+        font-size: 1.2em;
+        color: red;
+        font-weight: bold;
+    }
+    ol li {
+        padding: 0.5em 0;
+    }
 </style>

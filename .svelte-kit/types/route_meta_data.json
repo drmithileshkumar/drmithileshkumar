@@ -202,6 +202,10 @@
 		"src/routes/(general)/courses/internet/javascript/basics/expressions/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/javascript/basics/loops": [
+		"src/routes/(general)/courses/internet/javascript/basics/loops/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/javascript/basics/objectorientation": [
 		"src/routes/(general)/courses/internet/javascript/basics/objectorientation/+page.js",
 		"src/routes/(general)/+layout.server.js"
