@@ -55,8 +55,13 @@
         padding: 0.7em;
     }
     .image {
-        width: 300px;
+        width: 100%;
         margin: auto;
+    }
+    .questions li::marker {
+        color: red;
+        font-size: 1.2em;
+        font-weight: bold;
     }
 </style>
 <svelte:head>
@@ -90,11 +95,41 @@
                     If \(X\) has the distribution function given as above, we say that the random variable \(X\) is <em>normally distributed</em> with mean \(\mu\) and variance \(\sigma^2\).
                 </div>
                 <div class="definition">
-                    We can replace {`\\[Z = \\frac{X -\\mu}{\\sigma}\\]`} For this variable mean is zero and variance is 1. We can write the density function as {`\\[f(z) = \\frac{1}{\\sqrt{2\\pi}}e^{-z^2/2}\\]`} This function is called the <strong>standard normal density function</strong>.
+                    We can replace {`\\[Z = \\frac{X -\\mu}{\\sigma}\\]`} For this variable mean is zero and variance is 1. We can write the density function as {`\\[f(z) = \\frac{1}{\\sqrt{2\\pi}}e^{-z^2/2}\\]`} This function is called the <strong>standard normal density function</strong>. \(Z\) is called the <strong>z-score</strong>.
                 </div>
-                <div class="image">
-                    <img src="/courses/mathematics2/normal.jpg" alt="normal" width="100%">
-                </div>
+                
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Features</h6>
+            <div class="image">
+                <img src="/courses/mathematics2/normal.jpg" alt="normal" width="100%">
+            </div>
+            <p>Some of the basic features of normal distribution to keep in mind are</p>
+            <ol>
+                <li>Normal density function forms a symmetric bell-shaped curve.</li>
+                <li>This distribution is symmetric around the mean, meaning that the probability of observing a value to the left of the mean is equal to the probability of observing the same value to the right of the mean.</li>
+                <li>The probability density function forms a bell-shaped curve, with the highest point at the mean. As values move away from the mean, the probability of observing those values decreases.</li>
+                <li>
+                    In a normal distribution, the mean, median, and mode are all equal and located at the center of the distribution.
+                </li>
+                <li>
+                    The spread of the data in a normal distribution is characterized by the standard deviation. The empirical rule, also known as the 68-95-99.7 rule, states that in a normal distribution, approximately 68% of the data falls within one standard deviation of the mean, 95% falls within two standard deviations, and 99.7% falls within three standard deviations.
+                </li>
+            </ol>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>z-table</h6>
+            <p>z-table gives the area under the normal distribution curve from left to a given value of z, i.e. the area is the probability of z having value upto the given value.</p>
+            <div class="image">
+                <img width="100%" src="/courses/mathematics2/ztable1.webp" alt="ztable1">
+            </div>
+            <div class="image">
+                <img width="100%" src="/courses/mathematics2/ztable2.webp" alt="ztable2">
             </div>
         </Content>
     </Card>
@@ -122,16 +157,43 @@
             </div>
         </Content>
     </Card>
-    <!-- <Card>
+    <h4>Questions</h4>
+    <Card>
         <Content>
-            <div class="question">
-                Find the constant \(c\) such that the function 
-                {`\\[f(x) = \\begin{cases}
-                cx^2 & 0\\lt x\\lt 3\\\\
-                0 & otherwise
-                \\end{cases}\\]`}
-                is a density function, and calculate \(P(1\lt X\lt 2)\).
+            <div class="questions">
+                <ol>
+                    <li>
+                        The heights of students in a class follow a normal distribution with a mean of 65 inches and a standard deviation of 3 inches. What percentage of students are taller than 70 inches?
+                    </li>
+                    <li>
+                        The scores on a standardized test follow a normal distribution with a mean of 500 and a standard deviation of 100. What percentage of students scored between 400 and 600?
+                    </li>
+                    <li>
+                        The weights of apples in a crate follow a normal distribution with a mean of 150 grams and a standard deviation of 20 grams. What percentage of apples weigh less than 140 grams?
+                    </li>
+                    <li>
+                        The IQ scores of a population follow a normal distribution with a mean of 100 and a standard deviation of 15. What percentage of the population has an IQ score between 85 and 115?
+                    </li>
+                    <li>
+                        The monthly electricity bills for a household follow a normal distribution with a mean of Rs 100 and a standard deviation of Rs 20. What percentage of households have a bill greater than Rs 120?
+                    </li>
+                    <li>
+                        The reaction times of drivers to a stimulus follow a normal distribution with a mean of 0.5 seconds and a standard deviation of 0.1 seconds. What percentage of drivers have a reaction time less than 0.4 seconds?
+                    </li>
+                    <li>
+                        The scores on a math test follow a normal distribution with a mean of 75 and a standard deviation of 10. What is the z-score for a student who scored 85 on the test?
+                    </li>
+                    <li>
+                        The heights of adult males in a population follow a normal distribution with a mean of 70 inches and a standard deviation of 3 inches. What is the probability that a randomly selected adult male is shorter than 68 inches?
+                    </li>
+                    <li>
+                        The diameters of bolts produced by a factory follow a normal distribution with a mean of 5 inches and a standard deviation of 0.1 inches. What percentage of bolts have a diameter between 4.9 and 5.1 inches?
+                    </li>
+                    <li>
+                        The blood pressure of adults follows a normal distribution with a mean of 120 mmHg and a standard deviation of 10 mmHg. What is the probability that a randomly selected adult has a blood pressure greater than 140 mmHg?
+                    </li>
+                </ol>
             </div>
         </Content>
-    </Card> -->
+    </Card>
 </article>

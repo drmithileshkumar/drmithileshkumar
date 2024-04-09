@@ -198,6 +198,10 @@
 		"src/routes/(general)/courses/internet/javascript/basics/conditions/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/javascript/basics/error": [
+		"src/routes/(general)/courses/internet/javascript/basics/error/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/javascript/basics/expressions": [
 		"src/routes/(general)/courses/internet/javascript/basics/expressions/+page.js",
 		"src/routes/(general)/+layout.server.js"

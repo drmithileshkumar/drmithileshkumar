@@ -1896,6 +1896,37 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/javascript/basics/conditions/+page.svelte"
   },
+  "src/routes/(general)/courses/internet/javascript/basics/error/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/error/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/error/+page.js"
+  },
+  "src/routes/(general)/courses/internet/javascript/basics/error/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.9Oq8cfZQ.css",
+      "_app/immutable/assets/WebPractice.nnZ3ei7Y.css",
+      "_app/immutable/assets/NavList.buyRB24_.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/javascript/basics/error/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_javascript.js",
+      "_content4.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_LineNumbers.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/basics/error/+page.svelte"
+  },
   "src/routes/(general)/courses/internet/javascript/basics/expressions/+page.js": {
     "file": "entries/pages/(general)/courses/internet/javascript/basics/expressions/_page.js",
     "isEntry": true,
@@ -3519,7 +3550,7 @@
   },
   "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/normal/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.X5_P1GF9.css"
+      "_app/immutable/assets/_page.xGnoJHUe.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/normal/_page.svelte.js",
     "imports": [
@@ -3543,7 +3574,7 @@
   },
   "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/poisson/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.bjTIz_31.css"
+      "_app/immutable/assets/_page.pJg_5TGo.css"
     ],
     "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/poisson/_page.svelte.js",
     "imports": [

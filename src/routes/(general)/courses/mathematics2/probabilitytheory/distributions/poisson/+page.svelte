@@ -58,6 +58,11 @@
         width: 300px;
         margin: auto;
     }
+    .questions li::marker {
+        color: red;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
 </style>
 <svelte:head>
     <title>Mathematics II</title>
@@ -73,7 +78,7 @@
     <Card>
         <Content>
             <div class="definition" style="padding-bottom: 0.1em;">
-                   Let \(X\) be a discrete random variable that can take on the values 0, 1, 2, ... such that the probability function of \(X\) is given by {`\\[f(x) = P(X = x) = \\frac{\\lambda^xe^{-\\lambda}}{x!}\\]`} where \(x = 0, 1, 2, ...\) and \(\lambda\) is a given positive constant. This distribution is called the <strong>Poisson distribution</strong>.
+                   Let \(X\) be a discrete random variable that can take on the values 0, 1, 2, ... such that the probability function of \(X\) is given by {`\\[f(x) = P(X = x) = \\frac{\\lambda^xe^{-\\lambda}}{x!}\\]`} where \(x = 0, 1, 2, ...\) and \(\lambda\) is a given positive constant. This distribution is called the <strong>Poisson distribution</strong>. Here \(\lambda\) represents the average rate of events.
             </div>
         </Content>
     </Card>
@@ -101,16 +106,43 @@
             </div>
         </Content>
     </Card>
-    <!-- <Card>
+    <h4>Questions</h4>
+    <Card>
         <Content>
-            <div class="question">
-                Find the constant \(c\) such that the function 
-                {`\\[f(x) = \\begin{cases}
-                cx^2 & 0\\lt x\\lt 3\\\\
-                0 & otherwise
-                \\end{cases}\\]`}
-                is a density function, and calculate \(P(1\lt X\lt 2)\).
+            <div class="questions">
+                <ol>
+                    <li>
+                        A call center receives an average of 30 calls per hour. What is the probability that the call center receives exactly 25 calls in the next hour?
+                    </li>
+                    <li>
+                        On average, 5 buses arrive at a bus stop every 20 minutes. What is the probability that exactly 3 buses arrive at the bus stop in the next 20 minutes?
+                    </li>
+                    <li>
+                        The number of typographical errors in a book follows a Poisson distribution with a mean of 2 errors per page. What is the probability that a randomly selected page has no errors?
+                    </li>
+                    <li>
+                        A factory produces light bulbs with an average defect rate of 0.1 defects per bulb. What is the probability that a randomly selected batch of 100 bulbs contains exactly 10 defective bulbs?
+                    </li>
+                    <li>
+                        A website experiences an average of 2 cyber attacks per day. What is the probability that the website will experience at most 1 cyber attack in the next day?
+                    </li>
+                    <li>
+                        A store sells an average of 100 units of a product per week. What is the probability that the store sells fewer than 90 units of the product in the next week?
+                    </li>
+                    <li>
+                        A laboratory technician conducts tests on blood samples, with an average of 4 positive cases per day. What is the probability that the technician will encounter exactly 2 positive cases in the next day?
+                    </li>
+                    <li>
+                        A restaurant receives an average of 50 food delivery orders per evening. What is the probability that the restaurant receives more than 60 food delivery orders in the next evening?
+                    </li>
+                    <li>
+                        A car rental agency rents an average of 15 cars per day. What is the probability that the agency rents exactly 20 cars in the next day?
+                    </li>
+                    <li>
+                        A university library receives an average of 6 inquiries per hour at the reference desk. What is the probability that there will be no inquiries at the reference desk in the next hour?
+                    </li>
+                </ol>
             </div>
         </Content>
-    </Card> -->
+    </Card>
 </article>
