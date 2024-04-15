@@ -83,7 +83,7 @@
                    The probability density function for normal distribution is defined as {`\\[\\begin{aligned}
                     f(x) &= \\frac{1}{\\sigma\\sqrt{2\\pi}}e^{-(x - \\mu)^2/2\\sigma^2}
                     \\end{aligned}\\]`}
-                    where <ol>
+                    where \(\mu\) is mean, \(\sigma\) is standard deviation and <ol>
                         <li>\(-\infty \lt x\lt \infty\)</li>
                         <li>\(f(x)\geq 0\)</li>
                         <li>{`\\(\\int_{-\\infty}^\\infty f(x)dx = 1\\)`}</li>

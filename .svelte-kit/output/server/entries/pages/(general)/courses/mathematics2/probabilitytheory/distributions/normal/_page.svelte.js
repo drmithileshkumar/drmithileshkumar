@@ -51,7 +51,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           return `<div><p class="svelte-1vxkvad" data-svelte-h="svelte-1a6rgq4">Normal distribution is also called Gaussian distribution.</p> <div class="definition" style="padding-bottom: 0.1em;">The probability density function for normal distribution is defined as ${escape(`\\[\\begin{aligned}
                     f(x) &= \\frac{1}{\\sigma\\sqrt{2\\pi}}e^{-(x - \\mu)^2/2\\sigma^2}
                     \\end{aligned}\\]`)}
-                    where <ol><li class="svelte-1vxkvad" data-svelte-h="svelte-qy3pta">\\(-\\infty \\lt x\\lt \\infty\\)</li> <li class="svelte-1vxkvad" data-svelte-h="svelte-7llnot">\\(f(x)\\geq 0\\)</li> <li class="svelte-1vxkvad">${escape(`\\(\\int_{-\\infty}^\\infty f(x)dx = 1\\)`)}</li></ol>
+                    where \\(\\mu\\) is mean, \\(\\sigma\\) is standard deviation and <ol><li class="svelte-1vxkvad" data-svelte-h="svelte-qy3pta">\\(-\\infty \\lt x\\lt \\infty\\)</li> <li class="svelte-1vxkvad" data-svelte-h="svelte-7llnot">\\(f(x)\\geq 0\\)</li> <li class="svelte-1vxkvad">${escape(`\\(\\int_{-\\infty}^\\infty f(x)dx = 1\\)`)}</li></ol>
                     The corresponding distribution function is given by ${escape(`\\[\\begin{aligned}
                     F(x) &= P(X\\leq x)\\\\
                          &= \\frac{1}{\\sigma\\sqrt{2\\pi}}\\int_{-\\infty}^x e^{-(u - \\mu)^2/2\\sigma^2}du

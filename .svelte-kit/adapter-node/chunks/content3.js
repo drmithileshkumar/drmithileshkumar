@@ -177,51 +177,31 @@ const contents = [
       },
       {
         name: "STATISTICAL INFERENCE",
-        url: "",
+        url: "/courses/mathematics2/inference",
         topics: [
           {
             name: "Significance",
-            url: "",
+            url: "/courses/mathematics/inference/significance",
             topics: [
               {
-                name: "Test of significance",
-                url: ""
+                name: "Sampling",
+                url: "/courses/mathematics/inference/significance/sampling"
               },
               {
-                name: "Elements of Hypothesis Testing",
-                url: ""
+                name: "Hypotheses",
+                url: "/courses/mathematics/inference/significance/hypotheses"
               },
               {
-                name: "Null hypothesis",
-                url: ""
+                name: "Tests of hypothesis and significance",
+                url: "/courses/mathematics/inference/significance/tests"
               },
               {
-                name: "Aleternative hypothesis",
-                url: ""
+                name: "Type I and Type II errors",
+                url: "/courses/mathematics/inference/significance/types"
               },
               {
-                name: "Simple hypotheses",
-                url: ""
-              },
-              {
-                name: "Composite hypotheses",
-                url: ""
-              },
-              {
-                name: "Critical region",
-                url: ""
-              },
-              {
-                name: "Type I errors",
-                url: ""
-              },
-              {
-                name: "Type II errors",
-                url: ""
-              },
-              {
-                name: "Levels of significance and size",
-                url: ""
+                name: "Level of significance",
+                url: "/courses/mathematics/inference/significance/level"
               }
             ]
           },
@@ -535,6 +515,48 @@ let contentNav = {
     "name": "Poisson distribution",
     "url": "/courses/mathematics2/probabilitytheory/distributions/poisson",
     "previous": "/courses/mathematics2/probabilitytheory/distributions/normal",
+    "next": "/courses/mathematics2/inference"
+  },
+  "/courses/mathematics2/inference": {
+    "name": "Statistical Inference",
+    "url": "/courses/mathematics2/inference",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/poisson",
+    "next": "/courses/mathematics2/inference/significance"
+  },
+  "/courses/mathematics2/inference/significance": {
+    "name": "Significance",
+    "url": "/courses/mathematics2/inference/significance",
+    "previous": "/courses/mathematics2/inference",
+    "next": "/courses/mathematics2/inference/significance/sampling"
+  },
+  "/courses/mathematics2/inference/significance/sampling": {
+    "name": "Sampling",
+    "url": "/courses/mathematics2/inference/significance/sampling",
+    "previous": "/courses/mathematics2/inference/significance",
+    "next": "/courses/mathematics2/inference/significance/hypotheses"
+  },
+  "/courses/mathematics2/inference/significance/hypotheses": {
+    "name": "Hypotheses",
+    "url": "/courses/mathematics2/inference/significance/hypotheses",
+    "previous": "/courses/mathematics2/inference/significance/sampling",
+    "next": "/courses/mathematics2/inference/significance/tests"
+  },
+  "/courses/mathematics2/inference/significance/tests": {
+    "name": "Tests of hypotheses and significance",
+    "url": "/courses/mathematics2/inference/significance/tests",
+    "previous": "/courses/mathematics2/inference/significance/hypotheses",
+    "next": "/courses/mathematics2/inference/significance/types"
+  },
+  "/courses/mathematics2/inference/significance/types": {
+    "name": "Type I and Type II errors",
+    "url": "/courses/mathematics2/inference/significance/types",
+    "previous": "/courses/mathematics2/inference/significance/tests",
+    "next": "/courses/mathematics2/inference/significance/level"
+  },
+  "/courses/mathematics2/inference/significance/level": {
+    "name": "Level of significance",
+    "url": "/courses/mathematics2/inference/significance/level",
+    "previous": "/courses/mathematics2/inference/significance/types",
     "next": ""
   },
   "": {

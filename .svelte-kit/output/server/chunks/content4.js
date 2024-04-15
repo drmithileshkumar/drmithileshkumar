@@ -288,6 +288,10 @@ const contents = [
                 url: "/courses/internet/javascript/basics/http"
               }
             ]
+          },
+          {
+            name: "Practice",
+            url: "/courses/internet/javascript/practice"
           }
           // {
           //     name: 'JavaScript and HTML Documents',
@@ -458,6 +462,36 @@ const contents = [
         ]
       },
       {
+        name: "NODE JS",
+        url: "/courses/internet/nodejs",
+        topics: [
+          {
+            name: "Introduction to Node.js",
+            url: "/courses/internet/nodejs/intro"
+          },
+          {
+            name: "Installation",
+            url: "/courses/internet/nodejs/installation"
+          },
+          {
+            name: "A Node.js application",
+            url: "/courses/internet/nodejs/application"
+          },
+          {
+            name: "Fundamentals of Node.js",
+            url: "/courses/internet/nodejs/fundamentals"
+          },
+          {
+            name: "Difference between Node.js and browser",
+            url: "/courses/internet/nodejs/difference"
+          },
+          {
+            name: "Anatomy of an HTTP Transaction",
+            url: "/courses/internet/nodejs/http"
+          }
+        ]
+      },
+      {
         name: "XML",
         url: "/courses/internet/xml",
         topics: [
@@ -504,36 +538,6 @@ const contents = [
           {
             name: "Web services",
             url: "/courses/internet/xml/web"
-          }
-        ]
-      },
-      {
-        name: "NODE JS",
-        url: "/courses/internet/nodejs",
-        topics: [
-          {
-            name: "Introduction to Node.js",
-            url: "/courses/internet/nodejs/intro"
-          },
-          {
-            name: "Installation",
-            url: "/courses/internet/nodejs/installation"
-          },
-          {
-            name: "A Node.js application",
-            url: "/courses/internet/nodejs/application"
-          },
-          {
-            name: "Fundamentals of Node.js",
-            url: "/courses/internet/nodejs/fundamentals"
-          },
-          {
-            name: "Difference between Node.js and browser",
-            url: "/courses/internet/nodejs/difference"
-          },
-          {
-            name: "Anatomy of an HTTP Transaction",
-            url: "/courses/internet/nodejs/http"
           }
         ]
       }
@@ -847,6 +851,54 @@ const contentNav = {
     "previous": "/courses/internet/javascript/basics/events",
     "next": "/courses/internet/xml"
   },
+  "/courses/internet/javascript/practice": {
+    "name": "Practice",
+    "url": "/courses/internet/javascript/practice",
+    "previous": "/courses/internet/javascript/basics/http",
+    "next": "/courses/internet/nodejs"
+  },
+  "/courses/internet/nodejs": {
+    "name": "NODE JS",
+    "url": "/courses/internet/nodejs",
+    "previous": "/courses/internet/practice",
+    "next": "/courses/internet/nodejs/intro"
+  },
+  "/courses/internet/nodejs/intro": {
+    "name": "Introduction to Node.js",
+    "url": "/courses/internet/nodejs/intro",
+    "previous": "/courses/internet/nodejs",
+    "next": "/courses/internet/nodejs/installation"
+  },
+  "/courses/internet/nodejs/installation": {
+    "name": "Installation",
+    "url": "/courses/internet/nodejs/installation",
+    "previous": "/courses/internet/nodejs/intro",
+    "next": "/courses/internet/nodejs/application"
+  },
+  "/courses/internet/nodejs/application": {
+    "name": "A Node.js application",
+    "url": "/courses/internet/nodejs/application",
+    "previous": "/courses/internet/nodejs/installation",
+    "next": "/courses/internet/nodejs/fundamentals"
+  },
+  "/courses/internet/nodejs/fundamentals": {
+    "name": "Fundamentals of Node.js",
+    "url": "/courses/internet/nodejs/fundamentals",
+    "previous": "/courses/internet/nodejs/application",
+    "next": "/courses/internet/nodejs/difference"
+  },
+  "/courses/internet/nodejs/difference": {
+    "name": "Difference between Node.js and browser",
+    "url": "/courses/internet/nodejs/difference",
+    "previous": "/courses/internet/nodejs/fundamentals",
+    "next": "/courses/internet/nodejs/http"
+  },
+  "/courses/internet/nodejs/http": {
+    "name": "Anatomy of an HTTP Transaction",
+    "url": "/courses/internet/nodejs/http",
+    "previous": "/courses/internet/nodejs/difference",
+    "next": "/courses/internet/nodejs/http"
+  },
   "/courses/internet/xml": {
     "name": "XML",
     "url": "/courses/internet/xml",
@@ -918,48 +970,6 @@ const contentNav = {
     "url": "/courses/internet/xml/web",
     "previous": "/courses/internet/xml/processors",
     "next": "/courses/internet/nodejs"
-  },
-  "/courses/internet/nodejs": {
-    "name": "NODE JS",
-    "url": "/courses/internet/nodejs",
-    "previous": "/courses/internet/xml/web",
-    "next": "/courses/internet/nodejs/intro"
-  },
-  "/courses/internet/nodejs/intro": {
-    "name": "Introduction to Node.js",
-    "url": "/courses/internet/nodejs/intro",
-    "previous": "/courses/internet/nodejs",
-    "next": "/courses/internet/nodejs/installation"
-  },
-  "/courses/internet/nodejs/installation": {
-    "name": "Installation",
-    "url": "/courses/internet/nodejs/installation",
-    "previous": "/courses/internet/nodejs/intro",
-    "next": "/courses/internet/nodejs/application"
-  },
-  "/courses/internet/nodejs/application": {
-    "name": "A Node.js application",
-    "url": "/courses/internet/nodejs/application",
-    "previous": "/courses/internet/nodejs/installation",
-    "next": "/courses/internet/nodejs/fundamentals"
-  },
-  "/courses/internet/nodejs/fundamentals": {
-    "name": "Fundamentals of Node.js",
-    "url": "/courses/internet/nodejs/fundamentals",
-    "previous": "/courses/internet/nodejs/application",
-    "next": "/courses/internet/nodejs/difference"
-  },
-  "/courses/internet/nodejs/difference": {
-    "name": "Difference between Node.js and browser",
-    "url": "/courses/internet/nodejs/difference",
-    "previous": "/courses/internet/nodejs/fundamentals",
-    "next": "/courses/internet/nodejs/http"
-  },
-  "/courses/internet/nodejs/http": {
-    "name": "Anatomy of an HTTP Transaction",
-    "url": "/courses/internet/nodejs/http",
-    "previous": "/courses/internet/nodejs/difference",
-    "next": "/courses/internet/nodejs/http"
   }
 };
 export {

@@ -242,6 +242,10 @@
 		"src/routes/(general)/courses/internet/javascript/http/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internet/javascript/practice": [
+		"src/routes/(general)/courses/internet/javascript/practice/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internet/nodejs": [
 		"src/routes/(general)/courses/internet/nodejs/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -372,6 +376,18 @@
 	],
 	"/(general)/courses/mathematics2/assignment1": [
 		"src/routes/(general)/courses/mathematics2/assignment1/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/inference": [
+		"src/routes/(general)/courses/mathematics2/inference/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/inference/significance": [
+		"src/routes/(general)/courses/mathematics2/inference/significance/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/inference/significance/sampling": [
+		"src/routes/(general)/courses/mathematics2/inference/significance/sampling/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/courses/mathematics2/probabilitytheory": [

@@ -2155,6 +2155,32 @@
     "isEntry": true,
     "src": "src/routes/(general)/courses/internet/javascript/http/+page.svelte"
   },
+  "src/routes/(general)/courses/internet/javascript/practice/+page.js": {
+    "file": "entries/pages/(general)/courses/internet/javascript/practice/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/practice/+page.js"
+  },
+  "src/routes/(general)/courses/internet/javascript/practice/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.PmaC0aHV.css",
+      "_app/immutable/assets/Link.mTa6ZPjX.css"
+    ],
+    "file": "entries/pages/(general)/courses/internet/javascript/practice/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_content4.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/internet/javascript/practice/+page.svelte"
+  },
   "src/routes/(general)/courses/internet/nodejs/+page.js": {
     "file": "entries/pages/(general)/courses/internet/nodejs/_page.js",
     "isEntry": true,
@@ -3398,6 +3424,78 @@
     ],
     "isEntry": true,
     "src": "src/routes/(general)/courses/mathematics2/assignment1/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/inference/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/inference/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/inference/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/inference/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hi9AJgO5.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/inference/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores2.js",
+      "_content3.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/inference/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/inference/significance/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/inference/significance/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/inference/significance/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/inference/significance/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.hi9AJgO5.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/inference/significance/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores2.js",
+      "_content3.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/inference/significance/+page.svelte"
+  },
+  "src/routes/(general)/courses/mathematics2/inference/significance/sampling/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics2/inference/significance/sampling/_page.js",
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/inference/significance/sampling/+page.js"
+  },
+  "src/routes/(general)/courses/mathematics2/inference/significance/sampling/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.85Xh3bX0.css"
+    ],
+    "file": "entries/pages/(general)/courses/mathematics2/inference/significance/sampling/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores2.js",
+      "_content3.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(general)/courses/mathematics2/inference/significance/sampling/+page.svelte"
   },
   "src/routes/(general)/courses/mathematics2/probabilitytheory/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/probabilitytheory/_page.js",
