@@ -22,6 +22,7 @@
     import { contents, contentNav } from "$lib/pages/courses/internet/content";
     import Pathlist from "$lib/components/Pathlist.svelte";
     import CourseNavigation from "$lib/components/CourseNavigation.svelte";
+	
     $navList = contents;
     $currentPath = "Practice Problems";
     $darkMode = false;
@@ -89,15 +90,15 @@
     <h4>
         Practice Problems
     </h4>
-    <h5>
-        Variables
-    </h5>
     <Card>
         <Content>
             <h5>Contents</h5>
             <NavList name="{$navList[0].topics[2].name}" url="{$navList[0].topics[2].url}" topics={$navList[0].topics[2].topics} expanded={false} />
         </Content>
     </Card>
+    <h5>
+        Variables
+    </h5>
     <Card>
         <Content>
             <div class="question">
@@ -183,4 +184,112 @@
             </div>
         </Content>
     </Card> -->
+    <h5>Expressions</h5>
+    <Card>
+        <Content>
+            <div class="question">
+                Write the javascript expression for the following: 
+                <ol>
+                    <li>
+                        sum of 12 and 13
+                    </li>
+                    <li>
+                        difference of 13 and 12
+                    </li>
+                    <li>
+                        product of 12 and 13
+                    </li>
+                    <li>
+                        divide 12 by 13
+                    </li>
+                    <li>
+                        calculate 12<sup>13</sup>
+                    </li>
+                </ol>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                Calculate the value of the following expressions:
+                <ol>
+                    <li>5/2 - 1</li>
+                    <li>2 - 1.49</li>
+                    <li>2 / 2 - 1</li>
+                    <li>6 * 3 / 2 + 2</li>
+                </ol>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                What is the value of the following Boolean expressions?
+                <ol>
+                    <li>2 &lt; 4</li>
+                    <li>2 &gt;= 2</li>
+                    <li>(2 &lt; 2) || (2 == 2)</li>
+                    <li>(2 &lt; 2) && (2 == 2)</li>
+                    <li>0 == '0'</li>
+                    <li>0 === '0'</li>
+                    <li>0 != '0'</li>
+                    <li>0 !== '0'</li>
+                </ol>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <ol>
+                    <li>
+                        If <code>str1 = 'Client'</code> and <code>st2 = 'Side'</code>, what is the value of <code>str1 + str2</code> ?
+                    </li>
+                    <li>
+                        Consider a variable <code>let sum = 12</code> and a string <code>let str = "The sum is 12"</code>. Write the string using string literal that uses <code>str</code> as a variable inside the string literal.
+                    </li>
+                    <li>What is the length of the string <code>"Hello World!"</code> ?</li>
+                </ol>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                <ul>Write an array that contains first 10 prime numbers</ul>
+                <ul>Increase the 5th number on the array by 1</ul>
+                <ul>Remove the last element of the array</ul>
+                <ul>Add a new prime larger than any prime (in the given array) to the above array.</ul>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                Given arrays <code>let arr1 = [1, 2]</code> and <code>let arr2 = [4, 7]</code>. Write a javascript code outputs <code>[1, 2, 4, 7]</code>.
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                What is the output of the following code?
+                <Highlight language={xml} 
+                code={`let myPhone = {
+    name: 'iPhone',
+    company: 'Apple',
+    date: '2023',
+    price: 100000,
+    color: 'blue'
+}
+let { name, company } = myPhone;
+console.log(name, company);
+console.log(Object.keys(myPhone))`} 
+                let:highlighted>
+                    <LineNumbers {highlighted} wrapLines/>
+                </Highlight>
+            </div>
+        </Content>
+    </Card>
 </article>
