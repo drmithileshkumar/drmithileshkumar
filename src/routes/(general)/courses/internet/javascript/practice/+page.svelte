@@ -257,10 +257,12 @@
     <Card>
         <Content>
             <div class="question">
-                <ul>Write an array that contains first 10 prime numbers</ul>
-                <ul>Increase the 5th number on the array by 1</ul>
-                <ul>Remove the last element of the array</ul>
-                <ul>Add a new prime larger than any prime (in the given array) to the above array.</ul>
+                <ol>
+                    <li>Write an array that contains first 10 prime numbers</li>
+                    <li>Increase the 5th number on the array by 1</li>
+                    <li>Remove the last element of the array</li>
+                    <li>Add a new prime larger than any prime (in the given array) to the above array.</li>
+                </ol>
             </div>
         </Content>
     </Card>

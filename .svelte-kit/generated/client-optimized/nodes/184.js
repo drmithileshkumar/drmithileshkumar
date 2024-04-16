@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Continuity and differentiability/Continuity/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Continuity and differentiability/Continuity/+page.svelte";

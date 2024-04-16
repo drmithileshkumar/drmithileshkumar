@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/_page.js';
+import * as universal from '../entries/pages/(general)/iit/maths/2021/question3/_page.js';
 
 export const index = 158;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/maths/2021/question3/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/+page.js";
-export const imports = ["_app/immutable/nodes/158.PO1IFgds.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/Link.RZV8wJ12.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/entry.PS4LgjnO.js","_app/immutable/chunks/index.dbCRPIkP.js"];
-export const stylesheets = ["_app/immutable/assets/Message.ctOi1nG9.css","_app/immutable/assets/Link.mTa6ZPjX.css"];
+export const universal_id = "src/routes/(general)/iit/maths/2021/question3/+page.js";
+export const imports = ["_app/immutable/nodes/158.sHF7kOq-.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.7BCmNEwQ.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/stores.emuJDM0w.js","_app/immutable/chunks/entry.wFX_VvsR.js","_app/immutable/chunks/index.UbUhCNpK.js","_app/immutable/chunks/constants.1x7ZJ2_l.js"];
+export const stylesheets = ["_app/immutable/assets/158.o2_FUglo.css"];
 export const fonts = [];

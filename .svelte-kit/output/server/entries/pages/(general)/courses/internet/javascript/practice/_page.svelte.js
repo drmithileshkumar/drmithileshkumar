@@ -178,7 +178,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="question svelte-4h8i2n" data-svelte-h="svelte-imwprd"><ul>Write an array that contains first 10 prime numbers</ul> <ul>Increase the 5th number on the array by 1</ul> <ul>Remove the last element of the array</ul> <ul>Add a new prime larger than any prime (in the given array) to the above array.</ul></div>`;
+          return `<div class="question svelte-4h8i2n" data-svelte-h="svelte-1npklw6"><ol><li class="svelte-4h8i2n">Write an array that contains first 10 prime numbers</li> <li class="svelte-4h8i2n">Increase the 5th number on the array by 1</li> <li class="svelte-4h8i2n">Remove the last element of the array</li> <li class="svelte-4h8i2n">Add a new prime larger than any prime (in the given array) to the above array.</li></ol></div>`;
         }
       })}`;
     }

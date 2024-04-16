@@ -183,27 +183,27 @@ export const contents = [
                 topics: [
                     {
                         name: 'Significance',
-                        url: '/courses/mathematics/inference/significance',
+                        url: '/courses/mathematics2/inference/significance',
                         topics: [
                             {
                                 name: "Sampling",
-                                url: '/courses/mathematics/inference/significance/sampling'
+                                url: '/courses/mathematics2/inference/significance/sampling'
                             },
                             {
                                 name: "Hypotheses",
-                                url: "/courses/mathematics/inference/significance/hypotheses"
+                                url: "/courses/mathematics2/inference/significance/hypotheses"
                             },
                             {
                                 name: "Tests of hypothesis and significance",
-                                url: '/courses/mathematics/inference/significance/tests'
+                                url: '/courses/mathematics2/inference/significance/tests'
                             },
                             {
                                 name: "Type I and Type II errors",
-                                url: "/courses/mathematics/inference/significance/types"
+                                url: "/courses/mathematics2/inference/significance/types"
                             },
                             {
                                 name: "Level of significance",
-                                url: "/courses/mathematics/inference/significance/level"
+                                url: "/courses/mathematics2/inference/significance/level"
                             }
                         ]
                     },

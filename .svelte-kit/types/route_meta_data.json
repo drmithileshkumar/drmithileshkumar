@@ -386,8 +386,24 @@
 		"src/routes/(general)/courses/mathematics2/inference/significance/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/mathematics2/inference/significance/hypotheses": [
+		"src/routes/(general)/courses/mathematics2/inference/significance/hypotheses/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/inference/significance/level": [
+		"src/routes/(general)/courses/mathematics2/inference/significance/level/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/mathematics2/inference/significance/sampling": [
 		"src/routes/(general)/courses/mathematics2/inference/significance/sampling/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/inference/significance/tests": [
+		"src/routes/(general)/courses/mathematics2/inference/significance/tests/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/mathematics2/inference/significance/types": [
+		"src/routes/(general)/courses/mathematics2/inference/significance/types/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/courses/mathematics2/probabilitytheory": [
