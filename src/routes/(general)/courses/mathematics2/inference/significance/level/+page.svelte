@@ -74,5 +74,30 @@
             </div>
         </Content>
     </Card>
-    
+    <h5>Example</h5>
+    <Card>
+        <Content>
+            <div class="question">
+                Find the probability of getting between 40 and 60 heads inclusive in 100 tosses of a fair coin. 
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                To test the hypothesis that a coin is fair, the following decision rules are adopted: (1) Accept the hypothesis if the number of heads in a single sample of 100 tosses is between 40 and 60 inclusive, (2) reject the hypothesis otherwise.
+                <ol>
+                    <li> Find the probability of rejecting the hypothesis when it is actually correct.</li>
+                    <li>Draw graph.</li>
+                </ol>
+            </div>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <div class="question">
+                Design a decision rule to test the hypothesis that a coin is fair if a sample of 64 tosses of the coin is taken and if a level of significance of (a) 0.05, (b) 0.01 is used.
+            </div>
+        </Content>
+    </Card>
 </article>

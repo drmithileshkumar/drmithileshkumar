@@ -8,7 +8,7 @@ import { c as contentNav, a as contents } from "../../../../../../../../chunks/c
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 const css = {
-  code: "article.svelte-1yfxw94{display:flex;flex-direction:column;gap:0.5em}h4.svelte-1yfxw94{margin:0.5em 0}strong.svelte-1yfxw94{color:rgb(159, 116, 7);opacity:1}",
+  code: "article.svelte-1yfxw94{display:flex;flex-direction:column;gap:0.5em}li.svelte-1yfxw94{opacity:0.8}h4.svelte-1yfxw94,h5.svelte-1yfxw94{margin:0.5em 0}h5.svelte-1yfxw94{font-size:1.1em}strong.svelte-1yfxw94{color:rgb(159, 116, 7);opacity:1}.question.svelte-1yfxw94{cursor:pointer;padding:0.3em}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -54,6 +54,31 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                     100 that we would reject the hypothesis when it should be accepted, i.e., whenever the null hypotheses is true,
                     we are about 95% confident that we would make the right decision. In such cases we say that the hypothesis has
                     been rejected at a 0.05 level of significance, which means that we could be wrong with probability 0.05.</div></div>`;
+        }
+      })}`;
+    }
+  })} <h5 class="svelte-1yfxw94" data-svelte-h="svelte-vluia4">Example</h5> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1yfxw94" data-svelte-h="svelte-34apox">Find the probability of getting between 40 and 60 heads inclusive in 100 tosses of a fair coin.</div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1yfxw94" data-svelte-h="svelte-12o2u9o">To test the hypothesis that a coin is fair, the following decision rules are adopted: (1) Accept the hypothesis if the number of heads in a single sample of 100 tosses is between 40 and 60 inclusive, (2) reject the hypothesis otherwise.
+                <ol><li class="svelte-1yfxw94">Find the probability of rejecting the hypothesis when it is actually correct.</li> <li class="svelte-1yfxw94">Draw graph.</li></ol></div>`;
+        }
+      })}`;
+    }
+  })} ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+    default: () => {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="question svelte-1yfxw94" data-svelte-h="svelte-1cwhwcj">Design a decision rule to test the hypothesis that a coin is fair if a sample of 64 tosses of the coin is taken and if a level of significance of (a) 0.05, (b) 0.01 is used.</div>`;
         }
       })}`;
     }
