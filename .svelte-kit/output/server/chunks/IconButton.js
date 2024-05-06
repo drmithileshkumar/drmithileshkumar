@@ -161,9 +161,11 @@ const IconButton = create_ssr_component(($$result, $$props, $$bindings, slots) =
     })();
     {
       if (previousDisabled !== $$restProps.disabled) {
-        const elem = getElement();
-        if ("blur" in elem) {
-          elem.blur();
+        if (element) {
+          const el = getElement();
+          if ("blur" in el) {
+            el.blur();
+          }
         }
         previousDisabled = $$restProps.disabled;
       }

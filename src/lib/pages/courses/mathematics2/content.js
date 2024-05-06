@@ -226,31 +226,11 @@ export const contents = [
                             {
                                 name: "Covariance",
                                 url: ""
-                            }
-                        ]
-                    },
-                    {
-                        name: "Hypotheses",
-                        url: "",
-                        topics: [
+                            },
                             {
                                 name: 'Linear Hypothesis',
                                 url: ""
                             },
-                            {
-                                name: "Orthogonal splitting of total variation",
-                                url: ""
-                            },
-                            {
-                                name: "Selection of Valid Error",
-                                url: ""
-                            }
-                        ]
-                    },
-                    {
-                        name: "Applications of ANOVA technique",
-                        url: "",
-                        topics: [
                             {
                                 name: "One-way classified data",
                                 url: ""
@@ -260,40 +240,24 @@ export const contents = [
                                 url: ""
                             }
                         ]
-                    }
-                ]
-            },
-            {
-                name: "TIME SERIES ANALYSIS",
-                url: "",
-                topics: [
-                    {
-                        name: 'Introduction',
-                        url: ""
                     },
                     {
-                        name: "Examples of time series from various fields",
-                        url: ""
-                    },
-                    {
-                        name: "Components of a times series",
-                        url: ""
-                    },
-                    {
-                        name: "Additive models",
-                        url: ""
-                    },
-                    {
-                        name: "Multiplicative models",
+                        name: "TIME SERIES ANALYSIS",
                         url: "",
+                        topics: [
+                            {
+                                name: 'Introduction',
+                                url: ""
+                            },
+                            {
+                                name: "Estimation of trend",
+                                url: ''
+                            }
+                        ]
                     },
                     {
-                        name: "Trend and seasonal components",
-                        url: ""
-                    },
-                    {
-                        name: "Estimation of trend by linear filtering (single and weighted moving averages)",
-                        url: ''
+                        name: 'Practice',
+                        url: '/courses/mathematics2/inference/practice'
                     }
                 ]
             },
@@ -335,20 +299,20 @@ export const contents = [
                     }
                 ]
             },
-            {
-                name: "PROJECT MANAGEMENT",
-                url: "",
-                topics: [
-                    {
-                        name: 'CPM',
-                        url: ""
-                    },
-                    {
-                        name: 'PERT',
-                        url: ''
-                    }
-                ]
-            },
+            // {
+            //     name: "PROJECT MANAGEMENT",
+            //     url: "",
+            //     topics: [
+            //         {
+            //             name: 'CPM',
+            //             url: ""
+            //         },
+            //         {
+            //             name: 'PERT',
+            //             url: ''
+            //         }
+            //     ]
+            // },
             {
                 name: "ASSIGNMENT 1",
                 url: "/courses/mathematics2/assignment1"
@@ -560,6 +524,12 @@ export let contentNav = {
         "name": "Level of significance",
         "url": "/courses/mathematics2/inference/significance/level",
         "previous": "/courses/mathematics2/inference/significance/types",
+        "next": ""
+    },
+    "/courses/mathematics2/inference/practice": {
+        "name": "Practice",
+        "url": "/courses/mathematics2/inference/practice",
+        "previous": "/courses/mathematics2/inference/significance/level",
         "next": ""
     },
     "": {

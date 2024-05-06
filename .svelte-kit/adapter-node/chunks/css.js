@@ -1,6 +1,5 @@
-import css$2 from "highlight.js/lib/languages/css";
-const css = { name: "css", register: css$2 };
-const css$1 = css;
+import css$1 from "highlight.js/lib/languages/css";
+const css = { name: "css", register: css$1 };
 export {
-  css$1 as c
+  css as c
 };

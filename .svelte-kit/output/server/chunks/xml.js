@@ -1,6 +1,5 @@
-import xml$2 from "highlight.js/lib/languages/xml";
-const xml = { name: "xml", register: xml$2 };
-const xml$1 = xml;
+import xml$1 from "highlight.js/lib/languages/xml";
+const xml = { name: "xml", register: xml$1 };
 export {
-  xml$1 as x
+  xml as x
 };

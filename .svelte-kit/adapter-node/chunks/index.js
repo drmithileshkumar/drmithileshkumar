@@ -59,7 +59,11 @@ function redirect(status, location) {
   if (isNaN(status) || status < 300 || status > 308) {
     throw new Error("Invalid status code");
   }
-  throw new Redirect(status, location.toString());
+  throw new Redirect(
+    // @ts-ignore
+    status,
+    location.toString()
+  );
 }
 function json(data, init) {
   const body = JSON.stringify(data);

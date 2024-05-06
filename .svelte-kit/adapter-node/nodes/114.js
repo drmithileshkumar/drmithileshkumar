@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/_page.js';
+import * as universal from '../entries/pages/(general)/courses/mathematics2/probabilitytheory/assignment/_page.js';
 
 export const index = 114;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/mathematics2/probabilitytheory/distributions/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/mathematics2/probabilitytheory/assignment/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/courses/mathematics2/probabilitytheory/distributions/+page.js";
-export const imports = ["_app/immutable/nodes/114.-rq0ldVm.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/stores.qQ9FUotq.js","_app/immutable/chunks/entry.MZj2a6C4.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/typeset.4oI2U5Tz.js","_app/immutable/chunks/Card.N1WqjGNp.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/classAdderBuilder.Fy7yNOSN.js","_app/immutable/chunks/ActionIcons.1m99DklS.js","_app/immutable/chunks/stores.hUncZlGF.js","_app/immutable/chunks/content.PgA2kFz5.js","_app/immutable/chunks/Pathlist.J4rEV8JG.js","_app/immutable/chunks/each.JwugYeo-.js","_app/immutable/chunks/CourseNavigation.ML0o4lu7.js","_app/immutable/chunks/Ripple.NcGtzyi_.js","_app/immutable/chunks/ponyfill.fC1f8UiH.js"];
-export const stylesheets = ["_app/immutable/assets/114.TupIewGY.css","_app/immutable/assets/Pathlist.DO8-7McO.css","_app/immutable/assets/CourseNavigation.tZEubBx8.css"];
+export const universal_id = "src/routes/(general)/courses/mathematics2/probabilitytheory/assignment/+page.js";
+export const imports = ["_app/immutable/nodes/114.BtN3z2kt.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/stores.JLymDwvC.js","_app/immutable/chunks/entry.BmI2Tndx.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/typeset.CzCYmz-Z.js","_app/immutable/chunks/Card.BNwIWFu_.js","_app/immutable/chunks/spread.CgU5AtxT.js","_app/immutable/chunks/classAdderBuilder.Dr_z-rwh.js","_app/immutable/chunks/ActionIcons.BB_MIeF4.js","_app/immutable/chunks/stores.moVKe_bz.js","_app/immutable/chunks/content.hgbENy1C.js","_app/immutable/chunks/Pathlist.C2MBNysE.js","_app/immutable/chunks/each.DRc7mzDe.js","_app/immutable/chunks/CourseNavigation.DTsSBvdr.js","_app/immutable/chunks/Ripple.Cr2a8Emw.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js"];
+export const stylesheets = ["_app/immutable/assets/114.BPo3yalS.css","_app/immutable/assets/Pathlist.M7z7sxw7.css","_app/immutable/assets/CourseNavigation.C1kS5sHH.css"];
 export const fonts = [];

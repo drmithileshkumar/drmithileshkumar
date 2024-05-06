@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/courses/quantumml/_page.js';
+import * as universal from '../entries/pages/(general)/courses/quantummechanics/_page.js';
 
 export const index = 152;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/quantumml/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/quantummechanics/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/courses/quantumml/+page.js";
-export const imports = ["_app/immutable/nodes/152.M4SkWHY7.js","_app/immutable/chunks/index.qPAo0Isn.js","_app/immutable/chunks/control.pJ1mnnAb.js","_app/immutable/chunks/scheduler.f-IiUdrl.js","_app/immutable/chunks/index.7r8AOLel.js","_app/immutable/chunks/entry.MZj2a6C4.js","_app/immutable/chunks/index.dbCRPIkP.js","_app/immutable/chunks/Card.N1WqjGNp.js","_app/immutable/chunks/spread.rEx3vLA9.js","_app/immutable/chunks/classAdderBuilder.Fy7yNOSN.js","_app/immutable/chunks/ActionIcons.1m99DklS.js","_app/immutable/chunks/NavList.ruhap985.js","_app/immutable/chunks/each.JwugYeo-.js","_app/immutable/chunks/Item.TTKRhls7.js","_app/immutable/chunks/ponyfill.fC1f8UiH.js","_app/immutable/chunks/dispatch.yxiIpicU.js","_app/immutable/chunks/keyboard.3eMe4_La.js","_app/immutable/chunks/Ripple.NcGtzyi_.js","_app/immutable/chunks/Subheader.iMYKjBBi.js","_app/immutable/chunks/Graphic.r3iV5nlt.js","_app/immutable/chunks/IconButton.u6OB4fIw.js","_app/immutable/chunks/stores.hUncZlGF.js"];
-export const stylesheets = ["_app/immutable/assets/92.hj3E2EKt.css","_app/immutable/assets/Link.mTa6ZPjX.css","_app/immutable/assets/NavList.buyRB24_.css"];
+export const universal_id = "src/routes/(general)/courses/quantummechanics/+page.js";
+export const imports = ["_app/immutable/nodes/152.DxLBuZFz.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/entry.BmI2Tndx.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/Card.BNwIWFu_.js","_app/immutable/chunks/spread.CgU5AtxT.js","_app/immutable/chunks/classAdderBuilder.Dr_z-rwh.js","_app/immutable/chunks/ActionIcons.BB_MIeF4.js","_app/immutable/chunks/NavList.CK12OqwL.js","_app/immutable/chunks/each.DRc7mzDe.js","_app/immutable/chunks/Item.Cdi5M2Wf.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/keyboard.CL3LU1u3.js","_app/immutable/chunks/Ripple.Cr2a8Emw.js","_app/immutable/chunks/Subheader.CFqZDM0F.js","_app/immutable/chunks/Graphic.BZEjdAg2.js","_app/immutable/chunks/IconButton.tzNTp528.js","_app/immutable/chunks/stores.moVKe_bz.js"];
+export const stylesheets = ["_app/immutable/assets/92.CGPcTYQq.css","_app/immutable/assets/Link.CZNrpk-N.css","_app/immutable/assets/NavList.Bu7JEHbj.css"];
 export const fonts = [];

@@ -118,6 +118,7 @@
     {/if}
     {#if fixed}
         <!-- svelte-ignore a11y-no-static-element-interactions -->
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div class="modal" on:click={() => $showRight = false} style="display: {$showRight ? '' : 'none'}"></div>
     {/if}
 </div>

@@ -402,8 +402,6 @@ const Text = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function waitForTabindex(fn) {
     if (internalAttrs["tabindex"] !== element.getAttribute("tabindex")) {
       tick().then(fn);
-    } else {
-      fn();
     }
   }
   function focus() {

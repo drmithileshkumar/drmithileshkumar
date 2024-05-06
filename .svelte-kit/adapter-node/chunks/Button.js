@@ -106,9 +106,11 @@ const Button = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     secondaryProp = context === "banner" ? {} : { secondary: $$props.secondary };
     {
       if (previousDisabled !== $$restProps.disabled) {
-        const el = getElement();
-        if ("blur" in el) {
-          el.blur();
+        if (element) {
+          const el = getElement();
+          if ("blur" in el) {
+            el.blur();
+          }
         }
         previousDisabled = $$restProps.disabled;
       }

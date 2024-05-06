@@ -11,9 +11,9 @@
         let clicked;
         $currentPath = "Courses";
         $darkMode = false;
-        onMount(() => {
-            MathJax.typeset();
-        });
+        // onMount(() => {
+        //     MathJax.typeset();
+        // });
     </script>
     <style>
         article {

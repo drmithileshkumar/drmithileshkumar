@@ -4,7 +4,7 @@ import { p as presentationMode, c as currentSlide } from "./stores3.js";
 import "./H3.js";
 const css = {
   code: ".currentActive.svelte-gn56lz{color:tomato;border-radius:10px;transition:all 1s}h2.svelte-gn56lz{font-size:1.5em}",
-  map: null
+  map: `{"version":3,"file":"H2.svelte","sources":["H2.svelte"],"sourcesContent":["<script>\\r\\n    import {fade, fly} from 'svelte/transition';\\r\\n    import {presentationMode, currentSlide} from '$lib/pages/notes/maths/stores';\\r\\n    export let isActive = -1;\\r\\n<\/script>\\r\\n<style>\\r\\n    .currentActive {\\r\\n        /* background: gray; */\\r\\n        color: tomato;\\r\\n        /* padding: 1em; */\\r\\n        border-radius: 10px;\\r\\n        transition: all 1s;\\r\\n    }\\r\\n    h2 {\\r\\n        font-size: 1.5em;\\r\\n    }\\r\\n</style>\\r\\n{#if $presentationMode}\\r\\n<h2 class=\\"{$$restProps.class || ''} {$presentationMode && isActive === $currentSlide ? 'currentActive': ''}\\" \\r\\n    transition:fly|global=\\"{{ x: 200, duration: 1000}}\\"\\r\\n    on:introstart={() => {isActive = -1}}\\r\\n    on:introend={() => {isActive = $currentSlide}}\\r\\n    on:outroend={() => {isActive = -1}}\\r\\n    >\\r\\n    <slot />\\r\\n</h2>\\r\\n{:else}\\r\\n    <h2 class=\\"{$$restProps.class || ''}\\">\\r\\n        <slot />\\r\\n    </h2>\\r\\n{/if}"],"names":[],"mappings":"AAMI,4BAAe,CAEX,KAAK,CAAE,MAAM,CAEb,aAAa,CAAE,IAAI,CACnB,UAAU,CAAE,GAAG,CAAC,EACpB,CACA,gBAAG,CACC,SAAS,CAAE,KACf"}`
 };
 const H2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["isActive"]);

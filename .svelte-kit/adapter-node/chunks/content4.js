@@ -35,7 +35,6 @@ const github = `<style>pre code.hljs{display:block;overflow-x:auto;padding:1em}c
 .hljs-quote,
 .hljs-selector-tag,
 .hljs-selector-pseudo{color:#22863a}.hljs-subst{color:#24292e}.hljs-section{color:#005cc5;font-weight:bold}.hljs-bullet{color:#735c0f}.hljs-emphasis{color:#24292e;font-style:italic}.hljs-strong{color:#24292e;font-weight:bold}.hljs-addition{color:#22863a;background-color:#f0fff4}.hljs-deletion{color:#b31d28;background-color:#ffeef0}</style>`;
-const github$1 = github;
 const githubDark = `<style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}
 /*!
   Theme: GitHub Dark
@@ -73,7 +72,6 @@ const githubDark = `<style>pre code.hljs{display:block;overflow-x:auto;padding:1
 .hljs-quote,
 .hljs-selector-tag,
 .hljs-selector-pseudo{color:#7ee787}.hljs-subst{color:#c9d1d9}.hljs-section{color:#1f6feb;font-weight:bold}.hljs-bullet{color:#f2cc60}.hljs-emphasis{color:#c9d1d9;font-style:italic}.hljs-strong{color:#c9d1d9;font-weight:bold}.hljs-addition{color:#aff5b4;background-color:#033a16}.hljs-deletion{color:#ffdcd7;background-color:#67060c}</style>`;
-const githubDark$1 = githubDark;
 const contents = [
   {
     name: "INTERNET TECHNOLOGIES",
@@ -973,8 +971,8 @@ const contentNav = {
   }
 };
 export {
-  github$1 as a,
+  github as a,
   contents as b,
   contentNav as c,
-  githubDark$1 as g
+  githubDark as g
 };
