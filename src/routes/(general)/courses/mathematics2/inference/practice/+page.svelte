@@ -101,7 +101,94 @@
             <h5>Analysis of Variance</h5>
             <ol>
                 <li>
-
+                    Explain the purpose of analysis of variance with an example.
+                </li>
+                <li>
+                    Explain one-way classification with the analysis of variance table.
+                </li>
+                <li>
+                    Explain two-way classification with the analysis of variance table.
+                </li>
+                <li>
+                    Three different kinds of food are tested on three groups of rats for 5 weeks. The objective is to check the difference in mean weight(in grams) of the rats per week. Apply one-way ANOVA using a 0.05 significance level to the following data:
+                    <table>
+                        <tr>
+                            <th>Food I</th>
+                            <th>Food II</th>
+                            <th>Food III</th>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>4</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>5</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>4</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>9</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>7</td>
+                            <td>9</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    The following data show the number of worms quarantined from the GI areas of four groups of muskrats in a carbon tetrachloride anthelmintic study. Conduct a two-way ANOVA test.
+                    <table>
+                        <tr>
+                            <th>I</th>
+                            <th>II</th>
+                            <th>III</th>
+                            <th>IV</th>
+                        </tr>
+                        <tr>
+                            <td>338</td>
+                            <td>412</td>
+                            <td>124</td>
+                            <td>389</td>
+                        </tr>
+                        <tr>
+                            <td>324</td>
+                            <td>387</td>
+                            <td>353</td>
+                            <td>432</td>
+                        </tr>
+                        <tr>
+                            <td>268</td>
+                            <td>400</td>
+                            <td>469</td>
+                            <td>255</td>
+                        </tr>
+                        <tr>
+                            <td>147</td>
+                            <td>233</td>
+                            <td>222</td>
+                            <td>133</td>
+                        </tr>
+                        <tr>
+                            <td>309</td>
+                            <td>212</td>
+                            <td>111</td>
+                            <td>265</td>
+                        </tr>
+                    </table>
                 </li>
             </ol>
         </Content>
@@ -110,7 +197,12 @@
         <Content>
             <h5>Time series analysis</h5>
             <ol>
-                
+                <li>What is time series data?</li>
+                <li>What are components of time-series data? Explain using graphs.</li>
+                <li>What are simple average and moving average analysis of trend?</li>
+                <li>
+                    Calculate the moving averages and mean square error with group size 3 for the data 9, 8, 9, 12, 9, 12, 11, 7, 13, 9, 11, 10.
+                </li>
             </ol>
         </Content>
     </Card>
