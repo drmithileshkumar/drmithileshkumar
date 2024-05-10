@@ -57,11 +57,11 @@
         padding: 0.5em 0;
     }
 </style>
-<svelte:head>
+<!-- <svelte:head>
     <title>Mathematics II</title>
     <link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2/inference/practice" />
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
-</svelte:head>
+</svelte:head> -->
 <article use:typeset>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
@@ -129,7 +129,35 @@
                 </div>
                 <li>Calculate the probability of getting between 40 and 60 heads inclusive in 100 tosses of a fair coin assuming (a) binomial distribution (show the expression only) (b) normal distribution approximation.</li>
                 <div>
-                    <strong>Solution:</strong>
+                    <strong>Solution:</strong> Since the coin is assumed to be fair, \(p = 0.5\) <br> (a) The probability of getting \(x\) heads when total number of tosses is \(n\) is given by {`\\[P_x = {n \\choose x} p^x(1-p)^{n-x}\\]`}
+                    The probability of getting between 40 and 60 heads is {`\\[
+                        \\begin{aligned}
+                        P(40\\leq x\\leq 60) &= P_{40} + \\cdots + P_{60}\\\\
+                        &= {100 \\choose 40} 0.5^{40}(1-0.5)^{100-40}\\\\
+                        &+ {100 \\choose 41} 0.5^{41}(1-0.5)^{100-41}\\\\
+                        &\\vdots\\\\
+                        &+ {100 \\choose 60} 0.5^{60}(1-0.5)^{100-60}
+                        \\end{aligned}
+                        \\]`}
+                    (b) Mean and standard deviation is {`\\[
+                        \\begin{aligned}
+                        \\mu &= np = 100\\times 0.5 = 50\\\\
+                        \\sigma &= \\sqrt{np(1-p)} = 5
+                        \\end{aligned}
+                        \\]`}
+                        Since we are approximating a discrete distribution (binomial) to a continuous distribution (normal), we take the middle point of each interval. For calculating \(z\)-score, using the formula {`\\[z = \\frac{x - \\mu}{\\sigma}\\]`} Instead of using \(x = 40\), we use \(x = 39.5\) and instead of \(x = 60\), we use \(x = 60.5\). With this correction in mind, we calculate the range of \(z\). {`\\[
+                            \\begin{aligned}
+                            z_1 &= \\frac{39.5 - 50}{5} = -2.1\\\\
+                            z_2 &= \\frac{60.5 - 50}{5} = 2.1
+                            \\end{aligned}
+                            \\]`}
+                        This implies that the probability of getting heads between 40 and 60 using normal distribution is given by the area under the normal distribution curve between \(z_1 = -2.1\) and \(z_2 = 2.1\). Now, for any value of \(z\), the z-score table gives area between \(-\infty\) to \(z\). Therefore,
+                        {`\\[
+                            \\begin{aligned}
+                            P(z_1\\leq z\\leq z_2) &= Table(z_2) - Table(z_1)\\\\
+                            p(-2.1\\leq z\\leq 2.1) &= 0.9821 - 0.0179 = 0.9642
+                            \\end{aligned}
+                            \\]`}
                 </div>
                 <li>To test the hypothesis that a coin is fair, the following decision rules are adopted: (1) Accept the hypothesis if the number of heads in a single sample of 100 tosses is between 40 and 60 inclusive, (2) reject the hypothesis otherwise.
                     <ul>

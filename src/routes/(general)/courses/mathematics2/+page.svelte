@@ -50,7 +50,7 @@
     $navList = contents;
     $currentPath = "Mathematics II";
     $darkMode = false;
-    export let data;
+    // export let data;
     // onMount(() => {
     //     MathJax.typeset();
     // });
@@ -102,11 +102,11 @@
         padding: 0.3em;
     }
 </style>
-<svelte:head>
+<!-- <svelte:head>
     <title>Mathematics II</title>
     <link rel="canonical" href="https://drmithileshkumar.com/courses/mathematics2" />
     <meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
-</svelte:head>
+</svelte:head> -->
 <article>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
