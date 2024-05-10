@@ -39,7 +39,11 @@ export const contents = [
             {
                 name: "Login Authentication",
                 url: "/courses/internetlab/authentication",
-            }
+            },
+            {
+                name: "Practice",
+                url: "/courses/internetlab/practice",
+            },
         ]
     },
     
@@ -104,6 +108,12 @@ export const contentNav = {
         "url": "/courses/internetlab/authentication",
         "previous": "/courses/internetlab/nodejs",
         "next": "/courses/internetlab/authentication"
+    },
+    "/courses/internetlab/practice": {
+        "name": "Practice",
+        "url": "/courses/internetlab/practice",
+        "previous": "/courses/internetlab/authentication",
+        "next": "/courses/internetlab/practice"
     }
 }
 

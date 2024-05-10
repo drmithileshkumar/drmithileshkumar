@@ -1,978 +1,548 @@
-const github = `<style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}
-/*!
-  Theme: GitHub
-  Description: Light theme as seen on github.com
-  Author: github.com
-  Maintainer: @Hirse
-  Updated: 2021-05-15
-
-  Outdated base version: https://github.com/primer/github-syntax-light
-  Current colors taken from GitHub's CSS
-*/.hljs{color:#24292e;background:#ffffff}.hljs-doctag,
-.hljs-keyword,
-.hljs-meta .hljs-keyword,
-.hljs-template-tag,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable.language_{color:#d73a49}.hljs-title,
-.hljs-title.class_,
-.hljs-title.class_.inherited__,
-.hljs-title.function_{color:#6f42c1}.hljs-attr,
-.hljs-attribute,
-.hljs-literal,
-.hljs-meta,
-.hljs-number,
-.hljs-operator,
-.hljs-variable,
-.hljs-selector-attr,
-.hljs-selector-class,
-.hljs-selector-id{color:#005cc5}.hljs-regexp,
-.hljs-string,
-.hljs-meta .hljs-string{color:#032f62}.hljs-built_in,
-.hljs-symbol{color:#e36209}.hljs-comment,
-.hljs-code,
-.hljs-formula{color:#6a737d}.hljs-name,
-.hljs-quote,
-.hljs-selector-tag,
-.hljs-selector-pseudo{color:#22863a}.hljs-subst{color:#24292e}.hljs-section{color:#005cc5;font-weight:bold}.hljs-bullet{color:#735c0f}.hljs-emphasis{color:#24292e;font-style:italic}.hljs-strong{color:#24292e;font-weight:bold}.hljs-addition{color:#22863a;background-color:#f0fff4}.hljs-deletion{color:#b31d28;background-color:#ffeef0}</style>`;
-const githubDark = `<style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}
-/*!
-  Theme: GitHub Dark
-  Description: Dark theme as seen on github.com
-  Author: github.com
-  Maintainer: @Hirse
-  Updated: 2021-05-15
-
-  Outdated base version: https://github.com/primer/github-syntax-dark
-  Current colors taken from GitHub's CSS
-*/.hljs{color:#c9d1d9;background:#0d1117}.hljs-doctag,
-.hljs-keyword,
-.hljs-meta .hljs-keyword,
-.hljs-template-tag,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable.language_{color:#ff7b72}.hljs-title,
-.hljs-title.class_,
-.hljs-title.class_.inherited__,
-.hljs-title.function_{color:#d2a8ff}.hljs-attr,
-.hljs-attribute,
-.hljs-literal,
-.hljs-meta,
-.hljs-number,
-.hljs-operator,
-.hljs-variable,
-.hljs-selector-attr,
-.hljs-selector-class,
-.hljs-selector-id{color:#79c0ff}.hljs-regexp,
-.hljs-string,
-.hljs-meta .hljs-string{color:#a5d6ff}.hljs-built_in,
-.hljs-symbol{color:#ffa657}.hljs-comment,
-.hljs-code,
-.hljs-formula{color:#8b949e}.hljs-name,
-.hljs-quote,
-.hljs-selector-tag,
-.hljs-selector-pseudo{color:#7ee787}.hljs-subst{color:#c9d1d9}.hljs-section{color:#1f6feb;font-weight:bold}.hljs-bullet{color:#f2cc60}.hljs-emphasis{color:#c9d1d9;font-style:italic}.hljs-strong{color:#c9d1d9;font-weight:bold}.hljs-addition{color:#aff5b4;background-color:#033a16}.hljs-deletion{color:#ffdcd7;background-color:#67060c}</style>`;
 const contents = [
   {
-    name: "INTERNET TECHNOLOGIES",
-    url: "/courses/internet",
+    name: "MATHEMATICS II",
+    url: "/courses/mathematics2",
     topics: [
       {
-        name: "WWW, HTML, XHTML",
-        url: "/courses/internet/wwwhtml",
+        name: "BASICS OF STATISTICS",
+        url: "/courses/mathematics2/statistics",
         topics: [
           {
-            name: "Fundamentals of Internet",
-            url: "/courses/internet/wwwhtml/fundamentals",
+            name: "Measures of Central Tendency",
+            url: "/courses/mathematics2/statistics/measures",
             topics: [
               {
-                name: "Introduction",
-                url: "/courses/internet/wwwhtml/fundamentals/intro"
+                name: "Mean (AM, GM, HM)",
+                url: "/courses/mathematics2/statistics/measures/mean"
               },
               {
-                name: "The World Wide Web",
-                url: "/courses/internet/wwwhtml/fundamentals/www"
+                name: "Mode",
+                url: "/courses/mathematics2/statistics/measures/mode"
               },
               {
-                name: "Web browsers",
-                url: "/courses/internet/wwwhtml/fundamentals/browsers"
+                name: "Median",
+                url: "/courses/mathematics2/statistics/measures/median"
               },
               {
-                name: "Web Servers",
-                url: "/courses/internet/wwwhtml/fundamentals/servers"
-              },
-              {
-                name: "Uniform Resource Locators",
-                url: "/courses/internet/wwwhtml/fundamentals/url"
-              },
-              {
-                name: "Multipurpose Internet Mail Extensions",
-                url: "/courses/internet/wwwhtml/fundamentals/mime"
-              },
-              {
-                name: "The Hypertext Transfer Protocol",
-                url: "/courses/internet/wwwhtml/fundamentals/http"
-              },
-              {
-                name: "Security",
-                url: "/courses/internet/wwwhtml/fundamentals/security"
+                name: "Standard deviation",
+                url: "/courses/mathematics2/statistics/measures/deviation"
               }
             ]
           },
           {
-            name: "HTML/XHTML",
-            url: "/courses/internet/wwwhtml/html",
+            name: "Correlation",
+            url: "/courses/mathematics2/statistics/correlation",
             topics: [
               {
-                name: "Origins",
-                url: "/courses/internet/wwwhtml/html/origins"
+                name: "Bivariate Data",
+                url: "/courses/mathematics2/statistics/correlation/bivariatedata"
               },
               {
-                name: "Basic Syntax",
-                url: "/courses/internet/wwwhtml/html/syntax"
+                name: "Bivariate frequency distribution",
+                url: "/courses/mathematics2/statistics/correlation/bivariatefrequency"
               },
               {
-                name: "HTML Document Structure",
-                url: "/courses/internet/wwwhtml/html/structure"
+                name: "Correlation between two variables",
+                url: "/courses/mathematics2/statistics/correlation/correlation2"
               },
               {
-                name: "Text Markup",
-                url: "/courses/internet/wwwhtml/html/text"
+                name: "Karl Pearson's coefficient of correlation (r)",
+                url: "/courses/mathematics2/statistics/correlation/pearson"
               },
               {
-                name: "Images",
-                url: "/courses/internet/wwwhtml/html/images"
-              },
-              {
-                name: "Hypertext Links",
-                url: "/courses/internet/wwwhtml/html/links"
-              },
-              {
-                name: "Lists",
-                url: "/courses/internet/wwwhtml/html/lists"
-              },
-              {
-                name: "Tables",
-                url: "/courses/internet/wwwhtml/html/tables"
-              },
-              {
-                name: "Forms",
-                url: "/courses/internet/wwwhtml/html/forms"
-              },
-              {
-                name: "The audio Element",
-                url: "/courses/internet/wwwhtml/html/audio"
-              },
-              {
-                name: "The video Element",
-                url: "/courses/internet/wwwhtml/html/video"
-              },
-              {
-                name: "Organization Elements",
-                url: "/courses/internet/wwwhtml/html/organization"
-              },
-              {
-                name: "The time Element",
-                url: "/courses/internet/wwwhtml/html/time"
-              },
-              {
-                name: "HTML vs XHTML",
-                url: "/courses/internet/wwwhtml/html/xhtml"
-              },
-              {
-                name: "Inside Head",
-                url: "/courses/internet/wwwhtml/html/head"
+                name: "Spearman's rank correlation coefficient",
+                url: "/courses/mathematics2/statistics/correlation/spearman"
               }
             ]
           },
           {
-            name: "Practice Problems",
-            url: "/courses/internet/wwwhtml/practice1"
-          }
-        ]
-      },
-      {
-        name: "CSS",
-        url: "/courses/internet/css",
-        topics: [
-          {
-            name: "Box model",
-            url: "/courses/internet/css/box"
-          },
-          {
-            name: "Layout",
-            url: "/courses/internet/css/layout"
-          },
-          {
-            name: "Typography",
-            url: "/courses/internet/css/typography"
-          },
-          {
-            name: "Colors",
-            url: "/courses/internet/css/colors"
-          },
-          {
-            name: "Border",
-            url: "/courses/internet/css/border"
-          },
-          {
-            name: "Selectors",
-            url: "/courses/internet/css/selectors"
-          },
-          {
-            name: "Position",
-            url: "/courses/internet/css/position"
-          },
-          {
-            name: "Responsive design",
-            url: "/courses/internet/css/responsive"
-          },
-          {
-            name: "Practice Problems",
-            url: "/courses/internet/css/practice"
-          }
-        ]
-      },
-      {
-        name: "JAVASCRIPT",
-        url: "/courses/internet/javascript",
-        topics: [
-          {
-            name: "Basics",
-            url: "/courses/internet/javascript/basics",
+            name: "Regression",
+            url: "/courses/mathematics2/statistics/regression",
             topics: [
               {
-                name: "Overview",
-                url: "/courses/internet/javascript/basics/overview"
+                name: "Lines of regression",
+                url: "/courses/mathematics2/statistics/regression/regressionlines"
               },
               {
-                name: "Object Orientation",
-                url: "/courses/internet/javascript/basics/objectorientation"
-              },
-              {
-                name: "Variables",
-                url: "/courses/internet/javascript/basics/variables"
-              },
-              {
-                name: "Expressions",
-                url: "/courses/internet/javascript/basics/expressions"
-              },
-              {
-                name: "Calculator",
-                url: "/courses/internet/javascript/basics/calculator"
-              },
-              {
-                name: "Conditions",
-                url: "/courses/internet/javascript/basics/conditions"
-              },
-              {
-                name: "Loops",
-                url: "/courses/internet/javascript/basics/loops"
-              },
-              {
-                name: "Functions",
-                url: "/courses/internet/javascript/basics/functions"
-              },
-              {
-                name: "Errors in Scripts",
-                url: "/courses/internet/javascript/basics/error"
-              },
+                name: "Least squares method",
+                url: "/courses/mathematics2/statistics/regression/leastsquares"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: "PROBABILITY THEORY",
+        url: "/courses/mathematics2/probabilitytheory",
+        topics: [
+          {
+            name: "Probability",
+            url: "/courses/mathematics2/probabilitytheory/probability",
+            topics: [
               {
                 name: "Events",
-                url: "/courses/internet/javascript/basics/events"
+                url: "/courses/mathematics2/probabilitytheory/probability/events"
               },
               {
-                name: "HTTP",
-                url: "/courses/internet/javascript/basics/http"
+                name: "Conditional Probability",
+                url: "/courses/mathematics2/probabilitytheory/probability/conditional"
+              },
+              {
+                name: "Practice Problems",
+                url: "/courses/mathematics2/probabilitytheory/probability/practice"
               }
             ]
           },
           {
-            name: "Practice",
-            url: "/courses/internet/javascript/practice"
+            name: "Distributions",
+            url: "/courses/mathematics2/probabilitytheory/distributions",
+            topics: [
+              {
+                name: "Joint distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/joint"
+              },
+              {
+                name: "Binomial distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/binomial"
+              },
+              {
+                name: "Continuous distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/continuous"
+              },
+              {
+                name: "Normal distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/normal"
+              },
+              {
+                name: "Poisson distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/poisson"
+              }
+            ]
           }
           // {
-          //     name: 'JavaScript and HTML Documents',
-          //     url: "/courses/internet/javascript/html",
+          //     name: "Discrete distributions",
+          //     url: "",
           //     topics: [
           //         {
-          //             name: "The JavaScript Execution Environment",
-          //             url: "/courses/internet/javascript/html/jee"
+          //             name: "Discrete uniform distribution",
+          //             url: ""
           //         },
           //         {
-          //             name: "The Document Object Model",
-          //             url: "/courses/internet/javascript/html/dom"
+          //             name: "Binomial distribution",
+          //             url: ""
           //         },
           //         {
-          //             name: "Element Access in JavaScript",
-          //             url: "/courses/internet/javascript/html/element"
+          //             name: "Poisson distribution",
+          //             url: ""
           //         },
           //         {
-          //             name: "Events and Event Handling",
-          //             url: "/courses/internet/javascript/html/events"
-          //         },
-          //         {
-          //             name: "Handling Events from Body Elements",
-          //             url: "/courses/internet/javascript/html/body"
-          //         },
-          //         {
-          //             name: "Handling Events from Button Elements",
-          //             url: "/courses/internet/javascript/html/button"
-          //         },
-          //         {
-          //             name: "Handling Events from Text Box and Password Elements",
-          //             url: "/courses/internet/javascript/html/textbox"
-          //         },
-          //         {
-          //             name: "The DOM 2 Event Model",
-          //             url: "/courses/internet/javascript/html/dom2"
-          //         },
-          //         {
-          //             name: "The canvas Element",
-          //             url: "/courses/internet/javascript/html/canvas"
-          //         },
-          //         {
-          //             name: "The navigator Object",
-          //             url: "/courses/internet/javascript/html/navigator"
-          //         },
-          //         {
-          //             name: "DOM Tree Traversal and Modification",
-          //             url: "/courses/internet/javascript/html/tree"
+          //             name: "Geometric distribution",
+          //             url: ""
           //         }
           //     ]
           // },
           // {
-          //     name: "Dynamic Documents with JavaScript",
-          //     url: "/courses/internet/javascript/dynamic",
+          //     name: "Continuous distributions",
+          //     url: "",
+          //     topics: [
+          //         {
+          //             name: "Uniform distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Normal distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Exponential distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Gamma distribution",
+          //             url: ""
+          //         }
+          //     ]
+          // },
+          // {
+          //     name: "Queueing theory",
+          //     url: "",
           //     topics: [
           //         {
           //             name: 'Introduction',
-          //             url: "/courses/internet/javascript/dynamic/intro"
-          //         },
-          //         {
-          //             name: "Positioning Elements",
-          //             url: "/courses/internet/javascript/dynamic/position"
-          //         },
-          //         {
-          //             name: "Moving Elements",
-          //             url: "/courses/internet/javascript/dynamic/move"
-          //         },
-          //         {
-          //             name: "Element Visibility",
-          //             url: "/courses/internet/javascript/dynamic/visibility"
-          //         },
-          //         {
-          //             name: "Changing Colors and fonts",
-          //             url: "/courses/internet/javascript/dynamic/colors"
-          //         },
-          //         {
-          //             name: "Dynamic Content",
-          //             url: "/courses/internet/javascript/dynamic/content"
-          //         },
-          //         {
-          //             name: "Stacking Elements",
-          //             url: "/courses/internet/javascript/dynamic/stack"
-          //         },
-          //         {
-          //             name: "Locating the Mouse Cursor",
-          //             url: "/courses/internet/javascript/dynamic/cursor"
-          //         },
-          //         {
-          //             name: "Reating to a Mouse",
-          //             url: "/courses/internet/javascript/dynamic/mouse"
-          //         },
-          //         {
-          //             name: "Slow Movement of Elements",
-          //             url: "/courses/internet/javascript/dynamic/slow"
-          //         },
-          //         {
-          //             name: "Dragging and Dropping Elements",
-          //             url: "/courses/internet/javascript/dynamic/drag"
-          //         },
-          //     ]
-          // },
-          // {
-          //     name: "Asynchronous JavaScript",
-          //     url: "/courses/internet/javascript/asynchronous",
-          //     topics: [
-          //         {
-          //             name: "Callbacks",
-          //             url: "/courses/internet/javascript/asynchronous/callbacks"
-          //         },
-          //         {
-          //             name: "Promises",
-          //             url: "/courses/internet/javascript/asynchronous/promises"
-          //         },
-          //         {
-          //             name: "async and await",
-          //             url: "/courses/internet/javascript/asynchronous/async"
-          //         }
-          //     ]
-          // },
-          // {
-          //     name: "HTTP",
-          //     url: "/courses/internet/javascript/http",
-          //     topics: [
-          //         {
-          //             name: "Overview",
-          //             url: "/courses/internet/javascript/http/overview"
-          //         },
-          //         {
-          //             name: "HTTP Messages",
-          //             url: "/courses/internet/javascript/http/messages"
-          //         },
-          //         {
-          //             name: "A typical HTTP session",
-          //             url: "/courses/internet/javascript/http/session"
-          //         }
-          //     ]
-          // },
-          // {
-          //     name: "Fetch API",
-          //     url: "/courses/internet/javascript/fetchapi",
-          //     topics: [
-          //         {
-          //             name: "Overview",
-          //             url: "/courses/internet/javascript/fetchapi/overview"
-          //         },
-          //         {
-          //             name: "Using the Fetch API",
-          //             url: "/courses/internet/javascript/fetchapi/usages"
-          //         },
-          //         {
-          //             name: "fetch()",
-          //             url: "/courses/internet/javascript/fetchapi/fetch"
-          //         },
-          //         {
-          //             name: "Headers",
-          //             url: "/courses/internet/javascript/fetchapi/headers"
-          //         },
-          //         {
-          //             name: "Request",
-          //             url: "/courses/internet/javascript/fetchapi/request"
-          //         },
-          //         {
-          //             name: "Response",
-          //             url: "/courses/internet/javascript/fetchapi/response"
+          //             url: ''
           //         }
           //     ]
           // }
         ]
       },
       {
-        name: "NODE JS",
-        url: "/courses/internet/nodejs",
+        name: "STATISTICAL INFERENCE",
+        url: "/courses/mathematics2/inference",
         topics: [
           {
-            name: "Introduction to Node.js",
-            url: "/courses/internet/nodejs/intro"
+            name: "Significance",
+            url: "/courses/mathematics2/inference/significance",
+            topics: [
+              {
+                name: "Sampling",
+                url: "/courses/mathematics2/inference/significance/sampling"
+              },
+              {
+                name: "Hypotheses",
+                url: "/courses/mathematics2/inference/significance/hypotheses"
+              },
+              {
+                name: "Tests of hypothesis and significance",
+                url: "/courses/mathematics2/inference/significance/tests"
+              },
+              {
+                name: "Type I and Type II errors",
+                url: "/courses/mathematics2/inference/significance/types"
+              },
+              {
+                name: "Level of significance",
+                url: "/courses/mathematics2/inference/significance/level"
+              }
+            ]
           },
           {
-            name: "Installation",
-            url: "/courses/internet/nodejs/installation"
+            name: "Analysis of Variance (ANOVA)",
+            url: "",
+            topics: [
+              {
+                name: "Introduction",
+                url: ""
+              },
+              {
+                name: "Heterogeneity",
+                url: ""
+              },
+              {
+                name: "Analysis of Variance",
+                url: ""
+              },
+              {
+                name: "Covariance",
+                url: ""
+              },
+              {
+                name: "Linear Hypothesis",
+                url: ""
+              },
+              {
+                name: "One-way classified data",
+                url: ""
+              },
+              {
+                name: "Two-way classified data",
+                url: ""
+              }
+            ]
           },
           {
-            name: "A Node.js application",
-            url: "/courses/internet/nodejs/application"
+            name: "TIME SERIES ANALYSIS",
+            url: "",
+            topics: [
+              {
+                name: "Introduction",
+                url: ""
+              },
+              {
+                name: "Estimation of trend",
+                url: ""
+              }
+            ]
           },
           {
-            name: "Fundamentals of Node.js",
-            url: "/courses/internet/nodejs/fundamentals"
-          },
-          {
-            name: "Difference between Node.js and browser",
-            url: "/courses/internet/nodejs/difference"
-          },
-          {
-            name: "Anatomy of an HTTP Transaction",
-            url: "/courses/internet/nodejs/http"
+            name: "Practice",
+            url: "/courses/mathematics2/inference/practice"
           }
         ]
       },
       {
-        name: "XML",
-        url: "/courses/internet/xml",
+        name: "LINEAR PROGRAMMING",
+        url: "",
         topics: [
           {
-            name: "Introduction",
-            url: "/courses/internet/xml/intro"
+            name: "Meaning and scope of operations research",
+            url: ""
           },
           {
-            name: "Uses of XML",
-            url: "/courses/internet/xml/uses"
+            name: "Definition of general LPP",
+            url: ""
           },
           {
-            name: "The syntax of XML",
-            url: "/courses/internet/xml/syntax"
+            name: "Formulation of LPP",
+            url: ""
           },
           {
-            name: "XML Document Structure",
-            url: "/courses/internet/xml/documents"
+            name: "Solution of LPP by graphical method",
+            url: ""
           },
           {
-            name: "Namespaces",
-            url: "/courses/internet/xml/namespaces"
+            name: "Simplex algorithm",
+            url: ""
           },
           {
-            name: "XML Schemas",
-            url: "/courses/internet/xml/schemas"
+            name: "Transportation",
+            url: ""
           },
           {
-            name: "Displaying raw XML documents",
-            url: "/courses/internet/xml/raw"
+            name: "Assignment problems",
+            url: ""
           },
           {
-            name: "Displaying XML documents with CSS",
-            url: "/courses/internet/xml/css"
-          },
-          {
-            name: "XSLT style sheets",
-            url: "/courses/internet/xml/xslt"
-          },
-          {
-            name: "XML Processors",
-            url: "/courses/internet/xml/processors"
-          },
-          {
-            name: "Web services",
-            url: "/courses/internet/xml/web"
+            name: "Sequencing problems",
+            url: ""
           }
         ]
+      },
+      // {
+      //     name: "PROJECT MANAGEMENT",
+      //     url: "",
+      //     topics: [
+      //         {
+      //             name: 'CPM',
+      //             url: ""
+      //         },
+      //         {
+      //             name: 'PERT',
+      //             url: ''
+      //         }
+      //     ]
+      // },
+      {
+        name: "ASSIGNMENT 1",
+        url: "/courses/mathematics2/assignment1"
       }
     ]
   }
 ];
-const contentNav = {
-  "/courses/internet": {
-    "name": "INTERNET TECHNOLOGIES",
-    "url": "/courses/internet",
-    "previous": "/courses/internet",
-    "next": "/courses/internet/wwwhtml"
+let contentNav = {
+  "/courses/mathematics2": {
+    "name": "MATHEMATICS II",
+    "url": "/courses/mathematics2",
+    "previous": "/courses/mathematics2",
+    "next": "/courses/mathematics2/statistics"
   },
-  "/courses/internet/wwwhtml": {
-    "name": "WWW, HTML, XHTML",
-    "url": "/courses/internet/wwwhtml",
-    "previous": "/courses/internet",
-    "next": "/courses/internet/wwwhtml/fundamentals"
+  "/courses/mathematics2/statistics": {
+    "name": "BASICS OF STATISTICS",
+    "url": "/courses/mathematics2/statistics",
+    "previous": "/courses/mathematics2",
+    "next": "/courses/mathematics2/statistics/measures"
   },
-  "/courses/internet/wwwhtml/fundamentals": {
-    "name": "Fundamentals of Internet",
-    "url": "/courses/internet/wwwhtml/fundamentals",
-    "previous": "/courses/internet/wwwhtml",
-    "next": "/courses/internet/wwwhtml/fundamentals/intro"
+  "/courses/mathematics2/statistics/measures": {
+    "name": "Measures of Central Tendency",
+    "url": "/courses/mathematics2/statistics/measures",
+    "previous": "/courses/mathematics2/statistics",
+    "next": "/courses/mathematics2/statistics/measures/mean"
   },
-  "/courses/internet/wwwhtml/fundamentals/intro": {
-    "name": "Introduction",
-    "url": "/courses/internet/wwwhtml/fundamentals/intro",
-    "previous": "/courses/internet/wwwhtml/fundamentals",
-    "next": "/courses/internet/wwwhtml/fundamentals/www"
+  "/courses/mathematics2/statistics/measures/mean": {
+    "name": "Mean (AM, GM, HM)",
+    "url": "/courses/mathematics2/statistics/measures/mean",
+    "previous": "/courses/mathematics2/statistics/measures",
+    "next": "/courses/mathematics2/statistics/measures/mode"
   },
-  "/courses/internet/wwwhtml/fundamentals/www": {
-    "name": "The World Wide Web",
-    "url": "/courses/internet/wwwhtml/fundamentals/www",
-    "previous": "/courses/internet/wwwhtml/fundamentals/intro",
-    "next": "/courses/internet/wwwhtml/fundamentals/browsers"
+  "/courses/mathematics2/statistics/measures/mode": {
+    "name": "Mode",
+    "url": "/courses/mathematics2/statistics/measures/mode",
+    "previous": "/courses/mathematics2/statistics/measures/mean",
+    "next": "/courses/mathematics2/statistics/measures/median"
   },
-  "/courses/internet/wwwhtml/fundamentals/browsers": {
-    "name": "Web browsers",
-    "url": "/courses/internet/wwwhtml/fundamentals/browsers",
-    "previous": "/courses/internet/wwwhtml/fundamentals/www",
-    "next": "/courses/internet/wwwhtml/fundamentals/servers"
+  "/courses/mathematics2/statistics/measures/median": {
+    "name": "Median",
+    "url": "/courses/mathematics2/statistics/measures/median",
+    "previous": "/courses/mathematics2/statistics/measures/mode",
+    "next": "/courses/mathematics2/statistics/measures/deviation"
   },
-  "/courses/internet/wwwhtml/fundamentals/servers": {
-    "name": "Web Servers",
-    "url": "/courses/internet/wwwhtml/fundamentals/servers",
-    "previous": "/courses/internet/wwwhtml/fundamentals/browsers",
-    "next": "/courses/internet/wwwhtml/fundamentals/url"
+  "/courses/mathematics2/statistics/measures/deviation": {
+    "name": "Standard deviation",
+    "url": "/courses/mathematics2/statistics/measures/deviation",
+    "previous": "/courses/mathematics2/statistics/measures/median",
+    "next": "/courses/mathematics2/statistics/correlation"
   },
-  "/courses/internet/wwwhtml/fundamentals/url": {
-    "name": "Uniform Resource Locators",
-    "url": "/courses/internet/wwwhtml/fundamentals/url",
-    "previous": "/courses/internet/wwwhtml/fundamentals/servers",
-    "next": "/courses/internet/wwwhtml/fundamentals/mime"
+  "/courses/mathematics2/statistics/correlation": {
+    "name": "Correlation",
+    "url": "/courses/mathematics2/statistics/correlation",
+    "previous": "/courses/mathematics2/statistics/measures/deviation",
+    "next": "/courses/mathematics2/statistics/correlation/bivariatedata"
   },
-  "/courses/internet/wwwhtml/fundamentals/mime": {
-    "name": "Multipurpose Internet Mail Extensions",
-    "url": "/courses/internet/wwwhtml/fundamentals/mime",
-    "previous": "/courses/internet/wwwhtml/fundamentals/url",
-    "next": "/courses/internet/wwwhtml/fundamentals/http"
+  "/courses/mathematics2/statistics/correlation/bivariatedata": {
+    "name": "Bivariate Data",
+    "url": "/courses/mathematics2/statistics/correlation/bivariatedata",
+    "previous": "/courses/mathematics2/statistics/correlation",
+    "next": "/courses/mathematics2/statistics/correlation/bivariatefrequency"
   },
-  "/courses/internet/wwwhtml/fundamentals/http": {
-    "name": "The Hypertext Transfer Protocol",
-    "url": "/courses/internet/wwwhtml/fundamentals/http",
-    "previous": "/courses/internet/wwwhtml/fundamentals/mime",
-    "next": "/courses/internet/wwwhtml/fundamentals/security"
+  "/courses/mathematics2/statistics/correlation/bivariatefrequency": {
+    "name": "Bivariate frequency distribution",
+    "url": "/courses/mathematics2/statistics/correlation/bivariatefrequency",
+    "previous": "/courses/mathematics2/statistics/correlation/bivariatedata",
+    "next": "/courses/mathematics2/statistics/correlation/correlation2"
   },
-  "/courses/internet/wwwhtml/fundamentals/security": {
-    "name": "Security",
-    "url": "/courses/internet/wwwhtml/fundamentals/security",
-    "previous": "/courses/internet/wwwhtml/fundamentals/http",
-    "next": "/courses/internet/wwwhtml/html"
+  "/courses/mathematics2/statistics/correlation/correlation2": {
+    "name": "Correlation between two variables",
+    "url": "/courses/mathematics2/statistics/correlation/correlation2",
+    "previous": "/courses/mathematics2/statistics/correlation/bivariatefrequency",
+    "next": "/courses/mathematics2/statistics/correlation/pearson"
   },
-  "/courses/internet/wwwhtml/html": {
-    "name": "HTML/XHTML",
-    "url": "/courses/internet/wwwhtml/html",
-    "previous": "/courses/internet/wwwhtml/fundamentals/security",
-    "next": "/courses/internet/wwwhtml/html/origins"
+  "/courses/mathematics2/statistics/correlation/pearson": {
+    "name": "Karl Pearson's coefficient of correlation (r)",
+    "url": "/courses/mathematics2/statistics/correlation/pearson",
+    "previous": "/courses/mathematics2/statistics/correlation/correlation2",
+    "next": "/courses/mathematics2/statistics/correlation/spearman"
   },
-  "/courses/internet/wwwhtml/html/origins": {
-    "name": "Origins",
-    "url": "/courses/internet/wwwhtml/html/origins",
-    "previous": "/courses/internet/wwwhtml/html",
-    "next": "/courses/internet/wwwhtml/html/syntax"
+  "/courses/mathematics2/statistics/correlation/spearman": {
+    "name": "Spearman's rank correlation coefficient",
+    "url": "/courses/mathematics2/statistics/correlation/spearman",
+    "previous": "/courses/mathematics2/statistics/correlation/pearson",
+    "next": "/courses/mathematics2/statistics/regression"
   },
-  "/courses/internet/wwwhtml/html/syntax": {
-    "name": "Basic Syntax",
-    "url": "/courses/internet/wwwhtml/html/syntax",
-    "previous": "/courses/internet/wwwhtml/html/origins",
-    "next": "/courses/internet/wwwhtml/html/structure"
+  "/courses/mathematics2/statistics/regression": {
+    "name": "Regression",
+    "url": "/courses/mathematics2/statistics/regression",
+    "previous": "/courses/mathematics2/statistics/correlation/spearman",
+    "next": "/courses/mathematics2/statistics/regression/regressionlines"
   },
-  "/courses/internet/wwwhtml/html/structure": {
-    "name": "HTML Document Structure",
-    "url": "/courses/internet/wwwhtml/html/structure",
-    "previous": "/courses/internet/wwwhtml/html/syntax",
-    "next": "/courses/internet/wwwhtml/html/text"
+  "/courses/mathematics2/statistics/regression/regressionlines": {
+    "name": "Lines of regression",
+    "url": "/courses/mathematics2/statistics/regression/regressionlines",
+    "previous": "/courses/mathematics2/statistics/regression",
+    "next": "/courses/mathematics2/statistics/regression/leastsquares"
   },
-  "/courses/internet/wwwhtml/html/text": {
-    "name": "Text Markup",
-    "url": "/courses/internet/wwwhtml/html/text",
-    "previous": "/courses/internet/wwwhtml/html/structure",
-    "next": "/courses/internet/wwwhtml/html/images"
+  "/courses/mathematics2/statistics/regression/leastsquares": {
+    "name": "Least squares method",
+    "url": "/courses/mathematics2/statistics/regression/leastsquares",
+    "previous": "/courses/mathematics2/statistics/regression/regressionlines",
+    "next": "/courses/mathematics2/probabilitytheory"
   },
-  "/courses/internet/wwwhtml/html/images": {
-    "name": "Images",
-    "url": "/courses/internet/wwwhtml/html/images",
-    "previous": "/courses/internet/wwwhtml/html/text",
-    "next": "/courses/internet/wwwhtml/html/links"
+  "/courses/mathematics2/probabilitytheory": {
+    "name": "PROBABILITY THEORY",
+    "url": "/courses/mathematics2/probabilitytheory",
+    "previous": "/courses/mathematics2/statistics/regression/leastsquares",
+    "next": "/courses/mathematics2/probabilitytheory/probability"
   },
-  "/courses/internet/wwwhtml/html/links": {
-    "name": "Hypertext Links",
-    "url": "/courses/internet/wwwhtml/html/links",
-    "previous": "/courses/internet/wwwhtml/html/images",
-    "next": "/courses/internet/wwwhtml/html/lists"
+  "/courses/mathematics2/probabilitytheory/probability": {
+    "name": "Probability",
+    "url": "/courses/mathematics2/probabilitytheory/probability",
+    "previous": "/courses/mathematics2/probabilitytheory",
+    "next": "/courses/mathematics2/probabilitytheory/probability/events"
   },
-  "/courses/internet/wwwhtml/html/lists": {
-    "name": "Lists",
-    "url": "/courses/internet/wwwhtml/html/lists",
-    "previous": "/courses/internet/wwwhtml/html/links",
-    "next": "/courses/internet/wwwhtml/html/tables"
-  },
-  "/courses/internet/wwwhtml/html/tables": {
-    "name": "Tables",
-    "url": "/courses/internet/wwwhtml/html/tables",
-    "previous": "/courses/internet/wwwhtml/html/lists",
-    "next": "/courses/internet/wwwhtml/html/forms"
-  },
-  "/courses/internet/wwwhtml/html/forms": {
-    "name": "Forms",
-    "url": "/courses/internet/wwwhtml/html/forms",
-    "previous": "/courses/internet/wwwhtml/html/tables",
-    "next": "/courses/internet/wwwhtml/html/audio"
-  },
-  "/courses/internet/wwwhtml/html/audio": {
-    "name": "The audio Element",
-    "url": "/courses/internet/wwwhtml/html/audio",
-    "previous": "/courses/internet/wwwhtml/html/forms",
-    "next": "/courses/internet/wwwhtml/html/video"
-  },
-  "/courses/internet/wwwhtml/html/video": {
-    "name": "The video Element",
-    "url": "/courses/internet/wwwhtml/html/video",
-    "previous": "/courses/internet/wwwhtml/html/audio",
-    "next": "/courses/internet/wwwhtml/html/organization"
-  },
-  "/courses/internet/wwwhtml/html/organization": {
-    "name": "Organization Elements",
-    "url": "/courses/internet/wwwhtml/html/organization",
-    "previous": "/courses/internet/wwwhtml/html/video",
-    "next": "/courses/internet/wwwhtml/html/time"
-  },
-  "/courses/internet/wwwhtml/html/time": {
-    "name": "The time Element",
-    "url": "/courses/internet/wwwhtml/html/time",
-    "previous": "/courses/internet/wwwhtml/html/organization",
-    "next": "/courses/internet/wwwhtml/html/xhtml"
-  },
-  "/courses/internet/wwwhtml/html/xhtml": {
-    "name": "HTML vs XHTML",
-    "url": "/courses/internet/wwwhtml/html/xhtml",
-    "previous": "/courses/internet/wwwhtml/html/time",
-    "next": "/courses/internet/wwwhtml/html/head"
-  },
-  "/courses/internet/wwwhtml/html/head": {
-    "name": "Inside Head",
-    "url": "/courses/internet/wwwhtml/html/head",
-    "previous": "/courses/internet/wwwhtml/html/xhtml",
-    "next": "/courses/internet/wwwhtml/practice1"
-  },
-  "/courses/internet/wwwhtml/practice1": {
-    "name": "Practice Problems",
-    "url": "/courses/internet/wwwhtml/practice1",
-    "previous": "/courses/internet/wwwhtml/html/head",
-    "next": "/courses/internet/css"
-  },
-  "/courses/internet/css": {
-    "name": "CSS",
-    "url": "/courses/internet/css",
-    "previous": "/courses/internet/wwwhtml/practice1",
-    "next": "/courses/internet/css/box"
-  },
-  "/courses/internet/css/box": {
-    "name": "Box model",
-    "url": "/courses/internet/css/box",
-    "previous": "/courses/internet/css",
-    "next": "/courses/internet/css/layout"
-  },
-  "/courses/internet/css/layout": {
-    "name": "Layout",
-    "url": "/courses/internet/css/layout",
-    "previous": "/courses/internet/css/box",
-    "next": "/courses/internet/css/typography"
-  },
-  "/courses/internet/css/typography": {
-    "name": "Typography",
-    "url": "/courses/internet/css/typography",
-    "previous": "/courses/internet/css/layout",
-    "next": "/courses/internet/css/colors"
-  },
-  "/courses/internet/css/colors": {
-    "name": "Colors",
-    "url": "/courses/internet/css/colors",
-    "previous": "/courses/internet/css/typography",
-    "next": "/courses/internet/css/border"
-  },
-  "/courses/internet/css/border": {
-    "name": "Border",
-    "url": "/courses/internet/css/border",
-    "previous": "/courses/internet/css/colors",
-    "next": "/courses/internet/css/selectors"
-  },
-  "/courses/internet/css/selectors": {
-    "name": "Selectors",
-    "url": "/courses/internet/css/selectors",
-    "previous": "/courses/internet/css/border",
-    "next": "/courses/internet/css/position"
-  },
-  "/courses/internet/css/position": {
-    "name": "Position",
-    "url": "/courses/internet/css/position",
-    "previous": "/courses/internet/css/selectors",
-    "next": "/courses/internet/css/responsive"
-  },
-  "/courses/internet/css/responsive": {
-    "name": "Responsive design",
-    "url": "/courses/internet/css/responsive",
-    "previous": "/courses/internet/css/position",
-    "next": "/courses/internet/css/practice"
-  },
-  "/courses/internet/css/practice": {
-    "name": "Practice Problems",
-    "url": "/courses/internet/css/practice",
-    "previous": "/courses/internet/css/responsive",
-    "next": "/courses/internet/javascript"
-  },
-  "/courses/internet/javascript": {
-    "name": "JAVASCRIPT",
-    "url": "/courses/internet/javascript",
-    "previous": "/courses/internet/css/practice",
-    "next": "/courses/internet/javascript/basics"
-  },
-  "/courses/internet/javascript/basics": {
-    "name": "Basics",
-    "url": "/courses/internet/javascript/basics",
-    "previous": "/courses/internet/javascript",
-    "next": "/courses/internet/javascript/basics/overview"
-  },
-  "/courses/internet/javascript/basics/overview": {
-    "name": "Overview",
-    "url": "/courses/internet/javascript/basics/overview",
-    "previous": "/courses/internet/javascript/basics",
-    "next": "/courses/internet/javascript/basics/objectorientation"
-  },
-  "/courses/internet/javascript/basics/objectorientation": {
-    "name": "Object Orientation",
-    "url": "/courses/internet/javascript/basics/objectorientation",
-    "previous": "/courses/internet/javascript/basics/overview",
-    "next": "/courses/internet/javascript/basics/variables"
-  },
-  "/courses/internet/javascript/basics/variables": {
-    "name": "Variables",
-    "url": "/courses/internet/javascript/basics/variables",
-    "previous": "/courses/internet/javascript/basics/objectorientation",
-    "next": "/courses/internet/javascript/basics/expressions"
-  },
-  "/courses/internet/javascript/basics/expressions": {
-    "name": "Variables",
-    "url": "/courses/internet/javascript/basics/expressions",
-    "previous": "/courses/internet/javascript/basics/variables",
-    "next": "/courses/internet/javascript/basics/calculator"
-  },
-  "/courses/internet/javascript/basics/calculator": {
-    "name": "Variables",
-    "url": "/courses/internet/javascript/basics/calculator",
-    "previous": "/courses/internet/javascript/basics/expressions",
-    "next": "/courses/internet/javascript/basics/conditions"
-  },
-  "/courses/internet/javascript/basics/conditions": {
-    "name": "Conditions",
-    "url": "/courses/internet/javascript/basics/conditions",
-    "previous": "/courses/internet/javascript/basics/calculator",
-    "next": "/courses/internet/javascript/basics/loops"
-  },
-  "/courses/internet/javascript/basics/loops": {
-    "name": "Loops",
-    "url": "/courses/internet/javascript/basics/loops",
-    "previous": "/courses/internet/javascript/basics/conditions",
-    "next": "/courses/internet/javascript/basics/functions"
-  },
-  "/courses/internet/javascript/basics/functions": {
-    "name": "Functions",
-    "url": "/courses/internet/javascript/basics/functions",
-    "previous": "/courses/internet/javascript/basics/loops",
-    "next": "/courses/internet/javascript/basics/error"
-  },
-  "/courses/internet/javascript/basics/error": {
-    "name": "Errors in Scripts",
-    "url": "/courses/internet/javascript/basics/error",
-    "previous": "/courses/internet/javascript/basics/functions",
-    "next": "/courses/internet/javascript/basics/events"
-  },
-  "/courses/internet/javascript/basics/events": {
+  "/courses/mathematics2/probabilitytheory/probability/events": {
     "name": "Events",
-    "url": "/courses/internet/javascript/basics/events",
-    "previous": "/courses/internet/javascript/basics/error",
-    "next": "/courses/internet/javascript/basics/http"
+    "url": "/courses/mathematics2/probabilitytheory/probability/events",
+    "previous": "/courses/mathematics2/probabilitytheory/probability",
+    "next": "/courses/mathematics2/probabilitytheory/probability/conditional"
   },
-  "/courses/internet/javascript/basics/http": {
-    "name": "HTTP",
-    "url": "/courses/internet/javascript/basics/http",
-    "previous": "/courses/internet/javascript/basics/events",
-    "next": "/courses/internet/xml"
+  "/courses/mathematics2/probabilitytheory/probability/conditional": {
+    "name": "Conditional Probability",
+    "url": "/courses/mathematics2/probabilitytheory/probability/conditional",
+    "previous": "/courses/mathematics2/probabilitytheory/probability/events",
+    "next": "/courses/mathematics2/probabilitytheory/probability/practice"
   },
-  "/courses/internet/javascript/practice": {
+  "/courses/mathematics2/probabilitytheory/probability/practice": {
+    "name": "Practice Problems",
+    "url": "/courses/mathematics2/probabilitytheory/probability/practice",
+    "previous": "/courses/mathematics2/probabilitytheory/probability/conditional",
+    "next": "/courses/mathematics2/probabilitytheory/distributions"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions": {
+    "name": "Distributions",
+    "url": "/courses/mathematics2/probabilitytheory/distributions",
+    "previous": "/courses/mathematics2/probabilitytheory/probability/practice",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/joint"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/joint": {
+    "name": "Joint distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/joint",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/binomial"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/binomial": {
+    "name": "Binomial distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/binomial",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/joint",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/continuous"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/continuous": {
+    "name": "Continuous distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/continuous",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/binomial",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/normal"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/normal": {
+    "name": "Normal distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/normal",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/continuous",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/poisson"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/poisson": {
+    "name": "Poisson distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/poisson",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/normal",
+    "next": "/courses/mathematics2/inference"
+  },
+  "/courses/mathematics2/inference": {
+    "name": "Statistical Inference",
+    "url": "/courses/mathematics2/inference",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/poisson",
+    "next": "/courses/mathematics2/inference/significance"
+  },
+  "/courses/mathematics2/inference/significance": {
+    "name": "Significance",
+    "url": "/courses/mathematics2/inference/significance",
+    "previous": "/courses/mathematics2/inference",
+    "next": "/courses/mathematics2/inference/significance/sampling"
+  },
+  "/courses/mathematics2/inference/significance/sampling": {
+    "name": "Sampling",
+    "url": "/courses/mathematics2/inference/significance/sampling",
+    "previous": "/courses/mathematics2/inference/significance",
+    "next": "/courses/mathematics2/inference/significance/hypotheses"
+  },
+  "/courses/mathematics2/inference/significance/hypotheses": {
+    "name": "Hypotheses",
+    "url": "/courses/mathematics2/inference/significance/hypotheses",
+    "previous": "/courses/mathematics2/inference/significance/sampling",
+    "next": "/courses/mathematics2/inference/significance/tests"
+  },
+  "/courses/mathematics2/inference/significance/tests": {
+    "name": "Tests of hypotheses and significance",
+    "url": "/courses/mathematics2/inference/significance/tests",
+    "previous": "/courses/mathematics2/inference/significance/hypotheses",
+    "next": "/courses/mathematics2/inference/significance/types"
+  },
+  "/courses/mathematics2/inference/significance/types": {
+    "name": "Type I and Type II errors",
+    "url": "/courses/mathematics2/inference/significance/types",
+    "previous": "/courses/mathematics2/inference/significance/tests",
+    "next": "/courses/mathematics2/inference/significance/level"
+  },
+  "/courses/mathematics2/inference/significance/level": {
+    "name": "Level of significance",
+    "url": "/courses/mathematics2/inference/significance/level",
+    "previous": "/courses/mathematics2/inference/significance/types",
+    "next": ""
+  },
+  "/courses/mathematics2/inference/practice": {
     "name": "Practice",
-    "url": "/courses/internet/javascript/practice",
-    "previous": "/courses/internet/javascript/basics/http",
-    "next": "/courses/internet/nodejs"
+    "url": "/courses/mathematics2/inference/practice",
+    "previous": "/courses/mathematics2/inference/significance/level",
+    "next": ""
   },
-  "/courses/internet/nodejs": {
-    "name": "NODE JS",
-    "url": "/courses/internet/nodejs",
-    "previous": "/courses/internet/practice",
-    "next": "/courses/internet/nodejs/intro"
+  "": {
+    "name": "PERT",
+    "url": "",
+    "previous": "",
+    "next": ""
   },
-  "/courses/internet/nodejs/intro": {
-    "name": "Introduction to Node.js",
-    "url": "/courses/internet/nodejs/intro",
-    "previous": "/courses/internet/nodejs",
-    "next": "/courses/internet/nodejs/installation"
-  },
-  "/courses/internet/nodejs/installation": {
-    "name": "Installation",
-    "url": "/courses/internet/nodejs/installation",
-    "previous": "/courses/internet/nodejs/intro",
-    "next": "/courses/internet/nodejs/application"
-  },
-  "/courses/internet/nodejs/application": {
-    "name": "A Node.js application",
-    "url": "/courses/internet/nodejs/application",
-    "previous": "/courses/internet/nodejs/installation",
-    "next": "/courses/internet/nodejs/fundamentals"
-  },
-  "/courses/internet/nodejs/fundamentals": {
-    "name": "Fundamentals of Node.js",
-    "url": "/courses/internet/nodejs/fundamentals",
-    "previous": "/courses/internet/nodejs/application",
-    "next": "/courses/internet/nodejs/difference"
-  },
-  "/courses/internet/nodejs/difference": {
-    "name": "Difference between Node.js and browser",
-    "url": "/courses/internet/nodejs/difference",
-    "previous": "/courses/internet/nodejs/fundamentals",
-    "next": "/courses/internet/nodejs/http"
-  },
-  "/courses/internet/nodejs/http": {
-    "name": "Anatomy of an HTTP Transaction",
-    "url": "/courses/internet/nodejs/http",
-    "previous": "/courses/internet/nodejs/difference",
-    "next": "/courses/internet/nodejs/http"
-  },
-  "/courses/internet/xml": {
-    "name": "XML",
-    "url": "/courses/internet/xml",
-    "previous": "/courses/internet/javascript/basics/http",
-    "next": "/courses/internet/xml/intro"
-  },
-  "/courses/internet/xml/intro": {
-    "name": "Introduction",
-    "url": "/courses/internet/xml/intro",
-    "previous": "/courses/internet/xml",
-    "next": "/courses/internet/xml/uses"
-  },
-  "/courses/internet/xml/uses": {
-    "name": "Uses of XML",
-    "url": "/courses/internet/xml/uses",
-    "previous": "/courses/internet/xml/intro",
-    "next": "/courses/internet/xml/syntax"
-  },
-  "/courses/internet/xml/syntax": {
-    "name": "The syntax of XML",
-    "url": "/courses/internet/xml/syntax",
-    "previous": "/courses/internet/xml/uses",
-    "next": "/courses/internet/xml/documents"
-  },
-  "/courses/internet/xml/documents": {
-    "name": "XML Document Structure",
-    "url": "/courses/internet/xml/documents",
-    "previous": "/courses/internet/xml/syntax",
-    "next": "/courses/internet/xml/namespaces"
-  },
-  "/courses/internet/xml/namespaces": {
-    "name": "Namespaces",
-    "url": "/courses/internet/xml/namespaces",
-    "previous": "/courses/internet/xml/documents",
-    "next": "/courses/internet/xml/schemas"
-  },
-  "/courses/internet/xml/schemas": {
-    "name": "XML Schemas",
-    "url": "/courses/internet/xml/schemas",
-    "previous": "/courses/internet/xml/namespaces",
-    "next": "/courses/internet/xml/raw"
-  },
-  "/courses/internet/xml/raw": {
-    "name": "Displaying raw XML documents",
-    "url": "/courses/internet/xml/raw",
-    "previous": "/courses/internet/xml/schemas",
-    "next": "/courses/internet/xml/css"
-  },
-  "/courses/internet/xml/css": {
-    "name": "Displaying XML documents with CSS",
-    "url": "/courses/internet/xml/css",
-    "previous": "/courses/internet/xml/raw",
-    "next": "/courses/internet/xml/xslt"
-  },
-  "/courses/internet/xml/xslt": {
-    "name": "XSLT style sheets",
-    "url": "/courses/internet/xml/xslt",
-    "previous": "/courses/internet/xml/css",
-    "next": "/courses/internet/xml/processors"
-  },
-  "/courses/internet/xml/processors": {
-    "name": "XML Processors",
-    "url": "/courses/internet/xml/processors",
-    "previous": "/courses/internet/xml/xslt",
-    "next": "/courses/internet/xml/web"
-  },
-  "/courses/internet/xml/web": {
-    "name": "Web services",
-    "url": "/courses/internet/xml/web",
-    "previous": "/courses/internet/xml/processors",
-    "next": "/courses/internet/nodejs"
+  "/courses/mathematics2/assignment1": {
+    "name": "Assignment 1",
+    "url": "/courses/mathematics2/assignment1",
+    "previous": "",
+    "next": ""
   }
 };
 export {
-  github as a,
-  contents as b,
-  contentNav as c,
-  githubDark as g
+  contents as a,
+  contentNav as c
 };

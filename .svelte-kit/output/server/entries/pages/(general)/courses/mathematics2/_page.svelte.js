@@ -13,7 +13,7 @@ import { C as CommonLabel } from "../../../../../chunks/CommonLabel.js";
 import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../chunks/Cell.js";
 import { N as NavList } from "../../../../../chunks/NavList.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores2.js";
-import { c as contentNav, a as contents } from "../../../../../chunks/content3.js";
+import { c as contentNav, a as contents } from "../../../../../chunks/content4.js";
 import { P as Pathlist } from "../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../chunks/CourseNavigation.js";
 import { T as TabBar, a as Tab } from "../../../../../chunks/TabBar.js";

@@ -122,6 +122,10 @@
 		"src/routes/(general)/courses/internetlab/nodejs/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/internetlab/practice": [
+		"src/routes/(general)/courses/internetlab/practice/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internetlab/resume": [
 		"src/routes/(general)/courses/internetlab/resume/+page.js",
 		"src/routes/(general)/+layout.server.js"

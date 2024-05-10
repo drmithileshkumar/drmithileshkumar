@@ -1,7 +1,7 @@
 import { s as subscribe, b as set_store_value } from "../../../../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component } from "../../../../../../../../chunks/ssr.js";
 import { j as javascript } from "../../../../../../../../chunks/javascript.js";
-import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../../../../chunks/content4.js";
+import { g as githubDark, a as github } from "../../../../../../../../chunks/github-dark.js";
 import "../../../../../../../../chunks/Suffix.js";
 import { C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
@@ -11,6 +11,7 @@ import "../../../../../../../../chunks/Subheader.js";
 import "../../../../../../../../chunks/client.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores2.js";
 /* empty css                                                                   */
+import { c as contentNav, a as contents } from "../../../../../../../../chunks/content.js";
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 import { H as Highlight, L as LineNumbers } from "../../../../../../../../chunks/LineNumbers.js";

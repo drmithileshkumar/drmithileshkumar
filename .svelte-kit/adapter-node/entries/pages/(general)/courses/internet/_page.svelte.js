@@ -1,6 +1,6 @@
 import { s as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component, e as escape, j as each } from "../../../../../chunks/ssr.js";
-import { g as githubDark, a as github, c as contentNav, b as contents } from "../../../../../chunks/content4.js";
+import { g as githubDark, a as github } from "../../../../../chunks/github-dark.js";
 import "../../../../../chunks/client.js";
 import { p as page } from "../../../../../chunks/stores.js";
 import { T as TabBar, a as Tab } from "../../../../../chunks/TabBar.js";
@@ -14,6 +14,7 @@ import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../..
 import { B as Button } from "../../../../../chunks/Button.js";
 import { N as NavList } from "../../../../../chunks/NavList.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores2.js";
+import { c as contentNav, a as contents } from "../../../../../chunks/content.js";
 import { P as Pathlist } from "../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../chunks/CourseNavigation.js";
 const css = {
