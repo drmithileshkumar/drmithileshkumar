@@ -166,12 +166,41 @@
                     </ul>
                 </li>
                 <div>
-                    <strong>Solution:</strong>
+                    <strong>Solution:</strong> We reject the hypothesis when the number of heads is less than 40 or greater than 60. In the above problem, we obtained the probability of the number of heads between 40 and 60 as 0.9642. Hence, the probability of getting number of heads outside this range is 1 - 0.9642 = 0.0378. 
                 </div>
                 <li>Design a decision rule to test the hypothesis that a coin is fair if a sample of 64 tosses of the coin is taken and if a level of siginificance of (a) 0.05, (b) 0.01 is used.</li>
                 <div>
-                    <strong>Solution:</strong>
-                    
+                    <strong>Solution:</strong> (a) As the number of tosses is 64, the corresponding mean and standard deviation will be {`\\[
+                        \\begin{aligned}
+                        \\mu &= np = 64\\times 0.5 = 32\\\\
+                        \\sigma &= \\sqrt{np(1-p)} = \\sqrt{64\\times 0.5(1-0.5)} = 4
+                        \\end{aligned}
+                        \\]`} We want to find the range of the number of heads for which we can accept that the coin is fair just like in the above problem. Since the significance level is 0.05, it means that with probability 0.05, we reject that the coin is fair even if it is fair. Let \((x_1, x_2)\) be the range of heads. Let the corresponding z-scores are \(z_1, z_2\). This implies \[Table(z_2) - Table(z_1) = 0.05\] We assume the Two-tailed error analysis, where the areas under the curve in each tail is equal. The area under the curve in the left tail is equal to \(Table(z_1) = 0.05/2 = 0.025\). This implies \(z_1 = -1.96\) and \(z_2 = 1.96\). Using these values we calculate the values of \(x_1\) and \(x_2\). {`\\[
+                        \\begin{aligned}
+                        z &= \\frac{x - \\mu}{\\sigma}\\\\
+                        -1.96 &= \\frac{x_1 - 32}{4}\\\\
+                        x_1 &= 24.16\\\\
+                        1.96 &= \\frac{x_2 - 32}{4}\\\\
+                        x_2 &= 39.84
+                        \\end{aligned}
+                        \\]`}
+                        Since the number of heads can only be integers, the required range is 25 and 39, i.e. the decision rules are 
+                        <br>
+                        (1) Accept the hypothesis if the number of heads in a single sample of 100 tosses is between 25 and 39 inclusive, <br>
+                        (2) reject the hypothesis otherwise.
+                        <br>
+                        (b) With significance level at 0.01, we have \[Table(z_2) - Table(z_1) = 0.01\] and \(Table(z_1) = 0.01/2 = 0.005\) The z-values (reading from table) {`\\[
+                            \\begin{aligned}
+                            z_1 &= -2.57\\\\
+                            z_2 &= 2.57\\\\
+                            \\implies x_1 &= 32 - 4\\times 2.57 = 21.72\\\\
+                            x_1 &= 32 + 4\\times 2.57 = 42.28
+                            \\end{aligned}
+                            \\]`}
+                        In this case the number of heads should be between 22 and 42, i.e. the decision rules are 
+                        <br>
+                        (1) Accept the hypothesis if the number of heads in a single sample of 100 tosses is between 22 and 42 inclusive, <br>
+                        (2) reject the hypothesis otherwise.
                 </div>
             </ol>
         </Content>
