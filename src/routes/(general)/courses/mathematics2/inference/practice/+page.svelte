@@ -627,6 +627,63 @@
                 </li>
                 <div>
                     <strong>Solution:</strong>
+                    <p>
+                        <strong>Step 1:</strong> State the hypotheses.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Null Hypothesis \(H_0\)</strong>: \(\mu_1 = \mu_2 = \mu_3\)
+                        </li>
+                        <li>
+                            <strong>Alternative Hypothesis \(H_1\)</strong>: At least one mean is different.
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Step 2:</strong> Calculate the group means and total mean.
+                        {`\\[
+                            \\begin{aligned}
+                            \\mu_1 &= \\frac{8 + 12 + \\cdots + 11}{6} = 10.67\\\\
+                            \\mu_2 &= \\frac{4 + 5 + \\cdots + 7}{6} = 5.83\\\\
+                            \\mu_3 &= \\frac{11 + 8 + \\cdots + 9}{6} = 9.17\\\\
+                            \\mu &= \\frac{10.67 + 5.83 + 9.17}{3} = 8.56
+                            \\end{aligned}
+                            \\]`}
+                    </p>
+                    <p>
+                        <strong>Step 3:</strong> Calculate the variations.
+                        {`\\[
+                            \\begin{aligned}
+                            v_1 &= (8 - 10.67)^2 + \\cdots + (11 - 10.67)^2\\\\
+                            &= 107.33\\\\
+                            v_2 &= (4 - 5.83)^2 + \\cdots + (7 - 5.83)^2\\\\
+                            &= 18.83\\\\
+                            v_3 &= (11 - 9.17)^2 + \\cdots + (9 - 9.17)^2\\\\
+                            &= 28.83\\\\
+                            v_w &= v_1 + v_2 + v_3=155\\\\
+                            v_b &= 6[(10.67 - 8.56)^2 + (5.83 - 8.56)^2 \\\\
+                            &+ (9.17 - 8.56)^2
+                            ] = 73.66
+                            \\end{aligned}
+                            \\]`}
+                    </p>
+                    <p>
+                        <strong>Step 4:</strong> Calculate the mean variations using the degrees of freedom.
+                        {`\\[
+                            \\begin{aligned}
+                            MSW &= \\frac{v_w}{a(b-1)} = \\frac{155}{3(6-1)} = 10.33\\\\
+                            MSB &= \\frac{v_b}{a - 1} = \\frac{73.66}{3 - 1} = 36.83
+                            \\end{aligned}
+                            \\]`}
+                    </p>
+                    <p>
+                        <strong>Step 5:</strong> Calculate the F-statistic.
+                        {`\\[
+                            F = \\frac{MSB}{MSW}=3.56
+                            \\]`}
+                    </p>
+                    <p>
+                        <strong>Step 6:</strong> Compare with the table value. The table value is 3.68. As the calculated value is less than the table value, the Null hypothesis is accepted.
+                    </p>
                 </div>
                 <li style="font-weight: bold;">
                     The following data show the number of worms quarantined from the GI areas of four groups of muskrats in a carbon tetrachloride anthelmintic study. Conduct a two-way ANOVA test.
