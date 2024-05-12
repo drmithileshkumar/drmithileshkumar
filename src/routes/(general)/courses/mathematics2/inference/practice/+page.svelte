@@ -55,6 +55,9 @@
         border: 1px solid;
         text-align: center;
     }
+    td {
+        text-align: center;
+    }
     ol li::marker {
         font-size: 1.2em;
         color: red;
@@ -255,10 +258,7 @@
                 </li>
                 <div>
                     <p>
-                        <strong>Solution:</strong> When the effect of only one-factor is under study, we call it "one-way" or "one-factor" ANOVA.
-                    </p>
-                    <p>
-                        <strong>Step 1:</strong> Divide the given data into \(a\) <i>groups</i> or <i>treatments</i> where the size of each group is \(b\), as shown in the table below:
+                        <strong>Solution:</strong> When the effect of only one-factor is under study, we call it "one-way" or "one-factor" ANOVA. The table below shows the given data. The given data is divided into \(a\) <i>groups</i> or <i>treatments</i> where the size of each group is \(b\).
                     </p>
                     <table>
                         <tr>
@@ -293,6 +293,17 @@
                         </tr>
                     </table>
                     <p>
+                        <strong>Step 1:</strong> Write the hypotheses
+                    </p>
+                        <ul>
+                            <li>
+                                <strong>Null Hypothesis \(H_0\)</strong>: \(\mu_1 = \mu_2 = \cdots = \mu_a\)
+                            </li>
+                            <li>
+                                <strong>Alternative Hypothesis \(H_1\)</strong>: At least one \(\mu_j\) differs from the rest.
+                            </li>
+                        </ul>
+                    <p>
                         <strong>Step 2:</strong> Calculate means.
                     </p>
                     <ul>
@@ -308,18 +319,18 @@
                         </li>
                     </ul>
                     <p>
-                        <strong>Step 2:</strong> Calculate variances.
+                        <strong>Step 2:</strong> Calculate variations.
                     </p>
                     <ul>
                         <li>
-                            <strong>Variance within groups:</strong> As shown in the table, calculate means for each group. For the \(k\)th group, the variance \(v_k\) is {`\\[
+                            <strong>Variation within groups:</strong> As shown in the table, calculate means for each group. For the \(k\)th group, the variance \(v_k\) is {`\\[
                                 v_k = \\sum_{i = 1}^b (x_{ki} - \\mu_k)^2
                                 \\]`}
                             This gives the total variance within groups \(v_w\) as
                             \[v_w = v_1 + v_2 + \cdots + v_a\]
                         </li>
                         <li>
-                            <strong>Variance between groups:</strong> It is denoted by \(v_b\). {`\\[
+                            <strong>Variation between groups:</strong> It is denoted by \(v_b\). {`\\[
                                 v_b = b\\sum_{i = 1}^a (\\mu_i - \\mu)^2
                                 \\]`}
                         </li>
@@ -329,11 +340,11 @@
                     </p>
                     <ul>
                         <li>
-                            <strong>Mean variance within groups:</strong>
+                            <strong>Mean variation within groups:</strong>
                             {`\\[MSW = \\frac{v_w}{a(b - 1)}\\]`} where the degree of freedom is \(a(b - 1)\)
                         </li>
                         <li>
-                            <strong>Mean variance between groups:</strong>
+                            <strong>Mean variation between groups:</strong>
                             {`\\[MSB = \\frac{v_b}{a - 1}\\]`} where the degree of freedom is \(a - 1\)
                         </li>
                     </ul>
@@ -363,7 +374,7 @@
                             <td>Within Groups, {`\\[v_w = v_1 + \\cdots + v_a\\]`}</td>
                             <td>\(a(b-1)\)</td>
                             <td>{`\\(MSW = \\frac{v_w}{a(b - 1)}\\)`}</td>
-                            <td>{`\\(\\frac{MSB}{MSW}\\)`} with \(a - 1\), \(a(b-1)\) degrees of freedom</td>
+                            <td></td>
                         </tr>
                     </table>
                 </div>
@@ -372,8 +383,207 @@
                 </li>
                 <div>
                     <p>
-                        <strong>Solution:</strong> When the effect of two factors is under study, we call it "two-way" or "two-factor" ANOVA.
+                        <strong>Solution:</strong> When the effect of two factors is under study, we call it "two-way" or "two-factor" ANOVA. The data is given as a table with rows corresponding to one factor and columns corresponding to the 2nd factor, as shown in the table below:
                     </p>
+                    <table>
+                        <tr>
+                            <th colspan="2" rowspan="2"></th>
+                            <th colspan="4">2nd Factor</th>
+                            <th rowspan="2" style="vertical-align:bottom;">Mean</th>
+                            <th rowspan="2" style="vertical-align:bottom;">Variance</th>
+                        </tr>
+                        <tr>
+                            <!-- <th colspan="2"></th> -->
+                            <th>1</th>
+                            <th>2</th>
+                            <th>...</th>
+                            <th>b</th>
+                            <!-- <th colspan="2"></th> -->
+                            
+                        </tr>
+                        <tr>
+                            <th rowspan="4">1st Factor</th>
+                            <th>1</th>
+                            <td>{`\\(x_{11}\\)`}</td>
+                            <td>{`\\(x_{12}\\)`}</td>
+                            <td>{`\\(\\cdots\\)`}</td>
+                            <td>{`\\(x_{1b}\\)`}</td>
+                            <td>{`\\(\\mu_{r1}\\)`}</td>
+                            <td>{`\\(v_{r1}\\)`}</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>{`\\(x_{21}\\)`}</td>
+                            <td>{`\\(x_{22}\\)`}</td>
+                            <td>{`\\(\\cdots\\)`}</td>
+                            <td>{`\\(x_{2b}\\)`}</td>
+                            <td>{`\\(\\mu_{r2}\\)`}</td>
+                            <td>{`\\(v_{r2}\\)`}</td>
+                        </tr>
+                        <tr>
+                            <th>\(\vdots\)</th>
+                            <td>{`\\(\\vdots \\)`}</td>
+                            <td>\(\vdots\)</td>
+                            <td>\(\cdots\)</td>
+                            <td>\(\vdots\)</td>
+                            <td>\(\vdots\)</td>
+                            <td>\(\vdots\)</td>
+                        </tr>
+                        <tr>
+                            <th>a</th>
+                            <td>{`\\(x_{a1}\\)`}</td>
+                            <td>{`\\(x_{a2}\\)`}</td>
+                            <td>{`\\(\\cdots\\)`}</td>
+                            <td>{`\\(x_{ab}\\)`}</td>
+                            <td>{`\\(\\mu_{ra}\\)`}</td>
+                            <td>{`\\(v_{ra}\\)`}</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mean</th>
+                            <td>{`\\(\\mu_{c1}\\)`}</td>
+                            <td>{`\\(\\mu_{c2}\\)`}</td>
+                            <td>{`\\(\\cdots\\)`}</td>
+                            <td>{`\\(\\mu_{cb}\\)`}</td>
+                            <td colspan="2" rowspan="2"></td>
+                            
+                        </tr>
+                        <tr>
+                            <th colspan="2">Variance</th>
+                            <td>{`\\(v_{c1}\\)`}</td>
+                            <td>{`\\(v_{c2}\\)`}</td>
+                            <td>{`\\(\\cdots\\)`}</td>
+                            <td>{`\\(v_{cb}\\)`}</td>
+                        </tr>
+                    </table>
+                    <p>
+                        <strong>Step 1:</strong> Write the hypotheses
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Null Hypothesis </strong>: 
+                            <ol>
+                                <li>
+                                    <strong>{`\\(H^{(0)}_0\\)`}:</strong> {`\\(\\mu_{r1} = \\mu_{r2} = \\cdots = \\mu_{ra}\\)`}
+                                </li>
+                                <li>
+                                    <strong>{`\\(H^{(1)}_0\\)`}:</strong> {`\\(\\mu_{c1} = \\mu_{c2} = \\cdots = \\mu_{cb}\\)`}
+                                </li>
+                            </ol>
+                            
+                        </li>
+                        <li>
+                            <strong>Alternative Hypothesis</strong>: 
+                            <ol>
+                                <li>
+                                    <strong>{`\\(H^{(0)}_1\\)`}:</strong> At least one {`\\(\\mu_{rj}\\)`} differs among {`\\(\\mu_{r1}, \\mu_{r2}, \\cdots, \\mu_{ra}\\)`}
+                                </li>
+                                <li>
+                                    <strong>{`\\(H^{(1)}_1\\)`}:</strong> At least one {`\\(\\mu_{cj}\\)`} differs among {`\\(\\mu_{c1}, \\mu_{c2}, \\cdots, \\mu_{cb}\\)`}
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Step 2:</strong> Calculate means.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Row means:</strong> As shown in the table, calculate means for each row. {`\\[
+                                \\mu_{rk} = \\frac{x_{k1} + x_{k2} + \\cdots + x_{kb}}{b}
+                                \\]`}
+                        </li>
+                        <li>
+                            <strong>Column means:</strong> As shown in the table, calculate means for each column. {`\\[
+                                \\mu_{ck} = \\frac{x_{1k} + x_{2k} + \\cdots + x_{ak}}{a}
+                                \\]`}
+                        </li>
+                        <li>
+                            <strong>Total mean:</strong> Calculate total mean as {`\\[
+                                \\begin{aligned}
+                                \\mu &= \\frac{\\mu_{r1} + \\mu_{r2} + \\cdots + \\mu_{ra}}{a}\\\\
+                                     &+ \\frac{\\mu_{c1} + \\mu_{c2} + \\cdots + \\mu_{cb}}{b}
+                                \\end{aligned}
+                                \\]`}
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Step 2:</strong> Calculate variations.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Total variation</strong> The total variation is denoted by \(v\) and calculated as {`\\[v = \\sum_{j, k}(x_{jk}-\\mu)^2\\]`}
+                            Total variation can be split into three parts {`\\[v = v_r + v_c + v_e\\]`} where \(v_r\) is variation between rows, \(v_c\) is variation between columns and \(v_e\) is random variation (or variation due to error).
+                        </li>
+                        <li>
+                            <strong>Variation between rows:</strong> As shown in the table, calculate variation between rows is {`\\[
+                                v_{r} = b\\sum_{i = 1}^a (\\mu_{ri} - \\mu)^2
+                                \\]`}
+                        </li>
+                        <li>
+                            <strong>Variation between columns:</strong> It is denoted by \(v_b\). {`\\[
+                                v_c = a\\sum_{i = 1}^b (\\mu_{ci} - \\mu)^2
+                                \\]`}
+                        </li>
+                        <li>
+                            <strong>Variation due to error:</strong> \[v_e = v - v_r - v_c\]
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Step 3:</strong> Calculate mean variations.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Mean variation within rows:</strong>
+                            {`\\[MSR = \\frac{v_r}{a - 1}\\]`} where the degree of freedom is \(a - 1\)
+                        </li>
+                        <li>
+                            <strong>Mean variation between columns:</strong>
+                            {`\\[MSC = \\frac{v_c}{b - 1}\\]`} where the degree of freedom is \(b - 1\)
+                        </li>
+                        <li>
+                            <strong>Mean variation due to error:</strong> {`\\[MSE = \\frac{v_e}{(a - 1)(b - 1)}\\]`} where the degree of freedom is \((a - 1)(b - 1)\)
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Step 4:</strong> Calculate \(F\)-statistic. The \(F_r\) value for rows is given as {`\\[F_r = \\frac{MSR}{MSE}\\]`} The \(F_c\) value for columns is given as {`\\[F_c = \\frac{MSC}{MSE}\\]`} 
+                    </p>
+                    <p>
+                        <strong>Step 5:</strong> Compare calculated \(F_r\) and \(F_c\) with the corresponding value in F-statistic table. If the calculated value is larger, then reject the null hypothesis for the corresponding rows or columns.
+                    </p>
+                    <p>
+                        The following table summarizes the above calculations.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Variation</th>
+                            <th>Degrees of Freedom</th>
+                            <th>Mean Square</th>
+                            <th>F</th>
+                        </tr>
+                        <tr>
+                            <td>Between Rows, {`\\[v_r = b\\sum_j (\\mu_{rj} - \\mu)^2\\]`}</td>
+                            <td>\(a-1\)</td>
+                            <td>{`\\(MSR = \\frac{v_r}{a - 1}\\)`}</td>
+                            <td>{`\\(\\frac{MSR}{MSE}\\)`} with \(a - 1\), \((a-1)(b-1)\) degrees of freedom</td>
+                        </tr>
+                        <tr>
+                            <td>Between Columns, {`\\[v_c = b\\sum_j (\\mu_{rj} - \\mu)^2\\]`}</td>
+                            <td>\(b-1\)</td>
+                            <td>{`\\(MSC = \\frac{v_c}{b - 1}\\)`}</td>
+                            <td>{`\\(\\frac{MSC}{MSE}\\)`} with \(b - 1\), \((a-1)(b-1)\) degrees of freedom</td>
+                        </tr>
+                        <tr>
+                            <td>Residual or random, {`\\[v_e = v - v_r - v_c\\]`}</td>
+                            <td>\((a - 1)(b-1)\)</td>
+                            <td>{`\\(MSE = \\frac{v_e}{(a - 1)(b - 1)}\\)`}</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Total, {`\\[v = \\sum_{j, k}(x_{jk} - \\mu)^2\\]`}</td>
+                            <td>\(ab - 1\)</td>
+                            
+                        </tr>
+                    </table>
                 </div>
                 <li style="font-weight: bold;">
                     Three different kinds of food are tested on three groups of rats for 5 weeks. The objective is to check the difference in mean weight(in grams) of the rats per week. Apply one-way ANOVA using a 0.05 significance level to the following data:
