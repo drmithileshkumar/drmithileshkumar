@@ -48,6 +48,13 @@
         align-items: center;
         justify-content: center;
     }
+    table {
+        border-collapse: collapse;
+    }
+    tr td, tr th {
+        border: 1px solid;
+        text-align: center;
+    }
     ol li::marker {
         font-size: 1.2em;
         color: red;
@@ -73,61 +80,61 @@
         <Content>
             <h5>Statistical Significance</h5>
             <ol>
-                <li>What is population?</li>
+                <li style="font-weight: bold;">What is population?</li>
                 <div>
                     <strong>Solution:</strong> Population is the entire group of individuals or objects under study.
                 </div>
-                <li>What is sample and sampling?</li>
+                <li style="font-weight: bold;">What is sample and sampling?</li>
                 <div>
                     <strong>Solution:</strong> Sample is a small subset of the population. The process of obtaining a sample from a population is called sampling.
                 </div>
-                <li>What is statistical inference? Explain using an example.</li>
+                <li style="font-weight: bold;">What is statistical inference? Explain using an example.</li>
                 <div>
                     <strong>Solution:</strong> Statistical inference is the process of making predictions, estimates or decisions about a population based on the information obtained from a sample. It allows you to generalize findings from a sample to the population it represents. For example: population can be all registered voters in a country. A random selection of 1000 registered voters from country is a sample. Based on the sample, you can estimate the proportion of voters supporting a particular candidate in the upcoming election.
                 </div>
-                <li>What is a statistical decision? Explain using an example.</li>
+                <li style="font-weight: bold;">What is a statistical decision? Explain using an example.</li>
                 <div>
                     <strong>Solution:</strong> Statistical decision is decision made about a population based on a sample drawn from the population. For example, deciding whether a coin is fair based on tossing it a few times. Ideally it would require infinitely many tosses.
                 </div>
-                <li>What is a statistical hypothesis? Explain using an example.</li>
+                <li style="font-weight: bold;">What is a statistical hypothesis? Explain using an example.</li>
                 <div>
                     <strong>Solution:</strong> Statistical hypothesses are hypotheses ( statements ) about the population that can be tested using tools from statistics and probability theory. For example, checking whether a given coin is biased or not, we can make a hypothesis that the coin is fair, i.e. the probability of getting a head is 0.5.
                 </div>
-                <li>What are null and alternative hypotheses? Explain using an example.</li>
+                <li style="font-weight: bold;">What are null and alternative hypotheses? Explain using an example.</li>
                 <div>
                     <strong>Solution:</strong> Null hypothesis is a statement that there is no significant difference, effect, or relationship between variables in a population. It is often formulated as a statement of "no effect" or "no difference" and serves as the default assumption to be tested in hypothesis testing. Any hypothesis that differs from a given null hypothesis is called an alternative hypothesis. For example: Null hypothesis is "coin is fair". Alternate hypothesis is "coin is not fair".
 
                 </div>
-                <li>When can we reject a hypothesis?</li>
+                <li style="font-weight: bold;">When can we reject a hypothesis?</li>
                 <div>
                     <strong>Solution:</strong> If on the supposition that a particular hypothesis is true we find that results observed in a random sample differ markedly from those expected under the hypothesis on the basis of pure chance using sampling theory, we would say that the observed differences are significant and we would be inclined to reject the hypothesis (or at least not accept it on the basis of the evidence obtained). For example, if 20 tosses of a coin yield 16 heads, we would be inclined to reject the hypothesis that the coin is fair, although it is conceivable that we might be wrong.
                 </div>
-                <li>What are type I and type II errors? Explain using an example.</li>
+                <li style="font-weight: bold;">What are type I and type II errors? Explain using an example.</li>
                 <div>
                     <strong>Solution:</strong> Type I Error: If we reject a hypothesis when it happens to be true, we say that a Type I error has been made. Type II Error: If we accept a hypothesis when it happens to be false, we say that a Type II error has been made. For example: Type I error happens when we declare a fair coin as biased. Type II error happens when we declare a biased coin as fair.
                 </div>
-                <li>What is level of significance? What do significance levels 0.01 and 0.05 mean?</li>
+                <li style="font-weight: bold;">What is level of significance? What do significance levels 0.01 and 0.05 mean?</li>
                 <div>
                     <strong>Solution:</strong> In testing a given hypothesis, the maximum probability with which we would be willing to risk a Type I error is called the level of significance of the test. This probability is often specified before any samples are drawn, so that results obtained will not influence our decision. If for example a 0.05 (0.01) or 5% (1%) level of significance is chosen in designing a test of a hypothesis, then there are about 5 (1) chances in 100 that we would reject the hypothesis when it should be accepted, i.e., whenever the null hypotheses is true, we are about 95% (99%) confident that we would make the right decision. In such cases we say that the hypothesis has been rejected at a 0.05 (0.01) level of significance, which means that we could be wrong with probability 0.05 (0.01).
                 </div>
-                <li>Assuming normal distribution, explain region of no significance, and critical region.</li>
+                <li style="font-weight: bold;">Assuming normal distribution, explain region of no significance, and critical region.</li>
                 <div>
                     <strong>Solution:</strong> The region between \(z\) values where the null hypothesis is accepted is called the region of no significance. The region for \(z\) values where the null hypothesis is rejected is called the critical region. The following images shows the critical region is the shaded region. Here \(z\) between -1.96 and 1.96 defines the range of \(z\) where the null hypothesis will be accepted. For \(z\) less than -1.96 or greater than 1.96, the null hypothesis is rejected. <img src="/courses/mathematics2/normalCritical.png" width="300px" alt="Critical">
                 </div>
-                <li>Calculate mean and standard deviation of the number of heads is 100 tosses when the probability of getting heads is (1) 0.5 (2) 0.7 (3) 0.9</li>
+                <li style="font-weight: bold;">Calculate mean and standard deviation of the number of heads is 100 tosses when the probability of getting heads is (1) 0.5 (2) 0.7 (3) 0.9</li>
                 <div>
                     <strong>Solution:</strong> Since the tosses constitute Bernoulli trials, the number of tosses has Binomial distribution. In this case, the mean is given by \[\mu = np\] and the standard deviation is given by {`\\[\\sigma = \\sqrt{np(1-p)}\\]`} where \(n\) is the number of trials and \(p\) is the probability of success (getting heads). Applying the above formulae, we get <br> (1) \[\mu = 100\times 0.5 = 50\] {`\\[\\sigma = \\sqrt{100\\times 0.5(1-0.5)} = 5\\]`}
                     (2) \[\mu = 100\times 0.7 = 70\] {`\\[\\sigma = \\sqrt{100\\times 0.7(1-0.7)} = 4.58\\]`}
                     (3) \[\mu = 100\times 0.9 = 90\] {`\\[\\sigma = \\sqrt{100\\times 0.9(1-0.9)} = 3\\]`}
                 </div>
-                <li>Calculate the z variable when the number of heads is (1) 40 (2) 50 (3) 60 assuming that the mean is 50 and standard deviation is 5.</li>
+                <li style="font-weight: bold;">Calculate the z variable when the number of heads is (1) 40 (2) 50 (3) 60 assuming that the mean is 50 and standard deviation is 5.</li>
                 <div>
                     <strong>Solution:</strong> The \(z\) value is defined as {`\\[z = \\frac{x - \\mu}{\\sigma}\\]`} Here \(\mu = 50\) and \(\sigma = 5\) <br>
                     (1) {`\\[z = \\frac{40 - 50}{5} = -2\\]`}
                     (2) {`\\[z = \\frac{50 - 50}{5} = 0\\]`}
                     (3) {`\\[z = \\frac{60 - 50}{5} = 2\\]`}
                 </div>
-                <li>Calculate the probability of getting between 40 and 60 heads inclusive in 100 tosses of a fair coin assuming (a) binomial distribution (show the expression only) (b) normal distribution approximation.</li>
+                <li style="font-weight: bold;">Calculate the probability of getting between 40 and 60 heads inclusive in 100 tosses of a fair coin assuming (a) binomial distribution (show the expression only) (b) normal distribution approximation.</li>
                 <div>
                     <strong>Solution:</strong> Since the coin is assumed to be fair, \(p = 0.5\) <br> (a) The probability of getting \(x\) heads when total number of tosses is \(n\) is given by {`\\[P_x = {n \\choose x} p^x(1-p)^{n-x}\\]`}
                     The probability of getting between 40 and 60 heads is {`\\[
@@ -159,7 +166,7 @@
                             \\end{aligned}
                             \\]`}
                 </div>
-                <li>To test the hypothesis that a coin is fair, the following decision rules are adopted: (1) Accept the hypothesis if the number of heads in a single sample of 100 tosses is between 40 and 60 inclusive, (2) reject the hypothesis otherwise.
+                <li style="font-weight: bold;">To test the hypothesis that a coin is fair, the following decision rules are adopted: (1) Accept the hypothesis if the number of heads in a single sample of 100 tosses is between 40 and 60 inclusive, (2) reject the hypothesis otherwise.
                     <ul>
                         <li>Find the probability of rejecting the hypothesis when it is actually correct.</li>
                         <li>Draw the graph.</li>
@@ -168,7 +175,7 @@
                 <div>
                     <strong>Solution:</strong> We reject the hypothesis when the number of heads is less than 40 or greater than 60. In the above problem, we obtained the probability of the number of heads between 40 and 60 as 0.9642. Hence, the probability of getting number of heads outside this range is 1 - 0.9642 = 0.0378. 
                 </div>
-                <li>Design a decision rule to test the hypothesis that a coin is fair if a sample of 64 tosses of the coin is taken and if a level of siginificance of (a) 0.05, (b) 0.01 is used.</li>
+                <li style="font-weight: bold;">Design a decision rule to test the hypothesis that a coin is fair if a sample of 64 tosses of the coin is taken and if a level of siginificance of (a) 0.05, (b) 0.01 is used.</li>
                 <div>
                     <strong>Solution:</strong> (a) As the number of tosses is 64, the corresponding mean and standard deviation will be {`\\[
                         \\begin{aligned}
@@ -209,16 +216,166 @@
         <Content>
             <h5>Analysis of Variance</h5>
             <ol>
-                <li>
+                <li style="font-weight: bold;">
                     Explain the purpose of analysis of variance with an example.
                 </li>
-                <li>
+                <div>
+                    <p>
+                        <strong>Solution:</strong> The purpose of analysis of variance (ANOVA) is to determine whether there are statistically significant differences among the means of three or more independent groups. ANOVA helps to assess whether the observed differences among group means are due to genuine differences in population means or simply due to random sampling variation.
+                    </p>
+                    <p>
+                        Suppose we want to compare the effectiveness of three different teaching methods (Method A, Method B, and Method C) in improving students' test scores. We randomly select 30 students and divide them into three groups of 10 students each. Each group receives one of the teaching methods.
+                    </p>
+                    <p>
+                        After completing the teaching sessions, we administer a test to all students, and their scores are recorded. Now, we want to analyze whether there are any statistically significant differences in the mean test scores among the three teaching methods.
+                    </p>
+                    <p>
+                        Steps taken in the ANOVA:
+                    </p>
+                    <ol>
+                        <li>Set hypotheses:
+                            <ul>
+                                <li><strong>Null Hypothesis \(H_0\)</strong>: There is no difference in mean test scores among the three teaching methods.</li>
+                                <li><strong>Alternative Hypothesis \(H_1\)</strong>:  At least one teaching method leads to significantly different mean test scores compared to the others. </li>
+                            </ul>
+                        </li>
+                        <li>ANOVA partitions the total variance in the test scores into two components:
+                            <ul>
+                                <li><strong>Between-group variance</strong>: This variance represents differences in mean test scores among the three teaching methods.</li>
+                                <li><strong>Within-group variance</strong>: This variance represents differences within each group, which could be due to random variability or other factors not related to the teaching methods.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>
+                        ANOVA then compares the between-group variance to the within-group variance. If the between-group variance is significantly larger than the within-group variance, it suggests that there are statistically significant differences among the group means. In other words, at least one teaching method has a different effect on test scores compared to the others.
+                    </p>
+                </div>
+                <li style="font-weight: bold;">
                     Explain one-way classification with the analysis of variance table.
                 </li>
-                <li>
+                <div>
+                    <p>
+                        <strong>Solution:</strong> When the effect of only one-factor is under study, we call it "one-way" or "one-factor" ANOVA.
+                    </p>
+                    <p>
+                        <strong>Step 1:</strong> Divide the given data into \(a\) <i>groups</i> or <i>treatments</i> where the size of each group is \(b\), as shown in the table below:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Group</th>
+                            <th>Data</th>
+                            <th>Mean</th>
+                            <th>Variance</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <td>{`\\(x_{11}\\quad x_{12}\\quad \\cdots \\quad x_{1b}\\)`}</td>
+                            <td>\(\mu_1\)</td>
+                            <td>\(v_1\)</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>{`\\(x_{21}\\quad x_{22}\\quad \\cdots \\quad x_{2b}\\)`}</td>
+                            <td>\(\mu_2\)</td>
+                            <td>\(v_2\)</td>
+                        </tr>
+                        <tr>
+                            <th>\(\vdots\)</th>
+                            <td>{`\\(\\quad \\quad \\vdots \\quad \\)`}</td>
+                            <td>\(\vdots\)</td>
+                            <td>\(\cdots\)</td>
+                        </tr>
+                        <tr>
+                            <th>a</th>
+                            <td>{`\\(x_{a1}\\quad x_{a2}\\quad \\cdots \\quad x_{ab}\\)`}</td>
+                            <td>\(\mu_a\)</td>
+                            <td>\(v_a\)
+                        </tr>
+                    </table>
+                    <p>
+                        <strong>Step 2:</strong> Calculate means.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Group means:</strong> As shown in the table, calculate means for each group. {`\\[
+                                \\mu_k = \\frac{x_{k1} + x_{k2} + \\cdots + x_{kb}}{b}
+                                \\]`}
+                        </li>
+                        <li>
+                            <strong>Total mean:</strong> Calculate total mean as {`\\[
+                                \\mu = \\frac{\\mu_1 + \\mu_2 + \\cdots + \\mu_a}{a}
+                                \\]`}
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Step 2:</strong> Calculate variances.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Variance within groups:</strong> As shown in the table, calculate means for each group. For the \(k\)th group, the variance \(v_k\) is {`\\[
+                                v_k = \\sum_{i = 1}^b (x_{ki} - \\mu_k)^2
+                                \\]`}
+                            This gives the total variance within groups \(v_w\) as
+                            \[v_w = v_1 + v_2 + \cdots + v_a\]
+                        </li>
+                        <li>
+                            <strong>Variance between groups:</strong> It is denoted by \(v_b\). {`\\[
+                                v_b = b\\sum_{i = 1}^a (\\mu_i - \\mu)^2
+                                \\]`}
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Step 3:</strong> Calculate mean variances.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Mean variance within groups:</strong>
+                            {`\\[MSW = \\frac{v_w}{a(b - 1)}\\]`} where the degree of freedom is \(a(b - 1)\)
+                        </li>
+                        <li>
+                            <strong>Mean variance between groups:</strong>
+                            {`\\[MSB = \\frac{v_b}{a - 1}\\]`} where the degree of freedom is \(a - 1\)
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Step 4:</strong> Calculate \(F\)-statistic. The \(F\) value is given as {`\\[F = \\frac{MSB}{MSW}\\]`}
+                    </p>
+                    <p>
+                        <strong>Step 5:</strong> Compare calculated \(F\) with the corresponding value in F-statistic table. If the calculated value is larger, then reject the null hypothesis.
+                    </p>
+                    <p>
+                        The following table summarizes the above calculations.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Variation</th>
+                            <th>Degrees of Freedom</th>
+                            <th>Mean Square</th>
+                            <th>F</th>
+                        </tr>
+                        <tr>
+                            <td>Between Groups, {`\\[v_b = b\\sum_j (\\mu_j - \\mu)^2\\]`}</td>
+                            <td>\(a-1\)</td>
+                            <td>{`\\(MSB = \\frac{v_b}{a - 1}\\)`}</td>
+                            <td>{`\\(\\frac{MSB}{MSW}\\)`} with \(a - 1\), \(a(b-1)\) degrees of freedom</td>
+                        </tr>
+                        <tr>
+                            <td>Within Groups, {`\\[v_w = v_1 + \\cdots + v_a\\]`}</td>
+                            <td>\(a(b-1)\)</td>
+                            <td>{`\\(MSW = \\frac{v_w}{a(b - 1)}\\)`}</td>
+                            <td>{`\\(\\frac{MSB}{MSW}\\)`} with \(a - 1\), \(a(b-1)\) degrees of freedom</td>
+                        </tr>
+                    </table>
+                </div>
+                <li style="font-weight: bold;">
                     Explain two-way classification with the analysis of variance table.
                 </li>
-                <li>
+                <div>
+                    <p>
+                        <strong>Solution:</strong> When the effect of two factors is under study, we call it "two-way" or "two-factor" ANOVA.
+                    </p>
+                </div>
+                <li style="font-weight: bold;">
                     Three different kinds of food are tested on three groups of rats for 5 weeks. The objective is to check the difference in mean weight(in grams) of the rats per week. Apply one-way ANOVA using a 0.05 significance level to the following data:
                     <table>
                         <tr>
@@ -258,7 +415,10 @@
                         </tr>
                     </table>
                 </li>
-                <li>
+                <div>
+                    <strong>Solution:</strong>
+                </div>
+                <li style="font-weight: bold;">
                     The following data show the number of worms quarantined from the GI areas of four groups of muskrats in a carbon tetrachloride anthelmintic study. Conduct a two-way ANOVA test.
                     <table>
                         <tr>
@@ -299,6 +459,9 @@
                         </tr>
                     </table>
                 </li>
+                <div>
+                    <strong>Solution:</strong>
+                </div>
             </ol>
         </Content>
     </Card>
@@ -306,10 +469,10 @@
         <Content>
             <h5>Time series analysis</h5>
             <ol>
-                <li>What is time series data?</li>
-                <li>What are components of time-series data? Explain using graphs.</li>
-                <li>What are simple average and moving average analysis of trend?</li>
-                <li>
+                <li style="font-weight: bold;">What is time series data?</li>
+                <li style="font-weight: bold;">What are components of time-series data? Explain using graphs.</li>
+                <li style="font-weight: bold;">What are simple average and moving average analysis of trend?</li>
+                <li style="font-weight: bold;">
                     Calculate the moving averages and mean square error with group size 3 for the data 9, 8, 9, 12, 9, 12, 11, 7, 13, 9, 11, 10.
                 </li>
             </ol>
