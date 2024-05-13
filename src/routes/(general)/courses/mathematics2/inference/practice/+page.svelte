@@ -802,7 +802,7 @@
                     </p>
                     <ul>
                         <li>
-                            <strong>Total variation</strong> The total variation is denoted by \(v\) and calculated as {`\\[v = \\sum_{j, k}(x_{jk}-\\mu)^2\\]`}
+                            <strong>Total variation</strong> The total variation is denoted by \(v\) and calculated as {`\\[v = \\sum_{j, k}(x_{jk}-\\mu)^2=227160.55\\]`}
                             Total variation can be split into three parts {`\\[v = v_r + v_c + v_e\\]`} where \(v_r\) is variation between rows, \(v_c\) is variation between columns and \(v_e\) is random variation (or variation due to error).
                         </li>
                         <li>
@@ -816,7 +816,7 @@
                                 \\]`}
                         </li>
                         <li>
-                            <strong>Variation due to error:</strong> \[v_e = v - v_r - v_c\]
+                            <strong>Variation due to error:</strong> \[v_e = v - v_r - v_c = 111659.4\]
                         </li>
                     </ul>
                     <p>
@@ -825,21 +825,26 @@
                     <ul>
                         <li>
                             <strong>Mean variation within rows:</strong>
-                            {`\\[MSR = \\frac{v_r}{a - 1}\\]`} where the degree of freedom is \(a - 1\)
+                            {`\\[MSR = \\frac{v_r}{a - 1} = 26691.575\\]`} where the degree of freedom is \(a - 1\)
                         </li>
                         <li>
                             <strong>Mean variation between columns:</strong>
-                            {`\\[MSC = \\frac{v_c}{b - 1}\\]`} where the degree of freedom is \(b - 1\)
+                            {`\\[MSC = \\frac{v_c}{b - 1}=2911.62\\]`} where the degree of freedom is \(b - 1\)
                         </li>
                         <li>
-                            <strong>Mean variation due to error:</strong> {`\\[MSE = \\frac{v_e}{(a - 1)(b - 1)}\\]`} where the degree of freedom is \((a - 1)(b - 1)\)
+                            <strong>Mean variation due to error:</strong> {`\\[MSE = \\frac{v_e}{(a - 1)(b - 1)}=9304.95\\]`} where the degree of freedom is \((a - 1)(b - 1)\)
                         </li>
                     </ul>
                     <p>
-                        <strong>Step 4:</strong> Calculate \(F\)-statistic. The \(F_r\) value for rows is given as {`\\[F_r = \\frac{MSR}{MSE}\\]`} The \(F_c\) value for columns is given as {`\\[F_c = \\frac{MSC}{MSE}\\]`} 
+                        <strong>Step 4:</strong> Calculate \(F\)-statistic. The \(F_r\) value for rows is given as {`\\[F_r = \\frac{MSR}{MSE}=2.87\\]`} The \(F_c\) value for columns is given as {`\\[F_c = \\frac{MSC}{MSE}=0.31\\]`} 
                     </p>
                     <p>
-                        <strong>Step 5:</strong> Compare calculated \(F_r\) and \(F_c\) with the corresponding value in F-statistic table. If the calculated value is larger, then reject the null hypothesis for the corresponding rows or columns.
+                        <strong>Step 5:</strong> Compare calculated \(F_r\) and \(F_c\) with the corresponding value in F-statistic table. {`\\[
+                            \\begin{aligned}
+                            F(a-1, (a - 1)(b-1)) &= 3.26\\\\
+                            F(b-1, (a-1)(b-1)) &= 3.49
+                            \\end{aligned}
+                            \\]`} As both the table values are greater than the calculated values, we accept both the null hypotheses.
                     </p>
                 </div>
             </ol>
