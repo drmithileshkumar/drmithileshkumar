@@ -855,7 +855,38 @@
             <h5>Time series analysis</h5>
             <ol>
                 <li style="font-weight: bold;">What is time series data?</li>
+                <div>
+                    <p>
+                        <strong>Solution:</strong> Time series data refers to a sequence of data points collected and arranged in chronological order over regular intervals of time. Each data point in a time series represents observations or measurements taken at a specific time or period. Time series data is commonly used in various fields such as economics, finance, meteorology, engineering, and social sciences for analyzing trends, patterns, and making predictions about future values based on past behavior. Examples of time series data include stock prices, temperature readings, sales figures, population counts, and more.
+                    </p>
+                </div>
                 <li style="font-weight: bold;">What are components of time-series data? Explain using graphs.</li>
+                <div>
+                    <p>
+                        <strong>Solution:</strong> Time-series data consists of observations taken at different points in time. 
+                        <img src="/courses/mathematics2/originalTime.jpg" alt="timeseries" width="300px">
+                        <br>
+                        The primary components of time-series data are:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Trend:</strong> Trend represents the long-term movement or direction of the data over time. It indicates whether the data is increasing, decreasing, or staying relatively constant. Trends can be upward, downward, or horizontal.
+                            <img src="/courses/mathematics2/trend.jpg" alt="trend" width="300px">
+                        </li>
+                        <li>
+                            <strong>Seasonality</strong>: Seasonality refers to patterns that repeat at regular intervals within a specific period, such as daily, weekly, monthly, or yearly. These patterns are often influenced by factors like weather, holidays, or cultural events.
+                            <img src="/courses/mathematics2/seasonality.jpg" alt="seasonality" width="300px">
+                        </li>
+                        <li>
+                            <strong>Cyclical Variations</strong>: Cyclical variations are fluctuations in the data that occur at irregular intervals, typically over multiple years. These fluctuations are not as regular as seasonal patterns and can be influenced by economic or business cycles.
+                            <img src="/courses/mathematics2/cyclic.jpg" alt="cyclic" width="300px">
+                        </li>
+                        <li>
+                            <strong>Irregular or Random Components</strong>: Irregular components, also known as residuals or noise, are unpredictable fluctuations that do not follow a specific pattern. They represent the random variability in the data that cannot be attributed to trend, seasonality, or cyclical variations.
+                            <img src="/courses/mathematics2/randomcomponent.jpg" alt="randomcomponent" width="300px">
+                        </li>
+                    </ul>
+                </div>
                 <li style="font-weight: bold;">What are simple average and moving average analysis of trend?</li>
                 <li style="font-weight: bold;">
                     Calculate the moving averages and mean square error with group size 3 for the data 9, 8, 9, 12, 9, 12, 11, 7, 13, 9, 11, 10.
