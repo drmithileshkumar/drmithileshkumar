@@ -501,7 +501,7 @@
                             <strong>Total mean:</strong> Calculate total mean as {`\\[
                                 \\begin{aligned}
                                 \\mu &= \\frac{\\mu_{r1} + \\mu_{r2} + \\cdots + \\mu_{ra}}{a}\\\\
-                                     &+ \\frac{\\mu_{c1} + \\mu_{c2} + \\cdots + \\mu_{cb}}{b}
+                                     &= \\frac{\\mu_{c1} + \\mu_{c2} + \\cdots + \\mu_{cb}}{b}
                                 \\end{aligned}
                                 \\]`}
                         </li>
@@ -727,7 +727,120 @@
                     </table>
                 </li>
                 <div>
-                    <strong>Solution:</strong>
+                    <p><strong>Solution:</strong></p>
+                    <p>
+                        <strong>Step 1:</strong> Write the hypotheses
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Null Hypothesis </strong>: 
+                            <ol>
+                                <li>
+                                    <strong>{`\\(H^{(0)}_0\\)`}:</strong> {`\\(\\mu_{r1} = \\mu_{r2} = \\mu_{r3} = \\mu_{r4}=\\mu_{r5}\\)`}
+                                </li>
+                                <li>
+                                    <strong>{`\\(H^{(1)}_0\\)`}:</strong> {`\\(\\mu_{c1} = \\mu_{c2} = \\mu_{c4} = \\mu_{c5}\\)`}
+                                </li>
+                            </ol>
+                            
+                        </li>
+                        <li>
+                            <strong>Alternative Hypothesis</strong>: 
+                            <ol>
+                                <li>
+                                    <strong>{`\\(H^{(0)}_1\\)`}:</strong> At least one {`\\(\\mu_{rj}\\)`} differs among {`\\(\\mu_{r1}, \\mu_{r2}, \\cdots, \\mu_{r5}\\)`}
+                                </li>
+                                <li>
+                                    <strong>{`\\(H^{(1)}_1\\)`}:</strong> At least one {`\\(\\mu_{cj}\\)`} differs among {`\\(\\mu_{c1}, \\mu_{c2}, \\cdots, \\mu_{c4}\\)`}
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Step 2:</strong> Calculate means.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Row means:</strong> As shown in the table, calculate means for each row. {`\\[
+                                \\mu_{rk} = \\frac{x_{k1} + x_{k2} + \\cdots + x_{kb}}{b}
+                                \\]`}
+                            Using the above formula for each row, we get {`\\[
+                                \\begin{aligned}
+                                \\mu_{r1} &= 315.75\\\\
+                                \\mu_{r2} &= 374\\\\
+                                \\mu_{r3} &= 348\\\\
+                                \\mu_{r4} &= 183.75\\\\
+                                \\mu_{r5} &= 224.25
+                                \\end{aligned}
+                                \\]`}
+                        </li>
+                        <li>
+                            <strong>Column means:</strong> As shown in the table, calculate means for each column. {`\\[
+                                \\mu_{ck} = \\frac{x_{1k} + x_{2k} + \\cdots + x_{ak}}{a}
+                                \\]`}
+                            Using the above formula for each column, we get {`\\[
+                                \\begin{aligned}
+                                \\mu_{c1} &= 277.2\\\\
+                                \\mu_{c2} &= 328.8\\\\
+                                \\mu_{c3} &= 255.8\\\\
+                                \\mu_{c4} &= 294.8
+                                \\end{aligned}
+                                \\]`}
+                        </li>
+                        <li>
+                            <strong>Total mean:</strong> Calculate total mean as {`\\[
+                                \\begin{aligned}
+                                \\mu &= \\frac{\\mu_{r1} + \\mu_{r2} + \\cdots + \\mu_{ra}}{a}\\\\
+                                     &= \\frac{\\mu_{c1} + \\mu_{c2} + \\cdots + \\mu_{cb}}{b}\\\\
+                                     &= 289.15
+                                \\end{aligned}
+                                \\]`}
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Step 2:</strong> Calculate variations.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Total variation</strong> The total variation is denoted by \(v\) and calculated as {`\\[v = \\sum_{j, k}(x_{jk}-\\mu)^2\\]`}
+                            Total variation can be split into three parts {`\\[v = v_r + v_c + v_e\\]`} where \(v_r\) is variation between rows, \(v_c\) is variation between columns and \(v_e\) is random variation (or variation due to error).
+                        </li>
+                        <li>
+                            <strong>Variation between rows:</strong> We calculate variation between rows using (here \(a = 5, b = 4\)) {`\\[
+                                v_{r} = b\\sum_{i = 1}^a (\\mu_{ri} - \\mu)^2 = 106766.3
+                                \\]`}
+                        </li>
+                        <li>
+                            <strong>Variation between columns:</strong> It is denoted by \(v_b\). {`\\[
+                                v_c = a\\sum_{i = 1}^b (\\mu_{ci} - \\mu)^2=8734.85
+                                \\]`}
+                        </li>
+                        <li>
+                            <strong>Variation due to error:</strong> \[v_e = v - v_r - v_c\]
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Step 3:</strong> Calculate mean variations.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Mean variation within rows:</strong>
+                            {`\\[MSR = \\frac{v_r}{a - 1}\\]`} where the degree of freedom is \(a - 1\)
+                        </li>
+                        <li>
+                            <strong>Mean variation between columns:</strong>
+                            {`\\[MSC = \\frac{v_c}{b - 1}\\]`} where the degree of freedom is \(b - 1\)
+                        </li>
+                        <li>
+                            <strong>Mean variation due to error:</strong> {`\\[MSE = \\frac{v_e}{(a - 1)(b - 1)}\\]`} where the degree of freedom is \((a - 1)(b - 1)\)
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Step 4:</strong> Calculate \(F\)-statistic. The \(F_r\) value for rows is given as {`\\[F_r = \\frac{MSR}{MSE}\\]`} The \(F_c\) value for columns is given as {`\\[F_c = \\frac{MSC}{MSE}\\]`} 
+                    </p>
+                    <p>
+                        <strong>Step 5:</strong> Compare calculated \(F_r\) and \(F_c\) with the corresponding value in F-statistic table. If the calculated value is larger, then reject the null hypothesis for the corresponding rows or columns.
+                    </p>
                 </div>
             </ol>
         </Content>
