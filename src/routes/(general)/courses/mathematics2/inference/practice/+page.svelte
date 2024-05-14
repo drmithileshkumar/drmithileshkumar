@@ -888,9 +888,143 @@
                     </ul>
                 </div>
                 <li style="font-weight: bold;">What are simple average and moving average analysis of trend?</li>
+                <div>
+                    <p>
+                        <strong>Solution:</strong>
+                    </p>
+                    <p>
+                        <strong>Simple Average:</strong> In simple average analysis, you calculate the average value of the data over a specified period. This average value represents a smoothed-out version of the data and can help identify the overall trend. For example, if you have monthly sales data for a year, you can calculate the average sales for each month and observe whether there is an increasing, decreasing, or stable trend over time.
+                    </p>
+                    <p>
+                        <strong>Moving Average:</strong> Moving average analysis involves calculating the average of a subset of consecutive data points over time, with the "window" or "period" determining the number of points included in the average. Unlike the simple average, which considers all data points equally, moving averages give more weight to recent observations. This technique helps to smooth out short-term fluctuations and highlight the underlying trend more effectively. For instance, a 3-month moving average involves taking the average of the current month and the two preceding months, shifting the window forward with each new observation.
+                    </p>
+                </div>
                 <li style="font-weight: bold;">
                     Calculate the moving averages and mean square error with group size 3 for the data 9, 8, 9, 12, 9, 12, 11, 7, 13, 9, 11, 10.
                 </li>
+                <div>
+                    <p>
+                        <strong>Solution:</strong>
+                        The general expression for the moving average is {`\\[
+                            M_t = \\frac{x_t + x_{t-1} + \\cdots + x_{t-n+1}}{n}
+                            \\]`}
+                            where the group size is \(n\) and \(t\ge n\)
+                    </p>
+                    <p>
+                        There are some points that should be kept in mind:
+                    </p>
+                    <ul>
+                        <li>In a sense, moving averages (MA) act like new data. The entries begin at (n)th position in the table as there are no moving averages for the first (n-1) entries.</li>
+                        <li>
+                            Error is calculated as {`\\[
+                                e_t = x_t - M_t
+                                \\]`}
+                        </li>
+                        <li>
+                            The mean square error MSE is calculated as {`\\[
+                                MSE = \\frac{\\sum_{t = n}^N}{N-n+1}
+                                \\]`}
+                        </li>
+                    </ul>
+                    <table>
+                        <tr>
+                            <th>\(t\)</th>
+                            <th>Data</th>
+                            <th>MA</th>
+                            <th>Error</th>
+                            <th>Error<sup>2</sup></th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <td>9</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>9</td>
+                            <td>(9 + 8 + 9)/3 = 8.667</td>
+                            <td>0.333</td>
+                            <td>0.111</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td>12</td>
+                            <td>(8 + 9 + 12)/3 = 9.667</td>
+                            <td>2.333</td>
+                            <td>5.444</td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>-1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <td>12</td>
+                            <td>11</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <td>11</td>
+                            <td>10.667</td>
+                            <td>0.333</td>
+                            <td>0.111</td>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <td>7</td>
+                            <td>10</td>
+                            <td>-3</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <td>13</td>
+                            <td>10.333</td>
+                            <td>2.667</td>
+                            <td>7.111</td>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <td>9</td>
+                            <td>9.667</td>
+                            <td>-0.667</td>
+                            <td>0.444</td>
+                        </tr>
+                        <tr>
+                            <th>11</th>
+                            <td>11</td>
+                            <td>11</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th>12</th>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                    <p>
+                        The mean square error is {`\\[
+                            MSE = \\frac{0.111 + 5.444 + \\cdots + 0.444 + 0 + 0}{12-3+1} = 2.42
+                            \\]`}
+                    </p>
+                </div>
             </ol>
         </Content>
     </Card>
