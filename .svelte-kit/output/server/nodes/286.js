@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Trigonometric functions/Angles/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Statistics/Mean deviation/_page.js';
 
 export const index = 286;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Trigonometric functions/Angles/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Statistics/Mean deviation/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Trigonometric functions/Angles/+page.js";
-export const imports = ["_app/immutable/nodes/286.C3kiu3dl.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/stores.Tx699Zxm.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/constants.VSvEql3V.js","_app/immutable/chunks/stores.CEZmFw4f.js","_app/immutable/chunks/entry.Bjm1R1NR.js"];
+export const universal_id = "src/routes/(general)/notes/maths/Statistics/Mean deviation/+page.js";
+export const imports = ["_app/immutable/nodes/286.D10cqgVg.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/stores.Tx699Zxm.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/constants.VSvEql3V.js","_app/immutable/chunks/stores.CDjaIrTD.js","_app/immutable/chunks/entry.CwYnTy4x.js"];
 export const stylesheets = ["_app/immutable/assets/Practice.DlILBa6z.css","_app/immutable/assets/Message.By06LWcb.css"];
 export const fonts = [];

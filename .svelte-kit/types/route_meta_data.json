@@ -94,6 +94,10 @@
 		"src/routes/(general)/courses/circuits/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/discrete": [
+		"src/routes/(general)/courses/discrete/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/internetlab": [
 		"src/routes/(general)/courses/internetlab/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -374,6 +378,10 @@
 		"src/routes/(general)/courses/linearalgebra/bases/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/mathematics1": [
+		"src/routes/(general)/courses/mathematics1/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/mathematics2": [
 		"src/routes/(general)/courses/mathematics2/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -576,6 +584,62 @@
 	],
 	"/(general)/courses/quantumml": [
 		"src/routes/(general)/courses/quantumml/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum": [
+		"src/routes/(general)/courses/quantum/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum/circuits": [
+		"src/routes/(general)/courses/quantum/circuits/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum/classical": [
+		"src/routes/(general)/courses/quantum/classical/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum/computers": [
+		"src/routes/(general)/courses/quantum/computers/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum/correction": [
+		"src/routes/(general)/courses/quantum/correction/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum/distance": [
+		"src/routes/(general)/courses/quantum/distance/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum/entropy": [
+		"src/routes/(general)/courses/quantum/entropy/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum/information": [
+		"src/routes/(general)/courses/quantum/information/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum/introduction": [
+		"src/routes/(general)/courses/quantum/introduction/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum/introduction/qubits": [
+		"src/routes/(general)/courses/quantum/introduction/qubits/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum/mechanics": [
+		"src/routes/(general)/courses/quantum/mechanics/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum/noise": [
+		"src/routes/(general)/courses/quantum/noise/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum/qft": [
+		"src/routes/(general)/courses/quantum/qft/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/quantum/search": [
+		"src/routes/(general)/courses/quantum/search/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(cv)/cv": [

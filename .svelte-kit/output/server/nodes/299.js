@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/practice/class12/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Three dimensional geometry/Equation of a line in space/_page.js';
 
 export const index = 299;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/practice/class12/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Three dimensional geometry/Equation of a line in space/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/practice/class12/+page.js";
-export const imports = ["_app/immutable/nodes/299.BTbKCyNA.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/Message.CIrIHE_d.js","_app/immutable/chunks/entry.Bjm1R1NR.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/stores.DzbTKMN6.js","_app/immutable/chunks/Practice.Dbywvd1W.js","_app/immutable/chunks/ripple.CM997ajP.js"];
-export const stylesheets = ["_app/immutable/assets/Link.CZNrpk-N.css","_app/immutable/assets/Message.By06LWcb.css","_app/immutable/assets/Practice.DlILBa6z.css"];
+export const universal_id = "src/routes/(general)/notes/maths/Three dimensional geometry/Equation of a line in space/+page.js";
+export const imports = ["_app/immutable/nodes/299.MmG1RlDS.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/stores.Tx699Zxm.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/constants.VSvEql3V.js","_app/immutable/chunks/stores.CDjaIrTD.js","_app/immutable/chunks/entry.CwYnTy4x.js"];
+export const stylesheets = ["_app/immutable/assets/Practice.DlILBa6z.css","_app/immutable/assets/Message.By06LWcb.css"];
 export const fonts = [];

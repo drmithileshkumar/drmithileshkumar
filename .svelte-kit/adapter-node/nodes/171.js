@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Application of integrals/Area between two curves/_page.js';
+import * as universal from '../entries/pages/(general)/iit/_page.js';
 
 export const index = 171;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Application of integrals/Area between two curves/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Application of integrals/Area between two curves/+page.js";
-export const imports = ["_app/immutable/nodes/171.E4Bujjbh.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/stores.Tx699Zxm.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/constants.VSvEql3V.js","_app/immutable/chunks/stores.CEZmFw4f.js","_app/immutable/chunks/entry.Bjm1R1NR.js"];
-export const stylesheets = ["_app/immutable/assets/Practice.DlILBa6z.css","_app/immutable/assets/Message.By06LWcb.css"];
+export const universal_id = "src/routes/(general)/iit/+page.js";
+export const imports = ["_app/immutable/nodes/171.A9dV-yVz.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/Link.UoqBFEnn.js","_app/immutable/chunks/spread.CgU5AtxT.js","_app/immutable/chunks/entry.CwYnTy4x.js","_app/immutable/chunks/index.DEfXOQ1n.js"];
+export const stylesheets = ["_app/immutable/assets/Message.By06LWcb.css","_app/immutable/assets/Link.CZNrpk-N.css"];
 export const fonts = [];

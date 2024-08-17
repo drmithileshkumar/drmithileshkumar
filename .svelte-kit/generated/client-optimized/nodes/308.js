@@ -1,1 +1,3 @@
-export { default as component } from "../../../../src/routes/(general)/settings/+page.svelte";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Vector algebra/Product of two vectors/+page.js";
+export { universal };
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Vector algebra/Product of two vectors/+page.svelte";

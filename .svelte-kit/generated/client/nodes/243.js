@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Relations and functions 11/Cartesian product of sets/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Relations and functions 11/Cartesian product of sets/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/+page.svelte";

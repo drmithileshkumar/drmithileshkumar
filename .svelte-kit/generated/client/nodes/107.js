@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/courses/mathematics2/inference/practice/+page.js";
+import * as universal from "../../../../src/routes/(general)/courses/mathematics2/assignment1/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/courses/mathematics2/inference/practice/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/courses/mathematics2/assignment1/+page.svelte";

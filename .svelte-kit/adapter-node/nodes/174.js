@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Binomial theorem/General and middle terms/_page.js';
+import * as universal from '../entries/pages/(general)/iit/maths/2021/question1/_page.js';
 
 export const index = 174;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Binomial theorem/General and middle terms/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/maths/2021/question1/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Binomial theorem/General and middle terms/+page.js";
-export const imports = ["_app/immutable/nodes/174.BzkklQ9f.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/stores.Tx699Zxm.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/constants.VSvEql3V.js","_app/immutable/chunks/stores.CEZmFw4f.js","_app/immutable/chunks/entry.Bjm1R1NR.js"];
-export const stylesheets = ["_app/immutable/assets/Practice.DlILBa6z.css","_app/immutable/assets/Message.By06LWcb.css"];
+export const universal_id = "src/routes/(general)/iit/maths/2021/question1/+page.js";
+export const imports = ["_app/immutable/nodes/174.Cnpf8B7o.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/stores.Tx699Zxm.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/stores.CDjaIrTD.js","_app/immutable/chunks/entry.CwYnTy4x.js","_app/immutable/chunks/index.tWgQeGQy.js","_app/immutable/chunks/constants.VSvEql3V.js"];
+export const stylesheets = ["_app/immutable/assets/174.iUR-YnCf.css"];
 export const fonts = [];

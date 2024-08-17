@@ -40,6 +40,10 @@
                 <h5>DSU</h5>
                 
                     <List class="courses" dense>
+                      <Item on:SMUI:action={() => goto('/courses/mathematics1')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Mathematics I</Text>
+                      </Item>
                       <Item on:SMUI:action={() => goto('/courses/mathematics2')}>
                         <Graphic class="material-icons">menu_book</Graphic>
                         <Text>Mathematics II</Text>
@@ -51,6 +55,14 @@
                       <Item on:SMUI:action={() => goto('/courses/internetlab')}>
                         <Graphic class="material-icons">menu_book</Graphic>
                         <Text>Internet Technologies Lab</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/discrete')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Discrete Mathematical Structures</Text>
+                      </Item>
+                      <Item on:SMUI:action={() => goto('/courses/quantum')}>
+                        <Graphic class="material-icons">menu_book</Graphic>
+                        <Text>Quantum Computation and Quantum Information</Text>
                       </Item>
                     </List>
                   

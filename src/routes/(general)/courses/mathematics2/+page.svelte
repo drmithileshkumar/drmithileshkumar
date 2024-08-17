@@ -124,7 +124,7 @@
         <Card>
             <Content>
                 <h6>Course Objectives (22CA1201)</h6>
-                <p>Student should be comportable in using probability concepts in making statistical inferences. They should be able to handle basic problems in linear optimization.</p>
+                <p>Student should be comfortable in using probability concepts in making statistical inferences. They should be able to handle basic problems in linear optimization.</p>
             </Content>
             <Actions>
                 <Textfield required variant="outlined" bind:value={studentID} label="Student ID" style="width:50%;" input$emptyValueUndefined />

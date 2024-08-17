@@ -594,6 +594,10 @@
     "file": "chunks/content4.js",
     "name": "content"
   },
+  "_content5.js": {
+    "file": "chunks/content5.js",
+    "name": "content"
+  },
   "_css.js": {
     "file": "chunks/css.js",
     "name": "css"
@@ -1578,6 +1582,45 @@
     ],
     "css": [
       "_app/immutable/assets/_page.CGPcTYQq.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/discrete/+page.js": {
+    "file": "entries/pages/(general)/courses/discrete/_page.js",
+    "name": "entries/pages/(general)/courses/discrete/_page",
+    "src": "src/routes/(general)/courses/discrete/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/discrete/+page.svelte": {
+    "file": "entries/pages/(general)/courses/discrete/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/discrete/_page.svelte",
+    "src": "src/routes/(general)/courses/discrete/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_stores.js",
+      "_Textfield.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Actions.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_Cell.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_TabBar.js",
+      "_Subheader.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CpMIQ1WE.css",
       "_app/immutable/assets/Link.CZNrpk-N.css"
     ]
   },
@@ -3672,6 +3715,45 @@
       "_app/immutable/assets/NavList.Bu7JEHbj.css"
     ]
   },
+  "src/routes/(general)/courses/mathematics1/+page.js": {
+    "file": "entries/pages/(general)/courses/mathematics1/_page.js",
+    "name": "entries/pages/(general)/courses/mathematics1/_page",
+    "src": "src/routes/(general)/courses/mathematics1/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/mathematics1/+page.svelte": {
+    "file": "entries/pages/(general)/courses/mathematics1/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/mathematics1/_page.svelte",
+    "src": "src/routes/(general)/courses/mathematics1/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_client.js",
+      "_stores.js",
+      "_Textfield.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Actions.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_Cell.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_TabBar.js",
+      "_Subheader.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CpMIQ1WE.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
   "src/routes/(general)/courses/mathematics2/+page.js": {
     "file": "entries/pages/(general)/courses/mathematics2/_page.js",
     "name": "entries/pages/(general)/courses/mathematics2/_page",
@@ -4817,6 +4899,459 @@
     ],
     "css": [
       "_app/immutable/assets/_page.CGPcTYQq.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/_page",
+    "src": "src/routes/(general)/courses/quantum/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_client.js",
+      "_stores.js",
+      "_TabBar.js",
+      "_CommonLabel.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Cell.js",
+      "_Button.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.B3_xG524.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/circuits/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/circuits/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/circuits/_page",
+    "src": "src/routes/(general)/courses/quantum/circuits/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/circuits/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/circuits/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/circuits/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/circuits/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.SifkIANA.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/classical/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/classical/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/classical/_page",
+    "src": "src/routes/(general)/courses/quantum/classical/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/classical/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/classical/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/classical/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/classical/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.SifkIANA.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/computers/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/computers/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/computers/_page",
+    "src": "src/routes/(general)/courses/quantum/computers/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/computers/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/computers/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/computers/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/computers/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.SifkIANA.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/correction/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/correction/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/correction/_page",
+    "src": "src/routes/(general)/courses/quantum/correction/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/correction/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/correction/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/correction/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/correction/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.SifkIANA.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/distance/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/distance/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/distance/_page",
+    "src": "src/routes/(general)/courses/quantum/distance/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/distance/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/distance/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/distance/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/distance/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.SifkIANA.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/entropy/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/entropy/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/entropy/_page",
+    "src": "src/routes/(general)/courses/quantum/entropy/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/entropy/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/entropy/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/entropy/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/entropy/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.SifkIANA.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/information/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/information/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/information/_page",
+    "src": "src/routes/(general)/courses/quantum/information/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/information/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/information/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/information/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/information/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.SifkIANA.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/introduction/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/introduction/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/introduction/_page",
+    "src": "src/routes/(general)/courses/quantum/introduction/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/introduction/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/introduction/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/introduction/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/introduction/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.SifkIANA.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/introduction/qubits/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/introduction/qubits/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/introduction/qubits/_page",
+    "src": "src/routes/(general)/courses/quantum/introduction/qubits/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/introduction/qubits/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/introduction/qubits/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/introduction/qubits/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/introduction/qubits/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.SifkIANA.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/mechanics/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/mechanics/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/mechanics/_page",
+    "src": "src/routes/(general)/courses/quantum/mechanics/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/mechanics/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/mechanics/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/mechanics/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/mechanics/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.SifkIANA.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/noise/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/noise/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/noise/_page",
+    "src": "src/routes/(general)/courses/quantum/noise/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/noise/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/noise/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/noise/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/noise/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.SifkIANA.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/qft/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/qft/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/qft/_page",
+    "src": "src/routes/(general)/courses/quantum/qft/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/qft/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/qft/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/qft/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/qft/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.SifkIANA.css",
+      "_app/immutable/assets/Link.CZNrpk-N.css"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/search/+page.js": {
+    "file": "entries/pages/(general)/courses/quantum/search/_page.js",
+    "name": "entries/pages/(general)/courses/quantum/search/_page",
+    "src": "src/routes/(general)/courses/quantum/search/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/quantum/search/+page.svelte": {
+    "file": "entries/pages/(general)/courses/quantum/search/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/quantum/search/_page.svelte",
+    "src": "src/routes/(general)/courses/quantum/search/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_github-dark.js",
+      "_stores.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores2.js",
+      "_content5.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.SifkIANA.css",
       "_app/immutable/assets/Link.CZNrpk-N.css"
     ]
   },

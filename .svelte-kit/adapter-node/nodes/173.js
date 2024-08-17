@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.js';
+import * as universal from '../entries/pages/(general)/iit/maths/2021/_page.js';
 
 export const index = 173;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/maths/2021/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.js";
-export const imports = ["_app/immutable/nodes/173.BI_G9oec.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/stores.Tx699Zxm.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/constants.VSvEql3V.js","_app/immutable/chunks/stores.CEZmFw4f.js","_app/immutable/chunks/entry.Bjm1R1NR.js"];
-export const stylesheets = ["_app/immutable/assets/Practice.DlILBa6z.css","_app/immutable/assets/Message.By06LWcb.css"];
+export const universal_id = "src/routes/(general)/iit/maths/2021/+page.js";
+export const imports = ["_app/immutable/nodes/173.DJGLBKg3.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/entry.CwYnTy4x.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/constants.VSvEql3V.js"];
+export const stylesheets = ["_app/immutable/assets/173.B7H-I6IB.css","_app/immutable/assets/Message.By06LWcb.css","_app/immutable/assets/Link.CZNrpk-N.css"];
 export const fonts = [];
