@@ -122,15 +122,15 @@
         </header>
         <aside>
             <section class="about">
-                <h2>Profile</h2>
-                <p style="font-weight: 400;line-height: 1.45;font-size: 0.9em;">Hello, I'm Mithilesh Kumar. I'm passionate about anything related to Quantum Mechanics. Currently, I'm working actively in quantum error correction. I have done research in quantum-safe cryptography (Post-Doc). My PhD involved studying parameterized algorithms. Prior to that I have masters in two fields, computer science (CMI) and physics (IIT Kanpur). In addition, I have founded two websites Mathril (Mathematics) and Vectorial (Graphics).</p>
+                <h2>Profile (<a href="https://scholar.google.com/citations?user=VuXFVHEAAAAJ&hl=en">Google Scholar</a>)</h2>
+                <p style="font-weight: 400;line-height: 1.45;font-size: 0.9em;">Hello, I'm Mithilesh Kumar. I'm passionate about anything related to Quantum Mechanics. Currently, I'm working actively in quantum machine learning, quantum entanglement and quantum error correction. I have done research in quantum-safe cryptography (Post-Doc). My PhD involved studying parameterized algorithms. Prior to that I have masters in two fields, computer science (CMI) and physics (IIT Kanpur). In addition, I have founded two websites Mathril (Mathematics) and Vectorial (Graphics).</p>
             </section>
             <div class="contact">
                 <h2>Contact</h2>
                 <table class="contactable" style="font-size: 0.9em">
                     <tr>
                         <td><span class="material-icons">home</span></td>
-                        <td>Bokaro</td>
+                        <td>Bangalore</td>
                     </tr>
                     <tr>
                         <td style="padding-right:0"><span class="material-icons">phone</span></td>
@@ -328,7 +328,7 @@
             </section>
         </div>
         <section class="papers">
-            <h2>Publications</h2>
+            <h2>Publications (Citations 101 H-index 4)</h2>
             <Papers />
         </section>
     </article>

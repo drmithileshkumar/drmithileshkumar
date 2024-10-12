@@ -55,9 +55,7 @@ declare module '$env/static/private' {
 	export const configsetroot: string;
 	export const DriverData: string;
 	export const EDITOR: string;
-	export const EFC_3212: string;
-	export const FPS_BROWSER_APP_PROFILE_STRING: string;
-	export const FPS_BROWSER_USER_PROFILE_STRING: string;
+	export const EFC_5196: string;
 	export const GIT_ASKPASS: string;
 	export const HOME: string;
 	export const HOMEDRIVE: string;
@@ -187,9 +185,7 @@ declare module '$env/dynamic/private' {
 		configsetroot: string;
 		DriverData: string;
 		EDITOR: string;
-		EFC_3212: string;
-		FPS_BROWSER_APP_PROFILE_STRING: string;
-		FPS_BROWSER_USER_PROFILE_STRING: string;
+		EFC_5196: string;
 		GIT_ASKPASS: string;
 		HOME: string;
 		HOMEDRIVE: string;
