@@ -154,7 +154,7 @@
                     <table>
                         <tr>
                             <td class="dates">
-                                2024 - Present
+                                2024 - 2024
                             </td>
                             <td>
                                 <div class="edu">

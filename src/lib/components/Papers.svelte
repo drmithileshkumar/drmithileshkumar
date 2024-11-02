@@ -26,6 +26,40 @@
     }
 </style>
 <div class="papers {classType} {pdfReady ? 'flex' : classType}" bind:clientWidth="{W}">
+    <h2>Quantum Information</h2>
+    <Paper>
+        <p slot="authors">
+            Mithilesh Kumar
+        </p>
+        <p slot="title">
+            Schmidt Decomposition of Multipartite states
+        </p>
+        <p slot="venue">
+            arXiv, 2024
+        </p>
+    </Paper>
+    <Paper>
+        <p slot="authors">
+            Mithilesh Kumar
+        </p>
+        <p slot="title">
+            Schmidt Decomposition of Quadripartite states
+        </p>
+        <p slot="venue">
+            arXiv, 2024
+        </p>
+    </Paper>
+    <Paper>
+        <p slot="authors">
+            Mithilesh Kumar
+        </p>
+        <p slot="title">
+            Schmidt Decomposition of Tripartite states
+        </p>
+        <p slot="venue">
+            arXiv, 2024
+        </p>
+    </Paper>
     <h2>Journal</h2>
     <Paper>
         <p slot="authors">
