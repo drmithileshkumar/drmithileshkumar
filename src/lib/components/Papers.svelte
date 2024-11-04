@@ -35,7 +35,7 @@
             Schmidt Decomposition of Multipartite states
         </p>
         <p slot="venue">
-            10.13140/RG.2.2.19713.88162, 2024
+            <a href="https://www.researchgate.net/publication/385491083_Schmidt_Decomposition_of_Multipartite_States">10.13140/RG.2.2.19713.88162</a>, 2024
         </p>
     </Paper>
     <Paper>
@@ -46,7 +46,7 @@
             Schmidt Decomposition of Quadripartite states
         </p>
         <p slot="venue">
-            10.13140/RG.2.2.26424.76807, 2024
+            <a href="https://www.researchgate.net/publication/385490959_Schmidt_Decomposition_of_Quadripartite_States">10.13140/RG.2.2.26424.76807</a>, 2024
         </p>
     </Paper>
     <Paper>
@@ -57,7 +57,7 @@
             Schmidt Decomposition of Tripartite states
         </p>
         <p slot="venue">
-            10.13140/RG.2.2.24747.04648, 2024
+            <a href="https://www.researchgate.net/publication/385491145_Schmidt_Decomposition_of_Tripartite_States">10.13140/RG.2.2.24747.04648</a>, 2024
         </p>
     </Paper>
     <h2>Journal</h2>
