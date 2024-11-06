@@ -35,6 +35,17 @@
             Schmidt Decomposition of Multipartite states
         </p>
         <p slot="venue">
+            <a href="https://arxiv.org/abs/2411.02473">CoRR abs/2411.02473 (2024)</a>
+        </p>
+    </Paper>
+    <Paper>
+        <p slot="authors">
+            Mithilesh Kumar
+        </p>
+        <p slot="title">
+            Schmidt Decomposition of Multipartite states
+        </p>
+        <p slot="venue">
             <a href="https://www.researchgate.net/publication/385491083_Schmidt_Decomposition_of_Multipartite_States">10.13140/RG.2.2.19713.88162</a>, 2024
         </p>
     </Paper>
@@ -140,6 +151,17 @@
         </p>
     </Paper>
     <h2>Arxiv</h2>
+    <Paper>
+        <p slot="authors">
+            Mithilesh Kumar, Daniel Lokshtanov
+        </p>
+        <p slot="title">
+            Faster Exact and Parameterized Algorithm for Feedback Vertex Set in Bipartite Tournaments
+        </p>
+        <p slot="venue">
+            <a href="https://arxiv.org/abs/2411.02821">CoRR abs/2411.02821 (2024)</a>
+        </p>
+    </Paper>
     <Paper>
         <p slot="authors">
             Akash Kumar, Mithilesh Kumar
