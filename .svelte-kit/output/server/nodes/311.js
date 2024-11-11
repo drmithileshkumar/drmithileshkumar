@@ -5,6 +5,6 @@ let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/(general)/practice/_page.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/(general)/practice/+page.js";
-export const imports = ["_app/immutable/nodes/311.TGSxSq_W.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/entry.bo4QW58g.js","_app/immutable/chunks/index.DEfXOQ1n.js"];
+export const imports = ["_app/immutable/nodes/311.Sfu3wej1.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/entry.BkSiO45B.js","_app/immutable/chunks/index.DEfXOQ1n.js"];
 export const stylesheets = ["_app/immutable/assets/Message.By06LWcb.css","_app/immutable/assets/Link.CZNrpk-N.css","_app/immutable/assets/Practice.DlILBa6z.css"];
 export const fonts = [];

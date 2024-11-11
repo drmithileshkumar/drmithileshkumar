@@ -37,6 +37,17 @@
                 On properties of Schmidt Decomposition
             </p>
             <p slot="venue">
+                <a href="https://arxiv.org/abs/2411.05703">CoRR abs/2411.05703 (2024)</a>
+            </p>
+        </Paper>
+        <Paper>
+            <p slot="authors">
+                Mithilesh Kumar
+            </p>
+            <p slot="title">
+                On properties of Schmidt Decomposition
+            </p>
+            <p slot="venue">
                 <a href="https://www.researchgate.net/publication/385630874_On_properties_of_Schmidt_Decomposition">10.13140/RG.2.2.19022.47687</a>, 2024
             </p>
         </Paper>
