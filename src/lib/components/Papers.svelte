@@ -34,6 +34,17 @@
                 Mithilesh Kumar
             </p>
             <p slot="title">
+                Local Operations in Multiparty Quantum Systems
+            </p>
+            <p slot="venue">
+                <a href="https://www.researchgate.net/publication/385864724_Local_Operations_in_Multiparty_Quantum_Systems">10.13140/RG.2.2.10422.51524</a>, 2024
+            </p>
+        </Paper>
+        <Paper>
+            <p slot="authors">
+                Mithilesh Kumar
+            </p>
+            <p slot="title">
                 On properties of Schmidt Decomposition
             </p>
             <p slot="venue">
