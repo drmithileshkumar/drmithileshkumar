@@ -9,7 +9,7 @@
             grid-template-areas:
             "header header"
             "aside main"
-            "papers papers";
+            "academic academic";
             padding: 1em;
             width: 1200px;
             margin: auto;
@@ -40,8 +40,8 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
-        .papers {
-            grid-area: papers;
+        .academic {
+            grid-area: academic;
         }
         .profile {
             grid-area: profile;
@@ -109,6 +109,9 @@
             font-size: 0.9em;
             letter-spacing: 0.02em;
         }
+        ul li {
+            margin-bottom: 0.5em;
+        }
     </style>
     <article>
         <header>
@@ -117,13 +120,13 @@
             </div>
             <div class="details">
                 <div class="name">Dr Mithilesh Kumar</div>
-                <div class="intro">Ex-IITian, Gold Medalist, Scientist, Teacher, Web developer</div>
+                <div class="intro">Open quantum systems</div>
             </div>
         </header>
         <aside>
             <section class="about">
                 <h2>Profile (<a href="https://scholar.google.com/citations?user=VuXFVHEAAAAJ&hl=en">Google Scholar</a>)</h2>
-                <p style="font-weight: 400;line-height: 1.45;font-size: 0.9em;">Hello, I'm Mithilesh Kumar. I'm passionate about anything related to Quantum Mechanics. Currently, I'm working actively in quantum machine learning, quantum entanglement and quantum error correction. I have done research in quantum-safe cryptography (Post-Doc). My PhD involved studying parameterized algorithms. Prior to that I have masters in two fields, computer science (CMI) and physics (IIT Kanpur). In addition, I have founded two websites Mathril (Mathematics) and Vectorial (Graphics).</p>
+                <p style="font-weight: 400;line-height: 1.45;font-size: 0.9em;">Hello, I'm Mithilesh Kumar. I'm passionate about anything related to Quantum Mechanics. Currently, I'm working actively in open quantum systems, quantum machine learning, quantum entanglement and quantum error correction.</p>
             </section>
             <div class="contact">
                 <h2>Contact</h2>
@@ -170,9 +173,9 @@
                             </td>
                             <td>
                                 <div class="edu">
-                                    <div class="degree">Web development</div>
-                                    <div class="institute">Self-taught</div>
-                                    <div class="description">created websites mathril.com and vectorial.app</div>
+                                    <div class="degree">Founder</div>
+                                    <div class="institute">Self-employed</div>
+                                    <div class="description">created <a href="https://mathril.com">Mathril</a> and <a href="https://vectorial.app">Vectorial</a></div>
                                 </div>
                             </td>
                         </tr>
@@ -327,8 +330,30 @@
                 </table>
             </section>
         </div>
-        <section class="papers">
-            <h2>Publications (Citations 101 H-index 4)</h2>
-            <Papers />
+        <section class="academic">
+            <section class="courses">
+                <h2>Courses taught</h2>
+                <ul>
+                    <li>
+                        <strong>Web development</strong>: HTML, CSS, JavaScript
+                    </li>
+                    <li>
+                        <strong>Mathematics I</strong>: Logic, Sets, Combinatorics
+                    </li>
+                    <li>
+                        <strong>Mathematics II</strong>: Probability and statistics
+                    </li>
+                    <li>
+                        <strong>Discrete mathematical structures</strong>: Logic, Sets, Combinatorics
+                    </li>
+                    <li>
+                        <strong>Quantum computing</strong>: Quantum algorithms
+                    </li>
+                </ul>
+            </section>
+            <section class="papers">
+                <h2 style="margin-bottom: 0;">Research (Citations 101 H-index 4)</h2>
+                <Papers />
+            </section>
         </section>
     </article>

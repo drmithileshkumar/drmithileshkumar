@@ -5,6 +5,6 @@ let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/conic/_page.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/(general)/notes/maths/conic/+page.js";
-export const imports = ["_app/immutable/nodes/196.DA3x9duq.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/stores.Tx699Zxm.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/stores.BcT7jKkI.js","_app/immutable/chunks/entry.VGbOYKRr.js","_app/immutable/chunks/index.tWgQeGQy.js"];
+export const imports = ["_app/immutable/nodes/196.zIOhkv8N.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/stores.Tx699Zxm.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/stores.ifnepyKi.js","_app/immutable/chunks/entry.AcyzW-Ls.js","_app/immutable/chunks/index.tWgQeGQy.js"];
 export const stylesheets = ["_app/immutable/assets/196.mIDseGdW.css","_app/immutable/assets/Canvas.CaOi_q3i.css"];
 export const fonts = [];

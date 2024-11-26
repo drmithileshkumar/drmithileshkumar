@@ -5,7 +5,7 @@
     .paper {
         display: grid;
         grid-template-rows: auto auto auto;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
         color: currentColor;
     }
     .authors {
@@ -16,7 +16,7 @@
         opacity: 0.8;
     }
     .title {
-        font-weight: 700;
+        font-weight: 500;
         font-size: 1.1em;
     }
     .venue {

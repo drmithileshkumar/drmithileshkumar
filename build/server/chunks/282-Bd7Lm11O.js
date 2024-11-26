@@ -1,0 +1,23 @@
+import { r as redirect } from './index-DzcLzHBX.js';
+
+async function load({ fetch, params, url }) {
+  if (!(url.host === "drmithileshkumar.com" || url.host === "localhost:5173" || url.host === "localhost:4173" || url.host === "localhost:3001")) {
+    redirect(301, `https://drmithileshkumar.com${url.pathname}`);
+  }
+}
+
+var _page = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  load: load
+});
+
+const index = 282;
+let component_cache;
+const component = async () => component_cache ??= (await import('./_page.svelte-DtjcpVel.js')).default;
+const universal_id = "src/routes/(general)/notes/maths/Sets/The empty set/+page.js";
+const imports = ["_app/immutable/nodes/282.XRJ-r3Gg.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/stores.Tx699Zxm.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/Practice.Dbywvd1W.js","_app/immutable/chunks/stores.DzbTKMN6.js","_app/immutable/chunks/ripple.CM997ajP.js","_app/immutable/chunks/common.q_H4qMxg.js","_app/immutable/chunks/quadratic.CoMnXl5v.js","_app/immutable/chunks/stores.ifnepyKi.js","_app/immutable/chunks/entry.AcyzW-Ls.js","_app/immutable/chunks/Image.svelte_svelte_type_style_lang.BhtO6jJh.js","_app/immutable/chunks/index.tWgQeGQy.js","_app/immutable/chunks/H3.vx1e-pVz.js"];
+const stylesheets = ["_app/immutable/assets/282.D-99u3C0.css","_app/immutable/assets/Message.By06LWcb.css","_app/immutable/assets/Practice.DlILBa6z.css","_app/immutable/assets/Image.BHX7T6Vo.css","_app/immutable/assets/H3.7oxlwD0N.css"];
+const fonts = [];
+
+export { component, fonts, imports, index, stylesheets, _page as universal, universal_id };
+//# sourceMappingURL=282-Bd7Lm11O.js.map

@@ -4,7 +4,7 @@
     let W = 500;
     export let pdfReady = false;
     // $: classType = W <= 700 ? 'flex': 'flex'
-    let classType = 'flex'
+    let classType = 'grid'
     let papers = [
         {
             authors: "Mithilesh Kumar, Srimathi Varadarajan, Håvard Raddum",
@@ -16,7 +16,7 @@
 <style>
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .flex {
         display: flex;
@@ -26,7 +26,7 @@
         margin: 0.2em;
     }
 </style>
-<div class="papers {classType} {pdfReady ? 'flex' : classType}" bind:clientWidth="{W}">
+<div class="papers {classType} {pdfReady ? 'grid' : classType}" bind:clientWidth="{W}">
     <section>
         <h2>Quantum Information</h2>
         <Paper>
@@ -37,18 +37,7 @@
                 Local Operations in Multiparty Quantum Systems
             </p>
             <p slot="venue">
-                <a href="https://arxiv.org/abs/2411.10710">CoRR abs/2411.10710 (2024)</a>
-            </p>
-        </Paper>
-        <Paper>
-            <p slot="authors">
-                Mithilesh Kumar
-            </p>
-            <p slot="title">
-                Local Operations in Multiparty Quantum Systems
-            </p>
-            <p slot="venue">
-                <a href="https://www.researchgate.net/publication/385864724_Local_Operations_in_Multiparty_Quantum_Systems">10.13140/RG.2.2.10422.51524</a>, 2024
+                <a href="https://arxiv.org/abs/2411.10710">CoRR abs/2411.10710 (2024)</a>, <a href="https://www.researchgate.net/publication/385864724_Local_Operations_in_Multiparty_Quantum_Systems">10.13140/RG.2.2.10422.51524</a>, 2024
             </p>
         </Paper>
         <Paper>
@@ -59,18 +48,7 @@
                 On properties of Schmidt Decomposition
             </p>
             <p slot="venue">
-                <a href="https://arxiv.org/abs/2411.05703">CoRR abs/2411.05703 (2024)</a>
-            </p>
-        </Paper>
-        <Paper>
-            <p slot="authors">
-                Mithilesh Kumar
-            </p>
-            <p slot="title">
-                On properties of Schmidt Decomposition
-            </p>
-            <p slot="venue">
-                <a href="https://www.researchgate.net/publication/385630874_On_properties_of_Schmidt_Decomposition">10.13140/RG.2.2.19022.47687</a>, 2024
+                <a href="https://arxiv.org/abs/2411.05703">CoRR abs/2411.05703 (2024)</a>, <a href="https://www.researchgate.net/publication/385630874_On_properties_of_Schmidt_Decomposition">10.13140/RG.2.2.19022.47687</a>, 2024
             </p>
         </Paper>
         <Paper>
@@ -81,18 +59,7 @@
                 Schmidt Decomposition of Multipartite states
             </p>
             <p slot="venue">
-                <a href="https://arxiv.org/abs/2411.02473">CoRR abs/2411.02473 (2024)</a>
-            </p>
-        </Paper>
-        <Paper>
-            <p slot="authors">
-                Mithilesh Kumar
-            </p>
-            <p slot="title">
-                Schmidt Decomposition of Multipartite states
-            </p>
-            <p slot="venue">
-                <a href="https://www.researchgate.net/publication/385491083_Schmidt_Decomposition_of_Multipartite_States">10.13140/RG.2.2.19713.88162</a>, 2024
+                <a href="https://arxiv.org/abs/2411.02473">CoRR abs/2411.02473 (2024)</a>, <a href="https://www.researchgate.net/publication/385491083_Schmidt_Decomposition_of_Multipartite_States">10.13140/RG.2.2.19713.88162</a>, 2024
             </p>
         </Paper>
         <Paper>
@@ -120,114 +87,7 @@
     </section>
     
     <section>
-        <h2>Journal</h2>
-        <Paper>
-            <p slot="authors">
-                Mithilesh Kumar, Srimathi Varadarajan, Håvard Raddum
-            </p>
-            <p slot="title">
-                Graphs and Self-dual additive codes over GF(4)
-            </p>
-            <p slot="venue">
-                WCC, 2019
-            </p>
-        </Paper>
-        <Paper>
-            <p slot="authors">
-                Mithilesh Kumar, Srimathi Varadarajan, Håvard Raddum
-            </p>
-            <p slot="title">
-                Reducing Lattice Enumeration Search Trees
-            </p>
-            <p slot="venue">
-                Infocommunications Journal, 2019
-            </p>
-        </Paper>
-        <Paper>
-            <p slot="authors">
-                Eduard Eiben, Mithilesh Kumar, Amer E. Mouawad, Fahad Panolan, Sebastian Siebertz
-            </p>
-            <p slot="title">
-                Lossy Kernels for Connected Dominating Set on Sparse Graphs
-            </p>
-            <p slot="venue">
-                SIAM J. Discret. Math. 33(3): 1743-1771 (2019)
-            </p>
-        </Paper>
-    </section>
-    
-    <section>
-        <h2>Conferences</h2>
-        <Paper>
-            <p slot="authors">
-                Eduard Eiben, Mithilesh Kumar, Amer E. Mouawad, Fahad Panolan, Sebastian Siebertz
-            </p>
-            <p slot="title">
-                Lossy Kernels for Connected Dominating Set on Sparse Graphs
-            </p>
-            <p slot="venue">
-                STACS 2018: 29:1-29:15
-            </p>
-        </Paper>
-        <Paper>
-            <p slot="authors">
-                Mithilesh Kumar, Daniel Lokshtanov
-            </p>
-            <p slot="title">
-                Faster Exact and Parameterized Algorithm for Feedback Vertex Set in Bipartite Tournaments
-            </p>
-            <p slot="venue">
-                FSTTCS 2016: 24:1-24:15
-            </p>
-        </Paper>
-        <Paper>
-            <p slot="authors">
-                Mithilesh Kumar, Daniel Lokshtanov
-            </p>
-            <p slot="title">
-                A 2lk Kernel for l-Component Order Connectivity
-            </p>
-            <p slot="venue">
-                IPEC 2016: 20:1-20:14
-            </p>
-        </Paper>
-        <Paper>
-            <p slot="authors">
-                Mithilesh Kumar, Daniel Lokshtanov
-            </p>
-            <p slot="title">
-                Faster Exact and Parameterized Algorithm for Feedback Vertex Set in Tournaments
-            </p>
-            <p slot="venue">
-                STACS 2016: 49:1-49:13
-            </p>
-        </Paper>
-    </section>
-    
-    <section>
-        <h2>Arxiv</h2>
-        <Paper>
-            <p slot="authors">
-                Mithilesh Kumar, Daniel Lokshtanov
-            </p>
-            <p slot="title">
-                Faster Exact and Parameterized Algorithm for Feedback Vertex Set in Bipartite Tournaments
-            </p>
-            <p slot="venue">
-                <a href="https://arxiv.org/abs/2411.02821">CoRR abs/2411.02821 (2024)</a>
-            </p>
-        </Paper>
-        <Paper>
-            <p slot="authors">
-                Akash Kumar, Mithilesh Kumar
-            </p>
-            <p slot="title">
-                Deletion to Induced Matching
-            </p>
-            <p slot="venue">
-                CoRR abs/2008.09660 (2020)
-            </p>
-        </Paper>
+        <h2>Quantum safe-cryptography</h2>
         <Paper>
             <p slot="authors">
                 Kanav Gupta, Mithilesh Kumar, Håvard Raddum
@@ -236,18 +96,7 @@
                 Obtuse Lattice Bases
             </p>
             <p slot="venue">
-                CoRR abs/2009.00384 (2020)
-            </p>
-        </Paper>
-        <Paper>
-            <p slot="authors">
-                Mithilesh Kumar
-            </p>
-            <p slot="title">
-                2-CLUB is NP-hard for distance to 2-club cluster graphs
-            </p>
-            <p slot="venue">
-                CoRR abs/1903.05425 (2019)
+                <a href="https://arxiv.org/abs/2009.00384">CoRR abs/2009.00384 (2020)</a>
             </p>
         </Paper>
         <Paper>
@@ -258,9 +107,35 @@
                 Faster Lattice Enumeration
             </p>
             <p slot="venue">
-                CoRR abs/1912.01781 (2019)
+                <a href="https://arxiv.org/abs/1912.01781">CoRR abs/1912.01781 (2019)</a>
             </p>
         </Paper>
+        <Paper>
+            <p slot="authors">
+                Mithilesh Kumar, Srimathi Varadarajan, Håvard Raddum
+            </p>
+            <p slot="title">
+                Graphs and Self-dual additive codes over GF(4)
+            </p>
+            <p slot="venue">
+                <a href="https://www.lebesgue.fr/sites/default/files/proceedings_WCC/WCC_2019_paper_24.pdf">WCC, 2019</a> 
+            </p>
+        </Paper>
+        <Paper>
+            <p slot="authors">
+                Mithilesh Kumar, Srimathi Varadarajan, Håvard Raddum
+            </p>
+            <p slot="title">
+                Reducing Lattice Enumeration Search Trees
+            </p>
+            <p slot="venue">
+                <a href="https://www.infocommunications.hu/documents/169298/4647244/InfocomJ_2019_4_All.pdf">Infocommunications Journal, 2019</a>
+            </p>
+        </Paper>
+    </section>
+
+    <section>
+        <h2>Kernelization</h2>
         <Paper>
             <p slot="authors">
                 Eduard Eiben, Mithilesh Kumar, Amer E. Mouawad, Fahad Panolan, Sebastian Siebertz
@@ -269,7 +144,7 @@
                 Lossy Kernels for Connected Dominating Set on Sparse Graphs
             </p>
             <p slot="venue">
-                CoRR abs/1706.09339 (2017)
+                <a href="https://epubs.siam.org/doi/10.1137/18M1172508">SIAM J. Discret. Math. 33(3): 1743-1771 (2019)</a>, <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.STACS.2018.29">STACS 2018: 29:1-29:15</a>, <a href="https://arxiv.org/abs/1706.09339">CoRR abs/1706.09339 (2017)</a>
             </p>
         </Paper>
         <Paper>
@@ -277,10 +152,48 @@
                 Mithilesh Kumar, Daniel Lokshtanov
             </p>
             <p slot="title">
-                A 2ℓk Kernel for ℓ-Component Order Connectivity
+                A 2lk Kernel for l-Component Order Connectivity
             </p>
             <p slot="venue">
-                CoRR abs/1610.04711 (2016)
+                <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.IPEC.2016.20">IPEC 2016: 20:1-20:14</a>, <a href="https://arxiv.org/abs/1610.04711">CoRR abs/1610.04711 (2016)</a>
+            </p>
+        </Paper>
+    </section>
+    
+    <section>
+        <h2>Parameterized algorithms</h2>
+        
+        <Paper>
+            <p slot="authors">
+                Akash Kumar, Mithilesh Kumar
+            </p>
+            <p slot="title">
+                Deletion to Induced Matching
+            </p>
+            <p slot="venue">
+                <a href="https://arxiv.org/abs/2008.09660">CoRR abs/2008.09660 (2020)</a>
+            </p>
+        </Paper>
+        <Paper>
+            <p slot="authors">
+                Mithilesh Kumar
+            </p>
+            <p slot="title">
+                2-CLUB is NP-hard for distance to 2-club cluster graphs
+            </p>
+            <p slot="venue">
+                <a href="https://doi.org/10.48550/arXiv.1903.05425">CoRR abs/1903.05425 (2019)</a>
+            </p>
+        </Paper>
+        <Paper>
+            <p slot="authors">
+                Mithilesh Kumar, Daniel Lokshtanov
+            </p>
+            <p slot="title">
+                Faster Exact and Parameterized Algorithm for Feedback Vertex Set in Bipartite Tournaments
+            </p>
+            <p slot="venue">
+                <a href="https://doi.org/10.4230/LIPIcs.FSTTCS.2016.24">FSTTCS 2016: 24:1-24:15</a>, <a href="https://doi.org/10.48550/arXiv.2411.02821">CoRR abs/2411.02821 (2024)</a>
             </p>
         </Paper>
         <Paper>
@@ -291,9 +204,8 @@
                 Faster Exact and Parameterized Algorithm for Feedback Vertex Set in Tournaments
             </p>
             <p slot="venue">
-                CoRR abs/1510.07676 (2015)
+                <a href="https://doi.org/10.4230/LIPIcs.STACS.2016.49">STACS 2016: 49:1-49:13</a>, <a href="https://doi.org/10.48550/arXiv.1510.07676">CoRR abs/1510.07676 (2015)</a>
             </p>
         </Paper>
     </section>
-    
 </div>
