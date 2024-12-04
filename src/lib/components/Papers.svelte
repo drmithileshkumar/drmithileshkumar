@@ -34,6 +34,18 @@
                 Mithilesh Kumar
             </p>
             <p slot="title">
+                A guide to Quantum Channels
+            </p>
+            <p slot="venue">
+                <!-- <a href="https://arxiv.org/abs/2411.10710">CoRR abs/2411.10710 (2024)</a>,--> 
+                 <a href="https://www.researchgate.net/publication/386416763_A_guide_to_Quantum_Channels">10.13140/RG.2.2.30460.45446</a>, Dec 2024
+            </p>
+        </Paper>
+        <Paper>
+            <p slot="authors">
+                Mithilesh Kumar
+            </p>
+            <p slot="title">
                 Local Operations in Multiparty Quantum Systems
             </p>
             <p slot="venue">
