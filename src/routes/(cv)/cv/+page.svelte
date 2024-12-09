@@ -352,7 +352,7 @@
                 </ul>
             </section>
             <section class="papers">
-                <h2 style="margin-bottom: 0;">Research (Citations 101 H-index 4)</h2>
+                <h2 style="margin-bottom: 0;">Research (Citations 103 H-index 4)</h2>
                 <Papers />
             </section>
         </section>
