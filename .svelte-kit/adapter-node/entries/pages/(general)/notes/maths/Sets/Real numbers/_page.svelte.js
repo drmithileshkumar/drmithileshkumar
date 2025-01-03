@@ -1,11 +1,11 @@
-import { c as compute_rest_props, s as subscribe, d as null_to_empty } from "../../../../../../../chunks/utils.js";
-import { c as create_ssr_component, e as escape, f as add_attribute, v as validate_component } from "../../../../../../../chunks/ssr.js";
-import { p as presentationMode, c as currentSlide, s as slideCounter, a as selectedSection, b as selectedChapter, d as presentation } from "../../../../../../../chunks/stores3.js";
+import { c as compute_rest_props, a as subscribe, d as null_to_empty } from "../../../../../../../chunks/utils.js";
+import { c as create_ssr_component, e as escape, h as add_attribute, v as validate_component } from "../../../../../../../chunks/ssr2.js";
+import { p as presentationMode, c as currentSlide, s as slideCounter, a as selectedSection, b as selectedChapter, d as presentation } from "../../../../../../../chunks/stores4.js";
 import { P as Practice } from "../../../../../../../chunks/Practice.js";
 /* empty css                                                                */
 import { p as powerset, S as Sets } from "../../../../../../../chunks/sets.js";
 import { a as randInt } from "../../../../../../../chunks/common.js";
-import { p as page } from "../../../../../../../chunks/stores.js";
+import { p as page } from "../../../../../../../chunks/stores3.js";
 import { T as TeX } from "../../../../../../../chunks/constants.js";
 import { I as Item, P, L as Li } from "../../../../../../../chunks/Image.svelte_svelte_type_style_lang.js";
 import { H as H3 } from "../../../../../../../chunks/H3.js";
@@ -13,8 +13,7 @@ import { H as H2 } from "../../../../../../../chunks/H2.js";
 import { I as Image } from "../../../../../../../chunks/Image.js";
 /* empty css                                                            */
 const seive = (N) => {
-  if (N <= 1)
-    return [];
+  if (N <= 1) return [];
   var numbers = new Array(N);
   for (var i = 0; i < N; i++) {
     numbers[i] = true;
@@ -33,8 +32,7 @@ const seive = (N) => {
   return primes;
 };
 const factor = (N) => {
-  if (N <= 1)
-    return [{ prime: N, power: 0 }];
+  if (N <= 1) return [{ prime: N, power: 0 }];
   let primes = seive(N);
   let factors = [];
   for (let k = 0; k < primes.length && N > 1; k++) {
@@ -127,8 +125,7 @@ class Surd {
   equal(s) {
     this.reduced();
     s.reduced();
-    if (this.terms.length != s.terms.length)
-      return false;
+    if (this.terms.length != s.terms.length) return false;
     for (let i = 0; i < this.terms.length; i++) {
       if (this.terms[i].a != s.terms[i].a || this.terms[i].r != s.terms[i].r)
         return false;
@@ -222,8 +219,7 @@ class Surd {
     return newSurd;
   }
   conjugate() {
-    if (this.terms.length == 1)
-      return this;
+    if (this.terms.length == 1) return this;
     if (this.terms.length == 2) {
       let newSurd = new Surd();
       newSurd.terms.push(this.terms[0]);
@@ -256,11 +252,9 @@ class Surd {
       b = temp;
     }
     while (true) {
-      if (b == 0)
-        return a;
+      if (b == 0) return a;
       a %= b;
-      if (a == 0)
-        return b;
+      if (a == 0) return b;
       b %= a;
     }
   }
@@ -289,8 +283,7 @@ class Surd {
   str() {
     let factor2 = "";
     let str = "";
-    if (this.terms.length == 0)
-      return "";
+    if (this.terms.length == 0) return "";
     let i = 0;
     if (this.terms[i].a == 0) {
       str = str + "";
@@ -410,11 +403,9 @@ class Q {
       b = temp;
     }
     while (true) {
-      if (b == 0)
-        return a;
+      if (b == 0) return a;
       a %= b;
-      if (a == 0)
-        return b;
+      if (a == 0) return b;
       b %= a;
     }
   }
@@ -452,19 +443,16 @@ class Q {
     this.reduced();
     f.reduced();
     if (this.num instanceof Surd && this.den instanceof Surd) {
-      if (this.isUndefined())
-        return false;
+      if (this.isUndefined()) return false;
       if (f.isSurd()) {
-        if (f.den.value() == 0)
-          return false;
+        if (f.den.value() == 0) return false;
         return this.num.value() / this.den.value() == f.num.value() / f.den.value();
       } else {
         return this.num.value() / this.den.value() == f.num / f.den;
       }
     } else {
       if (f.isSurd()) {
-        if (f.den.value() == 0)
-          return false;
+        if (f.den.value() == 0) return false;
         return this.num / this.den == f.num.value() / f.den.value();
       } else {
         return this.num / this.den == f.num / f.den;
@@ -563,8 +551,7 @@ const Dt = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => $currentSlide = value);
   let { isActive = -1 } = $$props;
-  if ($$props.isActive === void 0 && $$bindings.isActive && isActive !== void 0)
-    $$bindings.isActive(isActive);
+  if ($$props.isActive === void 0 && $$bindings.isActive && isActive !== void 0) $$bindings.isActive(isActive);
   $$result.css.add(css$2);
   $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();
@@ -584,8 +571,7 @@ const Dd = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => $currentSlide = value);
   let { isActive = -1 } = $$props;
-  if ($$props.isActive === void 0 && $$bindings.isActive && isActive !== void 0)
-    $$bindings.isActive(isActive);
+  if ($$props.isActive === void 0 && $$bindings.isActive && isActive !== void 0) $$bindings.isActive(isActive);
   $$result.css.add(css$1);
   $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();

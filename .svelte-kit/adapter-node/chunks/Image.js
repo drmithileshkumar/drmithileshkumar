@@ -1,6 +1,6 @@
-import { c as compute_rest_props, s as subscribe, d as null_to_empty } from "./utils.js";
-import { c as create_ssr_component, e as escape } from "./ssr.js";
-import { p as presentationMode, c as currentSlide } from "./stores3.js";
+import { c as compute_rest_props, a as subscribe, d as null_to_empty } from "./utils.js";
+import { c as create_ssr_component, e as escape } from "./ssr2.js";
+import { p as presentationMode, c as currentSlide } from "./stores4.js";
 import "./Image.svelte_svelte_type_style_lang.js";
 const css = {
   code: ".currentActive.svelte-ppp9to{color:tomato;border-radius:10px;transition:all 1s}figure.svelte-ppp9to{width:100%;display:flex;margin:auto;justify-content:center;align-items:center}",
@@ -13,8 +13,7 @@ const Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_presentationMode = subscribe(presentationMode, (value) => $presentationMode = value);
   $$unsubscribe_currentSlide = subscribe(currentSlide, (value) => $currentSlide = value);
   let { isActive = -1 } = $$props;
-  if ($$props.isActive === void 0 && $$bindings.isActive && isActive !== void 0)
-    $$bindings.isActive(isActive);
+  if ($$props.isActive === void 0 && $$bindings.isActive && isActive !== void 0) $$bindings.isActive(isActive);
   $$result.css.add(css);
   $$unsubscribe_presentationMode();
   $$unsubscribe_currentSlide();

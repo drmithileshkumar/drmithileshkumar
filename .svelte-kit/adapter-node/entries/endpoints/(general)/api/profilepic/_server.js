@@ -42,8 +42,7 @@ async function POST({ locals, request }) {
   const usersCollection = await getUsersCollection();
   let dir = "profile/" + publicID;
   try {
-    if (!existsSync(dir))
-      mkdirSync(dir);
+    if (!existsSync(dir)) mkdirSync(dir);
     writeFileSync(dir + `/${name}`, file, "base64");
     let profile = "/" + publicID + `/${name}`;
     const confirm = await usersCollection.updateOne({ publicID }, { $set: { profile } });

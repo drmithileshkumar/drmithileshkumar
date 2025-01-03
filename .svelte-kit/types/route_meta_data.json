@@ -1,4 +1,5 @@
 {
+	"/(vectorial)": [],
 	"/(general)": [
 		"src/routes/(general)/+page.js",
 		"src/routes/(general)/+layout.server.js",
@@ -1303,6 +1304,239 @@
 	],
 	"/(about)/teaching": [
 		"src/routes/(about)/teaching/+page.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/about": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/about/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/api/bannerpic": [
+		"src/routes/(vectorial)/vectorial/api/bannerpic/+server.js"
+	],
+	"/(vectorial)/vectorial/api/comment/[commentID]": [
+		"src/routes/(vectorial)/vectorial/api/comment/[commentID]/+server.js"
+	],
+	"/(vectorial)/vectorial/api/login": [
+		"src/routes/(vectorial)/vectorial/api/login/+server.js"
+	],
+	"/(vectorial)/vectorial/api/payments": [
+		"src/routes/(vectorial)/vectorial/api/payments/+server.js"
+	],
+	"/(vectorial)/vectorial/api/posts": [
+		"src/routes/(vectorial)/vectorial/api/posts/+server.js"
+	],
+	"/(vectorial)/vectorial/api/post/[postID]": [
+		"src/routes/(vectorial)/vectorial/api/post/[postID]/+server.js"
+	],
+	"/(vectorial)/vectorial/api/post/[postID]/comments": [
+		"src/routes/(vectorial)/vectorial/api/post/[postID]/comments/+server.js"
+	],
+	"/(vectorial)/vectorial/api/profilepic": [
+		"src/routes/(vectorial)/vectorial/api/profilepic/+server.js"
+	],
+	"/(vectorial)/vectorial/api/profile": [
+		"src/routes/(vectorial)/vectorial/api/profile/+server.js"
+	],
+	"/(vectorial)/vectorial/api/search": [
+		"src/routes/(vectorial)/vectorial/api/search/+server.js"
+	],
+	"/(vectorial)/vectorial/api/sendImage": [
+		"src/routes/(vectorial)/vectorial/api/sendImage/+server.js"
+	],
+	"/(vectorial)/vectorial/api/sendProfile": [
+		"src/routes/(vectorial)/vectorial/api/sendProfile/+server.js"
+	],
+	"/(vectorial)/vectorial/api/signup": [
+		"src/routes/(vectorial)/vectorial/api/signup/+server.js"
+	],
+	"/(vectorial)/vectorial/api/subscription": [
+		"src/routes/(vectorial)/vectorial/api/subscription/+server.js"
+	],
+	"/(vectorial)/vectorial/api/upload": [
+		"src/routes/(vectorial)/vectorial/api/upload/+server.js"
+	],
+	"/(vectorial)/vectorial/api/userDetail": [
+		"src/routes/(vectorial)/vectorial/api/userDetail/+server.js"
+	],
+	"/(vectorial)/vectorial/api/vectorial": [
+		"src/routes/(vectorial)/vectorial/api/vectorial/+server.js"
+	],
+	"/(vectorial)/vectorial/api/vectorial/symbol": [
+		"src/routes/(vectorial)/vectorial/api/vectorial/symbol/+server.js"
+	],
+	"/(vectorial)/vectorial/api/vectorial/symbol/[symbolID]": [
+		"src/routes/(vectorial)/vectorial/api/vectorial/symbol/[symbolID]/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/bannerpic": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/bannerpic/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/comments": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/comments/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/compose": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/compose/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/compose/comment": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/compose/comment/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/drawings": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/drawings/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/drawings/permission": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/drawings/permission/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/followers": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/followers/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/followings": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/followings/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/following": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/following/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/invoices": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/invoices/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/invoices/[invoiceID]": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/invoices/[invoiceID]/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/likes": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/likes/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/likes/[postID]": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/likes/[postID]/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/media": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/media/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/posts": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/posts/+server.js"
+	],
+	"/(vectorial)/vectorial/api/[publicID]/profilepic": [
+		"src/routes/(vectorial)/vectorial/api/[publicID]/profilepic/+server.js"
+	],
+	"/(vectorial)/vectorial/app": [
+		"src/routes/(vectorial)/vectorial/app/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/auth": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/auth/+page.server.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/comment/[commentID]": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/comment/[commentID]/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/compose": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/download": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/learn": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/learn/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/learn/advanced": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/learn/filters": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/learn/latex": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/learn/markers": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/learn/masks": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/learn/paths": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/learn/shapes": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/learn/styles": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/learn/text": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/learn/transform": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/legal/privacy": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/legal/refund": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/legal/terms": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/login": [
+		"src/routes/(vectorial)/vectorial/login/+page.server.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/post/[postID]": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/post/[postID]/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/search": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/search/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/settings": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/settings/profile": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/settings/profile/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/shipping": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/shipping/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/subscription": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/subscription/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/[publicID]": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/[publicID]/drawings": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/drawings/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/[publicID]/edit": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/edit/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/[publicID]/edit/comment": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/edit/comment/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/[publicID]/invoices": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/invoices/+page.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/[...catchAll]": [
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
 	],
 	"/(general)/[publicID]": [
 		"src/routes/(general)/[publicID]/+page.js",

@@ -1,144 +1,11 @@
 import { c as compute_rest_props, e as compute_slots } from "./utils.js";
-import { f as forwardEventsBuilder, c as classMap, g as globals } from "./classAdderBuilder.js";
-import { c as create_ssr_component, a as get_current_component, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, e as escape, g as getContext, o as onDestroy, v as validate_component } from "./ssr.js";
+import { f as forwardEventsBuilder, c as classMap, g as globals } from "./SmuiElement.js";
+import { c as create_ssr_component, a as get_current_component, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute, e as escape, g as getContext, o as onDestroy, v as validate_component } from "./ssr2.js";
 import { e as exclude, p as prefixFilter } from "./prefixFilter.js";
 import { C as ContextFragment } from "./ContextFragment.js";
 import { F as FloatingLabel, N as NotchedOutline, L as LineRipple } from "./NotchedOutline.js";
 import { P as Prefix, S as Suffix, H as HelperLine } from "./Suffix.js";
-const Input = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, [
-    "use",
-    "class",
-    "type",
-    "placeholder",
-    "value",
-    "files",
-    "dirty",
-    "invalid",
-    "updateInvalid",
-    "emptyValueNull",
-    "emptyValueUndefined",
-    "getAttr",
-    "addAttr",
-    "removeAttr",
-    "focus",
-    "blur",
-    "getElement"
-  ]);
-  forwardEventsBuilder(get_current_component());
-  let uninitializedValue = () => {
-  };
-  function isUninitializedValue(value2) {
-    return value2 === uninitializedValue;
-  }
-  let { use = [] } = $$props;
-  let { class: className = "" } = $$props;
-  let { type = "text" } = $$props;
-  let { placeholder = " " } = $$props;
-  let { value = uninitializedValue } = $$props;
-  const valueUninitialized = isUninitializedValue(value);
-  if (valueUninitialized) {
-    value = "";
-  }
-  let { files = null } = $$props;
-  let { dirty = false } = $$props;
-  let { invalid = false } = $$props;
-  let { updateInvalid = true } = $$props;
-  let { emptyValueNull = value === null } = $$props;
-  if (valueUninitialized && emptyValueNull) {
-    value = null;
-  }
-  let { emptyValueUndefined = value === void 0 } = $$props;
-  if (valueUninitialized && emptyValueUndefined) {
-    value = void 0;
-  }
-  let element;
-  let internalAttrs = {};
-  let valueProp = {};
-  function getAttr(name) {
-    var _a;
-    return name in internalAttrs ? (_a = internalAttrs[name]) !== null && _a !== void 0 ? _a : null : getElement().getAttribute(name);
-  }
-  function addAttr(name, value2) {
-    if (internalAttrs[name] !== value2) {
-      internalAttrs[name] = value2;
-    }
-  }
-  function removeAttr(name) {
-    if (!(name in internalAttrs) || internalAttrs[name] != null) {
-      internalAttrs[name] = void 0;
-    }
-  }
-  function focus() {
-    getElement().focus();
-  }
-  function blur() {
-    getElement().blur();
-  }
-  function getElement() {
-    return element;
-  }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.type === void 0 && $$bindings.type && type !== void 0)
-    $$bindings.type(type);
-  if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder !== void 0)
-    $$bindings.placeholder(placeholder);
-  if ($$props.value === void 0 && $$bindings.value && value !== void 0)
-    $$bindings.value(value);
-  if ($$props.files === void 0 && $$bindings.files && files !== void 0)
-    $$bindings.files(files);
-  if ($$props.dirty === void 0 && $$bindings.dirty && dirty !== void 0)
-    $$bindings.dirty(dirty);
-  if ($$props.invalid === void 0 && $$bindings.invalid && invalid !== void 0)
-    $$bindings.invalid(invalid);
-  if ($$props.updateInvalid === void 0 && $$bindings.updateInvalid && updateInvalid !== void 0)
-    $$bindings.updateInvalid(updateInvalid);
-  if ($$props.emptyValueNull === void 0 && $$bindings.emptyValueNull && emptyValueNull !== void 0)
-    $$bindings.emptyValueNull(emptyValueNull);
-  if ($$props.emptyValueUndefined === void 0 && $$bindings.emptyValueUndefined && emptyValueUndefined !== void 0)
-    $$bindings.emptyValueUndefined(emptyValueUndefined);
-  if ($$props.getAttr === void 0 && $$bindings.getAttr && getAttr !== void 0)
-    $$bindings.getAttr(getAttr);
-  if ($$props.addAttr === void 0 && $$bindings.addAttr && addAttr !== void 0)
-    $$bindings.addAttr(addAttr);
-  if ($$props.removeAttr === void 0 && $$bindings.removeAttr && removeAttr !== void 0)
-    $$bindings.removeAttr(removeAttr);
-  if ($$props.focus === void 0 && $$bindings.focus && focus !== void 0)
-    $$bindings.focus(focus);
-  if ($$props.blur === void 0 && $$bindings.blur && blur !== void 0)
-    $$bindings.blur(blur);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
-  {
-    if (type === "file") {
-      delete valueProp.value;
-      valueProp = valueProp;
-    } else {
-      valueProp.value = value == null ? "" : value;
-    }
-  }
-  return `<input${spread(
-    [
-      {
-        class: escape_attribute_value(classMap({
-          [className]: true,
-          "mdc-text-field__input": true
-        }))
-      },
-      { type: escape_attribute_value(type) },
-      {
-        placeholder: escape_attribute_value(placeholder)
-      },
-      escape_object(valueProp),
-      escape_object(internalAttrs),
-      escape_object($$restProps)
-    ],
-    {}
-  )}${add_attribute("this", element, 0)}>`;
-});
+import { I as Input } from "./Input.js";
 const Textarea = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, [
     "use",
@@ -190,34 +57,20 @@ const Textarea = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.value === void 0 && $$bindings.value && value !== void 0)
-    $$bindings.value(value);
-  if ($$props.dirty === void 0 && $$bindings.dirty && dirty !== void 0)
-    $$bindings.dirty(dirty);
-  if ($$props.invalid === void 0 && $$bindings.invalid && invalid !== void 0)
-    $$bindings.invalid(invalid);
-  if ($$props.updateInvalid === void 0 && $$bindings.updateInvalid && updateInvalid !== void 0)
-    $$bindings.updateInvalid(updateInvalid);
-  if ($$props.resizable === void 0 && $$bindings.resizable && resizable !== void 0)
-    $$bindings.resizable(resizable);
-  if ($$props.getAttr === void 0 && $$bindings.getAttr && getAttr !== void 0)
-    $$bindings.getAttr(getAttr);
-  if ($$props.addAttr === void 0 && $$bindings.addAttr && addAttr !== void 0)
-    $$bindings.addAttr(addAttr);
-  if ($$props.removeAttr === void 0 && $$bindings.removeAttr && removeAttr !== void 0)
-    $$bindings.removeAttr(removeAttr);
-  if ($$props.focus === void 0 && $$bindings.focus && focus !== void 0)
-    $$bindings.focus(focus);
-  if ($$props.blur === void 0 && $$bindings.blur && blur !== void 0)
-    $$bindings.blur(blur);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.style === void 0 && $$bindings.style && style !== void 0) $$bindings.style(style);
+  if ($$props.value === void 0 && $$bindings.value && value !== void 0) $$bindings.value(value);
+  if ($$props.dirty === void 0 && $$bindings.dirty && dirty !== void 0) $$bindings.dirty(dirty);
+  if ($$props.invalid === void 0 && $$bindings.invalid && invalid !== void 0) $$bindings.invalid(invalid);
+  if ($$props.updateInvalid === void 0 && $$bindings.updateInvalid && updateInvalid !== void 0) $$bindings.updateInvalid(updateInvalid);
+  if ($$props.resizable === void 0 && $$bindings.resizable && resizable !== void 0) $$bindings.resizable(resizable);
+  if ($$props.getAttr === void 0 && $$bindings.getAttr && getAttr !== void 0) $$bindings.getAttr(getAttr);
+  if ($$props.addAttr === void 0 && $$bindings.addAttr && addAttr !== void 0) $$bindings.addAttr(addAttr);
+  if ($$props.removeAttr === void 0 && $$bindings.removeAttr && removeAttr !== void 0) $$bindings.removeAttr(removeAttr);
+  if ($$props.focus === void 0 && $$bindings.focus && focus !== void 0) $$bindings.focus(focus);
+  if ($$props.blur === void 0 && $$bindings.blur && blur !== void 0) $$bindings.blur(blur);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   return `<textarea${spread(
     [
       {
@@ -338,66 +191,36 @@ const Textfield = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0)
-    $$bindings.ripple(ripple);
-  if ($$props.disabled === void 0 && $$bindings.disabled && disabled !== void 0)
-    $$bindings.disabled(disabled);
-  if ($$props.required === void 0 && $$bindings.required && required !== void 0)
-    $$bindings.required(required);
-  if ($$props.textarea === void 0 && $$bindings.textarea && textarea !== void 0)
-    $$bindings.textarea(textarea);
-  if ($$props.variant === void 0 && $$bindings.variant && variant !== void 0)
-    $$bindings.variant(variant);
-  if ($$props.noLabel === void 0 && $$bindings.noLabel && noLabel !== void 0)
-    $$bindings.noLabel(noLabel);
-  if ($$props.label === void 0 && $$bindings.label && label !== void 0)
-    $$bindings.label(label);
-  if ($$props.type === void 0 && $$bindings.type && type !== void 0)
-    $$bindings.type(type);
-  if ($$props.value === void 0 && $$bindings.value && value !== void 0)
-    $$bindings.value(value);
-  if ($$props.files === void 0 && $$bindings.files && files !== void 0)
-    $$bindings.files(files);
-  if ($$props.invalid === void 0 && $$bindings.invalid && invalid !== void 0)
-    $$bindings.invalid(invalid);
-  if ($$props.updateInvalid === void 0 && $$bindings.updateInvalid && updateInvalid !== void 0)
-    $$bindings.updateInvalid(updateInvalid);
-  if ($$props.dirty === void 0 && $$bindings.dirty && dirty !== void 0)
-    $$bindings.dirty(dirty);
-  if ($$props.prefix === void 0 && $$bindings.prefix && prefix !== void 0)
-    $$bindings.prefix(prefix);
-  if ($$props.suffix === void 0 && $$bindings.suffix && suffix !== void 0)
-    $$bindings.suffix(suffix);
-  if ($$props.validateOnValueChange === void 0 && $$bindings.validateOnValueChange && validateOnValueChange !== void 0)
-    $$bindings.validateOnValueChange(validateOnValueChange);
-  if ($$props.useNativeValidation === void 0 && $$bindings.useNativeValidation && useNativeValidation !== void 0)
-    $$bindings.useNativeValidation(useNativeValidation);
-  if ($$props.withLeadingIcon === void 0 && $$bindings.withLeadingIcon && withLeadingIcon !== void 0)
-    $$bindings.withLeadingIcon(withLeadingIcon);
-  if ($$props.withTrailingIcon === void 0 && $$bindings.withTrailingIcon && withTrailingIcon !== void 0)
-    $$bindings.withTrailingIcon(withTrailingIcon);
-  if ($$props.input === void 0 && $$bindings.input && input !== void 0)
-    $$bindings.input(input);
-  if ($$props.floatingLabel === void 0 && $$bindings.floatingLabel && floatingLabel !== void 0)
-    $$bindings.floatingLabel(floatingLabel);
-  if ($$props.lineRipple === void 0 && $$bindings.lineRipple && lineRipple !== void 0)
-    $$bindings.lineRipple(lineRipple);
-  if ($$props.notchedOutline === void 0 && $$bindings.notchedOutline && notchedOutline !== void 0)
-    $$bindings.notchedOutline(notchedOutline);
-  if ($$props.focus === void 0 && $$bindings.focus && focus !== void 0)
-    $$bindings.focus(focus);
-  if ($$props.blur === void 0 && $$bindings.blur && blur !== void 0)
-    $$bindings.blur(blur);
-  if ($$props.layout === void 0 && $$bindings.layout && layout !== void 0)
-    $$bindings.layout(layout);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.style === void 0 && $$bindings.style && style !== void 0) $$bindings.style(style);
+  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0) $$bindings.ripple(ripple);
+  if ($$props.disabled === void 0 && $$bindings.disabled && disabled !== void 0) $$bindings.disabled(disabled);
+  if ($$props.required === void 0 && $$bindings.required && required !== void 0) $$bindings.required(required);
+  if ($$props.textarea === void 0 && $$bindings.textarea && textarea !== void 0) $$bindings.textarea(textarea);
+  if ($$props.variant === void 0 && $$bindings.variant && variant !== void 0) $$bindings.variant(variant);
+  if ($$props.noLabel === void 0 && $$bindings.noLabel && noLabel !== void 0) $$bindings.noLabel(noLabel);
+  if ($$props.label === void 0 && $$bindings.label && label !== void 0) $$bindings.label(label);
+  if ($$props.type === void 0 && $$bindings.type && type !== void 0) $$bindings.type(type);
+  if ($$props.value === void 0 && $$bindings.value && value !== void 0) $$bindings.value(value);
+  if ($$props.files === void 0 && $$bindings.files && files !== void 0) $$bindings.files(files);
+  if ($$props.invalid === void 0 && $$bindings.invalid && invalid !== void 0) $$bindings.invalid(invalid);
+  if ($$props.updateInvalid === void 0 && $$bindings.updateInvalid && updateInvalid !== void 0) $$bindings.updateInvalid(updateInvalid);
+  if ($$props.dirty === void 0 && $$bindings.dirty && dirty !== void 0) $$bindings.dirty(dirty);
+  if ($$props.prefix === void 0 && $$bindings.prefix && prefix !== void 0) $$bindings.prefix(prefix);
+  if ($$props.suffix === void 0 && $$bindings.suffix && suffix !== void 0) $$bindings.suffix(suffix);
+  if ($$props.validateOnValueChange === void 0 && $$bindings.validateOnValueChange && validateOnValueChange !== void 0) $$bindings.validateOnValueChange(validateOnValueChange);
+  if ($$props.useNativeValidation === void 0 && $$bindings.useNativeValidation && useNativeValidation !== void 0) $$bindings.useNativeValidation(useNativeValidation);
+  if ($$props.withLeadingIcon === void 0 && $$bindings.withLeadingIcon && withLeadingIcon !== void 0) $$bindings.withLeadingIcon(withLeadingIcon);
+  if ($$props.withTrailingIcon === void 0 && $$bindings.withTrailingIcon && withTrailingIcon !== void 0) $$bindings.withTrailingIcon(withTrailingIcon);
+  if ($$props.input === void 0 && $$bindings.input && input !== void 0) $$bindings.input(input);
+  if ($$props.floatingLabel === void 0 && $$bindings.floatingLabel && floatingLabel !== void 0) $$bindings.floatingLabel(floatingLabel);
+  if ($$props.lineRipple === void 0 && $$bindings.lineRipple && lineRipple !== void 0) $$bindings.lineRipple(lineRipple);
+  if ($$props.notchedOutline === void 0 && $$bindings.notchedOutline && notchedOutline !== void 0) $$bindings.notchedOutline(notchedOutline);
+  if ($$props.focus === void 0 && $$bindings.focus && focus !== void 0) $$bindings.focus(focus);
+  if ($$props.blur === void 0 && $$bindings.blur && blur !== void 0) $$bindings.blur(blur);
+  if ($$props.layout === void 0 && $$bindings.layout && layout !== void 0) $$bindings.layout(layout);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;

@@ -14,8 +14,7 @@ async function GET({ request, url, locals }) {
   return new Response(JSON.stringify(userDetail), { status: 200 });
 }
 async function POST({ params, request, locals }) {
-  if (locals.user)
-    ;
+  if (locals.user) ;
   if (!locals.user) {
     return error(401, "Unauthorized");
   }

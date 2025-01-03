@@ -1,4 +1,4 @@
-import { c as create_ssr_component, j as each, f as add_attribute, e as escape } from "./ssr.js";
+import { c as create_ssr_component, i as each, h as add_attribute, e as escape } from "./ssr2.js";
 /* empty css                                       */
 const css = {
   code: ".paths.svelte-16te6qo.svelte-16te6qo{display:flex;align-items:center;flex-wrap:wrap}.paths.svelte-16te6qo a.svelte-16te6qo{text-decoration:none}",
@@ -9,10 +9,8 @@ const Pathlist = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   let pathUrls;
   let { pathname } = $$props;
   let { origin } = $$props;
-  if ($$props.pathname === void 0 && $$bindings.pathname && pathname !== void 0)
-    $$bindings.pathname(pathname);
-  if ($$props.origin === void 0 && $$bindings.origin && origin !== void 0)
-    $$bindings.origin(origin);
+  if ($$props.pathname === void 0 && $$bindings.pathname && pathname !== void 0) $$bindings.pathname(pathname);
+  if ($$props.origin === void 0 && $$bindings.origin && origin !== void 0) $$bindings.origin(origin);
   $$result.css.add(css);
   pathComponents = pathname.split("/").map((c, i) => {
     return { id: Math.random(), component: c };

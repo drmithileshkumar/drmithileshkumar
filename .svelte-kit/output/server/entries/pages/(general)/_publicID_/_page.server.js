@@ -1,7 +1,6 @@
 import { r as redirect } from "../../../../chunks/index.js";
 async function load({ locals }) {
-  if (!locals.user)
-    throw redirect(307, `/`);
+  if (!locals.user) throw redirect(307, `/`);
 }
 const actions = {
   logout: async ({ cookies, locals }) => {

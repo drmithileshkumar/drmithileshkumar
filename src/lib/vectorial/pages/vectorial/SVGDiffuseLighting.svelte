@@ -1,0 +1,35 @@
+<script>
+    import {defs} from './stores';
+    export let id = '';
+    
+</script>
+<style>
+
+</style>
+
+<filter 
+    id={id}
+    x='{$defs[id].x}%'
+    y='{$defs[id].y}%'
+    width='{$defs[id].width}%'
+    height='{$defs[id].height}%'
+>
+    <feDiffuseLighting
+        result={$defs[id].result}
+        
+        diffuseConstant={$defs[id].diffuseConstant}
+        lighting-color={$defs[id].lightingColor}
+        surfaceScale={$defs[id].surfaceScale}
+    >
+        <fePointLight x={$defs[id].point.x} y={$defs[id].point.y} z={$defs[id].point.z}/>
+    </feDiffuseLighting> 
+    <feComposite
+      in={$defs[id].input}
+      in2={$defs[id].input2}
+      operator={$defs[id].operator}
+      k1={$defs[id].k1}
+      k2={$defs[id].k2}
+      k3={$defs[id].k3}
+      k4={$defs[id].k4} />
+</filter>
+

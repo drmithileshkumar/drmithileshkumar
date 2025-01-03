@@ -1,9 +1,9 @@
-import { s as subscribe, b as set_store_value } from "../../../../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, e as escape } from "../../../../../../../../chunks/ssr.js";
-import { p as page } from "../../../../../../../../chunks/stores.js";
+import { a as subscribe, b as set_store_value } from "../../../../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component, e as escape } from "../../../../../../../../chunks/ssr2.js";
+import { p as page } from "../../../../../../../../chunks/stores3.js";
 import { C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
-import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores2.js";
+import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores.js";
 import { c as contentNav, a as contents } from "../../../../../../../../chunks/content4.js";
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";

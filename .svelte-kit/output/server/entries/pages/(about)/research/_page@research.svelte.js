@@ -1,4 +1,4 @@
-import { c as create_ssr_component, v as validate_component } from "../../../../chunks/ssr.js";
+import { c as create_ssr_component, v as validate_component } from "../../../../chunks/ssr2.js";
 /* empty css                                                        */
 const css$1 = {
   code: ".research.svelte-1ggrs5p{line-height:1.45;word-spacing:0.1em}",

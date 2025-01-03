@@ -1,7 +1,7 @@
-import { s as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, j as each, e as escape } from "../../../../../chunks/ssr.js";
+import { a as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component, i as each, e as escape } from "../../../../../chunks/ssr2.js";
 import "../../../../../chunks/client.js";
-import { p as page } from "../../../../../chunks/stores.js";
+import { p as page } from "../../../../../chunks/stores3.js";
 import { C as Content } from "../../../../../chunks/ActionIcons.js";
 import { B as Button } from "../../../../../chunks/Button.js";
 import { C as Card } from "../../../../../chunks/Card.js";
@@ -9,7 +9,7 @@ import { A as Actions } from "../../../../../chunks/Actions.js";
 import { C as Checkbox } from "../../../../../chunks/Checkbox.js";
 import { F as FormField } from "../../../../../chunks/FormField.js";
 import { S as Select, O as Option } from "../../../../../chunks/Option.js";
-import { c as currentPath } from "../../../../../chunks/stores2.js";
+import { c as currentPath } from "../../../../../chunks/stores.js";
 const css$1 = {
   code: ".assignments.svelte-hxlsrk{padding-bottom:1em}.options.svelte-hxlsrk{display:flex;flex-direction:column}",
   map: `{"version":3,"file":"Question.svelte","sources":["Question.svelte"],"sourcesContent":["<script lang=\\"ts\\">\\r\\n    //@ts-nocheck\\r\\n    import Card, { Content, Actions } from '@smui/card';\\r\\n    import Button, { Label } from '@smui/button';\\r\\n    import Checkbox from '@smui/checkbox';\\r\\n    import FormField from \\"@smui/form-field\\";\\r\\n    import Select, { Option } from '@smui/select';\\r\\n    import { typeset } from '$lib/shared/typeset';\\r\\n\\timport { goto } from '$app/navigation';\\r\\n    import { page } from '$app/stores';\\r\\n    export let question;\\r\\n    export let assignments = [];\\r\\n    let assignmentID;\\r\\n    const addQuestion = async () => {\\r\\n        \\r\\n        let assignmentIndex;\\r\\n        assignments.forEach((assignment, i) => {\\r\\n            if(assignment._id === assignmentID) assignmentIndex = i;\\r\\n        });\\r\\n        if(assignments[assignmentIndex].questions.indexOf(question._id) !== -1) {\\r\\n            alert('Question already added.');\\r\\n            return;\\r\\n        }\\r\\n        let res = await fetch(\`/api/\${$page.data.user.publicID}/assignments/\${assignmentID}/question\`, {\\r\\n            method: 'PUT',\\r\\n            'Content-Type': 'application/json',\\r\\n            body: JSON.stringify({questionID: question._id})\\r\\n        })\\r\\n        if(res.ok) {\\r\\n            alert('Question added to the assignment')\\r\\n        } else {\\r\\n            alert('Failed');\\r\\n        }\\r\\n    }\\r\\n<\/script>\\r\\n<style>\\r\\n    .assignments {\\r\\n        padding-bottom: 1em;\\r\\n    }\\r\\n    .options {\\r\\n        display: flex;\\r\\n        flex-direction: column;\\r\\n    }\\r\\n</style>\\r\\n<Card>\\r\\n    <Content>\\r\\n        <div class=\\"assignments\\">\\r\\n            <Select variant=\\"outlined\\" bind:value={assignmentID} label=\\"Assignments\\" style=\\"width:70%\\">\\r\\n                <Option value=\\"\\" />\\r\\n                {#each assignments as assignment}\\r\\n                    <Option value={assignment._id}>\\r\\n                    {assignment.courseCode} {assignment.title} {assignment.session}\\r\\n                    </Option>\\r\\n                {/each}\\r\\n            </Select>\\r\\n            <Button on:click={addQuestion}>Add</Button>\\r\\n        </div>\\r\\n        <div class=\\"question\\" use:typeset>{@html question.statement}</div>\\r\\n        <div class=\\"options\\">\\r\\n            <FormField>\\r\\n                <Checkbox checked={question.correct.indexOf('A') !== -1} />\\r\\n                <span slot=\\"label\\" use:typeset>{@html question.optionA}</span>\\r\\n            </FormField>\\r\\n            <FormField>\\r\\n                <Checkbox checked={question.correct.indexOf('B') !== -1} />\\r\\n                <span slot=\\"label\\" use:typeset>{@html question.optionB}</span>\\r\\n            </FormField>\\r\\n            <FormField>\\r\\n                <Checkbox checked={question.correct.indexOf('C') !== -1} />\\r\\n                <span slot=\\"label\\" use:typeset>{@html question.optionC}</span>\\r\\n            </FormField>\\r\\n            <FormField>\\r\\n                <Checkbox checked={question.correct.indexOf('D') !== -1} />\\r\\n                <span slot=\\"label\\" use:typeset>{@html question.optionD}</span>\\r\\n            </FormField>\\r\\n        </div>\\r\\n        <div class=\\"solution\\" use:typeset>{@html question.solution}</div>\\r\\n    </Content>\\r\\n    <Actions>\\r\\n        <Button on:click={() => goto(\`/\${$page.data.user.publicID}/questions/\${question._id}\`)}>Edit</Button>\\r\\n    </Actions>\\r\\n</Card>"],"names":[],"mappings":"AAoCI,0BAAa,CACT,cAAc,CAAE,GACpB,CACA,sBAAS,CACL,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MACpB"}`
@@ -20,10 +20,8 @@ const Question = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   let { question } = $$props;
   let { assignments = [] } = $$props;
   let assignmentID;
-  if ($$props.question === void 0 && $$bindings.question && question !== void 0)
-    $$bindings.question(question);
-  if ($$props.assignments === void 0 && $$bindings.assignments && assignments !== void 0)
-    $$bindings.assignments(assignments);
+  if ($$props.question === void 0 && $$bindings.question && question !== void 0) $$bindings.question(question);
+  if ($$props.assignments === void 0 && $$bindings.assignments && assignments !== void 0) $$bindings.assignments(assignments);
   $$result.css.add(css$1);
   let $$settled;
   let $$rendered;

@@ -1,13 +1,10 @@
 import { s as signJwt } from "../../../../../chunks/jwt.js";
 import { a as getUsersCollection, g as getDBCollection } from "../../../../../chunks/mongo.js";
-import "../../../../../chunks/stores2.js";
+import "../../../../../chunks/stores.js";
+import { c as createPublicID } from "../../../../../chunks/publicID.js";
 import { v4 } from "uuid";
 import { i as initializeNewUserDetail } from "../../../../../chunks/userDetail.js";
 import { e as error } from "../../../../../chunks/index.js";
-const createPublicID = (name, count) => {
-  const splitName = name.split(" ").map((part) => part.trim()).join("");
-  return count > 0 ? `${splitName}${count}` : `${splitName}`;
-};
 const initializeNewUser = (name, phone, count) => {
   let newUser = {
     phone,
@@ -41,10 +38,8 @@ const validatePhone = (phone) => {
 };
 async function POST({ params, request }) {
   const { name, phone } = await request.json();
-  if (!validateName(name))
-    return error(410, "Invalid name");
-  if (!validatePhone(String(phone)))
-    return error(410, "Invalid phone");
+  if (!validateName(name)) return error(410, "Invalid name");
+  if (!validatePhone(String(phone))) return error(410, "Invalid phone");
   const usersCollection = await getUsersCollection();
   const existingUser = await usersCollection.findOne({ name, phone: String(phone) });
   if (existingUser) {

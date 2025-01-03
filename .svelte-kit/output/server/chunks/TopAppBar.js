@@ -1,9 +1,7 @@
 import { c as compute_rest_props } from "./utils.js";
-import { c as create_ssr_component, a as get_current_component, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute } from "./ssr.js";
-import { MDCTopAppBarBaseFoundation, MDCShortTopAppBarFoundation, MDCFixedTopAppBarFoundation, MDCTopAppBarFoundation } from "@material/top-app-bar";
+import { c as create_ssr_component, a as get_current_component, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute } from "./ssr2.js";
 import { r as readable } from "./index2.js";
-import { f as forwardEventsBuilder, c as classMap } from "./classAdderBuilder.js";
-import { d as dispatch } from "./Item.js";
+import { f as forwardEventsBuilder, c as classMap } from "./SmuiElement.js";
 const TopAppBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, [
     "use",
@@ -30,7 +28,6 @@ const TopAppBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let { variant = "standard" } = $$props;
   let { color = "primary" } = $$props;
   let { collapsed = uninitializedValue } = $$props;
-  const alwaysCollapsed = !isUninitializedValue(collapsed) && !!collapsed;
   if (isUninitializedValue(collapsed)) {
     collapsed = false;
   }
@@ -38,7 +35,6 @@ const TopAppBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let { dense = false } = $$props;
   let { scrollTarget = void 0 } = $$props;
   let element;
-  let instance;
   let internalClasses = {};
   let internalStyles = {};
   let propStoreSet;
@@ -46,55 +42,7 @@ const TopAppBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     propStoreSet = set;
   });
   let oldScrollTarget = void 0;
-  let oldVariant = variant;
-  function getInstance() {
-    const Foundation = {
-      static: MDCTopAppBarBaseFoundation,
-      short: MDCShortTopAppBarFoundation,
-      fixed: MDCFixedTopAppBarFoundation,
-      standard: MDCTopAppBarFoundation
-    }[variant] || MDCTopAppBarFoundation;
-    return new Foundation({
-      hasClass,
-      addClass,
-      removeClass,
-      setStyle: addStyle,
-      getTopAppBarHeight: () => element.clientHeight,
-      notifyNavigationIconClicked: () => dispatch(element, "SMUITopAppBar:nav", void 0, void 0, true),
-      getViewportScrollY: () => scrollTarget == null ? window.pageYOffset : scrollTarget.scrollTop,
-      getTotalActionItems: () => element.querySelectorAll(".mdc-top-app-bar__action-item").length
-    });
-  }
-  function hasClass(className2) {
-    return className2 in internalClasses ? internalClasses[className2] : getElement().classList.contains(className2);
-  }
-  function addClass(className2) {
-    if (!internalClasses[className2]) {
-      internalClasses[className2] = true;
-    }
-  }
-  function removeClass(className2) {
-    if (!(className2 in internalClasses) || internalClasses[className2]) {
-      internalClasses[className2] = false;
-    }
-  }
-  function addStyle(name, value) {
-    if (internalStyles[name] != value) {
-      if (value === "" || value == null) {
-        delete internalStyles[name];
-        internalStyles = internalStyles;
-      } else {
-        internalStyles[name] = value;
-      }
-    }
-  }
   function handleTargetScroll() {
-    if (instance) {
-      instance.handleTargetScroll();
-      if (variant === "short") {
-        collapsed = "isCollapsed" in instance && instance.isCollapsed;
-      }
-    }
   }
   function getPropStore() {
     return propStore;
@@ -102,46 +50,20 @@ const TopAppBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.variant === void 0 && $$bindings.variant && variant !== void 0)
-    $$bindings.variant(variant);
-  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
-    $$bindings.color(color);
-  if ($$props.collapsed === void 0 && $$bindings.collapsed && collapsed !== void 0)
-    $$bindings.collapsed(collapsed);
-  if ($$props.prominent === void 0 && $$bindings.prominent && prominent !== void 0)
-    $$bindings.prominent(prominent);
-  if ($$props.dense === void 0 && $$bindings.dense && dense !== void 0)
-    $$bindings.dense(dense);
-  if ($$props.scrollTarget === void 0 && $$bindings.scrollTarget && scrollTarget !== void 0)
-    $$bindings.scrollTarget(scrollTarget);
-  if ($$props.getPropStore === void 0 && $$bindings.getPropStore && getPropStore !== void 0)
-    $$bindings.getPropStore(getPropStore);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.style === void 0 && $$bindings.style && style !== void 0) $$bindings.style(style);
+  if ($$props.variant === void 0 && $$bindings.variant && variant !== void 0) $$bindings.variant(variant);
+  if ($$props.color === void 0 && $$bindings.color && color !== void 0) $$bindings.color(color);
+  if ($$props.collapsed === void 0 && $$bindings.collapsed && collapsed !== void 0) $$bindings.collapsed(collapsed);
+  if ($$props.prominent === void 0 && $$bindings.prominent && prominent !== void 0) $$bindings.prominent(prominent);
+  if ($$props.dense === void 0 && $$bindings.dense && dense !== void 0) $$bindings.dense(dense);
+  if ($$props.scrollTarget === void 0 && $$bindings.scrollTarget && scrollTarget !== void 0) $$bindings.scrollTarget(scrollTarget);
+  if ($$props.getPropStore === void 0 && $$bindings.getPropStore && getPropStore !== void 0) $$bindings.getPropStore(getPropStore);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   {
     if (propStoreSet) {
       propStoreSet({ variant, prominent, dense });
-    }
-  }
-  {
-    if (oldVariant !== variant && instance) {
-      oldVariant = variant;
-      instance.destroy();
-      internalClasses = {};
-      internalStyles = {};
-      instance = getInstance();
-      instance.init();
-    }
-  }
-  {
-    if (instance && variant === "short" && "setAlwaysCollapsed" in instance) {
-      instance.setAlwaysCollapsed(alwaysCollapsed);
     }
   }
   {

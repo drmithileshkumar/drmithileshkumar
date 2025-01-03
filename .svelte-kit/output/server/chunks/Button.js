@@ -1,6 +1,6 @@
 import { c as compute_rest_props } from "./utils.js";
-import { f as forwardEventsBuilder, c as classMap, g as globals, S as SmuiElement } from "./classAdderBuilder.js";
-import { c as create_ssr_component, a as get_current_component, g as getContext, h as setContext, v as validate_component, m as missing_component } from "./ssr.js";
+import { f as forwardEventsBuilder, c as classMap, g as globals, S as SmuiElement } from "./SmuiElement.js";
+import { c as create_ssr_component, a as get_current_component, g as getContext, s as setContext, v as validate_component, m as missing_component } from "./ssr2.js";
 import { R as Ripple } from "./Ripple.js";
 const { Object: Object_1 } = globals;
 const Button = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -67,34 +67,20 @@ const Button = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function getElement() {
     return element.getElement();
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0)
-    $$bindings.ripple(ripple);
-  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
-    $$bindings.color(color);
-  if ($$props.variant === void 0 && $$bindings.variant && variant !== void 0)
-    $$bindings.variant(variant);
-  if ($$props.touch === void 0 && $$bindings.touch && touch !== void 0)
-    $$bindings.touch(touch);
-  if ($$props.href === void 0 && $$bindings.href && href !== void 0)
-    $$bindings.href(href);
-  if ($$props.action === void 0 && $$bindings.action && action !== void 0)
-    $$bindings.action(action);
-  if ($$props.defaultAction === void 0 && $$bindings.defaultAction && defaultAction !== void 0)
-    $$bindings.defaultAction(defaultAction);
-  if ($$props.secondary === void 0 && $$bindings.secondary && secondary !== void 0)
-    $$bindings.secondary(secondary);
-  if ($$props.component === void 0 && $$bindings.component && component !== void 0)
-    $$bindings.component(component);
-  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
-    $$bindings.tag(tag);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.style === void 0 && $$bindings.style && style !== void 0) $$bindings.style(style);
+  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0) $$bindings.ripple(ripple);
+  if ($$props.color === void 0 && $$bindings.color && color !== void 0) $$bindings.color(color);
+  if ($$props.variant === void 0 && $$bindings.variant && variant !== void 0) $$bindings.variant(variant);
+  if ($$props.touch === void 0 && $$bindings.touch && touch !== void 0) $$bindings.touch(touch);
+  if ($$props.href === void 0 && $$bindings.href && href !== void 0) $$bindings.href(href);
+  if ($$props.action === void 0 && $$bindings.action && action !== void 0) $$bindings.action(action);
+  if ($$props.defaultAction === void 0 && $$bindings.defaultAction && defaultAction !== void 0) $$bindings.defaultAction(defaultAction);
+  if ($$props.secondary === void 0 && $$bindings.secondary && secondary !== void 0) $$bindings.secondary(secondary);
+  if ($$props.component === void 0 && $$bindings.component && component !== void 0) $$bindings.component(component);
+  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0) $$bindings.tag(tag);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;

@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Straight lines/Various forms of the equation of a line/_page.js';
+import * as universal from '../entries/pages/(general)/notes/maths/Statistics/Range/_page.js';
 
 export const index = 292;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Straight lines/Various forms of the equation of a line/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Statistics/Range/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Straight lines/Various forms of the equation of a line/+page.js";
-export const imports = ["_app/immutable/nodes/292.BJkyNUxu.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/stores.Tx699Zxm.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/constants.VSvEql3V.js","_app/immutable/chunks/stores.CYuebbCm.js","_app/immutable/chunks/entry.wIueeHHH.js"];
-export const stylesheets = ["_app/immutable/assets/Practice.DlILBa6z.css","_app/immutable/assets/Message.By06LWcb.css"];
+export const universal_id = "src/routes/(general)/notes/maths/Statistics/Range/+page.js";
+export const imports = ["_app/immutable/nodes/292.ZDKm4QXT.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.DhWV7ypx.js","_app/immutable/chunks/index.V8m0JAxO.js","_app/immutable/chunks/stores.C6SlvLHi.js","_app/immutable/chunks/index.D70FGJSe.js","_app/immutable/chunks/stores.DFCiwoiL.js","_app/immutable/chunks/entry.B4hIrfLx.js"];
+export const stylesheets = ["_app/immutable/assets/Practice.C-1dvwW-.css","_app/immutable/assets/Message.D2xEdDAW.css"];
 export const fonts = [];

@@ -1,5 +1,5 @@
-import { s as subscribe, b as set_store_value } from "./utils.js";
-import { c as create_ssr_component, j as each, e as escape, f as add_attribute } from "./ssr.js";
+import { a as subscribe, b as set_store_value } from "./utils.js";
+import { c as create_ssr_component, i as each, e as escape, h as add_attribute } from "./ssr2.js";
 /* empty css                                     */
 import { w as writable } from "./index2.js";
 const lineWidth = writable(2);
@@ -51,10 +51,8 @@ const Canvas = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { width = 100 } = $$props;
   let { height = 100 } = $$props;
   let canvas, ctx;
-  if ($$props.width === void 0 && $$bindings.width && width !== void 0)
-    $$bindings.width(width);
-  if ($$props.height === void 0 && $$bindings.height && height !== void 0)
-    $$bindings.height(height);
+  if ($$props.width === void 0 && $$bindings.width && width !== void 0) $$bindings.width(width);
+  if ($$props.height === void 0 && $$bindings.height && height !== void 0) $$bindings.height(height);
   $$result.css.add(css$1);
   {
     if ($clearAll) {

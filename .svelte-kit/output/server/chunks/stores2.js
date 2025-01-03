@@ -1,14 +1,12 @@
 import { w as writable } from "./index2.js";
-const isAuth = writable(false);
-const Guest = writable(false);
-const TopBarHeight = writable(0);
-const refreshApp = writable(false);
-const currentPath = writable("Dr Mithilesh Kumar");
+const pageLoadState = writable(false);
+const isLoggedIn = writable(false);
+const currentPath = writable("Vectorial");
 const navList = writable([]);
-const darkMode = writable(false);
+const darkMode = writable(true);
 const scannedQR = writable();
+const INVOICE = writable();
 const showLeft = writable(true);
-const showRight = writable(false);
 const defaultProfileImage = "/avatar.svg";
 const initialProfileImage = defaultProfileImage;
 const profileImage = writable(initialProfileImage);
@@ -20,16 +18,14 @@ const bannerImage = writable(initialBannerImage);
 bannerImage.subscribe((value) => {
 });
 export {
-  Guest as G,
-  TopBarHeight as T,
-  scannedQR as a,
+  INVOICE as I,
+  profileImage as a,
   bannerImage as b,
   currentPath as c,
-  darkMode as d,
-  showRight as e,
-  isAuth as i,
+  scannedQR as d,
+  darkMode as e,
+  isLoggedIn as i,
   navList as n,
-  profileImage as p,
-  refreshApp as r,
+  pageLoadState as p,
   showLeft as s
 };

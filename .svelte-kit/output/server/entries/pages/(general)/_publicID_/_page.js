@@ -4,8 +4,7 @@ async function load({ parent, fetch, params, url }) {
     throw redirect(301, `https://drmithileshkumar.com`);
   }
   const { user } = await parent();
-  if (!user)
-    throw redirect(301, "/auth");
+  if (!user) throw redirect(301, "/auth");
   let publicID = user.publicID;
   let resuser = await fetch(`/api/${publicID}`);
   let resuserj = await resuser.json();

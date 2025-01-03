@@ -1,7 +1,7 @@
-import { s as subscribe, d as null_to_empty } from "../../../../../../../chunks/utils.js";
-import { c as create_ssr_component, e as escape, f as add_attribute } from "../../../../../../../chunks/ssr.js";
-import { c as currentSlide, s as slideCounter, p as presentationMode, d as presentation } from "../../../../../../../chunks/stores3.js";
-import { p as page } from "../../../../../../../chunks/stores.js";
+import { a as subscribe, d as null_to_empty } from "../../../../../../../chunks/utils.js";
+import { c as create_ssr_component, e as escape, h as add_attribute } from "../../../../../../../chunks/ssr2.js";
+import { c as currentSlide, s as slideCounter, p as presentationMode, d as presentation } from "../../../../../../../chunks/stores4.js";
+import { p as page } from "../../../../../../../chunks/stores3.js";
 import { T as TeX } from "../../../../../../../chunks/constants.js";
 const css = {
   code: ".container.svelte-1a1o203{display:flex}article.svelte-1a1o203{padding:0.5em}.absolute.svelte-1a1o203{margin:auto;width:90vw;height:min(80vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1a1o203::-webkit-scrollbar{width:0;height:0}.currentActive.svelte-1a1o203{background:gray;color:white;padding:1em;border-radius:10px;transition:all 1s}.pad.svelte-1a1o203{min-height:100px}.flex.svelte-1a1o203{display:flex;flex-direction:column}.grid.svelte-1a1o203{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}",

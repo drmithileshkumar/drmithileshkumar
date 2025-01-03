@@ -41,8 +41,7 @@ async function POST({ locals, request }) {
   const usersCollection = await getUsersCollection();
   let dir = "banner/" + publicID;
   try {
-    if (!existsSync(dir))
-      mkdirSync(dir);
+    if (!existsSync(dir)) mkdirSync(dir);
     writeFileSync(dir + `/${name}`, file, "base64");
     let banner = "/" + publicID + `/${name}`;
     const confirm = await usersCollection.updateOne({ publicID }, { $set: { banner } }, { upsert: true });

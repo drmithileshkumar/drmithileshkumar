@@ -1,6 +1,6 @@
 import { c as compute_rest_props } from "./utils.js";
-import { f as forwardEventsBuilder, c as classMap, g as globals, S as SmuiElement } from "./classAdderBuilder.js";
-import { c as create_ssr_component, a as get_current_component, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, g as getContext, h as setContext, v as validate_component, m as missing_component, j as each } from "./ssr.js";
+import { f as forwardEventsBuilder, c as classMap, g as globals, S as SmuiElement } from "./SmuiElement.js";
+import { c as create_ssr_component, a as get_current_component, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute, g as getContext, s as setContext, v as validate_component, m as missing_component, i as each } from "./ssr2.js";
 import { e as exclude, p as prefixFilter } from "./prefixFilter.js";
 import { R as Ripple } from "./Ripple.js";
 import { MDCFadingTabIndicatorFoundation, MDCSlidingTabIndicatorFoundation } from "@material/tab-indicator";
@@ -64,9 +64,11 @@ const TabIndicator = create_ssr_component(($$result, $$props, $$bindings, slots)
   }
   function addContentStyle(name, value) {
     if (contentStyles[name] != value) {
-      {
+      if (value === "" || value == null) {
         delete contentStyles[name];
         contentStyles = contentStyles;
+      } else {
+        contentStyles[name] = value;
       }
     }
   }
@@ -86,28 +88,17 @@ const TabIndicator = create_ssr_component(($$result, $$props, $$bindings, slots)
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.active === void 0 && $$bindings.active && active !== void 0)
-    $$bindings.active(active);
-  if ($$props.type === void 0 && $$bindings.type && type !== void 0)
-    $$bindings.type(type);
-  if ($$props.transition === void 0 && $$bindings.transition && transition !== void 0)
-    $$bindings.transition(transition);
-  if ($$props.content$use === void 0 && $$bindings.content$use && content$use !== void 0)
-    $$bindings.content$use(content$use);
-  if ($$props.content$class === void 0 && $$bindings.content$class && content$class !== void 0)
-    $$bindings.content$class(content$class);
-  if ($$props.activate === void 0 && $$bindings.activate && activate !== void 0)
-    $$bindings.activate(activate);
-  if ($$props.deactivate === void 0 && $$bindings.deactivate && deactivate !== void 0)
-    $$bindings.deactivate(deactivate);
-  if ($$props.computeContentClientRect === void 0 && $$bindings.computeContentClientRect && computeContentClientRect !== void 0)
-    $$bindings.computeContentClientRect(computeContentClientRect);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.active === void 0 && $$bindings.active && active !== void 0) $$bindings.active(active);
+  if ($$props.type === void 0 && $$bindings.type && type !== void 0) $$bindings.type(type);
+  if ($$props.transition === void 0 && $$bindings.transition && transition !== void 0) $$bindings.transition(transition);
+  if ($$props.content$use === void 0 && $$bindings.content$use && content$use !== void 0) $$bindings.content$use(content$use);
+  if ($$props.content$class === void 0 && $$bindings.content$class && content$class !== void 0) $$bindings.content$class(content$class);
+  if ($$props.activate === void 0 && $$bindings.activate && activate !== void 0) $$bindings.activate(activate);
+  if ($$props.deactivate === void 0 && $$bindings.deactivate && deactivate !== void 0) $$bindings.deactivate(deactivate);
+  if ($$props.computeContentClientRect === void 0 && $$bindings.computeContentClientRect && computeContentClientRect !== void 0) $$bindings.computeContentClientRect(computeContentClientRect);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   {
     if (oldTransition !== transition) {
       oldTransition = transition;
@@ -255,40 +246,23 @@ const Tab = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function getElement() {
     return element.getElement();
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.tab === void 0 && $$bindings.tab && tabId !== void 0)
-    $$bindings.tab(tabId);
-  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0)
-    $$bindings.ripple(ripple);
-  if ($$props.stacked === void 0 && $$bindings.stacked && stacked !== void 0)
-    $$bindings.stacked(stacked);
-  if ($$props.minWidth === void 0 && $$bindings.minWidth && minWidth !== void 0)
-    $$bindings.minWidth(minWidth);
-  if ($$props.indicatorSpanOnlyContent === void 0 && $$bindings.indicatorSpanOnlyContent && indicatorSpanOnlyContent !== void 0)
-    $$bindings.indicatorSpanOnlyContent(indicatorSpanOnlyContent);
-  if ($$props.href === void 0 && $$bindings.href && href !== void 0)
-    $$bindings.href(href);
-  if ($$props.content$use === void 0 && $$bindings.content$use && content$use !== void 0)
-    $$bindings.content$use(content$use);
-  if ($$props.content$class === void 0 && $$bindings.content$class && content$class !== void 0)
-    $$bindings.content$class(content$class);
-  if ($$props.component === void 0 && $$bindings.component && component !== void 0)
-    $$bindings.component(component);
-  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
-    $$bindings.tag(tag);
-  if ($$props.activate === void 0 && $$bindings.activate && activate !== void 0)
-    $$bindings.activate(activate);
-  if ($$props.deactivate === void 0 && $$bindings.deactivate && deactivate !== void 0)
-    $$bindings.deactivate(deactivate);
-  if ($$props.focus === void 0 && $$bindings.focus && focus !== void 0)
-    $$bindings.focus(focus);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.style === void 0 && $$bindings.style && style !== void 0) $$bindings.style(style);
+  if ($$props.tab === void 0 && $$bindings.tab && tabId !== void 0) $$bindings.tab(tabId);
+  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0) $$bindings.ripple(ripple);
+  if ($$props.stacked === void 0 && $$bindings.stacked && stacked !== void 0) $$bindings.stacked(stacked);
+  if ($$props.minWidth === void 0 && $$bindings.minWidth && minWidth !== void 0) $$bindings.minWidth(minWidth);
+  if ($$props.indicatorSpanOnlyContent === void 0 && $$bindings.indicatorSpanOnlyContent && indicatorSpanOnlyContent !== void 0) $$bindings.indicatorSpanOnlyContent(indicatorSpanOnlyContent);
+  if ($$props.href === void 0 && $$bindings.href && href !== void 0) $$bindings.href(href);
+  if ($$props.content$use === void 0 && $$bindings.content$use && content$use !== void 0) $$bindings.content$use(content$use);
+  if ($$props.content$class === void 0 && $$bindings.content$class && content$class !== void 0) $$bindings.content$class(content$class);
+  if ($$props.component === void 0 && $$bindings.component && component !== void 0) $$bindings.component(component);
+  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0) $$bindings.tag(tag);
+  if ($$props.activate === void 0 && $$bindings.activate && activate !== void 0) $$bindings.activate(activate);
+  if ($$props.deactivate === void 0 && $$bindings.deactivate && deactivate !== void 0) $$bindings.deactivate(deactivate);
+  if ($$props.focus === void 0 && $$bindings.focus && focus !== void 0) $$bindings.focus(focus);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;
@@ -441,30 +415,18 @@ const TabScroller = create_ssr_component(($$result, $$props, $$bindings, slots) 
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.align === void 0 && $$bindings.align && align !== void 0)
-    $$bindings.align(align);
-  if ($$props.scrollArea$use === void 0 && $$bindings.scrollArea$use && scrollArea$use !== void 0)
-    $$bindings.scrollArea$use(scrollArea$use);
-  if ($$props.scrollArea$class === void 0 && $$bindings.scrollArea$class && scrollArea$class !== void 0)
-    $$bindings.scrollArea$class(scrollArea$class);
-  if ($$props.scrollContent$use === void 0 && $$bindings.scrollContent$use && scrollContent$use !== void 0)
-    $$bindings.scrollContent$use(scrollContent$use);
-  if ($$props.scrollContent$class === void 0 && $$bindings.scrollContent$class && scrollContent$class !== void 0)
-    $$bindings.scrollContent$class(scrollContent$class);
-  if ($$props.getScrollPosition === void 0 && $$bindings.getScrollPosition && getScrollPosition !== void 0)
-    $$bindings.getScrollPosition(getScrollPosition);
-  if ($$props.getScrollContentWidth === void 0 && $$bindings.getScrollContentWidth && getScrollContentWidth !== void 0)
-    $$bindings.getScrollContentWidth(getScrollContentWidth);
-  if ($$props.incrementScroll === void 0 && $$bindings.incrementScroll && incrementScroll !== void 0)
-    $$bindings.incrementScroll(incrementScroll);
-  if ($$props.scrollTo === void 0 && $$bindings.scrollTo && scrollTo !== void 0)
-    $$bindings.scrollTo(scrollTo);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.align === void 0 && $$bindings.align && align !== void 0) $$bindings.align(align);
+  if ($$props.scrollArea$use === void 0 && $$bindings.scrollArea$use && scrollArea$use !== void 0) $$bindings.scrollArea$use(scrollArea$use);
+  if ($$props.scrollArea$class === void 0 && $$bindings.scrollArea$class && scrollArea$class !== void 0) $$bindings.scrollArea$class(scrollArea$class);
+  if ($$props.scrollContent$use === void 0 && $$bindings.scrollContent$use && scrollContent$use !== void 0) $$bindings.scrollContent$use(scrollContent$use);
+  if ($$props.scrollContent$class === void 0 && $$bindings.scrollContent$class && scrollContent$class !== void 0) $$bindings.scrollContent$class(scrollContent$class);
+  if ($$props.getScrollPosition === void 0 && $$bindings.getScrollPosition && getScrollPosition !== void 0) $$bindings.getScrollPosition(getScrollPosition);
+  if ($$props.getScrollContentWidth === void 0 && $$bindings.getScrollContentWidth && getScrollContentWidth !== void 0) $$bindings.getScrollContentWidth(getScrollContentWidth);
+  if ($$props.incrementScroll === void 0 && $$bindings.incrementScroll && incrementScroll !== void 0) $$bindings.incrementScroll(incrementScroll);
+  if ($$props.scrollTo === void 0 && $$bindings.scrollTo && scrollTo !== void 0) $$bindings.scrollTo(scrollTo);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   return `<div${spread(
     [
       {
@@ -550,28 +512,17 @@ const TabBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.tabs === void 0 && $$bindings.tabs && tabs !== void 0)
-    $$bindings.tabs(tabs);
-  if ($$props.key === void 0 && $$bindings.key && key !== void 0)
-    $$bindings.key(key);
-  if ($$props.focusOnActivate === void 0 && $$bindings.focusOnActivate && focusOnActivate !== void 0)
-    $$bindings.focusOnActivate(focusOnActivate);
-  if ($$props.focusOnProgrammatic === void 0 && $$bindings.focusOnProgrammatic && focusOnProgrammatic !== void 0)
-    $$bindings.focusOnProgrammatic(focusOnProgrammatic);
-  if ($$props.useAutomaticActivation === void 0 && $$bindings.useAutomaticActivation && useAutomaticActivation !== void 0)
-    $$bindings.useAutomaticActivation(useAutomaticActivation);
-  if ($$props.active === void 0 && $$bindings.active && active !== void 0)
-    $$bindings.active(active);
-  if ($$props.tabindex === void 0 && $$bindings.tabindex && tabindex !== void 0)
-    $$bindings.tabindex(tabindex);
-  if ($$props.scrollIntoView === void 0 && $$bindings.scrollIntoView && scrollIntoView !== void 0)
-    $$bindings.scrollIntoView(scrollIntoView);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.tabs === void 0 && $$bindings.tabs && tabs !== void 0) $$bindings.tabs(tabs);
+  if ($$props.key === void 0 && $$bindings.key && key !== void 0) $$bindings.key(key);
+  if ($$props.focusOnActivate === void 0 && $$bindings.focusOnActivate && focusOnActivate !== void 0) $$bindings.focusOnActivate(focusOnActivate);
+  if ($$props.focusOnProgrammatic === void 0 && $$bindings.focusOnProgrammatic && focusOnProgrammatic !== void 0) $$bindings.focusOnProgrammatic(focusOnProgrammatic);
+  if ($$props.useAutomaticActivation === void 0 && $$bindings.useAutomaticActivation && useAutomaticActivation !== void 0) $$bindings.useAutomaticActivation(useAutomaticActivation);
+  if ($$props.active === void 0 && $$bindings.active && active !== void 0) $$bindings.active(active);
+  if ($$props.tabindex === void 0 && $$bindings.tabindex && tabindex !== void 0) $$bindings.tabindex(tabindex);
+  if ($$props.scrollIntoView === void 0 && $$bindings.scrollIntoView && scrollIntoView !== void 0) $$bindings.scrollIntoView(scrollIntoView);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;

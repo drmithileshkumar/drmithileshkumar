@@ -1,4 +1,4 @@
-import { c as create_ssr_component, f as add_attribute, e as escape } from "../../../../../../chunks/ssr.js";
+import { c as create_ssr_component, h as add_attribute, e as escape } from "../../../../../../chunks/ssr2.js";
 /* empty css                                                             */
 /* empty css                                                          */
 import "../../../../../../chunks/client.js";

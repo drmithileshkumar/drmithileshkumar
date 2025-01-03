@@ -1,4 +1,4 @@
-import { a as classAdderBuilder } from "./classAdderBuilder.js";
+import { c as classAdderBuilder } from "./classAdderBuilder.js";
 const Text = classAdderBuilder({
   class: "mdc-deprecated-list-item__text",
   tag: "span"

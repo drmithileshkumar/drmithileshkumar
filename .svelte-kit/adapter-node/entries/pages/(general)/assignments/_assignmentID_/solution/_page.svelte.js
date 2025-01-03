@@ -1,9 +1,9 @@
-import { s as subscribe, b as set_store_value } from "../../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, e as escape, j as each } from "../../../../../../chunks/ssr.js";
+import { a as subscribe, b as set_store_value } from "../../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component, e as escape, i as each } from "../../../../../../chunks/ssr2.js";
 import "../../../../../../chunks/client.js";
 import "../../../../../../chunks/ActionIcons.js";
 import "../../../../../../chunks/Suffix.js";
-import { c as currentPath } from "../../../../../../chunks/stores2.js";
+import { c as currentPath } from "../../../../../../chunks/stores.js";
 import { A as Assignment } from "../../../../../../chunks/Assignment.js";
 import { S as ShowQuestion } from "../../../../../../chunks/ShowQuestion.js";
 const css = {
@@ -15,8 +15,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
   let { data } = $$props;
   set_store_value(currentPath, $currentPath = "Assignment", $currentPath);
-  if ($$props.data === void 0 && $$bindings.data && data !== void 0)
-    $$bindings.data(data);
+  if ($$props.data === void 0 && $$bindings.data && data !== void 0) $$bindings.data(data);
   $$result.css.add(css);
   $$unsubscribe_currentPath();
   return `<article class="svelte-x7chvv">${validate_component(Assignment, "Assignment").$$render(

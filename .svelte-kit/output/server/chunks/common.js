@@ -1,6 +1,5 @@
 const randInt = (max, min) => {
-  if (min >= max)
-    return Math.floor(max);
+  if (min >= max) return Math.floor(max);
   let r = Math.random() * (max - min + 1);
   return Math.floor(min + r);
 };
@@ -13,8 +12,7 @@ const pickWithout = (arr) => {
 };
 const randSubset = (n, k) => {
   let set = [];
-  if (k == 0)
-    return [];
+  if (k == 0) return [];
   if (k >= n) {
     for (let i = 0; i < n; i++) {
       set.push(i);

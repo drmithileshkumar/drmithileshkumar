@@ -1,10 +1,10 @@
-import { s as subscribe } from "../../../../../../../chunks/utils.js";
-import { c as create_ssr_component, e as escape, f as add_attribute, k as add_classes } from "../../../../../../../chunks/ssr.js";
-import { c as currentSlide, s as slideCounter, a as selectedSection, b as selectedChapter, p as presentationMode, d as presentation } from "../../../../../../../chunks/stores3.js";
+import { a as subscribe } from "../../../../../../../chunks/utils.js";
+import { c as create_ssr_component, e as escape, h as add_attribute, k as add_classes } from "../../../../../../../chunks/ssr2.js";
+import { c as currentSlide, s as slideCounter, a as selectedSection, b as selectedChapter, p as presentationMode, d as presentation } from "../../../../../../../chunks/stores4.js";
 /* empty css                                                                 */
 /* empty css                                                                */
 import { T as TeX } from "../../../../../../../chunks/constants.js";
-import { p as page } from "../../../../../../../chunks/stores.js";
+import { p as page } from "../../../../../../../chunks/stores3.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_currentSlide;
   let $$unsubscribe_slideCounter;

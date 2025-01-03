@@ -1,4 +1,4 @@
-import { c as create_ssr_component, v as validate_component } from "../../../../chunks/ssr.js";
+import { c as create_ssr_component, v as validate_component } from "../../../../chunks/ssr2.js";
 import { P as Papers } from "../../../../chunks/Papers.js";
 const css = {
   code: ".container.svelte-nmqztf{padding:0 1em}",

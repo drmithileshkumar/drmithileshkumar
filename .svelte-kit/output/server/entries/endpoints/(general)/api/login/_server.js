@@ -42,8 +42,7 @@ async function POST({ locals, params, request }) {
   }
   let isTeacher = false;
   const confirmTeacher = await teachersCollection.findOne({ publicID });
-  if (confirmTeacher)
-    isTeacher = true;
+  if (confirmTeacher) isTeacher = true;
   const user = {
     publicID: existingUser.publicID,
     name: existingUser.name,

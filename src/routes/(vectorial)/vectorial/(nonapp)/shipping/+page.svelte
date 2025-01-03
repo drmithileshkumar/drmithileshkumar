@@ -1,0 +1,1 @@
+<h6>Currently no products require shipping.</h6>

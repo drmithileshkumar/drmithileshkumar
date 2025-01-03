@@ -1,8 +1,8 @@
 import { c as compute_rest_props } from "./utils.js";
-import { f as forwardEventsBuilder, c as classMap, g as globals, S as SmuiElement } from "./classAdderBuilder.js";
-import { c as create_ssr_component, a as get_current_component, g as getContext, h as setContext, o as onDestroy, v as validate_component, m as missing_component } from "./ssr.js";
+import { f as forwardEventsBuilder, c as classMap, g as globals, S as SmuiElement } from "./SmuiElement.js";
+import { c as create_ssr_component, a as get_current_component, g as getContext, s as setContext, o as onDestroy, v as validate_component, m as missing_component } from "./ssr2.js";
 import { MDCIconButtonToggleFoundation } from "@material/icon-button";
-import { d as dispatch } from "./Item.js";
+import { d as dispatch } from "./dispatch.js";
 import { R as Ripple } from "./Ripple.js";
 const { Object: Object_1 } = globals;
 const IconButton = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -99,40 +99,23 @@ const IconButton = create_ssr_component(($$result, $$props, $$bindings, slots) =
   function getElement() {
     return element.getElement();
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0)
-    $$bindings.ripple(ripple);
-  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
-    $$bindings.color(color);
-  if ($$props.toggle === void 0 && $$bindings.toggle && toggle !== void 0)
-    $$bindings.toggle(toggle);
-  if ($$props.pressed === void 0 && $$bindings.pressed && pressed !== void 0)
-    $$bindings.pressed(pressed);
-  if ($$props.ariaLabelOn === void 0 && $$bindings.ariaLabelOn && ariaLabelOn !== void 0)
-    $$bindings.ariaLabelOn(ariaLabelOn);
-  if ($$props.ariaLabelOff === void 0 && $$bindings.ariaLabelOff && ariaLabelOff !== void 0)
-    $$bindings.ariaLabelOff(ariaLabelOff);
-  if ($$props.touch === void 0 && $$bindings.touch && touch !== void 0)
-    $$bindings.touch(touch);
-  if ($$props.displayFlex === void 0 && $$bindings.displayFlex && displayFlex !== void 0)
-    $$bindings.displayFlex(displayFlex);
-  if ($$props.size === void 0 && $$bindings.size && size !== void 0)
-    $$bindings.size(size);
-  if ($$props.href === void 0 && $$bindings.href && href !== void 0)
-    $$bindings.href(href);
-  if ($$props.action === void 0 && $$bindings.action && action !== void 0)
-    $$bindings.action(action);
-  if ($$props.component === void 0 && $$bindings.component && component !== void 0)
-    $$bindings.component(component);
-  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
-    $$bindings.tag(tag);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.style === void 0 && $$bindings.style && style !== void 0) $$bindings.style(style);
+  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0) $$bindings.ripple(ripple);
+  if ($$props.color === void 0 && $$bindings.color && color !== void 0) $$bindings.color(color);
+  if ($$props.toggle === void 0 && $$bindings.toggle && toggle !== void 0) $$bindings.toggle(toggle);
+  if ($$props.pressed === void 0 && $$bindings.pressed && pressed !== void 0) $$bindings.pressed(pressed);
+  if ($$props.ariaLabelOn === void 0 && $$bindings.ariaLabelOn && ariaLabelOn !== void 0) $$bindings.ariaLabelOn(ariaLabelOn);
+  if ($$props.ariaLabelOff === void 0 && $$bindings.ariaLabelOff && ariaLabelOff !== void 0) $$bindings.ariaLabelOff(ariaLabelOff);
+  if ($$props.touch === void 0 && $$bindings.touch && touch !== void 0) $$bindings.touch(touch);
+  if ($$props.displayFlex === void 0 && $$bindings.displayFlex && displayFlex !== void 0) $$bindings.displayFlex(displayFlex);
+  if ($$props.size === void 0 && $$bindings.size && size !== void 0) $$bindings.size(size);
+  if ($$props.href === void 0 && $$bindings.href && href !== void 0) $$bindings.href(href);
+  if ($$props.action === void 0 && $$bindings.action && action !== void 0) $$bindings.action(action);
+  if ($$props.component === void 0 && $$bindings.component && component !== void 0) $$bindings.component(component);
+  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0) $$bindings.tag(tag);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;

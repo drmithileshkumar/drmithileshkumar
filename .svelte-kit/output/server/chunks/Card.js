@@ -1,6 +1,6 @@
 import { c as compute_rest_props } from "./utils.js";
-import { c as create_ssr_component, a as get_current_component, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute } from "./ssr.js";
-import { f as forwardEventsBuilder, c as classMap } from "./classAdderBuilder.js";
+import { c as create_ssr_component, a as get_current_component, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute } from "./ssr2.js";
+import { f as forwardEventsBuilder, c as classMap } from "./SmuiElement.js";
 const Card = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["use", "class", "variant", "padded", "getElement"]);
   forwardEventsBuilder(get_current_component());
@@ -12,16 +12,11 @@ const Card = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.variant === void 0 && $$bindings.variant && variant !== void 0)
-    $$bindings.variant(variant);
-  if ($$props.padded === void 0 && $$bindings.padded && padded !== void 0)
-    $$bindings.padded(padded);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.variant === void 0 && $$bindings.variant && variant !== void 0) $$bindings.variant(variant);
+  if ($$props.padded === void 0 && $$bindings.padded && padded !== void 0) $$bindings.padded(padded);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   return `<div${spread(
     [
       {

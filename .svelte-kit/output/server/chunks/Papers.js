@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as escape, v as validate_component } from "./ssr.js";
+import { c as create_ssr_component, e as escape, v as validate_component } from "./ssr2.js";
 const css$1 = {
   code: ".paper.svelte-fex077{display:grid;grid-template-rows:auto auto auto;margin-bottom:1em;color:currentColor}.authors.svelte-fex077{color:currentColor;text-decoration:none;font-weight:300;font-size:0.9em;opacity:0.8}.title.svelte-fex077{font-weight:500;font-size:1.1em}.venue.svelte-fex077{color:currentColor;font-size:0.8em;opacity:0.9}",
   map: '{"version":3,"file":"Paper.svelte","sources":["Paper.svelte"],"sourcesContent":["<script>\\r\\n\\r\\n<\/script>\\r\\n<style>\\r\\n    .paper {\\r\\n        display: grid;\\r\\n        grid-template-rows: auto auto auto;\\r\\n        margin-bottom: 1em;\\r\\n        color: currentColor;\\r\\n    }\\r\\n    .authors {\\r\\n        color: currentColor;\\r\\n        text-decoration: none;\\r\\n        font-weight: 300;\\r\\n        font-size: 0.9em;\\r\\n        opacity: 0.8;\\r\\n    }\\r\\n    .title {\\r\\n        font-weight: 500;\\r\\n        font-size: 1.1em;\\r\\n    }\\r\\n    .venue {\\r\\n        color: currentColor;\\r\\n        font-size: 0.8em;\\r\\n        opacity: 0.9;\\r\\n    }\\r\\n</style>\\r\\n<div class=\\"paper\\">\\r\\n    <div class=\\"authors\\">\\r\\n        <slot name=\\"authors\\" />\\r\\n    </div>\\r\\n    <div class=\\"title\\">\\r\\n        <slot name=\\"title\\" />\\r\\n    </div>\\r\\n    <div class=\\"venue\\">\\r\\n        <slot name=\\"venue\\" />\\r\\n    </div>\\r\\n</div>"],"names":[],"mappings":"AAII,oBAAO,CACH,OAAO,CAAE,IAAI,CACb,kBAAkB,CAAE,IAAI,CAAC,IAAI,CAAC,IAAI,CAClC,aAAa,CAAE,GAAG,CAClB,KAAK,CAAE,YACX,CACA,sBAAS,CACL,KAAK,CAAE,YAAY,CACnB,eAAe,CAAE,IAAI,CACrB,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,KAAK,CAChB,OAAO,CAAE,GACb,CACA,oBAAO,CACH,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,KACf,CACA,oBAAO,CACH,KAAK,CAAE,YAAY,CACnB,SAAS,CAAE,KAAK,CAChB,OAAO,CAAE,GACb"}'
@@ -14,8 +14,7 @@ const css = {
 let classType = "grid";
 const Papers = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { pdfReady = false } = $$props;
-  if ($$props.pdfReady === void 0 && $$bindings.pdfReady && pdfReady !== void 0)
-    $$bindings.pdfReady(pdfReady);
+  if ($$props.pdfReady === void 0 && $$bindings.pdfReady && pdfReady !== void 0) $$bindings.pdfReady(pdfReady);
   $$result.css.add(css);
   return `<div class="${"papers " + escape(classType, true) + " " + escape(pdfReady ? "grid" : classType, true) + " svelte-1yilitb"}"><section><h2 data-svelte-h="svelte-1tzb1h3">Quantum Information</h2> ${validate_component(Paper, "Paper").$$render($$result, {}, {}, {
     venue: () => {

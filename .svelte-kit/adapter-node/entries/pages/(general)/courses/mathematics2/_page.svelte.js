@@ -1,8 +1,8 @@
-import { s as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, e as escape, j as each } from "../../../../../chunks/ssr.js";
+import { a as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component, e as escape, i as each } from "../../../../../chunks/ssr2.js";
 import "../../../../../chunks/client.js";
 /* empty css                                                       */
-import { p as page } from "../../../../../chunks/stores.js";
+import { p as page } from "../../../../../chunks/stores3.js";
 import { T as Textfield } from "../../../../../chunks/Textfield.js";
 import "../../../../../chunks/Suffix.js";
 import { C as Card } from "../../../../../chunks/Card.js";
@@ -10,9 +10,10 @@ import { C as Content } from "../../../../../chunks/ActionIcons.js";
 import { A as Actions } from "../../../../../chunks/Actions.js";
 import { B as Button } from "../../../../../chunks/Button.js";
 import { C as CommonLabel } from "../../../../../chunks/CommonLabel.js";
-import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../../chunks/Cell.js";
+import { D as DataTable, R as Row, C as Cell, B as Body } from "../../../../../chunks/Cell.js";
+import { H as Head } from "../../../../../chunks/Head.js";
 import { N as NavList } from "../../../../../chunks/NavList.js";
-import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores2.js";
+import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores.js";
 import { c as contentNav, a as contents } from "../../../../../chunks/content4.js";
 import { P as Pathlist } from "../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../chunks/CourseNavigation.js";

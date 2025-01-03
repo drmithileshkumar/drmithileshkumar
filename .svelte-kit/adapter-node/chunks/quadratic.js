@@ -65,12 +65,10 @@ class Quadratic {
   }
   realRoots() {
     if (a === 0) {
-      if (b === 0)
-        return [];
+      if (b === 0) return [];
       return [-this.c / this.b];
     }
-    if (!this.hasRealRoots())
-      return [];
+    if (!this.hasRealRoots()) return [];
     else {
       if (this.hasEqualRoots()) {
         return [-this.b / (2 * this.a)];

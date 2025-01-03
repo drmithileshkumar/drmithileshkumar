@@ -1,4 +1,4 @@
-import { c as create_ssr_component, i as createEventDispatcher, v as validate_component } from "../../../../../../chunks/ssr.js";
+import { c as create_ssr_component, j as createEventDispatcher, v as validate_component } from "../../../../../../chunks/ssr2.js";
 import "../../../../../../chunks/client.js";
 import { C as Card } from "../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../chunks/ActionIcons.js";
@@ -12,8 +12,7 @@ import { C as Checkbox } from "../../../../../../chunks/Checkbox.js";
 const EditAssignment = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { assignment } = $$props;
   new createEventDispatcher();
-  if ($$props.assignment === void 0 && $$bindings.assignment && assignment !== void 0)
-    $$bindings.assignment(assignment);
+  if ($$props.assignment === void 0 && $$bindings.assignment && assignment !== void 0) $$bindings.assignment(assignment);
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;

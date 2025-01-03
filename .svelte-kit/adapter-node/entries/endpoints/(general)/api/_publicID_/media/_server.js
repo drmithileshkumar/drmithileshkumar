@@ -39,8 +39,7 @@ async function POST({ locals, request }) {
   await getUsersCollection();
   let dir = "media/" + publicID;
   try {
-    if (!existsSync(dir))
-      mkdirSync(dir);
+    if (!existsSync(dir)) mkdirSync(dir);
     writeFileSync(dir + `/${name}`, file, "base64");
     let mediaPath = "/" + publicID + `/${name}`;
     let status, message;

@@ -1,7 +1,7 @@
-import { s as subscribe, d as null_to_empty } from "../../../../../../../chunks/utils.js";
-import { c as create_ssr_component, e as escape, f as add_attribute } from "../../../../../../../chunks/ssr.js";
-import { c as currentSlide, s as slideCounter, p as presentationMode, d as presentation } from "../../../../../../../chunks/stores3.js";
-import { p as page } from "../../../../../../../chunks/stores.js";
+import { a as subscribe, d as null_to_empty } from "../../../../../../../chunks/utils.js";
+import { c as create_ssr_component, e as escape, h as add_attribute } from "../../../../../../../chunks/ssr2.js";
+import { c as currentSlide, s as slideCounter, p as presentationMode, d as presentation } from "../../../../../../../chunks/stores4.js";
+import { p as page } from "../../../../../../../chunks/stores3.js";
 import { T as TeX } from "../../../../../../../chunks/constants.js";
 const css = {
   code: "article.svelte-k7pfkr{position:relative;padding:0.5em}.absolute.svelte-k7pfkr{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-k7pfkr::-webkit-scrollbar{width:0;height:0}.currentActive.svelte-k7pfkr{color:tomato;border-radius:10px;transition:all 1s}.pad.svelte-k7pfkr{min-height:100px}.overlay.svelte-k7pfkr{position:absolute;z-index:2;left:0.5em;top:0;margin:auto;width:calc(100% - 2em);height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none}.thumbnail.svelte-k7pfkr{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%;flex-direction:column}.statement.svelte-k7pfkr{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}.flex.svelte-k7pfkr{display:flex;flex-direction:column}.grid.svelte-k7pfkr{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}",

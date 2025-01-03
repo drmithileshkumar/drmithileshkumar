@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/_page.js';
+import * as universal from '../entries/pages/(about)/about/_page.js';
 
 export const index = 27;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(about)/about/_page@about.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/+page.js";
-export const imports = ["_app/immutable/nodes/27.C1NHdMvy.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/stores.Tx699Zxm.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/entry.wIueeHHH.js","_app/immutable/chunks/ripple.CM997ajP.js","_app/immutable/chunks/ActionIcons.BB_MIeF4.js","_app/immutable/chunks/classAdderBuilder.Dr_z-rwh.js","_app/immutable/chunks/spread.CgU5AtxT.js","_app/immutable/chunks/stores.moVKe_bz.js"];
-export const stylesheets = ["_app/immutable/assets/27.EoQpQGB7.css","_app/immutable/assets/Practice.DlILBa6z.css","_app/immutable/assets/Message.By06LWcb.css"];
+export const universal_id = "src/routes/(about)/about/+page.js";
+export const imports = ["_app/immutable/nodes/27.C_9dCtkP.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.DhWV7ypx.js","_app/immutable/chunks/index.V8m0JAxO.js","_app/immutable/chunks/Papers.CT2dqfXr.js"];
+export const stylesheets = ["_app/immutable/assets/27.CuMpkue0.css","_app/immutable/assets/Research.D7JEguvc.css","_app/immutable/assets/Papers.BaItfzG-.css"];
 export const fonts = [];

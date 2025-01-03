@@ -1,14 +1,15 @@
-import { s as subscribe } from "./utils.js";
-import { c as create_ssr_component, v as validate_component, e as escape } from "./ssr.js";
+import { a as subscribe } from "./utils.js";
+import { c as create_ssr_component, v as validate_component, e as escape } from "./ssr2.js";
 import { C as Card } from "./Card.js";
 import { C as Content } from "./ActionIcons.js";
 import { A as Actions } from "./Actions.js";
 import { B as Button } from "./Button.js";
-import { S as Set_1, C as Chip, T as Text } from "./Text.js";
+import { S as Set_1, C as Chip } from "./Set.js";
+import { T as Text } from "./Text.js";
 import { T as Textfield } from "./Textfield.js";
 import "./Suffix.js";
 import "./client.js";
-import { p as page } from "./stores.js";
+import { p as page } from "./stores3.js";
 /* empty css                                         */
 const css = {
   code: ".place.svelte-m1g8tn{display:flex;justify-content:space-between}.university.svelte-m1g8tn{font-variant:small-caps}.department.svelte-m1g8tn{font-variant:small-caps}.assignmentDetails.svelte-m1g8tn{display:flex;justify-content:center;gap:1em;font-size:1.5em;margin:1em}.courseDetails.svelte-m1g8tn,.student.svelte-m1g8tn{display:grid;grid-template-columns:1fr 1fr;justify-content:space-between;padding-bottom:0.7em}.student.svelte-m1g8tn{align-items:center;margin-top:1em}.courseDetails.svelte-m1g8tn{border-bottom:2px solid}.course.svelte-m1g8tn,.marks.svelte-m1g8tn{display:flex;flex-direction:column}.marks.svelte-m1g8tn{text-align:end}",
@@ -23,18 +24,12 @@ const Assignment = create_ssr_component(($$result, $$props, $$bindings, slots) =
   let { viewable = true } = $$props;
   let { showQuestionList = true } = $$props;
   let { showStudent = false } = $$props;
-  if ($$props.studentName === void 0 && $$bindings.studentName && studentName !== void 0)
-    $$bindings.studentName(studentName);
-  if ($$props.studentID === void 0 && $$bindings.studentID && studentID !== void 0)
-    $$bindings.studentID(studentID);
-  if ($$props.assignment === void 0 && $$bindings.assignment && assignment !== void 0)
-    $$bindings.assignment(assignment);
-  if ($$props.viewable === void 0 && $$bindings.viewable && viewable !== void 0)
-    $$bindings.viewable(viewable);
-  if ($$props.showQuestionList === void 0 && $$bindings.showQuestionList && showQuestionList !== void 0)
-    $$bindings.showQuestionList(showQuestionList);
-  if ($$props.showStudent === void 0 && $$bindings.showStudent && showStudent !== void 0)
-    $$bindings.showStudent(showStudent);
+  if ($$props.studentName === void 0 && $$bindings.studentName && studentName !== void 0) $$bindings.studentName(studentName);
+  if ($$props.studentID === void 0 && $$bindings.studentID && studentID !== void 0) $$bindings.studentID(studentID);
+  if ($$props.assignment === void 0 && $$bindings.assignment && assignment !== void 0) $$bindings.assignment(assignment);
+  if ($$props.viewable === void 0 && $$bindings.viewable && viewable !== void 0) $$bindings.viewable(viewable);
+  if ($$props.showQuestionList === void 0 && $$bindings.showQuestionList && showQuestionList !== void 0) $$bindings.showQuestionList(showQuestionList);
+  if ($$props.showStudent === void 0 && $$bindings.showStudent && showStudent !== void 0) $$bindings.showStudent(showStudent);
   $$result.css.add(css);
   let $$settled;
   let $$rendered;

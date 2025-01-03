@@ -1,13 +1,13 @@
-import { s as subscribe, b as set_store_value } from "../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component } from "../../../../chunks/ssr.js";
+import { a as subscribe, b as set_store_value } from "../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component } from "../../../../chunks/ssr2.js";
 import { C as Card } from "../../../../chunks/Card.js";
 import { C as Content } from "../../../../chunks/ActionIcons.js";
 import { L as List, I as Item } from "../../../../chunks/Item.js";
 import { T as Text } from "../../../../chunks/Subheader.js";
 import { G as Graphic } from "../../../../chunks/Graphic.js";
 import "../../../../chunks/client.js";
-import { p as page } from "../../../../chunks/stores.js";
-import { d as darkMode, c as currentPath } from "../../../../chunks/stores2.js";
+import { p as page } from "../../../../chunks/stores3.js";
+import { d as darkMode, c as currentPath } from "../../../../chunks/stores.js";
 import { P as Pathlist } from "../../../../chunks/Pathlist.js";
 const css = {
   code: "article.svelte-86n1i9{display:flex;flex-direction:column;gap:0.5em}h3.svelte-86n1i9,h5.svelte-86n1i9{margin:0.5em 0}",

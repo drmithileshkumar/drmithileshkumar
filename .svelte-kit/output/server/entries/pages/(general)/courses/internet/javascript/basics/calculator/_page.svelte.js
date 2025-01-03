@@ -1,12 +1,12 @@
-import { s as subscribe, b as set_store_value } from "../../../../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component } from "../../../../../../../../chunks/ssr.js";
+import { a as subscribe, b as set_store_value } from "../../../../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component } from "../../../../../../../../chunks/ssr2.js";
 import { g as githubDark, a as github } from "../../../../../../../../chunks/github-dark.js";
 import { W as WebPractice } from "../../../../../../../../chunks/WebPractice.js";
-import { p as page } from "../../../../../../../../chunks/stores.js";
+import { p as page } from "../../../../../../../../chunks/stores3.js";
 import "../../../../../../../../chunks/ActionIcons.js";
 import "../../../../../../../../chunks/Subheader.js";
 import "../../../../../../../../chunks/client.js";
-import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores2.js";
+import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores.js";
 /* empty css                                                                   */
 import { c as contentNav, a as contents } from "../../../../../../../../chunks/content.js";
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";

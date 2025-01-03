@@ -1,7 +1,7 @@
-import { c as compute_rest_props, s as subscribe, b as set_store_value, e as compute_slots } from "./utils.js";
-import { c as create_ssr_component, a as get_current_component, g as getContext, h as setContext, o as onDestroy, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, e as escape } from "./ssr.js";
+import { c as compute_rest_props, a as subscribe, b as set_store_value, e as compute_slots } from "./utils.js";
+import { c as create_ssr_component, a as get_current_component, g as getContext, s as setContext, o as onDestroy, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute, e as escape } from "./ssr2.js";
 import { w as writable } from "./index2.js";
-import { f as forwardEventsBuilder, c as classMap } from "./classAdderBuilder.js";
+import { f as forwardEventsBuilder, c as classMap } from "./SmuiElement.js";
 import { e as exclude, p as prefixFilter } from "./prefixFilter.js";
 const DataTable = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, [
@@ -21,7 +21,7 @@ const DataTable = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     "getElement"
   ]);
   let $$slots = compute_slots(slots);
-  let $progressClosed, $$unsubscribe_progressClosed;
+  let $$unsubscribe_progressClosed;
   let $sortDirectionStore, $$unsubscribe_sortDirectionStore;
   let $sortStore, $$unsubscribe_sortStore;
   forwardEventsBuilder(get_current_component());
@@ -45,7 +45,7 @@ const DataTable = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let addLayoutListener = getContext("SMUI:addLayoutListener");
   let removeLayoutListener;
   let progressClosed = writable(false);
-  $$unsubscribe_progressClosed = subscribe(progressClosed, (value) => $progressClosed = value);
+  $$unsubscribe_progressClosed = subscribe(progressClosed, (value) => value);
   let sortStore = writable(sort);
   $$unsubscribe_sortStore = subscribe(sortStore, (value) => $sortStore = value);
   let sortDirectionStore = writable(sortDirection);
@@ -61,7 +61,6 @@ const DataTable = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   if (addLayoutListener) {
     removeLayoutListener = addLayoutListener(layout);
   }
-  let previousProgressClosed = void 0;
   onDestroy(() => {
     if (removeLayoutListener) {
       removeLayoutListener();
@@ -73,46 +72,22 @@ const DataTable = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.stickyHeader === void 0 && $$bindings.stickyHeader && stickyHeader !== void 0)
-    $$bindings.stickyHeader(stickyHeader);
-  if ($$props.sortable === void 0 && $$bindings.sortable && sortable !== void 0)
-    $$bindings.sortable(sortable);
-  if ($$props.sort === void 0 && $$bindings.sort && sort !== void 0)
-    $$bindings.sort(sort);
-  if ($$props.sortDirection === void 0 && $$bindings.sortDirection && sortDirection !== void 0)
-    $$bindings.sortDirection(sortDirection);
-  if ($$props.sortAscendingAriaLabel === void 0 && $$bindings.sortAscendingAriaLabel && sortAscendingAriaLabel !== void 0)
-    $$bindings.sortAscendingAriaLabel(sortAscendingAriaLabel);
-  if ($$props.sortDescendingAriaLabel === void 0 && $$bindings.sortDescendingAriaLabel && sortDescendingAriaLabel !== void 0)
-    $$bindings.sortDescendingAriaLabel(sortDescendingAriaLabel);
-  if ($$props.container$use === void 0 && $$bindings.container$use && container$use !== void 0)
-    $$bindings.container$use(container$use);
-  if ($$props.container$class === void 0 && $$bindings.container$class && container$class !== void 0)
-    $$bindings.container$class(container$class);
-  if ($$props.table$use === void 0 && $$bindings.table$use && table$use !== void 0)
-    $$bindings.table$use(table$use);
-  if ($$props.table$class === void 0 && $$bindings.table$class && table$class !== void 0)
-    $$bindings.table$class(table$class);
-  if ($$props.layout === void 0 && $$bindings.layout && layout !== void 0)
-    $$bindings.layout(layout);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.stickyHeader === void 0 && $$bindings.stickyHeader && stickyHeader !== void 0) $$bindings.stickyHeader(stickyHeader);
+  if ($$props.sortable === void 0 && $$bindings.sortable && sortable !== void 0) $$bindings.sortable(sortable);
+  if ($$props.sort === void 0 && $$bindings.sort && sort !== void 0) $$bindings.sort(sort);
+  if ($$props.sortDirection === void 0 && $$bindings.sortDirection && sortDirection !== void 0) $$bindings.sortDirection(sortDirection);
+  if ($$props.sortAscendingAriaLabel === void 0 && $$bindings.sortAscendingAriaLabel && sortAscendingAriaLabel !== void 0) $$bindings.sortAscendingAriaLabel(sortAscendingAriaLabel);
+  if ($$props.sortDescendingAriaLabel === void 0 && $$bindings.sortDescendingAriaLabel && sortDescendingAriaLabel !== void 0) $$bindings.sortDescendingAriaLabel(sortDescendingAriaLabel);
+  if ($$props.container$use === void 0 && $$bindings.container$use && container$use !== void 0) $$bindings.container$use(container$use);
+  if ($$props.container$class === void 0 && $$bindings.container$class && container$class !== void 0) $$bindings.container$class(container$class);
+  if ($$props.table$use === void 0 && $$bindings.table$use && table$use !== void 0) $$bindings.table$use(table$use);
+  if ($$props.table$class === void 0 && $$bindings.table$class && table$class !== void 0) $$bindings.table$class(table$class);
+  if ($$props.layout === void 0 && $$bindings.layout && layout !== void 0) $$bindings.layout(layout);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   set_store_value(sortStore, $sortStore = sort, $sortStore);
   set_store_value(sortDirectionStore, $sortDirectionStore = sortDirection, $sortDirectionStore);
-  {
-    if ($$slots.progress && instance && previousProgressClosed !== $progressClosed) {
-      previousProgressClosed = $progressClosed;
-      if ($progressClosed) {
-        instance.hideProgress();
-      } else {
-        instance.showProgress();
-      }
-    }
-  }
   $$unsubscribe_progressClosed();
   $$unsubscribe_sortDirectionStore();
   $$unsubscribe_sortStore();
@@ -153,21 +128,6 @@ const DataTable = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     {}
   )}>${slots.default ? slots.default({}) : ``}</table></div> ${$$slots.progress ? `<div class="mdc-data-table__progress-indicator"${add_attribute("style", Object.entries(progressIndicatorStyles).map(([name, value]) => `${name}: ${value};`).join(" "), 0)}><div class="mdc-data-table__scrim"></div> ${slots.progress ? slots.progress({}) : ``}</div>` : ``} ${slots.paginate ? slots.paginate({}) : ``} </div>`;
 });
-const Head = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["use", "getElement"]);
-  forwardEventsBuilder(get_current_component());
-  let { use = [] } = $$props;
-  let element;
-  setContext("SMUI:data-table:row:header", true);
-  function getElement() {
-    return element;
-  }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
-  return `<thead${spread([escape_object($$restProps)], {})}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``}</thead>`;
-});
 const Body = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["use", "class", "getElement"]);
   forwardEventsBuilder(get_current_component());
@@ -178,12 +138,9 @@ const Body = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   return `<tbody${spread(
     [
       {
@@ -212,14 +169,10 @@ const Row = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.rowId === void 0 && $$bindings.rowId && rowId !== void 0)
-    $$bindings.rowId(rowId);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.rowId === void 0 && $$bindings.rowId && rowId !== void 0) $$bindings.rowId(rowId);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   return `<tr${spread(
     [
       {
@@ -227,7 +180,7 @@ const Row = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           [className]: true,
           "mdc-data-table__header-row": header,
           "mdc-data-table__row": !header,
-          "mdc-data-table__row--selected": !header && checkbox && checkbox.checked,
+          "mdc-data-table__row--selected": !header && checkbox,
           ...internalClasses
         }))
       },
@@ -270,20 +223,13 @@ const Cell = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.numeric === void 0 && $$bindings.numeric && numeric !== void 0)
-    $$bindings.numeric(numeric);
-  if ($$props.checkbox === void 0 && $$bindings.checkbox && checkbox !== void 0)
-    $$bindings.checkbox(checkbox);
-  if ($$props.columnId === void 0 && $$bindings.columnId && columnId !== void 0)
-    $$bindings.columnId(columnId);
-  if ($$props.sortable === void 0 && $$bindings.sortable && sortable !== void 0)
-    $$bindings.sortable(sortable);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.numeric === void 0 && $$bindings.numeric && numeric !== void 0) $$bindings.numeric(numeric);
+  if ($$props.checkbox === void 0 && $$bindings.checkbox && checkbox !== void 0) $$bindings.checkbox(checkbox);
+  if ($$props.columnId === void 0 && $$bindings.columnId && columnId !== void 0) $$bindings.columnId(columnId);
+  if ($$props.sortable === void 0 && $$bindings.sortable && sortable !== void 0) $$bindings.sortable(sortable);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   $$unsubscribe_sort();
   $$unsubscribe_sortDirection();
   return `${header ? `<th${spread(
@@ -332,6 +278,5 @@ export {
   Body as B,
   Cell as C,
   DataTable as D,
-  Head as H,
   Row as R
 };

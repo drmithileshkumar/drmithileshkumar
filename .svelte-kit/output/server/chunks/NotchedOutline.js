@@ -1,6 +1,6 @@
 import { c as compute_rest_props } from "./utils.js";
-import { c as create_ssr_component, a as get_current_component, g as getContext, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute } from "./ssr.js";
-import { f as forwardEventsBuilder, c as classMap } from "./classAdderBuilder.js";
+import { c as create_ssr_component, a as get_current_component, g as getContext, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute } from "./ssr2.js";
+import { f as forwardEventsBuilder, c as classMap } from "./SmuiElement.js";
 const FloatingLabel = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, [
     "use",
@@ -45,30 +45,18 @@ const FloatingLabel = create_ssr_component(($$result, $$props, $$bindings, slots
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.for === void 0 && $$bindings.for && forId !== void 0)
-    $$bindings.for(forId);
-  if ($$props.floatAbove === void 0 && $$bindings.floatAbove && floatAbove !== void 0)
-    $$bindings.floatAbove(floatAbove);
-  if ($$props.required === void 0 && $$bindings.required && required !== void 0)
-    $$bindings.required(required);
-  if ($$props.wrapped === void 0 && $$bindings.wrapped && wrapped !== void 0)
-    $$bindings.wrapped(wrapped);
-  if ($$props.shake === void 0 && $$bindings.shake && shake !== void 0)
-    $$bindings.shake(shake);
-  if ($$props.float === void 0 && $$bindings.float && float !== void 0)
-    $$bindings.float(float);
-  if ($$props.setRequired === void 0 && $$bindings.setRequired && setRequired !== void 0)
-    $$bindings.setRequired(setRequired);
-  if ($$props.getWidth === void 0 && $$bindings.getWidth && getWidth !== void 0)
-    $$bindings.getWidth(getWidth);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.style === void 0 && $$bindings.style && style !== void 0) $$bindings.style(style);
+  if ($$props.for === void 0 && $$bindings.for && forId !== void 0) $$bindings.for(forId);
+  if ($$props.floatAbove === void 0 && $$bindings.floatAbove && floatAbove !== void 0) $$bindings.floatAbove(floatAbove);
+  if ($$props.required === void 0 && $$bindings.required && required !== void 0) $$bindings.required(required);
+  if ($$props.wrapped === void 0 && $$bindings.wrapped && wrapped !== void 0) $$bindings.wrapped(wrapped);
+  if ($$props.shake === void 0 && $$bindings.shake && shake !== void 0) $$bindings.shake(shake);
+  if ($$props.float === void 0 && $$bindings.float && float !== void 0) $$bindings.float(float);
+  if ($$props.setRequired === void 0 && $$bindings.setRequired && setRequired !== void 0) $$bindings.setRequired(setRequired);
+  if ($$props.getWidth === void 0 && $$bindings.getWidth && getWidth !== void 0) $$bindings.getWidth(getWidth);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   return `${wrapped ? `<span${spread(
     [
       {
@@ -140,22 +128,14 @@ const LineRipple = create_ssr_component(($$result, $$props, $$bindings, slots) =
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.active === void 0 && $$bindings.active && active !== void 0)
-    $$bindings.active(active);
-  if ($$props.activate === void 0 && $$bindings.activate && activate !== void 0)
-    $$bindings.activate(activate);
-  if ($$props.deactivate === void 0 && $$bindings.deactivate && deactivate !== void 0)
-    $$bindings.deactivate(deactivate);
-  if ($$props.setRippleCenter === void 0 && $$bindings.setRippleCenter && setRippleCenter !== void 0)
-    $$bindings.setRippleCenter(setRippleCenter);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.style === void 0 && $$bindings.style && style !== void 0) $$bindings.style(style);
+  if ($$props.active === void 0 && $$bindings.active && active !== void 0) $$bindings.active(active);
+  if ($$props.activate === void 0 && $$bindings.activate && activate !== void 0) $$bindings.activate(activate);
+  if ($$props.deactivate === void 0 && $$bindings.deactivate && deactivate !== void 0) $$bindings.deactivate(deactivate);
+  if ($$props.setRippleCenter === void 0 && $$bindings.setRippleCenter && setRippleCenter !== void 0) $$bindings.setRippleCenter(setRippleCenter);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   return `<div${spread(
     [
       {
@@ -199,20 +179,13 @@ const NotchedOutline = create_ssr_component(($$result, $$props, $$bindings, slot
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.notched === void 0 && $$bindings.notched && notched !== void 0)
-    $$bindings.notched(notched);
-  if ($$props.noLabel === void 0 && $$bindings.noLabel && noLabel !== void 0)
-    $$bindings.noLabel(noLabel);
-  if ($$props.notch === void 0 && $$bindings.notch && notch !== void 0)
-    $$bindings.notch(notch);
-  if ($$props.closeNotch === void 0 && $$bindings.closeNotch && closeNotch !== void 0)
-    $$bindings.closeNotch(closeNotch);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.notched === void 0 && $$bindings.notched && notched !== void 0) $$bindings.notched(notched);
+  if ($$props.noLabel === void 0 && $$bindings.noLabel && noLabel !== void 0) $$bindings.noLabel(noLabel);
+  if ($$props.notch === void 0 && $$bindings.notch && notch !== void 0) $$bindings.notch(notch);
+  if ($$props.closeNotch === void 0 && $$bindings.closeNotch && closeNotch !== void 0) $$bindings.closeNotch(closeNotch);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   {
     {
       removeClass("mdc-notched-outline--upgraded");

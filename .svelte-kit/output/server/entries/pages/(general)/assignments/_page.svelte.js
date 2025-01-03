@@ -1,9 +1,10 @@
-import { c as create_ssr_component, v as validate_component, j as each, e as escape } from "../../../../chunks/ssr.js";
+import { c as create_ssr_component, v as validate_component, i as each, e as escape } from "../../../../chunks/ssr2.js";
 import "../../../../chunks/client.js";
 import "../../../../chunks/ActionIcons.js";
 import { B as Button } from "../../../../chunks/Button.js";
 import { C as CommonLabel } from "../../../../chunks/CommonLabel.js";
-import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../chunks/Cell.js";
+import { D as DataTable, R as Row, C as Cell, B as Body } from "../../../../chunks/Cell.js";
+import { H as Head } from "../../../../chunks/Head.js";
 import "../../../../chunks/Suffix.js";
 /* empty css                                                          */
 const css = {
@@ -12,8 +13,7 @@ const css = {
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { data } = $$props;
-  if ($$props.data === void 0 && $$bindings.data && data !== void 0)
-    $$bindings.data(data);
+  if ($$props.data === void 0 && $$bindings.data && data !== void 0) $$bindings.data(data);
   $$result.css.add(css);
   return `<article class="svelte-1s9ex9t"><h2 data-svelte-h="svelte-1drpwhk">Assignments</h2> ${validate_component(DataTable, "Datatable").$$render($$result, { style: "width:100%" }, {}, {
     default: () => {

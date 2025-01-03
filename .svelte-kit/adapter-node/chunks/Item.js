@@ -1,25 +1,8 @@
 import { c as compute_rest_props } from "./utils.js";
-import { c as create_ssr_component, a as get_current_component, g as getContext, h as setContext, o as onDestroy, v as validate_component, m as missing_component } from "./ssr.js";
-import { f as forwardEventsBuilder, c as classMap, S as SmuiElement, g as globals } from "./classAdderBuilder.js";
+import { c as create_ssr_component, a as get_current_component, g as getContext, s as setContext, o as onDestroy, v as validate_component, m as missing_component } from "./ssr2.js";
+import { f as forwardEventsBuilder, c as classMap, S as SmuiElement, g as globals } from "./SmuiElement.js";
+import { d as dispatch } from "./dispatch.js";
 import { R as Ripple } from "./Ripple.js";
-function dispatch(element, eventType, detail, eventInit = { bubbles: true }, duplicateEventForMDC = false) {
-  if (typeof Event === "undefined") {
-    throw new Error("Event not defined.");
-  }
-  if (!element) {
-    throw new Error("Tried to dipatch event without element.");
-  }
-  const event = new CustomEvent(eventType, Object.assign(Object.assign({}, eventInit), { detail }));
-  element === null || element === void 0 ? void 0 : element.dispatchEvent(event);
-  if (duplicateEventForMDC && eventType.startsWith("SMUI")) {
-    const duplicateEvent = new CustomEvent(eventType.replace(/^SMUI/g, () => "MDC"), Object.assign(Object.assign({}, eventInit), { detail }));
-    element === null || element === void 0 ? void 0 : element.dispatchEvent(duplicateEvent);
-    if (duplicateEvent.defaultPrevented) {
-      event.preventDefault();
-    }
-  }
-  return event;
-}
 const List = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, [
     "use",
@@ -137,64 +120,35 @@ const List = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function getElement() {
     return element.getElement();
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.nonInteractive === void 0 && $$bindings.nonInteractive && nonInteractive !== void 0)
-    $$bindings.nonInteractive(nonInteractive);
-  if ($$props.dense === void 0 && $$bindings.dense && dense !== void 0)
-    $$bindings.dense(dense);
-  if ($$props.textualList === void 0 && $$bindings.textualList && textualList !== void 0)
-    $$bindings.textualList(textualList);
-  if ($$props.avatarList === void 0 && $$bindings.avatarList && avatarList !== void 0)
-    $$bindings.avatarList(avatarList);
-  if ($$props.iconList === void 0 && $$bindings.iconList && iconList !== void 0)
-    $$bindings.iconList(iconList);
-  if ($$props.imageList === void 0 && $$bindings.imageList && imageList !== void 0)
-    $$bindings.imageList(imageList);
-  if ($$props.thumbnailList === void 0 && $$bindings.thumbnailList && thumbnailList !== void 0)
-    $$bindings.thumbnailList(thumbnailList);
-  if ($$props.videoList === void 0 && $$bindings.videoList && videoList !== void 0)
-    $$bindings.videoList(videoList);
-  if ($$props.twoLine === void 0 && $$bindings.twoLine && twoLine !== void 0)
-    $$bindings.twoLine(twoLine);
-  if ($$props.threeLine === void 0 && $$bindings.threeLine && threeLine !== void 0)
-    $$bindings.threeLine(threeLine);
-  if ($$props.vertical === void 0 && $$bindings.vertical && vertical !== void 0)
-    $$bindings.vertical(vertical);
-  if ($$props.wrapFocus === void 0 && $$bindings.wrapFocus && wrapFocus !== void 0)
-    $$bindings.wrapFocus(wrapFocus);
-  if ($$props.singleSelection === void 0 && $$bindings.singleSelection && singleSelection !== void 0)
-    $$bindings.singleSelection(singleSelection);
-  if ($$props.disabledItemsFocusable === void 0 && $$bindings.disabledItemsFocusable && disabledItemsFocusable !== void 0)
-    $$bindings.disabledItemsFocusable(disabledItemsFocusable);
-  if ($$props.selectedIndex === void 0 && $$bindings.selectedIndex && selectedIndex !== void 0)
-    $$bindings.selectedIndex(selectedIndex);
-  if ($$props.radioList === void 0 && $$bindings.radioList && radioList !== void 0)
-    $$bindings.radioList(radioList);
-  if ($$props.checkList === void 0 && $$bindings.checkList && checkList !== void 0)
-    $$bindings.checkList(checkList);
-  if ($$props.hasTypeahead === void 0 && $$bindings.hasTypeahead && hasTypeahead !== void 0)
-    $$bindings.hasTypeahead(hasTypeahead);
-  if ($$props.component === void 0 && $$bindings.component && component !== void 0)
-    $$bindings.component(component);
-  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
-    $$bindings.tag(tag);
-  if ($$props.layout === void 0 && $$bindings.layout && layout !== void 0)
-    $$bindings.layout(layout);
-  if ($$props.setEnabled === void 0 && $$bindings.setEnabled && setEnabled !== void 0)
-    $$bindings.setEnabled(setEnabled);
-  if ($$props.getTypeaheadInProgress === void 0 && $$bindings.getTypeaheadInProgress && getTypeaheadInProgress !== void 0)
-    $$bindings.getTypeaheadInProgress(getTypeaheadInProgress);
-  if ($$props.getSelectedIndex === void 0 && $$bindings.getSelectedIndex && getSelectedIndex !== void 0)
-    $$bindings.getSelectedIndex(getSelectedIndex);
-  if ($$props.getFocusedItemIndex === void 0 && $$bindings.getFocusedItemIndex && getFocusedItemIndex !== void 0)
-    $$bindings.getFocusedItemIndex(getFocusedItemIndex);
-  if ($$props.focusItemAtIndex === void 0 && $$bindings.focusItemAtIndex && focusItemAtIndex !== void 0)
-    $$bindings.focusItemAtIndex(focusItemAtIndex);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.nonInteractive === void 0 && $$bindings.nonInteractive && nonInteractive !== void 0) $$bindings.nonInteractive(nonInteractive);
+  if ($$props.dense === void 0 && $$bindings.dense && dense !== void 0) $$bindings.dense(dense);
+  if ($$props.textualList === void 0 && $$bindings.textualList && textualList !== void 0) $$bindings.textualList(textualList);
+  if ($$props.avatarList === void 0 && $$bindings.avatarList && avatarList !== void 0) $$bindings.avatarList(avatarList);
+  if ($$props.iconList === void 0 && $$bindings.iconList && iconList !== void 0) $$bindings.iconList(iconList);
+  if ($$props.imageList === void 0 && $$bindings.imageList && imageList !== void 0) $$bindings.imageList(imageList);
+  if ($$props.thumbnailList === void 0 && $$bindings.thumbnailList && thumbnailList !== void 0) $$bindings.thumbnailList(thumbnailList);
+  if ($$props.videoList === void 0 && $$bindings.videoList && videoList !== void 0) $$bindings.videoList(videoList);
+  if ($$props.twoLine === void 0 && $$bindings.twoLine && twoLine !== void 0) $$bindings.twoLine(twoLine);
+  if ($$props.threeLine === void 0 && $$bindings.threeLine && threeLine !== void 0) $$bindings.threeLine(threeLine);
+  if ($$props.vertical === void 0 && $$bindings.vertical && vertical !== void 0) $$bindings.vertical(vertical);
+  if ($$props.wrapFocus === void 0 && $$bindings.wrapFocus && wrapFocus !== void 0) $$bindings.wrapFocus(wrapFocus);
+  if ($$props.singleSelection === void 0 && $$bindings.singleSelection && singleSelection !== void 0) $$bindings.singleSelection(singleSelection);
+  if ($$props.disabledItemsFocusable === void 0 && $$bindings.disabledItemsFocusable && disabledItemsFocusable !== void 0) $$bindings.disabledItemsFocusable(disabledItemsFocusable);
+  if ($$props.selectedIndex === void 0 && $$bindings.selectedIndex && selectedIndex !== void 0) $$bindings.selectedIndex(selectedIndex);
+  if ($$props.radioList === void 0 && $$bindings.radioList && radioList !== void 0) $$bindings.radioList(radioList);
+  if ($$props.checkList === void 0 && $$bindings.checkList && checkList !== void 0) $$bindings.checkList(checkList);
+  if ($$props.hasTypeahead === void 0 && $$bindings.hasTypeahead && hasTypeahead !== void 0) $$bindings.hasTypeahead(hasTypeahead);
+  if ($$props.component === void 0 && $$bindings.component && component !== void 0) $$bindings.component(component);
+  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0) $$bindings.tag(tag);
+  if ($$props.layout === void 0 && $$bindings.layout && layout !== void 0) $$bindings.layout(layout);
+  if ($$props.setEnabled === void 0 && $$bindings.setEnabled && setEnabled !== void 0) $$bindings.setEnabled(setEnabled);
+  if ($$props.getTypeaheadInProgress === void 0 && $$bindings.getTypeaheadInProgress && getTypeaheadInProgress !== void 0) $$bindings.getTypeaheadInProgress(getTypeaheadInProgress);
+  if ($$props.getSelectedIndex === void 0 && $$bindings.getSelectedIndex && getSelectedIndex !== void 0) $$bindings.getSelectedIndex(getSelectedIndex);
+  if ($$props.getFocusedItemIndex === void 0 && $$bindings.getFocusedItemIndex && getFocusedItemIndex !== void 0) $$bindings.getFocusedItemIndex(getFocusedItemIndex);
+  if ($$props.focusItemAtIndex === void 0 && $$bindings.focusItemAtIndex && focusItemAtIndex !== void 0) $$bindings.focusItemAtIndex(focusItemAtIndex);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;
@@ -345,46 +299,26 @@ const Item = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function getElement() {
     return element.getElement();
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
-    $$bindings.color(color);
-  if ($$props.nonInteractive === void 0 && $$bindings.nonInteractive && nonInteractive !== void 0)
-    $$bindings.nonInteractive(nonInteractive);
-  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0)
-    $$bindings.ripple(ripple);
-  if ($$props.wrapper === void 0 && $$bindings.wrapper && wrapper !== void 0)
-    $$bindings.wrapper(wrapper);
-  if ($$props.activated === void 0 && $$bindings.activated && activated !== void 0)
-    $$bindings.activated(activated);
-  if ($$props.role === void 0 && $$bindings.role && role !== void 0)
-    $$bindings.role(role);
-  if ($$props.selected === void 0 && $$bindings.selected && selected !== void 0)
-    $$bindings.selected(selected);
-  if ($$props.disabled === void 0 && $$bindings.disabled && disabled !== void 0)
-    $$bindings.disabled(disabled);
-  if ($$props.skipRestoreFocus === void 0 && $$bindings.skipRestoreFocus && skipRestoreFocus !== void 0)
-    $$bindings.skipRestoreFocus(skipRestoreFocus);
-  if ($$props.tabindex === void 0 && $$bindings.tabindex && tabindexProp !== void 0)
-    $$bindings.tabindex(tabindexProp);
-  if ($$props.inputId === void 0 && $$bindings.inputId && inputId !== void 0)
-    $$bindings.inputId(inputId);
-  if ($$props.href === void 0 && $$bindings.href && href !== void 0)
-    $$bindings.href(href);
-  if ($$props.component === void 0 && $$bindings.component && component !== void 0)
-    $$bindings.component(component);
-  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
-    $$bindings.tag(tag);
-  if ($$props.action === void 0 && $$bindings.action && action !== void 0)
-    $$bindings.action(action);
-  if ($$props.getPrimaryText === void 0 && $$bindings.getPrimaryText && getPrimaryText !== void 0)
-    $$bindings.getPrimaryText(getPrimaryText);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.style === void 0 && $$bindings.style && style !== void 0) $$bindings.style(style);
+  if ($$props.color === void 0 && $$bindings.color && color !== void 0) $$bindings.color(color);
+  if ($$props.nonInteractive === void 0 && $$bindings.nonInteractive && nonInteractive !== void 0) $$bindings.nonInteractive(nonInteractive);
+  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0) $$bindings.ripple(ripple);
+  if ($$props.wrapper === void 0 && $$bindings.wrapper && wrapper !== void 0) $$bindings.wrapper(wrapper);
+  if ($$props.activated === void 0 && $$bindings.activated && activated !== void 0) $$bindings.activated(activated);
+  if ($$props.role === void 0 && $$bindings.role && role !== void 0) $$bindings.role(role);
+  if ($$props.selected === void 0 && $$bindings.selected && selected !== void 0) $$bindings.selected(selected);
+  if ($$props.disabled === void 0 && $$bindings.disabled && disabled !== void 0) $$bindings.disabled(disabled);
+  if ($$props.skipRestoreFocus === void 0 && $$bindings.skipRestoreFocus && skipRestoreFocus !== void 0) $$bindings.skipRestoreFocus(skipRestoreFocus);
+  if ($$props.tabindex === void 0 && $$bindings.tabindex && tabindexProp !== void 0) $$bindings.tabindex(tabindexProp);
+  if ($$props.inputId === void 0 && $$bindings.inputId && inputId !== void 0) $$bindings.inputId(inputId);
+  if ($$props.href === void 0 && $$bindings.href && href !== void 0) $$bindings.href(href);
+  if ($$props.component === void 0 && $$bindings.component && component !== void 0) $$bindings.component(component);
+  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0) $$bindings.tag(tag);
+  if ($$props.action === void 0 && $$bindings.action && action !== void 0) $$bindings.action(action);
+  if ($$props.getPrimaryText === void 0 && $$bindings.getPrimaryText && getPrimaryText !== void 0) $$bindings.getPrimaryText(getPrimaryText);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;
@@ -470,6 +404,5 @@ const Item = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 export {
   Item as I,
-  List as L,
-  dispatch as d
+  List as L
 };

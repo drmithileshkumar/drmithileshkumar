@@ -85,7 +85,7 @@
             <p style="color:black;">
                 in <strong>browser</strong>!
             </p>
-            <a use:ripple href="https://vectorial.app">Get Started</a>
+            <a use:ripple href="/vectorial">Get Started</a>
             <!-- <Link href={'/vectorial'} style="font-size: 1.2em;">Get started</Link> -->
         </section>
         <figure>

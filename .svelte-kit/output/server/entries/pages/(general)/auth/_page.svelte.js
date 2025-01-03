@@ -1,17 +1,17 @@
-import { s as subscribe, b as set_store_value } from "../../../../chunks/utils.js";
-import { c as create_ssr_component, i as createEventDispatcher, f as add_attribute, v as validate_component, e as escape } from "../../../../chunks/ssr.js";
+import { a as subscribe, b as set_store_value } from "../../../../chunks/utils.js";
+import { c as create_ssr_component, j as createEventDispatcher, h as add_attribute, v as validate_component, e as escape } from "../../../../chunks/ssr2.js";
 import { B as Button } from "../../../../chunks/Button.js";
 import { C as CommonLabel } from "../../../../chunks/CommonLabel.js";
-import { S as Set_1, C as Chip, T as Text } from "../../../../chunks/Text.js";
+import { S as Set_1, C as Chip } from "../../../../chunks/Set.js";
+import { T as Text } from "../../../../chunks/Text.js";
 import { C as Card } from "../../../../chunks/Card.js";
 import { C as Content } from "../../../../chunks/ActionIcons.js";
 import { A as Actions } from "../../../../chunks/Actions.js";
 import { T as Textfield } from "../../../../chunks/Textfield.js";
 import "../../../../chunks/Suffix.js";
-import "devalue";
 import "../../../../chunks/client.js";
-import { p as page } from "../../../../chunks/stores.js";
-import { a as scannedQR, G as Guest, c as currentPath } from "../../../../chunks/stores2.js";
+import { p as page } from "../../../../chunks/stores3.js";
+import { a as scannedQR, G as Guest, c as currentPath } from "../../../../chunks/stores.js";
 import "html5-qrcode";
 import "qrcode-generator";
 /* empty css                                                          */
@@ -47,7 +47,6 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let choices = ["Log in", "Sign up"];
   let selected = "Log in";
   let phone = null, name = null;
-  let scanned = false;
   $$result.css.add(css);
   let $$settled;
   let $$rendered;
@@ -139,15 +138,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           }
         )} ${validate_component(Actions, "Actions").$$render($$result, {}, {}, {
           default: () => {
-            return `${selected === "Log in" && scanned ? `${validate_component(Button, "Button").$$render($$result, { style: "width:100%" }, {}, {
-              default: () => {
-                return `${validate_component(CommonLabel, "Label").$$render($$result, {}, {}, {
-                  default: () => {
-                    return `Login`;
-                  }
-                })}`;
-              }
-            })}` : `${selected === "Sign up" && phone ? `${validate_component(Button, "Button").$$render($$result, { style: "width:100%" }, {}, {
+            return `${`${selected === "Sign up" && phone ? `${validate_component(Button, "Button").$$render($$result, { style: "width:100%" }, {}, {
               default: () => {
                 return `${validate_component(CommonLabel, "Label").$$render($$result, {}, {}, {
                   default: () => {

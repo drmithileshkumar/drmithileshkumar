@@ -1,6 +1,6 @@
-import { c as compute_rest_props, s as subscribe, b as set_store_value, e as compute_slots } from "./utils.js";
-import { f as forwardEventsBuilder, c as classMap, g as globals } from "./classAdderBuilder.js";
-import { c as create_ssr_component, a as get_current_component, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, g as getContext, h as setContext, o as onDestroy, v as validate_component, e as escape } from "./ssr.js";
+import { c as compute_rest_props, a as subscribe, b as set_store_value, e as compute_slots } from "./utils.js";
+import { f as forwardEventsBuilder, c as classMap, g as globals } from "./SmuiElement.js";
+import { c as create_ssr_component, a as get_current_component, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute, g as getContext, s as setContext, o as onDestroy, v as validate_component, e as escape } from "./ssr2.js";
 import { w as writable } from "./index2.js";
 import { e as exclude, p as prefixFilter } from "./prefixFilter.js";
 import { M as Menu } from "./Menu.js";
@@ -23,18 +23,12 @@ const HelperText = create_ssr_component(($$result, $$props, $$bindings, slots) =
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.id === void 0 && $$bindings.id && id !== void 0)
-    $$bindings.id(id);
-  if ($$props.persistent === void 0 && $$bindings.persistent && persistent !== void 0)
-    $$bindings.persistent(persistent);
-  if ($$props.validationMsg === void 0 && $$bindings.validationMsg && validationMsg !== void 0)
-    $$bindings.validationMsg(validationMsg);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.id === void 0 && $$bindings.id && id !== void 0) $$bindings.id(id);
+  if ($$props.persistent === void 0 && $$bindings.persistent && persistent !== void 0) $$bindings.persistent(persistent);
+  if ($$props.validationMsg === void 0 && $$bindings.validationMsg && validationMsg !== void 0) $$bindings.validationMsg(validationMsg);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   return `<div${spread(
     [
       {
@@ -187,68 +181,37 @@ const Select = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0)
-    $$bindings.ripple(ripple);
-  if ($$props.disabled === void 0 && $$bindings.disabled && disabled !== void 0)
-    $$bindings.disabled(disabled);
-  if ($$props.variant === void 0 && $$bindings.variant && variant !== void 0)
-    $$bindings.variant(variant);
-  if ($$props.noLabel === void 0 && $$bindings.noLabel && noLabel !== void 0)
-    $$bindings.noLabel(noLabel);
-  if ($$props.label === void 0 && $$bindings.label && label !== void 0)
-    $$bindings.label(label);
-  if ($$props.value === void 0 && $$bindings.value && value !== void 0)
-    $$bindings.value(value);
-  if ($$props.key === void 0 && $$bindings.key && key !== void 0)
-    $$bindings.key(key);
-  if ($$props.dirty === void 0 && $$bindings.dirty && dirty !== void 0)
-    $$bindings.dirty(dirty);
-  if ($$props.invalid === void 0 && $$bindings.invalid && invalid !== void 0)
-    $$bindings.invalid(invalid);
-  if ($$props.updateInvalid === void 0 && $$bindings.updateInvalid && updateInvalid !== void 0)
-    $$bindings.updateInvalid(updateInvalid);
-  if ($$props.required === void 0 && $$bindings.required && required !== void 0)
-    $$bindings.required(required);
-  if ($$props.inputId === void 0 && $$bindings.inputId && inputId !== void 0)
-    $$bindings.inputId(inputId);
-  if ($$props.hiddenInput === void 0 && $$bindings.hiddenInput && hiddenInput !== void 0)
-    $$bindings.hiddenInput(hiddenInput);
-  if ($$props.withLeadingIcon === void 0 && $$bindings.withLeadingIcon && withLeadingIcon !== void 0)
-    $$bindings.withLeadingIcon(withLeadingIcon);
-  if ($$props.anchor$use === void 0 && $$bindings.anchor$use && anchor$use !== void 0)
-    $$bindings.anchor$use(anchor$use);
-  if ($$props.anchor$class === void 0 && $$bindings.anchor$class && anchor$class !== void 0)
-    $$bindings.anchor$class(anchor$class);
-  if ($$props.selectedTextContainer$use === void 0 && $$bindings.selectedTextContainer$use && selectedTextContainer$use !== void 0)
-    $$bindings.selectedTextContainer$use(selectedTextContainer$use);
-  if ($$props.selectedTextContainer$class === void 0 && $$bindings.selectedTextContainer$class && selectedTextContainer$class !== void 0)
-    $$bindings.selectedTextContainer$class(selectedTextContainer$class);
-  if ($$props.selectedText$use === void 0 && $$bindings.selectedText$use && selectedText$use !== void 0)
-    $$bindings.selectedText$use(selectedText$use);
-  if ($$props.selectedText$class === void 0 && $$bindings.selectedText$class && selectedText$class !== void 0)
-    $$bindings.selectedText$class(selectedText$class);
-  if ($$props.dropdownIcon$use === void 0 && $$bindings.dropdownIcon$use && dropdownIcon$use !== void 0)
-    $$bindings.dropdownIcon$use(dropdownIcon$use);
-  if ($$props.dropdownIcon$class === void 0 && $$bindings.dropdownIcon$class && dropdownIcon$class !== void 0)
-    $$bindings.dropdownIcon$class(dropdownIcon$class);
-  if ($$props.menu$class === void 0 && $$bindings.menu$class && menu$class !== void 0)
-    $$bindings.menu$class(menu$class);
-  if ($$props.getUseDefaultValidation === void 0 && $$bindings.getUseDefaultValidation && getUseDefaultValidation !== void 0)
-    $$bindings.getUseDefaultValidation(getUseDefaultValidation);
-  if ($$props.setUseDefaultValidation === void 0 && $$bindings.setUseDefaultValidation && setUseDefaultValidation !== void 0)
-    $$bindings.setUseDefaultValidation(setUseDefaultValidation);
-  if ($$props.focus === void 0 && $$bindings.focus && focus !== void 0)
-    $$bindings.focus(focus);
-  if ($$props.layout === void 0 && $$bindings.layout && layout !== void 0)
-    $$bindings.layout(layout);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.style === void 0 && $$bindings.style && style !== void 0) $$bindings.style(style);
+  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0) $$bindings.ripple(ripple);
+  if ($$props.disabled === void 0 && $$bindings.disabled && disabled !== void 0) $$bindings.disabled(disabled);
+  if ($$props.variant === void 0 && $$bindings.variant && variant !== void 0) $$bindings.variant(variant);
+  if ($$props.noLabel === void 0 && $$bindings.noLabel && noLabel !== void 0) $$bindings.noLabel(noLabel);
+  if ($$props.label === void 0 && $$bindings.label && label !== void 0) $$bindings.label(label);
+  if ($$props.value === void 0 && $$bindings.value && value !== void 0) $$bindings.value(value);
+  if ($$props.key === void 0 && $$bindings.key && key !== void 0) $$bindings.key(key);
+  if ($$props.dirty === void 0 && $$bindings.dirty && dirty !== void 0) $$bindings.dirty(dirty);
+  if ($$props.invalid === void 0 && $$bindings.invalid && invalid !== void 0) $$bindings.invalid(invalid);
+  if ($$props.updateInvalid === void 0 && $$bindings.updateInvalid && updateInvalid !== void 0) $$bindings.updateInvalid(updateInvalid);
+  if ($$props.required === void 0 && $$bindings.required && required !== void 0) $$bindings.required(required);
+  if ($$props.inputId === void 0 && $$bindings.inputId && inputId !== void 0) $$bindings.inputId(inputId);
+  if ($$props.hiddenInput === void 0 && $$bindings.hiddenInput && hiddenInput !== void 0) $$bindings.hiddenInput(hiddenInput);
+  if ($$props.withLeadingIcon === void 0 && $$bindings.withLeadingIcon && withLeadingIcon !== void 0) $$bindings.withLeadingIcon(withLeadingIcon);
+  if ($$props.anchor$use === void 0 && $$bindings.anchor$use && anchor$use !== void 0) $$bindings.anchor$use(anchor$use);
+  if ($$props.anchor$class === void 0 && $$bindings.anchor$class && anchor$class !== void 0) $$bindings.anchor$class(anchor$class);
+  if ($$props.selectedTextContainer$use === void 0 && $$bindings.selectedTextContainer$use && selectedTextContainer$use !== void 0) $$bindings.selectedTextContainer$use(selectedTextContainer$use);
+  if ($$props.selectedTextContainer$class === void 0 && $$bindings.selectedTextContainer$class && selectedTextContainer$class !== void 0) $$bindings.selectedTextContainer$class(selectedTextContainer$class);
+  if ($$props.selectedText$use === void 0 && $$bindings.selectedText$use && selectedText$use !== void 0) $$bindings.selectedText$use(selectedText$use);
+  if ($$props.selectedText$class === void 0 && $$bindings.selectedText$class && selectedText$class !== void 0) $$bindings.selectedText$class(selectedText$class);
+  if ($$props.dropdownIcon$use === void 0 && $$bindings.dropdownIcon$use && dropdownIcon$use !== void 0) $$bindings.dropdownIcon$use(dropdownIcon$use);
+  if ($$props.dropdownIcon$class === void 0 && $$bindings.dropdownIcon$class && dropdownIcon$class !== void 0) $$bindings.dropdownIcon$class(dropdownIcon$class);
+  if ($$props.menu$class === void 0 && $$bindings.menu$class && menu$class !== void 0) $$bindings.menu$class(menu$class);
+  if ($$props.getUseDefaultValidation === void 0 && $$bindings.getUseDefaultValidation && getUseDefaultValidation !== void 0) $$bindings.getUseDefaultValidation(getUseDefaultValidation);
+  if ($$props.setUseDefaultValidation === void 0 && $$bindings.setUseDefaultValidation && setUseDefaultValidation !== void 0) $$bindings.setUseDefaultValidation(setUseDefaultValidation);
+  if ($$props.focus === void 0 && $$bindings.focus && focus !== void 0) $$bindings.focus(focus);
+  if ($$props.layout === void 0 && $$bindings.layout && layout !== void 0) $$bindings.layout(layout);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;
@@ -521,14 +484,10 @@ const Option = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function getElement() {
     return element.getElement();
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.value === void 0 && $$bindings.value && value !== void 0)
-    $$bindings.value(value);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.value === void 0 && $$bindings.value && value !== void 0) $$bindings.value(value);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;

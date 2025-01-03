@@ -1,0 +1,98 @@
+import { e as compute_rest_props } from './utils-iZWwlC2F.js';
+import { c as create_ssr_component, b as get_current_component, g as getContext, d as spread, f as escape_attribute_value, h as escape_object, a as add_attribute } from './ssr2-q3O0l93f.js';
+import { f as forwardEventsBuilder, c as classMap } from './SmuiElement-DA9PKsv2.js';
+import { e as exclude, p as prefixFilter } from './prefixFilter-B6cFZsw3.js';
+
+const Radio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, [
+    "use",
+    "class",
+    "style",
+    "disabled",
+    "touch",
+    "group",
+    "value",
+    "valueKey",
+    "input$use",
+    "input$class",
+    "getId",
+    "getElement"
+  ]);
+  var _a;
+  forwardEventsBuilder(get_current_component());
+  let uninitializedValue = () => {
+  };
+  function isUninitializedValue(value2) {
+    return value2 === uninitializedValue;
+  }
+  let { use = [] } = $$props;
+  let { class: className = "" } = $$props;
+  let { style = "" } = $$props;
+  let { disabled = false } = $$props;
+  let { touch = false } = $$props;
+  let { group = void 0 } = $$props;
+  let { value = null } = $$props;
+  let { valueKey = uninitializedValue } = $$props;
+  let { input$use = [] } = $$props;
+  let { input$class = "" } = $$props;
+  let element;
+  let internalClasses = {};
+  let internalStyles = {};
+  let inputProps = (_a = getContext("SMUI:generic:input:props")) !== null && _a !== void 0 ? _a : {};
+  function getId() {
+    return inputProps && inputProps.id;
+  }
+  function getElement() {
+    return element;
+  }
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.style === void 0 && $$bindings.style && style !== void 0) $$bindings.style(style);
+  if ($$props.disabled === void 0 && $$bindings.disabled && disabled !== void 0) $$bindings.disabled(disabled);
+  if ($$props.touch === void 0 && $$bindings.touch && touch !== void 0) $$bindings.touch(touch);
+  if ($$props.group === void 0 && $$bindings.group && group !== void 0) $$bindings.group(group);
+  if ($$props.value === void 0 && $$bindings.value && value !== void 0) $$bindings.value(value);
+  if ($$props.valueKey === void 0 && $$bindings.valueKey && valueKey !== void 0) $$bindings.valueKey(valueKey);
+  if ($$props.input$use === void 0 && $$bindings.input$use && input$use !== void 0) $$bindings.input$use(input$use);
+  if ($$props.input$class === void 0 && $$bindings.input$class && input$class !== void 0) $$bindings.input$class(input$class);
+  if ($$props.getId === void 0 && $$bindings.getId && getId !== void 0) $$bindings.getId(getId);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
+  return `<div${spread(
+    [
+      {
+        class: escape_attribute_value(classMap({
+          [className]: true,
+          "mdc-radio": true,
+          "mdc-radio--disabled": disabled,
+          "mdc-radio--touch": touch,
+          ...internalClasses
+        }))
+      },
+      {
+        style: escape_attribute_value(Object.entries(internalStyles).map(([name, value2]) => `${name}: ${value2};`).concat([style]).join(" "))
+      },
+      escape_object(exclude($$restProps, ["input$"]))
+    ],
+    {}
+  )}${add_attribute("this", element, 0)}><input${spread(
+    [
+      {
+        class: escape_attribute_value(classMap({
+          [input$class]: true,
+          "mdc-radio__native-control": true
+        }))
+      },
+      { type: "radio" },
+      escape_object(inputProps),
+      { disabled: disabled || null },
+      {
+        value: escape_attribute_value(isUninitializedValue(valueKey) ? value : valueKey)
+      },
+      escape_object(prefixFilter($$restProps, "input$"))
+    ],
+    {}
+  )}${(isUninitializedValue(valueKey) ? value : valueKey) === group ? add_attribute("checked", true, 1) : ""}> <div class="mdc-radio__background" data-svelte-h="svelte-14iudo4"><div class="mdc-radio__outer-circle"></div> <div class="mdc-radio__inner-circle"></div></div> <div class="mdc-radio__ripple"></div> </div>`;
+});
+
+export { Radio as R };
+//# sourceMappingURL=Radio-wssveCE5.js.map

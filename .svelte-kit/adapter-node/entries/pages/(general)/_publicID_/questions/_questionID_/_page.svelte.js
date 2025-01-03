@@ -1,6 +1,6 @@
-import { s as subscribe } from "../../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, j as each, f as add_attribute, e as escape } from "../../../../../../chunks/ssr.js";
-import { p as page } from "../../../../../../chunks/stores.js";
+import { a as subscribe } from "../../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component, i as each, h as add_attribute, e as escape } from "../../../../../../chunks/ssr2.js";
+import { p as page } from "../../../../../../chunks/stores3.js";
 import "../../../../../../chunks/client.js";
 import { C as Card } from "../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../chunks/ActionIcons.js";
@@ -24,8 +24,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let options = ["A", "B", "C", "D"];
   let types = ["Objective", "Subjective"];
   let preview;
-  if ($$props.data === void 0 && $$bindings.data && data !== void 0)
-    $$bindings.data(data);
+  if ($$props.data === void 0 && $$bindings.data && data !== void 0) $$bindings.data(data);
   $$result.css.add(css);
   let $$settled;
   let $$rendered;

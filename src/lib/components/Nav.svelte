@@ -236,7 +236,7 @@
                 <Text>mathril</Text>
             </Item>
             <Item
-                on:SMUI:action={() => window.location = `https://vectorial.app`}
+                on:SMUI:action={() => window.location = `/vectorial`}
             >
                 <Graphic>
                     <Svg style="width: 100%; height: 100%;" viewBox="-336 -140 224.00000095367432 222.00000286102295" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="s-96Qa8tULeGx4">

@@ -1,6 +1,6 @@
 import { MDCRippleFoundation, util } from "@material/ripple";
 import { events, ponyfill } from "@material/dom";
-import { g as getContext } from "./ssr.js";
+import { g as getContext } from "./ssr2.js";
 const { applyPassive } = events;
 const { matches } = ponyfill;
 function Ripple(node, { ripple = true, surface = false, unbounded = false, disabled = false, color, active, rippleElement, eventTarget, activeTarget, addClass = (className) => node.classList.add(className), removeClass = (className) => node.classList.remove(className), addStyle = (name, value) => node.style.setProperty(name, value), initPromise = Promise.resolve() } = {}) {

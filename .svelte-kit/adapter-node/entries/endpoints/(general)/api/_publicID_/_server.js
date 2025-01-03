@@ -21,8 +21,7 @@ async function GET({ request, params, url, locals }) {
   let isFollowing = false;
   if (locals.user) {
     let isF = await followingsCollection.find({ publicID: locals.user.publicID, following: { $in: [id] } }).toArray();
-    if (isF.length > 0)
-      isFollowing = true;
+    if (isF.length > 0) isFollowing = true;
   }
   if (!userDetail) {
     return error(404, "Not found");
@@ -31,8 +30,7 @@ async function GET({ request, params, url, locals }) {
   return new Response(JSON.stringify({ user, userDetail }), { status: 200 });
 }
 async function POST({ params, request, locals }) {
-  if (locals.user)
-    ;
+  if (locals.user) ;
   if (!locals.user) {
     return error(401, "Unauthorized");
   }

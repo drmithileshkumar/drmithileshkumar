@@ -1,11 +1,11 @@
-import { s as subscribe, b as set_store_value } from "../../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, j as each } from "../../../../../../chunks/ssr.js";
-import { p as page } from "../../../../../../chunks/stores.js";
+import { a as subscribe, b as set_store_value } from "../../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component, i as each } from "../../../../../../chunks/ssr2.js";
+import { p as page } from "../../../../../../chunks/stores3.js";
 import "../../../../../../chunks/client.js";
 import "../../../../../../chunks/ActionIcons.js";
 import { B as Button } from "../../../../../../chunks/Button.js";
 import "../../../../../../chunks/Suffix.js";
-import { c as currentPath } from "../../../../../../chunks/stores2.js";
+import { c as currentPath } from "../../../../../../chunks/stores.js";
 import { A as Assignment } from "../../../../../../chunks/Assignment.js";
 import { T as TestQuestion } from "../../../../../../chunks/TestQuestion.js";
 const css = {
@@ -21,8 +21,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   set_store_value(currentPath, $currentPath = "Assignment", $currentPath);
   let studentID;
   let answers = {};
-  if ($$props.data === void 0 && $$bindings.data && data !== void 0)
-    $$bindings.data(data);
+  if ($$props.data === void 0 && $$bindings.data && data !== void 0) $$bindings.data(data);
   $$result.css.add(css);
   let $$settled;
   let $$rendered;

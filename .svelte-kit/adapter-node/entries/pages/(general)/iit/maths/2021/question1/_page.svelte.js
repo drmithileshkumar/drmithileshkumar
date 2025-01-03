@@ -1,7 +1,7 @@
-import { s as subscribe, d as null_to_empty } from "../../../../../../../chunks/utils.js";
-import { c as create_ssr_component, e as escape, f as add_attribute } from "../../../../../../../chunks/ssr.js";
-import { c as currentSlide, s as slideCounter, p as presentationMode, d as presentation } from "../../../../../../../chunks/stores3.js";
-import { p as page } from "../../../../../../../chunks/stores.js";
+import { a as subscribe, d as null_to_empty } from "../../../../../../../chunks/utils.js";
+import { c as create_ssr_component, e as escape, h as add_attribute } from "../../../../../../../chunks/ssr2.js";
+import { c as currentSlide, s as slideCounter, p as presentationMode, d as presentation } from "../../../../../../../chunks/stores4.js";
+import { p as page } from "../../../../../../../chunks/stores3.js";
 import { T as TeX } from "../../../../../../../chunks/constants.js";
 const css = {
   code: "article.svelte-1m5scy5{position:relative;padding:0.5em}.absolute.svelte-1m5scy5{margin:auto;width:100%;height:min(78vh, 60vw);overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 1em 0 1em}.absolute.svelte-1m5scy5::-webkit-scrollbar{width:0;height:0}.currentActive.svelte-1m5scy5{color:tomato;border-radius:10px;transition:all 1s}.pad.svelte-1m5scy5{min-height:100px}figure.svelte-1m5scy5{width:300px}.thumbnail.svelte-1m5scy5{display:flex;align-items:center;justify-content:center;font-size:2.5em;height:100%}.statement.svelte-1m5scy5{background:radial-gradient(#6000c091, rgb(0, 93, 180));color:rgb(246, 246, 246);text-shadow:1px 1px 3px rgb(4, 4, 4);box-shadow:1px 1px 3px rgb(129, 128, 128);padding:1em}",

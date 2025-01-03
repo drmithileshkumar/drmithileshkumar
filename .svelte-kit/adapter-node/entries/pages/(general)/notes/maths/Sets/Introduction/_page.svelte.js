@@ -1,9 +1,9 @@
-import { s as subscribe, d as null_to_empty } from "../../../../../../../chunks/utils.js";
-import { c as create_ssr_component, e as escape, f as add_attribute, v as validate_component } from "../../../../../../../chunks/ssr.js";
-import { p as presentationMode, c as currentSlide, s as slideCounter, a as selectedSection, b as selectedChapter, d as presentation } from "../../../../../../../chunks/stores3.js";
+import { a as subscribe, d as null_to_empty } from "../../../../../../../chunks/utils.js";
+import { c as create_ssr_component, e as escape, h as add_attribute, v as validate_component } from "../../../../../../../chunks/ssr2.js";
+import { p as presentationMode, c as currentSlide, s as slideCounter, a as selectedSection, b as selectedChapter, d as presentation } from "../../../../../../../chunks/stores4.js";
 /* empty css                                                                 */
 /* empty css                                                                */
-import { p as page } from "../../../../../../../chunks/stores.js";
+import { p as page } from "../../../../../../../chunks/stores3.js";
 import { I as Item, P, L as Li } from "../../../../../../../chunks/Image.svelte_svelte_type_style_lang.js";
 import { I as Image } from "../../../../../../../chunks/Image.js";
 const css = {

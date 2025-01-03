@@ -1,5 +1,5 @@
 import { c as compute_rest_props } from "./utils.js";
-import { c as create_ssr_component, s as spread, b as escape_attribute_value, d as escape_object, k as add_classes, e as escape, i as createEventDispatcher, v as validate_component, j as each, p as add_styles } from "./ssr.js";
+import { c as create_ssr_component, b as spread, d as escape_attribute_value, f as escape_object, k as add_classes, e as escape, j as createEventDispatcher, v as validate_component, i as each, p as add_styles } from "./ssr2.js";
 import hljs from "highlight.js/lib/core";
 const css$1 = {
   code: ".langtag.svelte-1w9vok{position:relative}.langtag.svelte-1w9vok::after{content:attr(data-language);position:absolute;top:var(--langtag-top, 0);right:var(--langtag-right, 0);display:flex;align-items:center;justify-content:center;background:var(--langtag-background, inherit);color:var(--langtag-color, inherit);border-radius:var(--langtag-border-radius, 0);padding:var(--langtag-padding, 1em)}",
@@ -11,14 +11,10 @@ const LangTag = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { highlighted } = $$props;
   let { languageName = "plaintext" } = $$props;
   let { langtag = false } = $$props;
-  if ($$props.code === void 0 && $$bindings.code && code !== void 0)
-    $$bindings.code(code);
-  if ($$props.highlighted === void 0 && $$bindings.highlighted && highlighted !== void 0)
-    $$bindings.highlighted(highlighted);
-  if ($$props.languageName === void 0 && $$bindings.languageName && languageName !== void 0)
-    $$bindings.languageName(languageName);
-  if ($$props.langtag === void 0 && $$bindings.langtag && langtag !== void 0)
-    $$bindings.langtag(langtag);
+  if ($$props.code === void 0 && $$bindings.code && code !== void 0) $$bindings.code(code);
+  if ($$props.highlighted === void 0 && $$bindings.highlighted && highlighted !== void 0) $$bindings.highlighted(highlighted);
+  if ($$props.languageName === void 0 && $$bindings.languageName && languageName !== void 0) $$bindings.languageName(languageName);
+  if ($$props.langtag === void 0 && $$bindings.langtag && langtag !== void 0) $$bindings.langtag(langtag);
   $$result.css.add(css$1);
   return `<pre${spread(
     [
@@ -39,12 +35,9 @@ const Highlight = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let { langtag = false } = $$props;
   createEventDispatcher();
   let highlighted = "";
-  if ($$props.language === void 0 && $$bindings.language && language !== void 0)
-    $$bindings.language(language);
-  if ($$props.code === void 0 && $$bindings.code && code !== void 0)
-    $$bindings.code(code);
-  if ($$props.langtag === void 0 && $$bindings.langtag && langtag !== void 0)
-    $$bindings.langtag(langtag);
+  if ($$props.language === void 0 && $$bindings.language && language !== void 0) $$bindings.language(language);
+  if ($$props.code === void 0 && $$bindings.code && code !== void 0) $$bindings.code(code);
+  if ($$props.langtag === void 0 && $$bindings.langtag && langtag !== void 0) $$bindings.langtag(langtag);
   {
     {
       hljs.registerLanguage(language.name, language.register);
@@ -71,16 +64,11 @@ const LineNumbers = create_ssr_component(($$result, $$props, $$bindings, slots) 
   let { wrapLines = false } = $$props;
   let { startingLineNumber = 1 } = $$props;
   let { highlightedLines = [] } = $$props;
-  if ($$props.highlighted === void 0 && $$bindings.highlighted && highlighted !== void 0)
-    $$bindings.highlighted(highlighted);
-  if ($$props.hideBorder === void 0 && $$bindings.hideBorder && hideBorder !== void 0)
-    $$bindings.hideBorder(hideBorder);
-  if ($$props.wrapLines === void 0 && $$bindings.wrapLines && wrapLines !== void 0)
-    $$bindings.wrapLines(wrapLines);
-  if ($$props.startingLineNumber === void 0 && $$bindings.startingLineNumber && startingLineNumber !== void 0)
-    $$bindings.startingLineNumber(startingLineNumber);
-  if ($$props.highlightedLines === void 0 && $$bindings.highlightedLines && highlightedLines !== void 0)
-    $$bindings.highlightedLines(highlightedLines);
+  if ($$props.highlighted === void 0 && $$bindings.highlighted && highlighted !== void 0) $$bindings.highlighted(highlighted);
+  if ($$props.hideBorder === void 0 && $$bindings.hideBorder && hideBorder !== void 0) $$bindings.hideBorder(hideBorder);
+  if ($$props.wrapLines === void 0 && $$bindings.wrapLines && wrapLines !== void 0) $$bindings.wrapLines(wrapLines);
+  if ($$props.startingLineNumber === void 0 && $$bindings.startingLineNumber && startingLineNumber !== void 0) $$bindings.startingLineNumber(startingLineNumber);
+  if ($$props.highlightedLines === void 0 && $$bindings.highlightedLines && highlightedLines !== void 0) $$bindings.highlightedLines(highlightedLines);
   $$result.css.add(css);
   lines = highlighted.split("\n");
   len_digits = lines.length.toString().length;

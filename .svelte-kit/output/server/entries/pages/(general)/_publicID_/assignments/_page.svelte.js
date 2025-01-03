@@ -1,11 +1,11 @@
-import { s as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, j as each, e as escape } from "../../../../../chunks/ssr.js";
+import { a as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component, i as each, e as escape } from "../../../../../chunks/ssr2.js";
 import "../../../../../chunks/client.js";
-import { p as page } from "../../../../../chunks/stores.js";
+import { p as page } from "../../../../../chunks/stores3.js";
 import "../../../../../chunks/ActionIcons.js";
 import { B as Button } from "../../../../../chunks/Button.js";
 import { A as Assignment } from "../../../../../chunks/Assignment.js";
-import { c as currentPath } from "../../../../../chunks/stores2.js";
+import { c as currentPath } from "../../../../../chunks/stores.js";
 import { S as Select, O as Option } from "../../../../../chunks/Option.js";
 const css = {
   code: "article.svelte-1s9ex9t{display:flex;flex-direction:column;gap:0.5em}",
@@ -31,8 +31,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   ];
   let assignments = [];
   let selectedCourse;
-  if ($$props.data === void 0 && $$bindings.data && data !== void 0)
-    $$bindings.data(data);
+  if ($$props.data === void 0 && $$bindings.data && data !== void 0) $$bindings.data(data);
   $$result.css.add(css);
   let $$settled;
   let $$rendered;

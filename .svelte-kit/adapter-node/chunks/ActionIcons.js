@@ -1,9 +1,9 @@
-import { a as classAdderBuilder } from "./classAdderBuilder.js";
+import { c as classAdderBuilder } from "./classAdderBuilder.js";
 const Content = classAdderBuilder({
   class: "smui-card__content",
   tag: "div"
 });
-classAdderBuilder({
+const MediaContent = classAdderBuilder({
   class: "mdc-card__media-content",
   tag: "div"
 });
@@ -11,10 +11,12 @@ classAdderBuilder({
   class: "mdc-card__action-buttons",
   tag: "div"
 });
-classAdderBuilder({
+const ActionIcons = classAdderBuilder({
   class: "mdc-card__action-icons",
   tag: "div"
 });
 export {
-  Content as C
+  ActionIcons as A,
+  Content as C,
+  MediaContent as M
 };

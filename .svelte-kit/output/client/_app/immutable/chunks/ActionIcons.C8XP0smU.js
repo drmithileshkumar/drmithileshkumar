@@ -1,0 +1,1 @@
+import{c}from"./classAdderBuilder.BdbN_yhi.js";const a=c({class:"smui-card__content",tag:"div"}),s=c({class:"mdc-card__media-content",tag:"div"});c({class:"mdc-card__action-buttons",tag:"div"});const n=c({class:"mdc-card__action-icons",tag:"div"});export{n as A,a as C,s as M};

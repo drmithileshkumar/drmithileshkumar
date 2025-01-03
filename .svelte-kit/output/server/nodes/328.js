@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/talks/quantumstatus/_page.js';
+import * as universal from '../entries/pages/(general)/practice/class9/_page.js';
 
 export const index = 328;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/talks/quantumstatus/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/practice/class9/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/talks/quantumstatus/+page.js";
-export const imports = ["_app/immutable/nodes/328.yq6oZrNV.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.B1atsjBc.js","_app/immutable/chunks/index.DlO191gB.js","_app/immutable/chunks/Card.BNwIWFu_.js","_app/immutable/chunks/spread.CgU5AtxT.js","_app/immutable/chunks/classAdderBuilder.Dr_z-rwh.js","_app/immutable/chunks/ActionIcons.BB_MIeF4.js","_app/immutable/chunks/Subheader.CFqZDM0F.js","_app/immutable/chunks/Cell.CY_KqJHB.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/index.DEfXOQ1n.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/prefixFilter.OhiPYEKz.js","_app/immutable/chunks/entry.wIueeHHH.js","_app/immutable/chunks/stores.moVKe_bz.js"];
-export const stylesheets = ["_app/immutable/assets/328.DVERDU-5.css","_app/immutable/assets/Message.By06LWcb.css","_app/immutable/assets/Link.CZNrpk-N.css"];
+export const universal_id = "src/routes/(general)/practice/class9/+page.js";
+export const imports = ["_app/immutable/nodes/328.Bh4qvQty.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.DhWV7ypx.js","_app/immutable/chunks/index.V8m0JAxO.js","_app/immutable/chunks/Message.bXNe4OKW.js","_app/immutable/chunks/entry.B4hIrfLx.js","_app/immutable/chunks/index.D70FGJSe.js","_app/immutable/chunks/stores.C4jq3MED.js","_app/immutable/chunks/Practice.Bk_L3K26.js","_app/immutable/chunks/ripple.CM997ajP.js"];
+export const stylesheets = ["_app/immutable/assets/Link.DT8GuSJh.css","_app/immutable/assets/Message.D2xEdDAW.css","_app/immutable/assets/Practice.C-1dvwW-.css"];
 export const fonts = [];

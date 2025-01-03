@@ -14,45 +14,38 @@ class Sets {
     this.strElem = strElem;
   }
   elemEq(a, b) {
-    if (this.eq == "")
-      return a === b;
+    if (this.eq == "") return a === b;
     return this.eq(a, b);
   }
   texElem(a) {
-    if (this.strElem == "")
-      return `${a}`;
+    if (this.strElem == "") return `${a}`;
     return this.strElem(a);
   }
   contains(k) {
     if (this.eq == "") {
       for (let a of this.e) {
-        if (a === k)
-          return true;
+        if (a === k) return true;
       }
       return false;
     } else {
       for (let a of this.e) {
-        if (this.eq(a, k))
-          return true;
+        if (this.eq(a, k)) return true;
       }
       return false;
     }
   }
   equal(B) {
     for (let a of this.e) {
-      if (!B.contains(a))
-        return false;
+      if (!B.contains(a)) return false;
     }
     for (let b of B.e) {
-      if (!this.contains(b))
-        return false;
+      if (!this.contains(b)) return false;
     }
     return true;
   }
   subsetOf(B) {
     for (let a of this.e) {
-      if (!B.contains(a))
-        return false;
+      if (!B.contains(a)) return false;
     }
     return true;
   }
@@ -63,15 +56,13 @@ class Sets {
     let newSet = new Sets([], this.eq, this.strElem);
     newSet.e = this.e;
     let index = Math.floor(Math.random() * this.e.length);
-    if (!this.contains(k))
-      newSet.e.splice(index, 0, k);
+    if (!this.contains(k)) newSet.e.splice(index, 0, k);
     return newSet;
   }
   delete(k) {
     let newSet = new Sets([], this.eq, this.strElem);
     for (let a of this.e) {
-      if (!this.elemEq(a, k))
-        newSet.e.push(a);
+      if (!this.elemEq(a, k)) newSet.e.push(a);
     }
     return newSet;
   }
@@ -81,24 +72,21 @@ class Sets {
       newSet.e.push(a);
     }
     for (let b of B.e) {
-      if (!this.contains(b))
-        newSet.e.push(b);
+      if (!this.contains(b)) newSet.e.push(b);
     }
     return newSet;
   }
   intersection(B) {
     let newSet = new Sets([], this.eq, this.strElem);
     for (let a of this.e) {
-      if (B.contains(a))
-        newSet.e.push(a);
+      if (B.contains(a)) newSet.e.push(a);
     }
     return newSet;
   }
   diff(B) {
     let newSet = new Sets([], this.eq, this.strElem);
     for (let a of this.e) {
-      if (!B.contains(a))
-        newSet.e.push(a);
+      if (!B.contains(a)) newSet.e.push(a);
     }
     return newSet;
   }
@@ -119,8 +107,7 @@ class Sets {
   }
   krandomIndices(n, k) {
     let set = [];
-    if (k == 0)
-      return [];
+    if (k == 0) return [];
     if (k >= n) {
       for (let i = 0; i < n; i++) {
         set.push(i);
@@ -141,8 +128,7 @@ class Sets {
     return temp;
   }
   randomSet(min, max, k) {
-    if (max - min < k)
-      this.e = [];
+    if (max - min < k) this.e = [];
     let A = [];
     for (let i = min; i <= max; i++) {
       A.push(i);
@@ -163,8 +149,7 @@ class Sets {
   }
   krandomSubset(k) {
     let newSet = new Sets([], this.eq, this.strElem);
-    if (this.e.length == 0)
-      return newSet;
+    if (this.e.length == 0) return newSet;
     let n = this.e.length;
     let subsetIndices = randSubset(n, k);
     newSet.e = subsetIndices.map((index) => this.e[index]);
@@ -175,8 +160,7 @@ class Sets {
     return this.e[k];
   }
   ksubArray(arr, k) {
-    if (arr.length == 0)
-      return [];
+    if (arr.length == 0) return [];
     let n = arr.length;
     let subsetIndices = randSubset(n, k);
     let subset = subsetIndices.map((index) => arr[index]);
@@ -186,12 +170,10 @@ class Sets {
     let set = powerset(this.e.length);
     let seteq = (A, B) => {
       for (let a of A) {
-        if (!B.contains(a))
-          return false;
+        if (!B.contains(a)) return false;
       }
       for (let b of B) {
-        if (!A.contains(b))
-          return false;
+        if (!A.contains(b)) return false;
       }
       return true;
     };
@@ -203,8 +185,7 @@ class Sets {
     for (let s of set) {
       temp = new Sets([], this.eq, this.strElem);
       for (let i = 0; i < this.e.length; i++) {
-        if (s[i] !== "0")
-          temp.e.push(this.e[i]);
+        if (s[i] !== "0") temp.e.push(this.e[i]);
       }
       newSet.e.push(temp);
     }
@@ -212,8 +193,7 @@ class Sets {
   }
   cartesian(B) {
     let pairEq = (a, b) => {
-      if (a.length !== b.length)
-        return false;
+      if (a.length !== b.length) return false;
       return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
     };
     let stringElem = (a) => {
@@ -228,11 +208,9 @@ class Sets {
     return R;
   }
   dot(B) {
-    if (this.e.length != B.e.length)
-      return new Sets();
+    if (this.e.length != B.e.length) return new Sets();
     let pairEq = (a, b) => {
-      if (a.length !== b.length)
-        return false;
+      if (a.length !== b.length) return false;
       return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
     };
     let stringElem = (a) => {
@@ -246,8 +224,7 @@ class Sets {
   }
   str() {
     let tex;
-    if (this.e.length == 0)
-      return "\\varphi";
+    if (this.e.length == 0) return "\\varphi";
     if (this.strElem === "") {
       tex = "\\{";
       for (let i = 0; i < this.e.length - 1; i++) {
@@ -279,15 +256,13 @@ class Sets {
   }
   isReflexive(R) {
     for (let a of this.e) {
-      if (!R.contains([a, a]))
-        return false;
+      if (!R.contains([a, a])) return false;
     }
     return true;
   }
   isSymmetric(R) {
     for (let r of R.e) {
-      if (!R.contains([r[1], r[0]]))
-        return false;
+      if (!R.contains([r[1], r[0]])) return false;
     }
     return true;
   }
@@ -296,16 +271,14 @@ class Sets {
     for (let r of R) {
       temp = R.e.filter((a) => this.elemEq(r[1], a[0]));
       for (let t of temp) {
-        if (!R.contains([r[0], t[1]]))
-          return false;
+        if (!R.contains([r[0], t[1]])) return false;
       }
     }
     return true;
   }
   reflexive(k) {
     let pairEq = (a, b) => {
-      if (a.length !== b.length)
-        return false;
+      if (a.length !== b.length) return false;
       return this.elemEq(a[0], b[0]) && this.elemEq(a[1], b[1]);
     };
     let stringElem = (a) => {
@@ -319,8 +292,7 @@ class Sets {
   }
   symmetric(k) {
     let pairEq = (a, b) => {
-      if (a.length !== b.length)
-        return false;
+      if (a.length !== b.length) return false;
       return this.elemEq(a[0], b[0]) && this.elemEq(a[1], b[1]);
     };
     let stringElem = (a) => {
@@ -338,8 +310,7 @@ class Sets {
   }
   transitive(k) {
     let pairEq = (a, b) => {
-      if (a.length !== b.length)
-        return false;
+      if (a.length !== b.length) return false;
       return this.elemEq(a[0], b[0]) && this.elemEq(a[1], b[1]);
     };
     let stringElem = (a) => {
@@ -360,29 +331,24 @@ class Sets {
     return R;
   }
   image(k, R, B = this) {
-    if (R.e.length == 0)
-      return new Sets([], B.eq, B.strElem);
+    if (R.e.length == 0) return new Sets([], B.eq, B.strElem);
     let subSetB = new Sets([], B.eq, B.strElem);
     for (let r of R.e) {
-      if (this.elemEq(r[0], k))
-        subSetB.e.push(r[1]);
+      if (this.elemEq(r[0], k)) subSetB.e.push(r[1]);
     }
     return subSetB;
   }
   preimage(k, R, B = this) {
-    if (R.e.length == 0)
-      return new Sets([], this.eq, this.strElem);
+    if (R.e.length == 0) return new Sets([], this.eq, this.strElem);
     let subSet = new Sets([], this.eq, this.strElem);
     for (let r of R.e) {
-      if (B.elemEq(r[1], k))
-        subSet.e.push(r[0]);
+      if (B.elemEq(r[1], k)) subSet.e.push(r[0]);
     }
     return subSet;
   }
   randFunction(B = this) {
     let pairEq = (a, b) => {
-      if (a.length !== b.length)
-        return false;
+      if (a.length !== b.length) return false;
       return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
     };
     let stringElem = (a) => {
@@ -400,8 +366,7 @@ class Sets {
   }
   constant(k, B = this) {
     let pairEq = (a, b) => {
-      if (a.length !== b.length)
-        return false;
+      if (a.length !== b.length) return false;
       return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
     };
     let stringElem = (a) => {
@@ -414,11 +379,9 @@ class Sets {
     return R;
   }
   randOneOne(B = this) {
-    if (this.e.length > B.e.length)
-      return new Sets();
+    if (this.e.length > B.e.length) return new Sets();
     let pairEq = (a, b) => {
-      if (a.length !== b.length)
-        return false;
+      if (a.length !== b.length) return false;
       return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
     };
     let stringElem = (a) => {
@@ -434,11 +397,9 @@ class Sets {
     return R;
   }
   randOnto(B = this) {
-    if (this.e.length < B.e.length)
-      return new Sets();
+    if (this.e.length < B.e.length) return new Sets();
     let pairEq = (a, b) => {
-      if (a.length !== b.length)
-        return false;
+      if (a.length !== b.length) return false;
       return this.elemEq(a[0], b[0]) && B.elemEq(a[1], b[1]);
     };
     let stringElem = (a) => {
@@ -455,57 +416,45 @@ class Sets {
     return R;
   }
   randBijective(B = this) {
-    if (this.e.length === B.e.length)
-      return this.randOneOne(B);
+    if (this.e.length === B.e.length) return this.randOneOne(B);
     return new Sets();
   }
   isFunction(R, B = this) {
-    if (R.e.length !== this.e.length)
-      return false;
+    if (R.e.length !== this.e.length) return false;
     for (let a of this.e) {
-      if (this.image(a, R, B).e.length == 0)
-        return false;
+      if (this.image(a, R, B).e.length == 0) return false;
     }
     return true;
   }
   isIdentity(R) {
     for (let a of this.e) {
-      if (!R.contains([[a, a]]))
-        return false;
+      if (!R.contains([[a, a]])) return false;
     }
     for (let r of R.e) {
-      if (!this.elemEq(r[0], r[1]))
-        return false;
+      if (!this.elemEq(r[0], r[1])) return false;
     }
     return true;
   }
   isConstant(R, B = this) {
-    if (R.e.length == 0)
-      return false;
+    if (R.e.length == 0) return false;
     let k = R.e[0][1];
-    if (!this.isFunction(R, B))
-      return false;
+    if (!this.isFunction(R, B)) return false;
     for (let r of R) {
-      if (!B.elemEq(r[1], k))
-        return false;
+      if (!B.elemEq(r[1], k)) return false;
     }
     return true;
   }
   isOneOne(R, B = this) {
-    if (!this.isFunction(R, B))
-      return false;
+    if (!this.isFunction(R, B)) return false;
     for (let b of B.e) {
-      if (this.preimage(b, R, B).e.length > 1)
-        return false;
+      if (this.preimage(b, R, B).e.length > 1) return false;
     }
     return true;
   }
   isOnto(R, B = this) {
-    if (!this.isFunction(R, B))
-      return false;
+    if (!this.isFunction(R, B)) return false;
     for (let b of B.e) {
-      if (this.preimage(b, R, B).e.length < 1)
-        return false;
+      if (this.preimage(b, R, B).e.length < 1) return false;
     }
     return true;
   }

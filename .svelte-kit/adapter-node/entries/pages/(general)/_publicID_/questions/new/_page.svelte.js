@@ -1,4 +1,4 @@
-import { c as create_ssr_component, v as validate_component, j as each, f as add_attribute, e as escape } from "../../../../../../chunks/ssr.js";
+import { c as create_ssr_component, v as validate_component, i as each, h as add_attribute, e as escape } from "../../../../../../chunks/ssr2.js";
 import "../../../../../../chunks/client.js";
 import { C as Card } from "../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../chunks/ActionIcons.js";

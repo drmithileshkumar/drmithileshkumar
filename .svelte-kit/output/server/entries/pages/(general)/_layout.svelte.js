@@ -1,485 +1,27 @@
-import { c as compute_rest_props, s as subscribe, b as set_store_value, d as null_to_empty } from "../../../chunks/utils.js";
-import { c as create_ssr_component, a as get_current_component, h as setContext, o as onDestroy, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, v as validate_component, m as missing_component, g as getContext, e as escape } from "../../../chunks/ssr.js";
-import { MDCDismissibleDrawerFoundation, MDCModalDrawerFoundation } from "@material/drawer";
-import { f as forwardEventsBuilder, c as classMap, a as classAdderBuilder, S as SmuiElement, g as globals } from "../../../chunks/classAdderBuilder.js";
-import { d as dispatch, L as List, I as Item } from "../../../chunks/Item.js";
-import { R as Ripple } from "../../../chunks/Ripple.js";
-import { S as Svg, N as NavList, C as CommonIcon } from "../../../chunks/NavList.js";
+import { a as subscribe, b as set_store_value, d as null_to_empty } from "../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component, h as add_attribute, e as escape } from "../../../chunks/ssr2.js";
+import { S as Separator, D as Drawer, C as Content$1, a as Scrim, A as AppContent } from "../../../chunks/Separator.js";
+import { F as Fab } from "../../../chunks/Fab.js";
+import { S as Svg, C as CommonIcon } from "../../../chunks/Svg.js";
+import { L as List, I as Item } from "../../../chunks/Item.js";
 import { T as Text, P as PrimaryText, S as SecondaryText } from "../../../chunks/Subheader.js";
 import { G as Graphic } from "../../../chunks/Graphic.js";
 import { B as Button } from "../../../chunks/Button.js";
 import "../../../chunks/client.js";
-import { p as page } from "../../../chunks/stores.js";
-import { i as isAuth, p as profileImage, n as navList, e as showRight, r as refreshApp, d as darkMode, T as TopBarHeight, s as showLeft, c as currentPath } from "../../../chunks/stores2.js";
+import { p as page } from "../../../chunks/stores3.js";
+import { i as isAuth, p as profileImage, n as navList, e as showRight, r as refreshApp, d as darkMode, T as TopBarHeight, s as showLeft, c as currentPath } from "../../../chunks/stores.js";
 import { C as Card } from "../../../chunks/Card.js";
-import { C as Content$1 } from "../../../chunks/ActionIcons.js";
+import { C as Content } from "../../../chunks/ActionIcons.js";
 /* empty css                                                 */
+import { N as NavList } from "../../../chunks/NavList.js";
 import { T as TopAppBar } from "../../../chunks/TopAppBar.js";
 import { R as Row, S as Section } from "../../../chunks/Title.js";
 import { I as IconButton } from "../../../chunks/IconButton.js";
-import { p as presentationMode } from "../../../chunks/stores3.js";
+import { p as presentationMode } from "../../../chunks/stores4.js";
 /* empty css                                                     */
-const Drawer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["use", "class", "variant", "open", "fixed", "setOpen", "isOpen", "getElement"]);
-  forwardEventsBuilder(get_current_component());
-  let { use = [] } = $$props;
-  let { class: className = "" } = $$props;
-  let { variant = void 0 } = $$props;
-  let { open = false } = $$props;
-  let { fixed = true } = $$props;
-  let element;
-  let instance = void 0;
-  let internalClasses = {};
-  let previousFocus = null;
-  let focusTrap;
-  let scrim = false;
-  setContext("SMUI:list:nav", true);
-  setContext("SMUI:list:item:nav", true);
-  setContext("SMUI:list:wrapFocus", true);
-  let oldVariant = variant;
-  onDestroy(() => {
-    instance && instance.destroy();
-    scrim && scrim.removeEventListener("SMUIDrawerScrim:click", handleScrimClick);
-  });
-  function getInstance() {
-    var _a, _b;
-    if (scrim) {
-      scrim.removeEventListener("SMUIDrawerScrim:click", handleScrimClick);
-    }
-    if (variant === "modal") {
-      scrim = (_b = (_a = element.parentNode) === null || _a === void 0 ? void 0 : _a.querySelector(".mdc-drawer-scrim")) !== null && _b !== void 0 ? _b : false;
-      if (scrim) {
-        scrim.addEventListener("SMUIDrawerScrim:click", handleScrimClick);
-      }
-    }
-    const Foundation = variant === "dismissible" ? MDCDismissibleDrawerFoundation : variant === "modal" ? MDCModalDrawerFoundation : void 0;
-    return Foundation ? new Foundation({
-      addClass,
-      removeClass,
-      hasClass,
-      elementHasClass: (element2, className2) => element2.classList.contains(className2),
-      saveFocus: () => previousFocus = document.activeElement,
-      restoreFocus: () => {
-        if (previousFocus && "focus" in previousFocus && element.contains(document.activeElement)) {
-          previousFocus.focus();
-        }
-      },
-      focusActiveNavigationItem: () => {
-        const activeNavItemEl = element.querySelector(".mdc-list-item--activated,.mdc-deprecated-list-item--activated");
-        if (activeNavItemEl) {
-          activeNavItemEl.focus();
-        }
-      },
-      notifyClose: () => {
-        open = false;
-        dispatch(element, "SMUIDrawer:closed", void 0, void 0, true);
-      },
-      notifyOpen: () => {
-        open = true;
-        dispatch(element, "SMUIDrawer:opened", void 0, void 0, true);
-      },
-      trapFocus: () => focusTrap.trapFocus(),
-      releaseFocus: () => focusTrap.releaseFocus()
-    }) : void 0;
-  }
-  function hasClass(className2) {
-    return className2 in internalClasses ? internalClasses[className2] : getElement().classList.contains(className2);
-  }
-  function addClass(className2) {
-    if (!internalClasses[className2]) {
-      internalClasses[className2] = true;
-    }
-  }
-  function removeClass(className2) {
-    if (!(className2 in internalClasses) || internalClasses[className2]) {
-      internalClasses[className2] = false;
-    }
-  }
-  function handleScrimClick() {
-    instance && "handleScrimClick" in instance && instance.handleScrimClick();
-  }
-  function setOpen(value) {
-    open = value;
-  }
-  function isOpen() {
-    return open;
-  }
-  function getElement() {
-    return element;
-  }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.variant === void 0 && $$bindings.variant && variant !== void 0)
-    $$bindings.variant(variant);
-  if ($$props.open === void 0 && $$bindings.open && open !== void 0)
-    $$bindings.open(open);
-  if ($$props.fixed === void 0 && $$bindings.fixed && fixed !== void 0)
-    $$bindings.fixed(fixed);
-  if ($$props.setOpen === void 0 && $$bindings.setOpen && setOpen !== void 0)
-    $$bindings.setOpen(setOpen);
-  if ($$props.isOpen === void 0 && $$bindings.isOpen && isOpen !== void 0)
-    $$bindings.isOpen(isOpen);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
-  {
-    if (oldVariant !== variant) {
-      oldVariant = variant;
-      instance && instance.destroy();
-      internalClasses = {};
-      instance = getInstance();
-      instance && instance.init();
-    }
-  }
-  {
-    if (instance && instance.isOpen() !== open) {
-      if (open) {
-        instance.open();
-      } else {
-        instance.close();
-      }
-    }
-  }
-  return `<aside${spread(
-    [
-      {
-        class: escape_attribute_value(classMap({
-          [className]: true,
-          "mdc-drawer": true,
-          "mdc-drawer--dismissible": variant === "dismissible",
-          "mdc-drawer--modal": variant === "modal",
-          "smui-drawer__absolute": variant === "modal" && !fixed,
-          ...internalClasses
-        }))
-      },
-      escape_object($$restProps)
-    ],
-    {}
-  )}${add_attribute("this", element, 0)}>${slots.default ? slots.default({}) : ``} </aside>`;
-});
-const AppContent = classAdderBuilder({
-  class: "mdc-drawer-app-content",
-  tag: "div"
-});
-const Content = classAdderBuilder({
-  class: "mdc-drawer__content",
-  tag: "div"
-});
-classAdderBuilder({
-  class: "mdc-drawer__header",
-  tag: "div"
-});
-classAdderBuilder({
-  class: "mdc-drawer__title",
-  tag: "h1"
-});
-classAdderBuilder({
-  class: "mdc-drawer__subtitle",
-  tag: "h2"
-});
-const Scrim = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["use", "class", "fixed", "component", "tag", "getElement"]);
-  const forwardEvents = forwardEventsBuilder(get_current_component());
-  let { use = [] } = $$props;
-  let { class: className = "" } = $$props;
-  let { fixed = true } = $$props;
-  let element;
-  let { component = SmuiElement } = $$props;
-  let { tag = component === SmuiElement ? "div" : void 0 } = $$props;
-  function getElement() {
-    return element.getElement();
-  }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.fixed === void 0 && $$bindings.fixed && fixed !== void 0)
-    $$bindings.fixed(fixed);
-  if ($$props.component === void 0 && $$bindings.component && component !== void 0)
-    $$bindings.component(component);
-  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
-    $$bindings.tag(tag);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
-  let $$settled;
-  let $$rendered;
-  let previous_head = $$result.head;
-  do {
-    $$settled = true;
-    $$result.head = previous_head;
-    $$rendered = `${validate_component(component || missing_component, "svelte:component").$$render(
-      $$result,
-      Object.assign(
-        {},
-        { tag },
-        { use: [forwardEvents, ...use] },
-        {
-          class: classMap({
-            [className]: true,
-            "mdc-drawer-scrim": true,
-            "smui-drawer-scrim__absolute": !fixed
-          })
-        },
-        $$restProps,
-        { this: element }
-      ),
-      {
-        this: ($$value) => {
-          element = $$value;
-          $$settled = false;
-        }
-      },
-      {
-        default: () => {
-          return `${slots.default ? slots.default({}) : ``}`;
-        }
-      }
-    )}`;
-  } while (!$$settled);
-  return $$rendered;
-});
-const { Object: Object_1 } = globals;
-const Fab = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, [
-    "use",
-    "class",
-    "style",
-    "ripple",
-    "focusRing",
-    "color",
-    "mini",
-    "exited",
-    "extended",
-    "touch",
-    "href",
-    "component",
-    "tag",
-    "getElement"
-  ]);
-  const forwardEvents = forwardEventsBuilder(get_current_component());
-  let { use = [] } = $$props;
-  let { class: className = "" } = $$props;
-  let { style = "" } = $$props;
-  let { ripple = true } = $$props;
-  let { focusRing = false } = $$props;
-  let { color = "secondary" } = $$props;
-  let { mini = false } = $$props;
-  let { exited = false } = $$props;
-  let { extended = false } = $$props;
-  let { touch = false } = $$props;
-  let { href = void 0 } = $$props;
-  let element;
-  let internalClasses = {};
-  let internalStyles = {};
-  let { component = SmuiElement } = $$props;
-  let { tag = component === SmuiElement ? href == null ? "button" : "a" : void 0 } = $$props;
-  setContext("SMUI:label:context", "fab");
-  setContext("SMUI:icon:context", "fab");
-  function addClass(className2) {
-    if (!internalClasses[className2]) {
-      internalClasses[className2] = true;
-    }
-  }
-  function removeClass(className2) {
-    if (!(className2 in internalClasses) || internalClasses[className2]) {
-      internalClasses[className2] = false;
-    }
-  }
-  function addStyle(name, value) {
-    if (internalStyles[name] != value) {
-      if (value === "" || value == null) {
-        delete internalStyles[name];
-        internalStyles = internalStyles;
-      } else {
-        internalStyles[name] = value;
-      }
-    }
-  }
-  function getElement() {
-    return element.getElement();
-  }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0)
-    $$bindings.ripple(ripple);
-  if ($$props.focusRing === void 0 && $$bindings.focusRing && focusRing !== void 0)
-    $$bindings.focusRing(focusRing);
-  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
-    $$bindings.color(color);
-  if ($$props.mini === void 0 && $$bindings.mini && mini !== void 0)
-    $$bindings.mini(mini);
-  if ($$props.exited === void 0 && $$bindings.exited && exited !== void 0)
-    $$bindings.exited(exited);
-  if ($$props.extended === void 0 && $$bindings.extended && extended !== void 0)
-    $$bindings.extended(extended);
-  if ($$props.touch === void 0 && $$bindings.touch && touch !== void 0)
-    $$bindings.touch(touch);
-  if ($$props.href === void 0 && $$bindings.href && href !== void 0)
-    $$bindings.href(href);
-  if ($$props.component === void 0 && $$bindings.component && component !== void 0)
-    $$bindings.component(component);
-  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
-    $$bindings.tag(tag);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
-  let $$settled;
-  let $$rendered;
-  let previous_head = $$result.head;
-  do {
-    $$settled = true;
-    $$result.head = previous_head;
-    $$rendered = `${validate_component(component || missing_component, "svelte:component").$$render(
-      $$result,
-      Object_1.assign(
-        {},
-        { tag },
-        {
-          use: [
-            [
-              Ripple,
-              {
-                ripple,
-                unbounded: false,
-                color,
-                disabled: !!$$restProps.disabled,
-                addClass,
-                removeClass,
-                addStyle
-              }
-            ],
-            forwardEvents,
-            ...use
-          ]
-        },
-        {
-          class: classMap({
-            [className]: true,
-            "mdc-fab": true,
-            "mdc-fab--mini": mini,
-            "mdc-fab--exited": exited,
-            "mdc-fab--extended": extended,
-            "smui-fab--color-primary": color === "primary",
-            "mdc-fab--touch": touch,
-            ...internalClasses
-          })
-        },
-        {
-          style: Object.entries(internalStyles).map(([name, value]) => `${name}: ${value};`).concat([style]).join(" ")
-        },
-        { href },
-        $$restProps,
-        { this: element }
-      ),
-      {
-        this: ($$value) => {
-          element = $$value;
-          $$settled = false;
-        }
-      },
-      {
-        default: () => {
-          return `<div class="mdc-fab__ripple"></div> ${focusRing ? `<div class="mdc-fab__focus-ring"></div>` : ``} ${slots.default ? slots.default({}) : ``}${touch ? `<div class="mdc-fab__touch"></div>` : ``}`;
-        }
-      }
-    )}`;
-  } while (!$$settled);
-  return $$rendered;
-});
-const Separator = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, [
-    "use",
-    "class",
-    "padded",
-    "inset",
-    "insetLeading",
-    "insetTrailing",
-    "insetPadding",
-    "component",
-    "tag",
-    "getElement"
-  ]);
-  const forwardEvents = forwardEventsBuilder(get_current_component());
-  let { use = [] } = $$props;
-  let { class: className = "" } = $$props;
-  let { padded = false } = $$props;
-  let { inset = false } = $$props;
-  let { insetLeading = false } = $$props;
-  let { insetTrailing = false } = $$props;
-  let { insetPadding = false } = $$props;
-  let element;
-  let nav = getContext("SMUI:list:item:nav");
-  let context = getContext("SMUI:separator:context");
-  let { component = SmuiElement } = $$props;
-  let { tag = component === SmuiElement ? nav || context !== "list" ? "hr" : "li" : void 0 } = $$props;
-  function getElement() {
-    return element.getElement();
-  }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.padded === void 0 && $$bindings.padded && padded !== void 0)
-    $$bindings.padded(padded);
-  if ($$props.inset === void 0 && $$bindings.inset && inset !== void 0)
-    $$bindings.inset(inset);
-  if ($$props.insetLeading === void 0 && $$bindings.insetLeading && insetLeading !== void 0)
-    $$bindings.insetLeading(insetLeading);
-  if ($$props.insetTrailing === void 0 && $$bindings.insetTrailing && insetTrailing !== void 0)
-    $$bindings.insetTrailing(insetTrailing);
-  if ($$props.insetPadding === void 0 && $$bindings.insetPadding && insetPadding !== void 0)
-    $$bindings.insetPadding(insetPadding);
-  if ($$props.component === void 0 && $$bindings.component && component !== void 0)
-    $$bindings.component(component);
-  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
-    $$bindings.tag(tag);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
-  let $$settled;
-  let $$rendered;
-  let previous_head = $$result.head;
-  do {
-    $$settled = true;
-    $$result.head = previous_head;
-    $$rendered = `${validate_component(component || missing_component, "svelte:component").$$render(
-      $$result,
-      Object.assign(
-        {},
-        { tag },
-        { use: [forwardEvents, ...use] },
-        {
-          class: classMap({
-            [className]: true,
-            "mdc-deprecated-list-divider": true,
-            "mdc-deprecated-list-divider--padded": padded,
-            "mdc-deprecated-list-divider--inset": inset,
-            "mdc-deprecated-list-divider--inset-leading": insetLeading,
-            "mdc-deprecated-list-divider--inset-trailing": insetTrailing,
-            "mdc-deprecated-list-divider--inset-padding": insetPadding
-          })
-        },
-        { role: "separator" },
-        $$restProps,
-        { this: element }
-      ),
-      {
-        this: ($$value) => {
-          element = $$value;
-          $$settled = false;
-        }
-      },
-      {}
-    )}`;
-  } while (!$$settled);
-  return $$rendered;
-});
 const css$6 = {
   code: "nav.svelte-1hx4pyo{overflow-y:auto;display:flex;justify-content:start;flex-direction:column;padding-bottom:5em}",
-  map: `{"version":3,"file":"Nav.svelte","sources":["Nav.svelte"],"sourcesContent":["<script lang=\\"ts\\">\\r\\n    //@ts-nocheck\\r\\n    import List, {\\r\\n        Item,\\r\\n        Graphic,\\r\\n        Separator,\\r\\n        Meta,\\r\\n        Text,\\r\\n        PrimaryText,\\r\\n        SecondaryText,\\r\\n    } from \\"@smui/list\\";\\r\\n    import Button, { Label } from \\"@smui/button\\";\\r\\n    import { Svg } from '@smui/common';\\r\\n    import { goto } from \\"$app/navigation\\";\\r\\n    import { page } from \\"$app/stores\\";\\r\\n    import { profileImage, navList, isAuth } from \\"$lib/stores\\";\\r\\n\\r\\n    $: $isAuth = $page.data.user;\\r\\n<\/script>\\r\\n\\r\\n<nav>\\r\\n    <div class=\\"top\\">\\r\\n        <List>\\r\\n            <Item\\r\\n                on:SMUI:action={() => goto(\`/courses\`)}\\r\\n            >\\r\\n                <Graphic class=\\"material-icons\\">local_library</Graphic>\\r\\n                <Text>Courses</Text>\\r\\n            </Item>\\r\\n            <Item\\r\\n                on:SMUI:action={() => goto(\`/students\`)}\\r\\n            >\\r\\n                <Graphic class=\\"material-icons\\">groups</Graphic>\\r\\n                <Text>Students</Text>\\r\\n            </Item>\\r\\n            <Item\\r\\n                on:SMUI:action={() => goto(\`/talks\`)}\\r\\n            >\\r\\n                <Graphic class=\\"material-symbols-outlined\\">podium</Graphic>\\r\\n                <Text>Talks</Text>\\r\\n            </Item>\\r\\n            <Separator />\\r\\n            <Item\\r\\n                on:SMUI:action={() => goto(\`/about\`)}\\r\\n            >\\r\\n                <Graphic class=\\"material-icons\\">person</Graphic>\\r\\n                <Text>About</Text>\\r\\n            </Item>\\r\\n            <Item\\r\\n                on:SMUI:action={() => goto(\`/publications\`)}\\r\\n            >\\r\\n                <Graphic class=\\"material-icons\\">article</Graphic>\\r\\n                <Text>Publications</Text>\\r\\n            </Item>\\r\\n            <Item\\r\\n                on:SMUI:action={() => goto(\`/cv\`)}\\r\\n            >\\r\\n                <Graphic class=\\"material-icons\\">badge</Graphic>\\r\\n                <Text>CV</Text>\\r\\n            </Item>\\r\\n            <Item\\r\\n                on:SMUI:action={() => window.location = \`https://mathril.com\`}\\r\\n            >\\r\\n                <Graphic>\\r\\n                    <Svg style=\\"width: 100%; height: 100%;\\" viewBox=\\"0 0 400 400\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\">\\r\\n                        <defs>\\r\\n                            <linearGradient id='LinearGradient-VectorialApp19R21-3' x1=\\"0%\\" y1=\\"0%\\" x2=\\"100%\\" y2=\\"0%\\" >\\r\\n                                <stop offset=\\"0%\\" stop-color=\\"rgba(255, 0, 0, 1)\\"/>\\r\\n                                <stop offset=\\"100%\\" stop-color=\\"rgba(0, 175, 255, 1)\\"/>\\r\\n                            </linearGradient>\\r\\n                        </defs>\\r\\n                        <g>\\r\\n                            <g  \\r\\n                                class='draggable'\\r\\n                                id='Layer-VectorialApp19R21-0'\\r\\n                                fill='none'\\r\\n                                stroke='none'\\r\\n                                stroke-width='0'\\r\\n                                stroke-dasharray='none'\\r\\n                                opacity='1'\\r\\n                                mask='none'\\r\\n                                filter='none'\\r\\n                                transform='matrix(1 0 0 1 0 0)'\\r\\n                            >\\r\\n                                            \\r\\n                                <rect  \\r\\n                                    id='Rect-VectorialApp19R21-2'\\r\\n                                    x='200'\\r\\n                                    y='200'\\r\\n                                    width='350'\\r\\n                                    height='25'\\r\\n                                    rx='0'\\r\\n                                    ry='0'\\r\\n                                    fill='url(#LinearGradient-VectorialApp19R21-3)'\\r\\n                                    stroke='rgba(0, 0, 0, 1)'\\r\\n                                    stroke-width='0'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -176 -175)'\\r\\n                                />\\r\\n                                            \\r\\n                                <rect  \\r\\n                                    id='Rect-VectorialApp19R21-4'\\r\\n                                    x='200'\\r\\n                                    y='200'\\r\\n                                    width='350'\\r\\n                                    height='25'\\r\\n                                    rx='0'\\r\\n                                    ry='0'\\r\\n                                    fill='url(#LinearGradient-VectorialApp19R21-3)'\\r\\n                                    stroke='rgba(0, 0, 0, 1)'\\r\\n                                    stroke-width='0'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -175 -125)'\\r\\n                                />\\r\\n                                            \\r\\n                                <rect  \\r\\n                                    id='Rect-VectorialApp19R21-5'\\r\\n                                    x='200'\\r\\n                                    y='200'\\r\\n                                    width='275'\\r\\n                                    height='25'\\r\\n                                    rx='0'\\r\\n                                    ry='0'\\r\\n                                    fill='url(#LinearGradient-VectorialApp19R21-3)'\\r\\n                                    stroke='rgba(0, 0, 0, 1)'\\r\\n                                    stroke-width='0'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -175 -75)'\\r\\n                                />\\r\\n                                            \\r\\n                                <rect  \\r\\n                                    id='Rect-VectorialApp19R21-6'\\r\\n                                    x='200'\\r\\n                                    y='200'\\r\\n                                    width='200'\\r\\n                                    height='25'\\r\\n                                    rx='0'\\r\\n                                    ry='0'\\r\\n                                    fill='url(#LinearGradient-VectorialApp19R21-3)'\\r\\n                                    stroke='rgba(0, 0, 0, 1)'\\r\\n                                    stroke-width='0'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -175 -25)'\\r\\n                                />\\r\\n                                            \\r\\n                                <circle  \\r\\n                                    id='Circle-VectorialApp19R21-7'\\r\\n                                    cx='200'\\r\\n                                    cy='200'\\r\\n                                    r='40'\\r\\n                                    fill='rgba(255, 255, 255, 0.3)'\\r\\n                                    stroke='rgba(0, 175, 0, 1)'\\r\\n                                    stroke-width='5'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -100 75)'\\r\\n                                />\\r\\n                                            \\r\\n                                <circle  \\r\\n                                    id='Circle-VectorialApp19R21-8'\\r\\n                                    cx='200'\\r\\n                                    cy='200'\\r\\n                                    r='30'\\r\\n                                    fill='rgba(0, 175, 0, 1)'\\r\\n                                    stroke='rgba(0, 175, 0, 1)'\\r\\n                                    stroke-width='5'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -100 75)'\\r\\n                                />\\r\\n                                            \\r\\n                                <circle  \\r\\n                                    id='Circle-VectorialApp19R21-9'\\r\\n                                    cx='200'\\r\\n                                    cy='200'\\r\\n                                    r='25'\\r\\n                                    fill='rgba(255, 255, 255, 0)'\\r\\n                                    stroke='rgba(0, 175, 255, 1)'\\r\\n                                    stroke-width='10'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 100.5 75)'\\r\\n                                />\\r\\n                                            \\r\\n                                <circle  \\r\\n                                    id='Circle-VectorialApp19R21-10'\\r\\n                                    cx='200'\\r\\n                                    cy='200'\\r\\n                                    r='25'\\r\\n                                    fill='rgba(255, 255, 255, 0)'\\r\\n                                    stroke='rgba(0, 175, 255, 1)'\\r\\n                                    stroke-width='10'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 100.5 159)'\\r\\n                                />\\r\\n                                            \\r\\n                                <circle  \\r\\n                                    id='Circle-VectorialApp19R21-11'\\r\\n                                    cx='200'\\r\\n                                    cy='200'\\r\\n                                    r='25'\\r\\n                                    fill='rgba(255, 255, 255, 0)'\\r\\n                                    stroke='rgba(0, 175, 255, 1)'\\r\\n                                    stroke-width='10'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -100 159)'\\r\\n                                />\\r\\n                            </g>\\r\\n                        </g>\\r\\n                    </Svg>\\r\\n                </Graphic>\\r\\n                <Text>mathril</Text>\\r\\n            </Item>\\r\\n            <Item\\r\\n                on:SMUI:action={() => window.location = \`https://vectorial.app\`}\\r\\n            >\\r\\n                <Graphic>\\r\\n                    <Svg style=\\"width: 100%; height: 100%;\\" viewBox=\\"-336 -140 224.00000095367432 222.00000286102295\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\" class=\\"s-96Qa8tULeGx4\\">\\r\\n                        <defs class=\\"s-96Qa8tULeGx4\\">\\r\\n                            <radialGradient id=\\"radGrad604\\" cx=\\"50%\\" cy=\\"50%\\" r=\\"50%\\" fx=\\"50%\\" fy=\\"50%\\" fr=\\"0%\\" class=\\"s-96Qa8tULeGx4\\">\\r\\n                                <stop offset=\\"0%\\" stop-color=\\"rgba(0, 0, 0, 0.1)\\" class=\\"s-96Qa8tULeGx4\\"></stop>\\r\\n                                <stop offset=\\"100%\\" stop-color=\\"rgba(0, 0, 0, 1)\\" class=\\"s-96Qa8tULeGx4\\"></stop>\\r\\n                            </radialGradient>\\r\\n                            <linearGradient id=\\"linGrad990\\" x1=\\"0%\\" y1=\\"0%\\" x2=\\"100%\\" y2=\\"0%\\" class=\\"s-96Qa8tULeGx4\\">\\r\\n                                <stop offset=\\"0%\\" stop-color=\\"rgba(255, 0, 0, 1)\\" class=\\"s-96Qa8tULeGx4\\"></stop>\\r\\n                                <stop offset=\\"100%\\" stop-color=\\"rgba(0, 159, 163, 1)\\" class=\\"s-96Qa8tULeGx4\\"></stop>\\r\\n                            </linearGradient>\\r\\n                            <filter id=\\"shadow183\\" x=\\"0%\\" y=\\"0%\\" width=\\"500%\\" height=\\"500%\\" class=\\"s-2BksElCIcH9B\\">\\r\\n                                <feDropShadow dx=\\"30\\" dy=\\"30\\" stdDeviation=\\"5\\" flood-color=\\"rgba(0, 0, 0, 0.5)\\" flood-opacity=\\"1\\" class=\\"s-2BksElCIcH9B\\"></feDropShadow>\\r\\n                            </filter>\\r\\n                        </defs>\\r\\n                        <g class=\\"s-96Qa8tULeGx4\\">\\r\\n                            <g id=\\"Layer-0\\" fill=\\"none\\" stroke=\\"none\\" stroke-width=\\"0\\" stroke-dasharray=\\"none\\" opacity=\\"1\\" filter=\\"none\\" transform=\\"matrix(1 0 0 1 0 0)\\" class=\\"s-QQIalB0-gg3s\\">  \\r\\n                                <circle cx=\\"0\\" cy=\\"0\\" r=\\"100\\" fill=\\"url(#linGrad990)\\" stroke=\\"rgba(0, 0, 0, 1)\\" stroke-width=\\"0\\" stroke-dasharray=\\"none\\" opacity=\\"1\\" filter=\\"none\\" transform=\\"matrix(1 0 0 1 -224 -30)\\" class=\\"s-QOZdKfZP-a_N\\"></circle>\\r\\n                                <g id=\\"Latex-3\\" fill=\\"rgba(255, 255, 255, 1)\\" opacity=\\"1\\" filter=\\"url(#shadow183)\\" transform=\\"matrix(0.22421523772725804 0 0 0.22026430842809952 -283.0785199922724 22.28708863364809)\\" class=\\"s-8WhOemGd3PFV\\">\\r\\n                                    <defs>\\r\\n                                        <path id=\\"MJX-1039-TEX-I-1D463\\" d=\\"M173 380Q173 405 154 405Q130 405 104 376T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Q21 294 29 316T53 368T97 419T160 441Q202 441 225 417T249 361Q249 344 246 335Q246 329 231 291T200 202T182 113Q182 86 187 69Q200 26 250 26Q287 26 319 60T369 139T398 222T409 277Q409 300 401 317T383 343T365 361T357 383Q357 405 376 424T417 443Q436 443 451 425T467 367Q467 340 455 284T418 159T347 40T241 -11Q177 -11 139 22Q102 54 102 117Q102 148 110 181T151 298Q173 362 173 380Z\\"></path>\\r\\n                                    </defs>\\r\\n                                    <g stroke-width=\\"0\\" transform=\\"scale(1,-1)\\">\\r\\n                                        <g data-mml-node=\\"math\\">\\r\\n                                            <g data-mml-node=\\"mi\\">\\r\\n                                                <use data-c=\\"1D463\\" xlink:href=\\"#MJX-1039-TEX-I-1D463\\"></use>\\r\\n                                            </g>\\r\\n                                        </g>\\r\\n                                    </g>\\r\\n                                </g>\\r\\n                            </g>\\r\\n                        </g>\\r\\n                    </Svg>\\r\\n                </Graphic>\\r\\n                <Text>vectorial</Text>\\r\\n            </Item>\\r\\n            \\r\\n        </List>\\r\\n    </div>\\r\\n    <div class=\\"bottom\\">\\r\\n        <List twoLine avatarList>\\r\\n            {#if $isAuth}\\r\\n                <Item on:click={() => goto(\`/\${$page.data.user.publicID}\`)}>\\r\\n                    <Graphic>\\r\\n                        <img\\r\\n                            class=\\"round\\"\\r\\n                            width=\\"40px\\"\\r\\n                            height=\\"40px\\"\\r\\n                            src={$profileImage}\\r\\n                            alt=\\"Profile\\"\\r\\n                        />\\r\\n                    </Graphic>\\r\\n                    <Text>\\r\\n                        <PrimaryText>{$isAuth.name}</PrimaryText>\\r\\n                        <SecondaryText>{$isAuth.publicID}</SecondaryText>\\r\\n                    </Text>\\r\\n                </Item>\\r\\n            {:else}\\r\\n                <Item>\\r\\n                    <Button on:click={() => goto(\\"/auth\\")}\\r\\n                        >Log in / Sign up</Button\\r\\n                    >\\r\\n                </Item>\\r\\n            {/if}\\r\\n        </List>\\r\\n    </div>\\r\\n</nav>\\r\\n\\r\\n<style>\\r\\n    nav {\\r\\n        /* height: calc(100vh - 5em); */\\r\\n        /* height: 500px; */\\r\\n        overflow-y: auto;\\r\\n        display: flex;\\r\\n        justify-content: start;\\r\\n        flex-direction: column;\\r\\n        /* position: sticky;\\r\\n        top: 0.5em; */\\r\\n        padding-bottom: 5em;\\r\\n    }\\r\\n    \\r\\n    /* .post {\\r\\n        display: flex;\\r\\n        justify-content: center;\\r\\n    } */\\r\\n</style>\\r\\n"],"names":[],"mappings":"AAqTI,kBAAI,CAGA,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,KAAK,CACtB,cAAc,CAAE,MAAM,CAGtB,cAAc,CAAE,GACpB"}`
+  map: `{"version":3,"file":"Nav.svelte","sources":["Nav.svelte"],"sourcesContent":["<script lang=\\"ts\\">\\r\\n    //@ts-nocheck\\r\\n    import List, {\\r\\n        Item,\\r\\n        Graphic,\\r\\n        Separator,\\r\\n        Meta,\\r\\n        Text,\\r\\n        PrimaryText,\\r\\n        SecondaryText,\\r\\n    } from \\"@smui/list\\";\\r\\n    import Button, { Label } from \\"@smui/button\\";\\r\\n    import { Svg } from '@smui/common';\\r\\n    import { goto } from \\"$app/navigation\\";\\r\\n    import { page } from \\"$app/stores\\";\\r\\n    import { profileImage, navList, isAuth } from \\"$lib/stores\\";\\r\\n\\r\\n    $: $isAuth = $page.data.user;\\r\\n<\/script>\\r\\n\\r\\n<nav>\\r\\n    <div class=\\"top\\">\\r\\n        <List>\\r\\n            <Item\\r\\n                on:SMUI:action={() => goto(\`/courses\`)}\\r\\n            >\\r\\n                <Graphic class=\\"material-icons\\">local_library</Graphic>\\r\\n                <Text>Courses</Text>\\r\\n            </Item>\\r\\n            <Item\\r\\n                on:SMUI:action={() => goto(\`/students\`)}\\r\\n            >\\r\\n                <Graphic class=\\"material-icons\\">groups</Graphic>\\r\\n                <Text>Students</Text>\\r\\n            </Item>\\r\\n            <Item\\r\\n                on:SMUI:action={() => goto(\`/talks\`)}\\r\\n            >\\r\\n                <Graphic class=\\"material-symbols-outlined\\">podium</Graphic>\\r\\n                <Text>Talks</Text>\\r\\n            </Item>\\r\\n            <Separator />\\r\\n            <Item\\r\\n                on:SMUI:action={() => goto(\`/about\`)}\\r\\n            >\\r\\n                <Graphic class=\\"material-icons\\">person</Graphic>\\r\\n                <Text>About</Text>\\r\\n            </Item>\\r\\n            <Item\\r\\n                on:SMUI:action={() => goto(\`/publications\`)}\\r\\n            >\\r\\n                <Graphic class=\\"material-icons\\">article</Graphic>\\r\\n                <Text>Publications</Text>\\r\\n            </Item>\\r\\n            <Item\\r\\n                on:SMUI:action={() => goto(\`/cv\`)}\\r\\n            >\\r\\n                <Graphic class=\\"material-icons\\">badge</Graphic>\\r\\n                <Text>CV</Text>\\r\\n            </Item>\\r\\n            <Item\\r\\n                on:SMUI:action={() => window.location = \`https://mathril.com\`}\\r\\n            >\\r\\n                <Graphic>\\r\\n                    <Svg style=\\"width: 100%; height: 100%;\\" viewBox=\\"0 0 400 400\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\">\\r\\n                        <defs>\\r\\n                            <linearGradient id='LinearGradient-VectorialApp19R21-3' x1=\\"0%\\" y1=\\"0%\\" x2=\\"100%\\" y2=\\"0%\\" >\\r\\n                                <stop offset=\\"0%\\" stop-color=\\"rgba(255, 0, 0, 1)\\"/>\\r\\n                                <stop offset=\\"100%\\" stop-color=\\"rgba(0, 175, 255, 1)\\"/>\\r\\n                            </linearGradient>\\r\\n                        </defs>\\r\\n                        <g>\\r\\n                            <g  \\r\\n                                class='draggable'\\r\\n                                id='Layer-VectorialApp19R21-0'\\r\\n                                fill='none'\\r\\n                                stroke='none'\\r\\n                                stroke-width='0'\\r\\n                                stroke-dasharray='none'\\r\\n                                opacity='1'\\r\\n                                mask='none'\\r\\n                                filter='none'\\r\\n                                transform='matrix(1 0 0 1 0 0)'\\r\\n                            >\\r\\n                                            \\r\\n                                <rect  \\r\\n                                    id='Rect-VectorialApp19R21-2'\\r\\n                                    x='200'\\r\\n                                    y='200'\\r\\n                                    width='350'\\r\\n                                    height='25'\\r\\n                                    rx='0'\\r\\n                                    ry='0'\\r\\n                                    fill='url(#LinearGradient-VectorialApp19R21-3)'\\r\\n                                    stroke='rgba(0, 0, 0, 1)'\\r\\n                                    stroke-width='0'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -176 -175)'\\r\\n                                />\\r\\n                                            \\r\\n                                <rect  \\r\\n                                    id='Rect-VectorialApp19R21-4'\\r\\n                                    x='200'\\r\\n                                    y='200'\\r\\n                                    width='350'\\r\\n                                    height='25'\\r\\n                                    rx='0'\\r\\n                                    ry='0'\\r\\n                                    fill='url(#LinearGradient-VectorialApp19R21-3)'\\r\\n                                    stroke='rgba(0, 0, 0, 1)'\\r\\n                                    stroke-width='0'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -175 -125)'\\r\\n                                />\\r\\n                                            \\r\\n                                <rect  \\r\\n                                    id='Rect-VectorialApp19R21-5'\\r\\n                                    x='200'\\r\\n                                    y='200'\\r\\n                                    width='275'\\r\\n                                    height='25'\\r\\n                                    rx='0'\\r\\n                                    ry='0'\\r\\n                                    fill='url(#LinearGradient-VectorialApp19R21-3)'\\r\\n                                    stroke='rgba(0, 0, 0, 1)'\\r\\n                                    stroke-width='0'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -175 -75)'\\r\\n                                />\\r\\n                                            \\r\\n                                <rect  \\r\\n                                    id='Rect-VectorialApp19R21-6'\\r\\n                                    x='200'\\r\\n                                    y='200'\\r\\n                                    width='200'\\r\\n                                    height='25'\\r\\n                                    rx='0'\\r\\n                                    ry='0'\\r\\n                                    fill='url(#LinearGradient-VectorialApp19R21-3)'\\r\\n                                    stroke='rgba(0, 0, 0, 1)'\\r\\n                                    stroke-width='0'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -175 -25)'\\r\\n                                />\\r\\n                                            \\r\\n                                <circle  \\r\\n                                    id='Circle-VectorialApp19R21-7'\\r\\n                                    cx='200'\\r\\n                                    cy='200'\\r\\n                                    r='40'\\r\\n                                    fill='rgba(255, 255, 255, 0.3)'\\r\\n                                    stroke='rgba(0, 175, 0, 1)'\\r\\n                                    stroke-width='5'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -100 75)'\\r\\n                                />\\r\\n                                            \\r\\n                                <circle  \\r\\n                                    id='Circle-VectorialApp19R21-8'\\r\\n                                    cx='200'\\r\\n                                    cy='200'\\r\\n                                    r='30'\\r\\n                                    fill='rgba(0, 175, 0, 1)'\\r\\n                                    stroke='rgba(0, 175, 0, 1)'\\r\\n                                    stroke-width='5'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -100 75)'\\r\\n                                />\\r\\n                                            \\r\\n                                <circle  \\r\\n                                    id='Circle-VectorialApp19R21-9'\\r\\n                                    cx='200'\\r\\n                                    cy='200'\\r\\n                                    r='25'\\r\\n                                    fill='rgba(255, 255, 255, 0)'\\r\\n                                    stroke='rgba(0, 175, 255, 1)'\\r\\n                                    stroke-width='10'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 100.5 75)'\\r\\n                                />\\r\\n                                            \\r\\n                                <circle  \\r\\n                                    id='Circle-VectorialApp19R21-10'\\r\\n                                    cx='200'\\r\\n                                    cy='200'\\r\\n                                    r='25'\\r\\n                                    fill='rgba(255, 255, 255, 0)'\\r\\n                                    stroke='rgba(0, 175, 255, 1)'\\r\\n                                    stroke-width='10'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 100.5 159)'\\r\\n                                />\\r\\n                                            \\r\\n                                <circle  \\r\\n                                    id='Circle-VectorialApp19R21-11'\\r\\n                                    cx='200'\\r\\n                                    cy='200'\\r\\n                                    r='25'\\r\\n                                    fill='rgba(255, 255, 255, 0)'\\r\\n                                    stroke='rgba(0, 175, 255, 1)'\\r\\n                                    stroke-width='10'\\r\\n                                    stroke-dasharray='none'\\r\\n                                    opacity='1'\\r\\n                                    filter='none'\\r\\n                                    mask='none'\\r\\n                                    transform='matrix(1 0 0 1 -100 159)'\\r\\n                                />\\r\\n                            </g>\\r\\n                        </g>\\r\\n                    </Svg>\\r\\n                </Graphic>\\r\\n                <Text>mathril</Text>\\r\\n            </Item>\\r\\n            <Item\\r\\n                on:SMUI:action={() => window.location = \`/vectorial\`}\\r\\n            >\\r\\n                <Graphic>\\r\\n                    <Svg style=\\"width: 100%; height: 100%;\\" viewBox=\\"-336 -140 224.00000095367432 222.00000286102295\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\" class=\\"s-96Qa8tULeGx4\\">\\r\\n                        <defs class=\\"s-96Qa8tULeGx4\\">\\r\\n                            <radialGradient id=\\"radGrad604\\" cx=\\"50%\\" cy=\\"50%\\" r=\\"50%\\" fx=\\"50%\\" fy=\\"50%\\" fr=\\"0%\\" class=\\"s-96Qa8tULeGx4\\">\\r\\n                                <stop offset=\\"0%\\" stop-color=\\"rgba(0, 0, 0, 0.1)\\" class=\\"s-96Qa8tULeGx4\\"></stop>\\r\\n                                <stop offset=\\"100%\\" stop-color=\\"rgba(0, 0, 0, 1)\\" class=\\"s-96Qa8tULeGx4\\"></stop>\\r\\n                            </radialGradient>\\r\\n                            <linearGradient id=\\"linGrad990\\" x1=\\"0%\\" y1=\\"0%\\" x2=\\"100%\\" y2=\\"0%\\" class=\\"s-96Qa8tULeGx4\\">\\r\\n                                <stop offset=\\"0%\\" stop-color=\\"rgba(255, 0, 0, 1)\\" class=\\"s-96Qa8tULeGx4\\"></stop>\\r\\n                                <stop offset=\\"100%\\" stop-color=\\"rgba(0, 159, 163, 1)\\" class=\\"s-96Qa8tULeGx4\\"></stop>\\r\\n                            </linearGradient>\\r\\n                            <filter id=\\"shadow183\\" x=\\"0%\\" y=\\"0%\\" width=\\"500%\\" height=\\"500%\\" class=\\"s-2BksElCIcH9B\\">\\r\\n                                <feDropShadow dx=\\"30\\" dy=\\"30\\" stdDeviation=\\"5\\" flood-color=\\"rgba(0, 0, 0, 0.5)\\" flood-opacity=\\"1\\" class=\\"s-2BksElCIcH9B\\"></feDropShadow>\\r\\n                            </filter>\\r\\n                        </defs>\\r\\n                        <g class=\\"s-96Qa8tULeGx4\\">\\r\\n                            <g id=\\"Layer-0\\" fill=\\"none\\" stroke=\\"none\\" stroke-width=\\"0\\" stroke-dasharray=\\"none\\" opacity=\\"1\\" filter=\\"none\\" transform=\\"matrix(1 0 0 1 0 0)\\" class=\\"s-QQIalB0-gg3s\\">  \\r\\n                                <circle cx=\\"0\\" cy=\\"0\\" r=\\"100\\" fill=\\"url(#linGrad990)\\" stroke=\\"rgba(0, 0, 0, 1)\\" stroke-width=\\"0\\" stroke-dasharray=\\"none\\" opacity=\\"1\\" filter=\\"none\\" transform=\\"matrix(1 0 0 1 -224 -30)\\" class=\\"s-QOZdKfZP-a_N\\"></circle>\\r\\n                                <g id=\\"Latex-3\\" fill=\\"rgba(255, 255, 255, 1)\\" opacity=\\"1\\" filter=\\"url(#shadow183)\\" transform=\\"matrix(0.22421523772725804 0 0 0.22026430842809952 -283.0785199922724 22.28708863364809)\\" class=\\"s-8WhOemGd3PFV\\">\\r\\n                                    <defs>\\r\\n                                        <path id=\\"MJX-1039-TEX-I-1D463\\" d=\\"M173 380Q173 405 154 405Q130 405 104 376T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Q21 294 29 316T53 368T97 419T160 441Q202 441 225 417T249 361Q249 344 246 335Q246 329 231 291T200 202T182 113Q182 86 187 69Q200 26 250 26Q287 26 319 60T369 139T398 222T409 277Q409 300 401 317T383 343T365 361T357 383Q357 405 376 424T417 443Q436 443 451 425T467 367Q467 340 455 284T418 159T347 40T241 -11Q177 -11 139 22Q102 54 102 117Q102 148 110 181T151 298Q173 362 173 380Z\\"></path>\\r\\n                                    </defs>\\r\\n                                    <g stroke-width=\\"0\\" transform=\\"scale(1,-1)\\">\\r\\n                                        <g data-mml-node=\\"math\\">\\r\\n                                            <g data-mml-node=\\"mi\\">\\r\\n                                                <use data-c=\\"1D463\\" xlink:href=\\"#MJX-1039-TEX-I-1D463\\"></use>\\r\\n                                            </g>\\r\\n                                        </g>\\r\\n                                    </g>\\r\\n                                </g>\\r\\n                            </g>\\r\\n                        </g>\\r\\n                    </Svg>\\r\\n                </Graphic>\\r\\n                <Text>vectorial</Text>\\r\\n            </Item>\\r\\n            \\r\\n        </List>\\r\\n    </div>\\r\\n    <div class=\\"bottom\\">\\r\\n        <List twoLine avatarList>\\r\\n            {#if $isAuth}\\r\\n                <Item on:click={() => goto(\`/\${$page.data.user.publicID}\`)}>\\r\\n                    <Graphic>\\r\\n                        <img\\r\\n                            class=\\"round\\"\\r\\n                            width=\\"40px\\"\\r\\n                            height=\\"40px\\"\\r\\n                            src={$profileImage}\\r\\n                            alt=\\"Profile\\"\\r\\n                        />\\r\\n                    </Graphic>\\r\\n                    <Text>\\r\\n                        <PrimaryText>{$isAuth.name}</PrimaryText>\\r\\n                        <SecondaryText>{$isAuth.publicID}</SecondaryText>\\r\\n                    </Text>\\r\\n                </Item>\\r\\n            {:else}\\r\\n                <Item>\\r\\n                    <Button on:click={() => goto(\\"/auth\\")}\\r\\n                        >Log in / Sign up</Button\\r\\n                    >\\r\\n                </Item>\\r\\n            {/if}\\r\\n        </List>\\r\\n    </div>\\r\\n</nav>\\r\\n\\r\\n<style>\\r\\n    nav {\\r\\n        /* height: calc(100vh - 5em); */\\r\\n        /* height: 500px; */\\r\\n        overflow-y: auto;\\r\\n        display: flex;\\r\\n        justify-content: start;\\r\\n        flex-direction: column;\\r\\n        /* position: sticky;\\r\\n        top: 0.5em; */\\r\\n        padding-bottom: 5em;\\r\\n    }\\r\\n    \\r\\n    /* .post {\\r\\n        display: flex;\\r\\n        justify-content: center;\\r\\n    } */\\r\\n</style>\\r\\n"],"names":[],"mappings":"AAqTI,kBAAI,CAGA,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,KAAK,CACtB,cAAc,CAAE,MAAM,CAGtB,cAAc,CAAE,GACpB"}`
 };
 const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $page, $$unsubscribe_page;
@@ -696,8 +238,7 @@ const Sidebar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $navList, $$unsubscribe_navList;
   $$unsubscribe_navList = subscribe(navList, (value) => $navList = value);
   let { isAuth: isAuth2 = null } = $$props;
-  if ($$props.isAuth === void 0 && $$bindings.isAuth && isAuth2 !== void 0)
-    $$bindings.isAuth(isAuth2);
+  if ($$props.isAuth === void 0 && $$bindings.isAuth && isAuth2 !== void 0) $$bindings.isAuth(isAuth2);
   $$result.css.add(css$1);
   $$unsubscribe_navList();
   return `<aside class="svelte-kpoyhe">  ${$navList.length > 0 ? `${validate_component(Card, "Card").$$render($$result, {}, {}, {
@@ -716,7 +257,7 @@ const Sidebar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   })}` : ``}   ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
-      return `${validate_component(Content$1, "Content").$$render($$result, {}, {}, {
+      return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
           return `${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
         }
@@ -897,7 +438,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       },
       {
         default: () => {
-          return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
+          return `${validate_component(Content$1, "Content").$$render($$result, {}, {}, {
             default: () => {
               return `<header class="nav svelte-z3f1g">${validate_component(Nav, "Nav").$$render($$result, {}, {}, {})}</header>`;
             }
@@ -907,7 +448,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     )}  ${fixed ? `${validate_component(Scrim, "Scrim").$$render($$result, {}, {}, {})}` : ``} ${validate_component(AppContent, "AppContent").$$render(
       $$result,
       {
-        style: "margin-left: " + (!fixed && $showLeft ? "180px" : "0px") + ";margin-right: " + ($showRight && W > 600 ? "300px" : "0px") + ";"
+        style: "margin-left: " + (!fixed && $showLeft ? "180px" : "0px") + ";margin-right: 0px;"
       },
       {},
       {

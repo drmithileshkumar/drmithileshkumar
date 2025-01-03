@@ -1,20 +1,20 @@
-import { s as subscribe, b as set_store_value, i as is_promise, n as noop } from "../../../../chunks/utils.js";
-import { c as create_ssr_component, i as createEventDispatcher, f as add_attribute, v as validate_component, e as escape, j as each } from "../../../../chunks/ssr.js";
+import { a as subscribe, b as set_store_value, i as is_promise, n as noop } from "../../../../chunks/utils.js";
+import { c as create_ssr_component, j as createEventDispatcher, h as add_attribute, v as validate_component, e as escape, i as each } from "../../../../chunks/ssr2.js";
 import { C as Card } from "../../../../chunks/Card.js";
 import { C as Content } from "../../../../chunks/ActionIcons.js";
 import { B as Button } from "../../../../chunks/Button.js";
 import { C as CommonLabel } from "../../../../chunks/CommonLabel.js";
 import { T as TabBar, a as Tab } from "../../../../chunks/TabBar.js";
-import { p as page } from "../../../../chunks/stores.js";
+import { p as page } from "../../../../chunks/stores3.js";
 import "../../../../chunks/client.js";
 import { A as Actions } from "../../../../chunks/Actions.js";
-import { D as DataTable, H as Head, R as Row, C as Cell, B as Body } from "../../../../chunks/Cell.js";
+import { D as DataTable, R as Row, C as Cell, B as Body } from "../../../../chunks/Cell.js";
+import { H as Head } from "../../../../chunks/Head.js";
 import "../../../../chunks/Subheader.js";
-import { c as currentPath, i as isAuth, T as TopBarHeight } from "../../../../chunks/stores2.js";
+import { c as currentPath, i as isAuth, T as TopBarHeight } from "../../../../chunks/stores.js";
 import "html5-qrcode";
 import "qrcode-generator";
 /* empty css                                                          */
-import "devalue";
 import { T as Textfield } from "../../../../chunks/Textfield.js";
 import "../../../../chunks/Suffix.js";
 const css$2 = {
@@ -27,12 +27,9 @@ const GenerateQR = create_ssr_component(($$result, $$props, $$bindings, slots) =
   let { autoDownload = true } = $$props;
   createEventDispatcher();
   let qrlink;
-  if ($$props.data === void 0 && $$bindings.data && data !== void 0)
-    $$bindings.data(data);
-  if ($$props.filename === void 0 && $$bindings.filename && filename !== void 0)
-    $$bindings.filename(filename);
-  if ($$props.autoDownload === void 0 && $$bindings.autoDownload && autoDownload !== void 0)
-    $$bindings.autoDownload(autoDownload);
+  if ($$props.data === void 0 && $$bindings.data && data !== void 0) $$bindings.data(data);
+  if ($$props.filename === void 0 && $$bindings.filename && filename !== void 0) $$bindings.filename(filename);
+  if ($$props.autoDownload === void 0 && $$bindings.autoDownload && autoDownload !== void 0) $$bindings.autoDownload(autoDownload);
   $$result.css.add(css$2);
   return `<span id="generatedQRCode" class="svelte-o78zgt"><img${add_attribute("src", qrlink, 0)} alt="" class="svelte-o78zgt"></span> ${``}`;
 });
@@ -49,16 +46,11 @@ const User = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { currentUser } = $$props;
   let { currentUserDetail } = $$props;
   let { active } = $$props;
-  if ($$props.banner === void 0 && $$bindings.banner && banner !== void 0)
-    $$bindings.banner(banner);
-  if ($$props.profile === void 0 && $$bindings.profile && profile !== void 0)
-    $$bindings.profile(profile);
-  if ($$props.currentUser === void 0 && $$bindings.currentUser && currentUser !== void 0)
-    $$bindings.currentUser(currentUser);
-  if ($$props.currentUserDetail === void 0 && $$bindings.currentUserDetail && currentUserDetail !== void 0)
-    $$bindings.currentUserDetail(currentUserDetail);
-  if ($$props.active === void 0 && $$bindings.active && active !== void 0)
-    $$bindings.active(active);
+  if ($$props.banner === void 0 && $$bindings.banner && banner !== void 0) $$bindings.banner(banner);
+  if ($$props.profile === void 0 && $$bindings.profile && profile !== void 0) $$bindings.profile(profile);
+  if ($$props.currentUser === void 0 && $$bindings.currentUser && currentUser !== void 0) $$bindings.currentUser(currentUser);
+  if ($$props.currentUserDetail === void 0 && $$bindings.currentUserDetail && currentUserDetail !== void 0) $$bindings.currentUserDetail(currentUserDetail);
+  if ($$props.active === void 0 && $$bindings.active && active !== void 0) $$bindings.active(active);
   $$result.css.add(css$1);
   let $$settled;
   let $$rendered;
@@ -67,8 +59,7 @@ const User = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$settled = true;
     $$result.head = previous_head;
     {
-      if (profile === "data:")
-        profile = "/avatar.svg";
+      if (profile === "data:") profile = "/avatar.svg";
     }
     tabs = ["Assignments", "Log Out"];
     $$rendered = `${validate_component(Card, "Card").$$render($$result, {}, {}, {
@@ -142,8 +133,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return await res.json();
     }
   };
-  if ($$props.data === void 0 && $$bindings.data && data !== void 0)
-    $$bindings.data(data);
+  if ($$props.data === void 0 && $$bindings.data && data !== void 0) $$bindings.data(data);
   $$result.css.add(css);
   let $$settled;
   let $$rendered;

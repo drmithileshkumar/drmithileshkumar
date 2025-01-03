@@ -1,7 +1,7 @@
-import { s as subscribe, d as null_to_empty } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, f as add_attribute, e as escape, v as validate_component } from "../../../../../chunks/ssr.js";
+import { a as subscribe, d as null_to_empty } from "../../../../../chunks/utils.js";
+import { c as create_ssr_component, h as add_attribute, e as escape, v as validate_component } from "../../../../../chunks/ssr2.js";
 import { S as Select } from "../../../../../chunks/Select.js";
-import { f as chapters, g as sections, c as currentSlide, p as presentationMode, s as slideCounter, d as presentation, o as overlay, e as autoScroll, a as selectedSection, b as selectedChapter } from "../../../../../chunks/stores3.js";
+import { f as chapters, g as sections, c as currentSlide, p as presentationMode, s as slideCounter, d as presentation, o as overlay, e as autoScroll, a as selectedSection, b as selectedChapter } from "../../../../../chunks/stores4.js";
 import "../../../../../chunks/client.js";
 import { C as CanvasBar, a as Canvas, P as Presenter } from "../../../../../chunks/Presenter.js";
 class Point {
@@ -50,8 +50,7 @@ class Point {
     return new Point(this.x * q.x - this.y * q.y, this.x * q.y + this.y * q.x);
   }
   d(q) {
-    if (q.isZero())
-      return "Infinity";
+    if (q.isZero()) return "Infinity";
     else {
       let r = new Point(this.x * q.x + this.y * q.y, -this.x * q.y + this.y * q.x);
       return r.scale(r.sqlength());
@@ -72,12 +71,10 @@ class Point {
   }
   reflectControl(q, r) {
     let t = this.s(q);
-    if (t.isZero())
-      return r;
+    if (t.isZero()) return r;
     let u = t.scale(-1 / t.length());
     let t1 = r.s(q);
-    if (t1.isZero())
-      return r;
+    if (t1.isZero()) return r;
     return q.a(u.scale(t1.length()));
   }
   rotate(theta, origin = new Point()) {
@@ -117,8 +114,7 @@ class Point {
   }
   orientation(q, r) {
     let val = (q.y - this.y) * (r.x - q.x) - (q.x - this.x) * (r.y - q.y);
-    if (val === 0)
-      return 0;
+    if (val === 0) return 0;
     return val > 0 ? 1 : 2;
   }
   onSegment(p, q) {
@@ -173,8 +169,7 @@ const Teacher = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     teacher.style.left = change.x + "px";
     teacher.style.top = change.y + "px";
   };
-  if ($$props.makeDraggable === void 0 && $$bindings.makeDraggable && makeDraggable !== void 0)
-    $$bindings.makeDraggable(makeDraggable);
+  if ($$props.makeDraggable === void 0 && $$bindings.makeDraggable && makeDraggable !== void 0) $$bindings.makeDraggable(makeDraggable);
   $$result.css.add(css$1);
   return `<div class="teacher noMenu svelte-e6uf7i"${add_attribute("this", teacher, 0)} data-svelte-h="svelte-1g2d600"><img class="noMenu svelte-e6uf7i" src="/favicon.png" alt=""> </div>`;
 });

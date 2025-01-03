@@ -1,6 +1,7 @@
-import { a as classAdderBuilder, f as forwardEventsBuilder, c as classMap } from "./classAdderBuilder.js";
+import { c as classAdderBuilder } from "./classAdderBuilder.js";
 import { c as compute_rest_props } from "./utils.js";
-import { c as create_ssr_component, a as get_current_component, h as setContext, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute } from "./ssr.js";
+import { c as create_ssr_component, a as get_current_component, s as setContext, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute } from "./ssr2.js";
+import { f as forwardEventsBuilder, c as classMap } from "./SmuiElement.js";
 const Row = classAdderBuilder({
   class: "mdc-top-app-bar__row",
   tag: "div"
@@ -18,16 +19,11 @@ const Section = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.align === void 0 && $$bindings.align && align !== void 0)
-    $$bindings.align(align);
-  if ($$props.toolbar === void 0 && $$bindings.toolbar && toolbar !== void 0)
-    $$bindings.toolbar(toolbar);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.align === void 0 && $$bindings.align && align !== void 0) $$bindings.align(align);
+  if ($$props.toolbar === void 0 && $$bindings.toolbar && toolbar !== void 0) $$bindings.toolbar(toolbar);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   return `<section${spread(
     [
       {

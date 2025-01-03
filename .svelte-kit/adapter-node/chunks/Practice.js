@@ -1,6 +1,6 @@
-import { s as subscribe, b as set_store_value } from "./utils.js";
-import { c as create_ssr_component, f as add_attribute, e as escape, i as createEventDispatcher, v as validate_component } from "./ssr.js";
-import { Q as QuestionTimer } from "./stores4.js";
+import { a as subscribe, b as set_store_value } from "./utils.js";
+import { c as create_ssr_component, h as add_attribute, e as escape, j as createEventDispatcher, v as validate_component } from "./ssr2.js";
+import { Q as QuestionTimer } from "./stores5.js";
 import { w as writable } from "./index2.js";
 /* empty css                                       */
 let attempted = writable(false);
@@ -14,8 +14,7 @@ const Performance = create_ssr_component(($$result, $$props, $$bindings, slots) 
   let strArray;
   let strokeColor;
   let { strokedasharray = 0.6 } = $$props;
-  if ($$props.strokedasharray === void 0 && $$bindings.strokedasharray && strokedasharray !== void 0)
-    $$bindings.strokedasharray(strokedasharray);
+  if ($$props.strokedasharray === void 0 && $$bindings.strokedasharray && strokedasharray !== void 0) $$bindings.strokedasharray(strokedasharray);
   $$result.css.add(css$2);
   strArray = `${strokedasharray} ${1 - strokedasharray}`;
   strokeColor = strokedasharray < 0.5 ? "red" : strokedasharray < 0.9 ? "goldenrod" : "green";
@@ -42,12 +41,9 @@ const Practiceradiobutton = create_ssr_component(($$result, $$props, $$bindings,
   let option3;
   let option4;
   createEventDispatcher();
-  if ($$props.optionValues === void 0 && $$bindings.optionValues && optionValues !== void 0)
-    $$bindings.optionValues(optionValues);
-  if ($$props.correct === void 0 && $$bindings.correct && correct !== void 0)
-    $$bindings.correct(correct);
-  if ($$props.answer === void 0 && $$bindings.answer && answer !== void 0)
-    $$bindings.answer(answer);
+  if ($$props.optionValues === void 0 && $$bindings.optionValues && optionValues !== void 0) $$bindings.optionValues(optionValues);
+  if ($$props.correct === void 0 && $$bindings.correct && correct !== void 0) $$bindings.correct(correct);
+  if ($$props.answer === void 0 && $$bindings.answer && answer !== void 0) $$bindings.answer(answer);
   $$result.css.add(css$1);
   $$unsubscribe_attempted();
   $$unsubscribe_newChapter();
@@ -89,8 +85,7 @@ const Practice = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     set_store_value(QuestionTimer, $QuestionTimer = setInterval(() => clock++, 1e3), $QuestionTimer);
   };
   loadnext();
-  if ($$props.generateProblem === void 0 && $$bindings.generateProblem && generateProblem !== void 0)
-    $$bindings.generateProblem(generateProblem);
+  if ($$props.generateProblem === void 0 && $$bindings.generateProblem && generateProblem !== void 0) $$bindings.generateProblem(generateProblem);
   $$result.css.add(css);
   let $$settled;
   let $$rendered;

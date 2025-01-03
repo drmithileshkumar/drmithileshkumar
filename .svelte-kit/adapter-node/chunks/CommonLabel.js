@@ -1,6 +1,6 @@
 import { c as compute_rest_props } from "./utils.js";
-import { c as create_ssr_component, a as get_current_component, g as getContext, v as validate_component, m as missing_component } from "./ssr.js";
-import { f as forwardEventsBuilder, c as classMap, S as SmuiElement } from "./classAdderBuilder.js";
+import { c as create_ssr_component, a as get_current_component, g as getContext, v as validate_component, m as missing_component } from "./ssr2.js";
+import { f as forwardEventsBuilder, c as classMap, S as SmuiElement } from "./SmuiElement.js";
 const CommonLabel = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["use", "class", "component", "tag", "getElement"]);
   const forwardEvents = forwardEventsBuilder(get_current_component());
@@ -14,16 +14,11 @@ const CommonLabel = create_ssr_component(($$result, $$props, $$bindings, slots) 
   function getElement() {
     return element.getElement();
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.component === void 0 && $$bindings.component && component !== void 0)
-    $$bindings.component(component);
-  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
-    $$bindings.tag(tag);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.component === void 0 && $$bindings.component && component !== void 0) $$bindings.component(component);
+  if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0) $$bindings.tag(tag);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   let $$settled;
   let $$rendered;
   let previous_head = $$result.head;

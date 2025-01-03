@@ -29,9 +29,7 @@ function subscribe(store, ...callbacks) {
 function compute_rest_props(props, keys) {
   const rest = {};
   keys = new Set(keys);
-  for (const k in props)
-    if (!keys.has(k) && k[0] !== "$")
-      rest[k] = props[k];
+  for (const k in props) if (!keys.has(k) && k[0] !== "$") rest[k] = props[k];
   return rest;
 }
 function compute_slots(slots) {
@@ -49,7 +47,7 @@ function set_store_value(store, ret, value) {
   return ret;
 }
 export {
-  safe_not_equal as a,
+  subscribe as a,
   set_store_value as b,
   compute_rest_props as c,
   null_to_empty as d,
@@ -58,5 +56,5 @@ export {
   is_promise as i,
   noop as n,
   run_all as r,
-  subscribe as s
+  safe_not_equal as s
 };

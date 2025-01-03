@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Determinants/Area of a triangle/+page.js";
+import * as universal from "../../../../src/routes/(general)/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Determinants/Area of a triangle/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.svelte";

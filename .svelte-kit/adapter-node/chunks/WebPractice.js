@@ -1,8 +1,5 @@
-import { c as create_ssr_component, a as get_current_component, h as setContext, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, j as each, v as validate_component, g as getContext, i as createEventDispatcher, o as onDestroy, e as escape } from "./ssr.js";
-import { c as compute_rest_props, s as subscribe, b as set_store_value } from "./utils.js";
-import { w as writable } from "./index2.js";
-import { f as forwardEventsBuilder, c as classMap } from "./classAdderBuilder.js";
-import { C as ContextFragment } from "./ContextFragment.js";
+import { c as create_ssr_component, j as createEventDispatcher, o as onDestroy, e as escape, h as add_attribute, v as validate_component } from "./ssr2.js";
+import { S as SegmentedButton, a as Segment } from "./Segment.js";
 import { C as CommonLabel } from "./CommonLabel.js";
 import "./Suffix.js";
 import { C as Card } from "./Card.js";
@@ -17,171 +14,6 @@ import { indentUnit } from "@codemirror/language";
 import { javascript } from "@codemirror/lang-javascript";
 import { xml } from "@codemirror/lang-xml";
 import { css as css$2 } from "@codemirror/lang-css";
-const SegmentedButton = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["use", "class", "segments", "key", "singleSelect", "selected", "getElement"]);
-  let $singleSelectStore, $$unsubscribe_singleSelectStore;
-  forwardEventsBuilder(get_current_component());
-  let { use = [] } = $$props;
-  let { class: className = "" } = $$props;
-  let { segments = [] } = $$props;
-  let { key = (segment) => segment } = $$props;
-  let { singleSelect = false } = $$props;
-  let { selected = singleSelect ? void 0 : [] } = $$props;
-  let element;
-  let initialSelected = segments.map((segmentId) => singleSelect && selected === segmentId || !singleSelect && selected.indexOf(segmentId) !== -1);
-  setContext("SMUI:icon:context", "segmented-button");
-  setContext("SMUI:label:context", "segmented-button");
-  const singleSelectStore = writable(singleSelect);
-  $$unsubscribe_singleSelectStore = subscribe(singleSelectStore, (value) => $singleSelectStore = value);
-  setContext("SMUI:segmented-button:singleSelect", singleSelectStore);
-  singleSelect ? selected : new Set(selected);
-  function getElement() {
-    return element;
-  }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.segments === void 0 && $$bindings.segments && segments !== void 0)
-    $$bindings.segments(segments);
-  if ($$props.key === void 0 && $$bindings.key && key !== void 0)
-    $$bindings.key(key);
-  if ($$props.singleSelect === void 0 && $$bindings.singleSelect && singleSelect !== void 0)
-    $$bindings.singleSelect(singleSelect);
-  if ($$props.selected === void 0 && $$bindings.selected && selected !== void 0)
-    $$bindings.selected(selected);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
-  set_store_value(singleSelectStore, $singleSelectStore = singleSelect, $singleSelectStore);
-  $$unsubscribe_singleSelectStore();
-  return `<div${spread(
-    [
-      {
-        class: escape_attribute_value(classMap({
-          [className]: true,
-          "mdc-segmented-button": true,
-          "mdc-segmented-button--single-select": singleSelect
-        }))
-      },
-      {
-        role: escape_attribute_value(singleSelect ? "radiogroup" : "group")
-      },
-      escape_object($$restProps)
-    ],
-    {}
-  )}${add_attribute("this", element, 0)}>${each(segments, (segment, i) => {
-    return `${validate_component(ContextFragment, "ContextFragment").$$render(
-      $$result,
-      {
-        key: "SMUI:segmented-button:segment:index",
-        value: i
-      },
-      {},
-      {
-        default: () => {
-          return `${validate_component(ContextFragment, "ContextFragment").$$render(
-            $$result,
-            {
-              key: "SMUI:segmented-button:segment:initialSelected",
-              value: initialSelected[i]
-            },
-            {},
-            {
-              default: () => {
-                return `${slots.default ? slots.default({ segment }) : ``} `;
-              }
-            }
-          )} `;
-        }
-      }
-    )}`;
-  })} </div>`;
-});
-const Segment = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["use", "class", "style", "segment", "ripple", "touch", "selected", "getElement"]);
-  let $$unsubscribe_index;
-  let $$unsubscribe_singleSelect;
-  let $initialSelectedStore, $$unsubscribe_initialSelectedStore;
-  forwardEventsBuilder(get_current_component());
-  let uninitializedValue = () => {
-  };
-  function isUninitializedValue(value) {
-    return value === uninitializedValue;
-  }
-  let { use = [] } = $$props;
-  let { class: className = "" } = $$props;
-  let { style = "" } = $$props;
-  let { segment: segmentId } = $$props;
-  let { ripple = true } = $$props;
-  let { touch = false } = $$props;
-  const initialSelectedStore = getContext("SMUI:segmented-button:segment:initialSelected");
-  $$unsubscribe_initialSelectedStore = subscribe(initialSelectedStore, (value) => $initialSelectedStore = value);
-  let { selected = uninitializedValue } = $$props;
-  if (isUninitializedValue(selected)) {
-    selected = $initialSelectedStore;
-  }
-  let element;
-  let internalClasses = {};
-  let internalStyles = {};
-  let internalAttrs = {};
-  const singleSelect = getContext("SMUI:segmented-button:singleSelect");
-  $$unsubscribe_singleSelect = subscribe(singleSelect, (value) => value);
-  const index = getContext("SMUI:segmented-button:segment:index");
-  $$unsubscribe_index = subscribe(index, (value) => value);
-  if (!segmentId) {
-    throw new Error("The segment property is required! It should be passed down from the SegmentedButton to the Segment.");
-  }
-  function getElement() {
-    return element;
-  }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.segment === void 0 && $$bindings.segment && segmentId !== void 0)
-    $$bindings.segment(segmentId);
-  if ($$props.ripple === void 0 && $$bindings.ripple && ripple !== void 0)
-    $$bindings.ripple(ripple);
-  if ($$props.touch === void 0 && $$bindings.touch && touch !== void 0)
-    $$bindings.touch(touch);
-  if ($$props.selected === void 0 && $$bindings.selected && selected !== void 0)
-    $$bindings.selected(selected);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
-  $$unsubscribe_index();
-  $$unsubscribe_singleSelect();
-  $$unsubscribe_initialSelectedStore();
-  return `<button${spread(
-    [
-      {
-        class: escape_attribute_value(classMap({
-          [className]: true,
-          "mdc-segmented-button__segment": true,
-          "mdc-segmented-button__segment--touch": touch,
-          "mdc-segmented-button__segment--selected": selected,
-          ...internalClasses
-        }))
-      },
-      {
-        style: escape_attribute_value(Object.entries(internalStyles).map(([name, value]) => `${name}: ${value};`).concat([style]).join(" "))
-      },
-      {
-        role: escape_attribute_value(singleSelect ? "radio" : void 0)
-      },
-      {
-        "aria-pressed": escape_attribute_value(!singleSelect ? selected ? "true" : "false" : void 0)
-      },
-      {
-        "aria-checked": escape_attribute_value(singleSelect ? selected ? "true" : "false" : void 0)
-      },
-      escape_object(internalAttrs),
-      escape_object($$restProps)
-    ],
-    {}
-  )}${add_attribute("this", element, 0)}>${ripple ? `<div class="mdc-segmented-button__ripple"></div>` : ``}${slots.default ? slots.default({}) : ``}${touch ? `<div class="mdc-segmented-button__segment__touch"></div>` : ``}</button>`;
-});
 const css = {
   code: ".codemirror-wrapper.svelte-kcx0g9 .cm-focused{outline:none}.scm-waiting.svelte-kcx0g9{position:relative}.scm-waiting__loading.svelte-kcx0g9{position:absolute;top:0;left:0;bottom:0;right:0;background-color:rgba(255, 255, 255, 0.5)}.scm-loading.svelte-kcx0g9{display:flex;align-items:center;justify-content:center}.scm-loading__spinner.svelte-kcx0g9{width:1rem;height:1rem;border-radius:100%;border:solid 2px #000;border-top-color:transparent;margin-right:0.75rem;animation:svelte-kcx0g9-spin 1s linear infinite}.scm-loading__text.svelte-kcx0g9{font-family:sans-serif}.scm-pre.svelte-kcx0g9{font-size:0.85rem;font-family:monospace;tab-size:2;-moz-tab-size:2;resize:none;pointer-events:none;user-select:none;overflow:auto}@keyframes svelte-kcx0g9-spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}",
   map: '{"version":3,"file":"CodeMirror.svelte","sources":["CodeMirror.svelte"],"sourcesContent":["<script context=\\"module\\"><\/script>\\r\\n\\r\\n<script>import { createEventDispatcher, onDestroy, onMount } from \\"svelte\\";\\r\\nimport { basicSetup } from \\"codemirror\\";\\r\\nimport { EditorView, keymap, placeholder as placeholderExt } from \\"@codemirror/view\\";\\r\\nimport { EditorState, StateEffect } from \\"@codemirror/state\\";\\r\\nimport { indentWithTab } from \\"@codemirror/commands\\";\\r\\nimport { indentUnit } from \\"@codemirror/language\\";\\r\\nimport { debounce } from \\"./util\\";\\r\\nlet classes = \\"\\";\\r\\nexport { classes as class };\\r\\nexport let value = \\"\\";\\r\\nexport let basic = true;\\r\\nexport let lang = void 0;\\r\\nexport let theme = void 0;\\r\\nexport let extensions = [];\\r\\nexport let useTab = true;\\r\\nexport let tabSize = 2;\\r\\nexport let styles = void 0;\\r\\nexport let lineWrapping = false;\\r\\nexport let editable = true;\\r\\nexport let readonly = false;\\r\\nexport let placeholder = void 0;\\r\\nexport let nodebounce = false;\\r\\nconst is_browser = typeof window !== \\"undefined\\";\\r\\nconst dispatch = createEventDispatcher();\\r\\nlet element;\\r\\nlet view;\\r\\nlet update_from_prop = false;\\r\\nlet update_from_state = false;\\r\\nlet first_config = true;\\r\\nlet first_update = true;\\r\\n$:\\r\\n  state_extensions = [\\r\\n    ...get_base_extensions(basic, useTab, tabSize, lineWrapping, placeholder, editable, readonly, lang),\\r\\n    ...get_theme(theme, styles),\\r\\n    ...extensions\\r\\n  ];\\r\\n$:\\r\\n  view && update(value);\\r\\n$:\\r\\n  view && state_extensions && reconfigure();\\r\\n$:\\r\\n  on_change = nodebounce ? handle_change : debounce(handle_change, 300);\\r\\nonMount(() => {\\r\\n  view = create_editor_view();\\r\\n  dispatch(\\"ready\\", view);\\r\\n});\\r\\nonDestroy(() => view?.destroy());\\r\\nfunction create_editor_view() {\\r\\n  return new EditorView({\\r\\n    parent: element,\\r\\n    state: create_editor_state(value),\\r\\n    dispatch(transaction) {\\r\\n      view.update([transaction]);\\r\\n      if (!update_from_prop && transaction.docChanged) {\\r\\n        on_change();\\r\\n      }\\r\\n    }\\r\\n  });\\r\\n}\\r\\nfunction reconfigure() {\\r\\n  if (first_config) {\\r\\n    first_config = false;\\r\\n    return;\\r\\n  }\\r\\n  view.dispatch({\\r\\n    effects: StateEffect.reconfigure.of(state_extensions)\\r\\n  });\\r\\n}\\r\\nfunction update(value2) {\\r\\n  if (first_update) {\\r\\n    first_update = false;\\r\\n    return;\\r\\n  }\\r\\n  if (update_from_state) {\\r\\n    update_from_state = false;\\r\\n    return;\\r\\n  }\\r\\n  update_from_prop = true;\\r\\n  view.setState(create_editor_state(value2));\\r\\n  update_from_prop = false;\\r\\n}\\r\\nfunction handle_change() {\\r\\n  const new_value = view.state.doc.toString();\\r\\n  if (new_value === value)\\r\\n    return;\\r\\n  update_from_state = true;\\r\\n  value = new_value;\\r\\n  dispatch(\\"change\\", value);\\r\\n}\\r\\nfunction create_editor_state(value2) {\\r\\n  return EditorState.create({\\r\\n    doc: value2 ?? void 0,\\r\\n    extensions: state_extensions\\r\\n  });\\r\\n}\\r\\nfunction get_base_extensions(basic2, useTab2, tabSize2, lineWrapping2, placeholder2, editable2, readonly2, lang2) {\\r\\n  const extensions2 = [\\r\\n    indentUnit.of(\\" \\".repeat(tabSize2)),\\r\\n    EditorView.editable.of(editable2),\\r\\n    EditorState.readOnly.of(readonly2)\\r\\n  ];\\r\\n  if (basic2)\\r\\n    extensions2.push(basicSetup);\\r\\n  if (useTab2)\\r\\n    extensions2.push(keymap.of([indentWithTab]));\\r\\n  if (placeholder2)\\r\\n    extensions2.push(placeholderExt(placeholder2));\\r\\n  if (lang2)\\r\\n    extensions2.push(lang2);\\r\\n  if (lineWrapping2)\\r\\n    extensions2.push(EditorView.lineWrapping);\\r\\n  return extensions2;\\r\\n}\\r\\nfunction get_theme(theme2, styles2) {\\r\\n  const extensions2 = [];\\r\\n  if (styles2)\\r\\n    extensions2.push(EditorView.theme(styles2));\\r\\n  if (theme2)\\r\\n    extensions2.push(theme2);\\r\\n  return extensions2;\\r\\n}\\r\\n<\/script>\\r\\n\\r\\n{#if is_browser}\\r\\n    <div class=\\"codemirror-wrapper {classes}\\" bind:this={element} />\\r\\n{:else}\\r\\n    <div class=\\"scm-waiting {classes}\\">\\r\\n        <div class=\\"scm-waiting__loading scm-loading\\">\\r\\n            <div class=\\"scm-loading__spinner\\" />\\r\\n            <p class=\\"scm-loading__text\\">Loading editor...</p>\\r\\n        </div>\\r\\n\\r\\n        <pre class=\\"scm-pre cm-editor\\">{value}</pre>\\r\\n    </div>\\r\\n{/if}\\r\\n\\r\\n<style>\\r\\n    .codemirror-wrapper :global(.cm-focused) {\\r\\n        outline: none;\\r\\n    }\\r\\n\\r\\n    .scm-waiting {\\r\\n        position: relative;\\r\\n    }\\r\\n    .scm-waiting__loading {\\r\\n        position: absolute;\\r\\n        top: 0;\\r\\n        left: 0;\\r\\n        bottom: 0;\\r\\n        right: 0;\\r\\n        background-color: rgba(255, 255, 255, 0.5);\\r\\n    }\\r\\n\\r\\n    .scm-loading {\\r\\n        display: flex;\\r\\n        align-items: center;\\r\\n        justify-content: center;\\r\\n    }\\r\\n    .scm-loading__spinner {\\r\\n        width: 1rem;\\r\\n        height: 1rem;\\r\\n        border-radius: 100%;\\r\\n        border: solid 2px #000;\\r\\n        border-top-color: transparent;\\r\\n        margin-right: 0.75rem;\\r\\n        animation: spin 1s linear infinite;\\r\\n    }\\r\\n    .scm-loading__text {\\r\\n        font-family: sans-serif;\\r\\n    }\\r\\n    .scm-pre {\\r\\n        font-size: 0.85rem;\\r\\n        font-family: monospace;\\r\\n        tab-size: 2;\\r\\n        -moz-tab-size: 2;\\r\\n        resize: none;\\r\\n        pointer-events: none;\\r\\n        user-select: none;\\r\\n        overflow: auto;\\r\\n    }\\r\\n\\r\\n    @keyframes spin {\\r\\n        0% {\\r\\n            transform: rotate(0deg);\\r\\n        }\\r\\n        100% {\\r\\n            transform: rotate(360deg);\\r\\n        }\\r\\n    }\\r\\n</style>\\r\\n"],"names":[],"mappings":"AA2II,iCAAmB,CAAS,WAAa,CACrC,OAAO,CAAE,IACb,CAEA,0BAAa,CACT,QAAQ,CAAE,QACd,CACA,mCAAsB,CAClB,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CACP,MAAM,CAAE,CAAC,CACT,KAAK,CAAE,CAAC,CACR,gBAAgB,CAAE,KAAK,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAC7C,CAEA,0BAAa,CACT,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,MACrB,CACA,mCAAsB,CAClB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,aAAa,CAAE,IAAI,CACnB,MAAM,CAAE,KAAK,CAAC,GAAG,CAAC,IAAI,CACtB,gBAAgB,CAAE,WAAW,CAC7B,YAAY,CAAE,OAAO,CACrB,SAAS,CAAE,kBAAI,CAAC,EAAE,CAAC,MAAM,CAAC,QAC9B,CACA,gCAAmB,CACf,WAAW,CAAE,UACjB,CACA,sBAAS,CACL,SAAS,CAAE,OAAO,CAClB,WAAW,CAAE,SAAS,CACtB,QAAQ,CAAE,CAAC,CACX,aAAa,CAAE,CAAC,CAChB,MAAM,CAAE,IAAI,CACZ,cAAc,CAAE,IAAI,CACpB,WAAW,CAAE,IAAI,CACjB,QAAQ,CAAE,IACd,CAEA,WAAW,kBAAK,CACZ,EAAG,CACC,SAAS,CAAE,OAAO,IAAI,CAC1B,CACA,IAAK,CACD,SAAS,CAAE,OAAO,MAAM,CAC5B,CACJ"}'
@@ -212,54 +44,33 @@ const CodeMirror = create_ssr_component(($$result, $$props, $$bindings, slots) =
       EditorView.editable.of(editable2),
       EditorState.readOnly.of(readonly2)
     ];
-    if (basic2)
-      extensions2.push(basicSetup);
-    if (useTab2)
-      extensions2.push(keymap.of([indentWithTab]));
-    if (placeholder2)
-      extensions2.push(placeholder(placeholder2));
-    if (lang2)
-      extensions2.push(lang2);
-    if (lineWrapping2)
-      extensions2.push(EditorView.lineWrapping);
+    if (basic2) extensions2.push(basicSetup);
+    if (useTab2) extensions2.push(keymap.of([indentWithTab]));
+    if (placeholder2) extensions2.push(placeholder(placeholder2));
+    if (lang2) extensions2.push(lang2);
+    if (lineWrapping2) extensions2.push(EditorView.lineWrapping);
     return extensions2;
   }
   function get_theme(theme2, styles2) {
     const extensions2 = [];
-    if (styles2)
-      extensions2.push(EditorView.theme(styles2));
-    if (theme2)
-      extensions2.push(theme2);
+    if (styles2) extensions2.push(EditorView.theme(styles2));
+    if (theme2) extensions2.push(theme2);
     return extensions2;
   }
-  if ($$props.class === void 0 && $$bindings.class && classes !== void 0)
-    $$bindings.class(classes);
-  if ($$props.value === void 0 && $$bindings.value && value !== void 0)
-    $$bindings.value(value);
-  if ($$props.basic === void 0 && $$bindings.basic && basic !== void 0)
-    $$bindings.basic(basic);
-  if ($$props.lang === void 0 && $$bindings.lang && lang !== void 0)
-    $$bindings.lang(lang);
-  if ($$props.theme === void 0 && $$bindings.theme && theme !== void 0)
-    $$bindings.theme(theme);
-  if ($$props.extensions === void 0 && $$bindings.extensions && extensions !== void 0)
-    $$bindings.extensions(extensions);
-  if ($$props.useTab === void 0 && $$bindings.useTab && useTab !== void 0)
-    $$bindings.useTab(useTab);
-  if ($$props.tabSize === void 0 && $$bindings.tabSize && tabSize !== void 0)
-    $$bindings.tabSize(tabSize);
-  if ($$props.styles === void 0 && $$bindings.styles && styles !== void 0)
-    $$bindings.styles(styles);
-  if ($$props.lineWrapping === void 0 && $$bindings.lineWrapping && lineWrapping !== void 0)
-    $$bindings.lineWrapping(lineWrapping);
-  if ($$props.editable === void 0 && $$bindings.editable && editable !== void 0)
-    $$bindings.editable(editable);
-  if ($$props.readonly === void 0 && $$bindings.readonly && readonly !== void 0)
-    $$bindings.readonly(readonly);
-  if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder$1 !== void 0)
-    $$bindings.placeholder(placeholder$1);
-  if ($$props.nodebounce === void 0 && $$bindings.nodebounce && nodebounce !== void 0)
-    $$bindings.nodebounce(nodebounce);
+  if ($$props.class === void 0 && $$bindings.class && classes !== void 0) $$bindings.class(classes);
+  if ($$props.value === void 0 && $$bindings.value && value !== void 0) $$bindings.value(value);
+  if ($$props.basic === void 0 && $$bindings.basic && basic !== void 0) $$bindings.basic(basic);
+  if ($$props.lang === void 0 && $$bindings.lang && lang !== void 0) $$bindings.lang(lang);
+  if ($$props.theme === void 0 && $$bindings.theme && theme !== void 0) $$bindings.theme(theme);
+  if ($$props.extensions === void 0 && $$bindings.extensions && extensions !== void 0) $$bindings.extensions(extensions);
+  if ($$props.useTab === void 0 && $$bindings.useTab && useTab !== void 0) $$bindings.useTab(useTab);
+  if ($$props.tabSize === void 0 && $$bindings.tabSize && tabSize !== void 0) $$bindings.tabSize(tabSize);
+  if ($$props.styles === void 0 && $$bindings.styles && styles !== void 0) $$bindings.styles(styles);
+  if ($$props.lineWrapping === void 0 && $$bindings.lineWrapping && lineWrapping !== void 0) $$bindings.lineWrapping(lineWrapping);
+  if ($$props.editable === void 0 && $$bindings.editable && editable !== void 0) $$bindings.editable(editable);
+  if ($$props.readonly === void 0 && $$bindings.readonly && readonly !== void 0) $$bindings.readonly(readonly);
+  if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder$1 !== void 0) $$bindings.placeholder(placeholder$1);
+  if ($$props.nodebounce === void 0 && $$bindings.nodebounce && nodebounce !== void 0) $$bindings.nodebounce(nodebounce);
   $$result.css.add(css);
   [
     ...get_base_extensions(basic, useTab, tabSize, lineWrapping, placeholder$1, editable, readonly, lang),
@@ -279,12 +90,9 @@ const WebPractice = create_ssr_component(($$result, $$props, $$bindings, slots) 
   let { cssContent = "" } = $$props;
   let { jsContent = "" } = $$props;
   let previewFrame;
-  if ($$props.htmlContent === void 0 && $$bindings.htmlContent && htmlContent !== void 0)
-    $$bindings.htmlContent(htmlContent);
-  if ($$props.cssContent === void 0 && $$bindings.cssContent && cssContent !== void 0)
-    $$bindings.cssContent(cssContent);
-  if ($$props.jsContent === void 0 && $$bindings.jsContent && jsContent !== void 0)
-    $$bindings.jsContent(jsContent);
+  if ($$props.htmlContent === void 0 && $$bindings.htmlContent && htmlContent !== void 0) $$bindings.htmlContent(htmlContent);
+  if ($$props.cssContent === void 0 && $$bindings.cssContent && cssContent !== void 0) $$bindings.cssContent(cssContent);
+  if ($$props.jsContent === void 0 && $$bindings.jsContent && jsContent !== void 0) $$bindings.jsContent(jsContent);
   $$result.css.add(css$1);
   let $$settled;
   let $$rendered;

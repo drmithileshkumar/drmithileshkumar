@@ -11,10 +11,8 @@ const getDb = async () => (await getMongoClient()).db("drmithileshkumar");
 const userDb = async () => (await getMongoClient()).db("user");
 const getUsersCollection = async () => (await userDb()).collection("users");
 const getDBCollection = async (collectionName) => {
-  if (collectionName === "users")
-    return getUsersCollection();
-  else
-    return (await getDb()).collection(collectionName);
+  if (collectionName === "users") return getUsersCollection();
+  else return (await getDb()).collection(collectionName);
 };
 export {
   getUsersCollection as a,

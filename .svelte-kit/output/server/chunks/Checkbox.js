@@ -1,6 +1,6 @@
 import { c as compute_rest_props } from "./utils.js";
-import { c as create_ssr_component, a as get_current_component, g as getContext, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute } from "./ssr.js";
-import { f as forwardEventsBuilder, c as classMap } from "./classAdderBuilder.js";
+import { c as create_ssr_component, a as get_current_component, g as getContext, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute } from "./ssr2.js";
+import { f as forwardEventsBuilder, c as classMap } from "./SmuiElement.js";
 import { e as exclude, p as prefixFilter } from "./prefixFilter.js";
 const Checkbox = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, [
@@ -39,7 +39,6 @@ const Checkbox = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   let { input$use = [] } = $$props;
   let { input$class = "" } = $$props;
   let element;
-  let instance;
   let checkbox;
   let internalClasses = {};
   let internalStyles = {};
@@ -57,37 +56,22 @@ const Checkbox = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.disabled === void 0 && $$bindings.disabled && disabled !== void 0)
-    $$bindings.disabled(disabled);
-  if ($$props.touch === void 0 && $$bindings.touch && touch !== void 0)
-    $$bindings.touch(touch);
-  if ($$props.indeterminate === void 0 && $$bindings.indeterminate && indeterminate !== void 0)
-    $$bindings.indeterminate(indeterminate);
-  if ($$props.group === void 0 && $$bindings.group && group !== void 0)
-    $$bindings.group(group);
-  if ($$props.checked === void 0 && $$bindings.checked && checked !== void 0)
-    $$bindings.checked(checked);
-  if ($$props.value === void 0 && $$bindings.value && value !== void 0)
-    $$bindings.value(value);
-  if ($$props.valueKey === void 0 && $$bindings.valueKey && valueKey !== void 0)
-    $$bindings.valueKey(valueKey);
-  if ($$props.input$use === void 0 && $$bindings.input$use && input$use !== void 0)
-    $$bindings.input$use(input$use);
-  if ($$props.input$class === void 0 && $$bindings.input$class && input$class !== void 0)
-    $$bindings.input$class(input$class);
-  if ($$props.getId === void 0 && $$bindings.getId && getId !== void 0)
-    $$bindings.getId(getId);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.style === void 0 && $$bindings.style && style !== void 0) $$bindings.style(style);
+  if ($$props.disabled === void 0 && $$bindings.disabled && disabled !== void 0) $$bindings.disabled(disabled);
+  if ($$props.touch === void 0 && $$bindings.touch && touch !== void 0) $$bindings.touch(touch);
+  if ($$props.indeterminate === void 0 && $$bindings.indeterminate && indeterminate !== void 0) $$bindings.indeterminate(indeterminate);
+  if ($$props.group === void 0 && $$bindings.group && group !== void 0) $$bindings.group(group);
+  if ($$props.checked === void 0 && $$bindings.checked && checked !== void 0) $$bindings.checked(checked);
+  if ($$props.value === void 0 && $$bindings.value && value !== void 0) $$bindings.value(value);
+  if ($$props.valueKey === void 0 && $$bindings.valueKey && valueKey !== void 0) $$bindings.valueKey(valueKey);
+  if ($$props.input$use === void 0 && $$bindings.input$use && input$use !== void 0) $$bindings.input$use(input$use);
+  if ($$props.input$class === void 0 && $$bindings.input$class && input$class !== void 0) $$bindings.input$class(input$class);
+  if ($$props.getId === void 0 && $$bindings.getId && getId !== void 0) $$bindings.getId(getId);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   {
     {
-      let callHandleChange = false;
       if (!isUninitializedValue(group)) {
         if (previousNativeChecked !== nativeChecked) {
           const idx = group.indexOf(value);
@@ -98,24 +82,18 @@ const Checkbox = create_ssr_component(($$result, $$props, $$bindings, slots) => 
             group.splice(idx, 1);
             group = group;
           }
-          callHandleChange = true;
         } else {
           const idxPrev = previousGroup.indexOf(value);
           const idx = group.indexOf(value);
           if (idxPrev > -1 && idx === -1) {
             nativeChecked = false;
-            callHandleChange = true;
           } else if (idx > -1 && idxPrev === -1) {
             nativeChecked = true;
-            callHandleChange = true;
           }
         }
       }
-      if (isUninitializedValue(checked)) {
-        if (!!previousNativeChecked !== !!nativeChecked) {
-          callHandleChange = true;
-        }
-      } else if (checked !== (nativeChecked !== null && nativeChecked !== void 0 ? nativeChecked : null)) {
+      if (isUninitializedValue(checked)) ;
+      else if (checked !== (nativeChecked !== null && nativeChecked !== void 0 ? nativeChecked : null)) {
         if (checked === previousChecked) {
           checked = nativeChecked !== null && nativeChecked !== void 0 ? nativeChecked : null;
           if (!isUninitializedValue(indeterminate)) {
@@ -124,14 +102,10 @@ const Checkbox = create_ssr_component(($$result, $$props, $$bindings, slots) => 
         } else {
           nativeChecked = checked !== null && checked !== void 0 ? checked : void 0;
         }
-        callHandleChange = true;
       }
       previousChecked = checked;
       previousGroup = isUninitializedValue(group) ? [] : [...group];
       previousNativeChecked = nativeChecked;
-      if (callHandleChange && instance) {
-        instance.handleChange();
-      }
     }
   }
   return `<div${spread(

@@ -1,0 +1,19 @@
+const initializeNewPayment = (payment_id, order_id, name, publicID, amount, status, type) => {
+  let newPayment = {
+    payment_id,
+    order_id,
+    creationTimestamp: Date.now(),
+    //private
+    name,
+    publicID,
+    //public
+    amount,
+    status,
+    type
+    //Trial, Monthly, Yearly
+  };
+  return newPayment;
+};
+
+export { initializeNewPayment as i };
+//# sourceMappingURL=payment-BK9OSjqP.js.map

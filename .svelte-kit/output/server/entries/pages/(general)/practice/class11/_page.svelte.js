@@ -1,9 +1,9 @@
-import { s as subscribe } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, e as escape } from "../../../../../chunks/ssr.js";
+import { a as subscribe } from "../../../../../chunks/utils.js";
+import { c as create_ssr_component, v as validate_component, e as escape } from "../../../../../chunks/ssr2.js";
 import { M as Message } from "../../../../../chunks/Message.js";
 /* empty css                                                       */
 import "../../../../../chunks/client.js";
-import { a as selectedChapter, s as selectedGenerator } from "../../../../../chunks/stores4.js";
+import { a as selectedChapter, s as selectedGenerator } from "../../../../../chunks/stores5.js";
 import { P as Practice } from "../../../../../chunks/Practice.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $selectedChapter, $$unsubscribe_selectedChapter;

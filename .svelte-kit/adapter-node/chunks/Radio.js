@@ -1,6 +1,6 @@
 import { c as compute_rest_props } from "./utils.js";
-import { c as create_ssr_component, a as get_current_component, g as getContext, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute } from "./ssr.js";
-import { f as forwardEventsBuilder, c as classMap } from "./classAdderBuilder.js";
+import { c as create_ssr_component, a as get_current_component, g as getContext, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute } from "./ssr2.js";
+import { f as forwardEventsBuilder, c as classMap } from "./SmuiElement.js";
 import { e as exclude, p as prefixFilter } from "./prefixFilter.js";
 const Radio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, [
@@ -44,30 +44,18 @@ const Radio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   function getElement() {
     return element;
   }
-  if ($$props.use === void 0 && $$bindings.use && use !== void 0)
-    $$bindings.use(use);
-  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-    $$bindings.class(className);
-  if ($$props.style === void 0 && $$bindings.style && style !== void 0)
-    $$bindings.style(style);
-  if ($$props.disabled === void 0 && $$bindings.disabled && disabled !== void 0)
-    $$bindings.disabled(disabled);
-  if ($$props.touch === void 0 && $$bindings.touch && touch !== void 0)
-    $$bindings.touch(touch);
-  if ($$props.group === void 0 && $$bindings.group && group !== void 0)
-    $$bindings.group(group);
-  if ($$props.value === void 0 && $$bindings.value && value !== void 0)
-    $$bindings.value(value);
-  if ($$props.valueKey === void 0 && $$bindings.valueKey && valueKey !== void 0)
-    $$bindings.valueKey(valueKey);
-  if ($$props.input$use === void 0 && $$bindings.input$use && input$use !== void 0)
-    $$bindings.input$use(input$use);
-  if ($$props.input$class === void 0 && $$bindings.input$class && input$class !== void 0)
-    $$bindings.input$class(input$class);
-  if ($$props.getId === void 0 && $$bindings.getId && getId !== void 0)
-    $$bindings.getId(getId);
-  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0)
-    $$bindings.getElement(getElement);
+  if ($$props.use === void 0 && $$bindings.use && use !== void 0) $$bindings.use(use);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0) $$bindings.class(className);
+  if ($$props.style === void 0 && $$bindings.style && style !== void 0) $$bindings.style(style);
+  if ($$props.disabled === void 0 && $$bindings.disabled && disabled !== void 0) $$bindings.disabled(disabled);
+  if ($$props.touch === void 0 && $$bindings.touch && touch !== void 0) $$bindings.touch(touch);
+  if ($$props.group === void 0 && $$bindings.group && group !== void 0) $$bindings.group(group);
+  if ($$props.value === void 0 && $$bindings.value && value !== void 0) $$bindings.value(value);
+  if ($$props.valueKey === void 0 && $$bindings.valueKey && valueKey !== void 0) $$bindings.valueKey(valueKey);
+  if ($$props.input$use === void 0 && $$bindings.input$use && input$use !== void 0) $$bindings.input$use(input$use);
+  if ($$props.input$class === void 0 && $$bindings.input$class && input$class !== void 0) $$bindings.input$class(input$class);
+  if ($$props.getId === void 0 && $$bindings.getId && getId !== void 0) $$bindings.getId(getId);
+  if ($$props.getElement === void 0 && $$bindings.getElement && getElement !== void 0) $$bindings.getElement(getElement);
   return `<div${spread(
     [
       {
