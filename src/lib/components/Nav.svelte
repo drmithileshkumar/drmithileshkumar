@@ -59,7 +59,7 @@
                 <Text>CV</Text>
             </Item>
             <Item
-                on:SMUI:action={() => window.location = `https://mathril.com`}
+                on:SMUI:action={() => window.location = `/mathril`}
             >
                 <Graphic>
                     <Svg style="width: 100%; height: 100%;" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

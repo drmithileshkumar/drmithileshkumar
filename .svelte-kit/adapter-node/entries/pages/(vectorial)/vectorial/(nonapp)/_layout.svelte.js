@@ -9,7 +9,7 @@ import { G as Graphic } from "../../../../../chunks/Graphic.js";
 import { B as Button } from "../../../../../chunks/Button.js";
 import "../../../../../chunks/client.js";
 import { p as page } from "../../../../../chunks/stores3.js";
-import { a as profileImage, n as navList, p as pageLoadState, e as darkMode, s as showLeft, c as currentPath } from "../../../../../chunks/stores2.js";
+import { b as profileImage, n as navList, p as pageLoadState, e as darkMode, s as showLeft, c as currentPath } from "../../../../../chunks/stores2.js";
 import { C as Card } from "../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../chunks/ActionIcons.js";
 import { T as TopAppBar } from "../../../../../chunks/TopAppBar.js";

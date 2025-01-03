@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import {clearAll, stMode, arcMode, rectMode, drawMode, strokeColor, lineWidth, globalCompositeOperation} from '$lib/canvas/stores';
     import {onMount} from 'svelte';
     export let width = 100;

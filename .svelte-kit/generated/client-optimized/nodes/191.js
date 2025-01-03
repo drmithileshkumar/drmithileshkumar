@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Application of derivatives/Tangents and normals/+page.js";
+import * as universal from "../../../../src/routes/(mathril)/mathril/games/lineareqn/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Application of derivatives/Tangents and normals/+page.svelte";
+export { default as component } from "../../../../src/routes/(mathril)/mathril/games/lineareqn/+page.svelte";

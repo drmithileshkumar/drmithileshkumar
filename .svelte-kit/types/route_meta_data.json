@@ -1,5 +1,6 @@
 {
 	"/(vectorial)": [],
+	"/(mathril)": [],
 	"/(general)": [
 		"src/routes/(general)/+page.js",
 		"src/routes/(general)/+layout.server.js",
@@ -646,644 +647,78 @@
 	"/(cv)/cv": [
 		"src/routes/(cv)/cv/+page.js"
 	],
-	"/(general)/iit": [
-		"src/routes/(general)/iit/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril": [
+		"src/routes/(mathril)/mathril/+page.js"
 	],
-	"/(general)/iit/maths": [
-		"src/routes/(general)/iit/maths/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/about": [
+		"src/routes/(mathril)/mathril/about/+page.js"
 	],
-	"/(general)/iit/maths/2021": [
-		"src/routes/(general)/iit/maths/2021/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/class[classn]": [
+		"src/routes/(mathril)/mathril/class[classn]/+page.js"
 	],
-	"/(general)/iit/maths/2021/question1": [
-		"src/routes/(general)/iit/maths/2021/question1/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/class[classn]/chapter[chaptern]": [
+		"src/routes/(mathril)/mathril/class[classn]/chapter[chaptern]/+page.js"
 	],
-	"/(general)/iit/maths/2021/question2": [
-		"src/routes/(general)/iit/maths/2021/question2/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games": [
+		"src/routes/(mathril)/mathril/games/+page.js"
 	],
-	"/(general)/iit/maths/2021/question3": [
-		"src/routes/(general)/iit/maths/2021/question3/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/addition2": [
+		"src/routes/(mathril)/mathril/games/addition2/+page.js"
 	],
-	"/(general)/iit/maths/2021/question4": [
-		"src/routes/(general)/iit/maths/2021/question4/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/addition": [
+		"src/routes/(mathril)/mathril/games/addition/+page.js"
 	],
-	"/(general)/iit/maths/2021/question5": [
-		"src/routes/(general)/iit/maths/2021/question5/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/appDerivative": [
+		"src/routes/(mathril)/mathril/games/appDerivative/+page.js"
 	],
-	"/(general)/iit/maths/2021/question6": [
-		"src/routes/(general)/iit/maths/2021/question6/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/beattarget": [
+		"src/routes/(mathril)/mathril/games/beattarget/+page.js"
 	],
-	"/(general)/notes": [
-		"src/routes/(general)/notes/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/clock": [
+		"src/routes/(mathril)/mathril/games/clock/+page.js"
 	],
-	"/(general)/notes/maths": [
-		"src/routes/(general)/notes/maths/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/counting": [
+		"src/routes/(mathril)/mathril/games/counting/+page.js"
 	],
-	"/(general)/notes/maths/Application of derivatives/Approximations": [
-		"src/routes/(general)/notes/maths/Application of derivatives/Approximations/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/division": [
+		"src/routes/(mathril)/mathril/games/division/+page.js"
 	],
-	"/(general)/notes/maths/Application of derivatives/Increasing and decreasing functions": [
-		"src/routes/(general)/notes/maths/Application of derivatives/Increasing and decreasing functions/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/eucliddivisionalgorithm": [
+		"src/routes/(mathril)/mathril/games/eucliddivisionalgorithm/+page.js"
 	],
-	"/(general)/notes/maths/Application of derivatives/Maxima and minima": [
-		"src/routes/(general)/notes/maths/Application of derivatives/Maxima and minima/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/eucliddivisionlemma": [
+		"src/routes/(mathril)/mathril/games/eucliddivisionlemma/+page.js"
 	],
-	"/(general)/notes/maths/Application of derivatives/Rate of change of quantities": [
-		"src/routes/(general)/notes/maths/Application of derivatives/Rate of change of quantities/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/inout": [
+		"src/routes/(mathril)/mathril/games/inout/+page.js"
 	],
-	"/(general)/notes/maths/Application of derivatives/Tangents and normals": [
-		"src/routes/(general)/notes/maths/Application of derivatives/Tangents and normals/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/integral": [
+		"src/routes/(mathril)/mathril/games/integral/+page.js"
 	],
-	"/(general)/notes/maths/Application of integrals/Area between two curves": [
-		"src/routes/(general)/notes/maths/Application of integrals/Area between two curves/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/lineareqn": [
+		"src/routes/(mathril)/mathril/games/lineareqn/+page.js"
 	],
-	"/(general)/notes/maths/Application of integrals/Area under simple curves": [
-		"src/routes/(general)/notes/maths/Application of integrals/Area under simple curves/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/lp": [
+		"src/routes/(mathril)/mathril/games/lp/+page.js"
 	],
-	"/(general)/notes/maths/Binomial theorem/Binomial theorem for positive integral indices": [
-		"src/routes/(general)/notes/maths/Binomial theorem/Binomial theorem for positive integral indices/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/matchnumber": [
+		"src/routes/(mathril)/mathril/games/matchnumber/+page.js"
 	],
-	"/(general)/notes/maths/Binomial theorem/General and middle terms": [
-		"src/routes/(general)/notes/maths/Binomial theorem/General and middle terms/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/multiplication": [
+		"src/routes/(mathril)/mathril/games/multiplication/+page.js"
 	],
-	"/(general)/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers": [
-		"src/routes/(general)/notes/maths/Complex numbers and quadratic equations/Algebra of complex numbers/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/subtraction2": [
+		"src/routes/(mathril)/mathril/games/subtraction2/+page.js"
 	],
-	"/(general)/notes/maths/Complex numbers and quadratic equations/Argand plane and polar representation": [
-		"src/routes/(general)/notes/maths/Complex numbers and quadratic equations/Argand plane and polar representation/+page.js",
-		"src/routes/(general)/+layout.server.js"
+	"/(mathril)/mathril/games/subtraction": [
+		"src/routes/(mathril)/mathril/games/subtraction/+page.js"
 	],
-	"/(general)/notes/maths/Complex numbers and quadratic equations/Complex numbers": [
-		"src/routes/(general)/notes/maths/Complex numbers and quadratic equations/Complex numbers/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Complex numbers and quadratic equations/Quadratic equations": [
-		"src/routes/(general)/notes/maths/Complex numbers and quadratic equations/Quadratic equations/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number": [
-		"src/routes/(general)/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Conic sections/Circle": [
-		"src/routes/(general)/notes/maths/Conic sections/Circle/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Conic sections/Ellipse": [
-		"src/routes/(general)/notes/maths/Conic sections/Ellipse/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Conic sections/Hyperbola": [
-		"src/routes/(general)/notes/maths/Conic sections/Hyperbola/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Conic sections/Parabola": [
-		"src/routes/(general)/notes/maths/Conic sections/Parabola/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Conic sections/Sections of a cone": [
-		"src/routes/(general)/notes/maths/Conic sections/Sections of a cone/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Continuity and differentiability/Continuity": [
-		"src/routes/(general)/notes/maths/Continuity and differentiability/Continuity/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms": [
-		"src/routes/(general)/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Continuity and differentiability/Differentiability": [
-		"src/routes/(general)/notes/maths/Continuity and differentiability/Differentiability/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Continuity and differentiability/Exponential and logarithmic functions": [
-		"src/routes/(general)/notes/maths/Continuity and differentiability/Exponential and logarithmic functions/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Continuity and differentiability/Logarithmic differentiation": [
-		"src/routes/(general)/notes/maths/Continuity and differentiability/Logarithmic differentiation/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Continuity and differentiability/Mean value theorem": [
-		"src/routes/(general)/notes/maths/Continuity and differentiability/Mean value theorem/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Continuity and differentiability/Second order derivative": [
-		"src/routes/(general)/notes/maths/Continuity and differentiability/Second order derivative/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Determinants/Adjoint and inverse of a matrix": [
-		"src/routes/(general)/notes/maths/Determinants/Adjoint and inverse of a matrix/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Determinants/Applications of determinants and matrices": [
-		"src/routes/(general)/notes/maths/Determinants/Applications of determinants and matrices/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Determinants/Area of a triangle": [
-		"src/routes/(general)/notes/maths/Determinants/Area of a triangle/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Determinants/Determinant": [
-		"src/routes/(general)/notes/maths/Determinants/Determinant/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Determinants/Minors and cofactors": [
-		"src/routes/(general)/notes/maths/Determinants/Minors and cofactors/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Determinants/Properties of determinants": [
-		"src/routes/(general)/notes/maths/Determinants/Properties of determinants/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Differential equations/Basic concepts": [
-		"src/routes/(general)/notes/maths/Differential equations/Basic concepts/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Differential equations/Formation of a differential equation whose general solution is given": [
-		"src/routes/(general)/notes/maths/Differential equations/Formation of a differential equation whose general solution is given/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Differential equations/General and particular solutions of a differential equation": [
-		"src/routes/(general)/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Differential equations/Methods of solving first order first degree differential equations": [
-		"src/routes/(general)/notes/maths/Differential equations/Methods of solving first order first degree differential equations/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space": [
-		"src/routes/(general)/notes/maths/Indroduction to 3D geometry/Coordinate axes and coordinate planes in 3D space/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space": [
-		"src/routes/(general)/notes/maths/Indroduction to 3D geometry/Coordinate of a point in space/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Indroduction to 3D geometry/Distance between two points": [
-		"src/routes/(general)/notes/maths/Indroduction to 3D geometry/Distance between two points/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Indroduction to 3D geometry/Section formula": [
-		"src/routes/(general)/notes/maths/Indroduction to 3D geometry/Section formula/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Integrals/Definite integral": [
-		"src/routes/(general)/notes/maths/Integrals/Definite integral/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Integrals/Evaluation of definite integrals by substitution": [
-		"src/routes/(general)/notes/maths/Integrals/Evaluation of definite integrals by substitution/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Integrals/Fundamental theorem of calculus": [
-		"src/routes/(general)/notes/maths/Integrals/Fundamental theorem of calculus/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Integrals/Integrals of some particular functions": [
-		"src/routes/(general)/notes/maths/Integrals/Integrals of some particular functions/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Integrals/Integration as an inverse process of differentiation": [
-		"src/routes/(general)/notes/maths/Integrals/Integration as an inverse process of differentiation/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Integrals/Integration by partial fractions": [
-		"src/routes/(general)/notes/maths/Integrals/Integration by partial fractions/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Integrals/Integration by parts": [
-		"src/routes/(general)/notes/maths/Integrals/Integration by parts/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Integrals/Methods of integration": [
-		"src/routes/(general)/notes/maths/Integrals/Methods of integration/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Integrals/Some properties of definite integrals": [
-		"src/routes/(general)/notes/maths/Integrals/Some properties of definite integrals/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Inverse trigonometric functions/Basic concepts": [
-		"src/routes/(general)/notes/maths/Inverse trigonometric functions/Basic concepts/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions": [
-		"src/routes/(general)/notes/maths/Inverse trigonometric functions/Properties of inverse trigonometric functions/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Limits and derivatives/Derivatives": [
-		"src/routes/(general)/notes/maths/Limits and derivatives/Derivatives/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Limits and derivatives/Intuitive idea of derivatives": [
-		"src/routes/(general)/notes/maths/Limits and derivatives/Intuitive idea of derivatives/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Limits and derivatives/Limits of Trigonometric functions": [
-		"src/routes/(general)/notes/maths/Limits and derivatives/Limits of Trigonometric functions/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Limits and derivatives/Limits": [
-		"src/routes/(general)/notes/maths/Limits and derivatives/Limits/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Linear inequalities/Graphical solution in two variables": [
-		"src/routes/(general)/notes/maths/Linear inequalities/Graphical solution in two variables/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Linear inequalities/Inequalities": [
-		"src/routes/(general)/notes/maths/Linear inequalities/Inequalities/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Linear inequalities/One variable": [
-		"src/routes/(general)/notes/maths/Linear inequalities/One variable/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Linear inequalities/Solution of system in two variables": [
-		"src/routes/(general)/notes/maths/Linear inequalities/Solution of system in two variables/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Linear programming/Different types of linear programming problems": [
-		"src/routes/(general)/notes/maths/Linear programming/Different types of linear programming problems/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Linear programming/Linear programming problem and its mathematical formulation": [
-		"src/routes/(general)/notes/maths/Linear programming/Linear programming problem and its mathematical formulation/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Matrices/Invertible matrices": [
-		"src/routes/(general)/notes/maths/Matrices/Invertible matrices/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Matrices/Matrix": [
-		"src/routes/(general)/notes/maths/Matrices/Matrix/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Matrices/Operations on matrices": [
-		"src/routes/(general)/notes/maths/Matrices/Operations on matrices/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Matrices/Symmetric and skew symmetric matrices": [
-		"src/routes/(general)/notes/maths/Matrices/Symmetric and skew symmetric matrices/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Matrices/Transformation of a matrix": [
-		"src/routes/(general)/notes/maths/Matrices/Transformation of a matrix/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Matrices/Transpose of a matrix": [
-		"src/routes/(general)/notes/maths/Matrices/Transpose of a matrix/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Matrices/Typse of matrices": [
-		"src/routes/(general)/notes/maths/Matrices/Typse of matrices/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Permutations and combinations/Combinations": [
-		"src/routes/(general)/notes/maths/Permutations and combinations/Combinations/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Permutations and combinations/Fundamental principle of counting": [
-		"src/routes/(general)/notes/maths/Permutations and combinations/Fundamental principle of counting/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Permutations and combinations/Permutations": [
-		"src/routes/(general)/notes/maths/Permutations and combinations/Permutations/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Principle of mathematical induction/Motivation": [
-		"src/routes/(general)/notes/maths/Principle of mathematical induction/Motivation/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Principle of mathematical induction/The principle of mathematical induction": [
-		"src/routes/(general)/notes/maths/Principle of mathematical induction/The principle of mathematical induction/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Probability/Axiomatic approach to probability": [
-		"src/routes/(general)/notes/maths/Probability/Axiomatic approach to probability/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Probability/Event": [
-		"src/routes/(general)/notes/maths/Probability/Event/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Probability/Random experiments": [
-		"src/routes/(general)/notes/maths/Probability/Random experiments/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Relations and functions 11/Cartesian product of sets": [
-		"src/routes/(general)/notes/maths/Relations and functions 11/Cartesian product of sets/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Relations and functions 11/Functions": [
-		"src/routes/(general)/notes/maths/Relations and functions 11/Functions/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Relations and functions 11/Relations": [
-		"src/routes/(general)/notes/maths/Relations and functions 11/Relations/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Relations and functions 12/Binary operations": [
-		"src/routes/(general)/notes/maths/Relations and functions 12/Binary operations/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Relations and functions 12/Composition of functions and invertible function": [
-		"src/routes/(general)/notes/maths/Relations and functions 12/Composition of functions and invertible function/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Relations and functions 12/Types of functions": [
-		"src/routes/(general)/notes/maths/Relations and functions 12/Types of functions/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Relations and functions 12/Types of relations": [
-		"src/routes/(general)/notes/maths/Relations and functions 12/Types of relations/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sequences and series/Arithmetic progression": [
-		"src/routes/(general)/notes/maths/Sequences and series/Arithmetic progression/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sequences and series/Geometric progression": [
-		"src/routes/(general)/notes/maths/Sequences and series/Geometric progression/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sequences and series/Relationship between AM and GM": [
-		"src/routes/(general)/notes/maths/Sequences and series/Relationship between AM and GM/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sequences and series/Sequences": [
-		"src/routes/(general)/notes/maths/Sequences and series/Sequences/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sequences and series/Series": [
-		"src/routes/(general)/notes/maths/Sequences and series/Series/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sequences and series/Sum to n terms of Special series": [
-		"src/routes/(general)/notes/maths/Sequences and series/Sum to n terms of Special series/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sets/Complement of a set": [
-		"src/routes/(general)/notes/maths/Sets/Complement of a set/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sets/Equal sets": [
-		"src/routes/(general)/notes/maths/Sets/Equal sets/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sets/Finite and infinite sets": [
-		"src/routes/(general)/notes/maths/Sets/Finite and infinite sets/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sets/Introduction": [
-		"src/routes/(general)/notes/maths/Sets/Introduction/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sets/Operations on sets": [
-		"src/routes/(general)/notes/maths/Sets/Operations on sets/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sets/Power set": [
-		"src/routes/(general)/notes/maths/Sets/Power set/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sets/Practical problems": [
-		"src/routes/(general)/notes/maths/Sets/Practical problems/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sets/Real numbers": [
-		"src/routes/(general)/notes/maths/Sets/Real numbers/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sets/Sets and their representations": [
-		"src/routes/(general)/notes/maths/Sets/Sets and their representations/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sets/Subsets": [
-		"src/routes/(general)/notes/maths/Sets/Subsets/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sets/The empty set": [
-		"src/routes/(general)/notes/maths/Sets/The empty set/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sets/Universal set": [
-		"src/routes/(general)/notes/maths/Sets/Universal set/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Sets/Venn diagrams": [
-		"src/routes/(general)/notes/maths/Sets/Venn diagrams/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Statistics/Analysis of frequency distributions": [
-		"src/routes/(general)/notes/maths/Statistics/Analysis of frequency distributions/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Statistics/Mean deviation": [
-		"src/routes/(general)/notes/maths/Statistics/Mean deviation/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Statistics/Range": [
-		"src/routes/(general)/notes/maths/Statistics/Range/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Statistics/Variance and standard deviation": [
-		"src/routes/(general)/notes/maths/Statistics/Variance and standard deviation/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Straight lines/Distance of a point from a line": [
-		"src/routes/(general)/notes/maths/Straight lines/Distance of a point from a line/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Straight lines/General equation of a line": [
-		"src/routes/(general)/notes/maths/Straight lines/General equation of a line/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Straight lines/Slope of a line": [
-		"src/routes/(general)/notes/maths/Straight lines/Slope of a line/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Straight lines/Various forms of the equation of a line": [
-		"src/routes/(general)/notes/maths/Straight lines/Various forms of the equation of a line/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Three dimensional geometry/Angle between a line and a plane": [
-		"src/routes/(general)/notes/maths/Three dimensional geometry/Angle between a line and a plane/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Three dimensional geometry/Angle between two lines": [
-		"src/routes/(general)/notes/maths/Three dimensional geometry/Angle between two lines/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Three dimensional geometry/Angle between two planes": [
-		"src/routes/(general)/notes/maths/Three dimensional geometry/Angle between two planes/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Three dimensional geometry/Coplanarity of two lines": [
-		"src/routes/(general)/notes/maths/Three dimensional geometry/Coplanarity of two lines/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line": [
-		"src/routes/(general)/notes/maths/Three dimensional geometry/Direction cosines and direction ratios of a line/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Three dimensional geometry/Distance of a point from a plane": [
-		"src/routes/(general)/notes/maths/Three dimensional geometry/Distance of a point from a plane/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Three dimensional geometry/Equation of a line in space": [
-		"src/routes/(general)/notes/maths/Three dimensional geometry/Equation of a line in space/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Three dimensional geometry/Plane": [
-		"src/routes/(general)/notes/maths/Three dimensional geometry/Plane/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Three dimensional geometry/Shortest distance between two lines": [
-		"src/routes/(general)/notes/maths/Three dimensional geometry/Shortest distance between two lines/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Trigonometric functions/Angles": [
-		"src/routes/(general)/notes/maths/Trigonometric functions/Angles/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Trigonometric functions/Trigonometric equations": [
-		"src/routes/(general)/notes/maths/Trigonometric functions/Trigonometric equations/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles": [
-		"src/routes/(general)/notes/maths/Trigonometric functions/Trigonometric functions of sum and difference of two angles/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Trigonometric functions/Trigonometric functions": [
-		"src/routes/(general)/notes/maths/Trigonometric functions/Trigonometric functions/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Vector algebra/Addition of vectors": [
-		"src/routes/(general)/notes/maths/Vector algebra/Addition of vectors/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Vector algebra/Multiplication of a vector by a scalar": [
-		"src/routes/(general)/notes/maths/Vector algebra/Multiplication of a vector by a scalar/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Vector algebra/Product of two vectors": [
-		"src/routes/(general)/notes/maths/Vector algebra/Product of two vectors/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Vector algebra/Some basic concepts": [
-		"src/routes/(general)/notes/maths/Vector algebra/Some basic concepts/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/Vector algebra/Types of vectors": [
-		"src/routes/(general)/notes/maths/Vector algebra/Types of vectors/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/notes/maths/conic": [
-		"src/routes/(general)/notes/maths/conic/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/practice": [
-		"src/routes/(general)/practice/+page.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/practice/class10": [
-		"src/routes/(general)/practice/class10/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/practice/class11": [
-		"src/routes/(general)/practice/class11/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/practice/class12": [
-		"src/routes/(general)/practice/class12/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/practice/class1": [
-		"src/routes/(general)/practice/class1/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/practice/class2": [
-		"src/routes/(general)/practice/class2/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/practice/class3": [
-		"src/routes/(general)/practice/class3/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/practice/class4": [
-		"src/routes/(general)/practice/class4/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/practice/class5": [
-		"src/routes/(general)/practice/class5/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/practice/class6": [
-		"src/routes/(general)/practice/class6/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/practice/class7": [
-		"src/routes/(general)/practice/class7/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/practice/class8": [
-		"src/routes/(general)/practice/class8/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/practice/class9": [
-		"src/routes/(general)/practice/class9/+page.js",
-		"src/routes/(general)/+layout.server.js",
-		"src/routes/(general)/+layout.server.js"
-	],
+	"/(mathril)/mathril/[...catchAll]": [],
 	"/(about)/publications": [
 		"src/routes/(about)/publications/+page.js"
 	],
 	"/(about)/research": [
 		"src/routes/(about)/research/+page.js"
-	],
-	"/(general)/settings": [
-		"src/routes/(general)/+layout.server.js"
-	],
-	"/(general)/settings/profile": [
-		"src/routes/(general)/settings/profile/+page.js",
-		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/students": [
 		"src/routes/(general)/students/+page.js",

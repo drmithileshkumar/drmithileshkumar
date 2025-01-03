@@ -1,3 +1,1 @@
-import * as universal from "../../../../src/routes/(general)/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/+page.js";
-export { universal };
-export { default as component } from "../../../../src/routes/(general)/notes/maths/Continuity and differentiability/Derivatives of functions in parametric forms/+page.svelte";
+export { default as component } from "../../../../src/routes/(vectorial)/vectorial/(nonapp)/learn/masks/+page.svelte";

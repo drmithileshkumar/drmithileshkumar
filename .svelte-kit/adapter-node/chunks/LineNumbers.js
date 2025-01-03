@@ -1,5 +1,5 @@
 import { c as compute_rest_props } from "./utils.js";
-import { c as create_ssr_component, b as spread, d as escape_attribute_value, f as escape_object, k as add_classes, e as escape, j as createEventDispatcher, v as validate_component, i as each, p as add_styles } from "./ssr2.js";
+import { c as create_ssr_component, b as spread, d as escape_attribute_value, f as escape_object, n as add_classes, e as escape, j as createEventDispatcher, v as validate_component, i as each, p as add_styles } from "./ssr2.js";
 import hljs from "highlight.js/lib/core";
 const css$1 = {
   code: ".langtag.svelte-1w9vok{position:relative}.langtag.svelte-1w9vok::after{content:attr(data-language);position:absolute;top:var(--langtag-top, 0);right:var(--langtag-right, 0);display:flex;align-items:center;justify-content:center;background:var(--langtag-background, inherit);color:var(--langtag-color, inherit);border-radius:var(--langtag-border-radius, 0);padding:var(--langtag-padding, 1em)}",

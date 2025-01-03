@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/_page.js';
+import * as server from '../entries/pages/(vectorial)/vectorial/(nonapp)/auth/_page.server.js';
 
 export const index = 200;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/_page.svelte.js')).default;
-export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Complex numbers and quadratic equations/The modulus and the conjugate of complex number/+page.js";
-export const imports = ["_app/immutable/nodes/200.CCXpRDuY.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.DhWV7ypx.js","_app/immutable/chunks/index.V8m0JAxO.js","_app/immutable/chunks/stores.C6SlvLHi.js","_app/immutable/chunks/index.D70FGJSe.js","_app/immutable/chunks/constants.VSvEql3V.js","_app/immutable/chunks/stores.Cxl0mqTB.js","_app/immutable/chunks/entry.DutQk9jt.js"];
-export const stylesheets = ["_app/immutable/assets/Practice.C-1dvwW-.css","_app/immutable/assets/Message.D2xEdDAW.css"];
+export const component = async () => component_cache ??= (await import('../entries/pages/(vectorial)/vectorial/(nonapp)/auth/_page.svelte.js')).default;
+export { server };
+export const server_id = "src/routes/(vectorial)/vectorial/(nonapp)/auth/+page.server.js";
+export const imports = ["_app/immutable/nodes/200.DWINeqGu.js","_app/immutable/chunks/scheduler.DDynXUZ0.js","_app/immutable/chunks/index.DnYThXIE.js","_app/immutable/chunks/globals.D0QH3NT1.js","_app/immutable/chunks/Button.BEGHJ0rg.js","_app/immutable/chunks/SmuiElement.niKK9SEg.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/Ripple.C-DtqsEB.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/CommonLabel.Dj7nqIzk.js","_app/immutable/chunks/Set.DVORgxOl.js","_app/immutable/chunks/index.BNQMCvwE.js","_app/immutable/chunks/each.D0FuIOMI.js","_app/immutable/chunks/keyboard.CL3LU1u3.js","_app/immutable/chunks/ContextFragment.phj6Xvfp.js","_app/immutable/chunks/Text.BsyenGki.js","_app/immutable/chunks/Card.DRC2xUqP.js","_app/immutable/chunks/ActionIcons.rKvm5GeB.js","_app/immutable/chunks/classAdderBuilder.C1qMRX2R.js","_app/immutable/chunks/Actions.CPAOKVg7.js","_app/immutable/chunks/Textfield.Dnm2l9Fe.js","_app/immutable/chunks/prefixFilter.OhiPYEKz.js","_app/immutable/chunks/NotchedOutline.DFah64gX.js","_app/immutable/chunks/Suffix.DhiO64fn.js","_app/immutable/chunks/Input.Dk7SfQmK.js","_app/immutable/chunks/forms.n1xl1-No.js","_app/immutable/chunks/entry.BIhX438V.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/stores.CyuxF9br.js","_app/immutable/chunks/stores.5QGZ_kC1.js","_app/immutable/chunks/GenerateQR.CESLdMvq.js","_app/immutable/chunks/qrcode.DMMw8QnF.js","_app/immutable/chunks/_commonjsHelpers.BosuxZz1.js"];
+export const stylesheets = ["_app/immutable/assets/200.yFWgH1Ne.css","_app/immutable/assets/GenerateQR.DeaYE3wH.css"];
 export const fonts = [];

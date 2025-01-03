@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/courses/internet/wwwhtml/html/tables/+page.js";
+import * as universal from "../../../../src/routes/(general)/courses/internetlab/practice/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/courses/internet/wwwhtml/html/tables/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/courses/internetlab/practice/+page.svelte";

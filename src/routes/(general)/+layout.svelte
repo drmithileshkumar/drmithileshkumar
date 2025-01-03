@@ -9,23 +9,23 @@
         Subtitle,
     } from "@smui/drawer";
     import Fab from "@smui/fab";
-    import { Svg } from "@smui/common";
+    
     import { fly } from "svelte/transition";
-    import LayoutGrid, { Cell } from "@smui/layout-grid";
+    
     import Nav from "$lib/components/Nav.svelte";
     import Sidebar from "$lib/components/Sidebar.svelte";
     import TopAppBar, { Row, Section } from "@smui/top-app-bar";
     import IconButton, {Icon} from "@smui/icon-button";
-    import Button, { Label } from "@smui/button";
-    import List, { Item, Text } from "@smui/list";
+    
+   
     import { showLeft, darkMode, showRight } from "$lib/stores.js";
     import {page} from '$app/stores';
     import Analytics from "$lib/components/Analytics.svelte";
     import { goto } from '$app/navigation';
     import {currentPath, refreshApp, TopBarHeight} from '$lib/stores';
-    import {presentationMode} from '$lib/pages/notes/maths/stores';
+    
     import { beforeUpdate, afterUpdate } from 'svelte';
-    import Pathlist from "$lib/components/Pathlist.svelte";
+    
     beforeUpdate(() => $refreshApp = true)
     afterUpdate(() => $refreshApp = false)
     let W = 500;
@@ -111,7 +111,7 @@
             </div> -->
         </main>
     </AppContent>
-    {#if !$presentationMode && $showRight}
+    {#if $showRight}
         <div class="side" style="width:{sideWidth}px; top: {$TopBarHeight}px;" transition:fly|global={{x:300}}>
             <Sidebar />
         </div>

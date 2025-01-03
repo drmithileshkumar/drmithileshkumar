@@ -7,7 +7,7 @@ const MediaContent = classAdderBuilder({
   class: "mdc-card__media-content",
   tag: "div"
 });
-classAdderBuilder({
+const ActionButtons = classAdderBuilder({
   class: "mdc-card__action-buttons",
   tag: "div"
 });
@@ -16,7 +16,8 @@ const ActionIcons = classAdderBuilder({
   tag: "div"
 });
 export {
-  ActionIcons as A,
+  ActionButtons as A,
   Content as C,
-  MediaContent as M
+  MediaContent as M,
+  ActionIcons as a
 };

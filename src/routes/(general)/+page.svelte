@@ -1,11 +1,5 @@
 <script>
-	import Notes from "$lib/components/Notes.svelte";
-	import Practice from "$lib/components/Practice.svelte";
-	import Twitter from "$lib/components/Twitter.svelte";
-	import Youtube from "$lib/components/Youtube.svelte";
 	import Vectorial from "$lib/pages/home/Vectorial.svelte";
-	import Trigonometry from "$lib/pages/home/Trigonometry.svelte";
-    import HTML from "$lib/pages/home/HTML.svelte";
 	import { currentPath } from "$lib/stores";
     $currentPath = "Dr Mithilesh Kumar"
 </script>

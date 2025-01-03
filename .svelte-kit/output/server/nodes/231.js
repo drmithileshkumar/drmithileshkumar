@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Integrals/Integrals of some particular functions/_page.js';
+import * as server from '../entries/pages/(vectorial)/vectorial/login/_page.server.js';
 
 export const index = 231;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Integrals/Integrals of some particular functions/_page.svelte.js')).default;
-export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Integrals/Integrals of some particular functions/+page.js";
-export const imports = ["_app/immutable/nodes/231.BJGyF3FJ.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.DhWV7ypx.js","_app/immutable/chunks/index.V8m0JAxO.js","_app/immutable/chunks/stores.C6SlvLHi.js","_app/immutable/chunks/index.D70FGJSe.js","_app/immutable/chunks/constants.VSvEql3V.js","_app/immutable/chunks/stores.Cxl0mqTB.js","_app/immutable/chunks/entry.DutQk9jt.js"];
-export const stylesheets = ["_app/immutable/assets/Practice.C-1dvwW-.css","_app/immutable/assets/Message.D2xEdDAW.css"];
+export const component = async () => component_cache ??= (await import('../entries/pages/(vectorial)/vectorial/login/_page.svelte.js')).default;
+export { server };
+export const server_id = "src/routes/(vectorial)/vectorial/login/+page.server.js";
+export const imports = ["_app/immutable/nodes/231.Bp-W0Gtd.js","_app/immutable/chunks/scheduler.DDynXUZ0.js","_app/immutable/chunks/index.DnYThXIE.js","_app/immutable/chunks/forms.n1xl1-No.js","_app/immutable/chunks/entry.BIhX438V.js","_app/immutable/chunks/index.BNQMCvwE.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/stores.CyuxF9br.js","_app/immutable/chunks/stores.5QGZ_kC1.js","_app/immutable/chunks/GenerateQR.CESLdMvq.js","_app/immutable/chunks/Button.BEGHJ0rg.js","_app/immutable/chunks/SmuiElement.niKK9SEg.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/Ripple.C-DtqsEB.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/qrcode.DMMw8QnF.js","_app/immutable/chunks/_commonjsHelpers.BosuxZz1.js","_app/immutable/chunks/ripple.CjLc2JX5.js","_app/immutable/chunks/each.D0FuIOMI.js"];
+export const stylesheets = ["_app/immutable/assets/231.BSHKxfaI.css","_app/immutable/assets/Label.B4URfl77.css","_app/immutable/assets/SegmentedButton.uIc266ni.css","_app/immutable/assets/GenerateQR.DeaYE3wH.css"];
 export const fonts = [];

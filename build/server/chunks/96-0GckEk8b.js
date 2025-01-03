@@ -1,0 +1,25 @@
+import { r as redirect } from './index-DzcLzHBX.js';
+
+async function load({ parent, fetch, params, url }) {
+  if (!(url.host === "drmithileshkumar.com" || url.host === "localhost:5173" || url.host === "localhost:4173" || url.host === "localhost:3000")) {
+    redirect(301, `https://drmithileshkumar.com`);
+  }
+  await parent();
+  return {};
+}
+
+var _page = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  load: load
+});
+
+const index = 96;
+let component_cache;
+const component = async () => component_cache ??= (await import('./_page.svelte-DW2VKyQH.js')).default;
+const universal_id = "src/routes/(general)/courses/mathematics1/+page.js";
+const imports = ["_app/immutable/nodes/96.CdrTergg.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.DDynXUZ0.js","_app/immutable/chunks/index.DnYThXIE.js","_app/immutable/chunks/each.D0FuIOMI.js","_app/immutable/chunks/entry.BIhX438V.js","_app/immutable/chunks/index.BNQMCvwE.js","_app/immutable/chunks/stores.CyuxF9br.js","_app/immutable/chunks/Textfield.Dnm2l9Fe.js","_app/immutable/chunks/SmuiElement.niKK9SEg.js","_app/immutable/chunks/Ripple.C-DtqsEB.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/prefixFilter.OhiPYEKz.js","_app/immutable/chunks/ContextFragment.phj6Xvfp.js","_app/immutable/chunks/NotchedOutline.DFah64gX.js","_app/immutable/chunks/Suffix.DhiO64fn.js","_app/immutable/chunks/classAdderBuilder.C1qMRX2R.js","_app/immutable/chunks/Input.Dk7SfQmK.js","_app/immutable/chunks/Card.DRC2xUqP.js","_app/immutable/chunks/ActionIcons.rKvm5GeB.js","_app/immutable/chunks/Actions.CPAOKVg7.js","_app/immutable/chunks/Button.BEGHJ0rg.js","_app/immutable/chunks/CommonLabel.Dj7nqIzk.js","_app/immutable/chunks/Cell.CPkm9IaO.js","_app/immutable/chunks/Head.CDWfmC59.js","_app/immutable/chunks/NavList.CW-HKAdD.js","_app/immutable/chunks/Item.vEGae8Yu.js","_app/immutable/chunks/keyboard.CL3LU1u3.js","_app/immutable/chunks/Subheader.BOQ4-Uk_.js","_app/immutable/chunks/Graphic.DGQ5sPOW.js","_app/immutable/chunks/Svg.DkGkg7Z9.js","_app/immutable/chunks/IconButton.3HaSDpJR.js","_app/immutable/chunks/stores.C4YY6XNo.js","_app/immutable/chunks/Pathlist.vI7Xpyp9.js","_app/immutable/chunks/CourseNavigation.Dmce26xt.js","_app/immutable/chunks/TabBar.ClMb64AI.js"];
+const stylesheets = ["_app/immutable/assets/97.k2eNKCH5.css","_app/immutable/assets/Link.DT8GuSJh.css","_app/immutable/assets/NavList.CJbcjQr4.css","_app/immutable/assets/Pathlist.BSb51Isn.css","_app/immutable/assets/CourseNavigation.CI9tLRx6.css"];
+const fonts = [];
+
+export { component, fonts, imports, index, stylesheets, _page as universal, universal_id };
+//# sourceMappingURL=96-0GckEk8b.js.map

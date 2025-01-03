@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/(general)/notes/maths/+layout.svelte";
+export { default as component } from "../../../../src/routes/(mathril)/mathril/+layout.svelte";

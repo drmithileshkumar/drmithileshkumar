@@ -19,10 +19,10 @@ bannerImage.subscribe((value) => {
 });
 export {
   INVOICE as I,
-  profileImage as a,
-  bannerImage as b,
+  scannedQR as a,
+  profileImage as b,
   currentPath as c,
-  scannedQR as d,
+  bannerImage as d,
   darkMode as e,
   isLoggedIn as i,
   navList as n,

@@ -1,0 +1,1 @@
+const u=(t,l)=>{if(l>=t)return Math.floor(t);let e=Math.random()*(t-l+1);return Math.floor(l+e)},h=t=>{let l=t.length,e=u(l-1,0),n=t[e];return t.splice(e,1),{newArr:t,elem:n}},p=(t,l)=>{let e=[];for(let r=0;r<t;r++)e.push(r);let n=[],o;for(let r=0;r<l;r++)o=h(e),e=o.newArr,n.push(o.elem);return n.sort((r,s)=>r-s),n};export{p as r};

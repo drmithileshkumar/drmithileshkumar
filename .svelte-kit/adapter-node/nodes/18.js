@@ -1,8 +1,10 @@
-
+import * as universal from '../entries/pages/(general)/_page.js';
 
 export const index = 18;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/practice/class7/_layout.svelte.js')).default;
-export const imports = ["_app/immutable/nodes/18.mEFS78cI.js","_app/immutable/chunks/preload-helper.C1FmrZbK.js","_app/immutable/chunks/scheduler.DhWV7ypx.js","_app/immutable/chunks/index.V8m0JAxO.js","_app/immutable/chunks/Select.DdVLIqn1.js","_app/immutable/chunks/each.CgqZEEeH.js","_app/immutable/chunks/spread.CgU5AtxT.js","_app/immutable/chunks/stores.C4jq3MED.js","_app/immutable/chunks/index.D70FGJSe.js"];
-export const stylesheets = ["_app/immutable/assets/Select.OvHkGLWc.css"];
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/_page.svelte.js')).default;
+export { universal };
+export const universal_id = "src/routes/(general)/+page.js";
+export const imports = ["_app/immutable/nodes/18.DlgW9-z4.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.DDynXUZ0.js","_app/immutable/chunks/index.DnYThXIE.js","_app/immutable/chunks/ripple.CM997ajP.js","_app/immutable/chunks/ActionIcons.rKvm5GeB.js","_app/immutable/chunks/classAdderBuilder.C1qMRX2R.js","_app/immutable/chunks/SmuiElement.niKK9SEg.js","_app/immutable/chunks/stores.C4YY6XNo.js","_app/immutable/chunks/index.BNQMCvwE.js"];
+export const stylesheets = ["_app/immutable/assets/18.CRZ-FvEo.css"];
 export const fonts = [];

@@ -1,4 +1,11 @@
-import { r as randSubset, s as shuffle, a as randInt } from "./common.js";
+import { a as randSubset, s as shuffle, r as randInt } from "./common.js";
+const zeroStr = (k) => {
+  let str = "";
+  for (let i = 0; i < k; i++) {
+    str += 0;
+  }
+  return str;
+};
 const powerset = (n) => {
   let set = [];
   for (let i = 0; i < Math.pow(2, n); i++) {
@@ -12,6 +19,10 @@ class Sets {
     this.e = e;
     this.eq = eq;
     this.strElem = strElem;
+  }
+  removeDuplicates() {
+    let st = new Set(this.e);
+    this.e = [...st];
   }
   elemEq(a, b) {
     if (this.eq == "") return a === b;
@@ -54,9 +65,10 @@ class Sets {
   }
   add(k) {
     let newSet = new Sets([], this.eq, this.strElem);
-    newSet.e = this.e;
-    let index = Math.floor(Math.random() * this.e.length);
-    if (!this.contains(k)) newSet.e.splice(index, 0, k);
+    for (let i = 0; i < this.e.length; i++) {
+      newSet.e.push(this.e[i]);
+    }
+    if (!this.contains(k)) newSet.e.push(k);
     return newSet;
   }
   delete(k) {
@@ -64,6 +76,11 @@ class Sets {
     for (let a of this.e) {
       if (!this.elemEq(a, k)) newSet.e.push(a);
     }
+    return newSet;
+  }
+  deleteIdentity() {
+    let newSet = new Sets([], this.eq, this.strElem);
+    newSet.e = this.e.filter((a) => a[0] !== a[1]);
     return newSet;
   }
   union(B) {
@@ -158,6 +175,13 @@ class Sets {
   randomElem() {
     let k = Math.floor(Math.random() * this.e.length);
     return this.e[k];
+  }
+  randomReplace(elem) {
+    let newSet = new Sets([], this.eq, this.strElem);
+    newSet.e = [...this.e];
+    let k = Math.floor(Math.random() * this.e.length);
+    newSet.e[k] = elem;
+    return newSet;
   }
   ksubArray(arr, k) {
     if (arr.length == 0) return [];
@@ -268,7 +292,7 @@ class Sets {
   }
   isTransitive(R) {
     let temp;
-    for (let r of R) {
+    for (let r of R.e) {
       temp = R.e.filter((a) => this.elemEq(r[1], a[0]));
       for (let t of temp) {
         if (!R.contains([r[0], t[1]])) return false;
@@ -286,7 +310,7 @@ class Sets {
     };
     let R = new Sets([], pairEq, stringElem);
     for (let a of this.e) {
-      R.add([a, a]);
+      R = R.add([a, a]);
     }
     return R;
   }
@@ -303,8 +327,8 @@ class Sets {
     let power = this.cartesian(self);
     let half = this.ksubArray(power.e, Math.floor(k / 2));
     for (let r of half) {
-      R.add(r);
-      R.add([r[1], r[0]]);
+      R = R.add(r);
+      R = R.add([r[1], r[0]]);
     }
     return R;
   }
@@ -322,11 +346,35 @@ class Sets {
     let half = this.ksubArray(power.e, Math.floor(k / 2));
     let temp;
     for (let r of half) {
-      R.add(r);
+      R = R.add(r);
       temp = half.filter((a) => this.elemEq(r[1], a[0]));
       for (let t of temp) {
-        R.add([r[0], t[1]]);
+        R = R.add([r[0], t[1]]);
       }
+    }
+    return R;
+  }
+  randRelation(k) {
+    let pairEq = (a, b) => {
+      if (a.length !== b.length) return false;
+      return this.elemEq(a[0], b[0]) && this.elemEq(a[1], b[1]);
+    };
+    let stringElem = (a) => {
+      return "(" + this.texElem(a[0]) + "," + this.texElem(a[1]) + ")";
+    };
+    let R = new Sets([], pairEq, stringElem);
+    let self = new Sets(this.e, this.eq, this.strElem);
+    let power = this.cartesian(self);
+    let rand = this.ksubArray(power.e, k);
+    for (let r of rand) {
+      R = R.add(r);
+    }
+    return R;
+  }
+  randNonTransitive(k) {
+    let R = this.randRelation(k);
+    while (this.isTransitive(R)) {
+      R = this.randRelation(k);
     }
     return R;
   }

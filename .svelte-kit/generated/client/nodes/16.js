@@ -1,1 +1,3 @@
-export { default as component } from "../../../../src/routes/(general)/practice/class5/+layout.svelte";
+import * as universal from "../../../../src/routes/(about)/teaching/+page.js";
+export { universal };
+export { default as component } from "../../../../src/routes/(about)/teaching/+page@teaching.svelte";

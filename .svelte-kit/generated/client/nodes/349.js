@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(vectorial)/vectorial/(nonapp)/learn/+page.js";
+import * as universal from "../../../../src/routes/(mathril)/mathril/class[classn]/chapter[chaptern]/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(vectorial)/vectorial/(nonapp)/learn/+page.svelte";
+export { default as component } from "../../../../src/routes/(mathril)/mathril/class[classn]/chapter[chaptern]/+page.svelte";

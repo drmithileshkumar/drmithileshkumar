@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/notes/maths/Differential equations/General and particular solutions of a differential equation/_page.js';
+import * as universal from '../entries/pages/(vectorial)/vectorial/(nonapp)/subscription/_page.js';
 
 export const index = 222;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/notes/maths/Differential equations/General and particular solutions of a differential equation/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(vectorial)/vectorial/(nonapp)/subscription/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/notes/maths/Differential equations/General and particular solutions of a differential equation/+page.js";
-export const imports = ["_app/immutable/nodes/222.BuSTC5Cj.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.DhWV7ypx.js","_app/immutable/chunks/index.V8m0JAxO.js","_app/immutable/chunks/stores.C6SlvLHi.js","_app/immutable/chunks/index.D70FGJSe.js","_app/immutable/chunks/stores.Cxl0mqTB.js","_app/immutable/chunks/entry.DutQk9jt.js"];
-export const stylesheets = ["_app/immutable/assets/Practice.C-1dvwW-.css","_app/immutable/assets/Message.D2xEdDAW.css"];
+export const universal_id = "src/routes/(vectorial)/vectorial/(nonapp)/subscription/+page.js";
+export const imports = ["_app/immutable/nodes/222.DVFgy3gb.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.DDynXUZ0.js","_app/immutable/chunks/index.DnYThXIE.js","_app/immutable/chunks/Card.DRC2xUqP.js","_app/immutable/chunks/SmuiElement.niKK9SEg.js","_app/immutable/chunks/ActionIcons.rKvm5GeB.js","_app/immutable/chunks/classAdderBuilder.C1qMRX2R.js","_app/immutable/chunks/Actions.CPAOKVg7.js","_app/immutable/chunks/Button.BEGHJ0rg.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/Ripple.C-DtqsEB.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/entry.BIhX438V.js","_app/immutable/chunks/index.BNQMCvwE.js","_app/immutable/chunks/stores.5QGZ_kC1.js","_app/immutable/chunks/stores.CyuxF9br.js"];
+export const stylesheets = ["_app/immutable/assets/222.Dqs8cmPG.css"];
 export const fonts = [];

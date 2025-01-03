@@ -22,14 +22,13 @@ bannerImage.subscribe((value) => {
 export {
   Guest as G,
   TopBarHeight as T,
-  scannedQR as a,
-  bannerImage as b,
+  showRight as a,
+  showLeft as b,
   currentPath as c,
   darkMode as d,
-  showRight as e,
   isAuth as i,
   navList as n,
   profileImage as p,
   refreshApp as r,
-  showLeft as s
+  scannedQR as s
 };

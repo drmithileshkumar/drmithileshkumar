@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/iit/maths/2021/question4/+page.js";
+import * as universal from "../../../../src/routes/(mathril)/mathril/games/appDerivative/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/iit/maths/2021/question4/+page.svelte";
+export { default as component } from "../../../../src/routes/(mathril)/mathril/games/appDerivative/+page.svelte";

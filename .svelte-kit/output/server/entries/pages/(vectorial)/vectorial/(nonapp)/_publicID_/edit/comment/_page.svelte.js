@@ -6,7 +6,7 @@ import { A as Actions } from "../../../../../../../../chunks/Actions.js";
 import { B as Button } from "../../../../../../../../chunks/Button.js";
 import { C as CommonLabel } from "../../../../../../../../chunks/CommonLabel.js";
 /* empty css                                                                         */
-import { a as profileImage } from "../../../../../../../../chunks/stores2.js";
+import { b as profileImage } from "../../../../../../../../chunks/stores2.js";
 import { p as page } from "../../../../../../../../chunks/stores3.js";
 import "../../../../../../../../chunks/client.js";
 const css = {

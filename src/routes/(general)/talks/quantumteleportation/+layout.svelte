@@ -1,8 +1,6 @@
 <script>
     // @ts-nocheck
-    
-        import Select from "$lib/ui/Select.svelte";
-        import {chapters, sections, selectedChapter, selectedSection} from '$lib/pages/notes/maths/stores';
+
         import {presentationMode, presentation, overlay, slideCounter, autoScroll, currentSlide} from '$lib/pages/notes/maths/stores';
         import { page } from '$app/stores'
         import { goto } from "$app/navigation";
@@ -16,13 +14,7 @@
             if(str.length <= 0) return str;
             return str[0].toLowerCase() + str.slice(1);
         }
-        const chapterSelected = (event) => {
-            $selectedSection = sections[$selectedChapter][0];
-        }
-        const sectionSelected = (event) => {
-            goto(`/notes/maths/${encodeURIComponent($selectedChapter)}/${encodeURIComponent($selectedSection)}`);
-            // console.log($page.url.pathname.split('/').map(item => decodeURIComponent(item)))
-        }
+        
         let W, H;
         beforeUpdate(() => {
             if($presentation) {
@@ -148,12 +140,6 @@
             <label style="display:flex;align-items:center;">
                 <input type="checkbox" bind:checked={$presentationMode} on:change={noContextMenu}> <span class="material-icons">slideshow</span>
             </label>
-            <!-- {#if !$presentationMode}
-                <nav>
-                    <Select style="width: 35vw;" options={chapters} bind:value={$selectedChapter} label="Chapter" on:selected={chapterSelected}/>
-                    <Select style="width: 35vw;" options={sections[$selectedChapter]} bind:value={$selectedSection} label="Section" on:selected={sectionSelected}/>
-                </nav>
-            {/if} -->
             {#if $presentationMode}
                 <CanvasBar/>
             {/if}

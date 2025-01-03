@@ -1,7 +1,7 @@
 import { a as subscribe } from "./utils.js";
 import { c as create_ssr_component, j as createEventDispatcher, h as add_attribute, v as validate_component } from "./ssr2.js";
 import { B as Button } from "./Button.js";
-import { d as scannedQR } from "./stores2.js";
+import { a as scannedQR } from "./stores2.js";
 import "html5-qrcode";
 const css = {
   code: "#reader.svelte-17pu3xa{background:#888;width:200px;height:200px;display:flex;justify-content:center;align-items:center;margin-top:0.5em;margin-bottom:0.5em}",

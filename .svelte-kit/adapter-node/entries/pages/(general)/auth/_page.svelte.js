@@ -11,7 +11,7 @@ import { T as Textfield } from "../../../../chunks/Textfield.js";
 import "../../../../chunks/Suffix.js";
 import "../../../../chunks/client.js";
 import { p as page } from "../../../../chunks/stores3.js";
-import { a as scannedQR, G as Guest, c as currentPath } from "../../../../chunks/stores.js";
+import { s as scannedQR, G as Guest, c as currentPath } from "../../../../chunks/stores.js";
 import "html5-qrcode";
 import "qrcode-generator";
 /* empty css                                                          */

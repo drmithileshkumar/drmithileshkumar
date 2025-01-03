@@ -5,11 +5,12 @@ import { s as svg, e as elements, f as selectedId, g as selectedElements, o as o
 import { M as MenuSurface } from "../../../../../chunks/MenuSurface.js";
 import { C as Content$1 } from "../../../../../chunks/ActionIcons.js";
 import "../../../../../chunks/Suffix.js";
-import { W as Wrapper, T as Tooltip, C as Content, S as Slider, a as ColorsInUse, P as PathOperations, b as SVGGroup } from "../../../../../chunks/ColorsInUse.js";
+import { W as Wrapper, T as Tooltip, C as Content } from "../../../../../chunks/RichActions.js";
 import { C as Card } from "../../../../../chunks/Card.js";
 import { A as Actions } from "../../../../../chunks/Actions.js";
 import { S as SegmentedButton, a as Segment } from "../../../../../chunks/Segment.js";
 import { C as CommonLabel } from "../../../../../chunks/CommonLabel.js";
+import { S as Slider, C as ColorsInUse, P as PathOperations, a as SVGGroup } from "../../../../../chunks/ColorsInUse.js";
 import { B as Button } from "../../../../../chunks/Button.js";
 import { F as FormField } from "../../../../../chunks/FormField.js";
 import { I as IconButton } from "../../../../../chunks/IconButton.js";

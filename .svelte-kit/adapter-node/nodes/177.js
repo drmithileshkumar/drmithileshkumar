@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/iit/maths/_page.js';
+import * as universal from '../entries/pages/(mathril)/mathril/class_classn_/_page.js';
 
 export const index = 177;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/iit/maths/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(mathril)/mathril/class_classn_/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/iit/maths/+page.js";
-export const imports = ["_app/immutable/nodes/177.iTS4fk4S.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.DhWV7ypx.js","_app/immutable/chunks/index.V8m0JAxO.js","_app/immutable/chunks/Link.B4tapAWB.js","_app/immutable/chunks/spread.CgU5AtxT.js","_app/immutable/chunks/entry.DutQk9jt.js","_app/immutable/chunks/index.D70FGJSe.js"];
-export const stylesheets = ["_app/immutable/assets/Message.D2xEdDAW.css","_app/immutable/assets/Link.DT8GuSJh.css"];
+export const universal_id = "src/routes/(mathril)/mathril/class[classn]/+page.js";
+export const imports = ["_app/immutable/nodes/177.jetpkgCv.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.DDynXUZ0.js","_app/immutable/chunks/index.DnYThXIE.js","_app/immutable/chunks/each.D0FuIOMI.js","_app/immutable/chunks/Card.DRC2xUqP.js","_app/immutable/chunks/SmuiElement.niKK9SEg.js","_app/immutable/chunks/ActionIcons.rKvm5GeB.js","_app/immutable/chunks/classAdderBuilder.C1qMRX2R.js","_app/immutable/chunks/ripple.CM997ajP.js","_app/immutable/chunks/entry.BIhX438V.js","_app/immutable/chunks/index.BNQMCvwE.js","_app/immutable/chunks/stores.CyuxF9br.js","_app/immutable/chunks/stores.Dtk1xluK.js","_app/immutable/chunks/practiceStore.BvoqAKTw.js","_app/immutable/chunks/stores.DFzdtsi-.js"];
+export const stylesheets = ["_app/immutable/assets/177.BqUuWG-D.css"];
 export const fonts = [];

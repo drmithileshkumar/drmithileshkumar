@@ -1,8 +1,10 @@
-
+import * as server from '../entries/pages/(vectorial)/vectorial/_layout.server.js';
 
 export const index = 9;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/practice/class1/_layout.svelte.js')).default;
-export const imports = ["_app/immutable/nodes/9.mEFS78cI.js","_app/immutable/chunks/preload-helper.C1FmrZbK.js","_app/immutable/chunks/scheduler.DhWV7ypx.js","_app/immutable/chunks/index.V8m0JAxO.js","_app/immutable/chunks/Select.DdVLIqn1.js","_app/immutable/chunks/each.CgqZEEeH.js","_app/immutable/chunks/spread.CgU5AtxT.js","_app/immutable/chunks/stores.C4jq3MED.js","_app/immutable/chunks/index.D70FGJSe.js"];
-export const stylesheets = ["_app/immutable/assets/Select.OvHkGLWc.css"];
+export const component = async () => component_cache ??= (await import('../entries/fallbacks/layout.svelte.js')).default;
+export { server };
+export const server_id = "src/routes/(vectorial)/vectorial/+layout.server.js";
+export const imports = ["_app/immutable/nodes/9.D_dm71Cj.js","_app/immutable/chunks/9.3960FGsk.js","_app/immutable/chunks/scheduler.DDynXUZ0.js","_app/immutable/chunks/index.DnYThXIE.js"];
+export const stylesheets = [];
 export const fonts = [];

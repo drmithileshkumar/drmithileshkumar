@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/courses/internet/javascript/fetchapi/_page.js';
+import * as universal from '../entries/pages/(general)/courses/internet/wwwhtml/fundamentals/www/_page.js';
 
 export const index = 64;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/internet/javascript/fetchapi/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/internet/wwwhtml/fundamentals/www/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/courses/internet/javascript/fetchapi/+page.js";
-export const imports = ["_app/immutable/nodes/64.BfsRE8gn.js","_app/immutable/chunks/scheduler.DhWV7ypx.js","_app/immutable/chunks/index.V8m0JAxO.js"];
-export const stylesheets = [];
+export const universal_id = "src/routes/(general)/courses/internet/wwwhtml/fundamentals/www/+page.js";
+export const imports = ["_app/immutable/nodes/64.CdEzltWN.js","_app/immutable/chunks/scheduler.DDynXUZ0.js","_app/immutable/chunks/index.DnYThXIE.js","_app/immutable/chunks/github-dark.DxmPHd5a.js","_app/immutable/chunks/stores.CyuxF9br.js","_app/immutable/chunks/entry.BIhX438V.js","_app/immutable/chunks/index.BNQMCvwE.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/Card.DRC2xUqP.js","_app/immutable/chunks/SmuiElement.niKK9SEg.js","_app/immutable/chunks/ActionIcons.rKvm5GeB.js","_app/immutable/chunks/classAdderBuilder.C1qMRX2R.js","_app/immutable/chunks/Subheader.BOQ4-Uk_.js","_app/immutable/chunks/stores.C4YY6XNo.js","_app/immutable/chunks/content.C_zm4NZH.js","_app/immutable/chunks/Pathlist.vI7Xpyp9.js","_app/immutable/chunks/each.D0FuIOMI.js","_app/immutable/chunks/CourseNavigation.Dmce26xt.js","_app/immutable/chunks/Ripple.C-DtqsEB.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js"];
+export const stylesheets = ["_app/immutable/assets/64.DgJ48lFU.css","_app/immutable/assets/Link.DT8GuSJh.css","_app/immutable/assets/NavList.CJbcjQr4.css","_app/immutable/assets/Pathlist.BSb51Isn.css","_app/immutable/assets/CourseNavigation.CI9tLRx6.css"];
 export const fonts = [];

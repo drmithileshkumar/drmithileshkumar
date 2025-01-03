@@ -7,7 +7,7 @@ import { A as Actions } from "../../../../../../../chunks/Actions.js";
 import { B as Button } from "../../../../../../../chunks/Button.js";
 import { C as CommonLabel } from "../../../../../../../chunks/CommonLabel.js";
 import { I as ImageUploader } from "../../../../../../../chunks/ImageUploader.js";
-import { a as profileImage } from "../../../../../../../chunks/stores2.js";
+import { b as profileImage } from "../../../../../../../chunks/stores2.js";
 import { p as page } from "../../../../../../../chunks/stores3.js";
 import "../../../../../../../chunks/client.js";
 import { S as Set_1, C as Chip } from "../../../../../../../chunks/Set.js";

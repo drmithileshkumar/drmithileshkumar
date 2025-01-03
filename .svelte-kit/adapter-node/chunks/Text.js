@@ -1,5 +1,5 @@
 import { r as run_all, c as compute_rest_props, a as subscribe } from "./utils.js";
-import { l as set_current_component, n as current_component, c as create_ssr_component, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute, a as get_current_component, g as getContext, v as validate_component } from "./ssr2.js";
+import { k as set_current_component, l as current_component, c as create_ssr_component, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute, a as get_current_component, g as getContext, v as validate_component } from "./ssr2.js";
 import { c as classMap, f as forwardEventsBuilder } from "./SmuiElement.js";
 const dirty_components = [];
 const binding_callbacks = [];

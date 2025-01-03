@@ -1,1 +1,3 @@
-export { default as component } from "../../../../src/routes/(vectorial)/vectorial/(nonapp)/+layout.svelte";
+import * as universal from "../../../../src/routes/(general)/courses/circuits/+page.js";
+export { universal };
+export { default as component } from "../../../../src/routes/(general)/courses/circuits/+page.svelte";

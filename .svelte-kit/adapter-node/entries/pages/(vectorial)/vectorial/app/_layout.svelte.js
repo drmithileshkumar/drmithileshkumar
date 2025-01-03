@@ -1,13 +1,14 @@
-import { a as subscribe, c as compute_rest_props, d as null_to_empty, b as set_store_value } from "../../../../../chunks/utils.js";
+import { a as subscribe, c as compute_rest_props, e as null_to_empty, b as set_store_value } from "../../../../../chunks/utils.js";
 import { c as create_ssr_component, j as createEventDispatcher, v as validate_component, b as spread, f as escape_object, e as escape, a as get_current_component, d as escape_attribute_value, h as add_attribute, i as each, o as onDestroy } from "../../../../../chunks/ssr2.js";
 import { create, all } from "mathjs";
 import { C as CommonIcon, S as Svg } from "../../../../../chunks/Svg.js";
 import "../../../../../chunks/Suffix.js";
 import "../../../../../chunks/Actions2.js";
-import { W as Wrapper, T as Tooltip, C as Content, P as PathOperations, S as Slider, a as ColorsInUse, b as SVGGroup, c as Snackbar, A as Actions } from "../../../../../chunks/ColorsInUse.js";
+import { W as Wrapper, T as Tooltip, C as Content } from "../../../../../chunks/RichActions.js";
 import { I as IconButton } from "../../../../../chunks/IconButton.js";
 import { I as Input } from "../../../../../chunks/Input.js";
 import { n as boundingBox, p as addingNodes, e as elements, f as selectedId, d as defs, s as svg, o as objectCount, D as DRAWING, S as hasArrow, J as canvasBackground, g as selectedElements, w as lassoElements, N as isLasso, i as activeElement, j as selectedControl1, k as selectedControl0, l as selectedVertex, m as elementsNode, B as BBOX, v as onSVG, h as currentLayer, E as selectedVertices, F as showControls, H as selectionMode, K as showBBoxControls, a as appHistory, q as currentState, T as clientWidth, U as clientHeight, L as showGuides } from "../../../../../chunks/stores6.js";
+import { P as PathOperations, S as Slider, C as ColorsInUse, a as SVGGroup, b as Snackbar, A as Actions } from "../../../../../chunks/ColorsInUse.js";
 import "../../../../../chunks/Subtitle.js";
 import "../../../../../chunks/client.js";
 import { p as pageLoadState, e as darkMode } from "../../../../../chunks/stores2.js";

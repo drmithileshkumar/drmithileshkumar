@@ -1,13 +1,8 @@
 <script lang='ts'>
     // @ts-nocheck
-    import {chapters, sections, selectedChapter, selectedSection} from '$lib/pages/notes/maths/stores';
+    
     import {presentationMode, presentation, overlay, slideCounter, autoScroll, currentSlide} from '$lib/pages/notes/maths/stores';
-    import Practice from '$lib/utils/practiceproblem/Practice.svelte';
-    import Message from '$lib/ui/Message.svelte';
-    import {Point2D} from '$lib/utils/common/point2d';
-    import {randNum, randInt} from '$lib/utils/common/common';
-    import {Sets} from '$lib/utils/common/sets';
-    import {Quadratic} from '$lib/utils/common/quadratic';
+    
     import {page} from '$app/stores';
     import {TeX} from '$lib/utils/common/constants';
     import {onMount} from 'svelte';
@@ -21,8 +16,6 @@
 	import Image from '$lib/presentation/Image.svelte';
     import { typeset } from '$lib/shared/typeset';
         onMount(() => {
-            $selectedChapter = 'Sets';
-            $selectedSection = 'Sets and their representations';
             $slideCounter = 39;
             $currentSlide = -2;
             // MathJax.typeset();
@@ -1731,12 +1724,6 @@
                 </Item>
             </ol>
         </section>
-        <!-- <Item item={39}>
-            <section>
-                <h2>Practice</h2>
-                <Practice {generateProblem}/>
-            </section>
-        </Item> -->
         
         {#if $presentationMode && $currentSlide >= 2}
             <div class="pad"></div>

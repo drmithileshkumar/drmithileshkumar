@@ -175,7 +175,7 @@
                                 <div class="edu">
                                     <div class="degree">Founder</div>
                                     <div class="institute">Self-employed</div>
-                                    <div class="description">created <a href="https://mathril.com">Mathril</a> and <a href="https://vectorial.app">Vectorial</a></div>
+                                    <div class="description">created <a href="https://drmithileshkumar.com/mathril">Mathril</a> and <a href="https://drmithileshkumar.com/vectorial">Vectorial</a></div>
                                 </div>
                             </td>
                         </tr>

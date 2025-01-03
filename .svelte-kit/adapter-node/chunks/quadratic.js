@@ -1,4 +1,5 @@
-import { a as randInt } from "./common.js";
+import { r as randInt } from "./common2.js";
+import "./complex2.js";
 class Quadratic {
   //ax^2 + bx + c
   constructor(a2 = 0, b2 = 0, c = 0, x = "x") {
@@ -79,6 +80,66 @@ class Quadratic {
     }
   }
 }
+let problemset = {
+  s: "",
+  o: {
+    "A": "",
+    "B": "",
+    "C": "",
+    "D": ""
+  },
+  c: ""
+};
+const quadratic = (problemnumber) => {
+  let N = 2;
+  problemnumber = problemnumber % N;
+  let choices = ["A", "B", "C", "D"];
+  let correctChoiceIndex = Math.floor(Math.random() * 4);
+  problemset.c = choices[correctChoiceIndex];
+  let values = [0, 0, 0, 0];
+  switch (problemnumber) {
+    case 0: {
+      let r1 = randInt(10, 1);
+      let r2 = randInt(10, 1);
+      r1 = Math.random() < 0.5 ? -r1 : r1;
+      r2 = Math.random() < 0.5 ? -r2 : r2;
+      let b2 = -r1 - r2;
+      let c = r1 * r2;
+      let qeq = new Quadratic(1, b2, c);
+      let eq = qeq.str();
+      values[0] = `\\(${r1}, ${r2}\\)`;
+      values[1] = `\\(${r1}, ${r2 + 1}\\)`;
+      values[2] = `\\(${r1 + 1}, ${r2}\\)`;
+      values[3] = `\\(${r1 + 1}, ${r2 + 1}\\)`;
+      for (let i = 0; i < 4; i++) {
+        problemset.o[choices[(correctChoiceIndex + i) % 4]] = values[i];
+      }
+      problemset.s = `The roots of quadratic equation \\(${eq}=0\\) are`;
+      break;
+    }
+    case 1: {
+      let r1 = randInt(10, 1);
+      r1 = Math.random() < 0.5 ? -r1 : r1;
+      let r2 = r1;
+      let a2 = 1;
+      let b2 = -r1 - r2;
+      let c = r1 * r2;
+      let qeq = new Quadratic(1, "k", c);
+      let eq = qeq.str();
+      values[0] = `\\(${b2}\\)`;
+      values[1] = `\\(${a2 + b2}\\)`;
+      values[2] = `\\(${a2 - b2}\\)`;
+      values[3] = `\\(${b2 - a2}\\)`;
+      for (let i = 0; i < 4; i++) {
+        problemset.o[choices[(correctChoiceIndex + i) % 4]] = values[i];
+      }
+      problemset.s = `Find the values of \\(k\\) such that the roots of quadratic equation \\(${eq}=0\\) are equal.`;
+      break;
+    }
+  }
+  problemset = problemset;
+  return problemset;
+};
 export {
-  Quadratic as Q
+  quadratic
 };

@@ -1,4 +1,4 @@
-import { c as compute_rest_props, e as compute_slots } from "./utils.js";
+import { c as compute_rest_props, d as compute_slots } from "./utils.js";
 import { f as forwardEventsBuilder, c as classMap, g as globals } from "./SmuiElement.js";
 import { c as create_ssr_component, a as get_current_component, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute, e as escape, g as getContext, o as onDestroy, v as validate_component } from "./ssr2.js";
 import { e as exclude, p as prefixFilter } from "./prefixFilter.js";

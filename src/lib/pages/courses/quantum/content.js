@@ -1,5 +1,3 @@
-// @ts-nocheck
-import { topics } from "$lib/utils/practiceproblem/stores"
 
 //@ts-nocheck
 export const contents = [

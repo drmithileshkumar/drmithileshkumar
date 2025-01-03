@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/courses/internet/javascript/http/_page.js';
+import * as universal from '../entries/pages/(general)/courses/internet/wwwhtml/html/audio/_page.js';
 
 export const index = 66;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/internet/javascript/http/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/internet/wwwhtml/html/audio/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/courses/internet/javascript/http/+page.js";
-export const imports = ["_app/immutable/nodes/66.BfsRE8gn.js","_app/immutable/chunks/scheduler.DhWV7ypx.js","_app/immutable/chunks/index.V8m0JAxO.js"];
-export const stylesheets = [];
+export const universal_id = "src/routes/(general)/courses/internet/wwwhtml/html/audio/+page.js";
+export const imports = ["_app/immutable/nodes/66.C1uGmcSb.js","_app/immutable/chunks/scheduler.DDynXUZ0.js","_app/immutable/chunks/index.DnYThXIE.js","_app/immutable/chunks/github-dark.DxmPHd5a.js","_app/immutable/chunks/stores.CyuxF9br.js","_app/immutable/chunks/entry.BIhX438V.js","_app/immutable/chunks/index.BNQMCvwE.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/Card.DRC2xUqP.js","_app/immutable/chunks/SmuiElement.niKK9SEg.js","_app/immutable/chunks/ActionIcons.rKvm5GeB.js","_app/immutable/chunks/classAdderBuilder.C1qMRX2R.js","_app/immutable/chunks/Subheader.BOQ4-Uk_.js","_app/immutable/chunks/stores.C4YY6XNo.js","_app/immutable/chunks/content.C_zm4NZH.js","_app/immutable/chunks/WebPractice.CiHwFiWS.js","_app/immutable/chunks/Segment.D4OXt3fI.js","_app/immutable/chunks/each.D0FuIOMI.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/ContextFragment.phj6Xvfp.js","_app/immutable/chunks/Ripple.C-DtqsEB.js","_app/immutable/chunks/CommonLabel.Dj7nqIzk.js","_app/immutable/chunks/Suffix.DhiO64fn.js","_app/immutable/chunks/Button.BEGHJ0rg.js","_app/immutable/chunks/Cell.CPkm9IaO.js","_app/immutable/chunks/prefixFilter.OhiPYEKz.js","_app/immutable/chunks/Head.CDWfmC59.js","_app/immutable/chunks/Pathlist.vI7Xpyp9.js","_app/immutable/chunks/CourseNavigation.Dmce26xt.js"];
+export const stylesheets = ["_app/immutable/assets/66.C4e5x4Jw.css","_app/immutable/assets/Link.DT8GuSJh.css","_app/immutable/assets/NavList.CJbcjQr4.css","_app/immutable/assets/WebPractice.CWzIzw4X.css","_app/immutable/assets/Pathlist.BSb51Isn.css","_app/immutable/assets/CourseNavigation.CI9tLRx6.css"];
 export const fonts = [];

@@ -1,4 +1,4 @@
-import { c as compute_rest_props, a as subscribe, b as set_store_value, e as compute_slots } from "./utils.js";
+import { c as compute_rest_props, a as subscribe, b as set_store_value, d as compute_slots } from "./utils.js";
 import { f as forwardEventsBuilder, c as classMap, g as globals } from "./SmuiElement.js";
 import { c as create_ssr_component, a as get_current_component, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute, g as getContext, s as setContext, o as onDestroy, v as validate_component, e as escape } from "./ssr2.js";
 import { w as writable } from "./index2.js";
