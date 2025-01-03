@@ -1,8 +1,8 @@
 //@ts-nocheck
 import {redirect} from '@sveltejs/kit';
 export async function load({fetch, params, url}) {
-    if(!(url.host === 'drmithileshkumar.com/vectorial' || url.host === 'localhost:5173' || url.host === 'localhost:4173' || url.host === 'localhost:3003')) {
-        redirect(301, `https://drmithileshkumar.com/vectorial`);
+    if(!(url.host === 'drmithileshkumar.com/' || url.host === 'localhost:5173' || url.host === 'localhost:4173' || url.host === 'localhost:3001')) {
+        redirect(301, `https://drmithileshkumar.com/`);
     }
     let commentID = url.searchParams.get('commentID');
     let res = await fetch(`/vectorial/api/comment/${commentID}`)
