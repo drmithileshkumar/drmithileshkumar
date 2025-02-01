@@ -95,5 +95,61 @@
             </ol>
         </Content>
     </Card>
+    <Card>
+        <Content>
+            <h6>Introduction</h6>
+            <ul>
+                <li><strong>Quantum State Representation:</strong> Quantum states can be expressed in numerous ways depending on the choice of basis.</li>
+                <li><strong>Schmidt Decomposition:</strong> A method that simplifies the representation of bipartite quantum states, facilitating the study of entanglement.</li>
+                <li><strong>Research Objective:</strong> To establish necessary and sufficient conditions for the existence of Schmidt decompositions in multipartite quantum systems and to develop an efficient algorithm for obtaining such decompositions when they exist.</li>
+            </ul>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Previous Work</h6>
+            <ul>
+                <li><strong>Bipartite Systems:</strong> All bipartite quantum states admit Schmidt decomposition, which is instrumental in analyzing entanglement properties.</li>
+                <li><strong>Multipartite Systems:</strong> Extending Schmidt decomposition to systems with more than two subsystems is non-trivial and has been a subject of ongoing research.</li>
+                <li><strong>Prior Studies:</strong> Researchers have explored conditions under which multipartite states can be decomposed in a Schmidt-like manner, but a comprehensive criterion has been lacking.</li>
+            </ul>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Contributions</h6>
+            <ul>
+                <li><strong>Existence Criteria:</strong> Derived necessary and sufficient conditions for the existence of Schmidt decompositions in multipartite quantum states.</li>
+                <li><strong>Algorithm Development:</strong> Proposed an efficient algorithm to obtain the Schmidt decomposition for states that satisfy the derived conditions.</li>
+                <li><strong>Generalization:</strong> Extended the concept of Schmidt decomposition beyond bipartite systems, providing a framework applicable to systems with multiple subsystems.</li>
+            </ul>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Methodology</h6>
+            <ul>
+                <li><strong>Mathematical Framework:</strong> Utilized linear algebraic techniques to analyze the structure of multipartite quantum states.</li>
+                <li><strong>Condition Derivation:</strong> Investigated the commutation relations and normality conditions of matrices associated with quantum states to establish decomposition criteria.</li>
+                <li><strong>Algorithm Design:</strong> Developed a step-by-step procedure to transform a given multipartite state into its Schmidt-decomposed form, if the state meets the necessary conditions.</li>
+            </ul>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Significance</h6>
+            <ul>
+                <li><strong>Advancement in Quantum Theory:</strong> Provides a deeper understanding of the structure of multipartite quantum states and their entanglement properties.</li>
+                <li><strong>Practical Applications:</strong> The findings can be applied to quantum information processing tasks, where understanding entanglement in multipartite systems is crucial.</li>
+                <li><strong>Algorithmic Efficiency:</strong> The proposed algorithm offers a practical tool for researchers working with complex quantum systems.</li>
+            </ul>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Conclusion</h6>
+            <p>This study establishes a comprehensive criterion for the existence of Schmidt decompositions in multipartite quantum states and introduces an efficient algorithm for obtaining such decompositions. These contributions enhance the understanding of entanglement in complex quantum systems and provide practical tools for further research in quantum information science.</p>
+        </Content>
+    </Card>
     
 </article>

@@ -95,5 +95,62 @@
             </ol>
         </Content>
     </Card>
+    <Card>
+        <Content>
+            <h6>Introduction</h6>
+            <ul>
+                <li><strong>Lattice Reduction:</strong> Transforms a given lattice basis into another basis to simplify problems like finding the shortest vector. Common algorithms include LLL and BKZ reductions.</li>
+                <li><strong>Obtuse Basis:</strong> A newly defined class of bases where the angle between any pair of basis vectors is obtuse (i.e., their inner product is non-positive).</li>
+                <li><strong>Research Objective:</strong> To demonstrate that any lattice basis can be transformed into an obtuse basis in \( O(n^4) \) time, facilitating more efficient lattice enumeration.</li>
+            </ul>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Previous Work</h6>
+            <ul>
+                <li><strong>LLL Reduction:</strong> Introduced by Lenstra, Lenstra, and Lovász, this polynomial-time algorithm produces a nearly orthogonal basis but doesn't guarantee obtuse angles between basis vectors.</li>
+                <li><strong>BKZ Reduction:</strong> An extension of LLL that provides stronger reductions using block-wise techniques, yet still may not yield an obtuse basis.</li>
+                <li><strong>Enumeration Algorithms:</strong> Techniques like Kannan's algorithm systematically explore lattice points within a certain radius but can be computationally intensive.</li>
+            </ul>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Contributions</h6>
+            <ul>
+                <li><strong>Obtuse Basis Transformation:</strong> Developed an algorithm to convert any lattice basis into an obtuse basis in \( O(n^4) \) time.</li>
+                <li><strong>Positive Coefficients Property:</strong> In an obtuse basis, the coefficients \( v_1, v_2, ..., v_n \) in the linear combination \( s = v_1b_1 + v_2b_2 + ... + v_nb_n \) for the shortest vector \( s \) can all be chosen as positive integers.</li>
+                <li><strong>Enhanced Enumeration Efficiency:</strong> This property allows lattice enumeration algorithms to operate more efficiently, reducing the search space exponentially.</li>
+                <li><strong>Compatibility with Extreme Pruning:</strong> The obtuse basis is compatible with extreme pruning techniques, further accelerating the enumeration process.</li>
+            </ul>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Methodology</h6>
+            <ul>
+                <li><strong>Obtuse Basis Algorithm:</strong> Introduced a deterministic algorithm that transforms any given lattice basis into an obtuse basis by adjusting the signs of basis vectors to ensure non-positive inner products between all pairs.</li>
+                <li><strong>Enumeration Process:</strong> Utilized the property that in an obtuse basis, all coefficients in the representation of the shortest vector can be positive, leading to a more streamlined and faster enumeration process.</li>
+                <li><strong>Extreme Pruning Integration:</strong> Demonstrated that extreme pruning methods can be effectively applied to the obtuse basis, further enhancing enumeration speed.</li>
+            </ul>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Significance</h6>
+            <ul>
+                <li><strong>Exponential Speedup:</strong> The transformation to an obtuse basis results in an exponential reduction in the search space for lattice enumeration algorithms.</li>
+                <li><strong>Practical Efficiency:</strong> The proposed methods offer practical improvements in solving the shortest vector problem, which is fundamental in fields like cryptography and number theory.</li>
+                <li><strong>Algorithmic Compatibility:</strong> The obtuse basis framework is compatible with existing enumeration enhancements like extreme pruning, making it versatile for various applications.</li>
+            </ul>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Conclusion</h6>
+            <p>This work introduces the concept of an obtuse basis and provides an efficient algorithm to transform any lattice basis into this form. The obtuse basis significantly accelerates lattice enumeration algorithms by allowing all positive coefficients in the representation of the shortest vector and is compatible with advanced techniques like extreme pruning.</p>
+        </Content>
+    </Card>
     
 </article>

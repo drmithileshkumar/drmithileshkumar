@@ -24,6 +24,10 @@ const contents = [
             url: "/courses/algorithms/sorting/quick"
           },
           {
+            name: "Count Sort",
+            url: "/courses/algorithms/sorting/count"
+          },
+          {
             name: "Bucket Sort",
             url: "/courses/algorithms/sorting/bucket"
           },
@@ -75,12 +79,18 @@ const contentNav = {
     "name": "Quick Sort",
     "url": "/courses/algorithms/sorting/quick",
     "previous": "/courses/algorithms/sorting/merge",
+    "next": "/courses/algorithms/sorting/count"
+  },
+  "/courses/algorithms/sorting/count": {
+    "name": "Count Sort",
+    "url": "/courses/algorithms/sorting/count",
+    "previous": "/courses/algorithms/sorting/quick",
     "next": "/courses/algorithms/sorting/bucket"
   },
   "/courses/algorithms/sorting/bucket": {
     "name": "Bucket Sort",
     "url": "/courses/algorithms/sorting/bucket",
-    "previous": "/courses/algorithms/sorting/quick",
+    "previous": "/courses/algorithms/sorting/count",
     "next": "/courses/algorithms/sorting/redix"
   },
   "/courses/algorithms/sorting/redix": {

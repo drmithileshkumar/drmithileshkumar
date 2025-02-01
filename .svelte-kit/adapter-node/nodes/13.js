@@ -3,6 +3,6 @@
 export const index = 13;
 let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/(vectorial)/vectorial/download/_layout.svelte.js')).default;
-export const imports = ["_app/immutable/nodes/13.D0wAB7xJ.js","_app/immutable/chunks/scheduler.TT61c9Gi.js","_app/immutable/chunks/index.Dipn8n_a.js"];
+export const imports = ["_app/immutable/nodes/13.B5r1mpKd.js","_app/immutable/chunks/scheduler.HFrwntH8.js","_app/immutable/chunks/index.Bj97moK3.js"];
 export const stylesheets = [];
 export const fonts = [];

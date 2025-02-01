@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(mathril)/mathril/games/beattarget/+page.js";
+import * as universal from "../../../../src/routes/(mathril)/mathril/games/addition/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(mathril)/mathril/games/beattarget/+page.svelte";
+export { default as component } from "../../../../src/routes/(mathril)/mathril/games/addition/+page.svelte";

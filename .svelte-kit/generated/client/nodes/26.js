@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/courses/algorithms/sorting/insertion/+page.js";
+import * as universal from "../../../../src/routes/(general)/courses/algorithms/sorting/bucket/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/courses/algorithms/sorting/insertion/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/courses/algorithms/sorting/bucket/+page.svelte";

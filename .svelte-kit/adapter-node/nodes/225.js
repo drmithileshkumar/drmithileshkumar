@@ -1,10 +1,8 @@
-import * as server from '../entries/pages/(vectorial)/vectorial/(nonapp)/auth/_page.server.js';
+
 
 export const index = 225;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(vectorial)/vectorial/(nonapp)/auth/_page.svelte.js')).default;
-export { server };
-export const server_id = "src/routes/(vectorial)/vectorial/(nonapp)/auth/+page.server.js";
-export const imports = ["_app/immutable/nodes/225.DVk2mP0r.js","_app/immutable/chunks/scheduler.TT61c9Gi.js","_app/immutable/chunks/index.Dipn8n_a.js","_app/immutable/chunks/globals.D0QH3NT1.js","_app/immutable/chunks/Button.CvLQu4B8.js","_app/immutable/chunks/useActions.HCeguDvV.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/Ripple.8rjYrLoK.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/SmuiElement.Ds45l3Bo.js","_app/immutable/chunks/CommonLabel.B6ezwvbq.js","_app/immutable/chunks/Set.9cxeQvqD.js","_app/immutable/chunks/index.3B1h_P5q.js","_app/immutable/chunks/each.Dw7b1pvy.js","_app/immutable/chunks/keyboard.CL3LU1u3.js","_app/immutable/chunks/ContextFragment.BAXgXz1S.js","_app/immutable/chunks/Text.bax8j1Xe.js","_app/immutable/chunks/Card.D-OaqPor.js","_app/immutable/chunks/ActionIcons.DRhTvYcM.js","_app/immutable/chunks/classAdderBuilder.uY3NaTMq.js","_app/immutable/chunks/Actions.Bskv2kE_.js","_app/immutable/chunks/Textfield.Cg0mCM86.js","_app/immutable/chunks/prefixFilter.OhiPYEKz.js","_app/immutable/chunks/NotchedOutline.4lVxqXYp.js","_app/immutable/chunks/Suffix.CwiESjP5.js","_app/immutable/chunks/Input.B681raqh.js","_app/immutable/chunks/forms.B-Pau_6y.js","_app/immutable/chunks/entry.D5-6LlTH.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/stores.D9xphP4Y.js","_app/immutable/chunks/stores.CiGwCTFt.js","_app/immutable/chunks/GenerateQR.CEZk8GI9.js","_app/immutable/chunks/qrcode.DMMw8QnF.js","_app/immutable/chunks/_commonjsHelpers.BosuxZz1.js"];
-export const stylesheets = ["_app/immutable/assets/225.yFWgH1Ne.css","_app/immutable/assets/GenerateQR.DeaYE3wH.css"];
+export const component = async () => component_cache ??= (await import('../entries/pages/(mathril)/mathril/_...catchAll_/_page.svelte.js')).default;
+export const imports = ["_app/immutable/nodes/225.CO5mEPU4.js","_app/immutable/chunks/scheduler.HFrwntH8.js","_app/immutable/chunks/index.Bj97moK3.js"];
+export const stylesheets = [];
 export const fonts = [];

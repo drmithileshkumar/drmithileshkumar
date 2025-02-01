@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/talks/quantumteleportation/_page.js';
+import * as universal from '../entries/pages/(general)/students/_page.js';
 
 export const index = 189;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/talks/quantumteleportation/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/students/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/talks/quantumteleportation/+page.js";
-export const imports = ["_app/immutable/nodes/189.DIe4VfC3.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.TT61c9Gi.js","_app/immutable/chunks/index.Dipn8n_a.js","_app/immutable/chunks/stores.B2yieZQJ.js","_app/immutable/chunks/index.3B1h_P5q.js","_app/immutable/chunks/stores.D9xphP4Y.js","_app/immutable/chunks/entry.D5-6LlTH.js","_app/immutable/chunks/Image.svelte_svelte_type_style_lang.CRdJQsVl.js","_app/immutable/chunks/index.g75pM0BS.js","_app/immutable/chunks/typeset.CzCYmz-Z.js"];
-export const stylesheets = ["_app/immutable/assets/189.DXLy1Juu.css","_app/immutable/assets/Image.CKNRP0SZ.css","_app/immutable/assets/P.CvI4RsOs.css"];
+export const universal_id = "src/routes/(general)/students/+page.js";
+export const imports = ["_app/immutable/nodes/189.XdPTG6cH.js","_app/immutable/chunks/scheduler.HFrwntH8.js","_app/immutable/chunks/index.Bj97moK3.js","_app/immutable/chunks/Card.DDS7kgVn.js","_app/immutable/chunks/useActions.HCeguDvV.js","_app/immutable/chunks/ActionIcons.DHulHrNV.js","_app/immutable/chunks/classAdderBuilder.CUeXhiK0.js","_app/immutable/chunks/SmuiElement.BzYDArcA.js","_app/immutable/chunks/entry.CqbLy5gL.js","_app/immutable/chunks/index.ChKAqM74.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/stores.DhuAwEDH.js"];
+export const stylesheets = ["_app/immutable/assets/189.D7FU8iMv.css","_app/immutable/assets/Message.D2xEdDAW.css","_app/immutable/assets/Link.DT8GuSJh.css"];
 export const fonts = [];

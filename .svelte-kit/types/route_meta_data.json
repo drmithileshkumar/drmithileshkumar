@@ -104,6 +104,14 @@
 		"src/routes/(general)/courses/algorithms/sorting/bubble/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/algorithms/sorting/bucket": [
+		"src/routes/(general)/courses/algorithms/sorting/bucket/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/algorithms/sorting/count": [
+		"src/routes/(general)/courses/algorithms/sorting/count/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/algorithms/sorting/insertion": [
 		"src/routes/(general)/courses/algorithms/sorting/insertion/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -114,6 +122,10 @@
 	],
 	"/(general)/courses/algorithms/sorting/quick": [
 		"src/routes/(general)/courses/algorithms/sorting/quick/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/algorithms/sorting/redix": [
+		"src/routes/(general)/courses/algorithms/sorting/redix/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/courses/circuits": [

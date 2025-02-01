@@ -2,7 +2,7 @@
 
 export const index = 235;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(vectorial)/vectorial/(nonapp)/learn/paths/_page.svelte.js')).default;
-export const imports = ["_app/immutable/nodes/235.BEp7GOII.js","_app/immutable/chunks/scheduler.TT61c9Gi.js","_app/immutable/chunks/index.Dipn8n_a.js","_app/immutable/chunks/Card.D-OaqPor.js","_app/immutable/chunks/useActions.HCeguDvV.js","_app/immutable/chunks/ActionIcons.DRhTvYcM.js","_app/immutable/chunks/classAdderBuilder.uY3NaTMq.js","_app/immutable/chunks/SmuiElement.Ds45l3Bo.js","_app/immutable/chunks/entry.D5-6LlTH.js","_app/immutable/chunks/index.3B1h_P5q.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/stores.CiGwCTFt.js"];
-export const stylesheets = ["_app/immutable/assets/230.DK7l4pZ-.css"];
+export const component = async () => component_cache ??= (await import('../entries/pages/(vectorial)/vectorial/(nonapp)/learn/latex/_page.svelte.js')).default;
+export const imports = ["_app/immutable/nodes/235.D6Hjg7Vr.js","_app/immutable/chunks/scheduler.HFrwntH8.js","_app/immutable/chunks/index.Bj97moK3.js","_app/immutable/chunks/Card.DDS7kgVn.js","_app/immutable/chunks/useActions.HCeguDvV.js","_app/immutable/chunks/ActionIcons.DHulHrNV.js","_app/immutable/chunks/classAdderBuilder.CUeXhiK0.js","_app/immutable/chunks/SmuiElement.BzYDArcA.js","_app/immutable/chunks/entry.CqbLy5gL.js","_app/immutable/chunks/index.ChKAqM74.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/stores.Mit3ycmu.js"];
+export const stylesheets = ["_app/immutable/assets/233.DK7l4pZ-.css"];
 export const fonts = [];

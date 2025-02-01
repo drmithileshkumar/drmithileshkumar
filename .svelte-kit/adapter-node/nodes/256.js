@@ -1,8 +1,10 @@
-
+import * as universal from '../entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/edit/comment/_page.js';
 
 export const index = 256;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(vectorial)/vectorial/download/_page.svelte.js')).default;
-export const imports = ["_app/immutable/nodes/256.BcwiPpYs.js","_app/immutable/chunks/scheduler.TT61c9Gi.js","_app/immutable/chunks/index.Dipn8n_a.js","_app/immutable/chunks/each.Dw7b1pvy.js","_app/immutable/chunks/stores.Du2_8YyX.js","_app/immutable/chunks/_commonjsHelpers.BosuxZz1.js","_app/immutable/chunks/index.3B1h_P5q.js","_app/immutable/chunks/PreviewTextMask.D37uvoDD.js","_app/immutable/chunks/PreviewGrid.B9WYrvIm.js"];
-export const stylesheets = [];
+export const component = async () => component_cache ??= (await import('../entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/edit/comment/_page.svelte.js')).default;
+export { universal };
+export const universal_id = "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/edit/comment/+page.js";
+export const imports = ["_app/immutable/nodes/256.C4dIwDeY.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.HFrwntH8.js","_app/immutable/chunks/index.Bj97moK3.js","_app/immutable/chunks/Card.DDS7kgVn.js","_app/immutable/chunks/useActions.HCeguDvV.js","_app/immutable/chunks/ActionIcons.DHulHrNV.js","_app/immutable/chunks/classAdderBuilder.CUeXhiK0.js","_app/immutable/chunks/SmuiElement.BzYDArcA.js","_app/immutable/chunks/Actions.BG0qE4LW.js","_app/immutable/chunks/Button.B7CPgw9o.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/Ripple.CDEVC0wK.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/CommonLabel.BgBvPo95.js","_app/immutable/chunks/stores.Mit3ycmu.js","_app/immutable/chunks/index.ChKAqM74.js","_app/immutable/chunks/stores.BL2AkmJ6.js","_app/immutable/chunks/entry.CqbLy5gL.js"];
+export const stylesheets = ["_app/immutable/assets/256.BqKpJZzv.css","_app/immutable/assets/ImageUploader.BaNwnJmc.css"];
 export const fonts = [];
