@@ -1,0 +1,25 @@
+import './index-DzcLzHBX.js';
+import { p as pageLoadState } from './stores2-f06Es8-t.js';
+import './index2-D2s-XE5r.js';
+import './utils-DhkojCd_.js';
+
+async function load({ parent, fetch, params, url }) {
+  pageLoadState.update((state) => false);
+  return {};
+}
+
+var _page = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  load: load
+});
+
+const index = 255;
+let component_cache;
+const component = async () => component_cache ??= (await import('./_page@app.svelte-DnTKXsPo.js')).default;
+const universal_id = "src/routes/(vectorial)/vectorial/app/+page.js";
+const imports = ["_app/immutable/nodes/255.R78ehAQU.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/stores.CiGwCTFt.js","_app/immutable/chunks/index.3B1h_P5q.js","_app/immutable/chunks/scheduler.TT61c9Gi.js","_app/immutable/chunks/index.Dipn8n_a.js","_app/immutable/chunks/entry.D5-6LlTH.js","_app/immutable/chunks/each.Dw7b1pvy.js","_app/immutable/chunks/stores.Du2_8YyX.js","_app/immutable/chunks/_commonjsHelpers.BosuxZz1.js","_app/immutable/chunks/MenuSurface.gPadFwNo.js","_app/immutable/chunks/globals.D0QH3NT1.js","_app/immutable/chunks/useActions.HCeguDvV.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/ActionIcons.DRhTvYcM.js","_app/immutable/chunks/classAdderBuilder.uY3NaTMq.js","_app/immutable/chunks/SmuiElement.Ds45l3Bo.js","_app/immutable/chunks/Suffix.CwiESjP5.js","_app/immutable/chunks/grid.DdP6-6-Q.js","_app/immutable/chunks/RichActions.Wu2n49Bx.js","_app/immutable/chunks/prefixFilter.OhiPYEKz.js","_app/immutable/chunks/animationframe.C4aTJ1o4.js","_app/immutable/chunks/util.CCLmXqMe.js","_app/immutable/chunks/keyboard.CL3LU1u3.js","_app/immutable/chunks/Card.D-OaqPor.js","_app/immutable/chunks/Actions.Bskv2kE_.js","_app/immutable/chunks/Segment.C6W3gPwd.js","_app/immutable/chunks/ContextFragment.BAXgXz1S.js","_app/immutable/chunks/Ripple.8rjYrLoK.js","_app/immutable/chunks/CommonLabel.B6ezwvbq.js","_app/immutable/chunks/ColorsInUse.DBbxL5Jt.js","_app/immutable/chunks/Svg.DrXhfwnK.js","_app/immutable/chunks/IconButton.CiqJRD3_.js","_app/immutable/chunks/Subtitle.C8Qm_CR2.js","_app/immutable/chunks/Button.CvLQu4B8.js","_app/immutable/chunks/FormField.DgTykvnw.js","_app/immutable/chunks/Cell.B4WKLoLg.js","_app/immutable/chunks/ripple.CjLc2JX5.js","_app/immutable/chunks/Checkbox.Ch2cJ7RZ.js","_app/immutable/chunks/Textfield.Cg0mCM86.js","_app/immutable/chunks/NotchedOutline.4lVxqXYp.js","_app/immutable/chunks/Input.B681raqh.js"];
+const stylesheets = ["_app/immutable/assets/255.DvFNXPNr.css","_app/immutable/assets/ColorsInUse.DgJJk435.css"];
+const fonts = [];
+
+export { component, fonts, imports, index, stylesheets, _page as universal, universal_id };
+//# sourceMappingURL=255-DtsYAcoQ.js.map

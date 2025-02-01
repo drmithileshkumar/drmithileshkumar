@@ -4,7 +4,7 @@
     </script>
     <style>
         article {
-            display: grid;
+            /* display: grid;
             grid-template-columns: 0.25fr 0.75fr;
             grid-template-areas:
             "header header"
@@ -14,9 +14,11 @@
             width: 1200px;
             margin: auto;
             background: white;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto', sans-serif; */
+            max-width: 600px;
+            margin: auto;
         }
-        header {
+        /* header {
             grid-area: header;
             display: grid;
             grid-template-columns: 200px 0.7fr;
@@ -32,8 +34,8 @@
             gap: 1em;
             flex-direction: column;
             margin-top: 1em;
-        }
-        .main {
+        } */
+        /* .main {
             grid-area: main;
             padding: 1em;
             padding-top: 0;
@@ -42,8 +44,8 @@
         }
         .academic {
             grid-area: academic;
-        }
-        .profile {
+        } */
+        /* .profile {
             grid-area: profile;
             width: 200px;
             height: 200px;
@@ -58,13 +60,13 @@
             display: flex;
             flex-direction: column;
             padding-left: 0.5em;
-        }
-        .name {
+        } */
+        /* .name {
             font-size: 3em;
             color: rgb(0, 147, 220);
             text-shadow: 1px 1px 2px #888;
             font-weight: 300;
-        }
+        } */
         .intro {
             font-weight: 300;
             /* font-variant: small-caps; */
@@ -75,14 +77,14 @@
         h2, .symbol {
             color: rgb(0, 147, 220);
         }
-        .about, .contact {
+        /* .about, .contact {
             background-color: rgba(136, 136, 136, 0.212);
             padding: 1em;
         }
         .dates {
             font-weight: 500;
-        }
-        .degree {
+        } */
+        /* .degree {
             font-weight: 600;
         }
         .awardname {
@@ -95,12 +97,12 @@
         .description, .awarddescription {
             font-weight: 300;
             font-size: 0.8em;
-        }
-        td {
+        } */
+        /* td {
             padding-right: 2em;
             padding-bottom: 1em;
-        }
-        .symbol {
+        } */
+        /* .symbol {
             padding-right: 0.5em;
         }
         .contactable td {
@@ -111,9 +113,38 @@
         }
         ul li {
             margin-bottom: 0.5em;
+        } */
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+        }
+        .author {
+            font-size: 3em;
+        }
+        .work tr, .education tr, .achievements tr {
+            display: grid;
+            grid-template-columns: 0.25fr 0.75fr;
+        }
+        .publications tr {
+            font-size: 0.8em;
+        }
+        .date {
+            max-width: 200px;
+            display: flex;
+            margin: auto;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            border-top: 1px solid;
+            align-items: center;
+            justify-content: center;
+        }
+        strong {
+            font-weight: 600;
         }
     </style>
-    <article>
+    <!-- <article>
         <header>
             <div class="profile">
                 <img width="100%" src="/profilephoto.jpeg" alt="mithileshkumar">
@@ -356,4 +387,241 @@
                 <Papers />
             </section>
         </section>
+    </article> -->
+    <article>
+        <section class="title">
+            <section class="author">
+                Mithilesh Kumar
+            </section>
+            <section class="email">
+                admin@drmithileshkumar.com
+            </section>
+            <section class="page">
+                drmithileshkumar.com
+            </section>
+            <section class="phone">
+                +91 8797081308
+            </section>
+            <section class="location">
+                Bangalore
+            </section>
+        </section>
+        <section class="body">
+            <section class="interests">
+                <h2>Research Interests</h2>
+                <p>Quantum Computing and Quantum Information, Algorithms, Discrete Mathematics</p>
+            </section>
+            <section class="work">
+                <h2>Work Experience</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Jan 2024-Nov 2024</td>
+                            <td>Assistant Professor, Department of Computer Applications, Dayananda Sagar University, Bangalore</td>
+                        </tr>
+                        <tr>
+                            <td>Jul 2020-Dec 2023</td>
+                            <td>Founder, Mathril, Vectorial</td>
+                        </tr>
+                        <tr>
+                            <td>Jun 2017-Jun 2020</td>
+                            <td>Post-doc research, Simula-UiB, Post-quantum cryptography (Advisor: Dr Havard Raddum)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="education">
+                <h2>Education</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Mar 2014-May 2017</td>
+                            <td>Ph.D. Parameterized Algorithms, University of Bergen, Norway, (Advisors: Prof Daniel Lokshtanov, Prof Saket Saurabh)</td>
+                        </tr>
+                        <tr>
+                            <td>Jul 2013-Feb 2014</td>
+                            <td>Ph.D. Graph theory, Chennai Mathematical Institute, Chennai</td>
+                        </tr>
+                        <tr>
+                            <td>Jul 2011-Jun 2013</td>
+                            <td>M.Sc. Computer Science, Chennai Mathematical Institute, Chennai</td>
+                        </tr>
+                        <tr>
+                            <td>Jul 2004-Dec 2009</td>
+                            <td>M.Sc. Physics, IIT Kanpur</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="achievements">
+                <h2>Achievements</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>2013</td>
+                            <td>Gold medal for Academic Excellence (M.Sc.), Chennai Mathematical Institute</td>
+                        </tr>
+                        <tr>
+                            <td>2004-2009</td>
+                            <td>Merit-cub-means scholarship for academic performance (M.Sc.), IIT Kanpur</td>
+                        </tr>
+                        <tr>
+                            <td>2004</td>
+                            <td>IIT JEE All India Rank 971</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="publications">
+                <h2>Publications</h2>
+                <section class="ids">
+                    <span>Google Scholar</span>
+                    <span>Citations: 104</span>
+                    <span>h-index: 4</span>
+                </section>
+                <section class="journals">
+                    <h3>Journal Articles</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>J1.</td>
+                                <td>Eiben, E., <strong>Kumar, Mithilesh</strong>, Mouawad, A. E., Panolan, F. & Siebertz, S. Lossy Kernels for Connected Dominating Set on Sparse Graphs. SIAM Journal on Discrete Mathematics 33,1743–1771 (2019).</td>
+                            </tr>
+                            <tr>
+                                <td>J2.</td>
+                                <td><strong>Kumar, Mithilesh</strong>, Varadarajan, S. & Raddum, H. Reducing Lattice Enumeration Search
+                                    Trees. Infocommunications Journal XI, 8–16. issn: 2061-2079 (2019).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="conferences">
+                    <h3>Peer-reviewed Conference Proceedings</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>C1.</td>
+                                <td><strong>Kumar, Mithilesh</strong>, Varadarajan, S. & Raddum, H. Graphs and Self-dual additive codes over
+                                    GF(4) in 11th International Workshop on Coding and Cryptography (2019). https://www.lebesgue.fr/en/content/sem2019-WCC.</td>
+                            </tr>
+                            <tr>
+                                <td>C2.</td>
+                                <td><strong>Kumar, Mithilesh</strong> & Lokshtanov, D. A 2lk Kernel for l-Component Order Connectivity in
+                                    11th International Symposium on Parameterized and Exact Computation (IPEC 2016) 63 (2017),
+                                    20:1-20:14. isbn: 978-3-95977-023-1.</td>
+                            </tr>
+                            <tr>
+                                <td>C3.</td>
+                                <td><strong>Kumar, Mithilesh</strong> & Lokshtanov, D. Faster Exact and Parameterized Algorithm for Feedback
+                                    Vertex Set in Bipartite Tournaments in 36th IARCS Annual Conference on Foundations of Soft-
+                                    ware Technology and Theoretical Computer Science (FSTTCS 2016) 65 (2016), 24:1–24:15.isbn: 978-3-95977-027-9.</td>
+                            </tr>
+                            <tr>
+                                <td>C4.</td>
+                                <td><strong>Kumar, Mithilesh</strong> & Lokshtanov, D. Faster Exact and Parameterized Algorithm for Feedback
+                                    Vertex Set in Tournaments in 33rd Symposium on Theoretical Aspects of Computer Science
+                                    (STACS 2016) 47 (2016), 49:1–49:13. isbn: 978-3-95977-001-9.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="submitted">
+                    <h3>Submitted</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>JS1.</td>
+                                <td><strong>Kumar, Mithilesh</strong>. Local Operations in Multiparty Quantum Systems ArXiv[Preprint]. Nov 2024. https://arxiv.org/abs/2411.10710. <em>Submitted to Physical Review Letters</em></td>
+                            </tr>
+                            <tr>
+                                <td>JS2.</td>
+                                <td><strong>Kumar, Mithilesh</strong>. On properties of Schmidt Decomposition ArXiv[Preprint]. Nov 2024. https://arxiv.org/abs/2411.05703. <em>Submitted to Physical Review Letters</em></td>
+                            </tr>
+                            <tr>
+                                <td>JS3.</td>
+                                <td><strong>Kumar, Mithilesh</strong>. Schmidt Decomposition of Multipartite states ArXiv[Preprint]. Nov 2024. https://arxiv.org/abs/2411.02473. <em>Submitted to Physical Review Letters</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="preprints">
+                    <h3>Preprints</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>P1.</td>
+                                <td>Gupta, K., <strong>Kumar, Mithilesh</strong> & Raddum, H. Obtuse Lattice Bases ArXiv[Preprint]. Sep 2020.
+                                    https://arxiv.org/abs/2009.00384.</td>
+                            </tr>
+                            <tr>
+                                <td>P2.</td>
+                                <td>Kumar, A. & <strong>Kumar, Mithilesh</strong>. Deletion to Induced Matching ArXiv[Preprint]. Aug 2020.
+                                    https://arxiv.org/abs/2008.09660.</td>
+                            </tr>
+                            <tr>
+                                <td>P3.</td>
+                                <td><strong>Kumar, Mithilesh</strong>. 2-CLUB is NP-hard for distance to 2-club cluster graphs ArXiv[Preprint].
+                                    Mar 2019. https://arxiv.org/abs/1903.05425.</td>
+                            </tr>
+                            <tr>
+                                <td>P4.</td>
+                                <td><strong>Kumar, Mithilesh</strong>. A guide to Quantum Channels Researchgate[Preprint]. Dec 2024. http://dx.doi.org/10.13140/RG.2.2.30460.45446.</td>
+                            </tr>
+                            <tr>
+                                <td>P5.</td>
+                                <td><strong>Kumar, Mithilesh</strong>. Faster Lattice Enumeration ArXiv[Preprint]. Dec 2019. https://arxiv.org/abs/1912.01781.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+            <section class="teaching">
+                <h2>Teaching</h2>
+                <section class="institute">
+                    <h3>Dayananda Sagar University</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Jul 2024-Nov 2024</td>
+                                <td>Instructor, Discrete Mathematical Structures (CODE 23CA2303)</td>
+                            </tr>
+                            <tr>
+                                <td>Jul 2024-Nov 2024</td>
+                                <td>Instructor, Mathematics I (CODE 24CA1101)</td>
+                            </tr>
+                            <tr>
+                                <td>Feb 2024-Jun 2024</td>
+                                <td>Instructor, Mathematics II (CODE 22CA1201)</td>
+                            </tr>
+                            <tr>
+                                <td>Feb 2024-Jun 2024</td>
+                                <td>Instructor, Internet Technologies (CODE 22CA2402)</td>
+                            </tr>
+                            <tr>
+                                <td>Feb 2024-Jun 2024</td>
+                                <td>Instructor, Internet Technologies Lab (CODE 22CA2405)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+            <section class="software">
+                <h2>Tools & Software</h2>
+                <ul>
+                    <li>Web editor: Developed online platform for practicing HTML, CSS, JavaScript for the course Internet Technologies</li>
+                    <li>Mathril: Developed Mathematics practice platform for school students where problems are automatically generated</li>
+                    <li>Vectorial: Developed SVG drawing tool with LaTex Support for researchers</li>
+                </ul>
+            </section>
+            <section class="hobby">
+                <h2>Hobbies & Extra-curricular</h2>
+                <ul>
+                    <li>Mathematics problem solving</li>
+                    <li>Carrom (Finalist in IIT Kanpur and CMI every year)</li>
+                    <li>Cricket (Member of my school team)</li>
+                </ul>
+            </section>
+            <section class="references"></section>
+        </section>
+        <section class="date">Last updated: Feb 1, 2025</section>
     </article>

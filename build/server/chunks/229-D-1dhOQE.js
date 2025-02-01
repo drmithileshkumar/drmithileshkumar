@@ -1,0 +1,23 @@
+import { r as redirect } from './index-DzcLzHBX.js';
+
+async function load({ fetch, params, url }) {
+  if (!(url.host === "drmithileshkumar.com/vectorial" || url.host === "localhost:5173" || url.host === "localhost:4173" || url.host === "localhost:3003")) {
+    redirect(301, `https://drmithileshkumar.com/vectorial`);
+  }
+}
+
+var _page = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  load: load
+});
+
+const index = 229;
+let component_cache;
+const component = async () => component_cache ??= (await import('./_page.svelte-BiYYFI4C.js')).default;
+const universal_id = "src/routes/(vectorial)/vectorial/(nonapp)/learn/+page.js";
+const imports = ["_app/immutable/nodes/229.qNRMKXo9.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.TT61c9Gi.js","_app/immutable/chunks/index.Dipn8n_a.js","_app/immutable/chunks/Card.D-OaqPor.js","_app/immutable/chunks/useActions.HCeguDvV.js","_app/immutable/chunks/ActionIcons.DRhTvYcM.js","_app/immutable/chunks/classAdderBuilder.uY3NaTMq.js","_app/immutable/chunks/SmuiElement.Ds45l3Bo.js","_app/immutable/chunks/Actions.Bskv2kE_.js","_app/immutable/chunks/Button.CvLQu4B8.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/Ripple.8rjYrLoK.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/entry.D5-6LlTH.js","_app/immutable/chunks/index.3B1h_P5q.js","_app/immutable/chunks/stores.CiGwCTFt.js"];
+const stylesheets = ["_app/immutable/assets/229.BbAZ22ML.css"];
+const fonts = [];
+
+export { component, fonts, imports, index, stylesheets, _page as universal, universal_id };
+//# sourceMappingURL=229-D-1dhOQE.js.map
