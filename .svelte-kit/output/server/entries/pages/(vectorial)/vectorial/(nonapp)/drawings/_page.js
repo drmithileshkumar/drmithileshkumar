@@ -5,9 +5,7 @@ async function load({ parent, fetch, params, url }) {
     redirect(301, `https://drmithileshkumar.com`);
   }
   pageLoadState.update((state) => false);
-  return {
-    // drawings
-  };
+  return {};
 }
 export {
   load

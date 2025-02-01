@@ -19,6 +19,6 @@ export async function load({parent, fetch, params, url}) {
     // let drawings = await res.json();
     // console.log('Number of drawings ', drawings.length);
     return {
-        // drawings
+        
     }
 }
