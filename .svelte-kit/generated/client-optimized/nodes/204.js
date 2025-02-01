@@ -1,1 +1,3 @@
-export { default as component } from "../../../../src/routes/(vectorial)/vectorial/(nonapp)/learn/advanced/+page.svelte";
+import * as universal from "../../../../src/routes/(mathril)/mathril/games/+page.js";
+export { universal };
+export { default as component } from "../../../../src/routes/(mathril)/mathril/games/+page.svelte";

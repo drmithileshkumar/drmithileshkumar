@@ -397,6 +397,7 @@ export const globalCompositeOperation = writable('source-over');
 export const stMode = writable(false);
 export const arcMode = writable(false);
 export const presentationMode = writable(false);
+export const annotationMode = writable(false);
 
 export const presentation = writable(null);
 export const currentSlide = writable(-2);

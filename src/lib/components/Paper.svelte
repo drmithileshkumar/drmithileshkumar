@@ -24,6 +24,11 @@
         font-size: 0.8em;
         opacity: 0.9;
     }
+    .status {
+        color: currentColor;
+        font-size: 0.8em;
+        opacity: 0.9;
+    }
 </style>
 <div class="paper">
     <div class="authors">
@@ -34,5 +39,8 @@
     </div>
     <div class="venue">
         <slot name="venue" />
+    </div>
+    <div class="status">
+        <slot name="status" />
     </div>
 </div>

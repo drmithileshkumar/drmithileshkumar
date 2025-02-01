@@ -18,7 +18,7 @@
     import { Group } from "$lib/vectorial/utils/common/g";
     import { Image } from "$lib/vectorial/utils/common/image";
     import { Grid } from "$lib/vectorial/utils/common/grid";
-    import {DRAWING, elements, defs, BBOX, appHistory, localDRAWING, drawingID, objectCount} from '$lib/vectorial/pages/vectorial/stores';
+    import {DRAWING, elements, defs, BBOX, appHistory, localDRAWING, localGallery, drawingID, objectCount} from '$lib/vectorial/pages/vectorial/stores';
     import { currentPath } from "$lib/vectorial/stores";
     $currentPath = "App"
     let saveTimer;
@@ -137,6 +137,7 @@
     const saveLocal = () => {
         saveDrawing();
         localDRAWING.set(JSON.stringify($DRAWING));
+
         console.log('Saved...');
     }
 </script>
@@ -146,6 +147,6 @@
     <meta name="description" content="Graphics Drawing Application." />
     
 </svelte:head>
-{#if $page.data.user && $elements}
+{#if $elements}
     <Vectorial />
 {/if}

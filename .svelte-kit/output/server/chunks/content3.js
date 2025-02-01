@@ -1,127 +1,117 @@
 const contents = [
   {
-    name: "Linear algebra",
-    url: "/courses/linearalgebra",
+    name: "INTERNET TECHNOLOGIES LAB",
+    url: "/courses/internetlab",
     topics: [
       {
-        name: "Bases and linear independence",
-        url: "/courses/linearalgebra/bases",
-        topics: []
+        name: "Resume with HTML tags",
+        url: "/courses/internetlab/resume"
       },
       {
-        name: "Linear operators and matrices",
-        url: "/courses/linearalgebra/operators",
-        topics: []
+        name: "College Website",
+        url: "/courses/internetlab/college"
       },
       {
-        name: "The Pauli matrices",
-        url: "/courses/linearalgebra/pauli",
-        topics: []
+        name: "Home Town Page",
+        url: "/courses/internetlab/town"
       },
       {
-        name: "Inner products",
-        url: "/courses/linearalgebra/inner",
-        topics: []
+        name: "JavaScript Date",
+        url: "/courses/internetlab/javascript"
       },
       {
-        name: "Eigenvectors and eignevalues",
-        url: "/courses/linearalgebra/eigen",
-        topics: []
+        name: "Calculator",
+        url: "/courses/internetlab/calculator"
       },
       {
-        name: "Adjoints and Hermitian operators",
-        url: "/courses/linearalgebra/adjoint",
-        topics: []
+        name: "XML file for students",
+        url: "/courses/internetlab/xml"
       },
       {
-        name: "Tensor products",
-        url: "/courses/linearalgebra/tensor",
-        topics: []
+        name: "DTD",
+        url: "/courses/internetlab/dtd"
       },
       {
-        name: "Operator functions",
-        url: "/courses/linearalgebra/functions",
-        topics: []
+        name: "Node.js Date",
+        url: "/courses/internetlab/nodejs"
       },
       {
-        name: "The commutator and anti-commutator",
-        url: "/courses/linearalgebra/commutator",
-        topics: []
+        name: "Login Authentication",
+        url: "/courses/internetlab/authentication"
       },
       {
-        name: "The polar and singular value decompositions",
-        url: "/courses/linearalgebra/decompositions",
-        topics: []
+        name: "Practice",
+        url: "/courses/internetlab/practice"
       }
     ]
   }
 ];
 const contentNav = {
-  "/courses/linearalgebra": {
-    "name": "Linear algebra",
-    "url": "/courses/linearalgebra",
-    "previous": "/courses/linearalgebra",
-    "next": "/courses/linearalgebra/bases"
+  "/courses/internetlab": {
+    "name": "INTERNET TECHNOLOGIES LAB",
+    "url": "/courses/internetlab",
+    "previous": "/courses/internetlab",
+    "next": "/courses/internetlab/resume"
   },
-  "/courses/linearalgebra/bases": {
-    "name": "Bases and linear independence",
-    "url": "/courses/linearalgebra/bases",
-    "previous": "/courses/linearalgebra",
-    "next": "/courses/linearalgebra/operators"
+  "/courses/internetlab/resume": {
+    "name": "Resume with HTML tags",
+    "url": "/courses/internetlab/resume",
+    "previous": "/courses/internetlab",
+    "next": "/courses/internetlab/college"
   },
-  "/courses/linearalgebra/operators": {
-    "name": "Linear operators and matrices",
-    "url": "/courses/linearalgebra/operators",
-    "previous": "/courses/linearalgebra/bases",
-    "next": "/courses/linearalgebra/pauli"
+  "/courses/internetlab/college": {
+    "name": "College Website",
+    "url": "/courses/internetlab/college",
+    "previous": "/courses/internetlab/resume",
+    "next": "/courses/internetlab/town"
   },
-  "/courses/linearalgebra/pauli": {
-    "name": "The Pauli matrices",
-    "url": "/courses/linearalgebra/pauli",
-    "previous": "/courses/linearalgebra/operators",
-    "next": "/courses/linearalgebra/inner"
+  "/courses/internetlab/town": {
+    "name": "Home Town Page",
+    "url": "/courses/internetlab/town",
+    "previous": "/courses/internetlab/college",
+    "next": "/courses/internetlab/javascript"
   },
-  "/courses/linearalgebra/inner": {
-    "name": "Inner products",
-    "url": "/courses/linearalgebra/inner",
-    "previous": "/courses/linearalgebra/pauli",
-    "next": "/courses/linearalgebra/eigen"
+  "/courses/internetlab/javascript": {
+    "name": "JavaScript Date",
+    "url": "/courses/internetlab/javascript",
+    "previous": "/courses/internetlab/town",
+    "next": "/courses/internetlab/calculator"
   },
-  "/courses/linearalgebra/eigen": {
-    "name": "Eigenvectors and eignevalues",
-    "url": "/courses/linearalgebra/eigen",
-    "previous": "/courses/linearalgebra/inner",
-    "next": "/courses/linearalgebra/adjoint"
+  "/courses/internetlab/calculator": {
+    "name": "Calculator",
+    "url": "/courses/internetlab/calculator",
+    "previous": "/courses/internetlab/javascript",
+    "next": "/courses/internetlab/xml"
   },
-  "/courses/linearalgebra/adjoint": {
-    "name": "Adjoints and Hermitian operators",
-    "url": "/courses/linearalgebra/adjoint",
-    "previous": "/courses/linearalgebra/eigen",
-    "next": "/courses/linearalgebra/tensor"
+  "/courses/internetlab/xml": {
+    "name": "XML file for students",
+    "url": "/courses/internetlab/xml",
+    "previous": "/courses/internetlab/calculator",
+    "next": "/courses/internetlab/dtd"
   },
-  "/courses/linearalgebra/tensor": {
-    "name": "Tensor products",
-    "url": "/courses/linearalgebra/tensor",
-    "previous": "/courses/linearalgebra/adjoint",
-    "next": "/courses/linearalgebra/functions"
+  "/courses/internetlab/dtd": {
+    "name": "DTD",
+    "url": "/courses/internetlab/dtd",
+    "previous": "/courses/internetlab/xml",
+    "next": "/courses/internetlab/nodejs"
   },
-  "/courses/linearalgebra/functions": {
-    "name": "Operator functions",
-    "url": "/courses/linearalgebra/functions",
-    "previous": "/courses/linearalgebra/tensor",
-    "next": "/courses/linearalgebra/commutator"
+  "/courses/internetlab/nodejs": {
+    "name": "Node.js Date",
+    "url": "/courses/internetlab/nodejs",
+    "previous": "/courses/internetlab/dtd",
+    "next": "/courses/internetlab/authentication"
   },
-  "/courses/linearalgebra/commutator": {
-    "name": "The commutator and anti-commutator",
-    "url": "/courses/linearalgebra/commutator",
-    "previous": "/courses/linearalgebra/functions",
-    "next": "/courses/linearalgebra/decompositions"
+  "/courses/internetlab/authentication": {
+    "name": "Login Authentication",
+    "url": "/courses/internetlab/authentication",
+    "previous": "/courses/internetlab/nodejs",
+    "next": "/courses/internetlab/authentication"
   },
-  "/courses/linearalgebra/decompositions": {
-    "name": "The polar and singular value decompositions",
-    "url": "/courses/linearalgebra/decompositions",
-    "previous": "/courses/linearalgebra/commutator",
-    "next": "/courses/linearalgebra/decompositions"
+  "/courses/internetlab/practice": {
+    "name": "Practice",
+    "url": "/courses/internetlab/practice",
+    "previous": "/courses/internetlab/authentication",
+    "next": "/courses/internetlab/practice"
   }
 };
 export {

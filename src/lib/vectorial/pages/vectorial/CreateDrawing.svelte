@@ -19,6 +19,7 @@
     import { createEventDispatcher } from "svelte";
     import {
         DRAWING,
+        localGallery,
         elements,
         BBOX,
         drawingID,
@@ -59,24 +60,27 @@
     const placeholder = "nature, kids, kitchen, space, science, technology";
     const choices = ["private", "public"];
     const submit = async () => {
-        if (!$page.data || !$page.data.user) {
-            alert("Sign in please");
-            return;
-        }
-        const res = await fetch("/vectorial/api/vectorial", {
-            method: "POST",
-            headers: {
-                "content-type": "application/json",
-            },
-            body: JSON.stringify(drawing),
-        });
-        if (!res.ok) {
-            alert("Failed to upload");
-            return;
-        }
-        const { id } = await res.json();
+        // if (!$page.data || !$page.data.user) {
+        //     alert("Sign in please");
+        //     return;
+        // }
+        // const res = await fetch("/vectorial/api/vectorial", {
+        //     method: "POST",
+        //     headers: {
+        //         "content-type": "application/json",
+        //     },
+        //     body: JSON.stringify(drawing),
+        // });
+        // if (!res.ok) {
+        //     alert("Failed to upload");
+        //     return;
+        // }
+        // const { id } = await res.json();
+        let id = 'local' + 'Image' + Math.floor(100*Math.random())
         drawing.drawingID = id;
-        drawing.elements.Layers = ["Layer-" + id + "-" + "0"];
+        $localGallery = [...$localGallery, id];
+        window.localStorage.setItem(id, JSON.stringify(drawing))
+        
         let newLayer = {
             id: "Layer-" + id + "-" + "0",
             tag: "g",
@@ -111,6 +115,9 @@
             },
         ];
         drawing = drawing;
+
+        drawing.elements.Layers = ["Layer-" + id + "-" + "0"];
+
         $DRAWING = drawing;
         $BBOX = drawing.viewBox;
         $drawingID = $DRAWING.drawinID;
@@ -124,17 +131,18 @@
         }
     };
     const update = async () => {
-        const res = await fetch("/vectorial/api/vectorial", {
-            method: "PUT",
-            headers: {
-                "content-type": "application/json",
-            },
-            body: JSON.stringify($DRAWING), //
-        });
-        if (!res.ok) {
-            goto("/vectorial/drawings");
-            return "fail";
-        }
+        // const res = await fetch("/vectorial/api/vectorial", {
+        //     method: "PUT",
+        //     headers: {
+        //         "content-type": "application/json",
+        //     },
+        //     body: JSON.stringify($DRAWING), 
+        // });
+        // if (!res.ok) {
+        //     goto("/vectorial/drawings");
+        //     return "fail";
+        // }
+        window.localStorage.setItem($DRAWING.drawingID, JSON.stringify($DRAWING))
         return "done";
     };
     const cancel = () => {

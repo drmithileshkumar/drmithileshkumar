@@ -42,7 +42,8 @@
         drawingID,
         DRAWING,
         pointList,
-        objectCount
+        objectCount,
+        localGallery
     } from "./stores";
     import { goto } from "$app/navigation";
     import { onMount } from "svelte";
@@ -59,38 +60,216 @@
         MathJax.typeset();
 
     });
+
+    const updateElements = (drawing) => {
+    //elements
+        let elemIds = Object.keys(drawing.elements);
+        elemIds.forEach(elemId => {
+            if(elemId !== 'Layers') {
+                if(drawing.elements[elemId].children) {
+                    drawing.elements[elemId].children.forEach((childId,index) => {
+                        drawing.elements[elemId].children[index] = childId.split('-')[0] + '-' + drawing.drawingID + '-' + childId.split('-')[2];
+                    })
+                }
+                //fill use filltype
+                if(drawing.elements[elemId].fill?.includes('url')) {
+                    drawing.elements[elemId].fill = drawing.elements[elemId].fill.split('-')[0] + '-' + drawing.drawingID + '-' + drawing.elements[elemId].fill.split('-')[2];
+                }
+                //stroke
+                if(drawing.elements[elemId].stroke?.includes('url')) {
+                    drawing.elements[elemId].stroke = drawing.elements[elemId].stroke.split('-')[0] + '-' + drawing.drawingID + '-' + drawing.elements[elemId].stroke.split('-')[2];
+                }
+                //markerStart, markerMid, markerEnd
+                if(drawing.elements[elemId].markerStart?.includes('url')) {
+                    drawing.elements[elemId].markerStart = drawing.elements[elemId].markerStart.split('-')[0] + '-' + drawing.drawingID + '-' + drawing.elements[elemId].markerStart.split('-')[2];
+                }
+                if(drawing.elements[elemId].markerMid?.includes('url')) {
+                    drawing.elements[elemId].markerMid = drawing.elements[elemId].markerMid.split('-')[0] + '-' + drawing.drawingID + '-' + drawing.elements[elemId].markerMid.split('-')[2];
+                }
+                if(drawing.elements[elemId].markerEnd?.includes('url')) {
+                    drawing.elements[elemId].markerEnd = drawing.elements[elemId].markerEnd.split('-')[0] + '-' + drawing.drawingID + '-' + drawing.elements[elemId].markerEnd.split('-')[2];
+                }
+                
+                //mask
+                if(drawing.elements[elemId].mask?.includes('url')) {
+                    let masks = drawing.elements[elemId].mask.split(' ');
+                    masks.forEach((mask, index) => {
+                        if(mask.includes('url')) {
+                            masks[index] = mask.split('-')[0] + '-' + drawing.drawingID + '-' + mask.split('-')[2];
+                        }
+                    })
+                    drawing.elements[elemId].mask = masks.join(' ');
+                }
+                //filter
+                if(drawing.elements[elemId].filter?.includes('url')) {
+                    let filters = drawing.elements[elemId].filter.split(' ');
+                    filters.forEach((filter, index) => {
+                        if(filter.includes('url')) {
+                            filters[index] = filter.split('-')[0] + '-' + drawing.drawingID + '-' + filter.split('-')[2];
+                        }
+                    })
+                    drawing.elements[elemId].filter = filters.join(' ');
+                }
+                //layer, parent
+                let layer = drawing.elements[elemId].layer?.split('-');
+                if(layer && layer.length === 3) {
+                    drawing.elements[elemId].layer = layer[0] + '-' + drawing.drawingID + '-' + layer[2];
+                } else if(layer) {
+                    drawing.elements[elemId].layer = layer[0] + '-' + drawing.drawingID + '-' + layer[1];
+                }
+                let parent = drawing.elements[elemId].parent?.split('-');
+                if(parent && parent.length === 3) {
+                    drawing.elements[elemId].parent = parent[0] + '-' + drawing.drawingID + '-' + parent[2];
+                } else if(parent && parent.length === 2) {
+                    drawing.elements[elemId].parent = parent[0] + '-' + drawing.drawingID + '-' + parent[1];
+                } else if(parent) {
+                    drawing.elements[elemId].parent = parent[0] + '-' + drawing.drawingID + '-' + 0;
+                }
+                let newId = elemId.split('-')[0] + '-' + drawing.drawingID + '-' + elemId.split('-')[2] 
+                //id, layer, parent,
+                drawing.elements[elemId].id = newId; 
+                delete Object.assign(drawing.elements, {[newId]: drawing.elements[elemId]})[elemId]
+            }
+        })
+        drawing.elements['Layers'].forEach((layer, index) => {
+            drawing.elements['Layers'][index] = layer.split('-')[0] + '-' + drawing.drawingID + '-' + layer.split('-')[2];
+        })
+    }
+    const updateDefs = (drawing) => {
+        //elements
+        let elemIds = Object.keys(drawing.defs);
+        elemIds.forEach(elemId => {
+            if(drawing.defs[elemId].children) {
+                drawing.defs[elemId].children.forEach((childId, index) => {
+                    drawing.defs[elemId].children[index] = childId.split('-')[0] + '-' + drawing.drawingID + '-' + childId.split('-')[2];
+                })
+            }
+            //fill use filltype
+            if(drawing.defs[elemId].fill?.includes('url')) {
+                drawing.defs[elemId].fill = drawing.defs[elemId].fill.split('-')[0] + '-' + drawing.drawingID + '-' + drawing.defs[elemId].fill.split('-')[2];
+            }
+            //stroke
+            if(drawing.defs[elemId].stroke?.includes('url')) {
+                drawing.defs[elemId].stroke = drawing.defs[elemId].stroke.split('-')[0] + '-' + drawing.drawingID + '-' + drawing.defs[elemId].stroke.split('-')[2];
+            }
+            //markerStart, markerMid, markerEnd
+            if(drawing.defs[elemId].markerStart?.includes('url')) {
+                drawing.defs[elemId].markerStart = drawing.defs[elemId].markerStart.split('-')[0] + '-' + drawing.drawingID + '-' + drawing.defs[elemId].markerStart.split('-')[2];
+            }
+            if(drawing.defs[elemId].markerMid?.includes('url')) {
+                drawing.defs[elemId].markerMid = drawing.defs[elemId].markerMid.split('-')[0] + '-' + drawing.drawingID + '-' + drawing.defs[elemId].markerMid.split('-')[2];
+            }
+            if(drawing.defs[elemId].markerEnd?.includes('url')) {
+                drawing.defs[elemId].markerEnd = drawing.defs[elemId].markerEnd.split('-')[0] + '-' + drawing.drawingID + '-' + drawing.defs[elemId].markerEnd.split('-')[2];
+            }
+            
+            //mask
+            if(drawing.defs[elemId].mask?.includes('url')) {
+                let masks = drawing.defs[elemId].mask.split(' ');
+                masks.forEach((mask, index) => {
+                    if(mask.includes('url')) {
+                        masks[index] = mask.split('-')[0] + '-' + drawing.drawingID + '-' + mask.split('-')[2];
+                    }
+                })
+                drawing.defs[elemId].mask = masks.join(' ');
+            }
+            //filter
+            if(drawing.defs[elemId].filter?.includes('url')) {
+                let filters = drawing.defs[elemId].filter.split(' ');
+                filters.forEach((filter, index) => {
+                    if(filter.includes('url')) {
+                        filters[index] = filter.split('-')[0] + '-' + drawing.drawingID + '-' + filter.split('-')[2];
+                    }
+                })
+                drawing.defs[elemId].filter = filters.join(' ');
+            }
+            //layer, parent
+            let layer = drawing.defs[elemId].layer?.split('-');
+            if(layer && layer.length === 3) {
+                drawing.defs[elemId].layer = layer[0] + '-' + drawing.drawingID + '-' + layer[2];
+            } else if(layer) {
+                drawing.defs[elemId].layer = layer[0] + '-' + drawing.drawingID + '-' + layer[1];
+            }
+            let parent = drawing.defs[elemId].parent?.split('-');
+            if(parent && parent.length === 3) {
+                drawing.defs[elemId].parent = parent[0] + '-' + drawing.drawingID + '-' + parent[2];
+            } else if(parent && parent.length === 2) {
+                drawing.defs[elemId].parent = parent[0] + '-' + drawing.drawingID + '-' + parent[1];
+            } else if(parent) {
+                drawing.defs[elemId].parent = parent[0] + '-' + drawing.drawingID + '-' + 0;
+            }
+            if(drawing.defs[elemId].tag === 'textMask') {
+                drawing.defs[elemId].shape = drawing.defs[elemId].shape.split('-')[0] + '-' + drawing.drawingID + '-' + drawing.defs[elemId].shape.split('-')[2];
+                let texts = drawing.defs[elemId].text;
+                texts.forEach((text, index) => {
+                    texts[index] = text.split('-')[0] + '-' + drawing.drawingID + '-' + text.split('-')[2];
+                })
+                drawing.defs[elemId].text = texts;
+            }
+            let newId = elemId.split('-')[0] + '-' + drawing.drawingID + '-' + elemId.split('-')[2] 
+            //id, layer, parent,
+            drawing.defs[elemId].id = newId; 
+            delete Object.assign(drawing.defs, {[newId]: drawing.defs[elemId]})[elemId]
+        })
+    }
+    const updateHistory = (drawing) => {
+        drawing.appHistory.forEach(history => {
+            if(history.id) {
+                history.id = history.id.split('-')[0] + '-' + drawing.drawingID + '-' + history.id.split('-')[2];
+            }
+        })
+    }
+
     const deleteFile = async () => {
         open = false;
-        const res = await fetch("/vectorial/api/vectorial", {
-            method: "DELETE",
-            headers: {
-                "content-type": "application/json",
-            },
-            body: JSON.stringify({drawingID: drawing.drawingID}),
-        });
-        if (!res.ok) {
-            alert("Failed to delete");
-            return;
-        }
-        dispatch('deleted', {drawingID: drawing.drawingDI})
-        invalidate(`/vectorial/api/${$page.data.user.publicID}/drawings`);
-        goto(`/vectorial/${$page.data.user.publicID}/drawings`);
+        // const res = await fetch("/vectorial/api/vectorial", {
+        //     method: "DELETE",
+        //     headers: {
+        //         "content-type": "application/json",
+        //     },
+        //     body: JSON.stringify({drawingID: drawing.drawingID}),
+        // });
+        // if (!res.ok) {
+        //     alert("Failed to delete");
+        //     return;
+        // }
+
+        let index = $localGallery.indexOf(drawing.drawingID);
+        $localGallery.splice(index, 1);
+        $localGallery = $localGallery;
+        window.localStorage.removeItem(drawing.drawingID)
+        dispatch('deleted', {drawingID: drawing.drawingID})
+        goto(`/vectorial/drawings`);
+        // invalidate(`/vectorial/api/${$page.data.user.publicID}/drawings`);
+        // goto(`/vectorial/${$page.data.user.publicID}/drawings`);
     };
     const duplicateFile = async () => {
-        const res = await fetch("/vectorial/api/vectorial", {
-            method: "POST",
-            headers: {
-                "content-type": "application/json",
-            },
-            body: JSON.stringify(drawing),
-        });
-        if (!res.ok) {
-            alert("Failed to upload");
-            return;
-        }
-        const { id } = await res.json();
-        invalidate(`/vectorial/api/${$page.data.user.publicID}/drawings`);
-        goto(`/vectorial/${$page.data.user.publicID}/drawings`);
+        // const res = await fetch("/vectorial/api/vectorial", {
+        //     method: "POST",
+        //     headers: {
+        //         "content-type": "application/json",
+        //     },
+        //     body: JSON.stringify(drawing),
+        // });
+        // if (!res.ok) {
+        //     alert("Failed to upload");
+        //     return;
+        // }
+        // const { id } = await res.json();
+
+        let id = 'local' + 'Image' + Math.floor(100*Math.random())
+        let duplicateDrawing = JSON.parse(JSON.stringify(drawing)); 
+        duplicateDrawing.drawingID = id;
+        $localGallery = [...$localGallery, id];
+        updateElements(duplicateDrawing);
+        updateDefs(duplicateDrawing);
+        updateHistory(duplicateDrawing)
+
+        window.localStorage.setItem(id, JSON.stringify(duplicateDrawing))
+        dispatch('duplicated', {drawing: duplicateDrawing})
+        goto(`/vectorial/drawings`);
+        // invalidate(`/vectorial/api/${$page.data.user.publicID}/drawings`);
+        // goto(`/vectorial/${$page.data.user.publicID}/drawings`);
     };
     const showdetails = () => {
         //hydrate and go to edit mode

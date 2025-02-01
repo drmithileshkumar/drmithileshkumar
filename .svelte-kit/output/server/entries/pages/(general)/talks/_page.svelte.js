@@ -10,8 +10,8 @@ import "../../../../chunks/client.js";
 /* empty css                                                    */
 import { d as darkMode, c as currentPath } from "../../../../chunks/stores.js";
 const css = {
-  code: "article.svelte-86n1i9{display:flex;flex-direction:column;gap:0.5em}h3.svelte-86n1i9,h5.svelte-86n1i9{margin:0.5em 0}",
-  map: `{"version":3,"file":"+page.svelte","sources":["+page.svelte"],"sourcesContent":["<script>\\r\\n    // @ts-nocheck\\r\\n        import Card, {Content} from '@smui/card';\\r\\n        import List, { Item, Graphic, Separator, Text } from '@smui/list';\\r\\n        import {goto} from \\"$app/navigation\\";\\r\\n        import Message from '$lib/ui/Message.svelte';\\r\\n        import Link from '$lib/ui/Link.svelte';\\r\\n        import {page} from '$app/stores';\\r\\n        import {onMount} from 'svelte';\\r\\n        import { currentPath } from \\"$lib/stores\\";\\r\\n        import { darkMode } from \\"$lib/stores\\"\\r\\n        let clicked;\\r\\n        $currentPath = \\"Courses\\";\\r\\n        $darkMode = false;\\r\\n        onMount(() => {\\r\\n            MathJax.typeset();\\r\\n        });\\r\\n    <\/script>\\r\\n    <style>\\r\\n        article {\\r\\n            display:flex;\\r\\n            flex-direction: column;\\r\\n            gap: 0.5em;\\r\\n        }\\r\\n        h3,h5 {\\r\\n            margin: 0.5em 0;\\r\\n        }\\r\\n    </style>\\r\\n    <svelte:head>\\r\\n        <title>Courses</title>\\r\\n        <link rel=\\"canonical\\" href=\\"https://drmithileshkumar.com/talks\\" />\\r\\n        <meta name=\\"description\\" content=\\"Courses Taught by Dr Mithilesh Kumar\\" />\\r\\n    </svelte:head>\\r\\n    <article>\\r\\n        <h3>Talks</h3>\\r\\n        <Card>\\r\\n            <Content>\\r\\n                <h5>Past</h5>\\r\\n                <div>\\r\\n                    <List class=\\"courses\\" dense>\\r\\n                      <Item on:SMUI:action={() => goto('/talks/quantumteleportation')}>\\r\\n                        <Graphic class=\\"material-icons\\">menu_book</Graphic>\\r\\n                        <Text>Quantum Teleportation</Text>\\r\\n                      </Item>\\r\\n                    </List>\\r\\n                  </div>\\r\\n            </Content>\\r\\n        </Card> \\r\\n        <h3>\\r\\n            Workshops\\r\\n        </h3>\\r\\n        <Card>\\r\\n            <Content>\\r\\n                <h5>Upcoming</h5>\\r\\n                <div>\\r\\n                    <List class=\\"courses\\" dense>\\r\\n                      <Item on:SMUI:action={() => goto('/talks/quantumstatus')}>\\r\\n                        <Graphic class=\\"material-icons\\">menu_book</Graphic>\\r\\n                        <Text>Current Status of Quantum Computing</Text>\\r\\n                      </Item>\\r\\n                    </List>\\r\\n                  </div>\\r\\n            </Content>\\r\\n        </Card> \\r\\n    </article>"],"names":[],"mappings":"AAmBQ,qBAAQ,CACJ,QAAQ,IAAI,CACZ,cAAc,CAAE,MAAM,CACtB,GAAG,CAAE,KACT,CACA,gBAAE,CAAC,gBAAG,CACF,MAAM,CAAE,KAAK,CAAC,CAClB"}`
+  code: "article.svelte-xgvmd0{display:flex;flex-direction:column;gap:0.5em}h3.svelte-xgvmd0,h5.svelte-xgvmd0{margin:0.5em 0}",
+  map: `{"version":3,"file":"+page.svelte","sources":["+page.svelte"],"sourcesContent":["<script>\\r\\n\\t// @ts-nocheck\\r\\n\\timport Card, { Content } from '@smui/card';\\r\\n\\timport List, { Item, Graphic, Separator, Text } from '@smui/list';\\r\\n\\timport { goto } from '$app/navigation';\\r\\n\\timport Message from '$lib/ui/Message.svelte';\\r\\n\\timport Link from '$lib/ui/Link.svelte';\\r\\n\\timport { page } from '$app/stores';\\r\\n\\timport { onMount } from 'svelte';\\r\\n\\timport { currentPath } from '$lib/stores';\\r\\n\\timport { darkMode } from '$lib/stores';\\r\\n\\tlet clicked;\\r\\n\\t$currentPath = 'Courses';\\r\\n\\t$darkMode = false;\\r\\n\\tonMount(() => {\\r\\n\\t\\tMathJax.typeset();\\r\\n\\t});\\r\\n<\/script>\\r\\n\\r\\n<svelte:head>\\r\\n\\t<title>Talks</title>\\r\\n\\t<link rel=\\"canonical\\" href=\\"https://drmithileshkumar.com/talks\\" />\\r\\n\\t<meta name=\\"description\\" content=\\"Courses Taught by Dr Mithilesh Kumar\\" />\\r\\n</svelte:head>\\r\\n<article>\\r\\n\\t<h3>Talks</h3>\\r\\n\\t<Card>\\r\\n\\t\\t<Content>\\r\\n\\t\\t\\t<h5>Past</h5>\\r\\n\\t\\t\\t<div>\\r\\n\\t\\t\\t\\t<List class=\\"courses\\" dense>\\r\\n                    <Item on:SMUI:action={() => goto('/talks/sorting')}>\\r\\n\\t\\t\\t\\t\\t\\t<Graphic class=\\"material-icons\\">menu_book</Graphic>\\r\\n\\t\\t\\t\\t\\t\\t<Text>Sorting</Text>\\r\\n\\t\\t\\t\\t\\t</Item>\\r\\n\\t\\t\\t\\t\\t<Item on:SMUI:action={() => goto('/talks/quantumteleportation')}>\\r\\n\\t\\t\\t\\t\\t\\t<Graphic class=\\"material-icons\\">menu_book</Graphic>\\r\\n\\t\\t\\t\\t\\t\\t<Text>Quantum Teleportation</Text>\\r\\n\\t\\t\\t\\t\\t</Item>\\r\\n\\t\\t\\t\\t</List>\\r\\n\\t\\t\\t</div>\\r\\n\\t\\t</Content>\\r\\n\\t</Card>\\r\\n\\t<h3>Workshops</h3>\\r\\n\\t<Card>\\r\\n\\t\\t<Content>\\r\\n\\t\\t\\t<h5>Upcoming</h5>\\r\\n\\t\\t\\t<div>\\r\\n\\t\\t\\t\\t<List class=\\"courses\\" dense>\\r\\n\\t\\t\\t\\t\\t<Item on:SMUI:action={() => goto('/talks/quantumstatus')}>\\r\\n\\t\\t\\t\\t\\t\\t<Graphic class=\\"material-icons\\">menu_book</Graphic>\\r\\n\\t\\t\\t\\t\\t\\t<Text>Current Status of Quantum Computing</Text>\\r\\n\\t\\t\\t\\t\\t</Item>\\r\\n\\t\\t\\t\\t</List>\\r\\n\\t\\t\\t</div>\\r\\n\\t\\t</Content>\\r\\n\\t</Card>\\r\\n</article>\\r\\n\\r\\n<style>\\r\\n\\tarticle {\\r\\n\\t\\tdisplay: flex;\\r\\n\\t\\tflex-direction: column;\\r\\n\\t\\tgap: 0.5em;\\r\\n\\t}\\r\\n\\th3,\\r\\n\\th5 {\\r\\n\\t\\tmargin: 0.5em 0;\\r\\n\\t}\\r\\n</style>\\r\\n"],"names":[],"mappings":"AA4DC,qBAAQ,CACP,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACtB,GAAG,CAAE,KACN,CACA,gBAAE,CACF,gBAAG,CACF,MAAM,CAAE,KAAK,CAAC,CACf"}`
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $darkMode, $$unsubscribe_darkMode;
@@ -23,13 +23,25 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   $$unsubscribe_darkMode();
   $$unsubscribe_currentPath();
-  return `${$$result.head += `<!-- HEAD_svelte-2iic1c_START -->${$$result.title = `<title>Courses</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/talks"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-2iic1c_END -->`, ""} <article class="svelte-86n1i9"><h3 class="svelte-86n1i9" data-svelte-h="svelte-112ly1v">Talks</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  return `${$$result.head += `<!-- HEAD_svelte-11d1zo4_START -->${$$result.title = `<title>Talks</title>`, ""}<link rel="canonical" href="https://drmithileshkumar.com/talks"><meta name="description" content="Courses Taught by Dr Mithilesh Kumar"><!-- HEAD_svelte-11d1zo4_END -->`, ""} <article class="svelte-xgvmd0"><h3 class="svelte-xgvmd0" data-svelte-h="svelte-112ly1v">Talks</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h5 class="svelte-86n1i9" data-svelte-h="svelte-t7vgac">Past</h5> <div>${validate_component(List, "List").$$render($$result, { class: "courses", dense: true }, {}, {
+          return `<h5 class="svelte-xgvmd0" data-svelte-h="svelte-t7vgac">Past</h5> <div>${validate_component(List, "List").$$render($$result, { class: "courses", dense: true }, {}, {
             default: () => {
               return `${validate_component(Item, "Item").$$render($$result, {}, {}, {
+                default: () => {
+                  return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
+                    default: () => {
+                      return `menu_book`;
+                    }
+                  })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
+                    default: () => {
+                      return `Sorting`;
+                    }
+                  })}`;
+                }
+              })} ${validate_component(Item, "Item").$$render($$result, {}, {}, {
                 default: () => {
                   return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
                     default: () => {
@@ -47,11 +59,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })} <h3 class="svelte-86n1i9" data-svelte-h="svelte-15xgbww">Workshops</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
+  })} <h3 class="svelte-xgvmd0" data-svelte-h="svelte-1ivgjgo">Workshops</h3> ${validate_component(Card, "Card").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Content, "Content").$$render($$result, {}, {}, {
         default: () => {
-          return `<h5 class="svelte-86n1i9" data-svelte-h="svelte-4wi05q">Upcoming</h5> <div>${validate_component(List, "List").$$render($$result, { class: "courses", dense: true }, {}, {
+          return `<h5 class="svelte-xgvmd0" data-svelte-h="svelte-4wi05q">Upcoming</h5> <div>${validate_component(List, "List").$$render($$result, { class: "courses", dense: true }, {}, {
             default: () => {
               return `${validate_component(Item, "Item").$$render($$result, {}, {}, {
                 default: () => {
@@ -71,7 +83,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       })}`;
     }
-  })}</article>`;
+  })} </article>`;
 });
 export {
   Page as default

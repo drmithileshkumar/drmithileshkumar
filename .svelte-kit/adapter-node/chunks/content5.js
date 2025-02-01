@@ -1,2399 +1,545 @@
 const contents = [
   {
-    name: "Quantum Computation and Quantum Information",
-    url: "/courses/quantum",
+    name: "MATHEMATICS II",
+    url: "/courses/mathematics2",
     topics: [
       {
-        name: "Introduction and overview",
-        url: "/courses/quantum/introduction",
+        name: "BASICS OF STATISTICS",
+        url: "/courses/mathematics2/statistics",
         topics: [
           {
-            name: "Global perspectives",
-            url: "/courses/quantum/introduction/global",
+            name: "Measures of Central Tendency",
+            url: "/courses/mathematics2/statistics/measures",
             topics: [
               {
-                name: "History",
-                url: "/courses/quantum/introduction/global/history"
+                name: "Mean (AM, GM, HM)",
+                url: "/courses/mathematics2/statistics/measures/mean"
               },
               {
-                name: "Future",
-                url: "/courses/quantum/introduction/global/future"
+                name: "Mode",
+                url: "/courses/mathematics2/statistics/measures/mode"
+              },
+              {
+                name: "Median",
+                url: "/courses/mathematics2/statistics/measures/median"
+              },
+              {
+                name: "Standard deviation",
+                url: "/courses/mathematics2/statistics/measures/deviation"
               }
             ]
           },
           {
-            name: "*Quantum bits",
-            url: "/courses/quantum/introduction/qubits",
+            name: "Correlation",
+            url: "/courses/mathematics2/statistics/correlation",
             topics: [
               {
-                name: "Multiple qubits",
-                url: "/courses/quantum/introduction/qubits/multiple"
+                name: "Bivariate Data",
+                url: "/courses/mathematics2/statistics/correlation/bivariatedata"
+              },
+              {
+                name: "Bivariate frequency distribution",
+                url: "/courses/mathematics2/statistics/correlation/bivariatefrequency"
+              },
+              {
+                name: "Correlation between two variables",
+                url: "/courses/mathematics2/statistics/correlation/correlation2"
+              },
+              {
+                name: "Karl Pearson's coefficient of correlation (r)",
+                url: "/courses/mathematics2/statistics/correlation/pearson"
+              },
+              {
+                name: "Spearman's rank correlation coefficient",
+                url: "/courses/mathematics2/statistics/correlation/spearman"
               }
             ]
           },
           {
-            name: "Quantum computation",
-            url: "/courses/quantum/introduction/computation",
+            name: "Regression",
+            url: "/courses/mathematics2/statistics/regression",
             topics: [
               {
-                name: "Single qubit gates",
-                url: "/courses/quantum/introduction/computation/single"
+                name: "Lines of regression",
+                url: "/courses/mathematics2/statistics/regression/regressionlines"
               },
               {
-                name: "Multiple qubit gates",
-                url: "/courses/quantum/introduction/computation/multiple"
-              },
-              {
-                name: "Measurement",
-                url: "/courses/quantum/introduction/computation/measurement"
-              },
-              {
-                name: "Quantum circuits",
-                url: "/courses/quantum/introduction/computation/circuits"
-              },
-              {
-                name: "Qubit copying circuit",
-                url: "/courses/quantum/introduction/computation/copy"
-              },
-              {
-                name: "Bell states",
-                url: "/courses/quantum/introduction/computation/bell"
-              },
-              {
-                name: "Quantum teleportation",
-                url: "/courses/quantum/introduction/computation/teleportation"
-              }
-            ]
-          },
-          {
-            name: "Quantum algorithms",
-            url: "/courses/quantum/introduction/algorithms",
-            topics: [
-              {
-                name: "Classical computation",
-                url: "/courses/quantum/introduction/algorithms/classical"
-              },
-              {
-                name: "Quantum parallelism",
-                url: "/courses/quantum/introduction/algorithms/parallelism"
-              },
-              {
-                name: "Deutsch algorithm",
-                url: "/courses/quantum/introduction/algorithms/deutsch"
-              },
-              {
-                name: "Deutsch-Jozsa algorithm",
-                url: "/courses/quantum/introduction/algorithms/jozsa"
-              },
-              {
-                name: "Quantum algorithms summary",
-                url: "/courses/quantum/introduction/algorithms/summary"
-              }
-            ]
-          },
-          {
-            name: "Experimental quantum information processing",
-            url: "/courses/quantum/introduction/experiments",
-            topics: [
-              {
-                name: "The Stern-Gerlach experiment",
-                url: "/courses/quantum/introduction/experiments/stern"
-              },
-              {
-                name: "Prospects for practical quantum information processing",
-                url: "/courses/quantum/introduction/experiments/prospects"
-              }
-            ]
-          },
-          {
-            name: "Quantum information",
-            url: "/courses/quantum/introduction/information",
-            topics: [
-              {
-                name: "Theory",
-                url: "/courses/quantum/introduction/information/theory"
-              },
-              {
-                name: "Wider context",
-                url: "/courses/quantum/introduction/information/context"
+                name: "Least squares method",
+                url: "/courses/mathematics2/statistics/regression/leastsquares"
               }
             ]
           }
         ]
       },
       {
-        name: "Quantum Mechanics",
-        url: "/courses/quantum/mechanics",
+        name: "PROBABILITY THEORY",
+        url: "/courses/mathematics2/probabilitytheory",
         topics: [
           {
-            name: "Linear algebra",
-            url: "/courses/quantum/mechanics/algebra",
+            name: "Probability",
+            url: "/courses/mathematics2/probabilitytheory/probability",
             topics: [
               {
-                name: "Basis",
-                url: "/courses/quantum/mechanics/algebra/basis"
+                name: "Events",
+                url: "/courses/mathematics2/probabilitytheory/probability/events"
               },
               {
-                name: "Linear operators",
-                url: "/courses/quantum/mechanics/algebra/operators"
+                name: "Conditional Probability",
+                url: "/courses/mathematics2/probabilitytheory/probability/conditional"
               },
               {
-                name: "The Pauli matrices",
-                url: "/courses/quantum/mechanics/algebra/pauli"
-              },
-              {
-                name: "Inner products",
-                url: "/courses/quantum/mechanics/algebra/inner"
-              },
-              {
-                name: "Eigenvectors and eigenvalues",
-                url: "/courses/quantum/mechanics/algebra/eigen"
-              },
-              {
-                name: "Adjoints and Hermitian operators",
-                url: "/courses/quantum/mechanics/algebra/adjoint"
-              },
-              {
-                name: "Tensor products",
-                url: "/courses/quantum/mechanics/algebra/tensor"
-              },
-              {
-                name: "Operator functions",
-                url: "/courses/quantum/mechanics/algebra/functions"
-              },
-              {
-                name: "The commutator and anti-commutator",
-                url: "/courses/quantum/mechanics/algebra/commutator"
-              },
-              {
-                name: "The polar and singular value decompositions",
-                url: "/courses/quantum/mechanics/algebra/decomposition"
+                name: "Practice Problems",
+                url: "/courses/mathematics2/probabilitytheory/probability/practice"
               }
             ]
           },
           {
-            name: "Postulates",
-            url: "/courses/quantum/mechanics/postulates",
+            name: "Distributions",
+            url: "/courses/mathematics2/probabilitytheory/distributions",
             topics: [
               {
-                name: "State space",
-                url: "/courses/quantum/mechanics/postulates/state"
+                name: "Joint distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/joint"
               },
               {
-                name: "Evolution",
-                url: "/courses/quantum/mechanics/postulates/evolution"
+                name: "Binomial distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/binomial"
               },
               {
-                name: "Quantum measurement",
-                url: "/courses/quantum/mechanics/postulates/measurement"
+                name: "Continuous distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/continuous"
               },
               {
-                name: "Distinguishing quantum states",
-                url: "/courses/quantum/mechanics/postulates/distinguish"
+                name: "Normal distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/normal"
               },
               {
-                name: "Projective measurements",
-                url: "/courses/quantum/mechanics/postulates/projective"
+                name: "Poisson distribution",
+                url: "/courses/mathematics2/probabilitytheory/distributions/poisson"
+              }
+            ]
+          }
+          // {
+          //     name: "Discrete distributions",
+          //     url: "",
+          //     topics: [
+          //         {
+          //             name: "Discrete uniform distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Binomial distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Poisson distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Geometric distribution",
+          //             url: ""
+          //         }
+          //     ]
+          // },
+          // {
+          //     name: "Continuous distributions",
+          //     url: "",
+          //     topics: [
+          //         {
+          //             name: "Uniform distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Normal distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Exponential distribution",
+          //             url: ""
+          //         },
+          //         {
+          //             name: "Gamma distribution",
+          //             url: ""
+          //         }
+          //     ]
+          // },
+          // {
+          //     name: "Queueing theory",
+          //     url: "",
+          //     topics: [
+          //         {
+          //             name: 'Introduction',
+          //             url: ''
+          //         }
+          //     ]
+          // }
+        ]
+      },
+      {
+        name: "STATISTICAL INFERENCE",
+        url: "/courses/mathematics2/inference",
+        topics: [
+          {
+            name: "Significance",
+            url: "/courses/mathematics2/inference/significance",
+            topics: [
+              {
+                name: "Sampling",
+                url: "/courses/mathematics2/inference/significance/sampling"
               },
               {
-                name: "POVM measurements",
-                url: "/courses/quantum/mechanics/postulates/povm"
+                name: "Hypotheses",
+                url: "/courses/mathematics2/inference/significance/hypotheses"
               },
               {
-                name: "Phase",
-                url: "/courses/quantum/mechanics/postulates/phase"
+                name: "Tests of hypothesis and significance",
+                url: "/courses/mathematics2/inference/significance/tests"
               },
               {
-                name: "Composite systems",
-                url: "/courses/quantum/mechanics/postulates/composite"
+                name: "Type I and Type II errors",
+                url: "/courses/mathematics2/inference/significance/types"
               },
               {
-                name: "Global view",
-                url: "/courses/quantum/mechanics/postulates/global"
+                name: "Level of significance",
+                url: "/courses/mathematics2/inference/significance/level"
               }
             ]
           },
           {
-            name: "Superdense coding",
-            url: "/courses/quantum/mechanics/superdense"
-          },
-          {
-            name: "Density operator",
-            url: "/courses/quantum/mechanics/density",
+            name: "Analysis of Variance (ANOVA)",
+            url: "",
             topics: [
               {
-                name: "Ensembles of quantum states",
-                url: "/courses/quantum/mechanics/density/ensemble"
+                name: "Introduction",
+                url: ""
               },
               {
-                name: "Properties",
-                url: "/courses/quantum/mechanics/density/properties"
+                name: "Heterogeneity",
+                url: ""
               },
               {
-                name: "Reduced density operator",
-                url: "/courses/quantum/mechanics/density/reduced"
+                name: "Analysis of Variance",
+                url: ""
+              },
+              {
+                name: "Covariance",
+                url: ""
+              },
+              {
+                name: "Linear Hypothesis",
+                url: ""
+              },
+              {
+                name: "One-way classified data",
+                url: ""
+              },
+              {
+                name: "Two-way classified data",
+                url: ""
               }
             ]
           },
           {
-            name: "Purification",
-            url: "/courses/quantum/mechanics/purification"
+            name: "TIME SERIES ANALYSIS",
+            url: "",
+            topics: [
+              {
+                name: "Introduction",
+                url: ""
+              },
+              {
+                name: "Estimation of trend",
+                url: ""
+              }
+            ]
           },
           {
-            name: "EPR and the Bell inequality",
-            url: "/courses/quantum/mechanics/epr"
+            name: "Practice",
+            url: "/courses/mathematics2/inference/practice"
           }
         ]
       },
       {
-        name: "Computer Science",
-        url: "/courses/quantum/classical",
+        name: "LINEAR PROGRAMMING",
+        url: "",
         topics: [
           {
-            name: "Models for computation",
-            url: "/courses/quantum/classical/models",
-            topics: [
-              {
-                name: "Turing machine",
-                url: "/courses/quantum/classical/models/turing"
-              },
-              {
-                name: "Circuits",
-                url: "/courses/quantum/classical/models/circuits"
-              }
-            ]
+            name: "Meaning and scope of operations research",
+            url: ""
           },
           {
-            name: "Computational problems",
-            url: "/courses/quantum/classical/computational",
-            topics: [
-              {
-                name: "Computational resources",
-                url: "/courses/quantum/classical/computational/resources"
-              },
-              {
-                name: "Computational complexity",
-                url: "/courses/quantum/classical/computational/complexity"
-              },
-              {
-                name: "Decision problems",
-                url: "/courses/quantum/classical/computational/decision"
-              },
-              {
-                name: "Complexity classes",
-                url: "/courses/quantum/classical/computational/complexity"
-              },
-              {
-                name: "Energy and computation",
-                url: "/courses/quantum/classical/computational/energy"
-              }
-            ]
+            name: "Definition of general LPP",
+            url: ""
           },
           {
-            name: "Perspectives",
-            url: "/courses/quantum/classical/perspectives"
+            name: "Formulation of LPP",
+            url: ""
+          },
+          {
+            name: "Solution of LPP by graphical method",
+            url: ""
+          },
+          {
+            name: "Simplex algorithm",
+            url: ""
+          },
+          {
+            name: "Transportation",
+            url: ""
+          },
+          {
+            name: "Assignment problems",
+            url: ""
+          },
+          {
+            name: "Sequencing problems",
+            url: ""
           }
         ]
       },
+      // {
+      //     name: "PROJECT MANAGEMENT",
+      //     url: "",
+      //     topics: [
+      //         {
+      //             name: 'CPM',
+      //             url: ""
+      //         },
+      //         {
+      //             name: 'PERT',
+      //             url: ''
+      //         }
+      //     ]
+      // },
       {
-        name: "Quantum circuits",
-        url: "/courses/quantum/circuits",
-        topics: [
-          {
-            name: "Quantum algorithms",
-            url: "/courses/quantum/circuits/algorithms"
-          },
-          {
-            name: "Single qubit operations",
-            url: "/courses/quantum/circuits/single"
-          },
-          {
-            name: "Controlled operations",
-            url: "/courses/quantum/circuits/control"
-          },
-          {
-            name: "Measurement",
-            url: "/courses/quantum/circuits/measurement"
-          },
-          {
-            name: "Universal quantum gates",
-            url: "/courses/quantum/circuits/universal",
-            topics: [
-              {
-                name: "Two-level unitary gates are universal",
-                url: "/courses/quantum/circuits/universal/two"
-              },
-              {
-                name: "Single qubit and CNOT gates are universal",
-                url: "/courses/quantum/circuits/universal/cnot"
-              },
-              {
-                name: "A discrete set of universal operations",
-                url: "/courses/quantum/circuits/universal/discrete"
-              },
-              {
-                name: "Approximation",
-                url: "/courses/quantum/circuits/universal/approximation"
-              },
-              {
-                name: "Quantum computational complexity",
-                url: "/courses/quantum/circuits/universal/complexity"
-              },
-              {
-                name: "Quantum circuit model of computation",
-                url: "/courses/quantum/circuits/universal/model"
-              }
-            ]
-          },
-          {
-            name: "Simulation of quantum systems",
-            url: "/courses/quantum/circuits/simulations",
-            topics: [
-              {
-                name: "Simulations in action",
-                url: "/courses/quantum/circuits/simulations/action"
-              },
-              {
-                name: "The quantum simulation algorithm",
-                url: "/courses/quantum/circuits/simulations/quantum"
-              },
-              {
-                name: "Example",
-                url: "/courses/quantum/circuits/simulations/example"
-              },
-              {
-                name: "Perspective",
-                url: "/courses/quantum/circuits/simulations/perspective"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        name: "Quantum Fourier transform",
-        url: "/courses/quantum/qft",
-        topics: [
-          {
-            name: "Quantum Fourier transform",
-            url: "/courses/quantum/qft/transform"
-          },
-          {
-            name: "Phase estimation",
-            url: "/courses/quantum/qft/phase",
-            topics: [
-              {
-                name: "Performance",
-                url: "/courses/quantum/qft/phase/performance"
-              }
-            ]
-          },
-          {
-            name: "Applications",
-            url: "/courses/quantum/qft/applications",
-            topics: [
-              {
-                name: "Order-finding",
-                url: "/courses/quantum/qft/applications/order"
-              },
-              {
-                name: "Factoring",
-                url: "/courses/quantum/qft/applications/factoring"
-              },
-              {
-                name: "Period-finding",
-                url: "/courses/quantum/qft/applications/period"
-              },
-              {
-                name: "Discrete logarithms",
-                url: "/courses/quantum/qft/applications/discrete"
-              },
-              {
-                name: "Hidden subgroup problem",
-                url: "/courses/quantum/qft/applications/hsb"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        name: "Quantum search algorithms",
-        url: "/courses/quantum/search",
-        topics: [
-          {
-            name: "Quantum search algorithm",
-            url: "/courses/quantum/search/grover",
-            topics: [
-              {
-                name: "The oracle",
-                url: "/courses/quantum/search/grover/oracle"
-              },
-              {
-                name: "The procedure",
-                url: "/courses/quantum/search/grover/procedure"
-              },
-              {
-                name: "Geometric visualization",
-                url: "/courses/quantum/search/grover/visualization"
-              },
-              {
-                name: "Performance",
-                url: "/courses/quantum/search/grover/performance"
-              }
-            ]
-          },
-          {
-            name: "Quantum search as a quantum simulation",
-            url: "/courses/quantum/search/simulation"
-          },
-          {
-            name: "Quantum counting",
-            url: "/courses/quantum/search/counting"
-          },
-          {
-            name: "NP-complete problems",
-            url: "/courses/quantum/search/np"
-          },
-          {
-            name: "Quantum search of an unstructured database",
-            url: "/courses/quantum/search/database"
-          },
-          {
-            name: "Optimality",
-            url: "/courses/quantum/search/optimality"
-          },
-          {
-            name: "Black box algorithm limits",
-            url: "/courses/quantum/search/blackbox"
-          }
-        ]
-      },
-      {
-        name: "Quantum computers",
-        url: "/courses/quantum/computers",
-        topics: [
-          {
-            name: "Guiding principles",
-            url: "/courses/quantum/computers/principles"
-          },
-          {
-            name: "Conditions for quantum computation",
-            url: "/courses/quantum/computers/conditions",
-            topics: [
-              {
-                name: "Representation of quantum information",
-                url: "/courses/quantum/computers/conditions/representation"
-              },
-              {
-                name: "Performance of unitary transformations",
-                url: "/courses/quantum/computers/conditions/performance"
-              },
-              {
-                name: "Preparation of fiducial initial states",
-                url: "/courses/quantum/computers/conditions/preparation"
-              },
-              {
-                name: "Measurement of output result",
-                url: "/courses/quantum/computers/conditions/measurement"
-              }
-            ]
-          },
-          {
-            name: "Harmonic oscillator quantum computer",
-            url: "/courses/quantum/computers/harmonic",
-            topics: [
-              {
-                name: "Physical apparatus",
-                url: "/courses/quantum/computers/harmonic/apparatus"
-              },
-              {
-                name: "The Hamiltonian",
-                url: "/courses/quantum/computers/harmonic/hamiltonian"
-              },
-              {
-                name: "Quantum computation",
-                url: "/courses/quantum/computers/harmonic/computation"
-              },
-              {
-                name: "Drawbacks",
-                url: "/courses/quantum/computers/harmonic/drawbacks"
-              }
-            ]
-          },
-          {
-            name: "Optical photon quantum computer",
-            url: "/courses/quantum/computers/photon",
-            topics: [
-              {
-                name: "Physical apparatus",
-                url: "/courses/quantum/computers/photon/apparatus"
-              },
-              {
-                name: "Quantum computation",
-                url: "/courses/quantum/computers/photon/computation"
-              },
-              {
-                name: "Drawbacks",
-                url: "/courses/quantum/computers/photon/drawbacks"
-              }
-            ]
-          },
-          {
-            name: "Optical cavity quantum electrodynamics",
-            url: "/courses/quantum/computers/cavity",
-            topics: [
-              {
-                name: "Physical apparatus",
-                url: "/courses/quantum/computers/cavity/apparatus"
-              },
-              {
-                name: "The Hamiltonian",
-                url: "/courses/quantum/computers/cavity/hamiltonian"
-              },
-              {
-                name: "Absorption and refraction",
-                url: "/courses/quantum/computers/cavity/absorption"
-              },
-              {
-                name: "Quantum computation",
-                url: "/courses/quantum/computers/cavity/computation"
-              }
-            ]
-          },
-          {
-            name: "Ion traps",
-            url: "/courses/quantum/computers/ion",
-            topics: [
-              {
-                name: "Physical apparatus",
-                url: "/courses/quantum/computers/ion/apparatus"
-              },
-              {
-                name: "The Hamiltonian",
-                url: "/courses/quantum/computers/ion/hamiltonian"
-              },
-              {
-                name: "Quantum computation",
-                url: "/courses/quantum/computers/ion/computation"
-              },
-              {
-                name: "Experiment",
-                url: "/courses/quantum/computers/cavity/experiment"
-              }
-            ]
-          },
-          {
-            name: "Nuclear magnetic resonance",
-            url: "/courses/quantum/computers/nmr",
-            topics: [
-              {
-                name: "Physical apparatus",
-                url: "/courses/quantum/computers/nmr/apparatus"
-              },
-              {
-                name: "The Hamiltonian",
-                url: "/courses/quantum/computers/nmr/hamiltonian"
-              },
-              {
-                name: "Quantum computation",
-                url: "/courses/quantum/computers/nmr/computation"
-              },
-              {
-                name: "Experiment",
-                url: "/courses/quantum/computers/nmr/experiment"
-              }
-            ]
-          },
-          {
-            name: "Other implementation schemes",
-            url: "/courses/quantum/computers/schemes"
-          }
-        ]
-      },
-      {
-        name: "Quantum noise",
-        url: "/courses/quantum/noise",
-        topics: [
-          {
-            name: "Classical noise",
-            url: "/courses/quantum/noise/classical"
-          },
-          {
-            name: "Quantum operations",
-            url: "/courses/quantum/noise/operations",
-            topics: [
-              {
-                name: "Environments",
-                url: "/courses/quantum/noise/operations/environments"
-              },
-              {
-                name: "Operator-sum representation",
-                url: "/courses/quantum/noise/operations/operator"
-              },
-              {
-                name: "Axiomatic approach",
-                url: "/courses/quantum/noise/operations/axiomatic"
-              }
-            ]
-          },
-          {
-            name: "Examples",
-            url: "/courses/quantum/noise/examples",
-            topics: [
-              {
-                name: "Trace and partial trace",
-                url: "/courses/quantum/noise/examples/trace"
-              },
-              {
-                name: "Geometric picture",
-                url: "/courses/quantum/noise/examples/picture"
-              },
-              {
-                name: "Bit flip and phase flip channels",
-                url: "/courses/quantum/noise/examples/flip"
-              },
-              {
-                name: "Depolarizing channel",
-                url: "/courses/quantum/noise/examples/depolarizing"
-              },
-              {
-                name: "Amplitude damping",
-                url: "/courses/quantum/noise/examples/amplitude"
-              },
-              {
-                name: "Phase damping",
-                url: "/courses/quantum/noise/examples/phase"
-              }
-            ]
-          },
-          {
-            name: "Applications of quantum operations",
-            url: "/courses/quantum/noise/applications",
-            topics: [
-              {
-                name: "Master equations",
-                url: "/courses/quantum/noise/applications/master"
-              },
-              {
-                name: "Quantum process tomography",
-                url: "/courses/quantum/noise/applications/tomography"
-              }
-            ]
-          },
-          {
-            name: "Limitations of the quantum operations formalism",
-            url: "/courses/quantum/noise/limitations"
-          }
-        ]
-      },
-      {
-        name: "Distance measures",
-        url: "/courses/quantum/distance",
-        topics: [
-          {
-            name: "Distance measures for classical information",
-            url: "/courses/quantum/distance/classical"
-          },
-          {
-            name: "Distance between quantum states",
-            url: "/courses/quantum/distance/states",
-            topics: [
-              {
-                name: "Trace distance",
-                url: "/courses/quantum/distance/states/trace"
-              },
-              {
-                name: "Fidelity",
-                url: "/courses/quantum/distance/states/fidelity"
-              },
-              {
-                name: "Relationships between distance measures",
-                url: "/courses/quantum/distance/states/measures"
-              }
-            ]
-          },
-          {
-            name: "Information in quantum channel",
-            url: "/courses/quantum/distance/information"
-          }
-        ]
-      },
-      {
-        name: "Quantum error-correction",
-        url: "/courses/quantum/correction",
-        topics: [
-          {
-            name: "Introduction",
-            url: "/courses/quantum/correction/introduction",
-            topics: [
-              {
-                name: "Three qubit bit flip code",
-                url: "/courses/quantum/correction/introduction/bit"
-              },
-              {
-                name: "Three qubit phase flip code",
-                url: "/courses/quantum/correction/introduction/bit"
-              }
-            ]
-          },
-          {
-            name: "The Shor code",
-            url: "/courses/quantum/correction/shor"
-          },
-          {
-            name: "Theory of quantum error-correction",
-            url: "/courses/quantum/correction/theory",
-            topics: [
-              {
-                name: "Discretization of the errors",
-                url: "/courses/quantum/correction/theory/discretization"
-              },
-              {
-                name: "Independent error models",
-                url: "/courses/quantum/correction/theory/independent"
-              },
-              {
-                name: "Degenerate codes",
-                url: "/courses/quantum/correction/theory/degenerate"
-              },
-              {
-                name: "The quantum Hamming bound",
-                url: "/courses/quantum/correction/theory/hamming"
-              }
-            ]
-          },
-          {
-            name: "Constructing quantum codes",
-            url: "/courses/quantum/correction/construction",
-            topics: [
-              {
-                name: "Classical linear codes",
-                url: "/courses/quantum/correction/construction/classical"
-              },
-              {
-                name: "Calderbank-Shor-Steane codes",
-                url: "/courses/quantum/correction/construction/css"
-              }
-            ]
-          },
-          {
-            name: "Stabilizer codes",
-            url: "/courses/quantum/correction/stabilizer",
-            topics: [
-              {
-                name: "The stabilizer formalism",
-                url: "/courses/quantum/correction/stabilizer/formalism"
-              },
-              {
-                name: "Unitary gates",
-                url: "/courses/quantum/correction/stabilizer/unitary"
-              },
-              {
-                name: "Measurement",
-                url: "/courses/quantum/correction/stabilizer/measurement"
-              },
-              {
-                name: "The Gottesman-Knill theorem",
-                url: "/courses/quantum/correction/stabilizer/gottesman"
-              },
-              {
-                name: "Stabilizer code constructions",
-                url: "/courses/quantum/correction/stabilizer/construction"
-              },
-              {
-                name: "Examples",
-                url: "/courses/quantum/correction/stabilizer/examples"
-              },
-              {
-                name: "Standard form for a stabilizer code",
-                url: "/courses/quantum/correction/stabilizer/standard"
-              },
-              {
-                name: "Quantum circuits",
-                url: "/courses/quantum/correction/stabilizer/circuits"
-              }
-            ]
-          },
-          {
-            name: "Fault-tolerant quantum computation",
-            url: "/courses/quantum/correction/tolerant",
-            topics: [
-              {
-                name: "The big picture",
-                url: "/courses/quantum/correction/tolerant/picture"
-              },
-              {
-                name: "Fault tolerant quantum logic",
-                url: "/courses/quantum/correction/tolerant/logic"
-              },
-              {
-                name: "Fault-tolerant measurement",
-                url: "/courses/quantum/correction/tolerant/measurement"
-              },
-              {
-                name: "Elements of resilient quantum computation",
-                url: "/courses/quantum/correction/tolerant/elements"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        name: "Entropy and information",
-        url: "/courses/quantum/entropy",
-        topics: [
-          {
-            name: "Shannon entropy",
-            url: "/courses/quantum/entropy/shannon"
-          },
-          {
-            name: "Basic properties",
-            url: "/courses/quantum/entropy/properties",
-            topics: [
-              {
-                name: "The binary entropy",
-                url: "/courses/quantum/entropy/properties/binary"
-              },
-              {
-                name: "The relative entropy",
-                url: "/courses/quantum/entropy/properties/relative"
-              },
-              {
-                name: "Conditional entropy and mutual information",
-                url: "/courses/quantum/entropy/properties/conditional"
-              },
-              {
-                name: "The data processing inequality",
-                url: "/courses/quantum/entropy/properties/processing"
-              }
-            ]
-          },
-          {
-            name: "Von Neumann entropy",
-            url: "/courses/quantum/entropy/von",
-            topics: [
-              {
-                name: "Quantum relative entropy",
-                url: "/courses/quantum/entropy/von/relative"
-              },
-              {
-                name: "Basic properties of entropy",
-                url: "/courses/quantum/entropy/von/properties"
-              },
-              {
-                name: "Measurements and entropy",
-                url: "/courses/quantum/entropy/von/measurement"
-              },
-              {
-                name: "Subadditivity",
-                url: "/courses/quantum/entropy/von/subadditivity"
-              },
-              {
-                name: "Concavity of the entropy",
-                url: "/courses/quantum/entropy/von/concavity"
-              },
-              {
-                name: "The entropy of a mixture of quantum states",
-                url: "/courses/quantum/entropy/von/mixture"
-              }
-            ]
-          },
-          {
-            name: "Strong subadditivity",
-            url: "/courses/quantum/entropy/subadditivity",
-            topics: [
-              {
-                name: "Applications",
-                url: "/courses/quantum/entropy/subadditivity/applications"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        name: "Quantum information theory",
-        url: "/courses/quantum/information",
-        topics: [
-          {
-            name: "Distinguishing quantum states",
-            url: "/courses/quantum/information/states",
-            topics: [
-              {
-                name: "The Holevo bound",
-                url: "/courses/quantum/information/states/holevo"
-              },
-              {
-                name: "Applications",
-                url: "/courses/quantum/information/states/applications"
-              }
-            ]
-          },
-          {
-            name: "Data compression",
-            url: "/courses/quantum/information/data",
-            topics: [
-              {
-                name: "Shannon's noiseless channel coding theorem",
-                url: "/courses/quantum/information/shannon"
-              },
-              {
-                name: "Schumacher's quantum noiseless channel coding theorem",
-                url: "/courses/quantum/information/schumacher"
-              }
-            ]
-          },
-          {
-            name: "Classical information over noisy quantum channels",
-            url: "/courses/quantum/information/classical",
-            topics: [
-              {
-                name: "Communication over noisy classical channels",
-                url: "/courses/quantum/information/classical/classical"
-              },
-              {
-                name: "Communication over noisy quantum channels",
-                url: "/courses/quantum/information/classical/quantum"
-              }
-            ]
-          },
-          {
-            name: "Quantum information over noisy quantum channels",
-            url: "/courses/quantum/information/quantum",
-            topics: [
-              {
-                name: "Fano inequality",
-                url: "/courses/quantum/information/quantum/fano"
-              },
-              {
-                name: "The quantum data processing inequality",
-                url: "/courses/quantum/information/quantum/data"
-              },
-              {
-                name: "Quantum singleton bound",
-                url: "/courses/quantum/information/quantum/singleton"
-              },
-              {
-                name: "Maxwell's demon",
-                url: "/courses/quantum/information/quantum/demon"
-              }
-            ]
-          },
-          {
-            name: "Entanglement",
-            url: "/courses/quantum/information/entanglement",
-            topics: [
-              {
-                name: "Transforming bi-partite pure state entanglement",
-                url: "/courses/quantum/information/entanglement/bipartite"
-              },
-              {
-                name: "Entanglement distillation and dilution",
-                url: "/courses/quantum/information/entanglement/dilution"
-              },
-              {
-                name: "Quantum error-correction",
-                url: "/courses/quantum/information/entanglement/correction"
-              }
-            ]
-          },
-          {
-            name: "Quantum cryptography",
-            url: "/courses/quantum/information/cryptography",
-            topics: [
-              {
-                name: "Private key cryptography",
-                url: "/courses/quantum/information/cryptography/private"
-              },
-              {
-                name: "Privacy amplification and information reconciliation",
-                url: "/courses/quantum/information/cryptography/privacy"
-              },
-              {
-                name: "Quantum key distribution",
-                url: "/courses/quantum/information/cryptography/distribution"
-              },
-              {
-                name: "Privacy and coherent information",
-                url: "/courses/quantum/information/cryptography/coherent"
-              },
-              {
-                name: "The security of quantum key distribution",
-                url: "/courses/quantum/information/cryptography/security"
-              }
-            ]
-          }
-        ]
+        name: "ASSIGNMENT 1",
+        url: "/courses/mathematics2/assignment1"
       }
     ]
   }
 ];
 let contentNav = {
-  "/courses/quantum": {
-    "name": "Quantum Computation and Quantum Information",
-    "url": "/courses/quantum",
-    "previous": "/courses/quantum",
-    "next": "/courses/quantum/introduction"
-  },
-  "/courses/quantum/introduction": {
-    "name": "Introduction and overview",
-    "url": "/courses/quantum/introduction",
-    "previous": "/courses/quantum",
-    "next": "/courses/quantum/introduction/global"
-  },
-  "/courses/quantum/introduction/global": {
-    "name": "Global perspectives",
-    "url": "/courses/quantum/introduction/global",
-    "previous": "/courses/quantum/introduction",
-    "next": "/courses/quantum/introduction/global/history"
-  },
-  "/courses/quantum/introduction/global/history": {
-    "name": "History",
-    "url": "/courses/quantum/introduction/global/history",
-    "previous": "/courses/quantum/introduction/global",
-    "next": "/courses/quantum/introduction/global/future"
-  },
-  "/courses/quantum/introduction/global/future": {
-    "name": "Future",
-    "url": "/courses/quantum/introduction/global/future",
-    "previous": "/courses/quantum/introduction/global/history",
-    "next": "/courses/quantum/introduction/qubits"
-  },
-  "/courses/quantum/introduction/qubits": {
-    "name": "Quantum bits",
-    "url": "/courses/quantum/introduction/qubits",
-    "previous": "/courses/quantum/introduction/global/future",
-    "next": "/courses/quantum/introduction/qubits/multiple"
-  },
-  "/courses/quantum/introduction/qubits/multiple": {
-    "name": "Multiple qubits",
-    "url": "/courses/quantum/introduction/qubits/multiple",
-    "previous": "/courses/quantum/introduction/qubits",
-    "next": "/courses/quantum/introduction/computation"
-  },
-  "/courses/quantum/introduction/computation": {
-    "name": "Quantum computation",
-    "url": "/courses/quantum/introduction/computation",
-    "previous": "/courses/quantum/introduction/qubits/multiple",
-    "next": "/courses/quantum/introduction/computation/single"
-  },
-  "/courses/quantum/introduction/computation/single": {
-    "name": "Single qubit gates",
-    "url": "/courses/quantum/introduction/computation/single",
-    "previous": "/courses/quantum/introduction/computation",
-    "next": "/courses/quantum/introduction/computation/multiple"
-  },
-  "/courses/quantum/introduction/computation/multiple": {
-    "name": "Multiple qubit gates",
-    "url": "/courses/quantum/introduction/computation/multiple",
-    "previous": "/courses/quantum/introduction/computation/single",
-    "next": "/courses/quantum/introduction/computation/measurement"
-  },
-  "/courses/quantum/introduction/computation/measurement": {
-    "name": "Measurement",
-    "url": "/courses/quantum/introduction/computation/measurement",
-    "previous": "/courses/quantum/introduction/computation/multiple",
-    "next": "/courses/quantum/introduction/computation/circuits"
-  },
-  "/courses/quantum/introduction/computation/circuits": {
-    "name": "Quantum circuits",
-    "url": "/courses/quantum/introduction/computation/circuits",
-    "previous": "/courses/quantum/introduction/computation/measurement",
-    "next": "/courses/quantum/introduction/computation/copy"
-  },
-  "/courses/quantum/introduction/computation/copy": {
-    "name": "Qubit copying circuit",
-    "url": "/courses/quantum/introduction/computation/copy",
-    "previous": "/courses/quantum/introduction/computation/circuits",
-    "next": "/courses/quantum/introduction/computation/bell"
-  },
-  "/courses/quantum/introduction/computation/bell": {
-    "name": "Bell states",
-    "url": "/courses/quantum/introduction/computation/bell",
-    "previous": "/courses/quantum/introduction/computation/copy",
-    "next": "/courses/quantum/introduction/computation/teleportation"
-  },
-  "/courses/quantum/introduction/computation/teleportation": {
-    "name": "Quantum teleportation",
-    "url": "/courses/quantum/introduction/computation/teleportation",
-    "previous": "/courses/quantum/introduction/computation/bell",
-    "next": "/courses/quantum/introduction/algorithms"
-  },
-  "/courses/quantum/introduction/algorithms": {
-    "name": "Quantum algorithms",
-    "url": "/courses/quantum/introduction/algorithms",
-    "previous": "/courses/quantum/introduction/computation/teleportation",
-    "next": "/courses/quantum/introduction/algorithms/classical"
-  },
-  "/courses/quantum/introduction/algorithms/classical": {
-    "name": "Classical computation",
-    "url": "/courses/quantum/introduction/algorithms/classical",
-    "previous": "/courses/quantum/introduction/algorithms",
-    "next": "/courses/quantum/introduction/algorithms/parallelism"
-  },
-  "/courses/quantum/introduction/algorithms/parallelism": {
-    "name": "Quantum parallelism",
-    "url": "/courses/quantum/introduction/algorithms/parallelism",
-    "previous": "/courses/quantum/introduction/algorithms/classical",
-    "next": "/courses/quantum/introduction/algorithms/deutsch"
-  },
-  "/courses/quantum/introduction/algorithms/deutsch": {
-    "name": "Deutsch algorithm",
-    "url": "/courses/quantum/introduction/algorithms/deutsch",
-    "previous": "/courses/quantum/introduction/algorithms/parallelism",
-    "next": "/courses/quantum/introduction/algorithms/jozsa"
-  },
-  "/courses/quantum/introduction/algorithms/jozsa": {
-    "name": "Deutsch-Jozsa algorithm",
-    "url": "/courses/quantum/introduction/algorithms/jozsa",
-    "previous": "/courses/quantum/introduction/algorithms/deutsch",
-    "next": "/courses/quantum/introduction/algorithms/summary"
-  },
-  "/courses/quantum/introduction/algorithms/summary": {
-    "name": "Quantum algorithms summary",
-    "url": "/courses/quantum/introduction/algorithms/summary",
-    "previous": "/courses/quantum/introduction/algorithms/jozsa",
-    "next": "/courses/quantum/introduction/experiments"
-  },
-  "/courses/quantum/introduction/experiments": {
-    "name": "Experimental quantum information processing",
-    "url": "/courses/quantum/introduction/experiments",
-    "previous": "/courses/quantum/introduction/algorithms/summary",
-    "next": "/courses/quantum/introduction/experiments/stern"
-  },
-  "/courses/quantum/introduction/experiments/stern": {
-    "name": "The Stern-Gerlach experiment",
-    "url": "/courses/quantum/introduction/experiments/stern",
-    "previous": "/courses/quantum/introduction/experiments",
-    "next": "/courses/quantum/introduction/experiments/prospects"
-  },
-  "/courses/quantum/introduction/experiments/prospects": {
-    "name": "Prospects for practical quantum information processing",
-    "url": "/courses/quantum/introduction/experiments/prospects",
-    "previous": "/courses/quantum/introduction/experiments/stern",
-    "next": "/courses/quantum/introduction/information"
-  },
-  "/courses/quantum/introduction/information": {
-    "name": "Quantum information",
-    "url": "/courses/quantum/introduction/information",
-    "previous": "/courses/quantum/introduction/experiments/prospects",
-    "next": "/courses/quantum/introduction/information/theory"
-  },
-  "/courses/quantum/introduction/information/theory": {
-    "name": "Theory",
-    "url": "/courses/quantum/introduction/information/theory",
-    "previous": "/courses/quantum/introduction/information",
-    "next": "/courses/quantum/introduction/information/context"
-  },
-  "/courses/quantum/introduction/information/context": {
-    "name": "Wider context",
-    "url": "/courses/quantum/introduction/information/context",
-    "previous": "/courses/quantum/introduction/information/theory",
-    "next": "/courses/quantum/mechanics"
-  },
-  "/courses/quantum/mechanics": {
-    "name": "Quantum Mechanics",
-    "url": "/courses/quantum/mechanics",
-    "previous": "/courses/quantum/introduction/information/context",
-    "next": "/courses/quantum/mechanics/algebra"
-  },
-  "/courses/quantum/mechanics/algebra": {
-    "name": "Linear algebra",
-    "url": "/courses/quantum/mechanics/algebra",
-    "previous": "/courses/quantum/mechanics",
-    "next": "/courses/quantum/mechanics/algebra/basis"
-  },
-  "/courses/quantum/mechanics/algebra/basis": {
-    "name": "Basis",
-    "url": "/courses/quantum/mechanics/algebra/basis",
-    "previous": "/courses/quantum/mechanics/algebra",
-    "next": "/courses/quantum/mechanics/algebra/operators"
-  },
-  "/courses/quantum/mechanics/algebra/operators": {
-    "name": "Linear operators",
-    "url": "/courses/quantum/mechanics/algebra/operators",
-    "previous": "/courses/quantum/mechanics/algebra/basis",
-    "next": "/courses/quantum/mechanics/algebra/pauli"
-  },
-  "/courses/quantum/mechanics/algebra/pauli": {
-    "name": "The Pauli matrices",
-    "url": "/courses/quantum/mechanics/algebra/pauli",
-    "previous": "/courses/quantum/mechanics/algebra/operators",
-    "next": "/courses/quantum/mechanics/algebra/inner"
-  },
-  "/courses/quantum/mechanics/algebra/inner": {
-    "name": "Inner products",
-    "url": "/courses/quantum/mechanics/algebra/inner",
-    "previous": "/courses/quantum/mechanics/algebra/pauli",
-    "next": "/courses/quantum/mechanics/algebra/eigen"
-  },
-  "/courses/quantum/mechanics/algebra/eigen": {
-    "name": "Eigenvectors and eigenvalues",
-    "url": "/courses/quantum/mechanics/algebra/eigen",
-    "previous": "/courses/quantum/mechanics/algebra/inner",
-    "next": "/courses/quantum/mechanics/algebra/adjoint"
-  },
-  "/courses/quantum/mechanics/algebra/adjoint": {
-    "name": "Adjoints and Hermitian operators",
-    "url": "/courses/quantum/mechanics/algebra/adjoint",
-    "previous": "/courses/quantum/mechanics/algebra/eigen",
-    "next": "/courses/quantum/mechanics/algebra/tensor"
-  },
-  "/courses/quantum/mechanics/algebra/tensor": {
-    "name": "Tensor products",
-    "url": "/courses/quantum/mechanics/algebra/tensor",
-    "previous": "/courses/quantum/mechanics/algebra/adjoint",
-    "next": "/courses/quantum/mechanics/algebra/functions"
-  },
-  "/courses/quantum/mechanics/algebra/functions": {
-    "name": "Operator functions",
-    "url": "/courses/quantum/mechanics/algebra/functions",
-    "previous": "/courses/quantum/mechanics/algebra/tensor",
-    "next": "/courses/quantum/mechanics/algebra/commutator"
-  },
-  "/courses/quantum/mechanics/algebra/commutator": {
-    "name": "The commutator and anti-commutator",
-    "url": "/courses/quantum/mechanics/algebra/commutator",
-    "previous": "/courses/quantum/mechanics/algebra/functions",
-    "next": "/courses/quantum/mechanics/algebra/decomposition"
-  },
-  "/courses/quantum/mechanics/algebra/decomposition": {
-    "name": "The polar and singular value decompositions",
-    "url": "/courses/quantum/mechanics/algebra/decomposition",
-    "previous": "/courses/quantum/mechanics/algebra/commutator",
-    "next": "/courses/quantum/mechanics/postulates"
-  },
-  "/courses/quantum/mechanics/postulates": {
-    "name": "Postulates",
-    "url": "/courses/quantum/mechanics/postulates",
-    "previous": "/courses/quantum/mechanics/algebra/decomposition",
-    "next": "/courses/quantum/mechanics/postulates/state"
-  },
-  "/courses/quantum/mechanics/postulates/state": {
-    "name": "State space",
-    "url": "/courses/quantum/mechanics/postulates/state",
-    "previous": "/courses/quantum/mechanics/postulates",
-    "next": "/courses/quantum/mechanics/postulates/evolution"
-  },
-  "/courses/quantum/mechanics/postulates/evolution": {
-    "name": "Evolution",
-    "url": "/courses/quantum/mechanics/postulates/evolution",
-    "previous": "/courses/quantum/mechanics/postulates/state",
-    "next": "/courses/quantum/mechanics/postulates/measurement"
-  },
-  "/courses/quantum/mechanics/postulates/measurement": {
-    "name": "Quantum measurement",
-    "url": "/courses/quantum/mechanics/postulates/measurement",
-    "previous": "/courses/quantum/mechanics/postulates/evolution",
-    "next": "/courses/quantum/mechanics/postulates/distinguish"
-  },
-  "/courses/quantum/mechanics/postulates/distinguish": {
-    "name": "Distinguishing quantum states",
-    "url": "/courses/quantum/mechanics/postulates/distinguish",
-    "previous": "/courses/quantum/mechanics/postulates/measurement",
-    "next": "/courses/quantum/mechanics/postulates/projective"
-  },
-  "/courses/quantum/mechanics/postulates/projective": {
-    "name": "Projective measurements",
-    "url": "/courses/quantum/mechanics/postulates/projective",
-    "previous": "/courses/quantum/mechanics/postulates/distinguish",
-    "next": "/courses/quantum/mechanics/postulates/povm"
-  },
-  "/courses/quantum/mechanics/postulates/povm": {
-    "name": "POVM measurements",
-    "url": "/courses/quantum/mechanics/postulates/povm",
-    "previous": "/courses/quantum/mechanics/postulates/projective",
-    "next": "/courses/quantum/mechanics/postulates/phase"
-  },
-  "/courses/quantum/mechanics/postulates/phase": {
-    "name": "Phase",
-    "url": "/courses/quantum/mechanics/postulates/phase",
-    "previous": "/courses/quantum/mechanics/postulates/povm",
-    "next": "/courses/quantum/mechanics/postulates/composite"
-  },
-  "/courses/quantum/mechanics/postulates/composite": {
-    "name": "Composite systems",
-    "url": "/courses/quantum/mechanics/postulates/composite",
-    "previous": "/courses/quantum/mechanics/postulates/phase",
-    "next": "/courses/quantum/mechanics/postulates/global"
-  },
-  "/courses/quantum/mechanics/postulates/global": {
-    "name": "Global view",
-    "url": "/courses/quantum/mechanics/postulates/global",
-    "previous": "/courses/quantum/mechanics/postulates/composite",
-    "next": "/courses/quantum/mechanics/superdense"
-  },
-  "/courses/quantum/mechanics/superdense": {
-    "name": "Superdense coding",
-    "url": "/courses/quantum/mechanics/superdense",
-    "previous": "/courses/quantum/mechanics/postulates/global",
-    "next": "/courses/quantum/mechanics/density"
-  },
-  "/courses/quantum/mechanics/density": {
-    "name": "Density operator",
-    "url": "/courses/quantum/mechanics/density",
-    "previous": "/courses/quantum/mechanics/superdense",
-    "next": "/courses/quantum/mechanics/density/ensemble"
-  },
-  "/courses/quantum/mechanics/density/ensemble": {
-    "name": "Ensembles of quantum states",
-    "url": "/courses/quantum/mechanics/density/ensemble",
-    "previous": "/courses/quantum/mechanics/density",
-    "next": "/courses/quantum/mechanics/density/properties"
-  },
-  "/courses/quantum/mechanics/density/properties": {
-    "name": "Properties",
-    "url": "/courses/quantum/mechanics/density/properties",
-    "previous": "/courses/quantum/mechanics/density/ensemble",
-    "next": "/courses/quantum/mechanics/density/reduced"
-  },
-  "/courses/quantum/mechanics/density/reduced": {
-    "name": "Reduced density operator",
-    "url": "/courses/quantum/mechanics/density/reduced",
-    "previous": "/courses/quantum/mechanics/density/properties",
-    "next": "/courses/quantum/mechanics/purification"
-  },
-  "/courses/quantum/mechanics/purification": {
-    "name": "Purification",
-    "url": "/courses/quantum/mechanics/purification",
-    "previous": "/courses/quantum/mechanics/density/reduced",
-    "next": "/courses/quantum/mechanics/epr"
-  },
-  "/courses/quantum/mechanics/epr": {
-    "name": "EPR and the Bell inequality",
-    "url": "/courses/quantum/mechanics/epr",
-    "previous": "/courses/quantum/mechanics/purification",
-    "next": "/courses/quantum/classical"
-  },
-  "/courses/quantum/classical": {
-    "name": "Computer Science",
-    "url": "/courses/quantum/classical",
-    "previous": "/courses/quantum/mechanics/epr",
-    "next": "/courses/quantum/classical/models"
-  },
-  "/courses/quantum/classical/models": {
-    "name": "Models for computation",
-    "url": "/courses/quantum/classical/models",
-    "previous": "/courses/quantum/classical",
-    "next": "/courses/quantum/classical/models/turing"
-  },
-  "/courses/quantum/classical/models/turing": {
-    "name": "Turing machine",
-    "url": "/courses/quantum/classical/models/turing",
-    "previous": "/courses/quantum/classical/models",
-    "next": "/courses/quantum/classical/models/circuits"
-  },
-  "/courses/quantum/classical/models/circuits": {
-    "name": "Circuits",
-    "url": "/courses/quantum/classical/models/circuits",
-    "previous": "/courses/quantum/classical/models/turing",
-    "next": "/courses/quantum/classical/computational"
-  },
-  "/courses/quantum/classical/computational": {
-    "name": "Computational problems",
-    "url": "/courses/quantum/classical/computational",
-    "previous": "/courses/quantum/classical/models/circuits",
-    "next": "/courses/quantum/classical/computational/resources"
-  },
-  "/courses/quantum/classical/computational/resources": {
-    "name": "Computational resources",
-    "url": "/courses/quantum/classical/computational/resources",
-    "previous": "/courses/quantum/classical/computational",
-    "next": "/courses/quantum/classical/computational/complexity"
-  },
-  "/courses/quantum/classical/computational/complexity": {
-    "name": "Complexity classes",
-    "url": "/courses/quantum/classical/computational/complexity",
-    "previous": "/courses/quantum/classical/computational/decision",
-    "next": "/courses/quantum/classical/computational/energy"
-  },
-  "/courses/quantum/classical/computational/decision": {
-    "name": "Decision problems",
-    "url": "/courses/quantum/classical/computational/decision",
-    "previous": "/courses/quantum/classical/computational/complexity",
-    "next": "/courses/quantum/classical/computational/complexity"
-  },
-  "/courses/quantum/classical/computational/energy": {
-    "name": "Energy and computation",
-    "url": "/courses/quantum/classical/computational/energy",
-    "previous": "/courses/quantum/classical/computational/complexity",
-    "next": "/courses/quantum/classical/perspectives"
-  },
-  "/courses/quantum/classical/perspectives": {
-    "name": "Perspectives",
-    "url": "/courses/quantum/classical/perspectives",
-    "previous": "/courses/quantum/classical/computational/energy",
-    "next": "/courses/quantum/circuits"
-  },
-  "/courses/quantum/circuits": {
-    "name": "Quantum circuits",
-    "url": "/courses/quantum/circuits",
-    "previous": "/courses/quantum/classical/perspectives",
-    "next": "/courses/quantum/circuits/algorithms"
-  },
-  "/courses/quantum/circuits/algorithms": {
-    "name": "Quantum algorithms",
-    "url": "/courses/quantum/circuits/algorithms",
-    "previous": "/courses/quantum/circuits",
-    "next": "/courses/quantum/circuits/single"
-  },
-  "/courses/quantum/circuits/single": {
-    "name": "Single qubit operations",
-    "url": "/courses/quantum/circuits/single",
-    "previous": "/courses/quantum/circuits/algorithms",
-    "next": "/courses/quantum/circuits/control"
-  },
-  "/courses/quantum/circuits/control": {
-    "name": "Controlled operations",
-    "url": "/courses/quantum/circuits/control",
-    "previous": "/courses/quantum/circuits/single",
-    "next": "/courses/quantum/circuits/measurement"
-  },
-  "/courses/quantum/circuits/measurement": {
-    "name": "Measurement",
-    "url": "/courses/quantum/circuits/measurement",
-    "previous": "/courses/quantum/circuits/control",
-    "next": "/courses/quantum/circuits/universal"
-  },
-  "/courses/quantum/circuits/universal": {
-    "name": "Universal quantum gates",
-    "url": "/courses/quantum/circuits/universal",
-    "previous": "/courses/quantum/circuits/measurement",
-    "next": "/courses/quantum/circuits/universal/two"
-  },
-  "/courses/quantum/circuits/universal/two": {
-    "name": "Two-level unitary gates are universal",
-    "url": "/courses/quantum/circuits/universal/two",
-    "previous": "/courses/quantum/circuits/universal",
-    "next": "/courses/quantum/circuits/universal/cnot"
-  },
-  "/courses/quantum/circuits/universal/cnot": {
-    "name": "Single qubit and CNOT gates are universal",
-    "url": "/courses/quantum/circuits/universal/cnot",
-    "previous": "/courses/quantum/circuits/universal/two",
-    "next": "/courses/quantum/circuits/universal/discrete"
-  },
-  "/courses/quantum/circuits/universal/discrete": {
-    "name": "A discrete set of universal operations",
-    "url": "/courses/quantum/circuits/universal/discrete",
-    "previous": "/courses/quantum/circuits/universal/cnot",
-    "next": "/courses/quantum/circuits/universal/approximation"
-  },
-  "/courses/quantum/circuits/universal/approximation": {
-    "name": "Approximation",
-    "url": "/courses/quantum/circuits/universal/approximation",
-    "previous": "/courses/quantum/circuits/universal/discrete",
-    "next": "/courses/quantum/circuits/universal/complexity"
-  },
-  "/courses/quantum/circuits/universal/complexity": {
-    "name": "Quantum computational complexity",
-    "url": "/courses/quantum/circuits/universal/complexity",
-    "previous": "/courses/quantum/circuits/universal/approximation",
-    "next": "/courses/quantum/circuits/universal/model"
-  },
-  "/courses/quantum/circuits/universal/model": {
-    "name": "Quantum circuit model of computation",
-    "url": "/courses/quantum/circuits/universal/model",
-    "previous": "/courses/quantum/circuits/universal/complexity",
-    "next": "/courses/quantum/circuits/simulations"
-  },
-  "/courses/quantum/circuits/simulations": {
-    "name": "Simulation of quantum systems",
-    "url": "/courses/quantum/circuits/simulations",
-    "previous": "/courses/quantum/circuits/universal/model",
-    "next": "/courses/quantum/circuits/simulations/action"
-  },
-  "/courses/quantum/circuits/simulations/action": {
-    "name": "Simulations in action",
-    "url": "/courses/quantum/circuits/simulations/action",
-    "previous": "/courses/quantum/circuits/simulations",
-    "next": "/courses/quantum/circuits/simulations/quantum"
-  },
-  "/courses/quantum/circuits/simulations/quantum": {
-    "name": "The quantum simulation algorithm",
-    "url": "/courses/quantum/circuits/simulations/quantum",
-    "previous": "/courses/quantum/circuits/simulations/action",
-    "next": "/courses/quantum/circuits/simulations/example"
-  },
-  "/courses/quantum/circuits/simulations/example": {
-    "name": "Example",
-    "url": "/courses/quantum/circuits/simulations/example",
-    "previous": "/courses/quantum/circuits/simulations/quantum",
-    "next": "/courses/quantum/circuits/simulations/perspective"
-  },
-  "/courses/quantum/circuits/simulations/perspective": {
-    "name": "Perspective",
-    "url": "/courses/quantum/circuits/simulations/perspective",
-    "previous": "/courses/quantum/circuits/simulations/example",
-    "next": "/courses/quantum/qft"
-  },
-  "/courses/quantum/qft": {
-    "name": "Quantum Fourier transform",
-    "url": "/courses/quantum/qft",
-    "previous": "/courses/quantum/circuits/simulations/perspective",
-    "next": "/courses/quantum/qft/transform"
-  },
-  "/courses/quantum/qft/transform": {
-    "name": "Quantum Fourier transform",
-    "url": "/courses/quantum/qft/transform",
-    "previous": "/courses/quantum/qft",
-    "next": "/courses/quantum/qft/phase"
-  },
-  "/courses/quantum/qft/phase": {
-    "name": "Phase estimation",
-    "url": "/courses/quantum/qft/phase",
-    "previous": "/courses/quantum/qft/transform",
-    "next": "/courses/quantum/qft/phase/performance"
-  },
-  "/courses/quantum/qft/phase/performance": {
-    "name": "Performance",
-    "url": "/courses/quantum/qft/phase/performance",
-    "previous": "/courses/quantum/qft/phase",
-    "next": "/courses/quantum/qft/applications"
-  },
-  "/courses/quantum/qft/applications": {
-    "name": "Applications",
-    "url": "/courses/quantum/qft/applications",
-    "previous": "/courses/quantum/qft/phase/performance",
-    "next": "/courses/quantum/qft/applications/order"
-  },
-  "/courses/quantum/qft/applications/order": {
-    "name": "Order-finding",
-    "url": "/courses/quantum/qft/applications/order",
-    "previous": "/courses/quantum/qft/applications",
-    "next": "/courses/quantum/qft/applications/factoring"
-  },
-  "/courses/quantum/qft/applications/factoring": {
-    "name": "Factoring",
-    "url": "/courses/quantum/qft/applications/factoring",
-    "previous": "/courses/quantum/qft/applications/order",
-    "next": "/courses/quantum/qft/applications/period"
-  },
-  "/courses/quantum/qft/applications/period": {
-    "name": "Period-finding",
-    "url": "/courses/quantum/qft/applications/period",
-    "previous": "/courses/quantum/qft/applications/factoring",
-    "next": "/courses/quantum/qft/applications/discrete"
-  },
-  "/courses/quantum/qft/applications/discrete": {
-    "name": "Discrete logarithms",
-    "url": "/courses/quantum/qft/applications/discrete",
-    "previous": "/courses/quantum/qft/applications/period",
-    "next": "/courses/quantum/qft/applications/hsb"
-  },
-  "/courses/quantum/qft/applications/hsb": {
-    "name": "Hidden subgroup problem",
-    "url": "/courses/quantum/qft/applications/hsb",
-    "previous": "/courses/quantum/qft/applications/discrete",
-    "next": "/courses/quantum/search"
-  },
-  "/courses/quantum/search": {
-    "name": "Quantum search algorithms",
-    "url": "/courses/quantum/search",
-    "previous": "/courses/quantum/qft/applications/hsb",
-    "next": "/courses/quantum/search/grover"
-  },
-  "/courses/quantum/search/grover": {
-    "name": "Quantum search algorithm",
-    "url": "/courses/quantum/search/grover",
-    "previous": "/courses/quantum/search",
-    "next": "/courses/quantum/search/grover/oracle"
-  },
-  "/courses/quantum/search/grover/oracle": {
-    "name": "The oracle",
-    "url": "/courses/quantum/search/grover/oracle",
-    "previous": "/courses/quantum/search/grover",
-    "next": "/courses/quantum/search/grover/procedure"
-  },
-  "/courses/quantum/search/grover/procedure": {
-    "name": "The procedure",
-    "url": "/courses/quantum/search/grover/procedure",
-    "previous": "/courses/quantum/search/grover/oracle",
-    "next": "/courses/quantum/search/grover/visualization"
-  },
-  "/courses/quantum/search/grover/visualization": {
-    "name": "Geometric visualization",
-    "url": "/courses/quantum/search/grover/visualization",
-    "previous": "/courses/quantum/search/grover/procedure",
-    "next": "/courses/quantum/search/grover/performance"
-  },
-  "/courses/quantum/search/grover/performance": {
-    "name": "Performance",
-    "url": "/courses/quantum/search/grover/performance",
-    "previous": "/courses/quantum/search/grover/visualization",
-    "next": "/courses/quantum/search/simulation"
-  },
-  "/courses/quantum/search/simulation": {
-    "name": "Quantum search as a quantum simulation",
-    "url": "/courses/quantum/search/simulation",
-    "previous": "/courses/quantum/search/grover/performance",
-    "next": "/courses/quantum/search/counting"
-  },
-  "/courses/quantum/search/counting": {
-    "name": "Quantum counting",
-    "url": "/courses/quantum/search/counting",
-    "previous": "/courses/quantum/search/simulation",
-    "next": "/courses/quantum/search/np"
-  },
-  "/courses/quantum/search/np": {
-    "name": "NP-complete problems",
-    "url": "/courses/quantum/search/np",
-    "previous": "/courses/quantum/search/counting",
-    "next": "/courses/quantum/search/database"
-  },
-  "/courses/quantum/search/database": {
-    "name": "Quantum search of an unstructured database",
-    "url": "/courses/quantum/search/database",
-    "previous": "/courses/quantum/search/np",
-    "next": "/courses/quantum/search/optimality"
-  },
-  "/courses/quantum/search/optimality": {
-    "name": "Optimality",
-    "url": "/courses/quantum/search/optimality",
-    "previous": "/courses/quantum/search/database",
-    "next": "/courses/quantum/search/blackbox"
-  },
-  "/courses/quantum/search/blackbox": {
-    "name": "Black box algorithm limits",
-    "url": "/courses/quantum/search/blackbox",
-    "previous": "/courses/quantum/search/optimality",
-    "next": "/courses/quantum/computers"
-  },
-  "/courses/quantum/computers": {
-    "name": "Quantum computers",
-    "url": "/courses/quantum/computers",
-    "previous": "/courses/quantum/search/blackbox",
-    "next": "/courses/quantum/computers/principles"
-  },
-  "/courses/quantum/computers/principles": {
-    "name": "Guiding principles",
-    "url": "/courses/quantum/computers/principles",
-    "previous": "/courses/quantum/computers",
-    "next": "/courses/quantum/computers/conditions"
-  },
-  "/courses/quantum/computers/conditions": {
-    "name": "Conditions for quantum computation",
-    "url": "/courses/quantum/computers/conditions",
-    "previous": "/courses/quantum/computers/principles",
-    "next": "/courses/quantum/computers/conditions/representation"
-  },
-  "/courses/quantum/computers/conditions/representation": {
-    "name": "Representation of quantum information",
-    "url": "/courses/quantum/computers/conditions/representation",
-    "previous": "/courses/quantum/computers/conditions",
-    "next": "/courses/quantum/computers/conditions/performance"
-  },
-  "/courses/quantum/computers/conditions/performance": {
-    "name": "Performance of unitary transformations",
-    "url": "/courses/quantum/computers/conditions/performance",
-    "previous": "/courses/quantum/computers/conditions/representation",
-    "next": "/courses/quantum/computers/conditions/preparation"
-  },
-  "/courses/quantum/computers/conditions/preparation": {
-    "name": "Preparation of fiducial initial states",
-    "url": "/courses/quantum/computers/conditions/preparation",
-    "previous": "/courses/quantum/computers/conditions/performance",
-    "next": "/courses/quantum/computers/conditions/measurement"
-  },
-  "/courses/quantum/computers/conditions/measurement": {
-    "name": "Measurement of output result",
-    "url": "/courses/quantum/computers/conditions/measurement",
-    "previous": "/courses/quantum/computers/conditions/preparation",
-    "next": "/courses/quantum/computers/harmonic"
-  },
-  "/courses/quantum/computers/harmonic": {
-    "name": "Harmonic oscillator quantum computer",
-    "url": "/courses/quantum/computers/harmonic",
-    "previous": "/courses/quantum/computers/conditions/measurement",
-    "next": "/courses/quantum/computers/harmonic/apparatus"
-  },
-  "/courses/quantum/computers/harmonic/apparatus": {
-    "name": "Physical apparatus",
-    "url": "/courses/quantum/computers/harmonic/apparatus",
-    "previous": "/courses/quantum/computers/harmonic",
-    "next": "/courses/quantum/computers/harmonic/hamiltonian"
-  },
-  "/courses/quantum/computers/harmonic/hamiltonian": {
-    "name": "The Hamiltonian",
-    "url": "/courses/quantum/computers/harmonic/hamiltonian",
-    "previous": "/courses/quantum/computers/harmonic/apparatus",
-    "next": "/courses/quantum/computers/harmonic/computation"
-  },
-  "/courses/quantum/computers/harmonic/computation": {
-    "name": "Quantum computation",
-    "url": "/courses/quantum/computers/harmonic/computation",
-    "previous": "/courses/quantum/computers/harmonic/hamiltonian",
-    "next": "/courses/quantum/computers/harmonic/drawbacks"
-  },
-  "/courses/quantum/computers/harmonic/drawbacks": {
-    "name": "Drawbacks",
-    "url": "/courses/quantum/computers/harmonic/drawbacks",
-    "previous": "/courses/quantum/computers/harmonic/computation",
-    "next": "/courses/quantum/computers/photon"
-  },
-  "/courses/quantum/computers/photon": {
-    "name": "Optical photon quantum computer",
-    "url": "/courses/quantum/computers/photon",
-    "previous": "/courses/quantum/computers/harmonic/drawbacks",
-    "next": "/courses/quantum/computers/photon/apparatus"
-  },
-  "/courses/quantum/computers/photon/apparatus": {
-    "name": "Physical apparatus",
-    "url": "/courses/quantum/computers/photon/apparatus",
-    "previous": "/courses/quantum/computers/photon",
-    "next": "/courses/quantum/computers/photon/computation"
-  },
-  "/courses/quantum/computers/photon/computation": {
-    "name": "Quantum computation",
-    "url": "/courses/quantum/computers/photon/computation",
-    "previous": "/courses/quantum/computers/photon/apparatus",
-    "next": "/courses/quantum/computers/photon/drawbacks"
-  },
-  "/courses/quantum/computers/photon/drawbacks": {
-    "name": "Drawbacks",
-    "url": "/courses/quantum/computers/photon/drawbacks",
-    "previous": "/courses/quantum/computers/photon/computation",
-    "next": "/courses/quantum/computers/cavity"
-  },
-  "/courses/quantum/computers/cavity": {
-    "name": "Optical cavity quantum electrodynamics",
-    "url": "/courses/quantum/computers/cavity",
-    "previous": "/courses/quantum/computers/photon/drawbacks",
-    "next": "/courses/quantum/computers/cavity/apparatus"
-  },
-  "/courses/quantum/computers/cavity/apparatus": {
-    "name": "Physical apparatus",
-    "url": "/courses/quantum/computers/cavity/apparatus",
-    "previous": "/courses/quantum/computers/cavity",
-    "next": "/courses/quantum/computers/cavity/hamiltonian"
-  },
-  "/courses/quantum/computers/cavity/hamiltonian": {
-    "name": "The Hamiltonian",
-    "url": "/courses/quantum/computers/cavity/hamiltonian",
-    "previous": "/courses/quantum/computers/cavity/apparatus",
-    "next": "/courses/quantum/computers/cavity/absorption"
-  },
-  "/courses/quantum/computers/cavity/absorption": {
-    "name": "Absorption and refraction",
-    "url": "/courses/quantum/computers/cavity/absorption",
-    "previous": "/courses/quantum/computers/cavity/hamiltonian",
-    "next": "/courses/quantum/computers/cavity/computation"
-  },
-  "/courses/quantum/computers/cavity/computation": {
-    "name": "Quantum computation",
-    "url": "/courses/quantum/computers/cavity/computation",
-    "previous": "/courses/quantum/computers/cavity/absorption",
-    "next": "/courses/quantum/computers/ion"
-  },
-  "/courses/quantum/computers/ion": {
-    "name": "Ion traps",
-    "url": "/courses/quantum/computers/ion",
-    "previous": "/courses/quantum/computers/cavity/computation",
-    "next": "/courses/quantum/computers/ion/apparatus"
-  },
-  "/courses/quantum/computers/ion/apparatus": {
-    "name": "Physical apparatus",
-    "url": "/courses/quantum/computers/ion/apparatus",
-    "previous": "/courses/quantum/computers/ion",
-    "next": "/courses/quantum/computers/ion/hamiltonian"
-  },
-  "/courses/quantum/computers/ion/hamiltonian": {
-    "name": "The Hamiltonian",
-    "url": "/courses/quantum/computers/ion/hamiltonian",
-    "previous": "/courses/quantum/computers/ion/apparatus",
-    "next": "/courses/quantum/computers/ion/computation"
-  },
-  "/courses/quantum/computers/ion/computation": {
-    "name": "Quantum computation",
-    "url": "/courses/quantum/computers/ion/computation",
-    "previous": "/courses/quantum/computers/ion/hamiltonian",
-    "next": "/courses/quantum/computers/cavity/experiment"
-  },
-  "/courses/quantum/computers/cavity/experiment": {
-    "name": "Experiment",
-    "url": "/courses/quantum/computers/cavity/experiment",
-    "previous": "/courses/quantum/computers/ion/computation",
-    "next": "/courses/quantum/computers/nmr"
-  },
-  "/courses/quantum/computers/nmr": {
-    "name": "Nuclear magnetic resonance",
-    "url": "/courses/quantum/computers/nmr",
-    "previous": "/courses/quantum/computers/cavity/experiment",
-    "next": "/courses/quantum/computers/nmr/apparatus"
-  },
-  "/courses/quantum/computers/nmr/apparatus": {
-    "name": "Physical apparatus",
-    "url": "/courses/quantum/computers/nmr/apparatus",
-    "previous": "/courses/quantum/computers/nmr",
-    "next": "/courses/quantum/computers/nmr/hamiltonian"
-  },
-  "/courses/quantum/computers/nmr/hamiltonian": {
-    "name": "The Hamiltonian",
-    "url": "/courses/quantum/computers/nmr/hamiltonian",
-    "previous": "/courses/quantum/computers/nmr/apparatus",
-    "next": "/courses/quantum/computers/nmr/computation"
-  },
-  "/courses/quantum/computers/nmr/computation": {
-    "name": "Quantum computation",
-    "url": "/courses/quantum/computers/nmr/computation",
-    "previous": "/courses/quantum/computers/nmr/hamiltonian",
-    "next": "/courses/quantum/computers/nmr/experiment"
-  },
-  "/courses/quantum/computers/nmr/experiment": {
-    "name": "Experiment",
-    "url": "/courses/quantum/computers/nmr/experiment",
-    "previous": "/courses/quantum/computers/nmr/computation",
-    "next": "/courses/quantum/computers/schemes"
-  },
-  "/courses/quantum/computers/schemes": {
-    "name": "Other implementation schemes",
-    "url": "/courses/quantum/computers/schemes",
-    "previous": "/courses/quantum/computers/nmr/experiment",
-    "next": "/courses/quantum/noise"
-  },
-  "/courses/quantum/noise": {
-    "name": "Quantum noise",
-    "url": "/courses/quantum/noise",
-    "previous": "/courses/quantum/computers/schemes",
-    "next": "/courses/quantum/noise/classical"
-  },
-  "/courses/quantum/noise/classical": {
-    "name": "Classical noise",
-    "url": "/courses/quantum/noise/classical",
-    "previous": "/courses/quantum/noise",
-    "next": "/courses/quantum/noise/operations"
-  },
-  "/courses/quantum/noise/operations": {
-    "name": "Quantum operations",
-    "url": "/courses/quantum/noise/operations",
-    "previous": "/courses/quantum/noise/classical",
-    "next": "/courses/quantum/noise/operations/environments"
-  },
-  "/courses/quantum/noise/operations/environments": {
-    "name": "Environments",
-    "url": "/courses/quantum/noise/operations/environments",
-    "previous": "/courses/quantum/noise/operations",
-    "next": "/courses/quantum/noise/operations/operator"
-  },
-  "/courses/quantum/noise/operations/operator": {
-    "name": "Operator-sum representation",
-    "url": "/courses/quantum/noise/operations/operator",
-    "previous": "/courses/quantum/noise/operations/environments",
-    "next": "/courses/quantum/noise/operations/axiomatic"
-  },
-  "/courses/quantum/noise/operations/axiomatic": {
-    "name": "Axiomatic approach",
-    "url": "/courses/quantum/noise/operations/axiomatic",
-    "previous": "/courses/quantum/noise/operations/operator",
-    "next": "/courses/quantum/noise/examples"
-  },
-  "/courses/quantum/noise/examples": {
-    "name": "Examples",
-    "url": "/courses/quantum/noise/examples",
-    "previous": "/courses/quantum/noise/operations/axiomatic",
-    "next": "/courses/quantum/noise/examples/trace"
-  },
-  "/courses/quantum/noise/examples/trace": {
-    "name": "Trace and partial trace",
-    "url": "/courses/quantum/noise/examples/trace",
-    "previous": "/courses/quantum/noise/examples",
-    "next": "/courses/quantum/noise/examples/picture"
-  },
-  "/courses/quantum/noise/examples/picture": {
-    "name": "Geometric picture",
-    "url": "/courses/quantum/noise/examples/picture",
-    "previous": "/courses/quantum/noise/examples/trace",
-    "next": "/courses/quantum/noise/examples/flip"
-  },
-  "/courses/quantum/noise/examples/flip": {
-    "name": "Bit flip and phase flip channels",
-    "url": "/courses/quantum/noise/examples/flip",
-    "previous": "/courses/quantum/noise/examples/picture",
-    "next": "/courses/quantum/noise/examples/depolarizing"
-  },
-  "/courses/quantum/noise/examples/depolarizing": {
-    "name": "Depolarizing channel",
-    "url": "/courses/quantum/noise/examples/depolarizing",
-    "previous": "/courses/quantum/noise/examples/flip",
-    "next": "/courses/quantum/noise/examples/amplitude"
-  },
-  "/courses/quantum/noise/examples/amplitude": {
-    "name": "Amplitude damping",
-    "url": "/courses/quantum/noise/examples/amplitude",
-    "previous": "/courses/quantum/noise/examples/depolarizing",
-    "next": "/courses/quantum/noise/examples/phase"
-  },
-  "/courses/quantum/noise/examples/phase": {
-    "name": "Phase damping",
-    "url": "/courses/quantum/noise/examples/phase",
-    "previous": "/courses/quantum/noise/examples/amplitude",
-    "next": "/courses/quantum/noise/applications"
-  },
-  "/courses/quantum/noise/applications": {
-    "name": "Applications of quantum operations",
-    "url": "/courses/quantum/noise/applications",
-    "previous": "/courses/quantum/noise/examples/phase",
-    "next": "/courses/quantum/noise/applications/master"
-  },
-  "/courses/quantum/noise/applications/master": {
-    "name": "Master equations",
-    "url": "/courses/quantum/noise/applications/master",
-    "previous": "/courses/quantum/noise/applications",
-    "next": "/courses/quantum/noise/applications/tomography"
-  },
-  "/courses/quantum/noise/applications/tomography": {
-    "name": "Quantum process tomography",
-    "url": "/courses/quantum/noise/applications/tomography",
-    "previous": "/courses/quantum/noise/applications/master",
-    "next": "/courses/quantum/noise/limitations"
-  },
-  "/courses/quantum/noise/limitations": {
-    "name": "Limitations of the quantum operations formalism",
-    "url": "/courses/quantum/noise/limitations",
-    "previous": "/courses/quantum/noise/applications/tomography",
-    "next": "/courses/quantum/distance"
-  },
-  "/courses/quantum/distance": {
-    "name": "Distance measures",
-    "url": "/courses/quantum/distance",
-    "previous": "/courses/quantum/noise/limitations",
-    "next": "/courses/quantum/distance/classical"
-  },
-  "/courses/quantum/distance/classical": {
-    "name": "Distance measures for classical information",
-    "url": "/courses/quantum/distance/classical",
-    "previous": "/courses/quantum/distance",
-    "next": "/courses/quantum/distance/states"
-  },
-  "/courses/quantum/distance/states": {
-    "name": "Distance between quantum states",
-    "url": "/courses/quantum/distance/states",
-    "previous": "/courses/quantum/distance/classical",
-    "next": "/courses/quantum/distance/states/trace"
-  },
-  "/courses/quantum/distance/states/trace": {
-    "name": "Trace distance",
-    "url": "/courses/quantum/distance/states/trace",
-    "previous": "/courses/quantum/distance/states",
-    "next": "/courses/quantum/distance/states/fidelity"
-  },
-  "/courses/quantum/distance/states/fidelity": {
-    "name": "Fidelity",
-    "url": "/courses/quantum/distance/states/fidelity",
-    "previous": "/courses/quantum/distance/states/trace",
-    "next": "/courses/quantum/distance/states/measures"
-  },
-  "/courses/quantum/distance/states/measures": {
-    "name": "Relationships between distance measures",
-    "url": "/courses/quantum/distance/states/measures",
-    "previous": "/courses/quantum/distance/states/fidelity",
-    "next": "/courses/quantum/distance/information"
-  },
-  "/courses/quantum/distance/information": {
-    "name": "Information in quantum channel",
-    "url": "/courses/quantum/distance/information",
-    "previous": "/courses/quantum/distance/states/measures",
-    "next": "/courses/quantum/correction"
-  },
-  "/courses/quantum/correction": {
-    "name": "Quantum error-correction",
-    "url": "/courses/quantum/correction",
-    "previous": "/courses/quantum/distance/information",
-    "next": "/courses/quantum/correction/introduction"
-  },
-  "/courses/quantum/correction/introduction": {
-    "name": "Introduction",
-    "url": "/courses/quantum/correction/introduction",
-    "previous": "/courses/quantum/correction",
-    "next": "/courses/quantum/correction/introduction/bit"
-  },
-  "/courses/quantum/correction/introduction/bit": {
-    "name": "Three qubit phase flip code",
-    "url": "/courses/quantum/correction/introduction/bit",
-    "previous": "/courses/quantum/correction/introduction/bit",
-    "next": "/courses/quantum/correction/shor"
-  },
-  "/courses/quantum/correction/shor": {
-    "name": "The Shor code",
-    "url": "/courses/quantum/correction/shor",
-    "previous": "/courses/quantum/correction/introduction/bit",
-    "next": "/courses/quantum/correction/theory"
-  },
-  "/courses/quantum/correction/theory": {
-    "name": "Theory of quantum error-correction",
-    "url": "/courses/quantum/correction/theory",
-    "previous": "/courses/quantum/correction/shor",
-    "next": "/courses/quantum/correction/theory/discretization"
-  },
-  "/courses/quantum/correction/theory/discretization": {
-    "name": "Discretization of the errors",
-    "url": "/courses/quantum/correction/theory/discretization",
-    "previous": "/courses/quantum/correction/theory",
-    "next": "/courses/quantum/correction/theory/independent"
-  },
-  "/courses/quantum/correction/theory/independent": {
-    "name": "Independent error models",
-    "url": "/courses/quantum/correction/theory/independent",
-    "previous": "/courses/quantum/correction/theory/discretization",
-    "next": "/courses/quantum/correction/theory/degenerate"
-  },
-  "/courses/quantum/correction/theory/degenerate": {
-    "name": "Degenerate codes",
-    "url": "/courses/quantum/correction/theory/degenerate",
-    "previous": "/courses/quantum/correction/theory/independent",
-    "next": "/courses/quantum/correction/theory/hamming"
-  },
-  "/courses/quantum/correction/theory/hamming": {
-    "name": "The quantum Hamming bound",
-    "url": "/courses/quantum/correction/theory/hamming",
-    "previous": "/courses/quantum/correction/theory/degenerate",
-    "next": "/courses/quantum/correction/construction"
-  },
-  "/courses/quantum/correction/construction": {
-    "name": "Constructing quantum codes",
-    "url": "/courses/quantum/correction/construction",
-    "previous": "/courses/quantum/correction/theory/hamming",
-    "next": "/courses/quantum/correction/construction/classical"
-  },
-  "/courses/quantum/correction/construction/classical": {
-    "name": "Classical linear codes",
-    "url": "/courses/quantum/correction/construction/classical",
-    "previous": "/courses/quantum/correction/construction",
-    "next": "/courses/quantum/correction/construction/css"
-  },
-  "/courses/quantum/correction/construction/css": {
-    "name": "Calderbank-Shor-Steane codes",
-    "url": "/courses/quantum/correction/construction/css",
-    "previous": "/courses/quantum/correction/construction/classical",
-    "next": "/courses/quantum/correction/stabilizer"
-  },
-  "/courses/quantum/correction/stabilizer": {
-    "name": "Stabilizer codes",
-    "url": "/courses/quantum/correction/stabilizer",
-    "previous": "/courses/quantum/correction/construction/css",
-    "next": "/courses/quantum/correction/stabilizer/formalism"
-  },
-  "/courses/quantum/correction/stabilizer/formalism": {
-    "name": "The stabilizer formalism",
-    "url": "/courses/quantum/correction/stabilizer/formalism",
-    "previous": "/courses/quantum/correction/stabilizer",
-    "next": "/courses/quantum/correction/stabilizer/unitary"
-  },
-  "/courses/quantum/correction/stabilizer/unitary": {
-    "name": "Unitary gates",
-    "url": "/courses/quantum/correction/stabilizer/unitary",
-    "previous": "/courses/quantum/correction/stabilizer/formalism",
-    "next": "/courses/quantum/correction/stabilizer/measurement"
-  },
-  "/courses/quantum/correction/stabilizer/measurement": {
-    "name": "Measurement",
-    "url": "/courses/quantum/correction/stabilizer/measurement",
-    "previous": "/courses/quantum/correction/stabilizer/unitary",
-    "next": "/courses/quantum/correction/stabilizer/gottesman"
-  },
-  "/courses/quantum/correction/stabilizer/gottesman": {
-    "name": "The Gottesman-Knill theorem",
-    "url": "/courses/quantum/correction/stabilizer/gottesman",
-    "previous": "/courses/quantum/correction/stabilizer/measurement",
-    "next": "/courses/quantum/correction/stabilizer/construction"
-  },
-  "/courses/quantum/correction/stabilizer/construction": {
-    "name": "Stabilizer code constructions",
-    "url": "/courses/quantum/correction/stabilizer/construction",
-    "previous": "/courses/quantum/correction/stabilizer/gottesman",
-    "next": "/courses/quantum/correction/stabilizer/examples"
-  },
-  "/courses/quantum/correction/stabilizer/examples": {
-    "name": "Examples",
-    "url": "/courses/quantum/correction/stabilizer/examples",
-    "previous": "/courses/quantum/correction/stabilizer/construction",
-    "next": "/courses/quantum/correction/stabilizer/standard"
-  },
-  "/courses/quantum/correction/stabilizer/standard": {
-    "name": "Standard form for a stabilizer code",
-    "url": "/courses/quantum/correction/stabilizer/standard",
-    "previous": "/courses/quantum/correction/stabilizer/examples",
-    "next": "/courses/quantum/correction/stabilizer/circuits"
-  },
-  "/courses/quantum/correction/stabilizer/circuits": {
-    "name": "Quantum circuits",
-    "url": "/courses/quantum/correction/stabilizer/circuits",
-    "previous": "/courses/quantum/correction/stabilizer/standard",
-    "next": "/courses/quantum/correction/tolerant"
-  },
-  "/courses/quantum/correction/tolerant": {
-    "name": "Fault-tolerant quantum computation",
-    "url": "/courses/quantum/correction/tolerant",
-    "previous": "/courses/quantum/correction/stabilizer/circuits",
-    "next": "/courses/quantum/correction/tolerant/picture"
-  },
-  "/courses/quantum/correction/tolerant/picture": {
-    "name": "The big picture",
-    "url": "/courses/quantum/correction/tolerant/picture",
-    "previous": "/courses/quantum/correction/tolerant",
-    "next": "/courses/quantum/correction/tolerant/logic"
-  },
-  "/courses/quantum/correction/tolerant/logic": {
-    "name": "Fault tolerant quantum logic",
-    "url": "/courses/quantum/correction/tolerant/logic",
-    "previous": "/courses/quantum/correction/tolerant/picture",
-    "next": "/courses/quantum/correction/tolerant/measurement"
-  },
-  "/courses/quantum/correction/tolerant/measurement": {
-    "name": "Fault-tolerant measurement",
-    "url": "/courses/quantum/correction/tolerant/measurement",
-    "previous": "/courses/quantum/correction/tolerant/logic",
-    "next": "/courses/quantum/correction/tolerant/elements"
-  },
-  "/courses/quantum/correction/tolerant/elements": {
-    "name": "Elements of resilient quantum computation",
-    "url": "/courses/quantum/correction/tolerant/elements",
-    "previous": "/courses/quantum/correction/tolerant/measurement",
-    "next": "/courses/quantum/entropy"
-  },
-  "/courses/quantum/entropy": {
-    "name": "Entropy and information",
-    "url": "/courses/quantum/entropy",
-    "previous": "/courses/quantum/correction/tolerant/elements",
-    "next": "/courses/quantum/entropy/shannon"
-  },
-  "/courses/quantum/entropy/shannon": {
-    "name": "Shannon entropy",
-    "url": "/courses/quantum/entropy/shannon",
-    "previous": "/courses/quantum/entropy",
-    "next": "/courses/quantum/entropy/properties"
-  },
-  "/courses/quantum/entropy/properties": {
-    "name": "Basic properties",
-    "url": "/courses/quantum/entropy/properties",
-    "previous": "/courses/quantum/entropy/shannon",
-    "next": "/courses/quantum/entropy/properties/binary"
-  },
-  "/courses/quantum/entropy/properties/binary": {
-    "name": "The binary entropy",
-    "url": "/courses/quantum/entropy/properties/binary",
-    "previous": "/courses/quantum/entropy/properties",
-    "next": "/courses/quantum/entropy/properties/relative"
-  },
-  "/courses/quantum/entropy/properties/relative": {
-    "name": "The relative entropy",
-    "url": "/courses/quantum/entropy/properties/relative",
-    "previous": "/courses/quantum/entropy/properties/binary",
-    "next": "/courses/quantum/entropy/properties/conditional"
-  },
-  "/courses/quantum/entropy/properties/conditional": {
-    "name": "Conditional entropy and mutual information",
-    "url": "/courses/quantum/entropy/properties/conditional",
-    "previous": "/courses/quantum/entropy/properties/relative",
-    "next": "/courses/quantum/entropy/properties/processing"
-  },
-  "/courses/quantum/entropy/properties/processing": {
-    "name": "The data processing inequality",
-    "url": "/courses/quantum/entropy/properties/processing",
-    "previous": "/courses/quantum/entropy/properties/conditional",
-    "next": "/courses/quantum/entropy/von"
-  },
-  "/courses/quantum/entropy/von": {
-    "name": "Von Neumann entropy",
-    "url": "/courses/quantum/entropy/von",
-    "previous": "/courses/quantum/entropy/properties/processing",
-    "next": "/courses/quantum/entropy/von/relative"
-  },
-  "/courses/quantum/entropy/von/relative": {
-    "name": "Quantum relative entropy",
-    "url": "/courses/quantum/entropy/von/relative",
-    "previous": "/courses/quantum/entropy/von",
-    "next": "/courses/quantum/entropy/von/properties"
-  },
-  "/courses/quantum/entropy/von/properties": {
-    "name": "Basic properties of entropy",
-    "url": "/courses/quantum/entropy/von/properties",
-    "previous": "/courses/quantum/entropy/von/relative",
-    "next": "/courses/quantum/entropy/von/measurement"
-  },
-  "/courses/quantum/entropy/von/measurement": {
-    "name": "Measurements and entropy",
-    "url": "/courses/quantum/entropy/von/measurement",
-    "previous": "/courses/quantum/entropy/von/properties",
-    "next": "/courses/quantum/entropy/von/subadditivity"
-  },
-  "/courses/quantum/entropy/von/subadditivity": {
-    "name": "Subadditivity",
-    "url": "/courses/quantum/entropy/von/subadditivity",
-    "previous": "/courses/quantum/entropy/von/measurement",
-    "next": "/courses/quantum/entropy/von/concavity"
-  },
-  "/courses/quantum/entropy/von/concavity": {
-    "name": "Concavity of the entropy",
-    "url": "/courses/quantum/entropy/von/concavity",
-    "previous": "/courses/quantum/entropy/von/subadditivity",
-    "next": "/courses/quantum/entropy/von/mixture"
-  },
-  "/courses/quantum/entropy/von/mixture": {
-    "name": "The entropy of a mixture of quantum states",
-    "url": "/courses/quantum/entropy/von/mixture",
-    "previous": "/courses/quantum/entropy/von/concavity",
-    "next": "/courses/quantum/entropy/subadditivity"
-  },
-  "/courses/quantum/entropy/subadditivity": {
-    "name": "Strong subadditivity",
-    "url": "/courses/quantum/entropy/subadditivity",
-    "previous": "/courses/quantum/entropy/von/mixture",
-    "next": "/courses/quantum/entropy/subadditivity/applications"
-  },
-  "/courses/quantum/entropy/subadditivity/applications": {
-    "name": "Applications",
-    "url": "/courses/quantum/entropy/subadditivity/applications",
-    "previous": "/courses/quantum/entropy/subadditivity",
-    "next": "/courses/quantum/information"
-  },
-  "/courses/quantum/information": {
-    "name": "Quantum information theory",
-    "url": "/courses/quantum/information",
-    "previous": "/courses/quantum/entropy/subadditivity/applications",
-    "next": "/courses/quantum/information/states"
-  },
-  "/courses/quantum/information/states": {
-    "name": "Distinguishing quantum states",
-    "url": "/courses/quantum/information/states",
-    "previous": "/courses/quantum/information",
-    "next": "/courses/quantum/information/states/holevo"
-  },
-  "/courses/quantum/information/states/holevo": {
-    "name": "The Holevo bound",
-    "url": "/courses/quantum/information/states/holevo",
-    "previous": "/courses/quantum/information/states",
-    "next": "/courses/quantum/information/states/applications"
-  },
-  "/courses/quantum/information/states/applications": {
-    "name": "Applications",
-    "url": "/courses/quantum/information/states/applications",
-    "previous": "/courses/quantum/information/states/holevo",
-    "next": "/courses/quantum/information/data"
-  },
-  "/courses/quantum/information/data": {
-    "name": "Data compression",
-    "url": "/courses/quantum/information/data",
-    "previous": "/courses/quantum/information/states/applications",
-    "next": "/courses/quantum/information/shannon"
-  },
-  "/courses/quantum/information/shannon": {
-    "name": "Shannon's noiseless channel coding theorem",
-    "url": "/courses/quantum/information/shannon",
-    "previous": "/courses/quantum/information/data",
-    "next": "/courses/quantum/information/schumacher"
-  },
-  "/courses/quantum/information/schumacher": {
-    "name": "Schumacher's quantum noiseless channel coding theorem",
-    "url": "/courses/quantum/information/schumacher",
-    "previous": "/courses/quantum/information/shannon",
-    "next": "/courses/quantum/information/classical"
-  },
-  "/courses/quantum/information/classical": {
-    "name": "Classical information over noisy quantum channels",
-    "url": "/courses/quantum/information/classical",
-    "previous": "/courses/quantum/information/schumacher",
-    "next": "/courses/quantum/information/classical/classical"
-  },
-  "/courses/quantum/information/classical/classical": {
-    "name": "Communication over noisy classical channels",
-    "url": "/courses/quantum/information/classical/classical",
-    "previous": "/courses/quantum/information/classical",
-    "next": "/courses/quantum/information/classical/quantum"
-  },
-  "/courses/quantum/information/classical/quantum": {
-    "name": "Communication over noisy quantum channels",
-    "url": "/courses/quantum/information/classical/quantum",
-    "previous": "/courses/quantum/information/classical/classical",
-    "next": "/courses/quantum/information/quantum"
-  },
-  "/courses/quantum/information/quantum": {
-    "name": "Quantum information over noisy quantum channels",
-    "url": "/courses/quantum/information/quantum",
-    "previous": "/courses/quantum/information/classical/quantum",
-    "next": "/courses/quantum/information/quantum/fano"
-  },
-  "/courses/quantum/information/quantum/fano": {
-    "name": "Fano inequality",
-    "url": "/courses/quantum/information/quantum/fano",
-    "previous": "/courses/quantum/information/quantum",
-    "next": "/courses/quantum/information/quantum/data"
-  },
-  "/courses/quantum/information/quantum/data": {
-    "name": "The quantum data processing inequality",
-    "url": "/courses/quantum/information/quantum/data",
-    "previous": "/courses/quantum/information/quantum/fano",
-    "next": "/courses/quantum/information/quantum/singleton"
-  },
-  "/courses/quantum/information/quantum/singleton": {
-    "name": "Quantum singleton bound",
-    "url": "/courses/quantum/information/quantum/singleton",
-    "previous": "/courses/quantum/information/quantum/data",
-    "next": "/courses/quantum/information/quantum/demon"
-  },
-  "/courses/quantum/information/quantum/demon": {
-    "name": "Maxwell's demon",
-    "url": "/courses/quantum/information/quantum/demon",
-    "previous": "/courses/quantum/information/quantum/singleton",
-    "next": "/courses/quantum/information/entanglement"
-  },
-  "/courses/quantum/information/entanglement": {
-    "name": "Entanglement",
-    "url": "/courses/quantum/information/entanglement",
-    "previous": "/courses/quantum/information/quantum/demon",
-    "next": "/courses/quantum/information/entanglement/bipartite"
-  },
-  "/courses/quantum/information/entanglement/bipartite": {
-    "name": "Transforming bi-partite pure state entanglement",
-    "url": "/courses/quantum/information/entanglement/bipartite",
-    "previous": "/courses/quantum/information/entanglement",
-    "next": "/courses/quantum/information/entanglement/dilution"
-  },
-  "/courses/quantum/information/entanglement/dilution": {
-    "name": "Entanglement distillation and dilution",
-    "url": "/courses/quantum/information/entanglement/dilution",
-    "previous": "/courses/quantum/information/entanglement/bipartite",
-    "next": "/courses/quantum/information/entanglement/correction"
-  },
-  "/courses/quantum/information/entanglement/correction": {
-    "name": "Quantum error-correction",
-    "url": "/courses/quantum/information/entanglement/correction",
-    "previous": "/courses/quantum/information/entanglement/dilution",
-    "next": "/courses/quantum/information/cryptography"
-  },
-  "/courses/quantum/information/cryptography": {
-    "name": "Quantum cryptography",
-    "url": "/courses/quantum/information/cryptography",
-    "previous": "/courses/quantum/information/entanglement/correction",
-    "next": "/courses/quantum/information/cryptography/private"
-  },
-  "/courses/quantum/information/cryptography/private": {
-    "name": "Private key cryptography",
-    "url": "/courses/quantum/information/cryptography/private",
-    "previous": "/courses/quantum/information/cryptography",
-    "next": "/courses/quantum/information/cryptography/privacy"
-  },
-  "/courses/quantum/information/cryptography/privacy": {
-    "name": "Privacy amplification and information reconciliation",
-    "url": "/courses/quantum/information/cryptography/privacy",
-    "previous": "/courses/quantum/information/cryptography/private",
-    "next": "/courses/quantum/information/cryptography/distribution"
-  },
-  "/courses/quantum/information/cryptography/distribution": {
-    "name": "Quantum key distribution",
-    "url": "/courses/quantum/information/cryptography/distribution",
-    "previous": "/courses/quantum/information/cryptography/privacy",
-    "next": "/courses/quantum/information/cryptography/coherent"
-  },
-  "/courses/quantum/information/cryptography/coherent": {
-    "name": "Privacy and coherent information",
-    "url": "/courses/quantum/information/cryptography/coherent",
-    "previous": "/courses/quantum/information/cryptography/distribution",
-    "next": "/courses/quantum/information/cryptography/security"
-  },
-  "/courses/quantum/information/cryptography/security": {
-    "name": "The security of quantum key distribution",
-    "url": "/courses/quantum/information/cryptography/security",
-    "previous": "/courses/quantum/information/cryptography/coherent",
-    "next": "/courses/quantum/information/cryptography/security"
+  "/courses/mathematics2": {
+    "name": "MATHEMATICS II",
+    "url": "/courses/mathematics2",
+    "previous": "/courses/mathematics2",
+    "next": "/courses/mathematics2/statistics"
+  },
+  "/courses/mathematics2/statistics": {
+    "name": "BASICS OF STATISTICS",
+    "url": "/courses/mathematics2/statistics",
+    "previous": "/courses/mathematics2",
+    "next": "/courses/mathematics2/statistics/measures"
+  },
+  "/courses/mathematics2/statistics/measures": {
+    "name": "Measures of Central Tendency",
+    "url": "/courses/mathematics2/statistics/measures",
+    "previous": "/courses/mathematics2/statistics",
+    "next": "/courses/mathematics2/statistics/measures/mean"
+  },
+  "/courses/mathematics2/statistics/measures/mean": {
+    "name": "Mean (AM, GM, HM)",
+    "url": "/courses/mathematics2/statistics/measures/mean",
+    "previous": "/courses/mathematics2/statistics/measures",
+    "next": "/courses/mathematics2/statistics/measures/mode"
+  },
+  "/courses/mathematics2/statistics/measures/mode": {
+    "name": "Mode",
+    "url": "/courses/mathematics2/statistics/measures/mode",
+    "previous": "/courses/mathematics2/statistics/measures/mean",
+    "next": "/courses/mathematics2/statistics/measures/median"
+  },
+  "/courses/mathematics2/statistics/measures/median": {
+    "name": "Median",
+    "url": "/courses/mathematics2/statistics/measures/median",
+    "previous": "/courses/mathematics2/statistics/measures/mode",
+    "next": "/courses/mathematics2/statistics/measures/deviation"
+  },
+  "/courses/mathematics2/statistics/measures/deviation": {
+    "name": "Standard deviation",
+    "url": "/courses/mathematics2/statistics/measures/deviation",
+    "previous": "/courses/mathematics2/statistics/measures/median",
+    "next": "/courses/mathematics2/statistics/correlation"
+  },
+  "/courses/mathematics2/statistics/correlation": {
+    "name": "Correlation",
+    "url": "/courses/mathematics2/statistics/correlation",
+    "previous": "/courses/mathematics2/statistics/measures/deviation",
+    "next": "/courses/mathematics2/statistics/correlation/bivariatedata"
+  },
+  "/courses/mathematics2/statistics/correlation/bivariatedata": {
+    "name": "Bivariate Data",
+    "url": "/courses/mathematics2/statistics/correlation/bivariatedata",
+    "previous": "/courses/mathematics2/statistics/correlation",
+    "next": "/courses/mathematics2/statistics/correlation/bivariatefrequency"
+  },
+  "/courses/mathematics2/statistics/correlation/bivariatefrequency": {
+    "name": "Bivariate frequency distribution",
+    "url": "/courses/mathematics2/statistics/correlation/bivariatefrequency",
+    "previous": "/courses/mathematics2/statistics/correlation/bivariatedata",
+    "next": "/courses/mathematics2/statistics/correlation/correlation2"
+  },
+  "/courses/mathematics2/statistics/correlation/correlation2": {
+    "name": "Correlation between two variables",
+    "url": "/courses/mathematics2/statistics/correlation/correlation2",
+    "previous": "/courses/mathematics2/statistics/correlation/bivariatefrequency",
+    "next": "/courses/mathematics2/statistics/correlation/pearson"
+  },
+  "/courses/mathematics2/statistics/correlation/pearson": {
+    "name": "Karl Pearson's coefficient of correlation (r)",
+    "url": "/courses/mathematics2/statistics/correlation/pearson",
+    "previous": "/courses/mathematics2/statistics/correlation/correlation2",
+    "next": "/courses/mathematics2/statistics/correlation/spearman"
+  },
+  "/courses/mathematics2/statistics/correlation/spearman": {
+    "name": "Spearman's rank correlation coefficient",
+    "url": "/courses/mathematics2/statistics/correlation/spearman",
+    "previous": "/courses/mathematics2/statistics/correlation/pearson",
+    "next": "/courses/mathematics2/statistics/regression"
+  },
+  "/courses/mathematics2/statistics/regression": {
+    "name": "Regression",
+    "url": "/courses/mathematics2/statistics/regression",
+    "previous": "/courses/mathematics2/statistics/correlation/spearman",
+    "next": "/courses/mathematics2/statistics/regression/regressionlines"
+  },
+  "/courses/mathematics2/statistics/regression/regressionlines": {
+    "name": "Lines of regression",
+    "url": "/courses/mathematics2/statistics/regression/regressionlines",
+    "previous": "/courses/mathematics2/statistics/regression",
+    "next": "/courses/mathematics2/statistics/regression/leastsquares"
+  },
+  "/courses/mathematics2/statistics/regression/leastsquares": {
+    "name": "Least squares method",
+    "url": "/courses/mathematics2/statistics/regression/leastsquares",
+    "previous": "/courses/mathematics2/statistics/regression/regressionlines",
+    "next": "/courses/mathematics2/probabilitytheory"
+  },
+  "/courses/mathematics2/probabilitytheory": {
+    "name": "PROBABILITY THEORY",
+    "url": "/courses/mathematics2/probabilitytheory",
+    "previous": "/courses/mathematics2/statistics/regression/leastsquares",
+    "next": "/courses/mathematics2/probabilitytheory/probability"
+  },
+  "/courses/mathematics2/probabilitytheory/probability": {
+    "name": "Probability",
+    "url": "/courses/mathematics2/probabilitytheory/probability",
+    "previous": "/courses/mathematics2/probabilitytheory",
+    "next": "/courses/mathematics2/probabilitytheory/probability/events"
+  },
+  "/courses/mathematics2/probabilitytheory/probability/events": {
+    "name": "Events",
+    "url": "/courses/mathematics2/probabilitytheory/probability/events",
+    "previous": "/courses/mathematics2/probabilitytheory/probability",
+    "next": "/courses/mathematics2/probabilitytheory/probability/conditional"
+  },
+  "/courses/mathematics2/probabilitytheory/probability/conditional": {
+    "name": "Conditional Probability",
+    "url": "/courses/mathematics2/probabilitytheory/probability/conditional",
+    "previous": "/courses/mathematics2/probabilitytheory/probability/events",
+    "next": "/courses/mathematics2/probabilitytheory/probability/practice"
+  },
+  "/courses/mathematics2/probabilitytheory/probability/practice": {
+    "name": "Practice Problems",
+    "url": "/courses/mathematics2/probabilitytheory/probability/practice",
+    "previous": "/courses/mathematics2/probabilitytheory/probability/conditional",
+    "next": "/courses/mathematics2/probabilitytheory/distributions"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions": {
+    "name": "Distributions",
+    "url": "/courses/mathematics2/probabilitytheory/distributions",
+    "previous": "/courses/mathematics2/probabilitytheory/probability/practice",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/joint"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/joint": {
+    "name": "Joint distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/joint",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/binomial"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/binomial": {
+    "name": "Binomial distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/binomial",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/joint",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/continuous"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/continuous": {
+    "name": "Continuous distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/continuous",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/binomial",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/normal"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/normal": {
+    "name": "Normal distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/normal",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/continuous",
+    "next": "/courses/mathematics2/probabilitytheory/distributions/poisson"
+  },
+  "/courses/mathematics2/probabilitytheory/distributions/poisson": {
+    "name": "Poisson distribution",
+    "url": "/courses/mathematics2/probabilitytheory/distributions/poisson",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/normal",
+    "next": "/courses/mathematics2/inference"
+  },
+  "/courses/mathematics2/inference": {
+    "name": "Statistical Inference",
+    "url": "/courses/mathematics2/inference",
+    "previous": "/courses/mathematics2/probabilitytheory/distributions/poisson",
+    "next": "/courses/mathematics2/inference/significance"
+  },
+  "/courses/mathematics2/inference/significance": {
+    "name": "Significance",
+    "url": "/courses/mathematics2/inference/significance",
+    "previous": "/courses/mathematics2/inference",
+    "next": "/courses/mathematics2/inference/significance/sampling"
+  },
+  "/courses/mathematics2/inference/significance/sampling": {
+    "name": "Sampling",
+    "url": "/courses/mathematics2/inference/significance/sampling",
+    "previous": "/courses/mathematics2/inference/significance",
+    "next": "/courses/mathematics2/inference/significance/hypotheses"
+  },
+  "/courses/mathematics2/inference/significance/hypotheses": {
+    "name": "Hypotheses",
+    "url": "/courses/mathematics2/inference/significance/hypotheses",
+    "previous": "/courses/mathematics2/inference/significance/sampling",
+    "next": "/courses/mathematics2/inference/significance/tests"
+  },
+  "/courses/mathematics2/inference/significance/tests": {
+    "name": "Tests of hypotheses and significance",
+    "url": "/courses/mathematics2/inference/significance/tests",
+    "previous": "/courses/mathematics2/inference/significance/hypotheses",
+    "next": "/courses/mathematics2/inference/significance/types"
+  },
+  "/courses/mathematics2/inference/significance/types": {
+    "name": "Type I and Type II errors",
+    "url": "/courses/mathematics2/inference/significance/types",
+    "previous": "/courses/mathematics2/inference/significance/tests",
+    "next": "/courses/mathematics2/inference/significance/level"
+  },
+  "/courses/mathematics2/inference/significance/level": {
+    "name": "Level of significance",
+    "url": "/courses/mathematics2/inference/significance/level",
+    "previous": "/courses/mathematics2/inference/significance/types",
+    "next": ""
+  },
+  "/courses/mathematics2/inference/practice": {
+    "name": "Practice",
+    "url": "/courses/mathematics2/inference/practice",
+    "previous": "/courses/mathematics2/inference/significance/level",
+    "next": ""
+  },
+  "": {
+    "name": "PERT",
+    "url": "",
+    "previous": "",
+    "next": ""
+  },
+  "/courses/mathematics2/assignment1": {
+    "name": "Assignment 1",
+    "url": "/courses/mathematics2/assignment1",
+    "previous": "",
+    "next": ""
   }
 };
 export {

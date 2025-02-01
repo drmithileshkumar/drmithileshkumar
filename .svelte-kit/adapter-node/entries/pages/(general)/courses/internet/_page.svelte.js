@@ -15,7 +15,7 @@ import { H as Head } from "../../../../../chunks/Head.js";
 import { B as Button } from "../../../../../chunks/Button.js";
 import { N as NavList } from "../../../../../chunks/NavList.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores.js";
-import { c as contentNav, a as contents } from "../../../../../chunks/content.js";
+import { c as contentNav, a as contents } from "../../../../../chunks/content2.js";
 import { P as Pathlist } from "../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../chunks/CourseNavigation.js";
 const css = {

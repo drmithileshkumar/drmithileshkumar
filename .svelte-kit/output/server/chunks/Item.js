@@ -1,6 +1,7 @@
 import { c as compute_rest_props } from "./utils.js";
 import { c as create_ssr_component, a as get_current_component, g as getContext, s as setContext, o as onDestroy, v as validate_component, m as missing_component } from "./ssr2.js";
-import { f as forwardEventsBuilder, c as classMap, S as SmuiElement, g as globals } from "./SmuiElement.js";
+import { f as forwardEventsBuilder, c as classMap } from "./forwardEventsBuilder.js";
+import { S as SmuiElement, g as globals } from "./SmuiElement.js";
 import { d as dispatch } from "./dispatch.js";
 import { R as Ripple } from "./Ripple.js";
 const List = create_ssr_component(($$result, $$props, $$bindings, slots) => {

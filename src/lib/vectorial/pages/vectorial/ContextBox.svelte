@@ -57,7 +57,7 @@
     let selectedGridPart = 'hPath';
     let showSubdivisions = true;
 
-    let filltype = $selectedId ? $elements[$selectedId]["filltype"]: '';
+    let filltype = $selectedId && $elements[$selectedId] ? $elements[$selectedId]["filltype"]: '';
     let isNewLG = false, isNewRG = false;
     let selected = 'fill';
     let position = 'start';

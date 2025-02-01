@@ -1,9 +1,10 @@
 import { c as compute_rest_props } from "./utils.js";
 import { c as create_ssr_component, a as get_current_component, s as setContext, o as onDestroy, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute, v as validate_component, m as missing_component, g as getContext } from "./ssr2.js";
 import { MDCDismissibleDrawerFoundation, MDCModalDrawerFoundation } from "@material/drawer";
-import { f as forwardEventsBuilder, c as classMap, S as SmuiElement } from "./SmuiElement.js";
+import { f as forwardEventsBuilder, c as classMap } from "./forwardEventsBuilder.js";
 import { d as dispatch } from "./dispatch.js";
 import { c as classAdderBuilder } from "./classAdderBuilder.js";
+import { S as SmuiElement } from "./SmuiElement.js";
 const Drawer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["use", "class", "variant", "open", "fixed", "setOpen", "isOpen", "getElement"]);
   forwardEventsBuilder(get_current_component());

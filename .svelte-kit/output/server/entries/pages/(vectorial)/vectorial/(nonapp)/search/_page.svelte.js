@@ -2,7 +2,7 @@ import { c as create_ssr_component, a as get_current_component, b as spread, d a
 import "../../../../../../chunks/ActionIcons.js";
 import { B as Button } from "../../../../../../chunks/Button.js";
 import { c as compute_rest_props } from "../../../../../../chunks/utils.js";
-import { f as forwardEventsBuilder, c as classMap } from "../../../../../../chunks/SmuiElement.js";
+import { f as forwardEventsBuilder, c as classMap } from "../../../../../../chunks/forwardEventsBuilder.js";
 import { C as CommonLabel } from "../../../../../../chunks/CommonLabel.js";
 import { C as CommonIcon } from "../../../../../../chunks/Svg.js";
 import { M as Menu } from "../../../../../../chunks/Menu.js";

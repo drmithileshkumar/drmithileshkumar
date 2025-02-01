@@ -93,3 +93,12 @@ localDRAWING.subscribe((value) => {
         window.localStorage.setItem('localDRAWING', value);
     }
 });
+
+const defaultGallery = '[]';
+const initialGallery = browser ? window.localStorage.getItem('localGallery') ?? defaultGallery : defaultGallery;
+export const localGallery = writable(JSON.parse(initialGallery));//object of drawing ids
+localGallery.subscribe((value) => {
+    if(browser) {
+        window.localStorage.setItem('localGallery', JSON.stringify(value));
+    }
+});

@@ -154,7 +154,7 @@
                 discrete
                 tickMarks
                 input$aria-label="b"
-            />
+            /> 
             <span
                 slot="label"
                 style="padding-right: 12px; width: 60px; display: block;"

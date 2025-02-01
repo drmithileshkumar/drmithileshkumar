@@ -12,7 +12,7 @@ import "../../../../chunks/client.js";
 import { a as classes } from "../../../../chunks/stores7.js";
 import { P as Performance, T as Timer } from "../../../../chunks/Timer.js";
 import { c as currentPath } from "../../../../chunks/stores.js";
-import { f as forwardEventsBuilder, c as classMap } from "../../../../chunks/SmuiElement.js";
+import { f as forwardEventsBuilder, c as classMap } from "../../../../chunks/forwardEventsBuilder.js";
 import { w as writable } from "../../../../chunks/index2.js";
 import { d as dispatch } from "../../../../chunks/dispatch.js";
 import { P as Paper } from "../../../../chunks/Paper.js";

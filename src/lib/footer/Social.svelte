@@ -20,7 +20,7 @@
     <a href="https://twitter.com/DrMithileshKr">
         <img width="23px" height="23px" src="/twitter.png" alt="twitter" />
     </a>
-    <a href="https://www.youtube.com/DrMithileshKr">
+    <a href="https://www.youtube.com/@DrMithileshKr">
         <img width="23px" height="23px" src="/youtube.svg" alt="youtube" />
     </a>
     <a href="https://www.instagram.com/drmithileshkumar_com/" style="font-size: 0.8em;">

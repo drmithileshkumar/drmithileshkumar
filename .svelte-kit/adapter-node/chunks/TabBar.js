@@ -1,6 +1,7 @@
 import { c as compute_rest_props } from "./utils.js";
-import { f as forwardEventsBuilder, c as classMap, g as globals, S as SmuiElement } from "./SmuiElement.js";
+import { g as globals, S as SmuiElement } from "./SmuiElement.js";
 import { c as create_ssr_component, a as get_current_component, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute, g as getContext, s as setContext, v as validate_component, m as missing_component, i as each } from "./ssr2.js";
+import { f as forwardEventsBuilder, c as classMap } from "./forwardEventsBuilder.js";
 import { e as exclude, p as prefixFilter } from "./prefixFilter.js";
 import { R as Ripple } from "./Ripple.js";
 import { MDCFadingTabIndicatorFoundation, MDCSlidingTabIndicatorFoundation } from "@material/tab-indicator";

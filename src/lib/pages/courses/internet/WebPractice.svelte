@@ -11,32 +11,50 @@
     import { javascript } from "@codemirror/lang-javascript";
     import { xml } from "@codemirror/lang-xml";
     import { css } from "@codemirror/lang-css";
+	import { writable } from "svelte/store";
+    import Console from './Console.svelte';
+	
 
     let value = "";
     let choices = ['HTML', 'CSS', 'JS'];
-    let selected = 'HTML';
+    
+    export let selected = 'HTML';
+    export let showConsole = false;
+    let rerun = 1;
 
     export let htmlContent = '';
     export let cssContent = '';
     export let jsContent = '';
     let previewFrame;
     let previewDocument;
+    let previewWindow;
+    
+    // Capture console.log messages
+    
+    let style, script;
     onMount(() => {
         updatePreview();
     })
     const updatePreview = () => {
+        
         if (!browser) return;
-        //const previewFrame = document.getElementById('previewFrame');
+        previewWindow = previewFrame.contentWindow;
         previewDocument = previewFrame.contentDocument || previewFrame.contentWindow.document;
+        
+        
         previewDocument.open();
+        
         previewDocument.write(htmlContent);
-        const style = document.createElement('style');
-        style.innerHTML = cssContent;
-        previewDocument.head.appendChild(style);
-        const script = document.createElement('script');
+        style = document.createElement('style');
+        script = document.createElement('script');
         script.type = 'text/javascript';
-        script.innerHTML = jsContent;
+        style.innerHTML = cssContent;
+        
+        previewDocument.head.appendChild(style);
+        let newJS = `function mkPreview() {` + jsContent + `} mkPreview()`
+        script.innerHTML = newJS;
         previewDocument.body.appendChild(script);
+        
         previewDocument.close();
         const sandboxAttributes = "allow-scripts allow-same-origin";
         previewFrame.setAttribute("sandbox", sandboxAttributes);
@@ -60,7 +78,10 @@
             textarea.selectionStart = textarea.selectionEnd = start + 1;
         }
     }
-
+    const runAgain = () => {
+        rerun++;
+        updatePreview();
+    }
 </script>
 <Card>
     <Content>
@@ -72,7 +93,7 @@
                     <Label>{segment}</Label>
                 </Segment>
             </SegmentedButton>
-            <Button variant="raised" style="background: green;" on:click={updatePreview}>Run</Button>
+            <Button variant="raised" style="background: green;" on:click={runAgain}>Run</Button>
         </div>
         
         <br>
@@ -123,8 +144,15 @@
     </Content>
 </Card>
 <Card>
-    <iframe class="preview" bind:this={previewFrame} style="width:100%; min-height:200px; max-height:50vh;">
+    
+    <iframe class="preview" bind:this={previewFrame} title="" style="width:100%; min-height:200px; max-height:50vh;">
     </iframe>
+    
+    {#if showConsole && previewWindow}
+        <Content>
+            <Console extFrame={previewWindow} />
+        </Content>
+    {/if}
 </Card>
 
 

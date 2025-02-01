@@ -1,6 +1,6 @@
 import { c as compute_rest_props } from "./utils.js";
 import { c as create_ssr_component, a as get_current_component, v as validate_component } from "./ssr2.js";
-import { f as forwardEventsBuilder, c as classMap } from "./SmuiElement.js";
+import { f as forwardEventsBuilder, c as classMap } from "./forwardEventsBuilder.js";
 import { M as MenuSurface } from "./MenuSurface.js";
 const Menu = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let usePass;

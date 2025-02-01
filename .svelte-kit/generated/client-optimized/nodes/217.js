@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(vectorial)/vectorial/(nonapp)/post/[postID]/+page.js";
+import * as universal from "../../../../src/routes/(mathril)/mathril/games/lp/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(vectorial)/vectorial/(nonapp)/post/[postID]/+page.svelte";
+export { default as component } from "../../../../src/routes/(mathril)/mathril/games/lp/+page.svelte";

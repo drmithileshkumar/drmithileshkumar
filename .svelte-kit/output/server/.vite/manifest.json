@@ -21,7 +21,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js"
+      "_forwardEventsBuilder.js"
     ]
   },
   "_Actions2.js": {
@@ -56,6 +56,27 @@
     "file": "_app/immutable/assets/Assignment.CJayq7CJ.css",
     "src": "_Assignment.svelte_svelte_type_style_lang.js"
   },
+  "_Bubble.js": {
+    "file": "chunks/Bubble.js",
+    "name": "Bubble",
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_tweened.js",
+      "_ActionIcons.js",
+      "_FormField.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_client.js",
+      "_Dialog.js",
+      "_Actions2.js",
+      "_Checkbox.js",
+      "_IconButton.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Bubble.CKz-yzYa.css"
+    ]
+  },
   "_Button.js": {
     "file": "chunks/Button.js",
     "name": "Button",
@@ -63,6 +84,7 @@
       "_utils.js",
       "_SmuiElement.js",
       "_ssr2.js",
+      "_forwardEventsBuilder.js",
       "_Ripple.js"
     ]
   },
@@ -84,7 +106,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js"
+      "_forwardEventsBuilder.js"
     ]
   },
   "_Cell.js": {
@@ -94,7 +116,7 @@
       "_utils.js",
       "_ssr2.js",
       "_index2.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_prefixFilter.js"
     ]
   },
@@ -104,7 +126,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_prefixFilter.js"
     ]
   },
@@ -117,7 +139,7 @@
       "_RichActions.js",
       "_CommonLabel.js",
       "_Svg.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_prefixFilter.js",
       "_classAdderBuilder.js",
       "_IconButton.js",
@@ -133,6 +155,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
+      "_forwardEventsBuilder.js",
       "_SmuiElement.js"
     ]
   },
@@ -181,8 +204,36 @@
       "_utils.js",
       "_ssr2.js",
       "_index2.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_prefixFilter.js"
+    ]
+  },
+  "_Drawing.js": {
+    "file": "chunks/Drawing.js",
+    "name": "Drawing",
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_Set.js",
+      "_forwardEventsBuilder.js",
+      "_prefixFilter.js",
+      "_FormField.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Media.js",
+      "_Actions.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_Dialog.js",
+      "_Actions2.js",
+      "_IconButton.js",
+      "_stores3.js",
+      "_stores6.js",
+      "_client.js",
+      "_PreviewTextMask.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Drawing.CfrzLLFi.css"
     ]
   },
   "_Fab.js": {
@@ -192,6 +243,7 @@
       "_utils.js",
       "_SmuiElement.js",
       "_ssr2.js",
+      "_forwardEventsBuilder.js",
       "_Ripple.js"
     ]
   },
@@ -201,7 +253,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_prefixFilter.js"
     ]
   },
@@ -253,7 +305,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js"
+      "_forwardEventsBuilder.js"
     ]
   },
   "_Head.js": {
@@ -262,7 +314,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js"
+      "_forwardEventsBuilder.js"
     ]
   },
   "_IconButton.js": {
@@ -272,8 +324,22 @@
       "_utils.js",
       "_SmuiElement.js",
       "_ssr2.js",
+      "_forwardEventsBuilder.js",
       "_dispatch.js",
       "_Ripple.js"
+    ]
+  },
+  "_Image.svelte_svelte_type_style_lang.js": {
+    "file": "chunks/Image.svelte_svelte_type_style_lang.js",
+    "name": "Image.svelte_svelte_type_style_lang",
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_stores4.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Image.CKNRP0SZ.css",
+      "_app/immutable/assets/P.CvI4RsOs.css"
     ]
   },
   "_ImageUploader.js": {
@@ -296,7 +362,28 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js"
+      "_forwardEventsBuilder.js"
+    ]
+  },
+  "_Insertion.js": {
+    "file": "chunks/Insertion.js",
+    "name": "Insertion",
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_tweened.js",
+      "_ActionIcons.js",
+      "_FormField.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_client.js",
+      "_Dialog.js",
+      "_Actions2.js",
+      "_Checkbox.js",
+      "_IconButton.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Insertion.Capc3WnK.css"
     ]
   },
   "_Item.js": {
@@ -305,6 +392,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
+      "_forwardEventsBuilder.js",
       "_SmuiElement.js",
       "_dispatch.js",
       "_Ripple.js"
@@ -335,7 +423,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js"
+      "_forwardEventsBuilder.js"
     ]
   },
   "_Link.svelte_svelte_type_style_lang.js": {
@@ -352,7 +440,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js"
+      "_forwardEventsBuilder.js"
     ]
   },
   "_Menu.js": {
@@ -361,7 +449,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_MenuSurface.js"
     ]
   },
@@ -371,7 +459,28 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js"
+      "_forwardEventsBuilder.js"
+    ]
+  },
+  "_Merge.js": {
+    "file": "chunks/Merge.js",
+    "name": "Merge",
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_tweened.js",
+      "_ActionIcons.js",
+      "_FormField.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_client.js",
+      "_Dialog.js",
+      "_Actions2.js",
+      "_Checkbox.js",
+      "_IconButton.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Merge.Cb8vRjB9.css"
     ]
   },
   "_Message.svelte_svelte_type_style_lang.js": {
@@ -405,7 +514,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js"
+      "_forwardEventsBuilder.js"
     ]
   },
   "_Option.js": {
@@ -416,6 +525,7 @@
       "_SmuiElement.js",
       "_ssr2.js",
       "_index2.js",
+      "_forwardEventsBuilder.js",
       "_prefixFilter.js",
       "_Menu.js",
       "_SelectionGroupIcon.js",
@@ -424,24 +534,36 @@
       "_NotchedOutline.js"
     ]
   },
+  "_P.svelte_svelte_type_style_lang.js": {
+    "file": "_app/immutable/assets/P.CvI4RsOs.css",
+    "src": "_P.svelte_svelte_type_style_lang.js"
+  },
   "_Paper.js": {
     "file": "chunks/Paper.js",
     "name": "Paper",
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js"
+      "_forwardEventsBuilder.js"
     ]
   },
-  "_Papers.js": {
-    "file": "chunks/Papers.js",
-    "name": "Papers",
+  "_Paper.svelte_svelte_type_style_lang.js": {
+    "file": "_app/immutable/assets/Paper.Bg_S1Oi_.css",
+    "src": "_Paper.svelte_svelte_type_style_lang.js"
+  },
+  "_Paper2.js": {
+    "file": "chunks/Paper2.js",
+    "name": "Paper",
     "imports": [
       "_ssr2.js"
     ],
     "css": [
-      "_app/immutable/assets/Papers.BaItfzG-.css"
+      "_app/immutable/assets/Paper.Bg_S1Oi_.css"
     ]
+  },
+  "_Papers.svelte_svelte_type_style_lang.js": {
+    "file": "_app/immutable/assets/Papers.DWP9sFsm.css",
+    "src": "_Papers.svelte_svelte_type_style_lang.js"
   },
   "_Pathlist.js": {
     "file": "chunks/Pathlist.js",
@@ -451,6 +573,16 @@
     ],
     "css": [
       "_app/immutable/assets/Pathlist.BSb51Isn.css"
+    ]
+  },
+  "_Presenter.js": {
+    "file": "chunks/Presenter.js",
+    "name": "Presenter",
+    "imports": [
+      "_ssr2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Presenter.CLmS1iq2.css"
     ]
   },
   "_PreviewGrid.js": {
@@ -468,19 +600,36 @@
       "_PreviewGrid.js"
     ]
   },
+  "_Quick.js": {
+    "file": "chunks/Quick.js",
+    "name": "Quick",
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_tweened.js",
+      "_ActionIcons.js",
+      "_FormField.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_client.js",
+      "_Dialog.js",
+      "_Actions2.js",
+      "_Checkbox.js",
+      "_IconButton.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Quick.BVcu7eqV.css"
+    ]
+  },
   "_Radio.js": {
     "file": "chunks/Radio.js",
     "name": "Radio",
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_prefixFilter.js"
     ]
-  },
-  "_Research.svelte_svelte_type_style_lang.js": {
-    "file": "_app/immutable/assets/Research.D7JEguvc.css",
-    "src": "_Research.svelte_svelte_type_style_lang.js"
   },
   "_RichActions.js": {
     "file": "chunks/RichActions.js",
@@ -488,7 +637,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_prefixFilter.js",
       "_index2.js",
       "_classAdderBuilder.js"
@@ -523,7 +672,7 @@
       "_utils.js",
       "_ssr2.js",
       "_index2.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_ContextFragment.js"
     ]
   },
@@ -546,9 +695,10 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_dispatch.js",
-      "_classAdderBuilder.js"
+      "_classAdderBuilder.js",
+      "_SmuiElement.js"
     ]
   },
   "_Set.js": {
@@ -559,6 +709,7 @@
       "_SmuiElement.js",
       "_ssr2.js",
       "_index2.js",
+      "_forwardEventsBuilder.js",
       "_Ripple.js",
       "_ContextFragment.js"
     ]
@@ -591,7 +742,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_prefixFilter.js"
     ]
   },
@@ -600,7 +751,8 @@
     "name": "SmuiElement",
     "imports": [
       "_utils.js",
-      "_ssr2.js"
+      "_ssr2.js",
+      "_forwardEventsBuilder.js"
     ]
   },
   "_Subheader.js": {
@@ -630,6 +782,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
+      "_forwardEventsBuilder.js",
       "_SmuiElement.js"
     ]
   },
@@ -640,6 +793,7 @@
       "_utils.js",
       "_SmuiElement.js",
       "_ssr2.js",
+      "_forwardEventsBuilder.js",
       "_prefixFilter.js",
       "_Ripple.js"
     ]
@@ -669,7 +823,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js"
+      "_forwardEventsBuilder.js"
     ]
   },
   "_Textfield.js": {
@@ -679,6 +833,7 @@
       "_utils.js",
       "_SmuiElement.js",
       "_ssr2.js",
+      "_forwardEventsBuilder.js",
       "_prefixFilter.js",
       "_ContextFragment.js",
       "_NotchedOutline.js",
@@ -703,7 +858,7 @@
       "_classAdderBuilder.js",
       "_utils.js",
       "_ssr2.js",
-      "_SmuiElement.js"
+      "_forwardEventsBuilder.js"
     ]
   },
   "_TopAppBar.js": {
@@ -713,7 +868,7 @@
       "_utils.js",
       "_ssr2.js",
       "_index2.js",
-      "_SmuiElement.js"
+      "_forwardEventsBuilder.js"
     ]
   },
   "_WebPractice.js": {
@@ -729,11 +884,11 @@
       "_Button.js"
     ],
     "css": [
-      "_app/immutable/assets/WebPractice.B5-iP3se.css"
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css"
     ]
   },
   "_WebPractice.svelte_svelte_type_style_lang.js": {
-    "file": "_app/immutable/assets/WebPractice.B5-iP3se.css",
+    "file": "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
     "src": "_WebPractice.svelte_svelte_type_style_lang.js"
   },
   "_circle2.js": {
@@ -750,7 +905,8 @@
     "imports": [
       "_utils.js",
       "_SmuiElement.js",
-      "_ssr2.js"
+      "_ssr2.js",
+      "_forwardEventsBuilder.js"
     ]
   },
   "_client.js": {
@@ -807,6 +963,14 @@
     "file": "chunks/content5.js",
     "name": "content"
   },
+  "_content6.js": {
+    "file": "chunks/content6.js",
+    "name": "content"
+  },
+  "_content7.js": {
+    "file": "chunks/content7.js",
+    "name": "content"
+  },
   "_css.js": {
     "file": "chunks/css.js",
     "name": "css"
@@ -826,6 +990,10 @@
       "_sets.js",
       "_common.js"
     ]
+  },
+  "_forwardEventsBuilder.js": {
+    "file": "chunks/forwardEventsBuilder.js",
+    "name": "forwardEventsBuilder"
   },
   "_fraction.js": {
     "file": "chunks/fraction.js",
@@ -1132,6 +1300,14 @@
       "_fraction.js",
       "_common.js",
       "_sets.js"
+    ]
+  },
+  "_tweened.js": {
+    "file": "chunks/tweened.js",
+    "name": "tweened",
+    "imports": [
+      "_index2.js",
+      "_utils.js"
     ]
   },
   "_userDetail.js": {
@@ -2948,57 +3124,13 @@
     "src": "src/routes/(about)/about/+page@about.svelte",
     "isEntry": true,
     "imports": [
-      "_ssr2.js",
-      "_utils.js",
-      "_Papers.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page@about.CuMpkue0.css",
-      "_app/immutable/assets/Research.D7JEguvc.css"
-    ]
-  },
-  "src/routes/(about)/publications/+page.js": {
-    "file": "entries/pages/(about)/publications/_page.js",
-    "name": "entries/pages/(about)/publications/_page",
-    "src": "src/routes/(about)/publications/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index.js"
-    ]
-  },
-  "src/routes/(about)/publications/+page@publications.svelte": {
-    "file": "entries/pages/(about)/publications/_page@publications.svelte.js",
-    "name": "entries/pages/(about)/publications/_page@publications.svelte",
-    "src": "src/routes/(about)/publications/+page@publications.svelte",
-    "isEntry": true,
-    "imports": [
-      "_ssr2.js",
-      "_Papers.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page@publications.DuG8Te2v.css"
-    ]
-  },
-  "src/routes/(about)/research/+page.js": {
-    "file": "entries/pages/(about)/research/_page.js",
-    "name": "entries/pages/(about)/research/_page",
-    "src": "src/routes/(about)/research/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index.js"
-    ]
-  },
-  "src/routes/(about)/research/+page@research.svelte": {
-    "file": "entries/pages/(about)/research/_page@research.svelte.js",
-    "name": "entries/pages/(about)/research/_page@research.svelte",
-    "src": "src/routes/(about)/research/+page@research.svelte",
-    "isEntry": true,
-    "imports": [
       "_ssr2.js"
     ],
     "css": [
-      "_app/immutable/assets/_page@publications.DuG8Te2v.css",
-      "_app/immutable/assets/Research.D7JEguvc.css"
+      "_app/immutable/assets/_page@about.BsdFgWvy.css",
+      "_app/immutable/assets/Paper.Bg_S1Oi_.css",
+      "_app/immutable/assets/Papers.DWP9sFsm.css",
+      "_app/immutable/assets/P.CvI4RsOs.css"
     ]
   },
   "src/routes/(about)/teaching/+page.js": {
@@ -3047,10 +3179,11 @@
     "isEntry": true,
     "imports": [
       "_ssr2.js",
-      "_Papers.js"
+      "_Paper2.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.Deie9033.css"
+      "_app/immutable/assets/_page.Deie9033.css",
+      "_app/immutable/assets/Papers.DWP9sFsm.css"
     ]
   },
   "src/routes/(general)/+layout.server.js": {
@@ -3085,7 +3218,7 @@
       "_IconButton.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.BuuSqBMR.css",
+      "_app/immutable/assets/_layout.Dsqo6wQb.css",
       "_app/immutable/assets/Link.DT8GuSJh.css"
     ]
   },
@@ -3110,7 +3243,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.CRZ-FvEo.css"
+      "_app/immutable/assets/_page.DJTsGBLC.css"
     ]
   },
   "src/routes/(general)/[...catchAll]/+page.svelte": {
@@ -3728,7 +3861,211 @@
       "_Pathlist.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.kNrqzkQA.css"
+      "_app/immutable/assets/_page.MKzJQBCB.css"
+    ]
+  },
+  "src/routes/(general)/courses/algorithms/+page.js": {
+    "file": "entries/pages/(general)/courses/algorithms/_page.js",
+    "name": "entries/pages/(general)/courses/algorithms/_page",
+    "src": "src/routes/(general)/courses/algorithms/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/courses/algorithms/+page.svelte": {
+    "file": "entries/pages/(general)/courses/algorithms/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/algorithms/_page.svelte",
+    "src": "src/routes/(general)/courses/algorithms/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_stores3.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores.js",
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BPwhldds.css",
+      "_app/immutable/assets/Link.DT8GuSJh.css"
+    ]
+  },
+  "src/routes/(general)/courses/algorithms/sorting/+page.js": {
+    "file": "entries/pages/(general)/courses/algorithms/sorting/_page.js",
+    "name": "entries/pages/(general)/courses/algorithms/sorting/_page",
+    "src": "src/routes/(general)/courses/algorithms/sorting/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/courses/algorithms/sorting/+page.svelte": {
+    "file": "entries/pages/(general)/courses/algorithms/sorting/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/algorithms/sorting/_page.svelte",
+    "src": "src/routes/(general)/courses/algorithms/sorting/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_stores3.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores.js",
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BPe__4B3.css",
+      "_app/immutable/assets/Link.DT8GuSJh.css"
+    ]
+  },
+  "src/routes/(general)/courses/algorithms/sorting/bubble/+page.js": {
+    "file": "entries/pages/(general)/courses/algorithms/sorting/bubble/_page.js",
+    "name": "entries/pages/(general)/courses/algorithms/sorting/bubble/_page",
+    "src": "src/routes/(general)/courses/algorithms/sorting/bubble/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/courses/algorithms/sorting/bubble/+page.svelte": {
+    "file": "entries/pages/(general)/courses/algorithms/sorting/bubble/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/algorithms/sorting/bubble/_page.svelte",
+    "src": "src/routes/(general)/courses/algorithms/sorting/bubble/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_xml.js",
+      "_github-dark.js",
+      "_WebPractice.js",
+      "_stores3.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Cell.js",
+      "_Head.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Bubble.js",
+      "_LineNumbers.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.MFxEqAjy.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/courses/algorithms/sorting/insertion/+page.js": {
+    "file": "entries/pages/(general)/courses/algorithms/sorting/insertion/_page.js",
+    "name": "entries/pages/(general)/courses/algorithms/sorting/insertion/_page",
+    "src": "src/routes/(general)/courses/algorithms/sorting/insertion/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/courses/algorithms/sorting/insertion/+page.svelte": {
+    "file": "entries/pages/(general)/courses/algorithms/sorting/insertion/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/algorithms/sorting/insertion/_page.svelte",
+    "src": "src/routes/(general)/courses/algorithms/sorting/insertion/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_xml.js",
+      "_github-dark.js",
+      "_WebPractice.js",
+      "_stores3.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Cell.js",
+      "_Head.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Insertion.js",
+      "_LineNumbers.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.MFxEqAjy.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/courses/algorithms/sorting/merge/+page.js": {
+    "file": "entries/pages/(general)/courses/algorithms/sorting/merge/_page.js",
+    "name": "entries/pages/(general)/courses/algorithms/sorting/merge/_page",
+    "src": "src/routes/(general)/courses/algorithms/sorting/merge/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/courses/algorithms/sorting/merge/+page.svelte": {
+    "file": "entries/pages/(general)/courses/algorithms/sorting/merge/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/algorithms/sorting/merge/_page.svelte",
+    "src": "src/routes/(general)/courses/algorithms/sorting/merge/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_xml.js",
+      "_github-dark.js",
+      "_WebPractice.js",
+      "_stores3.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Cell.js",
+      "_Head.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Merge.js",
+      "_LineNumbers.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.MFxEqAjy.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/courses/algorithms/sorting/quick/+page.js": {
+    "file": "entries/pages/(general)/courses/algorithms/sorting/quick/_page.js",
+    "name": "entries/pages/(general)/courses/algorithms/sorting/quick/_page",
+    "src": "src/routes/(general)/courses/algorithms/sorting/quick/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/courses/algorithms/sorting/quick/+page.svelte": {
+    "file": "entries/pages/(general)/courses/algorithms/sorting/quick/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/algorithms/sorting/quick/_page.svelte",
+    "src": "src/routes/(general)/courses/algorithms/sorting/quick/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_xml.js",
+      "_github-dark.js",
+      "_WebPractice.js",
+      "_stores3.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Cell.js",
+      "_Head.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Quick.js",
+      "_LineNumbers.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.MFxEqAjy.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
     ]
   },
   "src/routes/(general)/courses/circuits/+page.js": {
@@ -3831,7 +4168,7 @@
       "_Button.js",
       "_NavList.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -3860,7 +4197,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
@@ -3893,7 +4230,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
@@ -3926,7 +4263,7 @@
       "_client.js",
       "_stores.js",
       "_WebPractice.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
@@ -3959,7 +4296,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -3995,7 +4332,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4028,7 +4365,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
@@ -4059,7 +4396,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
@@ -4093,7 +4430,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
@@ -4127,7 +4464,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
@@ -4161,7 +4498,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4190,7 +4527,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4234,7 +4571,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4264,7 +4601,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4296,14 +4633,14 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
     ],
     "css": [
       "_app/immutable/assets/_page.CzLEfhVh.css",
-      "_app/immutable/assets/WebPractice.B5-iP3se.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
       "_app/immutable/assets/NavList.CJbcjQr4.css"
     ]
   },
@@ -4330,14 +4667,14 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
     ],
     "css": [
       "_app/immutable/assets/_page.CzLEfhVh.css",
-      "_app/immutable/assets/WebPractice.B5-iP3se.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
       "_app/immutable/assets/NavList.CJbcjQr4.css"
     ]
   },
@@ -4363,7 +4700,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
@@ -4397,14 +4734,14 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
     ],
     "css": [
       "_app/immutable/assets/_page.CzLEfhVh.css",
-      "_app/immutable/assets/WebPractice.B5-iP3se.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
       "_app/immutable/assets/NavList.CJbcjQr4.css"
     ]
   },
@@ -4431,14 +4768,14 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
     ],
     "css": [
       "_app/immutable/assets/_page.CzLEfhVh.css",
-      "_app/immutable/assets/WebPractice.B5-iP3se.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
       "_app/immutable/assets/NavList.CJbcjQr4.css"
     ]
   },
@@ -4464,7 +4801,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4495,7 +4832,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4526,7 +4863,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
@@ -4618,7 +4955,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
@@ -4663,7 +5000,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4692,7 +5029,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4722,7 +5059,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4756,7 +5093,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
@@ -4788,7 +5125,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4819,7 +5156,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4850,7 +5187,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4881,7 +5218,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4913,7 +5250,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
@@ -4945,7 +5282,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -4975,7 +5312,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5005,7 +5342,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_WebPractice.js",
       "_Cell.js",
       "_Head.js",
@@ -5039,7 +5376,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_WebPractice.js",
       "_Cell.js",
       "_Head.js",
@@ -5073,7 +5410,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_WebPractice.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
@@ -5105,7 +5442,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_WebPractice.js",
       "_Cell.js",
       "_Head.js",
@@ -5139,7 +5476,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_WebPractice.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
@@ -5171,7 +5508,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_WebPractice.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
@@ -5203,7 +5540,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_WebPractice.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
@@ -5235,7 +5572,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5266,7 +5603,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_WebPractice.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
@@ -5298,7 +5635,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_WebPractice.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
@@ -5330,7 +5667,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_WebPractice.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
@@ -5362,7 +5699,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_WebPractice.js",
       "_Cell.js",
       "_Head.js",
@@ -5396,7 +5733,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_WebPractice.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
@@ -5428,7 +5765,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_WebPractice.js",
       "_Cell.js",
       "_Head.js",
@@ -5461,7 +5798,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Suffix.js",
       "_Cell.js",
       "_Head.js",
@@ -5472,7 +5809,7 @@
       "_app/immutable/assets/_page.DTyqccfW.css",
       "_app/immutable/assets/Link.DT8GuSJh.css",
       "_app/immutable/assets/NavList.CJbcjQr4.css",
-      "_app/immutable/assets/WebPractice.B5-iP3se.css"
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css"
     ]
   },
   "src/routes/(general)/courses/internet/wwwhtml/practice1/+page.js": {
@@ -5496,7 +5833,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content.js",
+      "_content2.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_LineNumbers.js"
@@ -5540,7 +5877,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_Cell.js",
@@ -5569,7 +5906,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5597,7 +5934,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5626,7 +5963,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5655,7 +5992,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5683,7 +6020,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5711,7 +6048,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5741,7 +6078,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5771,7 +6108,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5801,7 +6138,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5830,7 +6167,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content2.js",
+      "_content3.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5861,7 +6198,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content3.js",
+      "_content4.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5893,7 +6230,7 @@
       "_Subheader.js",
       "_client.js",
       "_stores.js",
-      "_content3.js",
+      "_content4.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -5973,7 +6310,7 @@
       "_Head.js",
       "_NavList.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_TabBar.js",
@@ -6061,7 +6398,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6087,7 +6424,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6113,7 +6450,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6139,7 +6476,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6165,7 +6502,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6191,7 +6528,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6217,7 +6554,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6243,7 +6580,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6269,7 +6606,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6295,7 +6632,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6321,7 +6658,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6347,7 +6684,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6373,7 +6710,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6399,7 +6736,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6425,7 +6762,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6451,7 +6788,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6477,7 +6814,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6503,7 +6840,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6529,7 +6866,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6555,7 +6892,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6581,7 +6918,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6607,7 +6944,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6633,7 +6970,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6659,7 +6996,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6686,7 +7023,7 @@
       "_ActionIcons.js",
       "_ScatteredPlot.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6712,7 +7049,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6739,7 +7076,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6765,7 +7102,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6791,7 +7128,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_Cell.js",
@@ -6819,7 +7156,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6845,7 +7182,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6871,7 +7208,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6897,7 +7234,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6923,7 +7260,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -6949,7 +7286,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_Cell.js",
@@ -6977,7 +7314,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7003,7 +7340,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js",
       "_Cell.js",
@@ -7031,7 +7368,7 @@
       "_Card.js",
       "_ActionIcons.js",
       "_stores.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7058,7 +7395,7 @@
       "_ActionIcons.js",
       "_stores.js",
       "_ScatteredPlot.js",
-      "_content4.js",
+      "_content5.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7124,7 +7461,7 @@
       "_Button.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7155,7 +7492,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7187,7 +7524,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7219,7 +7556,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7251,7 +7588,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7283,7 +7620,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7315,7 +7652,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7347,7 +7684,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7379,7 +7716,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7411,7 +7748,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7443,7 +7780,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7475,7 +7812,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7507,7 +7844,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7539,7 +7876,7 @@
       "_ActionIcons.js",
       "_NavList.js",
       "_stores.js",
-      "_content5.js",
+      "_content6.js",
       "_Pathlist.js",
       "_CourseNavigation.js"
     ],
@@ -7772,6 +8109,617 @@
       "_app/immutable/assets/Link.DT8GuSJh.css"
     ]
   },
+  "src/routes/(general)/publications/+page.js": {
+    "file": "entries/pages/(general)/publications/_page.js",
+    "name": "entries/pages/(general)/publications/_page",
+    "src": "src/routes/(general)/publications/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/publications/+page.svelte": {
+    "file": "entries/pages/(general)/publications/_page.svelte.js",
+    "name": "entries/pages/(general)/publications/_page.svelte",
+    "src": "src/routes/(general)/publications/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr2.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CzKSpbyS.css",
+      "_app/immutable/assets/Papers.DWP9sFsm.css"
+    ]
+  },
+  "src/routes/(general)/research/+page.js": {
+    "file": "entries/pages/(general)/research/_page.js",
+    "name": "entries/pages/(general)/research/_page",
+    "src": "src/routes/(general)/research/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/research/+page.svelte": {
+    "file": "entries/pages/(general)/research/_page.svelte.js",
+    "name": "entries/pages/(general)/research/_page.svelte",
+    "src": "src/routes/(general)/research/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_stores3.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BPwhldds.css",
+      "_app/immutable/assets/Link.DT8GuSJh.css"
+    ]
+  },
+  "src/routes/(general)/research/crypto/+page.js": {
+    "file": "entries/pages/(general)/research/crypto/_page.js",
+    "name": "entries/pages/(general)/research/crypto/_page",
+    "src": "src/routes/(general)/research/crypto/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/research/crypto/+page.svelte": {
+    "file": "entries/pages/(general)/research/crypto/_page.svelte.js",
+    "name": "entries/pages/(general)/research/crypto/_page.svelte",
+    "src": "src/routes/(general)/research/crypto/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_stores3.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.9VUdr_Gz.css",
+      "_app/immutable/assets/Link.DT8GuSJh.css"
+    ]
+  },
+  "src/routes/(general)/research/crypto/fasterLattice/+page.js": {
+    "file": "entries/pages/(general)/research/crypto/fasterLattice/_page.js",
+    "name": "entries/pages/(general)/research/crypto/fasterLattice/_page",
+    "src": "src/routes/(general)/research/crypto/fasterLattice/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/crypto/fasterLattice/+page.svelte": {
+    "file": "entries/pages/(general)/research/crypto/fasterLattice/_page.svelte.js",
+    "name": "entries/pages/(general)/research/crypto/fasterLattice/_page.svelte",
+    "src": "src/routes/(general)/research/crypto/fasterLattice/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CL1xhF54.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/research/crypto/obtuse/+page.js": {
+    "file": "entries/pages/(general)/research/crypto/obtuse/_page.js",
+    "name": "entries/pages/(general)/research/crypto/obtuse/_page",
+    "src": "src/routes/(general)/research/crypto/obtuse/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/crypto/obtuse/+page.svelte": {
+    "file": "entries/pages/(general)/research/crypto/obtuse/_page.svelte.js",
+    "name": "entries/pages/(general)/research/crypto/obtuse/_page.svelte",
+    "src": "src/routes/(general)/research/crypto/obtuse/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CL1xhF54.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/research/crypto/reduceLattice/+page.js": {
+    "file": "entries/pages/(general)/research/crypto/reduceLattice/_page.js",
+    "name": "entries/pages/(general)/research/crypto/reduceLattice/_page",
+    "src": "src/routes/(general)/research/crypto/reduceLattice/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/crypto/reduceLattice/+page.svelte": {
+    "file": "entries/pages/(general)/research/crypto/reduceLattice/_page.svelte.js",
+    "name": "entries/pages/(general)/research/crypto/reduceLattice/_page.svelte",
+    "src": "src/routes/(general)/research/crypto/reduceLattice/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DpRtdGOX.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/research/crypto/selfdual/+page.js": {
+    "file": "entries/pages/(general)/research/crypto/selfdual/_page.js",
+    "name": "entries/pages/(general)/research/crypto/selfdual/_page",
+    "src": "src/routes/(general)/research/crypto/selfdual/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/crypto/selfdual/+page.svelte": {
+    "file": "entries/pages/(general)/research/crypto/selfdual/_page.svelte.js",
+    "name": "entries/pages/(general)/research/crypto/selfdual/_page.svelte",
+    "src": "src/routes/(general)/research/crypto/selfdual/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DpRtdGOX.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/research/kernelization/+page.js": {
+    "file": "entries/pages/(general)/research/kernelization/_page.js",
+    "name": "entries/pages/(general)/research/kernelization/_page",
+    "src": "src/routes/(general)/research/kernelization/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/research/kernelization/+page.svelte": {
+    "file": "entries/pages/(general)/research/kernelization/_page.svelte.js",
+    "name": "entries/pages/(general)/research/kernelization/_page.svelte",
+    "src": "src/routes/(general)/research/kernelization/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_stores3.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.9VUdr_Gz.css",
+      "_app/immutable/assets/Link.DT8GuSJh.css"
+    ]
+  },
+  "src/routes/(general)/research/kernelization/cds/+page.js": {
+    "file": "entries/pages/(general)/research/kernelization/cds/_page.js",
+    "name": "entries/pages/(general)/research/kernelization/cds/_page",
+    "src": "src/routes/(general)/research/kernelization/cds/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/kernelization/cds/+page.svelte": {
+    "file": "entries/pages/(general)/research/kernelization/cds/_page.svelte.js",
+    "name": "entries/pages/(general)/research/kernelization/cds/_page.svelte",
+    "src": "src/routes/(general)/research/kernelization/cds/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DpRtdGOX.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/research/kernelization/coc/+page.js": {
+    "file": "entries/pages/(general)/research/kernelization/coc/_page.js",
+    "name": "entries/pages/(general)/research/kernelization/coc/_page",
+    "src": "src/routes/(general)/research/kernelization/coc/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/kernelization/coc/+page.svelte": {
+    "file": "entries/pages/(general)/research/kernelization/coc/_page.svelte.js",
+    "name": "entries/pages/(general)/research/kernelization/coc/_page.svelte",
+    "src": "src/routes/(general)/research/kernelization/coc/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DpRtdGOX.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/research/parameterized/+page.js": {
+    "file": "entries/pages/(general)/research/parameterized/_page.js",
+    "name": "entries/pages/(general)/research/parameterized/_page",
+    "src": "src/routes/(general)/research/parameterized/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/research/parameterized/+page.svelte": {
+    "file": "entries/pages/(general)/research/parameterized/_page.svelte.js",
+    "name": "entries/pages/(general)/research/parameterized/_page.svelte",
+    "src": "src/routes/(general)/research/parameterized/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_stores3.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.9VUdr_Gz.css",
+      "_app/immutable/assets/Link.DT8GuSJh.css"
+    ]
+  },
+  "src/routes/(general)/research/parameterized/bitournament/+page.js": {
+    "file": "entries/pages/(general)/research/parameterized/bitournament/_page.js",
+    "name": "entries/pages/(general)/research/parameterized/bitournament/_page",
+    "src": "src/routes/(general)/research/parameterized/bitournament/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/parameterized/bitournament/+page.svelte": {
+    "file": "entries/pages/(general)/research/parameterized/bitournament/_page.svelte.js",
+    "name": "entries/pages/(general)/research/parameterized/bitournament/_page.svelte",
+    "src": "src/routes/(general)/research/parameterized/bitournament/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DpRtdGOX.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/research/parameterized/club/+page.js": {
+    "file": "entries/pages/(general)/research/parameterized/club/_page.js",
+    "name": "entries/pages/(general)/research/parameterized/club/_page",
+    "src": "src/routes/(general)/research/parameterized/club/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/parameterized/club/+page.svelte": {
+    "file": "entries/pages/(general)/research/parameterized/club/_page.svelte.js",
+    "name": "entries/pages/(general)/research/parameterized/club/_page.svelte",
+    "src": "src/routes/(general)/research/parameterized/club/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DpRtdGOX.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/research/parameterized/induced/+page.js": {
+    "file": "entries/pages/(general)/research/parameterized/induced/_page.js",
+    "name": "entries/pages/(general)/research/parameterized/induced/_page",
+    "src": "src/routes/(general)/research/parameterized/induced/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/parameterized/induced/+page.svelte": {
+    "file": "entries/pages/(general)/research/parameterized/induced/_page.svelte.js",
+    "name": "entries/pages/(general)/research/parameterized/induced/_page.svelte",
+    "src": "src/routes/(general)/research/parameterized/induced/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DpRtdGOX.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/research/parameterized/tournament/+page.js": {
+    "file": "entries/pages/(general)/research/parameterized/tournament/_page.js",
+    "name": "entries/pages/(general)/research/parameterized/tournament/_page",
+    "src": "src/routes/(general)/research/parameterized/tournament/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/parameterized/tournament/+page.svelte": {
+    "file": "entries/pages/(general)/research/parameterized/tournament/_page.svelte.js",
+    "name": "entries/pages/(general)/research/parameterized/tournament/_page.svelte",
+    "src": "src/routes/(general)/research/parameterized/tournament/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DpRtdGOX.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/research/qit/+page.js": {
+    "file": "entries/pages/(general)/research/qit/_page.js",
+    "name": "entries/pages/(general)/research/qit/_page",
+    "src": "src/routes/(general)/research/qit/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/research/qit/+page.svelte": {
+    "file": "entries/pages/(general)/research/qit/_page.svelte.js",
+    "name": "entries/pages/(general)/research/qit/_page.svelte",
+    "src": "src/routes/(general)/research/qit/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_stores3.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_NavList.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.9VUdr_Gz.css",
+      "_app/immutable/assets/Link.DT8GuSJh.css"
+    ]
+  },
+  "src/routes/(general)/research/qit/local/+page.js": {
+    "file": "entries/pages/(general)/research/qit/local/_page.js",
+    "name": "entries/pages/(general)/research/qit/local/_page",
+    "src": "src/routes/(general)/research/qit/local/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/qit/local/+page.svelte": {
+    "file": "entries/pages/(general)/research/qit/local/_page.svelte.js",
+    "name": "entries/pages/(general)/research/qit/local/_page.svelte",
+    "src": "src/routes/(general)/research/qit/local/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CL1xhF54.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/research/qit/schmidt/+page.js": {
+    "file": "entries/pages/(general)/research/qit/schmidt/_page.js",
+    "name": "entries/pages/(general)/research/qit/schmidt/_page",
+    "src": "src/routes/(general)/research/qit/schmidt/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/qit/schmidt/+page.svelte": {
+    "file": "entries/pages/(general)/research/qit/schmidt/_page.svelte.js",
+    "name": "entries/pages/(general)/research/qit/schmidt/_page.svelte",
+    "src": "src/routes/(general)/research/qit/schmidt/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CL1xhF54.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
+  "src/routes/(general)/research/qit/schmidtProperties/+page.js": {
+    "file": "entries/pages/(general)/research/qit/schmidtProperties/_page.js",
+    "name": "entries/pages/(general)/research/qit/schmidtProperties/_page",
+    "src": "src/routes/(general)/research/qit/schmidtProperties/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/qit/schmidtProperties/+page.svelte": {
+    "file": "entries/pages/(general)/research/qit/schmidtProperties/_page.svelte.js",
+    "name": "entries/pages/(general)/research/qit/schmidtProperties/_page.svelte",
+    "src": "src/routes/(general)/research/qit/schmidtProperties/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Paper2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CL1xhF54.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css"
+    ]
+  },
   "src/routes/(general)/students/+page.js": {
     "file": "entries/pages/(general)/students/_page.js",
     "name": "entries/pages/(general)/students/_page",
@@ -7823,7 +8771,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.kNrqzkQA.css",
+      "_app/immutable/assets/_page.MKzJQBCB.css",
       "_app/immutable/assets/Message.D2xEdDAW.css",
       "_app/immutable/assets/Link.DT8GuSJh.css"
     ]
@@ -7869,10 +8817,11 @@
       "_ssr2.js",
       "_stores4.js",
       "_client.js",
-      "_Canvas.js"
+      "_Canvas.js",
+      "_Presenter.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.CZDRzNfi.css"
+      "_app/immutable/assets/_layout.BpGjEGQl.css"
     ]
   },
   "src/routes/(general)/talks/quantumteleportation/+page.js": {
@@ -7893,10 +8842,59 @@
       "_utils.js",
       "_ssr2.js",
       "_stores4.js",
-      "_stores3.js"
+      "_stores3.js",
+      "_Image.svelte_svelte_type_style_lang.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.CqCEwrN9.css"
+      "_app/immutable/assets/_page.DXLy1Juu.css"
+    ]
+  },
+  "src/routes/(general)/talks/sorting/+layout.svelte": {
+    "file": "entries/pages/(general)/talks/sorting/_layout.svelte.js",
+    "name": "entries/pages/(general)/talks/sorting/_layout.svelte",
+    "src": "src/routes/(general)/talks/sorting/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_FormField.js",
+      "_Checkbox.js",
+      "_stores4.js",
+      "_client.js",
+      "_Canvas.js",
+      "_Presenter.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.Ca4tRhB-.css"
+    ]
+  },
+  "src/routes/(general)/talks/sorting/+page.js": {
+    "file": "entries/pages/(general)/talks/sorting/_page.js",
+    "name": "entries/pages/(general)/talks/sorting/_page",
+    "src": "src/routes/(general)/talks/sorting/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(general)/talks/sorting/+page.svelte": {
+    "file": "entries/pages/(general)/talks/sorting/_page.svelte.js",
+    "name": "entries/pages/(general)/talks/sorting/_page.svelte",
+    "src": "src/routes/(general)/talks/sorting/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_stores4.js",
+      "_stores3.js",
+      "_Image.svelte_svelte_type_style_lang.js",
+      "_Bubble.js",
+      "_Insertion.js",
+      "_Merge.js",
+      "_Quick.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DoQfHhsA.css"
     ]
   },
   "src/routes/(mathril)/+layout.svelte": {
@@ -7966,7 +8964,7 @@
       "_stores7.js",
       "_Timer.js",
       "_stores.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_index2.js",
       "_dispatch.js",
       "_Paper.js",
@@ -8663,7 +9661,6 @@
       "_Item.js",
       "_Subheader.js",
       "_Graphic.js",
-      "_Button.js",
       "_client.js",
       "_stores3.js",
       "_stores2.js",
@@ -8705,7 +9702,7 @@
       "_stores2.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.D7Ie0uSe.css"
+      "_app/immutable/assets/_page.B-lIFtUo.css"
     ]
   },
   "src/routes/(vectorial)/vectorial/(nonapp)/[...catchAll]/+page.svelte": {
@@ -8774,29 +9771,21 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_Set.js",
-      "_SmuiElement.js",
-      "_prefixFilter.js",
-      "_FormField.js",
+      "_Drawing.js",
       "_Card.js",
       "_ActionIcons.js",
-      "_Media.js",
       "_Actions.js",
       "_Button.js",
       "_CommonLabel.js",
-      "_Dialog.js",
-      "_Actions2.js",
-      "_IconButton.js",
-      "_stores3.js",
-      "_stores6.js",
       "_client.js",
-      "_PreviewTextMask.js",
+      "_stores6.js",
       "_Suffix.js",
       "_Subtitle.js",
+      "_stores3.js",
       "_stores2.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.B6Ss_gAq.css",
+      "_app/immutable/assets/_page.gTHTxpM-.css",
       "_app/immutable/assets/Listfield.DGx9FQDH.css",
       "_app/immutable/assets/SegmentedButton.uIc266ni.css"
     ]
@@ -8992,6 +9981,42 @@
     ],
     "css": [
       "_app/immutable/assets/_page.C5GVjVaF.css"
+    ]
+  },
+  "src/routes/(vectorial)/vectorial/(nonapp)/drawings/+page.js": {
+    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/drawings/_page.js",
+    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/drawings/_page",
+    "src": "src/routes/(vectorial)/vectorial/(nonapp)/drawings/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js"
+    ]
+  },
+  "src/routes/(vectorial)/vectorial/(nonapp)/drawings/+page.svelte": {
+    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/drawings/_page.svelte.js",
+    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/drawings/_page.svelte",
+    "src": "src/routes/(vectorial)/vectorial/(nonapp)/drawings/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_Drawing.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Actions.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_client.js",
+      "_stores6.js",
+      "_Suffix.js",
+      "_Subtitle.js",
+      "_stores2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.gTHTxpM-.css",
+      "_app/immutable/assets/Listfield.DGx9FQDH.css",
+      "_app/immutable/assets/SegmentedButton.uIc266ni.css"
     ]
   },
   "src/routes/(vectorial)/vectorial/(nonapp)/learn/+page.js": {
@@ -9269,7 +10294,7 @@
       "_ActionIcons.js",
       "_Button.js",
       "_utils.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_CommonLabel.js",
       "_Svg.js",
       "_Menu.js",
@@ -9330,7 +10355,7 @@
       "_Title.js",
       "_CommonLabel.js",
       "_IconButton.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_dispatch.js",
       "_prefixFilter.js",
       "_Menu.js",
@@ -9784,7 +10809,6 @@
       "_Subtitle.js",
       "_client.js",
       "_stores2.js",
-      "_stores3.js",
       "_LinearProgress.js",
       "_CommonLabel.js",
       "_Card.js",
@@ -9798,7 +10822,7 @@
       "_Actions.js",
       "_Subheader.js",
       "_Paper.js",
-      "_SmuiElement.js",
+      "_forwardEventsBuilder.js",
       "_prefixFilter.js",
       "_PreviewGrid.js"
     ],
@@ -9827,7 +10851,7 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_stores3.js",
+      "_client.js",
       "_stores6.js",
       "_MenuSurface.js",
       "_ActionIcons.js",
@@ -9847,11 +10871,10 @@
       "_Svg.js",
       "_Input.js",
       "_Subtitle.js",
-      "_client.js",
       "_stores2.js"
     ],
     "css": [
-      "_app/immutable/assets/_page@app.DcNpypkv.css"
+      "_app/immutable/assets/_page@app.DvFNXPNr.css"
     ]
   },
   "src/routes/(vectorial)/vectorial/download/+layout.svelte": {

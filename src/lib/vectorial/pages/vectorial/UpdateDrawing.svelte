@@ -8,7 +8,8 @@
         import { goto } from '$app/navigation';
         import { createEventDispatcher } from 'svelte';
         import { page } from '$app/stores';
-        import {DRAWING} from './stores';
+        import {DRAWING, localGallery} from './stores';
+        
         //title, description, category, elements, permission
         export let sourceApp;
         let dispatch = createEventDispatcher();
@@ -20,18 +21,23 @@
                 
                 return;
             }
-            const res = await fetch('/vectorial/api/vectorial', {
-                method: "PUT",
-                headers: {
-                    'content-type': 'application/json'
-                },
-                body: JSON.stringify($DRAWING)//
-            })
-            if(!res.ok) {
-                alert('Failed to update')
-                return
+            if(!$localGallery.includes($DRAWING.drawingID)) {
+                $localGallery = [...$localGallery, $DRAWING.drawingID];
             }
-            goto(`/vectorial/${$page.data.user.publicID}/drawings`);
+            window.localStorage.setItem($DRAWING.drawingID, JSON.stringify($DRAWING));
+            // const res = await fetch('/vectorial/api/vectorial', {
+            //     method: "PUT",
+            //     headers: {
+            //         'content-type': 'application/json'
+            //     },
+            //     body: JSON.stringify($DRAWING)
+            // })
+            // if(!res.ok) {
+            //     alert('Failed to update')
+            //     return
+            // }
+            // goto(`/vectorial/${$page.data.user.publicID}/drawings`);
+            goto(`/vectorial/drawings`)
         }
         const cancel = () => {
             dispatch('cancel');

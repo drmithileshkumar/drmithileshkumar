@@ -1,6 +1,6 @@
 import { c as compute_rest_props } from "./utils.js";
 import { c as create_ssr_component, a as get_current_component, s as setContext, b as spread, f as escape_object, h as add_attribute } from "./ssr2.js";
-import { f as forwardEventsBuilder } from "./SmuiElement.js";
+import { f as forwardEventsBuilder } from "./forwardEventsBuilder.js";
 const Head = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["use", "getElement"]);
   forwardEventsBuilder(get_current_component());

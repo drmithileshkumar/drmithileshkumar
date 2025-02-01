@@ -5,7 +5,7 @@ import "../../../../../../../chunks/Suffix.js";
 import { T as Title, S as Section } from "../../../../../../../chunks/Title.js";
 import { C as CommonLabel } from "../../../../../../../chunks/CommonLabel.js";
 import { I as IconButton } from "../../../../../../../chunks/IconButton.js";
-import { f as forwardEventsBuilder, c as classMap } from "../../../../../../../chunks/SmuiElement.js";
+import { f as forwardEventsBuilder, c as classMap } from "../../../../../../../chunks/forwardEventsBuilder.js";
 import { d as dispatch } from "../../../../../../../chunks/dispatch.js";
 import { e as exclude, p as prefixFilter } from "../../../../../../../chunks/prefixFilter.js";
 import { M as Menu } from "../../../../../../../chunks/Menu.js";

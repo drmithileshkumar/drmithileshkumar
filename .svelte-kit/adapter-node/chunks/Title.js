@@ -1,7 +1,7 @@
 import { c as classAdderBuilder } from "./classAdderBuilder.js";
 import { c as compute_rest_props } from "./utils.js";
 import { c as create_ssr_component, a as get_current_component, s as setContext, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute } from "./ssr2.js";
-import { f as forwardEventsBuilder, c as classMap } from "./SmuiElement.js";
+import { f as forwardEventsBuilder, c as classMap } from "./forwardEventsBuilder.js";
 const Row = classAdderBuilder({
   class: "mdc-top-app-bar__row",
   tag: "div"

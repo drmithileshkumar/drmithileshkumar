@@ -1,5 +1,13 @@
 function noop() {
 }
+const identity = (x) => x;
+function assign(tar, src) {
+  for (const k in src) tar[k] = src[k];
+  return (
+    /** @type {T & S} */
+    tar
+  );
+}
 function is_promise(value) {
   return !!value && (typeof value === "object" || typeof value === "function") && typeof /** @type {any} */
   value.then === "function";
@@ -52,8 +60,10 @@ export {
   compute_rest_props as c,
   compute_slots as d,
   null_to_empty as e,
-  blank_object as f,
-  is_promise as i,
+  assign as f,
+  is_promise as g,
+  blank_object as h,
+  identity as i,
   noop as n,
   run_all as r,
   safe_not_equal as s

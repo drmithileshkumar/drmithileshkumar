@@ -47,7 +47,7 @@
         </List>
         {:else}
             <br>
-            <Button on:click={() => goto("/vectorial/auth")}>Log in / Sign up</Button>
+            <!-- <Button on:click={() => goto("/vectorial/auth")}>Log in / Sign up</Button> -->
             
         {/if}
         <List>
@@ -73,6 +73,10 @@
                 </Item> -->
         </List>
         <List>
+            <Item on:SMUI:action={() => goto(`/vectorial/drawings`)}>
+                <Graphic class="material-symbols-outlined">gallery_thumbnail</Graphic>
+                <Text>Drawings</Text>
+            </Item>
             <Item on:SMUI:action={() => goto(`/vectorial/learn`)}>
                 <Graphic class="material-icons">school</Graphic>
                 <Text>Learn</Text>

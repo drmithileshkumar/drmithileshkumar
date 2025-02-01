@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/+page.js";
+import * as universal from "../../../../src/routes/(vectorial)/vectorial/(nonapp)/about/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/+page.svelte";
+export { default as component } from "../../../../src/routes/(vectorial)/vectorial/(nonapp)/about/+page.svelte";

@@ -40,6 +40,9 @@
                 <!-- <a href="https://arxiv.org/abs/2411.10710">CoRR abs/2411.10710 (2024)</a>,--> 
                  <a href="https://www.researchgate.net/publication/386416763_A_guide_to_Quantum_Channels">10.13140/RG.2.2.30460.45446</a>, Dec 2024
             </p>
+            <p slot="status">
+                In progress.
+            </p>
         </Paper>
         <Paper>
             <p slot="authors">
@@ -50,6 +53,9 @@
             </p>
             <p slot="venue">
                 <a href="https://arxiv.org/abs/2411.10710">CoRR abs/2411.10710 (2024)</a>, <a href="https://www.researchgate.net/publication/385864724_Local_Operations_in_Multiparty_Quantum_Systems">10.13140/RG.2.2.10422.51524</a>, 2024
+            </p>
+            <p slot="status">
+                <em>Submitted</em> to Physical Review Letters
             </p>
         </Paper>
         <Paper>
@@ -62,6 +68,9 @@
             <p slot="venue">
                 <a href="https://arxiv.org/abs/2411.05703">CoRR abs/2411.05703 (2024)</a>, <a href="https://www.researchgate.net/publication/385630874_On_properties_of_Schmidt_Decomposition">10.13140/RG.2.2.19022.47687</a>, 2024
             </p>
+            <p slot="status">
+                <em>Submitted</em> to Physical Review Letters
+            </p>
         </Paper>
         <Paper>
             <p slot="authors">
@@ -72,6 +81,9 @@
             </p>
             <p slot="venue">
                 <a href="https://arxiv.org/abs/2411.02473">CoRR abs/2411.02473 (2024)</a>, <a href="https://www.researchgate.net/publication/385491083_Schmidt_Decomposition_of_Multipartite_States">10.13140/RG.2.2.19713.88162</a>, 2024
+            </p>
+            <p slot="status">
+                <em>Submitted</em> to Physical Review Letters
             </p>
         </Paper>
         <Paper>
@@ -84,6 +96,9 @@
             <p slot="venue">
                 <a href="https://www.researchgate.net/publication/385490959_Schmidt_Decomposition_of_Quadripartite_States">10.13140/RG.2.2.26424.76807</a>, 2024
             </p>
+            <p slot="status">
+                Combined with Multipartite
+            </p>
         </Paper>
         <Paper>
             <p slot="authors">
@@ -94,6 +109,9 @@
             </p>
             <p slot="venue">
                 <a href="https://www.researchgate.net/publication/385491145_Schmidt_Decomposition_of_Tripartite_States">10.13140/RG.2.2.24747.04648</a>, 2024
+            </p>
+            <p slot="status">
+                Combined with Multipartite
             </p>
         </Paper>
     </section>
@@ -110,6 +128,9 @@
             <p slot="venue">
                 <a href="https://arxiv.org/abs/2009.00384">CoRR abs/2009.00384 (2020)</a>
             </p>
+            <p slot="status">
+                <em>preprint</em>
+            </p>
         </Paper>
         <Paper>
             <p slot="authors">
@@ -120,6 +141,9 @@
             </p>
             <p slot="venue">
                 <a href="https://arxiv.org/abs/1912.01781">CoRR abs/1912.01781 (2019)</a>
+            </p>
+            <p slot="status">
+                <em>preprint</em>
             </p>
         </Paper>
         <Paper>
@@ -132,6 +156,9 @@
             <p slot="venue">
                 <a href="https://www.lebesgue.fr/sites/default/files/proceedings_WCC/WCC_2019_paper_24.pdf">WCC, 2019</a> 
             </p>
+            <p slot="status">
+                <em>Reviewed</em>
+            </p>
         </Paper>
         <Paper>
             <p slot="authors">
@@ -142,6 +169,9 @@
             </p>
             <p slot="venue">
                 <a href="https://www.infocommunications.hu/documents/169298/4647244/InfocomJ_2019_4_All.pdf">Infocommunications Journal, 2019</a>
+            </p>
+            <p slot="status">
+                <em>Reviewed</em>
             </p>
         </Paper>
     </section>
@@ -158,6 +188,9 @@
             <p slot="venue">
                 <a href="https://epubs.siam.org/doi/10.1137/18M1172508">SIAM J. Discret. Math. 33(3): 1743-1771 (2019)</a>, <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.STACS.2018.29">STACS 2018: 29:1-29:15</a>, <a href="https://arxiv.org/abs/1706.09339">CoRR abs/1706.09339 (2017)</a>
             </p>
+            <p slot="status">
+                <em>Reviewed</em>
+            </p>
         </Paper>
         <Paper>
             <p slot="authors">
@@ -168,6 +201,9 @@
             </p>
             <p slot="venue">
                 <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.IPEC.2016.20">IPEC 2016: 20:1-20:14</a>, <a href="https://arxiv.org/abs/1610.04711">CoRR abs/1610.04711 (2016)</a>
+            </p>
+            <p slot="status">
+                <em>Reviewed</em>
             </p>
         </Paper>
     </section>
@@ -185,6 +221,9 @@
             <p slot="venue">
                 <a href="https://arxiv.org/abs/2008.09660">CoRR abs/2008.09660 (2020)</a>
             </p>
+            <p slot="status">
+                <em>preprint</em>
+            </p>
         </Paper>
         <Paper>
             <p slot="authors">
@@ -195,6 +234,9 @@
             </p>
             <p slot="venue">
                 <a href="https://doi.org/10.48550/arXiv.1903.05425">CoRR abs/1903.05425 (2019)</a>
+            </p>
+            <p slot="status">
+                <em>preprint</em>
             </p>
         </Paper>
         <Paper>
@@ -207,6 +249,9 @@
             <p slot="venue">
                 <a href="https://doi.org/10.4230/LIPIcs.FSTTCS.2016.24">FSTTCS 2016: 24:1-24:15</a>, <a href="https://doi.org/10.48550/arXiv.2411.02821">CoRR abs/2411.02821 (2024)</a>
             </p>
+            <p slot="status">
+                <em>Reviewd</em> 
+            </p>
         </Paper>
         <Paper>
             <p slot="authors">
@@ -217,6 +262,9 @@
             </p>
             <p slot="venue">
                 <a href="https://doi.org/10.4230/LIPIcs.STACS.2016.49">STACS 2016: 49:1-49:13</a>, <a href="https://doi.org/10.48550/arXiv.1510.07676">CoRR abs/1510.07676 (2015)</a>
+            </p>
+            <p slot="status">
+                <em>Reviewed</em> 
             </p>
         </Paper>
     </section>

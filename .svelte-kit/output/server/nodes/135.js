@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/courses/mathematics2/statistics/regression/regressioncoefficient/_page.js';
+import * as universal from '../entries/pages/(general)/courses/mathematics2/statistics/measures/mean/_page.js';
 
 export const index = 135;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/mathematics2/statistics/regression/regressioncoefficient/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/courses/mathematics2/statistics/measures/mean/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/courses/mathematics2/statistics/regression/regressioncoefficient/+page.js";
-export const imports = ["_app/immutable/nodes/135.jPHMb6mi.js","_app/immutable/chunks/scheduler.DDynXUZ0.js","_app/immutable/chunks/index.DnYThXIE.js","_app/immutable/chunks/stores.CyuxF9br.js","_app/immutable/chunks/entry.BIhX438V.js","_app/immutable/chunks/index.BNQMCvwE.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/typeset.CzCYmz-Z.js","_app/immutable/chunks/Card.DRC2xUqP.js","_app/immutable/chunks/SmuiElement.niKK9SEg.js","_app/immutable/chunks/ActionIcons.rKvm5GeB.js","_app/immutable/chunks/classAdderBuilder.C1qMRX2R.js","_app/immutable/chunks/stores.C4YY6XNo.js","_app/immutable/chunks/content.hgbENy1C.js","_app/immutable/chunks/Pathlist.vI7Xpyp9.js","_app/immutable/chunks/each.D0FuIOMI.js","_app/immutable/chunks/CourseNavigation.Dmce26xt.js","_app/immutable/chunks/Ripple.C-DtqsEB.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js"];
-export const stylesheets = ["_app/immutable/assets/122.BTvHxQHG.css","_app/immutable/assets/Pathlist.BSb51Isn.css","_app/immutable/assets/CourseNavigation.CI9tLRx6.css"];
+export const universal_id = "src/routes/(general)/courses/mathematics2/statistics/measures/mean/+page.js";
+export const imports = ["_app/immutable/nodes/135.Cdu8t4z6.js","_app/immutable/chunks/scheduler.TT61c9Gi.js","_app/immutable/chunks/index.Dipn8n_a.js","_app/immutable/chunks/stores.CZO3ygXh.js","_app/immutable/chunks/entry.9fiABkYg.js","_app/immutable/chunks/index.3B1h_P5q.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/typeset.CzCYmz-Z.js","_app/immutable/chunks/Card.D-OaqPor.js","_app/immutable/chunks/useActions.HCeguDvV.js","_app/immutable/chunks/ActionIcons.DRhTvYcM.js","_app/immutable/chunks/classAdderBuilder.uY3NaTMq.js","_app/immutable/chunks/SmuiElement.Ds45l3Bo.js","_app/immutable/chunks/stores.D4EbrjdR.js","_app/immutable/chunks/content.hgbENy1C.js","_app/immutable/chunks/Pathlist.Ch1VAvUd.js","_app/immutable/chunks/each.Dw7b1pvy.js","_app/immutable/chunks/CourseNavigation.C_8KrcbB.js","_app/immutable/chunks/Ripple.8rjYrLoK.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/transform.Dm0_CReC.js"];
+export const stylesheets = ["_app/immutable/assets/132.EMEvBZ6k.css","_app/immutable/assets/Pathlist.BSb51Isn.css","_app/immutable/assets/CourseNavigation.CI9tLRx6.css"];
 export const fonts = [];

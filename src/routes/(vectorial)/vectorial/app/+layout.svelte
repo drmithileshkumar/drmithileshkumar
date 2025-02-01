@@ -109,7 +109,7 @@
     // import { selectedElements } from "./stores";
 
     export let sourceApp = "Vectorial";
-    export let dispatchUrl = `/vectorial/${$page.data.user.publicID}/drawings`;
+    export let dispatchUrl =  `/vectorial/drawings`; // `/vectorial/${$page.data.user.publicID}/drawings`;
     let dispatch = createEventDispatcher();
     
     
@@ -1487,7 +1487,7 @@
         {/if} -->
     </div>
     <div class="canvasContainer" bind:clientHeight={$clientHeight} bind:clientWidth={$clientWidth}>
-        <slot></slot>
+        <slot />
         {#if showDocument || showHelp || updateDrawing || showAppearance || showDimensions || showFilters || showMarkers || showMasks || showLayers}
             <div class="rightDropDown">
                     {#if showDocument}   
@@ -1506,7 +1506,7 @@
                         <UpdateDrawing
                             {sourceApp}
                             on:updated={updated}
-                            on:drawingSaved={() => goto("/")}
+                            on:drawingSaved={() => goto("/vectorial")}
                             on:cancel={cancelUpdate}
                         />
                     {/if}

@@ -92,6 +92,30 @@
 		"src/routes/(general)/courses/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/algorithms": [
+		"src/routes/(general)/courses/algorithms/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/algorithms/sorting": [
+		"src/routes/(general)/courses/algorithms/sorting/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/algorithms/sorting/bubble": [
+		"src/routes/(general)/courses/algorithms/sorting/bubble/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/algorithms/sorting/insertion": [
+		"src/routes/(general)/courses/algorithms/sorting/insertion/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/algorithms/sorting/merge": [
+		"src/routes/(general)/courses/algorithms/sorting/merge/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/courses/algorithms/sorting/quick": [
+		"src/routes/(general)/courses/algorithms/sorting/quick/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/circuits": [
 		"src/routes/(general)/courses/circuits/+page.js",
 		"src/routes/(general)/+layout.server.js"
@@ -714,11 +738,81 @@
 		"src/routes/(mathril)/mathril/games/subtraction/+page.js"
 	],
 	"/(mathril)/mathril/[...catchAll]": [],
-	"/(about)/publications": [
-		"src/routes/(about)/publications/+page.js"
+	"/(general)/publications": [
+		"src/routes/(general)/publications/+page.js",
+		"src/routes/(general)/+layout.server.js"
 	],
-	"/(about)/research": [
-		"src/routes/(about)/research/+page.js"
+	"/(general)/research": [
+		"src/routes/(general)/research/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/crypto": [
+		"src/routes/(general)/research/crypto/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/crypto/fasterLattice": [
+		"src/routes/(general)/research/crypto/fasterLattice/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/crypto/obtuse": [
+		"src/routes/(general)/research/crypto/obtuse/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/crypto/reduceLattice": [
+		"src/routes/(general)/research/crypto/reduceLattice/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/crypto/selfdual": [
+		"src/routes/(general)/research/crypto/selfdual/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/kernelization": [
+		"src/routes/(general)/research/kernelization/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/kernelization/cds": [
+		"src/routes/(general)/research/kernelization/cds/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/kernelization/coc": [
+		"src/routes/(general)/research/kernelization/coc/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/parameterized": [
+		"src/routes/(general)/research/parameterized/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/parameterized/bitournament": [
+		"src/routes/(general)/research/parameterized/bitournament/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/parameterized/club": [
+		"src/routes/(general)/research/parameterized/club/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/parameterized/induced": [
+		"src/routes/(general)/research/parameterized/induced/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/parameterized/tournament": [
+		"src/routes/(general)/research/parameterized/tournament/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/qit": [
+		"src/routes/(general)/research/qit/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/qit/local": [
+		"src/routes/(general)/research/qit/local/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/qit/schmidtProperties": [
+		"src/routes/(general)/research/qit/schmidtProperties/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/research/qit/schmidt": [
+		"src/routes/(general)/research/qit/schmidt/+page.js",
+		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/students": [
 		"src/routes/(general)/students/+page.js",
@@ -734,6 +828,11 @@
 	],
 	"/(general)/talks/quantumteleportation": [
 		"src/routes/(general)/talks/quantumteleportation/+page.js",
+		"src/routes/(general)/+layout.server.js",
+		"src/routes/(general)/+layout.server.js"
+	],
+	"/(general)/talks/sorting": [
+		"src/routes/(general)/talks/sorting/+page.js",
 		"src/routes/(general)/+layout.server.js",
 		"src/routes/(general)/+layout.server.js"
 	],
@@ -878,6 +977,10 @@
 	],
 	"/(vectorial)/vectorial/download": [
 		"src/routes/(vectorial)/vectorial/+layout.server.js",
+		"src/routes/(vectorial)/vectorial/+layout.server.js"
+	],
+	"/(vectorial)/vectorial/(nonapp)/drawings": [
+		"src/routes/(vectorial)/vectorial/(nonapp)/drawings/+page.js",
 		"src/routes/(vectorial)/vectorial/+layout.server.js"
 	],
 	"/(vectorial)/vectorial/(nonapp)/learn": [

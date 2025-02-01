@@ -5,7 +5,7 @@ import { C as Card } from "../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../chunks/ActionIcons.js";
 import { N as NavList } from "../../../../../chunks/NavList.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../chunks/stores.js";
-import { c as contentNav, a as contents } from "../../../../../chunks/content2.js";
+import { c as contentNav, a as contents } from "../../../../../chunks/content3.js";
 import { P as Pathlist } from "../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../chunks/CourseNavigation.js";
 import { D as DataTable, R as Row, C as Cell, B as Body } from "../../../../../chunks/Cell.js";

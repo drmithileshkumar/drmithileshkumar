@@ -5,7 +5,7 @@ import { C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../../chunks/stores.js";
 import { S as ScatteredPlot } from "../../../../../../../../chunks/ScatteredPlot.js";
-import { c as contentNav, a as contents } from "../../../../../../../../chunks/content4.js";
+import { c as contentNav, a as contents } from "../../../../../../../../chunks/content5.js";
 import { P as Pathlist } from "../../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../../chunks/CourseNavigation.js";
 const css = {

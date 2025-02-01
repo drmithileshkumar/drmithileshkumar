@@ -10,7 +10,7 @@ import "../../../../../../../chunks/Subheader.js";
 import "../../../../../../../chunks/client.js";
 import { d as darkMode, c as currentPath, n as navList } from "../../../../../../../chunks/stores.js";
 /* empty css                                                                */
-import { c as contentNav, a as contents } from "../../../../../../../chunks/content.js";
+import { c as contentNav, a as contents } from "../../../../../../../chunks/content2.js";
 import { P as Pathlist } from "../../../../../../../chunks/Pathlist.js";
 import { C as CourseNavigation } from "../../../../../../../chunks/CourseNavigation.js";
 import { H as Highlight, L as LineNumbers } from "../../../../../../../chunks/LineNumbers.js";
