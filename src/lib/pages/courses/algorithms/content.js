@@ -99,7 +99,7 @@ export const contentNav = {
         "name": "Redix Sort",
         "url": "/courses/algorithms/sorting/redix",
         "previous": "/courses/algorithms/sorting/bucket",
-        "next": "/courses/algorithms/sorting/redix"
+        "next": "/courses/algorithms/sorting/complexity"
     },
     "/courses/algorithms/sorting/complexity": {
         "name": "Redix Sort",

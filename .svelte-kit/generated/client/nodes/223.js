@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(mathril)/mathril/games/subtraction/+page.js";
+import * as universal from "../../../../src/routes/(mathril)/mathril/games/multiplication/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(mathril)/mathril/games/subtraction/+page.svelte";
+export { default as component } from "../../../../src/routes/(mathril)/mathril/games/multiplication/+page.svelte";

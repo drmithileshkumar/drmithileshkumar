@@ -108,6 +108,10 @@
 		"src/routes/(general)/courses/algorithms/sorting/bucket/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/courses/algorithms/sorting/complexity": [
+		"src/routes/(general)/courses/algorithms/sorting/complexity/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/courses/algorithms/sorting/count": [
 		"src/routes/(general)/courses/algorithms/sorting/count/+page.js",
 		"src/routes/(general)/+layout.server.js"

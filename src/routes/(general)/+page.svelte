@@ -1267,7 +1267,7 @@
 			>
 		</div>
 		<div class="dp">
-			<img width="100%" height="100%" src="/favicon.png" />
+			<img width="100%" height="100%" src="/favicon.png" alt="Mithilesh Kumar"/>
 		</div>
 	</div>
 	<div class="welcome">

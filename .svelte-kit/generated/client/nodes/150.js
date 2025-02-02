@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/courses/quantum/classical/+page.js";
+import * as universal from "../../../../src/routes/(general)/courses/quantum/circuits/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/courses/quantum/classical/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/courses/quantum/circuits/+page.svelte";

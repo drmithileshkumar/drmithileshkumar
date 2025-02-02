@@ -1,10 +1,10 @@
-import * as server from '../entries/pages/(vectorial)/vectorial/(nonapp)/auth/_page.server.js';
+import * as universal from '../entries/pages/(vectorial)/vectorial/(nonapp)/about/_page.js';
 
 export const index = 228;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(vectorial)/vectorial/(nonapp)/auth/_page.svelte.js')).default;
-export { server };
-export const server_id = "src/routes/(vectorial)/vectorial/(nonapp)/auth/+page.server.js";
-export const imports = ["_app/immutable/nodes/228.Bp1HdiYq.js","_app/immutable/chunks/scheduler.HFrwntH8.js","_app/immutable/chunks/index.Bj97moK3.js","_app/immutable/chunks/globals.D0QH3NT1.js","_app/immutable/chunks/Button.B7CPgw9o.js","_app/immutable/chunks/useActions.HCeguDvV.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/Ripple.CDEVC0wK.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/SmuiElement.BzYDArcA.js","_app/immutable/chunks/CommonLabel.BgBvPo95.js","_app/immutable/chunks/Set.DCD7rqSe.js","_app/immutable/chunks/index.ChKAqM74.js","_app/immutable/chunks/each.CcR1ywbG.js","_app/immutable/chunks/keyboard.CL3LU1u3.js","_app/immutable/chunks/ContextFragment.Bj9W4id-.js","_app/immutable/chunks/Text.D-vIosCn.js","_app/immutable/chunks/Card.DDS7kgVn.js","_app/immutable/chunks/ActionIcons.DHulHrNV.js","_app/immutable/chunks/classAdderBuilder.CUeXhiK0.js","_app/immutable/chunks/Actions.BG0qE4LW.js","_app/immutable/chunks/Textfield.Ccvmx3_X.js","_app/immutable/chunks/prefixFilter.OhiPYEKz.js","_app/immutable/chunks/NotchedOutline.D0MJCKRQ.js","_app/immutable/chunks/Suffix.CQimAQdo.js","_app/immutable/chunks/Input.DvLWxqRy.js","_app/immutable/chunks/forms.INbVxY7l.js","_app/immutable/chunks/entry.D6GLj5oK.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/stores.CePtQHWy.js","_app/immutable/chunks/stores.Mit3ycmu.js","_app/immutable/chunks/GenerateQR.C8Yuawj7.js","_app/immutable/chunks/qrcode.DMMw8QnF.js","_app/immutable/chunks/_commonjsHelpers.BosuxZz1.js"];
-export const stylesheets = ["_app/immutable/assets/228.yFWgH1Ne.css","_app/immutable/assets/GenerateQR.DeaYE3wH.css"];
+export const component = async () => component_cache ??= (await import('../entries/pages/(vectorial)/vectorial/(nonapp)/about/_page.svelte.js')).default;
+export { universal };
+export const universal_id = "src/routes/(vectorial)/vectorial/(nonapp)/about/+page.js";
+export const imports = ["_app/immutable/nodes/228.D-cl7bzi.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.HFrwntH8.js","_app/immutable/chunks/index.Bj97moK3.js","_app/immutable/chunks/Card.DDS7kgVn.js","_app/immutable/chunks/useActions.HCeguDvV.js","_app/immutable/chunks/ActionIcons.DHulHrNV.js","_app/immutable/chunks/classAdderBuilder.CUeXhiK0.js","_app/immutable/chunks/SmuiElement.BzYDArcA.js","_app/immutable/chunks/stores.Mit3ycmu.js","_app/immutable/chunks/index.ChKAqM74.js"];
+export const stylesheets = [];
 export const fonts = [];

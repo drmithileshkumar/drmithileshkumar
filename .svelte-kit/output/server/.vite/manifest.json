@@ -4001,6 +4001,41 @@
       "_app/immutable/assets/Bubble.CKz-yzYa.css"
     ]
   },
+  "src/routes/(general)/courses/algorithms/sorting/complexity/+page.js": {
+    "file": "entries/pages/(general)/courses/algorithms/sorting/complexity/_page.js",
+    "name": "entries/pages/(general)/courses/algorithms/sorting/complexity/_page",
+    "src": "src/routes/(general)/courses/algorithms/sorting/complexity/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/courses/algorithms/sorting/complexity/+page.svelte": {
+    "file": "entries/pages/(general)/courses/algorithms/sorting/complexity/_page.svelte.js",
+    "name": "entries/pages/(general)/courses/algorithms/sorting/complexity/_page.svelte",
+    "src": "src/routes/(general)/courses/algorithms/sorting/complexity/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js",
+      "_Actions2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.Di9M1yzp.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css",
+      "_app/immutable/assets/Bubble.CKz-yzYa.css",
+      "_app/immutable/assets/P.CvI4RsOs.css"
+    ]
+  },
   "src/routes/(general)/courses/algorithms/sorting/count/+page.js": {
     "file": "entries/pages/(general)/courses/algorithms/sorting/count/_page.js",
     "name": "entries/pages/(general)/courses/algorithms/sorting/count/_page",

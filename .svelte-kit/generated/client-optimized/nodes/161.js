@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/(general)/courses/quantum/search/+page.js";
+import * as universal from "../../../../src/routes/(general)/courses/quantum/qft/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/(general)/courses/quantum/search/+page.svelte";
+export { default as component } from "../../../../src/routes/(general)/courses/quantum/qft/+page.svelte";
