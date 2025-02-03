@@ -1158,16 +1158,16 @@ console.log(radixSort(numbers));  // Output: [2, 24, 45, 66, 75, 90, 170, 802]`;
 					></svg
 				>
 			</div>
-			<p>The state of the array at each node in the decision tree represents a permutation.</p>
+			<p>The state of the algorithm at each leaf of the decision tree represents a permutation of the input array.</p>
 			<p>
-				There must a leaf for each permutation if the algorithm sorts every possible input.
+				There must be a leaf for each permutation if the algorithm sorts every possible input. Here \(k\) represents the number of steps the algorithm takes to sort the input array.
 				Therefore, \[2^k\geq n! \implies k \geq \log n!\]
 			</p>
 			<p>
 				<strong>Stirling's approximation</strong>: \[\log n! \approx n\log n - n\]
 			</p>
 			<p>
-				Since we know that there algorithms that achieves this bound, we have the proof of \[k =
+				Since we know that there are algorithms that achieve this bound, we have the proof of \[k =
 				\Omega(n\log n)\]
 			</p>
 		</Content>

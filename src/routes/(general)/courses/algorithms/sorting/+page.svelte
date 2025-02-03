@@ -22,40 +22,21 @@
     import { contents, contentNav } from "$lib/pages/courses/algorithms/content";
     import Pathlist from "$lib/components/Pathlist.svelte";
     import CourseNavigation from "$lib/components/CourseNavigation.svelte";
+	// import Bubble from "$lib/pages/courses/algorithms/Bubble.svelte";
+	import Sorting from "$lib/pages/courses/algorithms/Sorting.svelte";
 	
     $navList = contents;
     $currentPath = "Sorting Algorithms";
     $darkMode = false;
-    // onMount(() => {
-    //     MathJax.typeset();
-    // });
-    let code1=`<!--Inline CSS-->
-<p style="color: tomato;">I'm tomato</p>`
-    let code2=`<head>
-    <!---CSS from external file-->
-    <link rel="stylesheet" href="/app.css"> 
-    <!--Document level CSS-->
-    <style>
-    /* set text color of p elements to tomato */
-        p {
-            color: tomato;
-        }
-    </style>
-</head>`
-    let code3 = `selector1 {
-    property1: value1;
-    property2: value2;
-}
-selector2 {
-    property3: value3;
-    property4: value4;
-}`
+    
 </script>
 <style>
     article {
         display: flex;
         flex-direction: column;
         gap: 0.5em;
+        max-width: 750px;
+        margin: auto;
     }
     p, li {
         opacity: 0.8;
@@ -115,7 +96,7 @@ selector2 {
                 <LineNumbers {highlighted} wrapLines/>
             </Highlight> -->
             
-           
+           <Sorting />
         </Content>
     </Card>
     <Card>
@@ -137,11 +118,11 @@ selector2 {
             <ul>
                 <li>Speed</li>
                 <li>Work memory</li>
-                <li>Stability</li>
-                <li>Adaptability</li>
+                <li>Stability: does the relative order of equal items remain unchanged?</li>
+                <li>Adaptability: can the algorithm terminate early?</li>
                 <li>Parallelization</li>
                 <li>Distributed data</li>
-                <li>Streamed data</li>
+                <li>Streamed data: array is changing over time</li>
             </ul>
         </Content>
     </Card>
@@ -159,6 +140,9 @@ selector2 {
                 </li>
                 <li>Non-comparison-based
                     <ul>
+                        <li>
+                            Count sort
+                        </li>
                         <li>
                             Bucket sort
                         </li>
