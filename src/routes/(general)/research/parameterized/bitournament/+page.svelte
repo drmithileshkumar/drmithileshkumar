@@ -34,6 +34,9 @@
         display: flex;
         flex-direction: column;
         gap: 0.5em;
+        max-width: 750px;
+        width: 90%;
+        margin: auto;
     }
     p, li {
         opacity: 0.8;
@@ -53,6 +56,11 @@
     a {
         cursor: pointer;
         text-decoration: none;
+    }
+    .media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
 <svelte:head>
@@ -98,6 +106,9 @@
     <Card>
         <Content>
             <h6 id="introduction">Introduction</h6>
+            <div class="media">
+                <img src="/Research/BTFVS/BipartiteTournament.png" width="300px" alt="Topological sort of an acyclic tournament">
+            </div>
             <ul>
                 <li><strong>Bipartite Tournaments:</strong> A directed graph {`\\( T := (A \\cup B, E) \\)`} where every pair of vertices {`\\( (a, b) \\)`}, {`\\( a \\in A \\)`}, {`\\( b \\in B \\)`}, are connected by an arc, and no arc connects two vertices within {`\\( A \\)`} or {`\\( B \\)`}.</li>
                 <li><strong>Feedback Vertex Set (FVS):</strong> A set of vertices whose removal makes the graph acyclic.</li>
