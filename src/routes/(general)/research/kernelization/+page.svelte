@@ -24,8 +24,8 @@
     import CourseNavigation from "$lib/components/CourseNavigation.svelte";
 	
     $navList = contents;
-    $currentPath = "Research";
-    $darkMode = false;
+    $currentPath = "Kernelization";
+    // $darkMode = false;
     // onMount(() => {
     //     MathJax.typeset();
     // });
@@ -56,6 +56,9 @@ selector2 {
         display: flex;
         flex-direction: column;
         gap: 0.5em;
+        max-width: 750px;
+        width: 90%;
+        margin: auto;
     }
     p, li {
         opacity: 0.8;

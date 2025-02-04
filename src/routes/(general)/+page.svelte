@@ -1,7 +1,8 @@
 <script>
-	import Vectorial from '$lib/pages/home/Vectorial.svelte';
-	import { currentPath } from '$lib/stores';
+	// import Vectorial from '$lib/pages/home/Vectorial.svelte';
+	import { currentPath, darkMode } from '$lib/stores';
 	$currentPath = 'Dr Mithilesh Kumar';
+	$darkMode = false;
 </script>
 
 <svelte:head><title>Dr Mithilesh Kumar</title></svelte:head>

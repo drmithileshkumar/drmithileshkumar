@@ -26,7 +26,7 @@
 
     $navList = contents;
     $currentPath = "Bipartite Tournament";
-    $darkMode = false;
+    // $darkMode = false;
     
 </script>
 <style>

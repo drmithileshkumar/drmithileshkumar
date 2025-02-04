@@ -16,7 +16,7 @@
 	
 	$navList = contents;
 	$currentPath = 'Research';
-	$darkMode = false;
+	// $darkMode = false;
 	// onMount(() => {
 	//     MathJax.typeset();
 	// });
@@ -36,7 +36,17 @@
 	<Card style="background-color: rgba(0, 100, 100, 0.1">
 		<NavList name={$navList[0].name} url={$navList[0].url} topics={$navList[0].topics} expanded />
 	</Card>
-	
+	<Card>
+		<Content>
+			<h6 class="introduction">Introduction</h6>
+			<p>
+				My research has mostly been about inventing algorithms for hard computational problems spanning many fields. The tools mostly come from probability, graph theory and linear algebra.
+			</p>
+			<p>
+				Most of these algorithms tend to be very technical and as I journey through them, I intend to present the basic intuitions, hoping that the reader finds them useful.
+			</p>
+		</Content>
+	</Card>
 </article>
 
 <style>
@@ -44,6 +54,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.5em;
+		max-width: 750px;
+        width: 90%;
+        margin: auto;
 	}
 	p,
 	li {

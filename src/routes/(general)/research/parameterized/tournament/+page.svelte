@@ -27,7 +27,7 @@
 
 	$navList = contents;
 	$currentPath = 'Tournament';
-	$darkMode = false;
+	// $darkMode = false;
 
 	let figure, W, H, tournament, n, vertices = [], edges, fvs = new Set(), neighbors = [];
 	onMount(() => {
