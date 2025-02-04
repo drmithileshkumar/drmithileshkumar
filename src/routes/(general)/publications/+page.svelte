@@ -51,7 +51,7 @@
                     <a href="https://arxiv.org/abs/2411.10710">CoRR abs/2411.10710 (2024)</a>, <a href="https://www.researchgate.net/publication/385864724_Local_Operations_in_Multiparty_Quantum_Systems">10.13140/RG.2.2.10422.51524</a>, 2024
                 </p>
                 <p slot="status">
-                    <em>Submitted</em> to Physical Review Letters
+                    <em>Submitted</em> to Quantum Science and Technology
                 </p>
             </Paper>
             <Paper>
@@ -65,7 +65,7 @@
                     <a href="https://arxiv.org/abs/2411.05703">CoRR abs/2411.05703 (2024)</a>, <a href="https://www.researchgate.net/publication/385630874_On_properties_of_Schmidt_Decomposition">10.13140/RG.2.2.19022.47687</a>, 2024
                 </p>
                 <p slot="status">
-                    <em>Submitted</em> to Physical Review Letters
+                    <em>Submitted</em> to Quantum Science and Technology
                 </p>
             </Paper>
             <Paper>
@@ -79,7 +79,7 @@
                     <a href="https://arxiv.org/abs/2411.02473">CoRR abs/2411.02473 (2024)</a>, <a href="https://www.researchgate.net/publication/385491083_Schmidt_Decomposition_of_Multipartite_States">10.13140/RG.2.2.19713.88162</a>, 2024
                 </p>
                 <p slot="status">
-                    <em>Submitted</em> to Physical Review Letters
+                    <em>Submitted</em> to Quantum Science and Technology
                 </p>
             </Paper>
             <Paper>

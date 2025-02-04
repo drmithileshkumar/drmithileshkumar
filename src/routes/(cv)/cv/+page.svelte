@@ -531,15 +531,15 @@
                         <tbody>
                             <tr>
                                 <td>JS1.</td>
-                                <td><strong>Kumar, Mithilesh</strong>. Local Operations in Multiparty Quantum Systems ArXiv[Preprint]. Nov 2024. https://arxiv.org/abs/2411.10710. <em>Submitted to Physical Review Letters</em></td>
+                                <td><strong>Kumar, Mithilesh</strong>. Local Operations in Multiparty Quantum Systems ArXiv[Preprint]. Nov 2024. https://arxiv.org/abs/2411.10710. <em>Submitted to Quantum Science and Technology</em></td>
                             </tr>
                             <tr>
                                 <td>JS2.</td>
-                                <td><strong>Kumar, Mithilesh</strong>. On properties of Schmidt Decomposition ArXiv[Preprint]. Nov 2024. https://arxiv.org/abs/2411.05703. <em>Submitted to Physical Review Letters</em></td>
+                                <td><strong>Kumar, Mithilesh</strong>. On properties of Schmidt Decomposition ArXiv[Preprint]. Nov 2024. https://arxiv.org/abs/2411.05703. <em>Submitted to Quantum Science and Technology</em></td>
                             </tr>
                             <tr>
                                 <td>JS3.</td>
-                                <td><strong>Kumar, Mithilesh</strong>. Schmidt Decomposition of Multipartite states ArXiv[Preprint]. Nov 2024. https://arxiv.org/abs/2411.02473. <em>Submitted to Physical Review Letters</em></td>
+                                <td><strong>Kumar, Mithilesh</strong>. Schmidt Decomposition of Multipartite states ArXiv[Preprint]. Nov 2024. https://arxiv.org/abs/2411.02473. <em>Submitted to Quantum Science and Technology</em></td>
                             </tr>
                         </tbody>
                     </table>

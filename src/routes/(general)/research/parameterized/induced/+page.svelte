@@ -128,10 +128,13 @@
     <Card>
         <Content>
             <h6>Methodology</h6>
-            <ul>
-                <li><strong>Branch-and-Reduce Strategy:</strong> Applied branching techniques to systematically explore possible vertex deletions.</li>
-                <li><strong>Path Decomposition:</strong> Utilized path decomposition to manage and simplify the graph structure during the algorithm's execution.</li>
-            </ul>
+            <p>The strategy is to reduce the problem to dynamic programming on <strong>path decompositon</strong> of the graph.</p>
+            <p>Via branching it can be ensured that the maximum degree in the graph is at most 3.</p>
+            <p>The following theorem guarantees that there is a path decomposition:</p>
+            <strong>Theorem (Fedor, Høie)</strong>
+            <p>
+                For any \(\epsilon \gt 0\), there exists an integer \(n_\epsilon\) such that for every graph \(G\) of maximum degree 3 with at least \(n_\epsilon\) vertices has path decomposition of path width at most {`\\((\\frac{1}{6} + \\epsilon)n\\)`}. 
+            </p>
         </Content>
     </Card>
     <Card>

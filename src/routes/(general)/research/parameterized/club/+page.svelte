@@ -57,6 +57,11 @@
         cursor: pointer;
         text-decoration: none;
     }
+    .media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 </style>
 <svelte:head>
     <title>Club</title>
@@ -127,6 +132,9 @@
     <Card>
         <Content>
             <h6>Methodology</h6>
+            <div class="media">
+                <img src="/Research/Club/club.png" alt="Club reduction" width="50%">
+            </div>
             <ul>
                 <li><strong>Reduction from CLIQUE:</strong> Employed a reduction from the NP-hard CLIQUE problem to demonstrate the NP-hardness of 2-CLUB in the specified graph class.</li>
                 <li><strong>Graph Construction:</strong> Constructed a graph \( G \) from a given graph \( H \) by adding specific sets of vertices and edges to control the graph's structure and properties.</li>

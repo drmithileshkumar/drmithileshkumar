@@ -394,7 +394,22 @@
 	<Card>
 		<Content>
 			<h6 id="methods">Methodology</h6>
-			<ul>
+            <p>The following strategy can be useful is solving other deletion type problems. Given a deletion problem, ask whether there is a structure to the remaining graph after deleting solution (vertices or edges). If yes, try the following strategy:</p>
+            <ul>
+                <li>Find a kernel to the problem (i.e. a smaller instance).</li>
+                <li>Obtain an approximate solution \(X\).</li>
+                <li>Use the structure in \(G-X\) to find a set \(M\) that does not contain any vertex of the required solution \(H\).</li>
+                <li>Use \(M\) to partition \(G\) where the problem needs to be solved within each part and across each part. This manifests as some kind of <em>conflicts</em>.</li>
+                <li>Resolve conflicts within each part (may be using brute force).</li>
+                <li>Branch on the conflits spread across the parts.
+                    <ul>
+                        <li><em>Large</em> conflict degrees will likely give the recurress \(T(k)\leq T(k-1) + T(k-2)\) solving to \(1.618^k\).</li>
+                        <li>For disjoint conflicts use the partition theorem (otherwise they will lead to \(2^k\)) run time.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>This strategy has been successfully applied for finding feedback vertex sets in tournaments and bipartite tournaments.</p>
+			<!-- <ul>
 				<li><strong>Kernelization:</strong> Reduce the tournament size to {`\\( O(k^3) \\)`}.</li>
 				<li>
 					<strong>Set Selection:</strong> Identify a set {`\\( M \\)`} of vertices, disjoint from the
@@ -410,7 +425,7 @@
 					the new partition theorem. The case when conflict degree of a vertex is at least 2 leads to
 					the bottleneck recurrence relation \[T(k) \leq T(k-1) + T(k-2)\] whose solution is \(1.618^k\).
 				</li>
-			</ul>
+			</ul> -->
 		</Content>
 	</Card>
     <h5>High-level Outline</h5>
@@ -550,6 +565,9 @@
 	h4 {
 		margin: 0.5em 0;
 	}
+    h5 {
+        font-size: 1.5em;
+    }
 	h6 {
 		font-size: 1em;
 		margin: 0.5em 0;

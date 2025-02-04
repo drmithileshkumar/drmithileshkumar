@@ -140,10 +140,7 @@
     <Card>
         <Content>
             <h6 id="methods">Methodology</h6>
-            <ul>
-                <li><strong>Graph Partitioning:</strong> Utilize structural properties of bipartite tournaments to partition the graph effectively.</li>
-                <li><strong>Dynamic Programming:</strong> Apply dynamic programming techniques to solve subproblems efficiently.</li>
-            </ul>
+            <p>Similar to finding feedback vertex set in tournaments.</p>
         </Content>
     </Card>
     <Card>
