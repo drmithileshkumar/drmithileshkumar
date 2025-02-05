@@ -1,6 +1,6 @@
 import { a as subscribe, b as set_store_value } from "../../../../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component } from "../../../../../../../../chunks/ssr2.js";
-import { g as githubDark, a as github } from "../../../../../../../../chunks/github-dark.js";
+import { a as githubDark, g as github } from "../../../../../../../../chunks/github-dark.js";
 import { D as DataTable, R as Row, C as Cell, B as Body } from "../../../../../../../../chunks/Cell.js";
 import { H as Head } from "../../../../../../../../chunks/Head.js";
 /* empty css                                                                */

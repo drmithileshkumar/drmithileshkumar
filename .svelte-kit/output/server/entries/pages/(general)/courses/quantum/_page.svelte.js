@@ -1,6 +1,6 @@
 import { a as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component, e as escape, i as each } from "../../../../../chunks/ssr2.js";
-import { g as githubDark, a as github } from "../../../../../chunks/github-dark.js";
+import { a as githubDark, g as github } from "../../../../../chunks/github-dark.js";
 import "../../../../../chunks/client.js";
 import { p as page } from "../../../../../chunks/stores3.js";
 import { T as TabBar, a as Tab } from "../../../../../chunks/TabBar.js";

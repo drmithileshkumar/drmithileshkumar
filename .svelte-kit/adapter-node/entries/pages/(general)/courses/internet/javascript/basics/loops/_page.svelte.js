@@ -1,7 +1,7 @@
 import { a as subscribe, b as set_store_value } from "../../../../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component } from "../../../../../../../../chunks/ssr2.js";
 import { j as javascript } from "../../../../../../../../chunks/javascript.js";
-import { g as githubDark, a as github } from "../../../../../../../../chunks/github-dark.js";
+import { a as githubDark, g as github } from "../../../../../../../../chunks/github-dark.js";
 import "../../../../../../../../chunks/Suffix.js";
 import { C as Card } from "../../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../../chunks/ActionIcons.js";

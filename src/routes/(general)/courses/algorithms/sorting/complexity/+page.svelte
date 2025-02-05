@@ -27,7 +27,7 @@
 
 	$navList = contents;
 	$currentPath = 'Bounds';
-	$darkMode = false;
+	
 
 	let jsBubble = `function getDigit(num, place) {
     return Math.floor(num / Math.pow(10, place)) % 10;
@@ -1187,6 +1187,7 @@ console.log(radixSort(numbers));  // Output: [2, 24, 45, 66, 75, 90, 170, 802]`;
 		flex-direction: column;
 		gap: 0.5em;
         max-width: 750px;
+		width: 90%;
         margin: auto;
 	}
 	p,

@@ -73,6 +73,6 @@ const githubDark = `<style>pre code.hljs{display:block;overflow-x:auto;padding:1
 .hljs-selector-tag,
 .hljs-selector-pseudo{color:#7ee787}.hljs-subst{color:#c9d1d9}.hljs-section{color:#1f6feb;font-weight:bold}.hljs-bullet{color:#f2cc60}.hljs-emphasis{color:#c9d1d9;font-style:italic}.hljs-strong{color:#c9d1d9;font-weight:bold}.hljs-addition{color:#aff5b4;background-color:#033a16}.hljs-deletion{color:#ffdcd7;background-color:#67060c}</style>`;
 export {
-  github as a,
-  githubDark as g
+  githubDark as a,
+  github as g
 };

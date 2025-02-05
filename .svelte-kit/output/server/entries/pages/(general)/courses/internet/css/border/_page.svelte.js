@@ -1,7 +1,7 @@
 import { a as subscribe, b as set_store_value } from "../../../../../../../chunks/utils.js";
 import { c as create_ssr_component, v as validate_component } from "../../../../../../../chunks/ssr2.js";
 import { x as xml } from "../../../../../../../chunks/xml.js";
-import { g as githubDark, a as github } from "../../../../../../../chunks/github-dark.js";
+import { a as githubDark, g as github } from "../../../../../../../chunks/github-dark.js";
 import { W as WebPractice } from "../../../../../../../chunks/WebPractice.js";
 import { p as page } from "../../../../../../../chunks/stores3.js";
 import { C as Card } from "../../../../../../../chunks/Card.js";

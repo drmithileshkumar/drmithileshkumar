@@ -26,7 +26,7 @@
 
     $navList = contents;
     $currentPath = "Bucket Sort";
-    $darkMode = false;
+    
     
     let jsBubble = `function bucketSort(arr, numBuckets = 10) {
     if (arr.length === 0) return arr;
@@ -71,6 +71,9 @@ console.log(bucketSort(numbers));
         display: flex;
         flex-direction: column;
         gap: 0.5em;
+        max-width: 750px;
+        width: 90%;
+        margin: auto;
     }
     p, li {
         opacity: 0.8;

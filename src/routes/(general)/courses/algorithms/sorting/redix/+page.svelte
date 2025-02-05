@@ -26,7 +26,7 @@
 
     $navList = contents;
     $currentPath = "Redix Sort";
-    $darkMode = false;
+    
     
     let jsBubble = `function getDigit(num, place) {
     return Math.floor(num / Math.pow(10, place)) % 10;
@@ -91,6 +91,9 @@ console.log(radixSort(numbers));  // Output: [2, 24, 45, 66, 75, 90, 170, 802]`
         display: flex;
         flex-direction: column;
         gap: 0.5em;
+        max-width: 750px;
+        margin: auto;
+        width: 90%;
     }
     p, li {
         opacity: 0.8;

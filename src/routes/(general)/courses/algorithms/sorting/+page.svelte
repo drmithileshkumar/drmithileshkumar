@@ -27,7 +27,7 @@
 	
     $navList = contents;
     $currentPath = "Sorting Algorithms";
-    $darkMode = false;
+    
     
 </script>
 <style>
@@ -36,6 +36,7 @@
         flex-direction: column;
         gap: 0.5em;
         max-width: 750px;
+        width: 90%;
         margin: auto;
     }
     p, li {

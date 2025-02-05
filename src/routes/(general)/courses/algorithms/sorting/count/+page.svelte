@@ -26,7 +26,7 @@
 
     $navList = contents;
     $currentPath = "Count Sort";
-    $darkMode = false;
+    
     
     let jsCount = `function countingSort(arr, maxValue) {
     let count = new Array(maxValue + 1).fill(0);
@@ -73,6 +73,9 @@ console.log(countingSort(numbers, 8)); // Output: [1, 2, 2, 3, 3, 4, 8]
         display: flex;
         flex-direction: column;
         gap: 0.5em;
+        max-width: 750px;
+        width: 90%;
+        margin: auto;
     }
     p, li {
         opacity: 0.8;

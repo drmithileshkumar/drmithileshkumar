@@ -26,7 +26,7 @@
 
     $navList = contents;
     $currentPath = "Bubble Sort";
-    $darkMode = false;
+    
     
     let jsBubble = `function bubbleSort(arr) {
     let n = arr.length;
@@ -69,6 +69,9 @@ console.log(bubbleSort(numbers));
         display: flex;
         flex-direction: column;
         gap: 0.5em;
+        max-width: 750px;
+        width: 90%;
+        margin: auto;
     }
     p, li {
         opacity: 0.8;

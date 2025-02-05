@@ -26,7 +26,7 @@
 
     $navList = contents;
     $currentPath = "Insertion Sort";
-    $darkMode = false;
+    
     
     let jsInsertion = `function insertionSort(arr) {
     for (let i = 1; i < arr.length; i++) {
@@ -68,6 +68,9 @@ console.log(insertionSort(numbers)); // Output: [2, 3, 4, 5, 8]
         display: flex;
         flex-direction: column;
         gap: 0.5em;
+        max-width: 750px;
+        width: 90%;
+        margin: auto;
     }
     p, li {
         opacity: 0.8;

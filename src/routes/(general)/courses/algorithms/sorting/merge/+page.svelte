@@ -26,7 +26,7 @@
 
     $navList = contents;
     $currentPath = "Merge Sort";
-    $darkMode = false;
+    
     
     let jsMerge = `function mergeSort(arr) {
     if (arr.length <= 1) return arr; // Base case: a single element is already sorted
@@ -80,6 +80,9 @@ console.log(mergeSort(numbers)); // Output: [2, 3, 4, 5, 8]
         display: flex;
         flex-direction: column;
         gap: 0.5em;
+        max-width: 750px;
+        width: 90%;
+        margin: auto;
     }
     p, li {
         opacity: 0.8;
