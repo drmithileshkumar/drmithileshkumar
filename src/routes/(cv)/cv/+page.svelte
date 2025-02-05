@@ -440,7 +440,7 @@
                         </tr>
                         <tr>
                             <td>Jul 2013-Feb 2014</td>
-                            <td>Ph.D. Graph theory, Chennai Mathematical Institute, Chennai</td>
+                            <td>Research Scholar, Chennai Mathematical Institute, Chennai</td>
                         </tr>
                         <tr>
                             <td>Jul 2011-Jun 2013</td>

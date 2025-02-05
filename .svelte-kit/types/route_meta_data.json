@@ -128,8 +128,8 @@
 		"src/routes/(general)/courses/algorithms/sorting/quick/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
-	"/(general)/courses/algorithms/sorting/redix": [
-		"src/routes/(general)/courses/algorithms/sorting/redix/+page.js",
+	"/(general)/courses/algorithms/sorting/radix": [
+		"src/routes/(general)/courses/algorithms/sorting/radix/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
 	"/(general)/courses/circuits": [

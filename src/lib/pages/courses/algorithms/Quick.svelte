@@ -18,6 +18,7 @@
 	import Checkbox from '@smui/checkbox';
 	import IconButton from '@smui/icon-button';
 	import { blackMetal } from 'svelte-highlight/styles';
+	import { onMount } from 'svelte';
 
 	let open = false;
 
@@ -63,6 +64,7 @@
 	const waitTimer = (dir) => {
 		waitTime = dir == '+' ? waitTime + 50 : waitTime - 50;
 	};
+	onMount(() => setArray())
 	const setArray = () => {
 		rect = comparer.getBoundingClientRect();
 		fig = figure.getBoundingClientRect();
@@ -553,10 +555,12 @@
 
 	.comment {
 		position: relative;
-		margin: 0;
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 0.7em;
-		color: tomato;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.7em;
+        color: tomato;
+        line-height: 1;
+        margin-bottom: 0;
 	}
 	.speed {
 		display: flex;

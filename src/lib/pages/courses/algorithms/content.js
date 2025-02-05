@@ -33,7 +33,7 @@ export const contents = [
                     },
                     {
                         name: 'Redix Sort',
-                        url: '/courses/algorithms/sorting/redix'
+                        url: '/courses/algorithms/sorting/radix'
                     },
                     {
                         name: 'Complexity',
@@ -93,18 +93,18 @@ export const contentNav = {
         "name": "Bucket Sort",
         "url": "/courses/algorithms/sorting/bucket",
         "previous": "/courses/algorithms/sorting/count",
-        "next": "/courses/algorithms/sorting/redix"
+        "next": "/courses/algorithms/sorting/radix"
     },
-    "/courses/algorithms/sorting/redix": {
-        "name": "Redix Sort",
-        "url": "/courses/algorithms/sorting/redix",
+    "/courses/algorithms/sorting/radix": {
+        "name": "Radix Sort",
+        "url": "/courses/algorithms/sorting/radix",
         "previous": "/courses/algorithms/sorting/bucket",
         "next": "/courses/algorithms/sorting/complexity"
     },
     "/courses/algorithms/sorting/complexity": {
-        "name": "Redix Sort",
+        "name": "Complexity",
         "url": "/courses/algorithms/sorting/complexity",
-        "previous": "/courses/algorithms/sorting/redix",
+        "previous": "/courses/algorithms/sorting/radix",
         "next": "/courses/algorithms/sorting/complexity"
     }
 }

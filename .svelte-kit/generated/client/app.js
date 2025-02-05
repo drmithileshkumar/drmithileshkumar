@@ -284,7 +284,7 @@ export const dictionary = {
 		"/(general)/courses/algorithms/sorting/insertion": [29,[4]],
 		"/(general)/courses/algorithms/sorting/merge": [30,[4]],
 		"/(general)/courses/algorithms/sorting/quick": [31,[4]],
-		"/(general)/courses/algorithms/sorting/redix": [32,[4]],
+		"/(general)/courses/algorithms/sorting/radix": [32,[4]],
 		"/(general)/courses/circuits": [33,[4]],
 		"/(general)/courses/discrete": [34,[4]],
 		"/(general)/courses/internetlab": [92,[4]],

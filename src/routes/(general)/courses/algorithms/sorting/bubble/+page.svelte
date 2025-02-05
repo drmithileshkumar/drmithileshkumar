@@ -54,12 +54,12 @@ console.log(bubbleSort(numbers));
     let jsPseudo = `Procedure BubbleSort(array):
     1. Set the length of the array as n.
     2. Repeat the following steps until no swaps occur:
-        a. Set swapped to false (to track if any swaps happen in this pass).
-        b. For each element from the first to the second-last:
-            i. If the current element is greater than the next one:
-                - Swap the two elements.
-                - Set swapped to true (indicating that a swap occurred).
-        c. Reduce n by 1, since the largest element has bubbled to its correct position.
+        a. swapped = false
+        b. From first to second-last element:
+            i. If current element > next element:
+                - Swap them.
+                - swapped = true.
+        c. n = n - 1.
     3. When no swaps occur in a full pass, the array is sorted.
     4. Return the sorted array.`
     
@@ -99,21 +99,17 @@ console.log(bubbleSort(numbers));
         cursor: pointer;
         padding: 0.3em;
     }
-    .cell {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid teal;
-        height: auto;
+    
+    .pseudocode {
+        font-family:monospace;
+        font-size: 1em;
     }
-    .grid {
-        display: grid;
-        gap: 0.1em;
-        height: 300px;
-        width: 300px;
-        border: 1px solid gray;
-        padding: 0.1em;
-        margin: auto;
+    .pseudocode strong {
+        color: rgb(20, 175, 175);
+    }
+    .pseudocode ul {
+        margin: 0;
+        border-left: 1px solid;
     }
 </style>
 <svelte:head>
@@ -192,9 +188,31 @@ console.log(bubbleSort(numbers));
     <Card>
         <Content>
             <h6 id="pseudo">Pseudo code</h6>
-            <Highlight language={xml} code={jsPseudo} let:highlighted>
+            <div class="pseudocode">
+                <span>function <strong>BubbleSort</strong>(a):</span>
+                <ul>
+                    <li>n = a.length</li>
+                    <li>loop till n > 0 and a swap occurred:
+                    <ul><li>swapped = false</li>
+                        <li>From first to second-last element:
+                            <ul>
+                                <li>if current element > next element:
+                                    <ul>
+                                        <li>swap them.</li>
+                                        <li>swapped = true</li>
+                                    </ul>
+                                </li>
+                            </ul> 
+                        </li>
+                        <li>decrease n by one </li>
+                        </ul>
+                    </li>
+                    <li>output the sorted array</li>
+                </ul>
+            </div>
+            <!-- <Highlight language={xml} code={jsPseudo} let:highlighted>
                 <LineNumbers {highlighted} wrapLines/>
-            </Highlight>
+            </Highlight> -->
         </Content>
     </Card>
     <Card>

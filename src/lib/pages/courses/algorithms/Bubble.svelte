@@ -17,6 +17,7 @@
 	import { composition, sort } from 'mathjs';
 	import Checkbox from '@smui/checkbox';
 	import IconButton from '@smui/icon-button';
+    import { onMount } from 'svelte';
 	
 	let open = false;
 	
@@ -57,6 +58,7 @@
     const waitTimer = (dir) => {
         waitTime = dir == "+" ? waitTime + 50 : waitTime - 50;
     }
+    onMount(() => setArray());
 	const setArray = () => {
         swaps.set(0);
         comparisons.set(0);
@@ -242,7 +244,7 @@
             </div>
         {/each}
         <div class="comparer" style="width: calc({180 / n}% + 10px); height: 130px; opacity: 0; transition: all {waitTime/2000}s" bind:this={comparer}>
-            <p class="comment"> {comment}... </p>
+            <span class="comment"> {comment}... </span>
         </div>
     </figure>
     {#if started}
@@ -392,10 +394,12 @@
     }
     .comment {
         position: relative;
-        margin: 0;
+        margin: auto;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 0.7em;
         color: tomato;
+        line-height: 1;
+        margin-bottom: 0;
     }
     .speed {
         display: flex;
