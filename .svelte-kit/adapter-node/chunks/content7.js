@@ -78,6 +78,10 @@ const contents = [
             url: "/research/qit/local"
           }
         ]
+      },
+      {
+        name: "Parameterized Zoo",
+        url: "/research/parazoo"
       }
     ]
   }
@@ -189,7 +193,13 @@ const contentNav = {
     "name": "Local Operations in Multiparty Quantum Systems",
     "url": "/research/qit/local",
     "previous": "/research/qit/schmidtProperties",
-    "next": "/research/qit/local"
+    "next": "/research/parazoo"
+  },
+  "/research/parazoo": {
+    "name": "Parameterized Zoo",
+    "url": "/research/parazoo",
+    "previous": "/research/qit/local",
+    "next": "/research/parazoo"
   }
 };
 export {

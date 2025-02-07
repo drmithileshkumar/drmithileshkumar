@@ -1,4 +1,4 @@
-import { c as create_ssr_component, j as createEventDispatcher, o as onDestroy, e as escape, h as add_attribute, v as validate_component } from "./ssr2.js";
+import { c as create_ssr_component, j as createEventDispatcher, o as onDestroy, e as escape, f as add_attribute, v as validate_component } from "./ssr2.js";
 import { S as SegmentedButton, a as Segment } from "./Segment.js";
 import { C as CommonLabel } from "./CommonLabel.js";
 import "./Suffix.js";

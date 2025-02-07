@@ -1,4 +1,4 @@
-import { c as create_ssr_component, h as add_attribute, e as escape, i as each, v as validate_component } from "./ssr2.js";
+import { c as create_ssr_component, f as add_attribute, e as escape, i as each, v as validate_component } from "./ssr2.js";
 import { P as PreviewLine, a as PreviewRect, b as PreviewCircle, c as PreviewEllipse, d as PreviewRegular, e as PreviewPath, f as PreviewText, g as PreviewLatex, h as PreviewGrid, i as PreviewImage } from "./PreviewGrid.js";
 import { create, all } from "mathjs";
 const PreviewBlur = create_ssr_component(($$result, $$props, $$bindings, slots) => {

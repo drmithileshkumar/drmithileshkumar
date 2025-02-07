@@ -1,6 +1,6 @@
 import { c as compute_rest_props, d as compute_slots } from "./utils.js";
 import { g as globals } from "./SmuiElement.js";
-import { c as create_ssr_component, a as get_current_component, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute, e as escape, g as getContext, o as onDestroy, v as validate_component } from "./ssr2.js";
+import { c as create_ssr_component, a as get_current_component, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, e as escape, g as getContext, o as onDestroy, v as validate_component } from "./ssr2.js";
 import { f as forwardEventsBuilder, c as classMap } from "./forwardEventsBuilder.js";
 import { e as exclude, p as prefixFilter } from "./prefixFilter.js";
 import { C as ContextFragment } from "./ContextFragment.js";

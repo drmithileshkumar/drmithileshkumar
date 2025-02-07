@@ -52,13 +52,14 @@
                     <Icon class="material-icons" on>close</Icon>
                     <Icon class="material-icons">menu</Icon>
                 </IconButton>
-                <div class="logo">
+                <IconButton class="material-icons" aria-label="Home" on:click={() => goto("/")}>home</IconButton>
+                <!-- <div class="logo">
                     <Fab on:click={() => goto("/")}>
                         <Icon>
                             <img width="40px" height="40px" style="background:white; border-radius:50%;" src="/favicon.png" alt="1" />
                         </Icon>
                     </Fab>
-                </div>
+                </div> -->
                 <span>
                     {$currentPath}
                 </span>

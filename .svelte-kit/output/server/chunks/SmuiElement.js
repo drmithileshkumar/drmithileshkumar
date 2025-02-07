@@ -1,5 +1,5 @@
 import { c as compute_rest_props } from "./utils.js";
-import { c as create_ssr_component, a as get_current_component, b as spread, f as escape_object, h as add_attribute } from "./ssr2.js";
+import { c as create_ssr_component, a as get_current_component, s as spread, d as escape_object, f as add_attribute } from "./ssr2.js";
 import { f as forwardEventsBuilder } from "./forwardEventsBuilder.js";
 const globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : (
   // @ts-ignore Node typings have this

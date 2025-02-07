@@ -1,5 +1,5 @@
 import { c as compute_rest_props, a as subscribe } from "./utils.js";
-import { c as create_ssr_component, h as add_attribute, e as escape, v as validate_component, i as each, a as get_current_component, g as getContext, b as spread, d as escape_attribute_value, f as escape_object, j as createEventDispatcher } from "./ssr2.js";
+import { c as create_ssr_component, f as add_attribute, e as escape, v as validate_component, i as each, a as get_current_component, g as getContext, s as spread, b as escape_attribute_value, d as escape_object, j as createEventDispatcher } from "./ssr2.js";
 import { S as Set_1, C as Chip } from "./Set.js";
 import { f as forwardEventsBuilder, c as classMap } from "./forwardEventsBuilder.js";
 import { e as exclude, p as prefixFilter } from "./prefixFilter.js";

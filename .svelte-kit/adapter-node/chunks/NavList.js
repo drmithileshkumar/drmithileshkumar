@@ -1,4 +1,4 @@
-import { c as create_ssr_component, v as validate_component, h as add_attribute, e as escape, i as each } from "./ssr2.js";
+import { c as create_ssr_component, v as validate_component, f as add_attribute, e as escape, i as each } from "./ssr2.js";
 import { L as List, I as Item } from "./Item.js";
 import { T as Text } from "./Subheader.js";
 import { G as Graphic } from "./Graphic.js";

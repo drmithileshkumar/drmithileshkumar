@@ -1,6 +1,6 @@
 import { c as compute_rest_props, a as subscribe, b as set_store_value } from "./utils.js";
 import { g as globals, S as SmuiElement } from "./SmuiElement.js";
-import { c as create_ssr_component, a as get_current_component, g as getContext, s as setContext, v as validate_component, m as missing_component, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute, i as each } from "./ssr2.js";
+import { c as create_ssr_component, a as get_current_component, g as getContext, h as setContext, v as validate_component, m as missing_component, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, i as each } from "./ssr2.js";
 import { w as writable } from "./index2.js";
 import { f as forwardEventsBuilder, c as classMap } from "./forwardEventsBuilder.js";
 import { R as Ripple } from "./Ripple.js";

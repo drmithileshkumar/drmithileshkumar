@@ -127,6 +127,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.5em;
+		max-width: 750px;
+        width: 90%;
+        margin: auto;
 	}
 	h3,
 	h5 {

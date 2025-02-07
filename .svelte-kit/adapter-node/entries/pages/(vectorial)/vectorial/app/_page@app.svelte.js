@@ -1,5 +1,5 @@
 import { a as subscribe, b as set_store_value } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, j as createEventDispatcher, i as each, h as add_attribute, e as escape, o as onDestroy } from "../../../../../chunks/ssr2.js";
+import { c as create_ssr_component, v as validate_component, j as createEventDispatcher, i as each, f as add_attribute, e as escape, o as onDestroy } from "../../../../../chunks/ssr2.js";
 import "../../../../../chunks/client.js";
 import { s as svg, e as elements, f as selectedId, g as selectedElements, o as objectCount, D as DRAWING, h as currentLayer, d as defs, i as activeElement, j as selectedControl1, k as selectedControl0, m as selectedVertex, n as elementsNode, p as boundingBox, q as addingNodes, b as appHistory, r as currentState, t as pathMode, u as panY, v as panX, w as onSVG, P as PAN, x as lassoElements, y as circleCenter, z as circledVertices, A as circleMode, C as mirrorVertex, E as mirrorMode, F as selectedVertices, G as showControls, H as selectedElement, I as selectionMode, J as screenCTM, K as canvasBackground, B as BBOX, Z, L as showBBoxControls, M as showGuides, a as drawingID, N as localDRAWING } from "../../../../../chunks/stores6.js";
 import { M as MenuSurface } from "../../../../../chunks/MenuSurface.js";

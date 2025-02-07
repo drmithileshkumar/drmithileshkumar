@@ -1,5 +1,5 @@
 import { a as subscribe, b as set_store_value } from "../../../../../../chunks/utils.js";
-import { c as create_ssr_component, h as add_attribute, v as validate_component, i as each, e as escape } from "../../../../../../chunks/ssr2.js";
+import { c as create_ssr_component, f as add_attribute, v as validate_component, i as each, e as escape } from "../../../../../../chunks/ssr2.js";
 import { g as github, a as githubDark } from "../../../../../../chunks/github-dark.js";
 /* empty css                                                          */
 import { p as page } from "../../../../../../chunks/stores3.js";

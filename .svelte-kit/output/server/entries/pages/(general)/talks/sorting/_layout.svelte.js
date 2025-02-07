@@ -1,5 +1,5 @@
 import { a as subscribe } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, e as escape, v as validate_component, h as add_attribute } from "../../../../../chunks/ssr2.js";
+import { c as create_ssr_component, e as escape, v as validate_component, f as add_attribute } from "../../../../../chunks/ssr2.js";
 import { F as FormField } from "../../../../../chunks/FormField.js";
 import { C as Checkbox } from "../../../../../chunks/Checkbox.js";
 import { p as presentationMode, c as currentSlide, s as slideCounter, a as presentation, o as overlay, b as autoScroll, d as annotationMode } from "../../../../../chunks/stores4.js";

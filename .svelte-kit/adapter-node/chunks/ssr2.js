@@ -229,13 +229,13 @@ function add_styles(style_object) {
 }
 export {
   get_current_component as a,
-  spread as b,
+  escape_attribute_value as b,
   create_ssr_component as c,
-  escape_attribute_value as d,
+  escape_object as d,
   escape as e,
-  escape_object as f,
+  add_attribute as f,
   getContext as g,
-  add_attribute as h,
+  setContext as h,
   each as i,
   createEventDispatcher as j,
   set_current_component as k,
@@ -244,6 +244,6 @@ export {
   add_classes as n,
   onDestroy as o,
   add_styles as p,
-  setContext as s,
+  spread as s,
   validate_component as v
 };

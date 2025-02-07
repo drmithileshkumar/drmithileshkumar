@@ -27,7 +27,7 @@
 	<link rel="canonical" href="https://drmithileshkumar.com/courses/algorithms" />
 	<meta name="description" content="Courses Taught by Dr Mithilesh Kumar" />
 </svelte:head>
-<article>
+<article use:typeset>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
     <h4 style="margin: 0.5em 0;">
@@ -44,6 +44,25 @@
 			</p>
 			<p>
 				Most of these algorithms tend to be very technical and as I journey through them, I intend to present the basic intuitions, hoping that the reader finds them useful.
+			</p>
+		</Content>
+	</Card>
+	<Card>
+		<Content>
+			<h6 class="cycles">Removing cycles from graphs</h6>
+			<p>Given a graph, the task is to edit it such that graph becomes acyclic. This problem is called <em>feedback vertex/arc set</em>. The problem is <code>NP-complete</code> in general, polynomially solvable only in some graph classes.</p>
+			<p>It is polynomial-time solvable on chordal, interval and permutation graphs.</p>
+			<p>
+				<strong>Approximation:</strong> Approximation ratio 2 for undirected graphs. Recently, integrality gap 2 achieved by Chandrasekaran et al (2025).
+			</p>
+			<p>
+				<strong>Exact:</strong>
+			</p>
+			<p>
+				<strong>Parameterized:</strong> In undirected graphs, the run time is \(O^*(3.460^k)\), while the randomized is \(O^*(2.7^k)\). DFVS can be solved in {`\\(O(k!4^kk^5(n + m))\\)`} due to Lokshtanov et al (2018) recently improved to {`\\(O(k!2^{o(k)}(n + m))\\)`} [Xiong, Xiao (2025)].
+			</p>
+			<p>
+				<strong>Kernel:</strong> Polynomial kernel for DFVS parameterized by bounded-treewidth modulator [Lokshtanov et al (2025)]. In tournaments, recent almost linear kernel of {`\\(O(k^{1 + \\frac{O(1)}{\\sqrt{\\log k}}})\\)`} vertices.
 			</p>
 		</Content>
 	</Card>

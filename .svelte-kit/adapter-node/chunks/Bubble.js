@@ -1,5 +1,5 @@
 import { a as subscribe } from "./utils.js";
-import { c as create_ssr_component, h as add_attribute, v as validate_component, i as each, e as escape } from "./ssr2.js";
+import { c as create_ssr_component, f as add_attribute, v as validate_component, i as each, e as escape } from "./ssr2.js";
 import { t as tweened, c as cubicOut } from "./tweened.js";
 import "./ActionIcons.js";
 import { F as FormField } from "./FormField.js";

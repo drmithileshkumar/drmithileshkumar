@@ -1,5 +1,5 @@
 import { a as subscribe } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, e as escape, i as each, v as validate_component, h as add_attribute } from "../../../../../chunks/ssr2.js";
+import { c as create_ssr_component, e as escape, i as each, v as validate_component, f as add_attribute } from "../../../../../chunks/ssr2.js";
 import { B as BBOX, d as defs, e as elements } from "../../../../../chunks/stores6.js";
 import { P as PreviewTextMask, a as PreviewBlur, b as PreviewShadow, c as PreviewSpecularLighting, d as PreviewDiffuseLighting, e as PreviewMarker, f as PreviewGroup } from "../../../../../chunks/PreviewTextMask.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {

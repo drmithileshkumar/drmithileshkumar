@@ -1,4 +1,4 @@
-import { c as create_ssr_component, v as validate_component, h as add_attribute, e as escape, i as each } from "./ssr2.js";
+import { c as create_ssr_component, v as validate_component, f as add_attribute, e as escape, i as each } from "./ssr2.js";
 import { a as subscribe } from "./utils.js";
 import { C as Card } from "./Card.js";
 import { C as Content } from "./ActionIcons.js";

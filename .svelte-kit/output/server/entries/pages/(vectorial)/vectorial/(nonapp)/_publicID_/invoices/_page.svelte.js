@@ -1,5 +1,5 @@
 import { a as subscribe, b as set_store_value } from "../../../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, h as add_attribute, e as escape, i as each } from "../../../../../../../chunks/ssr2.js";
+import { c as create_ssr_component, v as validate_component, f as add_attribute, e as escape, i as each } from "../../../../../../../chunks/ssr2.js";
 import { C as Card } from "../../../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../../../chunks/ActionIcons.js";
 import { c as currentPath } from "../../../../../../../chunks/stores2.js";

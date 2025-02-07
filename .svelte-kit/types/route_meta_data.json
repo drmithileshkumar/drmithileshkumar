@@ -814,6 +814,10 @@
 		"src/routes/(general)/research/parameterized/tournament/+page.js",
 		"src/routes/(general)/+layout.server.js"
 	],
+	"/(general)/research/parazoo": [
+		"src/routes/(general)/research/parazoo/+page.js",
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/research/qit": [
 		"src/routes/(general)/research/qit/+page.js",
 		"src/routes/(general)/+layout.server.js"

@@ -1,5 +1,5 @@
 import { c as compute_rest_props, a as subscribe, b as set_store_value } from "./utils.js";
-import { c as create_ssr_component, a as get_current_component, s as setContext, b as spread, d as escape_attribute_value, f as escape_object, h as add_attribute, i as each, v as validate_component, g as getContext } from "./ssr2.js";
+import { c as create_ssr_component, a as get_current_component, h as setContext, s as spread, b as escape_attribute_value, d as escape_object, f as add_attribute, i as each, v as validate_component, g as getContext } from "./ssr2.js";
 import { w as writable } from "./index2.js";
 import { f as forwardEventsBuilder, c as classMap } from "./forwardEventsBuilder.js";
 import { C as ContextFragment } from "./ContextFragment.js";

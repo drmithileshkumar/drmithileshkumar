@@ -1,1 +1,0 @@
-import{c as o}from"./classAdderBuilder.CUeXhiK0.js";import"./index.Bj97moK3.js";import"./Subheader.BjdGPQjV.js";import{G as r}from"./Graphic.BMEUV6jW.js";o({class:"mdc-menu__selection-group-icon",component:r});

@@ -1,4 +1,4 @@
-import { c as create_ssr_component, h as add_attribute, e as escape, i as each } from "./ssr2.js";
+import { c as create_ssr_component, f as add_attribute, e as escape, i as each } from "./ssr2.js";
 const PreviewLine = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { line } = $$props;
   if ($$props.line === void 0 && $$bindings.line && line !== void 0) $$bindings.line(line);

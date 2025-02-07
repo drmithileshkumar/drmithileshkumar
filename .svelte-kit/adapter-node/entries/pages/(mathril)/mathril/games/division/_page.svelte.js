@@ -1,5 +1,5 @@
 import { a as subscribe, b as set_store_value } from "../../../../../../chunks/utils.js";
-import { c as create_ssr_component, h as add_attribute, v as validate_component, i as each, e as escape } from "../../../../../../chunks/ssr2.js";
+import { c as create_ssr_component, f as add_attribute, v as validate_component, i as each, e as escape } from "../../../../../../chunks/ssr2.js";
 import { A as ActionButtons, C as Content$1 } from "../../../../../../chunks/ActionIcons.js";
 import { B as Button } from "../../../../../../chunks/Button.js";
 import { C as CommonLabel } from "../../../../../../chunks/CommonLabel.js";

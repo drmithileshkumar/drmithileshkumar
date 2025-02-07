@@ -6,6 +6,9 @@
 <style>
     .container {
         padding: 0 1em;
+        max-width: 750px;
+        width: 90%;
+        margin: auto;
     }
     h1 {
         font-size: 3em;

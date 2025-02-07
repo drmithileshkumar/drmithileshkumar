@@ -1,5 +1,5 @@
 import { a as subscribe, b as set_store_value } from "../../../../chunks/utils.js";
-import { c as create_ssr_component, j as createEventDispatcher, h as add_attribute, v as validate_component, e as escape } from "../../../../chunks/ssr2.js";
+import { c as create_ssr_component, j as createEventDispatcher, f as add_attribute, v as validate_component, e as escape } from "../../../../chunks/ssr2.js";
 import { B as Button } from "../../../../chunks/Button.js";
 import { C as CommonLabel } from "../../../../chunks/CommonLabel.js";
 import { S as Set_1, C as Chip } from "../../../../chunks/Set.js";

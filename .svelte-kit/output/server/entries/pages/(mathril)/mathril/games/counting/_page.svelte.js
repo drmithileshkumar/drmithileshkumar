@@ -1,5 +1,5 @@
 import { a as subscribe, b as set_store_value } from "../../../../../../chunks/utils.js";
-import { c as create_ssr_component, h as add_attribute, v as validate_component, e as escape, i as each } from "../../../../../../chunks/ssr2.js";
+import { c as create_ssr_component, f as add_attribute, v as validate_component, e as escape, i as each } from "../../../../../../chunks/ssr2.js";
 import { C as CommonLabel } from "../../../../../../chunks/CommonLabel.js";
 import "../../../../../../chunks/Suffix.js";
 import { S as Slider } from "../../../../../../chunks/Slider.js";

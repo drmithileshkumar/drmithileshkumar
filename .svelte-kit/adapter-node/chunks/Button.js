@@ -1,6 +1,6 @@
 import { c as compute_rest_props } from "./utils.js";
 import { g as globals, S as SmuiElement } from "./SmuiElement.js";
-import { c as create_ssr_component, a as get_current_component, g as getContext, s as setContext, v as validate_component, m as missing_component } from "./ssr2.js";
+import { c as create_ssr_component, a as get_current_component, g as getContext, h as setContext, v as validate_component, m as missing_component } from "./ssr2.js";
 import { f as forwardEventsBuilder, c as classMap } from "./forwardEventsBuilder.js";
 import { R as Ripple } from "./Ripple.js";
 const { Object: Object_1 } = globals;

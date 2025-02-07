@@ -65,14 +65,15 @@
     <TopAppBar variant="fixed" color="secondary">
         <Row>
             <Section style="align-items:center;">
-                <div class="logo">
+                <!-- <div class="logo">
                     <Fab on:click={() => goto("/")}>
                         <Icon>
                             <img width="40px" height="40px" style="background:white; border-radius:50%;" src="/favicon.png" alt="1" />
                         </Icon>
                     </Fab>
-                </div>
+                </div> -->
                 <IconButton class="material-icons" on:click={() => $showLeft = !$showLeft}>menu</IconButton>
+                <IconButton class="material-icons" aria-label="Home" on:click={() => goto("/")}>home</IconButton>
                 <span>
                     {$currentPath}
                     <!-- {#if $page.route.id === '/'}

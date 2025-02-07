@@ -1,5 +1,5 @@
 import { a as subscribe } from "./utils.js";
-import { c as create_ssr_component, v as validate_component, e as escape, h as add_attribute } from "./ssr2.js";
+import { c as create_ssr_component, v as validate_component, e as escape, f as add_attribute } from "./ssr2.js";
 import { C as Card } from "./Card.js";
 import { C as Content } from "./ActionIcons.js";
 import { A as Actions } from "./Actions.js";

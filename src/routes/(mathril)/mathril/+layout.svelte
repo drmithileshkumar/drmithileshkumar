@@ -50,18 +50,18 @@
         <TopAppBar variant="fixed" color="secondary">
             <Row>
                 <Section style="align-items:center;">
-                    <div class="logo">
+                    <!-- <div class="logo">
                         <a data-sveltekit-reload href="/">
                             <Icon>
                                 <img width="40px" height="40px" style="background:white; border-radius:50%;" src="/favicon.png" alt="1" />
                             </Icon>
                         </a>
-                    </div>
+                    </div> -->
                     <IconButton toggle bind:pressed={$showLeft}>
                         <Icon class="material-icons" on>close</Icon>
                         <Icon class="material-icons">menu</Icon>
                     </IconButton>
-                    
+                    <IconButton class="material-icons" aria-label="Home" on:click={() => goto("/")}>home</IconButton>
                     <span>
                         {$currentPath}
                     </span>

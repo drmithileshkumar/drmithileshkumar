@@ -1,4 +1,4 @@
-import { c as create_ssr_component, v as validate_component, h as add_attribute, e as escape } from "../../../../../../../chunks/ssr2.js";
+import { c as create_ssr_component, v as validate_component, f as add_attribute, e as escape } from "../../../../../../../chunks/ssr2.js";
 import { a as subscribe } from "../../../../../../../chunks/utils.js";
 import { C as Card } from "../../../../../../../chunks/Card.js";
 import { M as MediaContent, C as Content } from "../../../../../../../chunks/ActionIcons.js";

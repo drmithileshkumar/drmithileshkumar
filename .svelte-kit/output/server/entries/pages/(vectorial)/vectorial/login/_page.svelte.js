@@ -1,5 +1,5 @@
 import { c as compute_rest_props, e as null_to_empty, a as subscribe } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, j as createEventDispatcher, h as add_attribute, e as escape, i as each, b as spread, f as escape_object, v as validate_component } from "../../../../../chunks/ssr2.js";
+import { c as create_ssr_component, j as createEventDispatcher, f as add_attribute, e as escape, i as each, s as spread, d as escape_object, v as validate_component } from "../../../../../chunks/ssr2.js";
 import "../../../../../chunks/client.js";
 import { p as page } from "../../../../../chunks/stores3.js";
 import "../../../../../chunks/stores2.js";

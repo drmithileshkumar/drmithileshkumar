@@ -1,5 +1,5 @@
 import { a as subscribe } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, e as escape, h as add_attribute, v as validate_component } from "../../../../../chunks/ssr2.js";
+import { c as create_ssr_component, e as escape, f as add_attribute, v as validate_component } from "../../../../../chunks/ssr2.js";
 import { p as presentationMode, c as currentSlide, s as slideCounter, a as presentation, o as overlay, b as autoScroll } from "../../../../../chunks/stores4.js";
 import "../../../../../chunks/client.js";
 import { C as CanvasBar, a as Canvas } from "../../../../../chunks/Canvas.js";

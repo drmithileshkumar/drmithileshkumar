@@ -240,17 +240,6 @@
       "_app/immutable/assets/Drawing.CfrzLLFi.css"
     ]
   },
-  "_Fab.js": {
-    "file": "chunks/Fab.js",
-    "name": "Fab",
-    "imports": [
-      "_utils.js",
-      "_SmuiElement.js",
-      "_ssr2.js",
-      "_forwardEventsBuilder.js",
-      "_Ripple.js"
-    ]
-  },
   "_FormField.js": {
     "file": "chunks/FormField.js",
     "name": "FormField",
@@ -3205,7 +3194,6 @@
       "_utils.js",
       "_ssr2.js",
       "_Separator.js",
-      "_Fab.js",
       "_Svg.js",
       "_Item.js",
       "_Subheader.js",
@@ -3864,7 +3852,7 @@
       "_Pathlist.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.MKzJQBCB.css"
+      "_app/immutable/assets/_page.tftvnXHD.css"
     ]
   },
   "src/routes/(general)/courses/algorithms/+page.js": {
@@ -8282,7 +8270,7 @@
       "_Paper2.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.CzKSpbyS.css",
+      "_app/immutable/assets/_page.QN_2bfCI.css",
       "_app/immutable/assets/Papers.DWP9sFsm.css"
     ]
   },
@@ -8313,7 +8301,7 @@
       "_CourseNavigation.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.DRxexA2t.css",
+      "_app/immutable/assets/_page.CWUFTE4x.css",
       "_app/immutable/assets/Link.DT8GuSJh.css"
     ]
   },
@@ -8744,6 +8732,39 @@
       "_app/immutable/assets/P.CvI4RsOs.css"
     ]
   },
+  "src/routes/(general)/research/parazoo/+page.js": {
+    "file": "entries/pages/(general)/research/parazoo/_page.js",
+    "name": "entries/pages/(general)/research/parazoo/_page",
+    "src": "src/routes/(general)/research/parazoo/+page.js",
+    "isEntry": true
+  },
+  "src/routes/(general)/research/parazoo/+page.svelte": {
+    "file": "entries/pages/(general)/research/parazoo/_page.svelte.js",
+    "name": "entries/pages/(general)/research/parazoo/_page.svelte",
+    "src": "src/routes/(general)/research/parazoo/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_github-dark.js",
+      "_Suffix.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores3.js",
+      "_Subheader.js",
+      "_client.js",
+      "_stores.js",
+      "_content7.js",
+      "_Pathlist.js",
+      "_CourseNavigation.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DqHipAuH.css",
+      "_app/immutable/assets/WebPractice.7gnLU0Ft.css",
+      "_app/immutable/assets/NavList.CJbcjQr4.css",
+      "_app/immutable/assets/Paper.Bg_S1Oi_.css"
+    ]
+  },
   "src/routes/(general)/research/qit/+page.js": {
     "file": "entries/pages/(general)/research/qit/_page.js",
     "name": "entries/pages/(general)/research/qit/_page",
@@ -8895,7 +8916,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.D7FU8iMv.css",
+      "_app/immutable/assets/_page.CZRRzz9I.css",
       "_app/immutable/assets/Message.D2xEdDAW.css",
       "_app/immutable/assets/Link.DT8GuSJh.css"
     ]
@@ -8926,7 +8947,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.MKzJQBCB.css",
+      "_app/immutable/assets/_page.tftvnXHD.css",
       "_app/immutable/assets/Message.D2xEdDAW.css",
       "_app/immutable/assets/Link.DT8GuSJh.css"
     ]
@@ -9001,7 +9022,7 @@
       "_Image.svelte_svelte_type_style_lang.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.DXLy1Juu.css"
+      "_app/immutable/assets/_page.BMmD33IE.css"
     ]
   },
   "src/routes/(general)/talks/sorting/+layout.svelte": {
@@ -9049,7 +9070,7 @@
       "_Quick.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.DoQfHhsA.css"
+      "_app/immutable/assets/_page.C9M-VXz4.css"
     ]
   },
   "src/routes/(mathril)/+layout.svelte": {
@@ -9811,7 +9832,6 @@
       "_utils.js",
       "_ssr2.js",
       "_Separator.js",
-      "_Fab.js",
       "_Svg.js",
       "_Item.js",
       "_Subheader.js",
@@ -10460,7 +10480,8 @@
       "_Input.js",
       "_Paper.js",
       "_Subtitle.js",
-      "_Fab.js",
+      "_SmuiElement.js",
+      "_Ripple.js",
       "_client.js"
     ],
     "css": [

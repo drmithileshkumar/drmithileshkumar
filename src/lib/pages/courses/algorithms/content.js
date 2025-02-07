@@ -24,6 +24,10 @@ export const contents = [
                         url: '/courses/algorithms/sorting/quick'
                     },
                     {
+                        name: 'Complexity',
+                        url: '/courses/algorithms/sorting/complexity'
+                    },
+                    {
                         name: 'Count Sort',
                         url: '/courses/algorithms/sorting/count'
                     },
@@ -34,10 +38,6 @@ export const contents = [
                     {
                         name: 'Redix Sort',
                         url: '/courses/algorithms/sorting/radix'
-                    },
-                    {
-                        name: 'Complexity',
-                        url: '/courses/algorithms/sorting/complexity'
                     },
                 ]
             },
@@ -81,12 +81,18 @@ export const contentNav = {
         "name": "Quick Sort",
         "url": "/courses/algorithms/sorting/quick",
         "previous": "/courses/algorithms/sorting/merge",
+        "next": "/courses/algorithms/sorting/complexity"
+    },
+    "/courses/algorithms/sorting/complexity": {
+        "name": "Complexity",
+        "url": "/courses/algorithms/sorting/complexity",
+        "previous": "/courses/algorithms/sorting/quick",
         "next": "/courses/algorithms/sorting/count"
     },
     "/courses/algorithms/sorting/count": {
         "name": "Count Sort",
         "url": "/courses/algorithms/sorting/count",
-        "previous": "/courses/algorithms/sorting/quick",
+        "previous": "/courses/algorithms/sorting/complexity",
         "next": "/courses/algorithms/sorting/bucket"
     },
     "/courses/algorithms/sorting/bucket": {
@@ -99,13 +105,7 @@ export const contentNav = {
         "name": "Radix Sort",
         "url": "/courses/algorithms/sorting/radix",
         "previous": "/courses/algorithms/sorting/bucket",
-        "next": "/courses/algorithms/sorting/complexity"
-    },
-    "/courses/algorithms/sorting/complexity": {
-        "name": "Complexity",
-        "url": "/courses/algorithms/sorting/complexity",
-        "previous": "/courses/algorithms/sorting/radix",
-        "next": "/courses/algorithms/sorting/complexity"
+        "next": "/courses/algorithms/sorting/bucket"
     }
 }
 

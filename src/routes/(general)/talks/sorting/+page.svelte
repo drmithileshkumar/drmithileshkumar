@@ -572,6 +572,9 @@
 		position: relative;
 		padding: 0.5em;
 		/* in: all 1s; */
+		max-width: 750px;
+            width: 90%;
+            margin:auto;
 	}
 	h1 {
 		font-size: 2em;

@@ -1,5 +1,5 @@
 import { a as subscribe, b as set_store_value, g as is_promise, n as noop } from "../../../../chunks/utils.js";
-import { c as create_ssr_component, j as createEventDispatcher, h as add_attribute, v as validate_component, e as escape, i as each } from "../../../../chunks/ssr2.js";
+import { c as create_ssr_component, j as createEventDispatcher, f as add_attribute, v as validate_component, e as escape, i as each } from "../../../../chunks/ssr2.js";
 import { C as Card } from "../../../../chunks/Card.js";
 import { C as Content } from "../../../../chunks/ActionIcons.js";
 import { B as Button } from "../../../../chunks/Button.js";

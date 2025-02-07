@@ -1,5 +1,5 @@
 import { c as compute_rest_props } from "./utils.js";
-import { c as create_ssr_component, a as get_current_component, g as getContext, v as validate_component, m as missing_component, b as spread, f as escape_object, h as add_attribute } from "./ssr2.js";
+import { c as create_ssr_component, a as get_current_component, g as getContext, v as validate_component, m as missing_component, s as spread, d as escape_object, f as add_attribute } from "./ssr2.js";
 import { f as forwardEventsBuilder, c as classMap } from "./forwardEventsBuilder.js";
 import { S as SmuiElement } from "./SmuiElement.js";
 const CommonIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {

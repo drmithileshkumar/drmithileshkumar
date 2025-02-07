@@ -1,5 +1,5 @@
 import { a as subscribe } from "../../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, i as each, h as add_attribute, e as escape } from "../../../../../../chunks/ssr2.js";
+import { c as create_ssr_component, v as validate_component, i as each, f as add_attribute, e as escape } from "../../../../../../chunks/ssr2.js";
 import { p as page } from "../../../../../../chunks/stores3.js";
 import "../../../../../../chunks/client.js";
 import { C as Card } from "../../../../../../chunks/Card.js";

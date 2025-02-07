@@ -1,5 +1,5 @@
 import { a as subscribe, b as set_store_value } from "./utils.js";
-import { c as create_ssr_component, i as each, e as escape, h as add_attribute } from "./ssr2.js";
+import { c as create_ssr_component, i as each, e as escape, f as add_attribute } from "./ssr2.js";
 import { w as writable } from "./index2.js";
 const lineWidth = writable(2);
 const strokeColor = writable("red");
