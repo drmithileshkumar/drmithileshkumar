@@ -189,6 +189,7 @@
 		comment = "Pivot selected"
 		await timer(waitTime);
 		comment = "Finding Partition"
+		
 		let pivotValue = sortedArray[pivotIndex].item;
 		let partitionIndex = start;
 		for (let swapIndex = start; swapIndex < end; swapIndex++) {
@@ -222,21 +223,22 @@
 		if(partitionIndex < 0) return;
 		sortedArray[partitionIndex].active = 'green';
 		comparer.style.width = (widthCorrection * (end - start + 1) * fig.width) / n + 'px';
-
 		comparer.style.left = (leftShift + widthCorrection * start * fig.width) / n + 'px';
 
 		// let leftBox = computeBox(start, left.length)
 		leftSide.style.left = (leftShift + widthCorrection * start * fig.width) / n + 'px';
 		leftSide.style.width = (widthCorrection * (partitionIndex - start) * fig.width) / n + 'px';
-
 		// let rightBox = computeBox(start + left.length - 1, start + left.length + right.length)
 		rightSide.style.left =
 			(leftShift + widthCorrection * start * fig.width) / n + (leftShift + widthCorrection * (partitionIndex - start + 1) * fig.width) / n + 'px';
 		rightSide.style.width = (widthCorrection * (end - partitionIndex) * fig.width) / n + 'px';
 		await timer(waitTime);
 		comment = "Left partition";
+
 		if (partitionIndex > start && start >= 0) await quickSort(start, partitionIndex - 1);
+
 		comment = "Right partition";
+
 		if (partitionIndex < end && end >= 0) await quickSort(partitionIndex + 1, end);
 	};
 	const setStep = async (toSort) => {

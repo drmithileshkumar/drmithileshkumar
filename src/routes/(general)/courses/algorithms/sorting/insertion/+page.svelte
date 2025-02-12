@@ -98,21 +98,16 @@ console.log(insertionSort(numbers)); // Output: [2, 3, 4, 5, 8]
         cursor: pointer;
         padding: 0.3em;
     }
-    .cell {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid teal;
-        height: auto;
+    .pseudocode {
+        font-family:monospace;
+        font-size: 1em;
     }
-    .grid {
-        display: grid;
-        gap: 0.1em;
-        height: 300px;
-        width: 300px;
-        border: 1px solid gray;
-        padding: 0.1em;
-        margin: auto;
+    .pseudocode strong {
+        color: rgb(20, 175, 175);
+    }
+    .pseudocode ul {
+        margin: 0;
+        border-left: 1px solid;
     }
 </style>
 <svelte:head>
@@ -161,9 +156,36 @@ console.log(insertionSort(numbers)); // Output: [2, 3, 4, 5, 8]
     <Card>
         <Content>
             <h6 id="pseudo">Pseudo code</h6>
-            <Highlight language={xml} code={jsPseudo} let:highlighted>
+            <div class="pseudocode">
+                <span>function <strong>InsertionSort</strong>(a):</span>
+                <ul>
+                    <li>n = a.length</li>
+                    <li>sorted = 0 (first element is sorted)</li>
+                    <li>unsorted = 1 (next element needs to be sorted)</li>
+                    <li>loop till sorted &lt; n:
+                    <ul><li>// insert a[unsorted] into a[0:sorted]</li>
+                        <li>toBeInserted = a[unsorted]</li>
+                        <li>from i = sorted till i > 0 and swapped = true:
+                            <ul>
+                                <li>if toBeInserted &lt; a[i]:
+                                    <ul>
+                                        <li>swap them.</li>
+                                        <li>swapped = true</li>
+                                        <li>i = i - 1</li>
+                                    </ul>
+                                </li>
+                                <li>else swapped = false</li>
+                            </ul> 
+                        </li>
+                        <li>increase sorted by one </li>
+                        </ul>
+                    </li>
+                    <li>output the sorted array</li>
+                </ul>
+            </div>
+            <!-- <Highlight language={xml} code={jsPseudo} let:highlighted>
                 <LineNumbers {highlighted} wrapLines/>
-            </Highlight>
+            </Highlight> -->
         </Content>
     </Card>
     <Card>
@@ -171,6 +193,9 @@ console.log(insertionSort(numbers)); // Output: [2, 3, 4, 5, 8]
             <h6 id="analysis">Analysis</h6>
             <p>
                 The outer loop runs {`\\(n\\)`} times. In the worst case, at the {`\\(i\\)`}th run, the algorithm makes {`\\(i\\)`} comparisons. This gives a total comparisons of {`\\[n + (n-1) + \\cdots + 1 = \\frac{n(n - 1)}{2}\\]`}
+            </p>
+            <p>
+                Notice we can use binary search to optimize the insertion. Unfortunately, we need to read almost all elements in the sorted part and shift (to the right). So while number of comparisons decrease to \(O(\log N)\), the number of elements scanned remains \(O(N)\).
             </p>
             <DataTable style="width: 100%">
                 <Head>

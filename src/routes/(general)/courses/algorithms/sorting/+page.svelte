@@ -137,6 +137,7 @@
                         <li>Insertion sort</li>
                         <li>Merge sort</li>
                         <li>Quick sort</li>
+                        <li>Patience sort</li>
                     </ul>
                 </li>
                 <li>Non-comparison-based
@@ -148,10 +149,22 @@
                             Bucket sort
                         </li>
                         <li>
-                            Redix sort
+                            Radix sort
                         </li>
                     </ul>
                 </li>
+            </ul>
+        </Content>
+    </Card>
+    <Card>
+        <Content>
+            <h6>Unusual Types</h6>
+            <ul>
+                <li><strong>Miracle Sort</strong>: Look at the array periodically hoping that it will sort itself.</li>
+                <li><strong>Stalin Sort</strong>: Eliminate any element that is not in the correct order.</li>
+                <li><strong>Thanos Sort</strong>: Delete half of the elements</li>
+                <li><strong>Bogo Sort</strong>: Shuffle the array randomly and check if it is sorted. Comes in quantum flavor as well.</li>
+                <li><strong>Sleep Sort</strong>: Sleep for the time of each element and output the result.</li>
             </ul>
         </Content>
     </Card>

@@ -97,21 +97,19 @@ console.log(quickSort(numbers)); // Output: [2, 3, 4, 5, 8]
         cursor: pointer;
         padding: 0.3em;
     }
-    .cell {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid teal;
-        height: auto;
+    .pseudocode {
+        font-family:monospace;
+        font-size: 1em;
     }
-    .grid {
-        display: grid;
-        gap: 0.1em;
-        height: 300px;
-        width: 300px;
-        border: 1px solid gray;
-        padding: 0.1em;
-        margin: auto;
+    .pseudocode strong {
+        color: rgb(20, 175, 175);
+    }
+    .pseudocode ul {
+        margin: 0;
+        border-left: 1px solid;
+    }
+    .comment {
+        color:green;
     }
 </style>
 <svelte:head>
@@ -160,9 +158,25 @@ console.log(quickSort(numbers)); // Output: [2, 3, 4, 5, 8]
     <Card>
         <Content>
             <h6 id="pseudo">Pseudo code</h6>
-            <Highlight language={xml} code={jsPseudo} let:highlighted>
+            <div class="pseudocode">
+                <span>function <strong>QuickSort</strong>(a):</span>
+                <ul>
+                    <li>n = a.length</li>
+                    <li>if n &lt; 2 return a <span class="comment">//nothing to do here</span></li>
+                    <li>left = [], equal = [], right = []</li>
+                    <li>pivot = a[n/2] <span class="comment">//animation shows last element as pivot</span></li>
+                    <li>for num in a:</li>
+                    <ul>
+                        <li>if(num &lt; pivot) put num in left</li>
+                        <li>else if(num &gt; pivot) put num in right</li>
+                        <li>else put num in equal</li>
+                    </ul>
+                    <li>return <strong>quickSort</strong>(left) + equal + <strong>quickSort</strong>(right)</li>
+                </ul>
+            </div>
+            <!-- <Highlight language={xml} code={jsPseudo} let:highlighted>
                 <LineNumbers {highlighted} wrapLines/>
-            </Highlight>
+            </Highlight> -->
         </Content>
     </Card>
     <Card>

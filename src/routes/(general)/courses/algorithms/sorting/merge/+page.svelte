@@ -110,21 +110,19 @@ console.log(mergeSort(numbers)); // Output: [2, 3, 4, 5, 8]
         cursor: pointer;
         padding: 0.3em;
     }
-    .cell {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid teal;
-        height: auto;
+    .pseudocode {
+        font-family:monospace;
+        font-size: 1em;
     }
-    .grid {
-        display: grid;
-        gap: 0.1em;
-        height: 300px;
-        width: 300px;
-        border: 1px solid gray;
-        padding: 0.1em;
-        margin: auto;
+    .pseudocode strong {
+        color: rgb(20, 175, 175);
+    }
+    .pseudocode ul {
+        margin: 0;
+        border-left: 1px solid;
+    }
+    .comment {
+        color:green;
     }
 </style>
 <svelte:head>
@@ -173,9 +171,47 @@ console.log(mergeSort(numbers)); // Output: [2, 3, 4, 5, 8]
     <Card>
         <Content>
             <h6 id="pseudo">Pseudo code</h6>
-            <Highlight language={xml} code={jsPseudo} let:highlighted>
+            <div class="pseudocode">
+                <span>function <strong>MergeSort</strong>(a, start, end):</span>
+                <ul>
+                    <li>n = a.length</li>
+                    <li>if n &lt; 2 return a <span class="comment">//nothing to do here</span></li>
+                    <li>else divide the array into two parts</li>
+                    <ul>
+                        <li>middle = (start + end)/2</li>
+                        <li>left = <strong>MergeSort</strong>(a, start, mid)</li>
+                        <li>right = <strong>MergeSort</strong>(a, mid+1, end)</li>
+                        <li>sorted = <strong>Merge</strong>(left, right)</li>
+                    </ul>
+                    <li>return sorted</li>
+                </ul>
+                <span>function <strong>Merge</strong>(left, right):</span>
+                <ul>
+                    <li>if either left or right are empty, return the other</li>
+                    <li>merged = [] <span class="comment">//empty merged array</span></li>
+                    <li>while left or right have elements:
+                        <ul>
+                            <li>if left[first] &lt; right[first] or right is empty: 
+                                <ul>
+                                    <li>put left[first] at the end of merged</li>
+                                    <li>remove left[first] <span class="comment">//left is smaller now</span></li> 
+                                </ul>
+                            </li>
+                            <li>
+                                else 
+                                <ul>
+                                    <li>put right[first] at the end of merged</li>
+                                    <li>remove right[first] <span class="comment">//right is smaller now</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>return merged</li>
+                </ul>
+            </div>
+            <!-- <Highlight language={xml} code={jsPseudo} let:highlighted>
                 <LineNumbers {highlighted} wrapLines/>
-            </Highlight>
+            </Highlight> -->
         </Content>
     </Card>
     <Card>
