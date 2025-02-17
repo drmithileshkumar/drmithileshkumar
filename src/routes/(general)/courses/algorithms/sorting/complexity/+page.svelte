@@ -106,11 +106,11 @@ console.log(radixSort(numbers));  // Output: [2, 24, 45, 66, 75, 90, 170, 802]`;
 			<h6>Topics</h6>
 			<ol>
 				<li><a href="#description">Description</a></li>
-				<li><a href="#visualization">Visualization</a></li>
-				<li><a href="#pseudo">Pseudo code</a></li>
-				<li><a href="#analysis">Analysis</a></li>
-				<li><a href="#javascript">Javascript code</a></li>
-				<li><a href="#questions">Questions</a></li>
+				<li><a href="#decision">Decision Tree</a></li>
+				<li><a href="#permutations">Permutation</a></li>
+				<li><a href="#relation">Decision tree meets permutation</a></li>
+				<!-- <li><a href="#javascript">Javascript code</a></li>
+				<li><a href="#questions">Questions</a></li> -->
 			</ol>
 		</Content>
 	</Card>
@@ -1164,7 +1164,10 @@ console.log(radixSort(numbers));  // Output: [2, 24, 45, 66, 75, 90, 170, 802]`;
 				Therefore, \[2^k\geq n! \implies k \geq \log n!\]
 			</p>
 			<p>
-				<strong>Stirling's approximation</strong>: \[\log n! \approx n\log n - n\]
+				<strong>Stirling's approximation</strong>: \[n\log n - n \lt \log n! \lt n\log n \]
+			</p>
+			<p>
+				<em>Proof (idea): Use </em> \(n! \leq n^n\) and \(n\)th term of {`\\(e^x=\\sum_0^\\infty \\frac{x^n}{n!}\\)`}
 			</p>
 			<p>
 				Since we know that there are algorithms that achieve this bound, we have the proof of \[k =

@@ -75,7 +75,7 @@
         {@html github}
     {/if}
 </svelte:head>
-<article>
+<article use:typeset>
     <Pathlist origin ={$page.url.origin} pathname={$page.url.pathname} />
     <CourseNavigation {contentNav} currentUrl={$page.url.pathname} />
     <h4>
@@ -133,23 +133,24 @@
             <ul>
                 <li>Comparison-based
                     <ul>
-                        <li>Bubble sort</li>
-                        <li>Insertion sort</li>
-                        <li>Merge sort</li>
-                        <li>Quick sort</li>
-                        <li>Patience sort</li>
+                        <li>Bubble sort \(O(n^2)\)</li>
+                        <li>Insertion sort \(O(n^2)\)</li>
+                        <li>Merge sort \(O(n\log n)\)</li>
+                        <li>Quick sort \(O(n\log n)^*\)</li>
+                        <li>Patience sort \(O(n\log n)\)</li>
+                        <li>Heap sort \(O(n\log n)\)</li>
                     </ul>
                 </li>
                 <li>Non-comparison-based
                     <ul>
                         <li>
-                            Count sort
+                            Count sort \(O(n)\)
                         </li>
                         <li>
-                            Bucket sort
+                            Bucket sort \(O(n)\)
                         </li>
                         <li>
-                            Radix sort
+                            Radix sort \(O(n)\)
                         </li>
                     </ul>
                 </li>
