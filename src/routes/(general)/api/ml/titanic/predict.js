@@ -9,7 +9,7 @@
  */
 export async function predictSurvival(pclass, sex, age, sibsp, parch, fare) {
   try {
-    const response = await fetch('http://localhost:1234/predict', {
+    const response = await fetch('http://127.0.0.1:1234/predict', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ pclass, sex, age, sibsp, parch, fare })
