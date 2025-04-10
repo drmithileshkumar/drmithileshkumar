@@ -20,5 +20,7 @@ export type PageServerData = null;
 export type PageLoad<OutputData extends OutputDataShape<PageParentData> = OutputDataShape<PageParentData>> = Kit.Load<RouteParams, PageServerData, PageParentData, OutputData, RouteId>;
 export type PageLoadEvent = Parameters<PageLoad>[0];
 export type PageData = Expand<Omit<PageParentData, keyof Kit.LoadProperties<Awaited<ReturnType<typeof import('../../../../../../../src/routes/(general)/talks/quantumteleportation/+page.js').load>>>> & OptionalUnion<EnsureDefined<Kit.LoadProperties<Awaited<ReturnType<typeof import('../../../../../../../src/routes/(general)/talks/quantumteleportation/+page.js').load>>>>>>;
+export type PageProps = { data: PageData }
 export type LayoutServerData = null;
 export type LayoutData = Expand<LayoutParentData>;
+export type LayoutProps = { data: LayoutData; children: import("svelte").Snippet }

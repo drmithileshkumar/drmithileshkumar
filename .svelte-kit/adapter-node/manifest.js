@@ -10,7 +10,7 @@ return {
 	assets: new Set(["announcement/html.svg","announcement/perspective.svg","app.css","avatar.svg","background copy.svg","background.svg","banner.png","banner.svg","circle_demo/circle.png","circle_demo/circle_anime.mp4","circle_demo/Cone-equation.png","circle_demo/Cone.png","circle_demo/conics.png","circle_demo/Conic_anime.mp4","circle_demo/Conic_deg.mp4","circle_demo/ellipse_anime.mp4","circle_demo/hyperbola_anime.mp4","circle_demo/IIT21Q1.png","circle_demo/orthocenter.png","circle_demo/parabola_anime.mp4","circle_demo/Plane.png","circle_demo/Tangents.png","circle_demo/threepointcircle.png","CMIMedal.jpg","cmithesis.pdf","common.css","courses/internet/css/boxmodel.svg","courses/internet/wwwhtml/fundamentals/intro/dns.png","courses/internet/wwwhtml/fundamentals/intro/dns.webp","courses/internet/wwwhtml/html/audio/tada.wav","courses/internet/wwwhtml/html/video/germinate.mp4","courses/mathematics2/cyclic.jpg","courses/mathematics2/normal.jpg","courses/mathematics2/normalCritical.png","courses/mathematics2/originalTime.jpg","courses/mathematics2/randomcomponent.jpg","courses/mathematics2/seasonality.jpg","courses/mathematics2/trend.jpg","courses/mathematics2/ztable1.webp","courses/mathematics2/ztable2.webp","custom.css","dark.css","facebook.svg","favicon.png","IITMSc.jpg","instagram.svg","LCPath.svg","light.css","manifest.json","mathril/about/book.png","mathril/about/fountain.png","mathril/about/idea.png","mathril/about/questionStudent.png","mathril/about/shakyFoundation.png","mathril/android/add.jpg","mathril/android/add2.jpg","mathril/android/app.jpg","mathril/android/appview.jpg","mathril/android/menu.jpg","mathril/announcement/boardX.svg","mathril/announcement/courses/appDerivatives.svg","mathril/announcement/courses/appIntegrals.svg","mathril/announcement/courses/binomial.svg","mathril/announcement/courses/circle.svg","mathril/announcement/courses/combinatorics.svg","mathril/announcement/courses/complex.svg","mathril/announcement/courses/continuity.svg","mathril/announcement/courses/definite.svg","mathril/announcement/courses/derivatives.svg","mathril/announcement/courses/determinants.svg","mathril/announcement/courses/differentiability.svg","mathril/announcement/courses/differential.svg","mathril/announcement/courses/ellipse.svg","mathril/announcement/courses/hyperbola.svg","mathril/announcement/courses/indefinite.svg","mathril/announcement/courses/induction.svg","mathril/announcement/courses/inequalities.svg","mathril/announcement/courses/inverse.svg","mathril/announcement/courses/limits.svg","mathril/announcement/courses/linear.svg","mathril/announcement/courses/lines.svg","mathril/announcement/courses/matrices.svg","mathril/announcement/courses/parabola.svg","mathril/announcement/courses/probability.svg","mathril/announcement/courses/quadratic.svg","mathril/announcement/courses/reasoning.svg","mathril/announcement/courses/relations11.svg","mathril/announcement/courses/relations12.svg","mathril/announcement/courses/sequences.svg","mathril/announcement/courses/sets.svg","mathril/announcement/courses/statistics.svg","mathril/announcement/courses/threeD.svg","mathril/announcement/courses/trigonometry.svg","mathril/announcement/courses/vectors.svg","mathril/announcement/html.svg","mathril/announcement/liveinstructor.svg","mathril/announcement/perspective.svg","mathril/announcement/selfpaced.svg","mathril/announcement/sets.svg","mathril/app.css","mathril/assets/Head.png","mathril/assets/Tail.png","mathril/avatar.svg","mathril/background.svg","mathril/banner.png","mathril/banner.svg","mathril/books/Vector/cover.jpg","mathril/books/Vector/sample1.jpg","mathril/books/Vector/sample2.jpg","mathril/books/Vector/sample3.jpg","mathril/books/Vector/sample4.jpg","mathril/common.css","mathril/facebook.svg","mathril/favicon.png","mathril/favicon.svg","mathril/help.svg","mathril/icons/Apple_logo.svg","mathril/icons/chapter.svg","mathril/icons/shapes1.svg","mathril/instagram.svg","mathril/iOS/add.jpg","mathril/iOS/add2.jpg","mathril/iOS/app.jpg","mathril/iOS/share.jpg","mathril/landing/banner.svg","mathril/landing/Flag_of_India.svg","mathril/landing/practice.mov","mathril/landing/student.png","mathril/mathrilManifest.json","mathril/mithileshkumar.png","mathril/promoter/promoter.png","mathril/robots.txt","mathril/scorecard.svg","mathril/smui-dark.css","mathril/smui.css","mathril/teacher/teacher.png","mathril/telegram.svg","mathril/twitter.png","mathril/user.svg","mathril/whatsapp.svg","mathril/youtube.svg","mathril/youtubeButton.svg","mithileshkumar.png","notes/maths/sets/equal/thumbnail.svg","notes/maths/sets/finite/thumbnail.svg","notes/maths/sets/introduction/example.svg","notes/maths/sets/introduction/oddeven.svg","notes/maths/sets/real/interval.svg","notes/maths/sets/real/subsetreal.svg","notes/maths/sets/representation/heroparadox.svg","notes/maths/sets/subsets/thumbnail.svg","notes/maths/sets/subsets/tree.svg","notes/quantum/CNOT.svg","notes/quantum/qubit2d.svg","notes/quantum/teleportation.svg","photo_cv.jpg","profilephoto.jpeg","Research/BTFVS/BipartiteTournament.png","Research/Club/club.pdf","Research/Club/club.png","Research/kernelization/crown.png","Research/kernelization/expansion.png","Research/TFVS/BalancedPartition.png","Research/TFVS/InducedOrder.png","Research/TFVS/Subtournaments.png","Research/TFVS/Topological.png","Research/TFVS/TopologicalStructure.png","robots.txt","santa.svg","smui-dark.css","smui.css","svelte-welcome.png","svelte-welcome.webp","telegram.svg","thesis.pdf","twitter copy.png","twitter.png","vectorial/background.svg","vectorial/latex/calculus.svg","vectorial/latex/qubit.svg","vectorial/latex/subsets.svg","vectorial/latex/teleportation.svg","vectorial/test/markers.svg","vectorial/vectorialhome.svg","webdutIcon.png","youtube.svg","service-worker.js"]),
 	mimeTypes: {".svg":"image/svg+xml",".css":"text/css",".png":"image/png",".mp4":"video/mp4",".jpg":"image/jpeg",".pdf":"application/pdf",".webp":"image/webp",".wav":"audio/wav",".json":"application/json",".mov":"video/quicktime",".txt":"text/plain",".jpeg":"image/jpeg"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.BVDaU_E3.js","app":"_app/immutable/entry/app.BQcCYOcJ.js","imports":["_app/immutable/entry/start.BVDaU_E3.js","_app/immutable/chunks/entry.iIuJJAWT.js","_app/immutable/chunks/scheduler.DPwfdX_H.js","_app/immutable/chunks/index.BSKKeNIs.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/entry/app.BQcCYOcJ.js","_app/immutable/chunks/preload-helper.C1FmrZbK.js","_app/immutable/chunks/scheduler.DPwfdX_H.js","_app/immutable/chunks/index.CwTeKo4T.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
+		client: {start:"_app/immutable/entry/start.dONceTU5.js",app:"_app/immutable/entry/app.a67yhhAy.js",imports:["_app/immutable/entry/start.dONceTU5.js","_app/immutable/chunks/C2Tgqvmf.js","_app/immutable/chunks/BurqNfsS.js","_app/immutable/chunks/BfFMFjDh.js","_app/immutable/chunks/CYgJF_JY.js","_app/immutable/entry/app.a67yhhAy.js","_app/immutable/chunks/C1FmrZbK.js","_app/immutable/chunks/BurqNfsS.js","_app/immutable/chunks/Bb2ET71N.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -274,7 +274,8 @@ return {
 			__memo(() => import('./nodes/259.js')),
 			__memo(() => import('./nodes/260.js')),
 			__memo(() => import('./nodes/261.js')),
-			__memo(() => import('./nodes/262.js'))
+			__memo(() => import('./nodes/262.js')),
+			__memo(() => import('./nodes/263.js'))
 		],
 		routes: [
 			{
@@ -318,6 +319,13 @@ return {
 				params: [],
 				page: null,
 				endpoint: __memo(() => import('./entries/endpoints/(general)/api/login/_server.js'))
+			},
+			{
+				id: "/(general)/api/ml/titanic",
+				pattern: /^\/api\/ml\/titanic\/?$/,
+				params: [],
+				page: null,
+				endpoint: __memo(() => import('./entries/endpoints/(general)/api/ml/titanic/_server.js'))
 			},
 			{
 				id: "/(general)/api/profilepic",
@@ -1513,336 +1521,343 @@ return {
 				id: "/(mathril)/mathril",
 				pattern: /^\/mathril\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 205 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 206 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/about",
 				pattern: /^\/mathril\/about\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 206 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 207 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/class[classn]",
 				pattern: /^\/mathril\/class([^/]+?)\/?$/,
 				params: [{"name":"classn","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 207 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 208 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/class[classn]/chapter[chaptern]",
 				pattern: /^\/mathril\/class([^/]+?)\/chapter([^/]+?)\/?$/,
 				params: [{"name":"classn","optional":false,"rest":false,"chained":false},{"name":"chaptern","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 208 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 209 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games",
 				pattern: /^\/mathril\/games\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 209 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 210 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/addition2",
 				pattern: /^\/mathril\/games\/addition2\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 211 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 212 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/addition",
 				pattern: /^\/mathril\/games\/addition\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 210 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 211 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/appDerivative",
 				pattern: /^\/mathril\/games\/appDerivative\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 212 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 213 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/beattarget",
 				pattern: /^\/mathril\/games\/beattarget\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 213 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 214 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/clock",
 				pattern: /^\/mathril\/games\/clock\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 214 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 215 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/counting",
 				pattern: /^\/mathril\/games\/counting\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 215 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 216 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/division",
 				pattern: /^\/mathril\/games\/division\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 216 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 217 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/eucliddivisionalgorithm",
 				pattern: /^\/mathril\/games\/eucliddivisionalgorithm\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 217 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 218 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/eucliddivisionlemma",
 				pattern: /^\/mathril\/games\/eucliddivisionlemma\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 218 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 219 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/inout",
 				pattern: /^\/mathril\/games\/inout\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 219 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 220 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/integral",
 				pattern: /^\/mathril\/games\/integral\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 220 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 221 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/lineareqn",
 				pattern: /^\/mathril\/games\/lineareqn\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 221 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 222 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/lp",
 				pattern: /^\/mathril\/games\/lp\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 222 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 223 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/matchnumber",
 				pattern: /^\/mathril\/games\/matchnumber\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 223 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 224 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/multiplication",
 				pattern: /^\/mathril\/games\/multiplication\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 224 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 225 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/subtraction2",
 				pattern: /^\/mathril\/games\/subtraction2\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 226 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 227 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/games/subtraction",
 				pattern: /^\/mathril\/games\/subtraction\/?$/,
 				params: [],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 225 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 226 },
 				endpoint: null
 			},
 			{
 				id: "/(mathril)/mathril/[...catchAll]",
 				pattern: /^\/mathril(?:\/(.*))?\/?$/,
 				params: [{"name":"catchAll","optional":false,"rest":true,"chained":true}],
-				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 227 },
+				page: { layouts: [0,7,8,], errors: [1,,,], leaf: 228 },
+				endpoint: null
+			},
+			{
+				id: "/(general)/projects",
+				pattern: /^\/projects\/?$/,
+				params: [],
+				page: { layouts: [0,4,], errors: [1,,], leaf: 171 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/publications",
 				pattern: /^\/publications\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 171 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 172 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research",
 				pattern: /^\/research\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 172 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 173 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/crypto",
 				pattern: /^\/research\/crypto\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 173 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 174 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/crypto/fasterLattice",
 				pattern: /^\/research\/crypto\/fasterLattice\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 174 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 175 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/crypto/obtuse",
 				pattern: /^\/research\/crypto\/obtuse\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 175 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 176 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/crypto/reduceLattice",
 				pattern: /^\/research\/crypto\/reduceLattice\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 176 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 177 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/crypto/selfdual",
 				pattern: /^\/research\/crypto\/selfdual\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 177 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 178 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/kernelization",
 				pattern: /^\/research\/kernelization\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 178 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 179 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/kernelization/cds",
 				pattern: /^\/research\/kernelization\/cds\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 179 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 180 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/kernelization/coc",
 				pattern: /^\/research\/kernelization\/coc\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 180 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 181 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/parameterized",
 				pattern: /^\/research\/parameterized\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 181 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 182 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/parameterized/bitournament",
 				pattern: /^\/research\/parameterized\/bitournament\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 182 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 183 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/parameterized/club",
 				pattern: /^\/research\/parameterized\/club\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 183 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 184 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/parameterized/induced",
 				pattern: /^\/research\/parameterized\/induced\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 184 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 185 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/parameterized/tournament",
 				pattern: /^\/research\/parameterized\/tournament\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 185 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 186 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/parazoo",
 				pattern: /^\/research\/parazoo\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 186 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 187 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/qit",
 				pattern: /^\/research\/qit\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 187 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 188 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/qit/local",
 				pattern: /^\/research\/qit\/local\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 188 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 189 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/qit/schmidtProperties",
 				pattern: /^\/research\/qit\/schmidtProperties\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 190 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 191 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/research/qit/schmidt",
 				pattern: /^\/research\/qit\/schmidt\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 189 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 190 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/students",
 				pattern: /^\/students\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 191 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 192 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/talks",
 				pattern: /^\/talks\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 192 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 193 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/talks/quantumstatus",
 				pattern: /^\/talks\/quantumstatus\/?$/,
 				params: [],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 193 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 194 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/talks/quantumteleportation",
 				pattern: /^\/talks\/quantumteleportation\/?$/,
 				params: [],
-				page: { layouts: [0,4,5,], errors: [1,,,], leaf: 194 },
+				page: { layouts: [0,4,5,], errors: [1,,,], leaf: 195 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/talks/sorting",
 				pattern: /^\/talks\/sorting\/?$/,
 				params: [],
-				page: { layouts: [0,4,6,], errors: [1,,,], leaf: 195 },
+				page: { layouts: [0,4,6,], errors: [1,,,], leaf: 196 },
 				endpoint: null
 			},
 			{
@@ -1856,14 +1871,14 @@ return {
 				id: "/(vectorial)/vectorial/(nonapp)",
 				pattern: /^\/vectorial\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 228 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 229 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/about",
 				pattern: /^\/vectorial\/about\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 229 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 230 },
 				endpoint: null
 			},
 			{
@@ -2122,297 +2137,298 @@ return {
 				id: "/(vectorial)/vectorial/app",
 				pattern: /^\/vectorial\/app\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,12,], errors: [1,,,,], leaf: 260 },
+				page: { layouts: [0,9,10,12,], errors: [1,,,,], leaf: 261 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/auth",
 				pattern: /^\/vectorial\/auth\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 230 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 231 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/comment/[commentID]",
 				pattern: /^\/vectorial\/comment\/([^/]+?)\/?$/,
 				params: [{"name":"commentID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 231 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 232 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/compose",
 				pattern: /^\/vectorial\/compose\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 232 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 233 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/download",
 				pattern: /^\/vectorial\/download\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,13,], errors: [1,,,,], leaf: 261 },
+				page: { layouts: [0,9,10,13,], errors: [1,,,,], leaf: 262 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/drawings",
 				pattern: /^\/vectorial\/drawings\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 233 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 234 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/learn",
 				pattern: /^\/vectorial\/learn\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 234 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 235 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/learn/advanced",
 				pattern: /^\/vectorial\/learn\/advanced\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 235 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 236 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/learn/filters",
 				pattern: /^\/vectorial\/learn\/filters\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 236 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 237 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/learn/latex",
 				pattern: /^\/vectorial\/learn\/latex\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 237 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 238 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/learn/markers",
 				pattern: /^\/vectorial\/learn\/markers\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 238 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 239 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/learn/masks",
 				pattern: /^\/vectorial\/learn\/masks\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 239 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 240 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/learn/paths",
 				pattern: /^\/vectorial\/learn\/paths\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 240 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 241 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/learn/shapes",
 				pattern: /^\/vectorial\/learn\/shapes\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 241 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 242 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/learn/styles",
 				pattern: /^\/vectorial\/learn\/styles\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 242 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 243 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/learn/text",
 				pattern: /^\/vectorial\/learn\/text\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 243 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 244 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/learn/transform",
 				pattern: /^\/vectorial\/learn\/transform\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 244 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 245 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/legal/privacy",
 				pattern: /^\/vectorial\/legal\/privacy\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 245 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 246 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/legal/refund",
 				pattern: /^\/vectorial\/legal\/refund\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 246 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 247 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/legal/terms",
 				pattern: /^\/vectorial\/legal\/terms\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 247 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 248 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/login",
 				pattern: /^\/vectorial\/login\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,], errors: [1,,,], leaf: 262 },
+				page: { layouts: [0,9,10,], errors: [1,,,], leaf: 263 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/post/[postID]",
 				pattern: /^\/vectorial\/post\/([^/]+?)\/?$/,
 				params: [{"name":"postID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 248 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 249 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/search",
 				pattern: /^\/vectorial\/search\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 249 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 250 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/settings",
 				pattern: /^\/vectorial\/settings\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 250 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 251 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/settings/profile",
 				pattern: /^\/vectorial\/settings\/profile\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 251 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 252 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/shipping",
 				pattern: /^\/vectorial\/shipping\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 252 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 253 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/subscription",
 				pattern: /^\/vectorial\/subscription\/?$/,
 				params: [],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 253 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 254 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/[publicID]",
 				pattern: /^\/vectorial\/([^/]+?)\/?$/,
 				params: [{"name":"publicID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 255 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 256 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/[publicID]/drawings",
 				pattern: /^\/vectorial\/([^/]+?)\/drawings\/?$/,
 				params: [{"name":"publicID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 256 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 257 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/[publicID]/edit",
 				pattern: /^\/vectorial\/([^/]+?)\/edit\/?$/,
 				params: [{"name":"publicID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 257 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 258 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/[publicID]/edit/comment",
 				pattern: /^\/vectorial\/([^/]+?)\/edit\/comment\/?$/,
 				params: [{"name":"publicID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 258 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 259 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/[publicID]/invoices",
 				pattern: /^\/vectorial\/([^/]+?)\/invoices\/?$/,
 				params: [{"name":"publicID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 259 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 260 },
 				endpoint: null
 			},
 			{
 				id: "/(vectorial)/vectorial/(nonapp)/[...catchAll]",
 				pattern: /^\/vectorial(?:\/(.*))?\/?$/,
 				params: [{"name":"catchAll","optional":false,"rest":true,"chained":true}],
-				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 254 },
+				page: { layouts: [0,9,10,11,], errors: [1,,,,], leaf: 255 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/[publicID]",
 				pattern: /^\/([^/]+?)\/?$/,
 				params: [{"name":"publicID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 197 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 198 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/[publicID]/assignments",
 				pattern: /^\/([^/]+?)\/assignments\/?$/,
 				params: [{"name":"publicID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 198 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 199 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/[publicID]/assignments/new",
 				pattern: /^\/([^/]+?)\/assignments\/new\/?$/,
 				params: [{"name":"publicID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 199 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 200 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/[publicID]/assignments/[assignmentID]",
 				pattern: /^\/([^/]+?)\/assignments\/([^/]+?)\/?$/,
 				params: [{"name":"publicID","optional":false,"rest":false,"chained":false},{"name":"assignmentID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 200 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 201 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/[publicID]/questions",
 				pattern: /^\/([^/]+?)\/questions\/?$/,
 				params: [{"name":"publicID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 201 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 202 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/[publicID]/questions/new",
 				pattern: /^\/([^/]+?)\/questions\/new\/?$/,
 				params: [{"name":"publicID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 202 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 203 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/[publicID]/questions/[questionID]",
 				pattern: /^\/([^/]+?)\/questions\/([^/]+?)\/?$/,
 				params: [{"name":"publicID","optional":false,"rest":false,"chained":false},{"name":"questionID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 203 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 204 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/[publicID]/submissions",
 				pattern: /^\/([^/]+?)\/submissions\/?$/,
 				params: [{"name":"publicID","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 204 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 205 },
 				endpoint: null
 			},
 			{
 				id: "/(general)/[...catchAll]",
 				pattern: /^(?:\/(.*))?\/?$/,
 				params: [{"name":"catchAll","optional":false,"rest":true,"chained":true}],
-				page: { layouts: [0,4,], errors: [1,,], leaf: 196 },
+				page: { layouts: [0,4,], errors: [1,,], leaf: 197 },
 				endpoint: null
 			}
 		],
+		prerendered_routes: new Set([]),
 		matchers: async () => {
 			
 			return {  };

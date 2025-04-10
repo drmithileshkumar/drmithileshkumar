@@ -16,3 +16,4 @@ type PageParentData = Omit<Omit<EnsureDefined<import('../../../$types.js').Layou
 export type EntryGenerator = () => Promise<Array<RouteParams>> | Array<RouteParams>;
 export type PageServerData = null;
 export type PageData = Expand<PageParentData>;
+export type PageProps = { data: PageData }

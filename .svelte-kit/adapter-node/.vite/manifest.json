@@ -3660,6 +3660,15 @@
       "_index.js"
     ]
   },
+  "src/routes/(general)/api/ml/titanic/+server.js": {
+    "file": "entries/endpoints/(general)/api/ml/titanic/_server.js",
+    "name": "entries/endpoints/(general)/api/ml/titanic/_server",
+    "src": "src/routes/(general)/api/ml/titanic/+server.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
   "src/routes/(general)/api/profilepic/+server.js": {
     "file": "entries/endpoints/(general)/api/profilepic/_server.js",
     "name": "entries/endpoints/(general)/api/profilepic/_server",
@@ -8243,6 +8252,18 @@
     "css": [
       "_app/immutable/assets/_page.B1BksNzl.css",
       "_app/immutable/assets/Link.DT8GuSJh.css"
+    ]
+  },
+  "src/routes/(general)/projects/+page.svelte": {
+    "file": "entries/pages/(general)/projects/_page.svelte.js",
+    "name": "entries/pages/(general)/projects/_page.svelte",
+    "src": "src/routes/(general)/projects/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CqmggJqd.css"
     ]
   },
   "src/routes/(general)/publications/+page.js": {

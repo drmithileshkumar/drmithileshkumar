@@ -1,10 +1,10 @@
-import * as universal from '../entries/pages/(general)/research/_page.js';
+import * as universal from '../entries/pages/(general)/publications/_page.js';
 
 export const index = 172;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(general)/research/_page.svelte.js')).default;
+export const component = async () => component_cache ??= (await import('../entries/pages/(general)/publications/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/(general)/research/+page.js";
-export const imports = ["_app/immutable/nodes/172.CaOy5t3R.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.DPwfdX_H.js","_app/immutable/chunks/index.CwTeKo4T.js","_app/immutable/chunks/typeset.CzCYmz-Z.js","_app/immutable/chunks/stores.BuWEvvX0.js","_app/immutable/chunks/entry.iIuJJAWT.js","_app/immutable/chunks/index.BSKKeNIs.js","_app/immutable/chunks/Card.DJrmTOx1.js","_app/immutable/chunks/useActions.HCeguDvV.js","_app/immutable/chunks/ActionIcons.CrNiNf7s.js","_app/immutable/chunks/classAdderBuilder.7IPfzeGa.js","_app/immutable/chunks/SmuiElement.amOlfGzn.js","_app/immutable/chunks/NavList.xubFjaPk.js","_app/immutable/chunks/each.4xuuRGm3.js","_app/immutable/chunks/Item.V3BEBD7c.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/keyboard.CL3LU1u3.js","_app/immutable/chunks/Ripple.Cu_Zdxz6.js","_app/immutable/chunks/Subheader.-Ek4Sco6.js","_app/immutable/chunks/Graphic.CVNIXG2P.js","_app/immutable/chunks/Svg.Dv8B55Ag.js","_app/immutable/chunks/IconButton.Dlthkof1.js","_app/immutable/chunks/stores.D_oEcuB4.js","_app/immutable/chunks/content.0hCATUj0.js","_app/immutable/chunks/Pathlist.BrKFooxO.js","_app/immutable/chunks/CourseNavigation.9QRJ4FO7.js"];
-export const stylesheets = ["_app/immutable/assets/172.CWUFTE4x.css","_app/immutable/assets/Link.DT8GuSJh.css","_app/immutable/assets/NavList.CJbcjQr4.css","_app/immutable/assets/Pathlist.BSb51Isn.css","_app/immutable/assets/CourseNavigation.CI9tLRx6.css"];
+export const universal_id = "src/routes/(general)/publications/+page.js";
+export const imports = ["_app/immutable/nodes/172.CBwJRtMG.js","_app/immutable/chunks/B90CZVMX.js","_app/immutable/chunks/CYgJF_JY.js","_app/immutable/chunks/BurqNfsS.js","_app/immutable/chunks/Bb2ET71N.js","_app/immutable/chunks/DuRjPreR.js"];
+export const stylesheets = ["_app/immutable/assets/Paper.Bg_S1Oi_.css","_app/immutable/assets/172.QN_2bfCI.css","_app/immutable/assets/Papers.DWP9sFsm.css"];
 export const fonts = [];

@@ -15,3 +15,4 @@ type PageParentData = Omit<Omit<Omit<EnsureDefined<import('../../../../../$types
 
 export type PageServerData = null;
 export type PageData = Expand<PageParentData>;
+export type PageProps = { data: PageData }

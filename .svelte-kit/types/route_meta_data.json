@@ -24,6 +24,9 @@
 	"/(general)/api/login": [
 		"src/routes/(general)/api/login/+server.js"
 	],
+	"/(general)/api/ml/titanic": [
+		"src/routes/(general)/api/ml/titanic/+server.js"
+	],
 	"/(general)/api/profilepic": [
 		"src/routes/(general)/api/profilepic/+server.js"
 	],
@@ -754,6 +757,9 @@
 		"src/routes/(mathril)/mathril/games/subtraction/+page.js"
 	],
 	"/(mathril)/mathril/[...catchAll]": [],
+	"/(general)/projects": [
+		"src/routes/(general)/+layout.server.js"
+	],
 	"/(general)/publications": [
 		"src/routes/(general)/publications/+page.js",
 		"src/routes/(general)/+layout.server.js"

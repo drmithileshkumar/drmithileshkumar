@@ -1,1 +1,0 @@
-export { default as component } from "../../../src/routes/(general)/iit/maths/2021/+layout.svelte";

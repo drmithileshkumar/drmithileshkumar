@@ -30,4 +30,5 @@ export type PageLoadEvent = Parameters<PageLoad>[0];
 export type PageData = Expand<Omit<PageParentData, keyof Kit.LoadProperties<Awaited<ReturnType<typeof import('../../../../../../src/routes/(general)/[publicID]/+page.js').load>>>> & OptionalUnion<EnsureDefined<Kit.LoadProperties<Awaited<ReturnType<typeof import('../../../../../../src/routes/(general)/[publicID]/+page.js').load>>>>>>;
 export type Action<OutputData extends Record<string, any> | void = Record<string, any> | void> = Kit.Action<RouteParams, OutputData, RouteId>
 export type Actions<OutputData extends Record<string, any> | void = Record<string, any> | void> = Kit.Actions<RouteParams, OutputData, RouteId>
+export type PageProps = { data: PageData; form: ActionData }
 export type RequestEvent = Kit.RequestEvent<RouteParams, RouteId>;

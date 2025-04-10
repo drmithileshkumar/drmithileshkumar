@@ -1,10 +1,8 @@
-import * as universal from '../entries/pages/(vectorial)/vectorial/(nonapp)/post/_postID_/_page.js';
+
 
 export const index = 248;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/(vectorial)/vectorial/(nonapp)/post/_postID_/_page.svelte.js')).default;
-export { universal };
-export const universal_id = "src/routes/(vectorial)/vectorial/(nonapp)/post/[postID]/+page.js";
-export const imports = ["_app/immutable/nodes/248.CWGvgy1L.js","_app/immutable/chunks/index.De_1-CT6.js","_app/immutable/chunks/control.CYgJF_JY.js","_app/immutable/chunks/scheduler.DPwfdX_H.js","_app/immutable/chunks/index.CwTeKo4T.js","_app/immutable/chunks/FullPost.DTTKURk8.js","_app/immutable/chunks/Card.DJrmTOx1.js","_app/immutable/chunks/useActions.HCeguDvV.js","_app/immutable/chunks/ActionIcons.CrNiNf7s.js","_app/immutable/chunks/classAdderBuilder.7IPfzeGa.js","_app/immutable/chunks/SmuiElement.amOlfGzn.js","_app/immutable/chunks/Media.DEO9JwFF.js","_app/immutable/chunks/Actions.O4TtXVIo.js","_app/immutable/chunks/IconButton.Dlthkof1.js","_app/immutable/chunks/dispatch.D38adG8O.js","_app/immutable/chunks/Ripple.Cu_Zdxz6.js","_app/immutable/chunks/ponyfill.BpwGTcRg.js","_app/immutable/chunks/CommonLabel.DNU2POZi.js","_app/immutable/chunks/Svg.Dv8B55Ag.js","_app/immutable/chunks/Subheader.-Ek4Sco6.js","_app/immutable/chunks/Button.CDNCVR8K.js","_app/immutable/chunks/entry.iIuJJAWT.js","_app/immutable/chunks/index.BSKKeNIs.js","_app/immutable/chunks/stores.BuWEvvX0.js","_app/immutable/chunks/Set.CHKM2whk.js","_app/immutable/chunks/each.4xuuRGm3.js","_app/immutable/chunks/keyboard.CL3LU1u3.js","_app/immutable/chunks/ContextFragment.TdgKGuiF.js","_app/immutable/chunks/ComposeComment.svelte_svelte_type_style_lang.DOd5uujn.js","_app/immutable/chunks/stores.CQ2ZO8Q_.js"];
-export const stylesheets = ["_app/immutable/assets/FullPost.DMQFLKXr.css","_app/immutable/assets/ImageUploader.BaNwnJmc.css","_app/immutable/assets/ComposeComment.CC9W_ZpL.css"];
+export const component = async () => component_cache ??= (await import('../entries/pages/(vectorial)/vectorial/(nonapp)/legal/terms/_page.svelte.js')).default;
+export const imports = ["_app/immutable/nodes/248.B57YWB_w.js","_app/immutable/chunks/BurqNfsS.js","_app/immutable/chunks/Bb2ET71N.js","_app/immutable/chunks/hXgwcGuw.js","_app/immutable/chunks/HCeguDvV.js","_app/immutable/chunks/CZxZ_Ggc.js","_app/immutable/chunks/5EPmrkDF.js","_app/immutable/chunks/DvkXah-i.js","_app/immutable/chunks/DLclD3It.js","_app/immutable/chunks/BfFMFjDh.js"];
+export const stylesheets = [];
 export const fonts = [];
