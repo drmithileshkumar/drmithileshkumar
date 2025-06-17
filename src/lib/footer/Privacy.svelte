@@ -4,7 +4,7 @@
     let title = "Privacy Policy | Mathril";
     let description = "Read the privacy policy for Mathril, an online mathematics practice platform. Learn about how we collect, use, and protect your personal information.";
     let keywords = "Mathril, privacy policy, personal information, data protection";
-    let canonical = "https://www.mathril.com/legal/privacy";
+    let canonical = "https://www.drmithileshkumar.com/legal/privacy";
   </script>
   
   <svelte:head>

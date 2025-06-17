@@ -5,7 +5,7 @@
   let title = "Terms and Conditions | Mathril";
   let description = "Read the terms and conditions for using the Mathril website, an online mathematics practice platform.";
   let keywords = "Mathril, terms and conditions, user agreement, website usage";
-  let canonical = "https://www.mathril.com/legal/terms";
+  let canonical = "https://www.drmithileshkumar.com/legal/terms";
 </script>
 
 <svelte:head>

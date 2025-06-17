@@ -394,7 +394,7 @@
                 Mithilesh Kumar
             </section>
             <section class="email">
-                admin@drmithileshkumar.com
+                mithilesh.qit@gmail.com
             </section>
             <section class="page">
                 drmithileshkumar.com
@@ -403,7 +403,7 @@
                 +91 8797081308
             </section>
             <section class="location">
-                Bangalore
+                Sri City
             </section>
         </section>
         <section class="body">
@@ -415,6 +415,10 @@
                 <h2>Work Experience</h2>
                 <table>
                     <tbody>
+                        <tr>
+                            <td>Jun 2025-Present</td>
+                            <td>Senior Lecturer, Computer Science, SIAS, Krea University, Sri city, Andhra Pradesh, India</td>
+                        </tr>
                         <tr>
                             <td>Jan 2024-Nov 2024</td>
                             <td>Assistant Professor, Department of Computer Applications, Dayananda Sagar University, Bangalore</td>

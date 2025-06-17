@@ -6,7 +6,7 @@ import { C as Content } from "../../../../../../../chunks/ActionIcons.js";
 let title = "Refund Policy | Mathril";
 let description = "Read the refund policy for Mathril, an online mathematics practice platform. Learn about our subscription services and the conditions for refunds.";
 let keywords = "Mathril, refund policy, subscription, practice material, online math practice";
-let canonical = "https://www.mathril.com/legal/refund";
+let canonical = "https://www.drimithelshkumar.com/legal/refund";
 const Refund = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $currentPath, $$unsubscribe_currentPath;
   $$unsubscribe_currentPath = subscribe(currentPath, (value) => $currentPath = value);
