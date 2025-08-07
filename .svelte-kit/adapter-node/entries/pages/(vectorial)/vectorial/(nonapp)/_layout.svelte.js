@@ -1,13 +1,13 @@
 import { a as subscribe } from "../../../../../chunks/utils.js";
-import { c as create_ssr_component, v as validate_component, f as add_attribute, e as escape, i as each, o as onDestroy } from "../../../../../chunks/ssr2.js";
+import { c as create_ssr_component, v as validate_component, i as each, e as escape, o as onDestroy } from "../../../../../chunks/ssr2.js";
 import { S as Separator, D as Drawer, C as Content$1, a as Scrim, A as AppContent } from "../../../../../chunks/Separator.js";
 import { C as CommonIcon } from "../../../../../chunks/Svg.js";
 import { L as List, I as Item } from "../../../../../chunks/Item.js";
-import { T as Text, P as PrimaryText, S as SecondaryText } from "../../../../../chunks/Subheader.js";
+import { T as Text } from "../../../../../chunks/Subheader.js";
 import { G as Graphic } from "../../../../../chunks/Graphic.js";
 import "../../../../../chunks/client.js";
 import { p as page } from "../../../../../chunks/stores3.js";
-import { b as profileImage, n as navList, p as pageLoadState, e as darkMode, s as showLeft, c as currentPath } from "../../../../../chunks/stores2.js";
+import { n as navList, p as pageLoadState, e as darkMode, s as showLeft, c as currentPath } from "../../../../../chunks/stores2.js";
 import { C as Card } from "../../../../../chunks/Card.js";
 import { C as Content } from "../../../../../chunks/ActionIcons.js";
 import { T as TopAppBar } from "../../../../../chunks/TopAppBar.js";
@@ -15,72 +15,18 @@ import { R as Row, S as Section } from "../../../../../chunks/Title.js";
 import { I as IconButton } from "../../../../../chunks/IconButton.js";
 import { L as LinearProgress } from "../../../../../chunks/LinearProgress.js";
 const css$6 = {
-  code: "nav.svelte-l592xr{overflow-y:auto;display:flex;justify-content:start;flex-direction:column;padding-bottom:5em}.round.svelte-l592xr{border-radius:50%}",
-  map: '{"version":3,"file":"Nav.svelte","sources":["Nav.svelte"],"sourcesContent":["<script lang=\\"ts\\">\\r\\n    //@ts-nocheck\\r\\n    import List, {\\r\\n        Item,\\r\\n        Graphic,\\r\\n        Separator,\\r\\n        Meta,\\r\\n        Text,\\r\\n        PrimaryText,\\r\\n        SecondaryText,\\r\\n    } from \\"@smui/list\\";\\r\\n    import Button, { Label } from \\"@smui/button\\";\\r\\n    \\r\\n    import { goto } from \\"$app/navigation\\";\\r\\n    import { page } from \\"$app/stores\\";\\r\\n    import { profileImage, navList } from \\"$lib/vectorial/stores\\";\\r\\n\\r\\n    $: isAuth = $page.data.user;\\r\\n<\/script>\\r\\n\\r\\n<nav>\\r\\n    <div class=\\"top\\">\\r\\n        {#if isAuth}\\r\\n        <List twoLine avatarList>\\r\\n            \\r\\n                <Item on:click={() => goto(\\"/vectorial/auth\\")}>\\r\\n                    <!-- <Graphic style=\\"background-image: url(https://place-hold.it/40x40?text={\\"Mithilesh Kumar\\"\\r\\n                    .split(\' \')\\r\\n                    .map((val) => val.substring(0, 1))\\r\\n                    .join(\'\')}&fontsize=16);\\" /> -->\\r\\n                    <Graphic>\\r\\n                        <img\\r\\n                            class=\\"round\\"\\r\\n                            width=\\"40px\\"\\r\\n                            height=\\"40px\\"\\r\\n                            src={$profileImage}\\r\\n                            alt=\\"Profile\\"\\r\\n                        />\\r\\n                    </Graphic>\\r\\n                    <Text>\\r\\n                        <PrimaryText>{isAuth.name}</PrimaryText>\\r\\n                        <SecondaryText>{isAuth.publicID}</SecondaryText>\\r\\n                    </Text>\\r\\n                    <!-- <Meta class=\'material-icons\'>info</Meta> -->\\r\\n                </Item>\\r\\n            \\r\\n        </List>\\r\\n        {:else}\\r\\n            <br>\\r\\n            <!-- <Button on:click={() => goto(\\"/vectorial/auth\\")}>Log in / Sign up</Button> -->\\r\\n            \\r\\n        {/if}\\r\\n        <List>\\r\\n            {#if isAuth}\\r\\n                <Item\\r\\n                    on:SMUI:action={() => goto(`/vectorial/${$page.data.user.publicID}`)}\\r\\n                >\\r\\n                    <Graphic class=\\"material-icons\\">person</Graphic>\\r\\n                    <Text>Profile</Text>\\r\\n                </Item>\\r\\n                \\r\\n                <Item on:SMUI:action={() => goto(`/vectorial/${$page.data.user.publicID}/drawings`)}>\\r\\n                    <Graphic class=\\"material-symbols-outlined\\">gallery_thumbnail</Graphic>\\r\\n                    <Text>Drawings</Text>\\r\\n                </Item>\\r\\n                <Separator />\\r\\n            {/if}\\r\\n            <!-- <Item\\r\\n                    on:SMUI:action={() => goto(`/subscription`)}\\r\\n                >\\r\\n                    <Graphic class=\\"material-icons\\">card_membership</Graphic>\\r\\n                    <Text>Subscription</Text>\\r\\n                </Item> -->\\r\\n        </List>\\r\\n        <List>\\r\\n            <Item on:SMUI:action={() => goto(`/vectorial/drawings`)}>\\r\\n                <Graphic class=\\"material-symbols-outlined\\">gallery_thumbnail</Graphic>\\r\\n                <Text>Drawings</Text>\\r\\n            </Item>\\r\\n            <Item on:SMUI:action={() => goto(`/vectorial/learn`)}>\\r\\n                <Graphic class=\\"material-icons\\">school</Graphic>\\r\\n                <Text>Learn</Text>\\r\\n            </Item>\\r\\n            <Item wrapper>\\r\\n                <List style=\\"padding-left: 10px;\\">\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/shapes\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Shapes</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/text\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Text</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/latex\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>LaTeX</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/paths\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Paths</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/styles\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Styles</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/transform\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Transform</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/markers\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Markers</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/filters\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Filters</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/masks\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Masks</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/advanced\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Advanced</Text>\\r\\n                    </Item>\\r\\n                </List>\\r\\n            </Item>\\r\\n            \\r\\n            <!-- <Item on:SMUI:action={() => goto(\\"/home\\")}>\\r\\n                <Graphic class=\\"material-icons\\">home</Graphic>\\r\\n                <Text>Home</Text>\\r\\n            </Item> -->\\r\\n            \\r\\n            <!-- {#if $navList.length > 0}\\r\\n                <Separator />\\r\\n                {#each $navList as link}\\r\\n                    <Item on:SMUI:action={() => goto(`/${$page.data.user.publicID}${link.url}`)}>\\r\\n                        <Graphic class=\\"material-icons\\">menu_book</Graphic>\\r\\n                        <Text>{link.name}</Text>\\r\\n                    </Item>\\r\\n                {/each}\\r\\n            {/if} -->\\r\\n            <!-- <Item on:SMUI:action={() => goto(\'/settings\')}>\\r\\n                <Graphic class=\\"material-icons\\">settings</Graphic>\\r\\n                <Text>Settings</Text>\\r\\n            </Item> -->\\r\\n        </List>\\r\\n        <!-- <Separator />\\r\\n        {#if isAuth}\\r\\n            <div class=\\"post\\">\\r\\n                <Button on:click={() => goto(\\"/compose\\")}>\\r\\n                    <Label>Create Post</Label>\\r\\n                </Button>\\r\\n            </div>\\r\\n        {/if} -->\\r\\n    </div>\\r\\n    <div class=\\"bottom\\" />\\r\\n</nav>\\r\\n\\r\\n<style>\\r\\n    nav {\\r\\n        /* height: calc(100vh - 5em); */\\r\\n        /* height: 500px; */\\r\\n        overflow-y: auto;\\r\\n        display: flex;\\r\\n        justify-content: start;\\r\\n        flex-direction: column;\\r\\n        /* position: sticky;\\r\\n        top: 0.5em; */\\r\\n        padding-bottom: 5em;\\r\\n    }\\r\\n    .round {\\r\\n        border-radius: 50%;\\r\\n        /* overflow: hidden; */\\r\\n    }\\r\\n    \\r\\n    /* .post {\\r\\n        display: flex;\\r\\n        justify-content: center;\\r\\n    } */\\r\\n</style>\\r\\n"],"names":[],"mappings":"AAgKI,iBAAI,CAGA,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,KAAK,CACtB,cAAc,CAAE,MAAM,CAGtB,cAAc,CAAE,GACpB,CACA,oBAAO,CACH,aAAa,CAAE,GAEnB"}'
+  code: "nav.svelte-mp2sys{overflow-y:auto;display:flex;justify-content:start;flex-direction:column;padding-bottom:5em}",
+  map: '{"version":3,"file":"Nav.svelte","sources":["Nav.svelte"],"sourcesContent":["<script lang=\\"ts\\">\\r\\n    //@ts-nocheck\\r\\n    import List, {\\r\\n        Item,\\r\\n        Graphic,\\r\\n        Separator,\\r\\n        Meta,\\r\\n        Text,\\r\\n        PrimaryText,\\r\\n        SecondaryText,\\r\\n    } from \\"@smui/list\\";\\r\\n    import Button, { Label } from \\"@smui/button\\";\\r\\n    \\r\\n    import { goto } from \\"$app/navigation\\";\\r\\n    import { page } from \\"$app/stores\\";\\r\\n    import { profileImage, navList } from \\"$lib/vectorial/stores\\";\\r\\n\\r\\n    // $: isAuth = $page.data.user;\\r\\n<\/script>\\r\\n\\r\\n<nav>\\r\\n    <div class=\\"top\\">\\r\\n        <!-- {#if isAuth}\\r\\n        <List twoLine avatarList>\\r\\n            \\r\\n                <Item on:click={() => goto(\\"/vectorial/auth\\")}>\\r\\n                     <Graphic style=\\"background-image: url(https://place-hold.it/40x40?text={\\"Mithilesh Kumar\\"\\r\\n                    .split(\' \')\\r\\n                    .map((val) => val.substring(0, 1))\\r\\n                    .join(\'\')}&fontsize=16);\\" /> \\r\\n                    <Graphic>\\r\\n                        <img\\r\\n                            class=\\"round\\"\\r\\n                            width=\\"40px\\"\\r\\n                            height=\\"40px\\"\\r\\n                            src={$profileImage}\\r\\n                            alt=\\"Profile\\"\\r\\n                        />\\r\\n                    </Graphic>\\r\\n                    <Text>\\r\\n                        <PrimaryText>{isAuth.name}</PrimaryText>\\r\\n                        <SecondaryText>{isAuth.publicID}</SecondaryText>\\r\\n                    </Text>\\r\\n                     <Meta class=\'material-icons\'>info</Meta>\\r\\n                </Item>\\r\\n            \\r\\n        </List>\\r\\n        {:else}\\r\\n            <br>\\r\\n            <Button on:click={() => goto(\\"/vectorial/auth\\")}>Log in / Sign up</Button>\\r\\n            \\r\\n        {/if}\\r\\n        <List>\\r\\n            {#if isAuth}\\r\\n                <Item\\r\\n                    on:SMUI:action={() => goto(`/vectorial/${$page.data.user.publicID}`)}\\r\\n                >\\r\\n                    <Graphic class=\\"material-icons\\">person</Graphic>\\r\\n                    <Text>Profile</Text>\\r\\n                </Item>\\r\\n                \\r\\n                <Item on:SMUI:action={() => goto(`/vectorial/${$page.data.user.publicID}/drawings`)}>\\r\\n                    <Graphic class=\\"material-symbols-outlined\\">gallery_thumbnail</Graphic>\\r\\n                    <Text>Drawings</Text>\\r\\n                </Item>\\r\\n                <Separator />\\r\\n            {/if}\\r\\n            <Item\\r\\n                    on:SMUI:action={() => goto(`/subscription`)}\\r\\n                >\\r\\n                    <Graphic class=\\"material-icons\\">card_membership</Graphic>\\r\\n                    <Text>Subscription</Text>\\r\\n                </Item>\\r\\n        </List> -->\\r\\n        <List>\\r\\n            <Item on:SMUI:action={() => goto(`/vectorial/drawings`)}>\\r\\n                <Graphic class=\\"material-symbols-outlined\\">gallery_thumbnail</Graphic>\\r\\n                <Text>Drawings</Text>\\r\\n            </Item>\\r\\n            <Item on:SMUI:action={() => goto(`/vectorial/learn`)}>\\r\\n                <Graphic class=\\"material-icons\\">school</Graphic>\\r\\n                <Text>Learn</Text>\\r\\n            </Item>\\r\\n            <Item wrapper>\\r\\n                <List style=\\"padding-left: 10px;\\">\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/shapes\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Shapes</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/text\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Text</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/latex\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>LaTeX</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/paths\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Paths</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/styles\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Styles</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/transform\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Transform</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/markers\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Markers</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/filters\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Filters</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/masks\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Masks</Text>\\r\\n                    </Item>\\r\\n                    <Item on:SMUI:action={() => goto(\\"/vectorial/learn/advanced\\")}>\\r\\n                        <Graphic class=\\"material-icons\\">view_headline</Graphic>\\r\\n                        <Text>Advanced</Text>\\r\\n                    </Item>\\r\\n                </List>\\r\\n            </Item>\\r\\n            \\r\\n            <Item on:SMUI:action={() => goto(\\"/home\\")}>\\r\\n                <Graphic class=\\"material-icons\\">home</Graphic>\\r\\n                <Text>Home</Text>\\r\\n            </Item>\\r\\n            \\r\\n           {#if $navList.length > 0}\\r\\n                <Separator />\\r\\n                {#each $navList as link}\\r\\n                    <Item on:SMUI:action={() => goto(`/${$page.data.user.publicID}${link.url}`)}>\\r\\n                        <Graphic class=\\"material-icons\\">menu_book</Graphic>\\r\\n                        <Text>{link.name}</Text>\\r\\n                    </Item>\\r\\n                {/each}\\r\\n            {/if}\\r\\n            <Item on:SMUI:action={() => goto(\'/settings\')}>\\r\\n                <Graphic class=\\"material-icons\\">settings</Graphic>\\r\\n                <Text>Settings</Text>\\r\\n            </Item>\\r\\n        </List>\\r\\n        <Separator />\\r\\n        <!-- {#if isAuth}\\r\\n            <div class=\\"post\\">\\r\\n                <Button on:click={() => goto(\\"/compose\\")}>\\r\\n                    <Label>Create Post</Label>\\r\\n                </Button>\\r\\n            </div>\\r\\n        {/if}  -->\\r\\n    </div>\\r\\n    <div class=\\"bottom\\" />\\r\\n</nav>\\r\\n\\r\\n<style>\\r\\n    nav {\\r\\n        /* height: calc(100vh - 5em); */\\r\\n        /* height: 500px; */\\r\\n        overflow-y: auto;\\r\\n        display: flex;\\r\\n        justify-content: start;\\r\\n        flex-direction: column;\\r\\n        /* position: sticky;\\r\\n        top: 0.5em; */\\r\\n        padding-bottom: 5em;\\r\\n    }\\r\\n    \\r\\n    \\r\\n    /* .post {\\r\\n        display: flex;\\r\\n        justify-content: center;\\r\\n    } */\\r\\n</style>\\r\\n"],"names":[],"mappings":"AAgKI,iBAAI,CAGA,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,KAAK,CACtB,cAAc,CAAE,MAAM,CAGtB,cAAc,CAAE,GACpB"}'
 };
 const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let isAuth;
-  let $page, $$unsubscribe_page;
-  let $profileImage, $$unsubscribe_profileImage;
-  $$unsubscribe_page = subscribe(page, (value) => $page = value);
-  $$unsubscribe_profileImage = subscribe(profileImage, (value) => $profileImage = value);
+  let $navList, $$unsubscribe_navList;
+  let $$unsubscribe_page;
+  $$unsubscribe_navList = subscribe(navList, (value) => $navList = value);
+  $$unsubscribe_page = subscribe(page, (value) => value);
   $$result.css.add(css$6);
-  isAuth = $page.data.user;
+  $$unsubscribe_navList();
   $$unsubscribe_page();
-  $$unsubscribe_profileImage();
-  return `<nav class="svelte-l592xr"><div class="top">${isAuth ? `${validate_component(List, "List").$$render($$result, { twoLine: true, avatarList: true }, {}, {
-    default: () => {
-      return `${validate_component(Item, "Item").$$render($$result, {}, {}, {
-        default: () => {
-          return ` ${validate_component(Graphic, "Graphic").$$render($$result, {}, {}, {
-            default: () => {
-              return `<img class="round svelte-l592xr" width="40px" height="40px"${add_attribute("src", $profileImage, 0)} alt="Profile">`;
-            }
-          })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
-            default: () => {
-              return `${validate_component(PrimaryText, "PrimaryText").$$render($$result, {}, {}, {
-                default: () => {
-                  return `${escape(isAuth.name)}`;
-                }
-              })} ${validate_component(SecondaryText, "SecondaryText").$$render($$result, {}, {}, {
-                default: () => {
-                  return `${escape(isAuth.publicID)}`;
-                }
-              })}`;
-            }
-          })} `;
-        }
-      })}`;
-    }
-  })}` : `<br> `} ${validate_component(List, "List").$$render($$result, {}, {}, {
-    default: () => {
-      return `${isAuth ? `${validate_component(Item, "Item").$$render($$result, {}, {}, {
-        default: () => {
-          return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
-            default: () => {
-              return `person`;
-            }
-          })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
-            default: () => {
-              return `Profile`;
-            }
-          })}`;
-        }
-      })} ${validate_component(Item, "Item").$$render($$result, {}, {}, {
-        default: () => {
-          return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-symbols-outlined" }, {}, {
-            default: () => {
-              return `gallery_thumbnail`;
-            }
-          })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
-            default: () => {
-              return `Drawings`;
-            }
-          })}`;
-        }
-      })} ${validate_component(Separator, "Separator").$$render($$result, {}, {}, {})}` : ``} `;
-    }
-  })} ${validate_component(List, "List").$$render($$result, {}, {}, {
+  return `<nav class="svelte-mp2sys"><div class="top"> ${validate_component(List, "List").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Item, "Item").$$render($$result, {}, {}, {
         default: () => {
@@ -234,9 +180,47 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             }
           })}`;
         }
-      })}   `;
+      })} ${validate_component(Item, "Item").$$render($$result, {}, {}, {
+        default: () => {
+          return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
+            default: () => {
+              return `home`;
+            }
+          })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
+            default: () => {
+              return `Home`;
+            }
+          })}`;
+        }
+      })} ${$navList.length > 0 ? `${validate_component(Separator, "Separator").$$render($$result, {}, {}, {})} ${each($navList, (link) => {
+        return `${validate_component(Item, "Item").$$render($$result, {}, {}, {
+          default: () => {
+            return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
+              default: () => {
+                return `menu_book`;
+              }
+            })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
+              default: () => {
+                return `${escape(link.name)}`;
+              }
+            })} `;
+          }
+        })}`;
+      })}` : ``} ${validate_component(Item, "Item").$$render($$result, {}, {}, {
+        default: () => {
+          return `${validate_component(Graphic, "Graphic").$$render($$result, { class: "material-icons" }, {}, {
+            default: () => {
+              return `settings`;
+            }
+          })} ${validate_component(Text, "Text").$$render($$result, {}, {}, {
+            default: () => {
+              return `Settings`;
+            }
+          })}`;
+        }
+      })}`;
     }
-  })} </div> <div class="bottom"></div> </nav>`;
+  })} ${validate_component(Separator, "Separator").$$render($$result, {}, {}, {})} </div> <div class="bottom"></div> </nav>`;
 });
 const css$5 = {
   code: ".title.svelte-y40hrq{font-size:1.2em}p.svelte-y40hrq{display:flex;align-items:center;gap:1em;font-size:0.8em;margin:0.5em 0}",

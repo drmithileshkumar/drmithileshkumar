@@ -9,7 +9,7 @@ export async function load({parent, fetch, params, url}) {
     // if(!user) {
     //     throw redirect(307, '/auth');
     // }
-    pageLoadState.update((state) => false)
+    // pageLoadState.update((state) => false)
     // let skip = 0;
     // console.log('Loading drawings...')
     // let res = await fetch(`/vectorial/api/${params.publicID}/drawings?skip=${skip}`);

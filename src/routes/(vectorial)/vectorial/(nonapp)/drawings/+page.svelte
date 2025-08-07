@@ -42,15 +42,20 @@
 
     // export let data;
     let drawings = [];
+    let isLoaded = false;
     onMount(() => {
-        $pageLoadState = true;
+        // $pageLoadState = true;
+        const newDrawings = [];
         for(let i = 0; i < $localGallery.length; i++) {
-            let newDrawing = window.localStorage.getItem($localGallery[i])
+            const newDrawing = window.localStorage.getItem($localGallery[i])
             if(newDrawing) {
-                drawings = [...drawings, JSON.parse(newDrawing)]
+                // drawings = [...drawings, JSON.parse(newDrawing)]
+                newDrawings.push(JSON.parse(newDrawing));
             }
         }
-        drawings = drawings;
+        // drawings = drawings;
+        drawings = newDrawings;
+        isLoaded = true;
     })
     const deleteGallery = (e) => {
         let id = e.detail.drawingID;
@@ -1254,7 +1259,7 @@
             {#if files}
                 <img width="300px" src={importedImage} alt="Imported file" />
             {/if}
-            {#if showPreview}
+            {#if isLoaded && showPreview}
                 <Drawing
                     drawing={parseDrawing}
                     on:deleted={() => (drawings = drawings)}

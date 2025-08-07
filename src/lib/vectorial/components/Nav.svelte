@@ -15,19 +15,19 @@
     import { page } from "$app/stores";
     import { profileImage, navList } from "$lib/vectorial/stores";
 
-    $: isAuth = $page.data.user;
+    // $: isAuth = $page.data.user;
 </script>
 
 <nav>
     <div class="top">
-        {#if isAuth}
+        <!-- {#if isAuth}
         <List twoLine avatarList>
             
                 <Item on:click={() => goto("/vectorial/auth")}>
-                    <!-- <Graphic style="background-image: url(https://place-hold.it/40x40?text={"Mithilesh Kumar"
+                     <Graphic style="background-image: url(https://place-hold.it/40x40?text={"Mithilesh Kumar"
                     .split(' ')
                     .map((val) => val.substring(0, 1))
-                    .join('')}&fontsize=16);" /> -->
+                    .join('')}&fontsize=16);" /> 
                     <Graphic>
                         <img
                             class="round"
@@ -41,13 +41,13 @@
                         <PrimaryText>{isAuth.name}</PrimaryText>
                         <SecondaryText>{isAuth.publicID}</SecondaryText>
                     </Text>
-                    <!-- <Meta class='material-icons'>info</Meta> -->
+                     <Meta class='material-icons'>info</Meta>
                 </Item>
             
         </List>
         {:else}
             <br>
-            <!-- <Button on:click={() => goto("/vectorial/auth")}>Log in / Sign up</Button> -->
+            <Button on:click={() => goto("/vectorial/auth")}>Log in / Sign up</Button>
             
         {/if}
         <List>
@@ -65,13 +65,13 @@
                 </Item>
                 <Separator />
             {/if}
-            <!-- <Item
+            <Item
                     on:SMUI:action={() => goto(`/subscription`)}
                 >
                     <Graphic class="material-icons">card_membership</Graphic>
                     <Text>Subscription</Text>
-                </Item> -->
-        </List>
+                </Item>
+        </List> -->
         <List>
             <Item on:SMUI:action={() => goto(`/vectorial/drawings`)}>
                 <Graphic class="material-symbols-outlined">gallery_thumbnail</Graphic>
@@ -126,12 +126,12 @@
                 </List>
             </Item>
             
-            <!-- <Item on:SMUI:action={() => goto("/home")}>
+            <Item on:SMUI:action={() => goto("/home")}>
                 <Graphic class="material-icons">home</Graphic>
                 <Text>Home</Text>
-            </Item> -->
+            </Item>
             
-            <!-- {#if $navList.length > 0}
+           {#if $navList.length > 0}
                 <Separator />
                 {#each $navList as link}
                     <Item on:SMUI:action={() => goto(`/${$page.data.user.publicID}${link.url}`)}>
@@ -139,20 +139,20 @@
                         <Text>{link.name}</Text>
                     </Item>
                 {/each}
-            {/if} -->
-            <!-- <Item on:SMUI:action={() => goto('/settings')}>
+            {/if}
+            <Item on:SMUI:action={() => goto('/settings')}>
                 <Graphic class="material-icons">settings</Graphic>
                 <Text>Settings</Text>
-            </Item> -->
+            </Item>
         </List>
-        <!-- <Separator />
-        {#if isAuth}
+        <Separator />
+        <!-- {#if isAuth}
             <div class="post">
                 <Button on:click={() => goto("/compose")}>
                     <Label>Create Post</Label>
                 </Button>
             </div>
-        {/if} -->
+        {/if}  -->
     </div>
     <div class="bottom" />
 </nav>
@@ -169,10 +169,7 @@
         top: 0.5em; */
         padding-bottom: 5em;
     }
-    .round {
-        border-radius: 50%;
-        /* overflow: hidden; */
-    }
+    
     
     /* .post {
         display: flex;
