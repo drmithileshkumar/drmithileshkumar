@@ -3,6 +3,7 @@
     import {elementsNode, isLasso, lassoDom, Z, selectedElement, activeElement, elements, svg, selectedId, showControls, showBBoxControls} from './stores';
     export let id = '';
     const text2latex = (node, math) => {
+        if(!math || math.length == 0) return;
         let mathoutput = MathJax.tex2svg(math);
         let svg = mathoutput.children[0];
         svg.children[1].removeAttribute('stroke')

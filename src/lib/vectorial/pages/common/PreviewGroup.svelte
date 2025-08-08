@@ -21,7 +21,7 @@
 
     {#each drawing.elements[id].children as child}
         
-            {#if drawing.elements[child].children && drawing.elements[child].tag !== 'plot'}
+            {#if drawing.elements[child] && drawing.elements[child].children && drawing.elements[child].tag !== 'plot'}
                 <svelte:self id={child} drawing={drawing} />
             {:else}
                 <PreviewElement id={child} drawing={drawing} />

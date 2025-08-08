@@ -474,6 +474,7 @@
 				// console.log($selectedId)
 				$selectedElement = target;
 				$activeElement = target;
+				if(!$elements[$selectedId]) return;
 				$elements[$selectedId].bbox = $activeElement.getBBox();
 				$elements[$selectedId].ctm = $boundingBox
 					?.getScreenCTM()
@@ -846,6 +847,7 @@
 				{/if}
 				{#if $selectedElements}
 					{#each $selectedElements as elem}
+					{#if elem && $elements[elem]}
 						<polygon
 							class="Vectorial"
 							points="{$elements[elem].sbox.tl.x},{$elements[elem].sbox.tl.y} {$elements[elem].sbox
@@ -856,6 +858,7 @@
 							stroke-width={0.5 / $Z}
 							fill="none"
 						/>
+					{/if}
 					{/each}
 				{/if}
 			{/if}

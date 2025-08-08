@@ -47,7 +47,7 @@
 	<ul>
 		{#each $elements[id]?.children as element}
 			<li>
-				{#if $elements[element].children}
+				{#if $elements[element] && $elements[element].children}
 					<svelte:self id={element} />
 				{:else}
 					<Element id={element} />

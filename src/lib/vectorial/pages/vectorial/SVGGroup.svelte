@@ -20,7 +20,7 @@
 >
     {#each $elements[id]?.children as child}
         
-            {#if $elements[child].children && $elements[child].tag !== 'plot'}
+            {#if $elements[child] && $elements[child].children && $elements[child].tag !== 'plot'}
                 <svelte:self id={child} />
             {:else}
                 <SVGElement id={child} />

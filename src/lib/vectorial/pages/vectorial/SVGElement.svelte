@@ -20,7 +20,7 @@
 <style>
 
 </style>
-{#if $elements && id}
+{#if $elements && id && $elements[id]}
     {#if $elements[id].tag === 'line'}
         <SVGLine {id} />
     {/if}

@@ -202,6 +202,7 @@
         // saveHistory();
     };
     const updateSbox = (id = $selectedId) => {
+        if(!id || !$elements[id]) return;
         $elementsNode[id] = $elementsNode[id];
         $elements[id].bbox = $elementsNode[id]?.getBBox();
         $elements[id].ctm = $boundingBox
@@ -1168,6 +1169,7 @@
                         {/each}
                     </div>
                     <h3 class="mdc-typography--headline6" style="margin:0;">Solid</h3>
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
                     <span class="strokedash" on:click={setGridSolid}>
                         <svg width="100%" height="100%" viewBox="0 0 300 30"><line x1="0%" x2="100%" y1="50%" y2="50%" stroke="black" stroke-width={$elements[$selectedId][selectedGridPart].strokewidth}/></svg>
                     </span>
@@ -1394,7 +1396,7 @@
             </Content>
         </Card>
         <!---------Point------>
-        {#if $selectedVertex || $selectedControl0 || $selectedControl1}
+        {#if $elements[$selectedId] && ($selectedVertex || $selectedControl0 || $selectedControl1)}
             <Card>
                 <Content>
                 <h4 class="mdc-typography--headline6" style="margin:0 0 0.5em 0;">Point</h4>

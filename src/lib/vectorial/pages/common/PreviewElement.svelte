@@ -17,7 +17,7 @@
 <style>
 
 </style>
-{#if drawing.elements && id}
+{#if drawing.elements && id && drawing.elements[id]}
     {#if drawing.elements[id].tag === 'line'}
         <PreviewLine line={drawing.elements[id]} />   
     {/if}

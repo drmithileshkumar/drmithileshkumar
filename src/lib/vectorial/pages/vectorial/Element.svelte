@@ -93,6 +93,7 @@
         }
     };
 </script>
+{#if $elements[id]}
 <div class="element">
 	
 	<span class="rect" on:click={toggleSelection} style="background: {$canvasBackground};">
@@ -107,12 +108,12 @@
 	<span class="actions">
 		<span class="material-icons action" on:click={() => movePosition("down")}>arrow_downward</span>
 		<span class="material-icons action" on:click={() => movePosition("up")}>arrow_upward</span>
-		<span on:click={toggleLock} class="material-icons action">{$elements[id].isLocked ? 'lock' : 'lock_open'}</span>
+		<span on:click={toggleLock} class="material-icons action">{$elements[id] && $elements[id].isLocked ? 'lock' : 'lock_open'}</span>
 		<!-- <span on:click={toggleLock} class="material-icons action">{$elements[id].isLocked ? 'visibility' : 'visibility_off'}</span> -->
 	</span>
 	
 </div>
-
+{/if}
 <!-- <span style="background-image: url(/tutorial/icons/{type}.svg)">{id}</span> -->
 
 <style>

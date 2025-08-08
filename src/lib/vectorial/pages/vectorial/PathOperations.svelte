@@ -2126,9 +2126,9 @@
             <Tooltip>
                 <Content>
                     <div class="infoPanel">
-                        <h3 style="font-size:16px;width: 32px; height:32px;padding:6px;padding-top:0">Mirror mode</h3>
+                        <h5 style="margin:0">Mirror mode</h5>
                         <p>Create and edit path in mirror mode.</p>
-                        <h4>Method: Create Path</h4>
+                        <h6 style="margin:0">Method: Create Path</h6>
                         <ol>
                             <li>Click on this button to set mirror mode.</li>
                             <li>Start creating path using pen tool above.</li>
@@ -2138,7 +2138,7 @@
                             </li>
                             <li>For each new node, its mirror is added to the path.</li>
                         </ol>
-                        <h4>Method: Edit path in mirror mode</h4>
+                        <h6 style="margin:0">Method: Edit path in mirror mode</h6>
                         <ol>
                             <li>Select the path and set node mode on.</li>
                             <li>Click on this button set mirror mode on.</li>
@@ -2622,7 +2622,7 @@
             <Tooltip>
                 <Content>
                     <div class="infoPanel">
-                        <h3 style="font-size:16px;width: 32px; height:32px;padding:6px;padding-top:0">Spread vertices on a circle</h3>
+                        <h3 style="margin:0">Spread vertices on a circle</h3>
                         <p>Spread vertices of a path on a circle.</p>
                         <h4>Method</h4>
                         <ol>
@@ -2765,7 +2765,7 @@
                 <Tooltip>
                     <Content>
                         <div class="infoPanel">
-                            <h3 style="font-size:16px;width: 32px; height:32px;padding:6px;padding-top:0">Select Vertices on a circle</h3>
+                            <h3 style="margin:0">Select Vertices on a circle</h3>
                             <p>Select vertices on a circle.</p>
                             <h4>Method</h4>
                             <ol>
@@ -2809,5 +2809,18 @@
         display:flex;
         flex-direction:row;
         align-items:center;
+    }
+    .infoPanel {
+        font-size: 8px;
+    }
+    .infoPanel h3 {
+        font-size: 10px;
+    }
+    .infoPanel h6 {
+        font-size: 11px;
+    }
+    .infoPanel li {
+        padding: 0;
+        line-height: 1.1;
     }
 </style>
