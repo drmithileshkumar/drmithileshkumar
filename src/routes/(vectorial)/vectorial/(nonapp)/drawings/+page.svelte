@@ -43,6 +43,7 @@
     // export let data;
     let drawings = [];
     let isLoaded = false;
+    let rawDrawing = null;
     onMount(() => {
         // $pageLoadState = true;
         const newDrawings = [];
@@ -1235,6 +1236,30 @@
         //     drawings = [...drawings, ...drawings];
         // }
     }
+    const readRawFile = async (event) => {
+        const file = event.target.files[0];
+        let error = null;
+        if (file) {
+        // Use FileReader to read the file contents
+            const reader = new FileReader();
+
+            reader.onload = (e) => {
+                const fileContents = e.target.result;
+                try {
+                    // Parse the JSON string into a JavaScript object
+                    const parsedObject = JSON.parse(fileContents);
+                    $DRAWING = parsedObject;
+                    console.log($DRAWING)
+                    rawDrawing = true;
+                    error = null; // Clear any previous errors
+                } catch (err) {
+                    console.error('Error parsing JSON:', err);
+                    error = 'Error: The selected file is not a valid JSON file.';
+                }
+            };
+            reader.readAsText(file); // Read the file as a text string
+        }
+    }
 </script>
 
 <svelte:head>
@@ -1271,6 +1296,8 @@
                 <Label>Create New Drawing</Label>
             </Button>
             <Button on:click={() => svgInput.click()}>Import SVG</Button>
+            <input type="file" on:change={readRawFile} accept=".json" />
+            <!-- <Button on:click={() => readRawFile}>Import Raw File</Button> -->
             {#if files}
                 <Button on:click={editFile}>Edit file</Button>
             {/if}
@@ -1282,8 +1309,17 @@
             on:cancel={() => (isCreating = false)}
         />
     {/if}
+    {#if rawDrawing}
+        <section class="rawDrawing">
+            <Drawing
+                drawing={$DRAWING}
+                on:deleted={deleteGallery}
+                on:duplicated={updateGallery}
+            />
+        </section>
+    {/if}
     <section class="drawinglist">
-        {#if drawings}
+        {#if isLoaded && drawings}
             {#each drawings as drawing}
                 <Drawing
                     {drawing}

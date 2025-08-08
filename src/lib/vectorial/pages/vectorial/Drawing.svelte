@@ -396,21 +396,21 @@
     };
     let isPublic = drawing.permission === 'public'
     const changePermission = async () => {
-        const res = await fetch(`/vectorial/api/${$page.data.user.publicID}/drawings/permission`, {
-            method: "POST",
-            headers: {
-                "content-type": "application/json",
-            },
-            body: JSON.stringify({
-                drawingID: drawing.drawingID,
-                permission: isPublic ? 'public':'private'
-            })
-        })
-        if (!res.ok) {
-            alert("Failed to update permission");
-            return;
-        }
-        alert("Permission changed");
+        // const res = await fetch(`/vectorial/api/${$page.data.user.publicID}/drawings/permission`, {
+        //     method: "POST",
+        //     headers: {
+        //         "content-type": "application/json",
+        //     },
+        //     body: JSON.stringify({
+        //         drawingID: drawing.drawingID,
+        //         permission: isPublic ? 'public':'private'
+        //     })
+        // })
+        // if (!res.ok) {
+        //     alert("Failed to update permission");
+        //     return;
+        // }
+        // alert("Permission changed");
     }
     // getImage()
 </script>
@@ -438,10 +438,10 @@
         </h3>
     </Content>
     <Actions>
-        <FormField>
+        <!-- <FormField>
             <Switch bind:checked={isPublic} on:SMUISwitch:change={changePermission} />
             <span slot="label">{isPublic ? 'Public' : 'Private'}</span>
-          </FormField>
+          </FormField> -->
         <ActionIcons>
             <IconButton
                 class="material-icons"

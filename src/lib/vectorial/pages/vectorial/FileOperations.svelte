@@ -913,6 +913,29 @@ const saveDrawing = async () => {
     updateDrawing = true;
     dispatch('closeMenu');
 };
+const downloadDrawing = async () => {
+    $DRAWING.elements = $elements;
+    $DRAWING.defs = $defs;
+    $DRAWING.viewBox = {
+        x: $BBOX.x,
+        y: $BBOX.y,
+        width: $BBOX.width,
+        height: $BBOX.height,
+    };
+    $DRAWING.appHistory = $appHistory;
+    $DRAWING = $DRAWING;
+
+    const jsonString = JSON.stringify($DRAWING, null, 2);
+    const blob = new Blob([jsonString], {type: 'application/json'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'image.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
 const closeFile = async () => {
     let text = "Close without saving?";
     if (confirm(text) === true) {
@@ -1362,6 +1385,10 @@ const pasteFromClipboard = async () => {
             <Item on:SMUI:action={saveDrawing} style="background:{updateDrawing ? 'rgba(255, 255, 255, 0.5)': 'none'}">
                 <Graphic class="material-icons">save</Graphic>
                 <span class='listText'>Save file</span>
+            </Item>
+            <Item on:SMUI:action={downloadDrawing} style="background:{updateDrawing ? 'rgba(255, 255, 255, 0.5)': 'none'}">
+                <Graphic class="material-icons">save</Graphic>
+                <span class='listText'>Download file</span>
             </Item>
             <Separator />
         </List> 

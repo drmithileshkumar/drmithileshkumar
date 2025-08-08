@@ -212,33 +212,9 @@
       "_prefixFilter.js"
     ]
   },
-  "_Drawing.js": {
-    "file": "chunks/Drawing.js",
-    "name": "Drawing",
-    "imports": [
-      "_utils.js",
-      "_ssr2.js",
-      "_Set.js",
-      "_forwardEventsBuilder.js",
-      "_prefixFilter.js",
-      "_FormField.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_Media.js",
-      "_Actions.js",
-      "_Button.js",
-      "_CommonLabel.js",
-      "_Dialog.js",
-      "_Actions2.js",
-      "_IconButton.js",
-      "_stores3.js",
-      "_stores6.js",
-      "_client.js",
-      "_PreviewTextMask.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Drawing.CfrzLLFi.css"
-    ]
+  "_Drawing.svelte_svelte_type_style_lang.js": {
+    "file": "_app/immutable/assets/Drawing.CfrzLLFi.css",
+    "src": "_Drawing.svelte_svelte_type_style_lang.js"
   },
   "_FormField.js": {
     "file": "chunks/FormField.js",
@@ -9961,14 +9937,19 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_Drawing.js",
+      "_Set.js",
       "_Card.js",
       "_ActionIcons.js",
+      "_Media.js",
       "_Actions.js",
       "_Button.js",
       "_CommonLabel.js",
+      "_Dialog.js",
+      "_Actions2.js",
+      "_IconButton.js",
       "_client.js",
       "_stores6.js",
+      "_PreviewTextMask.js",
       "_Suffix.js",
       "_Subtitle.js",
       "_stores3.js",
@@ -9976,6 +9957,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page.gTHTxpM-.css",
+      "_app/immutable/assets/Drawing.CfrzLLFi.css",
       "_app/immutable/assets/Listfield.DGx9FQDH.css",
       "_app/immutable/assets/SegmentedButton.uIc266ni.css"
     ]
@@ -10191,12 +10173,12 @@
     "imports": [
       "_utils.js",
       "_ssr2.js",
-      "_Drawing.js",
+      "_CommonLabel.js",
       "_Card.js",
       "_ActionIcons.js",
       "_Actions.js",
       "_Button.js",
-      "_CommonLabel.js",
+      "_Actions2.js",
       "_client.js",
       "_stores6.js",
       "_Suffix.js",
@@ -10205,6 +10187,7 @@
     ],
     "css": [
       "_app/immutable/assets/_page.gTHTxpM-.css",
+      "_app/immutable/assets/Drawing.CfrzLLFi.css",
       "_app/immutable/assets/Listfield.DGx9FQDH.css",
       "_app/immutable/assets/SegmentedButton.uIc266ni.css"
     ]
