@@ -9,6 +9,7 @@
         
         $currentState = $currentState > 0 ? $currentState - 1 : $currentState;
         Object.keys($appHistory[$currentState].change).forEach(prop => {
+            if(!$elements[$appHistory[$currentState].id]) return;
             $elements[$appHistory[$currentState].id][prop] = $appHistory[$currentState].change[prop];
         })
         $elements = $elements;

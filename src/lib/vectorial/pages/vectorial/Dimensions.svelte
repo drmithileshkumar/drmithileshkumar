@@ -258,6 +258,7 @@
     };
     const unlasso = () => {
         $isLasso = false;
+        if(!$elements["lasso"]) return;
         $elements[$elements["lasso"].parent].children.splice(-1, 1);
         $elements["lasso"] = null;
     };
