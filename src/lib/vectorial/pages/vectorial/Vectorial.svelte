@@ -1040,6 +1040,7 @@
 									y={edge.v.y - 4 / $Z}
 									width={8 / $Z}
 									height={8 / $Z}
+									opacity={0.2}
 									stroke={edge.c === 'M' ? 'black' : 'white'}
 									stroke-width={1 / $Z}
 									fill={Number($selectedVertex) === edge.id

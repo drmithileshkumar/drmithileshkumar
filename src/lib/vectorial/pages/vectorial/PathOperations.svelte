@@ -430,6 +430,7 @@
         $selectedId = inputElementId;
         $elements = $elements;
         $activeElement = $elementsNode[$selectedId];
+        if(!$activeElement) return;
         $elements[$selectedId].ctm = $boundingBox
             .getScreenCTM()
             .inverse()
@@ -2624,7 +2625,7 @@
                     <div class="infoPanel">
                         <h3 style="margin:0">Spread vertices on a circle</h3>
                         <p>Spread vertices of a path on a circle.</p>
-                        <h4>Method</h4>
+                        <h6>Method</h6>
                         <ol>
                             <li>Select a path and activate node mode.</li>
                             <li>Click on this button to select vertices</li>
