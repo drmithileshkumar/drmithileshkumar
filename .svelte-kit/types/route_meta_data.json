@@ -1006,7 +1006,7 @@
 		"src/routes/(vectorial)/vectorial/+layout.server.js"
 	],
 	"/(vectorial)/vectorial/(nonapp)/drawings": [
-		"src/routes/(vectorial)/vectorial/(nonapp)/drawings/+page.js",
+		"src/routes/(vectorial)/vectorial/(nonapp)/drawings/+page.server.js",
 		"src/routes/(vectorial)/vectorial/+layout.server.js"
 	],
 	"/(vectorial)/vectorial/(nonapp)/learn": [

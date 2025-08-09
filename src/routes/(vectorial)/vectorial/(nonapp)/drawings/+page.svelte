@@ -46,6 +46,7 @@
     let rawDrawing = null;
     onMount(() => {
         // $pageLoadState = true;
+        console.log("Loading drawings...")
         const newDrawings = [];
         for(let i = 0; i < $localGallery.length; i++) {
             const newDrawing = window.localStorage.getItem($localGallery[i])
@@ -1318,8 +1319,9 @@
             />
         </section>
     {/if}
+    {#if isLoaded}
     <section class="drawinglist">
-        {#if isLoaded && drawings}
+        {#if drawings}
             {#each drawings as drawing}
                 <Drawing
                     {drawing}
@@ -1329,6 +1331,7 @@
             {/each}
         {/if}
     </section>
+    {/if}
     <!-- <Button on:click={loadNext}>Load next 10 drawings</Button> -->
 </article>
 

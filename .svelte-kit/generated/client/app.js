@@ -483,7 +483,7 @@ export const dictionary = {
 		"/(vectorial)/vectorial/(nonapp)/comment/[commentID]": [232,[9,10,11]],
 		"/(vectorial)/vectorial/(nonapp)/compose": [233,[9,10,11]],
 		"/(vectorial)/vectorial/download": [262,[9,10,13]],
-		"/(vectorial)/vectorial/(nonapp)/drawings": [234,[9,10,11]],
+		"/(vectorial)/vectorial/(nonapp)/drawings": [~234,[9,10,11]],
 		"/(vectorial)/vectorial/(nonapp)/learn": [235,[9,10,11]],
 		"/(vectorial)/vectorial/(nonapp)/learn/advanced": [236,[9,10,11]],
 		"/(vectorial)/vectorial/(nonapp)/learn/filters": [237,[9,10,11]],

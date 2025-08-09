@@ -126,12 +126,12 @@
                 </List>
             </Item>
             
-            <Item on:SMUI:action={() => goto("/home")}>
+            <!-- <Item on:SMUI:action={() => goto("/home")}>
                 <Graphic class="material-icons">home</Graphic>
                 <Text>Home</Text>
-            </Item>
+            </Item> -->
             
-           {#if $navList.length > 0}
+           <!-- {#if $navList.length > 0}
                 <Separator />
                 {#each $navList as link}
                     <Item on:SMUI:action={() => goto(`/${$page.data.user.publicID}${link.url}`)}>
@@ -143,7 +143,7 @@
             <Item on:SMUI:action={() => goto('/settings')}>
                 <Graphic class="material-icons">settings</Graphic>
                 <Text>Settings</Text>
-            </Item>
+            </Item> -->
         </List>
         <Separator />
         <!-- {#if isAuth}
