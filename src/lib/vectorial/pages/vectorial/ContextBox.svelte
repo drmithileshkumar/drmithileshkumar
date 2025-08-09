@@ -756,6 +756,7 @@
         $elements[$selectedId].showSubdivisions = showSubdivisions; 
     }
     const text2plot = (p, mathtext) => {
+        if(!p || !mathtext) return;
         const plotNode = math.parse(mathtext)   // returns the root Node of an expression tree
         const code = plotNode.compile()   
         $elements[$selectedId].ymin = 0;  

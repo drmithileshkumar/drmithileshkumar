@@ -412,6 +412,24 @@
         // }
         // alert("Permission changed");
     }
+    const downloadFile = async () => {
+        $DRAWING = drawing;
+        $BBOX = drawing.viewBox;
+        $drawingID = $DRAWING.drawinID;
+        $elements = $DRAWING.elements;
+        $defs = $DRAWING.defs;
+        $appHistory = $DRAWING.appHistory;
+        const jsonString = JSON.stringify($DRAWING, null, 2);
+        const blob = new Blob([jsonString], {type: 'application/json'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'image.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
     // getImage()
 </script>
 
@@ -443,6 +461,9 @@
             <span slot="label">{isPublic ? 'Public' : 'Private'}</span>
           </FormField> -->
         <ActionIcons>
+            <IconButton class="material-icons" on:click={downloadFile} title="Download">
+                download
+            </IconButton>
             <IconButton
                 class="material-icons"
                 on:click={duplicateFile}
