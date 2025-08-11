@@ -5,6 +5,6 @@ let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/(mathril)/mathril/about/_page.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/(mathril)/mathril/about/+page.js";
-export const imports = ["_app/immutable/nodes/207.CF4bled-.js","_app/immutable/chunks/B90CZVMX.js","_app/immutable/chunks/CYgJF_JY.js","_app/immutable/chunks/BurqNfsS.js","_app/immutable/chunks/Bb2ET71N.js","_app/immutable/chunks/hXgwcGuw.js","_app/immutable/chunks/HCeguDvV.js","_app/immutable/chunks/CZxZ_Ggc.js","_app/immutable/chunks/5EPmrkDF.js","_app/immutable/chunks/DvkXah-i.js","_app/immutable/chunks/BrNRrKxc.js","_app/immutable/chunks/BfFMFjDh.js"];
+export const imports = ["_app/immutable/nodes/207.CxLW_-nZ.js","_app/immutable/chunks/B90CZVMX.js","_app/immutable/chunks/CYgJF_JY.js","_app/immutable/chunks/BxVy82MC.js","_app/immutable/chunks/DonhawEw.js","_app/immutable/chunks/DULwcJ7d.js","_app/immutable/chunks/HCeguDvV.js","_app/immutable/chunks/DnCrujO_.js","_app/immutable/chunks/CkJoemvl.js","_app/immutable/chunks/eknKW2my.js","_app/immutable/chunks/DGFep8o7.js","_app/immutable/chunks/CGERInoT.js"];
 export const stylesheets = ["_app/immutable/assets/207.D_PRmgLc.css"];
 export const fonts = [];

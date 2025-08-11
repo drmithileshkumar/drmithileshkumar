@@ -20,7 +20,7 @@
    
     import { showLeft, darkMode, showRight } from "$lib/stores.js";
     import {page} from '$app/stores';
-    import Analytics from "$lib/components/Analytics.svelte";
+    // import Analytics from "$lib/components/Analytics.svelte";
     import { goto } from '$app/navigation';
     import {currentPath, refreshApp, TopBarHeight} from '$lib/stores';
     
@@ -43,7 +43,7 @@
         href="/smui{$darkMode ? '-dark' : ''}.css"
     />
 </svelte:head>
-<Analytics />
+<!-- <Analytics /> -->
 <header style="position: relative;" bind:clientHeight={$TopBarHeight}>
     <TopAppBar variant="fixed" color="secondary">
         <Row>

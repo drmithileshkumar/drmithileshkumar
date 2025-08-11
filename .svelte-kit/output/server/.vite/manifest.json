@@ -9880,178 +9880,6 @@
       "_ssr2.js"
     ]
   },
-  "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/+page.js": {
-    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/_page.js",
-    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/_page",
-    "src": "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index.js"
-    ]
-  },
-  "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/+page.svelte": {
-    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/_page.svelte.js",
-    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/_page.svelte",
-    "src": "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_utils.js",
-      "_ssr2.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_Button.js",
-      "_CommonLabel.js",
-      "_TabBar.js",
-      "_stores3.js",
-      "_client.js",
-      "_Subheader.js",
-      "_Actions.js",
-      "_IconButton.js",
-      "_Svg.js",
-      "_stores2.js",
-      "_Set.js",
-      "_ComposeComment.svelte_svelte_type_style_lang.js",
-      "_Item.js",
-      "_Graphic.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page.BjCJfhUE.css",
-      "_app/immutable/assets/ImageUploader.BaNwnJmc.css"
-    ]
-  },
-  "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/drawings/+page.js": {
-    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/drawings/_page.js",
-    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/drawings/_page",
-    "src": "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/drawings/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index.js",
-      "_stores2.js"
-    ]
-  },
-  "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/drawings/+page.svelte": {
-    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/drawings/_page.svelte.js",
-    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/drawings/_page.svelte",
-    "src": "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/drawings/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_utils.js",
-      "_ssr2.js",
-      "_Set.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_Media.js",
-      "_Actions.js",
-      "_Button.js",
-      "_CommonLabel.js",
-      "_Dialog.js",
-      "_Actions2.js",
-      "_IconButton.js",
-      "_client.js",
-      "_stores6.js",
-      "_PreviewTextMask.js",
-      "_Suffix.js",
-      "_Subtitle.js",
-      "_stores3.js",
-      "_stores2.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page.gTHTxpM-.css",
-      "_app/immutable/assets/Drawing.CfrzLLFi.css",
-      "_app/immutable/assets/Listfield.DGx9FQDH.css",
-      "_app/immutable/assets/SegmentedButton.uIc266ni.css"
-    ]
-  },
-  "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/edit/+page.js": {
-    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/edit/_page.js",
-    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/edit/_page",
-    "src": "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/edit/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index.js"
-    ]
-  },
-  "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/edit/+page.svelte": {
-    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/edit/_page.svelte.js",
-    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/edit/_page.svelte",
-    "src": "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/edit/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_ssr2.js",
-      "_utils.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_Media.js",
-      "_Actions.js",
-      "_Button.js",
-      "_CommonLabel.js",
-      "_ImageUploader.js",
-      "_stores2.js",
-      "_stores3.js",
-      "_client.js",
-      "_Set.js",
-      "_Text.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page.QXaG5iWq.css"
-    ]
-  },
-  "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/edit/comment/+page.js": {
-    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/edit/comment/_page.js",
-    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/edit/comment/_page",
-    "src": "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/edit/comment/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index.js"
-    ]
-  },
-  "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/edit/comment/+page.svelte": {
-    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/edit/comment/_page.svelte.js",
-    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/edit/comment/_page.svelte",
-    "src": "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/edit/comment/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_ssr2.js",
-      "_utils.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_Actions.js",
-      "_Button.js",
-      "_CommonLabel.js",
-      "_stores2.js",
-      "_stores3.js",
-      "_client.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page.BqKpJZzv.css",
-      "_app/immutable/assets/ImageUploader.BaNwnJmc.css"
-    ]
-  },
-  "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/invoices/+page.js": {
-    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/invoices/_page.js",
-    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/invoices/_page",
-    "src": "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/invoices/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_index.js"
-    ]
-  },
-  "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/invoices/+page.svelte": {
-    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/invoices/_page.svelte.js",
-    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/_publicID_/invoices/_page.svelte",
-    "src": "src/routes/(vectorial)/vectorial/(nonapp)/[publicID]/invoices/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_utils.js",
-      "_ssr2.js",
-      "_Card.js",
-      "_ActionIcons.js",
-      "_stores2.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page.BBE9vbRY.css"
-    ]
-  },
   "src/routes/(vectorial)/vectorial/(nonapp)/about/+page.js": {
     "file": "entries/pages/(vectorial)/vectorial/(nonapp)/about/_page.js",
     "name": "entries/pages/(vectorial)/vectorial/(nonapp)/about/_page",
@@ -10153,6 +9981,16 @@
     ],
     "css": [
       "_app/immutable/assets/_page.C5GVjVaF.css"
+    ]
+  },
+  "src/routes/(vectorial)/vectorial/(nonapp)/drawings/+page.js": {
+    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/drawings/_page.js",
+    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/drawings/_page",
+    "src": "src/routes/(vectorial)/vectorial/(nonapp)/drawings/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores6.js"
     ]
   },
   "src/routes/(vectorial)/vectorial/(nonapp)/drawings/+page.server.js": {
@@ -10445,6 +10283,178 @@
       "_ssr2.js",
       "_FullPost.js",
       "_stores2.js"
+    ]
+  },
+  "src/routes/(vectorial)/vectorial/(nonapp)/publicID/+page.js": {
+    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/_page.js",
+    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/_page",
+    "src": "src/routes/(vectorial)/vectorial/(nonapp)/publicID/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(vectorial)/vectorial/(nonapp)/publicID/+page.svelte": {
+    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/_page.svelte.js",
+    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/_page.svelte",
+    "src": "src/routes/(vectorial)/vectorial/(nonapp)/publicID/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_TabBar.js",
+      "_stores3.js",
+      "_client.js",
+      "_Subheader.js",
+      "_Actions.js",
+      "_IconButton.js",
+      "_Svg.js",
+      "_stores2.js",
+      "_Set.js",
+      "_ComposeComment.svelte_svelte_type_style_lang.js",
+      "_Item.js",
+      "_Graphic.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BjCJfhUE.css",
+      "_app/immutable/assets/ImageUploader.BaNwnJmc.css"
+    ]
+  },
+  "src/routes/(vectorial)/vectorial/(nonapp)/publicID/drawings/+page.js": {
+    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/drawings/_page.js",
+    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/drawings/_page",
+    "src": "src/routes/(vectorial)/vectorial/(nonapp)/publicID/drawings/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores2.js"
+    ]
+  },
+  "src/routes/(vectorial)/vectorial/(nonapp)/publicID/drawings/+page.svelte": {
+    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/drawings/_page.svelte.js",
+    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/drawings/_page.svelte",
+    "src": "src/routes/(vectorial)/vectorial/(nonapp)/publicID/drawings/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_Set.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Media.js",
+      "_Actions.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_Dialog.js",
+      "_Actions2.js",
+      "_IconButton.js",
+      "_client.js",
+      "_stores6.js",
+      "_PreviewTextMask.js",
+      "_Suffix.js",
+      "_Subtitle.js",
+      "_stores3.js",
+      "_stores2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.gTHTxpM-.css",
+      "_app/immutable/assets/Drawing.CfrzLLFi.css",
+      "_app/immutable/assets/Listfield.DGx9FQDH.css",
+      "_app/immutable/assets/SegmentedButton.uIc266ni.css"
+    ]
+  },
+  "src/routes/(vectorial)/vectorial/(nonapp)/publicID/edit/+page.js": {
+    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/edit/_page.js",
+    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/edit/_page",
+    "src": "src/routes/(vectorial)/vectorial/(nonapp)/publicID/edit/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(vectorial)/vectorial/(nonapp)/publicID/edit/+page.svelte": {
+    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/edit/_page.svelte.js",
+    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/edit/_page.svelte",
+    "src": "src/routes/(vectorial)/vectorial/(nonapp)/publicID/edit/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr2.js",
+      "_utils.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Media.js",
+      "_Actions.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_ImageUploader.js",
+      "_stores2.js",
+      "_stores3.js",
+      "_client.js",
+      "_Set.js",
+      "_Text.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.QXaG5iWq.css"
+    ]
+  },
+  "src/routes/(vectorial)/vectorial/(nonapp)/publicID/edit/comment/+page.js": {
+    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/edit/comment/_page.js",
+    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/edit/comment/_page",
+    "src": "src/routes/(vectorial)/vectorial/(nonapp)/publicID/edit/comment/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(vectorial)/vectorial/(nonapp)/publicID/edit/comment/+page.svelte": {
+    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/edit/comment/_page.svelte.js",
+    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/edit/comment/_page.svelte",
+    "src": "src/routes/(vectorial)/vectorial/(nonapp)/publicID/edit/comment/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr2.js",
+      "_utils.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_Actions.js",
+      "_Button.js",
+      "_CommonLabel.js",
+      "_stores2.js",
+      "_stores3.js",
+      "_client.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BqKpJZzv.css",
+      "_app/immutable/assets/ImageUploader.BaNwnJmc.css"
+    ]
+  },
+  "src/routes/(vectorial)/vectorial/(nonapp)/publicID/invoices/+page.js": {
+    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/invoices/_page.js",
+    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/invoices/_page",
+    "src": "src/routes/(vectorial)/vectorial/(nonapp)/publicID/invoices/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/(vectorial)/vectorial/(nonapp)/publicID/invoices/+page.svelte": {
+    "file": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/invoices/_page.svelte.js",
+    "name": "entries/pages/(vectorial)/vectorial/(nonapp)/publicID/invoices/_page.svelte",
+    "src": "src/routes/(vectorial)/vectorial/(nonapp)/publicID/invoices/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr2.js",
+      "_Card.js",
+      "_ActionIcons.js",
+      "_stores2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BBE9vbRY.css"
     ]
   },
   "src/routes/(vectorial)/vectorial/(nonapp)/search/+page.js": {

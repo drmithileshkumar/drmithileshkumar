@@ -60,7 +60,7 @@
         href="/smui{$darkMode ? '-dark' : ''}.css"
     />
 </svelte:head>
-<Analytics />
+<!-- <Analytics /> -->
 <header style="position: relative;">
     <TopAppBar variant="fixed" color="secondary">
         <Row>

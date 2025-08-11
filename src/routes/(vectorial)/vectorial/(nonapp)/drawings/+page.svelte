@@ -40,25 +40,29 @@
     import { currentPath } from "$lib/vectorial/stores";
     $currentPath = "Drawings";
 
-    // export let data;
+    export let data;
+    console.log('in page...')
     let drawings = [];
     let isLoaded = false;
     let rawDrawing = null;
+    let mydiv = null;
+    // if(!mydiv) location.reload();
     onMount(() => {
         // $pageLoadState = true;
         console.log("Loading drawings...")
-        const newDrawings = [];
-        for(let i = 0; i < $localGallery.length; i++) {
-            const newDrawing = window.localStorage.getItem($localGallery[i])
-            if(newDrawing) {
-                // drawings = [...drawings, JSON.parse(newDrawing)]
-                newDrawings.push(JSON.parse(newDrawing));
-            }
-        }
+        // const newDrawings = [];
+        // for(let i = 0; i < $localGallery.length; i++) {
+        //     const newDrawing = window.localStorage.getItem($localGallery[i])
+        //     if(newDrawing) {
+        //         drawings = [...drawings, JSON.parse(newDrawing)]
+        //         newDrawings.push(JSON.parse(newDrawing));
+        //     }
+        // }
         // drawings = drawings;
-        drawings = newDrawings;
+        drawings = data.drawings;
         isLoaded = true;
     })
+    console.log('after mount...')
     const deleteGallery = (e) => {
         let id = e.detail.drawingID;
         for(let i = 0; i < drawings.length; i++) {
@@ -1263,20 +1267,20 @@
     }
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
     <title>Vectorial</title>
     <link rel="canonical" href="https://drmithileshkumar.com/vectorial/drawings" />
     <meta name="description" content="Create SVG graphics" />
-</svelte:head>
-<input
-    bind:files
-    type="file"
-    accept="image/svg+xml"
-    style="display:none"
-    bind:this={svgInput}
-    on:change={() => getBase64(files[0])}
-/>
+</svelte:head> -->
 <article class="container">
+    <input
+        bind:files
+        type="file"
+        accept="image/svg+xml"
+        style="display:none"
+        bind:this={svgInput}
+        on:change={() => getBase64(files[0])}
+    />
     <Card>
         <Content>
             <h1 class="mdc-typography--headline6" style="margin: 0;">
